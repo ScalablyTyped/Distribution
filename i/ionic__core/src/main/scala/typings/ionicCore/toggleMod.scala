@@ -2,8 +2,8 @@ package typings.ionicCore
 
 import typings.ionicCore.mod.Color
 import typings.ionicCore.mod.StyleEventDetail
-import typings.ionicCore.stencilCoreMod.ComponentInterface
-import typings.ionicCore.stencilCoreMod.EventEmitter
+import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
+import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
 import typings.ionicCore.toggleInterfaceMod.ToggleChangeEventDetail
 import typings.std.HTMLElement
 import scala.scalajs.js

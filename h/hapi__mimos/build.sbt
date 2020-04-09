@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "hapi__mimos"
-version := "4.1-dt-20200225Z-0aa4d1"
+version := "4.1-dt-20200330Z-731415"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "mime-db" % "1.27-dt-20190322Z-574028",
+  "org.scalablytyped" %%% "mime-db" % "1.27-dt-20200330Z-b5288f",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")

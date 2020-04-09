@@ -27,7 +27,13 @@ class Ledger protected () extends CustomResource {
     * The ARN of the QLDB Ledger
     */
   val arn: Output_[String] = js.native
+  /**
+    * The deletion protection for the QLDB Ledger instance. By default it is `true`. To delete this resource via this provider, this value must be configured to `false` and applied first before attempting deletion.
+    */
   val deletionProtection: Output_[js.UndefOr[Boolean]] = js.native
+  /**
+    * The friendly name for the QLDB Ledger instance.
+    */
   val name: Output_[String] = js.native
   /**
     * Key-value mapping of resource tags

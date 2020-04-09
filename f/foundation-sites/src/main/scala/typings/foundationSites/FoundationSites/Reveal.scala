@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-// http://foundation.zurb.com/sites/docs/reveal.html#javascript-reference
+// https://get.foundation/sites/docs/reveal.html#javascript-reference
 trait Reveal extends js.Object {
   def close(): Unit
   def destroy(): Unit

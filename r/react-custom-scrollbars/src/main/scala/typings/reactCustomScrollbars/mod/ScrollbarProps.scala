@@ -2,6 +2,7 @@ package typings.reactCustomScrollbars.mod
 
 import typings.react.mod.AllHTMLAttributes
 import typings.react.mod.ClassAttributes
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.StatelessComponent
 import typings.react.mod.UIEvent
 import typings.react.mod.UIEventHandler
@@ -48,7 +49,7 @@ object ScrollbarProps {
     autoHideDuration: Int | Double = null,
     autoHideTimeout: Int | Double = null,
     hideTracksWhenNotNeeded: js.UndefOr[Boolean] = js.undefined,
-    onScroll: UIEvent[_] => Unit = null,
+    onScroll: UIEvent[_, NativeUIEvent] => Unit = null,
     onScrollFrame: /* values */ positionValues => Unit = null,
     onScrollStart: () => Unit = null,
     onScrollStop: () => Unit = null,

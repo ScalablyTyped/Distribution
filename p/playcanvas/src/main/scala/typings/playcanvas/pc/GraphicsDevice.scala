@@ -157,6 +157,20 @@ class GraphicsDevice protected () extends EventHandler {
   def clearShaderCache(): Unit = js.native
   /**
     * @function
+    * @name pc.GraphicsDevice#copyRenderTarget
+    * @description Copies source render target into destination render target. Mostly used by post-effects.
+    * @param {pc.RenderTarget} source - The source render target.
+    * @param {pc.RenderTarget} [dest] - The destination render target. Defaults to frame buffer.
+    * @param {boolean} [color] - If true will copy the color buffer. Defaults to false.
+    * @param {boolean} [depth] - If true will copy the depth buffer. Defaults to false.
+    * @returns {boolean} True if the copy was successful, false otherwise.
+    */
+  def copyRenderTarget(source: RenderTarget): Boolean = js.native
+  def copyRenderTarget(source: RenderTarget, dest: RenderTarget): Boolean = js.native
+  def copyRenderTarget(source: RenderTarget, dest: RenderTarget, color: Boolean): Boolean = js.native
+  def copyRenderTarget(source: RenderTarget, dest: RenderTarget, color: Boolean, depth: Boolean): Boolean = js.native
+  /**
+    * @function
     * @name pc.GraphicsDevice#draw
     * @description Submits a graphical primitive to the hardware for immediate rendering.
     * @param {object} primitive - Primitive object describing how to submit current vertex/index buffers defined as follows:

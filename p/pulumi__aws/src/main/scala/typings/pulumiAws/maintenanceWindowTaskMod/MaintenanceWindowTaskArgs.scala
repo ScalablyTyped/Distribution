@@ -30,7 +30,7 @@ trait MaintenanceWindowTaskArgs extends js.Object {
     */
   val maxErrors: Input[String] = js.native
   /**
-    * The parameter name.
+    * The name of the maintenance window task.
     */
   val name: js.UndefOr[Input[String]] = js.native
   /**
@@ -38,7 +38,7 @@ trait MaintenanceWindowTaskArgs extends js.Object {
     */
   val priority: js.UndefOr[Input[Double]] = js.native
   /**
-    * The IAM service role to assume during task execution.
+    * The role that should be assumed when executing the task.
     */
   val serviceRoleArn: Input[String] = js.native
   /**

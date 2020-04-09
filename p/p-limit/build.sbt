@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "p-limit"
-version := "2.2.2-5226c3"
+version := "2.3.0-c54f4d"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

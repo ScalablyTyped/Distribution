@@ -5,25 +5,25 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxTreeListRowObject extends js.Object {
-  /** Indicates whether the row is in the editing state. */
+  /** @name dxTreeListRowObject.isEditing */
   var isEditing: js.UndefOr[Boolean] = js.undefined
-  /** Indicates whether the row is expanded or collapsed. Available if rowType is "data" or "detail". */
+  /** @name dxTreeListRowObject.isExpanded */
   var isExpanded: js.UndefOr[Boolean] = js.undefined
-  /** Indicates that the row is added, but not yet saved. Available if rowType is "data". */
+  /** @name dxTreeListRowObject.isNewRow */
   var isNewRow: js.UndefOr[Boolean] = js.undefined
-  /** Indicates whether the row is selected. Available if rowType is "data" or "detail". */
+  /** @name dxTreeListRowObject.isSelected */
   var isSelected: js.UndefOr[Boolean] = js.undefined
-  /** The row's key. Available if rowType is "data", "detail" or "detailAdaptive". */
+  /** @name dxTreeListRowObject.key */
   var key: js.UndefOr[js.Any] = js.undefined
-  /** The row's hierarchical level. Available if rowType is "data" or "detail". */
+  /** @name dxTreeListRowObject.level */
   var level: js.UndefOr[Double] = js.undefined
-  /** The row's node. Available if rowType is "data" or "detail". */
+  /** @name dxTreeListRowObject.node */
   var node: js.UndefOr[dxTreeListNode] = js.undefined
-  /** The row's visible index. This index is zero-based and available if rowType is "data", "detail" or "detailAdaptive". */
+  /** @name dxTreeListRowObject.rowIndex */
   var rowIndex: js.UndefOr[Double] = js.undefined
-  /** The row's type. */
+  /** @name dxTreeListRowObject.rowType */
   var rowType: js.UndefOr[String] = js.undefined
-  /** Values displayed in the row's cells. */
+  /** @name dxTreeListRowObject.values */
   var values: js.UndefOr[js.Array[_]] = js.undefined
 }
 

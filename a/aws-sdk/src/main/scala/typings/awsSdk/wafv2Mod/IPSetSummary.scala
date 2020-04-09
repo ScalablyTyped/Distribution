@@ -11,7 +11,7 @@ trait IPSetSummary extends js.Object {
     */
   var ARN: js.UndefOr[ResourceArn] = js.native
   /**
-    * A friendly description of the IP set. You cannot change the description of an IP set after you create it.
+    * A description of the IP set that helps with identification. You cannot change the description of an IP set after you create it.
     */
   var Description: js.UndefOr[EntityDescription] = js.native
   /**
@@ -23,7 +23,7 @@ trait IPSetSummary extends js.Object {
     */
   var LockToken: js.UndefOr[typings.awsSdk.wafv2Mod.LockToken] = js.native
   /**
-    * A friendly name of the IP set. You cannot change the name of an IPSet after you create it.
+    * The name of the IP set. You cannot change the name of an IPSet after you create it.
     */
   var Name: js.UndefOr[EntityName] = js.native
 }

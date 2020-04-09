@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object waitForDomChangeMod extends js.Object {
   def waitForDomChange(): js.Promise[_] = js.native
-  def waitForDomChange(options: AnonContainer): js.Promise[_] = js.native
+  def waitForDomChange(options: AnonMutationObserverOptions): js.Promise[_] = js.native
 }
 

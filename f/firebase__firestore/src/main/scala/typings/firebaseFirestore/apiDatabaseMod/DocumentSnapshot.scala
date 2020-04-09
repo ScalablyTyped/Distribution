@@ -48,9 +48,6 @@ class DocumentSnapshot[T] protected ()
   var _fromCache: js.Any = js.native
   var _hasPendingWrites: js.Any = js.native
   var _key: js.Any = js.native
-  var toJSArray: js.Any = js.native
-  var toJSObject: js.Any = js.native
-  var toJSValue: js.Any = js.native
   def get(fieldPath: FieldPath): js.Any = js.native
   def get(fieldPath: FieldPath, options: typings.firebaseFirestoreTypes.mod.SnapshotOptions): js.Any = js.native
 }

@@ -18,23 +18,23 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxPivotGridFieldChooserOptions extends WidgetOptions[dxPivotGridFieldChooser] {
-  /** Specifies whether the field chooser allows searching in the "All Fields" section. */
+  /** @name dxPivotGridFieldChooser.Options.allowSearch */
   var allowSearch: js.UndefOr[Boolean] = js.undefined
-  /** Specifies when to apply changes made in the widget to the PivotGrid. */
+  /** @name dxPivotGridFieldChooser.Options.applyChangesMode */
   var applyChangesMode: js.UndefOr[instantly | onDemand] = js.undefined
-  /** The data source of a PivotGrid widget. */
+  /** @name dxPivotGridFieldChooser.Options.dataSource */
   var dataSource: js.UndefOr[PivotGridDataSource] = js.undefined
-  /** Configures the header filter feature. */
+  /** @name dxPivotGridFieldChooser.Options.headerFilter */
   var headerFilter: js.UndefOr[AnonSearchTimeout] = js.undefined
-  /** Specifies the field chooser layout. */
+  /** @name dxPivotGridFieldChooser.Options.layout */
   var layout: js.UndefOr[`0` | `1` | `2`] = js.undefined
-  /** A function that is executed before the context menu is rendered. */
+  /** @name dxPivotGridFieldChooser.Options.onContextMenuPreparing */
   var onContextMenuPreparing: js.UndefOr[js.Function1[/* e */ AnonAreaComponent, _]] = js.undefined
-  /** Specifies a delay in milliseconds between when a user finishes typing in the field chooser's search panel, and when the search is executed. */
+  /** @name dxPivotGridFieldChooser.Options.searchTimeout */
   var searchTimeout: js.UndefOr[Double] = js.undefined
-  /** The widget's state. */
+  /** @name dxPivotGridFieldChooser.Options.state */
   var state: js.UndefOr[js.Any] = js.undefined
-  /** Strings that can be changed or localized in the PivotGridFieldChooser widget. */
+  /** @name dxPivotGridFieldChooser.Options.texts */
   var texts: js.UndefOr[AnonAllFields] = js.undefined
 }
 

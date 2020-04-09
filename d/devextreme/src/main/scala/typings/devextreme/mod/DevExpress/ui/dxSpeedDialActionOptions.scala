@@ -10,15 +10,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxSpeedDialActionOptions extends WidgetOptions[dxSpeedDialAction] {
-  /** Specifies the icon the FAB or speed dial action button displays. */
+  /** @name dxSpeedDialAction.Options.icon */
   var icon: js.UndefOr[String] = js.undefined
-  /** Allows you to reorder action buttons in the speed dial menu. */
+  /** @name dxSpeedDialAction.Options.index */
   var index: js.UndefOr[Double] = js.undefined
-  /** Specifies the text label displayed inside the FAB or near the speed dial action button. */
+  /** @name dxSpeedDialAction.Options.label */
   var label: js.UndefOr[String] = js.undefined
-  /** A function that is executed when the FAB or speed dial action button is clicked or tapped. */
+  /** @name dxSpeedDialAction.Options.onClick */
   var onClick: js.UndefOr[js.Function1[/* e */ AnonActionElement, _]] = js.undefined
-  /** A function that is executed when the widget's content is ready and each time the content is changed. */
+  /** @name dxSpeedDialAction.Options.onContentReady */
   @JSName("onContentReady")
   var onContentReady_dxSpeedDialActionOptions: js.UndefOr[js.Function1[/* e */ AnonActionElementComponent, _]] = js.undefined
 }

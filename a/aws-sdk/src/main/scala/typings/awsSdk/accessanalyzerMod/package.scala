@@ -8,6 +8,14 @@ package object accessanalyzerMod {
   type ActionList = js.Array[typings.awsSdk.accessanalyzerMod.String]
   type AnalyzedResourcesList = js.Array[typings.awsSdk.accessanalyzerMod.AnalyzedResourceSummary]
   type AnalyzerArn = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.ACTIVE
+    - typings.awsSdk.awsSdkStrings.CREATING
+    - typings.awsSdk.awsSdkStrings.DISABLED
+    - typings.awsSdk.awsSdkStrings.FAILED
+    - java.lang.String
+  */
+  type AnalyzerStatus = typings.awsSdk.accessanalyzerMod._AnalyzerStatus | java.lang.String
   type AnalyzersList = js.Array[typings.awsSdk.accessanalyzerMod.AnalyzerSummary]
   type ArchiveRulesList = js.Array[typings.awsSdk.accessanalyzerMod.ArchiveRuleSummary]
   type Boolean = scala.Boolean
@@ -40,6 +48,14 @@ package object accessanalyzerMod {
   */
   type OrderBy = typings.awsSdk.accessanalyzerMod._OrderBy | java.lang.String
   type PrincipalMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.accessanalyzerMod.String]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.AWS_SERVICE_ACCESS_DISABLED
+    - typings.awsSdk.awsSdkStrings.DELEGATED_ADMINISTRATOR_DEREGISTERED
+    - typings.awsSdk.awsSdkStrings.ORGANIZATION_DELETED
+    - typings.awsSdk.awsSdkStrings.SERVICE_LINKED_ROLE_CREATION_FAILED
+    - java.lang.String
+  */
+  type ReasonCode = typings.awsSdk.accessanalyzerMod._ReasonCode | java.lang.String
   type ResourceArn = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.AWSColonColonIAMColonColonRole
@@ -57,7 +73,12 @@ package object accessanalyzerMod {
   type TagsMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.accessanalyzerMod.String]
   type Timestamp = typings.std.Date
   type Token = java.lang.String
-  type Type = typings.awsSdk.awsSdkStrings.ACCOUNT | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.ACCOUNT
+    - typings.awsSdk.awsSdkStrings.ORGANIZATION
+    - java.lang.String
+  */
+  type Type = typings.awsSdk.accessanalyzerMod._Type | java.lang.String
   type ValueList = js.Array[typings.awsSdk.accessanalyzerMod.String]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.`2019-11-01`

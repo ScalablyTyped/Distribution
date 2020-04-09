@@ -1,7 +1,7 @@
 
 # Scala.js typings for plotly_dot_js
 
-Typings are for version 1.44
+Typings are for version 1.50
 
 ## Library description:
 The open source javascript graphing library that powers plotly

@@ -1,11 +1,11 @@
 package typings.hapiMimos.mod
 
-import typings.mimeDb.mod.DataStructure
+import typings.mimeDb.mod.MimeEntry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait MimosOptionsValue extends DataStructure {
+trait MimosOptionsValue extends MimeEntry {
   /** method with signature function(mime) when this mime type is found in the database, this function will run. This allows you make customizations to mime based on developer criteria. */
   var predicate: js.UndefOr[js.Function1[/* mime */ MimosOptionsValue, MimosOptionsValue]] = js.undefined
   /** specify the type value of result objects, defaults to key. See the example below for more clarification. */

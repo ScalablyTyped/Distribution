@@ -37,6 +37,8 @@ trait IFormController
   def $addControl(control: INgModelController): Unit = js.native
   @JSName("$commitViewValue")
   def $commitViewValue(): Unit = js.native
+  @JSName("$getControls")
+  def $getControls(): js.Array[INgModelController | IFormController] = js.native
   @JSName("$removeControl")
   def $removeControl(control: IFormController): Unit = js.native
   @JSName("$removeControl")

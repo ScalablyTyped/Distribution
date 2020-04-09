@@ -13,6 +13,7 @@ import typings.react.mod.HTMLAttributes
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
@@ -219,7 +220,7 @@ object StyleHTMLAttributes {
     onProgress: SyntheticEvent[T, Event_] => Unit = null,
     onRateChange: SyntheticEvent[T, Event_] => Unit = null,
     onReset: FormEvent[T] => Unit = null,
-    onScroll: UIEvent[T] => Unit = null,
+    onScroll: UIEvent[T, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[T, Event_] => Unit = null,
     onSeeking: SyntheticEvent[T, Event_] => Unit = null,
     onSelect: SyntheticEvent[T, Event_] => Unit = null,

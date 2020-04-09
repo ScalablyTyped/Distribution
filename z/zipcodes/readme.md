@@ -1,7 +1,7 @@
 
 # Scala.js typings for zipcodes
 
-Typings are for version 6.1
+Typings are for version 8.0
 
 ## Library description:
 Useful zipcode database with helper methods

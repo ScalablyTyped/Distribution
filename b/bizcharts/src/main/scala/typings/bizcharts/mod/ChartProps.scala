@@ -22,6 +22,7 @@ import typings.react.mod.KeyboardEvent
 import typings.react.mod.LegacyRef
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
@@ -158,7 +159,7 @@ object ChartProps {
     onProgress: SyntheticEvent[js.Object, Event_] => Unit = null,
     onRateChange: SyntheticEvent[js.Object, Event_] => Unit = null,
     onReset: FormEvent[js.Object] => Unit = null,
-    onScroll: UIEvent[js.Object] => Unit = null,
+    onScroll: UIEvent[js.Object, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[js.Object, Event_] => Unit = null,
     onSeeking: SyntheticEvent[js.Object, Event_] => Unit = null,
     onSelect: SyntheticEvent[js.Object, Event_] => Unit = null,

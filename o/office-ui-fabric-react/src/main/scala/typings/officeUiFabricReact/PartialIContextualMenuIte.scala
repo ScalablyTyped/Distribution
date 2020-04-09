@@ -71,6 +71,7 @@ import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
@@ -436,7 +437,7 @@ object PartialIContextualMenuIte {
     onProgress: SyntheticEvent[IContextualMenuItemProps, Event_] => Unit = null,
     onRateChange: SyntheticEvent[IContextualMenuItemProps, Event_] => Unit = null,
     onReset: FormEvent[IContextualMenuItemProps] => Unit = null,
-    onScroll: UIEvent[IContextualMenuItemProps] => Unit = null,
+    onScroll: UIEvent[IContextualMenuItemProps, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[IContextualMenuItemProps, Event_] => Unit = null,
     onSeeking: SyntheticEvent[IContextualMenuItemProps, Event_] => Unit = null,
     onSelect: SyntheticEvent[IContextualMenuItemProps, Event_] => Unit = null,

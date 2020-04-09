@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-instantsearch
 
-Typings are for version 5.2
+Typings are for version 6.3
 
 ## Library description:
 ⚡ Lightning-fast search for React and React Native apps, by Algolia

@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ApplicationInfo extends js.Object {
   /**
+    *  Indicates whether Application Insights can listen to CloudWatch events for the application resources, such as instance terminated, failed deployment, and others. 
+    */
+  var CWEMonitorEnabled: js.UndefOr[typings.awsSdk.applicationinsightsMod.CWEMonitorEnabled] = js.native
+  /**
     * The lifecycle of the application. 
     */
   var LifeCycle: js.UndefOr[typings.awsSdk.applicationinsightsMod.LifeCycle] = js.native
@@ -31,6 +35,7 @@ trait ApplicationInfo extends js.Object {
 object ApplicationInfo {
   @scala.inline
   def apply(
+    CWEMonitorEnabled: js.UndefOr[Boolean] = js.undefined,
     LifeCycle: LifeCycle = null,
     OpsCenterEnabled: js.UndefOr[Boolean] = js.undefined,
     OpsItemSNSTopicArn: OpsItemSNSTopicArn = null,
@@ -38,6 +43,7 @@ object ApplicationInfo {
     ResourceGroupName: ResourceGroupName = null
   ): ApplicationInfo = {
     val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(CWEMonitorEnabled)) __obj.updateDynamic("CWEMonitorEnabled")(CWEMonitorEnabled.asInstanceOf[js.Any])
     if (LifeCycle != null) __obj.updateDynamic("LifeCycle")(LifeCycle.asInstanceOf[js.Any])
     if (!js.isUndefined(OpsCenterEnabled)) __obj.updateDynamic("OpsCenterEnabled")(OpsCenterEnabled.asInstanceOf[js.Any])
     if (OpsItemSNSTopicArn != null) __obj.updateDynamic("OpsItemSNSTopicArn")(OpsItemSNSTopicArn.asInstanceOf[js.Any])

@@ -11,7 +11,7 @@ trait VisibilityConfig extends js.Object {
     */
   var CloudWatchMetricsEnabled: Boolean = js.native
   /**
-    * A friendly name of the CloudWatch metric. The name can contain only alphanumeric characters (A-Z, a-z, 0-9), with length from one to 128 characters. It can't contain whitespace or metric names reserved for AWS WAF, for example "All" and "Default_Action." You can't change a MetricName after you create a VisibilityConfig.
+    * A name of the CloudWatch metric. The name can contain only alphanumeric characters (A-Z, a-z, 0-9), with length from one to 128 characters. It can't contain whitespace or metric names reserved for AWS WAF, for example "All" and "Default_Action." You can't change a MetricName after you create a VisibilityConfig.
     */
   var MetricName: typings.awsSdk.wafv2Mod.MetricName = js.native
   /**

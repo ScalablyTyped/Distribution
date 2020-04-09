@@ -27,11 +27,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BaseSparklineOptions[T] extends BaseWidgetOptions[T] {
-  /** A function that is executed when a tooltip becomes hidden. */
+  /** @name BaseSparkline.Options.onTooltipHidden */
   var onTooltipHidden: js.UndefOr[js.Function1[/* e */ AnonElementDxElementModelAny[T], _]] = js.undefined
-  /** A function that is executed when a tooltip appears. */
+  /** @name BaseSparkline.Options.onTooltipShown */
   var onTooltipShown: js.UndefOr[js.Function1[/* e */ AnonElementDxElementModelAny[T], _]] = js.undefined
-  /** Configures the tooltip. */
+  /** @name BaseSparkline.Options.tooltip */
   @JSName("tooltip")
   var tooltip_BaseSparklineOptions: js.UndefOr[BaseSparklineTooltip] = js.undefined
 }

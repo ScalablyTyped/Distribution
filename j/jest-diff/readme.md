@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest-diff
 
-Typings are for version 25.1.0
+Typings are for version 25.2.6
 
 
 

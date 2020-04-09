@@ -21,9 +21,11 @@ import typings.react.mod.FormEventHandler
 import typings.react.mod.Key
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
+import typings.react.mod.LegacyRef
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
@@ -356,7 +358,7 @@ trait ReactCropperProps extends js.Object {
   var radioGroup: js.UndefOr[String] = js.undefined
   var readOnly: js.UndefOr[Boolean] = js.undefined
   var ready: js.UndefOr[js.Function1[/* event */ CustomEvent[_], Unit]] = js.undefined
-  var ref: js.UndefOr[String | (js.Function1[/* cropper */ Null | ReactCropper, _])] = js.undefined
+  var ref: js.UndefOr[LegacyRef[ReactCropper]] = js.undefined
   var rel: js.UndefOr[String] = js.undefined
   var required: js.UndefOr[Boolean] = js.undefined
   var resource: js.UndefOr[String] = js.undefined
@@ -650,7 +652,7 @@ object ReactCropperProps {
     onProgress: SyntheticEvent[HTMLImageElement, Event_] => Unit = null,
     onRateChange: SyntheticEvent[HTMLImageElement, Event_] => Unit = null,
     onReset: FormEvent[HTMLImageElement] => Unit = null,
-    onScroll: UIEvent[HTMLImageElement] => Unit = null,
+    onScroll: UIEvent[HTMLImageElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[HTMLImageElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[HTMLImageElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[HTMLImageElement, Event_] => Unit = null,

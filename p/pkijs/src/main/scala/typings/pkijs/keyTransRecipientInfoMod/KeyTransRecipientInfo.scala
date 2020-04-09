@@ -10,7 +10,7 @@ trait KeyTransRecipientInfo extends js.Object {
   var keyEncryptionAlgorithm: typings.pkijs.algorithmIdentifierMod.default
   /**
     * For some reasons we need to store recipient's certificate here
-    * 
+    *
     * @type {Certificate}
     * @memberOf KeyTransRecipientInfo
     */

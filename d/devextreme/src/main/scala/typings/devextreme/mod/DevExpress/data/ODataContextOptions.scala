@@ -7,23 +7,23 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ODataContextOptions extends js.Object {
-  /** Specifies a function that customizes the request before it is sent to the server. */
+  /** @name ODataContext.Options.beforeSend */
   var beforeSend: js.UndefOr[js.Function1[/* options */ AnonAsync, _]] = js.undefined
-  /** Specifies whether stores in the ODataContext serialize/parse date-time values. */
+  /** @name ODataContext.Options.deserializeDates */
   var deserializeDates: js.UndefOr[Boolean] = js.undefined
-  /** Specifies entity collections to be accessed. */
+  /** @name ODataContext.Options.entities */
   var entities: js.UndefOr[js.Any] = js.undefined
-  /** Specifies a function that is executed when the ODataContext throws an error. */
+  /** @name ODataContext.Options.errorHandler */
   var errorHandler: js.UndefOr[js.Function1[/* e */ AnonErrorDetails, _]] = js.undefined
-  /** Specifies whether to convert string values to lowercase in filter and search requests. Applies to the following operations: "startswith", "endswith", "contains", and "notcontains". */
+  /** @name ODataContext.Options.filterToLower */
   var filterToLower: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether data should be sent using JSONP. */
+  /** @name ODataContext.Options.jsonp */
   var jsonp: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the URL of an OData service. */
+  /** @name ODataContext.Options.url */
   var url: js.UndefOr[String] = js.undefined
-  /** Specifies the OData version. */
+  /** @name ODataContext.Options.version */
   var version: js.UndefOr[Double] = js.undefined
-  /** Specifies whether to send cookies, authorization headers, and client certificates in a cross-origin request. */
+  /** @name ODataContext.Options.withCredentials */
   var withCredentials: js.UndefOr[Boolean] = js.undefined
 }
 

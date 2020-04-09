@@ -2,7 +2,6 @@ package typings.mongodb.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.mongodb.AnonType
-import typings.mongodb.keyinandorxornumber
 import typings.mongodb.mongodbBooleans.`true`
 import typings.mongodb.mongodbNumbers.`-1`
 import typings.mongodb.mongodbNumbers.`1`
@@ -18,7 +17,7 @@ trait UpdateQuery[TSchema] extends js.Object {
   var $addToSet: js.UndefOr[SetFields[TSchema]] = js.undefined
   /** https://docs.mongodb.com/manual/reference/operator/update-bitwise/ */
   @JSName("$bit")
-  var $bit: js.UndefOr[StringDictionary[keyinandorxornumber]] = js.undefined
+  var $bit: js.UndefOr[StringDictionary[typings.mongodb.mongodbStrings.UpdateQuery with js.Any]] = js.undefined
   /** https://docs.mongodb.com/manual/reference/operator/update-field/ */
   @JSName("$currentDate")
   var $currentDate: js.UndefOr[OnlyFieldsOfType[TSchema, Date, `true` | AnonType]] = js.undefined
@@ -52,7 +51,7 @@ object UpdateQuery {
   @scala.inline
   def apply[TSchema](
     $addToSet: SetFields[TSchema] = null,
-    $bit: StringDictionary[keyinandorxornumber] = null,
+    $bit: StringDictionary[typings.mongodb.mongodbStrings.UpdateQuery with js.Any] = null,
     $currentDate: OnlyFieldsOfType[TSchema, Date, `true` | AnonType] = null,
     $inc: OnlyFieldsOfType[TSchema, js.UndefOr[scala.Double], js.UndefOr[scala.Double]] = null,
     $max: MatchKeysAndValues[TSchema] = null,

@@ -14,21 +14,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxToolbarItem extends CollectionWidgetItem {
-  /** Specifies a CSS class to be applied to the item. */
+  /** @name dxToolbarItem.cssClass */
   var cssClass: js.UndefOr[String] = js.undefined
-  /** Specifies when to display an item in the toolbar's overflow menu. */
+  /** @name dxToolbarItem.locateInMenu */
   var locateInMenu: js.UndefOr[always | auto | never] = js.undefined
-  /** Specifies a location for the item on the toolbar. */
+  /** @name dxToolbarItem.location */
   var location: js.UndefOr[after | before | center] = js.undefined
-  /** Specifies a template that should be used to render a menu item. */
+  /** @name dxToolbarItem.menuItemTemplate */
   var menuItemTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function0[String | Element | JQuery])
   ] = js.undefined
-  /** Configures the DevExtreme widget used as a toolbar item. */
+  /** @name dxToolbarItem.options */
   var options: js.UndefOr[js.Any] = js.undefined
-  /** Specifies when to display the text for the widget item. */
+  /** @name dxToolbarItem.showText */
   var showText: js.UndefOr[always | inMenu] = js.undefined
-  /** A widget that presents a toolbar item. To configure it, use the options object. */
+  /** @name dxToolbarItem.widget */
   var widget: js.UndefOr[
     typings.devextreme.devextremeStrings.dxAutocomplete | typings.devextreme.devextremeStrings.dxButton | typings.devextreme.devextremeStrings.dxCheckBox | typings.devextreme.devextremeStrings.dxDateBox | typings.devextreme.devextremeStrings.dxMenu | typings.devextreme.devextremeStrings.dxSelectBox | typings.devextreme.devextremeStrings.dxTabs | typings.devextreme.devextremeStrings.dxTextBox | typings.devextreme.devextremeStrings.dxButtonGroup | typings.devextreme.devextremeStrings.dxDropDownButton
   ] = js.undefined

@@ -20,7 +20,7 @@ class InventoryChange () extends js.Object {
     */
   var transfer: js.UndefOr[InventoryTransfer] = js.native
   /**
-    * Indicates how the inventory change was applied.
+    * Indicates how the inventory change was applied. See `InventoryChangeType` for all possible values.
     * See [InventoryChangeType](#type-inventorychangetype) for possible values.
     */
   var `type`: js.UndefOr[InventoryType] = js.native

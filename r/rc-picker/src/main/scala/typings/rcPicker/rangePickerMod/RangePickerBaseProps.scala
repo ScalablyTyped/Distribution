@@ -11,6 +11,8 @@ import typings.rcPicker.interfaceMod.PickerMode
 import typings.rcPicker.interfaceMod.RangeValue
 import typings.rcPicker.monthBodyMod.MonthCellRender
 import typings.rcPicker.pickerMod.PickerRefConfig
+import typings.rcPicker.rcPickerNumbers.`0`
+import typings.rcPicker.rcPickerNumbers.`1`
 import typings.rcPicker.rcPickerStrings.`additions text`
 import typings.rcPicker.rcPickerStrings.`inline`
 import typings.rcPicker.rcPickerStrings.additions
@@ -50,7 +52,6 @@ import typings.rcPicker.rcPickerStrings.text
 import typings.rcPicker.rcPickerStrings.time
 import typings.rcPicker.rcPickerStrings.tree
 import typings.rcPicker.rcPickerStrings.vertical
-import typings.rcTrigger.interfaceMod.AlignType
 import typings.react.mod.CSSProperties
 import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
@@ -71,6 +72,8 @@ import scala.scalajs.js.annotation._
 /* Inlined parent rc-picker.rc-picker/lib/RangePicker.RangePickerSharedProps<DateType> */
 /* Inlined parent rc-picker.rc-picker/lib/RangePicker.OmitPickerProps<rc-picker.rc-picker/lib/Picker.PickerBaseProps<DateType>> */
 trait RangePickerBaseProps[DateType] extends RangePickerProps[DateType] {
+  /** @private Internal control of active picker. Do not use since it's private usage */
+  var activePickerIndex: js.UndefOr[`0` | `1`] = js.undefined
   var allowClear: js.UndefOr[Boolean] = js.undefined
   var allowEmpty: js.UndefOr[js.Tuple2[Boolean, Boolean]] = js.undefined
   var `aria-activedescendant`: js.UndefOr[String] = js.undefined
@@ -135,7 +138,9 @@ trait RangePickerBaseProps[DateType] extends RangePickerProps[DateType] {
   var disabledTime: js.UndefOr[
     js.Function2[/* date */ EventValue[DateType], /* type */ start | end, DisabledTimes]
   ] = js.undefined
-  var dropdownAlign: js.UndefOr[AlignType] = js.undefined
+  var dropdownAlign: js.UndefOr[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AlignType */ js.Any
+  ] = js.undefined
   var dropdownClassName: js.UndefOr[String] = js.undefined
   var format: js.UndefOr[String | js.Array[String]] = js.undefined
   var generateConfig: GenerateConfig[DateType]
@@ -204,6 +209,7 @@ object RangePickerBaseProps {
     generateConfig: GenerateConfig[DateType],
     locale: Locale,
     picker: Exclude[PickerMode, date | time],
+    activePickerIndex: `0` | `1` = null,
     allowClear: js.UndefOr[Boolean] = js.undefined,
     allowEmpty: js.Tuple2[Boolean, Boolean] = null,
     `aria-activedescendant`: String = null,
@@ -266,7 +272,7 @@ object RangePickerBaseProps {
     disabled: Boolean | (js.Tuple2[Boolean, Boolean]) = null,
     disabledDate: /* date */ DateType => Boolean = null,
     disabledTime: (/* date */ EventValue[DateType], /* type */ start | end) => DisabledTimes = null,
-    dropdownAlign: AlignType = null,
+    dropdownAlign: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AlignType */ js.Any = null,
     dropdownClassName: String = null,
     format: String | js.Array[String] = null,
     getPopupContainer: /* node */ HTMLElement => HTMLElement = null,
@@ -310,6 +316,7 @@ object RangePickerBaseProps {
     value: RangeValue[DateType] = null
   ): RangePickerBaseProps[DateType] = {
     val __obj = js.Dynamic.literal(generateConfig = generateConfig.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], picker = picker.asInstanceOf[js.Any])
+    if (activePickerIndex != null) __obj.updateDynamic("activePickerIndex")(activePickerIndex.asInstanceOf[js.Any])
     if (!js.isUndefined(allowClear)) __obj.updateDynamic("allowClear")(allowClear.asInstanceOf[js.Any])
     if (allowEmpty != null) __obj.updateDynamic("allowEmpty")(allowEmpty.asInstanceOf[js.Any])
     if (`aria-activedescendant` != null) __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`.asInstanceOf[js.Any])

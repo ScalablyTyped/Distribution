@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Configures data aggregation for the series. */
+/** @name dxChartSeriesTypes.BubbleSeries.aggregation */
 trait dxChartSeriesTypesBubbleSeriesAggregation extends dxChartSeriesTypesCommonSeriesAggregation {
-  /** Specifies how to aggregate series points. */
+  /** @name dxChartSeriesTypes.BubbleSeries.aggregation.method */
   @JSName("method")
   var method_dxChartSeriesTypesBubbleSeriesAggregation: js.UndefOr[avg | custom] = js.undefined
 }

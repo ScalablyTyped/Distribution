@@ -54,41 +54,41 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BaseChartOptions[T] extends BaseWidgetOptions[T] {
-  /** Specifies adaptive layout options. */
+  /** @name BaseChart.Options.adaptiveLayout */
   var adaptiveLayout: js.UndefOr[BaseChartAdaptiveLayout] = js.undefined
-  /** Specifies animation options. */
+  /** @name BaseChart.Options.animation */
   var animation: js.UndefOr[AnonDuration | Boolean] = js.undefined
-  /** Customizes the appearance of an individual point label. */
+  /** @name BaseChart.Options.customizeLabel */
   var customizeLabel: js.UndefOr[js.Function1[/* pointInfo */ js.Any, dxChartSeriesTypesCommonSeriesLabel]] = js.undefined
-  /** Customizes the appearance of an individual series point. */
+  /** @name BaseChart.Options.customizePoint */
   var customizePoint: js.UndefOr[js.Function1[/* pointInfo */ js.Any, dxChartSeriesTypesCommonSeriesPoint]] = js.undefined
-  /** Binds the widget to data. */
+  /** @name BaseChart.Options.dataSource */
   var dataSource: js.UndefOr[js.Array[_] | DataSource | DataSourceOptions | String] = js.undefined
-  /** Specifies options of the legend. */
+  /** @name BaseChart.Options.legend */
   var legend: js.UndefOr[BaseChartLegend] = js.undefined
-  /** A function that is executed when all series are ready. */
+  /** @name BaseChart.Options.onDone */
   var onDone: js.UndefOr[js.Function1[/* e */ AnonComponentTElementDxElement[T], _]] = js.undefined
-  /** A function that is executed when a series point is clicked or tapped. */
+  /** @name BaseChart.Options.onPointClick */
   var onPointClick: js.UndefOr[(js.Function1[/* e */ AnonModelTarget[T], _]) | String] = js.undefined
-  /** A function that is executed after the pointer enters or leaves a series point. */
+  /** @name BaseChart.Options.onPointHoverChanged */
   var onPointHoverChanged: js.UndefOr[js.Function1[/* e */ AnonElementTarget, _]] = js.undefined
-  /** A function that is executed when a series point is selected or selection is canceled. */
+  /** @name BaseChart.Options.onPointSelectionChanged */
   var onPointSelectionChanged: js.UndefOr[js.Function1[/* e */ AnonElementTarget, _]] = js.undefined
-  /** A function that is executed when a tooltip becomes hidden. */
+  /** @name BaseChart.Options.onTooltipHidden */
   var onTooltipHidden: js.UndefOr[js.Function1[/* e */ AnonElementModelTarget[T], _]] = js.undefined
-  /** A function that is executed when a tooltip appears. */
+  /** @name BaseChart.Options.onTooltipShown */
   var onTooltipShown: js.UndefOr[js.Function1[/* e */ AnonElementModelTarget[T], _]] = js.undefined
-  /** Sets the palette to be used for colorizing series and their elements. */
+  /** @name BaseChart.Options.palette */
   var palette: js.UndefOr[
     js.Array[String] | Bright | Default | (`Harmony Light`) | Ocean | Pastel | Soft | (`Soft Pastel`) | Vintage | Violet | Carmine | (`Dark Moon`) | (`Dark Violet`) | (`Green Mist`) | (`Soft Blue`) | Material | Office
   ] = js.undefined
-  /** Specifies what to do with colors in the palette when their number is less than the number of series (in the Chart widget) or points in a series (in the PieChart widget). */
+  /** @name BaseChart.Options.paletteExtensionMode */
   var paletteExtensionMode: js.UndefOr[alternate | blend | extrapolate] = js.undefined
-  /** Specifies whether a single point or multiple points can be selected in the chart. */
+  /** @name BaseChart.Options.pointSelectionMode */
   var pointSelectionMode: js.UndefOr[multiple | single_] = js.undefined
-  /** Specifies options for series. */
+  /** @name BaseChart.Options.series */
   var series: js.UndefOr[js.Any | js.Array[_]] = js.undefined
-  /** Configures tooltips. */
+  /** @name BaseChart.Options.tooltip */
   @JSName("tooltip")
   var tooltip_BaseChartOptions: js.UndefOr[BaseChartTooltip] = js.undefined
 }

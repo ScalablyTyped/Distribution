@@ -16,13 +16,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxTreeListEditing extends GridBaseEditing {
-  /** Specifies whether a user can add new rows. It is called for each data row when defined as a function. */
+  /** @name dxTreeList.Options.editing.allowAdding */
   var allowAdding: js.UndefOr[Boolean | (js.Function1[/* options */ AnonComponentDxTreeList, Boolean])] = js.undefined
-  /** Specifies whether a user can delete rows. It is called for each data row when defined as a function. */
+  /** @name dxTreeList.Options.editing.allowDeleting */
   var allowDeleting: js.UndefOr[Boolean | (js.Function1[/* options */ AnonComponentDxTreeList, Boolean])] = js.undefined
-  /** Specifies whether a user can update rows. It is called for each data row when defined as a function */
+  /** @name dxTreeList.Options.editing.allowUpdating */
   var allowUpdating: js.UndefOr[Boolean | (js.Function1[/* options */ AnonComponentDxTreeList, Boolean])] = js.undefined
-  /** Contains options that specify texts for editing-related UI elements. */
+  /** @name dxTreeList.Options.editing.texts */
   @JSName("texts")
   var texts_dxTreeListEditing: js.UndefOr[dxTreeListEditingTexts] = js.undefined
 }

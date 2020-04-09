@@ -19,6 +19,7 @@ import typings.stellarSdk.orderbookCallBuilderMod.OrderbookCallBuilder
 import typings.stellarSdk.pathCallBuilderMod.PathCallBuilder
 import typings.stellarSdk.paymentCallBuilderMod.PaymentCallBuilder
 import typings.stellarSdk.serverMod.Server.Options
+import typings.stellarSdk.serverMod.Server.SubmitTransactionOptions
 import typings.stellarSdk.serverMod.Server.Timebounds
 import typings.stellarSdk.tradeAggregationCallBuilderMod.TradeAggregationCallBuilder
 import typings.stellarSdk.tradesCallBuilderMod.TradesCallBuilder
@@ -36,6 +37,7 @@ class Server_ protected () extends js.Object {
   val serverURL: URI = js.native
   def accounts(): AccountCallBuilder = js.native
   def assets(): AssetsCallBuilder = js.native
+  def checkMemoRequired(transaction: Transaction[Memo[MemoType], js.Array[Operation]]): js.Promise[Unit] = js.native
   def effects(): EffectCallBuilder = js.native
   def feeStats(): js.Promise[FeeStatsResponse] = js.native
   def fetchBaseFee(): js.Promise[Double] = js.native
@@ -54,6 +56,7 @@ class Server_ protected () extends js.Object {
   def strictSendPaths(sourceAsset: Asset, sourceAmount: String, destination: String): PathCallBuilder = js.native
   def strictSendPaths(sourceAsset: Asset, sourceAmount: String, destination: js.Array[Asset]): PathCallBuilder = js.native
   def submitTransaction(transaction: Transaction[Memo[MemoType], js.Array[Operation]]): js.Promise[SubmitTransactionResponse] = js.native
+  def submitTransaction(transaction: Transaction[Memo[MemoType], js.Array[Operation]], opts: SubmitTransactionOptions): js.Promise[SubmitTransactionResponse] = js.native
   def tradeAggregation(
     base: Asset,
     counter: Asset,

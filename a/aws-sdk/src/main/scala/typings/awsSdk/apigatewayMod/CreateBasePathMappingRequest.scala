@@ -19,7 +19,7 @@ trait CreateBasePathMappingRequest extends js.Object {
     */
   var restApiId: String = js.native
   /**
-    * The name of the API's stage that you want to use for this mapping. Specify '(none)' if you do not want callers to explicitly specify the stage name after any base path name.
+    * The name of the API's stage that you want to use for this mapping. Specify '(none)' if you want callers to explicitly specify the stage name after any base path name.
     */
   var stage: js.UndefOr[String] = js.native
 }

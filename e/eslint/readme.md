@@ -1,7 +1,7 @@
 
 # Scala.js typings for eslint
 
-Typings are for version 6.1
+Typings are for version 6.8
 
 ## Library description:
 An AST-based pattern checker for JavaScript.

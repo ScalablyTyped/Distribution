@@ -1,15 +1,13 @@
 package typings.tabulatorTables.Tabulator
 
-import typings.tabulatorTables.AnonColumnCalcs
-import typings.tabulatorTables.tabulatorTablesStrings.active
 import typings.tabulatorTables.tabulatorTablesStrings.copy
+import typings.tabulatorTables.tabulatorTablesStrings.html
 import typings.tabulatorTables.tabulatorTablesStrings.insert
 import typings.tabulatorTables.tabulatorTablesStrings.paste
+import typings.tabulatorTables.tabulatorTablesStrings.plain
 import typings.tabulatorTables.tabulatorTablesStrings.replace
-import typings.tabulatorTables.tabulatorTablesStrings.selected
 import typings.tabulatorTables.tabulatorTablesStrings.table
 import typings.tabulatorTables.tabulatorTablesStrings.update
-import typings.tabulatorTables.tabulatorTablesStrings.visible
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,20 +23,13 @@ trait OptionsClipboard extends js.Object {
   var clipboardCopied: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** By default Tabulator includes column headers, row groups and column calculations in the clipboard output.
     You can choose to remove column headers groups, row groups or column calculations from the output data by setting the values in the clipboardCopyConfig option in the table definition: */
-  var clipboardCopyConfig: js.UndefOr[AnonColumnCalcs | Boolean] = js.undefined
-  /**  The copy formatter is used to take the row data provided by the selector and turn it into a text string for the clipboard.
-    There is one built in copy formatter called table, if you have extended the clipboard module and want to change the default you can use the clipboardCopyFormatter property. you can also pass in a formatting function directly into this property.*/
-  var clipboardCopyFormatter: js.UndefOr[table | (js.Function1[/* rowData */ js.Array[_], String])] = js.undefined
+  var clipboardCopyConfig: js.UndefOr[AddditionalExportOptions | Boolean] = js.undefined
+  /**You can alter the finished output to the clipboard using the clipboardCopyFormatter callback. The callback function receives two arguments, the first is a string representing the type of content to be formatted (either "plain" or "html" depending on the type of data entering the clipboard). The second argument is the string that is about to be insered into the clipboard. The function and should return a string that will be inserted into the clipboard */
+  var clipboardCopyFormatter: js.UndefOr[table | (js.Function2[/* type */ plain | html, /* output */ String, String])] = js.undefined
   /** By default Tabulator will include the column header titles in any clipboard data, this can be turned off by passing a value of false to the clipboardCopyHeader property: */
   var clipboardCopyHeader: js.UndefOr[Boolean] = js.undefined
-  /** * The copy selector is a function that is used to choose which data is copied into the clipboard. Tabulator comes with a few different selectors built in:
-    active - Copy all table data currently displayed in the table to the clipboard (default)
-    table - Copy all table data to the clipboard, including data that is currently filtered out
-    selected - Copy the currently selected rows to the clipboard, including data that is currently filtered out
-    Tabulator will try to use the best selector to match your table setup. If any text is selected on the table, then it will be that text which is copied. If the table has selectable rows enabled, the it will be the currently selected rows copied to the clipboard in the order in which they were selected. Otherwise the currently visible data in the table will be copied.
-    These selectors can also be used when programatically triggering a copy event. in this case if the selector is not specified it will default to the value set in the clipboardCopySelector property (which is active by default).
-    */
-  var clipboardCopySelector: js.UndefOr[active | table | selected | visible] = js.undefined
+  /**The clipboardCopyRowRange option takes a Row Range Lookup value and allows you to choose which rows are included in the clipboard output: */
+  var clipboardCopyRowRange: js.UndefOr[RowRangeLookup] = js.undefined
   /** By default Tabulator will copy some of the tables styling along with the data to give a better visual appearance when pasted into other documents.
     If you want to only copy the unstyled data then you should set the clipboardCopyStyled option to false in the table options object:  */
   var clipboardCopyStyled: js.UndefOr[Boolean] = js.undefined
@@ -63,10 +54,10 @@ object OptionsClipboard {
   def apply(
     clipboard: Boolean | copy | paste = null,
     clipboardCopied: () => Unit = null,
-    clipboardCopyConfig: AnonColumnCalcs | Boolean = null,
-    clipboardCopyFormatter: table | (js.Function1[/* rowData */ js.Array[_], String]) = null,
+    clipboardCopyConfig: AddditionalExportOptions | Boolean = null,
+    clipboardCopyFormatter: table | (js.Function2[/* type */ plain | html, /* output */ String, String]) = null,
     clipboardCopyHeader: js.UndefOr[Boolean] = js.undefined,
-    clipboardCopySelector: active | table | selected | visible = null,
+    clipboardCopyRowRange: RowRangeLookup = null,
     clipboardCopyStyled: js.UndefOr[Boolean] = js.undefined,
     clipboardPasteAction: insert | update | replace = null,
     clipboardPasteError: () => Unit = null,
@@ -79,7 +70,7 @@ object OptionsClipboard {
     if (clipboardCopyConfig != null) __obj.updateDynamic("clipboardCopyConfig")(clipboardCopyConfig.asInstanceOf[js.Any])
     if (clipboardCopyFormatter != null) __obj.updateDynamic("clipboardCopyFormatter")(clipboardCopyFormatter.asInstanceOf[js.Any])
     if (!js.isUndefined(clipboardCopyHeader)) __obj.updateDynamic("clipboardCopyHeader")(clipboardCopyHeader.asInstanceOf[js.Any])
-    if (clipboardCopySelector != null) __obj.updateDynamic("clipboardCopySelector")(clipboardCopySelector.asInstanceOf[js.Any])
+    if (clipboardCopyRowRange != null) __obj.updateDynamic("clipboardCopyRowRange")(clipboardCopyRowRange.asInstanceOf[js.Any])
     if (!js.isUndefined(clipboardCopyStyled)) __obj.updateDynamic("clipboardCopyStyled")(clipboardCopyStyled.asInstanceOf[js.Any])
     if (clipboardPasteAction != null) __obj.updateDynamic("clipboardPasteAction")(clipboardPasteAction.asInstanceOf[js.Any])
     if (clipboardPasteError != null) __obj.updateDynamic("clipboardPasteError")(js.Any.fromFunction0(clipboardPasteError))

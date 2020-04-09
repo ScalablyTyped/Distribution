@@ -9,8 +9,8 @@ import typings.firebaseFirestore.documentMod.Document
 import typings.firebaseFirestore.eventManagerMod.ListenOptions
 import typings.firebaseFirestore.eventManagerMod.Observer
 import typings.firebaseFirestore.eventManagerMod.QueryListener
-import typings.firebaseFirestore.lruGarbageCollectorMod.LruParams
 import typings.firebaseFirestore.mutationMod.Mutation
+import typings.firebaseFirestore.persistenceMod.PersistenceProvider
 import typings.firebaseFirestore.platformMod.Platform
 import typings.firebaseFirestore.queryMod.Query
 import typings.firebaseFirestore.transactionMod.Transaction
@@ -56,6 +56,7 @@ object firestoreClientMod extends js.Object {
     var credentials: js.Any = js.native
     var databaseInfo: js.Any = js.native
     var eventMgr: js.Any = js.native
+    var gcScheduler: js.Any = js.native
     var handleCredentialChange: js.Any = js.native
     /**
       * Initializes persistent storage, attempting to use IndexedDB if
@@ -65,7 +66,10 @@ object firestoreClientMod extends js.Object {
       * platform can't possibly support our implementation then this method rejects
       * the persistenceResult and falls back on memory-only persistence.
       *
+      * @param persistenceProvider The provider that provides either IndexedDb or
+      *     memory-backed persistence
       * @param persistenceSettings Settings object to configure offline persistence
+      * @param user The initial user
       * @param persistenceResult A deferred result indicating the user-visible
       *     result of enabling offline persistence. This method will reject this if
       *     IndexedDB fails to start for any reason. If usePersistence is false
@@ -82,23 +86,10 @@ object firestoreClientMod extends js.Object {
       */
     var initializeRest: js.Any = js.native
     var localStore: js.Any = js.native
-    var lruScheduler: js.UndefOr[js.Any] = js.native
     var persistence: js.Any = js.native
     var platform: js.Any = js.native
     var remoteStore: js.Any = js.native
     var sharedClientState: js.Any = js.native
-    /**
-      * Starts IndexedDB-based persistence.
-      *
-      * @returns A promise indicating success or failure.
-      */
-    var startIndexedDbPersistence: js.Any = js.native
-    /**
-      * Starts Memory-backed persistence. In practice this cannot fail.
-      *
-      * @returns A promise that will successfully resolve.
-      */
-    var startMemoryPersistence: js.Any = js.native
     var syncEngine: js.Any = js.native
     /**
       * Checks that the client has not been terminated. Ensures that other methods on
@@ -144,6 +135,8 @@ object firestoreClientMod extends js.Object {
       * fallback succeeds we signal success to the async queue even though the
       * start() itself signals failure.
       *
+      * @param persistenceProvider Provider that returns the persistence
+      *    implementation.
       * @param persistenceSettings Settings object to configure offline
       *     persistence.
       * @returns A deferred result indicating the user-visible result of enabling
@@ -151,7 +144,7 @@ object firestoreClientMod extends js.Object {
       *     start for any reason. If usePersistence is false this is
       *     unconditionally resolved.
       */
-    def start(persistenceSettings: InternalPersistenceSettings): js.Promise[Unit] = js.native
+    def start(persistenceProvider: PersistenceProvider, persistenceSettings: PersistenceSettings): js.Promise[Unit] = js.native
     def terminate(): js.Promise[Unit] = js.native
     def transaction[T](updateFunction: js.Function1[/* transaction */ Transaction, js.Promise[T]]): js.Promise[T] = js.native
     def unlisten(listener: QueryListener): Unit = js.native
@@ -164,22 +157,11 @@ object firestoreClientMod extends js.Object {
     def write(mutations: js.Array[Mutation]): js.Promise[Unit] = js.native
   }
   
-  @js.native
-  class IndexedDbPersistenceSettings protected () extends InternalPersistenceSettings {
-    def this(cacheSizeBytes: Double, synchronizeTabs: Boolean) = this()
-    val cacheSizeBytes: Double = js.native
-    val synchronizeTabs: Boolean = js.native
-    def lruParams(): LruParams = js.native
-  }
-  
   /* Rewritten from type alias, can be one of: 
-    - typings.firebaseFirestore.firestoreClientMod.IndexedDbPersistenceSettings
-    - typings.firebaseFirestore.firestoreClientMod.MemoryPersistenceSettings
+    - typings.firebaseFirestore.AnonDurable
+    - typings.firebaseFirestore.AnonCacheSizeBytes
   */
-  trait InternalPersistenceSettings extends js.Object
-  
-  @js.native
-  class MemoryPersistenceSettings () extends InternalPersistenceSettings
+  trait PersistenceSettings extends js.Object
   
 }
 

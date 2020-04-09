@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@carbon/pictograms-react", "SingleSignOn")
 @js.native
-object SingleSignOn extends TopLevel[CarbonPictogram]
+object SingleSignOn extends TopLevel[CarbonPictogramType]
 

@@ -3,6 +3,7 @@ package typings.cathoQuantum
 import typings.cathoQuantum.cardMod.Props
 import typings.cathoQuantum.checkboxMod.CheckboxButtonProps
 import typings.cathoQuantum.iconButtonMod.IconButtonProps
+import typings.cathoQuantum.modalMod.StaticProps
 import typings.react.mod.ComponentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -77,6 +78,14 @@ trait cathoQuantumProps {
   @scala.inline
   def ModalProps: typings.cathoQuantum.modalMod.ModalProps.type = typings.cathoQuantum.modalMod.ModalProps
   type ModalProps = typings.cathoQuantum.modalMod.ModalProps
+  @scala.inline
+  def ModalContentProps: StaticProps.type = typings.cathoQuantum.modalMod.StaticProps
+  type ModalContentProps = StaticProps
+  type ModalFooterProps[P] = ComponentType[P]
+  @scala.inline
+  def ModalHeaderProps: StaticProps.type = typings.cathoQuantum.modalMod.StaticProps
+  type ModalHeaderProps = StaticProps
+  type ModalHeaderTextProps[P] = ComponentType[P]
   @scala.inline
   def PaginationProps: typings.cathoQuantum.paginationMod.PaginationProps.type = typings.cathoQuantum.paginationMod.PaginationProps
   type PaginationProps = typings.cathoQuantum.paginationMod.PaginationProps

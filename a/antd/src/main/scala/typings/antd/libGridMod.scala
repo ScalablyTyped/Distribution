@@ -1,6 +1,7 @@
 package typings.antd
 
 import typings.antd.gridRowMod.default
+import typings.antd.responsiveObserveMod.ScreenMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,6 +20,11 @@ object libGridMod extends js.Object {
   @js.native
   object Row extends js.Object {
     var defaultProps: AnonGutter = js.native
+  }
+  
+  @js.native
+  object default extends js.Object {
+    var useBreakpoint: js.Function0[ScreenMap] = js.native
   }
   
 }

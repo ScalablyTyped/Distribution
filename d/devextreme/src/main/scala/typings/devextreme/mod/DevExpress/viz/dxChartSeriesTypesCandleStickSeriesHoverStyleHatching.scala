@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Configures hatching that applies when a user points to the series. */
+/** @name dxChartSeriesTypes.CandleStickSeries.hoverStyle.hatching */
 trait dxChartSeriesTypesCandleStickSeriesHoverStyleHatching extends dxChartSeriesTypesCommonSeriesHoverStyleHatching
 
 object dxChartSeriesTypesCandleStickSeriesHoverStyleHatching {

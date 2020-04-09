@@ -18,6 +18,7 @@ import typings.plotlyJs.plotlyJsStrings.`elastic-out`
 import typings.plotlyJs.plotlyJsStrings.`exp-in-out`
 import typings.plotlyJs.plotlyJsStrings.`exp-in`
 import typings.plotlyJs.plotlyJsStrings.`exp-out`
+import typings.plotlyJs.plotlyJsStrings.`layout first`
 import typings.plotlyJs.plotlyJsStrings.`linear-in-out`
 import typings.plotlyJs.plotlyJsStrings.`linear-in`
 import typings.plotlyJs.plotlyJsStrings.`linear-out`
@@ -27,6 +28,7 @@ import typings.plotlyJs.plotlyJsStrings.`quad-out`
 import typings.plotlyJs.plotlyJsStrings.`sin-in-out`
 import typings.plotlyJs.plotlyJsStrings.`sin-in`
 import typings.plotlyJs.plotlyJsStrings.`sin-out`
+import typings.plotlyJs.plotlyJsStrings.`traces first`
 import typings.plotlyJs.plotlyJsStrings.back
 import typings.plotlyJs.plotlyJsStrings.bounce
 import typings.plotlyJs.plotlyJsStrings.circle
@@ -49,16 +51,22 @@ trait Transition extends js.Object {
   	 * Sets the easing function of the slider transition
   	 */
   var easing: linear | quad | cubic | sin | exp | circle | elastic | back | bounce | `linear-in` | `quad-in` | `cubic-in` | `sin-in` | `exp-in` | `circle-in` | `elastic-in` | `back-in` | `bounce-in` | `linear-out` | `quad-out` | `cubic-out` | `sin-out` | `exp-out` | `circle-out` | `elastic-out` | `back-out` | `bounce-out` | `linear-in-out` | `quad-in-out` | `cubic-in-out` | `sin-in-out` | `exp-in-out` | `circle-in-out` | `elastic-in-out` | `back-in-out` | `bounce-in-out`
+  /**
+  	 * Determines whether the figure's layout or traces smoothly transitions during updates that make both traces
+  	 * and layout change. Default is "layout first".
+  	 */
+  var ordering: js.UndefOr[(`layout first`) | (`traces first`)] = js.undefined
 }
 
 object Transition {
   @scala.inline
   def apply(
     duration: Double,
-    easing: linear | quad | cubic | sin | exp | circle | elastic | back | bounce | `linear-in` | `quad-in` | `cubic-in` | `sin-in` | `exp-in` | `circle-in` | `elastic-in` | `back-in` | `bounce-in` | `linear-out` | `quad-out` | `cubic-out` | `sin-out` | `exp-out` | `circle-out` | `elastic-out` | `back-out` | `bounce-out` | `linear-in-out` | `quad-in-out` | `cubic-in-out` | `sin-in-out` | `exp-in-out` | `circle-in-out` | `elastic-in-out` | `back-in-out` | `bounce-in-out`
+    easing: linear | quad | cubic | sin | exp | circle | elastic | back | bounce | `linear-in` | `quad-in` | `cubic-in` | `sin-in` | `exp-in` | `circle-in` | `elastic-in` | `back-in` | `bounce-in` | `linear-out` | `quad-out` | `cubic-out` | `sin-out` | `exp-out` | `circle-out` | `elastic-out` | `back-out` | `bounce-out` | `linear-in-out` | `quad-in-out` | `cubic-in-out` | `sin-in-out` | `exp-in-out` | `circle-in-out` | `elastic-in-out` | `back-in-out` | `bounce-in-out`,
+    ordering: (`layout first`) | (`traces first`) = null
   ): Transition = {
     val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], easing = easing.asInstanceOf[js.Any])
-  
+    if (ordering != null) __obj.updateDynamic("ordering")(ordering.asInstanceOf[js.Any])
     __obj.asInstanceOf[Transition]
   }
 }

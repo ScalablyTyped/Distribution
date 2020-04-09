@@ -11,6 +11,9 @@ trait GetKeyArgs extends js.Object {
     * The ID of the API Key to look up.
     */
   val id: String = js.native
+  /**
+    * A mapping of tags for the resource.
+    */
   val tags: js.UndefOr[StringDictionary[js.Any]] = js.native
 }
 

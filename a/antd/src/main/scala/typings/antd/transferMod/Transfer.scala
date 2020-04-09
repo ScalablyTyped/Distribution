@@ -1,11 +1,10 @@
 package typings.antd.transferMod
 
-import typings.antd.AnonItemsUnitNotFoundContent
+import typings.antd.AnonItemsUnit
 import typings.antd.AnonLeftDataSource
-import typings.antd.AnonTitles
+import typings.antd.AnonNotFoundContent
 import typings.antd.antdStrings.sourceSelectedKeys
 import typings.antd.antdStrings.targetSelectedKeys
-import typings.antd.collapseCollapseMod.ExpandIconPosition
 import typings.react.mod.CSSProperties
 import typings.react.mod.ChangeEvent
 import typings.react.mod.Component
@@ -26,26 +25,26 @@ trait Transfer
   def getLocale(
     transferLocale: TransferLocale,
     renderEmpty: js.Function1[/* componentName */ js.UndefOr[String], ReactNode]
-  ): AnonTitles | AnonItemsUnitNotFoundContent = js.native
+  ): AnonItemsUnit | AnonNotFoundContent = js.native
   def getSelectedKeysName(direction: TransferDirection): sourceSelectedKeys | targetSelectedKeys = js.native
   def getTitles(transferLocale: TransferLocale): js.Array[String] = js.native
-  def handleClear(direction: ExpandIconPosition): Unit = js.native
-  def handleFilter(direction: ExpandIconPosition, e: ChangeEvent[HTMLInputElement]): Unit = js.native
+  def handleClear(direction: TransferDirection): Unit = js.native
+  def handleFilter(direction: TransferDirection, e: ChangeEvent[HTMLInputElement]): Unit = js.native
   def handleLeftClear(): Unit = js.native
   def handleLeftFilter(e: ChangeEvent[HTMLInputElement]): Unit = js.native
   def handleLeftScroll(e: SyntheticEvent[HTMLUListElement, Event_]): Unit = js.native
-  def handleListStyle(listStyle: js.Function1[/* style */ ListStyle, CSSProperties], direction: ExpandIconPosition): CSSProperties = js.native
-  def handleListStyle(listStyle: CSSProperties, direction: ExpandIconPosition): CSSProperties = js.native
+  def handleListStyle(listStyle: js.Function1[/* style */ ListStyle, CSSProperties], direction: TransferDirection): CSSProperties = js.native
+  def handleListStyle(listStyle: CSSProperties, direction: TransferDirection): CSSProperties = js.native
   def handleRightClear(): Unit = js.native
   def handleRightFilter(e: ChangeEvent[HTMLInputElement]): Unit = js.native
   def handleRightScroll(e: SyntheticEvent[HTMLUListElement, Event_]): Unit = js.native
-  def handleScroll(direction: ExpandIconPosition, e: SyntheticEvent[HTMLUListElement, Event_]): Unit = js.native
+  def handleScroll(direction: TransferDirection, e: SyntheticEvent[HTMLUListElement, Event_]): Unit = js.native
   def handleSelectChange(direction: TransferDirection, holder: js.Array[String]): Unit = js.native
-  def moveTo(direction: ExpandIconPosition): Unit = js.native
+  def moveTo(direction: TransferDirection): Unit = js.native
   def moveToLeft(): Unit = js.native
   def moveToRight(): Unit = js.native
-  def onItemSelect(direction: ExpandIconPosition, selectedKey: String, checked: Boolean): Unit = js.native
-  def onItemSelectAll(direction: ExpandIconPosition, selectedKeys: js.Array[String], checkAll: Boolean): Unit = js.native
+  def onItemSelect(direction: TransferDirection, selectedKey: String, checked: Boolean): Unit = js.native
+  def onItemSelectAll(direction: TransferDirection, selectedKeys: js.Array[String], checkAll: Boolean): Unit = js.native
   def onLeftItemSelect(selectedKey: String, checked: Boolean): Unit = js.native
   def onLeftItemSelectAll(selectedKeys: js.Array[String], checkAll: Boolean): Unit = js.native
   def onRightItemSelect(selectedKey: String, checked: Boolean): Unit = js.native

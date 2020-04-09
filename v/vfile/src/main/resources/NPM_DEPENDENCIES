@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "vfile" : "4.0.3"
+      "vfile" : "4.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "vfile" : "4.0.3"
+      "vfile" : "4.1.0"
     }
   ],
   "compile-devDependencies" : [

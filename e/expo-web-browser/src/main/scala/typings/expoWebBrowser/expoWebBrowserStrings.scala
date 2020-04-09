@@ -1,18 +1,19 @@
 package typings.expoWebBrowser
 
+import typings.expoWebBrowser.webBrowserTypesMod.WebBrowserResultType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object expoWebBrowserStrings {
   @js.native
-  sealed trait cancel extends js.Object
+  sealed trait cancel extends WebBrowserResultType
   
   @js.native
-  sealed trait dismiss extends js.Object
+  sealed trait dismiss extends WebBrowserResultType
   
   @js.native
-  sealed trait opened extends js.Object
+  sealed trait opened extends WebBrowserResultType
   
   @js.native
   sealed trait success extends js.Object

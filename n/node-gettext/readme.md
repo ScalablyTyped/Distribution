@@ -1,7 +1,7 @@
 
 # Scala.js typings for node-gettext
 
-Typings are for version 2.0
+Typings are for version 3.0
 
 ## Library description:
 A JavaScript implementation of gettext, a localization framework

@@ -21,7 +21,7 @@ object LinearTickOptions {
     backdropPaddingX: Int | Double = null,
     backdropPaddingY: Int | Double = null,
     beginAtZero: js.UndefOr[Boolean] = js.undefined,
-    callback: (/* value */ js.Any, /* index */ js.Any, /* values */ js.Any) => String | Double = null,
+    callback: (/* value */ Double | String, /* index */ Double, /* values */ js.Array[Double | String]) => js.UndefOr[String | Double | Null] = null,
     display: js.UndefOr[Boolean] = js.undefined,
     fontColor: ChartColor = null,
     fontFamily: String = null,

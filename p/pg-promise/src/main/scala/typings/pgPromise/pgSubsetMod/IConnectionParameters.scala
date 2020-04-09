@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // See:
-// 1) https://github.com/brianc/node-postgres/blob/master/lib/defaults.js
+// 1) https://github.com/brianc/node-postgres/blob/master/packages/pg/lib/defaults.js
 // 2) https://github.com/brianc/node-pg-pool
 trait IConnectionParameters[C /* <: IClient */] extends js.Object {
   var Client: js.UndefOr[Instantiable1[/* config */ String | IConnectionParameters[IClient], C]] = js.undefined

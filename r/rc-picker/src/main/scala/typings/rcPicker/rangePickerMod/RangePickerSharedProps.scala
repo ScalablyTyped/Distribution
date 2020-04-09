@@ -4,6 +4,8 @@ import typings.rcPicker.interfaceMod.DisabledTimes
 import typings.rcPicker.interfaceMod.EventValue
 import typings.rcPicker.interfaceMod.PanelMode
 import typings.rcPicker.interfaceMod.RangeValue
+import typings.rcPicker.rcPickerNumbers.`0`
+import typings.rcPicker.rcPickerNumbers.`1`
 import typings.rcPicker.rcPickerStrings.end
 import typings.rcPicker.rcPickerStrings.ltr
 import typings.rcPicker.rcPickerStrings.rtl
@@ -19,6 +21,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RangePickerSharedProps[DateType] extends js.Object {
+  /** @private Internal control of active picker. Do not use since it's private usage */
+  var activePickerIndex: js.UndefOr[`0` | `1`] = js.undefined
   var allowEmpty: js.UndefOr[js.Tuple2[Boolean, Boolean]] = js.undefined
   var defaultPickerValue: js.UndefOr[js.Tuple2[DateType, DateType]] = js.undefined
   var defaultValue: js.UndefOr[RangeValue[DateType]] = js.undefined
@@ -62,6 +66,7 @@ trait RangePickerSharedProps[DateType] extends js.Object {
 object RangePickerSharedProps {
   @scala.inline
   def apply[DateType](
+    activePickerIndex: `0` | `1` = null,
     allowEmpty: js.Tuple2[Boolean, Boolean] = null,
     defaultPickerValue: js.Tuple2[DateType, DateType] = null,
     defaultValue: RangeValue[DateType] = null,
@@ -84,6 +89,7 @@ object RangePickerSharedProps {
     value: RangeValue[DateType] = null
   ): RangePickerSharedProps[DateType] = {
     val __obj = js.Dynamic.literal()
+    if (activePickerIndex != null) __obj.updateDynamic("activePickerIndex")(activePickerIndex.asInstanceOf[js.Any])
     if (allowEmpty != null) __obj.updateDynamic("allowEmpty")(allowEmpty.asInstanceOf[js.Any])
     if (defaultPickerValue != null) __obj.updateDynamic("defaultPickerValue")(defaultPickerValue.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])

@@ -20,7 +20,7 @@ trait PolicyState extends js.Object {
     */
   val name: js.UndefOr[Input[String]] = js.native
   /**
-    * The policy document.
+    * The policy document. This is a JSON formatted string. Use the [IoT Developer Guide](http://docs.aws.amazon.com/iot/latest/developerguide/iot-policies.html) for more information on IoT Policies.
     */
   val policy: js.UndefOr[Input[String]] = js.native
 }

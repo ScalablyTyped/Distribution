@@ -21,6 +21,8 @@ trait MockAdapter extends js.Object {
   var onHead_Original: RequestMatcherFunc = js.native
   @JSName("onList")
   var onList_Original: RequestMatcherFunc = js.native
+  @JSName("onOptions")
+  var onOptions_Original: RequestMatcherFunc = js.native
   @JSName("onPatch")
   var onPatch_Original: RequestMatcherFunc = js.native
   @JSName("onPost")
@@ -83,6 +85,17 @@ trait MockAdapter extends js.Object {
   def onList(matcher: RegExp, body: String, headers: HeadersMatcher): RequestHandler = js.native
   def onList(matcher: RegExp, body: RequestDataMatcher): RequestHandler = js.native
   def onList(matcher: RegExp, body: RequestDataMatcher, headers: HeadersMatcher): RequestHandler = js.native
+  def onOptions(): RequestHandler = js.native
+  def onOptions(matcher: String): RequestHandler = js.native
+  def onOptions(matcher: String, body: String): RequestHandler = js.native
+  def onOptions(matcher: String, body: String, headers: HeadersMatcher): RequestHandler = js.native
+  def onOptions(matcher: String, body: RequestDataMatcher): RequestHandler = js.native
+  def onOptions(matcher: String, body: RequestDataMatcher, headers: HeadersMatcher): RequestHandler = js.native
+  def onOptions(matcher: RegExp): RequestHandler = js.native
+  def onOptions(matcher: RegExp, body: String): RequestHandler = js.native
+  def onOptions(matcher: RegExp, body: String, headers: HeadersMatcher): RequestHandler = js.native
+  def onOptions(matcher: RegExp, body: RequestDataMatcher): RequestHandler = js.native
+  def onOptions(matcher: RegExp, body: RequestDataMatcher, headers: HeadersMatcher): RequestHandler = js.native
   def onPatch(): RequestHandler = js.native
   def onPatch(matcher: String): RequestHandler = js.native
   def onPatch(matcher: String, body: String): RequestHandler = js.native

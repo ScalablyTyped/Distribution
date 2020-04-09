@@ -17,7 +17,7 @@ import typings.grommet.AnonDisabledExtend
 import typings.grommet.AnonEdge
 import typings.grommet.AnonExtend
 import typings.grommet.AnonExtendFont
-import typings.grommet.AnonFontWeight
+import typings.grommet.AnonExtendFontWeight
 import typings.grommet.AnonGap
 import typings.grommet.AnonGroupEnd
 import typings.grommet.AnonHeading
@@ -32,6 +32,7 @@ import typings.grommet.AnonResponsiveBreakpoint
 import typings.grommet.AnonRow
 import typings.grommet.AnonSizeAnonDictxLarge
 import typings.grommet.AnonSmall
+import typings.grommet.AnonText
 import typings.grommet.AnonThumb
 import typings.grommet.AnonXxlarge
 import scala.scalajs.js
@@ -40,7 +41,8 @@ import scala.scalajs.js.annotation._
 
 trait ThemeType extends js.Object {
   var accordion: js.UndefOr[AnonBorderHeading] = js.undefined
-  var anchor: js.UndefOr[AnonFontWeight] = js.undefined
+  var anchor: js.UndefOr[AnonExtendFontWeight] = js.undefined
+  var avatar: js.UndefOr[AnonText] = js.undefined
   var box: js.UndefOr[AnonResponsiveBreakpoint] = js.undefined
   var button: js.UndefOr[AnonMinWidth] = js.undefined
   var calendar: js.UndefOr[AnonHeading] = js.undefined
@@ -81,7 +83,8 @@ object ThemeType {
   @scala.inline
   def apply(
     accordion: AnonBorderHeading = null,
-    anchor: AnonFontWeight = null,
+    anchor: AnonExtendFontWeight = null,
+    avatar: AnonText = null,
     box: AnonResponsiveBreakpoint = null,
     button: AnonMinWidth = null,
     calendar: AnonHeading = null,
@@ -120,6 +123,7 @@ object ThemeType {
     val __obj = js.Dynamic.literal()
     if (accordion != null) __obj.updateDynamic("accordion")(accordion.asInstanceOf[js.Any])
     if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
+    if (avatar != null) __obj.updateDynamic("avatar")(avatar.asInstanceOf[js.Any])
     if (box != null) __obj.updateDynamic("box")(box.asInstanceOf[js.Any])
     if (button != null) __obj.updateDynamic("button")(button.asInstanceOf[js.Any])
     if (calendar != null) __obj.updateDynamic("calendar")(calendar.asInstanceOf[js.Any])

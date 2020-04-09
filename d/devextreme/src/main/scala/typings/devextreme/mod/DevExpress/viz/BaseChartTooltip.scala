@@ -11,17 +11,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Configures tooltips. */
+/** @name BaseChart.Options.tooltip */
 trait BaseChartTooltip extends BaseWidgetTooltip {
-  /** Formats the point argument before it is displayed in the tooltip. To format the point value, use the format option. */
+  /** @name BaseChart.Options.tooltip.argumentFormat */
   var argumentFormat: js.UndefOr[format] = js.undefined
-  /** Specifies a custom template for a tooltip. */
+  /** @name BaseChart.Options.tooltip.contentTemplate */
   var contentTemplate: js.UndefOr[
     template | (js.Function2[/* pointInfo */ js.Any, /* element */ dxElement, String | Element | JQuery])
   ] = js.undefined
-  /** Allows you to change tooltip appearance. */
+  /** @name BaseChart.Options.tooltip.customizeTooltip */
   var customizeTooltip: js.UndefOr[js.Function1[/* pointInfo */ js.Any, _]] = js.undefined
-  /** Specifies whether the tooltip is shared across all series points with the same argument. */
+  /** @name BaseChart.Options.tooltip.shared */
   var shared: js.UndefOr[Boolean] = js.undefined
 }
 

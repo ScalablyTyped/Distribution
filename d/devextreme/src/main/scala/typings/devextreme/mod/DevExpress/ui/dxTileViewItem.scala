@@ -7,9 +7,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxTileViewItem extends CollectionWidgetItem {
-  /** Specifies a multiplier for the baseItemHeight option value (for the purpose of obtaining the actual item height). */
+  /** @name dxTileViewItem.heightRatio */
   var heightRatio: js.UndefOr[Double] = js.undefined
-  /** Specifies a multiplier for the baseItemWidth option value (for the purpose of obtaining the actual item width). */
+  /** @name dxTileViewItem.widthRatio */
   var widthRatio: js.UndefOr[Double] = js.undefined
 }
 

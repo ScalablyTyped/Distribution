@@ -104,6 +104,7 @@ trait CanvasRenderingContext2D extends js.Object {
   def scale(x: Double, y: Double): Unit = js.native
   def setLineDash(segments: js.Array[Double]): Unit = js.native
   def setTransform(a: Double, b: Double, c: Double, d: Double, e: Double, f: Double): Unit = js.native
+  def stroke(): Unit = js.native
   def stroke(path: Path2D): Unit = js.native
   def strokeRect(x: Double, y: Double, width: Double, height: Double): Unit = js.native
   def strokeText(text: String, x: Double, y: Double): Unit = js.native

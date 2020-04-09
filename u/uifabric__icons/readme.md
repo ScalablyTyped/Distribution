@@ -1,7 +1,7 @@
 
 # Scala.js typings for uifabric__icons
 
-Typings are for version 7.3.20
+Typings are for version 7.3.23
 
 ## Library description:
 Office UI Fabric icon set.

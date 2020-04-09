@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Alias extends js.Object {
   /**
-    * Amazon Resource Name (ARN) that is assigned to a GameLift alias resource and uniquely identifies it. ARNs are unique across all Regions.. In a GameLift alias ARN, the resource ID matches the alias ID value.
+    * Amazon Resource Name (ARN) that is assigned to a GameLift alias resource and uniquely identifies it. ARNs are unique across all Regions. In a GameLift alias ARN, the resource ID matches the alias ID value.
     */
-  var AliasArn: js.UndefOr[ArnStringModel] = js.native
+  var AliasArn: js.UndefOr[typings.awsSdk.gameliftMod.AliasArn] = js.native
   /**
     * A unique identifier for an alias. Alias IDs are unique within a Region.
     */
@@ -39,7 +39,7 @@ trait Alias extends js.Object {
 object Alias {
   @scala.inline
   def apply(
-    AliasArn: ArnStringModel = null,
+    AliasArn: AliasArn = null,
     AliasId: AliasId = null,
     CreationTime: Timestamp = null,
     Description: FreeText = null,

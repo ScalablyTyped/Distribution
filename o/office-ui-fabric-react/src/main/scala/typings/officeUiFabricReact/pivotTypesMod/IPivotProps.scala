@@ -18,6 +18,7 @@ import typings.react.mod.KeyboardEvent
 import typings.react.mod.LegacyRef
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
@@ -313,7 +314,7 @@ object IPivotProps {
     onProgress: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onRateChange: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onReset: FormEvent[HTMLDivElement] => Unit = null,
-    onScroll: UIEvent[HTMLDivElement] => Unit = null,
+    onScroll: UIEvent[HTMLDivElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,

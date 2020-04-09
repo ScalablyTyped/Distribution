@@ -10,6 +10,7 @@ import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
 import typings.std.HTMLButtonElement
+import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,8 +29,11 @@ trait AlertProps extends js.Object {
   var icon: js.UndefOr[ReactNode] = js.undefined
   /** Content of Alert */
   var message: ReactNode
+  var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
   /** Callback when close Alert */
   var onClose: js.UndefOr[MouseEventHandler[HTMLButtonElement]] = js.undefined
+  var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
+  var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
   var prefixCls: js.UndefOr[String] = js.undefined
   /** Whether to show icon */
   var showIcon: js.UndefOr[Boolean] = js.undefined
@@ -51,7 +55,10 @@ object AlertProps {
     description: ReactNode = null,
     icon: ReactNode = null,
     message: ReactNode = null,
+    onClick: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
     onClose: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit = null,
+    onMouseEnter: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
+    onMouseLeave: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
     prefixCls: String = null,
     showIcon: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null,
@@ -66,7 +73,10 @@ object AlertProps {
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1(onClose))
+    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1(onMouseEnter))
+    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1(onMouseLeave))
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     if (!js.isUndefined(showIcon)) __obj.updateDynamic("showIcon")(showIcon.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])

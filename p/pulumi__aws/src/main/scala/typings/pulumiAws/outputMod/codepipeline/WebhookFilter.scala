@@ -6,7 +6,13 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait WebhookFilter extends js.Object {
+  /**
+    * The [JSON path](https://github.com/json-path/JsonPath) to filter on.
+    */
   var jsonPath: String = js.native
+  /**
+    * The value to match on (e.g. `refs/heads/{Branch}`). See [AWS docs](https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_WebhookFilterRule.html) for details.
+    */
   var matchEquals: String = js.native
 }
 

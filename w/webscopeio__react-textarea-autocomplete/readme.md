@@ -1,7 +1,7 @@
 
 # Scala.js typings for webscopeio__react-textarea-autocomplete
 
-Typings are for version 2.3
+Typings are for version 4.6
 
 ## Library description:
 Offers autocomplete over textarea in style of GitHub.

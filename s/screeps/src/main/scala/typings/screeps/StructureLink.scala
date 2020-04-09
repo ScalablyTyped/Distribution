@@ -12,7 +12,8 @@ import scala.scalajs.js.annotation._
 trait StructureLink
   extends OwnedStructure[STRUCTURE_LINK]
      with AnyOwnedStructure
-     with AnyStoreStructure {
+     with AnyStoreStructure
+     with ConcreteStructure[js.Any] {
   /**
     * The amount of game ticks the link has to wait until the next transfer is possible.
     */

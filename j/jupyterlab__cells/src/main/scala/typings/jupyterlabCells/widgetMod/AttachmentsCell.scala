@@ -33,6 +33,11 @@ abstract class AttachmentsCell () extends Cell {
     */
   var _evtPaste: js.Any = js.native
   /**
+    * Generates a unique URI for a file
+    * while preserving the file extension.
+    */
+  var _generateURI: js.Any = js.native
+  /**
     * The model used by the widget.
     */
   @JSName("model")
@@ -52,5 +57,6 @@ abstract class AttachmentsCell () extends Cell {
     * Modify the cell source to include a reference to the attachment.
     */
   /* protected */ def updateCellSourceWithAttachment(attachmentName: String): Unit = js.native
+  /* protected */ def updateCellSourceWithAttachment(attachmentName: String, URI: String): Unit = js.native
 }
 

@@ -4,17 +4,16 @@ import typings.chance.AnonFormatted
 import typings.chance.AnonLikelihood
 import typings.chance.AnonRegion
 import typings.chance.AnonVersion
-import typings.chance.AtLeastOneKey
-import typings.chance.KinkeyofCharacterOptionsP
-import typings.chance.KinkeyofEmailOptionsPickE
-import typings.chance.KinkeyofFirstNameOptionsP
-import typings.chance.KinkeyofIntegerOptionsPic
-import typings.chance.KinkeyofNameOptionsPickNa
-import typings.chance.KinkeyofPrefixOptionsPick
-import typings.chance.KinkeyofSentenceOptionsPi
-import typings.chance.KinkeyofStringOptionsPick
-import typings.chance.KinkeyofUrlOptionsPickUrl
-import typings.chance.KinkeyofWordOptionsPickWo
+import typings.chance.PartialCharacterOptions
+import typings.chance.PartialEmailOptions
+import typings.chance.PartialFirstNameOptions
+import typings.chance.PartialIntegerOptions
+import typings.chance.PartialNameOptions
+import typings.chance.PartialPrefixOptions
+import typings.chance.PartialSentenceOptions
+import typings.chance.PartialStringOptions
+import typings.chance.PartialUrlOptions
+import typings.chance.PartialWordOptions
 import typings.chance.chanceStrings.Friday
 import typings.chance.chanceStrings.Monday
 import typings.chance.chanceStrings.Saturday
@@ -81,7 +80,7 @@ trait Chance extends Seeded {
   def cf(): String = js.native
   def cf(opts: Options): String = js.native
   def character(): String = js.native
-  def character(opts: AtLeastOneKey[CharacterOptions, KinkeyofCharacterOptionsP]): String = js.native
+  def character(opts: PartialCharacterOptions): String = js.native
   def city(): String = js.native
   // Miscellaneous
   def coin(): String = js.native
@@ -113,7 +112,7 @@ trait Chance extends Seeded {
   def domain(): String = js.native
   def domain(opts: Options): String = js.native
   def email(): String = js.native
-  def email(opts: AtLeastOneKey[EmailOptions, KinkeyofEmailOptionsPickE]): String = js.native
+  def email(opts: PartialEmailOptions): String = js.native
   def euro(): String = js.native
   def euro(opts: Options): String = js.native
   def exp(): String = js.native
@@ -124,7 +123,7 @@ trait Chance extends Seeded {
   def exp_year(opts: Options): String = js.native
   def fbid(): String = js.native
   def first(): String = js.native
-  def first(opts: AtLeastOneKey[FirstNameOptions, KinkeyofFirstNameOptionsP]): String = js.native
+  def first(opts: PartialFirstNameOptions): String = js.native
   def floating(): Double = js.native
   def floating(opts: Options): Double = js.native
   def gender(): String = js.native
@@ -140,7 +139,7 @@ trait Chance extends Seeded {
   def hour(): Double = js.native
   def hour(opts: Options): Double = js.native
   def integer(): Double = js.native
-  def integer(opts: AtLeastOneKey[IntegerOptions, KinkeyofIntegerOptionsPic]): Double = js.native
+  def integer(opts: PartialIntegerOptions): Double = js.native
   def ip(): String = js.native
   def ipv6(): String = js.native
   def klout(): String = js.native
@@ -168,9 +167,9 @@ trait Chance extends Seeded {
   def n[T](generator: js.Function0[T], count: Double): js.Array[T] = js.native
   def n[T, O /* <: Options */](generator: js.Function1[/* options */ O, T], count: Double, options: O): js.Array[T] = js.native
   def name(): String = js.native
-  def name(opts: AtLeastOneKey[NameOptions, KinkeyofNameOptionsPickNa]): String = js.native
+  def name(opts: PartialNameOptions): String = js.native
   def name_prefix(): String = js.native
-  def name_prefix(opts: AtLeastOneKey[PrefixOptions, KinkeyofPrefixOptionsPick]): String = js.native
+  def name_prefix(opts: PartialPrefixOptions): String = js.native
   def name_prefixes(): js.Array[Name] = js.native
   def name_suffix(): String = js.native
   def name_suffix(opts: SuffixOptions): String = js.native
@@ -199,7 +198,7 @@ trait Chance extends Seeded {
   def postal(): String = js.native
   def postcode(): String = js.native
   def prefix(): String = js.native
-  def prefix(opts: AtLeastOneKey[PrefixOptions, KinkeyofPrefixOptionsPick]): String = js.native
+  def prefix(opts: PartialPrefixOptions): String = js.native
   def profession(): String = js.native
   def profession(opts: Options): String = js.native
   def province(): String = js.native
@@ -213,7 +212,7 @@ trait Chance extends Seeded {
   def rpg_Array(dice: String): js.Array[Double] = js.native
   def second(): Double = js.native
   def sentence(): String = js.native
-  def sentence(opts: AtLeastOneKey[SentenceOptions, KinkeyofSentenceOptionsPi]): String = js.native
+  def sentence(opts: PartialSentenceOptions): String = js.native
   def set[T](key: String, values: js.Array[T]): js.Any = js.native
   @JSName("set")
   def set_armedforces(key: armed_forces, values: js.Array[String]): js.Any = js.native
@@ -246,7 +245,7 @@ trait Chance extends Seeded {
   def street_suffix(): Name = js.native
   def street_suffixes(): js.Array[Name] = js.native
   def string(): String = js.native
-  def string(opts: AtLeastOneKey[StringOptions, KinkeyofStringOptionsPick]): String = js.native
+  def string(opts: PartialStringOptions): String = js.native
   def suffix(): String = js.native
   def suffix(opts: SuffixOptions): String = js.native
   def syllable(): String = js.native
@@ -260,11 +259,11 @@ trait Chance extends Seeded {
   def unique[T](generator: js.Function0[T], count: Double): js.Array[T] = js.native
   def unique[T, O /* <: UniqueOptions[T] */](generator: js.Function1[/* options */ O, T], count: Double, options: O): js.Array[T] = js.native
   def url(): String = js.native
-  def url(opts: AtLeastOneKey[UrlOptions, KinkeyofUrlOptionsPickUrl]): String = js.native
+  def url(opts: PartialUrlOptions): String = js.native
   def weekday(opts: Options): Monday | Tuesday | Wednesday | Thursday | Friday | Saturday | Sunday = js.native
   def weighted[T](values: js.Array[T], weights: js.Array[Double]): T = js.native
   def word(): String = js.native
-  def word(opts: AtLeastOneKey[WordOptions, KinkeyofWordOptionsPickWo]): String = js.native
+  def word(opts: PartialWordOptions): String = js.native
   def wp7_anid(): String = js.native
   def wp8_anid2(): String = js.native
   def year(): String = js.native

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "eslint"
-version := "6.1-dt-20200204Z-d0a760"
+version := "6.8-dt-20200406Z-eb832d"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

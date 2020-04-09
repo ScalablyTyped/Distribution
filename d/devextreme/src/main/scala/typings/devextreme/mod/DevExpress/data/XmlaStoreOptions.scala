@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait XmlaStoreOptions extends js.Object {
-  /** Specifies a function that customizes the request before it is sent to the server. */
+  /** @name XmlaStore.Options.beforeSend */
   var beforeSend: js.UndefOr[js.Function1[/* options */ AnonData, _]] = js.undefined
-  /** Specifies the database (or initial catalog) that contains the OLAP cube to use. */
+  /** @name XmlaStore.Options.catalog */
   var catalog: js.UndefOr[String] = js.undefined
-  /** Specifies the name of the OLAP cube to use from the catalog. */
+  /** @name XmlaStore.Options.cube */
   var cube: js.UndefOr[String] = js.undefined
-  /** Specifies the OLAP server's URL. */
+  /** @name XmlaStore.Options.url */
   var url: js.UndefOr[String] = js.undefined
 }
 

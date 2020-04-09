@@ -1,7 +1,7 @@
 
 # Scala.js typings for public-ip
 
-Typings are for version 4.0.0
+Typings are for version 4.0.1
 
 ## Library description:
 Get your public IP address - very fast!

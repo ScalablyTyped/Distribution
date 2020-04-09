@@ -14,16 +14,24 @@ package object detectiveMod {
   type GraphArn = java.lang.String
   type GraphList = js.Array[typings.awsSdk.detectiveMod.Graph]
   type MemberDetailList = js.Array[typings.awsSdk.detectiveMod.MemberDetail]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.VOLUME_TOO_HIGH
+    - typings.awsSdk.awsSdkStrings.VOLUME_UNKNOWN
+    - java.lang.String
+  */
+  type MemberDisabledReason = typings.awsSdk.detectiveMod._MemberDisabledReason | java.lang.String
   type MemberResultsLimit = scala.Double
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.INVITED
     - typings.awsSdk.awsSdkStrings.VERIFICATION_IN_PROGRESS
     - typings.awsSdk.awsSdkStrings.VERIFICATION_FAILED
     - typings.awsSdk.awsSdkStrings.ENABLED
+    - typings.awsSdk.awsSdkStrings.ACCEPTED_BUT_DISABLED
     - java.lang.String
   */
   type MemberStatus = typings.awsSdk.detectiveMod._MemberStatus | java.lang.String
   type PaginationToken = java.lang.String
+  type Percentage = scala.Double
   type Timestamp = typings.std.Date
   type UnprocessedAccountList = js.Array[typings.awsSdk.detectiveMod.UnprocessedAccount]
   type UnprocessedReason = java.lang.String

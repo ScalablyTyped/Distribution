@@ -59,12 +59,12 @@ trait PartialIPopoverProps extends js.Object {
   var targetClassName: js.UndefOr[String] = js.undefined
   var targetProps: js.UndefOr[HTMLAttributes[HTMLElement]] = js.undefined
   var targetTagName: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any
   ] = js.undefined
   var transitionDuration: js.UndefOr[Double] = js.undefined
   var usePortal: js.UndefOr[Boolean] = js.undefined
   var wrapperTagName: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any
   ] = js.undefined
 }
 
@@ -106,10 +106,10 @@ object PartialIPopoverProps {
     target: String | Element = null,
     targetClassName: String = null,
     targetProps: HTMLAttributes[HTMLElement] = null,
-    targetTagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any = null,
+    targetTagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any = null,
     transitionDuration: Int | Double = null,
     usePortal: js.UndefOr[Boolean] = js.undefined,
-    wrapperTagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any = null
+    wrapperTagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any = null
   ): PartialIPopoverProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])

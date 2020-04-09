@@ -28,9 +28,12 @@ object StrategyOptionsBase {
     clientSecret: String,
     authorizationURL: String = null,
     customHeaders: OutgoingHttpHeaders = null,
+    pkce: js.UndefOr[Boolean] = js.undefined,
+    proxy: js.Any = null,
     scope: js.Array[String] = null,
     scopeSeparator: String = null,
     sessionKey: String = null,
+    skipUserProfile: js.Any = null,
     state: String = null,
     store: StateStore = null,
     tokenURL: String = null,
@@ -41,9 +44,12 @@ object StrategyOptionsBase {
     val __obj = js.Dynamic.literal(callbackURL = callbackURL.asInstanceOf[js.Any], clientID = clientID.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any])
     if (authorizationURL != null) __obj.updateDynamic("authorizationURL")(authorizationURL.asInstanceOf[js.Any])
     if (customHeaders != null) __obj.updateDynamic("customHeaders")(customHeaders.asInstanceOf[js.Any])
+    if (!js.isUndefined(pkce)) __obj.updateDynamic("pkce")(pkce.asInstanceOf[js.Any])
+    if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     if (scopeSeparator != null) __obj.updateDynamic("scopeSeparator")(scopeSeparator.asInstanceOf[js.Any])
     if (sessionKey != null) __obj.updateDynamic("sessionKey")(sessionKey.asInstanceOf[js.Any])
+    if (skipUserProfile != null) __obj.updateDynamic("skipUserProfile")(skipUserProfile.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     if (store != null) __obj.updateDynamic("store")(store.asInstanceOf[js.Any])
     if (tokenURL != null) __obj.updateDynamic("tokenURL")(tokenURL.asInstanceOf[js.Any])

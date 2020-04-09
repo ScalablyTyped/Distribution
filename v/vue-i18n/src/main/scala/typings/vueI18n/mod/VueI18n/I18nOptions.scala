@@ -19,6 +19,7 @@ trait I18nOptions extends js.Object {
   var modifiers: js.UndefOr[Modifiers] = js.undefined
   var numberFormats: js.UndefOr[NumberFormats] = js.undefined
   var pluralizationRules: js.UndefOr[PluralizationRulesMap] = js.undefined
+  var postTranslation: js.UndefOr[PostTranslationHandler] = js.undefined
   var preserveDirectiveContent: js.UndefOr[Boolean] = js.undefined
   var sharedMessages: js.UndefOr[LocaleMessages] = js.undefined
   var silentFallbackWarn: js.UndefOr[Boolean | RegExp] = js.undefined
@@ -41,6 +42,7 @@ object I18nOptions {
     modifiers: Modifiers = null,
     numberFormats: NumberFormats = null,
     pluralizationRules: PluralizationRulesMap = null,
+    postTranslation: /* str */ String => String = null,
     preserveDirectiveContent: js.UndefOr[Boolean] = js.undefined,
     sharedMessages: LocaleMessages = null,
     silentFallbackWarn: Boolean | RegExp = null,
@@ -60,6 +62,7 @@ object I18nOptions {
     if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers.asInstanceOf[js.Any])
     if (numberFormats != null) __obj.updateDynamic("numberFormats")(numberFormats.asInstanceOf[js.Any])
     if (pluralizationRules != null) __obj.updateDynamic("pluralizationRules")(pluralizationRules.asInstanceOf[js.Any])
+    if (postTranslation != null) __obj.updateDynamic("postTranslation")(js.Any.fromFunction1(postTranslation))
     if (!js.isUndefined(preserveDirectiveContent)) __obj.updateDynamic("preserveDirectiveContent")(preserveDirectiveContent.asInstanceOf[js.Any])
     if (sharedMessages != null) __obj.updateDynamic("sharedMessages")(sharedMessages.asInstanceOf[js.Any])
     if (silentFallbackWarn != null) __obj.updateDynamic("silentFallbackWarn")(silentFallbackWarn.asInstanceOf[js.Any])

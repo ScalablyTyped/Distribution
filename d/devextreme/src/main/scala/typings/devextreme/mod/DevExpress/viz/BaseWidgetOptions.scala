@@ -27,37 +27,37 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BaseWidgetOptions[T] extends DOMComponentOptions[T] {
-  /** Specifies whether the widget responds to the user interaction. */
+  /** @name BaseWidget.Options.disabled */
   var disabled: js.UndefOr[Boolean] = js.undefined
-  /** Configures the exporting and printing features. */
+  /** @name BaseWidget.Options.export */
   var export: js.UndefOr[BaseWidgetExport] = js.undefined
-  /** Configures the loading indicator. */
+  /** @name BaseWidget.Options.loadingIndicator */
   var loadingIndicator: js.UndefOr[BaseWidgetLoadingIndicator] = js.undefined
-  /** Generates space around the widget. */
+  /** @name BaseWidget.Options.margin */
   var margin: js.UndefOr[BaseWidgetMargin] = js.undefined
-  /** A function that is executed when the widget's rendering has finished. */
+  /** @name BaseWidget.Options.onDrawn */
   var onDrawn: js.UndefOr[js.Function1[/* e */ AnonComponentTElementDxElementModelAny[T], _]] = js.undefined
-  /** A function that is executed after the widget is exported. */
+  /** @name BaseWidget.Options.onExported */
   var onExported: js.UndefOr[js.Function1[/* e */ AnonComponentTElementDxElementModelAny[T], _]] = js.undefined
-  /** A function that is executed before the widget is exported. */
+  /** @name BaseWidget.Options.onExporting */
   var onExporting: js.UndefOr[js.Function1[/* e */ AnonFormatModel[T], _]] = js.undefined
-  /** A function that is executed before a file with exported widget is saved to the user's local storage. */
+  /** @name BaseWidget.Options.onFileSaving */
   var onFileSaving: js.UndefOr[js.Function1[/* e */ AnonCancelComponentData[T], _]] = js.undefined
-  /** A function that is executed when an error or warning occurs. */
+  /** @name BaseWidget.Options.onIncidentOccurred */
   var onIncidentOccurred: js.UndefOr[js.Function1[/* e */ AnonTargetAny[T], _]] = js.undefined
-  /** Notifies the widget that it is embedded into an HTML page that uses a tag modifying the path. */
+  /** @name BaseWidget.Options.pathModified */
   var pathModified: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether to redraw the widget when the size of the parent browser window changes or a mobile device rotates. */
+  /** @name BaseWidget.Options.redrawOnResize */
   var redrawOnResize: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the widget's size in pixels. */
+  /** @name BaseWidget.Options.size */
   var size: js.UndefOr[BaseWidgetSize] = js.undefined
-  /** Sets the name of the theme the widget uses. */
+  /** @name BaseWidget.Options.theme */
   var theme: js.UndefOr[
     genericDotdark | genericDotlight | genericDotcontrast | ios7Dotdefault | genericDotcarmine | genericDotdarkmoon | genericDotdarkviolet | genericDotgreenmist | genericDotsoftblue | materialDotblueDotlight | materialDotlimeDotlight | materialDotorangeDotlight | materialDotpurpleDotlight | materialDottealDotlight
   ] = js.undefined
-  /** Configures the widget's title. */
+  /** @name BaseWidget.Options.title */
   var title: js.UndefOr[BaseWidgetTitle | String] = js.undefined
-  /** Configures tooltips - small pop-up rectangles that display information about a data-visualizing widget element being pressed or hovered over with the mouse pointer. */
+  /** @name BaseWidget.Options.tooltip */
   var tooltip: js.UndefOr[BaseWidgetTooltip] = js.undefined
 }
 

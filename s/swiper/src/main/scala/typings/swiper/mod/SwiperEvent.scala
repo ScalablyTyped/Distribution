@@ -32,6 +32,9 @@ import scala.scalajs.js.annotation._
   - typings.swiper.swiperStrings.setTranslate
   - typings.swiper.swiperStrings.setTransition
   - typings.swiper.swiperStrings.resize
+  - typings.swiper.swiperStrings.observerUpdate
+  - typings.swiper.swiperStrings.beforeLoopFix
+  - typings.swiper.swiperStrings.loopFix
   - typings.swiper.swiperStrings.paginationRender
   - typings.swiper.swiperStrings.paginationUpdate
   - typings.swiper.swiperStrings.autoplayStart
@@ -52,6 +55,8 @@ object SwiperEvent {
   @scala.inline
   def beforeDestroy: typings.swiper.swiperStrings.beforeDestroy = this.cast("beforeDestroy")
   @scala.inline
+  def beforeLoopFix: typings.swiper.swiperStrings.beforeLoopFix = this.cast("beforeLoopFix")
+  @scala.inline
   /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
   @scala.inline
   def click: typings.swiper.swiperStrings.click = this.cast("click")
@@ -67,6 +72,10 @@ object SwiperEvent {
   def lazyImageLoad: typings.swiper.swiperStrings.lazyImageLoad = this.cast("lazyImageLoad")
   @scala.inline
   def lazyImageReady: typings.swiper.swiperStrings.lazyImageReady = this.cast("lazyImageReady")
+  @scala.inline
+  def loopFix: typings.swiper.swiperStrings.loopFix = this.cast("loopFix")
+  @scala.inline
+  def observerUpdate: typings.swiper.swiperStrings.observerUpdate = this.cast("observerUpdate")
   @scala.inline
   def paginationRender: typings.swiper.swiperStrings.paginationRender = this.cast("paginationRender")
   @scala.inline

@@ -22,6 +22,8 @@ class MatrixDropdownColumn protected ()
   var hasVisibleCell: Boolean = js.native
   val index: Double = js.native
   var isRequired: Boolean = js.native
+  val isShowInMultipleColumns: Boolean = js.native
+  val isSupportMultipleColumns: Boolean = js.native
   val isVisible: Boolean = js.native
   val locRequiredErrorText: LocalizableString = js.native
   val locTitle: LocalizableString = js.native
@@ -31,6 +33,7 @@ class MatrixDropdownColumn protected ()
   var readOnly: Boolean = js.native
   var requiredErrorText: String = js.native
   var requiredIf: String = js.native
+  var showInMultipleColumns: Boolean = js.native
   val templateQuestion: Question = js.native
   var title: String = js.native
   var totalCurrency: String = js.native

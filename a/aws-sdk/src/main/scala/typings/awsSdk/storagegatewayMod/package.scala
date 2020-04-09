@@ -17,6 +17,7 @@ package object storagegatewayMod {
     - java.lang.String
   */
   type ActiveDirectoryStatus = typings.awsSdk.storagegatewayMod._ActiveDirectoryStatus | java.lang.String
+  type AuditDestinationARN = java.lang.String
   type Authentication = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.COMPLETE

@@ -37,6 +37,10 @@ class Workgroup protected () extends CustomResource {
     */
   val description: Output_[js.UndefOr[String]] = js.native
   /**
+    * The option to delete the workgroup and its contents even if the workgroup contains any named queries.
+    */
+  val forceDestroy: Output_[js.UndefOr[Boolean]] = js.native
+  /**
     * Name of the workgroup.
     */
   val name: Output_[String] = js.native

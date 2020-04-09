@@ -10,6 +10,8 @@ trait ExecutionContext[Context] extends Assertions {
   var context: Context = js.native
   @JSName("log")
   var log_Original: LogFn = js.native
+  /** Whether the test has passed. Only accurate in afterEach hooks. */
+  val passed: Boolean = js.native
   @JSName("plan")
   var plan_Original: PlanFn = js.native
   @JSName("timeout")
@@ -27,23 +29,23 @@ trait ExecutionContext[Context] extends Assertions {
   def plan(count: Double): Unit = js.native
   def timeout(ms: Double): Unit = js.native
   /**
-  	* Requires opt-in. Attempt to run some assertions. The result must be explicitly committed or discarded or else
-  	* the test will fail. A macro may be provided.
-  	*/
+  	 * Attempt to run some assertions. The result must be explicitly committed or discarded or else
+  	 * the test will fail. A macro may be provided.
+  	 */
   def `try`[Args /* <: js.Array[_] */](
     fn: Array[EitherMacro[Args, Context]],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Args is not an array type */ args: Args
   ): js.Promise[js.Array[TryResult]] = js.native
   /**
-  	* Requires opt-in. Attempt to run some assertions. The result must be explicitly committed or discarded or else
-  	* the test will fail. A macro may be provided.
-  	*/
+  	 * Attempt to run some assertions. The result must be explicitly committed or discarded or else
+  	 * the test will fail. A macro may be provided.
+  	 */
   def `try`[Args /* <: js.Array[_] */](
     fn: EitherMacro[Args, Context],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Args is not an array type */ args: Args
   ): js.Promise[TryResult] = js.native
   /**
-  	* Requires opt-in. Attempt to run some assertions. The result must be explicitly committed or discarded or else
+  	 * Attempt to run some assertions. The result must be explicitly committed or discarded or else
   	 * the test will fail. A macro may be provided. The title may help distinguish attempts from
   	 * one another.
   	 */
@@ -53,7 +55,7 @@ trait ExecutionContext[Context] extends Assertions {
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Args is not an array type */ args: Args
   ): js.Promise[js.Array[TryResult]] = js.native
   /**
-  	 * Requires opt-in. Attempt to run some assertions. The result must be explicitly committed or discarded or else
+  	 * Attempt to run some assertions. The result must be explicitly committed or discarded or else
   	 * the test will fail. A macro may be provided. The title may help distinguish attempts from
   	 * one another.
   	 */

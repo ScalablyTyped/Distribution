@@ -19,7 +19,7 @@ trait LoadBalancerAccessLogs extends js.Object {
     */
   var enabled: js.UndefOr[Boolean] = js.native
   /**
-    * The interval between checks.
+    * The publishing interval in minutes. Default: 60 minutes.
     */
   var interval: js.UndefOr[Double] = js.native
 }

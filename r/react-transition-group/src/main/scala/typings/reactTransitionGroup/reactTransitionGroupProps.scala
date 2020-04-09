@@ -13,6 +13,6 @@ trait reactTransitionGroupProps {
   @scala.inline
   def TransitionProps: typings.reactTransitionGroup.transitionMod.TransitionProps.type = typings.reactTransitionGroup.transitionMod.TransitionProps
   type TransitionProps = typings.reactTransitionGroup.transitionMod.TransitionProps
-  type TransitionGroupProps[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 174 */ js.Any */, V /* <: ReactType[_] */] = typings.reactTransitionGroup.transitionGroupMod.TransitionGroupProps[T, V]
+  type TransitionGroupProps[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */, V /* <: ReactType[_] */] = typings.reactTransitionGroup.transitionGroupMod.TransitionGroupProps[T, V]
 }
 

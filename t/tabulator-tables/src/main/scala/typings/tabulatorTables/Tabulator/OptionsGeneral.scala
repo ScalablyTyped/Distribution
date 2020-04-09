@@ -37,6 +37,10 @@ trait OptionsGeneral extends js.Object {
   var invalidOptionWarnings: js.UndefOr[Boolean] = js.undefined
   /** Keybinding configuration object	 */
   var keybindings: js.UndefOr[`false` | KeyBinding] = js.undefined
+  /** Can be set to any valid CSS value. By setting this you can allow your table to expand to fit the data, but not overflow its parent element. Whene there are too many rows to fit in the available space, the vertical scroll bar will be shown. This has the added benefit of improving load times on larger tables */
+  var maxHeight: js.UndefOr[String | Double] = js.undefined
+  /** With a variable table height you can set the minimum height of the table either defined in the min-height CSS property for the element or set it using the minHeight option in the table constructor, this can be set to any valid CSS value  */
+  var minHeight: js.UndefOr[String | Double] = js.undefined
   /** Whenever a page has been loaded, the pageLoaded callback is called, passing the current page number as an argument. */
   var pageLoaded: js.UndefOr[js.Function1[/* pageno */ Double, Unit]] = js.undefined
   /** placeholder element to display on empty table	 */
@@ -93,6 +97,8 @@ object OptionsGeneral {
     htmlImporting: /* callback */ js.Function0[Unit] => Unit = null,
     invalidOptionWarnings: js.UndefOr[Boolean] = js.undefined,
     keybindings: `false` | KeyBinding = null,
+    maxHeight: String | Double = null,
+    minHeight: String | Double = null,
     pageLoaded: /* pageno */ Double => Unit = null,
     placeholder: String | HTMLElement = null,
     reactiveData: js.UndefOr[Boolean] = js.undefined,
@@ -122,6 +128,8 @@ object OptionsGeneral {
     if (htmlImporting != null) __obj.updateDynamic("htmlImporting")(js.Any.fromFunction1(htmlImporting))
     if (!js.isUndefined(invalidOptionWarnings)) __obj.updateDynamic("invalidOptionWarnings")(invalidOptionWarnings.asInstanceOf[js.Any])
     if (keybindings != null) __obj.updateDynamic("keybindings")(keybindings.asInstanceOf[js.Any])
+    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
+    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
     if (pageLoaded != null) __obj.updateDynamic("pageLoaded")(js.Any.fromFunction1(pageLoaded))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (!js.isUndefined(reactiveData)) __obj.updateDynamic("reactiveData")(reactiveData.asInstanceOf[js.Any])

@@ -6,21 +6,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait chartPointObject extends basePointObject {
-  /** Provides information about the aggregation interval and the data objects that fall within it. */
+  /** @name chartPointObject.aggregationInfo */
   var aggregationInfo: chartPointAggregationInfoObject
-  /** Contains the close value of the point. This field is useful for points belonging to a series of the candle stick or stock type only. */
+  /** @name chartPointObject.originalCloseValue */
   var originalCloseValue: Double | String
-  /** Contains the high value of the point. This field is useful for points belonging to a series of the candle stick or stock type only. */
+  /** @name chartPointObject.originalHighValue */
   var originalHighValue: Double | String
-  /** Contains the low value of the point. This field is useful for points belonging to a series of the candle stick or stock type only. */
+  /** @name chartPointObject.originalLowValue */
   var originalLowValue: Double | String
-  /** Contains the first value of the point. This field is useful for points belonging to a series of the range area or range bar type only. */
+  /** @name chartPointObject.originalMinValue */
   var originalMinValue: String | Double | Date
-  /** Contains the open value of the point. This field is useful for points belonging to a series of the candle stick or stock type only. */
+  /** @name chartPointObject.originalOpenValue */
   var originalOpenValue: Double | String
-  /** Contains the size of the bubble as it was set in the data source. This field is useful for points belonging to a series of the bubble type only. */
+  /** @name chartPointObject.size */
   var size: Double | String
-  /** Gets the parameters of the point's minimum bounding rectangle (MBR). */
+  /** @name chartPointObject.getBoundingRect() */
   def getBoundingRect(): js.Any
 }
 

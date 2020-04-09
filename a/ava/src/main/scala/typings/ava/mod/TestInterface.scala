@@ -34,15 +34,13 @@ trait TestInterface[Context] extends js.Object {
   var skip_Original: SkipInterface[Context] = js.native
   @JSName("todo")
   var todo_Original: TodoDeclaration = js.native
-  def apply(
-    macros: OneOrMoreMacros[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify T */ _, 
-      Context
-    ],
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param rest because its type T is not an array type */ rest: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify T */ js.Any
-  ): Unit = js.native
   /** Declare a concurrent test. */
   def apply(title: String, implementation: Implementation[Context]): Unit = js.native
+  /** Declare a concurrent test that uses one or more macros. The macro is responsible for generating a unique test title. */
+  def apply[T /* <: js.Array[_] */](
+    macros: OneOrMoreMacros[T, Context],
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param rest because its type T is not an array type */ rest: T
+  ): Unit = js.native
   /** Declare a concurrent test that uses one or more macros. Additional arguments are passed to the macro. */
   def apply[T /* <: js.Array[_] */](
     title: String,

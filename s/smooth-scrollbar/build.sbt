@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "smooth-scrollbar"
-version := "8.5.1-899f2b"
+version := "8.5.2-13d4d4"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

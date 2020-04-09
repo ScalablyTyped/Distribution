@@ -17,23 +17,23 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxScrollableOptions[T] extends DOMComponentOptions[T] {
-  /** A Boolean value specifying whether to enable or disable the bounce-back effect. */
+  /** @name dxScrollable.Options.bounceEnabled */
   var bounceEnabled: js.UndefOr[Boolean] = js.undefined
-  /** A string value specifying the available scrolling directions. */
+  /** @name dxScrollable.Options.direction */
   var direction: js.UndefOr[both | horizontal | vertical] = js.undefined
-  /** A Boolean value specifying whether or not the widget can respond to user interaction. */
+  /** @name dxScrollable.Options.disabled */
   var disabled: js.UndefOr[Boolean] = js.undefined
-  /** A function that is executed on each scroll gesture. */
+  /** @name dxScrollable.Options.onScroll */
   var onScroll: js.UndefOr[js.Function1[/* e */ AnonReachedRight[T], _]] = js.undefined
-  /** A function that is executed each time the widget is updated. */
+  /** @name dxScrollable.Options.onUpdated */
   var onUpdated: js.UndefOr[js.Function1[/* e */ AnonReachedRight[T], _]] = js.undefined
-  /** A Boolean value specifying whether or not an end-user can scroll the widget content swiping it up or down. Applies only if useNative is false */
+  /** @name dxScrollable.Options.scrollByContent */
   var scrollByContent: js.UndefOr[Boolean] = js.undefined
-  /** A Boolean value specifying whether or not an end-user can scroll the widget content using the scrollbar. */
+  /** @name dxScrollable.Options.scrollByThumb */
   var scrollByThumb: js.UndefOr[Boolean] = js.undefined
-  /** Specifies when the widget shows the scrollbar. */
+  /** @name dxScrollable.Options.showScrollbar */
   var showScrollbar: js.UndefOr[onScroll | onHover | always | never] = js.undefined
-  /** Indicates whether to use native or simulated scrolling. */
+  /** @name dxScrollable.Options.useNative */
   var useNative: js.UndefOr[Boolean] = js.undefined
 }
 

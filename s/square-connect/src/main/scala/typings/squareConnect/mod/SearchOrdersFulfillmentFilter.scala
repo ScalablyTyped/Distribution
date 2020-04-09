@@ -8,15 +8,13 @@ import scala.scalajs.js.annotation._
 @js.native
 class SearchOrdersFulfillmentFilter () extends js.Object {
   /**
-    * List of [fulfillment states](#type-orderfulfillmentstate) to filter for.
-    * Will return orders if any of its fulfillments match any of the fulfillment states listed in this field.
-    * See [OrderFulfillmentState](#type-orderfulfillmentstate) for possible values.
+    * List of `fulfillment states` to filter for. Will return orders if any of its fulfillments match any of the
+    * fulfillment states listed in this field. See [OrderFulfillmentState](#type-orderfulfillmentstate) for possible values.
     */
   var fulfillment_states: js.UndefOr[js.Array[FulfillmentStateType]] = js.native
   /**
-    * List of [fulfillment types](#type-orderfulfillmenttype) to filter for.
-    * Will return orders if any of its fulfillments match any of the fulfillment types listed in this field.
-    * See [OrderFulfillmentType](#type-orderfulfillmenttype) for possible values.
+    * List of `fulfillment types` to filter for. Will return orders if any of its fulfillments match any of the fulfillment
+    * types listed in this field. See [OrderFulfillmentType](#type-orderfulfillmenttype) for possible values.
     */
   var fulfillment_types: js.Array[FulfillmentType] = js.native
 }

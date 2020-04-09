@@ -3,15 +3,13 @@ package typings.ionicCore
 import typings.ionicCore.componentsMod._Global_.HTMLIonToastElement
 import typings.ionicCore.ionicCoreStrings.bottom
 import typings.ionicCore.ionicCoreStrings.end
-import typings.ionicCore.ionicCoreStrings.ios
-import typings.ionicCore.ionicCoreStrings.md
 import typings.ionicCore.ionicCoreStrings.middle
 import typings.ionicCore.ionicCoreStrings.start
 import typings.ionicCore.ionicCoreStrings.top
 import typings.ionicCore.mod.Color
 import typings.ionicCore.overlaysInterfaceMod.OverlayEventDetail
 import typings.ionicCore.overlaysInterfaceMod.OverlayInterface
-import typings.ionicCore.stencilCoreMod.ComponentInterface
+import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.ionicCore.toastInterfaceMod.ToastButton
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -59,8 +57,6 @@ object toastMod extends js.Object {
       * Message to be shown in the toast.
       */
     var message: js.UndefOr[String] = js.native
-    @JSName("mode")
-    var mode_Toast: ios | md = js.native
     /**
       * The position of the toast on the screen.
       */

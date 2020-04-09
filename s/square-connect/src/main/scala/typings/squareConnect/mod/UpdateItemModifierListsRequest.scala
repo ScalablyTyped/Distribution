@@ -8,17 +8,15 @@ import scala.scalajs.js.annotation._
 @js.native
 class UpdateItemModifierListsRequest () extends js.Object {
   /**
-    * The [CatalogItem](#type-catalogitem)s whose [CatalogModifierList](#type-catalogmodifierlist)s are being updated.
+    * The IDs of the catalog items associated with the CatalogModifierList objects being updated.
     */
   var item_ids: js.Array[String] = js.native
   /**
-    * The set of [CatalogModifierList](#type-catalogmodifierlist)s (referenced by ID) to disable for the
-    * [CatalogItem](#type-catalogitem).
+    * The IDs of the CatalogModifierList objects to disable for the CatalogItem.
     */
   var modifier_lists_to_disable: js.UndefOr[js.Array[String]] = js.native
   /**
-    * The set of [CatalogModifierList](#type-catalogmodifierlist)s (referenced by ID) to enable for the
-    * [CatalogItem](#type-catalogitem).
+    * The IDs of the CatalogModifierList objects to enable for the CatalogItem.
     */
   var modifier_lists_to_enable: js.UndefOr[js.Array[String]] = js.native
 }

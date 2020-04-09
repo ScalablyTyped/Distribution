@@ -5,9 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MapLocation extends js.Object {
-  /** The latitude location of the widget. */
+  /** @name MapLocation.lat */
   var lat: js.UndefOr[Double] = js.undefined
-  /** The longitude location of the widget. */
+  /** @name MapLocation.lng */
   var lng: js.UndefOr[Double] = js.undefined
 }
 

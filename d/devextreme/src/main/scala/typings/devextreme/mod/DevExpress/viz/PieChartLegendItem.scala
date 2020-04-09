@@ -7,13 +7,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PieChartLegendItem extends BaseLegendItem {
-  /** The argument of the point(s) that the legend item represents. */
+  /** @name PieChartLegendItem.argument */
   var argument: js.UndefOr[String | Date | Double] = js.undefined
-  /** The zero-based index of the legend item used to identify the item among other legend items with the same argument. */
+  /** @name PieChartLegendItem.argumentIndex */
   var argumentIndex: js.UndefOr[Double] = js.undefined
-  /** An array of points that the legend item represents. Can contain more than one point only in a multi-series PieChart. */
+  /** @name PieChartLegendItem.points */
   var points: js.UndefOr[js.Array[piePointObject]] = js.undefined
-  /** The text that the legend item displays. */
+  /** @name PieChartLegendItem.text */
   @JSName("text")
   var text_PieChartLegendItem: js.UndefOr[js.Any] = js.undefined
 }

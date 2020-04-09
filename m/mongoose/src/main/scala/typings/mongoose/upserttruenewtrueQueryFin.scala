@@ -1,5 +1,6 @@
 package typings.mongoose
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.mongoose.mod.ClientSession
 import typings.mongoose.mongooseBooleans.`true`
 import scala.scalajs.js
@@ -8,6 +9,10 @@ import scala.scalajs.js.annotation._
 
 /* Inlined {  upsert  :true,   new  :true} & mongoose.mongoose.QueryFindOneAndUpdateOptions */
 trait upserttruenewtrueQueryFin extends js.Object {
+  /**
+    * Only update elements that match the arrayFilters conditions in the document or documents that match the query conditions.
+    */
+  var arrayFilters: js.UndefOr[js.Array[StringDictionary[_]]] = js.undefined
   /**
     * if set to 'query' and runValidators is on, this will refer to the query in custom validator
     * functions that update validation runs. Does nothing if runValidators is false.
@@ -56,6 +61,7 @@ trait upserttruenewtrueQueryFin extends js.Object {
 object upserttruenewtrueQueryFin {
   @scala.inline
   def apply(
+    arrayFilters: js.Array[StringDictionary[_]] = null,
     context: String = null,
     fields: js.Any | String = null,
     maxTimeMS: Int | Double = null,
@@ -73,6 +79,7 @@ object upserttruenewtrueQueryFin {
     upsert: js.UndefOr[`true` with Boolean] = js.undefined
   ): upserttruenewtrueQueryFin = {
     val __obj = js.Dynamic.literal()
+    if (arrayFilters != null) __obj.updateDynamic("arrayFilters")(arrayFilters.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (maxTimeMS != null) __obj.updateDynamic("maxTimeMS")(maxTimeMS.asInstanceOf[js.Any])

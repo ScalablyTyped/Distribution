@@ -67,6 +67,7 @@ import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
@@ -571,7 +572,7 @@ object IonReorderPickHTMLAttribu {
     onProgress: SyntheticEvent[HTMLIonReorderElement, Event_] => Unit = null,
     onRateChange: SyntheticEvent[HTMLIonReorderElement, Event_] => Unit = null,
     onReset: FormEvent[HTMLIonReorderElement] => Unit = null,
-    onScroll: UIEvent[HTMLIonReorderElement] => Unit = null,
+    onScroll: UIEvent[HTMLIonReorderElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[HTMLIonReorderElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[HTMLIonReorderElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[HTMLIonReorderElement, Event_] => Unit = null,

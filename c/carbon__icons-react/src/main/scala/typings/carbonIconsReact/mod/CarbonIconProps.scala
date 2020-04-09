@@ -90,6 +90,7 @@ import typings.react.mod.LegacyRef
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
@@ -102,11 +103,12 @@ import typings.react.mod.UIEvent
 import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEventHandler
 import typings.std.Event_
+import typings.std.SVGElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined parent std.Omit<react.react.SVGProps<any>, 'tabIndex'> */
+/* Inlined parent std.Omit<react.react.SVGProps<std.SVGElement>, 'tabIndex' | 'aria-hidden'> */
 trait CarbonIconProps extends js.Object {
   var accentHeight: js.UndefOr[Double | String] = js.undefined
   var accumulate: js.UndefOr[none | sum] = js.undefined
@@ -137,7 +139,7 @@ trait CarbonIconProps extends js.Object {
   var `aria-flowto`: js.UndefOr[String] = js.undefined
   var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
   var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
-  var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
+  var `aria-hidden`: js.UndefOr[String] = js.undefined
   var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
   var `aria-keyshortcuts`: js.UndefOr[String] = js.undefined
   var `aria-label`: js.UndefOr[String] = js.undefined
@@ -244,7 +246,7 @@ trait CarbonIconProps extends js.Object {
   var gradientTransform: js.UndefOr[String] = js.undefined
   var gradientUnits: js.UndefOr[String] = js.undefined
   var hanging: js.UndefOr[Double | String] = js.undefined
-  var height: js.UndefOr[Double | String] = js.undefined
+  var height: js.UndefOr[Double] = js.undefined
   var horizAdvX: js.UndefOr[Double | String] = js.undefined
   var horizOriginX: js.UndefOr[Double | String] = js.undefined
   var href: js.UndefOr[String] = js.undefined
@@ -290,85 +292,85 @@ trait CarbonIconProps extends js.Object {
   var name: js.UndefOr[String] = js.undefined
   var numOctaves: js.UndefOr[Double | String] = js.undefined
   var offset: js.UndefOr[Double | String] = js.undefined
-  var onAbort: js.UndefOr[ReactEventHandler[_]] = js.undefined
-  var onAnimationEnd: js.UndefOr[AnimationEventHandler[_]] = js.undefined
-  var onAnimationIteration: js.UndefOr[AnimationEventHandler[_]] = js.undefined
-  var onAnimationStart: js.UndefOr[AnimationEventHandler[_]] = js.undefined
-  var onAuxClick: js.UndefOr[MouseEventHandler[_]] = js.undefined
-  var onBeforeInput: js.UndefOr[FormEventHandler[_]] = js.undefined
-  var onBlur: js.UndefOr[FocusEventHandler[_]] = js.undefined
-  var onCanPlay: js.UndefOr[ReactEventHandler[_]] = js.undefined
-  var onCanPlayThrough: js.UndefOr[ReactEventHandler[_]] = js.undefined
-  var onChange: js.UndefOr[FormEventHandler[_]] = js.undefined
-  var onClick: js.UndefOr[MouseEventHandler[_]] = js.undefined
-  var onCompositionEnd: js.UndefOr[CompositionEventHandler[_]] = js.undefined
-  var onCompositionStart: js.UndefOr[CompositionEventHandler[_]] = js.undefined
-  var onCompositionUpdate: js.UndefOr[CompositionEventHandler[_]] = js.undefined
-  var onContextMenu: js.UndefOr[MouseEventHandler[_]] = js.undefined
-  var onCopy: js.UndefOr[ClipboardEventHandler[_]] = js.undefined
-  var onCut: js.UndefOr[ClipboardEventHandler[_]] = js.undefined
-  var onDoubleClick: js.UndefOr[MouseEventHandler[_]] = js.undefined
-  var onDrag: js.UndefOr[DragEventHandler[_]] = js.undefined
-  var onDragEnd: js.UndefOr[DragEventHandler[_]] = js.undefined
-  var onDragEnter: js.UndefOr[DragEventHandler[_]] = js.undefined
-  var onDragExit: js.UndefOr[DragEventHandler[_]] = js.undefined
-  var onDragLeave: js.UndefOr[DragEventHandler[_]] = js.undefined
-  var onDragOver: js.UndefOr[DragEventHandler[_]] = js.undefined
-  var onDragStart: js.UndefOr[DragEventHandler[_]] = js.undefined
-  var onDrop: js.UndefOr[DragEventHandler[_]] = js.undefined
-  var onDurationChange: js.UndefOr[ReactEventHandler[_]] = js.undefined
-  var onEmptied: js.UndefOr[ReactEventHandler[_]] = js.undefined
-  var onEncrypted: js.UndefOr[ReactEventHandler[_]] = js.undefined
-  var onEnded: js.UndefOr[ReactEventHandler[_]] = js.undefined
-  var onError: js.UndefOr[ReactEventHandler[_]] = js.undefined
-  var onFocus: js.UndefOr[FocusEventHandler[_]] = js.undefined
-  var onInput: js.UndefOr[FormEventHandler[_]] = js.undefined
-  var onInvalid: js.UndefOr[FormEventHandler[_]] = js.undefined
-  var onKeyDown: js.UndefOr[KeyboardEventHandler[_]] = js.undefined
-  var onKeyPress: js.UndefOr[KeyboardEventHandler[_]] = js.undefined
-  var onKeyUp: js.UndefOr[KeyboardEventHandler[_]] = js.undefined
-  var onLoad: js.UndefOr[ReactEventHandler[_]] = js.undefined
-  var onLoadStart: js.UndefOr[ReactEventHandler[_]] = js.undefined
-  var onLoadedData: js.UndefOr[ReactEventHandler[_]] = js.undefined
-  var onLoadedMetadata: js.UndefOr[ReactEventHandler[_]] = js.undefined
-  var onMouseDown: js.UndefOr[MouseEventHandler[_]] = js.undefined
-  var onMouseEnter: js.UndefOr[MouseEventHandler[_]] = js.undefined
-  var onMouseLeave: js.UndefOr[MouseEventHandler[_]] = js.undefined
-  var onMouseMove: js.UndefOr[MouseEventHandler[_]] = js.undefined
-  var onMouseOut: js.UndefOr[MouseEventHandler[_]] = js.undefined
-  var onMouseOver: js.UndefOr[MouseEventHandler[_]] = js.undefined
-  var onMouseUp: js.UndefOr[MouseEventHandler[_]] = js.undefined
-  var onPaste: js.UndefOr[ClipboardEventHandler[_]] = js.undefined
-  var onPause: js.UndefOr[ReactEventHandler[_]] = js.undefined
-  var onPlay: js.UndefOr[ReactEventHandler[_]] = js.undefined
-  var onPlaying: js.UndefOr[ReactEventHandler[_]] = js.undefined
-  var onPointerCancel: js.UndefOr[PointerEventHandler[_]] = js.undefined
-  var onPointerDown: js.UndefOr[PointerEventHandler[_]] = js.undefined
-  var onPointerEnter: js.UndefOr[PointerEventHandler[_]] = js.undefined
-  var onPointerLeave: js.UndefOr[PointerEventHandler[_]] = js.undefined
-  var onPointerMove: js.UndefOr[PointerEventHandler[_]] = js.undefined
-  var onPointerOut: js.UndefOr[PointerEventHandler[_]] = js.undefined
-  var onPointerOver: js.UndefOr[PointerEventHandler[_]] = js.undefined
-  var onPointerUp: js.UndefOr[PointerEventHandler[_]] = js.undefined
-  var onProgress: js.UndefOr[ReactEventHandler[_]] = js.undefined
-  var onRateChange: js.UndefOr[ReactEventHandler[_]] = js.undefined
-  var onReset: js.UndefOr[FormEventHandler[_]] = js.undefined
-  var onScroll: js.UndefOr[UIEventHandler[_]] = js.undefined
-  var onSeeked: js.UndefOr[ReactEventHandler[_]] = js.undefined
-  var onSeeking: js.UndefOr[ReactEventHandler[_]] = js.undefined
-  var onSelect: js.UndefOr[ReactEventHandler[_]] = js.undefined
-  var onStalled: js.UndefOr[ReactEventHandler[_]] = js.undefined
-  var onSubmit: js.UndefOr[FormEventHandler[_]] = js.undefined
-  var onSuspend: js.UndefOr[ReactEventHandler[_]] = js.undefined
-  var onTimeUpdate: js.UndefOr[ReactEventHandler[_]] = js.undefined
-  var onTouchCancel: js.UndefOr[TouchEventHandler[_]] = js.undefined
-  var onTouchEnd: js.UndefOr[TouchEventHandler[_]] = js.undefined
-  var onTouchMove: js.UndefOr[TouchEventHandler[_]] = js.undefined
-  var onTouchStart: js.UndefOr[TouchEventHandler[_]] = js.undefined
-  var onTransitionEnd: js.UndefOr[TransitionEventHandler[_]] = js.undefined
-  var onVolumeChange: js.UndefOr[ReactEventHandler[_]] = js.undefined
-  var onWaiting: js.UndefOr[ReactEventHandler[_]] = js.undefined
-  var onWheel: js.UndefOr[WheelEventHandler[_]] = js.undefined
+  var onAbort: js.UndefOr[ReactEventHandler[SVGElement]] = js.undefined
+  var onAnimationEnd: js.UndefOr[AnimationEventHandler[SVGElement]] = js.undefined
+  var onAnimationIteration: js.UndefOr[AnimationEventHandler[SVGElement]] = js.undefined
+  var onAnimationStart: js.UndefOr[AnimationEventHandler[SVGElement]] = js.undefined
+  var onAuxClick: js.UndefOr[MouseEventHandler[SVGElement]] = js.undefined
+  var onBeforeInput: js.UndefOr[FormEventHandler[SVGElement]] = js.undefined
+  var onBlur: js.UndefOr[FocusEventHandler[SVGElement]] = js.undefined
+  var onCanPlay: js.UndefOr[ReactEventHandler[SVGElement]] = js.undefined
+  var onCanPlayThrough: js.UndefOr[ReactEventHandler[SVGElement]] = js.undefined
+  var onChange: js.UndefOr[FormEventHandler[SVGElement]] = js.undefined
+  var onClick: js.UndefOr[MouseEventHandler[SVGElement]] = js.undefined
+  var onCompositionEnd: js.UndefOr[CompositionEventHandler[SVGElement]] = js.undefined
+  var onCompositionStart: js.UndefOr[CompositionEventHandler[SVGElement]] = js.undefined
+  var onCompositionUpdate: js.UndefOr[CompositionEventHandler[SVGElement]] = js.undefined
+  var onContextMenu: js.UndefOr[MouseEventHandler[SVGElement]] = js.undefined
+  var onCopy: js.UndefOr[ClipboardEventHandler[SVGElement]] = js.undefined
+  var onCut: js.UndefOr[ClipboardEventHandler[SVGElement]] = js.undefined
+  var onDoubleClick: js.UndefOr[MouseEventHandler[SVGElement]] = js.undefined
+  var onDrag: js.UndefOr[DragEventHandler[SVGElement]] = js.undefined
+  var onDragEnd: js.UndefOr[DragEventHandler[SVGElement]] = js.undefined
+  var onDragEnter: js.UndefOr[DragEventHandler[SVGElement]] = js.undefined
+  var onDragExit: js.UndefOr[DragEventHandler[SVGElement]] = js.undefined
+  var onDragLeave: js.UndefOr[DragEventHandler[SVGElement]] = js.undefined
+  var onDragOver: js.UndefOr[DragEventHandler[SVGElement]] = js.undefined
+  var onDragStart: js.UndefOr[DragEventHandler[SVGElement]] = js.undefined
+  var onDrop: js.UndefOr[DragEventHandler[SVGElement]] = js.undefined
+  var onDurationChange: js.UndefOr[ReactEventHandler[SVGElement]] = js.undefined
+  var onEmptied: js.UndefOr[ReactEventHandler[SVGElement]] = js.undefined
+  var onEncrypted: js.UndefOr[ReactEventHandler[SVGElement]] = js.undefined
+  var onEnded: js.UndefOr[ReactEventHandler[SVGElement]] = js.undefined
+  var onError: js.UndefOr[ReactEventHandler[SVGElement]] = js.undefined
+  var onFocus: js.UndefOr[FocusEventHandler[SVGElement]] = js.undefined
+  var onInput: js.UndefOr[FormEventHandler[SVGElement]] = js.undefined
+  var onInvalid: js.UndefOr[FormEventHandler[SVGElement]] = js.undefined
+  var onKeyDown: js.UndefOr[KeyboardEventHandler[SVGElement]] = js.undefined
+  var onKeyPress: js.UndefOr[KeyboardEventHandler[SVGElement]] = js.undefined
+  var onKeyUp: js.UndefOr[KeyboardEventHandler[SVGElement]] = js.undefined
+  var onLoad: js.UndefOr[ReactEventHandler[SVGElement]] = js.undefined
+  var onLoadStart: js.UndefOr[ReactEventHandler[SVGElement]] = js.undefined
+  var onLoadedData: js.UndefOr[ReactEventHandler[SVGElement]] = js.undefined
+  var onLoadedMetadata: js.UndefOr[ReactEventHandler[SVGElement]] = js.undefined
+  var onMouseDown: js.UndefOr[MouseEventHandler[SVGElement]] = js.undefined
+  var onMouseEnter: js.UndefOr[MouseEventHandler[SVGElement]] = js.undefined
+  var onMouseLeave: js.UndefOr[MouseEventHandler[SVGElement]] = js.undefined
+  var onMouseMove: js.UndefOr[MouseEventHandler[SVGElement]] = js.undefined
+  var onMouseOut: js.UndefOr[MouseEventHandler[SVGElement]] = js.undefined
+  var onMouseOver: js.UndefOr[MouseEventHandler[SVGElement]] = js.undefined
+  var onMouseUp: js.UndefOr[MouseEventHandler[SVGElement]] = js.undefined
+  var onPaste: js.UndefOr[ClipboardEventHandler[SVGElement]] = js.undefined
+  var onPause: js.UndefOr[ReactEventHandler[SVGElement]] = js.undefined
+  var onPlay: js.UndefOr[ReactEventHandler[SVGElement]] = js.undefined
+  var onPlaying: js.UndefOr[ReactEventHandler[SVGElement]] = js.undefined
+  var onPointerCancel: js.UndefOr[PointerEventHandler[SVGElement]] = js.undefined
+  var onPointerDown: js.UndefOr[PointerEventHandler[SVGElement]] = js.undefined
+  var onPointerEnter: js.UndefOr[PointerEventHandler[SVGElement]] = js.undefined
+  var onPointerLeave: js.UndefOr[PointerEventHandler[SVGElement]] = js.undefined
+  var onPointerMove: js.UndefOr[PointerEventHandler[SVGElement]] = js.undefined
+  var onPointerOut: js.UndefOr[PointerEventHandler[SVGElement]] = js.undefined
+  var onPointerOver: js.UndefOr[PointerEventHandler[SVGElement]] = js.undefined
+  var onPointerUp: js.UndefOr[PointerEventHandler[SVGElement]] = js.undefined
+  var onProgress: js.UndefOr[ReactEventHandler[SVGElement]] = js.undefined
+  var onRateChange: js.UndefOr[ReactEventHandler[SVGElement]] = js.undefined
+  var onReset: js.UndefOr[FormEventHandler[SVGElement]] = js.undefined
+  var onScroll: js.UndefOr[UIEventHandler[SVGElement]] = js.undefined
+  var onSeeked: js.UndefOr[ReactEventHandler[SVGElement]] = js.undefined
+  var onSeeking: js.UndefOr[ReactEventHandler[SVGElement]] = js.undefined
+  var onSelect: js.UndefOr[ReactEventHandler[SVGElement]] = js.undefined
+  var onStalled: js.UndefOr[ReactEventHandler[SVGElement]] = js.undefined
+  var onSubmit: js.UndefOr[FormEventHandler[SVGElement]] = js.undefined
+  var onSuspend: js.UndefOr[ReactEventHandler[SVGElement]] = js.undefined
+  var onTimeUpdate: js.UndefOr[ReactEventHandler[SVGElement]] = js.undefined
+  var onTouchCancel: js.UndefOr[TouchEventHandler[SVGElement]] = js.undefined
+  var onTouchEnd: js.UndefOr[TouchEventHandler[SVGElement]] = js.undefined
+  var onTouchMove: js.UndefOr[TouchEventHandler[SVGElement]] = js.undefined
+  var onTouchStart: js.UndefOr[TouchEventHandler[SVGElement]] = js.undefined
+  var onTransitionEnd: js.UndefOr[TransitionEventHandler[SVGElement]] = js.undefined
+  var onVolumeChange: js.UndefOr[ReactEventHandler[SVGElement]] = js.undefined
+  var onWaiting: js.UndefOr[ReactEventHandler[SVGElement]] = js.undefined
+  var onWheel: js.UndefOr[WheelEventHandler[SVGElement]] = js.undefined
   var opacity: js.UndefOr[Double | String] = js.undefined
   var operator: js.UndefOr[Double | String] = js.undefined
   var order: js.UndefOr[Double | String] = js.undefined
@@ -395,7 +397,7 @@ trait CarbonIconProps extends js.Object {
   var primitiveUnits: js.UndefOr[Double | String] = js.undefined
   var r: js.UndefOr[Double | String] = js.undefined
   var radius: js.UndefOr[Double | String] = js.undefined
-  var ref: js.UndefOr[LegacyRef[_]] = js.undefined
+  var ref: js.UndefOr[LegacyRef[SVGElement]] = js.undefined
   var refX: js.UndefOr[Double | String] = js.undefined
   var refY: js.UndefOr[Double | String] = js.undefined
   var renderingIntent: js.UndefOr[Double | String] = js.undefined
@@ -448,6 +450,7 @@ trait CarbonIconProps extends js.Object {
   var textDecoration: js.UndefOr[Double | String] = js.undefined
   var textLength: js.UndefOr[Double | String] = js.undefined
   var textRendering: js.UndefOr[Double | String] = js.undefined
+  var title: js.UndefOr[String] = js.undefined
   var to: js.UndefOr[Double | String] = js.undefined
   var transform: js.UndefOr[String] = js.undefined
   var `type`: js.UndefOr[String] = js.undefined
@@ -472,7 +475,7 @@ trait CarbonIconProps extends js.Object {
   var viewBox: js.UndefOr[String] = js.undefined
   var viewTarget: js.UndefOr[Double | String] = js.undefined
   var visibility: js.UndefOr[Double | String] = js.undefined
-  var width: js.UndefOr[Double | String] = js.undefined
+  var width: js.UndefOr[Double] = js.undefined
   var widths: js.UndefOr[Double | String] = js.undefined
   var wordSpacing: js.UndefOr[Double | String] = js.undefined
   var writingMode: js.UndefOr[Double | String] = js.undefined
@@ -531,7 +534,7 @@ object CarbonIconProps {
     `aria-flowto`: String = null,
     `aria-grabbed`: js.UndefOr[Boolean] = js.undefined,
     `aria-haspopup`: Boolean | menu | listbox | tree | grid | dialog = null,
-    `aria-hidden`: js.UndefOr[Boolean] = js.undefined,
+    `aria-hidden`: String = null,
     `aria-invalid`: Boolean | grammar | spelling = null,
     `aria-keyshortcuts`: String = null,
     `aria-label`: String = null,
@@ -638,7 +641,7 @@ object CarbonIconProps {
     gradientTransform: String = null,
     gradientUnits: String = null,
     hanging: Double | String = null,
-    height: Double | String = null,
+    height: Int | Double = null,
     horizAdvX: Double | String = null,
     horizOriginX: Double | String = null,
     href: String = null,
@@ -684,80 +687,80 @@ object CarbonIconProps {
     name: String = null,
     numOctaves: Double | String = null,
     offset: Double | String = null,
-    onAbort: SyntheticEvent[_, Event_] => Unit = null,
-    onAnimationEnd: AnimationEvent[_] => Unit = null,
-    onAnimationIteration: AnimationEvent[_] => Unit = null,
-    onAnimationStart: AnimationEvent[_] => Unit = null,
-    onAuxClick: MouseEvent[_, NativeMouseEvent] => Unit = null,
-    onBeforeInput: FormEvent[_] => Unit = null,
-    onBlur: FocusEvent[_] => Unit = null,
-    onCanPlay: SyntheticEvent[_, Event_] => Unit = null,
-    onCanPlayThrough: SyntheticEvent[_, Event_] => Unit = null,
-    onChange: FormEvent[_] => Unit = null,
-    onClick: MouseEvent[_, NativeMouseEvent] => Unit = null,
-    onCompositionEnd: CompositionEvent[_] => Unit = null,
-    onCompositionStart: CompositionEvent[_] => Unit = null,
-    onCompositionUpdate: CompositionEvent[_] => Unit = null,
-    onContextMenu: MouseEvent[_, NativeMouseEvent] => Unit = null,
-    onCopy: ClipboardEvent[_] => Unit = null,
-    onCut: ClipboardEvent[_] => Unit = null,
-    onDoubleClick: MouseEvent[_, NativeMouseEvent] => Unit = null,
-    onDrag: DragEvent[_] => Unit = null,
-    onDragEnd: DragEvent[_] => Unit = null,
-    onDragEnter: DragEvent[_] => Unit = null,
-    onDragExit: DragEvent[_] => Unit = null,
-    onDragLeave: DragEvent[_] => Unit = null,
-    onDragOver: DragEvent[_] => Unit = null,
-    onDragStart: DragEvent[_] => Unit = null,
-    onDrop: DragEvent[_] => Unit = null,
-    onDurationChange: SyntheticEvent[_, Event_] => Unit = null,
-    onEmptied: SyntheticEvent[_, Event_] => Unit = null,
-    onEncrypted: SyntheticEvent[_, Event_] => Unit = null,
-    onEnded: SyntheticEvent[_, Event_] => Unit = null,
-    onError: SyntheticEvent[_, Event_] => Unit = null,
-    onFocus: FocusEvent[_] => Unit = null,
-    onInput: FormEvent[_] => Unit = null,
-    onInvalid: FormEvent[_] => Unit = null,
-    onKeyDown: KeyboardEvent[_] => Unit = null,
-    onKeyPress: KeyboardEvent[_] => Unit = null,
-    onKeyUp: KeyboardEvent[_] => Unit = null,
-    onLoad: SyntheticEvent[_, Event_] => Unit = null,
-    onLoadStart: SyntheticEvent[_, Event_] => Unit = null,
-    onLoadedData: SyntheticEvent[_, Event_] => Unit = null,
-    onLoadedMetadata: SyntheticEvent[_, Event_] => Unit = null,
-    onMouseDown: MouseEvent[_, NativeMouseEvent] => Unit = null,
-    onMouseEnter: MouseEvent[_, NativeMouseEvent] => Unit = null,
-    onMouseLeave: MouseEvent[_, NativeMouseEvent] => Unit = null,
-    onMouseMove: MouseEvent[_, NativeMouseEvent] => Unit = null,
-    onMouseOut: MouseEvent[_, NativeMouseEvent] => Unit = null,
-    onMouseOver: MouseEvent[_, NativeMouseEvent] => Unit = null,
-    onMouseUp: MouseEvent[_, NativeMouseEvent] => Unit = null,
-    onPaste: ClipboardEvent[_] => Unit = null,
-    onPause: SyntheticEvent[_, Event_] => Unit = null,
-    onPlay: SyntheticEvent[_, Event_] => Unit = null,
-    onPlaying: SyntheticEvent[_, Event_] => Unit = null,
-    onPointerCancel: PointerEvent[_] => Unit = null,
-    onPointerDown: PointerEvent[_] => Unit = null,
-    onPointerEnter: PointerEvent[_] => Unit = null,
-    onPointerLeave: PointerEvent[_] => Unit = null,
-    onPointerMove: PointerEvent[_] => Unit = null,
-    onPointerOut: PointerEvent[_] => Unit = null,
-    onPointerOver: PointerEvent[_] => Unit = null,
-    onPointerUp: PointerEvent[_] => Unit = null,
-    onProgress: SyntheticEvent[_, Event_] => Unit = null,
-    onRateChange: SyntheticEvent[_, Event_] => Unit = null,
-    onReset: FormEvent[_] => Unit = null,
-    onScroll: UIEvent[_] => Unit = null,
-    onSeeked: SyntheticEvent[_, Event_] => Unit = null,
-    onSeeking: SyntheticEvent[_, Event_] => Unit = null,
-    onSelect: SyntheticEvent[_, Event_] => Unit = null,
-    onStalled: SyntheticEvent[_, Event_] => Unit = null,
-    onSubmit: FormEvent[_] => Unit = null,
-    onSuspend: SyntheticEvent[_, Event_] => Unit = null,
-    onTimeUpdate: SyntheticEvent[_, Event_] => Unit = null,
-    onTouchCancel: TouchEvent[_] => Unit = null,
-    onTouchEnd: TouchEvent[_] => Unit = null,
-    onTouchMove: TouchEvent[_] => Unit = null
+    onAbort: SyntheticEvent[SVGElement, Event_] => Unit = null,
+    onAnimationEnd: AnimationEvent[SVGElement] => Unit = null,
+    onAnimationIteration: AnimationEvent[SVGElement] => Unit = null,
+    onAnimationStart: AnimationEvent[SVGElement] => Unit = null,
+    onAuxClick: MouseEvent[SVGElement, NativeMouseEvent] => Unit = null,
+    onBeforeInput: FormEvent[SVGElement] => Unit = null,
+    onBlur: FocusEvent[SVGElement] => Unit = null,
+    onCanPlay: SyntheticEvent[SVGElement, Event_] => Unit = null,
+    onCanPlayThrough: SyntheticEvent[SVGElement, Event_] => Unit = null,
+    onChange: FormEvent[SVGElement] => Unit = null,
+    onClick: MouseEvent[SVGElement, NativeMouseEvent] => Unit = null,
+    onCompositionEnd: CompositionEvent[SVGElement] => Unit = null,
+    onCompositionStart: CompositionEvent[SVGElement] => Unit = null,
+    onCompositionUpdate: CompositionEvent[SVGElement] => Unit = null,
+    onContextMenu: MouseEvent[SVGElement, NativeMouseEvent] => Unit = null,
+    onCopy: ClipboardEvent[SVGElement] => Unit = null,
+    onCut: ClipboardEvent[SVGElement] => Unit = null,
+    onDoubleClick: MouseEvent[SVGElement, NativeMouseEvent] => Unit = null,
+    onDrag: DragEvent[SVGElement] => Unit = null,
+    onDragEnd: DragEvent[SVGElement] => Unit = null,
+    onDragEnter: DragEvent[SVGElement] => Unit = null,
+    onDragExit: DragEvent[SVGElement] => Unit = null,
+    onDragLeave: DragEvent[SVGElement] => Unit = null,
+    onDragOver: DragEvent[SVGElement] => Unit = null,
+    onDragStart: DragEvent[SVGElement] => Unit = null,
+    onDrop: DragEvent[SVGElement] => Unit = null,
+    onDurationChange: SyntheticEvent[SVGElement, Event_] => Unit = null,
+    onEmptied: SyntheticEvent[SVGElement, Event_] => Unit = null,
+    onEncrypted: SyntheticEvent[SVGElement, Event_] => Unit = null,
+    onEnded: SyntheticEvent[SVGElement, Event_] => Unit = null,
+    onError: SyntheticEvent[SVGElement, Event_] => Unit = null,
+    onFocus: FocusEvent[SVGElement] => Unit = null,
+    onInput: FormEvent[SVGElement] => Unit = null,
+    onInvalid: FormEvent[SVGElement] => Unit = null,
+    onKeyDown: KeyboardEvent[SVGElement] => Unit = null,
+    onKeyPress: KeyboardEvent[SVGElement] => Unit = null,
+    onKeyUp: KeyboardEvent[SVGElement] => Unit = null,
+    onLoad: SyntheticEvent[SVGElement, Event_] => Unit = null,
+    onLoadStart: SyntheticEvent[SVGElement, Event_] => Unit = null,
+    onLoadedData: SyntheticEvent[SVGElement, Event_] => Unit = null,
+    onLoadedMetadata: SyntheticEvent[SVGElement, Event_] => Unit = null,
+    onMouseDown: MouseEvent[SVGElement, NativeMouseEvent] => Unit = null,
+    onMouseEnter: MouseEvent[SVGElement, NativeMouseEvent] => Unit = null,
+    onMouseLeave: MouseEvent[SVGElement, NativeMouseEvent] => Unit = null,
+    onMouseMove: MouseEvent[SVGElement, NativeMouseEvent] => Unit = null,
+    onMouseOut: MouseEvent[SVGElement, NativeMouseEvent] => Unit = null,
+    onMouseOver: MouseEvent[SVGElement, NativeMouseEvent] => Unit = null,
+    onMouseUp: MouseEvent[SVGElement, NativeMouseEvent] => Unit = null,
+    onPaste: ClipboardEvent[SVGElement] => Unit = null,
+    onPause: SyntheticEvent[SVGElement, Event_] => Unit = null,
+    onPlay: SyntheticEvent[SVGElement, Event_] => Unit = null,
+    onPlaying: SyntheticEvent[SVGElement, Event_] => Unit = null,
+    onPointerCancel: PointerEvent[SVGElement] => Unit = null,
+    onPointerDown: PointerEvent[SVGElement] => Unit = null,
+    onPointerEnter: PointerEvent[SVGElement] => Unit = null,
+    onPointerLeave: PointerEvent[SVGElement] => Unit = null,
+    onPointerMove: PointerEvent[SVGElement] => Unit = null,
+    onPointerOut: PointerEvent[SVGElement] => Unit = null,
+    onPointerOver: PointerEvent[SVGElement] => Unit = null,
+    onPointerUp: PointerEvent[SVGElement] => Unit = null,
+    onProgress: SyntheticEvent[SVGElement, Event_] => Unit = null,
+    onRateChange: SyntheticEvent[SVGElement, Event_] => Unit = null,
+    onReset: FormEvent[SVGElement] => Unit = null,
+    onScroll: UIEvent[SVGElement, NativeUIEvent] => Unit = null,
+    onSeeked: SyntheticEvent[SVGElement, Event_] => Unit = null,
+    onSeeking: SyntheticEvent[SVGElement, Event_] => Unit = null,
+    onSelect: SyntheticEvent[SVGElement, Event_] => Unit = null,
+    onStalled: SyntheticEvent[SVGElement, Event_] => Unit = null,
+    onSubmit: FormEvent[SVGElement] => Unit = null,
+    onSuspend: SyntheticEvent[SVGElement, Event_] => Unit = null,
+    onTimeUpdate: SyntheticEvent[SVGElement, Event_] => Unit = null,
+    onTouchCancel: TouchEvent[SVGElement] => Unit = null,
+    onTouchEnd: TouchEvent[SVGElement] => Unit = null,
+    onTouchMove: TouchEvent[SVGElement] => Unit = null
   ): CarbonIconProps = {
     val __obj = js.Dynamic.literal()
     if (accentHeight != null) __obj.updateDynamic("accentHeight")(accentHeight.asInstanceOf[js.Any])
@@ -787,7 +790,7 @@ object CarbonIconProps {
     if (`aria-flowto` != null) __obj.updateDynamic("aria-flowto")(`aria-flowto`.asInstanceOf[js.Any])
     if (!js.isUndefined(`aria-grabbed`)) __obj.updateDynamic("aria-grabbed")(`aria-grabbed`.asInstanceOf[js.Any])
     if (`aria-haspopup` != null) __obj.updateDynamic("aria-haspopup")(`aria-haspopup`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-hidden`)) __obj.updateDynamic("aria-hidden")(`aria-hidden`.asInstanceOf[js.Any])
+    if (`aria-hidden` != null) __obj.updateDynamic("aria-hidden")(`aria-hidden`.asInstanceOf[js.Any])
     if (`aria-invalid` != null) __obj.updateDynamic("aria-invalid")(`aria-invalid`.asInstanceOf[js.Any])
     if (`aria-keyshortcuts` != null) __obj.updateDynamic("aria-keyshortcuts")(`aria-keyshortcuts`.asInstanceOf[js.Any])
     if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`.asInstanceOf[js.Any])

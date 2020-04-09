@@ -5,9 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CanvasTrueOptions
-  extends CanvasOptions
-     with CropOptions {
+trait CanvasTrueOptions extends CanvasOptions {
   var bottom: js.UndefOr[Double] = js.undefined
   var canvas: `true`
   var crop: js.UndefOr[Boolean] = js.undefined

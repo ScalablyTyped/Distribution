@@ -242,6 +242,13 @@ object NotebookActions extends js.Object {
   def renderAllMarkdown(notebook: typings.jupyterlabNotebook.widgetMod.Notebook): js.Promise[Boolean] = js.native
   def renderAllMarkdown(notebook: typings.jupyterlabNotebook.widgetMod.Notebook, sessionContext: ISessionContext): js.Promise[Boolean] = js.native
   /**
+    * Replaces the selection in the active cell of the notebook.
+    *
+    * @param notebook - The target notebook widget.
+    * @param text - The text to replace the selection.
+    */
+  def replaceSelection(notebook: typings.jupyterlabNotebook.widgetMod.Notebook, text: String): Unit = js.native
+  /**
     * Run the selected cell(s).
     *
     * @param notebook - The target notebook widget.

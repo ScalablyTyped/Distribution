@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "firebase__firestore"
-version := "1.12.2-be85fb"
+version := "1.13.1-e59736"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,8 +11,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "firebase__firestore-types" % "1.10.1-a36715",
   "org.scalablytyped" %%% "firebase__logger" % "0.2.0-1da808",
   "org.scalablytyped" %%% "firebase__util" % "0.2.43-c7dc16",
-  "org.scalablytyped" %%% "grpc" % "1.24.2-43e2e4",
-  "org.scalablytyped" %%% "node" % "13.9-dt-20200318Z-96a265",
+  "org.scalablytyped" %%% "grpc" % "1.24.2-85e23f",
+  "org.scalablytyped" %%% "node" % "13.11-dt-20200402Z-9a87f0",
   "org.scalablytyped" %%% "protobufjs" % "6.8.9-76f5f2",
   "org.scalablytyped" %%% "std" % "3.8-a0108c",
   "org.scalablytyped" %%% "typescript" % "3.8.3-07d300")

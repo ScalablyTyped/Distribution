@@ -24,6 +24,7 @@ trait Props extends js.Object {
   var onFocus: js.UndefOr[js.Function1[/* e */ FocusEvent[HTMLInputElement], Unit]] = js.undefined
   var prefixCls: js.UndefOr[String] = js.undefined
   var readOnly: js.UndefOr[Boolean] = js.undefined
+  var required: js.UndefOr[Boolean] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
   var tabIndex: js.UndefOr[String | Double] = js.undefined
   var `type`: js.UndefOr[String] = js.undefined
@@ -46,6 +47,7 @@ object Props {
     onFocus: /* e */ FocusEvent[HTMLInputElement] => Unit = null,
     prefixCls: String = null,
     readOnly: js.UndefOr[Boolean] = js.undefined,
+    required: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null,
     tabIndex: String | Double = null,
     `type`: String = null,
@@ -65,6 +67,7 @@ object Props {
     if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

@@ -27,23 +27,23 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxBulletOptions extends BaseSparklineOptions[dxBullet] {
-  /** Specifies a color for the bullet bar. */
+  /** @name dxBullet.Options.color */
   var color: js.UndefOr[String] = js.undefined
-  /** Specifies an end value for the invisible scale. */
+  /** @name dxBullet.Options.endScaleValue */
   var endScaleValue: js.UndefOr[Double] = js.undefined
-  /** Specifies whether or not to show the target line. */
+  /** @name dxBullet.Options.showTarget */
   var showTarget: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether or not to show the line indicating zero on the invisible scale. */
+  /** @name dxBullet.Options.showZeroLevel */
   var showZeroLevel: js.UndefOr[Boolean] = js.undefined
-  /** Specifies a start value for the invisible scale. */
+  /** @name dxBullet.Options.startScaleValue */
   var startScaleValue: js.UndefOr[Double] = js.undefined
-  /** Specifies the value indicated by the target line. */
+  /** @name dxBullet.Options.target */
   var target: js.UndefOr[Double] = js.undefined
-  /** Specifies a color for both the target and zero level lines. */
+  /** @name dxBullet.Options.targetColor */
   var targetColor: js.UndefOr[String] = js.undefined
-  /** Specifies the width of the target line. */
+  /** @name dxBullet.Options.targetWidth */
   var targetWidth: js.UndefOr[Double] = js.undefined
-  /** Specifies the primary value indicated by the bullet bar. */
+  /** @name dxBullet.Options.value */
   var value: js.UndefOr[Double] = js.undefined
 }
 

@@ -7,45 +7,45 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DataSourceOptions extends js.Object {
-  /** Custom parameters that should be passed to an OData service with the load query. Available only for the ODataStore. */
+  /** @name DataSource.Options.customQueryParams */
   var customQueryParams: js.UndefOr[js.Any] = js.undefined
-  /** Specifies the navigation properties to be loaded with the OData entity. Available only for the ODataStore. */
+  /** @name DataSource.Options.expand */
   var expand: js.UndefOr[js.Array[String] | String] = js.undefined
-  /** Specifies data filtering conditions. */
+  /** @name DataSource.Options.filter */
   var filter: js.UndefOr[String | js.Array[_] | js.Function] = js.undefined
-  /** Specifies data grouping options. */
+  /** @name DataSource.Options.group */
   var group: js.UndefOr[String | js.Array[_] | js.Function] = js.undefined
-  /** Specifies an item mapping function. */
+  /** @name DataSource.Options.map */
   var map: js.UndefOr[js.Function1[/* dataItem */ js.Any, _]] = js.undefined
-  /** A function that is executed after data is loaded. */
+  /** @name DataSource.Options.onChanged */
   var onChanged: js.UndefOr[js.Function1[/* e */ AnonChanges, _]] = js.undefined
-  /** A function that is executed when data loading fails. */
+  /** @name DataSource.Options.onLoadError */
   var onLoadError: js.UndefOr[js.Function1[/* error */ AnonMessage, _]] = js.undefined
-  /** A function that is executed when the data loading status changes. */
+  /** @name DataSource.Options.onLoadingChanged */
   var onLoadingChanged: js.UndefOr[js.Function1[/* isLoading */ Boolean, _]] = js.undefined
-  /** Specifies the maximum number of data items per page. Applies only if paginate is true. */
+  /** @name DataSource.Options.pageSize */
   var pageSize: js.UndefOr[Double] = js.undefined
-  /** Specifies whether the DataSource loads data items by pages or all at once. Defaults to false if group is set; otherwise, true. */
+  /** @name DataSource.Options.paginate */
   var paginate: js.UndefOr[Boolean] = js.undefined
-  /** Specifies a post processing function. */
+  /** @name DataSource.Options.postProcess */
   var postProcess: js.UndefOr[js.Function1[/* data */ js.Array[_], js.Array[_]]] = js.undefined
-  /** Specifies the period (in milliseconds) when changes are aggregated before pushing them to the DataSource. */
+  /** @name DataSource.Options.pushAggregationTimeout */
   var pushAggregationTimeout: js.UndefOr[Double] = js.undefined
-  /** Specifies whether the DataSource requests the total count of data items in the storage. */
+  /** @name DataSource.Options.requireTotalCount */
   var requireTotalCount: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether to reapply sorting, filtering, grouping, and other data processing operations after receiving a push. */
+  /** @name DataSource.Options.reshapeOnPush */
   var reshapeOnPush: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the fields to search. */
+  /** @name DataSource.Options.searchExpr */
   var searchExpr: js.UndefOr[String | js.Function | (js.Array[String | js.Function])] = js.undefined
-  /** Specifies the comparison operation used in searching. The following values are accepted: "=", "<>", ">", ">=", "<", "<=", "startswith", "endswith", "contains", "notcontains". */
+  /** @name DataSource.Options.searchOperation */
   var searchOperation: js.UndefOr[String] = js.undefined
-  /** Specifies the value to which the search expression is compared. */
+  /** @name DataSource.Options.searchValue */
   var searchValue: js.UndefOr[js.Any] = js.undefined
-  /** Specifies the fields to select from data objects. */
+  /** @name DataSource.Options.select */
   var select: js.UndefOr[String | js.Array[_] | js.Function] = js.undefined
-  /** Specifies data sorting options. */
+  /** @name DataSource.Options.sort */
   var sort: js.UndefOr[String | js.Array[_] | js.Function] = js.undefined
-  /** Configures the store underlying the DataSource. */
+  /** @name DataSource.Options.store */
   var store: js.UndefOr[Store | StoreOptions[Store] | js.Array[_] | js.Any] = js.undefined
 }
 

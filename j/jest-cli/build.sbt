@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "jest-cli"
-version := "25.1.0-375ad6"
+version := "25.2.7-2742d1"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "istanbul-lib-coverage" % "2.0-dt-20190425Z-9611dd",
-  "org.scalablytyped" %%% "jest__types" % "24.9.0-3e0310",
-  "org.scalablytyped" %%% "node" % "13.9-dt-20200318Z-96a265",
+  "org.scalablytyped" %%% "jest__types" % "24.9.0-ba6b7b",
+  "org.scalablytyped" %%% "node" % "13.11-dt-20200402Z-9a87f0",
   "org.scalablytyped" %%% "prompts" % "2.0-dt-20200310Z-6fa671",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false

@@ -12,6 +12,7 @@ package object globalacceleratorMod {
   */
   type AcceleratorStatus = typings.awsSdk.globalacceleratorMod._AcceleratorStatus | java.lang.String
   type Accelerators = js.Array[typings.awsSdk.globalacceleratorMod.Accelerator]
+  type ByoipCidrEvents = js.Array[typings.awsSdk.globalacceleratorMod.ByoipCidrEvent]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.PENDING_PROVISIONING
     - typings.awsSdk.awsSdkStrings.READY

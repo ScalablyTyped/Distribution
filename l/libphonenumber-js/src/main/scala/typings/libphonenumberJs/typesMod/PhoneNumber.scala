@@ -28,6 +28,8 @@ class PhoneNumber protected () extends js.Object {
   def getType(): NumberType = js.native
   def getURI(): String = js.native
   def getURI(options: FormatNumberOptionsWithoutIDD): String = js.native
+  def isEqual(phoneNumber: PhoneNumber): Boolean = js.native
+  def isNonGeographic(): Boolean = js.native
   def isPossible(): Boolean = js.native
   def isValid(): Boolean = js.native
 }

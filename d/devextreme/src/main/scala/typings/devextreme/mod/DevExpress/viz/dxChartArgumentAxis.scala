@@ -36,78 +36,78 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxChartArgumentAxis extends dxChartCommonAxisSettings {
-  /** Aggregates series points that fall into the same category. */
+  /** @name dxChart.Options.argumentAxis.aggregateByCategory */
   var aggregateByCategory: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the length of aggregation intervals in pixels. Does not apply if aggregateByCategory is true. May be ignored in favor of the aggregationInterval option. */
+  /** @name dxChart.Options.argumentAxis.aggregationGroupWidth */
   var aggregationGroupWidth: js.UndefOr[Double] = js.undefined
-  /** Specifies the length of aggregation intervals in axis units. Applies only to axes of continuous and logarithmic types. */
+  /** @name dxChart.Options.argumentAxis.aggregationInterval */
   var aggregationInterval: js.UndefOr[
     Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year
   ] = js.undefined
-  /** Casts arguments to a specified data type. */
+  /** @name dxChart.Options.argumentAxis.argumentType */
   var argumentType: js.UndefOr[datetime | numeric | string_] = js.undefined
-  /** Specifies the minimum distance between two neighboring major ticks in pixels. Applies only to the axes of the "continuous" and "logarithmic" types. */
+  /** @name dxChart.Options.argumentAxis.axisDivisionFactor */
   var axisDivisionFactor: js.UndefOr[Double] = js.undefined
-  /** Declares a scale break collection. Applies only if the axis' type is "continuous" or "logarithmic". */
+  /** @name dxChart.Options.argumentAxis.breaks */
   var breaks: js.UndefOr[js.Array[ScaleBreak]] = js.undefined
-  /** Specifies the order of categories on an axis of the "discrete" type. */
+  /** @name dxChart.Options.argumentAxis.categories */
   var categories: js.UndefOr[js.Array[Double | String | Date]] = js.undefined
-  /** Specifies the appearance of those constant lines that belong to the argument axis. */
+  /** @name dxChart.Options.argumentAxis.constantLineStyle */
   @JSName("constantLineStyle")
   var constantLineStyle_dxChartArgumentAxis: js.UndefOr[dxChartArgumentAxisConstantLineStyle] = js.undefined
-  /** Declares a collection of constant lines belonging to the argument axis. */
+  /** @name dxChart.Options.argumentAxis.constantLines */
   var constantLines: js.UndefOr[js.Array[dxChartArgumentAxisConstantLines]] = js.undefined
-  /** Dates to be excluded from the axis when workdaysOnly is true. */
+  /** @name dxChart.Options.argumentAxis.holidays */
   var holidays: js.UndefOr[js.Array[Date | Double | String]] = js.undefined
-  /** Specifies chart elements to be highlighted when a user points to an axis label. */
+  /** @name dxChart.Options.argumentAxis.hoverMode */
   var hoverMode: js.UndefOr[allArgumentPoints | none] = js.undefined
-  /** Configures the labels of the argument axis. */
+  /** @name dxChart.Options.argumentAxis.label */
   @JSName("label")
   var label_dxChartArgumentAxis: js.UndefOr[dxChartArgumentAxisLabel] = js.undefined
-  /** Specifies a value used to calculate the range on a logarithmic axis within which the axis should be linear. Applies only if the data source contains negative values or zeroes. */
+  /** @name dxChart.Options.argumentAxis.linearThreshold */
   var linearThreshold: js.UndefOr[Double] = js.undefined
-  /** Specifies the value to be raised to a power when generating ticks for an axis of the "logarithmic" type. */
+  /** @name dxChart.Options.argumentAxis.logarithmBase */
   var logarithmBase: js.UndefOr[Double] = js.undefined
-  /** @deprecated Use the argumentAxis.visualRange option instead. */
-  /** Coupled with the min option, focuses the widget on a specific chart segment. Applies only to the axes of the "continuous" and "logarithmic" type. */
+  /** @deprecated */
+  /** @name dxChart.Options.argumentAxis.max */
   var max: js.UndefOr[Double | Date | String] = js.undefined
-  /** @deprecated Use the argumentAxis.visualRange option instead. */
-  /** Coupled with the max option, focuses the widget on a specific chart segment. Applies only to the axes of the "continuous" and "logarithmic" type. */
+  /** @deprecated */
+  /** @name dxChart.Options.argumentAxis.min */
   var min: js.UndefOr[Double | Date | String] = js.undefined
-  /** Specifies the minimum length of the visual range. */
+  /** @name dxChart.Options.argumentAxis.minVisualRangeLength */
   var minVisualRangeLength: js.UndefOr[
     Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year
   ] = js.undefined
-  /** Specifies how many minor ticks to place between two neighboring major ticks. */
+  /** @name dxChart.Options.argumentAxis.minorTickCount */
   var minorTickCount: js.UndefOr[Double] = js.undefined
-  /** Specifies the interval between minor ticks. Applies only to the axes of the "continuous" type. */
+  /** @name dxChart.Options.argumentAxis.minorTickInterval */
   var minorTickInterval: js.UndefOr[
     Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year
   ] = js.undefined
-  /** Relocates the argument axis. */
+  /** @name dxChart.Options.argumentAxis.position */
   var position: js.UndefOr[bottom | left | right | top] = js.undefined
-  /** Dates to be included on the axis when workdaysOnly is true. */
+  /** @name dxChart.Options.argumentAxis.singleWorkdays */
   var singleWorkdays: js.UndefOr[js.Array[Date | Double | String]] = js.undefined
-  /** Declares a collection of strips belonging to the argument axis. */
+  /** @name dxChart.Options.argumentAxis.strips */
   var strips: js.UndefOr[js.Array[dxChartArgumentAxisStrips]] = js.undefined
-  /** Specifies the interval between major ticks. */
+  /** @name dxChart.Options.argumentAxis.tickInterval */
   var tickInterval: js.UndefOr[
     Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year
   ] = js.undefined
-  /** Configures the axis title. */
+  /** @name dxChart.Options.argumentAxis.title */
   @JSName("title")
   var title_dxChartArgumentAxis: js.UndefOr[dxChartArgumentAxisTitle] = js.undefined
-  /** Specifies the type of the argument axis. */
+  /** @name dxChart.Options.argumentAxis.type */
   var `type`: js.UndefOr[continuous | discrete | logarithmic] = js.undefined
-  /** Defines the axis' displayed range. Cannot be wider than the wholeRange. */
+  /** @name dxChart.Options.argumentAxis.visualRange */
   var visualRange: js.UndefOr[VizRange | (js.Array[Double | String | Date])] = js.undefined
-  /** Specifies how the axis's visual range should behave when chart data is updated. */
+  /** @name dxChart.Options.argumentAxis.visualRangeUpdateMode */
   var visualRangeUpdateMode: js.UndefOr[auto | keep | reset | shift] = js.undefined
-  /** Defines the range where the axis can be zoomed and panned. */
+  /** @name dxChart.Options.argumentAxis.wholeRange */
   var wholeRange: js.UndefOr[VizRange | (js.Array[Double | String | Date])] = js.undefined
-  /** Specifies which days are workdays. The array can contain values from 0 (Sunday) to 6 (Saturday). Applies only if workdaysOnly is true. */
+  /** @name dxChart.Options.argumentAxis.workWeek */
   var workWeek: js.UndefOr[js.Array[Double]] = js.undefined
-  /** Leaves only workdays on the axis: the work week days plus single workdays minus holidays. Applies only if the axis' argumentType is "datetime". */
+  /** @name dxChart.Options.argumentAxis.workdaysOnly */
   var workdaysOnly: js.UndefOr[Boolean] = js.undefined
 }
 

@@ -1,5 +1,6 @@
 package typings.pulumiAws.javaAppLayerMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiAws.outputMod.opsworks.JavaAppLayerEbsVolume
 import typings.pulumiPulumi.mod.CustomResource
 import typings.pulumiPulumi.outputMod.Input
@@ -30,6 +31,10 @@ class JavaAppLayer protected () extends CustomResource {
     * Version of the selected application container to use. Defaults to "7".
     */
   val appServerVersion: Output_[js.UndefOr[String]] = js.native
+  /**
+    * The Amazon Resource Name(ARN) of the layer.
+    */
+  val arn: Output_[String] = js.native
   /**
     * Whether to automatically assign an elastic IP address to the layer's instances.
     */
@@ -103,6 +108,10 @@ class JavaAppLayer protected () extends CustomResource {
     * Names of a set of system packages to install on the layer's instances.
     */
   val systemPackages: Output_[js.UndefOr[js.Array[String]]] = js.native
+  /**
+    * A mapping of tags to assign to the resource.
+    */
+  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
   /**
     * Whether to use EBS-optimized instances.
     */

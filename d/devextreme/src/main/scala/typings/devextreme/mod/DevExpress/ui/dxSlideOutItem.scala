@@ -7,7 +7,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxSlideOutItem extends CollectionWidgetItem {
-  /** Specifies a template that should be used to render a menu item. */
+  /** @name dxSlideOutItem.menuTemplate */
   var menuTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function0[String | Element | JQuery])
   ] = js.undefined

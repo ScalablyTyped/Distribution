@@ -1,5 +1,6 @@
 package typings.pulumiAws.railsAppLayerMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiAws.inputMod.opsworks.RailsAppLayerEbsVolume
 import typings.pulumiPulumi.outputMod.Input
 import scala.scalajs.js
@@ -94,6 +95,10 @@ trait RailsAppLayerArgs extends js.Object {
     */
   val systemPackages: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
+    * A mapping of tags to assign to the resource.
+    */
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  /**
     * Whether to use EBS-optimized instances.
     */
   val useEbsOptimizedInstances: js.UndefOr[Input[Boolean]] = js.native
@@ -127,6 +132,7 @@ object RailsAppLayerArgs {
     rubyVersion: Input[String] = null,
     rubygemsVersion: Input[String] = null,
     systemPackages: Input[js.Array[Input[String]]] = null,
+    tags: Input[StringDictionary[_]] = null,
     useEbsOptimizedInstances: Input[Boolean] = null
   ): RailsAppLayerArgs = {
     val __obj = js.Dynamic.literal(stackId = stackId.asInstanceOf[js.Any])
@@ -154,6 +160,7 @@ object RailsAppLayerArgs {
     if (rubyVersion != null) __obj.updateDynamic("rubyVersion")(rubyVersion.asInstanceOf[js.Any])
     if (rubygemsVersion != null) __obj.updateDynamic("rubygemsVersion")(rubygemsVersion.asInstanceOf[js.Any])
     if (systemPackages != null) __obj.updateDynamic("systemPackages")(systemPackages.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     if (useEbsOptimizedInstances != null) __obj.updateDynamic("useEbsOptimizedInstances")(useEbsOptimizedInstances.asInstanceOf[js.Any])
     __obj.asInstanceOf[RailsAppLayerArgs]
   }

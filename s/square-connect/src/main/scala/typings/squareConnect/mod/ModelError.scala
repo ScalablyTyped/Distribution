@@ -8,13 +8,12 @@ import scala.scalajs.js.annotation._
 @js.native
 class ModelError () extends js.Object {
   /**
-    * The high-level category for the error.
-    * See [ErrorCategory](#type-errorcategory) See [ErrorCategory](#type-errorcategory) for possible values.
+    * The high-level category for the error. See `ErrorCategory` for possible values.
+    * See [ErrorCategory](#type-errorcategory) for possible values.
     */
   var category: ErrorCategoryType = js.native
   /**
-    * The specific code of the error.
-    * See [ErrorCode](#type-errorcode) for possible See [ErrorCode](#type-errorcode) for possible values.
+    * The specific code of the error. See `ErrorCode` for possible values See [ErrorCode](#type-errorcode) for possible values.
     */
   var code: ErrorCodeType = js.native
   /**

@@ -6,6 +6,7 @@ import typings.mapboxGl.mapboxGlStrings.auto
 import typings.mapboxGl.mapboxGlStrings.both
 import typings.mapboxGl.mapboxGlStrings.center
 import typings.mapboxGl.mapboxGlStrings.height
+import typings.mapboxGl.mapboxGlStrings.horizontal
 import typings.mapboxGl.mapboxGlStrings.left
 import typings.mapboxGl.mapboxGlStrings.line
 import typings.mapboxGl.mapboxGlStrings.lowercase
@@ -15,6 +16,7 @@ import typings.mapboxGl.mapboxGlStrings.point
 import typings.mapboxGl.mapboxGlStrings.right
 import typings.mapboxGl.mapboxGlStrings.source_
 import typings.mapboxGl.mapboxGlStrings.uppercase
+import typings.mapboxGl.mapboxGlStrings.vertical
 import typings.mapboxGl.mapboxGlStrings.viewport
 import typings.mapboxGl.mapboxGlStrings.width
 import scala.scalajs.js
@@ -40,6 +42,7 @@ trait SymbolLayout
   var `icon-text-fit-padding`: js.UndefOr[js.Array[Double] | Expression] = js.undefined
   var `symbol-avoid-edges`: js.UndefOr[Boolean] = js.undefined
   var `symbol-placement`: js.UndefOr[point | line | `line-center`] = js.undefined
+  var `symbol-sort-key`: js.UndefOr[Double] = js.undefined
   var `symbol-spacing`: js.UndefOr[Double | Expression] = js.undefined
   var `symbol-z-order`: js.UndefOr[`viewport-y` | source_] = js.undefined
   var `text-allow-overlap`: js.UndefOr[Boolean] = js.undefined
@@ -57,10 +60,13 @@ trait SymbolLayout
   var `text-optional`: js.UndefOr[Boolean] = js.undefined
   var `text-padding`: js.UndefOr[Double | Expression] = js.undefined
   var `text-pitch-alignment`: js.UndefOr[map | viewport | auto] = js.undefined
+  var `text-radial-offset`: js.UndefOr[Double | Expression] = js.undefined
   var `text-rotate`: js.UndefOr[Double | StyleFunction | Expression] = js.undefined
   var `text-rotation-alignment`: js.UndefOr[map | viewport | auto] = js.undefined
   var `text-size`: js.UndefOr[Double | StyleFunction | Expression] = js.undefined
   var `text-transform`: js.UndefOr[none | uppercase | lowercase | StyleFunction | Expression] = js.undefined
+  var `text-variable-anchor`: js.UndefOr[js.Array[Anchor]] = js.undefined
+  var `text-writing-mode`: js.UndefOr[js.Array[horizontal | vertical]] = js.undefined
 }
 
 object SymbolLayout {
@@ -82,6 +88,7 @@ object SymbolLayout {
     `icon-text-fit-padding`: js.Array[Double] | Expression = null,
     `symbol-avoid-edges`: js.UndefOr[Boolean] = js.undefined,
     `symbol-placement`: point | line | `line-center` = null,
+    `symbol-sort-key`: Int | Double = null,
     `symbol-spacing`: Double | Expression = null,
     `symbol-z-order`: `viewport-y` | source_ = null,
     `text-allow-overlap`: js.UndefOr[Boolean] = js.undefined,
@@ -99,10 +106,13 @@ object SymbolLayout {
     `text-optional`: js.UndefOr[Boolean] = js.undefined,
     `text-padding`: Double | Expression = null,
     `text-pitch-alignment`: map | viewport | auto = null,
+    `text-radial-offset`: Double | Expression = null,
     `text-rotate`: Double | StyleFunction | Expression = null,
     `text-rotation-alignment`: map | viewport | auto = null,
     `text-size`: Double | StyleFunction | Expression = null,
     `text-transform`: none | uppercase | lowercase | StyleFunction | Expression = null,
+    `text-variable-anchor`: js.Array[Anchor] = null,
+    `text-writing-mode`: js.Array[horizontal | vertical] = null,
     visibility: Visibility = null
   ): SymbolLayout = {
     val __obj = js.Dynamic.literal()
@@ -122,6 +132,7 @@ object SymbolLayout {
     if (`icon-text-fit-padding` != null) __obj.updateDynamic("icon-text-fit-padding")(`icon-text-fit-padding`.asInstanceOf[js.Any])
     if (!js.isUndefined(`symbol-avoid-edges`)) __obj.updateDynamic("symbol-avoid-edges")(`symbol-avoid-edges`.asInstanceOf[js.Any])
     if (`symbol-placement` != null) __obj.updateDynamic("symbol-placement")(`symbol-placement`.asInstanceOf[js.Any])
+    if (`symbol-sort-key` != null) __obj.updateDynamic("symbol-sort-key")(`symbol-sort-key`.asInstanceOf[js.Any])
     if (`symbol-spacing` != null) __obj.updateDynamic("symbol-spacing")(`symbol-spacing`.asInstanceOf[js.Any])
     if (`symbol-z-order` != null) __obj.updateDynamic("symbol-z-order")(`symbol-z-order`.asInstanceOf[js.Any])
     if (!js.isUndefined(`text-allow-overlap`)) __obj.updateDynamic("text-allow-overlap")(`text-allow-overlap`.asInstanceOf[js.Any])
@@ -139,10 +150,13 @@ object SymbolLayout {
     if (!js.isUndefined(`text-optional`)) __obj.updateDynamic("text-optional")(`text-optional`.asInstanceOf[js.Any])
     if (`text-padding` != null) __obj.updateDynamic("text-padding")(`text-padding`.asInstanceOf[js.Any])
     if (`text-pitch-alignment` != null) __obj.updateDynamic("text-pitch-alignment")(`text-pitch-alignment`.asInstanceOf[js.Any])
+    if (`text-radial-offset` != null) __obj.updateDynamic("text-radial-offset")(`text-radial-offset`.asInstanceOf[js.Any])
     if (`text-rotate` != null) __obj.updateDynamic("text-rotate")(`text-rotate`.asInstanceOf[js.Any])
     if (`text-rotation-alignment` != null) __obj.updateDynamic("text-rotation-alignment")(`text-rotation-alignment`.asInstanceOf[js.Any])
     if (`text-size` != null) __obj.updateDynamic("text-size")(`text-size`.asInstanceOf[js.Any])
     if (`text-transform` != null) __obj.updateDynamic("text-transform")(`text-transform`.asInstanceOf[js.Any])
+    if (`text-variable-anchor` != null) __obj.updateDynamic("text-variable-anchor")(`text-variable-anchor`.asInstanceOf[js.Any])
+    if (`text-writing-mode` != null) __obj.updateDynamic("text-writing-mode")(`text-writing-mode`.asInstanceOf[js.Any])
     if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
     __obj.asInstanceOf[SymbolLayout]
   }

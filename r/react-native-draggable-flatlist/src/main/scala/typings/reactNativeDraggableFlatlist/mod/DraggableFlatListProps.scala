@@ -12,6 +12,7 @@ import typings.reactNative.mod.AccessibilityRole
 import typings.reactNative.mod.AccessibilityState
 import typings.reactNative.mod.AccessibilityStates
 import typings.reactNative.mod.AccessibilityTrait
+import typings.reactNative.mod.AccessibilityValue
 import typings.reactNative.mod.GestureResponderEvent
 import typings.reactNative.mod.Insets
 import typings.reactNative.mod.LayoutChangeEvent
@@ -99,6 +100,7 @@ object DraggableFlatListProps {
     accessibilityState: AccessibilityState = null,
     accessibilityStates: js.Array[AccessibilityStates] = null,
     accessibilityTraits: AccessibilityTrait | js.Array[AccessibilityTrait] = null,
+    accessibilityValue: AccessibilityValue = null,
     accessibilityViewIsModal: js.UndefOr[Boolean] = js.undefined,
     accessible: js.UndefOr[Boolean] = js.undefined,
     alwaysBounceHorizontal: js.UndefOr[Boolean] = js.undefined,
@@ -122,6 +124,7 @@ object DraggableFlatListProps {
     disableVirtualization: js.UndefOr[Boolean] = js.undefined,
     endFillColor: String = null,
     extraData: js.Any = null,
+    fadingEdgeLength: Int | Double = null,
     getItem: (/* data */ js.Any, /* index */ Double) => Item = null,
     getItemCount: /* data */ js.Any => Double = null,
     getItemLayout: (/* data */ js.Any, /* index */ Double) => AnonIndex = null,
@@ -236,6 +239,7 @@ object DraggableFlatListProps {
     if (accessibilityState != null) __obj.updateDynamic("accessibilityState")(accessibilityState.asInstanceOf[js.Any])
     if (accessibilityStates != null) __obj.updateDynamic("accessibilityStates")(accessibilityStates.asInstanceOf[js.Any])
     if (accessibilityTraits != null) __obj.updateDynamic("accessibilityTraits")(accessibilityTraits.asInstanceOf[js.Any])
+    if (accessibilityValue != null) __obj.updateDynamic("accessibilityValue")(accessibilityValue.asInstanceOf[js.Any])
     if (!js.isUndefined(accessibilityViewIsModal)) __obj.updateDynamic("accessibilityViewIsModal")(accessibilityViewIsModal.asInstanceOf[js.Any])
     if (!js.isUndefined(accessible)) __obj.updateDynamic("accessible")(accessible.asInstanceOf[js.Any])
     if (!js.isUndefined(alwaysBounceHorizontal)) __obj.updateDynamic("alwaysBounceHorizontal")(alwaysBounceHorizontal.asInstanceOf[js.Any])
@@ -259,6 +263,7 @@ object DraggableFlatListProps {
     if (!js.isUndefined(disableVirtualization)) __obj.updateDynamic("disableVirtualization")(disableVirtualization.asInstanceOf[js.Any])
     if (endFillColor != null) __obj.updateDynamic("endFillColor")(endFillColor.asInstanceOf[js.Any])
     if (extraData != null) __obj.updateDynamic("extraData")(extraData.asInstanceOf[js.Any])
+    if (fadingEdgeLength != null) __obj.updateDynamic("fadingEdgeLength")(fadingEdgeLength.asInstanceOf[js.Any])
     if (getItem != null) __obj.updateDynamic("getItem")(js.Any.fromFunction2(getItem))
     if (getItemCount != null) __obj.updateDynamic("getItemCount")(js.Any.fromFunction1(getItemCount))
     if (getItemLayout != null) __obj.updateDynamic("getItemLayout")(js.Any.fromFunction2(getItemLayout))

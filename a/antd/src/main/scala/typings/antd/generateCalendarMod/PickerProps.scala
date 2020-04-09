@@ -1,12 +1,12 @@
 package typings.antd.generateCalendarMod
 
-import typings.antd.AnonLang
 import typings.antd.antdStrings.date
 import typings.antd.antdStrings.large
 import typings.antd.antdStrings.ltr
 import typings.antd.antdStrings.rtl
 import typings.antd.antdStrings.small
 import typings.antd.antdStrings.time
+import typings.antd.generatePickerMod.PickerLocale
 import typings.rcPicker.interfaceMod.Components
 import typings.rcPicker.interfaceMod.DisabledTimes
 import typings.rcPicker.interfaceMod.Locale
@@ -42,7 +42,7 @@ object PickerProps {
     direction: ltr | rtl = null,
     disabledDate: DateType => Boolean = null,
     hideHeader: js.UndefOr[Boolean] = js.undefined,
-    locale: AnonLang = null,
+    locale: PickerLocale = null,
     mode: PanelMode = null,
     monthCellRender: (DateType, /* locale */ Locale) => ReactNode = null,
     onChange: DateType => Unit = null,
@@ -97,7 +97,7 @@ object PickerProps {
     disabledDate: DateType => Boolean = null,
     disabledTime: /* date */ DateType | Null => DisabledTimes = null,
     hideHeader: js.UndefOr[Boolean] = js.undefined,
-    locale: AnonLang = null,
+    locale: PickerLocale = null,
     mode: PanelMode = null,
     monthCellRender: (DateType, /* locale */ Locale) => ReactNode = null,
     onChange: DateType => Unit = null,
@@ -165,7 +165,7 @@ object PickerProps {
     hideDisabledOptions: js.UndefOr[Boolean] = js.undefined,
     hideHeader: js.UndefOr[Boolean] = js.undefined,
     hourStep: Int | Double = null,
-    locale: AnonLang = null,
+    locale: PickerLocale = null,
     minuteStep: Int | Double = null,
     mode: PanelMode = null,
     monthCellRender: (DateType, /* locale */ Locale) => ReactNode = null,

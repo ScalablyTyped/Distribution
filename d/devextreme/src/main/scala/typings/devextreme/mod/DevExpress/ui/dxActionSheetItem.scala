@@ -13,11 +13,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxActionSheetItem extends CollectionWidgetItem {
-  /** Specifies the icon to be displayed on the action sheet button. */
+  /** @name dxActionSheetItem.icon */
   var icon: js.UndefOr[String] = js.undefined
-  /** A handler for the click event raised for the button representing the given action sheet button. */
+  /** @name dxActionSheetItem.onClick */
   var onClick: js.UndefOr[(js.Function1[/* e */ AnonElementEvent, _]) | String] = js.undefined
-  /** Specifies the type of the button that represents an action sheet item. */
+  /** @name dxActionSheetItem.type */
   var `type`: js.UndefOr[back | danger | default_ | normal | success] = js.undefined
 }
 

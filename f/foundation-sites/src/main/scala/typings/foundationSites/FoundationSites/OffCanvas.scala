@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-// http://foundation.zurb.com/sites/docs/offcanvas.html#javascript-reference
+// https://get.foundation/sites/docs/offcanvas.html#javascript-reference
 @js.native
 trait OffCanvas extends js.Object {
   def close(): Unit = js.native

@@ -5,7 +5,7 @@ import typings.echarts.AnonBorderType
 import typings.echarts.AnonCurvenessOpacity
 import typings.echarts.AnonExtraCssText
 import typings.echarts.AnonItemStyleLabelLineStyle
-import typings.echarts.AnonTarget
+import typings.echarts.AnonSource
 import typings.echarts.echarts.EChartOption.SeriesSankey.DataObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -323,7 +323,7 @@ trait SeriesSankey_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-sankey.links
     */
-  var links: js.UndefOr[AnonTarget] = js.undefined
+  var links: js.UndefOr[AnonSource] = js.undefined
   /**
     * The gap between any two rectangles in each column from the graph.
     *
@@ -478,7 +478,7 @@ object SeriesSankey_ {
     layoutIterations: Int | Double = null,
     left: Double | String = null,
     lineStyle: AnonCurvenessOpacity = null,
-    links: AnonTarget = null,
+    links: AnonSource = null,
     nodeGap: Int | Double = null,
     nodeWidth: Int | Double = null,
     nodes: js.Array[_] = null,

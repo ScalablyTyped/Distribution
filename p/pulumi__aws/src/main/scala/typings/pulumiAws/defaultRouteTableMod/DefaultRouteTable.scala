@@ -37,7 +37,6 @@ class DefaultRouteTable protected () extends CustomResource {
   val propagatingVgws: Output_[js.UndefOr[js.Array[String]]] = js.native
   /**
     * A list of route objects. Their keys are documented below.
-    * This argument is processed in [attribute-as-blocks mode](https://www.terraform.io/docs/configuration/attr-as-blocks.html).
     */
   val routes: Output_[js.Array[DefaultRouteTableRoute]] = js.native
   /**

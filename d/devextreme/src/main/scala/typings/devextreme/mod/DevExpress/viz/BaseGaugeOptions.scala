@@ -27,27 +27,27 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BaseGaugeOptions[T] extends BaseWidgetOptions[T] {
-  /** Specifies animation options. */
+  /** @name BaseGauge.Options.animation */
   var animation: js.UndefOr[BaseGaugeAnimation] = js.undefined
-  /** Specifies the color of the parent page element. */
+  /** @name BaseGauge.Options.containerBackgroundColor */
   var containerBackgroundColor: js.UndefOr[String] = js.undefined
-  /** Configures the loading indicator. */
+  /** @name BaseGauge.Options.loadingIndicator */
   @JSName("loadingIndicator")
   var loadingIndicator_BaseGaugeOptions: js.UndefOr[BaseGaugeLoadingIndicator] = js.undefined
-  /** A function that is executed when a tooltip becomes hidden. */
+  /** @name BaseGauge.Options.onTooltipHidden */
   var onTooltipHidden: js.UndefOr[js.Function1[/* e */ AnonComponentElementModelTarget[T], _]] = js.undefined
-  /** A function that is executed when a tooltip appears. */
+  /** @name BaseGauge.Options.onTooltipShown */
   var onTooltipShown: js.UndefOr[js.Function1[/* e */ AnonComponentElementModelTarget[T], _]] = js.undefined
-  /** Specifies options of the gauge's range container. */
+  /** @name BaseGauge.Options.rangeContainer */
   var rangeContainer: js.UndefOr[BaseGaugeRangeContainer] = js.undefined
-  /** Specifies options of the gauge's scale. */
+  /** @name BaseGauge.Options.scale */
   var scale: js.UndefOr[BaseGaugeScale] = js.undefined
-  /** Specifies a set of subvalues to be designated by the subvalue indicators. */
+  /** @name BaseGauge.Options.subvalues */
   var subvalues: js.UndefOr[js.Array[Double]] = js.undefined
-  /** Configures tooltips. */
+  /** @name BaseGauge.Options.tooltip */
   @JSName("tooltip")
   var tooltip_BaseGaugeOptions: js.UndefOr[BaseGaugeTooltip] = js.undefined
-  /** Specifies the main value on a gauge. */
+  /** @name BaseGauge.Options.value */
   var value: js.UndefOr[Double] = js.undefined
 }
 

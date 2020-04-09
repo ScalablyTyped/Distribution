@@ -1,7 +1,7 @@
 package typings.xmldsigjs.mod
 
 import typings.std.Element
-import typings.xmlCore.mod.AssocArray
+import typings.xmlCore.typesMod.AssocArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

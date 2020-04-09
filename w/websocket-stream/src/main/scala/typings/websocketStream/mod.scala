@@ -23,8 +23,10 @@ import typings.websocketStream.websocketStreamStrings.error
 import typings.websocketStream.websocketStreamStrings.finish
 import typings.websocketStream.websocketStreamStrings.headers
 import typings.websocketStream.websocketStreamStrings.listening
+import typings.websocketStream.websocketStreamStrings.pause
 import typings.websocketStream.websocketStreamStrings.pipe
 import typings.websocketStream.websocketStreamStrings.readable
+import typings.websocketStream.websocketStreamStrings.resume
 import typings.websocketStream.websocketStreamStrings.stream
 import typings.websocketStream.websocketStreamStrings.unpipe
 import typings.ws.mod.ClientOptions
@@ -118,9 +120,13 @@ object mod extends js.Object {
     @JSName("addListener")
     def addListener_finish(event: finish, listener: js.Function0[Unit]): this.type = js.native
     @JSName("addListener")
+    def addListener_pause(event: pause, listener: js.Function0[Unit]): this.type = js.native
+    @JSName("addListener")
     def addListener_pipe(event: pipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
     @JSName("addListener")
     def addListener_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
+    @JSName("addListener")
+    def addListener_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
     @JSName("addListener")
     def addListener_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
     def cork(): Unit = js.native
@@ -141,9 +147,13 @@ object mod extends js.Object {
     @JSName("emit")
     def emit_finish(event: finish): Boolean = js.native
     @JSName("emit")
+    def emit_pause(event: pause): Boolean = js.native
+    @JSName("emit")
     def emit_pipe(event: pipe, src: Readable): Boolean = js.native
     @JSName("emit")
     def emit_readable(event: readable): Boolean = js.native
+    @JSName("emit")
+    def emit_resume(event: resume): Boolean = js.native
     @JSName("emit")
     def emit_unpipe(event: unpipe, src: Readable): Boolean = js.native
     def end(): Unit = js.native
@@ -182,9 +192,13 @@ object mod extends js.Object {
     @JSName("on")
     def on_finish(event: finish, listener: js.Function0[Unit]): this.type = js.native
     @JSName("on")
+    def on_pause(event: pause, listener: js.Function0[Unit]): this.type = js.native
+    @JSName("on")
     def on_pipe(event: pipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
     @JSName("on")
     def on_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
+    @JSName("on")
+    def on_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
     @JSName("on")
     def on_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
     def once(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
@@ -202,9 +216,13 @@ object mod extends js.Object {
     @JSName("once")
     def once_finish(event: finish, listener: js.Function0[Unit]): this.type = js.native
     @JSName("once")
+    def once_pause(event: pause, listener: js.Function0[Unit]): this.type = js.native
+    @JSName("once")
     def once_pipe(event: pipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
     @JSName("once")
     def once_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
+    @JSName("once")
+    def once_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
     @JSName("once")
     def once_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
     def pause(): this.type = js.native
@@ -225,9 +243,13 @@ object mod extends js.Object {
     @JSName("prependListener")
     def prependListener_finish(event: finish, listener: js.Function0[Unit]): this.type = js.native
     @JSName("prependListener")
+    def prependListener_pause(event: pause, listener: js.Function0[Unit]): this.type = js.native
+    @JSName("prependListener")
     def prependListener_pipe(event: pipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
     @JSName("prependListener")
     def prependListener_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
+    @JSName("prependListener")
+    def prependListener_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
     @JSName("prependListener")
     def prependListener_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
     def prependOnceListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
@@ -245,9 +267,13 @@ object mod extends js.Object {
     @JSName("prependOnceListener")
     def prependOnceListener_finish(event: finish, listener: js.Function0[Unit]): this.type = js.native
     @JSName("prependOnceListener")
+    def prependOnceListener_pause(event: pause, listener: js.Function0[Unit]): this.type = js.native
+    @JSName("prependOnceListener")
     def prependOnceListener_pipe(event: pipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
     @JSName("prependOnceListener")
     def prependOnceListener_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
+    @JSName("prependOnceListener")
+    def prependOnceListener_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
     @JSName("prependOnceListener")
     def prependOnceListener_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
     def push(chunk: js.Any): Boolean = js.native
@@ -278,9 +304,13 @@ object mod extends js.Object {
     @JSName("removeListener")
     def removeListener_finish(event: finish, listener: js.Function0[Unit]): this.type = js.native
     @JSName("removeListener")
+    def removeListener_pause(event: pause, listener: js.Function0[Unit]): this.type = js.native
+    @JSName("removeListener")
     def removeListener_pipe(event: pipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
     @JSName("removeListener")
     def removeListener_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
+    @JSName("removeListener")
+    def removeListener_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
     @JSName("removeListener")
     def removeListener_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
     def resume(): this.type = js.native

@@ -4,13 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Specifies adaptive layout options. */
+/** @name BaseChart.Options.adaptiveLayout */
 trait BaseChartAdaptiveLayout extends js.Object {
-  /** Specifies the minimum container height at which the layout begins to adapt. */
+  /** @name BaseChart.Options.adaptiveLayout.height */
   var height: js.UndefOr[Double] = js.undefined
-  /** Specifies whether point labels should be kept when the widget adapts the layout. */
+  /** @name BaseChart.Options.adaptiveLayout.keepLabels */
   var keepLabels: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the minimum container width at which the layout begins to adapt. */
+  /** @name BaseChart.Options.adaptiveLayout.width */
   var width: js.UndefOr[Double] = js.undefined
 }
 

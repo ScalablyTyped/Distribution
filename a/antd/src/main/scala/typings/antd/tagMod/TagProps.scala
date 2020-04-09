@@ -13,6 +13,7 @@ import typings.react.mod.HTMLAttributes
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
@@ -73,6 +74,7 @@ import scala.scalajs.js.annotation._
 
 trait TagProps extends HTMLAttributes[HTMLSpanElement] {
   var closable: js.UndefOr[Boolean] = js.undefined
+  var icon: js.UndefOr[ReactNode] = js.undefined
   var onClose: js.UndefOr[js.Function] = js.undefined
   var prefixCls: js.UndefOr[String] = js.undefined
   var visible: js.UndefOr[Boolean] = js.undefined
@@ -147,6 +149,7 @@ object TagProps {
     dir: String = null,
     draggable: js.UndefOr[Boolean] = js.undefined,
     hidden: js.UndefOr[Boolean] = js.undefined,
+    icon: ReactNode = null,
     id: String = null,
     inlist: js.Any = null,
     inputMode: none | text | tel | url | email | numeric | decimal | search = null,
@@ -221,7 +224,7 @@ object TagProps {
     onProgress: SyntheticEvent[HTMLSpanElement, Event_] => Unit = null,
     onRateChange: SyntheticEvent[HTMLSpanElement, Event_] => Unit = null,
     onReset: FormEvent[HTMLSpanElement] => Unit = null,
-    onScroll: UIEvent[HTMLSpanElement] => Unit = null,
+    onScroll: UIEvent[HTMLSpanElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[HTMLSpanElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[HTMLSpanElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[HTMLSpanElement, Event_] => Unit = null,
@@ -326,6 +329,7 @@ object TagProps {
     if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
     if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
     if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (inlist != null) __obj.updateDynamic("inlist")(inlist.asInstanceOf[js.Any])
     if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode.asInstanceOf[js.Any])

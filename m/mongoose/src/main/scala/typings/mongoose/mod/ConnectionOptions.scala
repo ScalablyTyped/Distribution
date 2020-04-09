@@ -132,6 +132,7 @@ object ConnectionOptions {
     secondaryAcceptableLatencyMS: Int | Double = null,
     serializeFunctions: js.UndefOr[Boolean] = js.undefined,
     server: js.Any = null,
+    serverSelectionTimeoutMS: Int | Double = null,
     servername: String = null,
     session: typings.mongodb.mod.ClientSession = null,
     slaveOk: js.UndefOr[Boolean] = js.undefined,
@@ -221,6 +222,7 @@ object ConnectionOptions {
     if (secondaryAcceptableLatencyMS != null) __obj.updateDynamic("secondaryAcceptableLatencyMS")(secondaryAcceptableLatencyMS.asInstanceOf[js.Any])
     if (!js.isUndefined(serializeFunctions)) __obj.updateDynamic("serializeFunctions")(serializeFunctions.asInstanceOf[js.Any])
     if (server != null) __obj.updateDynamic("server")(server.asInstanceOf[js.Any])
+    if (serverSelectionTimeoutMS != null) __obj.updateDynamic("serverSelectionTimeoutMS")(serverSelectionTimeoutMS.asInstanceOf[js.Any])
     if (servername != null) __obj.updateDynamic("servername")(servername.asInstanceOf[js.Any])
     if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
     if (!js.isUndefined(slaveOk)) __obj.updateDynamic("slaveOk")(slaveOk.asInstanceOf[js.Any])

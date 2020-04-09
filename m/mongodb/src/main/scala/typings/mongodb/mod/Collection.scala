@@ -1030,8 +1030,8 @@ trait Collection[TSchema /* <: StringDictionary[js.Any] */] extends js.Object {
     callback: MongoCallback[UpdateWriteOpResult]
   ): Unit = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.3/api/Collection.html#watch */
-  def watch(): ChangeStream = js.native
-  def watch(pipeline: js.Array[js.Object]): ChangeStream = js.native
-  def watch(pipeline: js.Array[js.Object], options: ChangeStreamOptionssessio): ChangeStream = js.native
+  def watch[T](): ChangeStream[T] = js.native
+  def watch[T](pipeline: js.Array[js.Object]): ChangeStream[T] = js.native
+  def watch[T](pipeline: js.Array[js.Object], options: ChangeStreamOptionssessio): ChangeStream[T] = js.native
 }
 

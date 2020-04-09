@@ -45,6 +45,7 @@ package object VueI18n {
   org.scalablytyped.runtime.StringDictionary[
     js.Function2[/* choice */ scala.Double, /* choicesLength */ scala.Double, scala.Double]
   ]
+  type PostTranslationHandler = js.Function1[/* str */ java.lang.String, java.lang.String]
   type TranslateResult = java.lang.String | typings.vueI18n.mod.VueI18n.LocaleMessages
   type Values = js.Array[js.Any] | org.scalablytyped.runtime.StringDictionary[js.Any]
 }

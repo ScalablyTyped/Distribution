@@ -56,6 +56,28 @@ trait StringifyOptions extends js.Object {
   	*/
   val encode: js.UndefOr[Boolean] = js.undefined
   /**
+  	Skip keys with an empty string as the value.
+  	@default false
+  	@example
+  	```
+  	import queryString = require('query-string');
+  	queryString.stringify({a: 1, b: '', c: '', d: 4}, {
+  		skipEmptyString: true
+  	});
+  	//=> 'a=1&d=4'
+  	```
+  	
+  	@example
+  	```
+  	import queryString = require('query-string');
+  	queryString.stringify({a: '', b: ''}, {
+  		skipEmptyString: true
+  	});
+  	//=> ''
+  	```
+  	*/
+  val skipEmptyString: js.UndefOr[Boolean] = js.undefined
+  /**
   	Skip keys with `null` as the value.
   	Note that keys with `undefined` as the value are always skipped.
   	@default false
@@ -107,6 +129,7 @@ object StringifyOptions {
     arrayFormat: bracket | index | comma | separator | none = null,
     arrayFormatSeparator: String = null,
     encode: js.UndefOr[Boolean] = js.undefined,
+    skipEmptyString: js.UndefOr[Boolean] = js.undefined,
     skipNull: js.UndefOr[Boolean] = js.undefined,
     sort: (js.Function2[/* itemLeft */ String, /* itemRight */ String, Double]) | `false` = null,
     strict: js.UndefOr[Boolean] = js.undefined
@@ -115,6 +138,7 @@ object StringifyOptions {
     if (arrayFormat != null) __obj.updateDynamic("arrayFormat")(arrayFormat.asInstanceOf[js.Any])
     if (arrayFormatSeparator != null) __obj.updateDynamic("arrayFormatSeparator")(arrayFormatSeparator.asInstanceOf[js.Any])
     if (!js.isUndefined(encode)) __obj.updateDynamic("encode")(encode.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipEmptyString)) __obj.updateDynamic("skipEmptyString")(skipEmptyString.asInstanceOf[js.Any])
     if (!js.isUndefined(skipNull)) __obj.updateDynamic("skipNull")(skipNull.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])

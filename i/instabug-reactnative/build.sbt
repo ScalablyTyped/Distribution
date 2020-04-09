@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "instabug-reactnative"
-version := "9.1.0-bd7c0a"
+version := "9.1.1-aecc41"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait BaseWidget extends DOMComponent {
-  /** Exports the widget. */
+  /** @name BaseWidget.exportTo(fileName, format) */
   def exportTo(fileName: String, format: String): Unit = js.native
-  /** Gets the current widget size. */
+  /** @name BaseWidget.getSize() */
   def getSize(): BaseWidgetSize = js.native
-  /** Hides the loading indicator. */
+  /** @name BaseWidget.hideLoadingIndicator() */
   def hideLoadingIndicator(): Unit = js.native
-  /** Opens the browser's print window. */
+  /** @name BaseWidget.print() */
   def print(): Unit = js.native
-  /** Redraws the widget. */
+  /** @name BaseWidget.render() */
   def render(): Unit = js.native
-  /** Shows the loading indicator. */
+  /** @name BaseWidget.showLoadingIndicator() */
   def showLoadingIndicator(): Unit = js.native
-  /** Gets the widget's SVG markup. */
+  /** @name BaseWidget.svg() */
   def svg(): String = js.native
 }
 

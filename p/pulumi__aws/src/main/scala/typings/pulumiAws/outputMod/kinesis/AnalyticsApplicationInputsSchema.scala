@@ -6,8 +6,19 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait AnalyticsApplicationInputsSchema extends js.Object {
+  /**
+    * The Record Column mapping for the streaming source data element.
+    * See Record Columns below for more details.
+    */
   var recordColumns: js.Array[AnalyticsApplicationInputsSchemaRecordColumn] = js.native
+  /**
+    * The Encoding of the record in the streaming source.
+    */
   var recordEncoding: js.UndefOr[String] = js.native
+  /**
+    * The Record Format and mapping information to schematize a record.
+    * See Record Format below for more details.
+    */
   var recordFormat: AnalyticsApplicationInputsSchemaRecordFormat = js.native
 }
 

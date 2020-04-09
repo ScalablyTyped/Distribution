@@ -9,11 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 class UpdateItemTaxesResponse () extends js.Object {
   /**
-    * The set of [Error](#type-error)s encountered.
+    * Information on any errors encountered.
     */
   var errors: js.UndefOr[js.Array[Error]] = js.native
   /**
-    * The database [timestamp](#workingwithdates) of this update in RFC 3339 format, e.g., "2016-09-04T23:59:33.123Z".
+    * The database [timestamp](https://developer.squareup.com/docs/build-basics/working-with-dates) of this update
+    * in RFC 3339 format, e.g., `2016-09-04T23:59:33.123Z`.
     */
   var updated_at: js.UndefOr[String] = js.native
 }

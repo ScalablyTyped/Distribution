@@ -7,9 +7,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxGalleryItem extends CollectionWidgetItem {
-  /** Specifies the text passed to the alt attribute of the image markup element. */
+  /** @name dxGalleryItem.imageAlt */
   var imageAlt: js.UndefOr[String] = js.undefined
-  /** Specifies the URL of the image displayed by the item. */
+  /** @name dxGalleryItem.imageSrc */
   var imageSrc: js.UndefOr[String] = js.undefined
 }
 

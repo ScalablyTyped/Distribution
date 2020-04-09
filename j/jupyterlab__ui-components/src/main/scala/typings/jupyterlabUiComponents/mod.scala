@@ -9,7 +9,8 @@ import typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.`jp-DefaultS
 import typings.jupyterlabUiComponents.jupyterlabUiComponentsStrings.`jp-HTMLSelect`
 import typings.jupyterlabUiComponents.labiconMod.LabIcon.IIcon
 import typings.luminoCoreutils.mod.Token
-import typings.luminoWidgets.dockpanelMod.DockPanel.IOptions
+import typings.luminoWidgets.contextmenuMod.ContextMenu.IOptions
+import typings.luminoWidgets.mod.Menu
 import typings.react.mod._Global_.JSX.Element
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -20,6 +21,17 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   @js.native
+  class ContextMenuSvg protected ()
+    extends typings.jupyterlabUiComponents.iconMod.ContextMenuSvg {
+    /**
+      * Construct a new context menu.
+      *
+      * @param options - The options for initializing the menu.
+      */
+    def this(options: IOptions) = this()
+  }
+  
+  @js.native
   /**
     * Construct a new dock panel.
     *
@@ -27,7 +39,7 @@ object mod extends js.Object {
     */
   class DockPanelSvg ()
     extends typings.jupyterlabUiComponents.iconMod.DockPanelSvg {
-    def this(options: IOptions) = this()
+    def this(options: typings.luminoWidgets.dockpanelMod.DockPanel.IOptions) = this()
   }
   
   @js.native
@@ -93,6 +105,7 @@ object mod extends js.Object {
   val editIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
   val ellipsesIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
   val extensionIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val fastForwardIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
   val fileIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
   val fileUploadIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
   val filterListIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
@@ -110,6 +123,7 @@ object mod extends js.Object {
   val lineFormIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
   val linkIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
   val listIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val listingsInfoIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
   val markdownIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
   val newFolderIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
   val notTrustedIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
@@ -136,6 +150,9 @@ object mod extends js.Object {
   val vegaIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
   val yamlIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
   def Button(props: IButtonProps with CommonProps[_]): Element = js.native
+  def Checkbox(
+    props: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ICheckboxProps */ js.Any) with CommonProps[_]
+  ): Element = js.native
   def Collapse(
     props: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ICollapseProps */ js.Any) with CommonProps[_]
   ): Element = js.native
@@ -148,6 +165,7 @@ object mod extends js.Object {
   @JSName("classes")
   def classes_false(classes: (js.UndefOr[String | `false` | Null | StringDictionary[js.Any]])*): String = js.native
   def getReactAttrs(elem: typings.std.Element): js.Any = js.native
+  def getReactAttrs(elem: typings.std.Element, hasIgnore: AnonIgnore): js.Any = js.native
   @js.native
   object CommandPaletteSvg extends js.Object {
     /**
@@ -266,6 +284,7 @@ object mod extends js.Object {
       extends typings.jupyterlabUiComponents.menusvgMod.MenuSvg.Renderer
     
     val defaultRenderer: typings.jupyterlabUiComponents.menusvgMod.MenuSvg.Renderer = js.native
+    def overrideDefaultRenderer(menu: Menu): Unit = js.native
   }
   
   @js.native

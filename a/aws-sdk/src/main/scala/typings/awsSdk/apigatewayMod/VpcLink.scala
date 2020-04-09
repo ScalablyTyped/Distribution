@@ -31,7 +31,7 @@ trait VpcLink extends js.Object {
     */
   var tags: js.UndefOr[MapOfStringToString] = js.native
   /**
-    * The ARNs of network load balancers of the VPC targeted by the VPC link. The network load balancers must be owned by the same AWS account of the API owner.
+    * The ARN of the network load balancer of the VPC targeted by the VPC link. The network load balancer must be owned by the same AWS account of the API owner.
     */
   var targetArns: js.UndefOr[ListOfString] = js.native
 }

@@ -114,6 +114,9 @@ trait JSONSchemaProps extends js.Object {
     * This tag MUST only be used on lists that have the "x-kubernetes-list-type" extension set to
     * "map". Also, the values specified for this attribute must be a scalar typed field of the
     * child structure (no nesting is supported).
+    *
+    * The properties specified must either be required or have a default value, to ensure those
+    * properties are present for all list items.
     */
   var x_kubernetes_list_map_keys: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   /**

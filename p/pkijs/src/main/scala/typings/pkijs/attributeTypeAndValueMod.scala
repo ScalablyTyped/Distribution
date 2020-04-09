@@ -12,15 +12,15 @@ object attributeTypeAndValueMod extends js.Object {
   @js.native
   trait AttributeTypeAndValue extends js.Object {
     /**
-      * 
-      * 
+      *
+      *
       * @type {ObjectIdentifier}
       * @memberOf AttributeTypeAndValue
       */
     var `type`: ObjectIdentifier = js.native
     /**
-      * 
-      * 
+      *
+      *
       * @type {*}
       * @memberOf AttributeTypeAndValue
       */
@@ -28,10 +28,10 @@ object attributeTypeAndValueMod extends js.Object {
     def fromSchema(schema: js.Any): Unit = js.native
     /**
       * Compare two AttributeTypeAndValue values, or AttributeTypeAndValue with ArrayBuffer value
-      * 
+      *
       * @param {(AttributeTypeAndValue|ArrayBuffer)} compareTo The value compare to current
       * @returns {boolean}
-      * 
+      *
       * @memberOf AttributeTypeAndValue
       */
     def isEqual(compareTo: AttributeTypeAndValue): Boolean = js.native

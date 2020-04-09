@@ -1,5 +1,7 @@
 package typings.squareConnect.mod
 
+import typings.squareConnect.squareConnectStrings.LOW_QUANTITY
+import typings.squareConnect.squareConnectStrings.NONE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +18,9 @@ class CatalogItemVariation () extends js.Object {
     * Indicates whether the item variation displays an alert when its inventory quantity is less than or equal to its
     * `inventory_alert_threshold`. See [InventoryAlertType](#type-inventoryalerttype) for possible values.
     */
-  var inventory_alert_type: js.UndefOr[InventoryAlertType] = js.native
+  var inventory_alert_type: js.UndefOr[NONE | LOW_QUANTITY] = js.native
   /**
-    * The ID of the [CatalogItem](#type-catalogitem) associated with this item variation. Searchable.
+    * The ID of the `CatalogItem` associated with this item variation. Searchable.
     */
   var item_id: js.UndefOr[String] = js.native
   /**
@@ -26,11 +28,12 @@ class CatalogItemVariation () extends js.Object {
     */
   var item_option_values: js.UndefOr[js.Array[CatalogItemOptionValueForItemVariation]] = js.native
   /**
-    * Per-[location](#type-location) price and inventory overrides.
+    * Per-location price and inventory overrides.
     */
   var location_overrides: js.UndefOr[js.Array[ItemVariationLocationOverrides]] = js.native
   /**
-    * ID of the ‘CatalogMeasurementUnit’ that is used to measure the quantity sold of this item variation. If left unset, the item will be sold in whole quantities.
+    * ID of the ‘CatalogMeasurementUnit’ that is used to measure the quantity sold of this item variation.
+    * If left unset, the item will be sold in whole quantities.
     */
   var measurement_unit_id: js.UndefOr[String] = js.native
   /**
@@ -39,8 +42,8 @@ class CatalogItemVariation () extends js.Object {
   var name: js.UndefOr[String] = js.native
   /**
     * The order in which this item variation should be displayed. This value is read-only. On writes, the ordinal for
-    * each item variation within a parent [CatalogItem](#type-catalogitem) is set according to the item variations's
-    * position. On reads, the value is not guaranteed to be sequential or unique.
+    * each item variation within a parent `CatalogItem` is set according to the item variations's position. On reads,
+    * the value is not guaranteed to be sequential or unique.
     */
   var ordinal: js.UndefOr[Double] = js.native
   /**
@@ -53,9 +56,9 @@ class CatalogItemVariation () extends js.Object {
     */
   var pricing_type: js.UndefOr[PricingType] = js.native
   /**
-    * If the [CatalogItem](#type-catalogitem) that owns this item variation is of type `APPOINTMENTS_SERVICE`, then
-    * this is the duration of the service in milliseconds. For example, a 30 minute appointment would have the value
-    * `1800000`, which is equal to 30 (minutes) * 60 (seconds per minute) * 1000 (milliseconds per second).
+    * If the `CatalogItem` that owns this item variation is of type `APPOINTMENTS_SERVICE`, then this is the duration
+    * of the service in milliseconds. For example, a 30 minute appointment would have the value `1800000`, which is
+    * equal to 30 (minutes) * 60 (seconds per minute) * 1000 (milliseconds per second).
     */
   var service_duration: js.UndefOr[Double] = js.native
   /**
@@ -72,7 +75,8 @@ class CatalogItemVariation () extends js.Object {
     */
   var upc: js.UndefOr[String] = js.native
   /**
-    * Arbitrary user metadata to associate with the item variation. Cannot exceed 255 characters. Searchable.
+    * Arbitrary user metadata to associate with the item variation. Searchable.
+    * This field has max length of 255 Unicode code points.
     */
   var user_data: js.UndefOr[String] = js.native
 }

@@ -44,6 +44,10 @@ class LoadBalancer protected () extends CustomResource {
     */
   val dnsName: Output_[String] = js.native
   /**
+    * Indicates whether HTTP headers with header fields that are not valid are removed by the load balancer (true) or routed to targets (false). The default is false. Elastic Load Balancing requires that message header names contain only alphanumeric characters and hyphens. Only valid for Load Balancers of type `application`.
+    */
+  val dropInvalidHeaderFields: Output_[js.UndefOr[Boolean]] = js.native
+  /**
     * If true, cross-zone load balancing of the load balancer will be enabled.
     * This is a `network` load balancer feature. Defaults to `false`.
     */

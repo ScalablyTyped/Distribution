@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@carbon/pictograms-react", "DocumentConversion")
 @js.native
-object DocumentConversion extends TopLevel[CarbonPictogram]
+object DocumentConversion extends TopLevel[CarbonPictogramType]
 

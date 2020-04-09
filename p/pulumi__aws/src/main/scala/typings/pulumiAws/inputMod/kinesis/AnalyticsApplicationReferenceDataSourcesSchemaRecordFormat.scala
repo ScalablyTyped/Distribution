@@ -7,9 +7,16 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait AnalyticsApplicationReferenceDataSourcesSchemaRecordFormat extends js.Object {
+  /**
+    * The Mapping Information for the record format.
+    * See Mapping Parameters below for more details.
+    */
   var mappingParameters: js.UndefOr[
     Input[AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParameters]
   ] = js.native
+  /**
+    * The type of Record Format. Can be `CSV` or `JSON`.
+    */
   var recordFormatType: js.UndefOr[Input[String]] = js.native
 }
 

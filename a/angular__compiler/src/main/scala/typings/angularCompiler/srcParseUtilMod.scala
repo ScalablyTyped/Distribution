@@ -49,8 +49,6 @@ object srcParseUtilMod extends js.Object {
     var start: ParseLocation = js.native
   }
   
-  val EMPTY_PARSE_LOCATION: ParseLocation = js.native
-  val EMPTY_SOURCE_SPAN: ParseSourceSpan = js.native
   def r3JitTypeSourceSpan(kind: String, typeName: String, sourceUrl: String): ParseSourceSpan = js.native
   def typeSourceSpan(kind: String, `type`: CompileIdentifierMetadata): ParseSourceSpan = js.native
   @js.native

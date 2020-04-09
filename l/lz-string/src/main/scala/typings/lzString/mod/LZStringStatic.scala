@@ -52,31 +52,31 @@ trait LZStringStatic extends js.Object {
     *
     * @param compressed A string obtained from a call to compress().
     */
-  def decompress(compressed: String): String
+  def decompress(compressed: String): Null | String
   /**
     * Decompresses ASCII UTF-16 input string created by the method compressToBase64().
     *
     * @param compressed A string obtained from a call to compressToBase64().
     */
-  def decompressFromBase64(compressed: String): String
+  def decompressFromBase64(compressed: String): Null | String
   /**
     * Decompresses "valid" input string created by the method compressToEncodedURIComponent().
     *
     * @param compressed A string obtained from a call to compressToEncodedURIComponent().
     */
-  def decompressFromEncodedURIComponent(compressed: String): String
+  def decompressFromEncodedURIComponent(compressed: String): Null | String
   /**
     * Decompresses "valid" input string created by the method compressToUTF16().
     *
     * @param compressed A string obtained from a call to compressToUTF16().
     */
-  def decompressFromUTF16(compressed: String): String
+  def decompressFromUTF16(compressed: String): Null | String
   /**
     * Decompresses "valid" array created by the method compressToUint8Array().
     *
     * @param compressed A string obtained from a call to compressToUint8Array().
     */
-  def decompressFromUint8Array(compressed: Uint8Array): String
+  def decompressFromUint8Array(compressed: Uint8Array): Null | String
 }
 
 object LZStringStatic {
@@ -87,11 +87,11 @@ object LZStringStatic {
     compressToEncodedURIComponent: String => String,
     compressToUTF16: String => String,
     compressToUint8Array: String => Uint8Array,
-    decompress: String => String,
-    decompressFromBase64: String => String,
-    decompressFromEncodedURIComponent: String => String,
-    decompressFromUTF16: String => String,
-    decompressFromUint8Array: Uint8Array => String
+    decompress: String => Null | String,
+    decompressFromBase64: String => Null | String,
+    decompressFromEncodedURIComponent: String => Null | String,
+    decompressFromUTF16: String => Null | String,
+    decompressFromUint8Array: Uint8Array => Null | String
   ): LZStringStatic = {
     val __obj = js.Dynamic.literal(compress = js.Any.fromFunction1(compress), compressToBase64 = js.Any.fromFunction1(compressToBase64), compressToEncodedURIComponent = js.Any.fromFunction1(compressToEncodedURIComponent), compressToUTF16 = js.Any.fromFunction1(compressToUTF16), compressToUint8Array = js.Any.fromFunction1(compressToUint8Array), decompress = js.Any.fromFunction1(decompress), decompressFromBase64 = js.Any.fromFunction1(decompressFromBase64), decompressFromEncodedURIComponent = js.Any.fromFunction1(decompressFromEncodedURIComponent), decompressFromUTF16 = js.Any.fromFunction1(decompressFromUTF16), decompressFromUint8Array = js.Any.fromFunction1(decompressFromUint8Array))
   

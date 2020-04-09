@@ -5,13 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ColCountResponsible extends js.Object {
-  /** The count of columns for a large screen size. */
+  /** @name ColCountResponsible.lg */
   var lg: js.UndefOr[Double] = js.undefined
-  /** The count of columns for a middle-sized screen. */
+  /** @name ColCountResponsible.md */
   var md: js.UndefOr[Double] = js.undefined
-  /** The count of columns for a small-sized screen. */
+  /** @name ColCountResponsible.sm */
   var sm: js.UndefOr[Double] = js.undefined
-  /** The count of columns for an extra small-sized screen. */
+  /** @name ColCountResponsible.xs */
   var xs: js.UndefOr[Double] = js.undefined
 }
 

@@ -1,7 +1,7 @@
 
 # Scala.js typings for axe-puppeteer
 
-Typings are for version 1.0.0
+Typings are for version 1.1.0
 
 ## Library description:
 Provides a chainable axe API for Puppeteer and automatically injects into all frames

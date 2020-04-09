@@ -16,6 +16,9 @@ trait GetNetworkInterfaceArgs extends js.Object {
     * The identifier for the network interface.
     */
   val id: js.UndefOr[String] = js.native
+  /**
+    * Any tags assigned to the network interface.
+    */
   val tags: js.UndefOr[StringDictionary[js.Any]] = js.native
 }
 

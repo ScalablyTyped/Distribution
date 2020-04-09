@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 /* Inlined std.Partial<exceljs.exceljs.Style> */
 trait PartialStyle extends js.Object {
   var alignment: js.UndefOr[PartialAlignment] = js.undefined
-  var border: js.UndefOr[PartialBorders] = js.undefined
+  var border: js.UndefOr[PartialBordersBottom] = js.undefined
   var fill: js.UndefOr[Fill] = js.undefined
   var font: js.UndefOr[PartialFont] = js.undefined
   var numFmt: js.UndefOr[String] = js.undefined
@@ -19,7 +19,7 @@ object PartialStyle {
   @scala.inline
   def apply(
     alignment: PartialAlignment = null,
-    border: PartialBorders = null,
+    border: PartialBordersBottom = null,
     fill: Fill = null,
     font: PartialFont = null,
     numFmt: String = null,

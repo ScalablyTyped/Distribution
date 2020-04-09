@@ -66,6 +66,7 @@ import typings.react.mod.FormEvent
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
@@ -250,7 +251,7 @@ object FormProps {
     onProgress: SyntheticEvent[HTMLFormElement, Event_] => Unit = null,
     onRateChange: SyntheticEvent[HTMLFormElement, Event_] => Unit = null,
     onReset: FormEvent[HTMLFormElement] => Unit = null,
-    onScroll: UIEvent[HTMLFormElement] => Unit = null,
+    onScroll: UIEvent[HTMLFormElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[HTMLFormElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[HTMLFormElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[HTMLFormElement, Event_] => Unit = null,

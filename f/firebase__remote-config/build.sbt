@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "firebase__remote-config"
-version := "0.1.17-1f28e9"
+version := "0.1.18-a521da"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

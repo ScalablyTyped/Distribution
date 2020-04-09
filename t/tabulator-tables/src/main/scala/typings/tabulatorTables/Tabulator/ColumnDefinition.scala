@@ -1,5 +1,6 @@
 package typings.tabulatorTables.Tabulator
 
+import typings.tabulatorTables.tabulatorTablesBooleans.`false`
 import typings.tabulatorTables.tabulatorTablesStrings.alphanum
 import typings.tabulatorTables.tabulatorTablesStrings.array
 import typings.tabulatorTables.tabulatorTablesStrings.boolean
@@ -33,11 +34,14 @@ trait ColumnDefinition
   var accessorDownload: js.UndefOr[CustomAccessor] = js.undefined
   /** additional parameters you can pass to the accessorDownload */
   var accessorDownloadParams: js.UndefOr[CustomAccessorParams] = js.undefined
+  /**You can use the accessorHtmlOutput and accessorHtmlOutputParams options on a column definition to alter the value of data in a column before the html is generated. */
+  var accessorHtmlOutput: js.UndefOr[CustomAccessor] = js.undefined
+  var accessorHtmlOutputParams: js.UndefOr[CustomAccessorParams] = js.undefined
   /**  Each accessor function has its own matching params option, for example accessorDownload has accessorDownloadParams.*/
   var accessorParams: js.UndefOr[CustomAccessorParams] = js.undefined
-  // Layout
-  /** sets the text alignment for this column */
-  var align: js.UndefOr[ColumnDefinitionAlign] = js.undefined
+  /**You can use the accessorPrint and accessorPrintParams options on a column definition to alter the value of data in a column before it is printed */
+  var accessorPrint: js.UndefOr[CustomAccessor] = js.undefined
+  var accessorPrintParams: js.UndefOr[CustomAccessorParams] = js.undefined
   var bottomCalc: js.UndefOr[ColumnCalc] = js.undefined
   var bottomCalcFormatter: js.UndefOr[Formatter] = js.undefined
   /**  additional parameters you can pass to the bottomCalcFormatter function */
@@ -47,6 +51,8 @@ trait ColumnDefinition
   var clipboard: js.UndefOr[Boolean] = js.undefined
   /** A column can be a "group" of columns (Example: group header column -> Measurements, grouped column -> Length, Width, Height) */
   var columns: js.UndefOr[js.Array[ColumnDefinition]] = js.undefined
+  /**You can add a right click context menu to any columns cells by passing an array of menu items to the contextMenu option in that columns definition. */
+  var contextMenu: js.UndefOr[js.Array[MenuObject | MenuSeparator]] = js.undefined
   /** sets css classes on header and cells in this column. (value should be a string containing space separated class names) */
   var cssClass: js.UndefOr[String] = js.undefined
   /** show or hide column in downloaded data */
@@ -65,14 +71,25 @@ trait ColumnDefinition
   var editorParams: js.UndefOr[EditorParams] = js.undefined
   /**  set how you would like the data to be formatted*/
   var formatter: js.UndefOr[Formatter] = js.undefined
+  /**When copying to the clipboard you may want to apply a different formatter from the one usualy used to format the cell, you can do this using the formatterClipboard column definition option. You can use the formatterClipboardParams to pass in any additional params to the formatter */
+  var formatterClipboard: js.UndefOr[Formatter | `false`] = js.undefined
+  var formatterClipboardParams: js.UndefOr[FormatterParams] = js.undefined
+  /**When the getHtml function is called you may want to apply a different formatter from the one usualy used to format the cell, you can do this using the formatterHtmlOutput column definition option */
+  var formatterHtmlOutput: js.UndefOr[Formatter | `false`] = js.undefined
+  var formatterHtmlOutputParams: js.UndefOr[FormatterParams] = js.undefined
   /**  You can pass an optional additional parameter with the formatter, formatterParams that should contain an object with additional information for configuring the formatter.*/
   var formatterParams: js.UndefOr[FormatterParams] = js.undefined
+  /**When printing you may want to apply a different formatter from the one usualy used to format the cell, you can do this using the formatterPrint column definition option. You can use the formatterPrintParams to pass in any additional params to the formatter */
+  var formatterPrint: js.UndefOr[Formatter | `false`] = js.undefined
+  var formatterPrintParams: js.UndefOr[FormatterParams] = js.undefined
   /** You can freeze the position of columns on the left and right of the table using the frozen property in the column definition array. This will keep the column still when the table is scrolled horizontally. */
   var frozen: js.UndefOr[Boolean] = js.undefined
   /**   callback for when user clicks on the header for this column*/
   var headerClick: js.UndefOr[ColumnEventCallback] = js.undefined
   /** callback for when user right clicks on the header for this column  */
   var headerContext: js.UndefOr[ColumnEventCallback] = js.undefined
+  /**You can add a right click context menu to any column by passing an array of menu items to the headerContextMenu option in that columns definition. */
+  var headerContextMenu: js.UndefOr[js.Array[MenuObject | MenuSeparator]] = js.undefined
   /**  callback for when user double clicks on the header for this column */
   var headerDblClick: js.UndefOr[ColumnEventCallback] = js.undefined
   /** callback for when user double taps on a header for this column, triggered in touch displays when a user taps the same header twice in under 300ms */
@@ -102,6 +119,8 @@ trait ColumnDefinition
   var headerFilterParams: js.UndefOr[EditorParams] = js.undefined
   /**  placeholder text for the header filter */
   var headerFilterPlaceholder: js.UndefOr[String] = js.undefined
+  /**You can add a menu to any column by passing an array of menu items to the headerMenu option in that columns definition. */
+  var headerMenu: js.UndefOr[js.Array[MenuObject | MenuSeparator]] = js.undefined
   // Column Header
   /** By default all columns in a table are sortable by clicking on the column header, if you want to disable this behaviour, set the headerSort property to false in the column definition array: */
   var headerSort: js.UndefOr[Boolean] = js.undefined
@@ -127,9 +146,10 @@ trait ColumnDefinition
   var headerVertical: js.UndefOr[Boolean | flip] = js.undefined
   /** When the getHtml function is called, hide the column from the output. */
   var hideInHtml: js.UndefOr[Boolean] = js.undefined
+  /**If you want to set the horizontal alignment on a column by column basis, */
+  var hozAlign: js.UndefOr[ColumnDefinitionAlign] = js.undefined
   /** Show/Hide a particular column in the HTML output*/
   var htmlOutput: js.UndefOr[Boolean] = js.undefined
-   // Align?
   /** sets the minimum width of this column, this should be set in pixels (this takes priority over the global option of columnMinWidth) */
   var minWidth: js.UndefOr[Double] = js.undefined
   /** Mutators are used to alter data as it is parsed into Tabulator. For example if you wanted to convert a numeric column into a boolean based on its value, before the data is used to build the table.
@@ -197,6 +217,8 @@ trait ColumnDefinition
   ] = js.undefined
   /** alter the row height to fit the contents of the cell instead of hiding overflow */
   var variableHeight: js.UndefOr[Boolean] = js.undefined
+  /**If you want to set the vertical alignment on a column by column basis */
+  var vertAlign: js.UndefOr[VerticalAlign] = js.undefined
   /** The widthGrow property should be used on columns without a width property set. The value is used to work out what fraction of the available will be allocated to the column. The value should be set to a number greater than 0, by default any columns with no width set have a widthGrow value of 1 */
   var widthGrow: js.UndefOr[Double] = js.undefined
   /** The widthShrink property should be used on columns with a width property set. The value is used to work out how to shrink columns with a fixed width when the table is too narrow to fit in all the columns. The value should be set to a number greater than 0, by default columns with a width set have a widthShrink value of 0, meaning they will not be shrunk if the table gets too narrow, and may cause the horizontal scrollbar to appear. */
@@ -212,8 +234,11 @@ object ColumnDefinition {
     accessorClipboardParams: CustomAccessorParams = null,
     accessorDownload: (/* value */ js.Any, /* data */ js.Any, /* type */ data | download | clipboard, /* AccessorParams */ js.Any, /* column */ js.UndefOr[ColumnComponent]) => js.Any = null,
     accessorDownloadParams: CustomAccessorParams = null,
+    accessorHtmlOutput: (/* value */ js.Any, /* data */ js.Any, /* type */ data | download | clipboard, /* AccessorParams */ js.Any, /* column */ js.UndefOr[ColumnComponent]) => js.Any = null,
+    accessorHtmlOutputParams: CustomAccessorParams = null,
     accessorParams: CustomAccessorParams = null,
-    align: ColumnDefinitionAlign = null,
+    accessorPrint: (/* value */ js.Any, /* data */ js.Any, /* type */ data | download | clipboard, /* AccessorParams */ js.Any, /* column */ js.UndefOr[ColumnComponent]) => js.Any = null,
+    accessorPrintParams: CustomAccessorParams = null,
     bottomCalc: ColumnCalc = null,
     bottomCalcFormatter: Formatter = null,
     bottomCalcFormatterParams: FormatterParams = null,
@@ -234,6 +259,7 @@ object ColumnDefinition {
     cellTapHold: (/* e */ js.Any, /* cell */ CellComponent) => Unit = null,
     clipboard: js.UndefOr[Boolean] = js.undefined,
     columns: js.Array[ColumnDefinition] = null,
+    contextMenu: js.Array[MenuObject | MenuSeparator] = null,
     cssClass: String = null,
     download: js.UndefOr[Boolean] = js.undefined,
     downloadTitle: String = null,
@@ -243,10 +269,17 @@ object ColumnDefinition {
     editorParams: EditorParams = null,
     field: String = null,
     formatter: Formatter = null,
+    formatterClipboard: Formatter | `false` = null,
+    formatterClipboardParams: FormatterParams = null,
+    formatterHtmlOutput: Formatter | `false` = null,
+    formatterHtmlOutputParams: FormatterParams = null,
     formatterParams: FormatterParams = null,
+    formatterPrint: Formatter | `false` = null,
+    formatterPrintParams: FormatterParams = null,
     frozen: js.UndefOr[Boolean] = js.undefined,
     headerClick: (/* e */ js.Any, /* column */ ColumnComponent) => Unit = null,
     headerContext: (/* e */ js.Any, /* column */ ColumnComponent) => Unit = null,
+    headerContextMenu: js.Array[MenuObject | MenuSeparator] = null,
     headerDblClick: (/* e */ js.Any, /* column */ ColumnComponent) => Unit = null,
     headerDblTap: (/* e */ js.Any, /* column */ ColumnComponent) => Unit = null,
     headerFilter: Editor = null,
@@ -262,6 +295,7 @@ object ColumnDefinition {
     headerFilterLiveFilter: js.UndefOr[Boolean] = js.undefined,
     headerFilterParams: EditorParams = null,
     headerFilterPlaceholder: String = null,
+    headerMenu: js.Array[MenuObject | MenuSeparator] = null,
     headerSort: js.UndefOr[Boolean] = js.undefined,
     headerSortStartingDir: SortDirection = null,
     headerSortTristate: js.UndefOr[Boolean] = js.undefined,
@@ -270,6 +304,7 @@ object ColumnDefinition {
     headerTooltip: Boolean | String | (js.Function1[/* column */ ColumnComponent, String]) = null,
     headerVertical: Boolean | flip = null,
     hideInHtml: js.UndefOr[Boolean] = js.undefined,
+    hozAlign: ColumnDefinitionAlign = null,
     htmlOutput: js.UndefOr[Boolean] = js.undefined,
     minWidth: Int | Double = null,
     mutator: (/* value */ js.Any, /* data */ js.Any, /* type */ data | edit, /* mutatorParams */ js.Any, /* cell */ js.UndefOr[CellComponent]) => js.Any = null,
@@ -303,6 +338,7 @@ object ColumnDefinition {
     topCalcParams: (/* values */ js.Any, /* data */ js.Any) => js.Any = null,
     validator: StandardValidatorType | (js.Array[StandardValidatorType | Validator]) | Validator = null,
     variableHeight: js.UndefOr[Boolean] = js.undefined,
+    vertAlign: VerticalAlign = null,
     visible: js.UndefOr[Boolean] = js.undefined,
     width: Double | String = null,
     widthGrow: Int | Double = null,
@@ -314,8 +350,11 @@ object ColumnDefinition {
     if (accessorClipboardParams != null) __obj.updateDynamic("accessorClipboardParams")(accessorClipboardParams.asInstanceOf[js.Any])
     if (accessorDownload != null) __obj.updateDynamic("accessorDownload")(js.Any.fromFunction5(accessorDownload))
     if (accessorDownloadParams != null) __obj.updateDynamic("accessorDownloadParams")(accessorDownloadParams.asInstanceOf[js.Any])
+    if (accessorHtmlOutput != null) __obj.updateDynamic("accessorHtmlOutput")(js.Any.fromFunction5(accessorHtmlOutput))
+    if (accessorHtmlOutputParams != null) __obj.updateDynamic("accessorHtmlOutputParams")(accessorHtmlOutputParams.asInstanceOf[js.Any])
     if (accessorParams != null) __obj.updateDynamic("accessorParams")(accessorParams.asInstanceOf[js.Any])
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
+    if (accessorPrint != null) __obj.updateDynamic("accessorPrint")(js.Any.fromFunction5(accessorPrint))
+    if (accessorPrintParams != null) __obj.updateDynamic("accessorPrintParams")(accessorPrintParams.asInstanceOf[js.Any])
     if (bottomCalc != null) __obj.updateDynamic("bottomCalc")(bottomCalc.asInstanceOf[js.Any])
     if (bottomCalcFormatter != null) __obj.updateDynamic("bottomCalcFormatter")(bottomCalcFormatter.asInstanceOf[js.Any])
     if (bottomCalcFormatterParams != null) __obj.updateDynamic("bottomCalcFormatterParams")(bottomCalcFormatterParams.asInstanceOf[js.Any])
@@ -336,6 +375,7 @@ object ColumnDefinition {
     if (cellTapHold != null) __obj.updateDynamic("cellTapHold")(js.Any.fromFunction2(cellTapHold))
     if (!js.isUndefined(clipboard)) __obj.updateDynamic("clipboard")(clipboard.asInstanceOf[js.Any])
     if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
+    if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
     if (!js.isUndefined(download)) __obj.updateDynamic("download")(download.asInstanceOf[js.Any])
     if (downloadTitle != null) __obj.updateDynamic("downloadTitle")(downloadTitle.asInstanceOf[js.Any])
@@ -345,10 +385,17 @@ object ColumnDefinition {
     if (editorParams != null) __obj.updateDynamic("editorParams")(editorParams.asInstanceOf[js.Any])
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     if (formatter != null) __obj.updateDynamic("formatter")(formatter.asInstanceOf[js.Any])
+    if (formatterClipboard != null) __obj.updateDynamic("formatterClipboard")(formatterClipboard.asInstanceOf[js.Any])
+    if (formatterClipboardParams != null) __obj.updateDynamic("formatterClipboardParams")(formatterClipboardParams.asInstanceOf[js.Any])
+    if (formatterHtmlOutput != null) __obj.updateDynamic("formatterHtmlOutput")(formatterHtmlOutput.asInstanceOf[js.Any])
+    if (formatterHtmlOutputParams != null) __obj.updateDynamic("formatterHtmlOutputParams")(formatterHtmlOutputParams.asInstanceOf[js.Any])
     if (formatterParams != null) __obj.updateDynamic("formatterParams")(formatterParams.asInstanceOf[js.Any])
+    if (formatterPrint != null) __obj.updateDynamic("formatterPrint")(formatterPrint.asInstanceOf[js.Any])
+    if (formatterPrintParams != null) __obj.updateDynamic("formatterPrintParams")(formatterPrintParams.asInstanceOf[js.Any])
     if (!js.isUndefined(frozen)) __obj.updateDynamic("frozen")(frozen.asInstanceOf[js.Any])
     if (headerClick != null) __obj.updateDynamic("headerClick")(js.Any.fromFunction2(headerClick))
     if (headerContext != null) __obj.updateDynamic("headerContext")(js.Any.fromFunction2(headerContext))
+    if (headerContextMenu != null) __obj.updateDynamic("headerContextMenu")(headerContextMenu.asInstanceOf[js.Any])
     if (headerDblClick != null) __obj.updateDynamic("headerDblClick")(js.Any.fromFunction2(headerDblClick))
     if (headerDblTap != null) __obj.updateDynamic("headerDblTap")(js.Any.fromFunction2(headerDblTap))
     if (headerFilter != null) __obj.updateDynamic("headerFilter")(headerFilter.asInstanceOf[js.Any])
@@ -358,6 +405,7 @@ object ColumnDefinition {
     if (!js.isUndefined(headerFilterLiveFilter)) __obj.updateDynamic("headerFilterLiveFilter")(headerFilterLiveFilter.asInstanceOf[js.Any])
     if (headerFilterParams != null) __obj.updateDynamic("headerFilterParams")(headerFilterParams.asInstanceOf[js.Any])
     if (headerFilterPlaceholder != null) __obj.updateDynamic("headerFilterPlaceholder")(headerFilterPlaceholder.asInstanceOf[js.Any])
+    if (headerMenu != null) __obj.updateDynamic("headerMenu")(headerMenu.asInstanceOf[js.Any])
     if (!js.isUndefined(headerSort)) __obj.updateDynamic("headerSort")(headerSort.asInstanceOf[js.Any])
     if (headerSortStartingDir != null) __obj.updateDynamic("headerSortStartingDir")(headerSortStartingDir.asInstanceOf[js.Any])
     if (!js.isUndefined(headerSortTristate)) __obj.updateDynamic("headerSortTristate")(headerSortTristate.asInstanceOf[js.Any])
@@ -366,6 +414,7 @@ object ColumnDefinition {
     if (headerTooltip != null) __obj.updateDynamic("headerTooltip")(headerTooltip.asInstanceOf[js.Any])
     if (headerVertical != null) __obj.updateDynamic("headerVertical")(headerVertical.asInstanceOf[js.Any])
     if (!js.isUndefined(hideInHtml)) __obj.updateDynamic("hideInHtml")(hideInHtml.asInstanceOf[js.Any])
+    if (hozAlign != null) __obj.updateDynamic("hozAlign")(hozAlign.asInstanceOf[js.Any])
     if (!js.isUndefined(htmlOutput)) __obj.updateDynamic("htmlOutput")(htmlOutput.asInstanceOf[js.Any])
     if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
     if (mutator != null) __obj.updateDynamic("mutator")(js.Any.fromFunction5(mutator))
@@ -390,6 +439,7 @@ object ColumnDefinition {
     if (topCalcParams != null) __obj.updateDynamic("topCalcParams")(js.Any.fromFunction2(topCalcParams))
     if (validator != null) __obj.updateDynamic("validator")(validator.asInstanceOf[js.Any])
     if (!js.isUndefined(variableHeight)) __obj.updateDynamic("variableHeight")(variableHeight.asInstanceOf[js.Any])
+    if (vertAlign != null) __obj.updateDynamic("vertAlign")(vertAlign.asInstanceOf[js.Any])
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (widthGrow != null) __obj.updateDynamic("widthGrow")(widthGrow.asInstanceOf[js.Any])

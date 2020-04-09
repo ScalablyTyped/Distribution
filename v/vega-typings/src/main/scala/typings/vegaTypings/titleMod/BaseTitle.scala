@@ -27,7 +27,7 @@ trait BaseTitle extends js.Object {
     */
   var angle: js.UndefOr[NumberValue] = js.undefined
   /**
-    * Vertical text baseline for title and subtitle text. One of `"top"`, `"middle"`, `"bottom"`, or `"alphabetic"`.
+    * Vertical text baseline for title and subtitle text. One of `"alphabetic"` (default), `"top"`, `"middle"`, `"bottom"`, `"line-top"`, or `"line-bottom"`. The `"line-top"` and `"line-bottom"` values operate similarly to `"top"` and `"bottom"`, but are calculated relative to the *lineHeight* rather than *fontSize* alone.
     */
   var baseline: js.UndefOr[TextBaselineValue] = js.undefined
   /**
@@ -72,7 +72,7 @@ trait BaseTitle extends js.Object {
     */
   var limit: js.UndefOr[NumberValue] = js.undefined
   /**
-    * Line height in pixels for multi-line title text.
+    * Line height in pixels for multi-line title text or title text with `"line-top"` or `"line-bottom"` baseline.
     */
   var lineHeight: js.UndefOr[NumberValue] = js.undefined
   /**

@@ -1,21 +1,25 @@
 package typings.clownface.clownfaceMod
 
+import typings.clownface.mod.AnyContext
+import typings.clownface.mod.Clownface
 import typings.clownface.mod.ClownfaceInit
-import typings.clownface.mod.WithSingleTerm
-import typings.clownface.mod.WithSingleValue
-import typings.clownface.mod.WithTerms
-import typings.clownface.mod.WithValues
+import typings.clownface.mod.ClownfaceInitWithTerms
+import typings.clownface.mod.ClownfaceInitWithValue
+import typings.clownface.mod.ClownfaceInitWithValues
 import typings.rdfJs.mod.DatasetCore
 import typings.rdfJs.mod.Quad
 import typings.rdfJs.mod.Term
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+// tslint:disable-next-line no-unnecessary-class
 @JSImport("clownface/lib/Clownface", JSImport.Namespace)
 @js.native
-class ^[D /* <: DatasetCore[Quad, Quad] */, T /* <: Term */] protected () extends Clownface[D, T] {
-  def this(options: (ClownfaceInit[DatasetCore[Quad, Quad], Term]) with (Partial[WithSingleTerm[T] | WithTerms[T]]) with (Partial[WithSingleValue | WithValues])) = this()
+class ^[T /* <: AnyContext */, D /* <: DatasetCore[Quad, Quad] */] protected () extends Clownface[T, D] {
+  def this(options: ClownfaceInit[D]) = this()
+  def this(options: ClownfaceInitWithTerms[T | Term | js.Array[Term], D]) = this()
+  def this(options: ClownfaceInitWithValue[D]) = this()
+  def this(options: ClownfaceInitWithValues[D]) = this()
 }
 

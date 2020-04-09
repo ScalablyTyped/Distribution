@@ -1,21 +1,21 @@
 organization := "org.scalablytyped"
 name := "antd-mobile"
-version := "2.3.1-745137"
+version := "2.3.1-137545"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.9-2d2033",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-ece683",
-  "org.scalablytyped" %%% "rc-gesture" % "0.0.22-b7ba55",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20200320Z-629467",
-  "org.scalablytyped" %%% "react-native" % "0.61-dt-20200318Z-8663a9",
-  "org.scalablytyped" %%% "rmc-calendar" % "1.1.4-e96e6e",
-  "org.scalablytyped" %%% "rmc-cascader" % "5.0.3-055b89",
-  "org.scalablytyped" %%% "rmc-input-number" % "1.0.5-39a604",
-  "org.scalablytyped" %%% "rmc-picker" % "5.0.10-4f0a6d",
-  "org.scalablytyped" %%% "rmc-pull-to-refresh" % "1.0.11-c8c497",
-  "org.scalablytyped" %%% "rmc-tabs" % "1.2.29-90c1d8",
+  "org.scalablytyped" %%% "rc-gesture" % "0.0.22-f2aed9",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20200402Z-6f4338",
+  "org.scalablytyped" %%% "react-native" % "0.62-dt-20200407Z-401c8f",
+  "org.scalablytyped" %%% "rmc-calendar" % "1.1.4-02b38a",
+  "org.scalablytyped" %%% "rmc-cascader" % "5.0.3-d9146f",
+  "org.scalablytyped" %%% "rmc-input-number" % "1.0.5-af5070",
+  "org.scalablytyped" %%% "rmc-picker" % "5.0.10-11a3c5",
+  "org.scalablytyped" %%% "rmc-pull-to-refresh" % "1.0.11-f086e9",
+  "org.scalablytyped" %%% "rmc-tabs" % "1.2.29-4f3390",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")

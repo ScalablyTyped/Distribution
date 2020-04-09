@@ -95,6 +95,7 @@ import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
@@ -766,7 +767,7 @@ object FontAwesomeIconProps {
     onProgress: SyntheticEvent[SVGSVGElement, Event_] => Unit = null,
     onRateChange: SyntheticEvent[SVGSVGElement, Event_] => Unit = null,
     onReset: FormEvent[SVGSVGElement] => Unit = null,
-    onScroll: UIEvent[SVGSVGElement] => Unit = null,
+    onScroll: UIEvent[SVGSVGElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[SVGSVGElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[SVGSVGElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[SVGSVGElement, Event_] => Unit = null,

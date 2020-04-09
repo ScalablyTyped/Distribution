@@ -1,5 +1,6 @@
 package typings.playcanvas.pc
 
+import typings.playcanvas.TypeofScriptType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,24 +25,24 @@ class ScriptRegistry protected () extends EventHandler {
     * Note: when {@link pc.createScript} is called, it will add the {@link pc.ScriptType} to the registry automatically.
     * If a script already exists in registry, and the new script has a `swap` method defined,
     * it will perform code hot swapping automatically in async manner.
-    * @param {pc.ScriptType} script - Script Type that is created using {@link pc.createScript}.
+    * @param {Class<pc.ScriptType>} script - Script Type that is created using {@link pc.createScript}.
     * @returns {boolean} True if added for the first time or false if script already exists.
     * @example
     * var PlayerController = pc.createScript('playerController');
     * // playerController Script Type will be added to pc.ScriptRegistry automatically
     * console.log(app.scripts.has('playerController')); // outputs true
     */
-  def add(script: ScriptType): Boolean = js.native
+  def add(script: TypeofScriptType): Boolean = js.native
   /**
     * @function
     * @name pc.ScriptRegistry#get
     * @description Get {@link pc.ScriptType} by name.
     * @param {string} name - Name of a {@link pc.ScriptType}.
-    * @returns {pc.ScriptType} The Script Type if it exists in the registry or null otherwise.
+    * @returns {Class<pc.ScriptType>} The Script Type if it exists in the registry or null otherwise.
     * @example
     * var PlayerController = app.scripts.get('playerController');
     */
-  def get(name: String): ScriptType = js.native
+  def get(name: String): TypeofScriptType = js.native
   /**
     * @function
     * @name pc.ScriptRegistry#has
@@ -58,14 +59,14 @@ class ScriptRegistry protected () extends EventHandler {
     * @function
     * @name pc.ScriptRegistry#list
     * @description Get list of all {@link pc.ScriptType}s from registry.
-    * @returns {pc.ScriptType[]} list of all {@link pc.ScriptType}s in registry.
+    * @returns {Array<Class<pc.ScriptType>>} list of all {@link pc.ScriptType}s in registry.
     * @example
     * // logs array of all Script Type names available in registry
     * console.log(app.scripts.list().map(function (o) {
     *     return o.name;
     * }));
     */
-  def list(): js.Array[ScriptType] = js.native
+  def list(): js.Array[TypeofScriptType] = js.native
   /**
     * @function
     * @name pc.ScriptRegistry#remove

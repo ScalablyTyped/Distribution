@@ -15,7 +15,7 @@ trait Document extends js.Object {
     */
   var Attributes: js.UndefOr[DocumentAttributeList] = js.native
   /**
-    * The contents of the document as a base-64 encoded string.
+    * The contents of the document.  Documents passed to the Blob parameter must be base64 encoded. Your code might not need to encode the document file bytes if you're using an AWS SDK to call Amazon Kendra operations. If you are calling the Amazon Kendra endpoint directly using REST, you must base64 encode the contents before sending.
     */
   var Blob: js.UndefOr[_Blob] = js.native
   /**

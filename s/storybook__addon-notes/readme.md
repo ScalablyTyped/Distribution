@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook__addon-notes
 
-Typings are for version 5.3.17
+Typings are for version 5.3.18
 
 ## Library description:
 Write notes for your Storybook stories.

@@ -23,6 +23,19 @@ trait ES extends Service {
   def addTags(params: AddTagsRequest): Request[js.Object, AWSError] = js.native
   def addTags(params: AddTagsRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
+    * Associates a package with an Amazon ES domain.
+    */
+  def associatePackage(): Request[AssociatePackageResponse, AWSError] = js.native
+  def associatePackage(callback: js.Function2[/* err */ AWSError, /* data */ AssociatePackageResponse, Unit]): Request[AssociatePackageResponse, AWSError] = js.native
+  /**
+    * Associates a package with an Amazon ES domain.
+    */
+  def associatePackage(params: AssociatePackageRequest): Request[AssociatePackageResponse, AWSError] = js.native
+  def associatePackage(
+    params: AssociatePackageRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ AssociatePackageResponse, Unit]
+  ): Request[AssociatePackageResponse, AWSError] = js.native
+  /**
     * Cancels a scheduled service software update for an Amazon ES domain. You can only perform this operation before the AutomatedUpdateDate and when the UpdateStatus is in the PENDING_UPDATE state.
     */
   def cancelElasticsearchServiceSoftwareUpdate(): Request[CancelElasticsearchServiceSoftwareUpdateResponse, AWSError] = js.native
@@ -59,6 +72,19 @@ trait ES extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateElasticsearchDomainResponse, Unit]
   ): Request[CreateElasticsearchDomainResponse, AWSError] = js.native
   /**
+    * Create a package for use with Amazon ES domains.
+    */
+  def createPackage(): Request[CreatePackageResponse, AWSError] = js.native
+  def createPackage(callback: js.Function2[/* err */ AWSError, /* data */ CreatePackageResponse, Unit]): Request[CreatePackageResponse, AWSError] = js.native
+  /**
+    * Create a package for use with Amazon ES domains.
+    */
+  def createPackage(params: CreatePackageRequest): Request[CreatePackageResponse, AWSError] = js.native
+  def createPackage(
+    params: CreatePackageRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreatePackageResponse, Unit]
+  ): Request[CreatePackageResponse, AWSError] = js.native
+  /**
     * Permanently deletes the specified Elasticsearch domain and all of its data. Once a domain is deleted, it cannot be recovered.
     */
   def deleteElasticsearchDomain(): Request[DeleteElasticsearchDomainResponse, AWSError] = js.native
@@ -76,6 +102,19 @@ trait ES extends Service {
     */
   def deleteElasticsearchServiceRole(): Request[js.Object, AWSError] = js.native
   def deleteElasticsearchServiceRole(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Delete the package.
+    */
+  def deletePackage(): Request[DeletePackageResponse, AWSError] = js.native
+  def deletePackage(callback: js.Function2[/* err */ AWSError, /* data */ DeletePackageResponse, Unit]): Request[DeletePackageResponse, AWSError] = js.native
+  /**
+    * Delete the package.
+    */
+  def deletePackage(params: DeletePackageRequest): Request[DeletePackageResponse, AWSError] = js.native
+  def deletePackage(
+    params: DeletePackageRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeletePackageResponse, Unit]
+  ): Request[DeletePackageResponse, AWSError] = js.native
   /**
     * Returns domain configuration information about the specified Elasticsearch domain, including the domain ID, domain endpoint, and domain ARN.
     */
@@ -133,6 +172,19 @@ trait ES extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeElasticsearchInstanceTypeLimitsResponse, Unit]
   ): Request[DescribeElasticsearchInstanceTypeLimitsResponse, AWSError] = js.native
   /**
+    * Describes all packages available to Amazon ES. Includes options for filtering, limiting the number of results, and pagination.
+    */
+  def describePackages(): Request[DescribePackagesResponse, AWSError] = js.native
+  def describePackages(callback: js.Function2[/* err */ AWSError, /* data */ DescribePackagesResponse, Unit]): Request[DescribePackagesResponse, AWSError] = js.native
+  /**
+    * Describes all packages available to Amazon ES. Includes options for filtering, limiting the number of results, and pagination.
+    */
+  def describePackages(params: DescribePackagesRequest): Request[DescribePackagesResponse, AWSError] = js.native
+  def describePackages(
+    params: DescribePackagesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribePackagesResponse, Unit]
+  ): Request[DescribePackagesResponse, AWSError] = js.native
+  /**
     * Lists available reserved Elasticsearch instance offerings.
     */
   def describeReservedElasticsearchInstanceOfferings(): Request[DescribeReservedElasticsearchInstanceOfferingsResponse, AWSError] = js.native
@@ -170,6 +222,19 @@ trait ES extends Service {
     params: DescribeReservedElasticsearchInstancesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeReservedElasticsearchInstancesResponse, Unit]
   ): Request[DescribeReservedElasticsearchInstancesResponse, AWSError] = js.native
+  /**
+    * Dissociates a package from the Amazon ES domain.
+    */
+  def dissociatePackage(): Request[DissociatePackageResponse, AWSError] = js.native
+  def dissociatePackage(callback: js.Function2[/* err */ AWSError, /* data */ DissociatePackageResponse, Unit]): Request[DissociatePackageResponse, AWSError] = js.native
+  /**
+    * Dissociates a package from the Amazon ES domain.
+    */
+  def dissociatePackage(params: DissociatePackageRequest): Request[DissociatePackageResponse, AWSError] = js.native
+  def dissociatePackage(
+    params: DissociatePackageRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DissociatePackageResponse, Unit]
+  ): Request[DissociatePackageResponse, AWSError] = js.native
   /**
     *  Returns a list of upgrade compatible Elastisearch versions. You can optionally pass a  DomainName  to get all upgrade compatible Elasticsearch versions for that specific domain. 
     */
@@ -217,6 +282,19 @@ trait ES extends Service {
   def listDomainNames(): Request[ListDomainNamesResponse, AWSError] = js.native
   def listDomainNames(callback: js.Function2[/* err */ AWSError, /* data */ ListDomainNamesResponse, Unit]): Request[ListDomainNamesResponse, AWSError] = js.native
   /**
+    * Lists all Amazon ES domains associated with the package.
+    */
+  def listDomainsForPackage(): Request[ListDomainsForPackageResponse, AWSError] = js.native
+  def listDomainsForPackage(callback: js.Function2[/* err */ AWSError, /* data */ ListDomainsForPackageResponse, Unit]): Request[ListDomainsForPackageResponse, AWSError] = js.native
+  /**
+    * Lists all Amazon ES domains associated with the package.
+    */
+  def listDomainsForPackage(params: ListDomainsForPackageRequest): Request[ListDomainsForPackageResponse, AWSError] = js.native
+  def listDomainsForPackage(
+    params: ListDomainsForPackageRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListDomainsForPackageResponse, Unit]
+  ): Request[ListDomainsForPackageResponse, AWSError] = js.native
+  /**
     * List all Elasticsearch instance types that are supported for given ElasticsearchVersion
     */
   def listElasticsearchInstanceTypes(): Request[ListElasticsearchInstanceTypesResponse, AWSError] = js.native
@@ -244,6 +322,19 @@ trait ES extends Service {
     params: ListElasticsearchVersionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListElasticsearchVersionsResponse, Unit]
   ): Request[ListElasticsearchVersionsResponse, AWSError] = js.native
+  /**
+    * Lists all packages associated with the Amazon ES domain.
+    */
+  def listPackagesForDomain(): Request[ListPackagesForDomainResponse, AWSError] = js.native
+  def listPackagesForDomain(callback: js.Function2[/* err */ AWSError, /* data */ ListPackagesForDomainResponse, Unit]): Request[ListPackagesForDomainResponse, AWSError] = js.native
+  /**
+    * Lists all packages associated with the Amazon ES domain.
+    */
+  def listPackagesForDomain(params: ListPackagesForDomainRequest): Request[ListPackagesForDomainResponse, AWSError] = js.native
+  def listPackagesForDomain(
+    params: ListPackagesForDomainRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListPackagesForDomainResponse, Unit]
+  ): Request[ListPackagesForDomainResponse, AWSError] = js.native
   /**
     * Returns all tags for the given Elasticsearch domain.
     */

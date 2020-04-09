@@ -17,27 +17,27 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Configures series points in scatter, line- and area-like series. */
+/** @name dxChartSeriesTypes.CommonSeries.point */
 trait dxChartSeriesTypesCommonSeriesPoint extends js.Object {
-  /** Configures the appearance of the series point border in scatter, line- and area-like series. */
+  /** @name dxChartSeriesTypes.CommonSeries.point.border */
   var border: js.UndefOr[AnonColorVisible] = js.undefined
-  /** Colors the series points. */
+  /** @name dxChartSeriesTypes.CommonSeries.point.color */
   var color: js.UndefOr[String] = js.undefined
-  /** Specifies series elements to be highlighted when a user pauses on a series point. */
+  /** @name dxChartSeriesTypes.CommonSeries.point.hoverMode */
   var hoverMode: js.UndefOr[allArgumentPoints | allSeriesPoints | none | onlyPoint] = js.undefined
-  /** Configures the appearance adopted by a series point when a user pauses on it. */
+  /** @name dxChartSeriesTypes.CommonSeries.point.hoverStyle */
   var hoverStyle: js.UndefOr[AnonSize] = js.undefined
-  /** Substitutes the standard point symbols with an image. */
+  /** @name dxChartSeriesTypes.CommonSeries.point.image */
   var image: js.UndefOr[String | AnonHeightUrl] = js.undefined
-  /** Specifies series elements to be highlighted when a user selects a series point. */
+  /** @name dxChartSeriesTypes.CommonSeries.point.selectionMode */
   var selectionMode: js.UndefOr[allArgumentPoints | allSeriesPoints | none | onlyPoint] = js.undefined
-  /** Configures the appearance of a selected series point. */
+  /** @name dxChartSeriesTypes.CommonSeries.point.selectionStyle */
   var selectionStyle: js.UndefOr[AnonSize] = js.undefined
-  /** Specifies the diameter of series points in pixels. */
+  /** @name dxChartSeriesTypes.CommonSeries.point.size */
   var size: js.UndefOr[Double] = js.undefined
-  /** Specifies which symbol should represent series points in scatter, line- and area-like series. */
+  /** @name dxChartSeriesTypes.CommonSeries.point.symbol */
   var symbol: js.UndefOr[circle | cross | polygon | square | triangleDown | triangleUp] = js.undefined
-  /** Makes the series points visible. */
+  /** @name dxChartSeriesTypes.CommonSeries.point.visible */
   var visible: js.UndefOr[Boolean] = js.undefined
 }
 

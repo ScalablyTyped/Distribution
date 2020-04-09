@@ -7,6 +7,7 @@ import typings.antd.transferMod.TransferDirection
 import typings.antd.transferMod.TransferItem
 import typings.react.mod.CSSProperties
 import typings.react.mod.ChangeEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.UIEvent
 import typings.std.HTMLInputElement
@@ -38,7 +39,7 @@ trait TransferListProps extends js.Object {
   def handleFilter(e: ChangeEvent[HTMLInputElement]): Unit
   def onItemSelect(key: String, check: Boolean): Unit
   def onItemSelectAll(dataSource: js.Array[String], checkAll: Boolean): Unit
-  def onScroll(e: UIEvent[HTMLUListElement]): Unit
+  def onScroll(e: UIEvent[HTMLUListElement, NativeUIEvent]): Unit
 }
 
 object TransferListProps {
@@ -53,7 +54,7 @@ object TransferListProps {
     itemsUnit: String,
     onItemSelect: (String, Boolean) => Unit,
     onItemSelectAll: (js.Array[String], Boolean) => Unit,
-    onScroll: UIEvent[HTMLUListElement] => Unit,
+    onScroll: UIEvent[HTMLUListElement, NativeUIEvent] => Unit,
     prefixCls: String,
     searchPlaceholder: String,
     titleText: String,

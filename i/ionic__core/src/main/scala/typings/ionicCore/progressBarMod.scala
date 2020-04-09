@@ -3,7 +3,7 @@ package typings.ionicCore
 import typings.ionicCore.ionicCoreStrings.determinate
 import typings.ionicCore.ionicCoreStrings.indeterminate
 import typings.ionicCore.mod.Color
-import typings.ionicCore.stencilCoreMod.ComponentInterface
+import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

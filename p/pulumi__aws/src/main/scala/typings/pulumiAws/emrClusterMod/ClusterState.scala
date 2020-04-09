@@ -29,7 +29,7 @@ trait ClusterState extends js.Object {
     */
   val autoscalingRole: js.UndefOr[Input[String]] = js.native
   /**
-    * List of bootstrap actions that will be run before Hadoop is started on the cluster nodes. Defined below
+    * Ordered list of bootstrap actions that will be run before Hadoop is started on the cluster nodes. Defined below.
     */
   val bootstrapActions: js.UndefOr[Input[js.Array[Input[ClusterBootstrapAction]]]] = js.native
   val clusterState: js.UndefOr[Input[String]] = js.native
@@ -127,7 +127,7 @@ trait ClusterState extends js.Object {
     */
   val stepConcurrencyLevel: js.UndefOr[Input[Double]] = js.native
   /**
-    * List of steps to run when creating the cluster. Defined below. It is highly recommended to utilize the [lifecycle configuration block](https://www.terraform.io/docs/configuration/resources.html) with `ignoreChanges` if other steps are being managed outside of this provider. This argument is processed in [attribute-as-blocks mode](https://www.terraform.io/docs/configuration/attr-as-blocks.html).
+    * List of steps to run when creating the cluster. Defined below. It is highly recommended to utilize [`ignoreChanges`](https://www.pulumi.com/docs/intro/concepts/programming-model/#ignorechanges) if other steps are being managed outside of this provider.
     */
   val steps: js.UndefOr[Input[js.Array[Input[ClusterStep]]]] = js.native
   /**

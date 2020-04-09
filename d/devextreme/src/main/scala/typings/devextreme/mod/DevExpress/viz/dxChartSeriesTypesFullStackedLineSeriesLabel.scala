@@ -12,7 +12,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Configures point labels. */
+/** @name dxChartSeriesTypes.FullStackedLineSeries.label */
 trait dxChartSeriesTypesFullStackedLineSeriesLabel extends dxChartSeriesTypesCommonSeriesLabel
 
 object dxChartSeriesTypesFullStackedLineSeriesLabel {

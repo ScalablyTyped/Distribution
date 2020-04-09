@@ -114,6 +114,9 @@ object materialUiCoreStrings {
   sealed trait ConsistentWith extends js.Object
   
   @js.native
+  sealed trait PartialTypographyPropsAbout extends js.Object
+  
+  @js.native
   sealed trait _empty extends js.Object
   
   @js.native
@@ -2112,6 +2115,8 @@ object materialUiCoreStrings {
   def `@global`: `@global` = "@global".asInstanceOf[`@global`]
   @scala.inline
   def ConsistentWith: ConsistentWith = "ConsistentWith".asInstanceOf[ConsistentWith]
+  @scala.inline
+  def PartialTypographyPropsAbout: PartialTypographyPropsAbout = "PartialTypographyPropsAbout".asInstanceOf[PartialTypographyPropsAbout]
   @scala.inline
   def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline

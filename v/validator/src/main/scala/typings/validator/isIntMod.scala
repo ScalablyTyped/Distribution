@@ -1,6 +1,5 @@
 package typings.validator
 
-import typings.validator.mod.validator.IsIntOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,6 +13,7 @@ object isIntMod extends js.Object {
     * @param [options] - Options
     */
   def default(str: String): Boolean = js.native
-  def default(str: String, options: IsIntOptions): Boolean = js.native
+  def default(str: String, options: typings.validator.mod.validator.IsIntOptions): Boolean = js.native
+  type IsIntOptions = typings.validator.mod.validator.IsIntOptions
 }
 

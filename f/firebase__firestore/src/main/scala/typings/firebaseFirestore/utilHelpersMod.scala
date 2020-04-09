@@ -15,7 +15,6 @@ import typings.firebaseFirestore.documentMod.UnknownDocument
 import typings.firebaseFirestore.documentSetMod.DocumentSet
 import typings.firebaseFirestore.firebaseFirestoreStrings.LessthansignDELETEGreaterthansign
 import typings.firebaseFirestore.localViewChangesMod.LocalViewChanges
-import typings.firebaseFirestore.modelFieldValueMod.FieldValue
 import typings.firebaseFirestore.modelFieldValueMod.JsonObject
 import typings.firebaseFirestore.modelFieldValueMod.ObjectValue
 import typings.firebaseFirestore.mutationMod.DeleteMutation
@@ -39,12 +38,16 @@ import typings.firebaseFirestore.sortedSetMod.SortedSet
 import typings.firebaseFirestore.targetDataMod.TargetData
 import typings.firebaseFirestore.targetDataMod.TargetPurpose
 import typings.firebaseFirestore.typesMod.TargetId
-import typings.firebaseFirestore.userDataConverterMod.DocumentKeyReference
+import typings.firebaseFirestore.userDataReaderMod.DocumentKeyReference
+import typings.firebaseFirestore.userDataReaderMod.UserDataReader
+import typings.firebaseFirestore.userDataWriterMod.UserDataWriter
 import typings.firebaseFirestore.viewMod.LimboDocumentChange
 import typings.firebaseFirestore.viewMod.View
 import typings.firebaseFirestore.viewMod.ViewChange
+import typings.firebaseFirestoreTypes.mod.DocumentData
 import typings.firebaseFirestoreTypes.mod.OrderByDirection
 import typings.std.Error
+import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -121,6 +124,7 @@ object utilHelpersMod extends js.Object {
   def expectSetToEqual[T](set: SortedSet[T], arr: js.Array[T]): Unit = js.native
   def field(path: String): FieldPath = js.native
   def filter(path: String, op: String, value: js.Any): FieldFilter = js.native
+  def forEachNumber[V](obj: Dict[V], fn: js.Function2[/* key */ Double, /* val */ V, Unit]): Unit = js.native
   def key(path: String): DocumentKey = js.native
   def keySet(keys: DocumentKey*): DocumentKeySet_ = js.native
   def keys(documents: (MaybeDocument | String)*): DocumentKeySet_ = js.native
@@ -142,8 +146,13 @@ object utilHelpersMod extends js.Object {
   def removedDoc(keyStr: String): NoDocument = js.native
   def resumeTokenForSnapshot(snapshotVersion: SnapshotVersion): ByteString = js.native
   def setMutation(keyStr: String, json: JsonObject[_]): SetMutation = js.native
-  def size(obj: JsonObject[_]): Double = js.native
+  def stringFromBase64String(): ByteString = js.native
+  def stringFromBase64String(value: String): ByteString = js.native
+  def stringFromBase64String(value: Uint8Array): ByteString = js.native
   def targetData(targetId: TargetId, queryPurpose: TargetPurpose, path: String): TargetData = js.native
+  def testUserDataReader(): UserDataReader = js.native
+  def testUserDataReader(useProto3Json: Boolean): UserDataReader = js.native
+  def testUserDataWriter(): UserDataWriter[DocumentData] = js.native
   def transformMutation(keyStr: String, data: Dict[_]): TransformMutation = js.native
   def unknownDoc(keyStr: String, ver: TestSnapshotVersion): UnknownDocument = js.native
   def updateMapping(
@@ -160,7 +169,7 @@ object utilHelpersMod extends js.Object {
     current: Boolean
   ): TargetChange = js.native
   def version(v: TestSnapshotVersion): SnapshotVersion = js.native
-  def wrap(value: js.Any): FieldValue = js.native
+  def wrap(value: js.Any): js.Any = js.native
   def wrapObject(obj: JsonObject[_]): ObjectValue = js.native
   /* static members */
   @js.native

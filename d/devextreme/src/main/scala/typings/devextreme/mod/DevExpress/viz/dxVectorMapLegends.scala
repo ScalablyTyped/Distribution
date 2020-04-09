@@ -23,19 +23,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxVectorMapLegends extends BaseLegend {
-  /** Specifies text for a hint that appears when a user hovers the mouse pointer over the text of a legend item. */
+  /** @name dxVectorMap.Options.legends.customizeHint */
   var customizeHint: js.UndefOr[js.Function1[/* itemInfo */ AnonColorEnd, String]] = js.undefined
-  /** Allows you to change the order and visibility of legend items. */
+  /** @name dxVectorMap.Options.legends.customizeItems */
   var customizeItems: js.UndefOr[
     js.Function1[/* items */ js.Array[VectorMapLegendItem], js.Array[VectorMapLegendItem]]
   ] = js.undefined
-  /** Specifies text for legend items. */
+  /** @name dxVectorMap.Options.legends.customizeText */
   var customizeText: js.UndefOr[js.Function1[/* itemInfo */ AnonColorEnd, String]] = js.undefined
-  /** Specifies the color of item markers in the legend. The specified color applied only when the legend uses 'size' source. */
+  /** @name dxVectorMap.Options.legends.markerColor */
   var markerColor: js.UndefOr[String] = js.undefined
-  /** Specifies the shape of item markers. */
+  /** @name dxVectorMap.Options.legends.markerShape */
   var markerShape: js.UndefOr[circle | square] = js.undefined
-  /** Specifies an SVG element that serves as a custom legend item marker. */
+  /** @name dxVectorMap.Options.legends.markerTemplate */
   var markerTemplate: js.UndefOr[
     template | (js.Function2[
       /* legendItem */ VectorMapLegendItem, 
@@ -43,7 +43,7 @@ trait dxVectorMapLegends extends BaseLegend {
       String | SVGElement | JQuery
     ])
   ] = js.undefined
-  /** Specifies the source of data for the legend. */
+  /** @name dxVectorMap.Options.legends.source */
   var source: js.UndefOr[AnonLayer] = js.undefined
 }
 

@@ -1,6 +1,5 @@
 package typings.antd.generatePickerMod
 
-import typings.antd.AnonLang
 import typings.antd.antdStrings.`additions text`
 import typings.antd.antdStrings.`inline`
 import typings.antd.antdStrings.additions
@@ -45,7 +44,6 @@ import typings.rcPicker.interfaceMod.PanelMode
 import typings.rcPicker.interfaceMod.PickerMode
 import typings.rcPicker.pickerMod.PickerRefConfig
 import typings.rcPicker.timePanelMod.SharedTimeProps
-import typings.rcTrigger.interfaceMod.AlignType
 import typings.react.mod.CSSProperties
 import typings.react.mod.FocusEvent
 import typings.react.mod.MouseEvent
@@ -131,12 +129,12 @@ object PickerProps {
     direction: ltr | rtl = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     disabledDate: DateType => Boolean = null,
-    dropdownAlign: AlignType = null,
+    dropdownAlign: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AlignType */ js.Any = null,
     dropdownClassName: String = null,
     format: String | js.Array[String] = null,
     getPopupContainer: /* node */ HTMLElement => HTMLElement = null,
     inputReadOnly: js.UndefOr[Boolean] = js.undefined,
-    locale: AnonLang = null,
+    locale: PickerLocale = null,
     mode: PanelMode = null,
     monthCellRender: (DateType, /* locale */ Locale) => ReactNode = null,
     name: String = null,
@@ -328,12 +326,12 @@ object PickerProps {
     disabled: js.UndefOr[Boolean] = js.undefined,
     disabledDate: DateType => Boolean = null,
     disabledTime: /* date */ DateType | Null => DisabledTimes = null,
-    dropdownAlign: AlignType = null,
+    dropdownAlign: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AlignType */ js.Any = null,
     dropdownClassName: String = null,
     format: String | js.Array[String] = null,
     getPopupContainer: /* node */ HTMLElement => HTMLElement = null,
     inputReadOnly: js.UndefOr[Boolean] = js.undefined,
-    locale: AnonLang = null,
+    locale: PickerLocale = null,
     mode: PanelMode = null,
     monthCellRender: (DateType, /* locale */ Locale) => ReactNode = null,
     name: String = null,
@@ -536,14 +534,14 @@ object PickerProps {
     disabledHours: () => js.Array[Double] = null,
     disabledMinutes: /* hour */ Double => js.Array[Double] = null,
     disabledSeconds: (/* hour */ Double, /* minute */ Double) => js.Array[Double] = null,
-    dropdownAlign: AlignType = null,
+    dropdownAlign: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AlignType */ js.Any = null,
     dropdownClassName: String = null,
     format: String | js.Array[String] = null,
     getPopupContainer: /* node */ HTMLElement => HTMLElement = null,
     hideDisabledOptions: js.UndefOr[Boolean] = js.undefined,
     hourStep: Int | Double = null,
     inputReadOnly: js.UndefOr[Boolean] = js.undefined,
-    locale: AnonLang = null,
+    locale: PickerLocale = null,
     minuteStep: Int | Double = null,
     mode: PanelMode = null,
     monthCellRender: (DateType, /* locale */ Locale) => ReactNode = null,

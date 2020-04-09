@@ -6,6 +6,14 @@ import scala.scalajs.js.annotation._
 
 trait SumoLoggerOptions extends js.Object {
   /**
+    * An integer specifying total log length.
+    * This can be used by itself or in addition to interval but is ignored when useIntervalOnly is true.
+    * For higher volume applications, Sumo Logic recommends using between 100000 and 1000000 to optimize the tradeoff between network calls and load.
+    * If both batchSize and interval are configured sending will be triggered when the pending logs' aggregate message length
+    * is reached or when the specified interval is hit, and in either case the interval will be reset on send.
+    */
+  var batchSize: js.UndefOr[Double] = js.undefined
+  /**
     * You can provide a URL, in the Node version of this SDK only,
     * which will be sent as the `url` field of the log line.
     * In the vanilla JS version, the URL is detected from the browser's
@@ -32,6 +40,17 @@ trait SumoLoggerOptions extends js.Object {
     */
   var interval: js.UndefOr[Double] = js.undefined
   /**
+    * You can provide a function that is executed if an error
+    * occurs when the logs are sent.
+    */
+  var onError: js.UndefOr[js.Function0[Unit]] = js.undefined
+  /**
+    * You can provide a function that is executed only when logs are successfully sent.
+    * The only information you can be sure of in the callback is that the call succeeded.
+    * There is no other response information.
+    */
+  var onSuccess: js.UndefOr[js.Function0[Unit]] = js.undefined
+  /**
     * This value enables and disables sending data as a raw string
     */
   var raw: js.UndefOr[Boolean] = js.undefined
@@ -53,44 +72,43 @@ trait SumoLoggerOptions extends js.Object {
     */
   var sourceName: js.UndefOr[String] = js.undefined
   /**
-    * You can provide a function that is executed if an error
-    * occurs when the logs are sent.
+    * If enabled batchSize is ignored and only interval is used to trigger when the pending logs will be sent.
     */
-  def onError(): Unit
-  /**
-    * You can provide a function that is executed only when logs are successfully sent.
-    * The only information you can be sure of in the callback is that the call succeeded.
-    * There is no other response information.
-    */
-  def onSuccess(): Unit
+  var useIntervalOnly: js.UndefOr[Boolean] = js.undefined
 }
 
 object SumoLoggerOptions {
   @scala.inline
   def apply(
     endpoint: String,
-    onError: () => Unit,
-    onSuccess: () => Unit,
+    batchSize: Int | Double = null,
     clientUrl: String = null,
     graphite: js.UndefOr[Boolean] = js.undefined,
     hostName: String = null,
     interval: Int | Double = null,
+    onError: () => Unit = null,
+    onSuccess: () => Unit = null,
     raw: js.UndefOr[Boolean] = js.undefined,
     sendErrors: js.UndefOr[Boolean] = js.undefined,
     sessionKey: String = null,
     sourceCategory: String = null,
-    sourceName: String = null
+    sourceName: String = null,
+    useIntervalOnly: js.UndefOr[Boolean] = js.undefined
   ): SumoLoggerOptions = {
-    val __obj = js.Dynamic.literal(endpoint = endpoint.asInstanceOf[js.Any], onError = js.Any.fromFunction0(onError), onSuccess = js.Any.fromFunction0(onSuccess))
+    val __obj = js.Dynamic.literal(endpoint = endpoint.asInstanceOf[js.Any])
+    if (batchSize != null) __obj.updateDynamic("batchSize")(batchSize.asInstanceOf[js.Any])
     if (clientUrl != null) __obj.updateDynamic("clientUrl")(clientUrl.asInstanceOf[js.Any])
     if (!js.isUndefined(graphite)) __obj.updateDynamic("graphite")(graphite.asInstanceOf[js.Any])
     if (hostName != null) __obj.updateDynamic("hostName")(hostName.asInstanceOf[js.Any])
     if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
+    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction0(onError))
+    if (onSuccess != null) __obj.updateDynamic("onSuccess")(js.Any.fromFunction0(onSuccess))
     if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
     if (!js.isUndefined(sendErrors)) __obj.updateDynamic("sendErrors")(sendErrors.asInstanceOf[js.Any])
     if (sessionKey != null) __obj.updateDynamic("sessionKey")(sessionKey.asInstanceOf[js.Any])
     if (sourceCategory != null) __obj.updateDynamic("sourceCategory")(sourceCategory.asInstanceOf[js.Any])
     if (sourceName != null) __obj.updateDynamic("sourceName")(sourceName.asInstanceOf[js.Any])
+    if (!js.isUndefined(useIntervalOnly)) __obj.updateDynamic("useIntervalOnly")(useIntervalOnly.asInstanceOf[js.Any])
     __obj.asInstanceOf[SumoLoggerOptions]
   }
 }

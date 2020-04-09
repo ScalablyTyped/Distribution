@@ -9,15 +9,15 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait dxSlideOutView extends Widget {
-  /** Gets the widget's content. */
+  /** @name dxSlideOutView.content() */
   def content(): dxElement = js.native
-  /** Hides the widget's slide-out menu. */
+  /** @name dxSlideOutView.hideMenu() */
   def hideMenu(): Promise[Unit] with JQueryPromise[Unit] = js.native
-  /** Gets the slide-out menu's content. */
+  /** @name dxSlideOutView.menuContent() */
   def menuContent(): dxElement = js.native
-  /** Shows the slide-out menu. */
+  /** @name dxSlideOutView.showMenu() */
   def showMenu(): Promise[Unit] with JQueryPromise[Unit] = js.native
-  /** Shows or hides the slide-out menu depending on the argument. */
+  /** @name dxSlideOutView.toggleMenuVisibility() */
   def toggleMenuVisibility(): Promise[Unit] with JQueryPromise[Unit] = js.native
 }
 

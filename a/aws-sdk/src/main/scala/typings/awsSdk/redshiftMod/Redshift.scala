@@ -246,12 +246,12 @@ trait Redshift extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateSnapshotCopyGrantResult, Unit]
   ): Request[CreateSnapshotCopyGrantResult, AWSError] = js.native
   /**
-    * Creates a snapshot schedule with the rate of every 12 hours.
+    * Create a snapshot schedule that can be associated to a cluster and which overrides the default system backup schedule. 
     */
   def createSnapshotSchedule(): Request[SnapshotSchedule, AWSError] = js.native
   def createSnapshotSchedule(callback: js.Function2[/* err */ AWSError, /* data */ SnapshotSchedule, Unit]): Request[SnapshotSchedule, AWSError] = js.native
   /**
-    * Creates a snapshot schedule with the rate of every 12 hours.
+    * Create a snapshot schedule that can be associated to a cluster and which overrides the default system backup schedule. 
     */
   def createSnapshotSchedule(params: CreateSnapshotScheduleMessage): Request[SnapshotSchedule, AWSError] = js.native
   def createSnapshotSchedule(
@@ -1072,12 +1072,12 @@ trait Redshift extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ClusterParameterGroupNameMessage, Unit]
   ): Request[ClusterParameterGroupNameMessage, AWSError] = js.native
   /**
-    * Changes the size of the cluster. You can change the cluster's type, or change the number or type of nodes. The default behavior is to use the elastic resize method. With an elastic resize, your cluster is available for read and write operations more quickly than with the classic resize method.  Elastic resize operations have the following restrictions:   You can only resize clusters of the following types:   dc2.large   dc2.8xlarge   ds2.xlarge   ds2.8xlarge   ra3.16xlarge     The type of nodes that you add must match the node type for the cluster.  
+    * Changes the size of the cluster. You can change the cluster's type, or change the number or type of nodes. The default behavior is to use the elastic resize method. With an elastic resize, your cluster is available for read and write operations more quickly than with the classic resize method.  Elastic resize operations have the following restrictions:   You can only resize clusters of the following types:   dc2.large   dc2.8xlarge   ds2.xlarge   ds2.8xlarge   ra3.4xlarge   ra3.16xlarge     The type of nodes that you add must match the node type for the cluster.  
     */
   def resizeCluster(): Request[ResizeClusterResult, AWSError] = js.native
   def resizeCluster(callback: js.Function2[/* err */ AWSError, /* data */ ResizeClusterResult, Unit]): Request[ResizeClusterResult, AWSError] = js.native
   /**
-    * Changes the size of the cluster. You can change the cluster's type, or change the number or type of nodes. The default behavior is to use the elastic resize method. With an elastic resize, your cluster is available for read and write operations more quickly than with the classic resize method.  Elastic resize operations have the following restrictions:   You can only resize clusters of the following types:   dc2.large   dc2.8xlarge   ds2.xlarge   ds2.8xlarge   ra3.16xlarge     The type of nodes that you add must match the node type for the cluster.  
+    * Changes the size of the cluster. You can change the cluster's type, or change the number or type of nodes. The default behavior is to use the elastic resize method. With an elastic resize, your cluster is available for read and write operations more quickly than with the classic resize method.  Elastic resize operations have the following restrictions:   You can only resize clusters of the following types:   dc2.large   dc2.8xlarge   ds2.xlarge   ds2.8xlarge   ra3.4xlarge   ra3.16xlarge     The type of nodes that you add must match the node type for the cluster.  
     */
   def resizeCluster(params: ResizeClusterMessage): Request[ResizeClusterResult, AWSError] = js.native
   def resizeCluster(

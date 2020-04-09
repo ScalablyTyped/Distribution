@@ -72,6 +72,7 @@ import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
@@ -101,7 +102,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait PartialSelectProps extends js.Object {
   var IconComponent: js.UndefOr[ReactType[_]] = js.native
-  var MenuProps: js.UndefOr[PartialMenuProps] = js.native
+  var MenuProps: js.UndefOr[PartialMenuPropsAbout] = js.native
   var SelectDisplayProps: js.UndefOr[HTMLAttributes[HTMLDivElement]] = js.native
   var about: js.UndefOr[String] = js.native
   var accessKey: js.UndefOr[String] = js.native
@@ -329,7 +330,7 @@ object PartialSelectProps {
   @scala.inline
   def apply(
     IconComponent: ReactType[_] = null,
-    MenuProps: PartialMenuProps = null,
+    MenuProps: PartialMenuPropsAbout = null,
     SelectDisplayProps: HTMLAttributes[HTMLDivElement] = null,
     about: String = null,
     accessKey: String = null,
@@ -492,7 +493,7 @@ object PartialSelectProps {
     onProgress: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onRateChange: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onReset: FormEvent[HTMLDivElement] => Unit = null,
-    onScroll: UIEvent[HTMLDivElement] => Unit = null,
+    onScroll: UIEvent[HTMLDivElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,

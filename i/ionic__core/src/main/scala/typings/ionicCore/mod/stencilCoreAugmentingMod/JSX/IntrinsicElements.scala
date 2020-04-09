@@ -174,7 +174,7 @@ import typings.ionicCore.componentsMod._Global_.HTMLIonToastElement
 import typings.ionicCore.componentsMod._Global_.HTMLIonToggleElement
 import typings.ionicCore.componentsMod._Global_.HTMLIonToolbarElement
 import typings.ionicCore.componentsMod._Global_.HTMLIonVirtualScrollElement
-import typings.ionicCore.stencilCoreMod.JSXBase.HTMLAttributes
+import typings.ionicCore.stencilPublicRuntimeMod.JSXBase.HTMLAttributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

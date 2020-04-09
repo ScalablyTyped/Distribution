@@ -1,7 +1,7 @@
 package typings.plotlyJs.mod
 
 import typings.plotlyJs.PartialDomain
-import typings.plotlyJs.PartialLayoutAxis
+import typings.plotlyJs.PartialLayoutAxisAngle
 import typings.plotlyJs.plotlyJsStrings.circular
 import typings.plotlyJs.plotlyJsStrings.linear
 import scala.scalajs.js
@@ -9,12 +9,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PolarLayout extends js.Object {
-  var angularaxis: PartialLayoutAxis
+  var angularaxis: PartialLayoutAxisAngle
   var bgcolor: Color
   var domain: PartialDomain
   var gridshape: circular | linear
   var hole: Double
-  var radialaxis: PartialLayoutAxis
+  var radialaxis: PartialLayoutAxisAngle
   var sector: js.Array[Double]
   var uirevision: String | Double
 }
@@ -22,12 +22,12 @@ trait PolarLayout extends js.Object {
 object PolarLayout {
   @scala.inline
   def apply(
-    angularaxis: PartialLayoutAxis,
+    angularaxis: PartialLayoutAxisAngle,
     bgcolor: Color,
     domain: PartialDomain,
     gridshape: circular | linear,
     hole: Double,
-    radialaxis: PartialLayoutAxis,
+    radialaxis: PartialLayoutAxisAngle,
     sector: js.Array[Double],
     uirevision: String | Double
   ): PolarLayout = {

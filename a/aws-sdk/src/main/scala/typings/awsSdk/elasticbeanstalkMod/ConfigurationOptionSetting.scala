@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ConfigurationOptionSetting extends js.Object {
   /**
-    * A unique namespace identifying the option's associated AWS resource.
+    * A unique namespace that identifies the option's associated AWS resource.
     */
   var Namespace: js.UndefOr[OptionNamespace] = js.native
   /**
@@ -15,7 +15,7 @@ trait ConfigurationOptionSetting extends js.Object {
     */
   var OptionName: js.UndefOr[ConfigurationOptionName] = js.native
   /**
-    * A unique resource name for a time-based scaling configuration option.
+    * A unique resource name for the option setting. Use it for a time–based scaling configuration option.
     */
   var ResourceName: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.ResourceName] = js.native
   /**

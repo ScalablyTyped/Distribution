@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mjml"
-version := "4.0-dt-20200203Z-993c85"
+version := "4.0-dt-20200325Z-229290"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

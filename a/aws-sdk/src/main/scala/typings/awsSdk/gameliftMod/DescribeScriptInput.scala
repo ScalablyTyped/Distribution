@@ -9,12 +9,12 @@ trait DescribeScriptInput extends js.Object {
   /**
     * A unique identifier for a Realtime script to retrieve properties for. You can use either the script ID or ARN value.
     */
-  var ScriptId: typings.awsSdk.gameliftMod.ScriptId = js.native
+  var ScriptId: ScriptIdOrArn = js.native
 }
 
 object DescribeScriptInput {
   @scala.inline
-  def apply(ScriptId: ScriptId): DescribeScriptInput = {
+  def apply(ScriptId: ScriptIdOrArn): DescribeScriptInput = {
     val __obj = js.Dynamic.literal(ScriptId = ScriptId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DescribeScriptInput]

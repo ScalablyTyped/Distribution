@@ -14,18 +14,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Describes settings supported by a series of the full-stacked line type. */
+/** @name dxChartSeriesTypes.FullStackedLineSeries */
 trait dxChartSeriesTypesFullStackedLineSeries extends dxChartSeriesTypesCommonSeries {
-  /** Configures data aggregation for the series. */
+  /** @name dxChartSeriesTypes.FullStackedLineSeries.aggregation */
   @JSName("aggregation")
   var aggregation_dxChartSeriesTypesFullStackedLineSeries: js.UndefOr[dxChartSeriesTypesFullStackedLineSeriesAggregation] = js.undefined
-  /** Specifies series elements to be highlighted when a user points to a series. */
+  /** @name dxChartSeriesTypes.FullStackedLineSeries.hoverMode */
   @JSName("hoverMode")
   var hoverMode_dxChartSeriesTypesFullStackedLineSeries: js.UndefOr[nearestPoint | includePoints | excludePoints | none] = js.undefined
-  /** Configures point labels. */
+  /** @name dxChartSeriesTypes.FullStackedLineSeries.label */
   @JSName("label")
   var label_dxChartSeriesTypesFullStackedLineSeries: js.UndefOr[dxChartSeriesTypesFullStackedLineSeriesLabel] = js.undefined
-  /** Specifies series elements to be highlighted when a user selects a series. */
+  /** @name dxChartSeriesTypes.FullStackedLineSeries.selectionMode */
   @JSName("selectionMode")
   var selectionMode_dxChartSeriesTypesFullStackedLineSeries: js.UndefOr[includePoints | excludePoints | none] = js.undefined
 }

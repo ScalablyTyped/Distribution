@@ -25,6 +25,7 @@ package object mod {
   type NumberFormatToPartsResult = typings.vueI18n.mod.VueI18n.NumberFormatToPartsResult
   type NumberFormats = typings.vueI18n.mod.VueI18n.NumberFormats
   type Path = typings.vueI18n.mod.VueI18n.Path
+  type PostTranslationHandler = typings.vueI18n.mod.VueI18n.PostTranslationHandler
   type TranslateResult = typings.vueI18n.mod.VueI18n.TranslateResult
   type Values = typings.vueI18n.mod.VueI18n.Values
   type VueI18n = typings.vueI18n.mod.VueI18n_

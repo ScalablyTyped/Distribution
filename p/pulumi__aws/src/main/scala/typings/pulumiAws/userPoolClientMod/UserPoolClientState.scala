@@ -1,5 +1,6 @@
 package typings.pulumiAws.userPoolClientMod
 
+import typings.pulumiAws.inputMod.cognito.UserPoolClientAnalyticsConfiguration
 import typings.pulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,6 +20,10 @@ trait UserPoolClientState extends js.Object {
     * List of allowed OAuth scopes (phone, email, openid, profile, and aws.cognito.signin.user.admin).
     */
   val allowedOauthScopes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  /**
+    * The Amazon Pinpoint analytics configuration for collecting metrics for this user pool.
+    */
+  val analyticsConfiguration: js.UndefOr[Input[UserPoolClientAnalyticsConfiguration]] = js.native
   /**
     * List of allowed callback URLs for the identity providers.
     */
@@ -48,6 +53,10 @@ trait UserPoolClientState extends js.Object {
     */
   val name: js.UndefOr[Input[String]] = js.native
   /**
+    * Choose which errors and responses are returned by Cognito APIs during authentication, account confirmation, and password recovery when the user does not exist in the user pool. When set to `ENABLED` and the user does not exist, authentication returns an error indicating either the username or password was incorrect, and account confirmation and password recovery return a response indicating a code was sent to a simulated destination. When set to `LEGACY`, those APIs will return a `UserNotFoundException` exception if the user does not exist in the user pool.
+    */
+  val preventUserExistenceErrors: js.UndefOr[Input[String]] = js.native
+  /**
     * List of user pool attributes the application client can read from.
     */
   val readAttributes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
@@ -75,6 +84,7 @@ object UserPoolClientState {
     allowedOauthFlows: Input[js.Array[Input[String]]] = null,
     allowedOauthFlowsUserPoolClient: Input[Boolean] = null,
     allowedOauthScopes: Input[js.Array[Input[String]]] = null,
+    analyticsConfiguration: Input[UserPoolClientAnalyticsConfiguration] = null,
     callbackUrls: Input[js.Array[Input[String]]] = null,
     clientSecret: Input[String] = null,
     defaultRedirectUri: Input[String] = null,
@@ -82,6 +92,7 @@ object UserPoolClientState {
     generateSecret: Input[Boolean] = null,
     logoutUrls: Input[js.Array[Input[String]]] = null,
     name: Input[String] = null,
+    preventUserExistenceErrors: Input[String] = null,
     readAttributes: Input[js.Array[Input[String]]] = null,
     refreshTokenValidity: Input[Double] = null,
     supportedIdentityProviders: Input[js.Array[Input[String]]] = null,
@@ -92,6 +103,7 @@ object UserPoolClientState {
     if (allowedOauthFlows != null) __obj.updateDynamic("allowedOauthFlows")(allowedOauthFlows.asInstanceOf[js.Any])
     if (allowedOauthFlowsUserPoolClient != null) __obj.updateDynamic("allowedOauthFlowsUserPoolClient")(allowedOauthFlowsUserPoolClient.asInstanceOf[js.Any])
     if (allowedOauthScopes != null) __obj.updateDynamic("allowedOauthScopes")(allowedOauthScopes.asInstanceOf[js.Any])
+    if (analyticsConfiguration != null) __obj.updateDynamic("analyticsConfiguration")(analyticsConfiguration.asInstanceOf[js.Any])
     if (callbackUrls != null) __obj.updateDynamic("callbackUrls")(callbackUrls.asInstanceOf[js.Any])
     if (clientSecret != null) __obj.updateDynamic("clientSecret")(clientSecret.asInstanceOf[js.Any])
     if (defaultRedirectUri != null) __obj.updateDynamic("defaultRedirectUri")(defaultRedirectUri.asInstanceOf[js.Any])
@@ -99,6 +111,7 @@ object UserPoolClientState {
     if (generateSecret != null) __obj.updateDynamic("generateSecret")(generateSecret.asInstanceOf[js.Any])
     if (logoutUrls != null) __obj.updateDynamic("logoutUrls")(logoutUrls.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (preventUserExistenceErrors != null) __obj.updateDynamic("preventUserExistenceErrors")(preventUserExistenceErrors.asInstanceOf[js.Any])
     if (readAttributes != null) __obj.updateDynamic("readAttributes")(readAttributes.asInstanceOf[js.Any])
     if (refreshTokenValidity != null) __obj.updateDynamic("refreshTokenValidity")(refreshTokenValidity.asInstanceOf[js.Any])
     if (supportedIdentityProviders != null) __obj.updateDynamic("supportedIdentityProviders")(supportedIdentityProviders.asInstanceOf[js.Any])

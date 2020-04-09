@@ -13,7 +13,7 @@ trait ReactScrollIntoViewIfNeededProps
      with ClassAttributes[HTMLElement] {
   var active: js.UndefOr[Boolean] = js.undefined
   var elementType: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any
   ] = js.undefined
   var options: js.UndefOr[Options[_]] = js.undefined
 }
@@ -24,7 +24,7 @@ object ReactScrollIntoViewIfNeededProps {
     AllHTMLAttributes: AllHTMLAttributes[HTMLElement] = null,
     ClassAttributes: ClassAttributes[HTMLElement] = null,
     active: js.UndefOr[Boolean] = js.undefined,
-    elementType: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any = null,
+    elementType: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any = null,
     options: Options[_] = null
   ): ReactScrollIntoViewIfNeededProps = {
     val __obj = js.Dynamic.literal()

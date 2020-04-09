@@ -9,10 +9,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxCircularGaugeScale extends BaseGaugeScale {
-  /** Specifies common options for scale labels. */
+  /** @name dxCircularGauge.Options.scale.label */
   @JSName("label")
   var label_dxCircularGaugeScale: js.UndefOr[dxCircularGaugeScaleLabel] = js.undefined
-  /** Specifies the orientation of scale ticks. */
+  /** @name dxCircularGauge.Options.scale.orientation */
   var orientation: js.UndefOr[center | inside | outside] = js.undefined
 }
 

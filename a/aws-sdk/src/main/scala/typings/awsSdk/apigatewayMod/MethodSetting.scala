@@ -23,7 +23,7 @@ trait MethodSetting extends js.Object {
     */
   var dataTraceEnabled: js.UndefOr[Boolean] = js.native
   /**
-    * Specifies the logging level for this method, which affects the log entries pushed to Amazon CloudWatch Logs. The PATCH path for this setting is /{method_setting_key}/logging/loglevel, and the available levels are OFF, ERROR, and INFO.
+    * Specifies the logging level for this method, which affects the log entries pushed to Amazon CloudWatch Logs. The PATCH path for this setting is /{method_setting_key}/logging/loglevel, and the available levels are OFF, ERROR, and INFO. Choose ERROR to write only error-level entries to CloudWatch Logs, or choose INFO to include all ERROR events as well as extra informational events.
     */
   var loggingLevel: js.UndefOr[String] = js.native
   /**

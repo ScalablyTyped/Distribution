@@ -15,7 +15,7 @@ class default () extends KeyTransRecipientInfo {
   override var keyEncryptionAlgorithm: typings.pkijs.algorithmIdentifierMod.default = js.native
   /**
     * For some reasons we need to store recipient's certificate here
-    * 
+    *
     * @type {Certificate}
     * @memberOf KeyTransRecipientInfo
     */

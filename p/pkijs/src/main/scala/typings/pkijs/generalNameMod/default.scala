@@ -10,7 +10,7 @@ class default () extends GeneralName {
   def this(params: js.Any) = this()
   /**
     * value type - from a tagged value (0 for "otherName", 1 for "rfc822Name" etc.)
-    * 
+    *
     * @type {number}
     * @memberOf GeneralName
     */
@@ -18,7 +18,7 @@ class default () extends GeneralName {
   override var `type`: Double = js.native
   /**
     * asn1js object having GENERAL_NAME value (type depends on "type" value)
-    * 
+    *
     * @type {*}
     * @memberOf GeneralName
     */

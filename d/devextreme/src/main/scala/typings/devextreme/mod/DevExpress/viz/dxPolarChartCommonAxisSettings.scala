@@ -8,35 +8,35 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxPolarChartCommonAxisSettings extends js.Object {
-  /** Specifies whether to allow decimal values on the axis. When false, the axis contains integer values only. */
+  /** @name dxPolarChart.Options.commonAxisSettings.allowDecimals */
   var allowDecimals: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the color of the line that represents an axis. */
+  /** @name dxPolarChart.Options.commonAxisSettings.color */
   var color: js.UndefOr[String] = js.undefined
-  /** Specifies the appearance of all the widget's constant lines. */
+  /** @name dxPolarChart.Options.commonAxisSettings.constantLineStyle */
   var constantLineStyle: js.UndefOr[dxPolarChartCommonAxisSettingsConstantLineStyle] = js.undefined
-  /** Specifies whether ticks/grid lines of a discrete axis are located between labels or cross the labels. */
+  /** @name dxPolarChart.Options.commonAxisSettings.discreteAxisDivisionMode */
   var discreteAxisDivisionMode: js.UndefOr[betweenLabels | crossLabels] = js.undefined
-  /** Specifies whether to force the axis to start and end on ticks. */
+  /** @name dxPolarChart.Options.commonAxisSettings.endOnTick */
   var endOnTick: js.UndefOr[Boolean] = js.undefined
-  /** An object defining the configuration options for the grid lines of an axis in the PolarChart widget. */
+  /** @name dxPolarChart.Options.commonAxisSettings.grid */
   var grid: js.UndefOr[AnonColorOpacity] = js.undefined
-  /** Indicates whether or not an axis is inverted. */
+  /** @name dxPolarChart.Options.commonAxisSettings.inverted */
   var inverted: js.UndefOr[Boolean] = js.undefined
-  /** An object defining the label configuration options that are common for all axes in the PolarChart widget. */
+  /** @name dxPolarChart.Options.commonAxisSettings.label */
   var label: js.UndefOr[dxPolarChartCommonAxisSettingsLabel] = js.undefined
-  /** Specifies the options of the minor grid. */
+  /** @name dxPolarChart.Options.commonAxisSettings.minorGrid */
   var minorGrid: js.UndefOr[AnonColorOpacity] = js.undefined
-  /** Specifies the options of the minor ticks. */
+  /** @name dxPolarChart.Options.commonAxisSettings.minorTick */
   var minorTick: js.UndefOr[dxPolarChartCommonAxisSettingsMinorTick] = js.undefined
-  /** Specifies the opacity of the line that represents an axis. */
+  /** @name dxPolarChart.Options.commonAxisSettings.opacity */
   var opacity: js.UndefOr[Double] = js.undefined
-  /** An object defining configuration options for strip style. */
+  /** @name dxPolarChart.Options.commonAxisSettings.stripStyle */
   var stripStyle: js.UndefOr[dxPolarChartCommonAxisSettingsStripStyle] = js.undefined
-  /** An object defining the configuration options for axis ticks. */
+  /** @name dxPolarChart.Options.commonAxisSettings.tick */
   var tick: js.UndefOr[dxPolarChartCommonAxisSettingsTick] = js.undefined
-  /** Indicates whether or not the line that represents an axis in a chart is visible. */
+  /** @name dxPolarChart.Options.commonAxisSettings.visible */
   var visible: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the width of the line that represents an axis in the chart. */
+  /** @name dxPolarChart.Options.commonAxisSettings.width */
   var width: js.UndefOr[Double] = js.undefined
 }
 

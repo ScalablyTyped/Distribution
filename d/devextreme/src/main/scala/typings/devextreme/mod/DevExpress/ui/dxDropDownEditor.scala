@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait dxDropDownEditor extends dxTextEditor {
-  /** Closes the drop-down editor. */
+  /** @name dxDropDownEditor.close() */
   def close(): Unit = js.native
-  /** Gets the popup window's content. */
+  /** @name dxDropDownEditor.content() */
   def content(): dxElement = js.native
-  /** Gets the widget's `` element. */
+  /** @name dxDropDownEditor.field() */
   def field(): dxElement = js.native
-  /** Opens the drop-down editor. */
+  /** @name dxDropDownEditor.open() */
   def open(): Unit = js.native
 }
 

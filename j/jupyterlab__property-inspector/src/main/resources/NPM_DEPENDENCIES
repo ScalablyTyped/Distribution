@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jupyterlab/property-inspector" : "2.0.2"
+      "@jupyterlab/property-inspector" : "2.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@jupyterlab/property-inspector" : "2.0.2"
+      "@jupyterlab/property-inspector" : "2.1.0"
     }
   ],
   "compile-devDependencies" : [

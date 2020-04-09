@@ -31,7 +31,7 @@ trait CreateEventSourceMappingRequest extends js.Object {
     */
   var FunctionName: typings.awsSdk.lambdaMod.FunctionName = js.native
   /**
-    * The maximum amount of time to gather records before invoking the function, in seconds.
+    * (Streams) The maximum amount of time to gather records before invoking the function, in seconds.
     */
   var MaximumBatchingWindowInSeconds: js.UndefOr[typings.awsSdk.lambdaMod.MaximumBatchingWindowInSeconds] = js.native
   /**

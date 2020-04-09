@@ -13,11 +13,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxTreeMapTooltip extends BaseWidgetTooltip {
-  /** Specifies a custom template for a tooltip. */
+  /** @name dxTreeMap.Options.tooltip.contentTemplate */
   var contentTemplate: js.UndefOr[
     template | (js.Function2[/* info */ AnonNodeValue, /* element */ dxElement, String | Element | JQuery])
   ] = js.undefined
-  /** Allows you to change tooltip appearance. */
+  /** @name dxTreeMap.Options.tooltip.customizeTooltip */
   var customizeTooltip: js.UndefOr[js.Function1[/* info */ AnonNodeValue, _]] = js.undefined
 }
 

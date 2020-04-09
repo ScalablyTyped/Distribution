@@ -7,7 +7,13 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait AnalyticsApplicationInputsKinesisFirehose extends js.Object {
+  /**
+    * The ARN of the Kinesis Firehose delivery stream.
+    */
   var resourceArn: Input[String] = js.native
+  /**
+    * The ARN of the IAM Role used to access the stream.
+    */
   var roleArn: Input[String] = js.native
 }
 

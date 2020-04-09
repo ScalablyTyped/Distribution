@@ -21,7 +21,7 @@ trait AnonBlankNode extends js.Object {
   var Dataset: DatasetExt
   var Literal: LiteralExt
   var NamedNode: NamedNodeExt
-  var PrefixMap: Instantiable2[/* factory */ DataFactory[Quad], /* prefixes */ Prefixes, ^]
+  var PrefixMap: Instantiable2[/* factory */ DataFactory[Quad, Quad], /* prefixes */ Prefixes, ^]
   var Quad: QuadExt
   var Variable: VariableExt
   var defaultGraph: DefaultGraphExt
@@ -34,7 +34,7 @@ object AnonBlankNode {
     Dataset: DatasetExt,
     Literal: LiteralExt,
     NamedNode: NamedNodeExt,
-    PrefixMap: Instantiable2[/* factory */ DataFactory[Quad], /* prefixes */ Prefixes, ^],
+    PrefixMap: Instantiable2[/* factory */ DataFactory[Quad, Quad], /* prefixes */ Prefixes, ^],
     Quad: QuadExt,
     Variable: VariableExt,
     defaultGraph: DefaultGraphExt

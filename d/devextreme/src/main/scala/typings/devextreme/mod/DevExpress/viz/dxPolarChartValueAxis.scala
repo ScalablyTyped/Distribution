@@ -27,55 +27,55 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxPolarChartValueAxis extends dxPolarChartCommonAxisSettings {
-  /** Specifies a coefficient for dividing the value axis. */
+  /** @name dxPolarChart.Options.valueAxis.axisDivisionFactor */
   var axisDivisionFactor: js.UndefOr[Double] = js.undefined
-  /** Specifies the order in which discrete values are arranged on the value axis. */
+  /** @name dxPolarChart.Options.valueAxis.categories */
   var categories: js.UndefOr[js.Array[Double | String | Date]] = js.undefined
-  /** Defines an array of the value axis constant lines. */
+  /** @name dxPolarChart.Options.valueAxis.constantLines */
   var constantLines: js.UndefOr[js.Array[dxPolarChartValueAxisConstantLines]] = js.undefined
-  /** Specifies options for value axis labels. */
+  /** @name dxPolarChart.Options.valueAxis.label */
   @JSName("label")
   var label_dxPolarChartValueAxis: js.UndefOr[dxPolarChartValueAxisLabel] = js.undefined
-  /** Specifies a value used to calculate the range on a logarithmic axis within which the axis should be linear. Applies only if the data source contains negative values or zeroes. */
+  /** @name dxPolarChart.Options.valueAxis.linearThreshold */
   var linearThreshold: js.UndefOr[Double] = js.undefined
-  /** Specifies the value to be raised to a power when generating ticks for a logarithmic axis. */
+  /** @name dxPolarChart.Options.valueAxis.logarithmBase */
   var logarithmBase: js.UndefOr[Double] = js.undefined
-  /** Specifies a coefficient that determines the spacing between the maximum series point and the axis. */
+  /** @name dxPolarChart.Options.valueAxis.maxValueMargin */
   var maxValueMargin: js.UndefOr[Double] = js.undefined
-  /** Specifies a coefficient that determines the spacing between the minimum series point and the axis. */
+  /** @name dxPolarChart.Options.valueAxis.minValueMargin */
   var minValueMargin: js.UndefOr[Double] = js.undefined
-  /** Specifies the minimum length of the visual range. */
+  /** @name dxPolarChart.Options.valueAxis.minVisualRangeLength */
   var minVisualRangeLength: js.UndefOr[
     Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year
   ] = js.undefined
-  /** Specifies the number of minor ticks between two neighboring major ticks. */
+  /** @name dxPolarChart.Options.valueAxis.minorTickCount */
   var minorTickCount: js.UndefOr[Double] = js.undefined
-  /** Specifies the interval between minor ticks. */
+  /** @name dxPolarChart.Options.valueAxis.minorTickInterval */
   var minorTickInterval: js.UndefOr[
     Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year
   ] = js.undefined
-  /** Specifies whether or not to indicate a zero value on the value axis. */
+  /** @name dxPolarChart.Options.valueAxis.showZero */
   var showZero: js.UndefOr[Boolean] = js.undefined
-  /** Specifies options for value axis strips. */
+  /** @name dxPolarChart.Options.valueAxis.strips */
   var strips: js.UndefOr[js.Array[dxPolarChartValueAxisStrips]] = js.undefined
-  /** Specifies an interval between axis ticks/grid lines. */
+  /** @name dxPolarChart.Options.valueAxis.tickInterval */
   var tickInterval: js.UndefOr[
     Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year
   ] = js.undefined
-  /** An object defining the configuration options for axis ticks. */
+  /** @name dxPolarChart.Options.valueAxis.tick */
   @JSName("tick")
   var tick_dxPolarChartValueAxis: js.UndefOr[dxPolarChartValueAxisTick] = js.undefined
-  /** Specifies the required type of the value axis. */
+  /** @name dxPolarChart.Options.valueAxis.type */
   var `type`: js.UndefOr[continuous | discrete | logarithmic] = js.undefined
-  /** Indicates whether to display series with indents from axis boundaries. */
+  /** @name dxPolarChart.Options.valueAxis.valueMarginsEnabled */
   var valueMarginsEnabled: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the desired type of axis values. */
+  /** @name dxPolarChart.Options.valueAxis.valueType */
   var valueType: js.UndefOr[datetime | numeric | string_] = js.undefined
-  /** Defines the axis' displayed range. Cannot be wider than the wholeRange. */
+  /** @name dxPolarChart.Options.valueAxis.visualRange */
   var visualRange: js.UndefOr[VizRange | (js.Array[Double | String | Date])] = js.undefined
-  /** Specifies how the axis's visual range should behave when the PolarChart data is updated. */
+  /** @name dxPolarChart.Options.valueAxis.visualRangeUpdateMode */
   var visualRangeUpdateMode: js.UndefOr[auto | keep | reset] = js.undefined
-  /** Defines the range where the axis can be zoomed. */
+  /** @name dxPolarChart.Options.valueAxis.wholeRange */
   var wholeRange: js.UndefOr[VizRange | (js.Array[Double | String | Date])] = js.undefined
 }
 

@@ -8,6 +8,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GatsbyConfig extends js.Object {
+  /** In some circumstances you may want to deploy assets (non-HTML resources such as JavaScript, CSS, etc.) to a separate domain. `assetPrefix` allows you to use Gatsby with assets hosted from a separate domain */
+  var assetPrefix: js.UndefOr[String] = js.undefined
   /** Sometimes you need more granular/flexible access to the development server. Gatsby exposes the Express.js development server to your site’s gatsby-config.js where you can add Express middleware as needed. */
   var developMiddleware: js.UndefOr[js.Function1[/* app */ js.Any, Unit]] = js.undefined
   var mapping: js.UndefOr[Record[String, String]] = js.undefined
@@ -29,6 +31,7 @@ trait GatsbyConfig extends js.Object {
 object GatsbyConfig {
   @scala.inline
   def apply(
+    assetPrefix: String = null,
     developMiddleware: /* app */ js.Any => Unit = null,
     mapping: Record[String, String] = null,
     pathPrefix: String = null,
@@ -38,6 +41,7 @@ object GatsbyConfig {
     siteMetadata: Record[String, _] = null
   ): GatsbyConfig = {
     val __obj = js.Dynamic.literal()
+    if (assetPrefix != null) __obj.updateDynamic("assetPrefix")(assetPrefix.asInstanceOf[js.Any])
     if (developMiddleware != null) __obj.updateDynamic("developMiddleware")(js.Any.fromFunction1(developMiddleware))
     if (mapping != null) __obj.updateDynamic("mapping")(mapping.asInstanceOf[js.Any])
     if (pathPrefix != null) __obj.updateDynamic("pathPrefix")(pathPrefix.asInstanceOf[js.Any])

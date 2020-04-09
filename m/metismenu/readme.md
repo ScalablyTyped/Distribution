@@ -1,7 +1,7 @@
 
 # Scala.js typings for metismenu
 
-Typings are for version 3.0.5
+Typings are for version 3.0.6
 
 ## Library description:
 A jQuery menu plugin

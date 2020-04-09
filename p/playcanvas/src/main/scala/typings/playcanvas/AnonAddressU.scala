@@ -20,6 +20,7 @@ trait AnonAddressU extends js.Object {
   var magFilter: js.UndefOr[Double] = js.undefined
   var minFilter: js.UndefOr[Double] = js.undefined
   var mipmaps: js.UndefOr[Boolean] = js.undefined
+  var name: js.UndefOr[String] = js.undefined
   var premultiplyAlpha: js.UndefOr[Boolean] = js.undefined
   var rgbm: js.UndefOr[Boolean] = js.undefined
   var swizzleGGGR: js.UndefOr[Boolean] = js.undefined
@@ -45,6 +46,7 @@ object AnonAddressU {
     magFilter: Int | Double = null,
     minFilter: Int | Double = null,
     mipmaps: js.UndefOr[Boolean] = js.undefined,
+    name: String = null,
     premultiplyAlpha: js.UndefOr[Boolean] = js.undefined,
     rgbm: js.UndefOr[Boolean] = js.undefined,
     swizzleGGGR: js.UndefOr[Boolean] = js.undefined,
@@ -67,6 +69,7 @@ object AnonAddressU {
     if (magFilter != null) __obj.updateDynamic("magFilter")(magFilter.asInstanceOf[js.Any])
     if (minFilter != null) __obj.updateDynamic("minFilter")(minFilter.asInstanceOf[js.Any])
     if (!js.isUndefined(mipmaps)) __obj.updateDynamic("mipmaps")(mipmaps.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (!js.isUndefined(premultiplyAlpha)) __obj.updateDynamic("premultiplyAlpha")(premultiplyAlpha.asInstanceOf[js.Any])
     if (!js.isUndefined(rgbm)) __obj.updateDynamic("rgbm")(rgbm.asInstanceOf[js.Any])
     if (!js.isUndefined(swizzleGGGR)) __obj.updateDynamic("swizzleGGGR")(swizzleGGGR.asInstanceOf[js.Any])

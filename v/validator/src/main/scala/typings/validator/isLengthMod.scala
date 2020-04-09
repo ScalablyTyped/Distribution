@@ -1,6 +1,5 @@
 package typings.validator
 
-import typings.validator.mod.validator.IsLengthOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,6 +15,7 @@ object isLengthMod extends js.Object {
     * @param [options] - Options
     */
   def default(str: String): Boolean = js.native
-  def default(str: String, options: IsLengthOptions): Boolean = js.native
+  def default(str: String, options: typings.validator.mod.validator.IsLengthOptions): Boolean = js.native
+  type IsLengthOptions = typings.validator.mod.validator.IsLengthOptions
 }
 

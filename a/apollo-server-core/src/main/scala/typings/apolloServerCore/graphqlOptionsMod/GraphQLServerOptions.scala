@@ -5,16 +5,13 @@ import typings.apolloCacheControl.mod.CacheControlExtensionOptions
 import typings.apolloServerCaching.keyValueCacheMod.KeyValueCache
 import typings.apolloServerCaching.mod.InMemoryLRUCache
 import typings.apolloServerPluginBase.mod.ApolloServerPlugin
-import typings.apolloServerTypes.apolloServerTypesStrings.document
-import typings.apolloServerTypes.apolloServerTypesStrings.operation
-import typings.apolloServerTypes.apolloServerTypesStrings.operationName
-import typings.apolloServerTypes.apolloServerTypesStrings.queryHash
 import typings.apolloServerTypes.mod.GraphQLExecutionResult
 import typings.apolloServerTypes.mod.GraphQLExecutor
 import typings.apolloServerTypes.mod.GraphQLRequestContext
+import typings.apolloServerTypes.mod.GraphQLRequestContextExecutionDidStart
 import typings.apolloServerTypes.mod.GraphQLResponse
+import typings.apolloServerTypes.mod.Logger
 import typings.apolloServerTypes.mod.ValueOrPromise
-import typings.apolloServerTypes.mod.WithRequired
 import typings.graphql.astMod.DocumentNode
 import typings.graphql.definitionMod.GraphQLFieldResolver
 import typings.graphql.definitionMod.GraphQLResolveInfo
@@ -47,6 +44,7 @@ trait GraphQLServerOptions[TContext, TRootValue] extends js.Object {
       GraphQLResponse
     ]
   ] = js.undefined
+  var logger: js.UndefOr[Logger] = js.undefined
   var parseOptions: js.UndefOr[GraphQLParseOptions] = js.undefined
   var persistedQueries: js.UndefOr[PersistedQueryOptions] = js.undefined
   var plugins: js.UndefOr[js.Array[ApolloServerPlugin[Record[String, _]]]] = js.undefined
@@ -67,14 +65,12 @@ object GraphQLServerOptions {
     dataSources: () => DataSources[TContext] = null,
     debug: js.UndefOr[Boolean] = js.undefined,
     documentStore: InMemoryLRUCache[DocumentNode] = null,
-    executor: /* requestContext */ WithRequired[
-      GraphQLRequestContext[Record[String, _]], 
-      document | operationName | operation | queryHash
-    ] => ValueOrPromise[GraphQLExecutionResult] = null,
+    executor: /* requestContext */ GraphQLRequestContextExecutionDidStart[Record[String, _]] => ValueOrPromise[GraphQLExecutionResult] = null,
     extensions: js.Array[js.Function0[GraphQLExtension[_]]] = null,
     fieldResolver: (_, StringDictionary[_], TContext, /* info */ GraphQLResolveInfo) => js.Any = null,
     formatError: /* error */ GraphQLError => GraphQLFormattedError[Record[String, _]] = null,
     formatResponse: (/* response */ GraphQLResponse | Null, /* requestContext */ GraphQLRequestContext[TContext]) => GraphQLResponse = null,
+    logger: Logger = null,
     parseOptions: GraphQLParseOptions = null,
     persistedQueries: PersistedQueryOptions = null,
     plugins: js.Array[ApolloServerPlugin[Record[String, _]]] = null,
@@ -95,6 +91,7 @@ object GraphQLServerOptions {
     if (fieldResolver != null) __obj.updateDynamic("fieldResolver")(js.Any.fromFunction4(fieldResolver))
     if (formatError != null) __obj.updateDynamic("formatError")(js.Any.fromFunction1(formatError))
     if (formatResponse != null) __obj.updateDynamic("formatResponse")(js.Any.fromFunction2(formatResponse))
+    if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
     if (parseOptions != null) __obj.updateDynamic("parseOptions")(parseOptions.asInstanceOf[js.Any])
     if (persistedQueries != null) __obj.updateDynamic("persistedQueries")(persistedQueries.asInstanceOf[js.Any])
     if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])

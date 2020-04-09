@@ -6,19 +6,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CoverageWorker extends js.Object {
-  var worker: js.Function1[
+  @JSName("worker")
+  var worker_Original: js.Function1[
     /* hasConfigGlobalConfigPathOptions */ CoverageWorkerData, 
     CoverageWorkerResult | Null
-  ]
-}
-
-object CoverageWorker {
-  @scala.inline
-  def apply(worker: /* hasConfigGlobalConfigPathOptions */ CoverageWorkerData => CoverageWorkerResult | Null): CoverageWorker = {
-    val __obj = js.Dynamic.literal(worker = js.Any.fromFunction1(worker))
-  
-    __obj.asInstanceOf[CoverageWorker]
-  }
+  ] = js.native
+  def worker(hasConfigGlobalConfigPathOptions: CoverageWorkerData): CoverageWorkerResult | Null = js.native
 }
 

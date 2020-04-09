@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UpdateApplicationRequest extends js.Object {
   /**
+    *  Indicates whether Application Insights can listen to CloudWatch events for the application resources, such as instance terminated, failed deployment, and others. 
+    */
+  var CWEMonitorEnabled: js.UndefOr[typings.awsSdk.applicationinsightsMod.CWEMonitorEnabled] = js.native
+  /**
     *  When set to true, creates opsItems for any problems detected on an application. 
     */
   var OpsCenterEnabled: js.UndefOr[typings.awsSdk.applicationinsightsMod.OpsCenterEnabled] = js.native
@@ -28,11 +32,13 @@ object UpdateApplicationRequest {
   @scala.inline
   def apply(
     ResourceGroupName: ResourceGroupName,
+    CWEMonitorEnabled: js.UndefOr[Boolean] = js.undefined,
     OpsCenterEnabled: js.UndefOr[Boolean] = js.undefined,
     OpsItemSNSTopicArn: OpsItemSNSTopicArn = null,
     RemoveSNSTopic: js.UndefOr[Boolean] = js.undefined
   ): UpdateApplicationRequest = {
     val __obj = js.Dynamic.literal(ResourceGroupName = ResourceGroupName.asInstanceOf[js.Any])
+    if (!js.isUndefined(CWEMonitorEnabled)) __obj.updateDynamic("CWEMonitorEnabled")(CWEMonitorEnabled.asInstanceOf[js.Any])
     if (!js.isUndefined(OpsCenterEnabled)) __obj.updateDynamic("OpsCenterEnabled")(OpsCenterEnabled.asInstanceOf[js.Any])
     if (OpsItemSNSTopicArn != null) __obj.updateDynamic("OpsItemSNSTopicArn")(OpsItemSNSTopicArn.asInstanceOf[js.Any])
     if (!js.isUndefined(RemoveSNSTopic)) __obj.updateDynamic("RemoveSNSTopic")(RemoveSNSTopic.asInstanceOf[js.Any])

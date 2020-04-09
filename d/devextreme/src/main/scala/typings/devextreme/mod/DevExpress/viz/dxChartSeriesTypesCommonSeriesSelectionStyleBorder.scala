@@ -8,15 +8,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Configures the appearance adopted by the series border (in area-like series) or the series point border (in bar-like and bubble series) when a user selects the series. */
+/** @name dxChartSeriesTypes.CommonSeries.selectionStyle.border */
 trait dxChartSeriesTypesCommonSeriesSelectionStyleBorder extends js.Object {
-  /** Colors the series border (in area-like series) or the series point border (in bar-like and bubble series) when a user selects the series. */
+  /** @name dxChartSeriesTypes.CommonSeries.selectionStyle.border.color */
   var color: js.UndefOr[String] = js.undefined
-  /** Sets a dash style for the series border (in area-like series) or for the series point border (in bar-like and bubble series) when a user selects the series. */
+  /** @name dxChartSeriesTypes.CommonSeries.selectionStyle.border.dashStyle */
   var dashStyle: js.UndefOr[dash | dot | longDash | solid] = js.undefined
-  /** Shows the series border (in area-like series) or the series point border (in bar-like and bubble series) when a user selects the series. */
+  /** @name dxChartSeriesTypes.CommonSeries.selectionStyle.border.visible */
   var visible: js.UndefOr[Boolean] = js.undefined
-  /** Sets a pixel-measured width for the series border (in area-like series) or for the series point border (in bar-like and bubble series) when a user selects the series. */
+  /** @name dxChartSeriesTypes.CommonSeries.selectionStyle.border.width */
   var width: js.UndefOr[Double] = js.undefined
 }
 

@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait LaunchTemplateMonitoring extends js.Object {
+  /**
+    * If `true`, the launched EC2 instance will have detailed monitoring enabled.
+    */
   var enabled: js.UndefOr[Input[Boolean]] = js.native
 }
 

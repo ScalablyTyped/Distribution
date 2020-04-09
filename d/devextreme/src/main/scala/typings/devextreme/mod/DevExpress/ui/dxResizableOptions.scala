@@ -15,21 +15,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxResizableOptions extends DOMComponentOptions[dxResizable] {
-  /** Specifies which borders of the widget element are used as a handle. */
+  /** @name dxResizable.Options.handles */
   var handles: js.UndefOr[bottom | left | right | top | all | String] = js.undefined
-  /** Specifies the upper height boundary for resizing. */
+  /** @name dxResizable.Options.maxHeight */
   var maxHeight: js.UndefOr[Double] = js.undefined
-  /** Specifies the upper width boundary for resizing. */
+  /** @name dxResizable.Options.maxWidth */
   var maxWidth: js.UndefOr[Double] = js.undefined
-  /** Specifies the lower height boundary for resizing. */
+  /** @name dxResizable.Options.minHeight */
   var minHeight: js.UndefOr[Double] = js.undefined
-  /** Specifies the lower width boundary for resizing. */
+  /** @name dxResizable.Options.minWidth */
   var minWidth: js.UndefOr[Double] = js.undefined
-  /** A function that is executed each time the widget is resized by one pixel. */
+  /** @name dxResizable.Options.onResize */
   var onResize: js.UndefOr[js.Function1[/* e */ AnonEventHeight, _]] = js.undefined
-  /** A function that is executed when resizing ends. */
+  /** @name dxResizable.Options.onResizeEnd */
   var onResizeEnd: js.UndefOr[js.Function1[/* e */ AnonEventHeight, _]] = js.undefined
-  /** A function that is executed when resizing starts. */
+  /** @name dxResizable.Options.onResizeStart */
   var onResizeStart: js.UndefOr[js.Function1[/* e */ AnonEventHeight, _]] = js.undefined
 }
 

@@ -5122,7 +5122,7 @@ trait PartialIResolverPropsIPro extends js.Object {
     */
   var justifySelf: js.UndefOr[JustifySelfProperty | js.Array[JustifySelfProperty]] = js.undefined
   /**
-    * @depreacted use stylesheet instead
+    * @deprecated use stylesheet instead
     */
   var kind: js.UndefOr[IBuiltin] = js.undefined
   /**

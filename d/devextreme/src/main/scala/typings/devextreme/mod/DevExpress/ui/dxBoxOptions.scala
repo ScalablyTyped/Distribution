@@ -26,16 +26,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxBoxOptions extends CollectionWidgetOptions[dxBox] {
-  /** Specifies how widget items are aligned along the main direction. */
+  /** @name dxBox.Options.align */
   var align: js.UndefOr[center | end | `space-around` | `space-between` | start] = js.undefined
-  /** Specifies how widget items are aligned cross-wise. */
+  /** @name dxBox.Options.crossAlign */
   var crossAlign: js.UndefOr[center | end | start | stretch] = js.undefined
-  /** Binds the widget to data. */
+  /** @name dxBox.Options.dataSource */
   @JSName("dataSource")
   var dataSource_dxBoxOptions: js.UndefOr[String | (js.Array[String | dxBoxItem | _]) | DataSource | DataSourceOptions] = js.undefined
-  /** Specifies the direction of item positioning in the widget. */
+  /** @name dxBox.Options.direction */
   var direction: js.UndefOr[col | row] = js.undefined
-  /** An array of items displayed by the widget. */
+  /** @name dxBox.Options.items */
   @JSName("items")
   var items_dxBoxOptions: js.UndefOr[js.Array[String | dxBoxItem | _]] = js.undefined
 }

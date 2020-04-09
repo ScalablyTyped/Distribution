@@ -2,11 +2,9 @@ package typings.ionicCore
 
 import typings.ionicCore.actionSheetInterfaceMod.ActionSheetButton
 import typings.ionicCore.componentsMod._Global_.HTMLIonActionSheetElement
-import typings.ionicCore.ionicCoreStrings.ios
-import typings.ionicCore.ionicCoreStrings.md
 import typings.ionicCore.overlaysInterfaceMod.OverlayEventDetail
 import typings.ionicCore.overlaysInterfaceMod.OverlayInterface
-import typings.ionicCore.stencilCoreMod.ComponentInterface
+import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -42,8 +40,6 @@ object actionSheetMod extends js.Object {
       * Title for the action sheet.
       */
     var header: js.UndefOr[String] = js.native
-    @JSName("mode")
-    var mode_ActionSheet: ios | md = js.native
     var onBackdropTap: js.Any = js.native
     /**
       * Subtitle for the action sheet.

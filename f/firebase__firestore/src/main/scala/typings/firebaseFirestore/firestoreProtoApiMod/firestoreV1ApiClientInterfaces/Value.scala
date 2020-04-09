@@ -1,6 +1,6 @@
 package typings.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces
 
-import typings.firebaseFirestore.AnonNanos
+import typings.firebaseFirestore.firestoreProtoApiMod.Timestamp
 import typings.firebaseFirestore.firestoreProtoApiMod.ValueNullValue
 import typings.std.Uint8Array
 import scala.scalajs.js
@@ -11,14 +11,14 @@ trait Value extends js.Object {
   var arrayValue: js.UndefOr[ArrayValue] = js.undefined
   var booleanValue: js.UndefOr[Boolean] = js.undefined
   var bytesValue: js.UndefOr[String | Uint8Array] = js.undefined
-  var doubleValue: js.UndefOr[Double] = js.undefined
+  var doubleValue: js.UndefOr[String | Double] = js.undefined
   var geoPointValue: js.UndefOr[LatLng] = js.undefined
-  var integerValue: js.UndefOr[String] = js.undefined
+  var integerValue: js.UndefOr[String | Double] = js.undefined
   var mapValue: js.UndefOr[MapValue] = js.undefined
   var nullValue: js.UndefOr[ValueNullValue] = js.undefined
   var referenceValue: js.UndefOr[String] = js.undefined
   var stringValue: js.UndefOr[String] = js.undefined
-  var timestampValue: js.UndefOr[String | AnonNanos] = js.undefined
+  var timestampValue: js.UndefOr[Timestamp] = js.undefined
 }
 
 object Value {
@@ -27,14 +27,14 @@ object Value {
     arrayValue: ArrayValue = null,
     booleanValue: js.UndefOr[Boolean] = js.undefined,
     bytesValue: String | Uint8Array = null,
-    doubleValue: Int | Double = null,
+    doubleValue: String | Double = null,
     geoPointValue: LatLng = null,
-    integerValue: String = null,
+    integerValue: String | Double = null,
     mapValue: MapValue = null,
     nullValue: ValueNullValue = null,
     referenceValue: String = null,
     stringValue: String = null,
-    timestampValue: String | AnonNanos = null
+    timestampValue: Timestamp = null
   ): Value = {
     val __obj = js.Dynamic.literal()
     if (arrayValue != null) __obj.updateDynamic("arrayValue")(arrayValue.asInstanceOf[js.Any])

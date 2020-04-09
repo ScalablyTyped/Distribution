@@ -23,6 +23,7 @@ import typings.react.mod.InputHTMLAttributes
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
@@ -434,7 +435,7 @@ object ISpinButtonProps {
     onProgress: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onRateChange: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onReset: FormEvent[HTMLDivElement] => Unit = null,
-    onScroll: UIEvent[HTMLDivElement] => Unit = null,
+    onScroll: UIEvent[HTMLDivElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,

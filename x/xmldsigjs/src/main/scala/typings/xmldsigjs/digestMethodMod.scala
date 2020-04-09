@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 object digestMethodMod extends js.Object {
   @js.native
   class DigestMethod () extends XmlObject {
+    def this(hashNamespace: String) = this()
     var Algorithm: String = js.native
   }
   

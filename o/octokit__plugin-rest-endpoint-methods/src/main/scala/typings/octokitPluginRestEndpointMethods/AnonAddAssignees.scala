@@ -56,9 +56,9 @@ trait AnonAddAssignees extends js.Object {
     * This example adds two assignees to the existing `octocat` assignee.
     */
   @JSName("addAssignees")
-  var addAssignees_Original: Anon140 = js.native
+  var addAssignees_Original: Anon151 = js.native
   @JSName("addLabels")
-  var addLabels_Original: Anon141 = js.native
+  var addLabels_Original: Anon152 = js.native
   /**
     * Checks if a user has permission to be assigned to an issue in this repository.
     *
@@ -67,37 +67,37 @@ trait AnonAddAssignees extends js.Object {
     * Otherwise a `404` status code is returned.
     */
   @JSName("checkAssignee")
-  var checkAssignee_Original: Anon142 = js.native
+  var checkAssignee_Original: Anon153 = js.native
   /**
     * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
     */
   @JSName("createComment")
-  var createComment_Original: Anon144 = js.native
+  var createComment_Original: Anon155 = js.native
   @JSName("createLabel")
-  var createLabel_Original: Anon145 = js.native
+  var createLabel_Original: Anon156 = js.native
   @JSName("createMilestone")
-  var createMilestone_Original: Anon146 = js.native
+  var createMilestone_Original: Anon157 = js.native
   /**
     * Any user with pull access to a repository can create an issue. If [issues are disabled in the repository](https://help.github.com/articles/disabling-issues/), the API returns a `410 Gone` status.
     *
     * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
     */
   @JSName("create")
-  var create_Original: Anon143 = js.native
+  var create_Original: Anon154 = js.native
   @JSName("deleteComment")
-  var deleteComment_Original: Anon147 = js.native
+  var deleteComment_Original: Anon158 = js.native
   @JSName("deleteLabel")
-  var deleteLabel_Original: Anon148 = js.native
+  var deleteLabel_Original: Anon159 = js.native
   @JSName("deleteMilestone")
-  var deleteMilestone_Original: Anon149 = js.native
+  var deleteMilestone_Original: Anon160 = js.native
   @JSName("getComment")
-  var getComment_Original: Anon151 = js.native
+  var getComment_Original: Anon162 = js.native
   @JSName("getEvent")
-  var getEvent_Original: Anon152 = js.native
+  var getEvent_Original: Anon163 = js.native
   @JSName("getLabel")
-  var getLabel_Original: Anon153 = js.native
+  var getLabel_Original: Anon164 = js.native
   @JSName("getMilestone")
-  var getMilestone_Original: Anon154 = js.native
+  var getMilestone_Original: Anon165 = js.native
   /**
     * The API returns a [`301 Moved Permanently` status](https://developer.github.com/v3/#http-redirects) if the issue was [transferred](https://help.github.com/articles/transferring-an-issue-to-another-repository/) to another repository. If the issue was transferred to or deleted from a repository where the authenticated user lacks read access, the API returns a `404 Not Found` status. If the issue was deleted from a repository where the authenticated user has read access, the API returns a `410 Gone` status. To receive webhook events for transferred and deleted issues, subscribe to the [`issues`](https://developer.github.com/v3/activity/events/types/#issuesevent) webhook.
     *
@@ -106,28 +106,28 @@ trait AnonAddAssignees extends js.Object {
     * Be aware that the `id` of a pull request returned from "Issues" endpoints will be an _issue id_. To find out the pull request id, use the "[List pull requests](https://developer.github.com/v3/pulls/#list-pull-requests)" endpoint.
     */
   @JSName("get")
-  var get_Original: Anon150 = js.native
+  var get_Original: Anon161 = js.native
   /**
     * Lists the [available assignees](https://help.github.com/articles/assigning-issues-and-pull-requests-to-other-github-users/) for issues in a repository.
     */
   @JSName("listAssignees")
-  var listAssignees_Original: Anon156 = js.native
+  var listAssignees_Original: Anon167 = js.native
   /**
     * By default, Issue Comments are ordered by ascending ID.
     */
   @JSName("listCommentsForRepo")
-  var listCommentsForRepo_Original: Anon158 = js.native
+  var listCommentsForRepo_Original: Anon169 = js.native
   /**
     * Issue Comments are ordered by ascending ID.
     */
   @JSName("listComments")
-  var listComments_Original: Anon157 = js.native
+  var listComments_Original: Anon168 = js.native
   @JSName("listEventsForRepo")
-  var listEventsForRepo_Original: Anon160 = js.native
+  var listEventsForRepo_Original: Anon171 = js.native
   @JSName("listEventsForTimeline")
-  var listEventsForTimeline_Original: Anon161 = js.native
+  var listEventsForTimeline_Original: Anon172 = js.native
   @JSName("listEvents")
-  var listEvents_Original: Anon159 = js.native
+  var listEvents_Original: Anon170 = js.native
   /**
     * List issues across owned and member repositories assigned to the authenticated user:
     *
@@ -136,7 +136,7 @@ trait AnonAddAssignees extends js.Object {
     * Be aware that the `id` of a pull request returned from "Issues" endpoints will be an _issue id_. To find out the pull request id, use the "[List pull requests](https://developer.github.com/v3/pulls/#list-pull-requests)" endpoint.
     */
   @JSName("listForAuthenticatedUser")
-  var listForAuthenticatedUser_Original: Anon162 = js.native
+  var listForAuthenticatedUser_Original: Anon173 = js.native
   /**
     * List issues in an organization assigned to the authenticated user.
     *
@@ -145,7 +145,7 @@ trait AnonAddAssignees extends js.Object {
     * Be aware that the `id` of a pull request returned from "Issues" endpoints will be an _issue id_. To find out the pull request id, use the "[List pull requests](https://developer.github.com/v3/pulls/#list-pull-requests)" endpoint.
     */
   @JSName("listForOrg")
-  var listForOrg_Original: Anon163 = js.native
+  var listForOrg_Original: Anon174 = js.native
   /**
     * List issues in a repository.
     *
@@ -154,15 +154,15 @@ trait AnonAddAssignees extends js.Object {
     * Be aware that the `id` of a pull request returned from "Issues" endpoints will be an _issue id_. To find out the pull request id, use the "[List pull requests](https://developer.github.com/v3/pulls/#list-pull-requests)" endpoint.
     */
   @JSName("listForRepo")
-  var listForRepo_Original: Anon164 = js.native
+  var listForRepo_Original: Anon175 = js.native
   @JSName("listLabelsForMilestone")
-  var listLabelsForMilestone_Original: Anon165 = js.native
+  var listLabelsForMilestone_Original: Anon176 = js.native
   @JSName("listLabelsForRepo")
-  var listLabelsForRepo_Original: Anon166 = js.native
+  var listLabelsForRepo_Original: Anon177 = js.native
   @JSName("listLabelsOnIssue")
-  var listLabelsOnIssue_Original: Anon167 = js.native
+  var listLabelsOnIssue_Original: Anon178 = js.native
   @JSName("listMilestonesForRepo")
-  var listMilestonesForRepo_Original: Anon168 = js.native
+  var listMilestonesForRepo_Original: Anon179 = js.native
   /**
     * List issues assigned to the authenticated user across all visible repositories including owned repositories, member repositories, and organization repositories. You can use the `filter` query parameter to fetch issues that are not necessarily assigned to you. See the [Parameters table](https://developer.github.com/v3/issues/#parameters) for more information.
     *
@@ -171,56 +171,56 @@ trait AnonAddAssignees extends js.Object {
     * Be aware that the `id` of a pull request returned from "Issues" endpoints will be an _issue id_. To find out the pull request id, use the "[List pull requests](https://developer.github.com/v3/pulls/#list-pull-requests)" endpoint.
     */
   @JSName("list")
-  var list_Original: Anon155 = js.native
+  var list_Original: Anon166 = js.native
   /**
     * Users with push access can lock an issue or pull request's conversation.
     *
     * Note that, if you choose not to pass any parameters, you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://developer.github.com/v3/#http-verbs)."
     */
   @JSName("lock")
-  var lock_Original: Anon169 = js.native
+  var lock_Original: Anon180 = js.native
   @JSName("removeAllLabels")
-  var removeAllLabels_Original: Anon170 = js.native
+  var removeAllLabels_Original: Anon181 = js.native
   /**
     * Removes one or more assignees from an issue.
     *
     * This example removes two of three assignees, leaving the `octocat` assignee.
     */
   @JSName("removeAssignees")
-  var removeAssignees_Original: Anon171 = js.native
+  var removeAssignees_Original: Anon182 = js.native
   /**
     * Removes the specified label from the issue, and returns the remaining labels on the issue. This endpoint returns a `404 Not Found` status if the label does not exist.
     */
   @JSName("removeLabel")
-  var removeLabel_Original: Anon172 = js.native
+  var removeLabel_Original: Anon183 = js.native
   /**
     * @deprecated octokit.issues.removeLabels() has been renamed to octokit.issues.removeAllLabels() (2020-03-04)
     */
   @JSName("removeLabels")
-  var removeLabels_Original: Anon173 = js.native
+  var removeLabels_Original: Anon184 = js.native
   @JSName("replaceAllLabels")
-  var replaceAllLabels_Original: Anon174 = js.native
+  var replaceAllLabels_Original: Anon185 = js.native
   /**
     * @deprecated octokit.issues.replaceLabels() has been renamed to octokit.issues.replaceAllLabels() (2020-03-04)
     */
   @JSName("replaceLabels")
-  var replaceLabels_Original: Anon175 = js.native
+  var replaceLabels_Original: Anon186 = js.native
   /**
     * Users with push access can unlock an issue's conversation.
     */
   @JSName("unlock")
-  var unlock_Original: Anon176 = js.native
+  var unlock_Original: Anon187 = js.native
   @JSName("updateComment")
-  var updateComment_Original: Anon178 = js.native
+  var updateComment_Original: Anon189 = js.native
   @JSName("updateLabel")
-  var updateLabel_Original: Anon179 = js.native
+  var updateLabel_Original: Anon190 = js.native
   @JSName("updateMilestone")
-  var updateMilestone_Original: Anon180 = js.native
+  var updateMilestone_Original: Anon191 = js.native
   /**
     * Issue owners and users with push access can edit an issue.
     */
   @JSName("update")
-  var update_Original: Anon177 = js.native
+  var update_Original: Anon188 = js.native
   /**
     * Adds up to 10 assignees to an issue. Users already assigned to an issue are not replaced.
     *

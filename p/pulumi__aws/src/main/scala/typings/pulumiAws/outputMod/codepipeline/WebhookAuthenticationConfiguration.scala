@@ -6,7 +6,13 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait WebhookAuthenticationConfiguration extends js.Object {
+  /**
+    * A valid CIDR block for `IP` filtering. Required for `IP`.
+    */
   var allowedIpRange: js.UndefOr[String] = js.native
+  /**
+    * The shared secret for the GitHub repository webhook. Set this as `secret` in your `githubRepositoryWebhook`'s `configuration` block. Required for `GITHUB_HMAC`.
+    */
   var secretToken: js.UndefOr[String] = js.native
 }
 

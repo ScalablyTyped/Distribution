@@ -68,6 +68,7 @@ import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
@@ -590,7 +591,7 @@ object IonSelectPopoverPickHTMLA {
     onProgress: SyntheticEvent[HTMLIonSelectPopoverElement, Event_] => Unit = null,
     onRateChange: SyntheticEvent[HTMLIonSelectPopoverElement, Event_] => Unit = null,
     onReset: FormEvent[HTMLIonSelectPopoverElement] => Unit = null,
-    onScroll: UIEvent[HTMLIonSelectPopoverElement] => Unit = null,
+    onScroll: UIEvent[HTMLIonSelectPopoverElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[HTMLIonSelectPopoverElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[HTMLIonSelectPopoverElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[HTMLIonSelectPopoverElement, Event_] => Unit = null,

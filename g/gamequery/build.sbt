@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gamequery"
-version := "0.7.0-dt-20200225Z-90461d"
+version := "0.7.0-dt-20200331Z-90461d"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

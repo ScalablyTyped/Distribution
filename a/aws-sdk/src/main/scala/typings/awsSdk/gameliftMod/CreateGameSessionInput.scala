@@ -9,7 +9,7 @@ trait CreateGameSessionInput extends js.Object {
   /**
     * A unique identifier for an alias associated with the fleet to create a game session in. You can use either the alias ID or ARN value. Each request must reference either a fleet ID or alias ID, but not both.
     */
-  var AliasId: js.UndefOr[typings.awsSdk.gameliftMod.AliasId] = js.native
+  var AliasId: js.UndefOr[AliasIdOrArn] = js.native
   /**
     * A unique identifier for a player or entity creating the game session. This ID is used to enforce a resource protection policy (if one exists) that limits the number of concurrent active game sessions one player can have.
     */
@@ -17,7 +17,7 @@ trait CreateGameSessionInput extends js.Object {
   /**
     * A unique identifier for a fleet to create a game session in. You can use either the fleet ID or ARN value. Each request must reference either a fleet ID or alias ID, but not both.
     */
-  var FleetId: js.UndefOr[typings.awsSdk.gameliftMod.FleetId] = js.native
+  var FleetId: js.UndefOr[FleetIdOrArn] = js.native
   /**
     * Set of custom properties for a game session, formatted as key:value pairs. These properties are passed to a game server process in the GameSession object with a request to start a new game session (see Start a Game Session).
     */
@@ -48,9 +48,9 @@ object CreateGameSessionInput {
   @scala.inline
   def apply(
     MaximumPlayerSessionCount: WholeNumber,
-    AliasId: AliasId = null,
+    AliasId: AliasIdOrArn = null,
     CreatorId: NonZeroAndMaxString = null,
-    FleetId: FleetId = null,
+    FleetId: FleetIdOrArn = null,
     GameProperties: GamePropertyList = null,
     GameSessionData: GameSessionData = null,
     GameSessionId: IdStringModel = null,

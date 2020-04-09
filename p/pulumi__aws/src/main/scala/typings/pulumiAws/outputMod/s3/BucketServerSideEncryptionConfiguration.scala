@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait BucketServerSideEncryptionConfiguration extends js.Object {
   /**
-    * The Object Lock rule in place for this bucket.
+    * A single object for server-side encryption by default configuration. (documented below)
     */
   var rule: BucketServerSideEncryptionConfigurationRule = js.native
 }

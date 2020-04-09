@@ -17,7 +17,6 @@ trait SignaleConfig extends js.Object {
   var displayScope: js.UndefOr[Boolean] = js.undefined
   /** Display the current local time in `HH:MM:SS` format. */
   var displayTimestamp: js.UndefOr[Boolean] = js.undefined
-  var logLevel: js.UndefOr[String] = js.undefined
   /** Underline the logger label. */
   var underlineLabel: js.UndefOr[Boolean] = js.undefined
   /** Underline the logger message. */
@@ -36,7 +35,6 @@ object SignaleConfig {
     displayLabel: js.UndefOr[Boolean] = js.undefined,
     displayScope: js.UndefOr[Boolean] = js.undefined,
     displayTimestamp: js.UndefOr[Boolean] = js.undefined,
-    logLevel: String = null,
     underlineLabel: js.UndefOr[Boolean] = js.undefined,
     underlineMessage: js.UndefOr[Boolean] = js.undefined,
     underlinePrefix: js.UndefOr[Boolean] = js.undefined,
@@ -50,7 +48,6 @@ object SignaleConfig {
     if (!js.isUndefined(displayLabel)) __obj.updateDynamic("displayLabel")(displayLabel.asInstanceOf[js.Any])
     if (!js.isUndefined(displayScope)) __obj.updateDynamic("displayScope")(displayScope.asInstanceOf[js.Any])
     if (!js.isUndefined(displayTimestamp)) __obj.updateDynamic("displayTimestamp")(displayTimestamp.asInstanceOf[js.Any])
-    if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel.asInstanceOf[js.Any])
     if (!js.isUndefined(underlineLabel)) __obj.updateDynamic("underlineLabel")(underlineLabel.asInstanceOf[js.Any])
     if (!js.isUndefined(underlineMessage)) __obj.updateDynamic("underlineMessage")(underlineMessage.asInstanceOf[js.Any])
     if (!js.isUndefined(underlinePrefix)) __obj.updateDynamic("underlinePrefix")(underlinePrefix.asInstanceOf[js.Any])

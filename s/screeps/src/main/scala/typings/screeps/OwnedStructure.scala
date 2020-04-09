@@ -13,11 +13,11 @@ trait OwnedStructure[T /* <: StructureConstant */] extends Structure[T] {
   /**
     * Whether this is your own structure. Walls and roads don't have this property as they are considered neutral structures.
     */
-  var my: Boolean
+  var my: js.UndefOr[Boolean] = js.undefined
   /**
     * An object with the structure’s owner info (if present) containing the following properties: username
     */
-  var owner: Owner
+  var owner: js.UndefOr[Owner] = js.undefined
 }
 
 @JSGlobal("OwnedStructure")

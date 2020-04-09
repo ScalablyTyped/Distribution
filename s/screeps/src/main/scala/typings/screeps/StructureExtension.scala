@@ -13,7 +13,8 @@ import scala.scalajs.js.annotation._
 trait StructureExtension
   extends OwnedStructure[STRUCTURE_EXTENSION]
      with AnyOwnedStructure
-     with AnyStoreStructure {
+     with AnyStoreStructure
+     with ConcreteStructure[js.Any] {
   /**
     * The amount of energy containing in the extension.
     * @deprecated An alias for .store[RESOURCE_ENERGY].

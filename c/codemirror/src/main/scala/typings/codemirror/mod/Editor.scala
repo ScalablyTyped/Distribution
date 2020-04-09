@@ -11,9 +11,13 @@ import typings.codemirror.AnonLine
 import typings.codemirror.AnonRight
 import typings.codemirror.AnonTo
 import typings.codemirror.AnonTop
+import typings.codemirror.codemirrorStrings.addModeClass
+import typings.codemirror.codemirrorStrings.allowDropFileTypes
 import typings.codemirror.codemirrorStrings.autoCloseBrackets
 import typings.codemirror.codemirrorStrings.autoCloseTags
 import typings.codemirror.codemirrorStrings.autoRefresh
+import typings.codemirror.codemirrorStrings.autocapitalize
+import typings.codemirror.codemirrorStrings.autocorrect
 import typings.codemirror.codemirrorStrings.autofocus
 import typings.codemirror.codemirrorStrings.beforeChange
 import typings.codemirror.codemirrorStrings.beforeSelectionChange
@@ -61,6 +65,7 @@ import typings.codemirror.codemirrorStrings.pollInterval
 import typings.codemirror.codemirrorStrings.readOnly
 import typings.codemirror.codemirrorStrings.refresh
 import typings.codemirror.codemirrorStrings.renderLine
+import typings.codemirror.codemirrorStrings.resetSelectionOnContextMenu
 import typings.codemirror.codemirrorStrings.rtlMoveVisually
 import typings.codemirror.codemirrorStrings.scroll
 import typings.codemirror.codemirrorStrings.scrollCursorIntoView
@@ -69,6 +74,7 @@ import typings.codemirror.codemirrorStrings.scrollbarStyle
 import typings.codemirror.codemirrorStrings.showCursorWhenSelecting
 import typings.codemirror.codemirrorStrings.showHint
 import typings.codemirror.codemirrorStrings.smartIndent
+import typings.codemirror.codemirrorStrings.spellcheck
 import typings.codemirror.codemirrorStrings.styleActiveLine
 import typings.codemirror.codemirrorStrings.swapDoc
 import typings.codemirror.codemirrorStrings.tabSize
@@ -189,11 +195,19 @@ trait Editor extends Doc {
   /** Gets the inner mode at a given position. This will return the same as getMode for simple modes, but will return an inner mode for nesting modes (such as htmlmixed). */
   def getModeAt(pos: Position): js.Any = js.native
   @JSName("getOption")
+  def getOption_addModeClass(option: addModeClass): Boolean = js.native
+  @JSName("getOption")
+  def getOption_allowDropFileTypes(option: allowDropFileTypes): js.Array[String] = js.native
+  @JSName("getOption")
   def getOption_autoCloseBrackets(option: autoCloseBrackets): AutoCloseBrackets | Boolean | String = js.native
   @JSName("getOption")
   def getOption_autoCloseTags(option: autoCloseTags): AutoCloseTags | Boolean = js.native
   @JSName("getOption")
   def getOption_autoRefresh(option: autoRefresh): Boolean | AnonDelay = js.native
+  @JSName("getOption")
+  def getOption_autocapitalize(option: autocapitalize): Boolean = js.native
+  @JSName("getOption")
+  def getOption_autocorrect(option: autocorrect): Boolean = js.native
   @JSName("getOption")
   def getOption_autofocus(option: autofocus): Boolean = js.native
   @JSName("getOption")
@@ -257,6 +271,8 @@ trait Editor extends Doc {
   @JSName("getOption")
   def getOption_readOnly(option: readOnly): js.Any = js.native
   @JSName("getOption")
+  def getOption_resetSelectionOnContextMenu(option: resetSelectionOnContextMenu): Boolean = js.native
+  @JSName("getOption")
   def getOption_rtlMoveVisually(option: rtlMoveVisually): Boolean = js.native
   @JSName("getOption")
   def getOption_scrollPastEnd(option: scrollPastEnd): Boolean = js.native
@@ -268,6 +284,8 @@ trait Editor extends Doc {
   def getOption_showHint(option: showHint): Boolean = js.native
   @JSName("getOption")
   def getOption_smartIndent(option: smartIndent): Boolean = js.native
+  @JSName("getOption")
+  def getOption_spellcheck(option: spellcheck): Boolean = js.native
   @JSName("getOption")
   def getOption_styleActiveLine(option: styleActiveLine): StyleActiveLine | Boolean = js.native
   @JSName("getOption")
@@ -627,6 +645,10 @@ trait Editor extends Doc {
     Value can be either null, to clear the marker, or a DOM element, to set it. The DOM element will be shown in the specified gutter next to the specified line. */
   def setGutterMarker(line: js.Any, gutterID: String, value: HTMLElement): LineHandle = js.native
   @JSName("setOption")
+  def setOption_addModeClass(option: addModeClass, value: Boolean): Unit = js.native
+  @JSName("setOption")
+  def setOption_allowDropFileTypes(option: allowDropFileTypes, value: js.Array[String]): Unit = js.native
+  @JSName("setOption")
   def setOption_autoCloseBrackets(option: autoCloseBrackets, value: String): Unit = js.native
   @JSName("setOption")
   def setOption_autoCloseBrackets(option: autoCloseBrackets, value: Boolean): Unit = js.native
@@ -640,6 +662,10 @@ trait Editor extends Doc {
   def setOption_autoRefresh(option: autoRefresh, value: Boolean): Unit = js.native
   @JSName("setOption")
   def setOption_autoRefresh(option: autoRefresh, value: AnonDelay): Unit = js.native
+  @JSName("setOption")
+  def setOption_autocapitalize(option: autocapitalize, value: Boolean): Unit = js.native
+  @JSName("setOption")
+  def setOption_autocorrect(option: autocorrect, value: Boolean): Unit = js.native
   @JSName("setOption")
   def setOption_autofocus(option: autofocus, value: Boolean): Unit = js.native
   @JSName("setOption")
@@ -713,6 +739,8 @@ trait Editor extends Doc {
   @JSName("setOption")
   def setOption_readOnly(option: readOnly, value: js.Any): Unit = js.native
   @JSName("setOption")
+  def setOption_resetSelectionOnContextMenu(option: resetSelectionOnContextMenu, value: Boolean): Unit = js.native
+  @JSName("setOption")
   def setOption_rtlMoveVisually(option: rtlMoveVisually, value: Boolean): Unit = js.native
   @JSName("setOption")
   def setOption_scrollPastEnd(option: scrollPastEnd, value: Boolean): Unit = js.native
@@ -724,6 +752,8 @@ trait Editor extends Doc {
   def setOption_showHint(option: showHint, value: Boolean): Unit = js.native
   @JSName("setOption")
   def setOption_smartIndent(option: smartIndent, value: Boolean): Unit = js.native
+  @JSName("setOption")
+  def setOption_spellcheck(option: spellcheck, value: Boolean): Unit = js.native
   @JSName("setOption")
   def setOption_styleActiveLine(option: styleActiveLine, value: Boolean): Unit = js.native
   @JSName("setOption")

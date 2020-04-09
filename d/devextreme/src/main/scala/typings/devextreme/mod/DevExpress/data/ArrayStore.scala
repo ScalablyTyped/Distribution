@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ArrayStore extends Store {
-  /** Clears all the ArrayStore's associated data. */
+  /** @name ArrayStore.clear() */
   def clear(): Unit = js.native
-  /** Creates a Query for the underlying array. */
+  /** @name ArrayStore.createQuery() */
   def createQuery(): js.Any = js.native
 }
 

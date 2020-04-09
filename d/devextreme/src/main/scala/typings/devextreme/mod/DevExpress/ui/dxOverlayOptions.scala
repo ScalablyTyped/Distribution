@@ -15,39 +15,39 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxOverlayOptions[T] extends WidgetOptions[T] {
-  /** Configures widget visibility animations. This object contains two fields: show and hide. */
+  /** @name dxOverlay.Options.animation */
   var animation: js.UndefOr[dxOverlayAnimation] = js.undefined
-  /** Specifies whether to close the widget if a user clicks outside it. */
+  /** @name dxOverlay.Options.closeOnOutsideClick */
   var closeOnOutsideClick: js.UndefOr[Boolean | (js.Function1[/* event */ event, Boolean])] = js.undefined
-  /** Specifies a custom template for the widget content. */
+  /** @name dxOverlay.Options.contentTemplate */
   var contentTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function1[/* contentElement */ dxElement, String | Element | JQuery])
   ] = js.undefined
-  /** Specifies whether to render the widget's content when it is displayed. If false, the content is rendered immediately. */
+  /** @name dxOverlay.Options.deferRendering */
   var deferRendering: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether or not an end-user can drag the widget. */
+  /** @name dxOverlay.Options.dragEnabled */
   var dragEnabled: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the maximum height the widget can reach while resizing. */
+  /** @name dxOverlay.Options.maxHeight */
   var maxHeight: js.UndefOr[Double | String | (js.Function0[Double | String])] = js.undefined
-  /** Specifies the maximum width the widget can reach while resizing. */
+  /** @name dxOverlay.Options.maxWidth */
   var maxWidth: js.UndefOr[Double | String | (js.Function0[Double | String])] = js.undefined
-  /** Specifies the minimum height the widget can reach while resizing. */
+  /** @name dxOverlay.Options.minHeight */
   var minHeight: js.UndefOr[Double | String | (js.Function0[Double | String])] = js.undefined
-  /** Specifies the minimum width the widget can reach while resizing. */
+  /** @name dxOverlay.Options.minWidth */
   var minWidth: js.UndefOr[Double | String | (js.Function0[Double | String])] = js.undefined
-  /** A function that is executed after the widget is hidden. */
+  /** @name dxOverlay.Options.onHidden */
   var onHidden: js.UndefOr[js.Function1[/* e */ AnonElementDxElement[T], _]] = js.undefined
-  /** A function that is executed before the widget is hidden. */
+  /** @name dxOverlay.Options.onHiding */
   var onHiding: js.UndefOr[js.Function1[/* e */ AnonCancelComponentElementModel[T], _]] = js.undefined
-  /** A function that is executed before the widget is displayed. */
+  /** @name dxOverlay.Options.onShowing */
   var onShowing: js.UndefOr[js.Function1[/* e */ AnonElementDxElement[T], _]] = js.undefined
-  /** A function that is executed after the widget is displayed. */
+  /** @name dxOverlay.Options.onShown */
   var onShown: js.UndefOr[js.Function1[/* e */ AnonElementDxElement[T], _]] = js.undefined
-  /** Positions the widget. */
+  /** @name dxOverlay.Options.position */
   var position: js.UndefOr[js.Any] = js.undefined
-  /** Specifies whether to shade the background when the widget is active. */
+  /** @name dxOverlay.Options.shading */
   var shading: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the shading color. */
+  /** @name dxOverlay.Options.shadingColor */
   var shadingColor: js.UndefOr[String] = js.undefined
 }
 

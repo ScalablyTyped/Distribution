@@ -11,9 +11,9 @@ import typings.echarts.AnonFontStyle
 import typings.echarts.AnonRotateLabel
 import typings.echarts.AnonShadowColor
 import typings.echarts.AnonShadowOffsetY
-import typings.echarts.AnonSource
-import typings.echarts.AnonSymbolOffset
+import typings.echarts.echarts.EChartOption.SeriesGraph.CategoryObject
 import typings.echarts.echarts.EChartOption.SeriesGraph.DataObject
+import typings.echarts.echarts.EChartOption.SeriesGraph.LinkObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -177,7 +177,7 @@ trait SeriesGraph_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-graph.categories
     */
-  var categories: js.UndefOr[AnonSymbolOffset] = js.undefined
+  var categories: js.UndefOr[js.Array[CategoryObject]] = js.undefined
   /**
     * Configuration about circular layout.
     *
@@ -449,7 +449,7 @@ trait SeriesGraph_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-graph.links
     */
-  var links: js.UndefOr[AnonSource] = js.undefined
+  var links: js.UndefOr[js.Array[LinkObject]] = js.undefined
   /**
     * Used to mark an area in chart.
     * For example, mark a time interval.
@@ -755,7 +755,7 @@ object SeriesGraph_ {
     animationThreshold: Int | Double = null,
     bottom: Double | String = null,
     calendarIndex: Int | Double = null,
-    categories: AnonSymbolOffset = null,
+    categories: js.Array[CategoryObject] = null,
     circular: AnonRotateLabel = null,
     coordinateSystem: String = null,
     cursor: String = null,
@@ -778,7 +778,7 @@ object SeriesGraph_ {
     left: Double | String = null,
     legendHoverLink: js.UndefOr[Boolean] = js.undefined,
     lineStyle: AnonShadowColor = null,
-    links: AnonSource = null,
+    links: js.Array[LinkObject] = null,
     markArea: AnonAnimationDelayUpdate = null,
     markLine: AnonAnimationDelay = null,
     markPoint: AnonAnimationDuration = null,

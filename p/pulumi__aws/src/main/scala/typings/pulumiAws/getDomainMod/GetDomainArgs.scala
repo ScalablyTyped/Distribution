@@ -11,6 +11,9 @@ trait GetDomainArgs extends js.Object {
     * Name of the domain.
     */
   val domainName: String = js.native
+  /**
+    * The tags assigned to the domain.
+    */
   val tags: js.UndefOr[StringDictionary[js.Any]] = js.native
 }
 

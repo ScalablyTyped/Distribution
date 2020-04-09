@@ -15,19 +15,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxSwitchOptions extends EditorOptions[dxSwitch] {
-  /** The value to be assigned to the `name` attribute of the underlying HTML element. */
+  /** @name dxSwitch.Options.name */
   var name: js.UndefOr[String] = js.undefined
-  /** @deprecated Use the switchedOffText option instead. */
-  /** Text displayed when the widget is in a disabled state. */
+  /** @deprecated */
+  /** @name dxSwitch.Options.offText */
   var offText: js.UndefOr[String] = js.undefined
-  /** @deprecated Use the switchedOnText option instead. */
-  /** Text displayed when the widget is in an enabled state. */
+  /** @deprecated */
+  /** @name dxSwitch.Options.onText */
   var onText: js.UndefOr[String] = js.undefined
-  /** Specifies the text displayed when the widget is switched off. */
+  /** @name dxSwitch.Options.switchedOffText */
   var switchedOffText: js.UndefOr[String] = js.undefined
-  /** Specifies the text displayed when the widget is switched on. */
+  /** @name dxSwitch.Options.switchedOnText */
   var switchedOnText: js.UndefOr[String] = js.undefined
-  /** A Boolean value specifying whether the current switch state is "On" or "Off". */
+  /** @name dxSwitch.Options.value */
   @JSName("value")
   var value_dxSwitchOptions: js.UndefOr[Boolean] = js.undefined
 }

@@ -16,6 +16,7 @@ import typings.react.mod.HTMLAttributes
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
@@ -320,7 +321,7 @@ object ISelectableDroppableTextProps {
     ]) => Element | Null = null,
     onRenderOption: (/* props */ js.UndefOr[ISelectableOption], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[ISelectableOption], Element | Null]]) => Element | Null = null,
     onReset: FormEvent[TListenerElement] => Unit = null,
-    onScroll: UIEvent[TListenerElement] => Unit = null,
+    onScroll: UIEvent[TListenerElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[TListenerElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[TListenerElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[TListenerElement, Event_] => Unit = null,

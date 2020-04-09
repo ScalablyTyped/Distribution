@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 class DataExpressionMixin ()
   extends typings.devextreme.mod.DevExpress.ui.DataExpressionMixin {
   def this(options: DataExpressionMixinOptions[typings.devextreme.mod.DevExpress.ui.DataExpressionMixin]) = this()
-  /** Gets the DataSource instance. */
+  /** @name DataHelperMixin.getDataSource() */
   /* CompleteClass */
   override def getDataSource(): DataSource = js.native
 }

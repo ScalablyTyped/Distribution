@@ -5,25 +5,25 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxDataGridRowObject extends js.Object {
-  /** The data object represented by the row. */
+  /** @name dxDataGridRowObject.data */
   var data: js.UndefOr[js.Any] = js.undefined
-  /** The group index of the row. Available when the rowType is "group". */
+  /** @name dxDataGridRowObject.groupIndex */
   var groupIndex: js.UndefOr[Double] = js.undefined
-  /** Indicates whether the row is in the editing state. */
+  /** @name dxDataGridRowObject.isEditing */
   var isEditing: js.UndefOr[Boolean] = js.undefined
-  /** Indicates whether the row is expanded or collapsed. Available if rowType is "data", "detail" or "group". */
+  /** @name dxDataGridRowObject.isExpanded */
   var isExpanded: js.UndefOr[Boolean] = js.undefined
-  /** Indicates that the row is added, but not yet saved. Available if rowType is "data". */
+  /** @name dxDataGridRowObject.isNewRow */
   var isNewRow: js.UndefOr[Boolean] = js.undefined
-  /** Indicates whether the row is selected. Available if rowType is "data". */
+  /** @name dxDataGridRowObject.isSelected */
   var isSelected: js.UndefOr[Boolean] = js.undefined
-  /** The key of the data object represented by the row. */
+  /** @name dxDataGridRowObject.key */
   var key: js.UndefOr[js.Any] = js.undefined
-  /** The visible index of the row. */
+  /** @name dxDataGridRowObject.rowIndex */
   var rowIndex: js.UndefOr[Double] = js.undefined
-  /** The row's type. */
+  /** @name dxDataGridRowObject.rowType */
   var rowType: js.UndefOr[String] = js.undefined
-  /** Values of the row as they exist in the data source. */
+  /** @name dxDataGridRowObject.values */
   var values: js.UndefOr[js.Array[_]] = js.undefined
 }
 

@@ -19,6 +19,9 @@ trait GetVolumeArgs extends js.Object {
     * recent Volume.
     */
   val mostRecent: js.UndefOr[Boolean] = js.native
+  /**
+    * A mapping of tags for the resource.
+    */
   val tags: js.UndefOr[StringDictionary[js.Any]] = js.native
 }
 

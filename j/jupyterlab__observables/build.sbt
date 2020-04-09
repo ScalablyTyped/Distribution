@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__observables"
-version := "3.0.1-09bcc0"
+version := "3.1.0-74e8c6"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

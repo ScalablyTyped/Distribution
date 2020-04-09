@@ -41,6 +41,10 @@ trait Flow extends js.Object {
     * The current status of the flow.
     */
   var Status: typings.awsSdk.mediaconnectMod.Status = js.native
+  /**
+    * The VPC Interfaces for this flow.
+    */
+  var VpcInterfaces: js.UndefOr[listOfVpcInterface] = js.native
 }
 
 object Flow {
@@ -56,13 +60,15 @@ object Flow {
     Description: string = null,
     EgressIp: string = null,
     SourceFailoverConfig: FailoverConfig = null,
-    Sources: listOfSource = null
+    Sources: listOfSource = null,
+    VpcInterfaces: listOfVpcInterface = null
   ): Flow = {
     val __obj = js.Dynamic.literal(AvailabilityZone = AvailabilityZone.asInstanceOf[js.Any], Entitlements = Entitlements.asInstanceOf[js.Any], FlowArn = FlowArn.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Outputs = Outputs.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (EgressIp != null) __obj.updateDynamic("EgressIp")(EgressIp.asInstanceOf[js.Any])
     if (SourceFailoverConfig != null) __obj.updateDynamic("SourceFailoverConfig")(SourceFailoverConfig.asInstanceOf[js.Any])
     if (Sources != null) __obj.updateDynamic("Sources")(Sources.asInstanceOf[js.Any])
+    if (VpcInterfaces != null) __obj.updateDynamic("VpcInterfaces")(VpcInterfaces.asInstanceOf[js.Any])
     __obj.asInstanceOf[Flow]
   }
 }

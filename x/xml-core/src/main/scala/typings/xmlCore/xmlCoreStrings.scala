@@ -1,6 +1,6 @@
 package typings.xmlCore
 
-import typings.xmlCore.mod._XmlBufferEncoding
+import typings.xmlCore.typesMod._XmlBufferEncoding
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,6 +16,9 @@ object xmlCoreStrings {
   sealed trait applicationSlashxml extends js.Object
   
   @js.native
+  sealed trait attribute extends js.Object
+  
+  @js.native
   sealed trait base64 extends _XmlBufferEncoding
   
   @js.native
@@ -23,6 +26,12 @@ object xmlCoreStrings {
   
   @js.native
   sealed trait binary extends _XmlBufferEncoding
+  
+  @js.native
+  sealed trait content extends js.Object
+  
+  @js.native
+  sealed trait element extends js.Object
   
   @js.native
   sealed trait hex extends _XmlBufferEncoding
@@ -37,11 +46,17 @@ object xmlCoreStrings {
   @scala.inline
   def applicationSlashxml: applicationSlashxml = "application/xml".asInstanceOf[applicationSlashxml]
   @scala.inline
+  def attribute: attribute = "attribute".asInstanceOf[attribute]
+  @scala.inline
   def base64: base64 = "base64".asInstanceOf[base64]
   @scala.inline
   def base64url: base64url = "base64url".asInstanceOf[base64url]
   @scala.inline
   def binary: binary = "binary".asInstanceOf[binary]
+  @scala.inline
+  def content: content = "content".asInstanceOf[content]
+  @scala.inline
+  def element: element = "element".asInstanceOf[element]
   @scala.inline
   def hex: hex = "hex".asInstanceOf[hex]
   @scala.inline

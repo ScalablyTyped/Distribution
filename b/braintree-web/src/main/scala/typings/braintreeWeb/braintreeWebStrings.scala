@@ -8,6 +8,18 @@ import scala.scalajs.js.annotation._
 
 object braintreeWebStrings {
   @js.native
+  sealed trait `1` extends js.Object
+  
+  @js.native
+  sealed trait `2` extends js.Object
+  
+  @js.native
+  sealed trait `2-bootstrap3-modal` extends js.Object
+  
+  @js.native
+  sealed trait `2-inline-iframe` extends js.Object
+  
+  @js.native
   sealed trait CUSTOMER extends Types
   
   @js.native
@@ -40,6 +52,14 @@ object braintreeWebStrings {
   @js.native
   sealed trait postalCode extends HostedFieldsHostedFieldsFieldName
   
+  @scala.inline
+  def `1`: `1` = "1".asInstanceOf[`1`]
+  @scala.inline
+  def `2`: `2` = "2".asInstanceOf[`2`]
+  @scala.inline
+  def `2-bootstrap3-modal`: `2-bootstrap3-modal` = "2-bootstrap3-modal".asInstanceOf[`2-bootstrap3-modal`]
+  @scala.inline
+  def `2-inline-iframe`: `2-inline-iframe` = "2-inline-iframe".asInstanceOf[`2-inline-iframe`]
   @scala.inline
   def CUSTOMER: CUSTOMER = "CUSTOMER".asInstanceOf[CUSTOMER]
   @scala.inline

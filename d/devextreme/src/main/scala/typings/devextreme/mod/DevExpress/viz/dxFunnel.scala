@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait dxFunnel extends BaseWidget {
-  /** Cancels the selection of all funnel items. */
+  /** @name dxFunnel.clearSelection() */
   def clearSelection(): Unit = js.native
-  /** Provides access to all funnel items. */
+  /** @name dxFunnel.getAllItems() */
   def getAllItems(): js.Array[dxFunnelItem] = js.native
-  /** Gets the DataSource instance. */
+  /** @name DataHelperMixin.getDataSource() */
   def getDataSource(): DataSource = js.native
-  /** Hides all widget tooltips. */
+  /** @name dxFunnel.hideTooltip() */
   def hideTooltip(): Unit = js.native
 }
 

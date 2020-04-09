@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "readdir-enhanced"
-version := "6.0.3-ccc664"
+version := "6.0.3-e346b1"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "jsdevtools__readdir-enhanced" % "6.0.3-f1685e",
-  "org.scalablytyped" %%% "node" % "13.9-dt-20200318Z-96a265",
+  "org.scalablytyped" %%% "jsdevtools__readdir-enhanced" % "6.0.3-0fab52",
+  "org.scalablytyped" %%% "node" % "13.11-dt-20200402Z-9a87f0",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")

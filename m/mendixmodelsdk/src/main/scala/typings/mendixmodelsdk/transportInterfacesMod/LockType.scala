@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   - typings.mendixmodelsdk.mendixmodelsdkStrings.commit
   - typings.mendixmodelsdk.mendixmodelsdkStrings.update
   - typings.mendixmodelsdk.mendixmodelsdkStrings.switch
+  - typings.mendixmodelsdk.mendixmodelsdkStrings.`commit-wc`
 */
 trait LockType extends js.Object
 
@@ -21,6 +22,8 @@ object LockType {
   /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
   @scala.inline
   def commit: typings.mendixmodelsdk.mendixmodelsdkStrings.commit = this.cast("commit")
+  @scala.inline
+  def `commit-wc`: typings.mendixmodelsdk.mendixmodelsdkStrings.`commit-wc` = this.cast("commit-wc")
   @scala.inline
   def conversion: typings.mendixmodelsdk.mendixmodelsdkStrings.conversion = this.cast("conversion")
   @scala.inline

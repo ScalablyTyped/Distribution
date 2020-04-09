@@ -489,7 +489,7 @@ object commonMod extends js.Object {
     def ensureElement(): ReactElement = js.native
     def ensureElement(
       child: js.UndefOr[ReactNode],
-      tagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 174 */ js.Any
+      tagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any
     ): ReactElement = js.native
     def ensureElement(child: ReactNode): ReactElement = js.native
     def getDeepUnequalKeyValues[T /* <: js.Object */](): js.Array[AnonKey[T]] = js.native

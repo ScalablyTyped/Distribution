@@ -8,12 +8,13 @@ import scala.scalajs.js.annotation._
 @js.native
 class CatalogItemOptionValue () extends js.Object {
   /**
-    * The HTML color for this value in the format #FFRRGGBB or #RRGGBB (e.g., \"#ff8d4e85\").
-    * Only displayed if parent Item Option's `show_colors` flag is enabled. value.
+    * The HTML-supported hex color for the item option (e.g., "#ff8d4e85").
+    * Only displayed if `show_colors` is enabled on the parent `ItemOption`. When left unset, `color` defaults to
+    * white ("#ffffff") when `show_colors` is enabled on the parent `ItemOption`.
     */
   var color: js.UndefOr[String] = js.native
   /**
-    * The option value's human-readable description.
+    * A human-readable description for the option value.
     */
   var description: js.UndefOr[String] = js.native
   /**
@@ -21,7 +22,7 @@ class CatalogItemOptionValue () extends js.Object {
     */
   var item_option_id: js.UndefOr[String] = js.native
   /**
-    * The number of [CatalogItemVariation(#type-catalogitemvariation)s that currently make use of this Item Option value.
+    * The number of `CatalogItemVariation`s that currently make use of this Item Option value.
     * Present only if `retrieve_counts` was specified on the request used to retrieve the parent Item Option of this value.
     * Maximum: 100 counts.
     */

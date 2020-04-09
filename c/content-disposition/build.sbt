@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "content-disposition"
-version := "0.5-dt-20180214Z-ffb4a1"
+version := "0.5-dt-20200331Z-650a48"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

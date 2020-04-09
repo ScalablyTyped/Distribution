@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UpdateBuildOutput extends js.Object {
   /**
-    * The updated build record.
+    * The updated build resource.
     */
   var Build: js.UndefOr[typings.awsSdk.gameliftMod.Build] = js.native
 }

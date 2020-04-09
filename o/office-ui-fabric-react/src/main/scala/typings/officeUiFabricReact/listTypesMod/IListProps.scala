@@ -14,6 +14,7 @@ import typings.react.mod.HTMLAttributes
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
@@ -357,7 +358,7 @@ object IListProps {
     onRenderCell: (/* item */ js.UndefOr[T], /* index */ js.UndefOr[Double], /* isScrolling */ js.UndefOr[Boolean]) => ReactNode = null,
     onRenderPage: (/* pageProps */ IPageProps[T], /* defaultRender */ js.UndefOr[IRenderFunction[IPageProps[T]]]) => ReactNode = null,
     onReset: FormEvent[List[T] | HTMLDivElement] => Unit = null,
-    onScroll: UIEvent[List[T] | HTMLDivElement] => Unit = null,
+    onScroll: UIEvent[List[T] | HTMLDivElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[List[T] | HTMLDivElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[List[T] | HTMLDivElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[List[T] | HTMLDivElement, Event_] => Unit = null,

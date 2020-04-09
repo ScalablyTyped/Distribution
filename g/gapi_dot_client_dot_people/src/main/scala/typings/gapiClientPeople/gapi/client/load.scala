@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("gapi.client.load")
 @js.native
 object load extends js.Object {
-  /** Load Google People API v1 */
+  /** Load People API v1 */
   def apply(name: typings.gapiClientPeople.gapiClientPeopleStrings.people, version: v1): js.Thenable[Unit] = js.native
   def apply(
     name: typings.gapiClientPeople.gapiClientPeopleStrings.people,

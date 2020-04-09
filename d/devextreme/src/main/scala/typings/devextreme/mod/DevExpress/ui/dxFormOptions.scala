@@ -15,58 +15,58 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxFormOptions extends WidgetOptions[dxForm] {
-  /** Specifies whether or not all root item labels are aligned. */
+  /** @name dxForm.Options.alignItemLabels */
   var alignItemLabels: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether or not item labels in all groups are aligned. */
+  /** @name dxForm.Options.alignItemLabelsInAllGroups */
   var alignItemLabelsInAllGroups: js.UndefOr[Boolean] = js.undefined
-  /** The count of columns in the form layout. */
+  /** @name dxForm.Options.colCount */
   var colCount: js.UndefOr[Double | auto] = js.undefined
-  /** Specifies dependency between the screen factor and the count of columns in the form layout. */
+  /** @name dxForm.Options.colCountByScreen */
   var colCountByScreen: js.UndefOr[js.Any] = js.undefined
-  /** Specifies a function that customizes a form item after it has been created. */
+  /** @name dxForm.Options.customizeItem */
   var customizeItem: js.UndefOr[
     js.Function1[
       /* item */ dxFormSimpleItem | dxFormGroupItem | dxFormTabbedItem | dxFormEmptyItem | dxFormButtonItem, 
       _
     ]
   ] = js.undefined
-  /** Provides the Form's data. Gets updated every time form fields change. */
+  /** @name dxForm.Options.formData */
   var formData: js.UndefOr[js.Any] = js.undefined
-  /** Holds an array of form items. */
+  /** @name dxForm.Options.items */
   var items: js.UndefOr[
     js.Array[
       dxFormSimpleItem | dxFormGroupItem | dxFormTabbedItem | dxFormEmptyItem | dxFormButtonItem
     ]
   ] = js.undefined
-  /** Specifies the location of a label against the editor. */
+  /** @name dxForm.Options.labelLocation */
   var labelLocation: js.UndefOr[left | right | top] = js.undefined
-  /** The minimum column width used for calculating column count in the form layout. */
+  /** @name dxForm.Options.minColWidth */
   var minColWidth: js.UndefOr[Double] = js.undefined
-  /** A function that is executed when the Enter key has been pressed while an editor is focused. */
+  /** @name dxForm.Options.onEditorEnterKey */
   var onEditorEnterKey: js.UndefOr[js.Function1[/* e */ AnonComponentDataField, _]] = js.undefined
-  /** A function that is executed when the value of a formData object field is changed. */
+  /** @name dxForm.Options.onFieldDataChanged */
   var onFieldDataChanged: js.UndefOr[js.Function1[/* e */ AnonDataFieldElement, _]] = js.undefined
-  /** The text displayed for optional fields. */
+  /** @name dxForm.Options.optionalMark */
   var optionalMark: js.UndefOr[String] = js.undefined
-  /** Specifies whether all editors on the form are read-only. Applies only to non-templated items. */
+  /** @name dxForm.Options.readOnly */
   var readOnly: js.UndefOr[Boolean] = js.undefined
-  /** The text displayed for required fields. */
+  /** @name dxForm.Options.requiredMark */
   var requiredMark: js.UndefOr[String] = js.undefined
-  /** Specifies the message that is shown for end-users if a required field value is not specified. */
+  /** @name dxForm.Options.requiredMessage */
   var requiredMessage: js.UndefOr[String] = js.undefined
-  /** Specifies a function that categorizes screens by their width. */
+  /** @name dxForm.Options.screenByWidth */
   var screenByWidth: js.UndefOr[js.Function] = js.undefined
-  /** A Boolean value specifying whether to enable or disable form scrolling. */
+  /** @name dxForm.Options.scrollingEnabled */
   var scrollingEnabled: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether or not a colon is displayed at the end of form labels. */
+  /** @name dxForm.Options.showColonAfterLabel */
   var showColonAfterLabel: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether or not the optional mark is displayed for optional fields. */
+  /** @name dxForm.Options.showOptionalMark */
   var showOptionalMark: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether or not the required mark is displayed for required fields. */
+  /** @name dxForm.Options.showRequiredMark */
   var showRequiredMark: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether or not the total validation summary is displayed on the form. */
+  /** @name dxForm.Options.showValidationSummary */
   var showValidationSummary: js.UndefOr[Boolean] = js.undefined
-  /** Gives a name to the internal validation group. */
+  /** @name dxForm.Options.validationGroup */
   var validationGroup: js.UndefOr[String] = js.undefined
 }
 

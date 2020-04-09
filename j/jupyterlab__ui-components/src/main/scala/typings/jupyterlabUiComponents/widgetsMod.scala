@@ -1,6 +1,7 @@
 package typings.jupyterlabUiComponents
 
-import typings.luminoWidgets.dockpanelMod.DockPanel.IOptions
+import typings.luminoWidgets.contextmenuMod.ContextMenu.IOptions
+import typings.luminoWidgets.mod.Menu
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +10,17 @@ import scala.scalajs.js.annotation._
 @js.native
 object widgetsMod extends js.Object {
   @js.native
+  class ContextMenuSvg protected ()
+    extends typings.jupyterlabUiComponents.menusvgMod.ContextMenuSvg {
+    /**
+      * Construct a new context menu.
+      *
+      * @param options - The options for initializing the menu.
+      */
+    def this(options: IOptions) = this()
+  }
+  
+  @js.native
   /**
     * Construct a new dock panel.
     *
@@ -16,7 +28,7 @@ object widgetsMod extends js.Object {
     */
   class DockPanelSvg ()
     extends typings.jupyterlabUiComponents.tabbarsvgMod.DockPanelSvg {
-    def this(options: IOptions) = this()
+    def this(options: typings.luminoWidgets.dockpanelMod.DockPanel.IOptions) = this()
   }
   
   @js.native
@@ -75,6 +87,7 @@ object widgetsMod extends js.Object {
       extends typings.jupyterlabUiComponents.menusvgMod.MenuSvg.Renderer
     
     val defaultRenderer: typings.jupyterlabUiComponents.menusvgMod.MenuSvg.Renderer = js.native
+    def overrideDefaultRenderer(menu: Menu): Unit = js.native
   }
   
   @js.native

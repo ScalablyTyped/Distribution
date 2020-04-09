@@ -19,7 +19,7 @@ trait SizeConstraintStatement extends js.Object {
     */
   var Size: typings.awsSdk.wafv2Mod.Size = js.native
   /**
-    * Text transformations eliminate some of the unusual formatting that attackers use in web requests in an effort to bypass detection. If you specify one or more transformations in a rule statement, AWS WAF performs all transformations on the content identified by FieldToMatch, starting from the lowest priority setting, before inspecting the content for a match.
+    * Text transformations eliminate some of the unusual formatting that attackers use in web requests in an effort to bypass detection. If you specify one or more transformations in a rule statement, AWS WAF performs all transformations on the content of the request component identified by FieldToMatch, starting from the lowest priority setting, before inspecting the content for a match.
     */
   var TextTransformations: typings.awsSdk.wafv2Mod.TextTransformations = js.native
 }

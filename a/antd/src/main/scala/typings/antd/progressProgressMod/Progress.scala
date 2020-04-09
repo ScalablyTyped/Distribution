@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 trait Progress
   extends Component[ProgressProps, js.Object, js.Any] {
   def getPercentNumber(): Double = js.native
-  def getProgressStatus(): normal | active | success | exception = js.native
+  def getProgressStatus(): success | normal | active | exception = js.native
   @JSName("renderProcessInfo")
   def renderProcessInfo_active(prefixCls: String, progressStatus: active): Element | Null = js.native
   @JSName("renderProcessInfo")

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "jest-jasmine2" : "25.1.0"
+      "jest-jasmine2" : "25.2.7"
     }
   ],
   "test-dependencies" : [
     {
-      "jest-jasmine2" : "25.1.0"
+      "jest-jasmine2" : "25.2.7"
     }
   ],
   "compile-devDependencies" : [

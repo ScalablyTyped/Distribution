@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-async" : "10.0.0"
+      "react-async" : "10.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "react-async" : "10.0.0"
+      "react-async" : "10.0.1"
     }
   ],
   "compile-devDependencies" : [

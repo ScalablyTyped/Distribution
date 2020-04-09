@@ -23,37 +23,37 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxMapOptions extends WidgetOptions[dxMap] {
-  /** Specifies whether the widget automatically adjusts center and zoom option values when adding a new marker or route, or if a new widget contains markers or routes by default. */
+  /** @name dxMap.Options.autoAdjust */
   var autoAdjust: js.UndefOr[Boolean] = js.undefined
-  /** An object, a string, or an array specifying which part of the map is displayed at the widget's center using coordinates. The widget can change this value if autoAdjust is enabled. */
+  /** @name dxMap.Options.center */
   var center: js.UndefOr[js.Any | String | js.Array[Double]] = js.undefined
-  /** Specifies whether or not map widget controls are available. */
+  /** @name dxMap.Options.controls */
   var controls: js.UndefOr[Boolean] = js.undefined
-  /** A key used to authenticate the application within the required map provider. */
+  /** @name dxMap.Options.key */
   var key: js.UndefOr[String | AnonBing] = js.undefined
-  /** A URL pointing to the custom icon to be used for map markers. */
+  /** @name dxMap.Options.markerIconSrc */
   var markerIconSrc: js.UndefOr[String] = js.undefined
-  /** An array of markers displayed on a map. */
+  /** @name dxMap.Options.markers */
   var markers: js.UndefOr[js.Array[AnonIconSrc]] = js.undefined
-  /** A function that is executed when any location on the map is clicked or tapped. */
+  /** @name dxMap.Options.onClick */
   var onClick: js.UndefOr[(js.Function1[/* e */ AnonJQueryEventLocation, _]) | String] = js.undefined
-  /** A function that is executed when a marker is created on the map. */
+  /** @name dxMap.Options.onMarkerAdded */
   var onMarkerAdded: js.UndefOr[js.Function1[/* e */ AnonOptions, _]] = js.undefined
-  /** A function that is executed when a marker is removed from the map. */
+  /** @name dxMap.Options.onMarkerRemoved */
   var onMarkerRemoved: js.UndefOr[js.Function1[/* e */ AnonModelOptions, _]] = js.undefined
-  /** A function that is executed when the map is ready. */
+  /** @name dxMap.Options.onReady */
   var onReady: js.UndefOr[js.Function1[/* e */ AnonOriginalMap, _]] = js.undefined
-  /** A function that is executed when a route is created on the map. */
+  /** @name dxMap.Options.onRouteAdded */
   var onRouteAdded: js.UndefOr[js.Function1[/* e */ AnonOriginalRoute, _]] = js.undefined
-  /** A function that is executed when a route is removed from the map. */
+  /** @name dxMap.Options.onRouteRemoved */
   var onRouteRemoved: js.UndefOr[js.Function1[/* e */ AnonModelOptions, _]] = js.undefined
-  /** The name of the current map data provider. */
+  /** @name dxMap.Options.provider */
   var provider: js.UndefOr[bing | google | googleStatic] = js.undefined
-  /** An array of routes shown on the map. */
+  /** @name dxMap.Options.routes */
   var routes: js.UndefOr[js.Array[AnonColor]] = js.undefined
-  /** The type of a map to display. */
+  /** @name dxMap.Options.type */
   var `type`: js.UndefOr[hybrid | roadmap | satellite] = js.undefined
-  /** The map's zoom level. The widget can change this value if autoAdjust is enabled. */
+  /** @name dxMap.Options.zoom */
   var zoom: js.UndefOr[Double] = js.undefined
 }
 

@@ -52,6 +52,7 @@ object KeyboardAvoidingViewProps {
     accessibilityState: AccessibilityState = null,
     accessibilityStates: js.Array[AccessibilityStates] = null,
     accessibilityTraits: AccessibilityTrait | js.Array[AccessibilityTrait] = null,
+    accessibilityValue: AccessibilityValue = null,
     accessibilityViewIsModal: js.UndefOr[Boolean] = js.undefined,
     accessible: js.UndefOr[Boolean] = js.undefined,
     behavior: height | position | padding = null,
@@ -111,6 +112,7 @@ object KeyboardAvoidingViewProps {
     if (accessibilityState != null) __obj.updateDynamic("accessibilityState")(accessibilityState.asInstanceOf[js.Any])
     if (accessibilityStates != null) __obj.updateDynamic("accessibilityStates")(accessibilityStates.asInstanceOf[js.Any])
     if (accessibilityTraits != null) __obj.updateDynamic("accessibilityTraits")(accessibilityTraits.asInstanceOf[js.Any])
+    if (accessibilityValue != null) __obj.updateDynamic("accessibilityValue")(accessibilityValue.asInstanceOf[js.Any])
     if (!js.isUndefined(accessibilityViewIsModal)) __obj.updateDynamic("accessibilityViewIsModal")(accessibilityViewIsModal.asInstanceOf[js.Any])
     if (!js.isUndefined(accessible)) __obj.updateDynamic("accessible")(accessible.asInstanceOf[js.Any])
     if (behavior != null) __obj.updateDynamic("behavior")(behavior.asInstanceOf[js.Any])

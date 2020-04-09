@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-// http://foundation.zurb.com/sites/docs/abide.html#javascript-reference
+// https://get.foundation/sites/docs/abide.html#javascript-reference
 trait Abide extends js.Object {
   def addErrorClasses(element: JQuery): Unit
   def destroy(): Unit

@@ -25,6 +25,12 @@ trait Optionsasyncfalseclienttr extends js.Object {
   	 */
   var async: js.UndefOr[Boolean with `false`] = js.undefined
   /**
+  	 * Make sure to set this to 'false' in order to skip UglifyJS parsing,
+  	 * when using ES6 features (`const`, etc) as UglifyJS doesn't understand them.
+  	 * @default true
+  	 */
+  var beautify: js.UndefOr[Boolean] = js.undefined
+  /**
   	 * Whether or not to enable caching of template functions. Beware that
   	 * the options of compilation are not checked as being the same, so
   	 * special handling is required if, for example, you want to cache client
@@ -143,6 +149,7 @@ object Optionsasyncfalseclienttr {
   def apply(
     _with: js.UndefOr[Boolean] = js.undefined,
     async: js.UndefOr[Boolean with `false`] = js.undefined,
+    beautify: js.UndefOr[Boolean] = js.undefined,
     cache: js.UndefOr[Boolean] = js.undefined,
     client: js.UndefOr[Boolean with `true`] = js.undefined,
     closeDelimiter: String = null,
@@ -163,6 +170,7 @@ object Optionsasyncfalseclienttr {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(_with)) __obj.updateDynamic("_with")(_with.asInstanceOf[js.Any])
     if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
+    if (!js.isUndefined(beautify)) __obj.updateDynamic("beautify")(beautify.asInstanceOf[js.Any])
     if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
     if (!js.isUndefined(client)) __obj.updateDynamic("client")(client.asInstanceOf[js.Any])
     if (closeDelimiter != null) __obj.updateDynamic("closeDelimiter")(closeDelimiter.asInstanceOf[js.Any])

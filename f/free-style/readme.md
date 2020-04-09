@@ -1,7 +1,7 @@
 
 # Scala.js typings for free-style
 
-Typings are for version 2.6.1
+Typings are for version 3.1.0
 
 ## Library description:
 Make CSS easier and more maintainable by using JavaScript

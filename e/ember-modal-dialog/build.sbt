@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "ember-modal-dialog"
-version := "3.0-dt-20200227Z-26de27"
+version := "3.0-dt-20200328Z-78c66d"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "ember__component" % "3.0-dt-20191126Z-bfa4c7",
-  "org.scalablytyped" %%% "ember__object" % "3.1-dt-20200225Z-2bba69",
-  "org.scalablytyped" %%% "jquery" % "3.3-dt-20200225Z-e64e66",
+  "org.scalablytyped" %%% "ember__component" % "3.0-dt-20200328Z-82fc93",
+  "org.scalablytyped" %%% "ember__object" % "3.1-dt-20200328Z-2bba69",
+  "org.scalablytyped" %%% "jquery" % "3.3-dt-20200326Z-2318d7",
   "org.scalablytyped" %%% "rsvp" % "4.0-dt-20200225Z-c58757",
   "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-3d9ead",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")

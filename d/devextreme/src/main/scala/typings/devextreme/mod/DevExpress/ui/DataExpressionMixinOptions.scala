@@ -10,11 +10,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DataExpressionMixinOptions[T] extends js.Object {
-  /** Binds the widget to data. */
+  /** @name DataExpressionMixin.Options.dataSource */
   var dataSource: js.UndefOr[String | (js.Array[CollectionWidgetItem | _]) | DataSource | DataSourceOptions] = js.undefined
-  /** Specifies the data field whose values should be displayed. */
+  /** @name DataExpressionMixin.Options.displayExpr */
   var displayExpr: js.UndefOr[String | (js.Function1[/* item */ js.Any, String])] = js.undefined
-  /** Specifies a custom template for items. */
+  /** @name DataExpressionMixin.Options.itemTemplate */
   var itemTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function3[
       /* itemData */ js.Any, 
@@ -23,11 +23,11 @@ trait DataExpressionMixinOptions[T] extends js.Object {
       String | Element | JQuery
     ])
   ] = js.undefined
-  /** An array of items displayed by the widget. */
+  /** @name DataExpressionMixin.Options.items */
   var items: js.UndefOr[js.Array[CollectionWidgetItem | _]] = js.undefined
-  /** Specifies the currently selected value. May be an object if dataSource contains objects and valueExpr is not set. */
+  /** @name DataExpressionMixin.Options.value */
   var value: js.UndefOr[js.Any] = js.undefined
-  /** Specifies which data field provides unique values to the widget's value. */
+  /** @name DataExpressionMixin.Options.valueExpr */
   var valueExpr: js.UndefOr[String | (js.Function1[/* item */ js.Any, String | Double | Boolean])] = js.undefined
 }
 

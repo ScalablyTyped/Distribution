@@ -24,29 +24,29 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxDrawerOptions extends WidgetOptions[dxDrawer] {
-  /** Specifies the duration of the drawer's opening and closing animation (in milliseconds). Applies only if animationEnabled is true. */
+  /** @name dxDrawer.Options.animationDuration */
   var animationDuration: js.UndefOr[Double] = js.undefined
-  /** Specifies whether to use an opening and closing animation. */
+  /** @name dxDrawer.Options.animationEnabled */
   var animationEnabled: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether to close the drawer if a user clicks or taps the view area. */
+  /** @name dxDrawer.Options.closeOnOutsideClick */
   var closeOnOutsideClick: js.UndefOr[Boolean | (js.Function1[/* event */ event, Boolean])] = js.undefined
-  /** Specifies the drawer's width or height (depending on the drawer's position) in the opened state. */
+  /** @name dxDrawer.Options.maxSize */
   var maxSize: js.UndefOr[Double] = js.undefined
-  /** Specifies the drawer's width or height (depending on the drawer's position) in the closed state. */
+  /** @name dxDrawer.Options.minSize */
   var minSize: js.UndefOr[Double] = js.undefined
-  /** Specifies whether the drawer is opened. */
+  /** @name dxDrawer.Options.opened */
   var opened: js.UndefOr[Boolean] = js.undefined
-  /** Specifies how the drawer interacts with the view in the opened state. */
+  /** @name dxDrawer.Options.openedStateMode */
   var openedStateMode: js.UndefOr[overlap | shrink | push] = js.undefined
-  /** Specifies the drawer's position in relation to the view. */
+  /** @name dxDrawer.Options.position */
   var position: js.UndefOr[left | right | top | bottom | before | after] = js.undefined
-  /** Specifies the drawer's reveal mode. */
+  /** @name dxDrawer.Options.revealMode */
   var revealMode: js.UndefOr[slide | expand] = js.undefined
-  /** Specifies whether to shade the view when the drawer is opened. */
+  /** @name dxDrawer.Options.shading */
   var shading: js.UndefOr[Boolean] = js.undefined
-  /** Specifies a CSS selector for the element in which the drawer should be rendered. Applies only when the openedStateMode is "overlap". */
+  /** @name dxDrawer.Options.target */
   var target: js.UndefOr[String | Element | JQuery] = js.undefined
-  /** Specifies the drawer's content. */
+  /** @name dxDrawer.Options.template */
   var template: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function1[/* Element */ dxElement, _])
   ] = js.undefined

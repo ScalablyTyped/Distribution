@@ -19,7 +19,7 @@ trait TopicRuleElasticsearch extends js.Object {
     */
   var index: String = js.native
   /**
-    * The ARN of the IAM role that grants access.
+    * The IAM role ARN that has access to Elasticsearch.
     */
   var roleArn: String = js.native
   /**

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object startGeofencingAsync extends js.Object {
   def apply(taskName: String): js.Promise[Unit] = js.native
-  def apply(taskName: String, regions: js.Array[Region]): js.Promise[Unit] = js.native
+  def apply(taskName: String, regions: js.Array[LocationRegion]): js.Promise[Unit] = js.native
 }
 

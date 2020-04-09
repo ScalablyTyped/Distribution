@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "jest-leak-detector" : "25.1.0"
+      "jest-leak-detector" : "25.2.6"
     }
   ],
   "test-dependencies" : [
     {
-      "jest-leak-detector" : "25.1.0"
+      "jest-leak-detector" : "25.2.6"
     }
   ],
   "compile-devDependencies" : [

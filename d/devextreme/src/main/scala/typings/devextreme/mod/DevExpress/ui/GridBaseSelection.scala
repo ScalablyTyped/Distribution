@@ -8,9 +8,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GridBaseSelection extends js.Object {
-  /** Specifies whether a user can select all rows at once. */
+  /** @name GridBase.Options.selection.allowSelectAll */
   var allowSelectAll: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the selection mode. */
+  /** @name GridBase.Options.selection.mode */
   var mode: js.UndefOr[multiple | none | single_] = js.undefined
 }
 

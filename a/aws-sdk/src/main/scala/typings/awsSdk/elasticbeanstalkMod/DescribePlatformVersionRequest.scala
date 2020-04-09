@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DescribePlatformVersionRequest extends js.Object {
   /**
-    * The ARN of the version of the platform.
+    * The ARN of the platform version.
     */
   var PlatformArn: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.PlatformArn] = js.native
 }

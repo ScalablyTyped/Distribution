@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
   - typings.rcPicker.rcPickerStrings.date
   - typings.rcPicker.rcPickerStrings.week
   - typings.rcPicker.rcPickerStrings.month
+  - typings.rcPicker.rcPickerStrings.quarter
   - typings.rcPicker.rcPickerStrings.year
   - typings.rcPicker.rcPickerStrings.decade
 */
@@ -23,6 +24,8 @@ object PanelMode {
   def decade: typings.rcPicker.rcPickerStrings.decade = this.cast("decade")
   @scala.inline
   def month: typings.rcPicker.rcPickerStrings.month = this.cast("month")
+  @scala.inline
+  def quarter: typings.rcPicker.rcPickerStrings.quarter = this.cast("quarter")
   @scala.inline
   def time: typings.rcPicker.rcPickerStrings.time = this.cast("time")
   @scala.inline

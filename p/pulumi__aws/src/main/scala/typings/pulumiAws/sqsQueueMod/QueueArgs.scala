@@ -44,6 +44,9 @@ trait QueueArgs extends js.Object {
     * Creates a unique name beginning with the specified prefix. Conflicts with `name`.
     */
   val namePrefix: js.UndefOr[Input[String]] = js.native
+  /**
+    * The JSON policy for the SQS queue.
+    */
   val policy: js.UndefOr[Input[String]] = js.native
   /**
     * The time for which a ReceiveMessage call will wait for a message to arrive (long polling) before returning. An integer from 0 to 20 (seconds). The default for this attribute is 0, meaning that the call will return immediately.

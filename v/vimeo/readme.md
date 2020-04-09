@@ -1,6 +1,7 @@
 
 # Scala.js typings for vimeo
 
+Typings are for version 2.1
 
 ## Library description:
 A Node.js library for the new Vimeo API.

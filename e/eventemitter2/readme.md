@@ -1,7 +1,7 @@
 
 # Scala.js typings for eventemitter2
 
-Typings are for version 6.2.1
+Typings are for version 6.3.1
 
 ## Library description:
 A Node.js event emitter implementation with namespaces, wildcards, TTL and browser support.

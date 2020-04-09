@@ -26,6 +26,13 @@ trait Secret extends js.Object {
     */
   val data: js.Object
   /**
+    * Immutable, if set to true, ensures that data stored in the Secret cannot be updated (only
+    * object metadata can be modified). If not set to true, the field can be modified at any
+    * time. Defaulted to nil. This is an alpha field enabled by ImmutableEphemeralVolumes feature
+    * gate.
+    */
+  val immutable: Boolean
+  /**
     * Kind is a string value representing the REST resource this object represents. Servers may
     * infer this from the endpoint the client submits requests to. Cannot be updated. In
     * CamelCase. More info:
@@ -54,12 +61,13 @@ object Secret {
   def apply(
     apiVersion: typings.pulumiKubernetes.pulumiKubernetesStrings.v1,
     data: js.Object,
+    immutable: Boolean,
     kind: typings.pulumiKubernetes.pulumiKubernetesStrings.Secret,
     metadata: ObjectMeta,
     stringData: StringDictionary[String],
     `type`: String
   ): Secret = {
-    val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], stringData = stringData.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], immutable = immutable.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], stringData = stringData.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Secret]
   }

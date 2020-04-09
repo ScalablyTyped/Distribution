@@ -4,6 +4,7 @@ import typings.blueprintjsTable.gridMod.Grid
 import typings.blueprintjsTable.tableQuadrantMod.QuadrantType
 import typings.react.mod.CSSProperties
 import typings.react.mod.EventHandler
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.UIEvent
 import typings.react.mod.WheelEvent
 import typings.react.mod._Global_.JSX.Element
@@ -29,7 +30,7 @@ trait PartialITableQuadrantProp extends js.Object {
   var enableRowHeader: js.UndefOr[Boolean] = js.undefined
   var grid: js.UndefOr[Grid] = js.undefined
   var menuRenderer: js.UndefOr[js.Function0[Element]] = js.undefined
-  var onScroll: js.UndefOr[EventHandler[UIEvent[HTMLDivElement]]] = js.undefined
+  var onScroll: js.UndefOr[EventHandler[UIEvent[HTMLDivElement, NativeUIEvent]]] = js.undefined
   var onWheel: js.UndefOr[EventHandler[WheelEvent[HTMLDivElement]]] = js.undefined
   var quadrantRef: js.UndefOr[js.Function1[/* ref */ HTMLElement | Null, _]] = js.undefined
   var quadrantType: js.UndefOr[QuadrantType] = js.undefined
@@ -48,7 +49,7 @@ object PartialITableQuadrantProp {
     enableRowHeader: js.UndefOr[Boolean] = js.undefined,
     grid: Grid = null,
     menuRenderer: () => Element = null,
-    onScroll: UIEvent[HTMLDivElement] => Unit = null,
+    onScroll: UIEvent[HTMLDivElement, NativeUIEvent] => Unit = null,
     onWheel: WheelEvent[HTMLDivElement] => Unit = null,
     quadrantRef: /* ref */ HTMLElement | Null => _ = null,
     quadrantType: QuadrantType = null,

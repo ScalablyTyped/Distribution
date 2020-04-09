@@ -37,6 +37,7 @@ import typings.antd.antdStrings.text
 import typings.antd.antdStrings.time
 import typings.antd.antdStrings.tree
 import typings.antd.antdStrings.vertical
+import typings.antd.generatePickerMod.PickerLocale
 import typings.antd.sizeContextMod.SizeType
 import typings.moment.mod.Moment
 import typings.rcPicker.dateBodyMod.DateRender
@@ -44,7 +45,6 @@ import typings.rcPicker.interfaceMod.OnPanelChange
 import typings.rcPicker.interfaceMod.PanelMode
 import typings.rcPicker.monthBodyMod.MonthCellRender
 import typings.rcPicker.pickerMod.PickerRefConfig
-import typings.rcTrigger.interfaceMod.AlignType
 import typings.react.mod.CSSProperties
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.Key
@@ -135,7 +135,13 @@ trait WeakValidationMapTimePick extends js.Object {
       js.UndefOr[(js.Function2[/* hour */ Double, /* minute */ Double, js.Array[Double]]) | Null]
     ]
   ] = js.undefined
-  var dropdownAlign: js.UndefOr[Validator[js.UndefOr[AlignType | Null]]] = js.undefined
+  var dropdownAlign: js.UndefOr[
+    Validator[
+      js.UndefOr[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AlignType */ _) | Null
+      ]
+    ]
+  ] = js.undefined
   var dropdownClassName: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var format: js.UndefOr[Validator[js.UndefOr[js.Array[String] | Null | String]]] = js.undefined
   var getPopupContainer: js.UndefOr[
@@ -145,7 +151,7 @@ trait WeakValidationMapTimePick extends js.Object {
   var hourStep: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   var inputReadOnly: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   var key: js.UndefOr[Validator[js.UndefOr[Key | Null]]] = js.undefined
-  var locale: js.UndefOr[Validator[js.UndefOr[AnonLang | Null]]] = js.undefined
+  var locale: js.UndefOr[Validator[js.UndefOr[Null | PickerLocale]]] = js.undefined
   var minuteStep: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   var mode: js.UndefOr[Validator[js.UndefOr[Null | PanelMode]]] = js.undefined
   var monthCellRender: js.UndefOr[Validator[js.UndefOr[MonthCellRender[Moment] | Null]]] = js.undefined
@@ -256,7 +262,11 @@ object WeakValidationMapTimePick {
     disabledSeconds: Validator[
       js.UndefOr[(js.Function2[/* hour */ Double, /* minute */ Double, js.Array[Double]]) | Null]
     ] = null,
-    dropdownAlign: Validator[js.UndefOr[AlignType | Null]] = null,
+    dropdownAlign: Validator[
+      js.UndefOr[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AlignType */ _) | Null
+      ]
+    ] = null,
     dropdownClassName: Validator[js.UndefOr[Null | String]] = null,
     format: Validator[js.UndefOr[js.Array[String] | Null | String]] = null,
     getPopupContainer: Validator[js.UndefOr[(js.Function1[/* node */ HTMLElement, HTMLElement]) | Null]] = null,
@@ -264,7 +274,7 @@ object WeakValidationMapTimePick {
     hourStep: Validator[js.UndefOr[Double | Null]] = null,
     inputReadOnly: Validator[js.UndefOr[Boolean | Null]] = null,
     key: Validator[js.UndefOr[Key | Null]] = null,
-    locale: Validator[js.UndefOr[AnonLang | Null]] = null,
+    locale: Validator[js.UndefOr[Null | PickerLocale]] = null,
     minuteStep: Validator[js.UndefOr[Double | Null]] = null,
     mode: Validator[js.UndefOr[Null | PanelMode]] = null,
     monthCellRender: Validator[js.UndefOr[MonthCellRender[Moment] | Null]] = null,

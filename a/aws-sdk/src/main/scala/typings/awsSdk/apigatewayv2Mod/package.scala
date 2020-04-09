@@ -60,7 +60,7 @@ package object apigatewayv2Mod {
   type Id = java.lang.String
   type IdentitySourceList = js.Array[typings.awsSdk.apigatewayv2Mod.string]
   type IntegerWithLengthBetween0And3600 = scala.Double
-  type IntegerWithLengthBetween50And29000 = scala.Double
+  type IntegerWithLengthBetween50And30000 = scala.Double
   type IntegerWithLengthBetweenMinus1And86400 = scala.Double
   type IntegrationParameters = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.apigatewayv2Mod.StringWithLengthBetween1And512]
   /* Rewritten from type alias, can be one of: 

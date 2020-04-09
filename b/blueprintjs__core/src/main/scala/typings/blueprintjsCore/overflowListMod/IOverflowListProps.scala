@@ -52,7 +52,7 @@ trait IOverflowListProps[T] extends IProps {
     * @default "div"
     */
   var tagName: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any
   ] = js.undefined
   /**
     * Callback invoked to render the overflowed items. Unlike
@@ -82,7 +82,7 @@ object IOverflowListProps {
     observeParents: js.UndefOr[Boolean] = js.undefined,
     onOverflow: /* overflowItems */ js.Array[T] => Unit = null,
     style: CSSProperties = null,
-    tagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any = null
+    tagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any = null
   ): IOverflowListProps[T] = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], overflowRenderer = js.Any.fromFunction1(overflowRenderer), visibleItemRenderer = js.Any.fromFunction2(visibleItemRenderer))
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])

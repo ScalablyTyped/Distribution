@@ -1,5 +1,6 @@
 package typings.mailparser.mod
 
+import typings.mailparser.mailparserBooleans.`false`
 import typings.mailparser.mailparserStrings.high
 import typings.mailparser.mailparserStrings.low
 import typings.mailparser.mailparserStrings.normal
@@ -15,7 +16,7 @@ trait ParsedMail extends js.Object {
   /**
   	 * An array of attachments.
   	 */
-  var attachments: js.UndefOr[js.Array[Attachment]] = js.undefined
+  var attachments: js.Array[Attachment]
   /**
   	 * An address object for the `Bcc:` header (usually not present).
   	 */
@@ -31,7 +32,7 @@ trait ParsedMail extends js.Object {
   /**
   	 * An address object for the `From:` header.
   	 */
-  var from: AddressObject
+  var from: js.UndefOr[AddressObject] = js.undefined
   /**
   	 * An array of raw header lines
   	 */
@@ -53,7 +54,7 @@ trait ParsedMail extends js.Object {
   	 * If the message included embedded images as cid: urls then these are all
   	 * replaced with base64 formatted data: URIs.
   	 */
-  var html: String | Boolean
+  var html: String | `false`
   /**
   	 * The In-Reply-To value string.
   	 */
@@ -79,52 +80,56 @@ trait ParsedMail extends js.Object {
   /**
   	 * The subject line.
   	 */
-  var subject: String
+  var subject: js.UndefOr[String] = js.undefined
   /**
   	 * The plaintext body of the message.
   	 */
-  var text: String
+  var text: js.UndefOr[String] = js.undefined
   /**
   	 * The plaintext body of the message formatted as HTML.
   	 */
-  var textAsHtml: String
+  var textAsHtml: js.UndefOr[String] = js.undefined
   /**
   	 * An address object for the `To:` header.
   	 */
-  var to: AddressObject
+  var to: js.UndefOr[AddressObject] = js.undefined
 }
 
 object ParsedMail {
   @scala.inline
   def apply(
-    from: AddressObject,
+    attachments: js.Array[Attachment],
     headerLines: HeaderLines,
     headers: Headers,
-    html: String | Boolean,
-    subject: String,
-    text: String,
-    textAsHtml: String,
-    to: AddressObject,
-    attachments: js.Array[Attachment] = null,
+    html: String | `false`,
     bcc: AddressObject = null,
     cc: AddressObject = null,
     date: Date = null,
+    from: AddressObject = null,
     inReplyTo: String = null,
     messageId: String = null,
     priority: normal | low | high = null,
     references: js.Array[String] = null,
-    replyTo: AddressObject = null
+    replyTo: AddressObject = null,
+    subject: String = null,
+    text: String = null,
+    textAsHtml: String = null,
+    to: AddressObject = null
   ): ParsedMail = {
-    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], headerLines = headerLines.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], textAsHtml = textAsHtml.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
-    if (attachments != null) __obj.updateDynamic("attachments")(attachments.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(attachments = attachments.asInstanceOf[js.Any], headerLines = headerLines.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any])
     if (bcc != null) __obj.updateDynamic("bcc")(bcc.asInstanceOf[js.Any])
     if (cc != null) __obj.updateDynamic("cc")(cc.asInstanceOf[js.Any])
     if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
     if (inReplyTo != null) __obj.updateDynamic("inReplyTo")(inReplyTo.asInstanceOf[js.Any])
     if (messageId != null) __obj.updateDynamic("messageId")(messageId.asInstanceOf[js.Any])
     if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
     if (references != null) __obj.updateDynamic("references")(references.asInstanceOf[js.Any])
     if (replyTo != null) __obj.updateDynamic("replyTo")(replyTo.asInstanceOf[js.Any])
+    if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (textAsHtml != null) __obj.updateDynamic("textAsHtml")(textAsHtml.asInstanceOf[js.Any])
+    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParsedMail]
   }
 }

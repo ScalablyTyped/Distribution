@@ -37,9 +37,6 @@ object angularCoreStrings {
   sealed trait DOCUMENT extends js.Object
   
   @js.native
-  sealed trait Directive extends js.Object
-  
-  @js.native
   sealed trait HTML extends ɵBypassType
   
   @js.native
@@ -168,8 +165,6 @@ object angularCoreStrings {
   def `Brand for PlayerFactory that nothing will match`: `Brand for PlayerFactory that nothing will match` = "Brand for PlayerFactory that nothing will match".asInstanceOf[`Brand for PlayerFactory that nothing will match`]
   @scala.inline
   def DOCUMENT: DOCUMENT = "DOCUMENT".asInstanceOf[DOCUMENT]
-  @scala.inline
-  def Directive: Directive = "Directive".asInstanceOf[Directive]
   @scala.inline
   def HTML: HTML = "HTML".asInstanceOf[HTML]
   @scala.inline

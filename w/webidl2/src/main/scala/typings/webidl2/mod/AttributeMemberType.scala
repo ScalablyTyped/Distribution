@@ -18,6 +18,8 @@ trait AttributeMemberType
   var inherit: Boolean
   /** The attribute's name. */
   var name: String
+  /** The container of this type. */
+  var parent: InterfaceType | InterfaceMixinType | NamespaceType
   /** True if it's a read-only attribute. */
   var readonly: Boolean
   /** Special modifier if exists */
@@ -32,11 +34,12 @@ object AttributeMemberType {
     idlType: IDLTypeDescription,
     inherit: Boolean,
     name: String,
+    parent: InterfaceType | InterfaceMixinType | NamespaceType,
     readonly: Boolean,
     special: static | stringifier,
     `type`: attribute
   ): AttributeMemberType = {
-    val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], idlType = idlType.asInstanceOf[js.Any], inherit = inherit.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], readonly = readonly.asInstanceOf[js.Any], special = special.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], idlType = idlType.asInstanceOf[js.Any], inherit = inherit.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], readonly = readonly.asInstanceOf[js.Any], special = special.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttributeMemberType]
   }

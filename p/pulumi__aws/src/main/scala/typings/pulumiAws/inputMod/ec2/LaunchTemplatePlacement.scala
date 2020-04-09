@@ -7,11 +7,29 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait LaunchTemplatePlacement extends js.Object {
+  /**
+    * The affinity setting for an instance on a Dedicated Host.
+    */
   var affinity: js.UndefOr[Input[String]] = js.native
+  /**
+    * The Availability Zone for the instance.
+    */
   var availabilityZone: js.UndefOr[Input[String]] = js.native
+  /**
+    * The name of the placement group for the instance.
+    */
   var groupName: js.UndefOr[Input[String]] = js.native
+  /**
+    * The ID of the Dedicated Host for the instance.
+    */
   var hostId: js.UndefOr[Input[String]] = js.native
+  /**
+    * Reserved for future use.
+    */
   var spreadDomain: js.UndefOr[Input[String]] = js.native
+  /**
+    * The tenancy of the instance (if the instance is running in a VPC). Can be `default`, `dedicated`, or `host`.
+    */
   var tenancy: js.UndefOr[Input[String]] = js.native
 }
 

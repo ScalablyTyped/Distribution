@@ -15,11 +15,11 @@ trait AnonGetForRepo extends js.Object {
     * Similar to [the repository contents API](https://developer.github.com/v3/repos/contents/#get-contents), this method also supports [custom media types](https://developer.github.com/v3/repos/contents/#custom-media-types) for retrieving the raw license content or rendered license HTML.
     */
   @JSName("getForRepo")
-  var getForRepo_Original: Anon182 = js.native
+  var getForRepo_Original: Anon193 = js.native
   @JSName("get")
-  var get_Original: Anon181 = js.native
+  var get_Original: Anon192 = js.native
   @JSName("listCommonlyUsed")
-  var listCommonlyUsed_Original: Anon29 = js.native
+  var listCommonlyUsed_Original: Anon25 = js.native
   def get(): js.Promise[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OctokitResponse<LicensesGetResponse> */ _
   ] = js.native

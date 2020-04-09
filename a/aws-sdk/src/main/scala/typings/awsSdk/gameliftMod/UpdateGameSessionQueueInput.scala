@@ -13,7 +13,7 @@ trait UpdateGameSessionQueueInput extends js.Object {
   /**
     * A descriptive label that is associated with game session queue. Queue names must be unique within each Region. You can use either the queue ID or ARN value. 
     */
-  var Name: GameSessionQueueName = js.native
+  var Name: GameSessionQueueNameOrArn = js.native
   /**
     * A collection of latency policies to apply when processing game sessions placement requests with player latency information. Multiple policies are evaluated in order of the maximum latency value, starting with the lowest latency values. With just one policy, the policy is enforced at the start of the game session placement for the duration period. With multiple policies, each policy is enforced consecutively for its duration period. For example, a queue might enforce a 60-second policy followed by a 120-second policy, and then no policy for the remainder of the placement. When updating policies, provide a complete collection of policies.
     */
@@ -27,7 +27,7 @@ trait UpdateGameSessionQueueInput extends js.Object {
 object UpdateGameSessionQueueInput {
   @scala.inline
   def apply(
-    Name: GameSessionQueueName,
+    Name: GameSessionQueueNameOrArn,
     Destinations: GameSessionQueueDestinationList = null,
     PlayerLatencyPolicies: PlayerLatencyPolicyList = null,
     TimeoutInSeconds: Int | scala.Double = null

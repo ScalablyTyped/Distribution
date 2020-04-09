@@ -9,12 +9,12 @@ trait RequestUploadCredentialsInput extends js.Object {
   /**
     * A unique identifier for a build to get credentials for. You can use either the build ID or ARN value. 
     */
-  var BuildId: typings.awsSdk.gameliftMod.BuildId = js.native
+  var BuildId: BuildIdOrArn = js.native
 }
 
 object RequestUploadCredentialsInput {
   @scala.inline
-  def apply(BuildId: BuildId): RequestUploadCredentialsInput = {
+  def apply(BuildId: BuildIdOrArn): RequestUploadCredentialsInput = {
     val __obj = js.Dynamic.literal(BuildId = BuildId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RequestUploadCredentialsInput]

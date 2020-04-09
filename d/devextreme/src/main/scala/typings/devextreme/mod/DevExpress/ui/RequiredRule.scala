@@ -14,11 +14,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RequiredRule extends js.Object {
-  /** Specifies the message that is shown if the rule is broken. */
+  /** @name RequiredRule.message */
   var message: js.UndefOr[String] = js.undefined
-  /** Indicates whether to remove the Space characters from the validated value. */
+  /** @name RequiredRule.trim */
   var trim: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the rule type. Set it to "required" to use the RequiredRule. */
+  /** @name RequiredRule.type */
   var `type`: js.UndefOr[
     required | numeric | range | stringLength | custom | compare | pattern | email | async
   ] = js.undefined

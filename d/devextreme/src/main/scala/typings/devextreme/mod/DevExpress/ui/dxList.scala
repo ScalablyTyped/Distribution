@@ -9,59 +9,59 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait dxList extends CollectionWidget {
-  /** Gets the widget's height in pixels. */
+  /** @name dxList.clientHeight() */
   def clientHeight(): Double = js.native
-  /** Collapses a group with a specific index. */
+  /** @name dxList.collapseGroup(groupIndex) */
   def collapseGroup(groupIndex: Double): Promise[Unit] with JQueryPromise[Unit] = js.native
-  /** Removes an item found using its DOM node. */
+  /** @name dxList.deleteItem(itemElement) */
   def deleteItem(itemElement: Element): Promise[Unit] with JQueryPromise[Unit] = js.native
   def deleteItem(itemIndex: js.Any): Promise[Unit] with JQueryPromise[Unit] = js.native
-  /** Removes an item with a specific index. */
+  /** @name dxList.deleteItem(itemIndex) */
   def deleteItem(itemIndex: Double): Promise[Unit] with JQueryPromise[Unit] = js.native
-  /** Expands a group with a specific index. */
+  /** @name dxList.expandGroup(groupIndex) */
   def expandGroup(groupIndex: Double): Promise[Unit] with JQueryPromise[Unit] = js.native
-  /** Checks whether an item found using its DOM node is selected. */
+  /** @name dxList.isItemSelected(itemElement) */
   def isItemSelected(itemElement: Element): Boolean = js.native
   def isItemSelected(itemIndex: js.Any): Boolean = js.native
-  /** Checks whether an item with a specific index is selected. */
+  /** @name dxList.isItemSelected(itemIndex) */
   def isItemSelected(itemIndex: Double): Boolean = js.native
-  /** Reloads list data. */
+  /** @name dxList.reload() */
   def reload(): Unit = js.native
-  /** Reorders items found using their DOM nodes. */
+  /** @name dxList.reorderItem(itemElement, toItemElement) */
   def reorderItem(itemElement: Element, toItemElement: Element): Promise[Unit] with JQueryPromise[Unit] = js.native
   def reorderItem(itemIndex: js.Any, toItemIndex: js.Any): Promise[Unit] with JQueryPromise[Unit] = js.native
   def reorderItem(itemIndex: js.Any, toItemIndex: Double): Promise[Unit] with JQueryPromise[Unit] = js.native
   def reorderItem(itemIndex: Double, toItemIndex: js.Any): Promise[Unit] with JQueryPromise[Unit] = js.native
-  /** Reorders items with specific indexes. */
+  /** @name dxList.reorderItem(itemIndex, toItemIndex) */
   def reorderItem(itemIndex: Double, toItemIndex: Double): Promise[Unit] with JQueryPromise[Unit] = js.native
-  /** Scrolls the content by a specified distance. */
+  /** @name dxList.scrollBy(distance) */
   def scrollBy(distance: Double): Unit = js.native
-  /** Gets the content's height in pixels. */
+  /** @name dxList.scrollHeight() */
   def scrollHeight(): Double = js.native
-  /** Scrolls the content to a specific position. */
+  /** @name dxList.scrollTo(location) */
   def scrollTo(location: Double): Unit = js.native
-  /** Scrolls the content to an item found using its DOM node. */
+  /** @name dxList.scrollToItem(itemElement) */
   def scrollToItem(itemElement: Element): Unit = js.native
   def scrollToItem(itemIndex: js.Any): Unit = js.native
-  /** Scrolls the content to an item with a specific index. */
+  /** @name dxList.scrollToItem(itemIndex) */
   def scrollToItem(itemIndex: Double): Unit = js.native
-  /** Gets the top scroll offset. */
+  /** @name dxList.scrollTop() */
   def scrollTop(): Double = js.native
-  /** Selects all items. */
+  /** @name dxList.selectAll() */
   def selectAll(): Unit = js.native
-  /** Selects an item found using its DOM node. */
+  /** @name dxList.selectItem(itemElement) */
   def selectItem(itemElement: Element): Unit = js.native
   def selectItem(itemIndex: js.Any): Unit = js.native
-  /** Selects an item with a specific index. */
+  /** @name dxList.selectItem(itemIndex) */
   def selectItem(itemIndex: Double): Unit = js.native
-  /** Cancels the selection of all items. */
+  /** @name dxList.unselectAll() */
   def unselectAll(): Unit = js.native
-  /** Cancels the selection of an item found using its DOM node. */
+  /** @name dxList.unselectItem(itemElement) */
   def unselectItem(itemElement: Element): Unit = js.native
   def unselectItem(itemIndex: js.Any): Unit = js.native
-  /** Cancels the selection of an item with a specific index. */
+  /** @name dxList.unselectItem(itemIndex) */
   def unselectItem(itemIndex: Double): Unit = js.native
-  /** Updates the widget scrollbar according to widget content size. */
+  /** @name dxList.updateDimensions() */
   def updateDimensions(): Promise[Unit] with JQueryPromise[Unit] = js.native
 }
 

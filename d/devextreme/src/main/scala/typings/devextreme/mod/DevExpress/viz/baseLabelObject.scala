@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait baseLabelObject extends js.Object {
-  /** Gets the parameters of the label's minimum bounding rectangle (MBR). */
+  /** @name baseLabelObject.getBoundingRect() */
   def getBoundingRect(): js.Any = js.native
-  /** Hides the point label. */
+  /** @name baseLabelObject.hide() */
   def hide(): Unit = js.native
-  /** Hides the point label and keeps it invisible until the show() method is called. */
+  /** @name baseLabelObject.hide(holdInvisible) */
   def hide(holdInvisible: Boolean): Unit = js.native
-  /** Checks whether the point label is visible. */
+  /** @name baseLabelObject.isVisible() */
   def isVisible(): Boolean = js.native
-  /** Shows the point label. */
+  /** @name baseLabelObject.show() */
   def show(): Unit = js.native
-  /** Shows the point label and keeps it visible until the hide() method is called. */
+  /** @name baseLabelObject.show(holdVisible) */
   def show(holdVisible: Boolean): Unit = js.native
 }
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait BucketLifecycleRuleNoncurrentVersionExpiration extends js.Object {
   /**
-    * The number of days that you want to specify for the default retention period.
+    * Specifies the number of days an object is noncurrent object versions expire.
     */
   var days: js.UndefOr[Double] = js.native
 }

@@ -5,9 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/**
-  * Map all nested selectors
-  */
 trait CSSSelectorObject
   extends /* cssSelector */ StringDictionary[SystemStyleObject]
      with _SystemStyleObject

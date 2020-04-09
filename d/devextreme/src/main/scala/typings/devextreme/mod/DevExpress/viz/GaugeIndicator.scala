@@ -35,7 +35,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GaugeIndicator extends CommonIndicator {
-  /** Specifies the type of gauge indicators. */
+  /** @name GaugeIndicator.type */
   var `type`: js.UndefOr[
     circle | rangeBar | rectangle | rectangleNeedle | rhombus | textCloud | triangleMarker | triangleNeedle | twoColorNeedle
   ] = js.undefined

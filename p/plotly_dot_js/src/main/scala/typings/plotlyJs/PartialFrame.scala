@@ -10,7 +10,7 @@ trait PartialFrame extends js.Object {
   var baseframe: js.UndefOr[String] = js.undefined
   var data: js.UndefOr[js.Array[Data]] = js.undefined
   var group: js.UndefOr[String] = js.undefined
-  var layout: js.UndefOr[PartialLayout] = js.undefined
+  var layout: js.UndefOr[PartialLayoutAngularaxis] = js.undefined
   var name: js.UndefOr[String] = js.undefined
   var traces: js.UndefOr[js.Array[Double]] = js.undefined
 }
@@ -21,7 +21,7 @@ object PartialFrame {
     baseframe: String = null,
     data: js.Array[Data] = null,
     group: String = null,
-    layout: PartialLayout = null,
+    layout: PartialLayoutAngularaxis = null,
     name: String = null,
     traces: js.Array[Double] = null
   ): PartialFrame = {

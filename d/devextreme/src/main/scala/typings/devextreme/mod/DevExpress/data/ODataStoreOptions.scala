@@ -12,28 +12,28 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ODataStoreOptions extends StoreOptions[ODataStore] {
-  /** Specifies a function that customizes the request before it is sent to the server. */
+  /** @name ODataStore.Options.beforeSend */
   var beforeSend: js.UndefOr[js.Function1[/* options */ AnonAsync, _]] = js.undefined
-  /** Specifies whether the store serializes/parses date-time values. */
+  /** @name ODataStore.Options.deserializeDates */
   var deserializeDates: js.UndefOr[Boolean] = js.undefined
-  /** Specifies a function that is executed when the ODataStore throws an error. */
+  /** @name ODataStore.Options.errorHandler */
   @JSName("errorHandler")
   var errorHandler_ODataStoreOptions: js.UndefOr[js.Function1[/* e */ AnonErrorDetails, _]] = js.undefined
-  /** Specifies the data field types. Accepts the following types: "String", "Int32", "Int64", "Boolean", "Single", "Decimal" and "Guid". */
+  /** @name ODataStore.Options.fieldTypes */
   var fieldTypes: js.UndefOr[js.Any] = js.undefined
-  /** Specifies whether to convert string values to lowercase in filter and search requests. Applies to the following operations: "startswith", "endswith", "contains", and "notcontains". */
+  /** @name ODataStore.Options.filterToLower */
   var filterToLower: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether data should be sent using JSONP. */
+  /** @name ODataStore.Options.jsonp */
   var jsonp: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the type of the key property or properties. */
+  /** @name ODataStore.Options.keyType */
   var keyType: js.UndefOr[
     String | Int32 | Int64 | typings.devextreme.devextremeStrings.Guid | typings.devextreme.devextremeStrings.Boolean | Single | Decimal | js.Any
   ] = js.undefined
-  /** Specifies the URL of an OData entity collection. */
+  /** @name ODataStore.Options.url */
   var url: js.UndefOr[java.lang.String] = js.undefined
-  /** Specifies the OData version. */
+  /** @name ODataStore.Options.version */
   var version: js.UndefOr[Double] = js.undefined
-  /** Specifies whether to send cookies, authorization headers, and client certificates in a cross-origin request. */
+  /** @name ODataStore.Options.withCredentials */
   var withCredentials: js.UndefOr[Boolean] = js.undefined
 }
 

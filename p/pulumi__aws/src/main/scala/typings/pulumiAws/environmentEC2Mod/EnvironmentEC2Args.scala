@@ -1,5 +1,6 @@
 package typings.pulumiAws.environmentEC2Mod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -31,6 +32,10 @@ trait EnvironmentEC2Args extends js.Object {
     * The ID of the subnet in Amazon VPC that AWS Cloud9 will use to communicate with the Amazon EC2 instance.
     */
   val subnetId: js.UndefOr[Input[String]] = js.native
+  /**
+    * Key-value mapping of resource tags
+    */
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 
 object EnvironmentEC2Args {
@@ -41,7 +46,8 @@ object EnvironmentEC2Args {
     description: Input[String] = null,
     name: Input[String] = null,
     ownerArn: Input[String] = null,
-    subnetId: Input[String] = null
+    subnetId: Input[String] = null,
+    tags: Input[StringDictionary[_]] = null
   ): EnvironmentEC2Args = {
     val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any])
     if (automaticStopTimeMinutes != null) __obj.updateDynamic("automaticStopTimeMinutes")(automaticStopTimeMinutes.asInstanceOf[js.Any])
@@ -49,6 +55,7 @@ object EnvironmentEC2Args {
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (ownerArn != null) __obj.updateDynamic("ownerArn")(ownerArn.asInstanceOf[js.Any])
     if (subnetId != null) __obj.updateDynamic("subnetId")(subnetId.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnvironmentEC2Args]
   }
 }

@@ -13,7 +13,7 @@ class BoundElementProperty protected () extends js.Object {
     name: String,
     `type`: BindingType,
     securityContext: SecurityContext,
-    value: AST,
+    value: ASTWithSource,
     unit: String,
     sourceSpan: ParseSourceSpan
   ) = this()
@@ -21,7 +21,7 @@ class BoundElementProperty protected () extends js.Object {
     name: String,
     `type`: BindingType,
     securityContext: SecurityContext,
-    value: AST,
+    value: ASTWithSource,
     unit: Null,
     sourceSpan: ParseSourceSpan
   ) = this()
@@ -29,7 +29,7 @@ class BoundElementProperty protected () extends js.Object {
     name: String,
     `type`: BindingType,
     securityContext: SecurityContext,
-    value: AST,
+    value: ASTWithSource,
     unit: String,
     sourceSpan: ParseSourceSpan,
     valueSpan: ParseSourceSpan
@@ -38,7 +38,7 @@ class BoundElementProperty protected () extends js.Object {
     name: String,
     `type`: BindingType,
     securityContext: SecurityContext,
-    value: AST,
+    value: ASTWithSource,
     unit: Null,
     sourceSpan: ParseSourceSpan,
     valueSpan: ParseSourceSpan
@@ -48,7 +48,7 @@ class BoundElementProperty protected () extends js.Object {
   var sourceSpan: ParseSourceSpan = js.native
   var `type`: BindingType = js.native
   var unit: String | Null = js.native
-  var value: AST = js.native
+  var value: ASTWithSource = js.native
   var valueSpan: js.UndefOr[ParseSourceSpan] = js.native
 }
 

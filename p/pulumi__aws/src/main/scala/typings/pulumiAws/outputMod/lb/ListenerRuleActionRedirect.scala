@@ -27,7 +27,7 @@ trait ListenerRuleActionRedirect extends js.Object {
     */
   var query: js.UndefOr[String] = js.native
   /**
-    * The HTTP response code. Valid values are `2XX`, `4XX`, or `5XX`.
+    * The HTTP redirect code. The redirect is either permanent (`HTTP_301`) or temporary (`HTTP_302`).
     */
   var statusCode: String = js.native
 }

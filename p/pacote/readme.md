@@ -1,7 +1,7 @@
 
 # Scala.js typings for pacote
 
-Typings are for version 9.5
+Typings are for version 11.1
 
 ## Library description:
 JavaScript package downloader

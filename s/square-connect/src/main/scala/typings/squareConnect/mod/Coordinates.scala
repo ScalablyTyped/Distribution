@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class Coordinates () extends js.Object {
   /**
-    * The coordinate's latitude expressed in degrees.
+    * The latitude of the coordinate expressed in degrees.
     */
   var latitude: js.UndefOr[Double] = js.native
   /**
-    * The coordinate's longitude expressed in degrees.
+    * The longitude of the coordinate expressed in degrees.
     */
   var longitude: js.UndefOr[Double] = js.native
 }

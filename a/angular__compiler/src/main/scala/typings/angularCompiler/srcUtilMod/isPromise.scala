@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler/src/util", "isPromise")
 @js.native
 object isPromise extends js.Object {
-  def apply(obj: js.Any): /* is std.Promise<any> */ Boolean = js.native
+  def apply[T](obj: js.Any): /* is std.Promise<T> */ Boolean = js.native
 }
 

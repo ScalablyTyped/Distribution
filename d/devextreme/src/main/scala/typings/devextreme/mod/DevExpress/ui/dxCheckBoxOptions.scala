@@ -15,11 +15,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxCheckBoxOptions extends EditorOptions[dxCheckBox] {
-  /** The value to be assigned to the `name` attribute of the underlying HTML element. */
+  /** @name dxCheckBox.Options.name */
   var name: js.UndefOr[String] = js.undefined
-  /** Specifies the text displayed by the check box. */
+  /** @name dxCheckBox.Options.text */
   var text: js.UndefOr[String] = js.undefined
-  /** Specifies the widget state. */
+  /** @name dxCheckBox.Options.value */
   @JSName("value")
   var value_dxCheckBoxOptions: js.UndefOr[Boolean] = js.undefined
 }

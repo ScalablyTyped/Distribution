@@ -34,7 +34,7 @@ trait ConnectOptions extends js.Object {
   var name: js.UndefOr[String | Null] = js.undefined
   var networkQuality: js.UndefOr[Boolean | NetworkQualityConfiguration] = js.undefined
   var preferredAudioCodecs: js.UndefOr[js.Array[AudioCodec]] = js.undefined
-  var preferredVideoCodecs: js.UndefOr[js.Array[VideoCodec | VideoCodecSettings]] = js.undefined
+  var preferredVideoCodecs: js.UndefOr[js.Array[VideoCodec | VideoCodecSettings | VP8CodecSettings]] = js.undefined
   var region: js.UndefOr[au1 | br1 | ie1 | de1 | jp1 | sg1 | us1 | us2 | gll] = js.undefined
   var tracks: js.UndefOr[js.Array[LocalTrack | MediaStreamTrack]] = js.undefined
   var video: js.UndefOr[Boolean | CreateLocalTrackOptions] = js.undefined
@@ -60,7 +60,7 @@ object ConnectOptions {
     name: String = null,
     networkQuality: Boolean | NetworkQualityConfiguration = null,
     preferredAudioCodecs: js.Array[AudioCodec] = null,
-    preferredVideoCodecs: js.Array[VideoCodec | VideoCodecSettings] = null,
+    preferredVideoCodecs: js.Array[VideoCodec | VideoCodecSettings | VP8CodecSettings] = null,
     region: au1 | br1 | ie1 | de1 | jp1 | sg1 | us1 | us2 | gll = null,
     tracks: js.Array[LocalTrack | MediaStreamTrack] = null,
     video: Boolean | CreateLocalTrackOptions = null

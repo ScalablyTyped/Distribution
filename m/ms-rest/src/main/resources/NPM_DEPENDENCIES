@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ms-rest" : "2.5.3"
+      "ms-rest" : "2.5.4"
     }
   ],
   "test-dependencies" : [
     {
-      "ms-rest" : "2.5.3"
+      "ms-rest" : "2.5.4"
     }
   ],
   "compile-devDependencies" : [

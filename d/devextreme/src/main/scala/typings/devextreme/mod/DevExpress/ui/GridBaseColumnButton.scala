@@ -5,13 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GridBaseColumnButton extends js.Object {
-  /** Specifies a CSS class to be applied to the button. */
+  /** @name GridBaseColumnButton.cssClass */
   var cssClass: js.UndefOr[String] = js.undefined
-  /** Specifies the text for the hint that appears when the button is hovered over or long-pressed. */
+  /** @name GridBaseColumnButton.hint */
   var hint: js.UndefOr[String] = js.undefined
-  /** Specifies the button's icon. */
+  /** @name GridBaseColumnButton.icon */
   var icon: js.UndefOr[String] = js.undefined
-  /** Specifies the button's text. Applies only if the button's icon is not specified. */
+  /** @name GridBaseColumnButton.text */
   var text: js.UndefOr[String] = js.undefined
 }
 

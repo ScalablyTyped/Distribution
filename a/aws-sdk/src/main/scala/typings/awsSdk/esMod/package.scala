@@ -12,6 +12,7 @@ package object esMod {
   type ClientConfiguration = typings.awsSdk.serviceMod.ServiceConfigurationOptions with typings.awsSdk.esMod.ClientApiVersions
   type CloudWatchLogsLogGroupArn = java.lang.String
   type CompatibleElasticsearchVersionsList = js.Array[typings.awsSdk.esMod.CompatibleVersionsMap]
+  type CreatedAt = typings.std.Date
   type DeploymentCloseDateTimeStamp = typings.std.Date
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.PENDING_UPDATE
@@ -22,10 +23,30 @@ package object esMod {
     - java.lang.String
   */
   type DeploymentStatus = typings.awsSdk.esMod._DeploymentStatus | java.lang.String
+  type DescribePackagesFilterList = js.Array[typings.awsSdk.esMod.DescribePackagesFilter]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.PackageID
+    - typings.awsSdk.awsSdkStrings.PackageName
+    - typings.awsSdk.awsSdkStrings.PackageStatus
+    - java.lang.String
+  */
+  type DescribePackagesFilterName = typings.awsSdk.esMod._DescribePackagesFilterName | java.lang.String
+  type DescribePackagesFilterValue = java.lang.String
+  type DescribePackagesFilterValues = js.Array[typings.awsSdk.esMod.DescribePackagesFilterValue]
   type DomainId = java.lang.String
   type DomainInfoList = js.Array[typings.awsSdk.esMod.DomainInfo]
   type DomainName = java.lang.String
   type DomainNameList = js.Array[typings.awsSdk.esMod.DomainName]
+  type DomainPackageDetailsList = js.Array[typings.awsSdk.esMod.DomainPackageDetails]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.ASSOCIATING
+    - typings.awsSdk.awsSdkStrings.ASSOCIATION_FAILED
+    - typings.awsSdk.awsSdkStrings.ACTIVE
+    - typings.awsSdk.awsSdkStrings.DISSOCIATING
+    - typings.awsSdk.awsSdkStrings.DISSOCIATION_FAILED
+    - java.lang.String
+  */
+  type DomainPackageStatus = typings.awsSdk.esMod._DomainPackageStatus | java.lang.String
   type Double = scala.Double
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.m3DotmediumDotelasticsearch
@@ -100,6 +121,8 @@ package object esMod {
   type ElasticsearchVersionList = js.Array[typings.awsSdk.esMod.ElasticsearchVersionString]
   type ElasticsearchVersionString = java.lang.String
   type EndpointsMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.esMod.ServiceUrl]
+  type ErrorMessage = java.lang.String
+  type ErrorType = java.lang.String
   type GUID = java.lang.String
   type IdentityPoolId = java.lang.String
   type InstanceCount = scala.Double
@@ -109,6 +132,7 @@ package object esMod {
   type Issue = java.lang.String
   type Issues = js.Array[typings.awsSdk.esMod.Issue]
   type KmsKeyId = java.lang.String
+  type LastUpdated = typings.std.Date
   type LimitName = java.lang.String
   type LimitValue = java.lang.String
   type LimitValueList = js.Array[typings.awsSdk.esMod.LimitValue]
@@ -132,9 +156,27 @@ package object esMod {
     - java.lang.String
   */
   type OptionState = typings.awsSdk.esMod._OptionState | java.lang.String
+  type PackageDescription = java.lang.String
+  type PackageDetailsList = js.Array[typings.awsSdk.esMod.PackageDetails]
+  type PackageID = java.lang.String
+  type PackageName = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.COPYING
+    - typings.awsSdk.awsSdkStrings.COPY_FAILED
+    - typings.awsSdk.awsSdkStrings.VALIDATING
+    - typings.awsSdk.awsSdkStrings.VALIDATION_FAILED
+    - typings.awsSdk.awsSdkStrings.AVAILABLE
+    - typings.awsSdk.awsSdkStrings.DELETING
+    - typings.awsSdk.awsSdkStrings.DELETED
+    - typings.awsSdk.awsSdkStrings.DELETE_FAILED
+    - java.lang.String
+  */
+  type PackageStatus = typings.awsSdk.esMod._PackageStatus | java.lang.String
+  type PackageType = typings.awsSdk.awsSdkStrings.`TXT-DICTIONARY` | java.lang.String
   type Password = java.lang.String
   type PolicyDocument = java.lang.String
   type RecurringChargeList = js.Array[typings.awsSdk.esMod.RecurringCharge]
+  type ReferencePath = java.lang.String
   type ReservationToken = java.lang.String
   type ReservedElasticsearchInstanceList = js.Array[typings.awsSdk.esMod.ReservedElasticsearchInstance]
   type ReservedElasticsearchInstanceOfferingList = js.Array[typings.awsSdk.esMod.ReservedElasticsearchInstanceOffering]
@@ -146,6 +188,8 @@ package object esMod {
   */
   type ReservedElasticsearchInstancePaymentOption = typings.awsSdk.esMod._ReservedElasticsearchInstancePaymentOption | java.lang.String
   type RoleArn = java.lang.String
+  type S3BucketName = java.lang.String
+  type S3Key = java.lang.String
   type ServiceUrl = java.lang.String
   type StartTimestamp = typings.std.Date
   type StorageSubTypeName = java.lang.String

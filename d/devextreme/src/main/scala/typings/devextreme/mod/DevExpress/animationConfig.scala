@@ -18,25 +18,25 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait animationConfig extends js.Object {
-  /** A function called after animation is completed. */
+  /** @name animationConfig.complete */
   var complete: js.UndefOr[js.Function2[/* $element */ dxElement, /* config */ js.Any, _]] = js.undefined
-  /** A number specifying wait time before animation execution. */
+  /** @name animationConfig.delay */
   var delay: js.UndefOr[Double] = js.undefined
-  /** Specifies the animation direction for the "slideIn" and "slideOut" animation types. */
+  /** @name animationConfig.direction */
   var direction: js.UndefOr[bottom | left | right | top] = js.undefined
-  /** A number specifying the time in milliseconds spent on animation. */
+  /** @name animationConfig.duration */
   var duration: js.UndefOr[Double] = js.undefined
-  /** A string specifying the easing function for animation. */
+  /** @name animationConfig.easing */
   var easing: js.UndefOr[String] = js.undefined
-  /** Specifies the initial animation state. */
+  /** @name animationConfig.from */
   var from: js.UndefOr[Double | String | js.Any] = js.undefined
-  /** A number specifying the time period to wait before the animation of the next stagger item starts. */
+  /** @name animationConfig.staggerDelay */
   var staggerDelay: js.UndefOr[Double] = js.undefined
-  /** A function called before animation is started. */
+  /** @name animationConfig.start */
   var start: js.UndefOr[js.Function2[/* $element */ dxElement, /* config */ js.Any, _]] = js.undefined
-  /** Specifies a final animation state. */
+  /** @name animationConfig.to */
   var to: js.UndefOr[Double | String | js.Any] = js.undefined
-  /** A string value specifying the animation type. */
+  /** @name animationConfig.type */
   var `type`: js.UndefOr[css | fade | fadeIn | fadeOut | pop | slide | slideIn | slideOut] = js.undefined
 }
 

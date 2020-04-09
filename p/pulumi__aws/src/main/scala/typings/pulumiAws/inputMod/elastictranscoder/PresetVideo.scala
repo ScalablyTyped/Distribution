@@ -40,11 +40,11 @@ trait PresetVideo extends js.Object {
     */
   var maxFrameRate: js.UndefOr[Input[String]] = js.native
   /**
-    * The maximum height of the watermark.
+    * The maximum height of the output video in pixels. If you specify auto, Elastic Transcoder uses 1080 (Full HD) as the default value. If you specify a numeric value, enter an even integer between 96 and 3072, inclusive.
     */
   var maxHeight: js.UndefOr[Input[String]] = js.native
   /**
-    * The maximum width of the watermark.
+    * The maximum width of the output video in pixels. If you specify auto, Elastic Transcoder uses 1920 (Full HD) as the default value. If you specify a numeric value, enter an even integer between 128 and 4096, inclusive.
     */
   var maxWidth: js.UndefOr[Input[String]] = js.native
   /**
@@ -56,7 +56,7 @@ trait PresetVideo extends js.Object {
     */
   var resolution: js.UndefOr[Input[String]] = js.native
   /**
-    * A value that controls scaling of the watermark. Valid values are: `Fit`, `Stretch`, `ShrinkToFit`
+    * A value that controls scaling of the output video. Valid values are: `Fit`, `Fill`, `Stretch`, `Keep`, `ShrinkToFit`, `ShrinkToFill`.
     */
   var sizingPolicy: js.UndefOr[Input[String]] = js.native
 }

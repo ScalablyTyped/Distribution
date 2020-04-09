@@ -4,15 +4,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Generates space around the widget. */
+/** @name BaseWidget.Options.margin */
 trait BaseWidgetMargin extends js.Object {
-  /** Specifies the bottom margin of the widget in pixels. */
+  /** @name BaseWidget.Options.margin.bottom */
   var bottom: js.UndefOr[Double] = js.undefined
-  /** Specifies the left margin of the widget in pixels. */
+  /** @name BaseWidget.Options.margin.left */
   var left: js.UndefOr[Double] = js.undefined
-  /** Specifies the right margin of the widget in pixels. */
+  /** @name BaseWidget.Options.margin.right */
   var right: js.UndefOr[Double] = js.undefined
-  /** Specifies the top margin of the widget in pixels. */
+  /** @name BaseWidget.Options.margin.top */
   var top: js.UndefOr[Double] = js.undefined
 }
 

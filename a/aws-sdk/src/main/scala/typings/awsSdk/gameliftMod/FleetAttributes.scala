@@ -29,7 +29,7 @@ trait FleetAttributes extends js.Object {
   /**
     * The Amazon Resource Name (ARN) that is assigned to a GameLift fleet resource and uniquely identifies it. ARNs are unique across all Regions. In a GameLift fleet ARN, the resource ID matches the FleetId value.
     */
-  var FleetArn: js.UndefOr[ArnStringModel] = js.native
+  var FleetArn: js.UndefOr[typings.awsSdk.gameliftMod.FleetArn] = js.native
   /**
     * A unique identifier for a fleet.
     */
@@ -108,7 +108,7 @@ object FleetAttributes {
     CertificateConfiguration: CertificateConfiguration = null,
     CreationTime: Timestamp = null,
     Description: NonZeroAndMaxString = null,
-    FleetArn: ArnStringModel = null,
+    FleetArn: FleetArn = null,
     FleetId: FleetId = null,
     FleetType: FleetType = null,
     InstanceRoleArn: NonEmptyString = null,

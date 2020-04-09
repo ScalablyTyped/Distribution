@@ -1,6 +1,7 @@
 package typings.bootstrap.mod
 
 import typings.bootstrap.bootstrapBooleans.`false`
+import typings.bootstrap.bootstrapStrings.carousel
 import typings.bootstrap.bootstrapStrings.hover
 import typings.bootstrap.bootstrapStrings.next
 import typings.bootstrap.bootstrapStrings.prev
@@ -32,6 +33,12 @@ trait CarouselOption extends js.Object {
     */
   var pause: js.UndefOr[hover | `false`] = js.undefined
   /**
+    * Autoplays the carousel after the user manually cycles the first item.
+    * If `carousel`, autoplays the carousel on load.
+    * @default false
+    */
+  var ride: js.UndefOr[carousel | Boolean] = js.undefined
+  /**
     * Use to easily control the position of the carousel. It accepts the keywords prev or next, which alters the slide position
     * relative to its current position. Alternatively, use `data-slide-to` to pass a raw slide index to the carousel.
     *
@@ -58,6 +65,7 @@ object CarouselOption {
     interval: `false` | Double = null,
     keyboard: js.UndefOr[Boolean] = js.undefined,
     pause: hover | `false` = null,
+    ride: carousel | Boolean = null,
     slide: next | prev | `false` = null,
     touch: js.UndefOr[Boolean] = js.undefined,
     wrap: js.UndefOr[Boolean] = js.undefined
@@ -66,6 +74,7 @@ object CarouselOption {
     if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
     if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard.asInstanceOf[js.Any])
     if (pause != null) __obj.updateDynamic("pause")(pause.asInstanceOf[js.Any])
+    if (ride != null) __obj.updateDynamic("ride")(ride.asInstanceOf[js.Any])
     if (slide != null) __obj.updateDynamic("slide")(slide.asInstanceOf[js.Any])
     if (!js.isUndefined(touch)) __obj.updateDynamic("touch")(touch.asInstanceOf[js.Any])
     if (!js.isUndefined(wrap)) __obj.updateDynamic("wrap")(wrap.asInstanceOf[js.Any])

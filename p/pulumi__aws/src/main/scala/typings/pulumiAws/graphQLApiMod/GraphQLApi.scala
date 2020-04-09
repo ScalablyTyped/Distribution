@@ -66,6 +66,10 @@ class GraphQLApi protected () extends CustomResource {
     * The Amazon Cognito User Pool configuration. Defined below.
     */
   val userPoolConfig: Output_[js.UndefOr[GraphQLApiUserPoolConfig]] = js.native
+  /**
+    * Whether tracing with X-ray is enabled. Defaults to false.
+    */
+  val xrayEnabled: Output_[js.UndefOr[Boolean]] = js.native
 }
 
 /* static members */

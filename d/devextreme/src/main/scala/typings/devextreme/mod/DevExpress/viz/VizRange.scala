@@ -15,13 +15,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait VizRange extends js.Object {
-  /** The range's end value. */
+  /** @name VizRange.endValue */
   var endValue: js.UndefOr[Double | Date | String] = js.undefined
-  /** The range's length. */
+  /** @name VizRange.length */
   var length: js.UndefOr[
     Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year
   ] = js.undefined
-  /** The range's start value. */
+  /** @name VizRange.startValue */
   var startValue: js.UndefOr[Double | Date | String] = js.undefined
 }
 

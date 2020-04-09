@@ -12,8 +12,10 @@ trait PartialConfig extends js.Object {
   var app_host: js.UndefOr[String] = js.undefined
   var autotrack: js.UndefOr[Boolean] = js.undefined
   var cdn: js.UndefOr[String] = js.undefined
+  var cookie_domain: js.UndefOr[String] = js.undefined
   var cookie_expiration: js.UndefOr[Double] = js.undefined
   var cookie_name: js.UndefOr[String] = js.undefined
+  var cross_site_cookie: js.UndefOr[Boolean] = js.undefined
   var cross_subdomain_cookie: js.UndefOr[Boolean] = js.undefined
   var debug: js.UndefOr[Boolean] = js.undefined
   var disable_cookie: js.UndefOr[Boolean] = js.undefined
@@ -46,8 +48,10 @@ object PartialConfig {
     app_host: String = null,
     autotrack: js.UndefOr[Boolean] = js.undefined,
     cdn: String = null,
+    cookie_domain: String = null,
     cookie_expiration: Int | Double = null,
     cookie_name: String = null,
+    cross_site_cookie: js.UndefOr[Boolean] = js.undefined,
     cross_subdomain_cookie: js.UndefOr[Boolean] = js.undefined,
     debug: js.UndefOr[Boolean] = js.undefined,
     disable_cookie: js.UndefOr[Boolean] = js.undefined,
@@ -77,8 +81,10 @@ object PartialConfig {
     if (app_host != null) __obj.updateDynamic("app_host")(app_host.asInstanceOf[js.Any])
     if (!js.isUndefined(autotrack)) __obj.updateDynamic("autotrack")(autotrack.asInstanceOf[js.Any])
     if (cdn != null) __obj.updateDynamic("cdn")(cdn.asInstanceOf[js.Any])
+    if (cookie_domain != null) __obj.updateDynamic("cookie_domain")(cookie_domain.asInstanceOf[js.Any])
     if (cookie_expiration != null) __obj.updateDynamic("cookie_expiration")(cookie_expiration.asInstanceOf[js.Any])
     if (cookie_name != null) __obj.updateDynamic("cookie_name")(cookie_name.asInstanceOf[js.Any])
+    if (!js.isUndefined(cross_site_cookie)) __obj.updateDynamic("cross_site_cookie")(cross_site_cookie.asInstanceOf[js.Any])
     if (!js.isUndefined(cross_subdomain_cookie)) __obj.updateDynamic("cross_subdomain_cookie")(cross_subdomain_cookie.asInstanceOf[js.Any])
     if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
     if (!js.isUndefined(disable_cookie)) __obj.updateDynamic("disable_cookie")(disable_cookie.asInstanceOf[js.Any])

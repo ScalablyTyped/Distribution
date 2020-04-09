@@ -40,7 +40,7 @@ object prettierStrings {
   sealed trait `babel-flow` extends BuiltInParserName
   
   @js.native
-  sealed trait babylon extends BuiltInParserName
+  sealed trait `babel-ts` extends BuiltInParserName
   
   @js.native
   sealed trait boolean extends js.Object
@@ -139,9 +139,6 @@ object prettierStrings {
   sealed trait path extends js.Object
   
   @js.native
-  sealed trait postcss extends BuiltInParserName
-  
-  @js.native
   sealed trait preserve extends js.Object
   
   @js.native
@@ -185,7 +182,7 @@ object prettierStrings {
   @scala.inline
   def `babel-flow`: `babel-flow` = "babel-flow".asInstanceOf[`babel-flow`]
   @scala.inline
-  def babylon: babylon = "babylon".asInstanceOf[babylon]
+  def `babel-ts`: `babel-ts` = "babel-ts".asInstanceOf[`babel-ts`]
   @scala.inline
   def boolean: boolean = "boolean".asInstanceOf[boolean]
   @scala.inline
@@ -250,8 +247,6 @@ object prettierStrings {
   def none: none = "none".asInstanceOf[none]
   @scala.inline
   def path: path = "path".asInstanceOf[path]
-  @scala.inline
-  def postcss: postcss = "postcss".asInstanceOf[postcss]
   @scala.inline
   def preserve: preserve = "preserve".asInstanceOf[preserve]
   @scala.inline

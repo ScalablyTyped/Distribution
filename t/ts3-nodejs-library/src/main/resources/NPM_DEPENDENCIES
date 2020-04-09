@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ts3-nodejs-library" : "2.4.1"
+      "ts3-nodejs-library" : "2.4.4"
     }
   ],
   "test-dependencies" : [
     {
-      "ts3-nodejs-library" : "2.4.1"
+      "ts3-nodejs-library" : "2.4.4"
     }
   ],
   "compile-devDependencies" : [

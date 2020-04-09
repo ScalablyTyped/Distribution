@@ -6,7 +6,7 @@ import typings.mongoose.AnonCoordinates
 import typings.mongoose.AnonNumberOfRetries
 import typings.mongoose.FnCallOnfulfilledOnrejected
 import typings.mongoose.rawResulttrueQueryFindOne
-import typings.mongoose.rawResulttrueQueryFindOneContext
+import typings.mongoose.rawResulttrueQueryFindOneArrayFilters
 import typings.mongoose.rawResulttrueupserttruene
 import typings.mongoose.upserttruenewtrueQueryFin
 import typings.std.RegExp
@@ -258,11 +258,11 @@ trait DocumentQuery[T, DocType /* <: Document */, QueryHelpers] extends mquery {
     options: QueryFindOneAndUpdateOptions,
     callback: js.Function3[/* err */ js.Any, /* doc */ DocType | Null, /* res */ js.Any, Unit]
   ): (DocumentQuery[DocType | Null, DocType, QueryHelpers]) with QueryHelpers = js.native
-  def findOneAndUpdate(query: FilterQuery[DocType], update: js.Any, options: rawResulttrueQueryFindOneContext): (Query[FindAndModifyWriteOpResultObject[DocType | Null]]) with QueryHelpers = js.native
+  def findOneAndUpdate(query: FilterQuery[DocType], update: js.Any, options: rawResulttrueQueryFindOneArrayFilters): (Query[FindAndModifyWriteOpResultObject[DocType | Null]]) with QueryHelpers = js.native
   def findOneAndUpdate(
     query: FilterQuery[DocType],
     update: js.Any,
-    options: rawResulttrueQueryFindOneContext,
+    options: rawResulttrueQueryFindOneArrayFilters,
     callback: js.Function3[
       /* err */ js.Any, 
       /* doc */ FindAndModifyWriteOpResultObject[DocType | Null], 

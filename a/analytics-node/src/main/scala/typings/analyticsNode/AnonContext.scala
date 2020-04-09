@@ -1,39 +1,31 @@
 package typings.analyticsNode
 
-import typings.analyticsNode.mod.AnalyticsNode.Integrations
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonContext extends js.Object {
-  var anonymousId: js.UndefOr[String | Double] = js.undefined
-  var context: js.UndefOr[js.Any] = js.undefined
-  var event: String
-  var integrations: js.UndefOr[Integrations] = js.undefined
-  var properties: js.UndefOr[js.Any] = js.undefined
+  var _metadata: AnonNodeVersion
+  var context: AnonDictkey
+  var messageId: js.UndefOr[String] = js.undefined
   var timestamp: js.UndefOr[Date] = js.undefined
-  var userId: js.UndefOr[String | Double] = js.undefined
+  var `type`: String
 }
 
 object AnonContext {
   @scala.inline
   def apply(
-    event: String,
-    anonymousId: String | Double = null,
-    context: js.Any = null,
-    integrations: Integrations = null,
-    properties: js.Any = null,
-    timestamp: Date = null,
-    userId: String | Double = null
+    _metadata: AnonNodeVersion,
+    context: AnonDictkey,
+    `type`: String,
+    messageId: String = null,
+    timestamp: Date = null
   ): AnonContext = {
-    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any])
-    if (anonymousId != null) __obj.updateDynamic("anonymousId")(anonymousId.asInstanceOf[js.Any])
-    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (integrations != null) __obj.updateDynamic("integrations")(integrations.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(_metadata = _metadata.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (messageId != null) __obj.updateDynamic("messageId")(messageId.asInstanceOf[js.Any])
     if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
-    if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnonContext]
   }
 }

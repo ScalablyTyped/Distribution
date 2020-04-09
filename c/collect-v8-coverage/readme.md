@@ -1,7 +1,7 @@
 
 # Scala.js typings for collect-v8-coverage
 
-Typings are for version 1.0.0
+Typings are for version 1.0.1
 
 ## Library description:
 Use this module to start and stop the V8 inspector manually and collect precise coverage.

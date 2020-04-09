@@ -8,7 +8,7 @@ import typings.mongoose.mod.Model_
 import typings.mongoose.mod.Query
 import typings.mongoose.mod.QueryFindOneAndUpdateOptions
 import typings.mongoose.mod.Types.ObjectId
-import typings.mongoose.rawResulttrueQueryFindOneContext
+import typings.mongoose.rawResulttrueQueryFindOneArrayFilters
 import typings.mongoose.rawResulttrueupserttruene
 import typings.mongoose.upserttruenewtrueQueryFin
 import typings.mongooseDelete.DocumentQueryArrayanyanyAll
@@ -22,7 +22,7 @@ import typings.mongooseDelete.FnCallConditionsUpdateOptionsCallback
 import typings.mongooseDelete.QueryFindAndModifyWriteOpAnd
 import typings.mongooseDelete.QueryFindAndModifyWriteOpBatchSize
 import typings.mongooseDelete.Queryany
-import typings.mongooseDelete.QuerynumberAll
+import typings.mongooseDelete.Querynumber
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -60,13 +60,13 @@ trait SoftDeleteModel[T /* <: Document */, QueryHelpers] extends Model_[T, Query
   @JSName("updateWithDeleted")
   var updateWithDeleted_Original: FnCallConditionsDocOptionsCallback = js.native
   /** Count only deleted documents */
-  def countDeleted(conditions: FilterQuery[_]): QuerynumberAll = js.native
+  def countDeleted(conditions: FilterQuery[_]): Querynumber = js.native
   /** Count only deleted documents */
-  def countDeleted(conditions: FilterQuery[_], callback: js.Function2[/* err */ js.Any, /* count */ Double, Unit]): QuerynumberAll = js.native
+  def countDeleted(conditions: FilterQuery[_], callback: js.Function2[/* err */ js.Any, /* count */ Double, Unit]): Querynumber = js.native
   /** Count all documents including deleted */
-  def countWithDeleted(conditions: FilterQuery[_]): QuerynumberAll = js.native
+  def countWithDeleted(conditions: FilterQuery[_]): Querynumber = js.native
   /** Count all documents including deleted */
-  def countWithDeleted(conditions: FilterQuery[_], callback: js.Function2[/* err */ js.Any, /* count */ Double, Unit]): QuerynumberAll = js.native
+  def countWithDeleted(conditions: FilterQuery[_], callback: js.Function2[/* err */ js.Any, /* count */ Double, Unit]): Querynumber = js.native
   /**
     * Delete documents by conditions
     */
@@ -179,12 +179,12 @@ trait SoftDeleteModel[T /* <: Document */, QueryHelpers] extends Model_[T, Query
     callback: js.Function3[/* err */ js.Any, /* doc */ js.Any | Null, /* res */ js.Any, Unit]
   ): DocumentQueryanynullanyAll = js.native
   /** Find One And Update only deleted documents */
-  def findOneAndUpdateDeleted(conditions: FilterQuery[_], update: js.Any, options: rawResulttrueQueryFindOneContext): QueryFindAndModifyWriteOpBatchSize = js.native
+  def findOneAndUpdateDeleted(conditions: FilterQuery[_], update: js.Any, options: rawResulttrueQueryFindOneArrayFilters): QueryFindAndModifyWriteOpBatchSize = js.native
   /** Find One And Update only deleted documents */
   def findOneAndUpdateDeleted(
     conditions: FilterQuery[_],
     update: js.Any,
-    options: rawResulttrueQueryFindOneContext,
+    options: rawResulttrueQueryFindOneArrayFilters,
     callback: js.Function3[
       /* err */ js.Any, 
       /* doc */ FindAndModifyWriteOpResultObject[_ | Null], 
@@ -235,12 +235,12 @@ trait SoftDeleteModel[T /* <: Document */, QueryHelpers] extends Model_[T, Query
     callback: js.Function3[/* err */ js.Any, /* doc */ js.Any | Null, /* res */ js.Any, Unit]
   ): DocumentQueryanynullanyAll = js.native
   /** Find One And Update all documents including deleted */
-  def findOneAndUpdateWithDeleted(conditions: FilterQuery[_], update: js.Any, options: rawResulttrueQueryFindOneContext): QueryFindAndModifyWriteOpBatchSize = js.native
+  def findOneAndUpdateWithDeleted(conditions: FilterQuery[_], update: js.Any, options: rawResulttrueQueryFindOneArrayFilters): QueryFindAndModifyWriteOpBatchSize = js.native
   /** Find One And Update all documents including deleted */
   def findOneAndUpdateWithDeleted(
     conditions: FilterQuery[_],
     update: js.Any,
-    options: rawResulttrueQueryFindOneContext,
+    options: rawResulttrueQueryFindOneArrayFilters,
     callback: js.Function3[
       /* err */ js.Any, 
       /* doc */ FindAndModifyWriteOpResultObject[_ | Null], 

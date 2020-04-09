@@ -8,9 +8,22 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ModelContainer extends js.Object {
+  /**
+    * The DNS host name for the container.
+    */
   var containerHostname: js.UndefOr[Input[String]] = js.native
+  /**
+    * Environment variables for the Docker container.
+    * A list of key value pairs.
+    */
   var environment: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  /**
+    * The registry path where the inference code image is stored in Amazon ECR.
+    */
   var image: Input[String] = js.native
+  /**
+    * The URL for the S3 location where model artifacts are stored.
+    */
   var modelDataUrl: js.UndefOr[Input[String]] = js.native
 }
 

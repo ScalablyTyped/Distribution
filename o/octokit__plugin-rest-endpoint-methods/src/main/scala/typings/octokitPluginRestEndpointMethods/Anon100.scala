@@ -1,6 +1,6 @@
 package typings.octokitPluginRestEndpointMethods
 
-import typings.octokitPluginRestEndpointMethods.typesMod.GistsCreateParams
+import typings.octokitPluginRestEndpointMethods.typesMod.ChecksGetSuiteParams
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 trait Anon100 extends js.Object {
   var endpoint: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EndpointInterface */ js.Any = js.native
   def apply(): js.Promise[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OctokitResponse<GistsCreateResponse> */ _
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OctokitResponse<ChecksGetSuiteResponse> */ _
   ] = js.native
   def apply(
-    params: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RequestParameters */ js.Any) with GistsCreateParams
+    params: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RequestParameters */ js.Any) with ChecksGetSuiteParams
   ): js.Promise[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OctokitResponse<GistsCreateResponse> */ _
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OctokitResponse<ChecksGetSuiteResponse> */ _
   ] = js.native
 }
 

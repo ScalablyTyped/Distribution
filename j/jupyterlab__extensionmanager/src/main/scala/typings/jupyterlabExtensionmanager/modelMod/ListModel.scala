@@ -2,10 +2,15 @@ package typings.jupyterlabExtensionmanager.modelMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.jupyterlabApputils.vdomMod.VDomModel
-import typings.jupyterlabExtensionmanager.queryMod.ISearchResult
-import typings.jupyterlabExtensionmanager.queryMod.Searcher
+import typings.jupyterlabExtensionmanager.jupyterlabExtensionmanagerStrings.black
+import typings.jupyterlabExtensionmanager.jupyterlabExtensionmanagerStrings.default
+import typings.jupyterlabExtensionmanager.jupyterlabExtensionmanagerStrings.invalid
+import typings.jupyterlabExtensionmanager.jupyterlabExtensionmanagerStrings.white
+import typings.jupyterlabExtensionmanager.listingsMod.Lister
+import typings.jupyterlabExtensionmanager.npmMod.ISearchResult
+import typings.jupyterlabExtensionmanager.npmMod.Searcher
 import typings.jupyterlabServices.mod.ServiceManager
-import typings.jupyterlabServices.serverconnectionMod.ServerConnection.ISettings
+import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry.ISettings
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,15 +18,25 @@ import scala.scalajs.js.annotation._
 @JSImport("@jupyterlab/extensionmanager/lib/model", "ListModel")
 @js.native
 class ListModel protected () extends VDomModel {
-  def this(serviceManager: ServiceManager) = this()
+  def this(serviceManager: ServiceManager, settings: ISettings) = this()
+  var _blacklistArray: js.Any = js.native
   var _debouncedUpdate: js.Any = js.native
   var _installed: js.Any = js.native
+  var _listMode: js.Any = js.native
+  var _listingIsLoaded: js.Any = js.native
   var _page: js.Any = js.native
   var _pagination: js.Any = js.native
   var _pendingActions: js.Any = js.native
   var _query: js.Any = js.native
   var _searchResult: js.Any = js.native
+  var _totalBlacklistedFound: js.Any = js.native
   var _totalEntries: js.Any = js.native
+  var _totalWhitelistedFound: js.Any = js.native
+  var _whitelistArray: js.Any = js.native
+  /**
+    * Contains an error message if an error occurred when searching for lists.
+    */
+  var blacklistError: String | Null = js.native
   /**
     * Whether the model has finished async initialization.
     */
@@ -30,6 +45,8 @@ class ListModel protected () extends VDomModel {
     * Contains an error message if an error occurred when querying installed extensions.
     */
   var installedError: String | Null = js.native
+  var isListed: js.Any = js.native
+  var lister: Lister = js.native
   /**
     * Whether a fresh build should be considered due to actions taken.
     */
@@ -49,7 +66,7 @@ class ListModel protected () extends VDomModel {
   /**
     * Settings for connecting to the notebook server.
     */
-  var serverConnectionSettings: ISettings = js.native
+  var serverConnectionSettings: typings.jupyterlabServices.serverconnectionMod.ServerConnection.ISettings = js.native
   /**
     * Contains an error message if the server has unfulfilled requirements.
     */
@@ -117,6 +134,10 @@ class ListModel protected () extends VDomModel {
     */
   def installed(): js.Array[IEntry] = js.native
   /**
+    * The list mode.
+    */
+  def listMode(): black | white | default | invalid = js.native
+  /**
     * The current NPM repository search page.
     *
     * The npm repository search is paginated by the `pagination` attribute.
@@ -174,9 +195,17 @@ class ListModel protected () extends VDomModel {
     */
   def searchResult(): js.Array[IEntry] = js.native
   /**
+    * The total number of blacklisted results in the current search.
+    */
+  def totalBlacklistedFound(): Double = js.native
+  /**
     * The total number of results in the current search.
     */
   def totalEntries(): Double = js.native
+  /**
+    * The total number of whitelisted results in the current search.
+    */
+  def totalWhitelistedFound(): Double = js.native
   /**
     * Translate installed extensions information from the server into entries.
     *
@@ -220,5 +249,7 @@ object ListModel extends js.Object {
     * @param entry The entry to check.
     */
   def entryHasUpdate(entry: IEntry): Boolean = js.native
+  def isDisclaimed(): Boolean = js.native
+  def toogleDisclaimed(): Unit = js.native
 }
 

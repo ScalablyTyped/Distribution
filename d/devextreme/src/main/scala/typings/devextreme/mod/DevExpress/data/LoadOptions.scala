@@ -5,39 +5,39 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait LoadOptions extends js.Object {
-  /** An object for storing additional settings that should be sent to the server. Relevant to the ODataStore only. */
+  /** @name LoadOptions.customQueryParams */
   var customQueryParams: js.UndefOr[js.Any] = js.undefined
-  /** An array of strings that represent the names of navigation properties to be loaded simultaneously with the ODataStore. */
+  /** @name LoadOptions.expand */
   var expand: js.UndefOr[js.Any] = js.undefined
-  /** A filter expression. */
+  /** @name LoadOptions.filter */
   var filter: js.UndefOr[js.Any] = js.undefined
-  /** A group expression. */
+  /** @name LoadOptions.group */
   var group: js.UndefOr[js.Any] = js.undefined
-  /** A group summary expression. Used with the group setting. */
+  /** @name LoadOptions.groupSummary */
   var groupSummary: js.UndefOr[js.Any] = js.undefined
-  /** The IDs of the rows being expanded. Relevant only when the CustomStore is used in the TreeList widget. */
+  /** @name LoadOptions.parentIds */
   var parentIds: js.UndefOr[js.Array[_]] = js.undefined
-  /** Indicates whether a top-level group count is required. Used in conjunction with the filter, take, skip, requireTotalCount, and group settings. */
+  /** @name LoadOptions.requireGroupCount */
   var requireGroupCount: js.UndefOr[Boolean] = js.undefined
-  /** Indicates whether the total count of data objects is needed. */
+  /** @name LoadOptions.requireTotalCount */
   var requireTotalCount: js.UndefOr[Boolean] = js.undefined
-  /** A data field or expression whose value is compared to the search value. */
+  /** @name LoadOptions.searchExpr */
   var searchExpr: js.UndefOr[String | js.Function | (js.Array[String | js.Function])] = js.undefined
-  /** A comparison operation. Can have one of the following values: "=", "<>", ">", ">=", "<", "<=", "startswith", "endswith", "contains", "notcontains", "isblank" and "isnotblank". */
+  /** @name LoadOptions.searchOperation */
   var searchOperation: js.UndefOr[String] = js.undefined
-  /** The current search value. */
+  /** @name LoadOptions.searchValue */
   var searchValue: js.UndefOr[js.Any] = js.undefined
-  /** A select expression. */
+  /** @name LoadOptions.select */
   var select: js.UndefOr[js.Any] = js.undefined
-  /** The number of data objects to be skipped from the result set's start. In conjunction with take, used to implement paging. */
+  /** @name LoadOptions.skip */
   var skip: js.UndefOr[Double] = js.undefined
-  /** A sort expression. */
+  /** @name LoadOptions.sort */
   var sort: js.UndefOr[js.Any] = js.undefined
-  /** The number of data objects to be loaded. In conjunction with skip, used to implement paging. */
+  /** @name LoadOptions.take */
   var take: js.UndefOr[Double] = js.undefined
-  /** A total summary expression. */
+  /** @name LoadOptions.totalSummary */
   var totalSummary: js.UndefOr[js.Any] = js.undefined
-  /** An object for storing additional settings that should be sent to the server. */
+  /** @name LoadOptions.userData */
   var userData: js.UndefOr[js.Any] = js.undefined
 }
 

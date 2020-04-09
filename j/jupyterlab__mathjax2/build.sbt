@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__mathjax2"
-version := "2.0.1-047945"
+version := "2.1.0-70660a"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "jupyterlab__rendermime-interfaces" % "2.0.1-10e0ba",
+  "org.scalablytyped" %%% "jupyterlab__rendermime-interfaces" % "2.1.0-107b62",
   "org.scalablytyped" %%% "lumino__algorithm" % "1.2.3-935244",
   "org.scalablytyped" %%% "lumino__commands" % "1.10.1-857d11",
   "org.scalablytyped" %%% "lumino__coreutils" % "1.4.2-dc12c7",

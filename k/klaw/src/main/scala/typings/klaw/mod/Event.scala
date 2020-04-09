@@ -8,8 +8,10 @@ import scala.scalajs.js.annotation._
   - typings.klaw.klawStrings.close
   - typings.klaw.klawStrings.data
   - typings.klaw.klawStrings.end
-  - typings.klaw.klawStrings.readable
   - typings.klaw.klawStrings.error
+  - typings.klaw.klawStrings.pause
+  - typings.klaw.klawStrings.readable
+  - typings.klaw.klawStrings.resume
 */
 trait Event extends js.Object
 
@@ -25,6 +27,10 @@ object Event {
   @scala.inline
   def error: typings.klaw.klawStrings.error = this.cast("error")
   @scala.inline
+  def pause: typings.klaw.klawStrings.pause = this.cast("pause")
+  @scala.inline
   def readable: typings.klaw.klawStrings.readable = this.cast("readable")
+  @scala.inline
+  def resume: typings.klaw.klawStrings.resume = this.cast("resume")
 }
 

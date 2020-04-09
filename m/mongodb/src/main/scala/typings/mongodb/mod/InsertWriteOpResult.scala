@@ -1,13 +1,13 @@
 package typings.mongodb.mod
 
 import org.scalablytyped.runtime.NumberDictionary
-import typings.mongodb.AnonId
+import typings.mongodb.AnonIdAny
 import typings.mongodb.AnonOk
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait InsertWriteOpResult[TSchema /* <: AnonId */] extends js.Object {
+trait InsertWriteOpResult[TSchema /* <: AnonIdAny */] extends js.Object {
   var connection: js.Any
   var insertedCount: scala.Double
   var insertedIds: NumberDictionary[
@@ -19,7 +19,7 @@ trait InsertWriteOpResult[TSchema /* <: AnonId */] extends js.Object {
 
 object InsertWriteOpResult {
   @scala.inline
-  def apply[TSchema /* <: AnonId */](
+  def apply[TSchema /* <: AnonIdAny */](
     connection: js.Any,
     insertedCount: scala.Double,
     insertedIds: NumberDictionary[

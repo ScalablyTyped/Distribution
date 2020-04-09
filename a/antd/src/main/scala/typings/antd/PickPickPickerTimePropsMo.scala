@@ -37,6 +37,7 @@ import typings.antd.antdStrings.text
 import typings.antd.antdStrings.time
 import typings.antd.antdStrings.tree
 import typings.antd.antdStrings.vertical
+import typings.antd.generatePickerMod.PickerLocale
 import typings.antd.sizeContextMod.SizeType
 import typings.moment.mod.Moment
 import typings.rcPicker.dateBodyMod.DateRender
@@ -45,7 +46,6 @@ import typings.rcPicker.interfaceMod.OnPanelChange
 import typings.rcPicker.interfaceMod.PanelMode
 import typings.rcPicker.monthBodyMod.MonthCellRender
 import typings.rcPicker.pickerMod.PickerRefConfig
-import typings.rcTrigger.interfaceMod.AlignType
 import typings.react.mod.CSSProperties
 import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
@@ -61,7 +61,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined std.Pick<std.Pick<rc-picker.rc-picker/lib/Picker.PickerTimeProps<moment.moment.Moment>, 'value' | 'style' | 'direction' | 'className' | 'prefixCls' | 'getPopupContainer' | 'onChange' | 'disabled' | 'onClick' | 'open' | 'suffixIcon' | 'clearIcon' | 'mode' | 'defaultValue' | 'allowClear' | 'defaultOpen' | 'dropdownClassName' | 'dropdownAlign' | 'transitionName' | 'autoFocus' | 'placeholder' | 'tabIndex' | 'onSelect' | 'onBlur' | 'onFocus' | 'onMouseDown' | 'onMouseEnter' | 'onMouseLeave' | 'aria-activedescendant' | 'aria-atomic' | 'aria-autocomplete' | 'aria-busy' | 'aria-checked' | 'aria-colcount' | 'aria-colindex' | 'aria-colspan' | 'aria-controls' | 'aria-current' | 'aria-describedby' | 'aria-details' | 'aria-disabled' | 'aria-dropeffect' | 'aria-errormessage' | 'aria-expanded' | 'aria-flowto' | 'aria-grabbed' | 'aria-haspopup' | 'aria-hidden' | 'aria-invalid' | 'aria-keyshortcuts' | 'aria-label' | 'aria-labelledby' | 'aria-level' | 'aria-live' | 'aria-modal' | 'aria-multiline' | 'aria-multiselectable' | 'aria-orientation' | 'aria-owns' | 'aria-placeholder' | 'aria-posinset' | 'aria-pressed' | 'aria-readonly' | 'aria-relevant' | 'aria-required' | 'aria-roledescription' | 'aria-rowcount' | 'aria-rowindex' | 'aria-rowspan' | 'aria-selected' | 'aria-setsize' | 'aria-sort' | 'aria-valuemax' | 'aria-valuemin' | 'aria-valuenow' | 'aria-valuetext' | 'role' | 'onContextMenu' | 'onMouseUp' | 'name' | 'onOpenChange' | 'picker' | 'defaultPickerValue' | 'disabledDate' | 'dateRender' | 'monthCellRender' | 'renderExtraFooter' | 'onPanelChange' | 'onOk' | 'format' | 'showHour' | 'showMinute' | 'showSecond' | 'use12Hours' | 'hourStep' | 'minuteStep' | 'secondStep' | 'hideDisabledOptions' | 'disabledHours' | 'disabledMinutes' | 'disabledSeconds' | 'popupStyle' | 'inputReadOnly' | 'pickerRef' | 'defaultOpenValue'> & {  locale ? :{  lang  :{  locale  :string,   monthBeforeYear ? :boolean | undefined,   yearFormat  :string,   monthFormat ? :string | undefined,   today  :string,   now  :string,   backToToday  :string,   ok  :string,   timeSelect  :string,   dateSelect  :string,   weekSelect ? :string | undefined,   clear  :string,   month  :string,   year  :string,   previousMonth  :string,   nextMonth  :string,   monthSelect  :string,   yearSelect  :string,   decadeSelect  :string,   dayFormat  :string,   dateFormat  :string,   dateTimeFormat  :string,   previousYear  :string,   nextYear  :string,   previousDecade  :string,   nextDecade  :string,   previousCentury  :string,   nextCentury  :string,   shortWeekDays ? :std.Array<string> | undefined,   shortMonths ? :std.Array<string> | undefined,   placeholder  :string,   yearPlaceholder  :string,   monthPlaceholder  :string,   weekPlaceholder  :string,   rangePlaceholder  :std.Array<string>,   rangeYearPlaceholder  :std.Array<string>,   rangeMonthPlaceholder  :std.Array<string>,   rangeWeekPlaceholder  :std.Array<string>},   timePickerLocale  :{  placeholder  :string,   rangePlaceholder  :std.Array<string>}} | undefined,   size ? :antd.antd/lib/button.ButtonSize,   bordered ? :boolean | undefined}, 'value' | 'style' | 'direction' | 'className' | 'prefixCls' | 'locale' | 'size' | 'getPopupContainer' | 'onChange' | 'disabled' | 'onClick' | 'open' | 'suffixIcon' | 'clearIcon' | 'mode' | 'defaultValue' | 'allowClear' | 'defaultOpen' | 'dropdownClassName' | 'dropdownAlign' | 'transitionName' | 'autoFocus' | 'placeholder' | 'tabIndex' | 'onSelect' | 'onBlur' | 'onFocus' | 'onMouseDown' | 'onMouseEnter' | 'onMouseLeave' | 'aria-activedescendant' | 'aria-atomic' | 'aria-autocomplete' | 'aria-busy' | 'aria-checked' | 'aria-colcount' | 'aria-colindex' | 'aria-colspan' | 'aria-controls' | 'aria-current' | 'aria-describedby' | 'aria-details' | 'aria-disabled' | 'aria-dropeffect' | 'aria-errormessage' | 'aria-expanded' | 'aria-flowto' | 'aria-grabbed' | 'aria-haspopup' | 'aria-hidden' | 'aria-invalid' | 'aria-keyshortcuts' | 'aria-label' | 'aria-labelledby' | 'aria-level' | 'aria-live' | 'aria-modal' | 'aria-multiline' | 'aria-multiselectable' | 'aria-orientation' | 'aria-owns' | 'aria-placeholder' | 'aria-posinset' | 'aria-pressed' | 'aria-readonly' | 'aria-relevant' | 'aria-required' | 'aria-roledescription' | 'aria-rowcount' | 'aria-rowindex' | 'aria-rowspan' | 'aria-selected' | 'aria-setsize' | 'aria-sort' | 'aria-valuemax' | 'aria-valuemin' | 'aria-valuenow' | 'aria-valuetext' | 'bordered' | 'role' | 'onContextMenu' | 'onMouseUp' | 'name' | 'onOpenChange' | 'defaultPickerValue' | 'disabledDate' | 'dateRender' | 'monthCellRender' | 'renderExtraFooter' | 'onPanelChange' | 'onOk' | 'format' | 'showHour' | 'showMinute' | 'showSecond' | 'use12Hours' | 'hourStep' | 'minuteStep' | 'secondStep' | 'hideDisabledOptions' | 'disabledHours' | 'disabledMinutes' | 'disabledSeconds' | 'popupStyle' | 'inputReadOnly' | 'pickerRef' | 'defaultOpenValue'> */
+/* Inlined std.Pick<std.Pick<rc-picker.rc-picker/lib/Picker.PickerTimeProps<moment.moment.Moment>, 'style' | 'direction' | 'prefixCls' | 'className' | 'disabled' | 'onClick' | 'defaultValue' | 'placeholder' | 'tabIndex' | 'role' | 'aria-activedescendant' | 'aria-atomic' | 'aria-autocomplete' | 'aria-busy' | 'aria-checked' | 'aria-colcount' | 'aria-colindex' | 'aria-colspan' | 'aria-controls' | 'aria-current' | 'aria-describedby' | 'aria-details' | 'aria-disabled' | 'aria-dropeffect' | 'aria-errormessage' | 'aria-expanded' | 'aria-flowto' | 'aria-grabbed' | 'aria-haspopup' | 'aria-hidden' | 'aria-invalid' | 'aria-keyshortcuts' | 'aria-label' | 'aria-labelledby' | 'aria-level' | 'aria-live' | 'aria-modal' | 'aria-multiline' | 'aria-multiselectable' | 'aria-orientation' | 'aria-owns' | 'aria-placeholder' | 'aria-posinset' | 'aria-pressed' | 'aria-readonly' | 'aria-relevant' | 'aria-required' | 'aria-roledescription' | 'aria-rowcount' | 'aria-rowindex' | 'aria-rowspan' | 'aria-selected' | 'aria-setsize' | 'aria-sort' | 'aria-valuemax' | 'aria-valuemin' | 'aria-valuenow' | 'aria-valuetext' | 'onFocus' | 'onBlur' | 'onChange' | 'onContextMenu' | 'onMouseDown' | 'onMouseEnter' | 'onMouseLeave' | 'onMouseUp' | 'onSelect' | 'autoFocus' | 'name' | 'value' | 'open' | 'picker' | 'mode' | 'defaultPickerValue' | 'disabledDate' | 'dateRender' | 'monthCellRender' | 'renderExtraFooter' | 'onPanelChange' | 'onOk' | 'dropdownClassName' | 'dropdownAlign' | 'popupStyle' | 'transitionName' | 'allowClear' | 'defaultOpen' | 'inputReadOnly' | 'format' | 'suffixIcon' | 'clearIcon' | 'getPopupContainer' | 'onOpenChange' | 'pickerRef' | 'showHour' | 'showMinute' | 'showSecond' | 'use12Hours' | 'hourStep' | 'minuteStep' | 'secondStep' | 'hideDisabledOptions' | 'disabledHours' | 'disabledMinutes' | 'disabledSeconds' | 'defaultOpenValue'> & {  locale ? :antd.antd/lib/date-picker/generatePicker.PickerLocale | undefined,   size ? :antd.antd/lib/button.ButtonSize,   bordered ? :boolean | undefined}, 'size' | 'style' | 'direction' | 'prefixCls' | 'className' | 'disabled' | 'onClick' | 'defaultValue' | 'placeholder' | 'tabIndex' | 'role' | 'aria-activedescendant' | 'aria-atomic' | 'aria-autocomplete' | 'aria-busy' | 'aria-checked' | 'aria-colcount' | 'aria-colindex' | 'aria-colspan' | 'aria-controls' | 'aria-current' | 'aria-describedby' | 'aria-details' | 'aria-disabled' | 'aria-dropeffect' | 'aria-errormessage' | 'aria-expanded' | 'aria-flowto' | 'aria-grabbed' | 'aria-haspopup' | 'aria-hidden' | 'aria-invalid' | 'aria-keyshortcuts' | 'aria-label' | 'aria-labelledby' | 'aria-level' | 'aria-live' | 'aria-modal' | 'aria-multiline' | 'aria-multiselectable' | 'aria-orientation' | 'aria-owns' | 'aria-placeholder' | 'aria-posinset' | 'aria-pressed' | 'aria-readonly' | 'aria-relevant' | 'aria-required' | 'aria-roledescription' | 'aria-rowcount' | 'aria-rowindex' | 'aria-rowspan' | 'aria-selected' | 'aria-setsize' | 'aria-sort' | 'aria-valuemax' | 'aria-valuemin' | 'aria-valuenow' | 'aria-valuetext' | 'onFocus' | 'onBlur' | 'onChange' | 'onContextMenu' | 'onMouseDown' | 'onMouseEnter' | 'onMouseLeave' | 'onMouseUp' | 'onSelect' | 'autoFocus' | 'name' | 'value' | 'open' | 'locale' | 'mode' | 'defaultPickerValue' | 'disabledDate' | 'dateRender' | 'monthCellRender' | 'renderExtraFooter' | 'onPanelChange' | 'onOk' | 'dropdownClassName' | 'dropdownAlign' | 'popupStyle' | 'transitionName' | 'allowClear' | 'defaultOpen' | 'inputReadOnly' | 'format' | 'suffixIcon' | 'clearIcon' | 'getPopupContainer' | 'onOpenChange' | 'pickerRef' | 'showHour' | 'showMinute' | 'showSecond' | 'use12Hours' | 'hourStep' | 'minuteStep' | 'secondStep' | 'hideDisabledOptions' | 'disabledHours' | 'disabledMinutes' | 'disabledSeconds' | 'defaultOpenValue' | 'bordered'> */
 trait PickPickPickerTimePropsMo extends js.Object {
   var allowClear: js.UndefOr[Boolean] = js.undefined
   var `aria-activedescendant`: js.UndefOr[String] = js.undefined
@@ -127,14 +127,16 @@ trait PickPickPickerTimePropsMo extends js.Object {
   var disabledHours: js.UndefOr[js.Function0[js.Array[Double]]] = js.undefined
   var disabledMinutes: js.UndefOr[js.Function1[/* hour */ Double, js.Array[Double]]] = js.undefined
   var disabledSeconds: js.UndefOr[js.Function2[/* hour */ Double, /* minute */ Double, js.Array[Double]]] = js.undefined
-  var dropdownAlign: js.UndefOr[AlignType] = js.undefined
+  var dropdownAlign: js.UndefOr[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AlignType */ js.Any
+  ] = js.undefined
   var dropdownClassName: js.UndefOr[String] = js.undefined
   var format: js.UndefOr[String | js.Array[String]] = js.undefined
   var getPopupContainer: js.UndefOr[js.Function1[/* node */ HTMLElement, HTMLElement]] = js.undefined
   var hideDisabledOptions: js.UndefOr[Boolean] = js.undefined
   var hourStep: js.UndefOr[Double] = js.undefined
   var inputReadOnly: js.UndefOr[Boolean] = js.undefined
-  var locale: js.UndefOr[AnonLang] = js.undefined
+  var locale: js.UndefOr[PickerLocale] = js.undefined
   var minuteStep: js.UndefOr[Double] = js.undefined
   var mode: js.UndefOr[PanelMode] = js.undefined
   var monthCellRender: js.UndefOr[MonthCellRender[Moment]] = js.undefined
@@ -239,14 +241,14 @@ object PickPickPickerTimePropsMo {
     disabledHours: () => js.Array[Double] = null,
     disabledMinutes: /* hour */ Double => js.Array[Double] = null,
     disabledSeconds: (/* hour */ Double, /* minute */ Double) => js.Array[Double] = null,
-    dropdownAlign: AlignType = null,
+    dropdownAlign: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AlignType */ js.Any = null,
     dropdownClassName: String = null,
     format: String | js.Array[String] = null,
     getPopupContainer: /* node */ HTMLElement => HTMLElement = null,
     hideDisabledOptions: js.UndefOr[Boolean] = js.undefined,
     hourStep: Int | Double = null,
     inputReadOnly: js.UndefOr[Boolean] = js.undefined,
-    locale: AnonLang = null,
+    locale: PickerLocale = null,
     minuteStep: Int | Double = null,
     mode: PanelMode = null,
     monthCellRender: (Moment, /* locale */ Locale) => ReactNode = null,

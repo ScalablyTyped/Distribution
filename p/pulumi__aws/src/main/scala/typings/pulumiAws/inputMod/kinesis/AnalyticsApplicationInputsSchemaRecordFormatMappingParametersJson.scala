@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait AnalyticsApplicationInputsSchemaRecordFormatMappingParametersJson extends js.Object {
+  /**
+    * Path to the top-level parent that contains the records.
+    */
   var recordRowPath: Input[String] = js.native
 }
 

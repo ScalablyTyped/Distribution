@@ -8,25 +8,27 @@ import scala.scalajs.js.annotation._
 @js.native
 class BatchRetrieveInventoryChangesRequest () extends js.Object {
   /**
-    * Filters results by [CatalogObject](#type-catalogobject) ID. Only applied when set. Default: unset.
+    * Filters results by `CatalogObject` ID. Only applied when set. Default: unset.
     */
   var catalog_object_ids: js.UndefOr[js.Array[String]] = js.native
   /**
-    * A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of
-    * results for the original query. See [Pagination](/basics/api101/pagination) for more information.
+    * A pagination cursor returned by a previous call to this endpoint.
+    * Provide this to retrieve the next set of results for the original query.
+    * See the [Pagination](https://developer.squareup.com/docs/working-with-apis/pagination) guide for more information.
     */
   var cursor: js.UndefOr[String] = js.native
   /**
-    * Filters results by [Location](#type-location) ID. Only applied when set. Default: unset.
+    * Filters results by `Location` ID. Only applied when set. Default: unset.
     */
   var location_ids: js.UndefOr[js.Array[String]] = js.native
   /**
-    * Filters `ADJUSTMENT` query results by [InventoryState](#type-inventorystate). Only applied when set. Default: unset.
+    * Filters `ADJUSTMENT` query results by `InventoryState`. Only applied when set. Default: unset.
+    * See [InventoryState](#type-inventorystate) for possible values
     */
   var states: js.UndefOr[js.Array[InventoryStateType]] = js.native
   /**
-    * Filters results by [InventoryChangeType](#type-inventorychangetype). Default: [`PHYSICAL_COUNT`, `ADJUSTMENT`].
-    * `TRANSFER` is not supported as a filter.
+    * Filters results by `InventoryChangeType`. Default: [`PHYSICAL_COUNT`, `ADJUSTMENT`].
+    * `TRANSFER` is not supported as a filter. See [InventoryChangeType](#type-inventorychangetype) for possible values.
     */
   var types: js.UndefOr[js.Array[InventoryType]] = js.native
   /**

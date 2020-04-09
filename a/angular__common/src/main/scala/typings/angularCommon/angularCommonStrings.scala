@@ -67,6 +67,9 @@ object angularCommonStrings {
   sealed trait json extends js.Object
   
   @js.native
+  sealed trait ltr extends js.Object
+  
+  @js.native
   sealed trait manual extends js.Object
   
   @js.native
@@ -74,6 +77,9 @@ object angularCommonStrings {
   
   @js.native
   sealed trait response extends HttpObserve
+  
+  @js.native
+  sealed trait rtl extends js.Object
   
   @js.native
   sealed trait server extends js.Object
@@ -131,11 +137,15 @@ object angularCommonStrings {
   @scala.inline
   def json: json = "json".asInstanceOf[json]
   @scala.inline
+  def ltr: ltr = "ltr".asInstanceOf[ltr]
+  @scala.inline
   def manual: manual = "manual".asInstanceOf[manual]
   @scala.inline
   def narrow: narrow = "narrow".asInstanceOf[narrow]
   @scala.inline
   def response: response = "response".asInstanceOf[response]
+  @scala.inline
+  def rtl: rtl = "rtl".asInstanceOf[rtl]
   @scala.inline
   def server: server = "server".asInstanceOf[server]
   @scala.inline

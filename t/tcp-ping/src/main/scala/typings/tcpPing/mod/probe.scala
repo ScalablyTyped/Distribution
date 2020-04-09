@@ -11,7 +11,7 @@ object probe extends js.Object {
   def apply(
     address: String,
     port: Double,
-    callback: js.Function2[/* error */ Error, /* result */ Result, Unit]
+    callback: js.Function2[/* error */ Error, /* result */ Boolean, Unit]
   ): Unit = js.native
 }
 

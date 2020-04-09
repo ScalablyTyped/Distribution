@@ -1,0 +1,20 @@
+package typings.octokitPluginRestEndpointMethods.typesMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ActivityGetFeedsResponseLinksTimeline extends js.Object {
+  var href: String
+  var `type`: String
+}
+
+object ActivityGetFeedsResponseLinksTimeline {
+  @scala.inline
+  def apply(href: String, `type`: String): ActivityGetFeedsResponseLinksTimeline = {
+    val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ActivityGetFeedsResponseLinksTimeline]
+  }
+}
+

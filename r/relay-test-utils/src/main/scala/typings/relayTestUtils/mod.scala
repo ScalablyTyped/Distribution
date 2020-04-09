@@ -19,12 +19,6 @@ object mod extends js.Object {
   def createMockEnvironment(config: AnonHandlerProvider): RelayMockEnvironment = js.native
   def unwrapContainer[Props](ComponentClass: ComponentType[Props | RelayProp | RelayPaginationProp | RelayRefetchProp]): ComponentType[Props] = js.native
   @js.native
-  object MockEnvironment extends js.Object {
-    def createMockEnvironment(): RelayMockEnvironment = js.native
-    def createMockEnvironment(config: AnonHandlerProvider): RelayMockEnvironment = js.native
-  }
-  
-  @js.native
   object MockPayloadGenerator extends js.Object {
     def generate(operation: OperationDescriptor): GraphQLResponse = js.native
     def generate(operation: OperationDescriptor, mockResolvers: MockResolvers): GraphQLResponse = js.native

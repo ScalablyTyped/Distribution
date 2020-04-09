@@ -707,6 +707,9 @@ object plotlyJsStrings {
   sealed trait last extends js.Object
   
   @js.native
+  sealed trait `layout first` extends js.Object
+  
+  @js.native
   sealed trait left extends js.Object
   
   @js.native
@@ -1424,6 +1427,9 @@ object plotlyJsStrings {
   sealed trait trace extends js.Object
   
   @js.native
+  sealed trait `traces first` extends js.Object
+  
+  @js.native
   sealed trait track extends js.Object
   
   @js.native
@@ -2116,6 +2122,8 @@ object plotlyJsStrings {
   @scala.inline
   def last: last = "last".asInstanceOf[last]
   @scala.inline
+  def `layout first`: `layout first` = "layout first".asInstanceOf[`layout first`]
+  @scala.inline
   def left: left = "left".asInstanceOf[left]
   @scala.inline
   def `left plot`: `left plot` = "left plot".asInstanceOf[`left plot`]
@@ -2593,6 +2601,8 @@ object plotlyJsStrings {
   def tr: tr = "tr".asInstanceOf[tr]
   @scala.inline
   def trace: trace = "trace".asInstanceOf[trace]
+  @scala.inline
+  def `traces first`: `traces first` = "traces first".asInstanceOf[`traces first`]
   @scala.inline
   def track: track = "track".asInstanceOf[track]
   @scala.inline

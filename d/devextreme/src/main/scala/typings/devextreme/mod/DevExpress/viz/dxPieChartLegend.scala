@@ -22,18 +22,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxPieChartLegend extends BaseChartLegend {
-  /** Specifies the text for a hint that appears when a user hovers the mouse pointer over a legend item. */
+  /** @name dxPieChart.Options.legend.customizeHint */
   var customizeHint: js.UndefOr[js.Function1[/* pointInfo */ AnonPointColor, String]] = js.undefined
-  /** Allows you to change the order, text, and visibility of legend items. */
+  /** @name dxPieChart.Options.legend.customizeItems */
   @JSName("customizeItems")
   var customizeItems_dxPieChartLegend: js.UndefOr[
     js.Function1[/* items */ js.Array[PieChartLegendItem], js.Array[PieChartLegendItem]]
   ] = js.undefined
-  /** Specifies a callback function that returns the text to be displayed by a legend item. */
+  /** @name dxPieChart.Options.legend.customizeText */
   var customizeText: js.UndefOr[js.Function1[/* pointInfo */ AnonPointColor, String]] = js.undefined
-  /** Specifies what chart elements to highlight when a corresponding item in the legend is hovered over. */
+  /** @name dxPieChart.Options.legend.hoverMode */
   var hoverMode: js.UndefOr[none | allArgumentPoints] = js.undefined
-  /** Specifies an SVG element that serves as a custom legend item marker. */
+  /** @name dxPieChart.Options.legend.markerTemplate */
   @JSName("markerTemplate")
   var markerTemplate_dxPieChartLegend: js.UndefOr[
     template | (js.Function2[

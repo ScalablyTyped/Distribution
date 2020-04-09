@@ -14,26 +14,26 @@ class validationEngine ()
 @JSImport("devextreme", "validationEngine")
 @js.native
 object validationEngine extends js.Object {
-  /** Gets the default validation group. */
+  /** @name validationEngine.getGroupConfig() */
   def getGroupConfig(): js.Any = js.native
-  /** Gets a validation group with a specific key. */
+  /** @name validationEngine.getGroupConfig(group) */
   def getGroupConfig(group: String): js.Any = js.native
   def getGroupConfig(group: js.Any): js.Any = js.native
-  /** Registers all the Validator objects extending fields of the specified ViewModel. */
+  /** @name validationEngine.registerModelForValidation(model) */
   def registerModelForValidation(model: js.Any): Unit = js.native
-  /** Resets the values and validation result of the editors that belong to the default validation group. */
+  /** @name validationEngine.resetGroup() */
   def resetGroup(): Unit = js.native
-  /** Resets the values and validation result of the editors that belong to the specified validation group. */
+  /** @name validationEngine.resetGroup(group) */
   def resetGroup(group: String): Unit = js.native
   def resetGroup(group: js.Any): Unit = js.native
-  /** Unregisters all the Validator objects extending fields of the specified ViewModel. */
+  /** @name validationEngine.unregisterModelForValidation(model) */
   def unregisterModelForValidation(model: js.Any): Unit = js.native
-  /** Validates editors from the default validation group. */
+  /** @name validationEngine.validateGroup() */
   def validateGroup(): dxValidationGroupResult = js.native
-  /** Validates editors from a specific validation group. */
+  /** @name validationEngine.validateGroup(group) */
   def validateGroup(group: String): dxValidationGroupResult = js.native
   def validateGroup(group: js.Any): dxValidationGroupResult = js.native
-  /** Validates a view model. */
+  /** @name validationEngine.validateModel(model) */
   def validateModel(model: js.Any): js.Any = js.native
 }
 

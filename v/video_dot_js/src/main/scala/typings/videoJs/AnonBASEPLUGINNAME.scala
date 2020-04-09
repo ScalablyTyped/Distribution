@@ -1,6 +1,7 @@
 package typings.videoJs
 
 import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.StringDictionary
 import typings.videoJs.mod.videojs.Player
 import typings.videoJs.mod.videojs.Plugin
@@ -18,7 +19,8 @@ trait AnonBASEPLUGINNAME
   * @param player
   *        A Video.js player instance.
   */
-Instantiable1[/* player */ Player, Plugin] {
+Instantiable1[/* player */ Player, Plugin]
+     with Instantiable2[/* player */ Player, /* options */ js.Any, Plugin] {
   /**
     * The name of the base plugin class as it is registered.
     *

@@ -12,7 +12,7 @@ trait RouteSpecHttpRoute extends js.Object {
     */
   var action: Input[RouteSpecHttpRouteAction] = js.native
   /**
-    * The method and value to match the header value sent with a request. Specify one match method.
+    * The criteria for determining an HTTP request match.
     */
   var `match`: Input[RouteSpecHttpRouteMatch] = js.native
 }

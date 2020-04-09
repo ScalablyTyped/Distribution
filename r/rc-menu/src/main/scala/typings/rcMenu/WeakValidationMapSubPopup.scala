@@ -12,7 +12,6 @@ import typings.rcMenu.interfaceMod.SelectEventHandler
 import typings.rcMenu.interfaceMod.TriggerSubMenuAction
 import typings.rcMenu.rcMenuStrings.ltr
 import typings.rcMenu.rcMenuStrings.rtl
-import typings.rcTrigger.interfaceMod.MotionType
 import typings.react.mod.CSSProperties
 import typings.react.mod.Key
 import typings.react.mod.ReactInstance
@@ -42,7 +41,13 @@ trait WeakValidationMapSubPopup extends js.Object {
   var level: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   var manualRef: js.UndefOr[Validator[js.UndefOr[LegacyFunctionRef | Null]]] = js.undefined
   var mode: js.UndefOr[Validator[js.UndefOr[MenuMode | Null]]] = js.undefined
-  var motion: js.UndefOr[Validator[js.UndefOr[MotionType | Null]]] = js.undefined
+  var motion: js.UndefOr[
+    Validator[
+      js.UndefOr[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MotionType */ _) | Null
+      ]
+    ]
+  ] = js.undefined
   var multiple: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   var onClick: js.UndefOr[Validator[js.UndefOr[MenuClickEventHandler | Null]]] = js.undefined
   var onDeselect: js.UndefOr[Validator[js.UndefOr[Null | SelectEventHandler]]] = js.undefined
@@ -85,7 +90,11 @@ object WeakValidationMapSubPopup {
     level: Validator[js.UndefOr[Double | Null]] = null,
     manualRef: Validator[js.UndefOr[LegacyFunctionRef | Null]] = null,
     mode: Validator[js.UndefOr[MenuMode | Null]] = null,
-    motion: Validator[js.UndefOr[MotionType | Null]] = null,
+    motion: Validator[
+      js.UndefOr[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MotionType */ _) | Null
+      ]
+    ] = null,
     multiple: Validator[js.UndefOr[Boolean | Null]] = null,
     onClick: Validator[js.UndefOr[MenuClickEventHandler | Null]] = null,
     onDeselect: Validator[js.UndefOr[Null | SelectEventHandler]] = null,

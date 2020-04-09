@@ -4,6 +4,7 @@ import typings.plotlyJs.mod.AxisType
 import typings.plotlyJs.mod.Calendar
 import typings.plotlyJs.mod.Color
 import typings.plotlyJs.mod.Datum
+import typings.plotlyJs.mod.Transition
 import typings.plotlyJs.plotlyJsBooleans.`false`
 import typings.plotlyJs.plotlyJsNumbers.`0`
 import typings.plotlyJs.plotlyJsNumbers.`1`
@@ -34,7 +35,7 @@ import scala.scalajs.js.annotation._
 /* Inlined std.Partial<plotly.js.plotly.js.Layout> */
 trait PartialLayout extends js.Object {
   var angularaxis: js.UndefOr[js.Object] = js.undefined
-  var annotations: js.UndefOr[js.Array[PartialAnnotations]] = js.undefined
+  var annotations: js.UndefOr[js.Array[PartialAnnotationsAlign]] = js.undefined
   var autosize: js.UndefOr[Boolean] = js.undefined
   var bargap: js.UndefOr[`0` | `1`] = js.undefined
   var bargroupgap: js.UndefOr[`0` | `1`] = js.undefined
@@ -76,6 +77,7 @@ trait PartialLayout extends js.Object {
   var ternary: js.UndefOr[js.Object] = js.undefined
   var title: js.UndefOr[String | PartialtextstringfontPart] = js.undefined
   var titlefont: js.UndefOr[PartialFont] = js.undefined
+  var transition: js.UndefOr[Transition] = js.undefined
   var updatemenus: js.UndefOr[js.Object] = js.undefined
   var width: js.UndefOr[Double] = js.undefined
   var xaxis: js.UndefOr[PartialLayoutAxis] = js.undefined
@@ -126,7 +128,7 @@ object PartialLayout {
   @scala.inline
   def apply(
     angularaxis: js.Object = null,
-    annotations: js.Array[PartialAnnotations] = null,
+    annotations: js.Array[PartialAnnotationsAlign] = null,
     autosize: js.UndefOr[Boolean] = js.undefined,
     bargap: `0` | `1` = null,
     bargroupgap: `0` | `1` = null,
@@ -168,6 +170,7 @@ object PartialLayout {
     ternary: js.Object = null,
     title: String | PartialtextstringfontPart = null,
     titlefont: PartialFont = null,
+    transition: Transition = null,
     updatemenus: js.Object = null,
     width: Int | Double = null,
     xaxis: PartialLayoutAxis = null,
@@ -245,6 +248,7 @@ object PartialLayout {
     if (ternary != null) __obj.updateDynamic("ternary")(ternary.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (titlefont != null) __obj.updateDynamic("titlefont")(titlefont.asInstanceOf[js.Any])
+    if (transition != null) __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
     if (updatemenus != null) __obj.updateDynamic("updatemenus")(updatemenus.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (xaxis != null) __obj.updateDynamic("xaxis")(xaxis.asInstanceOf[js.Any])

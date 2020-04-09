@@ -9,6 +9,17 @@ package object appconfigMod {
   type Arn = java.lang.String
   type ClientConfiguration = typings.awsSdk.serviceMod.ServiceConfigurationOptions with typings.awsSdk.appconfigMod.ClientApiVersions
   type ConfigurationProfileSummaryList = js.Array[typings.awsSdk.appconfigMod.ConfigurationProfileSummary]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.PERCENTAGE_UPDATED
+    - typings.awsSdk.awsSdkStrings.ROLLBACK_STARTED
+    - typings.awsSdk.awsSdkStrings.ROLLBACK_COMPLETED
+    - typings.awsSdk.awsSdkStrings.BAKE_TIME_STARTED
+    - typings.awsSdk.awsSdkStrings.DEPLOYMENT_STARTED
+    - typings.awsSdk.awsSdkStrings.DEPLOYMENT_COMPLETED
+    - java.lang.String
+  */
+  type DeploymentEventType = typings.awsSdk.appconfigMod._DeploymentEventType | java.lang.String
+  type DeploymentEvents = js.Array[typings.awsSdk.appconfigMod.DeploymentEvent]
   type DeploymentList = js.Array[typings.awsSdk.appconfigMod.DeploymentSummary]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.BAKING
@@ -61,6 +72,14 @@ package object appconfigMod {
   type TagKeyList = js.Array[typings.awsSdk.appconfigMod.TagKey]
   type TagMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.appconfigMod.TagValue]
   type TagValue = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.USER
+    - typings.awsSdk.awsSdkStrings.APPCONFIG
+    - typings.awsSdk.awsSdkStrings.CLOUDWATCH_ALARM
+    - typings.awsSdk.awsSdkStrings.INTERNAL_ERROR
+    - java.lang.String
+  */
+  type TriggeredBy = typings.awsSdk.appconfigMod._TriggeredBy | java.lang.String
   type Uri = java.lang.String
   type ValidatorList = js.Array[typings.awsSdk.appconfigMod.Validator]
   /* Rewritten from type alias, can be one of: 

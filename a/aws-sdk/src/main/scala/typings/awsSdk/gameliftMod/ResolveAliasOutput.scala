@@ -9,7 +9,7 @@ trait ResolveAliasOutput extends js.Object {
   /**
     *  The Amazon Resource Name (ARN) associated with the GameLift fleet resource that this alias points to. 
     */
-  var FleetArn: js.UndefOr[ArnStringModel] = js.native
+  var FleetArn: js.UndefOr[typings.awsSdk.gameliftMod.FleetArn] = js.native
   /**
     * The fleet identifier that the alias is pointing to.
     */
@@ -18,7 +18,7 @@ trait ResolveAliasOutput extends js.Object {
 
 object ResolveAliasOutput {
   @scala.inline
-  def apply(FleetArn: ArnStringModel = null, FleetId: FleetId = null): ResolveAliasOutput = {
+  def apply(FleetArn: FleetArn = null, FleetId: FleetId = null): ResolveAliasOutput = {
     val __obj = js.Dynamic.literal()
     if (FleetArn != null) __obj.updateDynamic("FleetArn")(FleetArn.asInstanceOf[js.Any])
     if (FleetId != null) __obj.updateDynamic("FleetId")(FleetId.asInstanceOf[js.Any])

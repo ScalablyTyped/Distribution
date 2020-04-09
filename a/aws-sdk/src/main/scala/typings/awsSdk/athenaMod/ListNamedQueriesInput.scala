@@ -15,7 +15,7 @@ trait ListNamedQueriesInput extends js.Object {
     */
   var NextToken: js.UndefOr[Token] = js.native
   /**
-    * The name of the workgroup from which the named queries are being returned.
+    * The name of the workgroup from which the named queries are returned. If a workgroup is not specified, the saved queries for the primary workgroup are returned.
     */
   var WorkGroup: js.UndefOr[WorkGroupName] = js.native
 }

@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mod {
-  type ApplicationRequestHandler[T] = typings.expressServeStaticCore.mod.IRouterHandler[T] with typings.expressServeStaticCore.mod.IRouterMatcher[T] with (js.Function1[
+  type ApplicationRequestHandler[T] = typings.expressServeStaticCore.mod.IRouterHandler[T] with (typings.expressServeStaticCore.mod.IRouterMatcher[T, _]) with (js.Function1[
     /* repeated */ typings.expressServeStaticCore.mod.RequestHandlerParams[typings.expressServeStaticCore.mod.ParamsDictionary, _, _], 
     T
   ])

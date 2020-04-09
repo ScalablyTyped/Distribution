@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "sinonjs__fake-timers"
-version := "6.0-dt-20200227Z-9b6e4a"
+version := "6.0-dt-20200331Z-c019e4"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

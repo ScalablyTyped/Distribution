@@ -1,5 +1,6 @@
 package typings.pulumiAws.environmentEC2Mod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -36,6 +37,10 @@ trait EnvironmentEC2State extends js.Object {
     */
   val subnetId: js.UndefOr[Input[String]] = js.native
   /**
+    * Key-value mapping of resource tags
+    */
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  /**
     * The type of the environment (e.g. `ssh` or `ec2`)
     */
   val `type`: js.UndefOr[Input[String]] = js.native
@@ -51,6 +56,7 @@ object EnvironmentEC2State {
     name: Input[String] = null,
     ownerArn: Input[String] = null,
     subnetId: Input[String] = null,
+    tags: Input[StringDictionary[_]] = null,
     `type`: Input[String] = null
   ): EnvironmentEC2State = {
     val __obj = js.Dynamic.literal()
@@ -61,6 +67,7 @@ object EnvironmentEC2State {
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (ownerArn != null) __obj.updateDynamic("ownerArn")(ownerArn.asInstanceOf[js.Any])
     if (subnetId != null) __obj.updateDynamic("subnetId")(subnetId.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnvironmentEC2State]
   }

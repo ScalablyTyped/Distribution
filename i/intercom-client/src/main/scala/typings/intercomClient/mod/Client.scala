@@ -16,6 +16,7 @@ class Client protected () extends js.Object {
   var contacts: Leads = js.native
   var events: Events = js.native
   var leads: Leads = js.native
+  var messages: Messages = js.native
   var tags: Tags = js.native
   var users: Users = js.native
   var visitors: Visitors = js.native

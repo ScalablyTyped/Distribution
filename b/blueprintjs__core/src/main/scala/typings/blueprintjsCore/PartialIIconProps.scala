@@ -19,7 +19,7 @@ trait PartialIIconProps extends js.Object {
   var intent: js.UndefOr[Intent] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
   var tagName: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any
   ] = js.undefined
   var title: js.UndefOr[String | `false`] = js.undefined
 }
@@ -34,7 +34,7 @@ object PartialIIconProps {
     iconSize: Int | Double = null,
     intent: Intent = null,
     style: CSSProperties = null,
-    tagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any = null,
+    tagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any = null,
     title: String | `false` = null
   ): PartialIIconProps = {
     val __obj = js.Dynamic.literal()

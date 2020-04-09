@@ -8,6 +8,5 @@ import scala.scalajs.js.annotation._
 @js.native
 class QuestionExpressionImplementor protected () extends QuestionImplementor {
   def this(question: Question) = this()
-  var koDisplayValue: js.Any = js.native
 }
 

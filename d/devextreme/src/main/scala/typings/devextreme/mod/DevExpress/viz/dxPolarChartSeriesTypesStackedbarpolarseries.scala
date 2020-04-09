@@ -16,13 +16,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxPolarChartSeriesTypesStackedbarpolarseries extends dxPolarChartSeriesTypesCommonPolarChartSeries {
-  /** Specifies series elements to be highlighted when a user points to the series. */
+  /** @name dxPolarChartSeriesTypes.stackedbarpolarseries.hoverMode */
   @JSName("hoverMode")
   var hoverMode_dxPolarChartSeriesTypesStackedbarpolarseries: js.UndefOr[onlyPoint | allSeriesPoints | allArgumentPoints | none] = js.undefined
-  /** An object defining the label configuration options. */
+  /** @name dxPolarChartSeriesTypes.stackedbarpolarseries.label */
   @JSName("label")
   var label_dxPolarChartSeriesTypesStackedbarpolarseries: js.UndefOr[dxPolarChartSeriesTypesStackedbarpolarseriesLabel] = js.undefined
-  /** Specifies series elements to be highlighted when a user selects the series. */
+  /** @name dxPolarChartSeriesTypes.stackedbarpolarseries.selectionMode */
   @JSName("selectionMode")
   var selectionMode_dxPolarChartSeriesTypesStackedbarpolarseries: js.UndefOr[onlyPoint | allSeriesPoints | allArgumentPoints | none] = js.undefined
 }

@@ -1,6 +1,6 @@
 package typings.pdfmake
 
-import org.scalablytyped.runtime.StringDictionary
+import typings.pdfmake.interfacesMod.TFontDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,9 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object vfsFontsMod extends js.Object {
   @js.native
-  object pdfMake
-    extends /* name */ StringDictionary[js.Any] {
-    var vfs: js.Any = js.native
+  object pdfMake extends js.Object {
+    var vfs: TFontDictionary = js.native
   }
   
 }

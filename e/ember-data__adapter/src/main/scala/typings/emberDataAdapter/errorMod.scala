@@ -1,6 +1,5 @@
 package typings.emberDataAdapter
 
-import typings.emberObject.mod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,16 +14,8 @@ object errorMod extends js.Object {
     * has been initiated but before a response has been received.
     */
   @js.native
-  class AbortError () extends default
-  
-  /**
-    * A `DS.AdapterError` is used by an adapter to signal that an error occurred
-    * during a request to an external API. It indicates a generic error, and
-    * subclasses are used to indicate specific error states. The following
-    * subclasses are provided:
-    */
-  @js.native
-  class AdapterError () extends default
+  class AbortError ()
+    extends typings.emberObject.mod.default
   
   /**
     * A `DS.ConflictError` equates to a HTTP `409 Conflict` response status.
@@ -34,7 +25,8 @@ object errorMod extends js.Object {
     * to the external API.
     */
   @js.native
-  class ConflictError () extends default
+  class ConflictError ()
+    extends typings.emberObject.mod.default
   
   /**
     * A `DS.ForbiddenError` equates to a HTTP `403 Forbidden` response status.
@@ -44,7 +36,8 @@ object errorMod extends js.Object {
     * necessary permissions for the request.
     */
   @js.native
-  class ForbiddenError () extends default
+  class ForbiddenError ()
+    extends typings.emberObject.mod.default
   
   /**
     * A `DS.InvalidError` is used by an adapter to signal the external API
@@ -67,7 +60,8 @@ object errorMod extends js.Object {
     * was rejected because the resource could not be found on the API.
     */
   @js.native
-  class NotFoundError () extends default
+  class NotFoundError ()
+    extends typings.emberObject.mod.default
   
   /**
     * A `DS.ServerError` equates to a HTTP `500 Internal Server Error` response
@@ -75,7 +69,8 @@ object errorMod extends js.Object {
     * because of an error in the external API.
     */
   @js.native
-  class ServerError () extends default
+  class ServerError ()
+    extends typings.emberObject.mod.default
   
   /**
     * A `DS.TimeoutError` is used by an adapter to signal that a request
@@ -83,7 +78,8 @@ object errorMod extends js.Object {
     * the external API within an allowed time period.
     */
   @js.native
-  class TimeoutError () extends default
+  class TimeoutError ()
+    extends typings.emberObject.mod.default
   
   /**
     * A `DS.UnauthorizedError` equates to a HTTP `401 Unauthorized` response
@@ -92,7 +88,18 @@ object errorMod extends js.Object {
     * yet been provided.
     */
   @js.native
-  class UnauthorizedError () extends default
+  class UnauthorizedError ()
+    extends typings.emberObject.mod.default
+  
+  /**
+    * A `DS.AdapterError` is used by an adapter to signal that an error occurred
+    * during a request to an external API. It indicates a generic error, and
+    * subclasses are used to indicate specific error states. The following
+    * subclasses are provided:
+    */
+  @js.native
+  class default ()
+    extends typings.emberObject.mod.default
   
   val errorsArrayToHash: js.Function1[/* errors */ js.Array[js.Any], js.Object] = js.native
   val errorsHashToArray: js.Function1[/* errors */ js.Object, js.Array[js.Any]] = js.native

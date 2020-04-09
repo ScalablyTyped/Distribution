@@ -272,6 +272,8 @@ object antdComponents extends antdProps {
   @scala.inline
   def Slider: ComponentType[SliderProps] = js.constructorOf[typings.antd.sliderMod.default].asInstanceOf[typings.react.mod.ComponentType[SliderProps]]
   @scala.inline
+  def Space: ComponentType[SpaceProps] = typings.antd.spaceMod.default.asInstanceOf[typings.react.mod.ComponentType[SpaceProps]]
+  @scala.inline
   def Spin: ComponentType[SpinProps] = js.constructorOf[typings.antd.spinMod.default].asInstanceOf[typings.react.mod.ComponentType[SpinProps]]
   @scala.inline
   def Statistic: ComponentType[StatisticProps[typings.antd.statisticStatisticMod.StatisticProps]] = typings.antd.statisticMod.default.asInstanceOf[typings.react.mod.ComponentType[StatisticProps[typings.antd.statisticStatisticMod.StatisticProps]]]

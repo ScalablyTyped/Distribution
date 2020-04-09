@@ -17,9 +17,6 @@ trait CellTypeSettings extends js.Object {
   /** Specifies the text and value of field in dropdown list.
     */
   var field: js.UndefOr[js.Any] = js.undefined
-  /** Specifies the format for datepicker.
-    */
-  var format: js.UndefOr[String] = js.undefined
   /** Specifies the checkbox is set true or false of Custom Cell type.
     */
   var isChecked: js.UndefOr[Boolean] = js.undefined
@@ -41,7 +38,6 @@ object CellTypeSettings {
     dataSourceRange: String = null,
     dataSourceSheetIndex: Int | Double = null,
     field: js.Any = null,
-    format: String = null,
     isChecked: js.UndefOr[Boolean] = js.undefined,
     text: String = null,
     `type`: CustomCellType = null,
@@ -52,7 +48,6 @@ object CellTypeSettings {
     if (dataSourceRange != null) __obj.updateDynamic("dataSourceRange")(dataSourceRange.asInstanceOf[js.Any])
     if (dataSourceSheetIndex != null) __obj.updateDynamic("dataSourceSheetIndex")(dataSourceSheetIndex.asInstanceOf[js.Any])
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (!js.isUndefined(isChecked)) __obj.updateDynamic("isChecked")(isChecked.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

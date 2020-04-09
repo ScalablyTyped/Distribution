@@ -4,6 +4,7 @@ import typings.csstype.mod.AlignSelfProperty
 import typings.csstype.mod.DisplayProperty
 import typings.csstype.mod.FlexProperty
 import typings.csstype.mod.FontFamilyProperty
+import typings.csstype.mod.FontStyleProperty
 import typings.csstype.mod.GlobalsNumber
 import typings.csstype.mod.HeightProperty
 import typings.csstype.mod.MaxHeightProperty
@@ -38,6 +39,7 @@ import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
@@ -118,6 +120,7 @@ import scala.scalajs.js.annotation._
 /* Inlined parent rebass.rebass.BoxKnownProps */
 /* Inlined parent styled-system.styled-system.FontFamilyProps<styled-system.styled-system.RequiredTheme> */
 /* Inlined parent styled-system.styled-system.FontWeightProps<styled-system.styled-system.RequiredTheme, styled-system.styled-system.ThemeValue<'fontWeights', styled-system.styled-system.RequiredTheme, any>> */
+/* Inlined parent styled-system.styled-system.FontStyleProps<styled-system.styled-system.RequiredTheme> */
 /* Inlined parent styled-system.styled-system.TextAlignProps<styled-system.styled-system.RequiredTheme> */
 /* Inlined parent styled-system.styled-system.LineHeightProps<styled-system.styled-system.RequiredTheme, styled-system.styled-system.ThemeValue<'lineHeights', styled-system.styled-system.RequiredTheme, any>> */
 /* Inlined parent styled-system.styled-system.LetterSpacingProps<styled-system.styled-system.RequiredTheme, styled-system.styled-system.ThemeValue<'letterSpacings', styled-system.styled-system.RequiredTheme, any>> */
@@ -275,6 +278,13 @@ trait HeadingProps extends js.Object {
     *
     */
   var fontSize: js.UndefOr[ResponsiveValue[ThemeValue[fontSizes, RequiredTheme, _], RequiredTheme]] = js.undefined
+  /**
+    * The font-style CSS property specifies whether a font should be styled with a normal, italic,
+    * or oblique face from its font-family.
+    *
+    * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/font-style)
+    */
+  var fontStyle: js.UndefOr[ResponsiveValue[FontStyleProperty, RequiredTheme]] = js.undefined
   /**
     * The font-weight CSS property specifies the weight (or boldness) of the font.
     *
@@ -742,6 +752,7 @@ object HeadingProps {
     flex: ResponsiveValue[FlexProperty[TLengthStyledSystem], RequiredTheme] = null,
     fontFamily: ResponsiveValue[FontFamilyProperty, RequiredTheme] = null,
     fontSize: ResponsiveValue[ThemeValue[fontSizes, RequiredTheme, _], RequiredTheme] = null,
+    fontStyle: ResponsiveValue[FontStyleProperty, RequiredTheme] = null,
     fontWeight: ResponsiveValue[ThemeValue[fontWeights, RequiredTheme, _], RequiredTheme] = null,
     form: String = null,
     formAction: String = null,
@@ -875,7 +886,7 @@ object HeadingProps {
     onProgress: SyntheticEvent[HTMLHeadingElement, Event_] => Unit = null,
     onRateChange: SyntheticEvent[HTMLHeadingElement, Event_] => Unit = null,
     onReset: FormEvent[HTMLHeadingElement] => Unit = null,
-    onScroll: UIEvent[HTMLHeadingElement] => Unit = null,
+    onScroll: UIEvent[HTMLHeadingElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[HTMLHeadingElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[HTMLHeadingElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[HTMLHeadingElement, Event_] => Unit = null,
@@ -890,8 +901,7 @@ object HeadingProps {
     onTransitionEnd: TransitionEvent[HTMLHeadingElement] => Unit = null,
     onVolumeChange: SyntheticEvent[HTMLHeadingElement, Event_] => Unit = null,
     onWaiting: SyntheticEvent[HTMLHeadingElement, Event_] => Unit = null,
-    onWheel: WheelEvent[HTMLHeadingElement] => Unit = null,
-    opacity: ResponsiveValue[GlobalsNumber, RequiredTheme] = null
+    onWheel: WheelEvent[HTMLHeadingElement] => Unit = null
   ): HeadingProps = {
     val __obj = js.Dynamic.literal()
     if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])
@@ -998,6 +1008,7 @@ object HeadingProps {
     if (flex != null) __obj.updateDynamic("flex")(flex.asInstanceOf[js.Any])
     if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
+    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle.asInstanceOf[js.Any])
     if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
     if (form != null) __obj.updateDynamic("form")(form.asInstanceOf[js.Any])
     if (formAction != null) __obj.updateDynamic("formAction")(formAction.asInstanceOf[js.Any])
@@ -1147,7 +1158,6 @@ object HeadingProps {
     if (onVolumeChange != null) __obj.updateDynamic("onVolumeChange")(js.Any.fromFunction1(onVolumeChange))
     if (onWaiting != null) __obj.updateDynamic("onWaiting")(js.Any.fromFunction1(onWaiting))
     if (onWheel != null) __obj.updateDynamic("onWheel")(js.Any.fromFunction1(onWheel))
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeadingProps]
   }
 }

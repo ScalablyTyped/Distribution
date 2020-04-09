@@ -23,7 +23,7 @@ object mod extends js.Object {
     def warning(message: ReactNode, title: ReactNode, optionsOverride: js.Object): Unit = js.native
   }
   
-  val ToastMessageAnimated: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 115 */ js.Any = js.native
-  val ToastMessagejQuery: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 115 */ js.Any = js.native
+  val ToastMessageAnimated: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ js.Any = js.native
+  val ToastMessagejQuery: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ js.Any = js.native
 }
 

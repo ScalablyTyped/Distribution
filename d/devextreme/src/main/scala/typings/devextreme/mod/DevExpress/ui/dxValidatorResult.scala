@@ -10,31 +10,31 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxValidatorResult extends js.Object {
-  /** A rule that failed to pass the check. Contains the first item from the brokenRules array. */
+  /** @name dxValidatorResult.brokenRule */
   var brokenRule: js.UndefOr[
     RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule
   ] = js.undefined
-  /** An array of the validationRules that failed to pass the check. */
+  /** @name dxValidatorResult.brokenRules */
   var brokenRules: js.UndefOr[
     js.Array[
       RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule
     ]
   ] = js.undefined
-  /** A promise that is fulfilled when all async rules are validated. */
+  /** @name dxValidatorResult.complete */
   var complete: js.UndefOr[Promise[dxValidatorResult] | JQueryPromise[dxValidatorResult]] = js.undefined
-  /** Indicates whether all the checked rules are satisfied. */
+  /** @name dxValidatorResult.isValid */
   var isValid: js.UndefOr[Boolean] = js.undefined
-  /** An array of async rules whose promises are not fulfilled or rejected. Contains items only when the status is "pending". */
+  /** @name dxValidatorResult.pendingRules */
   var pendingRules: js.UndefOr[js.Array[AsyncRule]] = js.undefined
-  /** Indicates the validation status. */
+  /** @name dxValidatorResult.status */
   var status: js.UndefOr[valid | invalid | pending] = js.undefined
-  /** Validation rules specified for the Validator. */
+  /** @name dxValidatorResult.validationRules */
   var validationRules: js.UndefOr[
     js.Array[
       RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule
     ]
   ] = js.undefined
-  /** The value being validated. */
+  /** @name dxValidatorResult.value */
   var value: js.UndefOr[js.Any] = js.undefined
 }
 

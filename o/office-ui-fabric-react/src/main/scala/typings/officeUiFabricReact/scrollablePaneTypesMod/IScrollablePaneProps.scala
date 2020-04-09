@@ -14,6 +14,7 @@ import typings.react.mod.HTMLAttributes
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
@@ -239,7 +240,7 @@ object IScrollablePaneProps {
     onProgress: SyntheticEvent[HTMLElement | ScrollablePaneBase, Event_] => Unit = null,
     onRateChange: SyntheticEvent[HTMLElement | ScrollablePaneBase, Event_] => Unit = null,
     onReset: FormEvent[HTMLElement | ScrollablePaneBase] => Unit = null,
-    onScroll: UIEvent[HTMLElement | ScrollablePaneBase] => Unit = null,
+    onScroll: UIEvent[HTMLElement | ScrollablePaneBase, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[HTMLElement | ScrollablePaneBase, Event_] => Unit = null,
     onSeeking: SyntheticEvent[HTMLElement | ScrollablePaneBase, Event_] => Unit = null,
     onSelect: SyntheticEvent[HTMLElement | ScrollablePaneBase, Event_] => Unit = null,

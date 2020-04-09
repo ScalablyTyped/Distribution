@@ -222,10 +222,10 @@ trait Assert extends js.Object {
     * @param expectedMatcher Rejection value matcher
     * @param message A short description of the assertion
     */
-  def rejects(promise: js.Promise[_]): Unit = js.native
-  def rejects(promise: js.Promise[_], expectedMatcher: js.Any): Unit = js.native
-  def rejects(promise: js.Promise[_], expectedMatcher: js.Any, message: String): Unit = js.native
-  def rejects(promise: js.Promise[_], message: String): Unit = js.native
+  def rejects(promise: js.Promise[_]): js.Promise[Unit] = js.native
+  def rejects(promise: js.Promise[_], expectedMatcher: js.Any): js.Promise[Unit] = js.native
+  def rejects(promise: js.Promise[_], expectedMatcher: js.Any, message: String): js.Promise[Unit] = js.native
+  def rejects(promise: js.Promise[_], message: String): js.Promise[Unit] = js.native
   /**
     * A marker for progress in a given test.
     *

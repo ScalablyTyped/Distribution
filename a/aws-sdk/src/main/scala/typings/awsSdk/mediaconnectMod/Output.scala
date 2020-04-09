@@ -46,6 +46,10 @@ trait Output extends js.Object {
     * Attributes related to the transport stream that are used in the output.
     */
   var Transport: js.UndefOr[typings.awsSdk.mediaconnectMod.Transport] = js.native
+  /**
+    * The name of the VPC interface attachment to use for this output.
+    */
+  var VpcInterfaceAttachment: js.UndefOr[typings.awsSdk.mediaconnectMod.VpcInterfaceAttachment] = js.native
 }
 
 object Output {
@@ -60,7 +64,8 @@ object Output {
     EntitlementArn: string = null,
     MediaLiveInputArn: string = null,
     Port: Int | Double = null,
-    Transport: Transport = null
+    Transport: Transport = null,
+    VpcInterfaceAttachment: VpcInterfaceAttachment = null
   ): Output = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], OutputArn = OutputArn.asInstanceOf[js.Any])
     if (DataTransferSubscriberFeePercent != null) __obj.updateDynamic("DataTransferSubscriberFeePercent")(DataTransferSubscriberFeePercent.asInstanceOf[js.Any])
@@ -71,6 +76,7 @@ object Output {
     if (MediaLiveInputArn != null) __obj.updateDynamic("MediaLiveInputArn")(MediaLiveInputArn.asInstanceOf[js.Any])
     if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
     if (Transport != null) __obj.updateDynamic("Transport")(Transport.asInstanceOf[js.Any])
+    if (VpcInterfaceAttachment != null) __obj.updateDynamic("VpcInterfaceAttachment")(VpcInterfaceAttachment.asInstanceOf[js.Any])
     __obj.asInstanceOf[Output]
   }
 }

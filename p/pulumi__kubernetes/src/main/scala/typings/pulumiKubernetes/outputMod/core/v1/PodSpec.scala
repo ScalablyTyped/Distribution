@@ -219,7 +219,7 @@ trait PodSpec extends js.Object {
   /**
     * TopologySpreadConstraints describes how a group of pods ought to spread across topology
     * domains. Scheduler will schedule pods in a way which abides by the constraints. This field
-    * is alpha-level and is only honored by clusters that enables the EvenPodsSpread feature. All
+    * is only honored by clusters that enable the EvenPodsSpread feature. All
     * topologySpreadConstraints are ANDed.
     */
   val topologySpreadConstraints: js.Array[TopologySpreadConstraint]

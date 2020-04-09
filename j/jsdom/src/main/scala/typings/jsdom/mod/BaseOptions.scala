@@ -11,18 +11,23 @@ trait BaseOptions extends js.Object {
   var beforeParse: js.UndefOr[js.Function1[/* window */ DOMWindow, Unit]] = js.undefined
   var cookieJar: js.UndefOr[CookieJar] = js.undefined
   /**
-  		 * includeNodeLocations preserves the location info produced by the HTML parser,
+  		 * `includeNodeLocations` preserves the location info produced by the HTML parser,
   		 * allowing you to retrieve it with the nodeLocation() method (described below).
+  		 *
   		 * It defaults to false to give the best performance,
   		 * and cannot be used with an XML content type since our XML parser does not support location info.
+  		 *
+  		 * @default false
   		 */
   var includeNodeLocations: js.UndefOr[Boolean] = js.undefined
   /**
   		 * jsdom does not have the capability to render visual content, and will act like a headless browser by default.
   		 * It provides hints to web pages through APIs such as document.hidden that their content is not visible.
   		 *
-  		 * When the pretendToBeVisual option is set to true, jsdom will pretend that it is rendering and displaying
+  		 * When the `pretendToBeVisual` option is set to `true`, jsdom will pretend that it is rendering and displaying
   		 * content.
+  		 *
+  		 * @default false
   		 */
   var pretendToBeVisual: js.UndefOr[Boolean] = js.undefined
   /**
@@ -34,7 +39,9 @@ trait BaseOptions extends js.Object {
   var runScripts: js.UndefOr[dangerously | `outside-only`] = js.undefined
   /**
   		 * userAgent affects the value read from navigator.userAgent, as well as the User-Agent header sent while fetching subresources.
-  		 * It defaults to `Mozilla/5.0 (${process.platform}) AppleWebKit/537.36 (KHTML, like Gecko) jsdom/${jsdomVersion}`.
+  		 *
+  		 * @default
+  		 * `Mozilla/5.0 (${process.platform}) AppleWebKit/537.36 (KHTML, like Gecko) jsdom/${jsdomVersion}`
   		 */
   var userAgent: js.UndefOr[String] = js.undefined
   var virtualConsole: js.UndefOr[VirtualConsole] = js.undefined

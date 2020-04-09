@@ -19,8 +19,7 @@ class CustomersApi () extends js.Object {
   def createCustomer(body: CreateCustomerRequest): js.Promise[CreateCustomerResponse] = js.native
   /**
     * Adds a card on file to an existing customer. As with charges, calls to `CreateCustomerCard` are idempotent.
-    * Multiple calls with the same card nonce return the same card record that was created with the provided nonce during the
-    * _first_ call. Cards on file are automatically updated on a monthly basis to confirm they are still valid and can be charged.
+    * Multiple calls with the same card nonce return the same card record that was created with the provided nonce during the _first_ call.
     */
   def createCustomerCard(customerId: String, body: CreateCustomerCardRequest): js.Promise[CreateCustomerCardResponse] = js.native
   /**
@@ -48,11 +47,11 @@ class CustomersApi () extends js.Object {
     */
   def searchCustomers(args: js.Any*): js.Promise[SearchCustomersResponse] = js.native
   /**
-    * Updates the details of an existing customer. When two profiles are merged into a single profile, that profile is assigned
-    * a new `customer_id`. You must use the new `customer_id` to update merged profiles.
-    * You cannot edit a customer's cards on file with this endpoint. To make changes to a card on file, you must delete the
-    * existing card on file with the [DeleteCustomerCard](#endpoint-customers-deletecustomercard) endpoint, then create a
-    * new one with the [CreateCustomerCard](#endpoint-customers-createcustomercard) endpoint.
+    * Updates the details of an existing customer. When two profiles are merged into a single profile, that profile
+    * is assigned a new `customer_id`. You must use the new `customer_id` to update merged profiles. You cannot edit
+    * a customer's cards on file with this endpoint. To make changes to a card on file, you must delete the existing
+    * card on file with the [DeleteCustomerCard](#endpoint-deletecustomercard) endpoint, then create a new one with
+    * the [CreateCustomerCard](#endpoint-createcustomercard) endpoint.
     */
   def updateCustomer(args: js.Any*): js.Promise[UpdateCustomerResponse] = js.native
 }

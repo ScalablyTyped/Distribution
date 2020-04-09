@@ -34,8 +34,6 @@ class MathBackendCPU () extends KernelBackend {
   var isExponentOf2: js.Any = js.native
   var makeOutput: js.Any = js.native
   var maxPool3dPositions: js.Any = js.native
-  var maxPoolPositions: js.Any = js.native
-  var pool: js.Any = js.native
   var pool3d: js.Any = js.native
   var scatter: js.Any = js.native
   def cropAndResize(

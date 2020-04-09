@@ -30,13 +30,13 @@ trait EnhancedLocation extends js.Object {
   def addAsync(locationIdentifiers: js.Array[LocationIdentifier]): Unit = js.native
   def addAsync(
     locationIdentifiers: js.Array[LocationIdentifier],
-    callback: js.Function1[/* asyncResult */ AsyncResultStatus, Unit]
+    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   def addAsync(locationIdentifiers: js.Array[LocationIdentifier], options: AsyncContextOptions): Unit = js.native
   def addAsync(
     locationIdentifiers: js.Array[LocationIdentifier],
     options: AsyncContextOptions,
-    callback: js.Function1[/* asyncResult */ AsyncResultStatus, Unit]
+    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   /**
     * Gets the set of locations associated with the appointment.
@@ -83,13 +83,13 @@ trait EnhancedLocation extends js.Object {
   def removeAsync(locationIdentifiers: js.Array[LocationIdentifier]): Unit = js.native
   def removeAsync(
     locationIdentifiers: js.Array[LocationIdentifier],
-    callback: js.Function1[/* asyncResult */ AsyncResultStatus, Unit]
+    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   def removeAsync(locationIdentifiers: js.Array[LocationIdentifier], options: AsyncContextOptions): Unit = js.native
   def removeAsync(
     locationIdentifiers: js.Array[LocationIdentifier],
     options: AsyncContextOptions,
-    callback: js.Function1[/* asyncResult */ AsyncResultStatus, Unit]
+    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
 }
 

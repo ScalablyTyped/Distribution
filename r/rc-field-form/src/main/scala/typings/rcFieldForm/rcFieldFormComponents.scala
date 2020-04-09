@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 
 object rcFieldFormComponents extends rcFieldFormProps {
   @scala.inline
-  def Field: ComponentType[FieldProps] = js.constructorOf[typings.rcFieldForm.fieldMod.default].asInstanceOf[typings.react.mod.ComponentType[FieldProps]]
+  def Field: ComponentType[FieldProps] = typings.rcFieldForm.fieldMod.default.asInstanceOf[typings.react.mod.ComponentType[FieldProps]]
   @scala.inline
   def FormProvider: ComponentType[FormProviderProps] = typings.rcFieldForm.mod.FormProvider.asInstanceOf[typings.react.mod.ComponentType[FormProviderProps]]
   @scala.inline

@@ -10,7 +10,7 @@ class default () extends RSASSAPSSParams {
   def this(params: js.Any) = this()
   /**
     * Algorithms of hashing (DEFAULT sha1)
-    * 
+    *
     * @type {AlgorithmIdentifier}
     * @memberOf RSASSAPSSParams
     */
@@ -18,7 +18,7 @@ class default () extends RSASSAPSSParams {
   override var hashAlgorithm: typings.pkijs.algorithmIdentifierMod.default = js.native
   /**
     * Algorithm of "mask generaion function (MGF)" (DEFAULT mgf1SHA1)
-    * 
+    *
     * @type {AlgorithmIdentifier}
     * @memberOf RSASSAPSSParams
     */
@@ -26,7 +26,7 @@ class default () extends RSASSAPSSParams {
   override var maskGenAlgorithm: typings.pkijs.algorithmIdentifierMod.default = js.native
   /**
     * Salt length (DEFAULT 20)
-    * 
+    *
     * @type {number}
     * @memberOf RSASSAPSSParams
     */
@@ -34,7 +34,7 @@ class default () extends RSASSAPSSParams {
   override var saltLength: Double = js.native
   /**
     * (DEFAULT 1)
-    * 
+    *
     * @type {number}
     * @memberOf RSASSAPSSParams
     */

@@ -11,6 +11,10 @@ package object screeps {
   type BOTTOM_RIGHT = typings.screeps.screepsNumbers.`4`
   // Body Part Constants
   type BodyPartConstant = typings.screeps.MOVE | typings.screeps.WORK | typings.screeps.CARRY | typings.screeps.ATTACK | typings.screeps.RANGED_ATTACK | typings.screeps.TOUGH | typings.screeps.HEAL | typings.screeps.CLAIM
+  /**
+    * Describes one part of a creep’s body.
+    */
+  type BodyPartDefinition[T /* <: typings.screeps.BodyPartConstant */] = typings.screeps.AnonBoost[T]
   // Structure Constants
   type BuildableStructureConstant = typings.screeps.STRUCTURE_EXTENSION | typings.screeps.STRUCTURE_RAMPART | typings.screeps.STRUCTURE_ROAD | typings.screeps.STRUCTURE_SPAWN | typings.screeps.STRUCTURE_LINK | typings.screeps.STRUCTURE_WALL | typings.screeps.STRUCTURE_STORAGE | typings.screeps.STRUCTURE_TOWER | typings.screeps.STRUCTURE_OBSERVER | typings.screeps.STRUCTURE_POWER_SPAWN | typings.screeps.STRUCTURE_EXTRACTOR | typings.screeps.STRUCTURE_LAB | typings.screeps.STRUCTURE_TERMINAL | typings.screeps.STRUCTURE_CONTAINER | typings.screeps.STRUCTURE_NUKER | typings.screeps.STRUCTURE_FACTORY
   type CARRY = typings.screeps.screepsStrings.carry
@@ -178,7 +182,7 @@ package object screeps {
   type PWR_SHIELD = typings.screeps.screepsNumbers.`12`
   /* Inlined screeps.POWER_CLASS['OPERATOR'] */
   type PowerClassConstant = typings.screeps.screepsStrings.operator
-  type PowerConstant = typings.screeps.PWR_GENERATE_OPS | typings.screeps.PWR_OPERATE_SPAWN | typings.screeps.PWR_OPERATE_TOWER | typings.screeps.PWR_OPERATE_STORAGE | typings.screeps.PWR_OPERATE_LAB | typings.screeps.PWR_OPERATE_EXTENSION | typings.screeps.PWR_OPERATE_OBSERVER | typings.screeps.PWR_OPERATE_TERMINAL | typings.screeps.PWR_DISRUPT_SPAWN | typings.screeps.PWR_DISRUPT_TOWER | typings.screeps.PWR_DISRUPT_SOURCE | typings.screeps.PWR_SHIELD | typings.screeps.PWR_REGEN_SOURCE | typings.screeps.PWR_REGEN_MINERAL | typings.screeps.PWR_DISRUPT_TERMINAL | typings.screeps.PWR_OPERATE_POWER | typings.screeps.PWR_FORTIFY | typings.screeps.PWR_OPERATE_CONTROLLER
+  type PowerConstant = typings.screeps.PWR_GENERATE_OPS | typings.screeps.PWR_OPERATE_SPAWN | typings.screeps.PWR_OPERATE_TOWER | typings.screeps.PWR_OPERATE_STORAGE | typings.screeps.PWR_OPERATE_LAB | typings.screeps.PWR_OPERATE_EXTENSION | typings.screeps.PWR_OPERATE_OBSERVER | typings.screeps.PWR_OPERATE_TERMINAL | typings.screeps.PWR_DISRUPT_SPAWN | typings.screeps.PWR_DISRUPT_TOWER | typings.screeps.PWR_DISRUPT_SOURCE | typings.screeps.PWR_SHIELD | typings.screeps.PWR_REGEN_SOURCE | typings.screeps.PWR_REGEN_MINERAL | typings.screeps.PWR_DISRUPT_TERMINAL | typings.screeps.PWR_OPERATE_POWER | typings.screeps.PWR_FORTIFY | typings.screeps.PWR_OPERATE_CONTROLLER | typings.screeps.PWR_OPERATE_FACTORY
   /**
     * Available powers, an object with power ID as a key, and the following properties
     */

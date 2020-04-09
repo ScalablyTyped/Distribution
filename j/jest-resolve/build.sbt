@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "jest-resolve"
-version := "24.9.0-ad782b"
+version := "24.9.0-8fc154"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "anymatch" % "1.3-dt-20190212Z-d40bf1",
   "org.scalablytyped" %%% "istanbul-lib-coverage" % "2.0-dt-20190425Z-9611dd",
-  "org.scalablytyped" %%% "jest-haste-map" % "24.9.0-a92e6d",
-  "org.scalablytyped" %%% "jest__types" % "24.9.0-3e0310",
-  "org.scalablytyped" %%% "node" % "13.9-dt-20200318Z-96a265",
+  "org.scalablytyped" %%% "jest-haste-map" % "24.9.0-593f7c",
+  "org.scalablytyped" %%% "jest__types" % "24.9.0-ba6b7b",
+  "org.scalablytyped" %%% "node" % "13.11-dt-20200402Z-9a87f0",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")

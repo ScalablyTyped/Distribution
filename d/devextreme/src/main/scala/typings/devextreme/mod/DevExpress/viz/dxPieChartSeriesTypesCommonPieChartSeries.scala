@@ -14,33 +14,33 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxPieChartSeriesTypesCommonPieChartSeries extends js.Object {
-  /** Specifies the data source field that provides arguments for series points. */
+  /** @name dxPieChartSeriesTypes.CommonPieChartSeries.argumentField */
   var argumentField: js.UndefOr[String] = js.undefined
-  /** Specifies the required type for series arguments. */
+  /** @name dxPieChartSeriesTypes.CommonPieChartSeries.argumentType */
   var argumentType: js.UndefOr[datetime | numeric | string_] = js.undefined
-  /** An object defining the series border configuration options. */
+  /** @name dxPieChartSeriesTypes.CommonPieChartSeries.border */
   var border: js.UndefOr[AnonColorDashStyle] = js.undefined
-  /** Specifies a series color. */
+  /** @name dxPieChartSeriesTypes.CommonPieChartSeries.color */
   var color: js.UndefOr[String] = js.undefined
-  /** Specifies the chart elements to highlight when a series is hovered over. */
+  /** @name dxPieChartSeriesTypes.CommonPieChartSeries.hoverMode */
   var hoverMode: js.UndefOr[none | onlyPoint] = js.undefined
-  /** An object defining configuration options for a hovered series. */
+  /** @name dxPieChartSeriesTypes.CommonPieChartSeries.hoverStyle */
   var hoverStyle: js.UndefOr[AnonHatching] = js.undefined
-  /** An object defining the label configuration options. */
+  /** @name dxPieChartSeriesTypes.CommonPieChartSeries.label */
   var label: js.UndefOr[AnonArgumentFormat] = js.undefined
-  /** Specifies how many points are acceptable to be in a series to display all labels for these points. Otherwise, the labels will not be displayed. */
+  /** @name dxPieChartSeriesTypes.CommonPieChartSeries.maxLabelCount */
   var maxLabelCount: js.UndefOr[Double] = js.undefined
-  /** Specifies a minimal size of a displayed pie segment. */
+  /** @name dxPieChartSeriesTypes.CommonPieChartSeries.minSegmentSize */
   var minSegmentSize: js.UndefOr[Double] = js.undefined
-  /** Specifies the chart elements to highlight when the series is selected. */
+  /** @name dxPieChartSeriesTypes.CommonPieChartSeries.selectionMode */
   var selectionMode: js.UndefOr[none | onlyPoint] = js.undefined
-  /** An object defining configuration options for the series when it is selected. */
+  /** @name dxPieChartSeriesTypes.CommonPieChartSeries.selectionStyle */
   var selectionStyle: js.UndefOr[AnonHatching] = js.undefined
-  /** Specifies chart segment grouping options. */
+  /** @name dxPieChartSeriesTypes.CommonPieChartSeries.smallValuesGrouping */
   var smallValuesGrouping: js.UndefOr[AnonGroupName] = js.undefined
-  /** Specifies the name of the data source field that provides data about a point. */
+  /** @name dxPieChartSeriesTypes.CommonPieChartSeries.tagField */
   var tagField: js.UndefOr[String] = js.undefined
-  /** Specifies the data source field that provides values for series points. */
+  /** @name dxPieChartSeriesTypes.CommonPieChartSeries.valueField */
   var valueField: js.UndefOr[String] = js.undefined
 }
 

@@ -1,7 +1,7 @@
 package typings.octokitPluginRestEndpointMethods
 
 import typings.octokitPluginRestEndpointMethods.typesMod.AnyResponse
-import typings.octokitPluginRestEndpointMethods.typesMod.ChecksRerequestSuiteParams
+import typings.octokitPluginRestEndpointMethods.typesMod.AppsRemoveRepoFromInstallationParams
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ trait Anon94 extends js.Object {
   var endpoint: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EndpointInterface */ js.Any = js.native
   def apply(): js.Promise[AnyResponse] = js.native
   def apply(
-    params: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RequestParameters */ js.Any) with ChecksRerequestSuiteParams
+    params: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RequestParameters */ js.Any) with AppsRemoveRepoFromInstallationParams
   ): js.Promise[AnyResponse] = js.native
 }
 

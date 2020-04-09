@@ -5,15 +5,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxSankeyLink extends js.Object {
-  /** An object that describes the connection. */
+  /** @name dxSankeyLink.connection */
   var connection: dxSankeyConnectionInfoObject
-  /** Hides the sankey link's tooltip. */
+  /** @name dxSankeyLink.hideTooltip() */
   def hideTooltip(): Unit
-  /** Changes the sankey link's hover state. */
+  /** @name dxSankeyLink.hover(state) */
   def hover(state: Boolean): Unit
-  /** Indicates whether the sankey link is in the hover state. */
+  /** @name dxSankeyLink.isHovered() */
   def isHovered(): Boolean
-  /** Shows the sankey link's tooltip. */
+  /** @name dxSankeyLink.showTooltip() */
   def showTooltip(): Unit
 }
 

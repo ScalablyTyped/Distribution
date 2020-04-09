@@ -19,7 +19,8 @@ object json2csvasyncparserMod extends js.Object {
     var processor: Writable = js.native
     var transform: typings.json2csv.json2csvtransformMod.default[T] = js.native
     def fromInput(input: Readable): JSON2CSVAsyncParser[T] = js.native
-    def promise(): js.Promise[String] = js.native
+    def promise(): js.Promise[js.UndefOr[String]] = js.native
+    def promise(returnCSV: Boolean): js.Promise[js.UndefOr[String]] = js.native
     def throughTransform(transform: Transform): JSON2CSVAsyncParser[T] = js.native
     def toOutput(output: Writable): JSON2CSVAsyncParser[T] = js.native
   }

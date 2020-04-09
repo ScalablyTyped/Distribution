@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxOverlayAnimation extends js.Object {
-  /** An object that defines the animation options used when the widget is being hidden. */
+  /** @name dxOverlay.Options.animation.hide */
   var hide: js.UndefOr[animationConfig] = js.undefined
-  /** An object that defines the animation options used when the widget is being shown. */
+  /** @name dxOverlay.Options.animation.show */
   var show: js.UndefOr[animationConfig] = js.undefined
 }
 

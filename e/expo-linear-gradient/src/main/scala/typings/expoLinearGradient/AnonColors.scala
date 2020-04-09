@@ -1,24 +1,24 @@
 package typings.expoLinearGradient
 
-import typings.expoLinearGradient.linearGradientMod.Point
+import typings.expoLinearGradient.linearGradientMod.LinearGradienPoint
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonColors extends js.Object {
   var colors: js.Array[String]
-  var end: js.UndefOr[Point | Null] = js.undefined
+  var end: js.UndefOr[LinearGradienPoint | Null] = js.undefined
   var locations: js.UndefOr[js.Array[Double] | Null] = js.undefined
-  var start: js.UndefOr[Point | Null] = js.undefined
+  var start: js.UndefOr[LinearGradienPoint | Null] = js.undefined
 }
 
 object AnonColors {
   @scala.inline
   def apply(
     colors: js.Array[String],
-    end: Point = null,
+    end: LinearGradienPoint = null,
     locations: js.Array[Double] = null,
-    start: Point = null
+    start: LinearGradienPoint = null
   ): AnonColors = {
     val __obj = js.Dynamic.literal(colors = colors.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])

@@ -31,6 +31,10 @@ trait AnalyzedResource extends js.Object {
     */
   var resourceArn: ResourceArn = js.native
   /**
+    * The AWS account ID that owns the resource.
+    */
+  var resourceOwnerAccount: String = js.native
+  /**
     * The type of the resource that was analyzed.
     */
   var resourceType: ResourceType = js.native
@@ -55,6 +59,7 @@ object AnalyzedResource {
     createdAt: Timestamp,
     isPublic: Boolean,
     resourceArn: ResourceArn,
+    resourceOwnerAccount: String,
     resourceType: ResourceType,
     updatedAt: Timestamp,
     actions: ActionList = null,
@@ -62,7 +67,7 @@ object AnalyzedResource {
     sharedVia: SharedViaList = null,
     status: FindingStatus = null
   ): AnalyzedResource = {
-    val __obj = js.Dynamic.literal(analyzedAt = analyzedAt.asInstanceOf[js.Any], createdAt = createdAt.asInstanceOf[js.Any], isPublic = isPublic.asInstanceOf[js.Any], resourceArn = resourceArn.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any], updatedAt = updatedAt.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(analyzedAt = analyzedAt.asInstanceOf[js.Any], createdAt = createdAt.asInstanceOf[js.Any], isPublic = isPublic.asInstanceOf[js.Any], resourceArn = resourceArn.asInstanceOf[js.Any], resourceOwnerAccount = resourceOwnerAccount.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any], updatedAt = updatedAt.asInstanceOf[js.Any])
     if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (sharedVia != null) __obj.updateDynamic("sharedVia")(sharedVia.asInstanceOf[js.Any])

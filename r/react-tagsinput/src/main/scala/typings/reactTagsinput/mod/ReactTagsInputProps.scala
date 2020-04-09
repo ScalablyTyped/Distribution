@@ -11,7 +11,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ReactTagsInputProps extends Props[TagsInput] {
+trait ReactTagsInputProps[Tag] extends Props[TagsInput[Tag]] {
   var addKeys: js.UndefOr[js.Array[Double | String]] = js.undefined
   var addOnBlur: js.UndefOr[Boolean] = js.undefined
   var addOnPaste: js.UndefOr[Boolean] = js.undefined
@@ -28,9 +28,9 @@ trait ReactTagsInputProps extends Props[TagsInput] {
   var pasteSplit: js.UndefOr[js.Function1[/* data */ String, js.Array[String]]] = js.undefined
   var preventSubmit: js.UndefOr[Boolean] = js.undefined
   var removeKeys: js.UndefOr[js.Array[Double]] = js.undefined
-  var renderInput: js.UndefOr[js.Function1[/* props */ RenderInputProps, ReactNode]] = js.undefined
+  var renderInput: js.UndefOr[js.Function1[/* props */ RenderInputProps[Tag], ReactNode]] = js.undefined
   var renderLayout: js.UndefOr[RenderLayout] = js.undefined
-  var renderTag: js.UndefOr[js.Function1[/* props */ RenderTagProps, ReactNode]] = js.undefined
+  var renderTag: js.UndefOr[js.Function1[/* props */ RenderTagProps[Tag], ReactNode]] = js.undefined
   var tagDisplayProp: js.UndefOr[String | Null] = js.undefined
   var tagProps: js.UndefOr[TagProps] = js.undefined
   var validationRegex: js.UndefOr[RegExp] = js.undefined
@@ -40,7 +40,7 @@ trait ReactTagsInputProps extends Props[TagsInput] {
 
 object ReactTagsInputProps {
   @scala.inline
-  def apply(
+  def apply[Tag](
     onChange: (js.Array[Tag], js.Array[Tag], js.Array[Double]) => Unit,
     value: js.Array[Tag],
     addKeys: js.Array[Double | String] = null,
@@ -60,15 +60,15 @@ object ReactTagsInputProps {
     onlyUnique: js.UndefOr[Boolean] = js.undefined,
     pasteSplit: /* data */ String => js.Array[String] = null,
     preventSubmit: js.UndefOr[Boolean] = js.undefined,
-    ref: LegacyRef[TagsInput] = null,
+    ref: LegacyRef[TagsInput[Tag]] = null,
     removeKeys: js.Array[Double] = null,
-    renderInput: /* props */ RenderInputProps => ReactNode = null,
+    renderInput: /* props */ RenderInputProps[Tag] => ReactNode = null,
     renderLayout: (/* tagElements */ js.Array[ReactElement], /* inputElement */ ReactElement) => ReactChild = null,
-    renderTag: /* props */ RenderTagProps => ReactNode = null,
+    renderTag: /* props */ RenderTagProps[Tag] => ReactNode = null,
     tagDisplayProp: String = null,
     tagProps: TagProps = null,
     validationRegex: RegExp = null
-  ): ReactTagsInputProps = {
+  ): ReactTagsInputProps[Tag] = {
     val __obj = js.Dynamic.literal(onChange = js.Any.fromFunction3(onChange), value = value.asInstanceOf[js.Any])
     if (addKeys != null) __obj.updateDynamic("addKeys")(addKeys.asInstanceOf[js.Any])
     if (!js.isUndefined(addOnBlur)) __obj.updateDynamic("addOnBlur")(addOnBlur.asInstanceOf[js.Any])
@@ -95,7 +95,7 @@ object ReactTagsInputProps {
     if (tagDisplayProp != null) __obj.updateDynamic("tagDisplayProp")(tagDisplayProp.asInstanceOf[js.Any])
     if (tagProps != null) __obj.updateDynamic("tagProps")(tagProps.asInstanceOf[js.Any])
     if (validationRegex != null) __obj.updateDynamic("validationRegex")(validationRegex.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ReactTagsInputProps]
+    __obj.asInstanceOf[ReactTagsInputProps[Tag]]
   }
 }
 

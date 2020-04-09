@@ -5,9 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AjaxFileProviderOptions extends FileProviderOptions[AjaxFileProvider] {
-  /** Specifies which data field provides information about nested files and directories. */
+  /** @name AjaxFileProvider.Options.itemsExpr */
   var itemsExpr: js.UndefOr[String | js.Function] = js.undefined
-  /** Specifies the URL used to load an array of JSON objects that represent files and directories. */
+  /** @name AjaxFileProvider.Options.url */
   var url: js.UndefOr[String] = js.undefined
 }
 

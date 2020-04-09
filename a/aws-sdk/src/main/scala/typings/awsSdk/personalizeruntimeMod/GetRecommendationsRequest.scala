@@ -11,7 +11,7 @@ trait GetRecommendationsRequest extends js.Object {
     */
   var campaignArn: Arn = js.native
   /**
-    * The contextual metadata to use when getting recommendations. Contextual metadata includes any interaction information that might be relevant when getting a user's recommendations, such as the user's current location or device type. For more information, see Contextual Metadata.
+    * The contextual metadata to use when getting recommendations. Contextual metadata includes any interaction information that might be relevant when getting a user's recommendations, such as the user's current location or device type.
     */
   var context: js.UndefOr[Context] = js.native
   /**

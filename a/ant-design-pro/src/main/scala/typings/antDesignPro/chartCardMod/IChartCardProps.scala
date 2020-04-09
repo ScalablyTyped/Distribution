@@ -49,6 +49,7 @@ import typings.antd.cardMod.CardProps
 import typings.antd.cardMod.CardSize
 import typings.antd.cardMod.CardTabListType
 import typings.antd.cardMod.CardType
+import typings.antd.tabsMod.TabsProps
 import typings.react.AnonHtml
 import typings.react.mod.AnimationEvent
 import typings.react.mod.Booleanish
@@ -61,6 +62,7 @@ import typings.react.mod.FormEvent
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
@@ -239,7 +241,7 @@ object IChartCardProps {
     onProgress: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onRateChange: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onReset: FormEvent[HTMLDivElement] => Unit = null,
-    onScroll: UIEvent[HTMLDivElement] => Unit = null,
+    onScroll: UIEvent[HTMLDivElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
@@ -274,6 +276,7 @@ object IChartCardProps {
     tabBarExtraContent: ReactNode = null,
     tabIndex: Int | Double = null,
     tabList: js.Array[CardTabListType] = null,
+    tabProps: TabsProps = null,
     title: ReactNode = null,
     total: ReactNode | Double | (js.Function0[ReactNode | Double]) = null,
     translate: yes | no = null,
@@ -470,6 +473,7 @@ object IChartCardProps {
     if (tabBarExtraContent != null) __obj.updateDynamic("tabBarExtraContent")(tabBarExtraContent.asInstanceOf[js.Any])
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
     if (tabList != null) __obj.updateDynamic("tabList")(tabList.asInstanceOf[js.Any])
+    if (tabProps != null) __obj.updateDynamic("tabProps")(tabProps.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
     if (translate != null) __obj.updateDynamic("translate")(translate.asInstanceOf[js.Any])

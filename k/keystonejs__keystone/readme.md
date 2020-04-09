@@ -1,7 +1,7 @@
 
 # Scala.js typings for keystonejs__keystone
 
-Typings are for version 5.2
+Typings are for version 6.0
 
 ## Library description:
 The main @keystonejs class & CLI. This is where the magic happens.

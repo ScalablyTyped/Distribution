@@ -10,19 +10,19 @@ import scala.scalajs.js.annotation._
 @js.native
 trait AnonGetAllCodesOfConduct extends js.Object {
   @JSName("getAllCodesOfConduct")
-  var getAllCodesOfConduct_Original: Anon29 = js.native
+  var getAllCodesOfConduct_Original: Anon25 = js.native
   @JSName("getConductCode")
-  var getConductCode_Original: Anon97 = js.native
+  var getConductCode_Original: Anon108 = js.native
   /**
     * This method returns the contents of the repository's code of conduct file, if one is detected.
     */
   @JSName("getForRepo")
-  var getForRepo_Original: Anon98 = js.native
+  var getForRepo_Original: Anon109 = js.native
   /**
     * @deprecated octokit.codesOfConduct.listConductCodes() has been renamed to octokit.codesOfConduct.getAllCodesOfConduct() (2020-03-04)
     */
   @JSName("listConductCodes")
-  var listConductCodes_Original: Anon29 = js.native
+  var listConductCodes_Original: Anon25 = js.native
   def getAllCodesOfConduct(): js.Promise[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OctokitResponse<UsersListBlockedResponse> */ _
   ] = js.native

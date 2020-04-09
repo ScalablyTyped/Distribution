@@ -49,12 +49,16 @@ object bindingParserMod extends js.Object {
     var _parsePropertyAst: js.Any = js.native
     var _parseRegularEvent: js.Any = js.native
     /**
-      * Parses the bindings in an inline template binding, e.g.
+      * Parses the bindings in a microsyntax expression, e.g.
+      * ```
       *    <tag *tplKey="let value1 = prop; let value2 = localVar">
+      * ```
+      *
       * @param tplKey template binding name
       * @param tplValue template binding value
       * @param sourceSpan span of template binding relative to entire the template
-      * @param absoluteValueOffset start of the tplValue relative to the entire template
+      * @param absoluteKeyOffset start of the `tplKey`
+      * @param absoluteValueOffset start of the `tplValue`
       */
     var _parseTemplateBindings: js.Any = js.native
     var _reportError: js.Any = js.native
@@ -92,8 +96,9 @@ object bindingParserMod extends js.Object {
       targetEvents: js.Array[ParsedEvent]
     ): Unit = js.native
     /**
-      * Parses an inline template binding, e.g.
-      *    <tag *tplKey="<tplValue>">
+      * Parses the bindings in a microsyntax expression, and converts them to
+      * `ParsedProperty` or `ParsedVariable`.
+      *
       * @param tplKey template binding name
       * @param tplValue template binding value
       * @param sourceSpan span of template binding relative to entire the template

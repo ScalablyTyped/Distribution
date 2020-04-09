@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait BackgroundPaint extends js.Object {
+trait BackgroundPaint extends AnyPaint {
   var `background-color`: js.UndefOr[String | Expression] = js.undefined
   var `background-color-transition`: js.UndefOr[Transition] = js.undefined
   var `background-opacity`: js.UndefOr[Double | Expression] = js.undefined

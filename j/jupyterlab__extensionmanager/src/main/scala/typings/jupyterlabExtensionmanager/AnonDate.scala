@@ -1,7 +1,7 @@
 package typings.jupyterlabExtensionmanager
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.jupyterlabExtensionmanager.queryMod.IPerson
+import typings.jupyterlabExtensionmanager.npmMod.IPerson
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -42,6 +42,9 @@ object ɵLocaleDataIndex extends js.Object {
   sealed trait DaysStandalone extends ɵLocaleDataIndex
   
   @js.native
+  sealed trait Directionality extends ɵLocaleDataIndex
+  
+  @js.native
   sealed trait Eras extends ɵLocaleDataIndex
   
   @js.native
@@ -106,10 +109,13 @@ object ɵLocaleDataIndex extends js.Object {
   /* 4 */ @js.native
   object DaysStandalone extends TopLevel[DaysStandalone with Double]
   
+  /* 19 */ @js.native
+  object Directionality extends TopLevel[Directionality with Double]
+  
   /* 7 */ @js.native
   object Eras extends TopLevel[Eras with Double]
   
-  /* 20 */ @js.native
+  /* 21 */ @js.native
   object ExtraData extends TopLevel[ExtraData with Double]
   
   /* 8 */ @js.native
@@ -130,7 +136,7 @@ object ɵLocaleDataIndex extends js.Object {
   /* 13 */ @js.native
   object NumberSymbols extends TopLevel[NumberSymbols with Double]
   
-  /* 19 */ @js.native
+  /* 20 */ @js.native
   object PluralCase extends TopLevel[PluralCase with Double]
   
   /* 11 */ @js.native

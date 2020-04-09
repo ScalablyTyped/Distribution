@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
   * @class
   * @name pc.XrInputSource
   * @augments pc.EventHandler
-  * @classdesc Represents an XR input source, which is any input mechanism which allows the user to perform targeted actions in the same virtual space as the viewer. Example XR input sources include, but are not limited to, handheld controllers, optically tracked hands, and gaze-based input methods that operate on the viewer's pose.
-  * @description Represents an XR input source, which is any input mechanism which allows the user to perform targeted actions in the same virtual space as the viewer. Example XR input sources include, but are not limited to, handheld controllers, optically tracked hands, and gaze-based input methods that operate on the viewer's pose.
+  * @classdesc Represents XR input source, which is any input mechanism which allows the user to perform targeted actions in the same virtual space as the viewer. Example XR input sources include, but are not limited to, handheld controllers, optically tracked hands, and gaze-based input methods that operate on the viewer's pose.
+  * @description Represents XR input source, which is any input mechanism which allows the user to perform targeted actions in the same virtual space as the viewer. Example XR input sources include, but are not limited to, handheld controllers, optically tracked hands, and gaze-based input methods that operate on the viewer's pose.
   * @param {pc.XrManager} manager - WebXR Manager.
   * @param {object} xrInputSource - XRInputSource object that is created by WebXR API.
   * @property {object} inputSource XRInputSource object that is associated with this input source.
@@ -26,12 +26,13 @@ import scala.scalajs.js.annotation._
   * * {@link pc.XRHAND_RIGHT}: Right - indicates that input source is meant to be held in right hand.
   *
   * @property {string[]} profiles List of input profile names indicating both the prefered visual representation and behavior of the input source.
-  * @property {pc.Ray} ray Ray that is calculated based on {pc.XrInputSource#targetRayMode} that can be used for interacting with virtual objects. Its origin and direction are in local space of XR session.
+  * @property {pc.Ray} ray Ray that is calculated based on {@link pc.XrInputSource#targetRayMode} that can be used for interacting with virtual objects. Its origin and direction are in local space of XR session.
   * @property {boolean} grip If input source can be held, then it will have node with its world transformation, that can be used to position and rotate virtual joystics based on it.
-  * @property {pc.Vec3|null} position If {pc.XrInputSource#grip} is true, then position will represent position of handheld input source in local space of XR session.
-  * @property {pc.Quat|null} rotation If {pc.XrInputSource#grip} is true, then rotation will represent rotation of handheld input source in local space of XR session.
+  * @property {pc.Vec3|null} position If {@link pc.XrInputSource#grip} is true, then position will represent position of handheld input source in local space of XR session.
+  * @property {pc.Quat|null} rotation If {@link pc.XrInputSource#grip} is true, then rotation will represent rotation of handheld input source in local space of XR session.
   * @property {Gamepad|null} gamepad If input source has buttons, triggers, thumbstick or touchpad, then this object provides access to its states.
   * @property {boolean} selecting True if input source is in active primary action between selectstart and selectend events.
+  * @property {pc.XrHitTestSource[]} hitTestSources list of active {@link pc.XrHitTestSource} created by this input source.
   */
 @JSImport("playcanvas", "XrInputSource")
 @js.native

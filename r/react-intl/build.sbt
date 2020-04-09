@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-intl"
-version := "3.12.1-0fc5b1"
+version := "3.12.1-0461ca"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -13,7 +13,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "intl-messageformat" % "7.8.4-41569a",
   "org.scalablytyped" %%% "intl-messageformat-parser" % "3.6.4-c9c832",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-ece683",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20200320Z-629467",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20200402Z-6f4338",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")

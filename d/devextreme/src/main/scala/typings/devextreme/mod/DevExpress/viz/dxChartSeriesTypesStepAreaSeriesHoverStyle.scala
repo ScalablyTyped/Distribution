@@ -8,9 +8,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Configures the appearance adopted by the series when a user points to it. */
+/** @name dxChartSeriesTypes.StepAreaSeries.hoverStyle */
 trait dxChartSeriesTypesStepAreaSeriesHoverStyle extends dxChartSeriesTypesCommonSeriesHoverStyle {
-  /** Configures the appearance adopted by the series border (in area-like series) or the series point border (in bar-like and bubble series) when a user points to the series. */
+  /** @name dxChartSeriesTypes.StepAreaSeries.hoverStyle.border */
   @JSName("border")
   var border_dxChartSeriesTypesStepAreaSeriesHoverStyle: js.UndefOr[dxChartSeriesTypesStepAreaSeriesHoverStyleBorder] = js.undefined
 }

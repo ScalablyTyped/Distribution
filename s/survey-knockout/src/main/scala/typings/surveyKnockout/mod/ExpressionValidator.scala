@@ -8,6 +8,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class ExpressionValidator () extends SurveyValidator {
   def this(expression: String) = this()
+  /**
+    * The expression property.
+    */
   var expression: String = js.native
   /* protected */ def ensureConditionRunner(): Boolean = js.native
   /* protected */ def generateError(res: Boolean, value: js.Any): ValidatorResult = js.native

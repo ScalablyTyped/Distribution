@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation._
   */
 trait StructureExtractor
   extends OwnedStructure[STRUCTURE_EXTRACTOR]
-     with AnyOwnedStructure {
+     with AnyOwnedStructure
+     with ConcreteStructure[js.Any] {
   /**
     * The amount of game ticks until the next harvest action is possible.
     */

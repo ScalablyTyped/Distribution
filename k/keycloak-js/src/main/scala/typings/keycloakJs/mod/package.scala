@@ -5,12 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mod {
-  // export interface KeycloakUserInfo {}
-  /**
-  	 * Conditional CompatPromise type in order to support
-  	 * both legacy promises and native promises as return types.
-  	 */
-  type CompatPromise[TPromiseType /* <: typings.keycloakJs.mod.KeycloakPromiseType */, TSuccess, TError] = (typings.keycloakJs.mod.KeycloakPromise[TSuccess, TError]) | js.Promise[TSuccess]
   /* Rewritten from type alias, can be one of: 
     - typings.keycloakJs.keycloakJsStrings.cordova
     - typings.keycloakJs.keycloakJsStrings.`cordova-native`

@@ -69,11 +69,10 @@ object futureMod extends js.Object {
       * The future is done when there are no more responses expected from the
       * kernel.
       *
-      * The `done` promise resolves to the reply message if there is one,
-      * otherwise it resolves to `undefined`.
+      * The `done` promise resolves to the reply message.
       */
     /* CompleteClass */
-    override val done: js.Promise[js.UndefOr[REPLY]] = js.native
+    override val done: js.Promise[REPLY] = js.native
     /**
       * Test whether the object has been disposed.
       *

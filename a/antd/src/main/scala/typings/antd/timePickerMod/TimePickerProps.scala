@@ -1,6 +1,5 @@
 package typings.antd.timePickerMod
 
-import typings.antd.AnonLang
 import typings.antd.antdStrings.`additions text`
 import typings.antd.antdStrings.`inline`
 import typings.antd.antdStrings.additions
@@ -38,6 +37,7 @@ import typings.antd.antdStrings.text
 import typings.antd.antdStrings.time
 import typings.antd.antdStrings.tree
 import typings.antd.antdStrings.vertical
+import typings.antd.generatePickerMod.PickerLocale
 import typings.antd.sizeContextMod.SizeType
 import typings.moment.mod.Moment
 import typings.rcPicker.dateBodyMod.DateRender
@@ -46,7 +46,6 @@ import typings.rcPicker.interfaceMod.OnPanelChange
 import typings.rcPicker.interfaceMod.PanelMode
 import typings.rcPicker.monthBodyMod.MonthCellRender
 import typings.rcPicker.pickerMod.PickerRefConfig
-import typings.rcTrigger.interfaceMod.AlignType
 import typings.react.mod.CSSProperties
 import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
@@ -129,14 +128,16 @@ trait TimePickerProps extends js.Object {
   var disabledHours: js.UndefOr[js.Function0[js.Array[Double]]] = js.undefined
   var disabledMinutes: js.UndefOr[js.Function1[/* hour */ Double, js.Array[Double]]] = js.undefined
   var disabledSeconds: js.UndefOr[js.Function2[/* hour */ Double, /* minute */ Double, js.Array[Double]]] = js.undefined
-  var dropdownAlign: js.UndefOr[AlignType] = js.undefined
+  var dropdownAlign: js.UndefOr[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AlignType */ js.Any
+  ] = js.undefined
   var dropdownClassName: js.UndefOr[String] = js.undefined
   var format: js.UndefOr[String | js.Array[String]] = js.undefined
   var getPopupContainer: js.UndefOr[js.Function1[/* node */ HTMLElement, HTMLElement]] = js.undefined
   var hideDisabledOptions: js.UndefOr[Boolean] = js.undefined
   var hourStep: js.UndefOr[Double] = js.undefined
   var inputReadOnly: js.UndefOr[Boolean] = js.undefined
-  var locale: js.UndefOr[AnonLang] = js.undefined
+  var locale: js.UndefOr[PickerLocale] = js.undefined
   var minuteStep: js.UndefOr[Double] = js.undefined
   var mode: js.UndefOr[PanelMode] = js.undefined
   var monthCellRender: js.UndefOr[MonthCellRender[Moment]] = js.undefined
@@ -242,14 +243,14 @@ object TimePickerProps {
     disabledHours: () => js.Array[Double] = null,
     disabledMinutes: /* hour */ Double => js.Array[Double] = null,
     disabledSeconds: (/* hour */ Double, /* minute */ Double) => js.Array[Double] = null,
-    dropdownAlign: AlignType = null,
+    dropdownAlign: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AlignType */ js.Any = null,
     dropdownClassName: String = null,
     format: String | js.Array[String] = null,
     getPopupContainer: /* node */ HTMLElement => HTMLElement = null,
     hideDisabledOptions: js.UndefOr[Boolean] = js.undefined,
     hourStep: Int | Double = null,
     inputReadOnly: js.UndefOr[Boolean] = js.undefined,
-    locale: AnonLang = null,
+    locale: PickerLocale = null,
     minuteStep: Int | Double = null,
     mode: PanelMode = null,
     monthCellRender: (Moment, /* locale */ Locale) => ReactNode = null,

@@ -24,7 +24,7 @@ class OrderReturnLineItem () extends js.Object {
     */
   var base_price_money: js.UndefOr[Money] = js.native
   /**
-    * The [CatalogItemVariation](#type-catalogitemvariation) id applied to this returned line item.
+    * The `CatalogItemVariation` id applied to this returned line item.
     */
   var catalog_object_id: js.UndefOr[String] = js.native
   /**
@@ -49,19 +49,9 @@ class OrderReturnLineItem () extends js.Object {
     */
   var quantity_unit: js.UndefOr[OrderQuantityUnit] = js.native
   /**
-    * A list of discounts applied to this line item. On read or retrieve, this list includes both item-level discounts
-    * and any return-level discounts apportioned to this item. This field has been deprecated in favour of `applied_discounts`.
-    */
-  var return_discounts: js.UndefOr[js.Array[OrderReturnDiscount]] = js.native
-  /**
-    * The [CatalogModifier](#type-catalogmodifier)s applied to this line item.
+    * The `CatalogModifier`s applied to this line item.
     */
   var return_modifiers: js.UndefOr[js.Array[OrderReturnLineItemModifier]] = js.native
-  /**
-    * A list of taxes applied to this line item. On read or retrieve, this list includes both item-level taxes and any
-    * return-level taxes apportioned to this item. This field has been deprecated in favour of `applied_taxes`.
-    */
-  var return_taxes: js.UndefOr[js.Array[OrderReturnTax]] = js.native
   /**
     * `uid` of the LineItem in the original sale Order.
     */

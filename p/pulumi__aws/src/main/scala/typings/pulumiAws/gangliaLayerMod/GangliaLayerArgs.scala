@@ -1,5 +1,6 @@
 package typings.pulumiAws.gangliaLayerMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiAws.inputMod.opsworks.GangliaLayerEbsVolume
 import typings.pulumiPulumi.outputMod.Input
 import scala.scalajs.js
@@ -74,6 +75,10 @@ trait GangliaLayerArgs extends js.Object {
     */
   val systemPackages: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
+    * A mapping of tags to assign to the resource.
+    */
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  /**
     * The URL path to use for Ganglia. Defaults to "/ganglia".
     */
   val url: js.UndefOr[Input[String]] = js.native
@@ -110,6 +115,7 @@ object GangliaLayerArgs {
     instanceShutdownTimeout: Input[Double] = null,
     name: Input[String] = null,
     systemPackages: Input[js.Array[Input[String]]] = null,
+    tags: Input[StringDictionary[_]] = null,
     url: Input[String] = null,
     useEbsOptimizedInstances: Input[Boolean] = null,
     username: Input[String] = null
@@ -133,6 +139,7 @@ object GangliaLayerArgs {
     if (instanceShutdownTimeout != null) __obj.updateDynamic("instanceShutdownTimeout")(instanceShutdownTimeout.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (systemPackages != null) __obj.updateDynamic("systemPackages")(systemPackages.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     if (useEbsOptimizedInstances != null) __obj.updateDynamic("useEbsOptimizedInstances")(useEbsOptimizedInstances.asInstanceOf[js.Any])
     if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])

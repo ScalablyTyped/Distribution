@@ -1,5 +1,9 @@
 package typings.vegaTypings.configMod
 
+import typings.std.Exclude
+import typings.vegaTypings.encodeMod.ColorValueRef
+import typings.vegaTypings.encodeMod.NumericValueRef
+import typings.vegaTypings.encodeMod.ScaledValueRef
 import typings.vegaTypings.projectionMod.Fit
 import typings.vegaTypings.projectionMod.ProjectionType
 import typings.vegaTypings.signalMod.SignalRef
@@ -11,63 +15,207 @@ import scala.scalajs.js.annotation._
 
 /* Inlined vega-typings.vega-typings/types/spec/config.ExcludeMappedValueRef<vega-typings.vega-typings/types/spec/projection.BaseProjection> */
 trait ProjectionConfig extends js.Object {
-  var center: ExcludeValueRefKeepSignal[js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef]]
-  var clipAngle: ExcludeValueRefKeepSignal[js.UndefOr[Double | SignalRef]]
-  var clipExtent: ExcludeValueRefKeepSignal[js.UndefOr[(Vector2[Vector2[Double | SignalRef]]) | SignalRef]]
-  var coefficient: ExcludeValueRefKeepSignal[js.UndefOr[Double | SignalRef]]
-  var distance: ExcludeValueRefKeepSignal[js.UndefOr[Double | SignalRef]]
-  var extent: ExcludeValueRefKeepSignal[js.UndefOr[(Vector2[Vector2[Double | SignalRef]]) | SignalRef]]
-  var fit: ExcludeValueRefKeepSignal[js.UndefOr[Fit | js.Array[Fit] | SignalRef]]
-  var fraction: ExcludeValueRefKeepSignal[js.UndefOr[Double | SignalRef]]
-  var lobes: ExcludeValueRefKeepSignal[js.UndefOr[Double | SignalRef]]
-  var parallel: ExcludeValueRefKeepSignal[js.UndefOr[Double | SignalRef]]
-  var parallels: ExcludeValueRefKeepSignal[js.UndefOr[(js.Array[Double | SignalRef]) | SignalRef]]
-  var pointRadius: ExcludeValueRefKeepSignal[js.UndefOr[Double | SignalRef]]
-  var precision: ExcludeValueRefKeepSignal[js.UndefOr[Double | SignalRef]]
-  var radius: ExcludeValueRefKeepSignal[js.UndefOr[Double | SignalRef]]
-  var ratio: ExcludeValueRefKeepSignal[js.UndefOr[Double | SignalRef]]
-  var reflectX: ExcludeValueRefKeepSignal[js.UndefOr[Boolean | SignalRef]]
-  var reflectY: ExcludeValueRefKeepSignal[js.UndefOr[Boolean | SignalRef]]
-  var rotate: ExcludeValueRefKeepSignal[
+  var center: (Exclude[
+    js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef], 
+    ScaledValueRef[_] | NumericValueRef | ColorValueRef
+  ]) | (KeepSignal[js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef]])
+  var clipAngle: (Exclude[
+    js.UndefOr[Double | SignalRef], 
+    ScaledValueRef[_] | NumericValueRef | ColorValueRef
+  ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
+  var clipExtent: (Exclude[
+    js.UndefOr[(Vector2[Vector2[Double | SignalRef]]) | SignalRef], 
+    ScaledValueRef[_] | NumericValueRef | ColorValueRef
+  ]) | (KeepSignal[js.UndefOr[(Vector2[Vector2[Double | SignalRef]]) | SignalRef]])
+  var coefficient: (Exclude[
+    js.UndefOr[Double | SignalRef], 
+    ScaledValueRef[_] | NumericValueRef | ColorValueRef
+  ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
+  var distance: (Exclude[
+    js.UndefOr[Double | SignalRef], 
+    ScaledValueRef[_] | NumericValueRef | ColorValueRef
+  ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
+  var extent: (Exclude[
+    js.UndefOr[(Vector2[Vector2[Double | SignalRef]]) | SignalRef], 
+    ScaledValueRef[_] | NumericValueRef | ColorValueRef
+  ]) | (KeepSignal[js.UndefOr[(Vector2[Vector2[Double | SignalRef]]) | SignalRef]])
+  var fit: (Exclude[
+    js.UndefOr[Fit | js.Array[Fit] | SignalRef], 
+    ScaledValueRef[_] | NumericValueRef | ColorValueRef
+  ]) | (KeepSignal[js.UndefOr[Fit | js.Array[Fit] | SignalRef]])
+  var fraction: (Exclude[
+    js.UndefOr[Double | SignalRef], 
+    ScaledValueRef[_] | NumericValueRef | ColorValueRef
+  ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
+  var lobes: (Exclude[
+    js.UndefOr[Double | SignalRef], 
+    ScaledValueRef[_] | NumericValueRef | ColorValueRef
+  ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
+  var parallel: (Exclude[
+    js.UndefOr[Double | SignalRef], 
+    ScaledValueRef[_] | NumericValueRef | ColorValueRef
+  ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
+  var parallels: (Exclude[
+    js.UndefOr[(js.Array[Double | SignalRef]) | SignalRef], 
+    ScaledValueRef[_] | NumericValueRef | ColorValueRef
+  ]) | (KeepSignal[js.UndefOr[(js.Array[Double | SignalRef]) | SignalRef]])
+  var pointRadius: (Exclude[
+    js.UndefOr[Double | SignalRef], 
+    ScaledValueRef[_] | NumericValueRef | ColorValueRef
+  ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
+  var precision: (Exclude[
+    js.UndefOr[Double | SignalRef], 
+    ScaledValueRef[_] | NumericValueRef | ColorValueRef
+  ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
+  var radius: (Exclude[
+    js.UndefOr[Double | SignalRef], 
+    ScaledValueRef[_] | NumericValueRef | ColorValueRef
+  ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
+  var ratio: (Exclude[
+    js.UndefOr[Double | SignalRef], 
+    ScaledValueRef[_] | NumericValueRef | ColorValueRef
+  ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
+  var reflectX: (Exclude[
+    js.UndefOr[Boolean | SignalRef], 
+    ScaledValueRef[_] | NumericValueRef | ColorValueRef
+  ]) | (KeepSignal[js.UndefOr[Boolean | SignalRef]])
+  var reflectY: (Exclude[
+    js.UndefOr[Boolean | SignalRef], 
+    ScaledValueRef[_] | NumericValueRef | ColorValueRef
+  ]) | (KeepSignal[js.UndefOr[Boolean | SignalRef]])
+  var rotate: (Exclude[
+    js.UndefOr[(Vector2[Double | SignalRef]) | (Vector3[Double | SignalRef]) | SignalRef], 
+    ScaledValueRef[_] | NumericValueRef | ColorValueRef
+  ]) | (KeepSignal[
     js.UndefOr[(Vector2[Double | SignalRef]) | (Vector3[Double | SignalRef]) | SignalRef]
-  ]
-  var scale: ExcludeValueRefKeepSignal[js.UndefOr[Double | SignalRef]]
-  var size: ExcludeValueRefKeepSignal[js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef]]
-  var spacing: ExcludeValueRefKeepSignal[js.UndefOr[Double | SignalRef]]
-  var tilt: ExcludeValueRefKeepSignal[js.UndefOr[Double | SignalRef]]
-  var translate: ExcludeValueRefKeepSignal[js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef]]
-  var `type`: ExcludeValueRefKeepSignal[js.UndefOr[ProjectionType | SignalRef]]
+  ])
+  var scale: (Exclude[
+    js.UndefOr[Double | SignalRef], 
+    ScaledValueRef[_] | NumericValueRef | ColorValueRef
+  ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
+  var size: (Exclude[
+    js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef], 
+    ScaledValueRef[_] | NumericValueRef | ColorValueRef
+  ]) | (KeepSignal[js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef]])
+  var spacing: (Exclude[
+    js.UndefOr[Double | SignalRef], 
+    ScaledValueRef[_] | NumericValueRef | ColorValueRef
+  ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
+  var tilt: (Exclude[
+    js.UndefOr[Double | SignalRef], 
+    ScaledValueRef[_] | NumericValueRef | ColorValueRef
+  ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
+  var translate: (Exclude[
+    js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef], 
+    ScaledValueRef[_] | NumericValueRef | ColorValueRef
+  ]) | (KeepSignal[js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef]])
+  var `type`: (Exclude[
+    js.UndefOr[ProjectionType | SignalRef], 
+    ScaledValueRef[_] | NumericValueRef | ColorValueRef
+  ]) | (KeepSignal[js.UndefOr[ProjectionType | SignalRef]])
 }
 
 object ProjectionConfig {
   @scala.inline
   def apply(
-    center: ExcludeValueRefKeepSignal[js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef]] = null,
-    clipAngle: ExcludeValueRefKeepSignal[js.UndefOr[Double | SignalRef]] = null,
-    clipExtent: ExcludeValueRefKeepSignal[js.UndefOr[(Vector2[Vector2[Double | SignalRef]]) | SignalRef]] = null,
-    coefficient: ExcludeValueRefKeepSignal[js.UndefOr[Double | SignalRef]] = null,
-    distance: ExcludeValueRefKeepSignal[js.UndefOr[Double | SignalRef]] = null,
-    extent: ExcludeValueRefKeepSignal[js.UndefOr[(Vector2[Vector2[Double | SignalRef]]) | SignalRef]] = null,
-    fit: ExcludeValueRefKeepSignal[js.UndefOr[Fit | js.Array[Fit] | SignalRef]] = null,
-    fraction: ExcludeValueRefKeepSignal[js.UndefOr[Double | SignalRef]] = null,
-    lobes: ExcludeValueRefKeepSignal[js.UndefOr[Double | SignalRef]] = null,
-    parallel: ExcludeValueRefKeepSignal[js.UndefOr[Double | SignalRef]] = null,
-    parallels: ExcludeValueRefKeepSignal[js.UndefOr[(js.Array[Double | SignalRef]) | SignalRef]] = null,
-    pointRadius: ExcludeValueRefKeepSignal[js.UndefOr[Double | SignalRef]] = null,
-    precision: ExcludeValueRefKeepSignal[js.UndefOr[Double | SignalRef]] = null,
-    radius: ExcludeValueRefKeepSignal[js.UndefOr[Double | SignalRef]] = null,
-    ratio: ExcludeValueRefKeepSignal[js.UndefOr[Double | SignalRef]] = null,
-    reflectX: ExcludeValueRefKeepSignal[js.UndefOr[Boolean | SignalRef]] = null,
-    reflectY: ExcludeValueRefKeepSignal[js.UndefOr[Boolean | SignalRef]] = null,
-    rotate: ExcludeValueRefKeepSignal[
+    center: (Exclude[
+      js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef], 
+      ScaledValueRef[_] | NumericValueRef | ColorValueRef
+    ]) | (KeepSignal[js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef]]) = null,
+    clipAngle: (Exclude[
+      js.UndefOr[Double | SignalRef], 
+      ScaledValueRef[_] | NumericValueRef | ColorValueRef
+    ]) | (KeepSignal[js.UndefOr[Double | SignalRef]]) = null,
+    clipExtent: (Exclude[
+      js.UndefOr[(Vector2[Vector2[Double | SignalRef]]) | SignalRef], 
+      ScaledValueRef[_] | NumericValueRef | ColorValueRef
+    ]) | (KeepSignal[js.UndefOr[(Vector2[Vector2[Double | SignalRef]]) | SignalRef]]) = null,
+    coefficient: (Exclude[
+      js.UndefOr[Double | SignalRef], 
+      ScaledValueRef[_] | NumericValueRef | ColorValueRef
+    ]) | (KeepSignal[js.UndefOr[Double | SignalRef]]) = null,
+    distance: (Exclude[
+      js.UndefOr[Double | SignalRef], 
+      ScaledValueRef[_] | NumericValueRef | ColorValueRef
+    ]) | (KeepSignal[js.UndefOr[Double | SignalRef]]) = null,
+    extent: (Exclude[
+      js.UndefOr[(Vector2[Vector2[Double | SignalRef]]) | SignalRef], 
+      ScaledValueRef[_] | NumericValueRef | ColorValueRef
+    ]) | (KeepSignal[js.UndefOr[(Vector2[Vector2[Double | SignalRef]]) | SignalRef]]) = null,
+    fit: (Exclude[
+      js.UndefOr[Fit | js.Array[Fit] | SignalRef], 
+      ScaledValueRef[_] | NumericValueRef | ColorValueRef
+    ]) | (KeepSignal[js.UndefOr[Fit | js.Array[Fit] | SignalRef]]) = null,
+    fraction: (Exclude[
+      js.UndefOr[Double | SignalRef], 
+      ScaledValueRef[_] | NumericValueRef | ColorValueRef
+    ]) | (KeepSignal[js.UndefOr[Double | SignalRef]]) = null,
+    lobes: (Exclude[
+      js.UndefOr[Double | SignalRef], 
+      ScaledValueRef[_] | NumericValueRef | ColorValueRef
+    ]) | (KeepSignal[js.UndefOr[Double | SignalRef]]) = null,
+    parallel: (Exclude[
+      js.UndefOr[Double | SignalRef], 
+      ScaledValueRef[_] | NumericValueRef | ColorValueRef
+    ]) | (KeepSignal[js.UndefOr[Double | SignalRef]]) = null,
+    parallels: (Exclude[
+      js.UndefOr[(js.Array[Double | SignalRef]) | SignalRef], 
+      ScaledValueRef[_] | NumericValueRef | ColorValueRef
+    ]) | (KeepSignal[js.UndefOr[(js.Array[Double | SignalRef]) | SignalRef]]) = null,
+    pointRadius: (Exclude[
+      js.UndefOr[Double | SignalRef], 
+      ScaledValueRef[_] | NumericValueRef | ColorValueRef
+    ]) | (KeepSignal[js.UndefOr[Double | SignalRef]]) = null,
+    precision: (Exclude[
+      js.UndefOr[Double | SignalRef], 
+      ScaledValueRef[_] | NumericValueRef | ColorValueRef
+    ]) | (KeepSignal[js.UndefOr[Double | SignalRef]]) = null,
+    radius: (Exclude[
+      js.UndefOr[Double | SignalRef], 
+      ScaledValueRef[_] | NumericValueRef | ColorValueRef
+    ]) | (KeepSignal[js.UndefOr[Double | SignalRef]]) = null,
+    ratio: (Exclude[
+      js.UndefOr[Double | SignalRef], 
+      ScaledValueRef[_] | NumericValueRef | ColorValueRef
+    ]) | (KeepSignal[js.UndefOr[Double | SignalRef]]) = null,
+    reflectX: (Exclude[
+      js.UndefOr[Boolean | SignalRef], 
+      ScaledValueRef[_] | NumericValueRef | ColorValueRef
+    ]) | (KeepSignal[js.UndefOr[Boolean | SignalRef]]) = null,
+    reflectY: (Exclude[
+      js.UndefOr[Boolean | SignalRef], 
+      ScaledValueRef[_] | NumericValueRef | ColorValueRef
+    ]) | (KeepSignal[js.UndefOr[Boolean | SignalRef]]) = null,
+    rotate: (Exclude[
+      js.UndefOr[(Vector2[Double | SignalRef]) | (Vector3[Double | SignalRef]) | SignalRef], 
+      ScaledValueRef[_] | NumericValueRef | ColorValueRef
+    ]) | (KeepSignal[
       js.UndefOr[(Vector2[Double | SignalRef]) | (Vector3[Double | SignalRef]) | SignalRef]
-    ] = null,
-    scale: ExcludeValueRefKeepSignal[js.UndefOr[Double | SignalRef]] = null,
-    size: ExcludeValueRefKeepSignal[js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef]] = null,
-    spacing: ExcludeValueRefKeepSignal[js.UndefOr[Double | SignalRef]] = null,
-    tilt: ExcludeValueRefKeepSignal[js.UndefOr[Double | SignalRef]] = null,
-    translate: ExcludeValueRefKeepSignal[js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef]] = null,
-    `type`: ExcludeValueRefKeepSignal[js.UndefOr[ProjectionType | SignalRef]] = null
+    ]) = null,
+    scale: (Exclude[
+      js.UndefOr[Double | SignalRef], 
+      ScaledValueRef[_] | NumericValueRef | ColorValueRef
+    ]) | (KeepSignal[js.UndefOr[Double | SignalRef]]) = null,
+    size: (Exclude[
+      js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef], 
+      ScaledValueRef[_] | NumericValueRef | ColorValueRef
+    ]) | (KeepSignal[js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef]]) = null,
+    spacing: (Exclude[
+      js.UndefOr[Double | SignalRef], 
+      ScaledValueRef[_] | NumericValueRef | ColorValueRef
+    ]) | (KeepSignal[js.UndefOr[Double | SignalRef]]) = null,
+    tilt: (Exclude[
+      js.UndefOr[Double | SignalRef], 
+      ScaledValueRef[_] | NumericValueRef | ColorValueRef
+    ]) | (KeepSignal[js.UndefOr[Double | SignalRef]]) = null,
+    translate: (Exclude[
+      js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef], 
+      ScaledValueRef[_] | NumericValueRef | ColorValueRef
+    ]) | (KeepSignal[js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef]]) = null,
+    `type`: (Exclude[
+      js.UndefOr[ProjectionType | SignalRef], 
+      ScaledValueRef[_] | NumericValueRef | ColorValueRef
+    ]) | (KeepSignal[js.UndefOr[ProjectionType | SignalRef]]) = null
   ): ProjectionConfig = {
     val __obj = js.Dynamic.literal()
     if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])

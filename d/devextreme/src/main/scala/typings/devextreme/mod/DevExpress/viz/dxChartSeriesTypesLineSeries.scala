@@ -14,18 +14,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Describes settings supported by a series of the line type. */
+/** @name dxChartSeriesTypes.LineSeries */
 trait dxChartSeriesTypesLineSeries extends dxChartSeriesTypesCommonSeries {
-  /** Configures data aggregation for the series. */
+  /** @name dxChartSeriesTypes.LineSeries.aggregation */
   @JSName("aggregation")
   var aggregation_dxChartSeriesTypesLineSeries: js.UndefOr[dxChartSeriesTypesLineSeriesAggregation] = js.undefined
-  /** Specifies series elements to be highlighted when a user points to a series. */
+  /** @name dxChartSeriesTypes.LineSeries.hoverMode */
   @JSName("hoverMode")
   var hoverMode_dxChartSeriesTypesLineSeries: js.UndefOr[nearestPoint | includePoints | excludePoints | none] = js.undefined
-  /** Configures point labels. */
+  /** @name dxChartSeriesTypes.LineSeries.label */
   @JSName("label")
   var label_dxChartSeriesTypesLineSeries: js.UndefOr[dxChartSeriesTypesLineSeriesLabel] = js.undefined
-  /** Specifies series elements to be highlighted when a user selects a series. */
+  /** @name dxChartSeriesTypes.LineSeries.selectionMode */
   @JSName("selectionMode")
   var selectionMode_dxChartSeriesTypesLineSeries: js.UndefOr[includePoints | excludePoints | none] = js.undefined
 }

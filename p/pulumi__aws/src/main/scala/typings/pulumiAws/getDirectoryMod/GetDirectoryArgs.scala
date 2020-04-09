@@ -11,6 +11,9 @@ trait GetDirectoryArgs extends js.Object {
     * The ID of the directory.
     */
   val directoryId: String = js.native
+  /**
+    * A mapping of tags assigned to the directory/connector.
+    */
   val tags: js.UndefOr[StringDictionary[js.Any]] = js.native
 }
 

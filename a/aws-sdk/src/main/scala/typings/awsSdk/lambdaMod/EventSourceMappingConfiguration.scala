@@ -35,7 +35,7 @@ trait EventSourceMappingConfiguration extends js.Object {
     */
   var LastProcessingResult: js.UndefOr[String] = js.native
   /**
-    * The maximum amount of time to gather records before invoking the function, in seconds.
+    * (Streams) The maximum amount of time to gather records before invoking the function, in seconds.
     */
   var MaximumBatchingWindowInSeconds: js.UndefOr[typings.awsSdk.lambdaMod.MaximumBatchingWindowInSeconds] = js.native
   /**

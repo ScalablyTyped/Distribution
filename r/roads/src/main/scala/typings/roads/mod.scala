@@ -64,7 +64,7 @@ object mod extends js.Object {
     def this(road: typings.roads.roadMod.default, container_element: HTMLElement, window: Window_) = this()
   }
   
-  def build(input_file: String, output_file: String, options: RoadsBuildOptions): Unit = js.native
+  def build(input_file: String, output_file: String, options: RoadsBuildOptions): js.Promise[Unit] = js.native
   @js.native
   object Middleware extends js.Object {
     @js.native

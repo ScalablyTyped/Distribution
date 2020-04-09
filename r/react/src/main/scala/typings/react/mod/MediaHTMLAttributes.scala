@@ -59,7 +59,7 @@ trait MediaHTMLAttributes[T] extends HTMLAttributes[T] {
   var loop: js.UndefOr[Boolean] = js.undefined
   var mediaGroup: js.UndefOr[String] = js.undefined
   var muted: js.UndefOr[Boolean] = js.undefined
-  var playsinline: js.UndefOr[Boolean] = js.undefined
+  var playsInline: js.UndefOr[Boolean] = js.undefined
   var preload: js.UndefOr[String] = js.undefined
   var src: js.UndefOr[String] = js.undefined
 }
@@ -212,7 +212,7 @@ object MediaHTMLAttributes {
     onProgress: SyntheticEvent[T, Event_] => Unit = null,
     onRateChange: SyntheticEvent[T, Event_] => Unit = null,
     onReset: FormEvent[T] => Unit = null,
-    onScroll: UIEvent[T] => Unit = null,
+    onScroll: UIEvent[T, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[T, Event_] => Unit = null,
     onSeeking: SyntheticEvent[T, Event_] => Unit = null,
     onSelect: SyntheticEvent[T, Event_] => Unit = null,
@@ -229,7 +229,7 @@ object MediaHTMLAttributes {
     onWaiting: SyntheticEvent[T, Event_] => Unit = null,
     onWheel: WheelEvent[T] => Unit = null,
     placeholder: String = null,
-    playsinline: js.UndefOr[Boolean] = js.undefined,
+    playsInline: js.UndefOr[Boolean] = js.undefined,
     prefix: String = null,
     preload: String = null,
     property: String = null,
@@ -414,7 +414,7 @@ object MediaHTMLAttributes {
     if (onWaiting != null) __obj.updateDynamic("onWaiting")(js.Any.fromFunction1(onWaiting))
     if (onWheel != null) __obj.updateDynamic("onWheel")(js.Any.fromFunction1(onWheel))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (!js.isUndefined(playsinline)) __obj.updateDynamic("playsinline")(playsinline.asInstanceOf[js.Any])
+    if (!js.isUndefined(playsInline)) __obj.updateDynamic("playsInline")(playsInline.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     if (preload != null) __obj.updateDynamic("preload")(preload.asInstanceOf[js.Any])
     if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])

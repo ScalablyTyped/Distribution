@@ -7,9 +7,65 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Observation extends js.Object {
   /**
+    *  The detail type of the CloudWatch Event-based observation, for example, EC2 Instance State-change Notification. 
+    */
+  var CloudWatchEventDetailType: js.UndefOr[typings.awsSdk.applicationinsightsMod.CloudWatchEventDetailType] = js.native
+  /**
+    *  The ID of the CloudWatch Event-based observation related to the detected problem. 
+    */
+  var CloudWatchEventId: js.UndefOr[typings.awsSdk.applicationinsightsMod.CloudWatchEventId] = js.native
+  /**
+    *  The source of the CloudWatch Event. 
+    */
+  var CloudWatchEventSource: js.UndefOr[typings.awsSdk.applicationinsightsMod.CloudWatchEventSource] = js.native
+  /**
+    *  The CodeDeploy application to which the deployment belongs. 
+    */
+  var CodeDeployApplication: js.UndefOr[typings.awsSdk.applicationinsightsMod.CodeDeployApplication] = js.native
+  /**
+    *  The deployment group to which the CodeDeploy deployment belongs. 
+    */
+  var CodeDeployDeploymentGroup: js.UndefOr[typings.awsSdk.applicationinsightsMod.CodeDeployDeploymentGroup] = js.native
+  /**
+    *  The deployment ID of the CodeDeploy-based observation related to the detected problem. 
+    */
+  var CodeDeployDeploymentId: js.UndefOr[typings.awsSdk.applicationinsightsMod.CodeDeployDeploymentId] = js.native
+  /**
+    *  The instance group to which the CodeDeploy instance belongs. 
+    */
+  var CodeDeployInstanceGroupId: js.UndefOr[typings.awsSdk.applicationinsightsMod.CodeDeployInstanceGroupId] = js.native
+  /**
+    *  The status of the CodeDeploy deployment, for example SUCCESS or  FAILURE. 
+    */
+  var CodeDeployState: js.UndefOr[typings.awsSdk.applicationinsightsMod.CodeDeployState] = js.native
+  /**
+    *  The state of the instance, such as STOPPING or TERMINATING. 
+    */
+  var Ec2State: js.UndefOr[typings.awsSdk.applicationinsightsMod.Ec2State] = js.native
+  /**
     * The time when the observation ended, in epoch seconds.
     */
   var EndTime: js.UndefOr[typings.awsSdk.applicationinsightsMod.EndTime] = js.native
+  /**
+    *  The Amazon Resource Name (ARN) of the AWS Health Event-based observation.
+    */
+  var HealthEventArn: js.UndefOr[typings.awsSdk.applicationinsightsMod.HealthEventArn] = js.native
+  /**
+    *  The description of the AWS Health event provided by the service, such as Amazon EC2. 
+    */
+  var HealthEventDescription: js.UndefOr[typings.awsSdk.applicationinsightsMod.HealthEventDescription] = js.native
+  /**
+    *  The category of the AWS Health event, such as issue. 
+    */
+  var HealthEventTypeCategory: js.UndefOr[typings.awsSdk.applicationinsightsMod.HealthEventTypeCategory] = js.native
+  /**
+    *  The type of the AWS Health event, for example, AWS_EC2_POWER_CONNECTIVITY_ISSUE. 
+    */
+  var HealthEventTypeCode: js.UndefOr[typings.awsSdk.applicationinsightsMod.HealthEventTypeCode] = js.native
+  /**
+    *  The service to which the AWS Health Event belongs, such as EC2. 
+    */
+  var HealthService: js.UndefOr[typings.awsSdk.applicationinsightsMod.HealthService] = js.native
   /**
     * The ID of the observation type.
     */
@@ -58,12 +114,54 @@ trait Observation extends js.Object {
     * The value of the source observation metric.
     */
   var Value: js.UndefOr[typings.awsSdk.applicationinsightsMod.Value] = js.native
+  /**
+    *  The X-Ray request error percentage for this node. 
+    */
+  var XRayErrorPercent: js.UndefOr[typings.awsSdk.applicationinsightsMod.XRayErrorPercent] = js.native
+  /**
+    *  The X-Ray request fault percentage for this node. 
+    */
+  var XRayFaultPercent: js.UndefOr[typings.awsSdk.applicationinsightsMod.XRayFaultPercent] = js.native
+  /**
+    *  The name of the X-Ray node. 
+    */
+  var XRayNodeName: js.UndefOr[typings.awsSdk.applicationinsightsMod.XRayNodeName] = js.native
+  /**
+    *  The type of the X-Ray node. 
+    */
+  var XRayNodeType: js.UndefOr[typings.awsSdk.applicationinsightsMod.XRayNodeType] = js.native
+  /**
+    *  The X-Ray node request average latency for this node. 
+    */
+  var XRayRequestAverageLatency: js.UndefOr[typings.awsSdk.applicationinsightsMod.XRayRequestAverageLatency] = js.native
+  /**
+    *  The X-Ray request count for this node. 
+    */
+  var XRayRequestCount: js.UndefOr[typings.awsSdk.applicationinsightsMod.XRayRequestCount] = js.native
+  /**
+    *  The X-Ray request throttle percentage for this node. 
+    */
+  var XRayThrottlePercent: js.UndefOr[typings.awsSdk.applicationinsightsMod.XRayThrottlePercent] = js.native
 }
 
 object Observation {
   @scala.inline
   def apply(
+    CloudWatchEventDetailType: CloudWatchEventDetailType = null,
+    CloudWatchEventId: CloudWatchEventId = null,
+    CloudWatchEventSource: CloudWatchEventSource = null,
+    CodeDeployApplication: CodeDeployApplication = null,
+    CodeDeployDeploymentGroup: CodeDeployDeploymentGroup = null,
+    CodeDeployDeploymentId: CodeDeployDeploymentId = null,
+    CodeDeployInstanceGroupId: CodeDeployInstanceGroupId = null,
+    CodeDeployState: CodeDeployState = null,
+    Ec2State: Ec2State = null,
     EndTime: EndTime = null,
+    HealthEventArn: HealthEventArn = null,
+    HealthEventDescription: HealthEventDescription = null,
+    HealthEventTypeCategory: HealthEventTypeCategory = null,
+    HealthEventTypeCode: HealthEventTypeCode = null,
+    HealthService: HealthService = null,
     Id: ObservationId = null,
     LineTime: LineTime = null,
     LogFilter: LogFilter = null,
@@ -75,10 +173,31 @@ object Observation {
     SourceType: SourceType = null,
     StartTime: StartTime = null,
     Unit: Unit = null,
-    Value: Int | Double = null
+    Value: Int | Double = null,
+    XRayErrorPercent: Int | Double = null,
+    XRayFaultPercent: Int | Double = null,
+    XRayNodeName: XRayNodeName = null,
+    XRayNodeType: XRayNodeType = null,
+    XRayRequestAverageLatency: Int | Double = null,
+    XRayRequestCount: Int | Double = null,
+    XRayThrottlePercent: Int | Double = null
   ): Observation = {
     val __obj = js.Dynamic.literal()
+    if (CloudWatchEventDetailType != null) __obj.updateDynamic("CloudWatchEventDetailType")(CloudWatchEventDetailType.asInstanceOf[js.Any])
+    if (CloudWatchEventId != null) __obj.updateDynamic("CloudWatchEventId")(CloudWatchEventId.asInstanceOf[js.Any])
+    if (CloudWatchEventSource != null) __obj.updateDynamic("CloudWatchEventSource")(CloudWatchEventSource.asInstanceOf[js.Any])
+    if (CodeDeployApplication != null) __obj.updateDynamic("CodeDeployApplication")(CodeDeployApplication.asInstanceOf[js.Any])
+    if (CodeDeployDeploymentGroup != null) __obj.updateDynamic("CodeDeployDeploymentGroup")(CodeDeployDeploymentGroup.asInstanceOf[js.Any])
+    if (CodeDeployDeploymentId != null) __obj.updateDynamic("CodeDeployDeploymentId")(CodeDeployDeploymentId.asInstanceOf[js.Any])
+    if (CodeDeployInstanceGroupId != null) __obj.updateDynamic("CodeDeployInstanceGroupId")(CodeDeployInstanceGroupId.asInstanceOf[js.Any])
+    if (CodeDeployState != null) __obj.updateDynamic("CodeDeployState")(CodeDeployState.asInstanceOf[js.Any])
+    if (Ec2State != null) __obj.updateDynamic("Ec2State")(Ec2State.asInstanceOf[js.Any])
     if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime.asInstanceOf[js.Any])
+    if (HealthEventArn != null) __obj.updateDynamic("HealthEventArn")(HealthEventArn.asInstanceOf[js.Any])
+    if (HealthEventDescription != null) __obj.updateDynamic("HealthEventDescription")(HealthEventDescription.asInstanceOf[js.Any])
+    if (HealthEventTypeCategory != null) __obj.updateDynamic("HealthEventTypeCategory")(HealthEventTypeCategory.asInstanceOf[js.Any])
+    if (HealthEventTypeCode != null) __obj.updateDynamic("HealthEventTypeCode")(HealthEventTypeCode.asInstanceOf[js.Any])
+    if (HealthService != null) __obj.updateDynamic("HealthService")(HealthService.asInstanceOf[js.Any])
     if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
     if (LineTime != null) __obj.updateDynamic("LineTime")(LineTime.asInstanceOf[js.Any])
     if (LogFilter != null) __obj.updateDynamic("LogFilter")(LogFilter.asInstanceOf[js.Any])
@@ -91,6 +210,13 @@ object Observation {
     if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime.asInstanceOf[js.Any])
     if (Unit != null) __obj.updateDynamic("Unit")(Unit.asInstanceOf[js.Any])
     if (Value != null) __obj.updateDynamic("Value")(Value.asInstanceOf[js.Any])
+    if (XRayErrorPercent != null) __obj.updateDynamic("XRayErrorPercent")(XRayErrorPercent.asInstanceOf[js.Any])
+    if (XRayFaultPercent != null) __obj.updateDynamic("XRayFaultPercent")(XRayFaultPercent.asInstanceOf[js.Any])
+    if (XRayNodeName != null) __obj.updateDynamic("XRayNodeName")(XRayNodeName.asInstanceOf[js.Any])
+    if (XRayNodeType != null) __obj.updateDynamic("XRayNodeType")(XRayNodeType.asInstanceOf[js.Any])
+    if (XRayRequestAverageLatency != null) __obj.updateDynamic("XRayRequestAverageLatency")(XRayRequestAverageLatency.asInstanceOf[js.Any])
+    if (XRayRequestCount != null) __obj.updateDynamic("XRayRequestCount")(XRayRequestCount.asInstanceOf[js.Any])
+    if (XRayThrottlePercent != null) __obj.updateDynamic("XRayThrottlePercent")(XRayThrottlePercent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Observation]
   }
 }

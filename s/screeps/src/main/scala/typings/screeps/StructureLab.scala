@@ -12,7 +12,8 @@ import scala.scalajs.js.annotation._
 trait StructureLab
   extends OwnedStructure[STRUCTURE_LAB]
      with AnyOwnedStructure
-     with AnyStoreStructure {
+     with AnyStoreStructure
+     with ConcreteStructure[js.Any] {
   /**
     * The amount of game ticks the lab has to wait until the next reaction is possible.
     */
@@ -57,6 +58,12 @@ trait StructureLab
     */
   def boostCreep(creep: Creep): ScreepsReturnCode = js.native
   def boostCreep(creep: Creep, bodyPartsCount: Double): ScreepsReturnCode = js.native
+  /**
+    * Breaks mineral compounds back into reagents. The same output labs can be used by many source labs.
+    * @param lab1 The first result lab.
+    * @param lab2 The second result lab.
+    */
+  def reverseReaction(lab1: StructureLab, lab2: StructureLab): ScreepsReturnCode = js.native
   /**
     * Produce mineral compounds using reagents from two another labs. Each lab has to be within 2 squares range. The same input labs can be used by many output labs
     * @param lab1 The first source lab.

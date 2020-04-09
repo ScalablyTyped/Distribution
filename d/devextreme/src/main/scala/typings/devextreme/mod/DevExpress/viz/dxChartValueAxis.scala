@@ -34,74 +34,74 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxChartValueAxis extends dxChartCommonAxisSettings {
-  /** Enables auto-calculated scale breaks. Applies only if the axis' type is "continuous" or "logarithmic" and valueType is "numeric". */
+  /** @name dxChart.Options.valueAxis.autoBreaksEnabled */
   var autoBreaksEnabled: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the minimum distance between two neighboring major ticks in pixels. Applies only to the axes of the "continuous" and "logarithmic" types. */
+  /** @name dxChart.Options.valueAxis.axisDivisionFactor */
   var axisDivisionFactor: js.UndefOr[Double] = js.undefined
-  /** Declares a custom scale break collection. Applies only if the axis' type is "continuous" or "logarithmic". */
+  /** @name dxChart.Options.valueAxis.breaks */
   var breaks: js.UndefOr[js.Array[ScaleBreak]] = js.undefined
-  /** Specifies the order of categories on an axis of the "discrete" type. */
+  /** @name dxChart.Options.valueAxis.categories */
   var categories: js.UndefOr[js.Array[Double | String | Date]] = js.undefined
-  /** Specifies the appearance of those constant lines that belong to the value axis. */
+  /** @name dxChart.Options.valueAxis.constantLineStyle */
   @JSName("constantLineStyle")
   var constantLineStyle_dxChartValueAxis: js.UndefOr[dxChartValueAxisConstantLineStyle] = js.undefined
-  /** Declares a collection of constant lines belonging to the value axis. */
+  /** @name dxChart.Options.valueAxis.constantLines */
   var constantLines: js.UndefOr[js.Array[dxChartValueAxisConstantLines]] = js.undefined
-  /** Configures the labels of the value axis. */
+  /** @name dxChart.Options.valueAxis.label */
   @JSName("label")
   var label_dxChartValueAxis: js.UndefOr[dxChartValueAxisLabel] = js.undefined
-  /** Specifies a value used to calculate the range on a logarithmic axis within which the axis should be linear. Applies only if the data source contains negative values or zeroes. */
+  /** @name dxChart.Options.valueAxis.linearThreshold */
   var linearThreshold: js.UndefOr[Double] = js.undefined
-  /** Specifies the value to be raised to a power when generating ticks for an axis of the "logarithmic" type. */
+  /** @name dxChart.Options.valueAxis.logarithmBase */
   var logarithmBase: js.UndefOr[Double] = js.undefined
-  /** @deprecated Use the valueAxis.visualRange option instead. */
-  /** Coupled with the min option, focuses the widget on a specific chart segment. Applies only to the axes of the "continuous" and "logarithmic" type. */
+  /** @deprecated */
+  /** @name dxChart.Options.valueAxis.max */
   var max: js.UndefOr[Double | Date | String] = js.undefined
-  /** Sets a limit on auto-calculated scale breaks. Custom scale breaks are not counted. */
+  /** @name dxChart.Options.valueAxis.maxAutoBreakCount */
   var maxAutoBreakCount: js.UndefOr[Double] = js.undefined
-  /** @deprecated Use the valueAxis.visualRange option instead. */
-  /** Coupled with the max option, focuses the widget on a specific chart segment. Applies only to the axes of the "continuous" and "logarithmic" type. */
+  /** @deprecated */
+  /** @name dxChart.Options.valueAxis.min */
   var min: js.UndefOr[Double | Date | String] = js.undefined
-  /** Specifies the minimum length of the visual range. */
+  /** @name dxChart.Options.valueAxis.minVisualRangeLength */
   var minVisualRangeLength: js.UndefOr[
     Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year
   ] = js.undefined
-  /** Specifies how many minor ticks to place between two neighboring major ticks. */
+  /** @name dxChart.Options.valueAxis.minorTickCount */
   var minorTickCount: js.UndefOr[Double] = js.undefined
-  /** Specifies the interval between minor ticks. Applies only to continuous axes. */
+  /** @name dxChart.Options.valueAxis.minorTickInterval */
   var minorTickInterval: js.UndefOr[
     Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year
   ] = js.undefined
-  /** Adds a pixel-measured empty space between two side-by-side value axes. Applies if several value axes are located on one side of the chart. */
+  /** @name dxChart.Options.valueAxis.multipleAxesSpacing */
   var multipleAxesSpacing: js.UndefOr[Double] = js.undefined
-  /** Specifies the name of the value axis. */
+  /** @name dxChart.Options.valueAxis.name */
   var name: js.UndefOr[String] = js.undefined
-  /** Binds the value axis to a pane. */
+  /** @name dxChart.Options.valueAxis.pane */
   var pane: js.UndefOr[String] = js.undefined
-  /** Relocates the value axis. */
+  /** @name dxChart.Options.valueAxis.position */
   var position: js.UndefOr[bottom | left | right | top] = js.undefined
-  /** Specifies whether or not to show zero on the value axis. */
+  /** @name dxChart.Options.valueAxis.showZero */
   var showZero: js.UndefOr[Boolean] = js.undefined
-  /** Declares a collection of strips belonging to the value axis. */
+  /** @name dxChart.Options.valueAxis.strips */
   var strips: js.UndefOr[js.Array[dxChartValueAxisStrips]] = js.undefined
-  /** Synchronizes two or more value axes with each other at a specific value. */
+  /** @name dxChart.Options.valueAxis.synchronizedValue */
   var synchronizedValue: js.UndefOr[Double] = js.undefined
-  /** Specifies the interval between major ticks. Does not apply to discrete axes. */
+  /** @name dxChart.Options.valueAxis.tickInterval */
   var tickInterval: js.UndefOr[
     Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year
   ] = js.undefined
-  /** Configures the axis title. */
+  /** @name dxChart.Options.valueAxis.title */
   @JSName("title")
   var title_dxChartValueAxis: js.UndefOr[dxChartValueAxisTitle] = js.undefined
-  /** Specifies the type of the value axis. */
+  /** @name dxChart.Options.valueAxis.type */
   var `type`: js.UndefOr[continuous | discrete | logarithmic] = js.undefined
-  /** Casts values to a specified data type. */
+  /** @name dxChart.Options.valueAxis.valueType */
   var valueType: js.UndefOr[datetime | numeric | string_] = js.undefined
-  /** Defines the axis' displayed range. Cannot be wider than the wholeRange. */
+  /** @name dxChart.Options.valueAxis.visualRange */
   var visualRange: js.UndefOr[VizRange | (js.Array[Double | String | Date])] = js.undefined
-  /** Specifies how the axis's visual range should behave when chart data is updated. */
+  /** @name dxChart.Options.valueAxis.visualRangeUpdateMode */
   var visualRangeUpdateMode: js.UndefOr[auto | keep | reset | shift] = js.undefined
-  /** Defines the range where the axis can be zoomed and panned. */
+  /** @name dxChart.Options.valueAxis.wholeRange */
   var wholeRange: js.UndefOr[VizRange | (js.Array[Double | String | Date])] = js.undefined
 }
 

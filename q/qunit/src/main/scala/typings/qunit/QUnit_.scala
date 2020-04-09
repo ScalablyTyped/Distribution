@@ -206,7 +206,7 @@ trait QUnit_ extends js.Object {
     * @param {string} name Title of unit being tested
     * @param callback Function to close over assertions
     */
-  def only(name: String, callback: js.Function1[/* assert */ Assert, Unit]): Unit = js.native
+  def only(name: String, callback: js.Function1[/* assert */ Assert, Unit | js.Promise[_]]): Unit = js.native
   /**
     * DEPRECATED: Report the result of a custom assertion.
     *
@@ -236,7 +236,7 @@ trait QUnit_ extends js.Object {
     * @param {string} Title of unit being tested
     */
   def skip(name: String): Unit = js.native
-  def skip(name: String, callback: js.Function1[/* assert */ Assert, Unit]): Unit = js.native
+  def skip(name: String, callback: js.Function1[/* assert */ Assert, Unit | js.Promise[_]]): Unit = js.native
   /**
     * Returns a single line string representing the stacktrace (call stack).
     *
@@ -280,7 +280,7 @@ trait QUnit_ extends js.Object {
     * @param {string} Title of unit being tested
     * @param callback Function to close over assertions
     */
-  def test(name: String, callback: js.Function1[/* assert */ Assert, Unit]): Unit = js.native
+  def test(name: String, callback: js.Function1[/* assert */ Assert, Unit | js.Promise[_]]): Unit = js.native
   /**
     * Register a callback to fire whenever a test ends.
     *

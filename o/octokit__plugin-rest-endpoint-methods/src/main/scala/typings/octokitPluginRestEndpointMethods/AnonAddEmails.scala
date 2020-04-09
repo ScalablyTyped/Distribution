@@ -43,59 +43,59 @@ trait AnonAddEmails extends js.Object {
     * This endpoint is accessible with the `user` scope.
     */
   @JSName("addEmails")
-  var addEmails_Original: Anon496 = js.native
+  var addEmails_Original: Anon507 = js.native
   @JSName("block")
-  var block_Original: Anon497 = js.native
+  var block_Original: Anon508 = js.native
   /**
     * If the user is blocked:
     *
     * If the user is not blocked:
     */
   @JSName("checkBlocked")
-  var checkBlocked_Original: Anon498 = js.native
+  var checkBlocked_Original: Anon509 = js.native
   @JSName("checkFollowingForUser")
-  var checkFollowingForUser_Original: Anon500 = js.native
+  var checkFollowingForUser_Original: Anon511 = js.native
   @JSName("checkFollowing")
-  var checkFollowing_Original: Anon499 = js.native
+  var checkFollowing_Original: Anon510 = js.native
   /**
     * Adds a GPG key to the authenticated user's GitHub account. Requires that you are authenticated via Basic Auth, or OAuth with at least `write:gpg_key` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
     */
   @JSName("createGpgKey")
-  var createGpgKey_Original: Anon501 = js.native
+  var createGpgKey_Original: Anon512 = js.native
   /**
     * Adds a public SSH key to the authenticated user's GitHub account. Requires that you are authenticated via Basic Auth, or OAuth with at least `write:public_key` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
     */
   @JSName("createPublicKey")
-  var createPublicKey_Original: Anon502 = js.native
+  var createPublicKey_Original: Anon513 = js.native
   /**
     * This endpoint is accessible with the `user` scope.
     */
   @JSName("deleteEmails")
-  var deleteEmails_Original: Anon503 = js.native
+  var deleteEmails_Original: Anon514 = js.native
   /**
     * Removes a GPG key from the authenticated user's GitHub account. Requires that you are authenticated via Basic Auth or via OAuth with at least `admin:gpg_key` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
     */
   @JSName("deleteGpgKey")
-  var deleteGpgKey_Original: Anon504 = js.native
+  var deleteGpgKey_Original: Anon515 = js.native
   /**
     * Removes a public SSH key from the authenticated user's GitHub account. Requires that you are authenticated via Basic Auth or via OAuth with at least `admin:public_key` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
     */
   @JSName("deletePublicKey")
-  var deletePublicKey_Original: Anon505 = js.native
+  var deletePublicKey_Original: Anon516 = js.native
   /**
     * Note that you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://developer.github.com/v3/#http-verbs)."
     *
     * Following a user requires the user to be logged in and authenticated with basic auth or OAuth with the `user:follow` scope.
     */
   @JSName("follow")
-  var follow_Original: Anon506 = js.native
+  var follow_Original: Anon517 = js.native
   /**
     * Lists public and private profile information when authenticated through basic auth or OAuth with the `user` scope.
     *
     * Lists public profile information when authenticated through OAuth without the `user` scope.
     */
   @JSName("getAuthenticated")
-  var getAuthenticated_Original: Anon29 = js.native
+  var getAuthenticated_Original: Anon25 = js.native
   /**
     * Provides publicly available information about someone with a GitHub account.
     *
@@ -106,109 +106,109 @@ trait AnonAddEmails extends js.Object {
     * The Emails API enables you to list all of your email addresses, and toggle a primary email to be visible publicly. For more information, see "[Emails API](https://developer.github.com/v3/users/emails/)".
     */
   @JSName("getByUsername")
-  var getByUsername_Original: Anon507 = js.native
+  var getByUsername_Original: Anon518 = js.native
   /**
     * Provides hovercard information when authenticated through basic auth or OAuth with the `repo` scope. You can find out more about someone in relation to their pull requests, issues, repositories, and organizations.
     *
     * The `subject_type` and `subject_id` parameters provide context for the person's hovercard, which returns more information than without the parameters. For example, if you wanted to find out more about `octocat` who owns the `Spoon-Knife` repository via cURL, it would look like this:
     */
   @JSName("getContextForUser")
-  var getContextForUser_Original: Anon508 = js.native
+  var getContextForUser_Original: Anon519 = js.native
   /**
     * View extended details for a single GPG key. Requires that you are authenticated via Basic Auth or via OAuth with at least `read:gpg_key` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
     */
   @JSName("getGpgKey")
-  var getGpgKey_Original: Anon509 = js.native
+  var getGpgKey_Original: Anon520 = js.native
   /**
     * View extended details for a single public SSH key. Requires that you are authenticated via Basic Auth or via OAuth with at least `read:public_key` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
     */
   @JSName("getPublicKey")
-  var getPublicKey_Original: Anon510 = js.native
+  var getPublicKey_Original: Anon521 = js.native
   /**
     * List the users you've blocked on your personal account.
     */
   @JSName("listBlocked")
-  var listBlocked_Original: Anon29 = js.native
+  var listBlocked_Original: Anon25 = js.native
   /**
     * Lists all of your email addresses, and specifies which one is visible to the public. This endpoint is accessible with the `user:email` scope.
     */
   @JSName("listEmails")
-  var listEmails_Original: Anon512 = js.native
+  var listEmails_Original: Anon523 = js.native
   /**
     * Lists the people who the authenticated user follows.
     */
   @JSName("listFollowedByAuthenticated")
-  var listFollowedByAuthenticated_Original: Anon513 = js.native
+  var listFollowedByAuthenticated_Original: Anon524 = js.native
   /**
     * Lists the people following the authenticated user.
     */
   @JSName("listFollowersForAuthenticatedUser")
-  var listFollowersForAuthenticatedUser_Original: Anon514 = js.native
+  var listFollowersForAuthenticatedUser_Original: Anon525 = js.native
   /**
     * Lists the people following the specified user.
     */
   @JSName("listFollowersForUser")
-  var listFollowersForUser_Original: Anon515 = js.native
+  var listFollowersForUser_Original: Anon526 = js.native
   /**
     * Lists the people who the authenticated user follows.
     * @deprecated octokit.users.listFollowingForAuthenticatedUser() has been renamed to octokit.users.listFollowedByAuthenticated() (2020-03-04)
     */
   @JSName("listFollowingForAuthenticatedUser")
-  var listFollowingForAuthenticatedUser_Original: Anon516 = js.native
+  var listFollowingForAuthenticatedUser_Original: Anon527 = js.native
   /**
     * Lists the people who the specified user follows.
     */
   @JSName("listFollowingForUser")
-  var listFollowingForUser_Original: Anon517 = js.native
+  var listFollowingForUser_Original: Anon528 = js.native
   /**
     * Lists the GPG keys for a user. This information is accessible by anyone.
     */
   @JSName("listGpgKeysForUser")
-  var listGpgKeysForUser_Original: Anon519 = js.native
+  var listGpgKeysForUser_Original: Anon530 = js.native
   /**
     * Lists the current user's GPG keys. Requires that you are authenticated via Basic Auth or via OAuth with at least `read:gpg_key` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
     */
   @JSName("listGpgKeys")
-  var listGpgKeys_Original: Anon518 = js.native
+  var listGpgKeys_Original: Anon529 = js.native
   /**
     * Lists your publicly visible email address, which you can set with the [Toggle primary email visibility](https://developer.github.com/v3/users/emails/#toggle-primary-email-visibility) endpoint. This endpoint is accessible with the `user:email` scope.
     */
   @JSName("listPublicEmails")
-  var listPublicEmails_Original: Anon520 = js.native
+  var listPublicEmails_Original: Anon531 = js.native
   /**
     * Lists the _verified_ public SSH keys for a user. This is accessible by anyone.
     */
   @JSName("listPublicKeysForUser")
-  var listPublicKeysForUser_Original: Anon522 = js.native
+  var listPublicKeysForUser_Original: Anon533 = js.native
   /**
     * Lists the public SSH keys for the authenticated user's GitHub account. Requires that you are authenticated via Basic Auth or via OAuth with at least `read:public_key` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
     */
   @JSName("listPublicKeys")
-  var listPublicKeys_Original: Anon521 = js.native
+  var listPublicKeys_Original: Anon532 = js.native
   /**
     * Lists all users, in the order that they signed up on GitHub. This list includes personal user accounts and organization accounts.
     *
     * Note: Pagination is powered exclusively by the `since` parameter. Use the [Link header](https://developer.github.com/v3/#link-header) to get the URL for the next page of users.
     */
   @JSName("list")
-  var list_Original: Anon511 = js.native
+  var list_Original: Anon522 = js.native
   /**
     * Sets the visibility for your primary email addresses.
     */
   @JSName("togglePrimaryEmailVisibility")
-  var togglePrimaryEmailVisibility_Original: Anon523 = js.native
+  var togglePrimaryEmailVisibility_Original: Anon534 = js.native
   @JSName("unblock")
-  var unblock_Original: Anon524 = js.native
+  var unblock_Original: Anon535 = js.native
   /**
     * Unfollowing a user requires the user to be logged in and authenticated with basic auth or OAuth with the `user:follow` scope.
     */
   @JSName("unfollow")
-  var unfollow_Original: Anon525 = js.native
+  var unfollow_Original: Anon536 = js.native
   /**
     * **Note:** If your email is set to private and you send an `email` parameter as part of this request to update your profile, your privacy settings are still enforced: the email address will not be displayed on your public profile or via the API.
     */
   @JSName("updateAuthenticated")
-  var updateAuthenticated_Original: Anon526 = js.native
+  var updateAuthenticated_Original: Anon537 = js.native
   /**
     * This endpoint is accessible with the `user` scope.
     */

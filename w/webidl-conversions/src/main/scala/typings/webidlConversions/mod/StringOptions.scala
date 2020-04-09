@@ -10,9 +10,14 @@ trait StringOptions extends Options {
 
 object StringOptions {
   @scala.inline
-  def apply(context: String = null, treatNullAsEmptyString: js.UndefOr[Boolean] = js.undefined): StringOptions = {
+  def apply(
+    context: String = null,
+    globals: Globals = null,
+    treatNullAsEmptyString: js.UndefOr[Boolean] = js.undefined
+  ): StringOptions = {
     val __obj = js.Dynamic.literal()
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (globals != null) __obj.updateDynamic("globals")(globals.asInstanceOf[js.Any])
     if (!js.isUndefined(treatNullAsEmptyString)) __obj.updateDynamic("treatNullAsEmptyString")(treatNullAsEmptyString.asInstanceOf[js.Any])
     __obj.asInstanceOf[StringOptions]
   }

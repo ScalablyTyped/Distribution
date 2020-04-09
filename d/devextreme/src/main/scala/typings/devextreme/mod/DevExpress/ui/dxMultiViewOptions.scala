@@ -18,21 +18,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxMultiViewOptions[T] extends CollectionWidgetOptions[T] {
-  /** Specifies whether or not to animate the displayed item change. */
+  /** @name dxMultiView.Options.animationEnabled */
   var animationEnabled: js.UndefOr[Boolean] = js.undefined
-  /** Binds the widget to data. */
+  /** @name dxMultiView.Options.dataSource */
   @JSName("dataSource")
   var dataSource_dxMultiViewOptions: js.UndefOr[
     String | (js.Array[String | dxMultiViewItem | _]) | DataSource | DataSourceOptions
   ] = js.undefined
-  /** Specifies whether to render the view's content when it is displayed. If false, the content is rendered immediately. */
+  /** @name dxMultiView.Options.deferRendering */
   var deferRendering: js.UndefOr[Boolean] = js.undefined
-  /** An array of items displayed by the widget. */
+  /** @name dxMultiView.Options.items */
   @JSName("items")
   var items_dxMultiViewOptions: js.UndefOr[js.Array[String | dxMultiViewItem | _]] = js.undefined
-  /** A Boolean value specifying whether or not to scroll back to the first item after the last item is swiped. */
+  /** @name dxMultiView.Options.loop */
   var loop: js.UndefOr[Boolean] = js.undefined
-  /** A Boolean value specifying whether or not to allow users to change the selected index by swiping. */
+  /** @name dxMultiView.Options.swipeEnabled */
   var swipeEnabled: js.UndefOr[Boolean] = js.undefined
 }
 

@@ -9,15 +9,15 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait dxDropDownButton extends Widget {
-  /** Closes the drop-down menu. */
+  /** @name dxDropDownButton.close() */
   def close(): Promise[Unit] with JQueryPromise[Unit] = js.native
-  /** Gets the DataSource instance. */
+  /** @name DataHelperMixin.getDataSource() */
   def getDataSource(): DataSource = js.native
-  /** Opens the drop-down menu. */
+  /** @name dxDropDownButton.open() */
   def open(): Promise[Unit] with JQueryPromise[Unit] = js.native
-  /** Opens or closes the drop-down menu, reversing the current state. */
+  /** @name dxDropDownButton.toggle() */
   def toggle(): Promise[Unit] with JQueryPromise[Unit] = js.native
-  /** Opens or closes the drop-down menu, depending on the argument. */
+  /** @name dxDropDownButton.toggle(visibility) */
   def toggle(visibility: Boolean): Promise[Unit] with JQueryPromise[Unit] = js.native
 }
 

@@ -14,30 +14,30 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Describes settings supported by a series of the step rea type. */
+/** @name dxChartSeriesTypes.StepAreaSeries */
 trait dxChartSeriesTypesStepAreaSeries extends dxChartSeriesTypesCommonSeries {
-  /** Configures data aggregation for the series. */
+  /** @name dxChartSeriesTypes.StepAreaSeries.aggregation */
   @JSName("aggregation")
   var aggregation_dxChartSeriesTypesStepAreaSeries: js.UndefOr[dxChartSeriesTypesStepAreaSeriesAggregation] = js.undefined
-  /** Configures the series border (in area-like series) or the series point border (in bar-like and bubble series). */
+  /** @name dxChartSeriesTypes.StepAreaSeries.border */
   @JSName("border")
   var border_dxChartSeriesTypesStepAreaSeries: js.UndefOr[dxChartSeriesTypesStepAreaSeriesBorder] = js.undefined
-  /** Specifies series elements to be highlighted when a user points to a series. */
+  /** @name dxChartSeriesTypes.StepAreaSeries.hoverMode */
   @JSName("hoverMode")
   var hoverMode_dxChartSeriesTypesStepAreaSeries: js.UndefOr[nearestPoint | includePoints | excludePoints | none] = js.undefined
-  /** Configures the appearance adopted by the series when a user points to it. */
+  /** @name dxChartSeriesTypes.StepAreaSeries.hoverStyle */
   @JSName("hoverStyle")
   var hoverStyle_dxChartSeriesTypesStepAreaSeries: js.UndefOr[dxChartSeriesTypesStepAreaSeriesHoverStyle] = js.undefined
-  /** Configures point labels. */
+  /** @name dxChartSeriesTypes.StepAreaSeries.label */
   @JSName("label")
   var label_dxChartSeriesTypesStepAreaSeries: js.UndefOr[dxChartSeriesTypesStepAreaSeriesLabel] = js.undefined
-  /** Configures series points in scatter, line- and area-like series. */
+  /** @name dxChartSeriesTypes.StepAreaSeries.point */
   @JSName("point")
   var point_dxChartSeriesTypesStepAreaSeries: js.UndefOr[dxChartSeriesTypesStepAreaSeriesPoint] = js.undefined
-  /** Specifies series elements to be highlighted when a user selects a series. */
+  /** @name dxChartSeriesTypes.StepAreaSeries.selectionMode */
   @JSName("selectionMode")
   var selectionMode_dxChartSeriesTypesStepAreaSeries: js.UndefOr[includePoints | excludePoints | none] = js.undefined
-  /** Configures the appearance adopted by the series when a user selects it. */
+  /** @name dxChartSeriesTypes.StepAreaSeries.selectionStyle */
   @JSName("selectionStyle")
   var selectionStyle_dxChartSeriesTypesStepAreaSeries: js.UndefOr[dxChartSeriesTypesStepAreaSeriesSelectionStyle] = js.undefined
 }

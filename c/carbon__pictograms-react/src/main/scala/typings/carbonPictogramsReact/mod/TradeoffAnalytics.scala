@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@carbon/pictograms-react", "TradeoffAnalytics")
 @js.native
-object TradeoffAnalytics extends TopLevel[CarbonPictogram]
+object TradeoffAnalytics extends TopLevel[CarbonPictogramType]
 

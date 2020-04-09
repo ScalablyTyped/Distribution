@@ -13,7 +13,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonButtonsRender extends js.Object {
-  var placement: js.UndefOr[bottomRight | topLeft | topCenter | topRight | bottomLeft | bottomCenter] = js.undefined
+  var placement: js.UndefOr[topLeft | topCenter | topRight | bottomLeft | bottomCenter | bottomRight] = js.undefined
   var `type`: DropdownButtonType
   def buttonsRender(buttons: js.Array[ReactNode]): js.Array[ReactNode]
 }
@@ -23,7 +23,7 @@ object AnonButtonsRender {
   def apply(
     buttonsRender: js.Array[ReactNode] => js.Array[ReactNode],
     `type`: DropdownButtonType,
-    placement: bottomRight | topLeft | topCenter | topRight | bottomLeft | bottomCenter = null
+    placement: topLeft | topCenter | topRight | bottomLeft | bottomCenter | bottomRight = null
   ): AnonButtonsRender = {
     val __obj = js.Dynamic.literal(buttonsRender = js.Any.fromFunction1(buttonsRender))
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

@@ -6,6 +6,7 @@ import typings.jestCore.typesMod.Filter
 import typings.jestRuntime.mod.Context
 import typings.jestTestResult.typesMod.AggregatedResult
 import typings.jestTypes.configMod.GlobalConfig
+import typings.jestWatcher.typesMod.JestHookEmitter
 import typings.node.processMod._Global_.NodeJS.WriteStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,9 +18,7 @@ trait AnonChangedFilesPromise extends js.Object {
   var failedTestsCache: js.UndefOr[default] = js.undefined
   var filter: js.UndefOr[Filter] = js.undefined
   var globalConfig: GlobalConfig
-  var jestHooks: js.UndefOr[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JestHookEmitter */ js.Any
-  ] = js.undefined
+  var jestHooks: js.UndefOr[JestHookEmitter] = js.undefined
   var outputStream: WriteStream
   var testWatcher: typings.jestCore.testWatcherMod.default
   def onComplete(testResults: AggregatedResult): Unit
@@ -38,7 +37,7 @@ object AnonChangedFilesPromise {
     changedFilesPromise: ChangedFilesPromise = null,
     failedTestsCache: default = null,
     filter: /* testPaths */ js.Array[String] => js.Promise[AnonFiltered] = null,
-    jestHooks: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JestHookEmitter */ js.Any = null
+    jestHooks: JestHookEmitter = null
   ): AnonChangedFilesPromise = {
     val __obj = js.Dynamic.literal(contexts = contexts.asInstanceOf[js.Any], globalConfig = globalConfig.asInstanceOf[js.Any], onComplete = js.Any.fromFunction1(onComplete), outputStream = outputStream.asInstanceOf[js.Any], startRun = js.Any.fromFunction1(startRun), testWatcher = testWatcher.asInstanceOf[js.Any])
     if (changedFilesPromise != null) __obj.updateDynamic("changedFilesPromise")(changedFilesPromise.asInstanceOf[js.Any])

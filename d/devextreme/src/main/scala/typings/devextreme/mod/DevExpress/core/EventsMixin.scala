@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait EventsMixin extends js.Object {
-  /** Detaches all event handlers from a single event. */
+  /** @name EventsMixin.off(eventName) */
   def off(eventName: String): this.type = js.native
-  /** Detaches a particular event handler from a single event. */
+  /** @name EventsMixin.off(eventName, eventHandler) */
   def off(eventName: String, eventHandler: js.Function): this.type = js.native
-  /** Subscribes to an event. */
+  /** @name EventsMixin.on(eventName, eventHandler) */
   def on(eventName: String, eventHandler: js.Function): this.type = js.native
-  /** Subscribes to events. */
+  /** @name EventsMixin.on(events) */
   def on(events: js.Any): this.type = js.native
 }
 

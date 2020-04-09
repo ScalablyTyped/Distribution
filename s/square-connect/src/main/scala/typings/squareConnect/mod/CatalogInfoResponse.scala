@@ -9,9 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 class CatalogInfoResponse () extends js.Object {
   /**
-    * The set of [Error](#type-error)s encountered.
+    * The set of errors encountered.
     */
   var errors: js.UndefOr[js.Array[Error]] = js.native
+  /**
+    * Response limit
+    */
   var limits: js.UndefOr[CatalogInfoResponseLimits] = js.native
   /**
     * Names and abbreviations for standard units.

@@ -120,6 +120,12 @@ trait OptionsRows extends js.Object {
   /** Tabulator also allows you to define a row level formatter using the rowFormatter option. this lets you alter each row of the table based on the data it contains.
     The function accepts one argument, the RowComponent for the row being formatted. */
   var rowFormatter: js.UndefOr[js.Function1[/* row */ RowComponent, _]] = js.undefined
+  /**When copying to the clipboard you may want to apply a different formatter may want to apply a different formatter from the one usualy used to format the row. You can now do this using the rowFormatterClipboard table option, which takes the same inputs as the standard rowFormatter property. Passing a value of false into the formatter prevent the default row formatter from being run when the table is copied to the clipboard*/
+  var rowFormatterClipboard: js.UndefOr[`false` | (js.Function1[/* row */ RowComponent, _])] = js.undefined
+  /**When the getHtml function is called you may want to apply a different formatter may want to apply a different formatter from the one usualy used to format the row */
+  var rowFormatterHtmlOutput: js.UndefOr[`false` | (js.Function1[/* row */ RowComponent, _])] = js.undefined
+  /**When printing you may want to apply a different formatter may want to apply a different formatter from the one usualy used to format the row. */
+  var rowFormatterPrint: js.UndefOr[`false` | (js.Function1[/* row */ RowComponent, _])] = js.undefined
   /** The rowMouseEnter callback is triggered when the mouse pointer enters a row. */
   var rowMouseEnter: js.UndefOr[RowEventCallback] = js.undefined
   /** The rowMouseLeave callback is triggered when the mouse pointer leaves a row. */
@@ -211,6 +217,9 @@ object OptionsRows {
     rowDeleted: /* row */ RowComponent => Unit = null,
     rowDeselected: /* row */ RowComponent => Unit = null,
     rowFormatter: /* row */ RowComponent => _ = null,
+    rowFormatterClipboard: `false` | (js.Function1[/* row */ RowComponent, _]) = null,
+    rowFormatterHtmlOutput: `false` | (js.Function1[/* row */ RowComponent, _]) = null,
+    rowFormatterPrint: `false` | (js.Function1[/* row */ RowComponent, _]) = null,
     rowMouseEnter: (/* e */ js.Any, /* row */ RowComponent) => Unit = null,
     rowMouseLeave: (/* e */ js.Any, /* row */ RowComponent) => Unit = null,
     rowMouseMove: (/* e */ js.Any, /* row */ RowComponent) => Unit = null,
@@ -257,6 +266,9 @@ object OptionsRows {
     if (rowDeleted != null) __obj.updateDynamic("rowDeleted")(js.Any.fromFunction1(rowDeleted))
     if (rowDeselected != null) __obj.updateDynamic("rowDeselected")(js.Any.fromFunction1(rowDeselected))
     if (rowFormatter != null) __obj.updateDynamic("rowFormatter")(js.Any.fromFunction1(rowFormatter))
+    if (rowFormatterClipboard != null) __obj.updateDynamic("rowFormatterClipboard")(rowFormatterClipboard.asInstanceOf[js.Any])
+    if (rowFormatterHtmlOutput != null) __obj.updateDynamic("rowFormatterHtmlOutput")(rowFormatterHtmlOutput.asInstanceOf[js.Any])
+    if (rowFormatterPrint != null) __obj.updateDynamic("rowFormatterPrint")(rowFormatterPrint.asInstanceOf[js.Any])
     if (rowMouseEnter != null) __obj.updateDynamic("rowMouseEnter")(js.Any.fromFunction2(rowMouseEnter))
     if (rowMouseLeave != null) __obj.updateDynamic("rowMouseLeave")(js.Any.fromFunction2(rowMouseLeave))
     if (rowMouseMove != null) __obj.updateDynamic("rowMouseMove")(js.Any.fromFunction2(rowMouseMove))

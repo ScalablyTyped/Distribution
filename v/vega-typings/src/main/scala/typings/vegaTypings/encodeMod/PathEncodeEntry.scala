@@ -1,5 +1,8 @@
 package typings.vegaTypings.encodeMod
 
+import typings.vegaTypings.configMod.Cursor
+import typings.vegaTypings.configMod.StrokeCap
+import typings.vegaTypings.configMod.StrokeJoin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +19,7 @@ object PathEncodeEntry {
   def apply(
     angle: ProductionRule[NumericValueRef] = null,
     blend: ProductionRule[ScaledValueRef[Blend]] = null,
-    cursor: ProductionRule[StringValueRef] = null,
+    cursor: ProductionRule[ScaledValueRef[Cursor]] = null,
     fill: ProductionRule[ColorValueRef] = null,
     fillOpacity: ProductionRule[NumericValueRef] = null,
     height: ProductionRule[NumericValueRef] = null,
@@ -25,10 +28,10 @@ object PathEncodeEntry {
     scaleX: ProductionRule[NumericValueRef] = null,
     scaleY: ProductionRule[NumericValueRef] = null,
     stroke: ProductionRule[ColorValueRef] = null,
-    strokeCap: ProductionRule[StringValueRef] = null,
+    strokeCap: ProductionRule[ScaledValueRef[StrokeCap]] = null,
     strokeDash: ProductionRule[ScaledValueRef[js.Array[Double]]] = null,
     strokeDashOffset: ProductionRule[NumericValueRef] = null,
-    strokeJoin: ProductionRule[StringValueRef] = null,
+    strokeJoin: ProductionRule[ScaledValueRef[StrokeJoin]] = null,
     strokeMiterLimit: ProductionRule[NumericValueRef] = null,
     strokeOpacity: ProductionRule[NumericValueRef] = null,
     strokeWidth: ProductionRule[NumericValueRef] = null,

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ResourceTagsDescriptionMessage extends js.Object {
   /**
-    * The Amazon Resource Name (ARN) of the resouce for which a tag list was requested.
+    * The Amazon Resource Name (ARN) of the resource for which a tag list was requested.
     */
   var ResourceArn: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.ResourceArn] = js.native
   /**

@@ -1,6 +1,5 @@
 package typings.validator
 
-import typings.validator.mod.validator.IsCurrencyOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,6 +13,7 @@ object isCurrencyMod extends js.Object {
     * @param [options] - Options
     */
   def default(str: String): Boolean = js.native
-  def default(str: String, options: IsCurrencyOptions): Boolean = js.native
+  def default(str: String, options: typings.validator.mod.validator.IsCurrencyOptions): Boolean = js.native
+  type IsCurrencyOptions = typings.validator.mod.validator.IsCurrencyOptions
 }
 

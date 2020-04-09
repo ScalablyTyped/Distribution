@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object textIndexNativeMod extends js.Object {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped new (args : ...any): react-native.react-native.NativeMethodsMixin */ @js.native
+  - Dropped new (args : ...any): react-native.react-native.NativeMethodsMixinType */ @js.native
   class default ()
     extends Component[TextProps, js.Object, js.Any]
   

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@carbon/pictograms-react", "PrivateNetworkAlt")
 @js.native
-object PrivateNetworkAlt extends TopLevel[CarbonPictogram]
+object PrivateNetworkAlt extends TopLevel[CarbonPictogramType]
 

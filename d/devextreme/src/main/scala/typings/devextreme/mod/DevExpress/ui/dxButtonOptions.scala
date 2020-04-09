@@ -22,23 +22,23 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxButtonOptions extends WidgetOptions[dxButton] {
-  /** Specifies the icon to be displayed on the button. */
+  /** @name dxButton.Options.icon */
   var icon: js.UndefOr[String] = js.undefined
-  /** A function that is executed when the Button is clicked or tapped. */
+  /** @name dxButton.Options.onClick */
   var onClick: js.UndefOr[js.Function1[/* e */ AnonValidationGroup, _]] = js.undefined
-  /** Specifies how the button is styled. */
+  /** @name dxButton.Options.stylingMode */
   var stylingMode: js.UndefOr[text | outlined | contained] = js.undefined
-  /** Specifies a custom template for the Button widget. */
+  /** @name dxButton.Options.template */
   var template: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* buttonData */ AnonIcon, /* contentElement */ dxElement, String | Element | JQuery])
   ] = js.undefined
-  /** The text displayed on the button. */
+  /** @name dxButton.Options.text */
   var text: js.UndefOr[String] = js.undefined
-  /** Specifies the button type. */
+  /** @name dxButton.Options.type */
   var `type`: js.UndefOr[back | danger | default_ | normal | success] = js.undefined
-  /** Specifies whether the button submits an HTML form. */
+  /** @name dxButton.Options.useSubmitBehavior */
   var useSubmitBehavior: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the name of the validation group to be accessed in the click event handler. */
+  /** @name dxButton.Options.validationGroup */
   var validationGroup: js.UndefOr[String] = js.undefined
 }
 

@@ -1,14 +1,14 @@
 package typings.xo.mod
 
-import org.scalablytyped.runtime.TopLevel
+import typings.eslint.mod.CLIEngine.Formatter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("xo", "getFormatter")
 @js.native
-object getFormatter
-  extends TopLevel[
-      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof eslint.CLIEngine.prototype.getFormatter */ js.Any
-    ]
+object getFormatter extends js.Object {
+  def apply(): Formatter = js.native
+  def apply(format: String): Formatter = js.native
+}
 

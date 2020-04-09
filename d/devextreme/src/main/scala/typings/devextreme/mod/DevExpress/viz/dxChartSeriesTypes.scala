@@ -4,55 +4,55 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** This section lists objects that define options used to configure series of specific types. */
+/** @name dxChartSeriesTypes */
 trait dxChartSeriesTypes extends js.Object {
-  /** Describes settings supported by a series of the area type. */
+  /** @name dxChartSeriesTypes.AreaSeries */
   var AreaSeries: js.UndefOr[dxChartSeriesTypesAreaSeries] = js.undefined
-  /** Describes settings supported by a series of the bar type. */
+  /** @name dxChartSeriesTypes.BarSeries */
   var BarSeries: js.UndefOr[dxChartSeriesTypesBarSeries] = js.undefined
-  /** Describes settings supported by a series of the bubble type. */
+  /** @name dxChartSeriesTypes.BubbleSeries */
   var BubbleSeries: js.UndefOr[dxChartSeriesTypesBubbleSeries] = js.undefined
-  /** Describes settings supported by a series of the candlestick type. */
+  /** @name dxChartSeriesTypes.CandleStickSeries */
   var CandleStickSeries: js.UndefOr[dxChartSeriesTypesCandleStickSeries] = js.undefined
-  /** An object that defines configuration options for chart series. */
+  /** @name dxChartSeriesTypes.CommonSeries */
   var CommonSeries: js.UndefOr[dxChartSeriesTypesCommonSeries] = js.undefined
-  /** Describes settings supported by a series of the full-stacked area type. */
+  /** @name dxChartSeriesTypes.FullStackedAreaSeries */
   var FullStackedAreaSeries: js.UndefOr[dxChartSeriesTypesFullStackedAreaSeries] = js.undefined
-  /** Describes settings supported by a series of the full-stacked bar type. */
+  /** @name dxChartSeriesTypes.FullStackedBarSeries */
   var FullStackedBarSeries: js.UndefOr[dxChartSeriesTypesFullStackedBarSeries] = js.undefined
-  /** Describes settings supported by a series of the full-stacked line type. */
+  /** @name dxChartSeriesTypes.FullStackedLineSeries */
   var FullStackedLineSeries: js.UndefOr[dxChartSeriesTypesFullStackedLineSeries] = js.undefined
-  /** Describes settings supported by a series of the full-stacked spline area type. */
+  /** @name dxChartSeriesTypes.FullStackedSplineAreaSeries */
   var FullStackedSplineAreaSeries: js.UndefOr[dxChartSeriesTypesFullStackedSplineAreaSeries] = js.undefined
-  /** Describes settings supported by a series of the full-stacked spline area type. An object defining a series of the fullStackedSpline type. */
+  /** @name dxChartSeriesTypes.FullStackedSplineSeries */
   var FullStackedSplineSeries: js.UndefOr[dxChartSeriesTypesFullStackedSplineSeries] = js.undefined
-  /** Describes settings supported by a series of the line type. */
+  /** @name dxChartSeriesTypes.LineSeries */
   var LineSeries: js.UndefOr[dxChartSeriesTypesLineSeries] = js.undefined
-  /** Describes settings supported by a series of the range area type. */
+  /** @name dxChartSeriesTypes.RangeAreaSeries */
   var RangeAreaSeries: js.UndefOr[dxChartSeriesTypesRangeAreaSeries] = js.undefined
-  /** Describes settings supported by a series of the range bar type. */
+  /** @name dxChartSeriesTypes.RangeBarSeries */
   var RangeBarSeries: js.UndefOr[dxChartSeriesTypesRangeBarSeries] = js.undefined
-  /** Describes settings supported by a series of the scatter type. */
+  /** @name dxChartSeriesTypes.ScatterSeries */
   var ScatterSeries: js.UndefOr[dxChartSeriesTypesScatterSeries] = js.undefined
-  /** Describes settings supported by a series of the spline area type. */
+  /** @name dxChartSeriesTypes.SplineAreaSeries */
   var SplineAreaSeries: js.UndefOr[dxChartSeriesTypesSplineAreaSeries] = js.undefined
-  /** Describes settings supported by a series of the spline type. */
+  /** @name dxChartSeriesTypes.SplineSeries */
   var SplineSeries: js.UndefOr[dxChartSeriesTypesSplineSeries] = js.undefined
-  /** Describes settings supported by a series of the stacked area type. */
+  /** @name dxChartSeriesTypes.StackedAreaSeries */
   var StackedAreaSeries: js.UndefOr[dxChartSeriesTypesStackedAreaSeries] = js.undefined
-  /** Describes settings supported by a series of the stacked bar type. */
+  /** @name dxChartSeriesTypes.StackedBarSeries */
   var StackedBarSeries: js.UndefOr[dxChartSeriesTypesStackedBarSeries] = js.undefined
-  /** Describes settings supported by a series of the stacked line type. */
+  /** @name dxChartSeriesTypes.StackedLineSeries */
   var StackedLineSeries: js.UndefOr[dxChartSeriesTypesStackedLineSeries] = js.undefined
-  /** Describes settings supported by a series of the stacked spline area type. */
+  /** @name dxChartSeriesTypes.StackedSplineAreaSeries */
   var StackedSplineAreaSeries: js.UndefOr[dxChartSeriesTypesStackedSplineAreaSeries] = js.undefined
-  /** Describes settings supported by a series of the stacked spline type. */
+  /** @name dxChartSeriesTypes.StackedSplineSeries */
   var StackedSplineSeries: js.UndefOr[dxChartSeriesTypesStackedSplineSeries] = js.undefined
-  /** Describes settings supported by a series of the step rea type. */
+  /** @name dxChartSeriesTypes.StepAreaSeries */
   var StepAreaSeries: js.UndefOr[dxChartSeriesTypesStepAreaSeries] = js.undefined
-  /** Describes settings supported by a series of the step line type. */
+  /** @name dxChartSeriesTypes.StepLineSeries */
   var StepLineSeries: js.UndefOr[dxChartSeriesTypesStepLineSeries] = js.undefined
-  /** Describes settings supported by a series of the stock type. */
+  /** @name dxChartSeriesTypes.StockSeries */
   var StockSeries: js.UndefOr[dxChartSeriesTypesStockSeries] = js.undefined
 }
 

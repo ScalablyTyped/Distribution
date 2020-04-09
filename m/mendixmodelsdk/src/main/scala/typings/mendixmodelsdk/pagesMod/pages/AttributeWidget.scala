@@ -63,6 +63,13 @@ abstract class AttributeWidget protected () extends MemberWidget {
     */
   def requiredMessage(): Text = js.native
   def requiredMessage(newValue: Text): js.Any = js.native
+  def sourceVariable(): js.Any = js.native
+  def sourceVariable(newValue: PageVariable): js.Any = js.native
+  /**
+    * In version 8.8.0: introduced
+    */
+  @JSName("sourceVariable")
+  def sourceVariable_Union(): PageVariable | Null = js.native
   /**
     * In version 7.6.0: introduced
     */

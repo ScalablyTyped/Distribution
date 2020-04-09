@@ -12,5 +12,6 @@ object doWhilst extends js.Object {
     test: js.Function1[/* repeated */ T, Boolean],
     callback: ErrorCallback[E]
   ): Unit = js.native
+  def apply[T, R, E](fn: AsyncFunctionEx[T, E], test: js.Function1[/* repeated */ T, Boolean]): js.Promise[R] = js.native
 }
 

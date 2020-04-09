@@ -1,6 +1,7 @@
 package typings.mendixmodelsdk.mod.pages
 
 import typings.mendixmodelsdk.baseModelMod.IModel
+import typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValue
 import typings.mendixmodelsdk.internalMod.AbstractElement
 import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.internalMod.ModelUnit
@@ -40,6 +41,15 @@ object PageVariable extends js.Object {
   def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.PageVariable = js.native
   /**
     * Creates and returns a new PageVariable instance in the SDK and on the server.
+    * The new PageVariable will be automatically stored in the 'sourceVariable' property
+    * of the parent AttributeWidget element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.8.0 and higher
+    */
+  def createInAttributeWidgetUnderSourceVariable(container: typings.mendixmodelsdk.pagesMod.pages.AttributeWidget): typings.mendixmodelsdk.pagesMod.pages.PageVariable = js.native
+  /**
+    * Creates and returns a new PageVariable instance in the SDK and on the server.
     * The new PageVariable will be automatically stored in the 'variable' property
     * of the parent MicroflowParameterMapping element passed as argument.
     *
@@ -56,5 +66,14 @@ object PageVariable extends js.Object {
     *  8.4.0 and higher
     */
   def createInNanoflowParameterMappingUnderVariable(container: typings.mendixmodelsdk.pagesMod.pages.NanoflowParameterMapping): typings.mendixmodelsdk.pagesMod.pages.PageVariable = js.native
+  /**
+    * Creates and returns a new PageVariable instance in the SDK and on the server.
+    * The new PageVariable will be automatically stored in the 'sourceVariable' property
+    * of the parent customwidgets.WidgetValue element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.8.0 and higher
+    */
+  def createInWidgetValueUnderSourceVariable(container: WidgetValue): typings.mendixmodelsdk.pagesMod.pages.PageVariable = js.native
 }
 

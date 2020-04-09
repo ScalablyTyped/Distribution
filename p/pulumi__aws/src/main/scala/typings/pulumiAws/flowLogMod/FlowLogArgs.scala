@@ -1,5 +1,6 @@
 package typings.pulumiAws.flowLogMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -34,9 +35,20 @@ trait FlowLogArgs extends js.Object {
     */
   val logGroupName: js.UndefOr[Input[String]] = js.native
   /**
+    * The maximum interval of time
+    * during which a flow of packets is captured and aggregated into a flow
+    * log record. Valid Values: `60` seconds (1 minute) or `600` seconds (10
+    * minutes). Default: `600`.
+    */
+  val maxAggregationInterval: js.UndefOr[Input[Double]] = js.native
+  /**
     * Subnet ID to attach to
     */
   val subnetId: js.UndefOr[Input[String]] = js.native
+  /**
+    * Key-value mapping of resource tags
+    */
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * The type of traffic to capture. Valid values: `ACCEPT`,`REJECT`, `ALL`.
     */
@@ -57,7 +69,9 @@ object FlowLogArgs {
     logDestinationType: Input[String] = null,
     logFormat: Input[String] = null,
     logGroupName: Input[String] = null,
+    maxAggregationInterval: Input[Double] = null,
     subnetId: Input[String] = null,
+    tags: Input[StringDictionary[_]] = null,
     vpcId: Input[String] = null
   ): FlowLogArgs = {
     val __obj = js.Dynamic.literal(trafficType = trafficType.asInstanceOf[js.Any])
@@ -67,7 +81,9 @@ object FlowLogArgs {
     if (logDestinationType != null) __obj.updateDynamic("logDestinationType")(logDestinationType.asInstanceOf[js.Any])
     if (logFormat != null) __obj.updateDynamic("logFormat")(logFormat.asInstanceOf[js.Any])
     if (logGroupName != null) __obj.updateDynamic("logGroupName")(logGroupName.asInstanceOf[js.Any])
+    if (maxAggregationInterval != null) __obj.updateDynamic("maxAggregationInterval")(maxAggregationInterval.asInstanceOf[js.Any])
     if (subnetId != null) __obj.updateDynamic("subnetId")(subnetId.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     if (vpcId != null) __obj.updateDynamic("vpcId")(vpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowLogArgs]
   }

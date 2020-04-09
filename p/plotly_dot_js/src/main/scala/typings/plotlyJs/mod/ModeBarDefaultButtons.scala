@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
   - typings.plotlyJs.plotlyJsStrings.lasso2d
   - typings.plotlyJs.plotlyJsStrings.select2d
   - typings.plotlyJs.plotlyJsStrings.sendDataToCloud
-  - typings.plotlyJs.plotlyJsStrings.autoScale2d
   - typings.plotlyJs.plotlyJsStrings.zoom2d
   - typings.plotlyJs.plotlyJsStrings.pan2d
   - typings.plotlyJs.plotlyJsStrings.zoomIn2d
   - typings.plotlyJs.plotlyJsStrings.zoomOut2d
+  - typings.plotlyJs.plotlyJsStrings.autoScale2d
   - typings.plotlyJs.plotlyJsStrings.resetScale2d
   - typings.plotlyJs.plotlyJsStrings.hoverClosestCartesian
   - typings.plotlyJs.plotlyJsStrings.hoverCompareCartesian

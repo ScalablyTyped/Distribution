@@ -14,35 +14,35 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxFormGroupItem extends js.Object {
-  /** Specifies whether or not all group item labels are aligned. */
+  /** @name dxFormGroupItem.alignItemLabels */
   var alignItemLabels: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the group caption. */
+  /** @name dxFormGroupItem.caption */
   var caption: js.UndefOr[String] = js.undefined
-  /** The count of columns in the group layout. */
+  /** @name dxFormGroupItem.colCount */
   var colCount: js.UndefOr[Double] = js.undefined
-  /** Specifies the relation between the screen size qualifier and the number of columns in the grouped layout. */
+  /** @name dxFormGroupItem.colCountByScreen */
   var colCountByScreen: js.UndefOr[js.Any] = js.undefined
-  /** Specifies the number of columns spanned by the item. */
+  /** @name dxFormGroupItem.colSpan */
   var colSpan: js.UndefOr[Double] = js.undefined
-  /** Specifies a CSS class to be applied to the form item. */
+  /** @name dxFormGroupItem.cssClass */
   var cssClass: js.UndefOr[String] = js.undefined
-  /** Specifies the item's type. Set it to "group" to create a group item. */
+  /** @name dxFormGroupItem.itemType */
   var itemType: js.UndefOr[empty | group | simple | tabbed | button] = js.undefined
-  /** Holds an array of form items displayed within the group. */
+  /** @name dxFormGroupItem.items */
   var items: js.UndefOr[
     js.Array[
       dxFormSimpleItem | dxFormGroupItem | dxFormTabbedItem | dxFormEmptyItem | dxFormButtonItem
     ]
   ] = js.undefined
-  /** Specifies a name that identifies the form item. */
+  /** @name dxFormGroupItem.name */
   var name: js.UndefOr[String] = js.undefined
-  /** A template to be used for rendering a group item. */
+  /** @name dxFormGroupItem.template */
   var template: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* data */ AnonFormData, /* itemElement */ dxElement, String | Element | JQuery])
   ] = js.undefined
-  /** Specifies whether or not the current form item is visible. */
+  /** @name dxFormGroupItem.visible */
   var visible: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the sequence number of the item in a form, group or tab. */
+  /** @name dxFormGroupItem.visibleIndex */
   var visibleIndex: js.UndefOr[Double] = js.undefined
 }
 

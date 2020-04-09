@@ -15,7 +15,7 @@ trait PickIntlConfigformatsmess extends js.Object {
   var messages: Record[String, js.Array[MessageFormatElement] | String]
   var onError: js.Function1[/* err */ String, Unit]
   var textComponent: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 117 */ js.Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118 */ js.Any
   ] = js.undefined
   var timeZone: js.UndefOr[String] = js.undefined
 }
@@ -28,7 +28,7 @@ object PickIntlConfigformatsmess {
     formats: CustomFormats,
     messages: Record[String, js.Array[MessageFormatElement] | String],
     onError: /* err */ String => Unit,
-    textComponent: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 117 */ js.Any = null,
+    textComponent: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118 */ js.Any = null,
     timeZone: String = null
   ): PickIntlConfigformatsmess = {
     val __obj = js.Dynamic.literal(defaultFormats = defaultFormats.asInstanceOf[js.Any], defaultLocale = defaultLocale.asInstanceOf[js.Any], formats = formats.asInstanceOf[js.Any], messages = messages.asInstanceOf[js.Any], onError = js.Any.fromFunction1(onError))

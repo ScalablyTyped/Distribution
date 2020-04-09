@@ -51,6 +51,10 @@ trait Deployment extends js.Object {
     */
   var EnvironmentId: js.UndefOr[Id] = js.native
   /**
+    * A list containing all events related to a deployment. The most recent events are displayed first.
+    */
+  var EventLog: js.UndefOr[DeploymentEvents] = js.native
+  /**
     * The amount of time AppConfig monitored for alarms before considering the deployment to be complete and no longer eligible for automatic roll back.
     */
   var FinalBakeTimeInMinutes: js.UndefOr[MinutesBetween0And24Hours] = js.native
@@ -90,6 +94,7 @@ object Deployment {
     DeploymentStrategyId: Id = null,
     Description: Description = null,
     EnvironmentId: Id = null,
+    EventLog: DeploymentEvents = null,
     FinalBakeTimeInMinutes: Int | Double = null,
     GrowthFactor: Int | Double = null,
     GrowthType: GrowthType = null,
@@ -109,6 +114,7 @@ object Deployment {
     if (DeploymentStrategyId != null) __obj.updateDynamic("DeploymentStrategyId")(DeploymentStrategyId.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (EnvironmentId != null) __obj.updateDynamic("EnvironmentId")(EnvironmentId.asInstanceOf[js.Any])
+    if (EventLog != null) __obj.updateDynamic("EventLog")(EventLog.asInstanceOf[js.Any])
     if (FinalBakeTimeInMinutes != null) __obj.updateDynamic("FinalBakeTimeInMinutes")(FinalBakeTimeInMinutes.asInstanceOf[js.Any])
     if (GrowthFactor != null) __obj.updateDynamic("GrowthFactor")(GrowthFactor.asInstanceOf[js.Any])
     if (GrowthType != null) __obj.updateDynamic("GrowthType")(GrowthType.asInstanceOf[js.Any])

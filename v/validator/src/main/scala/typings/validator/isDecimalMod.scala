@@ -1,6 +1,5 @@
 package typings.validator
 
-import typings.validator.mod.validator.IsDecimalOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,6 +14,8 @@ object isDecimalMod extends js.Object {
     * @param [options] - Options
     */
   def default(str: String): Boolean = js.native
-  def default(str: String, options: IsDecimalOptions): Boolean = js.native
+  def default(str: String, options: typings.validator.mod.validator.IsDecimalOptions): Boolean = js.native
+  type DecimalLocale = typings.validator.mod.validator.DecimalLocale
+  type IsDecimalOptions = typings.validator.mod.validator.IsDecimalOptions
 }
 

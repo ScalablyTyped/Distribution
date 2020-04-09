@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined parent std.Partial<std.Omit<rc-field-form.rc-field-form/lib/interface.Meta, 'name'>> */
+/* Inlined parent std.Partial<std.Omit<rc-field-form.rc-field-form/lib/interface.InternalFieldData, 'name'>> */
 trait FieldData extends js.Object {
   var errors: js.UndefOr[js.Array[String]] = js.undefined
   var name: NamePath

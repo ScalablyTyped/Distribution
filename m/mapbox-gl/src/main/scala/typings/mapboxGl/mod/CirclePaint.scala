@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CirclePaint extends js.Object {
+trait CirclePaint extends AnyPaint {
   var `circle-blur`: js.UndefOr[Double | StyleFunction | Expression] = js.undefined
   var `circle-blur-transition`: js.UndefOr[Transition] = js.undefined
   var `circle-color`: js.UndefOr[String | StyleFunction | Expression] = js.undefined

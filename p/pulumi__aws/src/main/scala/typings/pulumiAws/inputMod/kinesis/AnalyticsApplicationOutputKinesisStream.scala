@@ -7,7 +7,13 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait AnalyticsApplicationOutputKinesisStream extends js.Object {
+  /**
+    * The ARN of the Kinesis Stream.
+    */
   var resourceArn: Input[String] = js.native
+  /**
+    * The ARN of the IAM Role used to access the stream.
+    */
   var roleArn: Input[String] = js.native
 }
 

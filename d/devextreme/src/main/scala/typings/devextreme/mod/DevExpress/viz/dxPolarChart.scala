@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait dxPolarChart extends BaseChart {
-  /** Gets a value axis. */
+  /** @name dxPolarChart.getValueAxis() */
   def getValueAxis(): chartAxisObject = js.native
-  /** Resets the value axis' visual range to the data range or to the whole range if it is within the data range. */
+  /** @name dxPolarChart.resetVisualRange() */
   def resetVisualRange(): Unit = js.native
 }
 

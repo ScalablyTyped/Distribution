@@ -13,15 +13,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxChartCommonAxisSettingsTitle extends js.Object {
-  /** Aligns the axis title to the left, center, or right of the axis. */
+  /** @name dxChart.Options.commonAxisSettings.title.alignment */
   var alignment: js.UndefOr[center | left | right] = js.undefined
-  /** Specifies font options for the axis title. */
+  /** @name dxChart.Options.commonAxisSettings.title.font */
   var font: js.UndefOr[Font] = js.undefined
-  /** Adds a pixel-measured empty space between the axis title and axis labels. */
+  /** @name dxChart.Options.commonAxisSettings.title.margin */
   var margin: js.UndefOr[Double] = js.undefined
-  /** Specifies what to do with the axis title when it overflows the allocated space after applying wordWrap: hide, truncate them and display an ellipsis, or do nothing. */
+  /** @name dxChart.Options.commonAxisSettings.title.textOverflow */
   var textOverflow: js.UndefOr[ellipsis | hide | none] = js.undefined
-  /** Specifies how to wrap the axis title if it does not fit into a single line. */
+  /** @name dxChart.Options.commonAxisSettings.title.wordWrap */
   var wordWrap: js.UndefOr[normal | breakWord | none] = js.undefined
 }
 

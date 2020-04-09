@@ -1,7 +1,6 @@
 package typings.cswAasJs.authMod
 
 import typings.cswAasJs.authContextProviderMod.AuthContextConfig
-import typings.cswAasJs.cswAasJsStrings.legacy
 import typings.keycloakJs.mod.KeycloakInstance
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -29,8 +28,7 @@ trait AuthStore extends js.Object {
     *
     * @param keycloak keycloak instance instantiated using keyclok-js
     */
-  @JSName("from")
-  def from_legacy(keycloak: KeycloakInstance[legacy]): Auth
+  def from(keycloak: KeycloakInstance): Auth
   /**
     * Responsible for resolving AAS Server using location service. If not found returns AAS-server-url specified in
     * config
@@ -44,7 +42,7 @@ object AuthStore {
   @scala.inline
   def apply(
     authenticate: (AuthContextConfig, String, Boolean) => AuthenticateResult,
-    from: KeycloakInstance[legacy] => Auth,
+    from: KeycloakInstance => Auth,
     getAASUrl: () => js.Promise[String]
   ): AuthStore = {
     val __obj = js.Dynamic.literal(authenticate = js.Any.fromFunction3(authenticate), from = js.Any.fromFunction1(from), getAASUrl = js.Any.fromFunction0(getAASUrl))

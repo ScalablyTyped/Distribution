@@ -75,7 +75,7 @@ trait ApplicationState extends js.Object {
     */
   val stackId: js.UndefOr[Input[String]] = js.native
   /**
-    * The type of source to use. For example, "archive".
+    * Opsworks application type. One of `aws-flow-ruby`, `java`, `rails`, `php`, `nodejs`, `static` or `other`.
     */
   val `type`: js.UndefOr[Input[String]] = js.native
 }

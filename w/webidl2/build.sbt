@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "webidl2"
-version := "23.8-dt-20190911Z-9926be"
+version := "23.11-dt-20200402Z-152472"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

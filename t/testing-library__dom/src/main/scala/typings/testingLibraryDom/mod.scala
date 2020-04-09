@@ -127,12 +127,16 @@ object mod extends js.Object {
   def prettyDOM(dom: HTMLDocument, maxLength: Double, options: OptionsReceived): String | `false` = js.native
   def wait(callback: js.Function0[Unit]): js.Promise[Unit] = js.native
   def wait(callback: js.Function0[Unit], options: AnonInterval): js.Promise[Unit] = js.native
+  def waitFor[T](callback: js.Function0[T]): js.Promise[T] = js.native
+  def waitFor[T](callback: js.Function0[T], options: AnonContainer): js.Promise[T] = js.native
   def waitForDomChange(): js.Promise[_] = js.native
-  def waitForDomChange(options: AnonContainer): js.Promise[_] = js.native
+  def waitForDomChange(options: AnonMutationObserverOptions): js.Promise[_] = js.native
   def waitForElement[T](callback: js.Function0[T]): js.Promise[T] = js.native
   def waitForElement[T](callback: js.Function0[T], options: WaitForElementOptions): js.Promise[T] = js.native
+  def waitForElementToBeRemoved[T](callback: T): js.Promise[T] = js.native
+  def waitForElementToBeRemoved[T](callback: T, options: AnonMutationObserverOptions): js.Promise[T] = js.native
   def waitForElementToBeRemoved[T](callback: js.Function0[T]): js.Promise[T] = js.native
-  def waitForElementToBeRemoved[T](callback: js.Function0[T], options: AnonContainer): js.Promise[T] = js.native
+  def waitForElementToBeRemoved[T](callback: js.Function0[T], options: AnonMutationObserverOptions): js.Promise[T] = js.native
   @js.native
   object queries extends js.Object {
     val findAllByAltText: FindAllByBoundAttribute = js.native

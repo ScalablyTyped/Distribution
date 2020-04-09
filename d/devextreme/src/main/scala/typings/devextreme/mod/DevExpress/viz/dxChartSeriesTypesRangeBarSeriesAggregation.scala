@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Configures data aggregation for the series. */
+/** @name dxChartSeriesTypes.RangeBarSeries.aggregation */
 trait dxChartSeriesTypesRangeBarSeriesAggregation extends dxChartSeriesTypesCommonSeriesAggregation {
-  /** Specifies how to aggregate series points. */
+  /** @name dxChartSeriesTypes.RangeBarSeries.aggregation.method */
   @JSName("method")
   var method_dxChartSeriesTypesRangeBarSeriesAggregation: js.UndefOr[range | custom] = js.undefined
 }

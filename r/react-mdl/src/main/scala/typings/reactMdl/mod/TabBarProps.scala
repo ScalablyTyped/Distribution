@@ -10,6 +10,7 @@ import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
 import typings.react.mod.TouchEvent
@@ -177,7 +178,7 @@ object TabBarProps {
     onPlaying: SyntheticEvent[TabBar, Event_] => Unit = null,
     onProgress: SyntheticEvent[TabBar, Event_] => Unit = null,
     onRateChange: SyntheticEvent[TabBar, Event_] => Unit = null,
-    onScroll: UIEvent[TabBar] => Unit = null,
+    onScroll: UIEvent[TabBar, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[TabBar, Event_] => Unit = null,
     onSeeking: SyntheticEvent[TabBar, Event_] => Unit = null,
     onSelect: SyntheticEvent[TabBar, Event_] => Unit = null,

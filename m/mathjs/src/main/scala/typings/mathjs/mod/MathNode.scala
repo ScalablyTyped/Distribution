@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 trait MathNode extends js.Object {
   var args: js.UndefOr[js.Array[MathNode]] = js.native
   var comment: js.UndefOr[String] = js.native
+  var content: js.UndefOr[MathNode] = js.native
   var fn: js.UndefOr[String] = js.native
   var isAccessorNode: js.UndefOr[Boolean] = js.native
   var isArrayNode: js.UndefOr[Boolean] = js.native

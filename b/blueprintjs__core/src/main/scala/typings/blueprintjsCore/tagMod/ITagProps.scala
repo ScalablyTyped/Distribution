@@ -17,6 +17,7 @@ import typings.react.mod.HTMLAttributes
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
@@ -296,7 +297,7 @@ object ITagProps {
     onRateChange: SyntheticEvent[HTMLSpanElement, Event_] => Unit = null,
     onRemove: (/* e */ MouseEvent[HTMLButtonElement, NativeMouseEvent], /* tagProps */ ITagProps) => Unit = null,
     onReset: FormEvent[HTMLSpanElement] => Unit = null,
-    onScroll: UIEvent[HTMLSpanElement] => Unit = null,
+    onScroll: UIEvent[HTMLSpanElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[HTMLSpanElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[HTMLSpanElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[HTMLSpanElement, Event_] => Unit = null,

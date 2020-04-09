@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@carbon/pictograms-react", "ChartBar")
 @js.native
-object ChartBar extends TopLevel[CarbonPictogram]
+object ChartBar extends TopLevel[CarbonPictogramType]
 

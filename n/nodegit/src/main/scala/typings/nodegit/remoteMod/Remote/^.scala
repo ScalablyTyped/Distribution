@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def addFetch(repo: Repository, remote: String, refspec: String): Double = js.native
   def addPush(repo: Repository, remote: String, refspec: String): Double = js.native
-  def create(repo: Repository, name: String, url: String): typings.nodegit.remoteMod.Remote = js.native
+  def create(repo: Repository, name: String, url: String): js.Promise[typings.nodegit.remoteMod.Remote] = js.native
   def createAnonymous(repo: Repository, url: String): js.Promise[typings.nodegit.remoteMod.Remote] = js.native
   def createDetached(url: String): js.Promise[typings.nodegit.remoteMod.Remote] = js.native
   def createWithFetchspec(repo: Repository, name: String, url: String, fetch: String): js.Promise[typings.nodegit.remoteMod.Remote] = js.native

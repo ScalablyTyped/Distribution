@@ -6,10 +6,12 @@ import typings.tabulatorTables.Tabulator.DownloadType
 import typings.tabulatorTables.Tabulator.FilterType
 import typings.tabulatorTables.Tabulator.HistoryAction
 import typings.tabulatorTables.Tabulator.HttpMethod
+import typings.tabulatorTables.Tabulator.RowRangeLookup
 import typings.tabulatorTables.Tabulator.ScrollToColumnPosition
 import typings.tabulatorTables.Tabulator.ScrollToRowPostition
 import typings.tabulatorTables.Tabulator.SortDirection
 import typings.tabulatorTables.Tabulator.StandardValidatorType
+import typings.tabulatorTables.Tabulator.VerticalAlign
 import typings.tabulatorTables.Tabulator.VisibleRowRangeLookup
 import typings.tabulatorTables.Tabulator._ColumnCalc
 import typings.tabulatorTables.Tabulator._Editor
@@ -44,13 +46,15 @@ object tabulatorTablesStrings {
   sealed trait POST extends HttpMethod
   
   @js.native
-  sealed trait active extends VisibleRowRangeLookup
+  sealed trait active
+    extends RowRangeLookup
+       with VisibleRowRangeLookup
   
   @js.native
   sealed trait add extends js.Object
   
   @js.native
-  sealed trait all extends js.Object
+  sealed trait all extends RowRangeLookup
   
   @js.native
   sealed trait alphanum extends js.Object
@@ -77,7 +81,9 @@ object tabulatorTablesStrings {
   sealed trait both extends js.Object
   
   @js.native
-  sealed trait bottom extends ScrollToRowPostition
+  sealed trait bottom
+    extends ScrollToRowPostition
+       with VerticalAlign
   
   @js.native
   sealed trait buttonCross extends _Formatter
@@ -269,7 +275,9 @@ object tabulatorTablesStrings {
   sealed trait max extends _ColumnCalc
   
   @js.native
-  sealed trait middle extends ScrollToColumnPosition
+  sealed trait middle
+    extends ScrollToColumnPosition
+       with VerticalAlign
   
   @js.native
   sealed trait min extends _ColumnCalc
@@ -303,6 +311,9 @@ object tabulatorTablesStrings {
   
   @js.native
   sealed trait pdf extends DownloadType
+  
+  @js.native
+  sealed trait plain extends js.Object
   
   @js.native
   sealed trait plaintext extends _Formatter
@@ -365,7 +376,7 @@ object tabulatorTablesStrings {
   sealed trait select extends _Editor
   
   @js.native
-  sealed trait selected extends js.Object
+  sealed trait selected extends RowRangeLookup
   
   @js.native
   sealed trait sort extends js.Object
@@ -398,7 +409,9 @@ object tabulatorTablesStrings {
   sealed trait time extends js.Object
   
   @js.native
-  sealed trait top extends ScrollToRowPostition
+  sealed trait top
+    extends ScrollToRowPostition
+       with VerticalAlign
   
   @js.native
   sealed trait traffic extends _Formatter
@@ -410,7 +423,9 @@ object tabulatorTablesStrings {
   sealed trait update extends js.Object
   
   @js.native
-  sealed trait visible extends VisibleRowRangeLookup
+  sealed trait visible
+    extends RowRangeLookup
+       with VisibleRowRangeLookup
   
   @js.native
   sealed trait weeks extends js.Object
@@ -605,6 +620,8 @@ object tabulatorTablesStrings {
   def paste: paste = "paste".asInstanceOf[paste]
   @scala.inline
   def pdf: pdf = "pdf".asInstanceOf[pdf]
+  @scala.inline
+  def plain: plain = "plain".asInstanceOf[plain]
   @scala.inline
   def plaintext: plaintext = "plaintext".asInstanceOf[plaintext]
   @scala.inline

@@ -6,37 +6,37 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait basePointObject extends js.Object {
-  /** Contains the data object that the series point represents. */
+  /** @name basePointObject.data */
   var data: js.Any
-  /** Provides information about the state of the point object. */
+  /** @name basePointObject.fullState */
   var fullState: Double
-  /** Returns the point's argument value that was set in the data source. */
+  /** @name basePointObject.originalArgument */
   var originalArgument: String | Double | Date
-  /** Returns the point's value that was set in the data source. */
+  /** @name basePointObject.originalValue */
   var originalValue: String | Double | Date
-  /** Returns the series object to which the point belongs. */
+  /** @name basePointObject.series */
   var series: js.Any
-  /** Returns the tag of the point. */
+  /** @name basePointObject.tag */
   var tag: js.Any
-  /** Switches the point from the hover state back to normal. */
+  /** @name basePointObject.clearHover() */
   def clearHover(): Unit
-  /** Deselects the point. */
+  /** @name basePointObject.clearSelection() */
   def clearSelection(): Unit
-  /** Gets the color of a particular point. */
+  /** @name basePointObject.getColor() */
   def getColor(): String
-  /** Allows you to obtain the label(s) of the series point. */
+  /** @name basePointObject.getLabel() */
   def getLabel(): baseLabelObject with js.Array[baseLabelObject]
-  /** Hides the tooltip of the point. */
+  /** @name basePointObject.hideTooltip() */
   def hideTooltip(): Unit
-  /** Switches the point into the hover state, the same as when a user places the mouse pointer on it. */
+  /** @name basePointObject.hover() */
   def hover(): Unit
-  /** Provides information about the hover state of a point. */
+  /** @name basePointObject.isHovered() */
   def isHovered(): Boolean
-  /** Provides information about the selection state of a point. */
+  /** @name basePointObject.isSelected() */
   def isSelected(): Boolean
-  /** Selects the point. The point is displayed in a 'selected' style until another point is selected or the current point is deselected programmatically. */
+  /** @name basePointObject.select() */
   def select(): Unit
-  /** Shows the tooltip of the point. */
+  /** @name basePointObject.showTooltip() */
   def showTooltip(): Unit
 }
 

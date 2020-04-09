@@ -17,15 +17,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxTreeListColumnButton extends GridBaseColumnButton {
-  /** The name used to identify a built-in button. */
+  /** @name dxTreeListColumnButton.name */
   var name: js.UndefOr[add | cancel | delete | edit | save | undelete | String] = js.undefined
-  /** A function that is executed when the button is clicked or tapped. Not executed if a template is used. */
+  /** @name dxTreeListColumnButton.onClick */
   var onClick: js.UndefOr[(js.Function1[/* e */ AnonColumnComponentElement, _]) | String] = js.undefined
-  /** Specifies a custom button template. */
+  /** @name dxTreeListColumnButton.template */
   var template: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* cellElement */ dxElement, /* cellInfo */ AnonKeyRow, String | Element | JQuery])
   ] = js.undefined
-  /** Specifies the button's visibility. */
+  /** @name dxTreeListColumnButton.visible */
   var visible: js.UndefOr[Boolean | (js.Function1[/* options */ AnonColumnDxTreeListColumn, Boolean])] = js.undefined
 }
 

@@ -23,17 +23,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxPopoverOptions[T] extends dxPopupOptions[T] {
-  /** Configures widget visibility animations. This object contains two fields: show and hide. */
+  /** @name dxPopover.Options.animation */
   @JSName("animation")
   var animation_dxPopoverOptions: js.UndefOr[dxPopoverAnimation] = js.undefined
-  /** Specifies options of popover hiding. */
+  /** @name dxPopover.Options.hideEvent */
   var hideEvent: js.UndefOr[AnonDelay | String] = js.undefined
-  /** An object defining widget positioning options. */
+  /** @name dxPopover.Options.position */
   @JSName("position")
   var position_dxPopoverOptions: js.UndefOr[bottom | left | right | top | positionConfig] = js.undefined
-  /** Specifies options for displaying the widget. */
+  /** @name dxPopover.Options.showEvent */
   var showEvent: js.UndefOr[AnonDelay | String] = js.undefined
-  /** The target element associated with the widget. */
+  /** @name dxPopover.Options.target */
   var target: js.UndefOr[String | Element | JQuery] = js.undefined
 }
 

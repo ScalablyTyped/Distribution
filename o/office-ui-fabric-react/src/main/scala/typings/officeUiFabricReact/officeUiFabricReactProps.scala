@@ -218,6 +218,9 @@ trait officeUiFabricReactProps {
   def ButtonIconExampleProps: typings.officeUiFabricReact.buttonIconExampleMod.IButtonExampleProps.type = typings.officeUiFabricReact.buttonIconExampleMod.IButtonExampleProps
   type ButtonIconExampleProps = typings.officeUiFabricReact.buttonIconExampleMod.IButtonExampleProps
   @scala.inline
+  def ButtonIconWithTooltipExampleProps: typings.officeUiFabricReact.buttonIconWithTooltipExampleMod.IButtonExampleProps.type = typings.officeUiFabricReact.buttonIconWithTooltipExampleMod.IButtonExampleProps
+  type ButtonIconWithTooltipExampleProps = typings.officeUiFabricReact.buttonIconWithTooltipExampleMod.IButtonExampleProps
+  @scala.inline
   def ButtonScreenReaderExampleProps: typings.officeUiFabricReact.buttonScreenReaderExampleMod.IButtonExampleProps.type = typings.officeUiFabricReact.buttonScreenReaderExampleMod.IButtonExampleProps
   type ButtonScreenReaderExampleProps = typings.officeUiFabricReact.buttonScreenReaderExampleMod.IButtonExampleProps
   @scala.inline

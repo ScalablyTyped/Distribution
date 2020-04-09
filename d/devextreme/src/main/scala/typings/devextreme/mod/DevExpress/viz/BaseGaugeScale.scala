@@ -5,29 +5,29 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Specifies options of the gauge's scale. */
+/** @name BaseGauge.Options.scale */
 trait BaseGaugeScale extends js.Object {
-  /** Specifies whether to allow decimal values on the scale. When false, the scale contains integer values only. */
+  /** @name BaseGauge.Options.scale.allowDecimals */
   var allowDecimals: js.UndefOr[Boolean] = js.undefined
-  /** Specifies an array of custom minor ticks. */
+  /** @name BaseGauge.Options.scale.customMinorTicks */
   var customMinorTicks: js.UndefOr[js.Array[Double]] = js.undefined
-  /** Specifies an array of custom major ticks. */
+  /** @name BaseGauge.Options.scale.customTicks */
   var customTicks: js.UndefOr[js.Array[Double]] = js.undefined
-  /** Specifies the end value for the scale of the gauge. */
+  /** @name BaseGauge.Options.scale.endValue */
   var endValue: js.UndefOr[Double] = js.undefined
-  /** Specifies common options for scale labels. */
+  /** @name BaseGauge.Options.scale.label */
   var label: js.UndefOr[BaseGaugeScaleLabel] = js.undefined
-  /** Specifies options of the gauge's minor ticks. */
+  /** @name BaseGauge.Options.scale.minorTick */
   var minorTick: js.UndefOr[AnonColorLength] = js.undefined
-  /** Specifies an interval between minor ticks. */
+  /** @name BaseGauge.Options.scale.minorTickInterval */
   var minorTickInterval: js.UndefOr[Double] = js.undefined
-  /** Specifies the minimum distance between two neighboring major ticks in pixels. */
+  /** @name BaseGauge.Options.scale.scaleDivisionFactor */
   var scaleDivisionFactor: js.UndefOr[Double] = js.undefined
-  /** Specifies the start value for the scale of the gauge. */
+  /** @name BaseGauge.Options.scale.startValue */
   var startValue: js.UndefOr[Double] = js.undefined
-  /** Specifies options of the gauge's major ticks. */
+  /** @name BaseGauge.Options.scale.tick */
   var tick: js.UndefOr[AnonColorLength] = js.undefined
-  /** Specifies an interval between major ticks. */
+  /** @name BaseGauge.Options.scale.tickInterval */
   var tickInterval: js.UndefOr[Double] = js.undefined
 }
 

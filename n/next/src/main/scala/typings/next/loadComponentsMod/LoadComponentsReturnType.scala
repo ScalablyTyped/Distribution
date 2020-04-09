@@ -14,6 +14,7 @@ import typings.next.mod.PageConfig
 import typings.next.utilsMod.AppType
 import typings.next.utilsMod.DocumentType
 import typings.next.utilsMod.NextPageContext
+import typings.node.querystringMod.ParsedUrlQuery
 import typings.react.mod.ComponentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -25,9 +26,9 @@ trait LoadComponentsReturnType extends js.Object {
   var Document: DocumentType
   var DocumentMiddleware: js.UndefOr[js.Function1[/* ctx */ NextPageContext, Unit]] = js.undefined
   var buildManifest: BuildManifest
-  var getServerSideProps: js.UndefOr[GetServerSideProps[StringDictionary[_]]] = js.undefined
-  var getStaticPaths: js.UndefOr[GetStaticPaths] = js.undefined
-  var getStaticProps: js.UndefOr[GetStaticProps[StringDictionary[_]]] = js.undefined
+  var getServerSideProps: js.UndefOr[GetServerSideProps[StringDictionary[_], ParsedUrlQuery]] = js.undefined
+  var getStaticPaths: js.UndefOr[GetStaticPaths[ParsedUrlQuery]] = js.undefined
+  var getStaticProps: js.UndefOr[GetStaticProps[StringDictionary[_], ParsedUrlQuery]] = js.undefined
   var pageConfig: js.UndefOr[PageConfig] = js.undefined
   var reactLoadableManifest: ReactLoadableManifest
 }
@@ -41,9 +42,9 @@ object LoadComponentsReturnType {
     buildManifest: BuildManifest,
     reactLoadableManifest: ReactLoadableManifest,
     DocumentMiddleware: /* ctx */ NextPageContext => Unit = null,
-    getServerSideProps: /* context */ AnonPreview => js.Promise[AnonPropsP[StringDictionary[_]]] = null,
-    getStaticPaths: () => js.Promise[AnonPaths] = null,
-    getStaticProps: /* ctx */ AnonParams => js.Promise[AnonProps[StringDictionary[_]]] = null,
+    getServerSideProps: /* context */ AnonPreview[ParsedUrlQuery] => js.Promise[AnonPropsP[StringDictionary[_]]] = null,
+    getStaticPaths: () => js.Promise[AnonPaths[ParsedUrlQuery]] = null,
+    getStaticProps: /* ctx */ AnonParams[ParsedUrlQuery] => js.Promise[AnonProps[StringDictionary[_]]] = null,
     pageConfig: PageConfig = null
   ): LoadComponentsReturnType = {
     val __obj = js.Dynamic.literal(App = App.asInstanceOf[js.Any], Component = Component.asInstanceOf[js.Any], Document = Document.asInstanceOf[js.Any], buildManifest = buildManifest.asInstanceOf[js.Any], reactLoadableManifest = reactLoadableManifest.asInstanceOf[js.Any])

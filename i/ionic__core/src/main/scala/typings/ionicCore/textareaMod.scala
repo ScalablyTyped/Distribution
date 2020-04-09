@@ -5,8 +5,8 @@ import typings.ionicCore.ionicCoreStrings.off
 import typings.ionicCore.ionicCoreStrings.soft
 import typings.ionicCore.mod.Color
 import typings.ionicCore.mod.StyleEventDetail
-import typings.ionicCore.stencilCoreMod.ComponentInterface
-import typings.ionicCore.stencilCoreMod.EventEmitter
+import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
+import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
 import typings.ionicCore.textareaInterfaceMod.TextareaChangeEventDetail
 import typings.std.HTMLElement
 import typings.std.HTMLTextAreaElement
@@ -125,6 +125,7 @@ object textareaMod extends js.Object {
       * If `true`, the element will have its spelling and grammar checked.
       */
     var spellcheck: Boolean = js.native
+    var textareaWrapper: js.UndefOr[js.Any] = js.native
     /**
       * The value of the textarea.
       */

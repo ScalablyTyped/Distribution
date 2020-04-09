@@ -18,7 +18,7 @@ object mod extends js.Object {
   val ApolloConsumer: FC[ApolloConsumerProps] = js.native
   val ApolloProvider: FC[ApolloProviderProps[js.Any]] = js.native
   def getApolloContext(): Context[ApolloContextValue] = js.native
-  def operationName(`type`: DocumentType): js.UndefOr[String] = js.native
+  def operationName(`type`: DocumentType): String = js.native
   def parser(document: DocumentNode): IDocumentDefinition = js.native
   def resetApolloContext(): Unit = js.native
   @js.native

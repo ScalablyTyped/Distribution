@@ -55,7 +55,7 @@ trait DBInstance extends js.Object {
     */
   var DBInstanceIdentifier: js.UndefOr[String] = js.native
   /**
-    * Specifies the current state of this database.
+    * Specifies the current state of this database. For information about DB instance statuses, see DB Instance Status in the Amazon RDS User Guide. 
     */
   var DBInstanceStatus: js.UndefOr[String] = js.native
   /**
@@ -199,15 +199,15 @@ trait DBInstance extends js.Object {
     */
   var PubliclyAccessible: js.UndefOr[Boolean] = js.native
   /**
-    * Contains one or more identifiers of Aurora DB clusters to which the RDS DB instance is replicated as a Read Replica. For example, when you create an Aurora Read Replica of an RDS MySQL DB instance, the Aurora MySQL DB cluster for the Aurora Read Replica is shown. This output does not contain information about cross region Aurora Read Replicas.  Currently, each RDS DB instance can have only one Aurora Read Replica. 
+    * Contains one or more identifiers of Aurora DB clusters to which the RDS DB instance is replicated as a read replica. For example, when you create an Aurora read replica of an RDS MySQL DB instance, the Aurora MySQL DB cluster for the Aurora read replica is shown. This output does not contain information about cross region Aurora read replicas.  Currently, each RDS DB instance can have only one Aurora read replica. 
     */
   var ReadReplicaDBClusterIdentifiers: js.UndefOr[ReadReplicaDBClusterIdentifierList] = js.native
   /**
-    * Contains one or more identifiers of the Read Replicas associated with this DB instance.
+    * Contains one or more identifiers of the read replicas associated with this DB instance.
     */
   var ReadReplicaDBInstanceIdentifiers: js.UndefOr[ReadReplicaDBInstanceIdentifierList] = js.native
   /**
-    * Contains the identifier of the source DB instance if this DB instance is a Read Replica.
+    * Contains the identifier of the source DB instance if this DB instance is a read replica.
     */
   var ReadReplicaSourceDBInstanceIdentifier: js.UndefOr[String] = js.native
   /**
@@ -215,7 +215,7 @@ trait DBInstance extends js.Object {
     */
   var SecondaryAvailabilityZone: js.UndefOr[String] = js.native
   /**
-    * The status of a Read Replica. If the instance isn't a Read Replica, this is blank.
+    * The status of a read replica. If the instance isn't a read replica, this is blank.
     */
   var StatusInfos: js.UndefOr[DBInstanceStatusInfoList] = js.native
   /**

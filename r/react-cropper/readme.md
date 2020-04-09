@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-cropper
 
-Typings are for version 0.10
+Typings are for version 1.3
 
 ## Library description:
 Cropper as React components

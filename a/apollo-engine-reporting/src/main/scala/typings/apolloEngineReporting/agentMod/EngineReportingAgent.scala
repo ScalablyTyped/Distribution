@@ -11,6 +11,7 @@ class EngineReportingAgent[TContext] () extends js.Object {
   def this(options: EngineReportingOptions[TContext]) = this()
   var apiKey: js.Any = js.native
   var getTraceSignature: js.Any = js.native
+  var logger: js.Any = js.native
   var options: js.Any = js.native
   var reportHeaders: js.Any = js.native
   var reportSizes: js.Any = js.native

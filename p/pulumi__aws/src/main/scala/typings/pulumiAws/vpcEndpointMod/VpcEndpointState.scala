@@ -29,6 +29,9 @@ trait VpcEndpointState extends js.Object {
     * The ID of the AWS account that owns the VPC endpoint.
     */
   val ownerId: js.UndefOr[Input[String]] = js.native
+  /**
+    * A policy to attach to the endpoint that controls access to the service. Defaults to full access. All `Gateway` and some `Interface` endpoints support policies - see the [relevant AWS documentation](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-endpoints-access.html) for more details.
+    */
   val policy: js.UndefOr[Input[String]] = js.native
   /**
     * The prefix list ID of the exposed AWS service. Applicable for endpoints of type `Gateway`.
@@ -52,7 +55,7 @@ trait VpcEndpointState extends js.Object {
     */
   val securityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
-    * The service name, in the form `com.amazonaws.region.service` for AWS services.
+    * The service name. For AWS services the service name is usually in the form `com.amazonaws.<region>.<service>` (the SageMaker Notebook service is an exception to this rule, the service name is in the form `aws.sagemaker.<region>.notebook`).
     */
   val serviceName: js.UndefOr[Input[String]] = js.native
   /**

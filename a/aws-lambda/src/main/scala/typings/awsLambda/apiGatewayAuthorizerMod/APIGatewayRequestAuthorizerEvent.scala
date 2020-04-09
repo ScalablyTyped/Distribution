@@ -8,10 +8,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait APIGatewayRequestAuthorizerEvent extends APIGatewayAuthorizerEvent {
-  var apiId: String
-  var domainName: String
   var headers: StringDictionary[String] | Null
   var httpMethod: String
+  var methodArn: String
   var multiValueHeaders: StringDictionary[js.Array[String]] | Null
   var multiValueQueryStringParameters: StringDictionary[js.Array[String]] | Null
   var path: String
@@ -26,9 +25,8 @@ trait APIGatewayRequestAuthorizerEvent extends APIGatewayAuthorizerEvent {
 object APIGatewayRequestAuthorizerEvent {
   @scala.inline
   def apply(
-    apiId: String,
-    domainName: String,
     httpMethod: String,
+    methodArn: String,
     path: String,
     requestContext: APIGatewayEventRequestContextWithAuthorizer[js.UndefOr[scala.Nothing]],
     resource: String,
@@ -40,7 +38,7 @@ object APIGatewayRequestAuthorizerEvent {
     queryStringParameters: StringDictionary[String] = null,
     stageVariables: StringDictionary[String] = null
   ): APIGatewayRequestAuthorizerEvent = {
-    val __obj = js.Dynamic.literal(apiId = apiId.asInstanceOf[js.Any], domainName = domainName.asInstanceOf[js.Any], httpMethod = httpMethod.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], requestContext = requestContext.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(httpMethod = httpMethod.asInstanceOf[js.Any], methodArn = methodArn.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], requestContext = requestContext.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (multiValueHeaders != null) __obj.updateDynamic("multiValueHeaders")(multiValueHeaders.asInstanceOf[js.Any])

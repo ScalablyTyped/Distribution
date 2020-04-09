@@ -13,24 +13,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Configures the exporting and printing features. */
+/** @name BaseWidget.Options.export */
 trait BaseWidgetExport extends js.Object {
-  /** Specifies the color that will fill transparent regions in the resulting file or document. */
+  /** @name BaseWidget.Options.export.backgroundColor */
   var backgroundColor: js.UndefOr[String] = js.undefined
-  /** Enables the client-side exporting in the widget. */
+  /** @name BaseWidget.Options.export.enabled */
   var enabled: js.UndefOr[Boolean] = js.undefined
-  /** Specifies a default name for the file to which the widget will be exported. */
+  /** @name BaseWidget.Options.export.fileName */
   var fileName: js.UndefOr[String] = js.undefined
-  /** Specifies a set of export formats. */
+  /** @name BaseWidget.Options.export.formats */
   var formats: js.UndefOr[js.Array[GIF | JPEG | PDF | PNG | SVG]] = js.undefined
-  /** Adds an empty space around the exported widget; measured in pixels. */
+  /** @name BaseWidget.Options.export.margin */
   var margin: js.UndefOr[Double] = js.undefined
-  /** Enables the printing feature in the widget. Applies only if the export.enabled option is true. */
+  /** @name BaseWidget.Options.export.printingEnabled */
   var printingEnabled: js.UndefOr[Boolean] = js.undefined
-  /** @deprecated [important] Since v10, Safari browser supports API for saving files, and this option is no longer required. */
-  /** Specifies the URL of the server-side proxy that streams the resulting file to the end user to enable exporting in the Safari browser. */
+  /** @deprecated */
+  /** @name BaseWidget.Options.export.proxyUrl */
   var proxyUrl: js.UndefOr[String] = js.undefined
-  /** A function that renders SVG markup on the HTML canvas. Required to export custom SVG elements (for example, markerTemplate). */
+  /** @name BaseWidget.Options.export.svgToCanvas */
   var svgToCanvas: js.UndefOr[
     js.Function2[
       /* svg */ SVGElement, 

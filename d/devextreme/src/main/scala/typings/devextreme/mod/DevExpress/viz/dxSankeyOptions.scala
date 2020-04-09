@@ -58,44 +58,44 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxSankeyOptions extends BaseWidgetOptions[dxSankey] {
-  /** Specifies adaptive layout options. */
+  /** @name dxSankey.Options.adaptiveLayout */
   var adaptiveLayout: js.UndefOr[AnonKeepLabels] = js.undefined
-  /** Aligns node columns vertically. */
+  /** @name dxSankey.Options.alignment */
   var alignment: js.UndefOr[bottom | center | top | (js.Array[bottom | center | top])] = js.undefined
-  /** Binds the widget to data. */
+  /** @name dxSankey.Options.dataSource */
   var dataSource: js.UndefOr[js.Array[_] | DataSource | DataSourceOptions | String] = js.undefined
-  /** Specifies whether nodes and links change their style when they are hovered over or pressed. */
+  /** @name dxSankey.Options.hoverEnabled */
   var hoverEnabled: js.UndefOr[Boolean] = js.undefined
-  /** Configures sankey nodes' labels. */
+  /** @name dxSankey.Options.label */
   var label: js.UndefOr[AnonHorizontalOffset] = js.undefined
-  /** Configures sankey links' appearance. */
+  /** @name dxSankey.Options.link */
   var link: js.UndefOr[AnonColorMode] = js.undefined
-  /** Configures sankey nodes' appearance. */
+  /** @name dxSankey.Options.node */
   var node: js.UndefOr[AnonPadding] = js.undefined
-  /** A function that is executed when a sankey link is clicked or tapped. */
+  /** @name dxSankey.Options.onLinkClick */
   var onLinkClick: js.UndefOr[(js.Function1[/* e */ AnonEventModelTarget, _]) | String] = js.undefined
-  /** A function that is executed after the pointer enters or leaves a sankey link. */
+  /** @name dxSankey.Options.onLinkHoverChanged */
   var onLinkHoverChanged: js.UndefOr[js.Function1[/* e */ AnonComponentDxSankey, _]] = js.undefined
-  /** A function that is executed when a sankey node is clicked or tapped. */
+  /** @name dxSankey.Options.onNodeClick */
   var onNodeClick: js.UndefOr[(js.Function1[/* e */ AnonComponentElementEventModel, _]) | String] = js.undefined
-  /** A function that is executed after the pointer enters or leaves a sankey node. */
+  /** @name dxSankey.Options.onNodeHoverChanged */
   var onNodeHoverChanged: js.UndefOr[js.Function1[/* e */ AnonTargetDxSankeyNode, _]] = js.undefined
-  /** Sets the palette to be used to colorize sankey nodes. */
+  /** @name dxSankey.Options.palette */
   var palette: js.UndefOr[
     js.Array[String] | Bright | Default | (`Harmony Light`) | Ocean | Pastel | Soft | (`Soft Pastel`) | Vintage | Violet | Carmine | (`Dark Moon`) | (`Dark Violet`) | (`Green Mist`) | (`Soft Blue`) | Material | Office
   ] = js.undefined
-  /** Specifies how to extend the palette when it contains less colors than the number of sankey nodes. */
+  /** @name dxSankey.Options.paletteExtensionMode */
   var paletteExtensionMode: js.UndefOr[alternate | blend | extrapolate] = js.undefined
-  /** Specifies nodes' sorting order in their columns. */
+  /** @name dxSankey.Options.sortData */
   var sortData: js.UndefOr[js.Any] = js.undefined
-  /** Specifies which data source field provides links' source nodes. */
+  /** @name dxSankey.Options.sourceField */
   var sourceField: js.UndefOr[String] = js.undefined
-  /** Specifies which data source field provides links' target nodes. */
+  /** @name dxSankey.Options.targetField */
   var targetField: js.UndefOr[String] = js.undefined
-  /** Configures tooltips - small pop-up rectangles that display information about a data-visualizing widget element being pressed or hovered over with the mouse pointer. */
+  /** @name dxSankey.Options.tooltip */
   @JSName("tooltip")
   var tooltip_dxSankeyOptions: js.UndefOr[dxSankeyTooltip] = js.undefined
-  /** Specifies which data source field provides links' weights. */
+  /** @name dxSankey.Options.weightField */
   var weightField: js.UndefOr[String] = js.undefined
 }
 

@@ -76,6 +76,7 @@ import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
@@ -595,7 +596,7 @@ object PickIonItemOptiondisabled {
     onProgress: SyntheticEvent[HTMLIonItemOptionElement, Event_] => Unit = null,
     onRateChange: SyntheticEvent[HTMLIonItemOptionElement, Event_] => Unit = null,
     onReset: FormEvent[HTMLIonItemOptionElement] => Unit = null,
-    onScroll: UIEvent[HTMLIonItemOptionElement] => Unit = null,
+    onScroll: UIEvent[HTMLIonItemOptionElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[HTMLIonItemOptionElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[HTMLIonItemOptionElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[HTMLIonItemOptionElement, Event_] => Unit = null,

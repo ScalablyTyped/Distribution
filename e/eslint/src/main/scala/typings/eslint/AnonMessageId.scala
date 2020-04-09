@@ -1,11 +1,14 @@
 package typings.eslint
 
 import typings.eslint.mod.Rule.ReportDescriptorMessage
+import typings.eslint.mod.Rule.SuggestionDescriptorMessage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AnonMessageId extends ReportDescriptorMessage {
+trait AnonMessageId
+  extends ReportDescriptorMessage
+     with SuggestionDescriptorMessage {
   var messageId: String
 }
 

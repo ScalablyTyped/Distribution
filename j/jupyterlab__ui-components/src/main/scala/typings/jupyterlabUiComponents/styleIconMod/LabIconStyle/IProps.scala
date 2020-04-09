@@ -16,7 +16,7 @@ trait IProps
     */
   var justify: js.UndefOr[center | right | left] = js.undefined
   /**
-    * @depreacted use stylesheet instead
+    * @deprecated use stylesheet instead
     */
   var kind: js.UndefOr[IBuiltin] = js.undefined
   /**

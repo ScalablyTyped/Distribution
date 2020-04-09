@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   val default: genericShouldForwardProp = js.native
+  val props: js.Array[String] = js.native
   def createShouldForwardProp(props: js.Array[String]): genericShouldForwardProp = js.native
   type genericShouldForwardProp = js.Function1[/* prop */ String, Boolean]
 }

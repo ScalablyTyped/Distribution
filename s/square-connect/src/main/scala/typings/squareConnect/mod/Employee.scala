@@ -12,31 +12,35 @@ class Employee () extends js.Object {
     */
   var created_at: js.UndefOr[String] = js.native
   /**
-    * Email of the employee
+    * The employee's email address
     */
   var email: js.UndefOr[String] = js.native
   /**
-    * Given (first) name of the employee.
+    * The employee's first name.
     */
   var first_name: js.UndefOr[String] = js.native
   /**
-    * UUID for this `Employee`.
+    * UUID for this object.
     */
   var id: js.UndefOr[String] = js.native
   /**
-    * Family (last) name of the employee
+    * Whether this employee is the owner of the merchant. Each merchant has one owner employee, and that employee has full authority over the account.
+    */
+  var is_owner: js.UndefOr[Boolean] = js.native
+  /**
+    * The employee's last name.
     */
   var last_name: js.UndefOr[String] = js.native
   /**
-    * A list of location IDs where this employee has access.
+    * A list of location IDs where this employee has access to.
     */
   var location_ids: js.UndefOr[js.Array[String]] = js.native
   /**
-    * Phone number of the employee in E.164 format, i.e. "+12125554250"
+    * The employee's phone number in E.164 format, i.e. "+12125554250"
     */
   var phone_number: js.UndefOr[String] = js.native
   /**
-    * Specifies the status of the employee being fetched. See [EmployeeStatus](#type-employeestatus) for possible values.
+    * Specifies the status of the employees being fetched. See [EmployeeStatus](#type-employeestatus) for possible values.
     */
   var status: js.UndefOr[ActivityStatusType] = js.native
   /**

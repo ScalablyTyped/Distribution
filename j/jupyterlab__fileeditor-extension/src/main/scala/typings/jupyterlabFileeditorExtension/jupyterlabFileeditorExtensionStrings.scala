@@ -27,6 +27,9 @@ object jupyterlabFileeditorExtensionStrings {
   sealed trait `fileeditorColonmarkdown-preview` extends js.Object
   
   @js.native
+  sealed trait `fileeditorColonreplace-selection` extends js.Object
+  
+  @js.native
   sealed trait `fileeditorColonrun-all` extends js.Object
   
   @js.native
@@ -58,6 +61,8 @@ object jupyterlabFileeditorExtensionStrings {
   def `fileeditorColoncreate-new-markdown-file`: `fileeditorColoncreate-new-markdown-file` = "fileeditor:create-new-markdown-file".asInstanceOf[`fileeditorColoncreate-new-markdown-file`]
   @scala.inline
   def `fileeditorColonmarkdown-preview`: `fileeditorColonmarkdown-preview` = "fileeditor:markdown-preview".asInstanceOf[`fileeditorColonmarkdown-preview`]
+  @scala.inline
+  def `fileeditorColonreplace-selection`: `fileeditorColonreplace-selection` = "fileeditor:replace-selection".asInstanceOf[`fileeditorColonreplace-selection`]
   @scala.inline
   def `fileeditorColonrun-all`: `fileeditorColonrun-all` = "fileeditor:run-all".asInstanceOf[`fileeditorColonrun-all`]
   @scala.inline

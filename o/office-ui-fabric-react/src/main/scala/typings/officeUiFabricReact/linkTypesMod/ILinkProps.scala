@@ -17,6 +17,7 @@ import typings.react.mod.FunctionComponent
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
@@ -263,7 +264,7 @@ object ILinkProps {
     onProgress: SyntheticEvent[HTMLAnchorElement | HTMLButtonElement | HTMLElement | LinkBase, Event_] => Unit = null,
     onRateChange: SyntheticEvent[HTMLAnchorElement | HTMLButtonElement | HTMLElement | LinkBase, Event_] => Unit = null,
     onReset: FormEvent[HTMLAnchorElement | HTMLButtonElement | HTMLElement | LinkBase] => Unit = null,
-    onScroll: UIEvent[HTMLAnchorElement | HTMLButtonElement | HTMLElement | LinkBase] => Unit = null,
+    onScroll: UIEvent[HTMLAnchorElement | HTMLButtonElement | HTMLElement | LinkBase, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[HTMLAnchorElement | HTMLButtonElement | HTMLElement | LinkBase, Event_] => Unit = null,
     onSeeking: SyntheticEvent[HTMLAnchorElement | HTMLButtonElement | HTMLElement | LinkBase, Event_] => Unit = null,
     onSelect: SyntheticEvent[HTMLAnchorElement | HTMLButtonElement | HTMLElement | LinkBase, Event_] => Unit = null,

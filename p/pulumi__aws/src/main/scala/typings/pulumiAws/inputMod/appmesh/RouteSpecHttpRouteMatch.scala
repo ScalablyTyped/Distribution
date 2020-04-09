@@ -16,7 +16,8 @@ trait RouteSpecHttpRouteMatch extends js.Object {
     */
   var method: js.UndefOr[Input[String]] = js.native
   /**
-    * The header value sent by the client must begin with the specified characters.
+    * Specifies the path with which to match requests.
+    * This parameter must always start with /, which by itself matches all requests to the virtual router service name.
     * * `range`- (Optional) The object that specifies the range of numbers that the header value sent by the client must be included in.
     */
   var prefix: Input[String] = js.native

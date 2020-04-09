@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ListPlatformVersionsRequest extends js.Object {
   /**
-    * List only the platforms where the platform member value relates to one of the supplied values.
+    * Criteria for restricting the resulting list of platform versions. The filter is interpreted as a logical conjunction (AND) of the separate PlatformFilter terms.
     */
   var Filters: js.UndefOr[PlatformFilters] = js.native
   /**
-    * The maximum number of platform values returned in one call.
+    * The maximum number of platform version values returned in one call.
     */
   var MaxRecords: js.UndefOr[PlatformMaxRecords] = js.native
   /**
-    * The starting index into the remaining list of platforms. Use the NextToken value from a previous ListPlatformVersion call.
+    * For a paginated request. Specify a token from a previous response page to retrieve the next response page. All other parameter values must be identical to the ones specified in the initial request. If no NextToken is specified, the first page is retrieved.
     */
   var NextToken: js.UndefOr[Token] = js.native
 }

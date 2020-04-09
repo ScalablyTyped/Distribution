@@ -16,6 +16,9 @@ trait GetVpcAttachmentArgs extends js.Object {
     * Identifier of the EC2 Transit Gateway VPC Attachment.
     */
   val id: js.UndefOr[String] = js.native
+  /**
+    * Key-value tags for the EC2 Transit Gateway VPC Attachment
+    */
   val tags: js.UndefOr[StringDictionary[js.Any]] = js.native
 }
 

@@ -11,6 +11,9 @@ trait TopicPolicyState extends js.Object {
     * The ARN of the SNS topic
     */
   val arn: js.UndefOr[Input[String]] = js.native
+  /**
+    * The fully-formed AWS policy as JSON.
+    */
   val policy: js.UndefOr[Input[String]] = js.native
 }
 

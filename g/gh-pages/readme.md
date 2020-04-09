@@ -1,7 +1,7 @@
 
 # Scala.js typings for gh-pages
 
-Typings are for version 2.0
+Typings are for version 2.2
 
 ## Library description:
 Publish to a gh-pages branch on GitHub (or any other branch on any other remote)

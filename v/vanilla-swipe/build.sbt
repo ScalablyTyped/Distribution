@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vanilla-swipe"
-version := "1.1.1-2b8757"
+version := "1.2.0-5ec230"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,10 @@
 package typings.vegaTypings.configMod
 
+import typings.std.Exclude
 import typings.vegaTypings.axisMod.LabelOverlap
+import typings.vegaTypings.encodeMod.ColorValueRef
+import typings.vegaTypings.encodeMod.NumericValueRef
+import typings.vegaTypings.encodeMod.ScaledValueRef
 import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.valuesMod.AlignValue
 import typings.vegaTypings.valuesMod.AnchorValue
@@ -20,133 +24,169 @@ import scala.scalajs.js.annotation._
 
 /* Inlined vega-typings.vega-typings/types/spec/config.ExcludeMappedValueRef<vega-typings.vega-typings/types/spec/axis.BaseAxis> */
 trait AxisConfig extends js.Object {
-  var bandPosition: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]]
-  var domain: ExcludeValueRefKeepSignal[js.UndefOr[Boolean]]
-  var domainColor: ExcludeValueRefKeepSignal[js.UndefOr[ColorValue]]
-  var domainDash: ExcludeValueRefKeepSignal[js.UndefOr[DashArrayValue]]
-  var domainDashOffset: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]]
-  var domainOpacity: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]]
-  var domainWidth: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]]
-  var grid: ExcludeValueRefKeepSignal[js.UndefOr[Boolean]]
-  var gridColor: ExcludeValueRefKeepSignal[js.UndefOr[ColorValue]]
-  var gridDash: ExcludeValueRefKeepSignal[js.UndefOr[DashArrayValue]]
-  var gridDashOffset: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]]
-  var gridOpacity: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]]
-  var gridWidth: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]]
-  var labelAlign: ExcludeValueRefKeepSignal[js.UndefOr[AlignValue]]
-  var labelAngle: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]]
-  var labelBaseline: ExcludeValueRefKeepSignal[js.UndefOr[TextBaselineValue]]
-  var labelBound: ExcludeValueRefKeepSignal[js.UndefOr[Double | Boolean | SignalRef]]
-  var labelColor: ExcludeValueRefKeepSignal[js.UndefOr[ColorValue]]
-  var labelFlush: ExcludeValueRefKeepSignal[js.UndefOr[Double | Boolean | SignalRef]]
-  var labelFlushOffset: ExcludeValueRefKeepSignal[js.UndefOr[Double | SignalRef]]
-  var labelFont: ExcludeValueRefKeepSignal[js.UndefOr[StringValue]]
-  var labelFontSize: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]]
-  var labelFontStyle: ExcludeValueRefKeepSignal[js.UndefOr[FontStyleValue]]
-  var labelFontWeight: ExcludeValueRefKeepSignal[js.UndefOr[FontWeightValue]]
-  var labelLimit: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]]
-  var labelLineHeight: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]]
-  var labelOffset: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]]
-  var labelOpacity: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]]
-  var labelOverlap: ExcludeValueRefKeepSignal[js.UndefOr[LabelOverlap | SignalRef]]
-  var labelPadding: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]]
-  var labelSeparation: ExcludeValueRefKeepSignal[js.UndefOr[Double | SignalRef]]
-  var labels: ExcludeValueRefKeepSignal[js.UndefOr[Boolean]]
-  var maxExtent: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]]
-  var minExtent: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]]
-  var tickBand: ExcludeValueRefKeepSignal[js.UndefOr[center | extent | SignalRef]]
-  var tickColor: ExcludeValueRefKeepSignal[js.UndefOr[ColorValue]]
-  var tickDash: ExcludeValueRefKeepSignal[js.UndefOr[DashArrayValue]]
-  var tickDashOffset: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]]
-  var tickExtra: ExcludeValueRefKeepSignal[js.UndefOr[BooleanValue]]
-  var tickOffset: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]]
-  var tickOpacity: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]]
-  var tickRound: ExcludeValueRefKeepSignal[js.UndefOr[BooleanValue]]
-  var tickSize: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]]
-  var tickWidth: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]]
-  var ticks: ExcludeValueRefKeepSignal[js.UndefOr[BooleanValue]]
-  var titleAlign: ExcludeValueRefKeepSignal[js.UndefOr[AlignValue]]
-  var titleAnchor: ExcludeValueRefKeepSignal[js.UndefOr[AnchorValue]]
-  var titleAngle: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]]
-  var titleBaseline: ExcludeValueRefKeepSignal[js.UndefOr[TextBaselineValue]]
-  var titleColor: ExcludeValueRefKeepSignal[js.UndefOr[ColorValue]]
-  var titleFont: ExcludeValueRefKeepSignal[js.UndefOr[StringValue]]
-  var titleFontSize: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]]
-  var titleFontStyle: ExcludeValueRefKeepSignal[js.UndefOr[FontStyleValue]]
-  var titleFontWeight: ExcludeValueRefKeepSignal[js.UndefOr[FontWeightValue]]
-  var titleLimit: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]]
-  var titleLineHeight: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]]
-  var titleOpacity: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]]
-  var titlePadding: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]]
-  var titleX: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]]
-  var titleY: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]]
-  var translate: ExcludeValueRefKeepSignal[js.UndefOr[Double]]
+  var bandPosition: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+  var domain: (Exclude[js.UndefOr[Boolean], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[Boolean]]
+  var domainColor: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
+  var domainDash: (Exclude[js.UndefOr[DashArrayValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[DashArrayValue]]
+  var domainDashOffset: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+  var domainOpacity: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+  var domainWidth: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+  var grid: (Exclude[js.UndefOr[Boolean], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[Boolean]]
+  var gridColor: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
+  var gridDash: (Exclude[js.UndefOr[DashArrayValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[DashArrayValue]]
+  var gridDashOffset: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+  var gridOpacity: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+  var gridWidth: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+  var labelAlign: (Exclude[js.UndefOr[AlignValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[AlignValue]]
+  var labelAngle: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+  var labelBaseline: (Exclude[js.UndefOr[TextBaselineValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[TextBaselineValue]]
+  var labelBound: (Exclude[
+    js.UndefOr[Double | Boolean | SignalRef], 
+    ScaledValueRef[_] | NumericValueRef | ColorValueRef
+  ]) | (KeepSignal[js.UndefOr[Double | Boolean | SignalRef]])
+  var labelColor: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
+  var labelFlush: (Exclude[
+    js.UndefOr[Double | Boolean | SignalRef], 
+    ScaledValueRef[_] | NumericValueRef | ColorValueRef
+  ]) | (KeepSignal[js.UndefOr[Double | Boolean | SignalRef]])
+  var labelFlushOffset: (Exclude[
+    js.UndefOr[Double | SignalRef], 
+    ScaledValueRef[_] | NumericValueRef | ColorValueRef
+  ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
+  var labelFont: (Exclude[js.UndefOr[StringValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[StringValue]]
+  var labelFontSize: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+  var labelFontStyle: (Exclude[js.UndefOr[FontStyleValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[FontStyleValue]]
+  var labelFontWeight: (Exclude[js.UndefOr[FontWeightValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[FontWeightValue]]
+  var labelLimit: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+  var labelLineHeight: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+  var labelOffset: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+  var labelOpacity: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+  var labelOverlap: (Exclude[
+    js.UndefOr[LabelOverlap | SignalRef], 
+    ScaledValueRef[_] | NumericValueRef | ColorValueRef
+  ]) | (KeepSignal[js.UndefOr[LabelOverlap | SignalRef]])
+  var labelPadding: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+  var labelSeparation: (Exclude[
+    js.UndefOr[Double | SignalRef], 
+    ScaledValueRef[_] | NumericValueRef | ColorValueRef
+  ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
+  var labels: (Exclude[js.UndefOr[Boolean], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[Boolean]]
+  var maxExtent: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+  var minExtent: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+  var tickBand: (Exclude[
+    js.UndefOr[center | extent | SignalRef], 
+    ScaledValueRef[_] | NumericValueRef | ColorValueRef
+  ]) | (KeepSignal[js.UndefOr[center | extent | SignalRef]])
+  var tickColor: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
+  var tickDash: (Exclude[js.UndefOr[DashArrayValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[DashArrayValue]]
+  var tickDashOffset: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+  var tickExtra: (Exclude[js.UndefOr[BooleanValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[BooleanValue]]
+  var tickOffset: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+  var tickOpacity: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+  var tickRound: (Exclude[js.UndefOr[BooleanValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[BooleanValue]]
+  var tickSize: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+  var tickWidth: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+  var ticks: (Exclude[js.UndefOr[BooleanValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[BooleanValue]]
+  var titleAlign: (Exclude[js.UndefOr[AlignValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[AlignValue]]
+  var titleAnchor: (Exclude[js.UndefOr[AnchorValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[AnchorValue]]
+  var titleAngle: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+  var titleBaseline: (Exclude[js.UndefOr[TextBaselineValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[TextBaselineValue]]
+  var titleColor: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
+  var titleFont: (Exclude[js.UndefOr[StringValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[StringValue]]
+  var titleFontSize: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+  var titleFontStyle: (Exclude[js.UndefOr[FontStyleValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[FontStyleValue]]
+  var titleFontWeight: (Exclude[js.UndefOr[FontWeightValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[FontWeightValue]]
+  var titleLimit: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+  var titleLineHeight: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+  var titleOpacity: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+  var titlePadding: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+  var titleX: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+  var titleY: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+  var translate: (Exclude[js.UndefOr[Double], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[Double]]
 }
 
 object AxisConfig {
   @scala.inline
   def apply(
-    bandPosition: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]] = null,
-    domain: ExcludeValueRefKeepSignal[js.UndefOr[Boolean]] = null,
-    domainColor: ExcludeValueRefKeepSignal[js.UndefOr[ColorValue]] = null,
-    domainDash: ExcludeValueRefKeepSignal[js.UndefOr[DashArrayValue]] = null,
-    domainDashOffset: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]] = null,
-    domainOpacity: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]] = null,
-    domainWidth: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]] = null,
-    grid: ExcludeValueRefKeepSignal[js.UndefOr[Boolean]] = null,
-    gridColor: ExcludeValueRefKeepSignal[js.UndefOr[ColorValue]] = null,
-    gridDash: ExcludeValueRefKeepSignal[js.UndefOr[DashArrayValue]] = null,
-    gridDashOffset: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]] = null,
-    gridOpacity: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]] = null,
-    gridWidth: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]] = null,
-    labelAlign: ExcludeValueRefKeepSignal[js.UndefOr[AlignValue]] = null,
-    labelAngle: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]] = null,
-    labelBaseline: ExcludeValueRefKeepSignal[js.UndefOr[TextBaselineValue]] = null,
-    labelBound: ExcludeValueRefKeepSignal[js.UndefOr[Double | Boolean | SignalRef]] = null,
-    labelColor: ExcludeValueRefKeepSignal[js.UndefOr[ColorValue]] = null,
-    labelFlush: ExcludeValueRefKeepSignal[js.UndefOr[Double | Boolean | SignalRef]] = null,
-    labelFlushOffset: ExcludeValueRefKeepSignal[js.UndefOr[Double | SignalRef]] = null,
-    labelFont: ExcludeValueRefKeepSignal[js.UndefOr[StringValue]] = null,
-    labelFontSize: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]] = null,
-    labelFontStyle: ExcludeValueRefKeepSignal[js.UndefOr[FontStyleValue]] = null,
-    labelFontWeight: ExcludeValueRefKeepSignal[js.UndefOr[FontWeightValue]] = null,
-    labelLimit: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]] = null,
-    labelLineHeight: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]] = null,
-    labelOffset: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]] = null,
-    labelOpacity: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]] = null,
-    labelOverlap: ExcludeValueRefKeepSignal[js.UndefOr[LabelOverlap | SignalRef]] = null,
-    labelPadding: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]] = null,
-    labelSeparation: ExcludeValueRefKeepSignal[js.UndefOr[Double | SignalRef]] = null,
-    labels: ExcludeValueRefKeepSignal[js.UndefOr[Boolean]] = null,
-    maxExtent: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]] = null,
-    minExtent: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]] = null,
-    tickBand: ExcludeValueRefKeepSignal[js.UndefOr[center | extent | SignalRef]] = null,
-    tickColor: ExcludeValueRefKeepSignal[js.UndefOr[ColorValue]] = null,
-    tickDash: ExcludeValueRefKeepSignal[js.UndefOr[DashArrayValue]] = null,
-    tickDashOffset: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]] = null,
-    tickExtra: ExcludeValueRefKeepSignal[js.UndefOr[BooleanValue]] = null,
-    tickOffset: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]] = null,
-    tickOpacity: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]] = null,
-    tickRound: ExcludeValueRefKeepSignal[js.UndefOr[BooleanValue]] = null,
-    tickSize: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]] = null,
-    tickWidth: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]] = null,
-    ticks: ExcludeValueRefKeepSignal[js.UndefOr[BooleanValue]] = null,
-    titleAlign: ExcludeValueRefKeepSignal[js.UndefOr[AlignValue]] = null,
-    titleAnchor: ExcludeValueRefKeepSignal[js.UndefOr[AnchorValue]] = null,
-    titleAngle: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]] = null,
-    titleBaseline: ExcludeValueRefKeepSignal[js.UndefOr[TextBaselineValue]] = null,
-    titleColor: ExcludeValueRefKeepSignal[js.UndefOr[ColorValue]] = null,
-    titleFont: ExcludeValueRefKeepSignal[js.UndefOr[StringValue]] = null,
-    titleFontSize: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]] = null,
-    titleFontStyle: ExcludeValueRefKeepSignal[js.UndefOr[FontStyleValue]] = null,
-    titleFontWeight: ExcludeValueRefKeepSignal[js.UndefOr[FontWeightValue]] = null,
-    titleLimit: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]] = null,
-    titleLineHeight: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]] = null,
-    titleOpacity: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]] = null,
-    titlePadding: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]] = null,
-    titleX: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]] = null,
-    titleY: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]] = null,
-    translate: ExcludeValueRefKeepSignal[js.UndefOr[Double]] = null
+    bandPosition: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null,
+    domain: (Exclude[js.UndefOr[Boolean], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[Boolean]] = null,
+    domainColor: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]] = null,
+    domainDash: (Exclude[js.UndefOr[DashArrayValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[DashArrayValue]] = null,
+    domainDashOffset: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null,
+    domainOpacity: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null,
+    domainWidth: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null,
+    grid: (Exclude[js.UndefOr[Boolean], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[Boolean]] = null,
+    gridColor: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]] = null,
+    gridDash: (Exclude[js.UndefOr[DashArrayValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[DashArrayValue]] = null,
+    gridDashOffset: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null,
+    gridOpacity: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null,
+    gridWidth: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null,
+    labelAlign: (Exclude[js.UndefOr[AlignValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[AlignValue]] = null,
+    labelAngle: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null,
+    labelBaseline: (Exclude[js.UndefOr[TextBaselineValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[TextBaselineValue]] = null,
+    labelBound: (Exclude[
+      js.UndefOr[Double | Boolean | SignalRef], 
+      ScaledValueRef[_] | NumericValueRef | ColorValueRef
+    ]) | (KeepSignal[js.UndefOr[Double | Boolean | SignalRef]]) = null,
+    labelColor: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]] = null,
+    labelFlush: (Exclude[
+      js.UndefOr[Double | Boolean | SignalRef], 
+      ScaledValueRef[_] | NumericValueRef | ColorValueRef
+    ]) | (KeepSignal[js.UndefOr[Double | Boolean | SignalRef]]) = null,
+    labelFlushOffset: (Exclude[
+      js.UndefOr[Double | SignalRef], 
+      ScaledValueRef[_] | NumericValueRef | ColorValueRef
+    ]) | (KeepSignal[js.UndefOr[Double | SignalRef]]) = null,
+    labelFont: (Exclude[js.UndefOr[StringValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[StringValue]] = null,
+    labelFontSize: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null,
+    labelFontStyle: (Exclude[js.UndefOr[FontStyleValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[FontStyleValue]] = null,
+    labelFontWeight: (Exclude[js.UndefOr[FontWeightValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[FontWeightValue]] = null,
+    labelLimit: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null,
+    labelLineHeight: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null,
+    labelOffset: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null,
+    labelOpacity: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null,
+    labelOverlap: (Exclude[
+      js.UndefOr[LabelOverlap | SignalRef], 
+      ScaledValueRef[_] | NumericValueRef | ColorValueRef
+    ]) | (KeepSignal[js.UndefOr[LabelOverlap | SignalRef]]) = null,
+    labelPadding: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null,
+    labelSeparation: (Exclude[
+      js.UndefOr[Double | SignalRef], 
+      ScaledValueRef[_] | NumericValueRef | ColorValueRef
+    ]) | (KeepSignal[js.UndefOr[Double | SignalRef]]) = null,
+    labels: (Exclude[js.UndefOr[Boolean], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[Boolean]] = null,
+    maxExtent: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null,
+    minExtent: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null,
+    tickBand: (Exclude[
+      js.UndefOr[center | extent | SignalRef], 
+      ScaledValueRef[_] | NumericValueRef | ColorValueRef
+    ]) | (KeepSignal[js.UndefOr[center | extent | SignalRef]]) = null,
+    tickColor: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]] = null,
+    tickDash: (Exclude[js.UndefOr[DashArrayValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[DashArrayValue]] = null,
+    tickDashOffset: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null,
+    tickExtra: (Exclude[js.UndefOr[BooleanValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[BooleanValue]] = null,
+    tickOffset: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null,
+    tickOpacity: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null,
+    tickRound: (Exclude[js.UndefOr[BooleanValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[BooleanValue]] = null,
+    tickSize: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null,
+    tickWidth: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null,
+    ticks: (Exclude[js.UndefOr[BooleanValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[BooleanValue]] = null,
+    titleAlign: (Exclude[js.UndefOr[AlignValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[AlignValue]] = null,
+    titleAnchor: (Exclude[js.UndefOr[AnchorValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[AnchorValue]] = null,
+    titleAngle: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null,
+    titleBaseline: (Exclude[js.UndefOr[TextBaselineValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[TextBaselineValue]] = null,
+    titleColor: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]] = null,
+    titleFont: (Exclude[js.UndefOr[StringValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[StringValue]] = null,
+    titleFontSize: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null,
+    titleFontStyle: (Exclude[js.UndefOr[FontStyleValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[FontStyleValue]] = null,
+    titleFontWeight: (Exclude[js.UndefOr[FontWeightValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[FontWeightValue]] = null,
+    titleLimit: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null,
+    titleLineHeight: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null,
+    titleOpacity: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null,
+    titlePadding: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null,
+    titleX: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null,
+    titleY: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null,
+    translate: (Exclude[js.UndefOr[Double], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[Double]] = null
   ): AxisConfig = {
     val __obj = js.Dynamic.literal()
     if (bandPosition != null) __obj.updateDynamic("bandPosition")(bandPosition.asInstanceOf[js.Any])

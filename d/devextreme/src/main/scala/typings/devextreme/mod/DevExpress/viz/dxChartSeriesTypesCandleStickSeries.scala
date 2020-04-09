@@ -14,24 +14,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Describes settings supported by a series of the candlestick type. */
+/** @name dxChartSeriesTypes.CandleStickSeries */
 trait dxChartSeriesTypesCandleStickSeries extends dxChartSeriesTypesCommonSeries {
-  /** Configures data aggregation for the series. */
+  /** @name dxChartSeriesTypes.CandleStickSeries.aggregation */
   @JSName("aggregation")
   var aggregation_dxChartSeriesTypesCandleStickSeries: js.UndefOr[dxChartSeriesTypesCandleStickSeriesAggregation] = js.undefined
-  /** Specifies series elements to be highlighted when a user pauses on a series. */
+  /** @name dxChartSeriesTypes.CandleStickSeries.hoverMode */
   @JSName("hoverMode")
   var hoverMode_dxChartSeriesTypesCandleStickSeries: js.UndefOr[onlyPoint | allSeriesPoints | allArgumentPoints | none] = js.undefined
-  /** Configures the appearance adopted by the series when a user points to it. */
+  /** @name dxChartSeriesTypes.CandleStickSeries.hoverStyle */
   @JSName("hoverStyle")
   var hoverStyle_dxChartSeriesTypesCandleStickSeries: js.UndefOr[dxChartSeriesTypesCandleStickSeriesHoverStyle] = js.undefined
-  /** Configures point labels. */
+  /** @name dxChartSeriesTypes.CandleStickSeries.label */
   @JSName("label")
   var label_dxChartSeriesTypesCandleStickSeries: js.UndefOr[dxChartSeriesTypesCandleStickSeriesLabel] = js.undefined
-  /** Specifies series elements to be highlighted when a user selects a point. */
+  /** @name dxChartSeriesTypes.CandleStickSeries.selectionMode */
   @JSName("selectionMode")
   var selectionMode_dxChartSeriesTypesCandleStickSeries: js.UndefOr[onlyPoint | allSeriesPoints | allArgumentPoints | none] = js.undefined
-  /** Configures the appearance adopted by the series when a user selects it. */
+  /** @name dxChartSeriesTypes.CandleStickSeries.selectionStyle */
   @JSName("selectionStyle")
   var selectionStyle_dxChartSeriesTypesCandleStickSeries: js.UndefOr[dxChartSeriesTypesCandleStickSeriesSelectionStyle] = js.undefined
 }

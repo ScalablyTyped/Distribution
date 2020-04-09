@@ -1,6 +1,5 @@
 package typings.validator
 
-import typings.validator.mod.validator.HashAlgorithm
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +12,7 @@ object isHashMod extends js.Object {
     *
     * @param algorithm - HashAlgorithm
     */
-  def default(str: String, algorithm: HashAlgorithm): Boolean = js.native
+  def default(str: String, algorithm: typings.validator.mod.validator.HashAlgorithm): Boolean = js.native
+  type HashAlgorithm = typings.validator.mod.validator.HashAlgorithm
 }
 

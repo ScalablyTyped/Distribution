@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxTemplateOptions extends js.Object {
-  /** Specifies the name of the template. */
+  /** @name dxTemplate.Options.name */
   var name: js.UndefOr[String] = js.undefined
 }
 

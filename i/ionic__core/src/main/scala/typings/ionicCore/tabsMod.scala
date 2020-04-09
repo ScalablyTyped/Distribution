@@ -4,7 +4,7 @@ import typings.ionicCore.componentsMod._Global_.HTMLIonTabElement
 import typings.ionicCore.componentsMod._Global_.HTMLIonTabsElement
 import typings.ionicCore.interfaceMod.NavOutlet
 import typings.ionicCore.interfaceMod.RouteWrite
-import typings.ionicCore.stencilCoreMod.EventEmitter
+import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

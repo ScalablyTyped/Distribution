@@ -1,5 +1,8 @@
 package typings.vegaTypings.encodeMod
 
+import typings.vegaTypings.configMod.Cursor
+import typings.vegaTypings.configMod.StrokeCap
+import typings.vegaTypings.configMod.StrokeJoin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +21,7 @@ object ArcEncodeEntry {
   def apply(
     blend: ProductionRule[ScaledValueRef[Blend]] = null,
     cornerRadius: ProductionRule[NumericValueRef] = null,
-    cursor: ProductionRule[StringValueRef] = null,
+    cursor: ProductionRule[ScaledValueRef[Cursor]] = null,
     endAngle: ProductionRule[NumericValueRef] = null,
     fill: ProductionRule[ColorValueRef] = null,
     fillOpacity: ProductionRule[NumericValueRef] = null,
@@ -29,10 +32,10 @@ object ArcEncodeEntry {
     padAngle: ProductionRule[NumericValueRef] = null,
     startAngle: ProductionRule[NumericValueRef] = null,
     stroke: ProductionRule[ColorValueRef] = null,
-    strokeCap: ProductionRule[StringValueRef] = null,
+    strokeCap: ProductionRule[ScaledValueRef[StrokeCap]] = null,
     strokeDash: ProductionRule[ScaledValueRef[js.Array[Double]]] = null,
     strokeDashOffset: ProductionRule[NumericValueRef] = null,
-    strokeJoin: ProductionRule[StringValueRef] = null,
+    strokeJoin: ProductionRule[ScaledValueRef[StrokeJoin]] = null,
     strokeMiterLimit: ProductionRule[NumericValueRef] = null,
     strokeOpacity: ProductionRule[NumericValueRef] = null,
     strokeWidth: ProductionRule[NumericValueRef] = null,

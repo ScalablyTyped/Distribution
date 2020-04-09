@@ -17,7 +17,7 @@ trait GetVpcEndpointArgs extends js.Object {
     */
   val id: js.UndefOr[String] = js.native
   /**
-    * The AWS service name of the specific VPC Endpoint to retrieve.
+    * The service name of the specific VPC Endpoint to retrieve. For AWS services the service name is usually in the form `com.amazonaws.<region>.<service>` (the SageMaker Notebook service is an exception to this rule, the service name is in the form `aws.sagemaker.<region>.notebook`).
     */
   val serviceName: js.UndefOr[String] = js.native
   /**

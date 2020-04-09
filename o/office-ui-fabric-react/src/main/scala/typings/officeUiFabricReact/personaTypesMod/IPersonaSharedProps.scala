@@ -17,6 +17,7 @@ import typings.react.mod.HTMLAttributes
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
@@ -359,7 +360,7 @@ object IPersonaSharedProps {
     onRenderInitials: (/* props */ js.UndefOr[IPersonaSharedProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IPersonaSharedProps], Element | Null]]) => Element | Null = null,
     onRenderPersonaCoin: (/* props */ js.UndefOr[IPersonaSharedProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IPersonaSharedProps], Element | Null]]) => Element | Null = null,
     onReset: FormEvent[PersonaBase | PersonaCoinBase | HTMLDivElement] => Unit = null,
-    onScroll: UIEvent[PersonaBase | PersonaCoinBase | HTMLDivElement] => Unit = null,
+    onScroll: UIEvent[PersonaBase | PersonaCoinBase | HTMLDivElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[PersonaBase | PersonaCoinBase | HTMLDivElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[PersonaBase | PersonaCoinBase | HTMLDivElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[PersonaBase | PersonaCoinBase | HTMLDivElement, Event_] => Unit = null,

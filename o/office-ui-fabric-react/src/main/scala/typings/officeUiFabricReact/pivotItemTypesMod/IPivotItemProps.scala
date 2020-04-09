@@ -15,6 +15,7 @@ import typings.react.mod.HTMLAttributes
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
@@ -278,7 +279,7 @@ object IPivotItemProps {
     onRateChange: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onRenderItemLink: (/* props */ js.UndefOr[IPivotItemProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IPivotItemProps], Element | Null]]) => Element | Null = null,
     onReset: FormEvent[HTMLDivElement] => Unit = null,
-    onScroll: UIEvent[HTMLDivElement] => Unit = null,
+    onScroll: UIEvent[HTMLDivElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,

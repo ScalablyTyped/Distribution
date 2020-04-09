@@ -15,6 +15,7 @@ package object managedblockchainMod {
     - java.lang.String
   */
   type Edition = typings.awsSdk.managedblockchainMod._Edition | java.lang.String
+  type Enabled = scala.Boolean
   type Framework = typings.awsSdk.awsSdkStrings.HYPERLEDGER_FABRIC | java.lang.String
   type FrameworkVersionString = java.lang.String
   type InstanceTypeString = java.lang.String
@@ -35,6 +36,7 @@ package object managedblockchainMod {
     - typings.awsSdk.awsSdkStrings.CREATING
     - typings.awsSdk.awsSdkStrings.AVAILABLE
     - typings.awsSdk.awsSdkStrings.CREATE_FAILED
+    - typings.awsSdk.awsSdkStrings.UPDATING
     - typings.awsSdk.awsSdkStrings.DELETING
     - typings.awsSdk.awsSdkStrings.DELETED
     - java.lang.String
@@ -59,6 +61,7 @@ package object managedblockchainMod {
     - typings.awsSdk.awsSdkStrings.CREATING
     - typings.awsSdk.awsSdkStrings.AVAILABLE
     - typings.awsSdk.awsSdkStrings.CREATE_FAILED
+    - typings.awsSdk.awsSdkStrings.UPDATING
     - typings.awsSdk.awsSdkStrings.DELETING
     - typings.awsSdk.awsSdkStrings.DELETED
     - typings.awsSdk.awsSdkStrings.FAILED

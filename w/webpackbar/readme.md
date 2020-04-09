@@ -1,7 +1,7 @@
 
 # Scala.js typings for webpackbar
 
-Typings are for version 2.6
+Typings are for version 4.0
 
 ## Library description:
 Elegant ProgressBar and Profiler for Webpack

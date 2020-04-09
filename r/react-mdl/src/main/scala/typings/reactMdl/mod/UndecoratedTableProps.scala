@@ -15,6 +15,7 @@ import typings.react.mod.KeyboardEvent
 import typings.react.mod.LegacyRef
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
@@ -198,7 +199,7 @@ object UndecoratedTableProps {
     onProgress: SyntheticEvent[UndecoratedTable, Event_] => Unit = null,
     onRateChange: SyntheticEvent[UndecoratedTable, Event_] => Unit = null,
     onReset: FormEvent[UndecoratedTable] => Unit = null,
-    onScroll: UIEvent[UndecoratedTable] => Unit = null,
+    onScroll: UIEvent[UndecoratedTable, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[UndecoratedTable, Event_] => Unit = null,
     onSeeking: SyntheticEvent[UndecoratedTable, Event_] => Unit = null,
     onSelect: SyntheticEvent[UndecoratedTable, Event_] => Unit = null,

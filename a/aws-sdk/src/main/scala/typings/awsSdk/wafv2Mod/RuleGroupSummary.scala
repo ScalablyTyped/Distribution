@@ -11,7 +11,7 @@ trait RuleGroupSummary extends js.Object {
     */
   var ARN: js.UndefOr[ResourceArn] = js.native
   /**
-    * A friendly description of the rule group. You cannot change the description of a rule group after you create it.
+    * A description of the rule group that helps with identification. You cannot change the description of a rule group after you create it.
     */
   var Description: js.UndefOr[EntityDescription] = js.native
   /**
@@ -23,7 +23,7 @@ trait RuleGroupSummary extends js.Object {
     */
   var LockToken: js.UndefOr[typings.awsSdk.wafv2Mod.LockToken] = js.native
   /**
-    * A friendly name of the data type instance. You cannot change the name after you create the instance.
+    * The name of the data type instance. You cannot change the name after you create the instance.
     */
   var Name: js.UndefOr[EntityName] = js.native
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for rc-table
 
-Typings are for version 7.3.8
+Typings are for version 7.4.4
 
 ## Library description:
 table ui component for react

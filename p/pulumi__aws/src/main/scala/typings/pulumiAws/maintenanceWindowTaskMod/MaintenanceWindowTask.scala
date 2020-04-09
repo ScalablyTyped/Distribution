@@ -42,7 +42,7 @@ class MaintenanceWindowTask protected () extends CustomResource {
     */
   val maxErrors: Output_[String] = js.native
   /**
-    * The parameter name.
+    * The name of the maintenance window task.
     */
   val name: Output_[String] = js.native
   /**
@@ -50,7 +50,7 @@ class MaintenanceWindowTask protected () extends CustomResource {
     */
   val priority: Output_[js.UndefOr[Double]] = js.native
   /**
-    * The IAM service role to assume during task execution.
+    * The role that should be assumed when executing the task.
     */
   val serviceRoleArn: Output_[String] = js.native
   /**

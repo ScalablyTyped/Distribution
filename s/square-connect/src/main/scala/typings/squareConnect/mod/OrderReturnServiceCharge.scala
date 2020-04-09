@@ -29,7 +29,7 @@ class OrderReturnServiceCharge () extends js.Object {
     */
   var calculation_phase: js.UndefOr[String] = js.native
   /**
-    * The catalog object ID of the associated [CatalogServiceCharge](#type-catalogservicecharge).
+    * The catalog object ID of the associated `CatalogServiceCharge`.
     */
   var catalog_object_id: js.UndefOr[String] = js.native
   /**
@@ -42,13 +42,6 @@ class OrderReturnServiceCharge () extends js.Object {
     * Exactly one of `percentage` or `amount_money` should be set.
     */
   var percentage: js.UndefOr[String] = js.native
-  /**
-    * Taxes applied to the `OrderReturnServiceCharge`. By default, return-level taxes apply to `OrderReturnServiceCharge`s
-    * calculated in the `SUBTOTAL_PHASE` if `taxable` is set to `true`. On read or retrieve, this list includes both
-    * item-level taxes and any return-level taxes apportioned to this item.
-    * This field has been deprecated in favour of `applied_taxes`.
-    */
-  var return_taxes: js.UndefOr[js.Array[OrderReturnTax]] = js.native
   /**
     * `uid` of the Service Charge from the Order containing the original charge of the service charge.
     * `source_service_charge_uid` is `null` for unlinked returns.

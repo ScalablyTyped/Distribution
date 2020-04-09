@@ -11,26 +11,26 @@ trait ContactGroup extends js.Object {
     */
   var etag: js.UndefOr[String] = js.undefined
   /**
-    * The read-only name translated and formatted in the viewer's account locale
+    * Output only. The name translated and formatted in the viewer's account locale
     * or the `Accept-Language` HTTP header locale for system groups names.
     * Group names set by the owner are the same as name.
     */
   var formattedName: js.UndefOr[String] = js.undefined
-  /** The read-only contact group type. */
+  /** Output only. The contact group type. */
   var groupType: js.UndefOr[String] = js.undefined
   /**
-    * The total number of contacts in the group irrespective of max members in
+    * Output only. The total number of contacts in the group irrespective of max members in
     * specified in the request.
     */
   var memberCount: js.UndefOr[Double] = js.undefined
   /**
-    * The list of contact person resource names that are members of the contact
+    * Output only. The list of contact person resource names that are members of the contact
     * group. The field is not populated for LIST requests and can only be updated
     * through the
     * [ModifyContactGroupMembers](/people/api/rest/v1/contactgroups/members/modify).
     */
   var memberResourceNames: js.UndefOr[js.Array[String]] = js.undefined
-  /** Metadata about the contact group. */
+  /** Output only. Metadata about the contact group. */
   var metadata: js.UndefOr[ContactGroupMetadata] = js.undefined
   /**
     * The contact group name set by the group owner or a system provided name
@@ -39,7 +39,7 @@ trait ContactGroup extends js.Object {
   var name: js.UndefOr[String] = js.undefined
   /**
     * The resource name for the contact group, assigned by the server. An ASCII
-    * string, in the form of `contactGroups/`<var>contact_group_id</var>.
+    * string, in the form of `contactGroups/{contact_group_id}`.
     */
   var resourceName: js.UndefOr[String] = js.undefined
 }

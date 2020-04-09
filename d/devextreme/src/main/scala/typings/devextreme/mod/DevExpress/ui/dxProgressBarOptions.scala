@@ -16,13 +16,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxProgressBarOptions extends dxTrackBarOptions[dxProgressBar] {
-  /** A function that is executed when the value reaches the maximum. */
+  /** @name dxProgressBar.Options.onComplete */
   var onComplete: js.UndefOr[js.Function1[/* e */ AnonComponentElementEvent, _]] = js.undefined
-  /** Specifies whether or not the widget displays a progress status. */
+  /** @name dxProgressBar.Options.showStatus */
   var showStatus: js.UndefOr[Boolean] = js.undefined
-  /** Specifies a format for the progress status. */
+  /** @name dxProgressBar.Options.statusFormat */
   var statusFormat: js.UndefOr[String | (js.Function2[/* ratio */ Double, /* value */ Double, String])] = js.undefined
-  /** The current widget value. */
+  /** @name dxProgressBar.Options.value */
   @JSName("value")
   var value_dxProgressBarOptions: js.UndefOr[Double] = js.undefined
 }

@@ -11,8 +11,17 @@ trait AnalyticsApplicationReferenceDataSources extends js.Object {
     * The ARN of the Kinesis Analytics Application.
     */
   var id: js.UndefOr[Input[String]] = js.native
+  /**
+    * The S3 configuration for the reference data source. See S3 Reference below for more details.
+    */
   var s3: Input[AnalyticsApplicationReferenceDataSourcesS3] = js.native
+  /**
+    * The Schema format of the data in the streaming source. See Source Schema below for more details.
+    */
   var schema: Input[AnalyticsApplicationReferenceDataSourcesSchema] = js.native
+  /**
+    * The in-application Table Name.
+    */
   var tableName: Input[String] = js.native
 }
 

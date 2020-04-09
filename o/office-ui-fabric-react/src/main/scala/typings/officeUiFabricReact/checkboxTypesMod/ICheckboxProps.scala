@@ -17,6 +17,7 @@ import typings.react.mod.FormEvent
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
@@ -345,7 +346,7 @@ object ICheckboxProps {
     onRateChange: SyntheticEvent[HTMLElement | HTMLInputElement, Event_] => Unit = null,
     onRenderLabel: (/* props */ js.UndefOr[ICheckboxProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[ICheckboxProps], Element | Null]]) => Element | Null = null,
     onReset: FormEvent[HTMLElement | HTMLInputElement] => Unit = null,
-    onScroll: UIEvent[HTMLElement | HTMLInputElement] => Unit = null,
+    onScroll: UIEvent[HTMLElement | HTMLInputElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[HTMLElement | HTMLInputElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[HTMLElement | HTMLInputElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[HTMLElement | HTMLInputElement, Event_] => Unit = null,

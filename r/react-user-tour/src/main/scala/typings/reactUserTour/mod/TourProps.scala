@@ -12,6 +12,7 @@ import typings.react.mod.HTMLAttributes
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
@@ -316,7 +317,7 @@ object TourProps {
     onProgress: SyntheticEvent[js.Any, Event_] => Unit = null,
     onRateChange: SyntheticEvent[js.Any, Event_] => Unit = null,
     onReset: FormEvent[js.Any] => Unit = null,
-    onScroll: UIEvent[js.Any] => Unit = null,
+    onScroll: UIEvent[js.Any, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[js.Any, Event_] => Unit = null,
     onSeeking: SyntheticEvent[js.Any, Event_] => Unit = null,
     onSelect: SyntheticEvent[js.Any, Event_] => Unit = null,

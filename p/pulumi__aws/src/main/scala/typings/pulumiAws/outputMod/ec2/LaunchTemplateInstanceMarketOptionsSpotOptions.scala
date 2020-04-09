@@ -6,10 +6,26 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait LaunchTemplateInstanceMarketOptionsSpotOptions extends js.Object {
+  /**
+    * The required duration in minutes. This value must be a multiple of 60.
+    */
   var blockDurationMinutes: js.UndefOr[Double] = js.native
+  /**
+    * The behavior when a Spot Instance is interrupted. Can be `hibernate`,
+    * `stop`, or `terminate`. (Default: `terminate`).
+    */
   var instanceInterruptionBehavior: js.UndefOr[String] = js.native
+  /**
+    * The maximum hourly price you're willing to pay for the Spot Instances.
+    */
   var maxPrice: js.UndefOr[String] = js.native
+  /**
+    * The Spot Instance request type. Can be `one-time`, or `persistent`.
+    */
   var spotInstanceType: js.UndefOr[String] = js.native
+  /**
+    * The end date of the request.
+    */
   var validUntil: String = js.native
 }
 

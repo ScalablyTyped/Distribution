@@ -1,6 +1,5 @@
 package typings.expect.utilsMod
 
-import typings.expect.expectBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,6 +7,6 @@ import scala.scalajs.js.annotation._
 @JSImport("expect/build/utils", "typeEquality")
 @js.native
 object typeEquality extends js.Object {
-  def apply(a: js.Any, b: js.Any): js.UndefOr[`false`] = js.native
+  def apply(a: js.Any, b: js.Any): js.UndefOr[Boolean] = js.native
 }
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 trait ItemDefinition extends PropertyDefinition {
   var events: js.UndefOr[js.Array[EventDefinition]] = js.undefined
   var request: js.UndefOr[RequestDefinition] = js.undefined
-  var responses: js.UndefOr[js.Array[ResponseDefinition]] = js.undefined
+  var response: js.UndefOr[js.Array[ResponseDefinition]] = js.undefined
 }
 
 object ItemDefinition {
@@ -19,7 +19,7 @@ object ItemDefinition {
     id: String = null,
     name: String = null,
     request: RequestDefinition = null,
-    responses: js.Array[ResponseDefinition] = null
+    response: js.Array[ResponseDefinition] = null
   ): ItemDefinition = {
     val __obj = js.Dynamic.literal()
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
@@ -28,7 +28,7 @@ object ItemDefinition {
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
-    if (responses != null) __obj.updateDynamic("responses")(responses.asInstanceOf[js.Any])
+    if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemDefinition]
   }
 }

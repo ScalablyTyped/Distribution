@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 /**
   * Represents the categories on an item.
   * 
-  * In Outlook, a user can group messages and appointments by using a category to color-code them.
+  * In Outlook, a user can tag messages and appointments by using a category to color-code them.
   * The user defines {@link Office.MasterCategories | categories in a master list} on their mailbox.
   * They can then apply one or more categories to an item.
   *
-  * **Important**: In Outlook on the web, you can't use the API to manage categories on a message in Read mode.
+  * **Important**: In Outlook on the web, you can't use the API to manage categories applied to a message in Compose mode.
   *
   * [Api set: Mailbox 1.8]
   *

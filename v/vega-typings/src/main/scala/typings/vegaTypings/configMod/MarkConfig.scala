@@ -49,7 +49,7 @@ trait MarkConfig extends js.Object {
   var blend: js.UndefOr[Blend] = js.undefined
   // ---------- Corner Radius: Bar, Tick, Rect ----------
   /**
-    * The radius in pixels of rounded rectangle corners.
+    * The radius in pixels of rounded rectangle or arc corners.
     *
     * __Default value:__ `0`
     */
@@ -103,6 +103,10 @@ trait MarkConfig extends js.Object {
     */
   var ellipsis: js.UndefOr[String] = js.undefined
   /**
+    * The start angle in radians for arc marks.
+    */
+  var endAngle: js.UndefOr[Double | SignalRef] = js.undefined
+  /**
     * Default fill color.
     *
     * __Default value:__ (None)
@@ -149,6 +153,13 @@ trait MarkConfig extends js.Object {
     * @format uri
     */
   var href: js.UndefOr[String | SignalRef] = js.undefined
+  /**
+    * The inner radius in pixels of arc marks.
+    *
+    * @minimum 0
+    * __Default value:__ `0`
+    */
+  var innerRadius: js.UndefOr[Double | SignalRef] = js.undefined
   // ---------- Interpolation: Line / area ----------
   /**
     * The line interpolation method to use for line and area marks. One of the following:
@@ -194,6 +205,13 @@ trait MarkConfig extends js.Object {
     */
   var orient: js.UndefOr[Orientation | SignalRef] = js.undefined
   /**
+    * The outer radius in pixels of arc marks.
+    *
+    * @minimum 0
+    * __Default value:__ `0`
+    */
+  var outerRadius: js.UndefOr[Double | SignalRef] = js.undefined
+  /**
     * Polar coordinate radial offset, in pixels, of the text label from the origin determined by the `x` and `y` properties.
     *
     * @minimum 0
@@ -218,6 +236,10 @@ trait MarkConfig extends js.Object {
     */
   var size: js.UndefOr[Double | SignalRef] = js.undefined
   /**
+    * The start angle in radians for arc marks.
+    */
+  var startAngle: js.UndefOr[Double | SignalRef] = js.undefined
+  /**
     * Default stroke color.
     *
     * __Default value:__ (None)
@@ -230,7 +252,7 @@ trait MarkConfig extends js.Object {
     * __Default value:__ `"butt"`
     *
     */
-  var strokeCap: js.UndefOr[String | SignalRef] = js.undefined
+  var strokeCap: js.UndefOr[StrokeCap | SignalRef] = js.undefined
   /**
     * An array of alternating stroke, space lengths for creating dashed or dotted lines.
     */
@@ -245,7 +267,7 @@ trait MarkConfig extends js.Object {
     * __Default value:__ `"miter"`
     *
     */
-  var strokeJoin: js.UndefOr[String | SignalRef] = js.undefined
+  var strokeJoin: js.UndefOr[StrokeJoin | SignalRef] = js.undefined
   /**
     * The miter limit at which to bevel a line join.
     */
@@ -310,6 +332,7 @@ object MarkConfig {
     dx: Double | SignalRef = null,
     dy: Double | SignalRef = null,
     ellipsis: String = null,
+    endAngle: Double | SignalRef = null,
     fill: Color | Gradient | SignalRef = null,
     fillOpacity: Double | SignalRef = null,
     font: String | SignalRef = null,
@@ -318,20 +341,23 @@ object MarkConfig {
     fontWeight: FontWeight | SignalRef = null,
     height: Double | SignalRef = null,
     href: String | SignalRef = null,
+    innerRadius: Double | SignalRef = null,
     interpolate: Interpolate | SignalRef = null,
     limit: Double | SignalRef = null,
     lineBreak: String | SignalRef = null,
     lineHeight: Double | SignalRef = null,
     opacity: Double | SignalRef = null,
     orient: Orientation | SignalRef = null,
+    outerRadius: Double | SignalRef = null,
     radius: Double | SignalRef = null,
     shape: SymbolShape | String | SignalRef = null,
     size: Double | SignalRef = null,
+    startAngle: Double | SignalRef = null,
     stroke: Color | Gradient | SignalRef = null,
-    strokeCap: String | SignalRef = null,
+    strokeCap: StrokeCap | SignalRef = null,
     strokeDash: js.Array[Double] | SignalRef = null,
     strokeDashOffset: Double | SignalRef = null,
-    strokeJoin: String | SignalRef = null,
+    strokeJoin: StrokeJoin | SignalRef = null,
     strokeMiterLimit: Double | SignalRef = null,
     strokeOffset: Double | SignalRef = null,
     strokeOpacity: Double | SignalRef = null,
@@ -358,6 +384,7 @@ object MarkConfig {
     if (dx != null) __obj.updateDynamic("dx")(dx.asInstanceOf[js.Any])
     if (dy != null) __obj.updateDynamic("dy")(dy.asInstanceOf[js.Any])
     if (ellipsis != null) __obj.updateDynamic("ellipsis")(ellipsis.asInstanceOf[js.Any])
+    if (endAngle != null) __obj.updateDynamic("endAngle")(endAngle.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
     if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
@@ -366,15 +393,18 @@ object MarkConfig {
     if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
+    if (innerRadius != null) __obj.updateDynamic("innerRadius")(innerRadius.asInstanceOf[js.Any])
     if (interpolate != null) __obj.updateDynamic("interpolate")(interpolate.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (lineBreak != null) __obj.updateDynamic("lineBreak")(lineBreak.asInstanceOf[js.Any])
     if (lineHeight != null) __obj.updateDynamic("lineHeight")(lineHeight.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (orient != null) __obj.updateDynamic("orient")(orient.asInstanceOf[js.Any])
+    if (outerRadius != null) __obj.updateDynamic("outerRadius")(outerRadius.asInstanceOf[js.Any])
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
     if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (startAngle != null) __obj.updateDynamic("startAngle")(startAngle.asInstanceOf[js.Any])
     if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
     if (strokeCap != null) __obj.updateDynamic("strokeCap")(strokeCap.asInstanceOf[js.Any])
     if (strokeDash != null) __obj.updateDynamic("strokeDash")(strokeDash.asInstanceOf[js.Any])

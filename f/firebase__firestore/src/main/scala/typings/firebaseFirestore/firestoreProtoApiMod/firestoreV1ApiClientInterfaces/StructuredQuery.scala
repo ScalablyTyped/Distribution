@@ -1,5 +1,6 @@
 package typings.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces
 
+import typings.firebaseFirestore.AnonValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait StructuredQuery extends js.Object {
   var endAt: js.UndefOr[Cursor] = js.undefined
   var from: js.UndefOr[js.Array[CollectionSelector]] = js.undefined
-  var limit: js.UndefOr[Double] = js.undefined
+  var limit: js.UndefOr[Double | AnonValue] = js.undefined
   var offset: js.UndefOr[Double] = js.undefined
   var orderBy: js.UndefOr[js.Array[Order]] = js.undefined
   var select: js.UndefOr[Projection] = js.undefined
@@ -20,7 +21,7 @@ object StructuredQuery {
   def apply(
     endAt: Cursor = null,
     from: js.Array[CollectionSelector] = null,
-    limit: Int | Double = null,
+    limit: Double | AnonValue = null,
     offset: Int | Double = null,
     orderBy: js.Array[Order] = null,
     select: Projection = null,

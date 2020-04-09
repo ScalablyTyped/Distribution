@@ -1,5 +1,6 @@
 package typings.downshift.mod
 
+import typings.std.HTMLElement
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -33,6 +34,7 @@ trait UseComboboxProps[Item] extends js.Object {
   var onIsOpenChange: js.UndefOr[js.Function1[/* changes */ Partial[UseComboboxState[Item]], Unit]] = js.undefined
   var onSelectedItemChange: js.UndefOr[js.Function1[/* changes */ Partial[UseComboboxState[Item]], Unit]] = js.undefined
   var onStateChange: js.UndefOr[js.Function1[/* changes */ Partial[UseComboboxState[Item]], Unit]] = js.undefined
+  var scrollIntoView: js.UndefOr[js.Function2[/* node */ HTMLElement, /* menuNode */ HTMLElement, Unit]] = js.undefined
   var selectedItem: js.UndefOr[Item] = js.undefined
   var stateReducer: js.UndefOr[
     js.Function2[
@@ -74,6 +76,7 @@ object UseComboboxProps {
     onIsOpenChange: /* changes */ Partial[UseComboboxState[Item]] => Unit = null,
     onSelectedItemChange: /* changes */ Partial[UseComboboxState[Item]] => Unit = null,
     onStateChange: /* changes */ Partial[UseComboboxState[Item]] => Unit = null,
+    scrollIntoView: (/* node */ HTMLElement, /* menuNode */ HTMLElement) => Unit = null,
     selectedItem: Item = null,
     stateReducer: (/* state */ UseComboboxState[Item], /* actionAndChanges */ UseComboboxStateChangeOptions[Item]) => UseComboboxState[Item] = null,
     toggleButtonId: String = null
@@ -105,6 +108,7 @@ object UseComboboxProps {
     if (onIsOpenChange != null) __obj.updateDynamic("onIsOpenChange")(js.Any.fromFunction1(onIsOpenChange))
     if (onSelectedItemChange != null) __obj.updateDynamic("onSelectedItemChange")(js.Any.fromFunction1(onSelectedItemChange))
     if (onStateChange != null) __obj.updateDynamic("onStateChange")(js.Any.fromFunction1(onStateChange))
+    if (scrollIntoView != null) __obj.updateDynamic("scrollIntoView")(js.Any.fromFunction2(scrollIntoView))
     if (selectedItem != null) __obj.updateDynamic("selectedItem")(selectedItem.asInstanceOf[js.Any])
     if (stateReducer != null) __obj.updateDynamic("stateReducer")(js.Any.fromFunction2(stateReducer))
     if (toggleButtonId != null) __obj.updateDynamic("toggleButtonId")(toggleButtonId.asInstanceOf[js.Any])

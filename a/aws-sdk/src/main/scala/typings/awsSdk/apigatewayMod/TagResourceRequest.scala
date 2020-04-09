@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TagResourceRequest extends js.Object {
   /**
-    * [Required] The ARN of a resource that can be tagged. The resource ARN must be URL-encoded.
+    * [Required] The ARN of a resource that can be tagged.
     */
   var resourceArn: String = js.native
   /**

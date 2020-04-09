@@ -43,6 +43,7 @@ package object mod {
   ]
   /** @deprecated use webpack.Options.Performance */
   type PerformanceOptions = typings.webpack.mod.Options.Performance
+  type ProgressPlugin = typings.webpack.mod.ProgressPlugin_
   /**
     * @deprecated Use RuleSetRule instead
     */

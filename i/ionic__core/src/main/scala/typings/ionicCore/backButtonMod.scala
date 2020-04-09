@@ -3,13 +3,11 @@ package typings.ionicCore
 import typings.ionicCore.elementInterfaceMod.ButtonInterface
 import typings.ionicCore.ionicCoreStrings.bounded
 import typings.ionicCore.ionicCoreStrings.button
-import typings.ionicCore.ionicCoreStrings.ios
-import typings.ionicCore.ionicCoreStrings.md
 import typings.ionicCore.ionicCoreStrings.reset
 import typings.ionicCore.ionicCoreStrings.submit
 import typings.ionicCore.ionicCoreStrings.unbounded
 import typings.ionicCore.mod.Color
-import typings.ionicCore.stencilCoreMod.ComponentInterface
+import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -39,7 +37,6 @@ object backButtonMod extends js.Object {
       * The icon name to use for the back button.
       */
     var icon: js.UndefOr[String | Null] = js.native
-    var mode: ios | md = js.native
     var onClick: js.Any = js.native
     /**
       * The text to display in the back button.

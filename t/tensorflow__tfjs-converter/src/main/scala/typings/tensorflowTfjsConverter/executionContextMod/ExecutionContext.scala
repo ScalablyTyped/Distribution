@@ -9,7 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@tensorflow/tfjs-converter/dist/src/executor/execution_context", "ExecutionContext")
+@JSImport("@tensorflow/tfjs-converter/dist/executor/execution_context", "ExecutionContext")
 @js.native
 class ExecutionContext protected () extends js.Object {
   def this(weightMap: NamedTensorsMap, tensorArrayMap: TensorArrayMap) = this()

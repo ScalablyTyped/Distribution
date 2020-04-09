@@ -40,70 +40,70 @@ import scala.scalajs.js.annotation._
 trait dxTreeViewOptions
   extends HierarchicalCollectionWidgetOptions[dxTreeView]
      with SearchBoxMixinOptions[dxTreeView] {
-  /** Specifies whether or not to animate item collapsing and expanding. */
+  /** @name dxTreeView.Options.animationEnabled */
   var animationEnabled: js.UndefOr[Boolean] = js.undefined
-  /** Allows you to load nodes on demand. */
+  /** @name dxTreeView.Options.createChildren */
   var createChildren: js.UndefOr[
     js.Function1[/* parentNode */ dxTreeViewNode, Promise[_] | JQueryPromise[_] | js.Array[_]]
   ] = js.undefined
-  /** Binds the widget to data. */
+  /** @name dxTreeView.Options.dataSource */
   @JSName("dataSource")
   var dataSource_dxTreeViewOptions: js.UndefOr[String | js.Array[dxTreeViewItem] | DataSource | DataSourceOptions] = js.undefined
-  /** Notifies the widget of the used data structure. */
+  /** @name dxTreeView.Options.dataStructure */
   var dataStructure: js.UndefOr[plain | tree] = js.undefined
-  /** Specifies whether or not a user can expand all tree view items by the "*" hot key. */
+  /** @name dxTreeView.Options.expandAllEnabled */
   var expandAllEnabled: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the event on which to expand/collapse a node. */
+  /** @name dxTreeView.Options.expandEvent */
   var expandEvent: js.UndefOr[dblclick_ | click] = js.undefined
-  /** Specifies whether or not all parent nodes of an initially expanded node are displayed expanded. */
+  /** @name dxTreeView.Options.expandNodesRecursive */
   var expandNodesRecursive: js.UndefOr[Boolean] = js.undefined
-  /** Specifies which data source field specifies whether an item is expanded. */
+  /** @name dxTreeView.Options.expandedExpr */
   var expandedExpr: js.UndefOr[String | js.Function] = js.undefined
-  /** Specifies the name of the data source item field whose value defines whether or not the corresponding node includes child nodes. */
+  /** @name dxTreeView.Options.hasItemsExpr */
   var hasItemsExpr: js.UndefOr[String | js.Function] = js.undefined
-  /** An array of items displayed by the widget. */
+  /** @name dxTreeView.Options.items */
   @JSName("items")
   var items_dxTreeViewOptions: js.UndefOr[js.Array[dxTreeViewItem]] = js.undefined
-  /** A function that is executed when a collection item is clicked or tapped. */
+  /** @name dxTreeView.Options.onItemClick */
   @JSName("onItemClick")
   var onItemClick_dxTreeViewOptions: js.UndefOr[js.Function1[/* e */ AnonModelNode, _]] = js.undefined
-  /** A function that is executed when a tree view item is collapsed. */
+  /** @name dxTreeView.Options.onItemCollapsed */
   var onItemCollapsed: js.UndefOr[js.Function1[/* e */ AnonEventItemDataItemElement, _]] = js.undefined
-  /** A function that is executed when a collection item is right-clicked or pressed. */
+  /** @name dxTreeView.Options.onItemContextMenu */
   @JSName("onItemContextMenu")
   var onItemContextMenu_dxTreeViewOptions: js.UndefOr[js.Function1[/* e */ AnonModelNode, _]] = js.undefined
-  /** A function that is executed when a tree view item is expanded. */
+  /** @name dxTreeView.Options.onItemExpanded */
   var onItemExpanded: js.UndefOr[js.Function1[/* e */ AnonEventItemDataItemElement, _]] = js.undefined
-  /** A function that is executed when a collection item has been held for a specified period. */
+  /** @name dxTreeView.Options.onItemHold */
   @JSName("onItemHold")
   var onItemHold_dxTreeViewOptions: js.UndefOr[js.Function1[/* e */ AnonItemDataItemElementItemIndex, _]] = js.undefined
-  /** A function that is executed after a collection item is rendered. */
+  /** @name dxTreeView.Options.onItemRendered */
   @JSName("onItemRendered")
   var onItemRendered_dxTreeViewOptions: js.UndefOr[js.Function1[/* e */ AnonItemElementItemIndexModel, _]] = js.undefined
-  /** A function that is executed when a tree view item is selected or selection is canceled. */
+  /** @name dxTreeView.Options.onItemSelectionChanged */
   var onItemSelectionChanged: js.UndefOr[js.Function1[/* e */ AnonElementItemElement, _]] = js.undefined
-  /** A function that is executed when the "Select All" check box value is changed. Applies only if showCheckBoxesMode is "selectAll" and selectionMode is "multiple". */
+  /** @name dxTreeView.Options.onSelectAllValueChanged */
   var onSelectAllValueChanged: js.UndefOr[js.Function1[/* e */ AnonComponentElementModelValue, _]] = js.undefined
-  /** A function that is executed when a tree view item is selected or selection is canceled. */
+  /** @name dxTreeView.Options.onSelectionChanged */
   @JSName("onSelectionChanged")
   var onSelectionChanged_dxTreeViewOptions: js.UndefOr[js.Function1[/* e */ AnonComponentDxTreeView, _]] = js.undefined
-  /** Specifies the name of the data source item field for holding the parent key of the corresponding node. */
+  /** @name dxTreeView.Options.parentIdExpr */
   var parentIdExpr: js.UndefOr[String | js.Function] = js.undefined
-  /** Specifies the parent ID value of the root item. */
+  /** @name dxTreeView.Options.rootValue */
   var rootValue: js.UndefOr[js.Any] = js.undefined
-  /** A string value specifying available scrolling directions. */
+  /** @name dxTreeView.Options.scrollDirection */
   var scrollDirection: js.UndefOr[both | horizontal | vertical] = js.undefined
-  /** Specifies the text displayed at the "Select All" check box. */
+  /** @name dxTreeView.Options.selectAllText */
   var selectAllText: js.UndefOr[String] = js.undefined
-  /** Specifies whether or not an item becomes selected if a user clicks it. */
+  /** @name dxTreeView.Options.selectByClick */
   var selectByClick: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether or not to select nodes recursively. */
+  /** @name dxTreeView.Options.selectNodesRecursive */
   var selectNodesRecursive: js.UndefOr[Boolean] = js.undefined
-  /** Specifies item selection mode. */
+  /** @name dxTreeView.Options.selectionMode */
   var selectionMode: js.UndefOr[multiple | single_] = js.undefined
-  /** Specifies the current check boxes display mode. */
+  /** @name dxTreeView.Options.showCheckBoxesMode */
   var showCheckBoxesMode: js.UndefOr[none | normal | selectAll] = js.undefined
-  /** Enables the virtual mode in which nodes are loaded on demand. Use it to enhance the performance on large datasets. */
+  /** @name dxTreeView.Options.virtualModeEnabled */
   var virtualModeEnabled: js.UndefOr[Boolean] = js.undefined
 }
 

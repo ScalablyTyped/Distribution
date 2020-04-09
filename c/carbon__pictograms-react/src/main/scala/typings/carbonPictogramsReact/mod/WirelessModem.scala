@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@carbon/pictograms-react", "WirelessModem")
 @js.native
-object WirelessModem extends TopLevel[CarbonPictogram]
+object WirelessModem extends TopLevel[CarbonPictogramType]
 

@@ -103,7 +103,8 @@ trait BaseAxis extends js.Object {
     */
   var labelAngle: js.UndefOr[NumberValue] = js.undefined
   /**
-    * Vertical text baseline of axis tick labels, overriding the default setting for the current axis orientation. Can be `"top"`, `"middle"`, `"bottom"`, or `"alphabetic"`.
+    * Vertical text baseline of axis tick labels, overriding the default setting for the current axis orientation.
+    * One of `"alphabetic"` (default), `"top"`, `"middle"`, `"bottom"`, `"line-top"`, or `"line-bottom"`. The `"line-top"` and `"line-bottom"` values operate similarly to `"top"` and `"bottom"`, but are calculated relative to the *lineHeight* rather than *fontSize* alone.
     */
   var labelBaseline: js.UndefOr[TextBaselineValue] = js.undefined
   /**
@@ -151,7 +152,7 @@ trait BaseAxis extends js.Object {
     */
   var labelLimit: js.UndefOr[NumberValue] = js.undefined
   /**
-    * Line height in pixels for multi-line label text.
+    * Line height in pixels for multi-line label text or label text with `"line-top"` or `"line-bottom"` baseline.
     */
   var labelLineHeight: js.UndefOr[NumberValue] = js.undefined
   /**
@@ -198,7 +199,7 @@ trait BaseAxis extends js.Object {
     */
   var minExtent: js.UndefOr[NumberValue] = js.undefined
   /**
-    * For band scales, indicates if ticks and grid lines should be placed at the center of a band (default) or at the band extents to indicate intervals.
+    * For band scales, indicates if ticks and grid lines should be placed at the `"center"` of a band (default) or at the band `"extent"`s to indicate intervals
     */
   var tickBand: js.UndefOr[center | extent | SignalRef] = js.undefined
   /**
@@ -267,7 +268,7 @@ trait BaseAxis extends js.Object {
     */
   var titleAngle: js.UndefOr[NumberValue] = js.undefined
   /**
-    * Vertical text baseline for axis titles.
+    * Vertical text baseline for axis titles. One of `"alphabetic"` (default), `"top"`, `"middle"`, `"bottom"`, `"line-top"`, or `"line-bottom"`. The `"line-top"` and `"line-bottom"` values operate similarly to `"top"` and `"bottom"`, but are calculated relative to the *lineHeight* rather than *fontSize* alone.
     */
   var titleBaseline: js.UndefOr[TextBaselineValue] = js.undefined
   /**
@@ -300,7 +301,7 @@ trait BaseAxis extends js.Object {
     */
   var titleLimit: js.UndefOr[NumberValue] = js.undefined
   /**
-    * Line height in pixels for multi-line title text.
+    * Line height in pixels for multi-line title text or title text with `"line-top"` or `"line-bottom"` baseline.
     */
   var titleLineHeight: js.UndefOr[NumberValue] = js.undefined
   /**
@@ -321,7 +322,9 @@ trait BaseAxis extends js.Object {
     */
   var titleY: js.UndefOr[NumberValue] = js.undefined
   /**
-    * Translation offset in pixels applied to the axis group mark x and y. If specified, overrides the default behavior of a 0.5 offset to pixel-align stroked lines.
+    * Coordinate space translation offset for axis layout. By default, axes are translated by a 0.5 pixel offset for both the x and y coordinates in order to align stroked lines with the pixel grid. However, for vector graphics output these pixel-specific adjustments may be undesirable, in which case translate can be changed (for example, to zero).
+    *
+    * __Default value:__ `0.5`
     */
   var translate: js.UndefOr[Double] = js.undefined
 }

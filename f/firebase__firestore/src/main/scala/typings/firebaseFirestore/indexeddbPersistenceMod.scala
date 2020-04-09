@@ -1,22 +1,28 @@
 package typings.firebaseFirestore
 
+import typings.firebaseFirestore.asyncQueueMod.AsyncQueue
 import typings.firebaseFirestore.databaseInfoMod.DatabaseInfo
 import typings.firebaseFirestore.documentKeyMod.DocumentKey
+import typings.firebaseFirestore.firestoreClientMod.PersistenceSettings
 import typings.firebaseFirestore.indexManagerMod.IndexManager
 import typings.firebaseFirestore.lruGarbageCollectorMod.ActiveTargets
 import typings.firebaseFirestore.lruGarbageCollectorMod.LruDelegate
 import typings.firebaseFirestore.lruGarbageCollectorMod.LruGarbageCollector
 import typings.firebaseFirestore.lruGarbageCollectorMod.LruParams
 import typings.firebaseFirestore.mutationQueueMod.MutationQueue
+import typings.firebaseFirestore.persistenceMod.GarbageCollectionScheduler
 import typings.firebaseFirestore.persistenceMod.Persistence
+import typings.firebaseFirestore.persistenceMod.PersistenceProvider
 import typings.firebaseFirestore.persistenceMod.PersistenceTransaction
 import typings.firebaseFirestore.persistenceMod.PersistenceTransactionMode
 import typings.firebaseFirestore.persistenceMod.PrimaryStateListener
 import typings.firebaseFirestore.persistenceMod.ReferenceDelegate
 import typings.firebaseFirestore.persistencePromiseMod.PersistencePromise
+import typings.firebaseFirestore.platformMod.Platform
 import typings.firebaseFirestore.referenceSetMod.ReferenceSet
 import typings.firebaseFirestore.remoteDocumentCacheMod.RemoteDocumentCache
 import typings.firebaseFirestore.sharedClientStateMod.ClientId
+import typings.firebaseFirestore.sharedClientStateMod.SharedClientState
 import typings.firebaseFirestore.simpleDbMod.SimpleDbStore
 import typings.firebaseFirestore.simpleDbMod.SimpleDbTransaction
 import typings.firebaseFirestore.targetCacheMod.TargetCache
@@ -341,6 +347,30 @@ object indexeddbPersistenceMod extends js.Object {
     override def shutdown(): js.Promise[Unit] = js.native
     @JSName("started")
     def started_MIndexedDbPersistence(): Boolean = js.native
+  }
+  
+  @js.native
+  class IndexedDbPersistenceProvider () extends PersistenceProvider {
+    var gcScheduler: js.UndefOr[js.Any] = js.native
+    var persistence: js.UndefOr[js.Any] = js.native
+    var sharedClientState: js.UndefOr[js.Any] = js.native
+    /* CompleteClass */
+    override def clearPersistence(databaseId: DatabaseInfo): js.Promise[Unit] = js.native
+    /* CompleteClass */
+    override def getGarbageCollectionScheduler(): GarbageCollectionScheduler = js.native
+    /* CompleteClass */
+    override def getPersistence(): Persistence = js.native
+    /* CompleteClass */
+    override def getSharedClientState(): SharedClientState = js.native
+    /* CompleteClass */
+    override def initialize(
+      asyncQueue: AsyncQueue,
+      databaseInfo: DatabaseInfo,
+      platform: Platform,
+      clientId: ClientId,
+      initialUser: User,
+      settings: PersistenceSettings
+    ): js.Promise[Unit] = js.native
   }
   
   @js.native

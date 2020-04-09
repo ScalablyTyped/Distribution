@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.elementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.elementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.codeactionsMod.codeactions.IParameterType because Already inherited
-- typings.mendixmodelsdk.codeactionsMod.codeactions.IStringTemplateParameterType because var conflicts: containerAsCodeActionParameter, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.StringTemplateParameterType")
+- typings.mendixmodelsdk.codeactionsMod.codeactions.IStringTemplateParameterType because var conflicts: containerAsCodeActionParameter, id, isLoaded, model, structureTypeName, unit. Inlined grammar */ @JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.StringTemplateParameterType")
 @js.native
 class StringTemplateParameterType protected () extends ParameterType {
   def this(
@@ -29,10 +29,20 @@ class StringTemplateParameterType protected () extends ParameterType {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  /**
+    * In version 8.8.0: introduced
+    */
+  @JSName("grammar")
+  val grammar_FStringTemplateParameterType: StringTemplateParameterGrammar = js.native
   @JSName("model")
   var model_FStringTemplateParameterType: IModel = js.native
   @JSName("containerAsCodeActionParameter")
   def containerAsCodeActionParameter_MStringTemplateParameterType(): CodeActionParameter = js.native
+  /**
+    * In version 8.8.0: introduced
+    */
+  def grammar(): StringTemplateParameterGrammar = js.native
+  def grammar(newValue: StringTemplateParameterGrammar): js.Any = js.native
 }
 
 /* static members */

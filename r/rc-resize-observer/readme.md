@@ -1,7 +1,7 @@
 
 # Scala.js typings for rc-resize-observer
 
-Typings are for version 0.1.3
+Typings are for version 0.2.1
 
 ## Library description:
 Resize observer for React

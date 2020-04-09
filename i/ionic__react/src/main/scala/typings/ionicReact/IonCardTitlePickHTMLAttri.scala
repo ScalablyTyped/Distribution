@@ -70,6 +70,7 @@ import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
@@ -582,7 +583,7 @@ object IonCardTitlePickHTMLAttri {
     onProgress: SyntheticEvent[HTMLIonCardTitleElement, Event_] => Unit = null,
     onRateChange: SyntheticEvent[HTMLIonCardTitleElement, Event_] => Unit = null,
     onReset: FormEvent[HTMLIonCardTitleElement] => Unit = null,
-    onScroll: UIEvent[HTMLIonCardTitleElement] => Unit = null,
+    onScroll: UIEvent[HTMLIonCardTitleElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[HTMLIonCardTitleElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[HTMLIonCardTitleElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[HTMLIonCardTitleElement, Event_] => Unit = null,

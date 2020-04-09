@@ -5,9 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ArrayFileProviderOptions extends FileProviderOptions[ArrayFileProvider] {
-  /** Specifies an array of data objects that represent files and directories. */
+  /** @name ArrayFileProvider.Options.data */
   var data: js.UndefOr[js.Array[_]] = js.undefined
-  /** Specifies which data field provides information about nested files and directories. */
+  /** @name ArrayFileProvider.Options.itemsExpr */
   var itemsExpr: js.UndefOr[String | js.Function] = js.undefined
 }
 

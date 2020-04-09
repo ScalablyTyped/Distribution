@@ -13,7 +13,7 @@ class RevokeTokenRequest () extends js.Object {
     */
   var access_token: js.UndefOr[String] = js.native
   /**
-    * Your application's ID, available from the [application dashboard](https://connect.squareup.com/apps).
+    * The Square issued ID for your application, available from the [application dashboard](https://connect.squareup.com/apps).
     */
   var client_id: js.UndefOr[String] = js.native
   /**

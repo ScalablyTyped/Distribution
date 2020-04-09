@@ -3,8 +3,9 @@ package typings.wordpressElement.mod._Global_
 import typings.react.mod.ReactInstance
 import typings.react.mod.ReactNode
 import typings.react.mod.ReactPortal
+import typings.react.mod._Global_.JSX.Element
 import typings.reactDom.mod.Renderer
-import typings.std.Element
+import typings.std.DocumentFragment
 import typings.std.Text
 import typings.wordpressElement.AnonChildren
 import scala.scalajs.js
@@ -15,7 +16,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object React extends js.Object {
   val render: Renderer = js.native
-  val unmountComponentAtNode: js.Function1[/* container */ Element, Boolean] = js.native
   /**
     * Component used as equivalent of Fragment with unescaped HTML, in cases where
     * it is desirable to render dangerous HTML without needing a wrapper element.
@@ -28,7 +28,7 @@ object React extends js.Object {
     */
   def RawHTML(
     props: AnonChildren with (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HTMLProps<HTMLDivElement> */ js.Any)
-  ): typings.react.mod._Global_.JSX.Element = js.native
+  ): Element = js.native
   /**
     * Checks if the provided WP element is empty.
     *
@@ -64,14 +64,20 @@ object React extends js.Object {
   //
   @js.native
   object createPortal extends js.Object {
-    def apply(children: ReactNode, container: Element): ReactPortal = js.native
-    def apply(children: ReactNode, container: Element, key: String): ReactPortal = js.native
+    def apply(children: ReactNode, container: typings.std.Element): ReactPortal = js.native
+    def apply(children: ReactNode, container: typings.std.Element, key: String): ReactPortal = js.native
   }
   
   @js.native
   object findDOMNode extends js.Object {
-    def apply(): Element | Null | Text = js.native
-    def apply(instance: ReactInstance): Element | Null | Text = js.native
+    def apply(): typings.std.Element | Null | Text = js.native
+    def apply(instance: ReactInstance): typings.std.Element | Null | Text = js.native
+  }
+  
+  @js.native
+  object unmountComponentAtNode extends js.Object {
+    def apply(container: DocumentFragment): Boolean = js.native
+    def apply(container: typings.std.Element): Boolean = js.native
   }
   
 }

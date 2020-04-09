@@ -140,6 +140,7 @@ import typings.emotionStyledBase.emotionStyledBaseStrings.samp
 import typings.emotionStyledBase.emotionStyledBaseStrings.script
 import typings.emotionStyledBase.emotionStyledBaseStrings.section
 import typings.emotionStyledBase.emotionStyledBaseStrings.select
+import typings.emotionStyledBase.emotionStyledBaseStrings.slot
 import typings.emotionStyledBase.emotionStyledBaseStrings.small
 import typings.emotionStyledBase.emotionStyledBaseStrings.source
 import typings.emotionStyledBase.emotionStyledBaseStrings.span
@@ -460,6 +461,8 @@ trait CreateStyled[Theme /* <: js.Object */] extends js.Object {
   def apply[ExtraProps](tag: section, options: StyledOptions): CreateStyledComponentIntrinsic[section, ExtraProps, Theme] = js.native
   def apply[ExtraProps](tag: select): CreateStyledComponentIntrinsic[select, ExtraProps, Theme] = js.native
   def apply[ExtraProps](tag: select, options: StyledOptions): CreateStyledComponentIntrinsic[select, ExtraProps, Theme] = js.native
+  def apply[ExtraProps](tag: slot): CreateStyledComponentIntrinsic[slot, ExtraProps, Theme] = js.native
+  def apply[ExtraProps](tag: slot, options: StyledOptions): CreateStyledComponentIntrinsic[slot, ExtraProps, Theme] = js.native
   def apply[ExtraProps](tag: small): CreateStyledComponentIntrinsic[small, ExtraProps, Theme] = js.native
   def apply[ExtraProps](tag: small, options: StyledOptions): CreateStyledComponentIntrinsic[small, ExtraProps, Theme] = js.native
   def apply[ExtraProps](tag: s, options: StyledOptions): CreateStyledComponentIntrinsic[s, ExtraProps, Theme] = js.native

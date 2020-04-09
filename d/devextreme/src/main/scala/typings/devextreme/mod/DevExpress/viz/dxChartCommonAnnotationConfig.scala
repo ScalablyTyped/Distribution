@@ -23,47 +23,47 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxChartCommonAnnotationConfig extends js.Object {
-  /** Specifies whether users can drag and drop the annotation. */
+  /** @name dxChartCommonAnnotationConfig.allowDragging */
   var allowDragging: js.UndefOr[Boolean] = js.undefined
-  /** Positions the annotation relative to a specific argument. */
+  /** @name dxChartCommonAnnotationConfig.argument */
   var argument: js.UndefOr[Double | Date | String] = js.undefined
-  /** Specifies the length of the annotation's arrow in pixels. */
+  /** @name dxChartCommonAnnotationConfig.arrowLength */
   var arrowLength: js.UndefOr[Double] = js.undefined
-  /** Specifies the width of the annotation's arrow at its junction with the annotation rectangle. */
+  /** @name dxChartCommonAnnotationConfig.arrowWidth */
   var arrowWidth: js.UndefOr[Double] = js.undefined
-  /** Specifies the name of the value axis on which the value is specified. Useful for a multi-axis chart. */
+  /** @name dxChartCommonAnnotationConfig.axis */
   var axis: js.UndefOr[String] = js.undefined
-  /** Configures the appearance of the annotation's border. */
+  /** @name dxChartCommonAnnotationConfig.border */
   var border: js.UndefOr[AnonCornerRadius] = js.undefined
-  /** Specifies the color that fills the annotation. */
+  /** @name dxChartCommonAnnotationConfig.color */
   var color: js.UndefOr[String] = js.undefined
-  /** Customizes the text and appearance of the annotation's tooltip. */
+  /** @name dxChartCommonAnnotationConfig.customizeTooltip */
   var customizeTooltip: js.UndefOr[js.Function1[/* annotation */ dxChartAnnotationConfig | js.Any, _]] = js.undefined
-  /** A container for custom data. */
+  /** @name dxChartCommonAnnotationConfig.data */
   var data: js.UndefOr[js.Any] = js.undefined
-  /** Specifies the annotation's description displayed in the tooltip. */
+  /** @name dxChartCommonAnnotationConfig.description */
   var description: js.UndefOr[String] = js.undefined
-  /** Specifies the annotation's font options. Applies only to text annotations. */
+  /** @name dxChartCommonAnnotationConfig.font */
   var font: js.UndefOr[Font] = js.undefined
-  /** Specifies the annotation's height in pixels. */
+  /** @name dxChartCommonAnnotationConfig.height */
   var height: js.UndefOr[Double] = js.undefined
-  /** Configures the image to be displayed in the annotation. Applies only if the type is "image". */
+  /** @name dxChartCommonAnnotationConfig.image */
   var image: js.UndefOr[String | AnonUrl] = js.undefined
-  /** Moves the annotation horizontally. */
+  /** @name dxChartCommonAnnotationConfig.offsetX */
   var offsetX: js.UndefOr[Double] = js.undefined
-  /** Moves the annotation vertically. */
+  /** @name dxChartCommonAnnotationConfig.offsetY */
   var offsetY: js.UndefOr[Double] = js.undefined
-  /** Specifies the annotation's opacity. */
+  /** @name dxChartCommonAnnotationConfig.opacity */
   var opacity: js.UndefOr[Double] = js.undefined
-  /** Along with paddingTopBottom, generates an empty space around the annotation's text or image; specified in pixels. */
+  /** @name dxChartCommonAnnotationConfig.paddingLeftRight */
   var paddingLeftRight: js.UndefOr[Double] = js.undefined
-  /** Along with paddingLeftRight, generates an empty space around the annotation's text or image; specified in pixels. */
+  /** @name dxChartCommonAnnotationConfig.paddingTopBottom */
   var paddingTopBottom: js.UndefOr[Double] = js.undefined
-  /** Anchors the annotation to a series point. Accepts the name of the point's series. */
+  /** @name dxChartCommonAnnotationConfig.series */
   var series: js.UndefOr[String] = js.undefined
-  /** Configures the annotation's shadows. */
+  /** @name dxChartCommonAnnotationConfig.shadow */
   var shadow: js.UndefOr[AnonBlur] = js.undefined
-  /** Specifies a custom template for the annotation. */
+  /** @name dxChartCommonAnnotationConfig.template */
   var template: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function2[
       /* annotation */ dxChartAnnotationConfig | js.Any, 
@@ -71,13 +71,13 @@ trait dxChartCommonAnnotationConfig extends js.Object {
       String | SVGElement | JQuery
     ])
   ] = js.undefined
-  /** Specifies the annotation's text. Applies only if the type is "text". */
+  /** @name dxChartCommonAnnotationConfig.text */
   var text: js.UndefOr[String] = js.undefined
-  /** Specifies what to do with the annotation's text when it overflows the allocated space after applying wordWrap: hide, truncate it and display an ellipsis, or do nothing. */
+  /** @name dxChartCommonAnnotationConfig.textOverflow */
   var textOverflow: js.UndefOr[ellipsis | hide | none] = js.undefined
-  /** Specifies whether the annotation tooltip is enabled. */
+  /** @name dxChartCommonAnnotationConfig.tooltipEnabled */
   var tooltipEnabled: js.UndefOr[Boolean] = js.undefined
-  /** Specifies a custom template for an annotation's tooltip. */
+  /** @name dxChartCommonAnnotationConfig.tooltipTemplate */
   var tooltipTemplate: js.UndefOr[
     template | (js.Function2[
       /* annotation */ dxChartAnnotationConfig | js.Any, 
@@ -85,17 +85,17 @@ trait dxChartCommonAnnotationConfig extends js.Object {
       String | Element | JQuery
     ])
   ] = js.undefined
-  /** Specifies whether the annotation displays a text or an image. This is a required setting. */
+  /** @name dxChartCommonAnnotationConfig.type */
   var `type`: js.UndefOr[text | image | custom] = js.undefined
-  /** Positions the annotation relative to a value on the specified value axis. */
+  /** @name dxChartCommonAnnotationConfig.value */
   var value: js.UndefOr[Double | Date | String] = js.undefined
-  /** Specifies the annotation's width in pixels. */
+  /** @name dxChartCommonAnnotationConfig.width */
   var width: js.UndefOr[Double] = js.undefined
-  /** Specifies how to wrap the annotation's text if it does not fit into a single line. */
+  /** @name dxChartCommonAnnotationConfig.wordWrap */
   var wordWrap: js.UndefOr[normal | breakWord | none] = js.undefined
-  /** Along with y, positions the annotation's center at a specific pixel coordinate. (0, 0) is the upper left corner of the chart. */
+  /** @name dxChartCommonAnnotationConfig.x */
   var x: js.UndefOr[Double] = js.undefined
-  /** Along with x, positions the annotation's center at a specific pixel coordinate. (0, 0) is the upper left corner of the chart. */
+  /** @name dxChartCommonAnnotationConfig.y */
   var y: js.UndefOr[Double] = js.undefined
 }
 

@@ -9,6 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class MongoError protected () extends Error {
   def this(message: String) = this()
+  def this(message: js.Object) = this()
+  def this(message: Error) = this()
   var code: js.UndefOr[scala.Double] = js.native
   /**
     * While not documented, the 'errmsg' prop is AFAIK the only way to find out
@@ -46,5 +48,7 @@ object MongoError extends js.Object {
     * @deprecated
     */
   def create(options: String): MongoError = js.native
+  def create(options: js.Object): MongoError = js.native
+  def create(options: Error): MongoError = js.native
 }
 

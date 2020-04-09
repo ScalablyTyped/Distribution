@@ -3,6 +3,7 @@ package typings.prettyFormat
 import typings.prettyFormat.typesMod.Config
 import typings.prettyFormat.typesMod.Printer
 import typings.prettyFormat.typesMod.Refs
+import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,7 +24,7 @@ object markupMod extends js.Object {
   def printElementAsLeaf(`type`: String, config: Config): String = js.native
   def printProps(
     keys: js.Array[String],
-    props: js.Any,
+    props: Record[String, _],
     config: Config,
     indentation: String,
     depth: Double,

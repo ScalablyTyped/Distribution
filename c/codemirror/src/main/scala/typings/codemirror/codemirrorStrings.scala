@@ -15,7 +15,13 @@ object codemirrorStrings {
   sealed trait abort extends js.Object
   
   @js.native
+  sealed trait addModeClass extends js.Object
+  
+  @js.native
   sealed trait `after-top` extends js.Object
+  
+  @js.native
+  sealed trait allowDropFileTypes extends js.Object
   
   @js.native
   sealed trait animationcancel extends js.Object
@@ -37,6 +43,12 @@ object codemirrorStrings {
   
   @js.native
   sealed trait autoRefresh extends js.Object
+  
+  @js.native
+  sealed trait autocapitalize extends js.Object
+  
+  @js.native
+  sealed trait autocorrect extends js.Object
   
   @js.native
   sealed trait autofocus extends js.Object
@@ -408,6 +420,9 @@ object codemirrorStrings {
   sealed trait reset extends js.Object
   
   @js.native
+  sealed trait resetSelectionOnContextMenu extends js.Object
+  
+  @js.native
   sealed trait resize extends js.Object
   
   @js.native
@@ -451,6 +466,9 @@ object codemirrorStrings {
   
   @js.native
   sealed trait smartIndent extends js.Object
+  
+  @js.native
+  sealed trait spellcheck extends js.Object
   
   @js.native
   sealed trait stalled extends js.Object
@@ -556,7 +574,11 @@ object codemirrorStrings {
   @scala.inline
   def abort: abort = "abort".asInstanceOf[abort]
   @scala.inline
+  def addModeClass: addModeClass = "addModeClass".asInstanceOf[addModeClass]
+  @scala.inline
   def `after-top`: `after-top` = "after-top".asInstanceOf[`after-top`]
+  @scala.inline
+  def allowDropFileTypes: allowDropFileTypes = "allowDropFileTypes".asInstanceOf[allowDropFileTypes]
   @scala.inline
   def animationcancel: animationcancel = "animationcancel".asInstanceOf[animationcancel]
   @scala.inline
@@ -571,6 +593,10 @@ object codemirrorStrings {
   def autoCloseTags: autoCloseTags = "autoCloseTags".asInstanceOf[autoCloseTags]
   @scala.inline
   def autoRefresh: autoRefresh = "autoRefresh".asInstanceOf[autoRefresh]
+  @scala.inline
+  def autocapitalize: autocapitalize = "autocapitalize".asInstanceOf[autocapitalize]
+  @scala.inline
+  def autocorrect: autocorrect = "autocorrect".asInstanceOf[autocorrect]
   @scala.inline
   def autofocus: autofocus = "autofocus".asInstanceOf[autofocus]
   @scala.inline
@@ -818,6 +844,8 @@ object codemirrorStrings {
   @scala.inline
   def reset: reset = "reset".asInstanceOf[reset]
   @scala.inline
+  def resetSelectionOnContextMenu: resetSelectionOnContextMenu = "resetSelectionOnContextMenu".asInstanceOf[resetSelectionOnContextMenu]
+  @scala.inline
   def resize: resize = "resize".asInstanceOf[resize]
   @scala.inline
   def rtlMoveVisually: rtlMoveVisually = "rtlMoveVisually".asInstanceOf[rtlMoveVisually]
@@ -847,6 +875,8 @@ object codemirrorStrings {
   def showHint: showHint = "showHint".asInstanceOf[showHint]
   @scala.inline
   def smartIndent: smartIndent = "smartIndent".asInstanceOf[smartIndent]
+  @scala.inline
+  def spellcheck: spellcheck = "spellcheck".asInstanceOf[spellcheck]
   @scala.inline
   def stalled: stalled = "stalled".asInstanceOf[stalled]
   @scala.inline

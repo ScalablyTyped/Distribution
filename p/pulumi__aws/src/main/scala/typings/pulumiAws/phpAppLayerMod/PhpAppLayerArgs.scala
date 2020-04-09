@@ -1,5 +1,6 @@
 package typings.pulumiAws.phpAppLayerMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiAws.inputMod.opsworks.PhpAppLayerEbsVolume
 import typings.pulumiPulumi.outputMod.Input
 import scala.scalajs.js
@@ -70,6 +71,10 @@ trait PhpAppLayerArgs extends js.Object {
     */
   val systemPackages: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
+    * A mapping of tags to assign to the resource.
+    */
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  /**
     * Whether to use EBS-optimized instances.
     */
   val useEbsOptimizedInstances: js.UndefOr[Input[Boolean]] = js.native
@@ -97,6 +102,7 @@ object PhpAppLayerArgs {
     instanceShutdownTimeout: Input[Double] = null,
     name: Input[String] = null,
     systemPackages: Input[js.Array[Input[String]]] = null,
+    tags: Input[StringDictionary[_]] = null,
     useEbsOptimizedInstances: Input[Boolean] = null
   ): PhpAppLayerArgs = {
     val __obj = js.Dynamic.literal(stackId = stackId.asInstanceOf[js.Any])
@@ -118,6 +124,7 @@ object PhpAppLayerArgs {
     if (instanceShutdownTimeout != null) __obj.updateDynamic("instanceShutdownTimeout")(instanceShutdownTimeout.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (systemPackages != null) __obj.updateDynamic("systemPackages")(systemPackages.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     if (useEbsOptimizedInstances != null) __obj.updateDynamic("useEbsOptimizedInstances")(useEbsOptimizedInstances.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhpAppLayerArgs]
   }

@@ -26,6 +26,12 @@ object mod extends js.Object {
       fn: js.Function1[/* arguments */ Arguments, js.Thenable[ReturnType] | ReturnType],
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param arguments because its type Arguments is not an array type */ arguments: Arguments
     ): js.Promise[ReturnType] = js.native
+    /**
+    	Discard pending promises that are waiting to run.
+    	This might be useful if you want to teardown the queue at the end of your program's lifecycle or discard any function calls referencing an intermediary state of your app.
+    	Note: This does not cancel promises that are already running.
+    	*/
+    def clearQueue(): Unit = js.native
   }
   
   def default(concurrency: Double): Limit = js.native

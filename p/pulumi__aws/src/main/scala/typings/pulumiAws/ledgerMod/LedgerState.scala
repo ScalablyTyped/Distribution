@@ -12,7 +12,13 @@ trait LedgerState extends js.Object {
     * The ARN of the QLDB Ledger
     */
   val arn: js.UndefOr[Input[String]] = js.native
+  /**
+    * The deletion protection for the QLDB Ledger instance. By default it is `true`. To delete this resource via this provider, this value must be configured to `false` and applied first before attempting deletion.
+    */
   val deletionProtection: js.UndefOr[Input[Boolean]] = js.native
+  /**
+    * The friendly name for the QLDB Ledger instance.
+    */
   val name: js.UndefOr[Input[String]] = js.native
   /**
     * Key-value mapping of resource tags

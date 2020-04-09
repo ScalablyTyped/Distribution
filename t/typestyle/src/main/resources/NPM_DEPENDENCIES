@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "typestyle" : "2.0.4"
+      "typestyle" : "2.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "typestyle" : "2.0.4"
+      "typestyle" : "2.1.0"
     }
   ],
   "compile-devDependencies" : [

@@ -12,9 +12,10 @@ trait NormalizationArgument extends js.Object
 
 object NormalizationArgument {
   @scala.inline
-  def NormalizationLiteral(kind: String, name: String, value: js.Any, `type`: String = null): NormalizationArgument = {
-    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+  def NormalizationLiteral(kind: String, name: String, `type`: String = null, value: js.Any = null): NormalizationArgument = {
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[NormalizationArgument]
   }
   @scala.inline

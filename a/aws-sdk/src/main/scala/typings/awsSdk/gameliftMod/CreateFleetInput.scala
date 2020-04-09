@@ -9,7 +9,7 @@ trait CreateFleetInput extends js.Object {
   /**
     * A unique identifier for a build to be deployed on the new fleet. You can use either the build ID or ARN value. The custom game server build must have been successfully uploaded to Amazon GameLift and be in a READY status. This fleet setting cannot be changed once the fleet is created. 
     */
-  var BuildId: js.UndefOr[typings.awsSdk.gameliftMod.BuildId] = js.native
+  var BuildId: js.UndefOr[BuildIdOrArn] = js.native
   /**
     * Indicates whether to generate a TLS/SSL certificate for the new fleet. TLS certificates are used for encrypting traffic between game clients and game servers running on GameLift. If this parameter is not specified, the default value, DISABLED, is used. This fleet setting cannot be changed once the fleet is created. Learn more at Securing Client/Server Communication.  Note: This feature requires the AWS Certificate Manager (ACM) service, which is available in the AWS global partition but not in all other partitions. When working in a partition that does not support this feature, a request for a new fleet with certificate generation results fails with a 4xx unsupported Region error. Valid values include:     GENERATED - Generate a TLS/SSL certificate for this fleet.    DISABLED - (default) Do not generate a TLS/SSL certificate for this fleet.  
     */
@@ -69,7 +69,7 @@ trait CreateFleetInput extends js.Object {
   /**
     * A unique identifier for a Realtime script to be deployed on the new fleet. You can use either the script ID or ARN value. The Realtime script must have been successfully uploaded to Amazon GameLift. This fleet setting cannot be changed once the fleet is created.
     */
-  var ScriptId: js.UndefOr[typings.awsSdk.gameliftMod.ScriptId] = js.native
+  var ScriptId: js.UndefOr[ScriptIdOrArn] = js.native
   /**
     * This parameter is no longer used. Instead, specify server launch parameters in the RuntimeConfiguration parameter. (Requests that specify a server launch path and launch parameters instead of a runtime configuration will continue to work.)
     */
@@ -89,7 +89,7 @@ object CreateFleetInput {
   def apply(
     EC2InstanceType: EC2InstanceType,
     Name: NonZeroAndMaxString,
-    BuildId: BuildId = null,
+    BuildId: BuildIdOrArn = null,
     CertificateConfiguration: CertificateConfiguration = null,
     Description: NonZeroAndMaxString = null,
     EC2InboundPermissions: IpPermissionsList = null,
@@ -102,7 +102,7 @@ object CreateFleetInput {
     PeerVpcId: NonZeroAndMaxString = null,
     ResourceCreationLimitPolicy: ResourceCreationLimitPolicy = null,
     RuntimeConfiguration: RuntimeConfiguration = null,
-    ScriptId: ScriptId = null,
+    ScriptId: ScriptIdOrArn = null,
     ServerLaunchParameters: NonZeroAndMaxString = null,
     ServerLaunchPath: NonZeroAndMaxString = null,
     Tags: TagList = null

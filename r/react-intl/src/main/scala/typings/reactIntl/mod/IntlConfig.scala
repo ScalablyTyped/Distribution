@@ -13,7 +13,7 @@ trait IntlConfig extends js.Object {
   var locale: String
   var messages: Record[String, js.Array[MessageFormatElement] | String]
   var textComponent: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 117 */ js.Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118 */ js.Any
   ] = js.undefined
   var timeZone: js.UndefOr[String] = js.undefined
   def onError(err: String): Unit
@@ -28,7 +28,7 @@ object IntlConfig {
     locale: String,
     messages: Record[String, js.Array[MessageFormatElement] | String],
     onError: String => Unit,
-    textComponent: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 117 */ js.Any = null,
+    textComponent: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118 */ js.Any = null,
     timeZone: String = null
   ): IntlConfig = {
     val __obj = js.Dynamic.literal(defaultFormats = defaultFormats.asInstanceOf[js.Any], defaultLocale = defaultLocale.asInstanceOf[js.Any], formats = formats.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], messages = messages.asInstanceOf[js.Any], onError = js.Any.fromFunction1(onError))

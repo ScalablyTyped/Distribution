@@ -8,9 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 trait MaintenanceWindowTaskTarget extends js.Object {
   var key: Input[String] = js.native
-  /**
-    * The array of strings.
-    */
   var values: Input[js.Array[Input[String]]] = js.native
 }
 

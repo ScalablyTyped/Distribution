@@ -7,8 +7,17 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ApplicationEnvironment extends js.Object {
+  /**
+    * Variable name.
+    */
   var key: Input[String] = js.native
+  /**
+    * Set visibility of the variable value to `true` or `false`.
+    */
   var secure: js.UndefOr[Input[Boolean]] = js.native
+  /**
+    * Variable value.
+    */
   var value: Input[String] = js.native
 }
 

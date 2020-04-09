@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@carbon/pictograms-react", "Overcast")
 @js.native
-object Overcast extends TopLevel[CarbonPictogram]
+object Overcast extends TopLevel[CarbonPictogramType]
 

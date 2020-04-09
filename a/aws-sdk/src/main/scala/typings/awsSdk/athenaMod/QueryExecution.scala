@@ -27,7 +27,7 @@ trait QueryExecution extends js.Object {
     */
   var StatementType: js.UndefOr[typings.awsSdk.athenaMod.StatementType] = js.native
   /**
-    * The amount of data scanned during the query execution and the amount of time that it took to execute, and the type of statement that was run.
+    * Query execution statistics, such as the amount of data scanned, the amount of time that the query took to process, and the type of statement that was run.
     */
   var Statistics: js.UndefOr[QueryExecutionStatistics] = js.native
   /**

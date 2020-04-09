@@ -36,7 +36,7 @@ trait PartialRequiredOptions extends js.Object {
   var parser: js.UndefOr[BuiltInParserName | CustomParser] = js.undefined
   var plugins: js.UndefOr[js.Array[String | Plugin]] = js.undefined
   var printWidth: js.UndefOr[Double] = js.undefined
-  var proseWrap: js.UndefOr[Boolean | always | never | preserve] = js.undefined
+  var proseWrap: js.UndefOr[always | never | preserve] = js.undefined
   var quoteProps: js.UndefOr[`as-needed` | consistent | preserve] = js.undefined
   var rangeEnd: js.UndefOr[Double] = js.undefined
   var rangeStart: js.UndefOr[Double] = js.undefined
@@ -63,7 +63,7 @@ object PartialRequiredOptions {
     parser: BuiltInParserName | CustomParser = null,
     plugins: js.Array[String | Plugin] = null,
     printWidth: Int | Double = null,
-    proseWrap: Boolean | always | never | preserve = null,
+    proseWrap: always | never | preserve = null,
     quoteProps: `as-needed` | consistent | preserve = null,
     rangeEnd: Int | Double = null,
     rangeStart: Int | Double = null,

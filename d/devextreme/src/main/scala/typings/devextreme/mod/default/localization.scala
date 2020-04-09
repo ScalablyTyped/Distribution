@@ -15,22 +15,22 @@ class localization ()
 @JSImport("devextreme", "localization")
 @js.native
 object localization extends js.Object {
-  /** Converts a Date object to a string using the specified format. */
+  /** @name localization.formatDate(value, format) */
   def formatDate(value: Date, format: format): String = js.native
-  /** Substitutes the provided value(s) for placeholders in a message that the key specifies. */
+  /** @name localization.formatMessage(key, value) */
   def formatMessage(key: String, value: String): String = js.native
   def formatMessage(key: String, value: js.Array[String]): String = js.native
-  /** Converts a numeric value to a string using the specified format. */
+  /** @name localization.formatNumber(value, format) */
   def formatNumber(value: Double, format: format): String = js.native
-  /** Loads localized messages. */
+  /** @name localization.loadMessages(messages) */
   def loadMessages(messages: js.Any): Unit = js.native
-  /** Gets the current locale identifier. */
+  /** @name localization.locale() */
   def locale(): String = js.native
-  /** Sets the current locale identifier. */
+  /** @name localization.locale(locale) */
   def locale(locale: String): Unit = js.native
-  /** Parses a string into a Date object. */
+  /** @name localization.parseDate(text, format) */
   def parseDate(text: String, format: format): Date = js.native
-  /** Parses a string into a numeric value. */
+  /** @name localization.parseNumber(text, format) */
   def parseNumber(text: String, format: format): Double = js.native
 }
 

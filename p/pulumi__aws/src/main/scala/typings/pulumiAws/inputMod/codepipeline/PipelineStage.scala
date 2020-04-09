@@ -7,9 +7,12 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait PipelineStage extends js.Object {
+  /**
+    * The action(s) to include in the stage. Defined as an `action` block below
+    */
   var actions: Input[js.Array[Input[PipelineStageAction]]] = js.native
   /**
-    * The name of the pipeline.
+    * The name of the stage.
     */
   var name: Input[String] = js.native
 }

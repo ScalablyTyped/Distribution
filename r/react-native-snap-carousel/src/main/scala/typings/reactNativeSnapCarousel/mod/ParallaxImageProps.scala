@@ -7,6 +7,7 @@ import typings.reactNative.mod.AccessibilityRole
 import typings.reactNative.mod.AccessibilityState
 import typings.reactNative.mod.AccessibilityStates
 import typings.reactNative.mod.AccessibilityTrait
+import typings.reactNative.mod.AccessibilityValue
 import typings.reactNative.mod.Animated.Value
 import typings.reactNative.mod.FlatListProps
 import typings.reactNative.mod.ImageErrorEventData
@@ -79,6 +80,7 @@ object ParallaxImageProps {
     accessibilityState: AccessibilityState = null,
     accessibilityStates: js.Array[AccessibilityStates] = null,
     accessibilityTraits: AccessibilityTrait | js.Array[AccessibilityTrait] = null,
+    accessibilityValue: AccessibilityValue = null,
     accessibilityViewIsModal: js.UndefOr[Boolean] = js.undefined,
     accessible: js.UndefOr[Boolean] = js.undefined,
     blurRadius: Int | Double = null,
@@ -135,6 +137,7 @@ object ParallaxImageProps {
     if (accessibilityState != null) __obj.updateDynamic("accessibilityState")(accessibilityState.asInstanceOf[js.Any])
     if (accessibilityStates != null) __obj.updateDynamic("accessibilityStates")(accessibilityStates.asInstanceOf[js.Any])
     if (accessibilityTraits != null) __obj.updateDynamic("accessibilityTraits")(accessibilityTraits.asInstanceOf[js.Any])
+    if (accessibilityValue != null) __obj.updateDynamic("accessibilityValue")(accessibilityValue.asInstanceOf[js.Any])
     if (!js.isUndefined(accessibilityViewIsModal)) __obj.updateDynamic("accessibilityViewIsModal")(accessibilityViewIsModal.asInstanceOf[js.Any])
     if (!js.isUndefined(accessible)) __obj.updateDynamic("accessible")(accessible.asInstanceOf[js.Any])
     if (blurRadius != null) __obj.updateDynamic("blurRadius")(blurRadius.asInstanceOf[js.Any])

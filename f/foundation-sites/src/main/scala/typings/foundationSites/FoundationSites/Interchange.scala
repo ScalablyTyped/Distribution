@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-// http://foundation.zurb.com/sites/docs/interchange.html#javascript-reference
+// https://get.foundation/sites/docs/interchange.html#javascript-reference
 trait Interchange extends js.Object {
   def destroy(): Unit
   def replace(path: String): Unit

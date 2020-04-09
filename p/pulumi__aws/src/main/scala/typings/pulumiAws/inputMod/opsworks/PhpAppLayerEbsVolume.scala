@@ -8,11 +8,29 @@ import scala.scalajs.js.annotation._
 @js.native
 trait PhpAppLayerEbsVolume extends js.Object {
   var encrypted: js.UndefOr[Input[Boolean]] = js.native
+  /**
+    * For PIOPS volumes, the IOPS per disk.
+    */
   var iops: js.UndefOr[Input[Double]] = js.native
+  /**
+    * The path to mount the EBS volume on the layer's instances.
+    */
   var mountPoint: Input[String] = js.native
+  /**
+    * The number of disks to use for the EBS volume.
+    */
   var numberOfDisks: Input[Double] = js.native
+  /**
+    * The RAID level to use for the volume.
+    */
   var raidLevel: js.UndefOr[Input[String]] = js.native
+  /**
+    * The size of the volume in gigabytes.
+    */
   var size: Input[Double] = js.native
+  /**
+    * The type of volume to create. This may be `standard` (the default), `io1` or `gp2`.
+    */
   var `type`: js.UndefOr[Input[String]] = js.native
 }
 

@@ -11,11 +11,19 @@ package object mod {
     scala.Unit
   ]
   type Secret = java.lang.String | typings.node.Buffer | typings.jsonwebtoken.AnonKey
-  type SignCallback = js.Function2[/* err */ typings.std.Error, /* encoded */ java.lang.String, scala.Unit]
+  type SignCallback = js.Function2[
+    /* err */ typings.std.Error | scala.Null, 
+    /* encoded */ js.UndefOr[java.lang.String], 
+    scala.Unit
+  ]
   type SigningKeyCallback = js.Function2[
     /* err */ js.Any, 
     /* signingKey */ js.UndefOr[typings.jsonwebtoken.mod.Secret], 
     scala.Unit
   ]
-  type VerifyCallback = js.Function2[/* err */ typings.jsonwebtoken.mod.VerifyErrors, /* decoded */ js.Object, scala.Unit]
+  type VerifyCallback = js.Function2[
+    /* err */ typings.jsonwebtoken.mod.VerifyErrors | scala.Null, 
+    /* decoded */ js.UndefOr[js.Object], 
+    scala.Unit
+  ]
 }

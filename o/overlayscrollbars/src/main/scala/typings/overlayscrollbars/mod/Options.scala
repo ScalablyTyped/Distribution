@@ -23,6 +23,7 @@ trait Options extends js.Object {
   var scrollbars: js.UndefOr[AnonAutoHide] = js.undefined
   var sizeAutoCapable: js.UndefOr[Boolean] = js.undefined
   var textarea: js.UndefOr[AnonDynHeight] = js.undefined
+  var updateOnLoad: js.UndefOr[String | js.Array[String] | Null] = js.undefined
 }
 
 object Options {
@@ -40,7 +41,8 @@ object Options {
     resize: ResizeBehavior = null,
     scrollbars: AnonAutoHide = null,
     sizeAutoCapable: js.UndefOr[Boolean] = js.undefined,
-    textarea: AnonDynHeight = null
+    textarea: AnonDynHeight = null,
+    updateOnLoad: String | js.Array[String] = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(autoUpdate)) __obj.updateDynamic("autoUpdate")(autoUpdate.asInstanceOf[js.Any])
@@ -56,6 +58,7 @@ object Options {
     if (scrollbars != null) __obj.updateDynamic("scrollbars")(scrollbars.asInstanceOf[js.Any])
     if (!js.isUndefined(sizeAutoCapable)) __obj.updateDynamic("sizeAutoCapable")(sizeAutoCapable.asInstanceOf[js.Any])
     if (textarea != null) __obj.updateDynamic("textarea")(textarea.asInstanceOf[js.Any])
+    if (updateOnLoad != null) __obj.updateDynamic("updateOnLoad")(updateOnLoad.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

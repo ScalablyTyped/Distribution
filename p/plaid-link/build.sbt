@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "plaid-link"
-version := "2.0-dt-20200305Z-ab1dea"
+version := "2.0-dt-20200327Z-e5eb45"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

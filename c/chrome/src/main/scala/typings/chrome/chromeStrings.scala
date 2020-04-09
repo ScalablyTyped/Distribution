@@ -3,6 +3,8 @@ package typings.chrome
 import typings.chrome.chrome.contentSettings.ScopeEnum
 import typings.chrome.chrome.cookies.SameSiteStatus
 import typings.chrome.chrome.idle.IdleState
+import typings.chrome.chrome.loginState.ProfileType
+import typings.chrome.chrome.loginState.SessionState
 import typings.chrome.chrome.omnibox.OnInputEnteredDisposition
 import typings.chrome.chrome.runtime.RequestUpdateCheckStatus
 import typings.chrome.chrome.webRequest.ResourceType
@@ -11,6 +13,27 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object chromeStrings {
+  @js.native
+  sealed trait IN_LOCK_SCREEN extends SessionState
+  
+  @js.native
+  sealed trait IN_LOGIN_SCREEN extends SessionState
+  
+  @js.native
+  sealed trait IN_OOBE_SCREEN extends SessionState
+  
+  @js.native
+  sealed trait IN_SESSION extends SessionState
+  
+  @js.native
+  sealed trait SIGNIN_PROFILE extends ProfileType
+  
+  @js.native
+  sealed trait UNKNOWN extends SessionState
+  
+  @js.native
+  sealed trait USER_PROFILE extends ProfileType
+  
   @js.native
   sealed trait active extends IdleState
   
@@ -203,6 +226,20 @@ object chromeStrings {
   @js.native
   sealed trait xmlhttprequest extends ResourceType
   
+  @scala.inline
+  def IN_LOCK_SCREEN: IN_LOCK_SCREEN = "IN_LOCK_SCREEN".asInstanceOf[IN_LOCK_SCREEN]
+  @scala.inline
+  def IN_LOGIN_SCREEN: IN_LOGIN_SCREEN = "IN_LOGIN_SCREEN".asInstanceOf[IN_LOGIN_SCREEN]
+  @scala.inline
+  def IN_OOBE_SCREEN: IN_OOBE_SCREEN = "IN_OOBE_SCREEN".asInstanceOf[IN_OOBE_SCREEN]
+  @scala.inline
+  def IN_SESSION: IN_SESSION = "IN_SESSION".asInstanceOf[IN_SESSION]
+  @scala.inline
+  def SIGNIN_PROFILE: SIGNIN_PROFILE = "SIGNIN_PROFILE".asInstanceOf[SIGNIN_PROFILE]
+  @scala.inline
+  def UNKNOWN: UNKNOWN = "UNKNOWN".asInstanceOf[UNKNOWN]
+  @scala.inline
+  def USER_PROFILE: USER_PROFILE = "USER_PROFILE".asInstanceOf[USER_PROFILE]
   @scala.inline
   def active: active = "active".asInstanceOf[active]
   @scala.inline

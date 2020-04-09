@@ -30,10 +30,16 @@ object unzipperStrings {
   sealed trait finish extends js.Object
   
   @js.native
+  sealed trait pause extends js.Object
+  
+  @js.native
   sealed trait pipe extends js.Object
   
   @js.native
   sealed trait readable extends js.Object
+  
+  @js.native
+  sealed trait resume extends js.Object
   
   @js.native
   sealed trait unpipe extends js.Object
@@ -55,9 +61,13 @@ object unzipperStrings {
   @scala.inline
   def finish: finish = "finish".asInstanceOf[finish]
   @scala.inline
+  def pause: pause = "pause".asInstanceOf[pause]
+  @scala.inline
   def pipe: pipe = "pipe".asInstanceOf[pipe]
   @scala.inline
   def readable: readable = "readable".asInstanceOf[readable]
+  @scala.inline
+  def resume: resume = "resume".asInstanceOf[resume]
   @scala.inline
   def unpipe: unpipe = "unpipe".asInstanceOf[unpipe]
 }

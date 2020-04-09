@@ -20,6 +20,9 @@ trait SnapshotScheduleArgs extends js.Object {
     * Whether to destroy all associated clusters with this snapshot schedule on deletion. Must be enabled and applied before attempting deletion.
     */
   val forceDestroy: js.UndefOr[Input[Boolean]] = js.native
+  /**
+    * The snapshot schedule identifier. If omitted, this provider will assign a random, unique identifier.
+    */
   val identifier: js.UndefOr[Input[String]] = js.native
   /**
     * Creates a unique

@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 trait AnonConfirmLoading extends js.Object {
   var confirmLoading: Boolean
   var maskTransitionName: String
-  var okType: link | dashed | default | primary | ghost | danger
+  var okType: link | default | primary | ghost | dashed | danger
   var transitionName: String
   var visible: Boolean
   var width: Double
@@ -24,7 +24,7 @@ object AnonConfirmLoading {
   def apply(
     confirmLoading: Boolean,
     maskTransitionName: String,
-    okType: link | dashed | default | primary | ghost | danger,
+    okType: link | default | primary | ghost | dashed | danger,
     transitionName: String,
     visible: Boolean,
     width: Double

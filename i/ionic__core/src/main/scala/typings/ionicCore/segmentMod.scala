@@ -5,8 +5,8 @@ import typings.ionicCore.gestureMod.GestureDetail
 import typings.ionicCore.mod.Color
 import typings.ionicCore.mod.StyleEventDetail
 import typings.ionicCore.segmentSegmentInterfaceMod.SegmentChangeEventDetail
-import typings.ionicCore.stencilCoreMod.ComponentInterface
-import typings.ionicCore.stencilCoreMod.EventEmitter
+import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
+import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

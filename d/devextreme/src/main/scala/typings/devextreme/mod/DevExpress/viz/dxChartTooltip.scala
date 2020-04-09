@@ -14,7 +14,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxChartTooltip extends BaseChartTooltip {
-  /** Specifies whether the tooltip must be located in the center of a series point or on its edge. Applies to bar-like and bubble series only. */
+  /** @name dxChart.Options.tooltip.location */
   var location: js.UndefOr[center | edge] = js.undefined
 }
 

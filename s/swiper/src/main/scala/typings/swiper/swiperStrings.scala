@@ -34,6 +34,11 @@ object swiperStrings {
        with SwiperEvent
   
   @js.native
+  sealed trait beforeLoopFix
+    extends CommonEvent
+       with SwiperEvent
+  
+  @js.native
   sealed trait bullets extends js.Object
   
   @js.native
@@ -96,6 +101,16 @@ object swiperStrings {
   @js.native
   sealed trait lazyImageReady
     extends LazyLoadingEvent
+       with SwiperEvent
+  
+  @js.native
+  sealed trait loopFix
+    extends CommonEvent
+       with SwiperEvent
+  
+  @js.native
+  sealed trait observerUpdate
+    extends CommonEvent
        with SwiperEvent
   
   @js.native
@@ -239,6 +254,8 @@ object swiperStrings {
   @scala.inline
   def beforeDestroy: beforeDestroy = "beforeDestroy".asInstanceOf[beforeDestroy]
   @scala.inline
+  def beforeLoopFix: beforeLoopFix = "beforeLoopFix".asInstanceOf[beforeLoopFix]
+  @scala.inline
   def bullets: bullets = "bullets".asInstanceOf[bullets]
   @scala.inline
   def click: click = "click".asInstanceOf[click]
@@ -272,6 +289,10 @@ object swiperStrings {
   def lazyImageLoad: lazyImageLoad = "lazyImageLoad".asInstanceOf[lazyImageLoad]
   @scala.inline
   def lazyImageReady: lazyImageReady = "lazyImageReady".asInstanceOf[lazyImageReady]
+  @scala.inline
+  def loopFix: loopFix = "loopFix".asInstanceOf[loopFix]
+  @scala.inline
+  def observerUpdate: observerUpdate = "observerUpdate".asInstanceOf[observerUpdate]
   @scala.inline
   def paginationRender: paginationRender = "paginationRender".asInstanceOf[paginationRender]
   @scala.inline

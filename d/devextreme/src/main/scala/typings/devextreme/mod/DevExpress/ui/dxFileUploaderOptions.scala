@@ -27,7 +27,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxFileUploaderOptions extends EditorOptions[dxFileUploader] {
-  /** A function that cancels the file upload. */
+  /** @name dxFileUploader.Options.abortUpload */
   var abortUpload: js.UndefOr[
     js.Function2[
       /* file */ File, 
@@ -35,54 +35,54 @@ trait dxFileUploaderOptions extends EditorOptions[dxFileUploader] {
       Promise[_] | JQueryPromise[_] | _
     ]
   ] = js.undefined
-  /** Specifies a file type or several types accepted by the widget. */
+  /** @name dxFileUploader.Options.accept */
   var accept: js.UndefOr[String] = js.undefined
-  /** Specifies if an end user can remove a file from the selection and interrupt uploading. */
+  /** @name dxFileUploader.Options.allowCanceling */
   var allowCanceling: js.UndefOr[Boolean] = js.undefined
-  /** Restricts file extensions that can be uploaded to the server. */
+  /** @name dxFileUploader.Options.allowedFileExtensions */
   var allowedFileExtensions: js.UndefOr[js.Array[String]] = js.undefined
-  /** Specifies the chunk size in bytes. Applies only if uploadMode is "instantly" or "useButtons". Requires a server that can process file chunks. */
+  /** @name dxFileUploader.Options.chunkSize */
   var chunkSize: js.UndefOr[Double] = js.undefined
-  /** The text displayed when the extension of the file being uploaded is not an allowed file extension. */
+  /** @name dxFileUploader.Options.invalidFileExtensionMessage */
   var invalidFileExtensionMessage: js.UndefOr[String] = js.undefined
-  /** The text displayed when the size of the file being uploaded is greater than the maxFileSize. */
+  /** @name dxFileUploader.Options.invalidMaxFileSizeMessage */
   var invalidMaxFileSizeMessage: js.UndefOr[String] = js.undefined
-  /** The text displayed when the size of the file being uploaded is less than the minFileSize. */
+  /** @name dxFileUploader.Options.invalidMinFileSizeMessage */
   var invalidMinFileSizeMessage: js.UndefOr[String] = js.undefined
-  /** Specifies the text displayed on the area to which an end-user can drop a file. */
+  /** @name dxFileUploader.Options.labelText */
   var labelText: js.UndefOr[String] = js.undefined
-  /** Specifies the maximum file size (in bytes) allowed for uploading. Applies only if uploadMode is "instantly" or "useButtons". */
+  /** @name dxFileUploader.Options.maxFileSize */
   var maxFileSize: js.UndefOr[Double] = js.undefined
-  /** Specifies the minimum file size (in bytes) allowed for uploading. Applies only if uploadMode is "instantly" or "useButtons". */
+  /** @name dxFileUploader.Options.minFileSize */
   var minFileSize: js.UndefOr[Double] = js.undefined
-  /** Specifies whether the widget enables an end-user to select a single file or multiple files. */
+  /** @name dxFileUploader.Options.multiple */
   var multiple: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the value passed to the name attribute of the underlying input element. Required to access uploaded files on the server. */
+  /** @name dxFileUploader.Options.name */
   var name: js.UndefOr[String] = js.undefined
-  /** A function that is executed when a file segment is uploaded. */
+  /** @name dxFileUploader.Options.onProgress */
   var onProgress: js.UndefOr[js.Function1[/* e */ AnonBytesLoaded, _]] = js.undefined
-  /** A function that is executed when the file upload is aborted. */
+  /** @name dxFileUploader.Options.onUploadAborted */
   var onUploadAborted: js.UndefOr[js.Function1[/* e */ AnonFile, _]] = js.undefined
-  /** A function that is executed when an error occurs during the file upload. */
+  /** @name dxFileUploader.Options.onUploadError */
   var onUploadError: js.UndefOr[js.Function1[/* e */ AnonRequest, _]] = js.undefined
-  /** A function that is executed when the file upload is started. */
+  /** @name dxFileUploader.Options.onUploadStarted */
   var onUploadStarted: js.UndefOr[js.Function1[/* e */ AnonFile, _]] = js.undefined
-  /** A function that is executed when a file is successfully uploaded. */
+  /** @name dxFileUploader.Options.onUploaded */
   var onUploaded: js.UndefOr[js.Function1[/* e */ AnonFile, _]] = js.undefined
-  /** A function that is executed when one or several files are added to or removed from the selection. */
+  /** @name dxFileUploader.Options.onValueChanged */
   @JSName("onValueChanged")
   var onValueChanged_dxFileUploaderOptions: js.UndefOr[js.Function1[/* e */ AnonJQueryEventModel, _]] = js.undefined
-  /** Gets the current progress in percentages. */
+  /** @name dxFileUploader.Options.progress */
   var progress: js.UndefOr[Double] = js.undefined
-  /** The message displayed by the widget when it is ready to upload the specified files. */
+  /** @name dxFileUploader.Options.readyToUploadMessage */
   var readyToUploadMessage: js.UndefOr[String] = js.undefined
-  /** The text displayed on the button that opens the file browser. */
+  /** @name dxFileUploader.Options.selectButtonText */
   var selectButtonText: js.UndefOr[String] = js.undefined
-  /** Specifies whether or not the widget displays the list of selected files. */
+  /** @name dxFileUploader.Options.showFileList */
   var showFileList: js.UndefOr[Boolean] = js.undefined
-  /** The text displayed on the button that starts uploading. */
+  /** @name dxFileUploader.Options.uploadButtonText */
   var uploadButtonText: js.UndefOr[String] = js.undefined
-  /** A function that uploads a file in chunks. */
+  /** @name dxFileUploader.Options.uploadChunk */
   var uploadChunk: js.UndefOr[
     js.Function2[
       /* file */ File, 
@@ -90,9 +90,9 @@ trait dxFileUploaderOptions extends EditorOptions[dxFileUploader] {
       Promise[_] | JQueryPromise[_] | _
     ]
   ] = js.undefined
-  /** The message displayed by the widget on uploading failure. */
+  /** @name dxFileUploader.Options.uploadFailedMessage */
   var uploadFailedMessage: js.UndefOr[String] = js.undefined
-  /** A function that uploads a file. */
+  /** @name dxFileUploader.Options.uploadFile */
   var uploadFile: js.UndefOr[
     js.Function2[
       /* file */ File, 
@@ -100,17 +100,17 @@ trait dxFileUploaderOptions extends EditorOptions[dxFileUploader] {
       Promise[_] | JQueryPromise[_] | _
     ]
   ] = js.undefined
-  /** Specifies headers for the upload request. */
+  /** @name dxFileUploader.Options.uploadHeaders */
   var uploadHeaders: js.UndefOr[js.Any] = js.undefined
-  /** Specifies the method for the upload request. */
+  /** @name dxFileUploader.Options.uploadMethod */
   var uploadMethod: js.UndefOr[POST | PUT] = js.undefined
-  /** Specifies how the widget uploads files. */
+  /** @name dxFileUploader.Options.uploadMode */
   var uploadMode: js.UndefOr[instantly | useButtons | useForm] = js.undefined
-  /** Specifies a target Url for the upload request. */
+  /** @name dxFileUploader.Options.uploadUrl */
   var uploadUrl: js.UndefOr[String] = js.undefined
-  /** The message displayed by the widget when uploading is finished. */
+  /** @name dxFileUploader.Options.uploadedMessage */
   var uploadedMessage: js.UndefOr[String] = js.undefined
-  /** Specifies a File instance representing the selected file. Read-only when uploadMode is "useForm". */
+  /** @name dxFileUploader.Options.value */
   @JSName("value")
   var value_dxFileUploaderOptions: js.UndefOr[js.Array[File]] = js.undefined
 }

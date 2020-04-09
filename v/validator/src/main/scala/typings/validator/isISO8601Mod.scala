@@ -1,6 +1,5 @@
 package typings.validator
 
-import typings.validator.mod.validator.IsISO8601Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,6 +13,7 @@ object isISO8601Mod extends js.Object {
     * @param [options] - Options
     */
   def default(str: String): Boolean = js.native
-  def default(str: String, options: IsISO8601Options): Boolean = js.native
+  def default(str: String, options: typings.validator.mod.validator.IsISO8601Options): Boolean = js.native
+  type IsISO8601Options = typings.validator.mod.validator.IsISO8601Options
 }
 

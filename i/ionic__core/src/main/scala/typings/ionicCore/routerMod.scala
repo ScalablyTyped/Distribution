@@ -3,8 +3,8 @@ package typings.ionicCore
 import typings.ionicCore.interfaceMod.RouterDirection
 import typings.ionicCore.interfaceMod.RouterEventDetail
 import typings.ionicCore.mod.BackButtonEvent
-import typings.ionicCore.stencilCoreMod.ComponentInterface
-import typings.ionicCore.stencilCoreMod.EventEmitter
+import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
+import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

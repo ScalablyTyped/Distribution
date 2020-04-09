@@ -8,10 +8,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class RenewTokenResponse () extends js.Object {
   /**
-    * The renewed access token. This value might be different from the `access_token` you provided in your request. You
-    * provide this token in a header with every request to Connect API endpoints. See [Request and response
-    * headers](https://docs.connect.squareup.com/api/connect/v2/#requestandresponseheaders) for the format of this
-    * header.
+    * The renewed access token. This value might be different from the `access_token` you provided in your request.
+    * You provide this token in a header with every request to Connect API endpoints.
+    * See [Request and response headers](https://developer.squareup.com/docs/api/connect/v2/#requestandresponseheaders) for the format of this header.
     */
   var access_token: js.UndefOr[String] = js.native
   /**

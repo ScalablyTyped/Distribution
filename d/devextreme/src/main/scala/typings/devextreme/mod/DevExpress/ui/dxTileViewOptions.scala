@@ -20,23 +20,23 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxTileViewOptions extends CollectionWidgetOptions[dxTileView] {
-  /** Specifies the height of the base tile view item. */
+  /** @name dxTileView.Options.baseItemHeight */
   var baseItemHeight: js.UndefOr[Double] = js.undefined
-  /** Specifies the width of the base tile view item. */
+  /** @name dxTileView.Options.baseItemWidth */
   var baseItemWidth: js.UndefOr[Double] = js.undefined
-  /** Binds the widget to data. */
+  /** @name dxTileView.Options.dataSource */
   @JSName("dataSource")
   var dataSource_dxTileViewOptions: js.UndefOr[
     String | (js.Array[String | dxTileViewItem | _]) | DataSource | DataSourceOptions
   ] = js.undefined
-  /** Specifies whether tiles are placed horizontally or vertically. */
+  /** @name dxTileView.Options.direction */
   var direction: js.UndefOr[horizontal | vertical] = js.undefined
-  /** Specifies the distance in pixels between adjacent tiles. */
+  /** @name dxTileView.Options.itemMargin */
   var itemMargin: js.UndefOr[Double] = js.undefined
-  /** An array of items displayed by the widget. */
+  /** @name dxTileView.Options.items */
   @JSName("items")
   var items_dxTileViewOptions: js.UndefOr[js.Array[String | dxTileViewItem | _]] = js.undefined
-  /** A Boolean value specifying whether or not to display a scrollbar. */
+  /** @name dxTileView.Options.showScrollbar */
   var showScrollbar: js.UndefOr[Boolean] = js.undefined
 }
 

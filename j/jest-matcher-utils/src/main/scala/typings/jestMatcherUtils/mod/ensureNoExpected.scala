@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("jest-matcher-utils/build", "ensureNoExpected")
+@JSImport("jest-matcher-utils", "ensureNoExpected")
 @js.native
 object ensureNoExpected extends js.Object {
   def apply(expected: js.Any, matcherName: String): Unit = js.native

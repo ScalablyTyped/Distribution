@@ -14,6 +14,7 @@ trait GraphQLRequestContext[TContext] extends js.Object {
   var debug: js.UndefOr[Boolean] = js.undefined
   val document: js.UndefOr[DocumentNode] = js.undefined
   val errors: js.UndefOr[js.Array[GraphQLError]] = js.undefined
+  var logger: Logger
   val metrics: js.UndefOr[GraphQLRequestMetrics] = js.undefined
   val operation: js.UndefOr[OperationDefinitionNode] = js.undefined
   val operationName: js.UndefOr[String | Null] = js.undefined
@@ -28,6 +29,7 @@ object GraphQLRequestContext {
   def apply[TContext](
     cache: KeyValueCache[String],
     context: TContext,
+    logger: Logger,
     request: GraphQLRequest,
     debug: js.UndefOr[Boolean] = js.undefined,
     document: DocumentNode = null,
@@ -39,7 +41,7 @@ object GraphQLRequestContext {
     response: GraphQLResponse = null,
     source: String = null
   ): GraphQLRequestContext[TContext] = {
-    val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], logger = logger.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
     if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
     if (document != null) __obj.updateDynamic("document")(document.asInstanceOf[js.Any])
     if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])

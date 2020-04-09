@@ -4,6 +4,7 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
+import typings.std.Document_
 import typings.std.HTMLElement
 import typings.std.Window_
 import scala.scalajs.js
@@ -15,7 +16,7 @@ trait BackTopProps extends js.Object {
   var onClick: js.UndefOr[MouseEventHandler[HTMLElement]] = js.undefined
   var prefixCls: js.UndefOr[String] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
-  var target: js.UndefOr[js.Function0[HTMLElement | Window_]] = js.undefined
+  var target: js.UndefOr[js.Function0[HTMLElement | Window_ | Document_]] = js.undefined
   var visibilityHeight: js.UndefOr[Double] = js.undefined
   var visible: js.UndefOr[Boolean] = js.undefined
 }
@@ -27,7 +28,7 @@ object BackTopProps {
     onClick: MouseEvent[HTMLElement, NativeMouseEvent] => Unit = null,
     prefixCls: String = null,
     style: CSSProperties = null,
-    target: () => HTMLElement | Window_ = null,
+    target: () => HTMLElement | Window_ | Document_ = null,
     visibilityHeight: Int | Double = null,
     visible: js.UndefOr[Boolean] = js.undefined
   ): BackTopProps = {

@@ -57,6 +57,11 @@ trait AnonBaseScreenSpaceError extends js.Object {
   var progressiveResolutionHeightFraction: js.UndefOr[Double] = js.undefined
   var shadows: js.UndefOr[ShadowMode] = js.undefined
   var show: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Optimization option.
+    * Determines if level of detail skipping should be applied during the traversal.
+    * @default false
+    */
   var skipLevelOfDetail: js.UndefOr[Boolean] = js.undefined
   var skipLevels: js.UndefOr[Double] = js.undefined
   var skipScreenSpaceErrorFactor: js.UndefOr[Double] = js.undefined

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mime-db"
-version := "1.27-dt-20190322Z-574028"
+version := "1.27-dt-20200330Z-b5288f"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

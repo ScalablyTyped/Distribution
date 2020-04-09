@@ -10,11 +10,33 @@ trait AnalyticsApplicationInputs extends js.Object {
     * The ARN of the Kinesis Analytics Application.
     */
   var id: String = js.native
+  /**
+    * The Kinesis Firehose configuration for the streaming source. Conflicts with `kinesisStream`.
+    * See Kinesis Firehose below for more details.
+    */
   var kinesisFirehose: js.UndefOr[AnalyticsApplicationInputsKinesisFirehose] = js.native
+  /**
+    * The Kinesis Stream configuration for the streaming source. Conflicts with `kinesisFirehose`.
+    * See Kinesis Stream below for more details.
+    */
   var kinesisStream: js.UndefOr[AnalyticsApplicationInputsKinesisStream] = js.native
+  /**
+    * The Name Prefix to use when creating an in-application stream.
+    */
   var namePrefix: String = js.native
+  /**
+    * The number of Parallel in-application streams to create.
+    * See Parallelism below for more details.
+    */
   var parallelism: js.UndefOr[AnalyticsApplicationInputsParallelism] = js.native
+  /**
+    * The Processing Configuration to transform records as they are received from the stream.
+    * See Processing Configuration below for more details.
+    */
   var processingConfiguration: js.UndefOr[AnalyticsApplicationInputsProcessingConfiguration] = js.native
+  /**
+    * The Schema format of the data in the streaming source. See Source Schema below for more details.
+    */
   var schema: AnalyticsApplicationInputsSchema = js.native
   var startingPositionConfigurations: js.Array[AnalyticsApplicationInputsStartingPositionConfiguration] = js.native
   var streamNames: js.Array[String] = js.native

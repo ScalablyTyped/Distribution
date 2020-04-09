@@ -21,7 +21,7 @@ trait FirehoseDeliveryStreamExtendedS3Configuration extends js.Object {
     */
   var bufferSize: js.UndefOr[Input[Double]] = js.native
   /**
-    * The CloudWatch Logging Options for the delivery stream. More details are given below.
+    * The CloudWatch Logging Options for the delivery stream. More details are given below
     */
   var cloudwatchLoggingOptions: js.UndefOr[Input[FirehoseDeliveryStreamExtendedS3ConfigurationCloudwatchLoggingOptions]] = js.native
   /**
@@ -60,7 +60,7 @@ trait FirehoseDeliveryStreamExtendedS3Configuration extends js.Object {
     */
   var s3BackupConfiguration: js.UndefOr[Input[FirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfiguration]] = js.native
   /**
-    * Defines how documents should be delivered to Amazon S3.  Valid values are `FailedEventsOnly` and `AllEvents`.  Default value is `FailedEventsOnly`.
+    * The Amazon S3 backup mode.  Valid values are `Disabled` and `Enabled`.  Default value is `Disabled`.
     */
   var s3BackupMode: js.UndefOr[Input[String]] = js.native
 }

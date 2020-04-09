@@ -12,14 +12,14 @@ import typings.octokitPluginRestEndpointMethods.AnonCancelImport
 import typings.octokitPluginRestEndpointMethods.AnonCancelWorkflowRun
 import typings.octokitPluginRestEndpointMethods.AnonCheckIfMerged
 import typings.octokitPluginRestEndpointMethods.AnonCheckIsStarred
-import typings.octokitPluginRestEndpointMethods.AnonCheckStarringRepo
+import typings.octokitPluginRestEndpointMethods.AnonCheckRepoIsStarredByAuthenticatedUser
 import typings.octokitPluginRestEndpointMethods.AnonCode
 import typings.octokitPluginRestEndpointMethods.AnonCreate
 import typings.octokitPluginRestEndpointMethods.AnonCreateBlob
 import typings.octokitPluginRestEndpointMethods.AnonCreateForCommitComment
 import typings.octokitPluginRestEndpointMethods.AnonGet
 import typings.octokitPluginRestEndpointMethods.AnonGetAllCodesOfConduct
-import typings.octokitPluginRestEndpointMethods.AnonGetAnon29
+import typings.octokitPluginRestEndpointMethods.AnonGetAnon25
 import typings.octokitPluginRestEndpointMethods.AnonGetForRepo
 import typings.octokitPluginRestEndpointMethods.AnonGetTemplate
 import typings.octokitPluginRestEndpointMethods.AnonRender
@@ -29,7 +29,7 @@ import scala.scalajs.js.annotation._
 
 trait RestEndpointMethods extends js.Object {
   var actions: AnonCancelWorkflowRun
-  var activity: AnonCheckStarringRepo
+  var activity: AnonCheckRepoIsStarredByAuthenticatedUser
   var apps: AnonAddRepoToInstallation
   var checks: AnonCreate
   var codesOfConduct: AnonGetAllCodesOfConduct
@@ -41,12 +41,12 @@ trait RestEndpointMethods extends js.Object {
   var issues: AnonAddAssignees
   var licenses: AnonGetForRepo
   var markdown: AnonRender
-  var meta: AnonGetAnon29
+  var meta: AnonGetAnon25
   var migrations: AnonCancelImport
   var orgs: AnonAddOrUpdateMembership
   var projects: AnonAddCollaborator
   var pulls: AnonCheckIfMerged
-  var rateLimit: AnonGetAnon29
+  var rateLimit: AnonGetAnon25
   var reactions: AnonCreateForCommitComment
   var repos: AnonAcceptInvitation
   var search: AnonCode
@@ -58,7 +58,7 @@ object RestEndpointMethods {
   @scala.inline
   def apply(
     actions: AnonCancelWorkflowRun,
-    activity: AnonCheckStarringRepo,
+    activity: AnonCheckRepoIsStarredByAuthenticatedUser,
     apps: AnonAddRepoToInstallation,
     checks: AnonCreate,
     codesOfConduct: AnonGetAllCodesOfConduct,
@@ -70,12 +70,12 @@ object RestEndpointMethods {
     issues: AnonAddAssignees,
     licenses: AnonGetForRepo,
     markdown: AnonRender,
-    meta: AnonGetAnon29,
+    meta: AnonGetAnon25,
     migrations: AnonCancelImport,
     orgs: AnonAddOrUpdateMembership,
     projects: AnonAddCollaborator,
     pulls: AnonCheckIfMerged,
-    rateLimit: AnonGetAnon29,
+    rateLimit: AnonGetAnon25,
     reactions: AnonCreateForCommitComment,
     repos: AnonAcceptInvitation,
     search: AnonCode,

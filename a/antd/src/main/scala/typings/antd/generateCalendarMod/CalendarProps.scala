@@ -1,7 +1,7 @@
 package typings.antd.generateCalendarMod
 
-import typings.antd.AnonLang
 import typings.antd.AnonOnChange
+import typings.antd.generatePickerMod.PickerLocale
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
 import scala.scalajs.js
@@ -16,7 +16,7 @@ trait CalendarProps[DateType] extends js.Object {
   var disabledDate: js.UndefOr[js.Function1[/* date */ DateType, Boolean]] = js.undefined
   var fullscreen: js.UndefOr[Boolean] = js.undefined
   var headerRender: js.UndefOr[HeaderRender[DateType]] = js.undefined
-  var locale: js.UndefOr[AnonLang] = js.undefined
+  var locale: js.UndefOr[PickerLocale] = js.undefined
   var mode: js.UndefOr[CalendarMode] = js.undefined
   var monthCellRender: js.UndefOr[js.Function1[/* date */ DateType, ReactNode]] = js.undefined
   var monthFullCellRender: js.UndefOr[js.Function1[/* date */ DateType, ReactNode]] = js.undefined
@@ -39,7 +39,7 @@ object CalendarProps {
     disabledDate: /* date */ DateType => Boolean = null,
     fullscreen: js.UndefOr[Boolean] = js.undefined,
     headerRender: /* config */ AnonOnChange[DateType] => ReactNode = null,
-    locale: AnonLang = null,
+    locale: PickerLocale = null,
     mode: CalendarMode = null,
     monthCellRender: /* date */ DateType => ReactNode = null,
     monthFullCellRender: /* date */ DateType => ReactNode = null,

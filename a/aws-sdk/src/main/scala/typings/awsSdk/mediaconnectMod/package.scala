@@ -68,6 +68,8 @@ package object mediaconnectMod {
   type listOfSetSourceRequest = js.Array[typings.awsSdk.mediaconnectMod.SetSourceRequest]
   type listOfSource = js.Array[typings.awsSdk.mediaconnectMod.Source]
   type listOfString = js.Array[typings.awsSdk.mediaconnectMod.string]
+  type listOfVpcInterface = js.Array[typings.awsSdk.mediaconnectMod.VpcInterface]
+  type listOfVpcInterfaceRequest = js.Array[typings.awsSdk.mediaconnectMod.VpcInterfaceRequest]
   type mapOfString = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.mediaconnectMod.string]
   type string = java.lang.String
 }

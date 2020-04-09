@@ -22,13 +22,14 @@ trait AnimatedRegionSpringConfig extends js.Object {
   var speed: js.UndefOr[Double] = js.undefined
   var stiffness: js.UndefOr[Double] = js.undefined
   var tension: js.UndefOr[Double] = js.undefined
-  var useNativeDriver: js.UndefOr[Boolean] = js.undefined
+  var useNativeDriver: Boolean
   var velocity: js.UndefOr[Double | Point] = js.undefined
 }
 
 object AnimatedRegionSpringConfig {
   @scala.inline
   def apply(
+    useNativeDriver: Boolean,
     bounciness: Int | Double = null,
     damping: Int | Double = null,
     friction: Int | Double = null,
@@ -44,10 +45,9 @@ object AnimatedRegionSpringConfig {
     speed: Int | Double = null,
     stiffness: Int | Double = null,
     tension: Int | Double = null,
-    useNativeDriver: js.UndefOr[Boolean] = js.undefined,
     velocity: Double | Point = null
   ): AnimatedRegionSpringConfig = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(useNativeDriver = useNativeDriver.asInstanceOf[js.Any])
     if (bounciness != null) __obj.updateDynamic("bounciness")(bounciness.asInstanceOf[js.Any])
     if (damping != null) __obj.updateDynamic("damping")(damping.asInstanceOf[js.Any])
     if (friction != null) __obj.updateDynamic("friction")(friction.asInstanceOf[js.Any])
@@ -63,7 +63,6 @@ object AnimatedRegionSpringConfig {
     if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
     if (stiffness != null) __obj.updateDynamic("stiffness")(stiffness.asInstanceOf[js.Any])
     if (tension != null) __obj.updateDynamic("tension")(tension.asInstanceOf[js.Any])
-    if (!js.isUndefined(useNativeDriver)) __obj.updateDynamic("useNativeDriver")(useNativeDriver.asInstanceOf[js.Any])
     if (velocity != null) __obj.updateDynamic("velocity")(velocity.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimatedRegionSpringConfig]
   }

@@ -62,14 +62,14 @@ package object styledComponentsMod {
     - typings.styledComponents.styledComponentsMod.FlattenSimpleInterpolation
   */
   type SimpleInterpolation = typings.styledComponents.styledComponentsMod._SimpleInterpolation | java.lang.String | scala.Double | typings.styledComponents.styledComponentsMod.FalseyValue
-  type StyledComponent[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */, T /* <: js.Object */, O /* <: js.Object */, A /* <: java.lang.String */] = (// the "string" allows this to be used as an object key
+  type StyledComponent[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any */, T /* <: js.Object */, O /* <: js.Object */, A /* <: java.lang.String */] = (// the "string" allows this to be used as an object key
   // I really want to avoid this if possible but it's the only way to use nesting with object styles...
   java.lang.String) with (typings.styledComponents.styledComponentsMod.StyledComponentBase[C, T, O, A]) with (typings.hoistNonReactStatics.mod.NonReactStatics[C, js.Object])
   type StyledComponentInnerAttrs[C /* <: typings.styledComponents.styledComponentsMod.AnyStyledComponent */] = js.Any
   type StyledComponentInnerComponent[C /* <: typings.react.mod.ComponentType[_] */] = C
   type StyledComponentInnerOtherProps[C /* <: typings.styledComponents.styledComponentsMod.AnyStyledComponent */] = js.Any
   type StyledComponentProps[// The Component from whose props are derived
-  C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */, // The Theme from the current context
+  C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any */, // The Theme from the current context
   T /* <: js.Object */, // The other props added by the template
   O /* <: js.Object */, // The props that are made optional by .attrs
   A /* <: java.lang.String */] = (typings.styledComponents.styledComponentsMod.WithOptionalTheme[
@@ -79,11 +79,11 @@ package object styledComponentsMod {
     ]) with (typings.std.Partial[typings.std.Pick[typings.react.mod.ComponentPropsWithRef[C] with O, A]]), 
     T
   ]) with typings.styledComponents.styledComponentsMod.WithChildrenIfReactComponentClass[C]
-  type StyledComponentPropsWithAs[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */, T /* <: js.Object */, O /* <: js.Object */, A /* <: java.lang.String */] = (typings.styledComponents.styledComponentsMod.StyledComponentProps[C, T, O, A]) with typings.styledComponents.AnonForwardedAs[C]
-  type StyledComponentPropsWithRef[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */] = typings.react.mod.ComponentPropsWithRef[
+  type StyledComponentPropsWithAs[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any */, T /* <: js.Object */, O /* <: js.Object */, A /* <: java.lang.String */] = (typings.styledComponents.styledComponentsMod.StyledComponentProps[C, T, O, A]) with typings.styledComponents.AnonForwardedAs[C]
+  type StyledComponentPropsWithRef[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any */] = typings.react.mod.ComponentPropsWithRef[
     C | typings.styledComponents.styledComponentsMod.StyledComponentInnerComponent[C]
   ]
-  type StyledFunction[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */] = typings.styledComponents.styledComponentsMod.ThemedStyledFunction[C, js.Any, js.Object, scala.Nothing]
+  type StyledFunction[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any */] = typings.styledComponents.styledComponentsMod.ThemedStyledFunction[C, js.Any, js.Object, scala.Nothing]
   type StyledProps[P] = typings.styledComponents.styledComponentsMod.ThemedStyledProps[
     P, 
     typings.styledComponents.styledComponentsMod.AnyIfEmpty[typings.styledComponents.styledComponentsMod.DefaultTheme]
@@ -110,7 +110,7 @@ package object styledComponentsMod {
   // we need to manually add a `children` field.
   // See https://github.com/DefinitelyTyped/DefinitelyTyped/pull/31945
   // and https://github.com/DefinitelyTyped/DefinitelyTyped/pull/32843
-  type WithChildrenIfReactComponentClass[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */] = js.Object | typings.styledComponents.AnonChildren
+  type WithChildrenIfReactComponentClass[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any */] = js.Object | typings.styledComponents.AnonChildren
   type WithOptionalTheme[P /* <: typings.styledComponents.AnonThemeT[T] */, T] = P with typings.styledComponents.AnonThemeT[T]
   type WithThemeFnInterface[T /* <: js.Object */] = typings.styledComponents.styledComponentsMod.BaseWithThemeFnInterface[typings.styledComponents.styledComponentsMod.AnyIfEmpty[T]]
 }

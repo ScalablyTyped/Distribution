@@ -39,6 +39,9 @@ object nextServerStrings {
   sealed trait `pages-manifestDotjson` extends js.Object
   
   @js.native
+  sealed trait pause extends js.Object
+  
+  @js.native
   sealed trait `phase-development-server` extends js.Object
   
   @js.native
@@ -64,6 +67,9 @@ object nextServerStrings {
   
   @js.native
   sealed trait readable extends js.Object
+  
+  @js.native
+  sealed trait resume extends js.Object
   
   @js.native
   sealed trait runtime extends js.Object
@@ -103,6 +109,8 @@ object nextServerStrings {
   @scala.inline
   def `pages-manifestDotjson`: `pages-manifestDotjson` = "pages-manifest.json".asInstanceOf[`pages-manifestDotjson`]
   @scala.inline
+  def pause: pause = "pause".asInstanceOf[pause]
+  @scala.inline
   def `phase-development-server`: `phase-development-server` = "phase-development-server".asInstanceOf[`phase-development-server`]
   @scala.inline
   def `phase-export`: `phase-export` = "phase-export".asInstanceOf[`phase-export`]
@@ -120,6 +128,8 @@ object nextServerStrings {
   def `react-loadable-manifestDotjson`: `react-loadable-manifestDotjson` = "react-loadable-manifest.json".asInstanceOf[`react-loadable-manifestDotjson`]
   @scala.inline
   def readable: readable = "readable".asInstanceOf[readable]
+  @scala.inline
+  def resume: resume = "resume".asInstanceOf[resume]
   @scala.inline
   def runtime: runtime = "runtime".asInstanceOf[runtime]
   @scala.inline

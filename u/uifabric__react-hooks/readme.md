@@ -1,7 +1,7 @@
 
 # Scala.js typings for uifabric__react-hooks
 
-Typings are for version 7.0.22
+Typings are for version 7.1.1
 
 ## Library description:
 UI Fabric React hooks.

@@ -44,7 +44,7 @@ object certificateMod extends js.Object {
     def getPublicKey(parameters: js.Any): js.Thenable[CryptoKey] = js.native
     /**
       * Make a signature for current value from TBS section
-      * 
+      *
       * @param {CryptoKey} privateKey Private key for "subjectPublicKeyInfo" structure
       * @param {string} [hashAlgorithm="SHA-1"] Hashing algorithm
       */
@@ -53,7 +53,7 @@ object certificateMod extends js.Object {
     def toJSON(): js.Any = js.native
     /**
       * Convert current object to asn1js object and set correct values
-      * 
+      *
       * @param {boolean} [encodeFlag]
       * @returns {*}
       */

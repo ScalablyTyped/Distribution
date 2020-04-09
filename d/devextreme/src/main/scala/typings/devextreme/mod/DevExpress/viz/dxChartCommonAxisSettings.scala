@@ -10,47 +10,47 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxChartCommonAxisSettings extends js.Object {
-  /** Specifies whether to allow decimal values on the axis. When false, the axis contains integer values only. */
+  /** @name dxChart.Options.commonAxisSettings.allowDecimals */
   var allowDecimals: js.UndefOr[Boolean] = js.undefined
-  /** Configures the scale breaks' appearance. */
+  /** @name dxChart.Options.commonAxisSettings.breakStyle */
   var breakStyle: js.UndefOr[AnonLine] = js.undefined
-  /** Specifies the color of the axis line. */
+  /** @name dxChart.Options.commonAxisSettings.color */
   var color: js.UndefOr[String] = js.undefined
-  /** Configures the appearance of all constant lines in the widget. */
+  /** @name dxChart.Options.commonAxisSettings.constantLineStyle */
   var constantLineStyle: js.UndefOr[dxChartCommonAxisSettingsConstantLineStyle] = js.undefined
-  /** Specifies whether ticks and grid lines should cross axis labels or lie between them. Applies only to the axes of the "discrete" type. */
+  /** @name dxChart.Options.commonAxisSettings.discreteAxisDivisionMode */
   var discreteAxisDivisionMode: js.UndefOr[betweenLabels | crossLabels] = js.undefined
-  /** Specifies whether to force the axis to start and end on ticks. */
+  /** @name dxChart.Options.commonAxisSettings.endOnTick */
   var endOnTick: js.UndefOr[Boolean] = js.undefined
-  /** Configures the grid. */
+  /** @name dxChart.Options.commonAxisSettings.grid */
   var grid: js.UndefOr[AnonColorOpacity] = js.undefined
-  /** Inverts the axis. */
+  /** @name dxChart.Options.commonAxisSettings.inverted */
   var inverted: js.UndefOr[Boolean] = js.undefined
-  /** Configures axis labels. */
+  /** @name dxChart.Options.commonAxisSettings.label */
   var label: js.UndefOr[dxChartCommonAxisSettingsLabel] = js.undefined
-  /** Controls the empty space between the maximum series points and the axis. Applies only to the axes of the "continuous" and "logarithmic" type. */
+  /** @name dxChart.Options.commonAxisSettings.maxValueMargin */
   var maxValueMargin: js.UndefOr[Double] = js.undefined
-  /** Controls the empty space between the minimum series points and the axis. Applies only to the axes of the "continuous" and "logarithmic" type. */
+  /** @name dxChart.Options.commonAxisSettings.minValueMargin */
   var minValueMargin: js.UndefOr[Double] = js.undefined
-  /** Configures the minor grid. */
+  /** @name dxChart.Options.commonAxisSettings.minorGrid */
   var minorGrid: js.UndefOr[AnonColorOpacity] = js.undefined
-  /** Configures the appearance of minor axis ticks. */
+  /** @name dxChart.Options.commonAxisSettings.minorTick */
   var minorTick: js.UndefOr[AnonLength] = js.undefined
-  /** Specifies how transparent the axis line should be. */
+  /** @name dxChart.Options.commonAxisSettings.opacity */
   var opacity: js.UndefOr[Double] = js.undefined
-  /** Reserves a pixel-measured space for the axis. */
+  /** @name dxChart.Options.commonAxisSettings.placeholderSize */
   var placeholderSize: js.UndefOr[Double] = js.undefined
-  /** Configures the appearance of strips. */
+  /** @name dxChart.Options.commonAxisSettings.stripStyle */
   var stripStyle: js.UndefOr[dxChartCommonAxisSettingsStripStyle] = js.undefined
-  /** Configures the appearance of major axis ticks. */
+  /** @name dxChart.Options.commonAxisSettings.tick */
   var tick: js.UndefOr[AnonLength] = js.undefined
-  /** Configures axis titles. */
+  /** @name dxChart.Options.commonAxisSettings.title */
   var title: js.UndefOr[dxChartCommonAxisSettingsTitle] = js.undefined
-  /** Adds an empty space between the axis and the minimum and maximum series points. */
+  /** @name dxChart.Options.commonAxisSettings.valueMarginsEnabled */
   var valueMarginsEnabled: js.UndefOr[Boolean] = js.undefined
-  /** Makes the axis line visible. */
+  /** @name dxChart.Options.commonAxisSettings.visible */
   var visible: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the width of the axis line in pixels. */
+  /** @name dxChart.Options.commonAxisSettings.width */
   var width: js.UndefOr[Double] = js.undefined
 }
 

@@ -21,9 +21,7 @@ trait Layer extends js.Object {
   var maxzoom: js.UndefOr[Double] = js.undefined
   var metadata: js.UndefOr[js.Any] = js.undefined
   var minzoom: js.UndefOr[Double] = js.undefined
-  var paint: js.UndefOr[
-    BackgroundPaint | FillPaint | FillExtrusionPaint | LinePaint | SymbolPaint | RasterPaint | CirclePaint | HeatmapPaint | HillshadePaint
-  ] = js.undefined
+  var paint: js.UndefOr[AnyPaint] = js.undefined
   var ref: js.UndefOr[String] = js.undefined
   var source: js.UndefOr[String | AnySourceData] = js.undefined
   var `source-layer`: js.UndefOr[String] = js.undefined
@@ -42,7 +40,7 @@ object Layer {
     maxzoom: Int | Double = null,
     metadata: js.Any = null,
     minzoom: Int | Double = null,
-    paint: BackgroundPaint | FillPaint | FillExtrusionPaint | LinePaint | SymbolPaint | RasterPaint | CirclePaint | HeatmapPaint | HillshadePaint = null,
+    paint: AnyPaint = null,
     ref: String = null,
     source: String | AnySourceData = null,
     `source-layer`: String = null,

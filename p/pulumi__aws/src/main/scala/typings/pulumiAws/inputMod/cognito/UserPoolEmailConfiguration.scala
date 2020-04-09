@@ -12,6 +12,10 @@ trait UserPoolEmailConfiguration extends js.Object {
     */
   var emailSendingAccount: js.UndefOr[Input[String]] = js.native
   /**
+    * Sender’s email address or sender’s name with their email address (e.g. "john@smith.com" or "John Smith <john@smith.com>")
+    */
+  var fromEmailAddress: js.UndefOr[Input[String]] = js.native
+  /**
     * The REPLY-TO email address.
     */
   var replyToEmailAddress: js.UndefOr[Input[String]] = js.native
@@ -25,11 +29,13 @@ object UserPoolEmailConfiguration {
   @scala.inline
   def apply(
     emailSendingAccount: Input[String] = null,
+    fromEmailAddress: Input[String] = null,
     replyToEmailAddress: Input[String] = null,
     sourceArn: Input[String] = null
   ): UserPoolEmailConfiguration = {
     val __obj = js.Dynamic.literal()
     if (emailSendingAccount != null) __obj.updateDynamic("emailSendingAccount")(emailSendingAccount.asInstanceOf[js.Any])
+    if (fromEmailAddress != null) __obj.updateDynamic("fromEmailAddress")(fromEmailAddress.asInstanceOf[js.Any])
     if (replyToEmailAddress != null) __obj.updateDynamic("replyToEmailAddress")(replyToEmailAddress.asInstanceOf[js.Any])
     if (sourceArn != null) __obj.updateDynamic("sourceArn")(sourceArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserPoolEmailConfiguration]

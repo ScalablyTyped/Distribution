@@ -7,17 +7,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CollectionWidgetItem extends js.Object {
-  /** Specifies whether a widget item should be disabled. */
+  /** @name CollectionWidgetItem.disabled */
   var disabled: js.UndefOr[Boolean] = js.undefined
-  /** Specifies html code inserted into the widget item element. */
+  /** @name CollectionWidgetItem.html */
   var html: js.UndefOr[String] = js.undefined
-  /** Specifies a template that should be used to render this item only. */
+  /** @name CollectionWidgetItem.template */
   var template: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function0[String | Element | JQuery])
   ] = js.undefined
-  /** Specifies text displayed for the widget item. */
+  /** @name CollectionWidgetItem.text */
   var text: js.UndefOr[String] = js.undefined
-  /** Specifies whether or not a widget item must be displayed. */
+  /** @name CollectionWidgetItem.visible */
   var visible: js.UndefOr[Boolean] = js.undefined
 }
 

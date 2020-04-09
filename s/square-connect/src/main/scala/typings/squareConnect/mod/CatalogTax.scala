@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 class CatalogTax () extends js.Object {
   /**
     * If `true`, the fee applies to custom amounts entered into the Square Point of Sale app that are not associated
-    * with a particular [CatalogItem](#type-catalogitem).
+    * with a particular `CatalogItem`.
     */
   var applies_to_custom_amounts: js.UndefOr[Boolean] = js.native
   /**

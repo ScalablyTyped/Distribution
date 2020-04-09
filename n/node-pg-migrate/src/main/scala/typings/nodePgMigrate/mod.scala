@@ -1,6 +1,7 @@
 package typings.nodePgMigrate
 
 import typings.nodePgMigrate.dbMod.DBConnection
+import typings.nodePgMigrate.distTypesMod.Logger
 import typings.nodePgMigrate.distTypesMod.MigrationBuilderActions
 import typings.nodePgMigrate.distTypesMod.RunnerOption
 import typings.nodePgMigrate.migrationMod.RunMigration
@@ -33,7 +34,7 @@ object mod extends js.Object {
       hasUpDown: MigrationBuilderActions,
       options: RunnerOption,
       typeShorthands: ColumnDefinitions,
-      log: js.Function2[/* message */ js.UndefOr[js.Any], /* repeated */ js.Any, Unit]
+      logger: Logger
     ) = this()
   }
   

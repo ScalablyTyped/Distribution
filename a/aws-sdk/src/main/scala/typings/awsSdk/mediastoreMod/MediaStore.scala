@@ -78,6 +78,19 @@ trait MediaStore extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteLifecyclePolicyOutput, Unit]
   ): Request[DeleteLifecyclePolicyOutput, AWSError] = js.native
   /**
+    * Deletes the metric policy that is associated with the specified container. If there is no metric policy associated with the container, MediaStore doesn't send metrics to CloudWatch.
+    */
+  def deleteMetricPolicy(): Request[DeleteMetricPolicyOutput, AWSError] = js.native
+  def deleteMetricPolicy(callback: js.Function2[/* err */ AWSError, /* data */ DeleteMetricPolicyOutput, Unit]): Request[DeleteMetricPolicyOutput, AWSError] = js.native
+  /**
+    * Deletes the metric policy that is associated with the specified container. If there is no metric policy associated with the container, MediaStore doesn't send metrics to CloudWatch.
+    */
+  def deleteMetricPolicy(params: DeleteMetricPolicyInput): Request[DeleteMetricPolicyOutput, AWSError] = js.native
+  def deleteMetricPolicy(
+    params: DeleteMetricPolicyInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteMetricPolicyOutput, Unit]
+  ): Request[DeleteMetricPolicyOutput, AWSError] = js.native
+  /**
     * Retrieves the properties of the requested container. This request is commonly used to retrieve the endpoint of a container. An endpoint is a value assigned by the service when a new container is created. A container's endpoint does not change after it has been assigned. The DescribeContainer request returns a single Container object based on ContainerName. To return all Container objects that are associated with a specified AWS account, use ListContainers.
     */
   def describeContainer(): Request[DescribeContainerOutput, AWSError] = js.native
@@ -129,6 +142,19 @@ trait MediaStore extends Service {
     params: GetLifecyclePolicyInput,
     callback: js.Function2[/* err */ AWSError, /* data */ GetLifecyclePolicyOutput, Unit]
   ): Request[GetLifecyclePolicyOutput, AWSError] = js.native
+  /**
+    * Returns the metric policy for the specified container. 
+    */
+  def getMetricPolicy(): Request[GetMetricPolicyOutput, AWSError] = js.native
+  def getMetricPolicy(callback: js.Function2[/* err */ AWSError, /* data */ GetMetricPolicyOutput, Unit]): Request[GetMetricPolicyOutput, AWSError] = js.native
+  /**
+    * Returns the metric policy for the specified container. 
+    */
+  def getMetricPolicy(params: GetMetricPolicyInput): Request[GetMetricPolicyOutput, AWSError] = js.native
+  def getMetricPolicy(
+    params: GetMetricPolicyInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetMetricPolicyOutput, Unit]
+  ): Request[GetMetricPolicyOutput, AWSError] = js.native
   /**
     * Lists the properties of all containers in AWS Elemental MediaStore.  You can query to receive all the containers in one response. Or you can include the MaxResults parameter to receive a limited number of containers in each response. In this case, the response includes a token. To get the next set of containers, send the command again, this time with the NextToken parameter (with the returned token as its value). The next set of responses appears, with a token if there are still more containers to receive.  See also DescribeContainer, which gets the properties of one container. 
     */
@@ -194,6 +220,19 @@ trait MediaStore extends Service {
     params: PutLifecyclePolicyInput,
     callback: js.Function2[/* err */ AWSError, /* data */ PutLifecyclePolicyOutput, Unit]
   ): Request[PutLifecyclePolicyOutput, AWSError] = js.native
+  /**
+    * The metric policy that you want to add to the container. A metric policy allows AWS Elemental MediaStore to send metrics to Amazon CloudWatch. It takes up to 20 minutes for the new policy to take effect.
+    */
+  def putMetricPolicy(): Request[PutMetricPolicyOutput, AWSError] = js.native
+  def putMetricPolicy(callback: js.Function2[/* err */ AWSError, /* data */ PutMetricPolicyOutput, Unit]): Request[PutMetricPolicyOutput, AWSError] = js.native
+  /**
+    * The metric policy that you want to add to the container. A metric policy allows AWS Elemental MediaStore to send metrics to Amazon CloudWatch. It takes up to 20 minutes for the new policy to take effect.
+    */
+  def putMetricPolicy(params: PutMetricPolicyInput): Request[PutMetricPolicyOutput, AWSError] = js.native
+  def putMetricPolicy(
+    params: PutMetricPolicyInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ PutMetricPolicyOutput, Unit]
+  ): Request[PutMetricPolicyOutput, AWSError] = js.native
   /**
     * Starts access logging on the specified container. When you enable access logging on a container, MediaStore delivers access logs for objects stored in that container to Amazon CloudWatch Logs.
     */

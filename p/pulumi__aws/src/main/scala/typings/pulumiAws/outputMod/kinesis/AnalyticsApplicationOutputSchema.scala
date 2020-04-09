@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait AnalyticsApplicationOutputSchema extends js.Object {
+  /**
+    * The Format Type of the records on the output stream. Can be `CSV` or `JSON`.
+    */
   var recordFormatType: js.UndefOr[String] = js.native
 }
 

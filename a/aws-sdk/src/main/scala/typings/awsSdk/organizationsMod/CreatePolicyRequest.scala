@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CreatePolicyRequest extends js.Object {
   /**
-    * The policy content to add to the new policy. For example, you could create a service control policy (SCP) that specifies the permissions that administrators in attached accounts can delegate to their users, groups, and roles. The string for this SCP must be JSON text. For more information about the SCP syntax, see Service Control Policy Syntax in the AWS Organizations User Guide. 
+    * The policy content to add to the new policy. For example, if you create a service control policy (SCP), this string must be JSON text that specifies the permissions that admins in attached accounts can delegate to their users, groups, and roles. For more information about the SCP syntax, see Service Control Policy Syntax in the AWS Organizations User Guide. 
     */
   var Content: PolicyContent = js.native
   /**
@@ -19,7 +19,7 @@ trait CreatePolicyRequest extends js.Object {
     */
   var Name: PolicyName = js.native
   /**
-    * The type of policy to create.
+    * The type of policy to create.  In the current release, the only type of policy that you can create is a service control policy (SCP). 
     */
   var Type: PolicyType = js.native
 }

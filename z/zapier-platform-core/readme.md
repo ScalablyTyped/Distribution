@@ -1,7 +1,7 @@
 
 # Scala.js typings for zapier-platform-core
 
-Typings are for version 9.1.0
+Typings are for version 9.3.0
 
 ## Library description:
 The core SDK for CLI apps in the Zapier Developer Platform.

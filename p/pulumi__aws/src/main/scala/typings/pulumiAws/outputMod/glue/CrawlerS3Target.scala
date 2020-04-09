@@ -11,7 +11,7 @@ trait CrawlerS3Target extends js.Object {
     */
   var exclusions: js.UndefOr[js.Array[String]] = js.native
   /**
-    * The path to the Amazon S3 target.
+    * The name of the DynamoDB table to crawl.
     */
   var path: String = js.native
 }

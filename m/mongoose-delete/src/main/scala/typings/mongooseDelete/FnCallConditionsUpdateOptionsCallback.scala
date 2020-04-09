@@ -3,7 +3,7 @@ package typings.mongooseDelete
 import typings.mongodb.mod.FindAndModifyWriteOpResultObject
 import typings.mongoose.mod.FilterQuery
 import typings.mongoose.mod.QueryFindOneAndUpdateOptions
-import typings.mongoose.rawResulttrueQueryFindOneContext
+import typings.mongoose.rawResulttrueQueryFindOneArrayFilters
 import typings.mongoose.rawResulttrueupserttruene
 import typings.mongoose.upserttruenewtrueQueryFin
 import scala.scalajs.js
@@ -26,11 +26,11 @@ trait FnCallConditionsUpdateOptionsCallback extends js.Object {
     options: QueryFindOneAndUpdateOptions,
     callback: js.Function3[/* err */ js.Any, /* doc */ js.Any | Null, /* res */ js.Any, Unit]
   ): DocumentQueryanynullanyAll = js.native
-  def apply(conditions: FilterQuery[_], update: js.Any, options: rawResulttrueQueryFindOneContext): QueryFindAndModifyWriteOpBatchSize = js.native
+  def apply(conditions: FilterQuery[_], update: js.Any, options: rawResulttrueQueryFindOneArrayFilters): QueryFindAndModifyWriteOpBatchSize = js.native
   def apply(
     conditions: FilterQuery[_],
     update: js.Any,
-    options: rawResulttrueQueryFindOneContext,
+    options: rawResulttrueQueryFindOneArrayFilters,
     callback: js.Function3[
       /* err */ js.Any, 
       /* doc */ FindAndModifyWriteOpResultObject[_ | Null], 

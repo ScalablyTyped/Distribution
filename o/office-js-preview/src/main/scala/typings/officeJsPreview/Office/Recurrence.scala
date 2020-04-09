@@ -71,7 +71,7 @@ trait Recurrence extends js.Object {
     * 
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     */
-  var recurrenceProperties: RecurrenceProperties = js.native
+  var recurrenceProperties: js.UndefOr[RecurrenceProperties] = js.native
   /**
     * Gets or sets the properties of the recurring appointment series.
     * 
@@ -83,7 +83,7 @@ trait Recurrence extends js.Object {
     * 
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     */
-  var recurrenceTimeZone: RecurrenceTimeZone = js.native
+  var recurrenceTimeZone: js.UndefOr[RecurrenceTimeZone] = js.native
   /**
     * Gets or sets the type of the recurring appointment series.
     * 

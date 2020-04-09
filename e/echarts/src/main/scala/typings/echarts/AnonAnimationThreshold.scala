@@ -150,7 +150,7 @@ trait AnonAnimationThreshold extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-line.markLine.data
     */
-  var data: js.UndefOr[Anon0AnonSymbolRotate] = js.undefined
+  var data: js.UndefOr[Anon0AnonSymbolOffset] = js.undefined
   /**
     * Mark line text.
     *
@@ -219,7 +219,7 @@ object AnonAnimationThreshold {
     animationEasing: String = null,
     animationEasingUpdate: String = null,
     animationThreshold: Int | Double = null,
-    data: Anon0AnonSymbolRotate = null,
+    data: Anon0AnonSymbolOffset = null,
     label: AnonPosition = null,
     lineStyle: AnonColorCurveness = null,
     precision: Int | Double = null,

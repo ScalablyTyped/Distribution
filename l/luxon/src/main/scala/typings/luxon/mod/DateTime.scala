@@ -162,7 +162,14 @@ object DateTime extends js.Object {
     */
   def fromStringExplain(text: String, format: String): ExplainedFormat = js.native
   def fromStringExplain(text: String, format: String, options: DateTimeOptions): ExplainedFormat = js.native
-  def invalid(reason: js.Any): DateTime = js.native
+  /**
+    * Create an invalid DateTime.
+    * @param reason - simple string of why this DateTime is invalid.
+    * Should not contain parameters or anything else data-dependent
+    * @param [explanation=null] - longer explanation, may include parameters and other useful debugging information
+    */
+  def invalid(reason: String): DateTime = js.native
+  def invalid(reason: String, explanation: String): DateTime = js.native
   def isDateTime(o: js.Any): /* is luxon.luxon.DateTime */ Boolean = js.native
   def local(
     year: js.UndefOr[Double],

@@ -17,7 +17,7 @@ trait RecursivePartialRecursive extends js.Object {
   var grey4: js.UndefOr[RecursivePartial[js.UndefOr[RecursivePartial[String]]]] = js.undefined
   var grey5: js.UndefOr[RecursivePartial[js.UndefOr[RecursivePartial[String]]]] = js.undefined
   var greyOutline: js.UndefOr[RecursivePartial[js.UndefOr[RecursivePartial[String]]]] = js.undefined
-  var platform: js.UndefOr[RecursivePartial[js.UndefOr[RecursivePartialiosprimar]]] = js.undefined
+  var platform: js.UndefOr[RecursivePartial[js.UndefOr[RecursivePartialiosprimarAndroid]]] = js.undefined
   var primary: js.UndefOr[RecursivePartial[js.UndefOr[RecursivePartial[String]]]] = js.undefined
   var searchBg: js.UndefOr[RecursivePartial[js.UndefOr[RecursivePartial[String]]]] = js.undefined
   var secondary: js.UndefOr[RecursivePartial[js.UndefOr[RecursivePartial[String]]]] = js.undefined
@@ -38,7 +38,7 @@ object RecursivePartialRecursive {
     grey4: RecursivePartial[js.UndefOr[RecursivePartial[String]]] = null,
     grey5: RecursivePartial[js.UndefOr[RecursivePartial[String]]] = null,
     greyOutline: RecursivePartial[js.UndefOr[RecursivePartial[String]]] = null,
-    platform: RecursivePartial[js.UndefOr[RecursivePartialiosprimar]] = null,
+    platform: RecursivePartial[js.UndefOr[RecursivePartialiosprimarAndroid]] = null,
     primary: RecursivePartial[js.UndefOr[RecursivePartial[String]]] = null,
     searchBg: RecursivePartial[js.UndefOr[RecursivePartial[String]]] = null,
     secondary: RecursivePartial[js.UndefOr[RecursivePartial[String]]] = null,

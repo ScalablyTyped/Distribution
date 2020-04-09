@@ -32,6 +32,7 @@ object extensionMod extends js.Object {
     var documentAST: js.UndefOr[js.Any] = js.native
     var explicitOperationName: js.UndefOr[js.Any] = js.native
     var generateClientInfo: js.Any = js.native
+    var logger: js.Any = js.native
     var options: js.Any = js.native
     var queryString: js.UndefOr[js.Any] = js.native
     var schemaHash: js.Any = js.native

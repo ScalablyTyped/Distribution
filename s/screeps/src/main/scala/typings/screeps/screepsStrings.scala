@@ -174,6 +174,9 @@ object screepsStrings {
   sealed trait claim extends js.Object
   
   @js.native
+  sealed trait closed extends js.Object
+  
+  @js.native
   sealed trait composite extends ResourceConstantSansEnergy
   
   @js.native
@@ -303,6 +306,9 @@ object screepsStrings {
   sealed trait normal extends js.Object
   
   @js.native
+  sealed trait novice extends js.Object
+  
+  @js.native
   sealed trait nuke extends js.Object
   
   @js.native
@@ -361,6 +367,9 @@ object screepsStrings {
   
   @js.native
   sealed trait resource extends js.Object
+  
+  @js.native
+  sealed trait respawn extends js.Object
   
   @js.native
   sealed trait right extends js.Object
@@ -556,6 +565,8 @@ object screepsStrings {
   @scala.inline
   def claim: claim = "claim".asInstanceOf[claim]
   @scala.inline
+  def closed: closed = "closed".asInstanceOf[closed]
+  @scala.inline
   def composite: composite = "composite".asInstanceOf[composite]
   @scala.inline
   def concentrate: concentrate = "concentrate".asInstanceOf[concentrate]
@@ -642,6 +653,8 @@ object screepsStrings {
   @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
   @scala.inline
+  def novice: novice = "novice".asInstanceOf[novice]
+  @scala.inline
   def nuke: nuke = "nuke".asInstanceOf[nuke]
   @scala.inline
   def nuker: nuker = "nuker".asInstanceOf[nuker]
@@ -681,6 +694,8 @@ object screepsStrings {
   def reductant: reductant = "reductant".asInstanceOf[reductant]
   @scala.inline
   def resource: resource = "resource".asInstanceOf[resource]
+  @scala.inline
+  def respawn: respawn = "respawn".asInstanceOf[respawn]
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   @scala.inline

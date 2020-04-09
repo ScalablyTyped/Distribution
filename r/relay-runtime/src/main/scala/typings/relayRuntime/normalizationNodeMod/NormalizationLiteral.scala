@@ -9,14 +9,15 @@ trait NormalizationLiteral extends NormalizationArgument {
    // 'Literal';
   val name: String
   val `type`: js.UndefOr[String | Null] = js.undefined
-  val value: js.Any
+  val value: js.UndefOr[js.Any] = js.undefined
 }
 
 object NormalizationLiteral {
   @scala.inline
-  def apply(kind: String, name: String, value: js.Any, `type`: String = null): NormalizationLiteral = {
-    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+  def apply(kind: String, name: String, `type`: String = null, value: js.Any = null): NormalizationLiteral = {
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[NormalizationLiteral]
   }
 }

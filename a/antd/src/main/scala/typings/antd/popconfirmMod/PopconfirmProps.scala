@@ -2,10 +2,10 @@ package typings.antd.popconfirmMod
 
 import typings.antd.buttonButtonMod.ButtonType
 import typings.antd.buttonButtonMod.NativeButtonProps
+import typings.antd.getRenderPropValueMod.RenderFunction
 import typings.antd.placementsMod.AdjustOverflow
 import typings.antd.tooltipMod.AbstractTooltipProps
 import typings.antd.tooltipMod.TooltipPlacement
-import typings.rcTrigger.interfaceMod.BuildInPlacements
 import typings.react.mod.CSSProperties
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
@@ -36,7 +36,7 @@ trait PopconfirmProps extends AbstractTooltipProps {
       Unit
     ]
   ] = js.undefined
-  var title: ReactNode
+  var title: ReactNode | RenderFunction
 }
 
 object PopconfirmProps {
@@ -44,7 +44,7 @@ object PopconfirmProps {
   def apply(
     arrowPointAtCenter: js.UndefOr[Boolean] = js.undefined,
     autoAdjustOverflow: Boolean | AdjustOverflow = null,
-    builtinPlacements: BuildInPlacements = null,
+    builtinPlacements: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BuildInPlacements */ js.Any = null,
     cancelButtonProps: NativeButtonProps = null,
     cancelText: ReactNode = null,
     className: String = null,
@@ -60,7 +60,7 @@ object PopconfirmProps {
     openClassName: String = null,
     placement: TooltipPlacement = null,
     style: CSSProperties = null,
-    title: ReactNode = null
+    title: ReactNode | RenderFunction = null
   ): PopconfirmProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(arrowPointAtCenter)) __obj.updateDynamic("arrowPointAtCenter")(arrowPointAtCenter.asInstanceOf[js.Any])

@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait dxContextMenu extends dxMenuBase {
-  /** Hides the widget. */
+  /** @name dxContextMenu.hide() */
   def hide(): Promise[Unit] with JQueryPromise[Unit] = js.native
-  /** Shows the widget. */
+  /** @name dxContextMenu.show() */
   def show(): Promise[Unit] with JQueryPromise[Unit] = js.native
-  /** Shows or hides the widget depending on the argument. */
+  /** @name dxContextMenu.toggle(showing) */
   def toggle(showing: Boolean): Promise[Unit] with JQueryPromise[Unit] = js.native
 }
 

@@ -1,35 +1,36 @@
 package typings.grommet
 
+import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AnonXlarge extends js.Object {
-  var large: js.UndefOr[AnonHeightSize] = js.undefined
-  var medium: js.UndefOr[AnonHeightSize] = js.undefined
-  var small: js.UndefOr[AnonHeightSize] = js.undefined
-  var xlarge: js.UndefOr[AnonHeightSize] = js.undefined
-  var xsmall: js.UndefOr[AnonHeightSize] = js.undefined
-  var xxlarge: js.UndefOr[AnonHeightSize] = js.undefined
+trait AnonXlarge
+  extends /* x */ StringDictionary[js.UndefOr[String]] {
+  var large: js.UndefOr[String] = js.undefined
+  var medium: js.UndefOr[String] = js.undefined
+  var small: js.UndefOr[String] = js.undefined
+  var xlarge: js.UndefOr[String] = js.undefined
+  var xsmall: js.UndefOr[String] = js.undefined
 }
 
 object AnonXlarge {
   @scala.inline
   def apply(
-    large: AnonHeightSize = null,
-    medium: AnonHeightSize = null,
-    small: AnonHeightSize = null,
-    xlarge: AnonHeightSize = null,
-    xsmall: AnonHeightSize = null,
-    xxlarge: AnonHeightSize = null
+    StringDictionary: /* x */ StringDictionary[js.UndefOr[String]] = null,
+    large: String = null,
+    medium: String = null,
+    small: String = null,
+    xlarge: String = null,
+    xsmall: String = null
   ): AnonXlarge = {
     val __obj = js.Dynamic.literal()
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (large != null) __obj.updateDynamic("large")(large.asInstanceOf[js.Any])
     if (medium != null) __obj.updateDynamic("medium")(medium.asInstanceOf[js.Any])
     if (small != null) __obj.updateDynamic("small")(small.asInstanceOf[js.Any])
     if (xlarge != null) __obj.updateDynamic("xlarge")(xlarge.asInstanceOf[js.Any])
     if (xsmall != null) __obj.updateDynamic("xsmall")(xsmall.asInstanceOf[js.Any])
-    if (xxlarge != null) __obj.updateDynamic("xxlarge")(xxlarge.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnonXlarge]
   }
 }

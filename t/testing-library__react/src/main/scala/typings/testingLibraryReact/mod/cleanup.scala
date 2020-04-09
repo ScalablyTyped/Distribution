@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@testing-library/react", "cleanup")
 @js.native
 object cleanup extends js.Object {
-  def apply(): Unit = js.native
+  def apply(): js.Promise[Unit] = js.native
 }
 

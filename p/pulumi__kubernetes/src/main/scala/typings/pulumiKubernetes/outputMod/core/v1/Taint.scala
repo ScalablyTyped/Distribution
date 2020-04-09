@@ -24,7 +24,7 @@ trait Taint extends js.Object {
     */
   val timeAdded: String
   /**
-    * Required. The taint value corresponding to the taint key.
+    * The taint value corresponding to the taint key.
     */
   val value: String
 }

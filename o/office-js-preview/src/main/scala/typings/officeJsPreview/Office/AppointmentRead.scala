@@ -1,5 +1,6 @@
 package typings.officeJsPreview.Office
 
+import typings.officeJsPreview.Office.MailboxEnums.AppointmentSensitivityType
 import typings.officeJsPreview.Office.MailboxEnums.EntityType
 import typings.officeJsPreview.Office.MailboxEnums.ItemType
 import typings.std.Date
@@ -113,6 +114,20 @@ trait AppointmentRead extends Item {
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
     */
   var enhancedLocation: EnhancedLocation = js.native
+  /**
+    * Returns a boolean value indicating whether the event is all day.
+    *
+    * [Api set: Mailbox Preview]
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**:  `ReadItem`
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**:  Appointment Attendee
+    * 
+    * @beta
+    */
+  var isAllDayEvent: Boolean = js.native
   /**
     * Gets the Exchange Web Services item class of the selected item.
     *
@@ -273,6 +288,20 @@ trait AppointmentRead extends Item {
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
     */
   var requiredAttendees: js.Array[EmailAddressDetails] = js.native
+  /**
+    * Provides the sensitivity value of the appointment.
+    *
+    * [Api set: Mailbox Preview]
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permission | Minimum permission level}**:  `ReadItem`
+    *
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**:  Appointment Attendee
+    * 
+    * @beta
+    */
+  var sensitivity: AppointmentSensitivityType = js.native
   /**
     * Gets the ID of the series that an instance belongs to.
     * 

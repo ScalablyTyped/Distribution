@@ -2,6 +2,7 @@ package typings.firebaseFirestore
 
 import typings.firebaseFirestore.authUserMod.User
 import typings.firebaseFirestore.coreDatabaseInfoMod.DatabaseInfo
+import typings.firebaseFirestore.coreFirestoreClientMod.PersistenceSettings
 import typings.firebaseFirestore.coreTypesMod.ListenSequenceNumber
 import typings.firebaseFirestore.localIndexManagerMod.IndexManager
 import typings.firebaseFirestore.localLruGarbageCollectorMod.ActiveTargets
@@ -9,7 +10,9 @@ import typings.firebaseFirestore.localLruGarbageCollectorMod.LruDelegate
 import typings.firebaseFirestore.localLruGarbageCollectorMod.LruGarbageCollector
 import typings.firebaseFirestore.localLruGarbageCollectorMod.LruParams
 import typings.firebaseFirestore.localMutationQueueMod.MutationQueue
+import typings.firebaseFirestore.localPersistenceMod.GarbageCollectionScheduler
 import typings.firebaseFirestore.localPersistenceMod.Persistence
+import typings.firebaseFirestore.localPersistenceMod.PersistenceProvider
 import typings.firebaseFirestore.localPersistenceMod.PersistenceTransaction
 import typings.firebaseFirestore.localPersistenceMod.PersistenceTransactionMode
 import typings.firebaseFirestore.localPersistenceMod.PrimaryStateListener
@@ -18,11 +21,14 @@ import typings.firebaseFirestore.localPersistencePromiseMod.PersistencePromise
 import typings.firebaseFirestore.localReferenceSetMod.ReferenceSet
 import typings.firebaseFirestore.localRemoteDocumentCacheMod.RemoteDocumentCache
 import typings.firebaseFirestore.localSharedClientStateMod.ClientId
+import typings.firebaseFirestore.localSharedClientStateMod.SharedClientState
 import typings.firebaseFirestore.localSimpleDbMod.SimpleDbStore
 import typings.firebaseFirestore.localSimpleDbMod.SimpleDbTransaction
 import typings.firebaseFirestore.localTargetCacheMod.TargetCache
 import typings.firebaseFirestore.localTargetDataMod.TargetData
 import typings.firebaseFirestore.modelDocumentKeyMod.DocumentKey
+import typings.firebaseFirestore.platformPlatformMod.Platform
+import typings.firebaseFirestore.utilAsyncQueueMod.AsyncQueue
 import typings.std.IDBValidKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -341,6 +347,30 @@ object localIndexeddbPersistenceMod extends js.Object {
     override def shutdown(): js.Promise[Unit] = js.native
     @JSName("started")
     def started_MIndexedDbPersistence(): Boolean = js.native
+  }
+  
+  @js.native
+  class IndexedDbPersistenceProvider () extends PersistenceProvider {
+    var gcScheduler: js.UndefOr[js.Any] = js.native
+    var persistence: js.UndefOr[js.Any] = js.native
+    var sharedClientState: js.UndefOr[js.Any] = js.native
+    /* CompleteClass */
+    override def clearPersistence(databaseId: DatabaseInfo): js.Promise[Unit] = js.native
+    /* CompleteClass */
+    override def getGarbageCollectionScheduler(): GarbageCollectionScheduler = js.native
+    /* CompleteClass */
+    override def getPersistence(): Persistence = js.native
+    /* CompleteClass */
+    override def getSharedClientState(): SharedClientState = js.native
+    /* CompleteClass */
+    override def initialize(
+      asyncQueue: AsyncQueue,
+      databaseInfo: DatabaseInfo,
+      platform: Platform,
+      clientId: ClientId,
+      initialUser: User,
+      settings: PersistenceSettings
+    ): js.Promise[Unit] = js.native
   }
   
   @js.native

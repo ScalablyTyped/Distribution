@@ -27,41 +27,41 @@ import scala.scalajs.js.annotation._
 @JSImport("devextreme", "viz")
 @js.native
 object ^ extends js.Object {
-  /** Gets the current palette's name. */
+  /** @name viz.currentPalette() */
   def currentPalette(): String = js.native
-  /** Changes the current palette for all data visualization widgets on the page. */
+  /** @name viz.currentPalette(paletteName) */
   def currentPalette(paletteName: String): Unit = js.native
-  /** Gets the current theme's name. */
+  /** @name viz.currentTheme() */
   def currentTheme(): String = js.native
-  /** Changes the current theme for all data visualization widgets on the page. The color scheme is defined separately. */
+  /** @name viz.currentTheme(platform, colorScheme) */
   def currentTheme(platform: String, colorScheme: String): Unit = js.native
-  /** Changes the current theme for all data visualization widgets on the page. */
+  /** @name viz.currentTheme(theme) */
   def currentTheme(theme: String): Unit = js.native
-  /** Allows you to export widgets using their SVG markup. */
+  /** @name viz.exportFromMarkup(markup, options) */
   def exportFromMarkup(markup: String, options: AnonBackgroundColor): Unit = js.native
-  /** Exports one or several widgets to PNG. */
+  /** @name viz.exportWidgets(widgetInstances) */
   def exportWidgets(widgetInstances: js.Array[js.Array[DOMComponent]]): Unit = js.native
-  /** Exports one or several widgets. */
+  /** @name viz.exportWidgets(widgetInstances, options) */
   def exportWidgets(widgetInstances: js.Array[js.Array[DOMComponent]], options: AnonFileName): Unit = js.native
-  /** Returns a subset of palette colors. */
+  /** @name viz.generateColors(palette, count, options) */
   def generateColors(
     palette: Bright | Default | (`Harmony Light`) | Ocean | Pastel | Soft | (`Soft Pastel`) | Vintage | Violet | Carmine | (`Dark Moon`) | (`Dark Violet`) | (`Green Mist`) | (`Soft Blue`) | Material | Office | js.Array[String],
     count: Double,
     options: AnonBaseColorSet
   ): js.Array[String] = js.native
-  /** Gets the SVG markup of specific widgets for their subsequent export. */
+  /** @name viz.getMarkup(widgetInstances) */
   def getMarkup(widgetInstances: js.Array[DOMComponent]): String = js.native
-  /** Gets the color sets of a predefined or registered palette. */
+  /** @name viz.getPalette(paletteName) */
   def getPalette(paletteName: String): js.Any = js.native
-  /** Gets a predefined or registered theme's settings. */
+  /** @name viz.getTheme(theme) */
   def getTheme(theme: String): js.Any = js.native
-  /** The method to be called every time the active entry in the browser history is modified without reloading the current page. */
+  /** @name viz.refreshPaths() */
   def refreshPaths(): Unit = js.native
-  /** Refreshes the current theme and palette in all data visualization widgets on the page. */
+  /** @name viz.refreshTheme() */
   def refreshTheme(): Unit = js.native
-  /** Registers a new palette. */
+  /** @name viz.registerPalette(paletteName, palette) */
   def registerPalette(paletteName: String, palette: js.Any): Unit = js.native
-  /** Registers a new theme based on the existing one. */
+  /** @name viz.registerTheme(customTheme, baseTheme) */
   def registerTheme(customTheme: js.Any, baseTheme: String): Unit = js.native
 }
 

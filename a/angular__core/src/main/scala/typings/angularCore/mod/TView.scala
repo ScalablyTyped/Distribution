@@ -99,7 +99,7 @@ trait TView extends js.Object {
     * Even indices: Directive index
     * Odd indices: Hook function
     */
-  var destroyHooks: HookData | Null
+  var destroyHooks: DestroyHookData | Null
   /**
     * Full registry of directives and components that may be found in this view.
     *
@@ -263,7 +263,7 @@ object TView {
     contentCheckHooks: HookData = null,
     contentHooks: HookData = null,
     contentQueries: js.Array[Double] = null,
-    destroyHooks: HookData = null,
+    destroyHooks: DestroyHookData = null,
     directiveRegistry: DirectiveDefList = null,
     expandoInstructions: ExpandoInstructions = null,
     firstChild: TNode = null,

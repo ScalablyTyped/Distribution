@@ -1,6 +1,7 @@
 package typings.nodePgMigrate.migrationMod
 
 import typings.nodePgMigrate.dbMod.DBConnection
+import typings.nodePgMigrate.distTypesMod.Logger
 import typings.nodePgMigrate.distTypesMod.MigrationAction
 import typings.nodePgMigrate.distTypesMod.MigrationBuilderActions
 import typings.nodePgMigrate.distTypesMod.MigrationDirection
@@ -33,10 +34,11 @@ class Migration protected () extends RunMigration {
     hasUpDown: MigrationBuilderActions,
     options: RunnerOption,
     typeShorthands: ColumnDefinitions,
-    log: js.Function2[/* message */ js.UndefOr[js.Any], /* repeated */ js.Any, Unit]
+    logger: Logger
   ) = this()
   val db: DBConnection = js.native
   var down: js.UndefOr[`false` | MigrationAction] = js.native
+  val logger: Logger = js.native
   /* CompleteClass */
   override val name: String = js.native
   val options: RunnerOption = js.native
@@ -51,8 +53,6 @@ class Migration protected () extends RunMigration {
   def _getMarkAsRun(action: MigrationAction): String = js.native
   @JSName("apply")
   def apply(direction: MigrationDirection): js.Promise[_] = js.native
-  def log(): Unit = js.native
-  def log(message: js.Any, optionalParams: js.Any*): Unit = js.native
   def markAsRun(direction: MigrationDirection): js.Promise[QueryResult[_]] = js.native
 }
 

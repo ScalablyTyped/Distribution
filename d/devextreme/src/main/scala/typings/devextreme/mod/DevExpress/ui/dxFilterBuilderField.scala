@@ -30,7 +30,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxFilterBuilderField extends js.Object {
-  /** Specifies the field's custom filtering rules. */
+  /** @name dxFilterBuilderField.calculateFilterExpression */
   var calculateFilterExpression: js.UndefOr[
     js.Function2[
       /* filterValue */ js.Any, 
@@ -38,17 +38,17 @@ trait dxFilterBuilderField extends js.Object {
       String | js.Array[_] | js.Function
     ]
   ] = js.undefined
-  /** Specifies the data field's caption. */
+  /** @name dxFilterBuilderField.caption */
   var caption: js.UndefOr[String] = js.undefined
-  /** Customizes the input value's display text. */
+  /** @name dxFilterBuilderField.customizeText */
   var customizeText: js.UndefOr[js.Function1[/* fieldInfo */ AnonValue, String]] = js.undefined
-  /** Specifies the name of a field to be filtered. */
+  /** @name dxFilterBuilderField.dataField */
   var dataField: js.UndefOr[String] = js.undefined
-  /** Casts field values to a specific data type. */
+  /** @name dxFilterBuilderField.dataType */
   var dataType: js.UndefOr[string_ | number | date | boolean_ | `object` | datetime] = js.undefined
-  /** Configures the widget used to edit the field value. */
+  /** @name dxFilterBuilderField.editorOptions */
   var editorOptions: js.UndefOr[js.Any] = js.undefined
-  /** Specifies the editor's custom template. */
+  /** @name dxFilterBuilderField.editorTemplate */
   var editorTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function2[
       /* conditionInfo */ AnonFilterOperation, 
@@ -56,21 +56,21 @@ trait dxFilterBuilderField extends js.Object {
       String | Element | JQuery
     ])
   ] = js.undefined
-  /** Specifies the false value text. Applies only if dataType is "boolean". */
+  /** @name dxFilterBuilderField.falseText */
   var falseText: js.UndefOr[String] = js.undefined
-  /** Specifies a set of available filter operations. */
+  /** @name dxFilterBuilderField.filterOperations */
   var filterOperations: js.UndefOr[
     js.Array[
       Equalssign | LessthansignGreaterthansign | Lessthansign | LessthansignEqualssign | Greaterthansign | GreaterthansignEqualssign | contains | endswith | isblank | isnotblank | notcontains | startswith | between | String
     ]
   ] = js.undefined
-  /** Formats a value before it is displayed. */
+  /** @name dxFilterBuilderField.format */
   var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.format] = js.undefined
-  /** Configures the lookup field. */
+  /** @name dxFilterBuilderField.lookup */
   var lookup: js.UndefOr[AnonDisplayExpr] = js.undefined
-  /** Specifies the field's name. Use it to distinguish the field from other fields when they have identical dataField values. */
+  /** @name dxFilterBuilderField.name */
   var name: js.UndefOr[String] = js.undefined
-  /** Specifies the true value text. Applies only if dataType is "boolean". */
+  /** @name dxFilterBuilderField.trueText */
   var trueText: js.UndefOr[String] = js.undefined
 }
 

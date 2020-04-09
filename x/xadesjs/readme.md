@@ -1,7 +1,7 @@
 
 # Scala.js typings for xadesjs
 
-Typings are for version 2.0.16
+Typings are for version 2.0.17
 
 ## Library description:
 A pure Typescript/Javascript implementation of XAdES based on XMLDSIGjs.

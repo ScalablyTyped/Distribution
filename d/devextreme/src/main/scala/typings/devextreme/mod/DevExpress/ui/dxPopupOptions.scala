@@ -27,39 +27,39 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxPopupOptions[T] extends dxOverlayOptions[T] {
-  /** Configures widget visibility animations. This object contains two fields: show and hide. */
+  /** @name dxPopup.Options.animation */
   @JSName("animation")
   var animation_dxPopupOptions: js.UndefOr[dxPopupAnimation] = js.undefined
-  /** Specifies the container in which to place the widget. */
+  /** @name dxPopup.Options.container */
   var container: js.UndefOr[String | Element | JQuery] = js.undefined
-  /** A Boolean value specifying whether or not to display the widget in full-screen mode. */
+  /** @name dxPopup.Options.fullScreen */
   var fullScreen: js.UndefOr[Boolean] = js.undefined
-  /** A function that is executed each time the widget is resized by one pixel. */
+  /** @name dxPopup.Options.onResize */
   var onResize: js.UndefOr[js.Function1[/* e */ AnonModelAny[T], _]] = js.undefined
-  /** A function that is executed when resizing ends. */
+  /** @name dxPopup.Options.onResizeEnd */
   var onResizeEnd: js.UndefOr[js.Function1[/* e */ AnonModelAny[T], _]] = js.undefined
-  /** A function that is executed when resizing starts. */
+  /** @name dxPopup.Options.onResizeStart */
   var onResizeStart: js.UndefOr[js.Function1[/* e */ AnonModelAny[T], _]] = js.undefined
-  /** A function that is executed when the widget's title is rendered. */
+  /** @name dxPopup.Options.onTitleRendered */
   var onTitleRendered: js.UndefOr[js.Function1[/* e */ AnonModelTitleElement[T], _]] = js.undefined
-  /** Positions the widget. */
+  /** @name dxPopup.Options.position */
   @JSName("position")
   var position_dxPopupOptions: js.UndefOr[
     bottom | center | left | (`left bottom`) | (`left top`) | right | (`right bottom`) | (`right top`) | top | positionConfig | js.Function
   ] = js.undefined
-  /** Specifies whether or not an end user can resize the widget. */
+  /** @name dxPopup.Options.resizeEnabled */
   var resizeEnabled: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether or not the widget displays the Close button. */
+  /** @name dxPopup.Options.showCloseButton */
   var showCloseButton: js.UndefOr[Boolean] = js.undefined
-  /** A Boolean value specifying whether or not to display the title in the popup window. */
+  /** @name dxPopup.Options.showTitle */
   var showTitle: js.UndefOr[Boolean] = js.undefined
-  /** The title in the overlay window. */
+  /** @name dxPopup.Options.title */
   var title: js.UndefOr[String] = js.undefined
-  /** Specifies a custom template for the widget title. Does not apply if the title is defined. */
+  /** @name dxPopup.Options.titleTemplate */
   var titleTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function1[/* titleElement */ dxElement, String | Element | JQuery])
   ] = js.undefined
-  /** Configures toolbar items. */
+  /** @name dxPopup.Options.toolbarItems */
   var toolbarItems: js.UndefOr[js.Array[dxPopupToolbarItem]] = js.undefined
 }
 

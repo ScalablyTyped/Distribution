@@ -124,6 +124,13 @@ object callbacks extends js.Object {
     */
   type LoadHierarchy = js.Function2[/* err */ String | Null, /* entity */ js.UndefOr[Entity], Unit]
   /**
+    * @callback pc.callbacks.LoadScene
+    * @description Callback used by {@link pc.Application#loadScene}.
+    * @param {string|null} err - The error message in the case where the loading or parsing fails.
+    * @param {pc.Entity} [entity] - The loaded root entity if no errors were encountered.
+    */
+  type LoadScene = js.Function2[/* err */ String | Null, /* entity */ js.UndefOr[Entity], Unit]
+  /**
     * @callback pc.callbacks.LoadSettings
     * @description Callback used by {@link pc.Application#loadSceneSettings}.
     * @param {string|null} err - The error message in the case where the loading or parsing fails.
@@ -184,5 +191,12 @@ object callbacks extends js.Object {
     * @param {Error|null} err - The Error object or null if operation was successfull.
     */
   type XrError = js.Function1[/* err */ Error | Null, Unit]
+  /**
+    * @callback pc.callbacks.XrHitTestStart
+    * @description Callback used by {@link pc.XrHitTest#start} and {@link pc.XrHitTest#startForInputSource}.
+    * @param {Error|null} err - The Error object if failed to create hit test source or null.
+    * @param {pc.XrHitTestSource|null} hitTestSource - object that provides access to hit results against real world geometry.
+    */
+  type XrHitTestStart = js.Function2[/* err */ Error | Null, /* hitTestSource */ XrHitTestSource | Null, Unit]
 }
 

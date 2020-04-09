@@ -1,7 +1,7 @@
 package typings.gapiClient.gapi.client
 
 import typings.gapiClient.AnonCallback
-import typings.std.PromiseLike
+import typings.std.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   * Represents an HTTP Batch operation. Individual HTTP requests are added with the add method and the batch is executed using execute.
   */
 @js.native
-trait Batch[T] extends PromiseLike[Response[ResponseMap[T]]] {
+trait Batch[T] extends Promise[Response[ResponseMap[T]]] {
   /**
     * Adds a gapi.client.Request to the batch.
     * @param request The HTTP request to add to this batch.

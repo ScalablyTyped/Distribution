@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait InventoryFilter extends js.Object {
   /**
-    * The prefix that is prepended to all inventory results.
+    * The prefix that an object must have to be included in the inventory results.
     */
   var prefix: js.UndefOr[String] = js.native
 }

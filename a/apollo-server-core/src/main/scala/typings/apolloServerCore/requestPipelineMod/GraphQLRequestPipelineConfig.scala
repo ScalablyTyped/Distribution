@@ -5,17 +5,13 @@ import typings.apolloCacheControl.mod.CacheControlExtensionOptions
 import typings.apolloServerCaching.mod.InMemoryLRUCache
 import typings.apolloServerCore.graphqlOptionsMod.PersistedQueryOptions
 import typings.apolloServerPluginBase.mod.ApolloServerPlugin
-import typings.apolloServerTypes.apolloServerTypesStrings.document
-import typings.apolloServerTypes.apolloServerTypesStrings.operation
-import typings.apolloServerTypes.apolloServerTypesStrings.operationName
-import typings.apolloServerTypes.apolloServerTypesStrings.queryHash
 import typings.apolloServerTypes.mod.GraphQLExecutionResult
 import typings.apolloServerTypes.mod.GraphQLExecutor
 import typings.apolloServerTypes.mod.GraphQLRequestContext
+import typings.apolloServerTypes.mod.GraphQLRequestContextExecutionDidStart
 import typings.apolloServerTypes.mod.GraphQLResponse
 import typings.apolloServerTypes.mod.ValidationRule
 import typings.apolloServerTypes.mod.ValueOrPromise
-import typings.apolloServerTypes.mod.WithRequired
 import typings.graphql.astMod.DocumentNode
 import typings.graphql.definitionMod.GraphQLFieldResolver
 import typings.graphql.definitionMod.GraphQLResolveInfo
@@ -60,10 +56,7 @@ object GraphQLRequestPipelineConfig {
     cacheControl: CacheControlExtensionOptions = null,
     dataSources: () => DataSources[TContext] = null,
     documentStore: InMemoryLRUCache[DocumentNode] = null,
-    executor: /* requestContext */ WithRequired[
-      GraphQLRequestContext[Record[String, _]], 
-      document | operationName | operation | queryHash
-    ] => ValueOrPromise[GraphQLExecutionResult] = null,
+    executor: /* requestContext */ GraphQLRequestContextExecutionDidStart[Record[String, _]] => ValueOrPromise[GraphQLExecutionResult] = null,
     extensions: js.Array[js.Function0[GraphQLExtension[_]]] = null,
     fieldResolver: (_, StringDictionary[_], TContext, /* info */ GraphQLResolveInfo) => js.Any = null,
     formatError: /* error */ GraphQLError => GraphQLFormattedError[Record[String, _]] = null,

@@ -43,6 +43,10 @@ trait Source extends js.Object {
     */
   var Transport: js.UndefOr[typings.awsSdk.mediaconnectMod.Transport] = js.native
   /**
+    * The name of the VPC Interface this Source is configured with.
+    */
+  var VpcInterfaceName: js.UndefOr[string] = js.native
+  /**
     * The range of IP addresses that should be allowed to contribute content to your source. These IP addresses should be in the form of a Classless Inter-Domain Routing (CIDR) block; for example, 10.0.0.0/16.
     */
   var WhitelistCidr: js.UndefOr[string] = js.native
@@ -60,6 +64,7 @@ object Source {
     IngestIp: string = null,
     IngestPort: Int | Double = null,
     Transport: Transport = null,
+    VpcInterfaceName: string = null,
     WhitelistCidr: string = null
   ): Source = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], SourceArn = SourceArn.asInstanceOf[js.Any])
@@ -70,6 +75,7 @@ object Source {
     if (IngestIp != null) __obj.updateDynamic("IngestIp")(IngestIp.asInstanceOf[js.Any])
     if (IngestPort != null) __obj.updateDynamic("IngestPort")(IngestPort.asInstanceOf[js.Any])
     if (Transport != null) __obj.updateDynamic("Transport")(Transport.asInstanceOf[js.Any])
+    if (VpcInterfaceName != null) __obj.updateDynamic("VpcInterfaceName")(VpcInterfaceName.asInstanceOf[js.Any])
     if (WhitelistCidr != null) __obj.updateDynamic("WhitelistCidr")(WhitelistCidr.asInstanceOf[js.Any])
     __obj.asInstanceOf[Source]
   }

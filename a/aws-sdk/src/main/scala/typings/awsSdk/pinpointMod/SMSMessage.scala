@@ -15,6 +15,10 @@ trait SMSMessage extends js.Object {
     */
   var Keyword: js.UndefOr[string] = js.native
   /**
+    * The URL of an image or video to display in the SMS message.
+    */
+  var MediaUrl: js.UndefOr[string] = js.native
+  /**
     * The SMS message type. Valid values are: TRANSACTIONAL, the message is critical or time-sensitive, such as a one-time password that supports a customer transaction; and, PROMOTIONAL, the message is not critical or time-sensitive, such as a marketing message.
     */
   var MessageType: js.UndefOr[typings.awsSdk.pinpointMod.MessageType] = js.native
@@ -37,6 +41,7 @@ object SMSMessage {
   def apply(
     Body: string = null,
     Keyword: string = null,
+    MediaUrl: string = null,
     MessageType: MessageType = null,
     OriginationNumber: string = null,
     SenderId: string = null,
@@ -45,6 +50,7 @@ object SMSMessage {
     val __obj = js.Dynamic.literal()
     if (Body != null) __obj.updateDynamic("Body")(Body.asInstanceOf[js.Any])
     if (Keyword != null) __obj.updateDynamic("Keyword")(Keyword.asInstanceOf[js.Any])
+    if (MediaUrl != null) __obj.updateDynamic("MediaUrl")(MediaUrl.asInstanceOf[js.Any])
     if (MessageType != null) __obj.updateDynamic("MessageType")(MessageType.asInstanceOf[js.Any])
     if (OriginationNumber != null) __obj.updateDynamic("OriginationNumber")(OriginationNumber.asInstanceOf[js.Any])
     if (SenderId != null) __obj.updateDynamic("SenderId")(SenderId.asInstanceOf[js.Any])

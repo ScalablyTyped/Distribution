@@ -17,7 +17,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Configures series points in scatter, line- and area-like series. */
+/** @name dxChartSeriesTypes.StepAreaSeries.point */
 trait dxChartSeriesTypesStepAreaSeriesPoint extends dxChartSeriesTypesCommonSeriesPoint
 
 object dxChartSeriesTypesStepAreaSeriesPoint {

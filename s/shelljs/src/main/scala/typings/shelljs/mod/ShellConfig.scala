@@ -23,7 +23,9 @@ trait ShellConfig extends js.Object {
   	 */
   var silent: Boolean
   /**
-  	 * Will print each executed command to the screen. Default is true.
+  	 * Will print each executed command to the screen.
+  	 *
+  	 * @default false
   	 */
   var verbose: Boolean
   /**

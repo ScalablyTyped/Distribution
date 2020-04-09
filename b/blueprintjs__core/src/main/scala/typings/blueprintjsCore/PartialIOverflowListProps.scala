@@ -20,7 +20,7 @@ trait PartialIOverflowListProps extends js.Object {
   var overflowRenderer: js.UndefOr[js.Function1[/* overflowItems */ js.Array[IBreadcrumbProps], ReactNode]] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
   var tagName: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any
   ] = js.undefined
   var visibleItemRenderer: js.UndefOr[js.Function2[/* item */ IBreadcrumbProps, /* index */ Double, ReactChild]] = js.undefined
 }
@@ -36,7 +36,7 @@ object PartialIOverflowListProps {
     onOverflow: /* overflowItems */ js.Array[IBreadcrumbProps] => Unit = null,
     overflowRenderer: /* overflowItems */ js.Array[IBreadcrumbProps] => ReactNode = null,
     style: CSSProperties = null,
-    tagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any = null,
+    tagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any = null,
     visibleItemRenderer: (/* item */ IBreadcrumbProps, /* index */ Double) => ReactChild = null
   ): PartialIOverflowListProps = {
     val __obj = js.Dynamic.literal()

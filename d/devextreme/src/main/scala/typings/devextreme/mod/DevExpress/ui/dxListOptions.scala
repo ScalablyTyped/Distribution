@@ -50,21 +50,21 @@ import scala.scalajs.js.annotation._
 trait dxListOptions
   extends CollectionWidgetOptions[dxList]
      with SearchBoxMixinOptions[dxList] {
-  /** Specifies whether or not an end user can delete list items. */
+  /** @name dxList.Options.allowItemDeleting */
   var allowItemDeleting: js.UndefOr[Boolean] = js.undefined
-  /** @deprecated Use the itemDragging option instead. */
-  /** Specifies whether a user can reorder list items. Grouped items cannot be moved from one group to another. */
+  /** @deprecated */
+  /** @name dxList.Options.allowItemReordering */
   var allowItemReordering: js.UndefOr[Boolean] = js.undefined
-  /** A Boolean value specifying whether to enable or disable the bounce-back effect. */
+  /** @name dxList.Options.bounceEnabled */
   var bounceEnabled: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether or not an end-user can collapse groups. */
+  /** @name dxList.Options.collapsibleGroups */
   var collapsibleGroups: js.UndefOr[Boolean] = js.undefined
-  /** Binds the widget to data. */
+  /** @name dxList.Options.dataSource */
   @JSName("dataSource")
   var dataSource_dxListOptions: js.UndefOr[String | (js.Array[String | dxListItem | _]) | DataSource | DataSourceOptions] = js.undefined
-  /** Specifies the data field whose values should be displayed. Defaults to "text" when the data source contains objects. */
+  /** @name dxList.Options.displayExpr */
   var displayExpr: js.UndefOr[String | (js.Function1[/* item */ js.Any, String])] = js.undefined
-  /** Specifies a custom template for group captions. */
+  /** @name dxList.Options.groupTemplate */
   var groupTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function3[
       /* groupData */ js.Any, 
@@ -73,79 +73,79 @@ trait dxListOptions
       String | Element | JQuery
     ])
   ] = js.undefined
-  /** Specifies whether data items should be grouped. */
+  /** @name dxList.Options.grouped */
   var grouped: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether or not to show the loading panel when the DataSource bound to the widget is loading data. */
+  /** @name dxList.Options.indicateLoading */
   var indicateLoading: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the way a user can delete items from the list. */
+  /** @name dxList.Options.itemDeleteMode */
   var itemDeleteMode: js.UndefOr[context | slideButton | slideItem | static | swipe | toggle] = js.undefined
-  /** Configures item reordering using drag and drop gestures. */
+  /** @name dxList.Options.itemDragging */
   var itemDragging: js.UndefOr[dxSortableOptions] = js.undefined
-  /** An array of items displayed by the widget. */
+  /** @name dxList.Options.items */
   @JSName("items")
   var items_dxListOptions: js.UndefOr[js.Array[String | dxListItem | _]] = js.undefined
-  /** Specifies the array of items for a context menu called for a list item. */
+  /** @name dxList.Options.menuItems */
   var menuItems: js.UndefOr[js.Array[AnonAction]] = js.undefined
-  /** Specifies whether an item context menu is shown when a user holds or swipes an item. */
+  /** @name dxList.Options.menuMode */
   var menuMode: js.UndefOr[context | slide] = js.undefined
-  /** The text displayed on the button used to load the next page from the data source. */
+  /** @name dxList.Options.nextButtonText */
   var nextButtonText: js.UndefOr[String] = js.undefined
-  /** A function that is executed when a group element is rendered. */
+  /** @name dxList.Options.onGroupRendered */
   var onGroupRendered: js.UndefOr[js.Function1[/* e */ AnonGroupData, _]] = js.undefined
-  /** A function that is executed when a collection item is clicked or tapped. */
+  /** @name dxList.Options.onItemClick */
   @JSName("onItemClick")
   var onItemClick_dxListOptions: js.UndefOr[(js.Function1[/* e */ AnonItemIndexJQueryEvent, _]) | String] = js.undefined
-  /** A function that is executed when a collection item is right-clicked or pressed. */
+  /** @name dxList.Options.onItemContextMenu */
   @JSName("onItemContextMenu")
   var onItemContextMenu_dxListOptions: js.UndefOr[js.Function1[/* e */ AnonItemIndexJQueryEvent, _]] = js.undefined
-  /** A function that is executed after a list item is deleted from the data source. */
+  /** @name dxList.Options.onItemDeleted */
   var onItemDeleted: js.UndefOr[js.Function1[/* e */ AnonElementItemData, _]] = js.undefined
-  /** A function that is executed before a collection item is deleted from the data source. */
+  /** @name dxList.Options.onItemDeleting */
   var onItemDeleting: js.UndefOr[js.Function1[/* e */ AnonComponentElementItemData, _]] = js.undefined
-  /** A function that is executed when a collection item has been held for a specified period. */
+  /** @name dxList.Options.onItemHold */
   @JSName("onItemHold")
   var onItemHold_dxListOptions: js.UndefOr[js.Function1[/* e */ AnonItemIndexJQueryEvent, _]] = js.undefined
-  /** A function that is executed after a list item is moved to another position. */
+  /** @name dxList.Options.onItemReordered */
   var onItemReordered: js.UndefOr[js.Function1[/* e */ AnonToIndex, _]] = js.undefined
-  /** A function that is executed when a list item is swiped. */
+  /** @name dxList.Options.onItemSwipe */
   var onItemSwipe: js.UndefOr[js.Function1[/* e */ AnonDirection, _]] = js.undefined
-  /** A function that is executed before the next page is loaded. */
+  /** @name dxList.Options.onPageLoading */
   var onPageLoading: js.UndefOr[js.Function1[/* e */ AnonComponentDxList, _]] = js.undefined
-  /** A function that is executed when the "pull to refresh" gesture is performed. Supported in mobile themes only. */
+  /** @name dxList.Options.onPullRefresh */
   var onPullRefresh: js.UndefOr[js.Function1[/* e */ AnonComponentDxList, _]] = js.undefined
-  /** A function that is executed on each scroll gesture. */
+  /** @name dxList.Options.onScroll */
   var onScroll: js.UndefOr[js.Function1[/* e */ AnonReachedBottom, _]] = js.undefined
-  /** A function that is executed when the "Select All" check box value is changed. Applies only if the selectionMode is "all". */
+  /** @name dxList.Options.onSelectAllValueChanged */
   var onSelectAllValueChanged: js.UndefOr[js.Function1[/* e */ AnonModelValue, _]] = js.undefined
-  /** Specifies whether the next page is loaded when a user scrolls the widget to the bottom or when the "next" button is clicked. */
+  /** @name dxList.Options.pageLoadMode */
   var pageLoadMode: js.UndefOr[nextButton | scrollBottom] = js.undefined
-  /** Specifies the text shown in the pullDown panel, which is displayed when the list is scrolled to the bottom. */
+  /** @name dxList.Options.pageLoadingText */
   var pageLoadingText: js.UndefOr[String] = js.undefined
-  /** A Boolean value specifying whether or not the widget supports the "pull down to refresh" gesture. */
+  /** @name dxList.Options.pullRefreshEnabled */
   var pullRefreshEnabled: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the text displayed in the pullDown panel when the list is pulled below the refresh threshold. */
+  /** @name dxList.Options.pulledDownText */
   var pulledDownText: js.UndefOr[String] = js.undefined
-  /** Specifies the text shown in the pullDown panel while the list is being pulled down to the refresh threshold. */
+  /** @name dxList.Options.pullingDownText */
   var pullingDownText: js.UndefOr[String] = js.undefined
-  /** Specifies the text displayed in the pullDown panel while the list is being refreshed. */
+  /** @name dxList.Options.refreshingText */
   var refreshingText: js.UndefOr[String] = js.undefined
-  /** Specifies whether to repaint only those elements whose data changed. */
+  /** @name dxList.Options.repaintChangesOnly */
   var repaintChangesOnly: js.UndefOr[Boolean] = js.undefined
-  /** A Boolean value specifying if the list is scrolled by content. */
+  /** @name dxList.Options.scrollByContent */
   var scrollByContent: js.UndefOr[Boolean] = js.undefined
-  /** A Boolean value specifying if the list is scrolled using the scrollbar. */
+  /** @name dxList.Options.scrollByThumb */
   var scrollByThumb: js.UndefOr[Boolean] = js.undefined
-  /** A Boolean value specifying whether to enable or disable list scrolling. */
+  /** @name dxList.Options.scrollingEnabled */
   var scrollingEnabled: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the mode in which all items are selected. */
+  /** @name dxList.Options.selectAllMode */
   var selectAllMode: js.UndefOr[allPages | page] = js.undefined
-  /** Specifies item selection mode. */
+  /** @name dxList.Options.selectionMode */
   var selectionMode: js.UndefOr[all | multiple | none | single_] = js.undefined
-  /** Specifies when the widget shows the scrollbar. */
+  /** @name dxList.Options.showScrollbar */
   var showScrollbar: js.UndefOr[always | never | onHover | onScroll] = js.undefined
-  /** Specifies whether or not to display controls used to select list items. */
+  /** @name dxList.Options.showSelectionControls */
   var showSelectionControls: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether or not the widget uses native scrolling. */
+  /** @name dxList.Options.useNativeScrolling */
   var useNativeScrolling: js.UndefOr[Boolean] = js.undefined
 }
 

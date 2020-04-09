@@ -27,11 +27,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxTextBoxOptions[T] extends dxTextEditorOptions[T] {
-  /** Specifies the maximum number of characters you can enter into the textbox. */
+  /** @name dxTextBox.Options.maxLength */
   var maxLength: js.UndefOr[String | Double] = js.undefined
-  /** The "mode" attribute value of the actual HTML input element representing the text box. */
+  /** @name dxTextBox.Options.mode */
   var mode: js.UndefOr[email | password | search | tel | text | url] = js.undefined
-  /** Specifies a value the widget displays. */
+  /** @name dxTextBox.Options.value */
   @JSName("value")
   var value_dxTextBoxOptions: js.UndefOr[String] = js.undefined
 }

@@ -1,6 +1,6 @@
 package typings.angularCompiler.templateAstMod
 
-import typings.angularCompiler.astMod.AST
+import typings.angularCompiler.astMod.ASTWithSource
 import typings.angularCompiler.astMod.BoundElementProperty
 import typings.angularCompiler.coreMod.SecurityContext
 import typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
@@ -15,7 +15,7 @@ class BoundElementPropertyAst protected () extends TemplateAst {
     name: String,
     `type`: PropertyBindingType,
     securityContext: SecurityContext,
-    value: AST,
+    value: ASTWithSource,
     unit: String,
     sourceSpan: ParseSourceSpan
   ) = this()
@@ -23,7 +23,7 @@ class BoundElementPropertyAst protected () extends TemplateAst {
     name: String,
     `type`: PropertyBindingType,
     securityContext: SecurityContext,
-    value: AST,
+    value: ASTWithSource,
     unit: Null,
     sourceSpan: ParseSourceSpan
   ) = this()
@@ -37,7 +37,7 @@ class BoundElementPropertyAst protected () extends TemplateAst {
   override var sourceSpan: ParseSourceSpan = js.native
   var `type`: PropertyBindingType = js.native
   var unit: String | Null = js.native
-  var value: AST = js.native
+  var value: ASTWithSource = js.native
   /**
     * Visit this node and possibly transform it.
     */

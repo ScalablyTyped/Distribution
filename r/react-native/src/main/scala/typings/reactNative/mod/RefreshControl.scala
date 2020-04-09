@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped new (args : ...any): react-native.react-native.NativeMethodsMixin */ @JSImport("react-native", "RefreshControl")
+- Dropped new (args : ...any): react-native.react-native.NativeMethodsMixinType */ @JSImport("react-native", "RefreshControl")
 @js.native
 class RefreshControl ()
   extends Component[RefreshControlProps, js.Object, js.Any]

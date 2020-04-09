@@ -13,6 +13,7 @@ import typings.react.mod.HTMLAttributes
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
@@ -238,7 +239,7 @@ object CellProps {
     onProgress: SyntheticEvent[Cell, Event_] => Unit = null,
     onRateChange: SyntheticEvent[Cell, Event_] => Unit = null,
     onReset: FormEvent[Cell] => Unit = null,
-    onScroll: UIEvent[Cell] => Unit = null,
+    onScroll: UIEvent[Cell, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[Cell, Event_] => Unit = null,
     onSeeking: SyntheticEvent[Cell, Event_] => Unit = null,
     onSelect: SyntheticEvent[Cell, Event_] => Unit = null,

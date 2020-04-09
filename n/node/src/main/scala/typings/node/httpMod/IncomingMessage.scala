@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class IncomingMessage protected () extends Readable {
   def this(socket: Socket) = this()
+  var aborted: Boolean = js.native
   var complete: Boolean = js.native
   /**
     * @deprecate Use `socket` instead.

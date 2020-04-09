@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@carbon/pictograms-react", "ResetSettings")
 @js.native
-object ResetSettings extends TopLevel[CarbonPictogram]
+object ResetSettings extends TopLevel[CarbonPictogramType]
 

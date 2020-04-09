@@ -10,9 +10,18 @@ import scala.scalajs.js.annotation._
   */
 trait IProperties extends js.Object {
   /**
+    * If true, the section will be collapsed and will not respond
+    * to open nor close actions.
+    */
+  var disabled: js.UndefOr[Boolean] = js.undefined
+  /**
     * If given, this will be diplayed instead of the children.
     */
   var errorMessage: js.UndefOr[String | Null] = js.undefined
+  /**
+    * If true, the section will be opened if not disabled.
+    */
+  var forceOpen: js.UndefOr[Boolean] = js.undefined
   /**
     * The header string for section list.
     */
@@ -35,13 +44,17 @@ object IProperties {
   @scala.inline
   def apply(
     header: String,
+    disabled: js.UndefOr[Boolean] = js.undefined,
     errorMessage: String = null,
+    forceOpen: js.UndefOr[Boolean] = js.undefined,
     headerElements: ReactNode = null,
     isOpen: js.UndefOr[Boolean] = js.undefined,
     onCollapse: /* isOpen */ Boolean => Unit = null
   ): IProperties = {
     val __obj = js.Dynamic.literal(header = header.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceOpen)) __obj.updateDynamic("forceOpen")(forceOpen.asInstanceOf[js.Any])
     if (headerElements != null) __obj.updateDynamic("headerElements")(headerElements.asInstanceOf[js.Any])
     if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen.asInstanceOf[js.Any])
     if (onCollapse != null) __obj.updateDynamic("onCollapse")(js.Any.fromFunction1(onCollapse))

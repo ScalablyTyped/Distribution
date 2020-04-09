@@ -2,6 +2,7 @@ package typings.cesium.mod
 
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
+import typings.std.Request
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,14 +32,15 @@ abstract class ImageryProvider () extends js.Object {
   val tileWidth: Double = js.native
   val tilingScheme: TilingScheme = js.native
   def getTileCredits(x: Double, y: Double, level: Double): js.Array[Credit] = js.native
-  def pickFeatures(x: Double, y: Double, level: Double, longitude: Double, latitude: Double): js.Promise[js.Array[ImageryLayerFeatureInfo]] = js.native
-  def requestImage(x: Double, y: Double, level: Double): js.Promise[HTMLImageElement | HTMLCanvasElement] = js.native
+  def pickFeatures(x: Double, y: Double, level: Double, longitude: Double, latitude: Double): js.UndefOr[js.Promise[js.Array[ImageryLayerFeatureInfo]]] = js.native
+  def requestImage(x: Double, y: Double, level: Double): js.UndefOr[js.Promise[HTMLImageElement | HTMLCanvasElement]] = js.native
+  def requestImage(x: Double, y: Double, level: Double, request: Request): js.UndefOr[js.Promise[HTMLImageElement | HTMLCanvasElement]] = js.native
 }
 
 /* static members */
 @JSImport("cesium", "ImageryProvider")
 @js.native
 object ImageryProvider extends js.Object {
-  def loadImage(url: String): js.Promise[HTMLImageElement | HTMLCanvasElement] = js.native
+  def loadImage(imageryProvider: ImageryProvider, url: String): js.UndefOr[js.Promise[HTMLImageElement | HTMLCanvasElement]] = js.native
 }
 

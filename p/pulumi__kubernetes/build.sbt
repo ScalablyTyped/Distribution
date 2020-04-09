@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "pulumi__kubernetes"
-version := "1.5.8-6ecf92"
+version := "1.6.0-f799b9"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "pulumi__pulumi" % "1.13.0-4bfe55",
+  "org.scalablytyped" %%% "pulumi__pulumi" % "1.14.0-326668",
   "org.scalablytyped" %%% "pulumi__query" % "0.3.0-4b0288",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false

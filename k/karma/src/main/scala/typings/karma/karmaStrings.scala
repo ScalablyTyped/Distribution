@@ -17,10 +17,25 @@ object karmaStrings {
   sealed trait ChromeHeadless extends AutomatedBrowsers
   
   @js.native
+  sealed trait DEBUG extends js.Object
+  
+  @js.native
+  sealed trait ERROR extends js.Object
+  
+  @js.native
   sealed trait Firefox extends AutomatedBrowsers
   
   @js.native
   sealed trait IE extends AutomatedBrowsers
+  
+  @js.native
+  sealed trait INFO extends js.Object
+  
+  @js.native
+  sealed trait LOG extends js.Object
+  
+  @js.native
+  sealed trait OFF extends js.Object
   
   @js.native
   sealed trait Opera extends AutomatedBrowsers
@@ -32,19 +47,22 @@ object karmaStrings {
   sealed trait Safari extends AutomatedBrowsers
   
   @js.native
+  sealed trait WARN extends js.Object
+  
+  @js.native
   sealed trait css extends FilePatternTypes
   
   @js.native
   sealed trait dart extends FilePatternTypes
   
   @js.native
-  sealed trait debug extends js.Object
+  sealed trait debug_ extends js.Object
   
   @js.native
   sealed trait dom extends FilePatternTypes
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error_ extends js.Object
   
   @js.native
   sealed trait factory extends js.Object
@@ -53,13 +71,13 @@ object karmaStrings {
   sealed trait html extends FilePatternTypes
   
   @js.native
-  sealed trait info extends js.Object
+  sealed trait info_ extends js.Object
   
   @js.native
   sealed trait js_ extends FilePatternTypes
   
   @js.native
-  sealed trait log extends js.Object
+  sealed trait log_ extends js.Object
   
   @js.native
   sealed trait module extends FilePatternTypes
@@ -74,7 +92,7 @@ object karmaStrings {
   sealed trait value extends js.Object
   
   @js.native
-  sealed trait warn extends js.Object
+  sealed trait warn_ extends js.Object
   
   @scala.inline
   def Chrome: Chrome = "Chrome".asInstanceOf[Chrome]
@@ -83,9 +101,19 @@ object karmaStrings {
   @scala.inline
   def ChromeHeadless: ChromeHeadless = "ChromeHeadless".asInstanceOf[ChromeHeadless]
   @scala.inline
+  def DEBUG: DEBUG = "DEBUG".asInstanceOf[DEBUG]
+  @scala.inline
+  def ERROR: ERROR = "ERROR".asInstanceOf[ERROR]
+  @scala.inline
   def Firefox: Firefox = "Firefox".asInstanceOf[Firefox]
   @scala.inline
   def IE: IE = "IE".asInstanceOf[IE]
+  @scala.inline
+  def INFO: INFO = "INFO".asInstanceOf[INFO]
+  @scala.inline
+  def LOG: LOG = "LOG".asInstanceOf[LOG]
+  @scala.inline
+  def OFF: OFF = "OFF".asInstanceOf[OFF]
   @scala.inline
   def Opera: Opera = "Opera".asInstanceOf[Opera]
   @scala.inline
@@ -93,25 +121,27 @@ object karmaStrings {
   @scala.inline
   def Safari: Safari = "Safari".asInstanceOf[Safari]
   @scala.inline
+  def WARN: WARN = "WARN".asInstanceOf[WARN]
+  @scala.inline
   def css: css = "css".asInstanceOf[css]
   @scala.inline
   def dart: dart = "dart".asInstanceOf[dart]
   @scala.inline
-  def debug: debug = "debug".asInstanceOf[debug]
+  def debug_ : debug_ = "debug".asInstanceOf[debug_]
   @scala.inline
   def dom: dom = "dom".asInstanceOf[dom]
   @scala.inline
-  def error: error = "error".asInstanceOf[error]
+  def error_ : error_ = "error".asInstanceOf[error_]
   @scala.inline
   def factory: factory = "factory".asInstanceOf[factory]
   @scala.inline
   def html: html = "html".asInstanceOf[html]
   @scala.inline
-  def info: info = "info".asInstanceOf[info]
+  def info_ : info_ = "info".asInstanceOf[info_]
   @scala.inline
   def js_ : js_ = "js".asInstanceOf[js_]
   @scala.inline
-  def log: log = "log".asInstanceOf[log]
+  def log_ : log_ = "log".asInstanceOf[log_]
   @scala.inline
   def module: module = "module".asInstanceOf[module]
   @scala.inline
@@ -121,6 +151,6 @@ object karmaStrings {
   @scala.inline
   def value: value = "value".asInstanceOf[value]
   @scala.inline
-  def warn: warn = "warn".asInstanceOf[warn]
+  def warn_ : warn_ = "warn".asInstanceOf[warn_]
 }
 

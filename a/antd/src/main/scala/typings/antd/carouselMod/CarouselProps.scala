@@ -2,9 +2,9 @@ package typings.antd.carouselMod
 
 import typings.antDesignReactSlick.mod.LazyLoadTypes
 import typings.antDesignReactSlick.mod.ResponsiveObject
-import typings.antDesignReactSlick.mod.Settings
 import typings.antDesignReactSlick.mod.Slider
 import typings.antDesignReactSlick.mod.SwipeDirection
+import typings.antd.AnonClassName
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
 import typings.react.mod._Global_.JSX.Element
@@ -12,13 +12,66 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CarouselProps extends Settings {
+/* Inlined parent std.Omit<@ant-design/react-slick.@ant-design/react-slick.Settings, 'dots' | 'dotsClass'> */
+trait CarouselProps extends js.Object {
+  var accessibility: js.UndefOr[Boolean] = js.undefined
+  var adaptiveHeight: js.UndefOr[Boolean] = js.undefined
+  var afterChange: js.UndefOr[js.Function1[/* currentSlide */ Double, Unit]] = js.undefined
+  var appendDots: js.UndefOr[js.Function1[/* dots */ ReactNode, Element]] = js.undefined
+  var arrows: js.UndefOr[Boolean] = js.undefined
+  var asNavFor: js.UndefOr[Slider] = js.undefined
+  var autoplay: js.UndefOr[Boolean] = js.undefined
+  var autoplaySpeed: js.UndefOr[Double] = js.undefined
+  var beforeChange: js.UndefOr[js.Function2[/* currentSlide */ Double, /* nextSlide */ Double, Unit]] = js.undefined
+  var centerMode: js.UndefOr[Boolean] = js.undefined
+  var centerPadding: js.UndefOr[String] = js.undefined
   var children: js.UndefOr[ReactNode] = js.undefined
+  var className: js.UndefOr[String] = js.undefined
+  var cssEase: js.UndefOr[String] = js.undefined
+  var customPaging: js.UndefOr[js.Function1[/* index */ Double, Element]] = js.undefined
   var dotPosition: js.UndefOr[DotPosition] = js.undefined
+  var dots: js.UndefOr[Boolean | AnonClassName] = js.undefined
+  var draggable: js.UndefOr[Boolean] = js.undefined
+  var easing: js.UndefOr[String] = js.undefined
+  var edgeFriction: js.UndefOr[Double] = js.undefined
   var effect: js.UndefOr[CarouselEffect] = js.undefined
+  var fade: js.UndefOr[Boolean] = js.undefined
+  var focusOnSelect: js.UndefOr[Boolean] = js.undefined
+  var infinite: js.UndefOr[Boolean] = js.undefined
+  var initialSlide: js.UndefOr[Double] = js.undefined
+  var lazyLoad: js.UndefOr[LazyLoadTypes] = js.undefined
+  var nextArrow: js.UndefOr[Element] = js.undefined
+  var onEdge: js.UndefOr[js.Function1[/* swipeDirection */ SwipeDirection, Unit]] = js.undefined
+  var onInit: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var onLazyLoad: js.UndefOr[js.Function1[/* slidesToLoad */ js.Array[Double], Unit]] = js.undefined
+  var onReInit: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var onSwipe: js.UndefOr[js.Function1[/* swipeDirection */ SwipeDirection, Unit]] = js.undefined
+  var pauseOnDotsHover: js.UndefOr[Boolean] = js.undefined
+  var pauseOnFocus: js.UndefOr[Boolean] = js.undefined
+  var pauseOnHover: js.UndefOr[Boolean] = js.undefined
   var prefixCls: js.UndefOr[String] = js.undefined
+  var prevArrow: js.UndefOr[Element] = js.undefined
+  var responsive: js.UndefOr[js.Array[ResponsiveObject]] = js.undefined
+  var rows: js.UndefOr[Double] = js.undefined
+  var rtl: js.UndefOr[Boolean] = js.undefined
   var slickGoTo: js.UndefOr[Double] = js.undefined
+  var slide: js.UndefOr[String] = js.undefined
+  var slidesPerRow: js.UndefOr[Double] = js.undefined
+  var slidesToScroll: js.UndefOr[Double] = js.undefined
+  var slidesToShow: js.UndefOr[Double] = js.undefined
+  var speed: js.UndefOr[Double] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
+  var swipe: js.UndefOr[Boolean] = js.undefined
+  var swipeEvent: js.UndefOr[js.Function1[/* swipeDirection */ SwipeDirection, Unit]] = js.undefined
+  var swipeToSlide: js.UndefOr[Boolean] = js.undefined
+  var touchMove: js.UndefOr[Boolean] = js.undefined
+  var touchThreshold: js.UndefOr[Double] = js.undefined
+  var useCSS: js.UndefOr[Boolean] = js.undefined
+  var useTransform: js.UndefOr[Boolean] = js.undefined
+  var variableWidth: js.UndefOr[Boolean] = js.undefined
+  var vertical: js.UndefOr[Boolean] = js.undefined
+  var verticalSwiping: js.UndefOr[Boolean] = js.undefined
+  var waitForAnimate: js.UndefOr[Boolean] = js.undefined
 }
 
 object CarouselProps {
@@ -40,8 +93,7 @@ object CarouselProps {
     cssEase: String = null,
     customPaging: /* index */ Double => Element = null,
     dotPosition: DotPosition = null,
-    dots: js.UndefOr[Boolean] = js.undefined,
-    dotsClass: String = null,
+    dots: Boolean | AnonClassName = null,
     draggable: js.UndefOr[Boolean] = js.undefined,
     easing: String = null,
     edgeFriction: Int | Double = null,
@@ -101,8 +153,7 @@ object CarouselProps {
     if (cssEase != null) __obj.updateDynamic("cssEase")(cssEase.asInstanceOf[js.Any])
     if (customPaging != null) __obj.updateDynamic("customPaging")(js.Any.fromFunction1(customPaging))
     if (dotPosition != null) __obj.updateDynamic("dotPosition")(dotPosition.asInstanceOf[js.Any])
-    if (!js.isUndefined(dots)) __obj.updateDynamic("dots")(dots.asInstanceOf[js.Any])
-    if (dotsClass != null) __obj.updateDynamic("dotsClass")(dotsClass.asInstanceOf[js.Any])
+    if (dots != null) __obj.updateDynamic("dots")(dots.asInstanceOf[js.Any])
     if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
     if (edgeFriction != null) __obj.updateDynamic("edgeFriction")(edgeFriction.asInstanceOf[js.Any])

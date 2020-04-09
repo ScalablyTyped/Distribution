@@ -39,6 +39,12 @@ import scala.scalajs.js.annotation._
   * @property {boolean} specularVertexColor Use mesh vertex colors for specular. If specularMap or are specularTint are set, they'll be multiplied by vertex colors.
   * @property {string} specularVertexColorChannel Vertex color channels to use for specular. Can be "r", "g", "b", "a", "rgb" or any swizzled combination.
   *
+  * @property {boolean} enableGGXSpecular Enables GGX specular. Also enables anisotropy parameter to set material anisotropy.
+  * @property {number} anisotropy Defines amount of anisotropy. Requires enableGGXSpecular is set to true.
+  * * When anisotropy == 0, specular is isotropic.
+  * * When anisotropy < 0, anistropy direction aligns with the tangent, and specular anisotropy increases as the anisotropy value decreases to minimum of -1.
+  * * When anisotropy > 0, anistropy direction aligns with the bi-normal, and specular anisotropy increases as anisotropy value increases to maximum of 1.
+  *
   * @property {boolean} useMetalness Use metalness properties instead of specular.
   * When enabled, diffuse colors also affect specular instead of the dedicated specular map.
   * This can be used as alternative to specular color to save space.

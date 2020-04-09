@@ -9,33 +9,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Configures tooltips - small pop-up rectangles that display information about a data-visualizing widget element being pressed or hovered over with the mouse pointer. */
+/** @name BaseWidget.Options.tooltip */
 trait BaseWidgetTooltip extends js.Object {
-  /** Specifies the length of a tooltip's arrow in pixels. */
+  /** @name BaseWidget.Options.tooltip.arrowLength */
   var arrowLength: js.UndefOr[Double] = js.undefined
-  /** Configures a tooltip's border. */
+  /** @name BaseWidget.Options.tooltip.border */
   var border: js.UndefOr[AnonDashStyleOpacity] = js.undefined
-  /** Colors all tooltips. */
+  /** @name BaseWidget.Options.tooltip.color */
   var color: js.UndefOr[String] = js.undefined
-  /** Specifies the container in which to draw tooltips. The default container is the HTML DOM `` element. */
+  /** @name BaseWidget.Options.tooltip.container */
   var container: js.UndefOr[String | Element | JQuery] = js.undefined
-  /** Makes all the tooltip's corners rounded. */
+  /** @name BaseWidget.Options.tooltip.cornerRadius */
   var cornerRadius: js.UndefOr[Double] = js.undefined
-  /** Enables tooltips. */
+  /** @name BaseWidget.Options.tooltip.enabled */
   var enabled: js.UndefOr[Boolean] = js.undefined
-  /** Specifies tooltips' font options. */
+  /** @name BaseWidget.Options.tooltip.font */
   var font: js.UndefOr[Font] = js.undefined
-  /** Formats a value before it is displayed it in a tooltip. */
+  /** @name BaseWidget.Options.tooltip.format */
   var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.format] = js.undefined
-  /** Specifies tooltips' transparency. */
+  /** @name BaseWidget.Options.tooltip.opacity */
   var opacity: js.UndefOr[Double] = js.undefined
-  /** Generates an empty space, measured in pixels, between a tooltip's left/right border and its text. */
+  /** @name BaseWidget.Options.tooltip.paddingLeftRight */
   var paddingLeftRight: js.UndefOr[Double] = js.undefined
-  /** Generates an empty space, measured in pixels, between a tooltip's top/bottom border and its text. */
+  /** @name BaseWidget.Options.tooltip.paddingTopBottom */
   var paddingTopBottom: js.UndefOr[Double] = js.undefined
-  /** Configures a tooltip's shadow. */
+  /** @name BaseWidget.Options.tooltip.shadow */
   var shadow: js.UndefOr[AnonBlur] = js.undefined
-  /** Specifies a tooltip's z-index. */
+  /** @name BaseWidget.Options.tooltip.zIndex */
   var zIndex: js.UndefOr[Double] = js.undefined
 }
 

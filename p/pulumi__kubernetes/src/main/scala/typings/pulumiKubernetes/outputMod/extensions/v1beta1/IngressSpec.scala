@@ -15,6 +15,17 @@ trait IngressSpec extends js.Object {
     */
   val backend: IngressBackend
   /**
+    * IngressClassName is the name of the IngressClass cluster resource. The associated
+    * IngressClass defines which controller will implement the resource. This replaces the
+    * deprecated `kubernetes.io/ingress.class` annotation. For backwards compatibility, when that
+    * annotation is set, it must be given precedence over this field. The controller may emit a
+    * warning if the field and annotation have different values. Implementations of this API
+    * should ignore Ingresses without a class specified. An IngressClass resource may be marked
+    * as default, which can be used to set a default value for this field. For more information,
+    * refer to the IngressClass documentation.
+    */
+  val ingressClassName: String
+  /**
     * A list of host rules used to configure the Ingress. If unspecified, or no rule matches, all
     * traffic is sent to the default backend.
     */
@@ -30,8 +41,13 @@ trait IngressSpec extends js.Object {
 
 object IngressSpec {
   @scala.inline
-  def apply(backend: IngressBackend, rules: js.Array[IngressRule], tls: js.Array[IngressTLS]): IngressSpec = {
-    val __obj = js.Dynamic.literal(backend = backend.asInstanceOf[js.Any], rules = rules.asInstanceOf[js.Any], tls = tls.asInstanceOf[js.Any])
+  def apply(
+    backend: IngressBackend,
+    ingressClassName: String,
+    rules: js.Array[IngressRule],
+    tls: js.Array[IngressTLS]
+  ): IngressSpec = {
+    val __obj = js.Dynamic.literal(backend = backend.asInstanceOf[js.Any], ingressClassName = ingressClassName.asInstanceOf[js.Any], rules = rules.asInstanceOf[js.Any], tls = tls.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IngressSpec]
   }

@@ -7,7 +7,13 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait DatabaseEncryptionConfiguration extends js.Object {
+  /**
+    * The type of key; one of `SSE_S3`, `SSE_KMS`, `CSE_KMS`
+    */
   var encryptionOption: Input[String] = js.native
+  /**
+    * The KMS key ARN or ID; required for key types `SSE_KMS` and `CSE_KMS`.
+    */
   var kmsKey: js.UndefOr[Input[String]] = js.native
 }
 

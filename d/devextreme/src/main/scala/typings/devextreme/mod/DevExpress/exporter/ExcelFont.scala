@@ -10,17 +10,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ExcelFont extends js.Object {
-  /** Specifies whether the text should be in bold. */
+  /** @name ExcelFont.bold */
   var bold: js.UndefOr[Boolean] = js.undefined
-  /** The text's color in hexadecimal characters. */
+  /** @name ExcelFont.color */
   var color: js.UndefOr[String] = js.undefined
-  /** Specifies whether the text should be in italic. */
+  /** @name ExcelFont.italic */
   var italic: js.UndefOr[Boolean] = js.undefined
-  /** The name of the typeface that should be applied to the text. */
+  /** @name ExcelFont.name */
   var name: js.UndefOr[String] = js.undefined
-  /** The font size specified in points (1/72 of an inch). */
+  /** @name ExcelFont.size */
   var size: js.UndefOr[Double] = js.undefined
-  /** The underline formatting style. */
+  /** @name ExcelFont.underline */
   var underline: js.UndefOr[double | doubleAccounting | none | single_ | singleAccounting] = js.undefined
 }
 

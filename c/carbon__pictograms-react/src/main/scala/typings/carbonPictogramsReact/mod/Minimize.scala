@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@carbon/pictograms-react", "Minimize")
 @js.native
-object Minimize extends TopLevel[CarbonPictogram]
+object Minimize extends TopLevel[CarbonPictogramType]
 

@@ -1,7 +1,7 @@
 
 # Scala.js typings for jsonschema
 
-Typings are for version 1.2.5
+Typings are for version 1.2.6
 
 ## Library description:
 A fast and easy to use JSON Schema validator

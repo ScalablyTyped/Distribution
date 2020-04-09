@@ -10,27 +10,27 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxPolarChartSeriesTypesCommonPolarChartSeriesLabel extends js.Object {
-  /** Formats the point argument before it is displayed in the point label. To format the point value, use the format option. */
+  /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.label.argumentFormat */
   var argumentFormat: js.UndefOr[format] = js.undefined
-  /** Colors the point labels' background. The default color is inherited from the points. */
+  /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.label.backgroundColor */
   var backgroundColor: js.UndefOr[String] = js.undefined
-  /** Specifies border options for point labels. */
+  /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.label.border */
   var border: js.UndefOr[AnonColorDashStyle] = js.undefined
-  /** Specifies connector options for series point labels. */
+  /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.label.connector */
   var connector: js.UndefOr[AnonColorVisible] = js.undefined
-  /** Specifies a callback function that returns the text to be displayed by point labels. */
+  /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.label.customizeText */
   var customizeText: js.UndefOr[js.Function1[/* pointInfo */ js.Any, String]] = js.undefined
-  /** Specifies font options for the text displayed in point labels. */
+  /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.label.font */
   var font: js.UndefOr[Font] = js.undefined
-  /** Formats a value before it is displayed in a point label. */
+  /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.label.format */
   var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.format] = js.undefined
-  /** Specifies a label position in bar-like series. */
+  /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.label.position */
   var position: js.UndefOr[inside | outside] = js.undefined
-  /** Specifies the angle used to rotate point labels from their initial position. */
+  /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.label.rotationAngle */
   var rotationAngle: js.UndefOr[Double] = js.undefined
-  /** Specifies whether or not to show a label when the point has a zero value. */
+  /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.label.showForZeroValues */
   var showForZeroValues: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the visibility of point labels. */
+  /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.label.visible */
   var visible: js.UndefOr[Boolean] = js.undefined
 }
 

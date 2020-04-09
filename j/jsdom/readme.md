@@ -1,7 +1,7 @@
 
 # Scala.js typings for jsdom
 
-Typings are for version 16.1
+Typings are for version 16.2
 
 ## Library description:
 A JavaScript implementation of many web standards

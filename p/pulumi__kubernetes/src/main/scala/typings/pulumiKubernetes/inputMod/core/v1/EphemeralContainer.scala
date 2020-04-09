@@ -137,8 +137,7 @@ trait EphemeralContainer extends js.Object {
     */
   var tty: js.UndefOr[Input[Boolean]] = js.undefined
   /**
-    * volumeDevices is the list of block devices to be used by the container. This is a beta
-    * feature.
+    * volumeDevices is the list of block devices to be used by the container.
     */
   var volumeDevices: js.UndefOr[Input[js.Array[Input[VolumeDevice]]]] = js.undefined
   /**

@@ -9,6 +9,14 @@ import scala.scalajs.js.annotation._
   */
 trait ServicePort extends js.Object {
   /**
+    * The application protocol for this port. This field follows standard Kubernetes label
+    * syntax. Un-prefixed names are reserved for IANA standard service names (as per RFC-6335 and
+    * http://www.iana.org/assignments/service-names). Non-standard protocols should use prefixed
+    * names such as mycompany.com/my-custom-protocol. Field can be enabled with
+    * ServiceAppProtocol feature gate.
+    */
+  val appProtocol: String
+  /**
     * The name of this port within the service. This must be a DNS_LABEL. All ports within a
     * ServiceSpec must have unique names. When considering the endpoints for a Service, this must
     * match the 'name' field in the EndpointPort. Optional if only one ServicePort is defined on
@@ -44,8 +52,15 @@ trait ServicePort extends js.Object {
 
 object ServicePort {
   @scala.inline
-  def apply(name: String, nodePort: Double, port: Double, protocol: String, targetPort: Double | String): ServicePort = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], nodePort = nodePort.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], targetPort = targetPort.asInstanceOf[js.Any])
+  def apply(
+    appProtocol: String,
+    name: String,
+    nodePort: Double,
+    port: Double,
+    protocol: String,
+    targetPort: Double | String
+  ): ServicePort = {
+    val __obj = js.Dynamic.literal(appProtocol = appProtocol.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nodePort = nodePort.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], targetPort = targetPort.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ServicePort]
   }

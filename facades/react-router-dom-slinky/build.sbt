@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-router-dom-slinky-facade"
-version := "202002160131-1e4594"
+version := "202002160131-c15192"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,10 +9,10 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.6.9-2d2033",
   "org.scalablytyped" %%% "history" % "4.7.2-dt-20200226Z-b605ef",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-ece683",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20200320Z-629467",
-  "org.scalablytyped" %%% "react-router" % "5.1-dt-20200227Z-1e5bf7",
-  "org.scalablytyped" %%% "react-router-dom" % "5.1-dt-20191125Z-91d977",
-  "org.scalablytyped" %%% "react-slinky-facade" % "202002160131-bf6e3c",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20200402Z-6f4338",
+  "org.scalablytyped" %%% "react-router" % "5.1-dt-20200402Z-340682",
+  "org.scalablytyped" %%% "react-router-dom" % "5.1-dt-20191125Z-a52b2a",
+  "org.scalablytyped" %%% "react-slinky-facade" % "202002160131-d9d8ca",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")

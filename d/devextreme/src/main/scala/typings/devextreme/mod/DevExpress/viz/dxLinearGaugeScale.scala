@@ -11,12 +11,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxLinearGaugeScale extends BaseGaugeScale {
-  /** Specifies the orientation of scale ticks. Applies only if the geometry.orientation option is "vertical". */
+  /** @name dxLinearGauge.Options.scale.horizontalOrientation */
   var horizontalOrientation: js.UndefOr[center | left | right] = js.undefined
-  /** Specifies common options for scale labels. */
+  /** @name dxLinearGauge.Options.scale.label */
   @JSName("label")
   var label_dxLinearGaugeScale: js.UndefOr[dxLinearGaugeScaleLabel] = js.undefined
-  /** Specifies the orientation of scale ticks. Applies only if the geometry.orientation option is "horizontal". */
+  /** @name dxLinearGauge.Options.scale.verticalOrientation */
   var verticalOrientation: js.UndefOr[bottom | center | top] = js.undefined
 }
 

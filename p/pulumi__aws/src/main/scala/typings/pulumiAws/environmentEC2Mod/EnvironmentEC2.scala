@@ -1,5 +1,6 @@
 package typings.pulumiAws.environmentEC2Mod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.mod.CustomResource
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.outputMod.Output_
@@ -49,6 +50,10 @@ class EnvironmentEC2 protected () extends CustomResource {
     * The ID of the subnet in Amazon VPC that AWS Cloud9 will use to communicate with the Amazon EC2 instance.
     */
   val subnetId: Output_[js.UndefOr[String]] = js.native
+  /**
+    * Key-value mapping of resource tags
+    */
+  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
   /**
     * The type of the environment (e.g. `ssh` or `ec2`)
     */

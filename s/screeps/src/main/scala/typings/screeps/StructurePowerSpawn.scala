@@ -12,7 +12,8 @@ import scala.scalajs.js.annotation._
 trait StructurePowerSpawn
   extends OwnedStructure[STRUCTURE_POWER_SPAWN]
      with AnyOwnedStructure
-     with AnyStoreStructure {
+     with AnyStoreStructure
+     with ConcreteStructure[js.Any] {
   /**
     * The amount of energy containing in this structure.
     * @deprecated An alias for .store[RESOURCE_ENERGY].

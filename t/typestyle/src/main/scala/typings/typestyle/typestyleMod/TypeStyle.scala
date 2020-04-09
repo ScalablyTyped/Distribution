@@ -14,8 +14,13 @@ import scala.scalajs.js.annotation._
 @js.native
 class TypeStyle protected () extends js.Object {
   def this(hasAutoGenerateTag: AnonAutoGenerateTag) = this()
+  /**
+    * Only calls cb all sync operations settle
+    */
+  var _afterAllSync: js.Any = js.native
   var _autoGenerateTag: js.Any = js.native
   var _freeStyle: js.Any = js.native
+  var _getTag: js.Any = js.native
   /**
     * We have a single stylesheet that we update as components register themselves
     */
@@ -23,14 +28,9 @@ class TypeStyle protected () extends js.Object {
   var _pending: js.Any = js.native
   var _pendingRawChange: js.Any = js.native
   var _raw: js.Any = js.native
-  var _tag: js.UndefOr[js.Any] = js.native
-  /**
-    * Only calls cb all sync operations settle
-    */
-  /* private */ def _afterAllSync(cb: js.Any): js.Any = js.native
-  /* private */ def _getTag(): js.Any = js.native
   /** Checks if the style tag needs updating and if so queues up the change */
-  /* private */ def _styleUpdated(): js.Any = js.native
+  var _styleUpdated: js.Any = js.native
+  var _tag: js.UndefOr[js.Any] = js.native
   /**
     * Insert `raw` CSS as a string. This is useful for e.g.
     * - third party CSS that you are customizing with template strings
@@ -77,6 +77,8 @@ class TypeStyle protected () extends js.Object {
     * returns an object where property names are the same ideal class names and the property values are
     * the actual generated class names using the ideal class name as the $debugName
     */
-  def stylesheet[Names /* <: String */](classes: Record[Names, NestedCSSProperties]): Record[Names, String] = js.native
+  def stylesheet[Classes /* <: Record[String, NestedCSSProperties] */](classes: Classes): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ ClassName in keyof Classes ]: string}
+    */ typings.typestyle.typestyleStrings.TypeStyle with js.Any = js.native
 }
 

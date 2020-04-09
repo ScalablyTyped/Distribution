@@ -18,7 +18,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxValidationSummaryOptions extends CollectionWidgetOptions[dxValidationSummary] {
-  /** Specifies the validation group for which summary should be generated. */
+  /** @name dxValidationSummary.Options.validationGroup */
   var validationGroup: js.UndefOr[String] = js.undefined
 }
 

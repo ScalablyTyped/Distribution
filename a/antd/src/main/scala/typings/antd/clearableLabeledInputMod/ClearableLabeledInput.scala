@@ -1,8 +1,9 @@
 package typings.antd.clearableLabeledInputMod
 
 import typings.react.mod.Component
+import typings.react.mod.MouseEventHandler
 import typings.react.mod.ReactElement
-import typings.react.mod._Global_.JSX.Element
+import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,11 +11,14 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ClearableLabeledInput
   extends Component[ClearableInputProps, js.Object, js.Any] {
-  def renderClearIcon(prefixCls: String): Element | Null = js.native
-  def renderClearableLabeledInput(): Element = js.native
-  def renderInputWithLabel(prefixCls: String, labeledElement: ReactElement): Element = js.native
-  def renderLabeledIcon(prefixCls: String, element: ReactElement): Element = js.native
-  def renderSuffix(prefixCls: String): Element | Null = js.native
-  def renderTextAreaWithClearIcon(prefixCls: String, element: ReactElement): Element = js.native
+  /** @private Do not use out of this class. We do not promise this is always keep. */
+  var containerRef: js.Any = js.native
+  var onInputMouseUp: MouseEventHandler[Element] = js.native
+  def renderClearIcon(prefixCls: String): typings.react.mod._Global_.JSX.Element | Null = js.native
+  def renderClearableLabeledInput(): typings.react.mod._Global_.JSX.Element = js.native
+  def renderInputWithLabel(prefixCls: String, labeledElement: ReactElement): typings.react.mod._Global_.JSX.Element = js.native
+  def renderLabeledIcon(prefixCls: String, element: ReactElement): typings.react.mod._Global_.JSX.Element = js.native
+  def renderSuffix(prefixCls: String): typings.react.mod._Global_.JSX.Element | Null = js.native
+  def renderTextAreaWithClearIcon(prefixCls: String, element: ReactElement): typings.react.mod._Global_.JSX.Element = js.native
 }
 

@@ -20,13 +20,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxDropDownButtonOptions extends WidgetOptions[dxDropDownButton] {
-  /** Provides data for the drop-down menu. */
+  /** @name dxDropDownButton.Options.dataSource */
   var dataSource: js.UndefOr[String | (js.Array[dxDropDownButtonItem | _]) | DataSource | DataSourceOptions] = js.undefined
-  /** Specifies whether to wait until the drop-down menu is opened the first time to render its content. */
+  /** @name dxDropDownButton.Options.deferRendering */
   var deferRendering: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the data field whose values should be displayed in the drop-down menu. */
+  /** @name dxDropDownButton.Options.displayExpr */
   var displayExpr: js.UndefOr[String | (js.Function1[/* itemData */ js.Any, String])] = js.undefined
-  /** Specifies custom content for the drop-down field. */
+  /** @name dxDropDownButton.Options.dropDownContentTemplate */
   var dropDownContentTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function2[
       /* data */ (js.Array[String | Double | _]) | DataSource, 
@@ -34,11 +34,11 @@ trait dxDropDownButtonOptions extends WidgetOptions[dxDropDownButton] {
       String | Element | JQuery
     ])
   ] = js.undefined
-  /** Configures the drop-down field. */
+  /** @name dxDropDownButton.Options.dropDownOptions */
   var dropDownOptions: js.UndefOr[dxPopupOptions[dxPopup]] = js.undefined
-  /** Specifies the button's icon. */
+  /** @name dxDropDownButton.Options.icon */
   var icon: js.UndefOr[String] = js.undefined
-  /** Specifies a custom template for drop-down menu items. */
+  /** @name dxDropDownButton.Options.itemTemplate */
   var itemTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function3[
       /* itemData */ js.Any, 
@@ -47,35 +47,35 @@ trait dxDropDownButtonOptions extends WidgetOptions[dxDropDownButton] {
       String | Element | JQuery
     ])
   ] = js.undefined
-  /** Provides drop-down menu items. */
+  /** @name dxDropDownButton.Options.items */
   var items: js.UndefOr[js.Array[dxDropDownButtonItem | _]] = js.undefined
-  /** Specifies which data field provides keys used to distinguish between the selected drop-down menu items. */
+  /** @name dxDropDownButton.Options.keyExpr */
   var keyExpr: js.UndefOr[String] = js.undefined
-  /** Specifies text or HTML markup displayed in the drop-down menu when it does not contain any items. */
+  /** @name dxDropDownButton.Options.noDataText */
   var noDataText: js.UndefOr[String] = js.undefined
-  /** A function that is executed when the button is clicked or tapped. If splitButton is true, this function is executed for the action button only. */
+  /** @name dxDropDownButton.Options.onButtonClick */
   var onButtonClick: js.UndefOr[(js.Function1[/* e */ AnonSelectedItem, _]) | String] = js.undefined
-  /** A function that is executed when a drop-down menu item is clicked. */
+  /** @name dxDropDownButton.Options.onItemClick */
   var onItemClick: js.UndefOr[(js.Function1[/* e */ AnonItemElementModel, _]) | String] = js.undefined
-  /** A function that is executed when an item is selected or selection is canceled. In effect when useSelectMode is true. */
+  /** @name dxDropDownButton.Options.onSelectionChanged */
   var onSelectionChanged: js.UndefOr[(js.Function1[/* e */ AnonPreviousItem, _]) | String] = js.undefined
-  /** Specifies whether the drop-down menu is opened. */
+  /** @name dxDropDownButton.Options.opened */
   var opened: js.UndefOr[Boolean] = js.undefined
-  /** Contains the selected item's data. Available when useSelectMode is true. */
+  /** @name dxDropDownButton.Options.selectedItem */
   var selectedItem: js.UndefOr[String | Double | js.Any] = js.undefined
-  /** Contains the selected item's key and allows you to specify the initially selected item. Applies when useSelectMode is true. */
+  /** @name dxDropDownButton.Options.selectedItemKey */
   var selectedItemKey: js.UndefOr[String | Double] = js.undefined
-  /** Specifies whether the arrow icon should be displayed. */
+  /** @name dxDropDownButton.Options.showArrowIcon */
   var showArrowIcon: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether to split the button in two: one executes an action, the other opens and closes the drop-down menu. */
+  /** @name dxDropDownButton.Options.splitButton */
   var splitButton: js.UndefOr[Boolean] = js.undefined
-  /** Specifies how the button is styled. */
+  /** @name dxDropDownButton.Options.stylingMode */
   var stylingMode: js.UndefOr[text | outlined | contained] = js.undefined
-  /** Specifies the button's text. Applies only if useSelectMode is false. */
+  /** @name dxDropDownButton.Options.text */
   var text: js.UndefOr[String] = js.undefined
-  /** Specifies whether the widget stores the selected drop-down menu item. */
+  /** @name dxDropDownButton.Options.useSelectMode */
   var useSelectMode: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether text that exceeds the drop-down list width should be wrapped. */
+  /** @name dxDropDownButton.Options.wrapItemText */
   var wrapItemText: js.UndefOr[Boolean] = js.undefined
 }
 

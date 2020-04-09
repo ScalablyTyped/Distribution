@@ -63,7 +63,7 @@ trait IMenuItemProps
     * @default "a"
     */
   var tagName: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any
   ] = js.undefined
   /**
     * A space-delimited list of class names to pass along to the text wrapper element.
@@ -91,7 +91,7 @@ object IMenuItemProps {
     onClick: /* event */ MouseEvent[HTMLElement, NativeMouseEvent] => Unit = null,
     popoverProps: PartialIPopoverProps = null,
     shouldDismissPopover: js.UndefOr[Boolean] = js.undefined,
-    tagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any = null,
+    tagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any = null,
     target: String = null,
     text: ReactNode = null,
     textClassName: String = null

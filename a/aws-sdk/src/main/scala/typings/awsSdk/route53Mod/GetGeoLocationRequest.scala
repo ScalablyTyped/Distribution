@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetGeoLocationRequest extends js.Object {
   /**
-    * Amazon Route 53 supports the following continent codes:    AF: Africa    AN: Antarctica    AS: Asia    EU: Europe    OC: Oceania    NA: North America    SA: South America  
+    * For geolocation resource record sets, a two-letter abbreviation that identifies a continent. Amazon Route 53 supports the following continent codes:    AF: Africa    AN: Antarctica    AS: Asia    EU: Europe    OC: Oceania    NA: North America    SA: South America  
     */
   var ContinentCode: js.UndefOr[GeoLocationContinentCode] = js.native
   /**
@@ -15,7 +15,7 @@ trait GetGeoLocationRequest extends js.Object {
     */
   var CountryCode: js.UndefOr[GeoLocationCountryCode] = js.native
   /**
-    * Amazon Route 53 uses the one- to three-letter subdivision codes that are specified in ISO standard 3166-1 alpha-2. Route 53 doesn't support subdivision codes for all countries. If you specify subdivisioncode, you must also specify countrycode. 
+    * For SubdivisionCode, Amazon Route 53 supports only states of the United States. For a list of state abbreviations, see Appendix B: Two–Letter State and Possession Abbreviations on the United States Postal Service website.  If you specify subdivisioncode, you must also specify US for CountryCode. 
     */
   var SubdivisionCode: js.UndefOr[GeoLocationSubdivisionCode] = js.native
 }

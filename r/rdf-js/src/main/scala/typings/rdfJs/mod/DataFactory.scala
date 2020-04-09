@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait DataFactory[Q /* <: BaseQuad */] extends js.Object {
+trait DataFactory[OutQuad /* <: BaseQuad */, InQuad /* <: BaseQuad */] extends js.Object {
   /**
     * This method is optional.
     * @param value The variable name
@@ -54,16 +54,16 @@ trait DataFactory[Q /* <: BaseQuad */] extends js.Object {
     * @see Quad
     */
   def quad(
-    subject: /* import warning: importer.ImportType#apply Failed type conversion: Q['subject'] */ js.Any,
-    predicate: /* import warning: importer.ImportType#apply Failed type conversion: Q['predicate'] */ js.Any,
-    `object`: /* import warning: importer.ImportType#apply Failed type conversion: Q['object'] */ js.Any
-  ): Q = js.native
+    subject: /* import warning: importer.ImportType#apply Failed type conversion: InQuad['subject'] */ js.Any,
+    predicate: /* import warning: importer.ImportType#apply Failed type conversion: InQuad['predicate'] */ js.Any,
+    `object`: /* import warning: importer.ImportType#apply Failed type conversion: InQuad['object'] */ js.Any
+  ): OutQuad = js.native
   def quad(
-    subject: /* import warning: importer.ImportType#apply Failed type conversion: Q['subject'] */ js.Any,
-    predicate: /* import warning: importer.ImportType#apply Failed type conversion: Q['predicate'] */ js.Any,
-    `object`: /* import warning: importer.ImportType#apply Failed type conversion: Q['object'] */ js.Any,
-    graph: /* import warning: importer.ImportType#apply Failed type conversion: Q['graph'] */ js.Any
-  ): Q = js.native
+    subject: /* import warning: importer.ImportType#apply Failed type conversion: InQuad['subject'] */ js.Any,
+    predicate: /* import warning: importer.ImportType#apply Failed type conversion: InQuad['predicate'] */ js.Any,
+    `object`: /* import warning: importer.ImportType#apply Failed type conversion: InQuad['object'] */ js.Any,
+    graph: /* import warning: importer.ImportType#apply Failed type conversion: InQuad['graph'] */ js.Any
+  ): OutQuad = js.native
   /**
     * @param subject   The triple subject term.
     * @param predicate The triple predicate term.
@@ -74,9 +74,9 @@ trait DataFactory[Q /* <: BaseQuad */] extends js.Object {
     * @see DefaultGraph
     */
   def triple(
-    subject: /* import warning: importer.ImportType#apply Failed type conversion: Q['subject'] */ js.Any,
-    predicate: /* import warning: importer.ImportType#apply Failed type conversion: Q['predicate'] */ js.Any,
-    `object`: /* import warning: importer.ImportType#apply Failed type conversion: Q['object'] */ js.Any
-  ): Q = js.native
+    subject: /* import warning: importer.ImportType#apply Failed type conversion: InQuad['subject'] */ js.Any,
+    predicate: /* import warning: importer.ImportType#apply Failed type conversion: InQuad['predicate'] */ js.Any,
+    `object`: /* import warning: importer.ImportType#apply Failed type conversion: InQuad['object'] */ js.Any
+  ): InQuad = js.native
 }
 

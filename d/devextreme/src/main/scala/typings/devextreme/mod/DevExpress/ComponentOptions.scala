@@ -8,11 +8,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ComponentOptions[T] extends js.Object {
-  /** A function that is executed before the widget is disposed of. */
+  /** @name Component.Options.onDisposing */
   var onDisposing: js.UndefOr[js.Function1[/* e */ AnonComponent[T], _]] = js.undefined
-  /** A function used in JavaScript frameworks to save the widget instance. */
+  /** @name Component.Options.onInitialized */
   var onInitialized: js.UndefOr[js.Function1[/* e */ AnonElement[T], _]] = js.undefined
-  /** A function that is executed after a widget option is changed. */
+  /** @name Component.Options.onOptionChanged */
   var onOptionChanged: js.UndefOr[js.Function1[/* e */ AnonFullName[T], _]] = js.undefined
 }
 

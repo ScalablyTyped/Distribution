@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nivo__voronoi"
-version := "0.61.0-6e6ef7"
+version := "0.61.0-1fc8dc"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.6.9-2d2033",
   "org.scalablytyped" %%% "nivo__core" % "0.61.0-cdb3bd",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-ece683",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20200320Z-629467",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20200402Z-6f4338",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")

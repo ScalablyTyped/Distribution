@@ -21,6 +21,14 @@ trait PodSecurityContext extends js.Object {
     */
   val fsGroup: Double
   /**
+    * fsGroupChangePolicy defines behavior of changing ownership and permission of the volume
+    * before being exposed inside Pod. This field will only apply to volume types which support
+    * fsGroup based ownership(and permissions). It will have no effect on ephemeral volume types
+    * such as: secret, configmaps and emptydir. Valid values are "OnRootMismatch" and "Always".
+    * If not specified defaults to "Always".
+    */
+  val fsGroupChangePolicy: String
+  /**
     * The GID to run the entrypoint of the container process. Uses runtime default if unset. May
     * also be set in SecurityContext.  If set in both SecurityContext and PodSecurityContext, the
     * value specified in SecurityContext takes precedence for that container.
@@ -70,6 +78,7 @@ object PodSecurityContext {
   @scala.inline
   def apply(
     fsGroup: Double,
+    fsGroupChangePolicy: String,
     runAsGroup: Double,
     runAsNonRoot: Boolean,
     runAsUser: Double,
@@ -78,7 +87,7 @@ object PodSecurityContext {
     sysctls: js.Array[Sysctl],
     windowsOptions: WindowsSecurityContextOptions
   ): PodSecurityContext = {
-    val __obj = js.Dynamic.literal(fsGroup = fsGroup.asInstanceOf[js.Any], runAsGroup = runAsGroup.asInstanceOf[js.Any], runAsNonRoot = runAsNonRoot.asInstanceOf[js.Any], runAsUser = runAsUser.asInstanceOf[js.Any], seLinuxOptions = seLinuxOptions.asInstanceOf[js.Any], supplementalGroups = supplementalGroups.asInstanceOf[js.Any], sysctls = sysctls.asInstanceOf[js.Any], windowsOptions = windowsOptions.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(fsGroup = fsGroup.asInstanceOf[js.Any], fsGroupChangePolicy = fsGroupChangePolicy.asInstanceOf[js.Any], runAsGroup = runAsGroup.asInstanceOf[js.Any], runAsNonRoot = runAsNonRoot.asInstanceOf[js.Any], runAsUser = runAsUser.asInstanceOf[js.Any], seLinuxOptions = seLinuxOptions.asInstanceOf[js.Any], supplementalGroups = supplementalGroups.asInstanceOf[js.Any], sysctls = sysctls.asInstanceOf[js.Any], windowsOptions = windowsOptions.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PodSecurityContext]
   }

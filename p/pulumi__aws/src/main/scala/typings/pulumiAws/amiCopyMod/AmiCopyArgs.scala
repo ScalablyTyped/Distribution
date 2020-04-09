@@ -20,7 +20,7 @@ trait AmiCopyArgs extends js.Object {
     */
   val ebsBlockDevices: js.UndefOr[Input[js.Array[Input[AmiCopyEbsBlockDevice]]]] = js.native
   /**
-    * Specifies whether the destination snapshots of the copied image should be encrypted. Defaults to `false`
+    * Boolean controlling whether the created EBS volumes will be encrypted. Can't be used with `snapshotId`.
     */
   val encrypted: js.UndefOr[Input[Boolean]] = js.native
   /**
@@ -29,7 +29,9 @@ trait AmiCopyArgs extends js.Object {
     */
   val ephemeralBlockDevices: js.UndefOr[Input[js.Array[Input[AmiCopyEphemeralBlockDevice]]]] = js.native
   /**
-    * The full ARN of the KMS Key to use when encrypting the snapshots of an image during a copy operation. If not specified, then the default AWS KMS Key will be used
+    * The full ARN of the AWS Key Management Service (AWS KMS) CMK to use when encrypting the snapshots of
+    * an image during a copy operation. This parameter is only required if you want to use a non-default CMK;
+    * if this parameter is not specified, the default CMK for EBS is used
     */
   val kmsKeyId: js.UndefOr[Input[String]] = js.native
   /**

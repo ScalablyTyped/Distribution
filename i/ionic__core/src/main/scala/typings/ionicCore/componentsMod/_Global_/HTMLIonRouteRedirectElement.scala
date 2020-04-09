@@ -2,7 +2,7 @@ package typings.ionicCore.componentsMod._Global_
 
 import org.scalablytyped.runtime.Instantiable0
 import typings.ionicCore.componentsMod.Components.IonRouteRedirect
-import typings.ionicCore.stencilCoreMod.HTMLStencilElement
+import typings.ionicCore.stencilPublicRuntimeMod.HTMLStencilElement
 import typings.std.AddEventListenerOptions
 import typings.std.EventListenerOptions
 import typings.std.EventListenerOrEventListenerObject

@@ -9,8 +9,10 @@ trait ExtendedAttribute extends js.Object {
   var arguments: js.Array[Argument]
   /** The extended attribute's name. */
   var name: String
-  /** If there is a right-hand side, this will capture its type ("identifier" or "identifier-list") and its value. */
-  var rhs: ExtendedAttributeRightHandSideIdentifier | ExtendedAttributeRightHandSideIdentifierList | Null
+  /** The container of this extended attribute. */
+  var parent: IDLRootType | FieldType | IDLInterfaceMemberType
+  /** If there is a right-hand side, this will capture its type and value. */
+  var rhs: ExtendedAttributeRightHandSide | Null
 }
 
 object ExtendedAttribute {
@@ -18,9 +20,10 @@ object ExtendedAttribute {
   def apply(
     arguments: js.Array[Argument],
     name: String,
-    rhs: ExtendedAttributeRightHandSideIdentifier | ExtendedAttributeRightHandSideIdentifierList = null
+    parent: IDLRootType | FieldType | IDLInterfaceMemberType,
+    rhs: ExtendedAttributeRightHandSide = null
   ): ExtendedAttribute = {
-    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
     if (rhs != null) __obj.updateDynamic("rhs")(rhs.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtendedAttribute]
   }

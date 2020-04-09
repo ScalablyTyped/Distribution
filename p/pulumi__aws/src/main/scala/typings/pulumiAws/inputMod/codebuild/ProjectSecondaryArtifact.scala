@@ -16,7 +16,7 @@ trait ProjectSecondaryArtifact extends js.Object {
     */
   var encryptionDisabled: js.UndefOr[Input[Boolean]] = js.native
   /**
-    * The location of the source code from git or s3.
+    * Information about the build output artifact location. If `type` is set to `CODEPIPELINE` or `NO_ARTIFACTS` then this value will be ignored. If `type` is set to `S3`, this is the name of the output bucket. If `path` is not also specified, then `location` can also specify the path of the output artifact in the output bucket.
     */
   var location: js.UndefOr[Input[String]] = js.native
   /**
@@ -40,7 +40,7 @@ trait ProjectSecondaryArtifact extends js.Object {
     */
   var path: js.UndefOr[Input[String]] = js.native
   /**
-    * The type of repository that contains the source code to be built. Valid values for this parameter are: `CODECOMMIT`, `CODEPIPELINE`, `GITHUB`, `GITHUB_ENTERPRISE`, `BITBUCKET` or `S3`.
+    * The build output artifact's type. Valid values for this parameter are: `CODEPIPELINE`, `NO_ARTIFACTS` or `S3`.
     */
   var `type`: Input[String] = js.native
 }

@@ -14,21 +14,21 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Describes settings supported by a series of the range area type. */
+/** @name dxChartSeriesTypes.RangeAreaSeries */
 trait dxChartSeriesTypesRangeAreaSeries extends dxChartSeriesTypesCommonSeries {
-  /** Configures data aggregation for the series. */
+  /** @name dxChartSeriesTypes.RangeAreaSeries.aggregation */
   @JSName("aggregation")
   var aggregation_dxChartSeriesTypesRangeAreaSeries: js.UndefOr[dxChartSeriesTypesRangeAreaSeriesAggregation] = js.undefined
-  /** Specifies series elements to be highlighted when a user points to a series. */
+  /** @name dxChartSeriesTypes.RangeAreaSeries.hoverMode */
   @JSName("hoverMode")
   var hoverMode_dxChartSeriesTypesRangeAreaSeries: js.UndefOr[nearestPoint | includePoints | excludePoints | none] = js.undefined
-  /** Configures point labels. */
+  /** @name dxChartSeriesTypes.RangeAreaSeries.label */
   @JSName("label")
   var label_dxChartSeriesTypesRangeAreaSeries: js.UndefOr[dxChartSeriesTypesRangeAreaSeriesLabel] = js.undefined
-  /** Configures series points in scatter, line- and area-like series. */
+  /** @name dxChartSeriesTypes.RangeAreaSeries.point */
   @JSName("point")
   var point_dxChartSeriesTypesRangeAreaSeries: js.UndefOr[dxChartSeriesTypesRangeAreaSeriesPoint] = js.undefined
-  /** Specifies series elements to be highlighted when a user selects a series. */
+  /** @name dxChartSeriesTypes.RangeAreaSeries.selectionMode */
   @JSName("selectionMode")
   var selectionMode_dxChartSeriesTypesRangeAreaSeries: js.UndefOr[includePoints | excludePoints | none] = js.undefined
 }

@@ -79,6 +79,8 @@ class ManagementClient[A, U] protected () extends js.Object {
   def deleteRole(params: ObjectWithId, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
   def deleteRule(params: ObjectWithId): js.Promise[Unit] = js.native
   def deleteRule(params: ObjectWithId, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def deleteRulesConfig(params: RulesConfig): js.Promise[Unit] = js.native
+  def deleteRulesConfig(params: RulesConfig, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
   def deleteUser(params: ObjectWithId): Unit = js.native
   def deleteUser(params: ObjectWithId, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
   def deleteUserMultifactor(params: DeleteMultifactorParams): js.Promise[Unit] = js.native
@@ -170,6 +172,9 @@ class ManagementClient[A, U] protected () extends js.Object {
   // Rules
   def getRules(): js.Promise[js.Array[Rule]] = js.native
   def getRules(cb: js.Function2[/* err */ Error, /* rules */ js.Array[Rule], Unit]): Unit = js.native
+  // Rules Configurations
+  def getRulesConfigs(): js.Promise[js.Array[RulesConfig]] = js.native
+  def getRulesConfigs(cb: js.Function2[/* err */ Error, /* rulesConfigs */ js.Array[RulesConfig], Unit]): Unit = js.native
   def getTenantSettings(): Unit = js.native
   def getTenantSettings(cb: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): Unit = js.native
   // Tenant
@@ -254,6 +259,12 @@ class ManagementClient[A, U] protected () extends js.Object {
   def sendEmailVerification(data: UserIdParams, cb: js.Function2[/* err */ Error, /* data */ VerificationEmailJob, Unit]): Unit = js.native
   @JSName("sendEmailVerification")
   def sendEmailVerification_Promise(data: UserIdParams): js.Promise[VerificationEmailJob] = js.native
+  def setRulesConfig(params: RulesConfig, data: RulesConfigData): js.Promise[RulesConfig with RulesConfigData] = js.native
+  def setRulesConfig(
+    params: RulesConfig,
+    data: RulesConfigData,
+    cb: js.Function2[/* err */ Error, /* rulesConfig */ RulesConfig with RulesConfigData, Unit]
+  ): Unit = js.native
   def unblockUser(params: ObjectWithId): js.Promise[String] = js.native
   def unblockUser(params: ObjectWithId, cb: js.Function2[/* err */ Error, /* response */ String, Unit]): Unit = js.native
   def unblockUserByIdentifier(params: ObjectWithIdentifier): js.Promise[String] = js.native

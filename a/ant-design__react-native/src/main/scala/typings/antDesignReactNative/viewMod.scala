@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object viewMod extends js.Object {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped new (args : ...any): react-native.react-native.NativeMethodsMixin */ @js.native
+  - Dropped new (args : ...any): react-native.react-native.NativeMethodsMixinType */ @js.native
   class default () extends View
   
   /* static members */

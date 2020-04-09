@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "jquery-typeahead"
-version := "2.10-dt-20190408Z-3bf4a6"
+version := "2.10-dt-20190408Z-a8f670"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "jquery" % "3.3-dt-20200225Z-e64e66",
+  "org.scalablytyped" %%% "jquery" % "3.3-dt-20200326Z-2318d7",
   "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-3d9ead",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false

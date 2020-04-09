@@ -68,11 +68,8 @@ object mod extends js.Object {
     def tee(n: Double): js.Array[WuIterable[T]] = js.native
     def toArray(): js.Array[T] = js.native
     def unique(): WuIterable[T] = js.native
-    // TODO: this makes no sense, where did the second entry come from?
-    // tslint:disable-next-line no-unnecessary-generics
-    def zip[U](iter2: Iterable[T]): WuIterable[js.Tuple2[T, U]] = js.native
-    // tslint:disable-next-line no-unnecessary-generics
-    def zipLongest[U](iter2: Iterable[T]): WuIterable[js.Tuple2[T, U]] = js.native
+    def zip[U](iter2: Iterable[U]): WuIterable[js.Tuple2[T, U]] = js.native
+    def zipLongest[U](iter2: Iterable[U]): WuIterable[js.Tuple2[T, U]] = js.native
   }
   
   // invoke<T, U>(name:string, ...t:T[], iter: Iterable<(t:T)=>U>): WuIterable<U>;

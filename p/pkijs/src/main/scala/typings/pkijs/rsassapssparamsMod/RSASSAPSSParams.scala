@@ -7,28 +7,28 @@ import scala.scalajs.js.annotation._
 trait RSASSAPSSParams extends js.Object {
   /**
     * Algorithms of hashing (DEFAULT sha1)
-    * 
+    *
     * @type {AlgorithmIdentifier}
     * @memberOf RSASSAPSSParams
     */
   var hashAlgorithm: typings.pkijs.algorithmIdentifierMod.default
   /**
     * Algorithm of "mask generaion function (MGF)" (DEFAULT mgf1SHA1)
-    * 
+    *
     * @type {AlgorithmIdentifier}
     * @memberOf RSASSAPSSParams
     */
   var maskGenAlgorithm: typings.pkijs.algorithmIdentifierMod.default
   /**
     * Salt length (DEFAULT 20)
-    * 
+    *
     * @type {number}
     * @memberOf RSASSAPSSParams
     */
   var saltLength: Double
   /**
     * (DEFAULT 1)
-    * 
+    *
     * @type {number}
     * @memberOf RSASSAPSSParams
     */

@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait BucketLifecycleRuleNoncurrentVersionTransition extends js.Object {
   /**
-    * The number of days that you want to specify for the default retention period.
+    * Specifies the number of days an object is noncurrent object versions expire.
     */
   var days: js.UndefOr[Input[Double]] = js.native
   /**
-    * The class of storage used to store the object. Can be `STANDARD`, `REDUCED_REDUNDANCY`, `STANDARD_IA`, `ONEZONE_IA`, `INTELLIGENT_TIERING`, `GLACIER`, or `DEEP_ARCHIVE`.
+    * Specifies the Amazon S3 storage class to which you want the noncurrent versions object to transition. Can be `ONEZONE_IA`, `STANDARD_IA`, `INTELLIGENT_TIERING`, `GLACIER`, or `DEEP_ARCHIVE`.
     */
   var storageClass: Input[String] = js.native
 }

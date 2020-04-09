@@ -15,6 +15,7 @@ import typings.react.mod.KeyboardEvent
 import typings.react.mod.LabelHTMLAttributes
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
@@ -274,7 +275,7 @@ object IFileInputProps {
     onProgress: SyntheticEvent[HTMLLabelElement, Event_] => Unit = null,
     onRateChange: SyntheticEvent[HTMLLabelElement, Event_] => Unit = null,
     onReset: FormEvent[HTMLLabelElement] => Unit = null,
-    onScroll: UIEvent[HTMLLabelElement] => Unit = null,
+    onScroll: UIEvent[HTMLLabelElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[HTMLLabelElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[HTMLLabelElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[HTMLLabelElement, Event_] => Unit = null,

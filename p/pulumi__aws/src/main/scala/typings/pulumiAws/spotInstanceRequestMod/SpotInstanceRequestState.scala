@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiAws.inputMod.ec2.SpotInstanceRequestCreditSpecification
 import typings.pulumiAws.inputMod.ec2.SpotInstanceRequestEbsBlockDevice
 import typings.pulumiAws.inputMod.ec2.SpotInstanceRequestEphemeralBlockDevice
+import typings.pulumiAws.inputMod.ec2.SpotInstanceRequestMetadataOptions
 import typings.pulumiAws.inputMod.ec2.SpotInstanceRequestNetworkInterface
 import typings.pulumiAws.inputMod.ec2.SpotInstanceRequestRootBlockDevice
 import typings.pulumiPulumi.outputMod.Input
@@ -117,6 +118,10 @@ trait SpotInstanceRequestState extends js.Object {
     * If left empty instances are launched and terminated individually.
     */
   val launchGroup: js.UndefOr[Input[String]] = js.native
+  /**
+    * Customize the metadata options of the instance. See Metadata Options below for more details.
+    */
+  val metadataOptions: js.UndefOr[Input[SpotInstanceRequestMetadataOptions]] = js.native
   /**
     * If true, the launched EC2 instance will have detailed monitoring enabled. (Available since v0.6.0)
     */
@@ -260,6 +265,7 @@ object SpotInstanceRequestState {
     ipv6Addresses: Input[js.Array[Input[String]]] = null,
     keyName: Input[String] = null,
     launchGroup: Input[String] = null,
+    metadataOptions: Input[SpotInstanceRequestMetadataOptions] = null,
     monitoring: Input[Boolean] = null,
     networkInterfaces: Input[js.Array[Input[SpotInstanceRequestNetworkInterface]]] = null,
     passwordData: Input[String] = null,
@@ -313,6 +319,7 @@ object SpotInstanceRequestState {
     if (ipv6Addresses != null) __obj.updateDynamic("ipv6Addresses")(ipv6Addresses.asInstanceOf[js.Any])
     if (keyName != null) __obj.updateDynamic("keyName")(keyName.asInstanceOf[js.Any])
     if (launchGroup != null) __obj.updateDynamic("launchGroup")(launchGroup.asInstanceOf[js.Any])
+    if (metadataOptions != null) __obj.updateDynamic("metadataOptions")(metadataOptions.asInstanceOf[js.Any])
     if (monitoring != null) __obj.updateDynamic("monitoring")(monitoring.asInstanceOf[js.Any])
     if (networkInterfaces != null) __obj.updateDynamic("networkInterfaces")(networkInterfaces.asInstanceOf[js.Any])
     if (passwordData != null) __obj.updateDynamic("passwordData")(passwordData.asInstanceOf[js.Any])

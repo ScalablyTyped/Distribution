@@ -13,6 +13,7 @@ import typings.react.mod.HTMLAttributes
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
@@ -220,7 +221,7 @@ object TabContainerProps {
     onProgress: SyntheticEvent[TabContainer, Event_] => Unit = null,
     onRateChange: SyntheticEvent[TabContainer, Event_] => Unit = null,
     onReset: FormEvent[TabContainer] => Unit = null,
-    onScroll: UIEvent[TabContainer] => Unit = null,
+    onScroll: UIEvent[TabContainer, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[TabContainer, Event_] => Unit = null,
     onSeeking: SyntheticEvent[TabContainer, Event_] => Unit = null,
     onSelect: SyntheticEvent[TabContainer, Event_] => Unit = null,

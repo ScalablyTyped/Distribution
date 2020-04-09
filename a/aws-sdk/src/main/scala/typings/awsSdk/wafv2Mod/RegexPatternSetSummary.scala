@@ -11,7 +11,7 @@ trait RegexPatternSetSummary extends js.Object {
     */
   var ARN: js.UndefOr[ResourceArn] = js.native
   /**
-    * A friendly description of the set. You cannot change the description of a set after you create it.
+    * A description of the set that helps with identification. You cannot change the description of a set after you create it.
     */
   var Description: js.UndefOr[EntityDescription] = js.native
   /**
@@ -23,7 +23,7 @@ trait RegexPatternSetSummary extends js.Object {
     */
   var LockToken: js.UndefOr[typings.awsSdk.wafv2Mod.LockToken] = js.native
   /**
-    * A friendly name of the data type instance. You cannot change the name after you create the instance.
+    * The name of the data type instance. You cannot change the name after you create the instance.
     */
   var Name: js.UndefOr[EntityName] = js.native
 }

@@ -25,13 +25,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxChartLegend extends BaseChartLegend {
-  /** Specifies the text for a hint that appears when a user hovers the mouse pointer over a legend item. */
+  /** @name dxChart.Options.legend.customizeHint */
   var customizeHint: js.UndefOr[js.Function1[/* seriesInfo */ AnonSeriesColor, String]] = js.undefined
-  /** Specifies a callback function that returns the text to be displayed by a legend item. */
+  /** @name dxChart.Options.legend.customizeText */
   var customizeText: js.UndefOr[js.Function1[/* seriesInfo */ AnonSeriesColor, String]] = js.undefined
-  /** Specifies what series elements to highlight when a corresponding item in the legend is hovered over. */
+  /** @name dxChart.Options.legend.hoverMode */
   var hoverMode: js.UndefOr[excludePoints | includePoints | none] = js.undefined
-  /** Specifies whether the legend is located outside or inside the chart's plot. */
+  /** @name dxChart.Options.legend.position */
   var position: js.UndefOr[inside | outside] = js.undefined
 }
 

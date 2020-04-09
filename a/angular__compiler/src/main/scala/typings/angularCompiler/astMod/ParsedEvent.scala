@@ -12,11 +12,11 @@ class ParsedEvent protected () extends js.Object {
     name: String,
     targetOrPhase: String,
     `type`: ParsedEventType,
-    handler: AST,
+    handler: ASTWithSource,
     sourceSpan: ParseSourceSpan,
     handlerSpan: ParseSourceSpan
   ) = this()
-  var handler: AST = js.native
+  var handler: ASTWithSource = js.native
   var handlerSpan: ParseSourceSpan = js.native
   var name: String = js.native
   var sourceSpan: ParseSourceSpan = js.native

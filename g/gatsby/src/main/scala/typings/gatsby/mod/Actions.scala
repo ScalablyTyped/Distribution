@@ -23,6 +23,7 @@ trait Actions extends js.Object {
   def addThirdPartySchema(args: AnonSchema, plugin: ActionPlugin): Unit = js.native
   def addThirdPartySchema(args: AnonSchema, plugin: ActionPlugin, traceId: String): Unit = js.native
   /** @see https://www.gatsbyjs.org/docs/actions/#createFieldExtension */
+  def createFieldExtension(extension: js.Object): Unit = js.native
   def createFieldExtension(extension: js.Object, plugin: ActionPlugin): Unit = js.native
   def createFieldExtension(extension: js.Object, plugin: ActionPlugin, traceId: String): Unit = js.native
   /** @see https://www.gatsbyjs.org/docs/actions/#createJob */

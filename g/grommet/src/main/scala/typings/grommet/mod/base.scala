@@ -17,7 +17,7 @@ import typings.grommet.AnonDisabledExtend
 import typings.grommet.AnonEdge
 import typings.grommet.AnonExtend
 import typings.grommet.AnonExtendFont
-import typings.grommet.AnonFontWeight
+import typings.grommet.AnonExtendFontWeight
 import typings.grommet.AnonGap
 import typings.grommet.AnonGroupEnd
 import typings.grommet.AnonHeading
@@ -32,6 +32,7 @@ import typings.grommet.AnonResponsiveBreakpoint
 import typings.grommet.AnonRow
 import typings.grommet.AnonSizeAnonDictxLarge
 import typings.grommet.AnonSmall
+import typings.grommet.AnonText
 import typings.grommet.AnonThumb
 import typings.grommet.AnonXxlarge
 import typings.grommet.utilsMod.DeepReadonly
@@ -43,7 +44,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object base extends js.Object {
   val accordion: js.UndefOr[AnonBorderHeading | DeepReadonly[js.UndefOr[AnonBorderHeading]]] = js.native
-  val anchor: js.UndefOr[AnonFontWeight | DeepReadonly[js.UndefOr[AnonFontWeight]]] = js.native
+  val anchor: js.UndefOr[AnonExtendFontWeight | DeepReadonly[js.UndefOr[AnonExtendFontWeight]]] = js.native
+  val avatar: js.UndefOr[AnonText | DeepReadonly[js.UndefOr[AnonText]]] = js.native
   val box: js.UndefOr[AnonResponsiveBreakpoint | DeepReadonly[js.UndefOr[AnonResponsiveBreakpoint]]] = js.native
   val button: js.UndefOr[AnonMinWidth | DeepReadonly[js.UndefOr[AnonMinWidth]]] = js.native
   val calendar: js.UndefOr[AnonHeading | DeepReadonly[js.UndefOr[AnonHeading]]] = js.native

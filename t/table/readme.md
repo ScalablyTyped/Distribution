@@ -1,7 +1,7 @@
 
 # Scala.js typings for table
 
-Typings are for version 4.0
+Typings are for version 5.0
 
 ## Library description:
 Formats data into a string table.

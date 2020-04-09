@@ -435,7 +435,6 @@ package object sagemakerMod {
     - typings.awsSdk.awsSdkStrings.Active_
     - typings.awsSdk.awsSdkStrings.Failed_
     - typings.awsSdk.awsSdkStrings.Deleting_
-    - typings.awsSdk.awsSdkStrings.Deleted_
     - java.lang.String
   */
   type FlowDefinitionStatus = typings.awsSdk.sagemakerMod._FlowDefinitionStatus | java.lang.String
@@ -772,6 +771,7 @@ package object sagemakerMod {
     - typings.awsSdk.awsSdkStrings.Contains_
     - typings.awsSdk.awsSdkStrings.Exists
     - typings.awsSdk.awsSdkStrings.NotExists
+    - typings.awsSdk.awsSdkStrings.In_
     - java.lang.String
   */
   type Operator = typings.awsSdk.sagemakerMod._Operator | java.lang.String
@@ -1168,6 +1168,7 @@ package object sagemakerMod {
     - typings.awsSdk.awsSdkStrings.sbe_c
     - typings.awsSdk.awsSdkStrings.qcs605
     - typings.awsSdk.awsSdkStrings.qcs603
+    - typings.awsSdk.awsSdkStrings.sitara_am57x
     - typings.awsSdk.awsSdkStrings.amba_cv22
     - java.lang.String
   */

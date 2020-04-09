@@ -1,7 +1,5 @@
 package typings.jsoneditor.mod
 
-import typings.jsoneditor.jsoneditorStrings.`object`
-import typings.jsoneditor.jsoneditorStrings.array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,12 +7,12 @@ import scala.scalajs.js.annotation._
 trait NodeName extends js.Object {
   var path: js.Array[String]
   var size: Double
-  var `type`: `object` | array
+  var `type`: NodeType
 }
 
 object NodeName {
   @scala.inline
-  def apply(path: js.Array[String], size: Double, `type`: `object` | array): NodeName = {
+  def apply(path: js.Array[String], size: Double, `type`: NodeType): NodeName = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeName]

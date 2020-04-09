@@ -4,8 +4,8 @@ import typings.ionicCore.componentsMod._Global_.HTMLIonContentElement
 import typings.ionicCore.contentInterfaceMod.ScrollBaseDetail
 import typings.ionicCore.contentInterfaceMod.ScrollDetail
 import typings.ionicCore.mod.Color
-import typings.ionicCore.stencilCoreMod.ComponentInterface
-import typings.ionicCore.stencilCoreMod.EventEmitter
+import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
+import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
 import typings.std.Event_
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -54,7 +54,6 @@ object contentMod extends js.Object {
     var ionScrollStart: EventEmitter[ScrollBaseDetail] = js.native
     var isScrolling: js.Any = js.native
     var lastScroll: js.Any = js.native
-    var mode: js.Any = js.native
     var onScroll: js.Any = js.native
     var onScrollEnd: js.Any = js.native
     var onScrollStart: js.Any = js.native
@@ -77,8 +76,6 @@ object contentMod extends js.Object {
     var scrollY: Boolean = js.native
     var shouldForceOverscroll: js.Any = js.native
     var watchDog: js.Any = js.native
-    @JSName("componentDidLoad")
-    def componentDidLoad_MContent(): Unit = js.native
     @JSName("disconnectedCallback")
     def disconnectedCallback_MContent(): Unit = js.native
     /**
@@ -90,6 +87,7 @@ object contentMod extends js.Object {
       * and `scrollToPoint()` to scroll the content into a certain point.
       */
     def getScrollElement(): js.Promise[HTMLElement] = js.native
+    def onAppLoad(): Unit = js.native
     def onClick(ev: Event_): Unit = js.native
     @JSName("render")
     def render_MContent(): js.Any = js.native

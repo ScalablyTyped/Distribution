@@ -9,13 +9,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxPolarChartCommonAxisSettingsConstantLineStyle extends js.Object {
-  /** Specifies a color for a constant line. */
+  /** @name dxPolarChart.Options.commonAxisSettings.constantLineStyle.color */
   var color: js.UndefOr[String] = js.undefined
-  /** Specifies a dash style for a constant line. */
+  /** @name dxPolarChart.Options.commonAxisSettings.constantLineStyle.dashStyle */
   var dashStyle: js.UndefOr[dash | dot | longDash | solid] = js.undefined
-  /** An object defining constant line label options. */
+  /** @name dxPolarChart.Options.commonAxisSettings.constantLineStyle.label */
   var label: js.UndefOr[dxPolarChartCommonAxisSettingsConstantLineStyleLabel] = js.undefined
-  /** Specifies a constant line width in pixels. */
+  /** @name dxPolarChart.Options.commonAxisSettings.constantLineStyle.width */
   var width: js.UndefOr[Double] = js.undefined
 }
 

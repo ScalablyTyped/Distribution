@@ -7,11 +7,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxTextEditorButton extends js.Object {
-  /** Specifies whether to place the button before or after the input text field. */
+  /** @name dxTextEditorButton.location */
   var location: js.UndefOr[after | before] = js.undefined
-  /** Specifies the button's name. */
+  /** @name dxTextEditorButton.name */
   var name: js.UndefOr[String] = js.undefined
-  /** Configures the Button widget used as the action button. */
+  /** @name dxTextEditorButton.options */
   var options: js.UndefOr[dxButtonOptions] = js.undefined
 }
 

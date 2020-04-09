@@ -3,12 +3,10 @@ package typings.antd.paginationPaginationMod
 import typings.antd.AnonGoButton
 import typings.antd.antdStrings.`jump-next`
 import typings.antd.antdStrings.`jump-prev`
-import typings.antd.antdStrings.both
-import typings.antd.antdStrings.bottom
 import typings.antd.antdStrings.next
 import typings.antd.antdStrings.page
 import typings.antd.antdStrings.prev
-import typings.antd.antdStrings.top
+import typings.antd.antdStrings.small
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
@@ -17,7 +15,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PaginationConfig extends PaginationProps {
-  var position: js.UndefOr[top | bottom | both] = js.undefined
+  var position: js.UndefOr[js.Array[PaginationPosition] | PaginationPosition] = js.undefined
 }
 
 object PaginationConfig {
@@ -35,8 +33,9 @@ object PaginationConfig {
     onShowSizeChange: (/* current */ Double, /* size */ Double) => Unit = null,
     pageSize: Int | Double = null,
     pageSizeOptions: js.Array[String] = null,
-    position: top | bottom | both = null,
+    position: js.Array[PaginationPosition] | PaginationPosition = null,
     prefixCls: String = null,
+    responsive: js.UndefOr[Boolean] = js.undefined,
     role: String = null,
     selectPrefixCls: String = null,
     showLessItems: js.UndefOr[Boolean] = js.undefined,
@@ -44,7 +43,7 @@ object PaginationConfig {
     showSizeChanger: js.UndefOr[Boolean] = js.undefined,
     showTotal: (/* total */ Double, /* range */ js.Tuple2[Double, Double]) => ReactNode = null,
     simple: js.UndefOr[Boolean] = js.undefined,
-    size: String = null,
+    size: typings.antd.antdStrings.default | small = null,
     style: CSSProperties = null,
     total: Int | Double = null
   ): PaginationConfig = {
@@ -63,6 +62,7 @@ object PaginationConfig {
     if (pageSizeOptions != null) __obj.updateDynamic("pageSizeOptions")(pageSizeOptions.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
+    if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive.asInstanceOf[js.Any])
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     if (selectPrefixCls != null) __obj.updateDynamic("selectPrefixCls")(selectPrefixCls.asInstanceOf[js.Any])
     if (!js.isUndefined(showLessItems)) __obj.updateDynamic("showLessItems")(showLessItems.asInstanceOf[js.Any])

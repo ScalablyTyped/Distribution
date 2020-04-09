@@ -2,14 +2,12 @@ package typings.ionicCore
 
 import typings.ionicCore.animationInterfaceMod.Animation
 import typings.ionicCore.componentsMod._Global_.HTMLIonModalElement
-import typings.ionicCore.ionicCoreStrings.ios
-import typings.ionicCore.ionicCoreStrings.md
 import typings.ionicCore.mod.ComponentProps
 import typings.ionicCore.mod.ComponentRef
 import typings.ionicCore.mod.FrameworkDelegate
 import typings.ionicCore.overlaysInterfaceMod.OverlayEventDetail
 import typings.ionicCore.overlaysInterfaceMod.OverlayInterface
-import typings.ionicCore.stencilCoreMod.ComponentInterface
+import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -46,8 +44,6 @@ object modalMod extends js.Object {
     var el_Modal: HTMLIonModalElement = js.native
     var gesture: js.UndefOr[js.Any] = js.native
     var gestureAnimationDismissing: js.Any = js.native
-    @JSName("mode")
-    var mode_Modal: ios | md = js.native
     var onBackdropTap: js.Any = js.native
     var onDismiss: js.Any = js.native
     var onLifecycle: js.Any = js.native

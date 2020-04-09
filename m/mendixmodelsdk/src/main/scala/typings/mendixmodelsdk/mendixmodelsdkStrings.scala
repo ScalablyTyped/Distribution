@@ -118,6 +118,9 @@ object mendixmodelsdkStrings {
   sealed trait commit extends LockType
   
   @js.native
+  sealed trait `commit-wc` extends LockType
+  
+  @js.native
   sealed trait consistencyerrors extends IUpdateAppJobStatus
   
   @js.native
@@ -271,6 +274,8 @@ object mendixmodelsdkStrings {
   def buildResult: buildResult = "buildResult".asInstanceOf[buildResult]
   @scala.inline
   def commit: commit = "commit".asInstanceOf[commit]
+  @scala.inline
+  def `commit-wc`: `commit-wc` = "commit-wc".asInstanceOf[`commit-wc`]
   @scala.inline
   def consistencyerrors: consistencyerrors = "consistencyerrors".asInstanceOf[consistencyerrors]
   @scala.inline

@@ -25,6 +25,9 @@ class NodeGroup protected () extends CustomResource {
     */
   def this(name: String, args: NodeGroupArgs) = this()
   def this(name: String, args: NodeGroupArgs, opts: CustomResourceOptions) = this()
+  /**
+    * Type of Amazon Machine Image (AMI) associated with the EKS Node Group. Defaults to `AL2_x86_64`. Valid values: `AL2_x86_64`, `AL2_x86_64_GPU`. This provider will only perform drift detection if a configuration value is provided.
+    */
   val amiType: Output_[String] = js.native
   /**
     * Amazon Resource Name (ARN) of the EKS Node Group.
@@ -34,7 +37,13 @@ class NodeGroup protected () extends CustomResource {
     * Name of the EKS Cluster.
     */
   val clusterName: Output_[String] = js.native
+  /**
+    * Disk size in GiB for worker nodes. Defaults to `20`. This provider will only perform drift detection if a configuration value is provided.
+    */
   val diskSize: Output_[Double] = js.native
+  /**
+    * Set of instance types associated with the EKS Node Group. Defaults to `["t3.medium"]`. This provider will only perform drift detection if a configuration value is provided. Currently, the EKS API only accepts a single value in the set.
+    */
   val instanceTypes: Output_[String] = js.native
   /**
     * Key-value mapping of Kubernetes labels. Only labels that are applied with the EKS API are managed by this argument. Other Kubernetes labels applied to the EKS Node Group will not be managed.
@@ -76,6 +85,9 @@ class NodeGroup protected () extends CustomResource {
     * Key-value mapping of resource tags.
     */
   val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  /**
+    * Kubernetes version. Defaults to EKS Cluster Kubernetes version. This provider will only perform drift detection if a configuration value is provided.
+    */
   val version: Output_[String] = js.native
 }
 

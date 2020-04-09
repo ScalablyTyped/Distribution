@@ -1,7 +1,7 @@
 package typings.reactInstantsearch
 
 import typings.react.mod.Component
-import typings.reactInstantsearchNative.mod.InstantSearchProps
+import typings.reactInstantsearchCore.mod.InstantSearchProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

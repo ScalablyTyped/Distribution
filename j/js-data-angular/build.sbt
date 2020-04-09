@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "js-data-angular"
-version := "v2.1.0-dt-20200227Z-469e82"
+version := "v2.1.0-dt-20200227Z-b18a8e"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "angular" % "1.6-dt-20200225Z-7ee1ed",
+  "org.scalablytyped" %%% "angular" % "1.7-dt-20200331Z-219e30",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")

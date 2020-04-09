@@ -70,6 +70,7 @@ import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactElement
@@ -434,7 +435,7 @@ object PartialFormControlLabelPr {
     onProgress: SyntheticEvent[HTMLLabelElement, Event_] => Unit = null,
     onRateChange: SyntheticEvent[HTMLLabelElement, Event_] => Unit = null,
     onReset: FormEvent[HTMLLabelElement] => Unit = null,
-    onScroll: UIEvent[HTMLLabelElement] => Unit = null,
+    onScroll: UIEvent[HTMLLabelElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[HTMLLabelElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[HTMLLabelElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[HTMLLabelElement, Event_] => Unit = null,

@@ -11,10 +11,21 @@ trait PublishOptions extends js.Object {
   var dest: js.UndefOr[String] = js.undefined
   var dotfiles: js.UndefOr[Boolean] = js.undefined
   var git: js.UndefOr[String] = js.undefined
+  /**
+    * Push force new commit without parent history
+    * @default true
+    */
+  var history: js.UndefOr[Boolean] = js.undefined
   var message: js.UndefOr[String] = js.undefined
   var only: js.UndefOr[String] = js.undefined
   var push: js.UndefOr[Boolean] = js.undefined
   var remote: js.UndefOr[String] = js.undefined
+  /**
+    * Removes files that match the given pattern (Ignored if used together with --add).
+    * By default, gh-pages removes everything inside the target branch auto-generated directory before copying the new files from dir.
+    * @default '.'
+    */
+  var remove: js.UndefOr[String] = js.undefined
   var repo: js.UndefOr[String] = js.undefined
   var silent: js.UndefOr[Boolean] = js.undefined
   var src: js.UndefOr[String | js.Array[String]] = js.undefined
@@ -30,10 +41,12 @@ object PublishOptions {
     dest: String = null,
     dotfiles: js.UndefOr[Boolean] = js.undefined,
     git: String = null,
+    history: js.UndefOr[Boolean] = js.undefined,
     message: String = null,
     only: String = null,
     push: js.UndefOr[Boolean] = js.undefined,
     remote: String = null,
+    remove: String = null,
     repo: String = null,
     silent: js.UndefOr[Boolean] = js.undefined,
     src: String | js.Array[String] = null,
@@ -46,10 +59,12 @@ object PublishOptions {
     if (dest != null) __obj.updateDynamic("dest")(dest.asInstanceOf[js.Any])
     if (!js.isUndefined(dotfiles)) __obj.updateDynamic("dotfiles")(dotfiles.asInstanceOf[js.Any])
     if (git != null) __obj.updateDynamic("git")(git.asInstanceOf[js.Any])
+    if (!js.isUndefined(history)) __obj.updateDynamic("history")(history.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (only != null) __obj.updateDynamic("only")(only.asInstanceOf[js.Any])
     if (!js.isUndefined(push)) __obj.updateDynamic("push")(push.asInstanceOf[js.Any])
     if (remote != null) __obj.updateDynamic("remote")(remote.asInstanceOf[js.Any])
+    if (remove != null) __obj.updateDynamic("remove")(remove.asInstanceOf[js.Any])
     if (repo != null) __obj.updateDynamic("repo")(repo.asInstanceOf[js.Any])
     if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
     if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])

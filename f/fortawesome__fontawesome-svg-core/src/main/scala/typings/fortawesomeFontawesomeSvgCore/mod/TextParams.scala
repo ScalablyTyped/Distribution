@@ -15,6 +15,7 @@ object TextParams {
     classes: String | js.Array[String] = null,
     styles: Styles = null,
     title: String = null,
+    titleId: String = null,
     transform: Transform = null
   ): TextParams = {
     val __obj = js.Dynamic.literal()
@@ -22,6 +23,7 @@ object TextParams {
     if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (titleId != null) __obj.updateDynamic("titleId")(titleId.asInstanceOf[js.Any])
     if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextParams]
   }

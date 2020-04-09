@@ -11,13 +11,17 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofCookieJar extends Instantiable0[CookieJar] {
+  def deserialize(serialized: String): js.Promise[CookieJar] = js.native
   def deserialize(serialized: String, cb: js.Function2[/* err */ Error | Null, /* object */ this.type, Unit]): Unit = js.native
+  def deserialize(serialized: String, store: Store): js.Promise[CookieJar] = js.native
   def deserialize(
     serialized: String,
     store: Store,
     cb: js.Function2[/* err */ Error | Null, /* object */ this.type, Unit]
   ): Unit = js.native
+  def deserialize(serialized: Serialized): js.Promise[CookieJar] = js.native
   def deserialize(serialized: Serialized, cb: js.Function2[/* err */ Error | Null, /* object */ this.type, Unit]): Unit = js.native
+  def deserialize(serialized: Serialized, store: Store): js.Promise[CookieJar] = js.native
   def deserialize(
     serialized: Serialized,
     store: Store,

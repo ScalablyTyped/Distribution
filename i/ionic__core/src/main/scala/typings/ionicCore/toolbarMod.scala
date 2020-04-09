@@ -3,7 +3,7 @@ package typings.ionicCore
 import typings.ionicCore.componentsMod._Global_.HTMLIonToolbarElement
 import typings.ionicCore.mod.Color
 import typings.ionicCore.mod.StyleEventDetail
-import typings.ionicCore.stencilCoreMod.ComponentInterface
+import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.std.CustomEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`

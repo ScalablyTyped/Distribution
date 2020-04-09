@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxChartPanes extends dxChartCommonPaneSettings {
-  /** Specifies the pane's height (or width when the chart is rotated) in a multi-pane chart. */
+  /** @name dxChart.Options.panes.height */
   var height: js.UndefOr[Double | String] = js.undefined
-  /** Specifies the name of the pane. */
+  /** @name dxChart.Options.panes.name */
   var name: js.UndefOr[String] = js.undefined
 }
 

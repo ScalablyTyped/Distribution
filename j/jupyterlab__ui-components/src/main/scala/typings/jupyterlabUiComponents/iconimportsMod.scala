@@ -31,6 +31,7 @@ object iconimportsMod extends js.Object {
   val editIcon: LabIcon = js.native
   val ellipsesIcon: LabIcon = js.native
   val extensionIcon: LabIcon = js.native
+  val fastForwardIcon: LabIcon = js.native
   val fileIcon: LabIcon = js.native
   val fileUploadIcon: LabIcon = js.native
   val filterListIcon: LabIcon = js.native
@@ -48,6 +49,7 @@ object iconimportsMod extends js.Object {
   val lineFormIcon: LabIcon = js.native
   val linkIcon: LabIcon = js.native
   val listIcon: LabIcon = js.native
+  val listingsInfoIcon: LabIcon = js.native
   val markdownIcon: LabIcon = js.native
   val newFolderIcon: LabIcon = js.native
   val notTrustedIcon: LabIcon = js.native

@@ -14,11 +14,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait NumericRule extends js.Object {
-  /** If set to true, empty values are valid. */
+  /** @name NumericRule.ignoreEmptyValue */
   var ignoreEmptyValue: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the message that is shown if the rule is broken. */
+  /** @name NumericRule.message */
   var message: js.UndefOr[String] = js.undefined
-  /** Specifies the rule type. Set it to "numeric" to use the NumericRule. */
+  /** @name NumericRule.type */
   var `type`: js.UndefOr[
     required | numeric | range | stringLength | custom | compare | pattern | email | async
   ] = js.undefined

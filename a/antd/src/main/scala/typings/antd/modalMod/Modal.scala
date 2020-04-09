@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined {destroyAll (): void,   useModal  :typeof useModal,   defaultProps  :{  width  :number,   transitionName  :string,   maskTransitionName  :string,   confirmLoading  :boolean,   visible  :boolean,   okType  :'link' | 'dashed' | 'default' | 'primary' | 'ghost' | 'danger'}, new (): antd.antd/lib/modal/Modal.default} & antd.antd/lib/modal/confirm.ModalStaticFunctions */
+/* Inlined {destroyAll (): void,   useModal  :typeof useModal,   defaultProps  :{  width  :number,   transitionName  :string,   maskTransitionName  :string,   confirmLoading  :boolean,   visible  :boolean,   okType  :'link' | 'default' | 'primary' | 'ghost' | 'dashed' | 'danger'}, new (): antd.antd/lib/modal/Modal.default} & antd.antd/lib/modal/confirm.ModalStaticFunctions */
 @js.native
 trait Modal
   extends Instantiable0[typings.antd.modalModalMod.default] {

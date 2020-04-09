@@ -7,7 +7,14 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait AmiEphemeralBlockDevice extends js.Object {
+  /**
+    * The path at which the device is exposed to created instances.
+    */
   var deviceName: Input[String] = js.native
+  /**
+    * A name for the ephemeral device, of the form "ephemeralN" where
+    * *N* is a volume number starting from zero.
+    */
   var virtualName: Input[String] = js.native
 }
 

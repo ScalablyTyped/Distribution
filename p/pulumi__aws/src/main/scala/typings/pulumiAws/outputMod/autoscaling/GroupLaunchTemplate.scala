@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GroupLaunchTemplate extends js.Object {
   /**
-    * The autoscaling group id.
+    * The ID of the launch template. Conflicts with `name`.
     */
   var id: String = js.native
   /**

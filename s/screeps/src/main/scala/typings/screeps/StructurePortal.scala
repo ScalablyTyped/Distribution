@@ -12,7 +12,8 @@ import scala.scalajs.js.annotation._
   */
 trait StructurePortal
   extends Structure[STRUCTURE_PORTAL]
-     with AnyStructure {
+     with AnyStructure
+     with ConcreteStructure[js.Any] {
   /**
     * If this is an inter-room portal, then this property contains a RoomPosition object leading to the point in the destination room.
     * If this is an inter-shard portal, then this property contains an object with shard and room string properties.

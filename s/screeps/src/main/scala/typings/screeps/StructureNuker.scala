@@ -15,7 +15,8 @@ import scala.scalajs.js.annotation._
 trait StructureNuker
   extends OwnedStructure[STRUCTURE_NUKER]
      with AnyOwnedStructure
-     with AnyStoreStructure {
+     with AnyStoreStructure
+     with ConcreteStructure[js.Any] {
   /**
     * The amount of game ticks the link has to wait until the next transfer is possible.
     */

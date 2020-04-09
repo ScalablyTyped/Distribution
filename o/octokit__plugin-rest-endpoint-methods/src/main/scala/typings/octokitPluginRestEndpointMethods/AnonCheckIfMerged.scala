@@ -35,7 +35,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait AnonCheckIfMerged extends js.Object {
   @JSName("checkIfMerged")
-  var checkIfMerged_Original: Anon267 = js.native
+  var checkIfMerged_Original: Anon278 = js.native
   /**
     * **Note:** Multi-line comments on pull requests are currently in public beta and subject to change.
     *
@@ -64,19 +64,19 @@ trait AnonCheckIfMerged extends js.Object {
     * *   For single-line comments, the diff-positioned way of referencing comments for the `position` attribute. For more information, see `position` in the [input parameters](https://developer.github.com/v3/pulls/comments/#parameters-2) table.
     */
   @JSName("createComment")
-  var createComment_Original: Anon269 = js.native
+  var createComment_Original: Anon280 = js.native
   /**
     * Creates a reply to a review comment for a pull request. For the `comment_id`, provide the ID of the review comment you are replying to. This must be the ID of a _top-level review comment_, not a reply to that comment. Replies to replies are not supported.
     *
     * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
     */
   @JSName("createReviewCommentReply")
-  var createReviewCommentReply_Original: Anon271 = js.native
+  var createReviewCommentReply_Original: Anon282 = js.native
   /**
     * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
     */
   @JSName("createReviewRequest")
-  var createReviewRequest_Original: Anon272 = js.native
+  var createReviewRequest_Original: Anon283 = js.native
   /**
     * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
     *
@@ -85,7 +85,7 @@ trait AnonCheckIfMerged extends js.Object {
     * The `position` value equals the number of lines down from the first "@@" hunk header in the file you want to add a comment. The line just below the "@@" line is position 1, the next line is position 2, and so on. The position in the diff continues to increase through lines of whitespace and additional hunks until the beginning of a new file.
     */
   @JSName("createReview")
-  var createReview_Original: Anon270 = js.native
+  var createReview_Original: Anon281 = js.native
   /**
     * Draft pull requests are available in public repositories with GitHub Free and GitHub Pro, and in public and private repositories with GitHub Team and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     *
@@ -96,21 +96,21 @@ trait AnonCheckIfMerged extends js.Object {
     * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
     */
   @JSName("create")
-  var create_Original: Anon268 = js.native
+  var create_Original: Anon279 = js.native
   /**
     * Deletes a review comment.
     */
   @JSName("deleteComment")
-  var deleteComment_Original: Anon273 = js.native
+  var deleteComment_Original: Anon284 = js.native
   @JSName("deletePendingReview")
-  var deletePendingReview_Original: Anon274 = js.native
+  var deletePendingReview_Original: Anon285 = js.native
   @JSName("deleteReviewRequest")
-  var deleteReviewRequest_Original: Anon275 = js.native
+  var deleteReviewRequest_Original: Anon286 = js.native
   /**
     * **Note:** To dismiss a pull request review on a [protected branch](https://developer.github.com/v3/repos/branches/), you must be a repository administrator or be included in the list of people or teams who can dismiss pull request reviews.
     */
   @JSName("dismissReview")
-  var dismissReview_Original: Anon276 = js.native
+  var dismissReview_Original: Anon287 = js.native
   /**
     * **Note:** Multi-line comments on pull requests are currently in public beta and subject to change.
     *
@@ -135,11 +135,11 @@ trait AnonCheckIfMerged extends js.Object {
     * The `reactions` key will have the following payload where `url` can be used to construct the API location for [listing and creating](https://developer.github.com/v3/reactions) reactions.
     */
   @JSName("getComment")
-  var getComment_Original: Anon278 = js.native
+  var getComment_Original: Anon289 = js.native
   @JSName("getCommentsForReview")
-  var getCommentsForReview_Original: Anon279 = js.native
+  var getCommentsForReview_Original: Anon290 = js.native
   @JSName("getReview")
-  var getReview_Original: Anon280 = js.native
+  var getReview_Original: Anon291 = js.native
   /**
     * Draft pull requests are available in public repositories with GitHub Free and GitHub Pro, and in public and private repositories with GitHub Team and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     *
@@ -158,7 +158,7 @@ trait AnonCheckIfMerged extends js.Object {
     * Pass the appropriate [media type](https://developer.github.com/v3/media/#commits-commit-comparison-and-pull-requests) to fetch diff and patch formats.
     */
   @JSName("get")
-  var get_Original: Anon277 = js.native
+  var get_Original: Anon288 = js.native
   /**
     * **Note:** Multi-line comments on pull requests are currently in public beta and subject to change.
     *
@@ -183,7 +183,7 @@ trait AnonCheckIfMerged extends js.Object {
     * The `reactions` key will have the following payload where `url` can be used to construct the API location for [listing and creating](https://developer.github.com/v3/reactions) reactions.
     */
   @JSName("listCommentsForRepo")
-  var listCommentsForRepo_Original: Anon283 = js.native
+  var listCommentsForRepo_Original: Anon294 = js.native
   /**
     * **Note:** Multi-line comments on pull requests are currently in public beta and subject to change.
     *
@@ -208,41 +208,41 @@ trait AnonCheckIfMerged extends js.Object {
     * The `reactions` key will have the following payload where `url` can be used to construct the API location for [listing and creating](https://developer.github.com/v3/reactions) reactions.
     */
   @JSName("listComments")
-  var listComments_Original: Anon282 = js.native
+  var listComments_Original: Anon293 = js.native
   /**
     * Lists a maximum of 250 commits for a pull request. To receive a complete commit list for pull requests with more than 250 commits, use the [Commit List API](https://developer.github.com/v3/repos/commits/#list-commits-on-a-repository).
     */
   @JSName("listCommits")
-  var listCommits_Original: Anon284 = js.native
+  var listCommits_Original: Anon295 = js.native
   /**
     * **Note:** Responses include a maximum of 3000 files. The paginated response returns 30 files per page by default.
     */
   @JSName("listFiles")
-  var listFiles_Original: Anon285 = js.native
+  var listFiles_Original: Anon296 = js.native
   @JSName("listReviewRequests")
-  var listReviewRequests_Original: Anon286 = js.native
+  var listReviewRequests_Original: Anon297 = js.native
   /**
     * The list of reviews returns in chronological order.
     */
   @JSName("listReviews")
-  var listReviews_Original: Anon287 = js.native
+  var listReviews_Original: Anon298 = js.native
   /**
     * Draft pull requests are available in public repositories with GitHub Free and GitHub Pro, and in public and private repositories with GitHub Team and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     */
   @JSName("list")
-  var list_Original: Anon281 = js.native
+  var list_Original: Anon292 = js.native
   /**
     * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
     */
   @JSName("merge")
-  var merge_Original: Anon288 = js.native
+  var merge_Original: Anon299 = js.native
   @JSName("submitReview")
-  var submitReview_Original: Anon289 = js.native
+  var submitReview_Original: Anon300 = js.native
   /**
     * Updates the pull request branch with the latest upstream changes by merging HEAD from the base branch into the pull request branch.
     */
   @JSName("updateBranch")
-  var updateBranch_Original: Anon291 = js.native
+  var updateBranch_Original: Anon302 = js.native
   /**
     * **Note:** Multi-line comments on pull requests are currently in public beta and subject to change.
     *
@@ -265,19 +265,19 @@ trait AnonCheckIfMerged extends js.Object {
     * *   For single-line comments, the diff-positioned way of referencing comments for the `position` attribute. For more information, see `position` in the [input parameters](https://developer.github.com/v3/pulls/comments/#parameters-2) table.
     */
   @JSName("updateComment")
-  var updateComment_Original: Anon292 = js.native
+  var updateComment_Original: Anon303 = js.native
   /**
     * Update the review summary comment with new text.
     */
   @JSName("updateReview")
-  var updateReview_Original: Anon293 = js.native
+  var updateReview_Original: Anon304 = js.native
   /**
     * Draft pull requests are available in public repositories with GitHub Free and GitHub Pro, and in public and private repositories with GitHub Team and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     *
     * To open or update a pull request in a public repository, you must have write access to the head or the source branch. For organization-owned repositories, you must be a member of the organization that owns the repository to open or update a pull request.
     */
   @JSName("update")
-  var update_Original: Anon290 = js.native
+  var update_Original: Anon301 = js.native
   def checkIfMerged(): js.Promise[AnyResponse] = js.native
   def checkIfMerged(
     params: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RequestParameters */ js.Any) with PullsCheckIfMergedParams

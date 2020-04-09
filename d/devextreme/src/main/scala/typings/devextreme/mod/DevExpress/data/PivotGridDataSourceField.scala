@@ -42,85 +42,85 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PivotGridDataSourceField extends js.Object {
-  /** Specifies whether to take neighboring groups' summary values into account when calculating a running total and absolute or percent variation. */
+  /** @name PivotGridDataSource.Options.fields.allowCrossGroupCalculation */
   var allowCrossGroupCalculation: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether a user can expand/collapse all items within the same column or row header level using the context menu. */
+  /** @name PivotGridDataSource.Options.fields.allowExpandAll */
   var allowExpandAll: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether a user can filter the field's values. */
+  /** @name PivotGridDataSource.Options.fields.allowFiltering */
   var allowFiltering: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether a user can change the field's sorting. */
+  /** @name PivotGridDataSource.Options.fields.allowSorting */
   var allowSorting: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether a user can sort the pivot grid by summary values instead of field values. */
+  /** @name PivotGridDataSource.Options.fields.allowSortingBySummary */
   var allowSortingBySummary: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the field's area. */
+  /** @name PivotGridDataSource.Options.fields.area */
   var area: js.UndefOr[column | typings.devextreme.devextremeStrings.data | filter | row] = js.undefined
-  /** Specifies the field's order among the other fields in the same area. Corresponds to the field's order in the fields array by default. */
+  /** @name PivotGridDataSource.Options.fields.areaIndex */
   var areaIndex: js.UndefOr[Double] = js.undefined
-  /** Specifies a custom aggregate function. Applies only if the summaryType is "custom" and the remoteOperations is false. Cannot be used with an XmlaStore. */
+  /** @name PivotGridDataSource.Options.fields.calculateCustomSummary */
   var calculateCustomSummary: js.UndefOr[js.Function1[/* options */ AnonSummaryProcess, _]] = js.undefined
-  /** Specifies a custom post-processing function for summary values. */
+  /** @name PivotGridDataSource.Options.fields.calculateSummaryValue */
   var calculateSummaryValue: js.UndefOr[js.Function1[/* e */ dxPivotGridSummaryCell, Double]] = js.undefined
-  /** Specifies the field's caption to be displayed in the field chooser and on the field panel. */
+  /** @name PivotGridDataSource.Options.fields.caption */
   var caption: js.UndefOr[String] = js.undefined
-  /** Customizes the text displayed in summary cells. */
+  /** @name PivotGridDataSource.Options.fields.customizeText */
   var customizeText: js.UndefOr[js.Function1[/* cellInfo */ AnonValue, String]] = js.undefined
-  /** Specifies which data source field provides data for the pivot grid field. */
+  /** @name PivotGridDataSource.Options.fields.dataField */
   var dataField: js.UndefOr[String] = js.undefined
-  /** Casts field values to a specific data type. */
+  /** @name PivotGridDataSource.Options.fields.dataType */
   var dataType: js.UndefOr[date | number | string_] = js.undefined
-  /** Specifies the name of the folder in which the field is located when displayed in the field chooser. */
+  /** @name PivotGridDataSource.Options.fields.displayFolder */
   var displayFolder: js.UndefOr[String] = js.undefined
-  /** Specifies whether to expand all items within the field's header level. */
+  /** @name PivotGridDataSource.Options.fields.expanded */
   var expanded: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether a user changes the current filter by including (selecting) or excluding (clearing the selection of) values. */
+  /** @name PivotGridDataSource.Options.fields.filterType */
   var filterType: js.UndefOr[exclude | include] = js.undefined
-  /** Specifies the values by which the field is filtered. */
+  /** @name PivotGridDataSource.Options.fields.filterValues */
   var filterValues: js.UndefOr[js.Array[_]] = js.undefined
-  /** Formats field values before they are displayed. */
+  /** @name PivotGridDataSource.Options.fields.format */
   var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.format] = js.undefined
-  /** Specifies the field's index within its group. */
+  /** @name PivotGridDataSource.Options.fields.groupIndex */
   var groupIndex: js.UndefOr[Double] = js.undefined
-  /** Specifies how the field's values are combined into groups for the headers. Cannot be used with an XmlaStore. */
+  /** @name PivotGridDataSource.Options.fields.groupInterval */
   var groupInterval: js.UndefOr[day | dayOfWeek | month | quarter | year | Double] = js.undefined
-  /** Specifies the name of the field's group. */
+  /** @name PivotGridDataSource.Options.fields.groupName */
   var groupName: js.UndefOr[String] = js.undefined
-  /** Configures the field's header filter. */
+  /** @name PivotGridDataSource.Options.fields.headerFilter */
   var headerFilter: js.UndefOr[AnonAllowSearch] = js.undefined
-  /** Specifies whether the field should be treated as a measure (a field providing data for calculation). */
+  /** @name PivotGridDataSource.Options.fields.isMeasure */
   var isMeasure: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the field's identifier. */
+  /** @name PivotGridDataSource.Options.fields.name */
   var name: js.UndefOr[String] = js.undefined
-  /** Specifies whether to calculate the running total by rows or by columns. */
+  /** @name PivotGridDataSource.Options.fields.runningTotal */
   var runningTotal: js.UndefOr[column | row] = js.undefined
-  /** Specifies a function that combines the field's values into groups for the headers. Cannot be used with an XmlaStore or remote operations. */
+  /** @name PivotGridDataSource.Options.fields.selector */
   var selector: js.UndefOr[js.Function] = js.undefined
-  /** Specifies whether to display the field's grand totals. Applies only if the field is in the data area. */
+  /** @name PivotGridDataSource.Options.fields.showGrandTotals */
   var showGrandTotals: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether to display the field's totals. */
+  /** @name PivotGridDataSource.Options.fields.showTotals */
   var showTotals: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether to display the field's summary values. Applies only if the field is in the data area. Inherits the showTotals' value by default. */
+  /** @name PivotGridDataSource.Options.fields.showValues */
   var showValues: js.UndefOr[Boolean] = js.undefined
-  /** Specifies how the field's values in the headers should be sorted. */
+  /** @name PivotGridDataSource.Options.fields.sortBy */
   var sortBy: js.UndefOr[displayText | value | none] = js.undefined
-  /** Sorts the field's values in the headers by the specified measure's summary values. Accepts the measure's name, caption, dataField, or index in the fields array. */
+  /** @name PivotGridDataSource.Options.fields.sortBySummaryField */
   var sortBySummaryField: js.UndefOr[String] = js.undefined
-  /** Specifies a path to the column or row whose summary values should be used to sort the field's values in the headers. */
+  /** @name PivotGridDataSource.Options.fields.sortBySummaryPath */
   var sortBySummaryPath: js.UndefOr[js.Array[Double | String]] = js.undefined
-  /** Specifies the field values' sorting order. */
+  /** @name PivotGridDataSource.Options.fields.sortOrder */
   var sortOrder: js.UndefOr[asc | desc] = js.undefined
-  /** Specifies a custom comparison function that sorts the field's values in the headers. */
+  /** @name PivotGridDataSource.Options.fields.sortingMethod */
   var sortingMethod: js.UndefOr[js.Function2[/* a */ AnonChildren, /* b */ AnonChildren, Double]] = js.undefined
-  /** Specifies a predefined post-processing function. Does not apply when the calculateSummaryValue option is set. */
+  /** @name PivotGridDataSource.Options.fields.summaryDisplayMode */
   var summaryDisplayMode: js.UndefOr[
     absoluteVariation | percentOfColumnGrandTotal | percentOfColumnTotal | percentOfGrandTotal | percentOfRowGrandTotal | percentOfRowTotal | percentVariation
   ] = js.undefined
-  /** Specifies how to aggregate the field's data. Cannot be used with an XmlaStore. */
+  /** @name PivotGridDataSource.Options.fields.summaryType */
   var summaryType: js.UndefOr[avg | count | custom | max | min | sum | String] = js.undefined
-  /** Specifies whether the field is visible in the pivot grid and field chooser. */
+  /** @name PivotGridDataSource.Options.fields.visible */
   var visible: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the field's width in pixels when the field is displayed in the pivot grid. */
+  /** @name PivotGridDataSource.Options.fields.width */
   var width: js.UndefOr[Double] = js.undefined
-  /** Specifies whether text that does not fit into a header item should be wrapped. */
+  /** @name PivotGridDataSource.Options.fields.wordWrapEnabled */
   var wordWrapEnabled: js.UndefOr[Boolean] = js.undefined
 }
 

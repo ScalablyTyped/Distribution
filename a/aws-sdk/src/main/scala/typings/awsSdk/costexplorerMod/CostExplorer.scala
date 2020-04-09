@@ -173,14 +173,14 @@ trait CostExplorer extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetSavingsPlansCoverageResponse, Unit]
   ): Request[GetSavingsPlansCoverageResponse, AWSError] = js.native
   /**
-    * Retrieves your request parameters, Savings Plan Recommendations Summary and Details.
+    * Retrieves your request parameters, Savings Plan Recommendations Summary and Details. 
     */
   def getSavingsPlansPurchaseRecommendation(): Request[GetSavingsPlansPurchaseRecommendationResponse, AWSError] = js.native
   def getSavingsPlansPurchaseRecommendation(
     callback: js.Function2[/* err */ AWSError, /* data */ GetSavingsPlansPurchaseRecommendationResponse, Unit]
   ): Request[GetSavingsPlansPurchaseRecommendationResponse, AWSError] = js.native
   /**
-    * Retrieves your request parameters, Savings Plan Recommendations Summary and Details.
+    * Retrieves your request parameters, Savings Plan Recommendations Summary and Details. 
     */
   def getSavingsPlansPurchaseRecommendation(params: GetSavingsPlansPurchaseRecommendationRequest): Request[GetSavingsPlansPurchaseRecommendationResponse, AWSError] = js.native
   def getSavingsPlansPurchaseRecommendation(

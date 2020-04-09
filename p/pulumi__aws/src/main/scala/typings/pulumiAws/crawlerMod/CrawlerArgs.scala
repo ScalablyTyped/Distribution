@@ -23,7 +23,7 @@ trait CrawlerArgs extends js.Object {
     */
   val configuration: js.UndefOr[Input[String]] = js.native
   /**
-    * The name of the Glue database to be synchronized.
+    * Glue database where results are written.
     */
   val databaseName: Input[String] = js.native
   /**

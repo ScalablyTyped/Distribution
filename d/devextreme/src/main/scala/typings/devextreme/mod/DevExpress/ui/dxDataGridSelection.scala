@@ -13,11 +13,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxDataGridSelection extends GridBaseSelection {
-  /** Makes selection deferred. */
+  /** @name dxDataGrid.Options.selection.deferred */
   var deferred: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the mode in which all the records are selected. Applies only if selection.allowSelectAll is true. */
+  /** @name dxDataGrid.Options.selection.selectAllMode */
   var selectAllMode: js.UndefOr[allPages | page] = js.undefined
-  /** Specifies when to display check boxes in rows. Applies only if selection.mode is "multiple". */
+  /** @name dxDataGrid.Options.selection.showCheckBoxesMode */
   var showCheckBoxesMode: js.UndefOr[always | none | onClick | onLongTap] = js.undefined
 }
 

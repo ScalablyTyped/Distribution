@@ -13,12 +13,12 @@ trait StartFleetActionsInput extends js.Object {
   /**
     * A unique identifier for a fleet to start actions on. You can use either the fleet ID or ARN value.
     */
-  var FleetId: typings.awsSdk.gameliftMod.FleetId = js.native
+  var FleetId: FleetIdOrArn = js.native
 }
 
 object StartFleetActionsInput {
   @scala.inline
-  def apply(Actions: FleetActionList, FleetId: FleetId): StartFleetActionsInput = {
+  def apply(Actions: FleetActionList, FleetId: FleetIdOrArn): StartFleetActionsInput = {
     val __obj = js.Dynamic.literal(Actions = Actions.asInstanceOf[js.Any], FleetId = FleetId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[StartFleetActionsInput]

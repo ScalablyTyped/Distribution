@@ -186,6 +186,7 @@ package object utilsMod {
     - typings.grommet.grommetStrings.ruby
     - typings.grommet.grommetStrings.s
     - typings.grommet.grommetStrings.samp
+    - typings.grommet.grommetStrings.slot
     - typings.grommet.grommetStrings.script
     - typings.grommet.grommetStrings.section
     - typings.grommet.grommetStrings.select

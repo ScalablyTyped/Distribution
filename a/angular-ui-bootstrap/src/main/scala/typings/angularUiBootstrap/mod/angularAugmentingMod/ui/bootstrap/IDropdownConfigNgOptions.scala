@@ -14,6 +14,8 @@ object IDropdownConfigNgOptions {
     allowInvalid: js.UndefOr[Boolean] = js.undefined,
     debounce: Double | StringDictionary[Double] = null,
     getterSetter: js.UndefOr[Boolean] = js.undefined,
+    timeSecondsFormat: String = null,
+    timeStripZeroSeconds: js.UndefOr[Boolean] = js.undefined,
     timezone: String = null,
     updateOn: String = null
   ): IDropdownConfigNgOptions = {
@@ -21,6 +23,8 @@ object IDropdownConfigNgOptions {
     if (!js.isUndefined(allowInvalid)) __obj.updateDynamic("allowInvalid")(allowInvalid.asInstanceOf[js.Any])
     if (debounce != null) __obj.updateDynamic("debounce")(debounce.asInstanceOf[js.Any])
     if (!js.isUndefined(getterSetter)) __obj.updateDynamic("getterSetter")(getterSetter.asInstanceOf[js.Any])
+    if (timeSecondsFormat != null) __obj.updateDynamic("timeSecondsFormat")(timeSecondsFormat.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeStripZeroSeconds)) __obj.updateDynamic("timeStripZeroSeconds")(timeStripZeroSeconds.asInstanceOf[js.Any])
     if (timezone != null) __obj.updateDynamic("timezone")(timezone.asInstanceOf[js.Any])
     if (updateOn != null) __obj.updateDynamic("updateOn")(updateOn.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDropdownConfigNgOptions]

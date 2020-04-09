@@ -12,13 +12,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Configures tooltips. */
+/** @name BaseGauge.Options.tooltip */
 trait BaseGaugeTooltip extends BaseWidgetTooltip {
-  /** Specifies a custom template for a tooltip. */
+  /** @name BaseGauge.Options.tooltip.contentTemplate */
   var contentTemplate: js.UndefOr[
     template | (js.Function2[/* scaleValue */ AnonValueText, /* element */ dxElement, String | Element | JQuery])
   ] = js.undefined
-  /** Allows you to change the appearance of specified tooltips. */
+  /** @name BaseGauge.Options.tooltip.customizeTooltip */
   var customizeTooltip: js.UndefOr[js.Function1[/* scaleValue */ AnonValueText, _]] = js.undefined
 }
 

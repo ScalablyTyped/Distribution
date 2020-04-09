@@ -73,6 +73,7 @@ import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
@@ -589,7 +590,7 @@ object IonLabelPickHTMLAttribute {
     onProgress: SyntheticEvent[HTMLIonLabelElement, Event_] => Unit = null,
     onRateChange: SyntheticEvent[HTMLIonLabelElement, Event_] => Unit = null,
     onReset: FormEvent[HTMLIonLabelElement] => Unit = null,
-    onScroll: UIEvent[HTMLIonLabelElement] => Unit = null,
+    onScroll: UIEvent[HTMLIonLabelElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[HTMLIonLabelElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[HTMLIonLabelElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[HTMLIonLabelElement, Event_] => Unit = null,

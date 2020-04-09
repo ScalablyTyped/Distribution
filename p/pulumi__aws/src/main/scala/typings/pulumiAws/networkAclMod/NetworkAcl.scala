@@ -26,12 +26,10 @@ class NetworkAcl protected () extends CustomResource {
   def this(name: String, args: NetworkAclArgs, opts: CustomResourceOptions) = this()
   /**
     * Specifies an egress rule. Parameters defined below.
-    * This argument is processed in [attribute-as-blocks mode](https://www.terraform.io/docs/configuration/attr-as-blocks.html).
     */
   val egress: Output_[js.Array[NetworkAclEgress]] = js.native
   /**
     * Specifies an ingress rule. Parameters defined below.
-    * This argument is processed in [attribute-as-blocks mode](https://www.terraform.io/docs/configuration/attr-as-blocks.html).
     */
   val ingress: Output_[js.Array[NetworkAclIngress]] = js.native
   /**

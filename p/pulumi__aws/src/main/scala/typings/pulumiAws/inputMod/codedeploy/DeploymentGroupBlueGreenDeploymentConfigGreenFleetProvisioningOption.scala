@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DeploymentGroupBlueGreenDeploymentConfigGreenFleetProvisioningOption extends js.Object {
   /**
-    * The action to take on instances in the original environment after a successful blue/green deployment.
-    * * `TERMINATE`: Instances are terminated after a specified wait time.
-    * * `KEEP_ALIVE`: Instances are left running after they are deregistered from the load balancer and removed from the deployment group.
+    * The method used to add instances to a replacement environment.
+    * * `DISCOVER_EXISTING`: Use instances that already exist or will be created manually.
+    * * `COPY_AUTO_SCALING_GROUP`: Use settings from a specified **Auto Scaling** group to define and create instances in a new Auto Scaling group. _Exactly one Auto Scaling group must be specified_ when selecting `COPY_AUTO_SCALING_GROUP`. Use `autoscalingGroups` to specify the Auto Scaling group.
     */
   var action: js.UndefOr[Input[String]] = js.native
 }

@@ -12,7 +12,8 @@ import scala.scalajs.js.annotation._
 trait StructureTerminal
   extends OwnedStructure[STRUCTURE_TERMINAL]
      with AnyOwnedStructure
-     with AnyStoreStructure {
+     with AnyStoreStructure
+     with ConcreteStructure[js.Any] {
   /**
     * The remaining amount of ticks while this terminal cannot be used to make StructureTerminal.send or Game.market.deal calls.
     */

@@ -60,6 +60,8 @@ package object organizationsMod {
   type CreateAccountState = typings.awsSdk.organizationsMod._CreateAccountState | java.lang.String
   type CreateAccountStates = js.Array[typings.awsSdk.organizationsMod.CreateAccountState]
   type CreateAccountStatuses = js.Array[typings.awsSdk.organizationsMod.CreateAccountStatus]
+  type DelegatedAdministrators = js.Array[typings.awsSdk.organizationsMod.DelegatedAdministrator]
+  type DelegatedServices = js.Array[typings.awsSdk.organizationsMod.DelegatedService]
   type EffectivePolicyType = typings.awsSdk.awsSdkStrings.TAG_POLICY | java.lang.String
   type Email = java.lang.String
   type EnabledServicePrincipals = js.Array[typings.awsSdk.organizationsMod.EnabledServicePrincipal]

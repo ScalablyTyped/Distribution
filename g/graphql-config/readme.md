@@ -1,7 +1,7 @@
 
 # Scala.js typings for graphql-config
 
-Typings are for version 2.2.1
+Typings are for version 2.2.2
 
 ## Library description:
 The easiest way to configure your development environment with your GraphQL schema (supported by most tools, editors & IDEs)

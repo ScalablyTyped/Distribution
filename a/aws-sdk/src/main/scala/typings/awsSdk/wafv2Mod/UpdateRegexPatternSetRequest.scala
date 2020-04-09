@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UpdateRegexPatternSetRequest extends js.Object {
   /**
-    * A friendly description of the set. You cannot change the description of a set after you create it.
+    * A description of the set that helps with identification. You cannot change the description of a set after you create it.
     */
   var Description: js.UndefOr[EntityDescription] = js.native
   /**
@@ -19,7 +19,7 @@ trait UpdateRegexPatternSetRequest extends js.Object {
     */
   var LockToken: typings.awsSdk.wafv2Mod.LockToken = js.native
   /**
-    * A friendly name of the set. You cannot change the name after you create the set.
+    * The name of the set. You cannot change the name after you create the set.
     */
   var Name: EntityName = js.native
   /**
@@ -27,7 +27,7 @@ trait UpdateRegexPatternSetRequest extends js.Object {
     */
   var RegularExpressionList: typings.awsSdk.wafv2Mod.RegularExpressionList = js.native
   /**
-    * Specifies whether this is for an AWS CloudFront distribution or for a regional application. A regional application can be an Application Load Balancer (ALB) or an API Gateway stage.  To work with CloudFront, you must also specify the Region US East (N. Virginia) as follows:    CLI - Specify the region when you use the CloudFront scope: --scope=CLOUDFRONT --region=us-east-1.    API and SDKs - For all calls, use the Region endpoint us-east-1.   
+    * Specifies whether this is for an AWS CloudFront distribution or for a regional application. A regional application can be an Application Load Balancer (ALB) or an API Gateway stage.  To work with CloudFront, you must also specify the Region US East (N. Virginia) as follows:    CLI - Specify the Region when you use the CloudFront scope: --scope=CLOUDFRONT --region=us-east-1.    API and SDKs - For all calls, use the Region endpoint us-east-1.   
     */
   var Scope: typings.awsSdk.wafv2Mod.Scope = js.native
 }

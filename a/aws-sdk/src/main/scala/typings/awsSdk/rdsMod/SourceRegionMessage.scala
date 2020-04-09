@@ -11,7 +11,7 @@ trait SourceRegionMessage extends js.Object {
     */
   var Marker: js.UndefOr[String] = js.native
   /**
-    * A list of SourceRegion instances that contains each source AWS Region that the current AWS Region can get a Read Replica or a DB snapshot from.
+    * A list of SourceRegion instances that contains each source AWS Region that the current AWS Region can get a read replica or a DB snapshot from.
     */
   var SourceRegions: js.UndefOr[SourceRegionList] = js.native
 }

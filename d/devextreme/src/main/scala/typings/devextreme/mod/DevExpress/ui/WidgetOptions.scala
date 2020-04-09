@@ -10,23 +10,23 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WidgetOptions[T] extends DOMComponentOptions[T] {
-  /** Specifies the shortcut key that sets focus on the widget. */
+  /** @name Widget.Options.accessKey */
   var accessKey: js.UndefOr[String] = js.undefined
-  /** Specifies whether or not the widget changes its state when interacting with a user. */
+  /** @name Widget.Options.activeStateEnabled */
   var activeStateEnabled: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether the widget responds to user interaction. */
+  /** @name Widget.Options.disabled */
   var disabled: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether the widget can be focused using keyboard navigation. */
+  /** @name Widget.Options.focusStateEnabled */
   var focusStateEnabled: js.UndefOr[Boolean] = js.undefined
-  /** Specifies text for a hint that appears when a user pauses on the widget. */
+  /** @name Widget.Options.hint */
   var hint: js.UndefOr[String] = js.undefined
-  /** Specifies whether the widget changes its state when a user pauses on it. */
+  /** @name Widget.Options.hoverStateEnabled */
   var hoverStateEnabled: js.UndefOr[Boolean] = js.undefined
-  /** A function that is executed when the widget's content is ready and each time the content is changed. */
+  /** @name Widget.Options.onContentReady */
   var onContentReady: js.UndefOr[js.Function1[/* e */ AnonComponentElement[T], _]] = js.undefined
-  /** Specifies the number of the element when the Tab key is used for navigating. */
+  /** @name Widget.Options.tabIndex */
   var tabIndex: js.UndefOr[Double] = js.undefined
-  /** Specifies whether the widget is visible. */
+  /** @name Widget.Options.visible */
   var visible: js.UndefOr[Boolean] = js.undefined
 }
 

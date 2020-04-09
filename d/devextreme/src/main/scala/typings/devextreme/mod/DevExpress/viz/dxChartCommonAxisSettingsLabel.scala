@@ -16,25 +16,25 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxChartCommonAxisSettingsLabel extends js.Object {
-  /** Aligns axis labels in relation to ticks. */
+  /** @name dxChart.Options.commonAxisSettings.label.alignment */
   var alignment: js.UndefOr[center | left | right] = js.undefined
-  /** Allows you to rotate or stagger axis labels. Applies to the horizontal axis only. */
+  /** @name dxChart.Options.commonAxisSettings.label.displayMode */
   var displayMode: js.UndefOr[rotate | stagger | standard] = js.undefined
-  /** Specifies font options for axis labels. */
+  /** @name dxChart.Options.commonAxisSettings.label.font */
   var font: js.UndefOr[Font] = js.undefined
-  /** Adds a pixel-measured empty space between an axis and its labels. */
+  /** @name dxChart.Options.commonAxisSettings.label.indentFromAxis */
   var indentFromAxis: js.UndefOr[Double] = js.undefined
-  /** Decides how to arrange axis labels when there is not enough space to keep all of them. */
+  /** @name dxChart.Options.commonAxisSettings.label.overlappingBehavior */
   var overlappingBehavior: js.UndefOr[rotate | stagger | none | hide] = js.undefined
-  /** Specifies the rotation angle of axis labels. Applies only if displayMode or overlappingBehavior is "rotate". */
+  /** @name dxChart.Options.commonAxisSettings.label.rotationAngle */
   var rotationAngle: js.UndefOr[Double] = js.undefined
-  /** Adds a pixel-measured empty space between two staggered rows of axis labels. Applies only if displayMode or overlappingBehavior is "stagger". */
+  /** @name dxChart.Options.commonAxisSettings.label.staggeringSpacing */
   var staggeringSpacing: js.UndefOr[Double] = js.undefined
-  /** Specifies what to do with axis labels that overflow the allocated space after applying wordWrap: hide, truncate them and display an ellipsis, or do nothing. */
+  /** @name dxChart.Options.commonAxisSettings.label.textOverflow */
   var textOverflow: js.UndefOr[ellipsis | hide | none] = js.undefined
-  /** Shows/hides axis labels. */
+  /** @name dxChart.Options.commonAxisSettings.label.visible */
   var visible: js.UndefOr[Boolean] = js.undefined
-  /** Specifies how to wrap texts that do not fit into a single line. */
+  /** @name dxChart.Options.commonAxisSettings.label.wordWrap */
   var wordWrap: js.UndefOr[normal | breakWord | none] = js.undefined
 }
 

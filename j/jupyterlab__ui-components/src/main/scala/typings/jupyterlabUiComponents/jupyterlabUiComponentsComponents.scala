@@ -13,6 +13,11 @@ object jupyterlabUiComponentsComponents extends jupyterlabUiComponentsProps {
   def Button: ComponentType[IButtonProps with CommonProps[js.Any]] = typings.jupyterlabUiComponents.mod.asInstanceOf[js.Dynamic].selectDynamic("Button").asInstanceOf[typings.react.mod.ComponentType[
   typings.jupyterlabUiComponents.blueprintMod.IButtonProps with typings.jupyterlabUiComponents.blueprintMod.CommonProps[js.Any]]]
   @scala.inline
+  def Checkbox: ComponentType[
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ICheckboxProps */ js.Any) with CommonProps[js.Any]
+  ] = typings.jupyterlabUiComponents.mod.asInstanceOf[js.Dynamic].selectDynamic("Checkbox").asInstanceOf[typings.react.mod.ComponentType[
+  (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ICheckboxProps */ js.Any) with typings.jupyterlabUiComponents.blueprintMod.CommonProps[js.Any]]]
+  @scala.inline
   def Collapse: ComponentType[
     (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ICollapseProps */ js.Any) with CommonProps[js.Any]
   ] = typings.jupyterlabUiComponents.mod.asInstanceOf[js.Dynamic].selectDynamic("Collapse").asInstanceOf[typings.react.mod.ComponentType[

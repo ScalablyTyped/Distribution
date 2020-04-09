@@ -1,6 +1,7 @@
 package typings.antd.configProviderMod
 
 import typings.antd.AnonGhost
+import typings.antd.AnonSize
 import typings.antd.AnonValidateMessages
 import typings.antd.antdStrings.ltr
 import typings.antd.antdStrings.rtl
@@ -26,6 +27,7 @@ trait ConfigProviderProps extends js.Object {
   var pageHeader: js.UndefOr[AnonGhost] = js.undefined
   var prefixCls: js.UndefOr[String] = js.undefined
   var renderEmpty: js.UndefOr[RenderEmptyHandler] = js.undefined
+  var space: js.UndefOr[AnonSize] = js.undefined
 }
 
 object ConfigProviderProps {
@@ -41,7 +43,8 @@ object ConfigProviderProps {
     locale: Locale = null,
     pageHeader: AnonGhost = null,
     prefixCls: String = null,
-    renderEmpty: /* componentName */ js.UndefOr[String] => ReactNode = null
+    renderEmpty: /* componentName */ js.UndefOr[String] => ReactNode = null,
+    space: AnonSize = null
   ): ConfigProviderProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(autoInsertSpaceInButton)) __obj.updateDynamic("autoInsertSpaceInButton")(autoInsertSpaceInButton.asInstanceOf[js.Any])
@@ -55,6 +58,7 @@ object ConfigProviderProps {
     if (pageHeader != null) __obj.updateDynamic("pageHeader")(pageHeader.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     if (renderEmpty != null) __obj.updateDynamic("renderEmpty")(js.Any.fromFunction1(renderEmpty))
+    if (space != null) __obj.updateDynamic("space")(space.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigProviderProps]
   }
 }

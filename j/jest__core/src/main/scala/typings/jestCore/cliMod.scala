@@ -1,5 +1,7 @@
 package typings.jestCore
 
+import typings.jestTypes.configMod.Argv
+import typings.jestTypes.configMod.Path
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,6 +9,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@jest/core/build/cli", JSImport.Namespace)
 @js.native
 object cliMod extends js.Object {
-  def runCLI(argv: ArgumentsPartialallboolea, projects: js.Array[String]): js.Promise[AnonGlobalConfig] = js.native
+  def runCLI(argv: Argv, projects: js.Array[Path]): js.Promise[AnonGlobalConfig] = js.native
 }
 

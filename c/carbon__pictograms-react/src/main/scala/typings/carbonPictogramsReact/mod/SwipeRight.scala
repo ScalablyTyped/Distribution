@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@carbon/pictograms-react", "SwipeRight")
 @js.native
-object SwipeRight extends TopLevel[CarbonPictogram]
+object SwipeRight extends TopLevel[CarbonPictogramType]
 

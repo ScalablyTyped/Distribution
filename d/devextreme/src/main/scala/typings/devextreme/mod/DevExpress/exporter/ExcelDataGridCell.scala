@@ -7,19 +7,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ExcelDataGridCell extends js.Object {
-  /** The configuration of the cell's column. */
+  /** @name ExcelDataGridCell.column */
   var column: js.UndefOr[dxDataGridColumn] = js.undefined
-  /** The data object of the cell's row. */
+  /** @name ExcelDataGridCell.data */
   var data: js.UndefOr[js.Any] = js.undefined
-  /** The group index of the cell's row. Available when the rowType is "group". */
+  /** @name ExcelDataGridCell.groupIndex */
   var groupIndex: js.UndefOr[Double] = js.undefined
-  /** Information about group summary items the cell represents. */
+  /** @name ExcelDataGridCell.groupSummaryItems */
   var groupSummaryItems: js.UndefOr[js.Array[AnonNameValue]] = js.undefined
-  /** The type of the cell's row. */
+  /** @name ExcelDataGridCell.rowType */
   var rowType: js.UndefOr[String] = js.undefined
-  /** The identifier of the total summary item that the cell represents. */
+  /** @name ExcelDataGridCell.totalSummaryItemName */
   var totalSummaryItemName: js.UndefOr[String] = js.undefined
-  /** The cell's raw value. */
+  /** @name ExcelDataGridCell.value */
   var value: js.UndefOr[js.Any] = js.undefined
 }
 

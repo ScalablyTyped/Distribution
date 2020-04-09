@@ -5,8 +5,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait XMLDecl extends js.Object {
+  /** The encoding specified by the XML declaration. */
   var encoding: js.UndefOr[String] = js.undefined
+  /** The value of the standalone parameter */
   var standalone: js.UndefOr[String] = js.undefined
+  /** The version specified by the XML declaration. */
   var version: js.UndefOr[String] = js.undefined
 }
 

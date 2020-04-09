@@ -1,7 +1,7 @@
 
 # Scala.js typings for uuidv4
 
-Typings are for version 6.0.6
+Typings are for version 6.0.7
 
 ## Library description:
 uuid creates UUIDs.

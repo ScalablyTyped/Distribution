@@ -42,13 +42,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxSelectBoxOptions[T] extends dxDropDownListOptions[T] {
-  /** Specifies a custom template for the text field. Must contain the TextBox widget. */
+  /** @name dxSelectBox.Options.fieldTemplate */
   var fieldTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* selectedItem */ js.Any, /* fieldElement */ dxElement, String | Element | JQuery])
   ] = js.undefined
-  /** A function that is executed when a user adds a custom item. Requires acceptCustomValue to be set to true. */
+  /** @name dxSelectBox.Options.onCustomItemCreating */
   var onCustomItemCreating: js.UndefOr[js.Function1[/* e */ AnonCustomItem[T], _]] = js.undefined
-  /** Specifies whether or not to display selection controls. */
+  /** @name dxSelectBox.Options.showSelectionControls */
   var showSelectionControls: js.UndefOr[Boolean] = js.undefined
 }
 

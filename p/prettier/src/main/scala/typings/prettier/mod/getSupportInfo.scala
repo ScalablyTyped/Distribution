@@ -8,6 +8,5 @@ import scala.scalajs.js.annotation._
 @js.native
 object getSupportInfo extends js.Object {
   def apply(): SupportInfo = js.native
-  def apply(version: String): SupportInfo = js.native
 }
 

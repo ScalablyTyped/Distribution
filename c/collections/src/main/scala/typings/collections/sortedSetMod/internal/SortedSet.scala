@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait SortedSet[T] extends AbstractSet {
+  var length: Double = js.native
   def add(value: T): Boolean = js.native
   def clear(): Unit = js.native
   def constructClone(): SortedSet[T] = js.native

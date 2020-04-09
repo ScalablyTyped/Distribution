@@ -16,7 +16,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@tensorflow/tfjs-converter/dist/src/executor/graph_model", JSImport.Namespace)
+@JSImport("@tensorflow/tfjs-converter/dist/executor/graph_model", JSImport.Namespace)
 @js.native
 object graphModelMod extends js.Object {
   @js.native

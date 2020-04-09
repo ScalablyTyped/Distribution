@@ -79,12 +79,14 @@ package object glueMod {
     - typings.awsSdk.awsSdkStrings.CUSTOM_JDBC_CERT
     - typings.awsSdk.awsSdkStrings.SKIP_CUSTOM_JDBC_CERT_VALIDATION
     - typings.awsSdk.awsSdkStrings.CUSTOM_JDBC_CERT_STRING
+    - typings.awsSdk.awsSdkStrings.CONNECTION_URL
     - java.lang.String
   */
   type ConnectionPropertyKey = typings.awsSdk.glueMod._ConnectionPropertyKey | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.JDBC
     - typings.awsSdk.awsSdkStrings.SFTP
+    - typings.awsSdk.awsSdkStrings.MONGODB
     - java.lang.String
   */
   type ConnectionType = typings.awsSdk.glueMod._ConnectionType | java.lang.String

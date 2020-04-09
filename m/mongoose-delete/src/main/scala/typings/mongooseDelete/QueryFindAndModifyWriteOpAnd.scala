@@ -19,7 +19,7 @@ import typings.mongoose.mod.QueryFindOneAndUpdateOptions
 import typings.mongoose.mod.QueryPopulateOptions
 import typings.mongoose.mod.QueryUpdateOptions
 import typings.mongoose.rawResulttrueQueryFindOne
-import typings.mongoose.rawResulttrueQueryFindOneContext
+import typings.mongoose.rawResulttrueQueryFindOneArrayFilters
 import typings.mongoose.rawResulttrueupserttruene
 import typings.mongoose.upserttruenewtrueQueryFin
 import typings.std.RegExp
@@ -96,10 +96,10 @@ trait QueryFindAndModifyWriteOpAnd extends js.Object {
     * Specifying this query as a count query. Passing a callback executes the query.
     * @param criteria mongodb selector
     */
-  def count(): Querynumber = js.native
-  def count(callback: js.Function2[/* err */ js.Any, /* count */ Double, Unit]): Querynumber = js.native
-  def count(criteria: FilterQuery[_]): Querynumber = js.native
-  def count(criteria: FilterQuery[_], callback: js.Function2[/* err */ js.Any, /* count */ Double, Unit]): Querynumber = js.native
+  def count(): QuerynumberAll = js.native
+  def count(callback: js.Function2[/* err */ js.Any, /* count */ Double, Unit]): QuerynumberAll = js.native
+  def count(criteria: FilterQuery[_]): QuerynumberAll = js.native
+  def count(criteria: FilterQuery[_], callback: js.Function2[/* err */ js.Any, /* count */ Double, Unit]): QuerynumberAll = js.native
   /**
     * Specifies this query as a `countDocuments()` query. Behaves like `count()`,
     * except it always does a full collection scan when passed an empty filter `{}`.
@@ -119,10 +119,10 @@ trait QueryFindAndModifyWriteOpAnd extends js.Object {
     * @param {Function} [callback] optional params are (error, count)
     * @return {Query} this
     */
-  def countDocuments(): Querynumber = js.native
-  def countDocuments(callback: js.Function2[/* err */ js.Any, /* count */ Double, Unit]): Querynumber = js.native
-  def countDocuments(criteria: FilterQuery[_]): Querynumber = js.native
-  def countDocuments(criteria: FilterQuery[_], callback: js.Function2[/* err */ js.Any, /* count */ Double, Unit]): Querynumber = js.native
+  def countDocuments(): QuerynumberAll = js.native
+  def countDocuments(callback: js.Function2[/* err */ js.Any, /* count */ Double, Unit]): QuerynumberAll = js.native
+  def countDocuments(criteria: FilterQuery[_]): QuerynumberAll = js.native
+  def countDocuments(criteria: FilterQuery[_], callback: js.Function2[/* err */ js.Any, /* count */ Double, Unit]): QuerynumberAll = js.native
   /**
     * Returns a wrapper around a mongodb driver cursor. A Query<T>Cursor exposes a
     * Streams3-compatible interface, as well as a .next() function.
@@ -175,10 +175,10 @@ trait QueryFindAndModifyWriteOpAnd extends js.Object {
     * @param {Function} [callback] optional params are (error, count)
     * @return {Query} this
     */
-  def estimatedDocumentCount(): Querynumber = js.native
-  def estimatedDocumentCount(callback: js.Function2[/* err */ js.Any, /* count */ Double, Unit]): Querynumber = js.native
-  def estimatedDocumentCount(options: js.Any): Querynumber = js.native
-  def estimatedDocumentCount(options: js.Any, callback: js.Function2[/* err */ js.Any, /* count */ Double, Unit]): Querynumber = js.native
+  def estimatedDocumentCount(): QuerynumberAll = js.native
+  def estimatedDocumentCount(callback: js.Function2[/* err */ js.Any, /* count */ Double, Unit]): QuerynumberAll = js.native
+  def estimatedDocumentCount(options: js.Any): QuerynumberAll = js.native
+  def estimatedDocumentCount(options: js.Any, callback: js.Function2[/* err */ js.Any, /* count */ Double, Unit]): QuerynumberAll = js.native
   /** Executes the query */
   def exec(): js.Promise[FindAndModifyWriteOpResultObject[_]] = js.native
   def exec(callback: js.Function2[/* err */ NativeError, /* res */ FindAndModifyWriteOpResultObject[_], Unit]): js.Promise[FindAndModifyWriteOpResultObject[_]] = js.native
@@ -272,11 +272,11 @@ trait QueryFindAndModifyWriteOpAnd extends js.Object {
     options: QueryFindOneAndUpdateOptions,
     callback: js.Function3[/* err */ js.Any, /* doc */ js.Any | Null, /* res */ js.Any, Unit]
   ): DocumentQueryanynullany = js.native
-  def findOneAndUpdate(query: FilterQuery[_], update: js.Any, options: rawResulttrueQueryFindOneContext): QueryFindAndModifyWriteOp = js.native
+  def findOneAndUpdate(query: FilterQuery[_], update: js.Any, options: rawResulttrueQueryFindOneArrayFilters): QueryFindAndModifyWriteOp = js.native
   def findOneAndUpdate(
     query: FilterQuery[_],
     update: js.Any,
-    options: rawResulttrueQueryFindOneContext,
+    options: rawResulttrueQueryFindOneArrayFilters,
     callback: js.Function3[
       /* err */ js.Any, 
       /* doc */ FindAndModifyWriteOpResultObject[_ | Null], 
@@ -284,7 +284,7 @@ trait QueryFindAndModifyWriteOpAnd extends js.Object {
       Unit
     ]
   ): QueryFindAndModifyWriteOp = js.native
-  def findOneAndUpdate(query: FilterQuery[_], update: js.Any, options: rawResulttrueupserttruene): QueryFindAndModifyWriteOpAll = js.native
+  def findOneAndUpdate(query: FilterQuery[_], update: js.Any, options: rawResulttrueupserttruene): Query[FindAndModifyWriteOpResultObject[_]] with js.Object = js.native
   def findOneAndUpdate(
     query: FilterQuery[_],
     update: js.Any,
@@ -295,7 +295,7 @@ trait QueryFindAndModifyWriteOpAnd extends js.Object {
       /* res */ js.Any, 
       Unit
     ]
-  ): QueryFindAndModifyWriteOpAll = js.native
+  ): Query[FindAndModifyWriteOpResultObject[_]] with js.Object = js.native
   def findOneAndUpdate(query: FilterQuery[_], update: js.Any, options: upserttruenewtrueQueryFin): DocumentQueryanyany = js.native
   def findOneAndUpdate(
     query: FilterQuery[_],
@@ -621,23 +621,23 @@ trait QueryFindAndModifyWriteOpAnd extends js.Object {
     * All paths passed that are not $atomic operations will become $set ops.
     * @param doc the update command
     */
-  def update(): Querynumber = js.native
-  def update(callback: js.Function2[/* err */ js.Any, /* affectedRows */ Double, Unit]): Querynumber = js.native
-  def update(criteria: FilterQuery[_], doc: js.Any): Querynumber = js.native
+  def update(): QuerynumberAll = js.native
+  def update(callback: js.Function2[/* err */ js.Any, /* affectedRows */ Double, Unit]): QuerynumberAll = js.native
+  def update(criteria: FilterQuery[_], doc: js.Any): QuerynumberAll = js.native
   def update(
     criteria: FilterQuery[_],
     doc: js.Any,
     callback: js.Function2[/* err */ js.Any, /* affectedRows */ Double, Unit]
-  ): Querynumber = js.native
-  def update(criteria: FilterQuery[_], doc: js.Any, options: QueryUpdateOptions): Querynumber = js.native
+  ): QuerynumberAll = js.native
+  def update(criteria: FilterQuery[_], doc: js.Any, options: QueryUpdateOptions): QuerynumberAll = js.native
   def update(
     criteria: FilterQuery[_],
     doc: js.Any,
     options: QueryUpdateOptions,
     callback: js.Function2[/* err */ js.Any, /* affectedRows */ Double, Unit]
-  ): Querynumber = js.native
-  def update(doc: js.Any): Querynumber = js.native
-  def update(doc: js.Any, callback: js.Function2[/* err */ js.Any, /* affectedRows */ Double, Unit]): Querynumber = js.native
+  ): QuerynumberAll = js.native
+  def update(doc: js.Any): QuerynumberAll = js.native
+  def update(doc: js.Any, callback: js.Function2[/* err */ js.Any, /* affectedRows */ Double, Unit]): QuerynumberAll = js.native
   /** Specifies a path for use with chaining. */
   def where(): this.type = js.native
   def where(path: String): this.type = js.native

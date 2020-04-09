@@ -1,7 +1,7 @@
 package typings.octokitPluginRestEndpointMethods
 
-import typings.octokitPluginRestEndpointMethods.typesMod.AnyResponse
-import typings.octokitPluginRestEndpointMethods.typesMod.MigrationsDownloadArchiveForOrgParams
+import typings.octokitPluginRestEndpointMethods.typesMod.IssuesUpdateParams
+import typings.octokitPluginRestEndpointMethods.typesMod.IssuesUpdateParamsDeprecatedAssignee
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,9 +9,13 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon188 extends js.Object {
   var endpoint: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EndpointInterface */ js.Any = js.native
-  def apply(): js.Promise[AnyResponse] = js.native
+  def apply(): js.Promise[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OctokitResponse<IssuesUpdateResponse> */ _
+  ] = js.native
   def apply(
-    params: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RequestParameters */ js.Any) with MigrationsDownloadArchiveForOrgParams
-  ): js.Promise[AnyResponse] = js.native
+    params: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RequestParameters */ js.Any) with IssuesUpdateParamsDeprecatedAssignee with IssuesUpdateParams
+  ): js.Promise[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OctokitResponse<IssuesUpdateResponse> */ _
+  ] = js.native
 }
 

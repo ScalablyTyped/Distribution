@@ -8,9 +8,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Configures the appearance adopted by the series when a user selects it. */
+/** @name dxChartSeriesTypes.StepAreaSeries.selectionStyle */
 trait dxChartSeriesTypesStepAreaSeriesSelectionStyle extends dxChartSeriesTypesCommonSeriesSelectionStyle {
-  /** Configures the appearance adopted by the series border (in area-like series) or the series point border (in bar-like and bubble series) when a user selects the series. */
+  /** @name dxChartSeriesTypes.StepAreaSeries.selectionStyle.border */
   @JSName("border")
   var border_dxChartSeriesTypesStepAreaSeriesSelectionStyle: js.UndefOr[dxChartSeriesTypesStepAreaSeriesSelectionStyleBorder] = js.undefined
 }

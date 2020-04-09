@@ -12,7 +12,7 @@ trait MaintenanceWindowTaskTaskInvocationParametersStepFunctionsParameters exten
     */
   var input: js.UndefOr[Input[String]] = js.native
   /**
-    * The parameter name.
+    * The name of the STEP_FUNCTION task.
     */
   var name: js.UndefOr[Input[String]] = js.native
 }

@@ -147,6 +147,7 @@ import typings.styletronReact.styletronReactStrings.samp
 import typings.styletronReact.styletronReactStrings.script
 import typings.styletronReact.styletronReactStrings.section
 import typings.styletronReact.styletronReactStrings.select
+import typings.styletronReact.styletronReactStrings.slot
 import typings.styletronReact.styletronReactStrings.small
 import typings.styletronReact.styletronReactStrings.source
 import typings.styletronReact.styletronReactStrings.span
@@ -327,6 +328,7 @@ trait StyledFn extends js.Object {
   def apply(component: script, style: StyleObject): StyletronComponent[Pick[ComponentProps[script], Exclude[String, AnonClassName]]] = js.native
   def apply(component: section, style: StyleObject): StyletronComponent[Pick[ComponentProps[section], Exclude[String, AnonClassName]]] = js.native
   def apply(component: select, style: StyleObject): StyletronComponent[Pick[ComponentProps[select], Exclude[String, AnonClassName]]] = js.native
+  def apply(component: slot, style: StyleObject): StyletronComponent[Pick[ComponentProps[slot], Exclude[String, AnonClassName]]] = js.native
   def apply(component: small, style: StyleObject): StyletronComponent[Pick[ComponentProps[small], Exclude[String, AnonClassName]]] = js.native
   def apply(component: source, style: StyleObject): StyletronComponent[Pick[ComponentProps[source], Exclude[String, AnonClassName]]] = js.native
   def apply(component: span, style: StyleObject): StyletronComponent[Pick[ComponentProps[span], Exclude[String, AnonClassName]]] = js.native
@@ -506,6 +508,7 @@ trait StyledFn extends js.Object {
   def apply[P /* <: js.Object */](component: script, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[(Pick[ComponentProps[script], Exclude[String, AnonClassName]]) with P] = js.native
   def apply[P /* <: js.Object */](component: section, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[(Pick[ComponentProps[section], Exclude[String, AnonClassName]]) with P] = js.native
   def apply[P /* <: js.Object */](component: select, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[(Pick[ComponentProps[select], Exclude[String, AnonClassName]]) with P] = js.native
+  def apply[P /* <: js.Object */](component: slot, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[(Pick[ComponentProps[slot], Exclude[String, AnonClassName]]) with P] = js.native
   def apply[P /* <: js.Object */](component: small, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[(Pick[ComponentProps[small], Exclude[String, AnonClassName]]) with P] = js.native
   def apply[P /* <: js.Object */](component: source, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[(Pick[ComponentProps[source], Exclude[String, AnonClassName]]) with P] = js.native
   def apply[P /* <: js.Object */](component: span, style: js.Function1[/* props */ P, StyleObject]): StyletronComponent[(Pick[ComponentProps[span], Exclude[String, AnonClassName]]) with P] = js.native

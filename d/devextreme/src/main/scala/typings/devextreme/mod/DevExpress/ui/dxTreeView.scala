@@ -9,33 +9,33 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait dxTreeView extends CollectionWidget {
-  /** Collapses all items. */
+  /** @name dxTreeView.collapseAll() */
   def collapseAll(): Unit = js.native
-  /** Collapses an item with a specific key. */
-  def collapseItem(itemData: js.Any): Unit = js.native
-  /** Collapses an item found using its DOM node. */
-  def collapseItem(itemElement: Element): Unit = js.native
-  /** Expands all items. If you load items on demand, this method expands only the loaded items. */
+  /** @name dxTreeView.collapseItem(itemData) */
+  def collapseItem(itemData: js.Any): Promise[Unit] with JQueryPromise[Unit] = js.native
+  /** @name dxTreeView.collapseItem(itemElement) */
+  def collapseItem(itemElement: Element): Promise[Unit] with JQueryPromise[Unit] = js.native
+  /** @name dxTreeView.expandAll() */
   def expandAll(): Unit = js.native
-  /** Expands an item found using its data object. */
-  def expandItem(itemData: js.Any): Unit = js.native
-  /** Expands an item found using its DOM node. */
-  def expandItem(itemElement: Element): Unit = js.native
-  /** Gets all nodes. */
+  /** @name dxTreeView.expandItem(itemData) */
+  def expandItem(itemData: js.Any): Promise[Unit] with JQueryPromise[Unit] = js.native
+  /** @name dxTreeView.expandItem(itemElement) */
+  def expandItem(itemElement: Element): Promise[Unit] with JQueryPromise[Unit] = js.native
+  /** @name dxTreeView.getNodes() */
   def getNodes(): js.Array[dxTreeViewNode] = js.native
-  /** Selects all items. */
+  /** @name dxTreeView.selectAll() */
   def selectAll(): Unit = js.native
-  /** Selects an item found using its data object. */
+  /** @name dxTreeView.selectItem(itemData) */
   def selectItem(itemData: js.Any): Unit = js.native
-  /** Selects an item found using its DOM node. */
+  /** @name dxTreeView.selectItem(itemElement) */
   def selectItem(itemElement: Element): Unit = js.native
-  /** Cancels the selection of all items. */
+  /** @name dxTreeView.unselectAll() */
   def unselectAll(): Unit = js.native
-  /** Cancels the selection of an item found using its data object. */
+  /** @name dxTreeView.unselectItem(itemData) */
   def unselectItem(itemData: js.Any): Unit = js.native
-  /** Cancels the selection of an item found using its DOM node. */
+  /** @name dxTreeView.unselectItem(itemElement) */
   def unselectItem(itemElement: Element): Unit = js.native
-  /** Updates the tree view scrollbars according to the current size of the widget content. */
+  /** @name dxTreeView.updateDimensions() */
   def updateDimensions(): Promise[Unit] with JQueryPromise[Unit] = js.native
 }
 

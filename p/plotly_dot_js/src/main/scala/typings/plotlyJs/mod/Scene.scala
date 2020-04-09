@@ -1,10 +1,10 @@
 package typings.plotlyJs.mod
 
-import typings.plotlyJs.PartialAnnotations
-import typings.plotlyJs.PartialCamera
+import typings.plotlyJs.PartialAnnotationsArrowcolor
+import typings.plotlyJs.PartialCameraCenter
 import typings.plotlyJs.PartialDomain
 import typings.plotlyJs.PartialPoint
-import typings.plotlyJs.PartialSceneAxis
+import typings.plotlyJs.PartialSceneAxisBackgroundcolor
 import typings.plotlyJs.plotlyJsBooleans.`false`
 import typings.plotlyJs.plotlyJsStrings.auto
 import typings.plotlyJs.plotlyJsStrings.closest
@@ -20,35 +20,35 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Scene extends js.Object {
-  var annotations: PartialAnnotations | js.Array[PartialAnnotations]
+  var annotations: PartialAnnotationsArrowcolor | js.Array[PartialAnnotationsArrowcolor]
   var aspectmode: auto | cube | data | manual
   var aspectratio: PartialPoint
   var bgcolor: String
-  var camera: PartialCamera
+  var camera: PartialCameraCenter
   var captureevents: Boolean
   var domain: PartialDomain
   var dragmode: orbit | turntable | zoom | pan | `false`
   var hovermode: closest | `false`
-  var xaxis: PartialSceneAxis
-  var yaxis: PartialSceneAxis
-  var zaxis: PartialSceneAxis
+  var xaxis: PartialSceneAxisBackgroundcolor
+  var yaxis: PartialSceneAxisBackgroundcolor
+  var zaxis: PartialSceneAxisBackgroundcolor
 }
 
 object Scene {
   @scala.inline
   def apply(
-    annotations: PartialAnnotations | js.Array[PartialAnnotations],
+    annotations: PartialAnnotationsArrowcolor | js.Array[PartialAnnotationsArrowcolor],
     aspectmode: auto | cube | data | manual,
     aspectratio: PartialPoint,
     bgcolor: String,
-    camera: PartialCamera,
+    camera: PartialCameraCenter,
     captureevents: Boolean,
     domain: PartialDomain,
     dragmode: orbit | turntable | zoom | pan | `false`,
     hovermode: closest | `false`,
-    xaxis: PartialSceneAxis,
-    yaxis: PartialSceneAxis,
-    zaxis: PartialSceneAxis
+    xaxis: PartialSceneAxisBackgroundcolor,
+    yaxis: PartialSceneAxisBackgroundcolor,
+    zaxis: PartialSceneAxisBackgroundcolor
   ): Scene = {
     val __obj = js.Dynamic.literal(annotations = annotations.asInstanceOf[js.Any], aspectmode = aspectmode.asInstanceOf[js.Any], aspectratio = aspectratio.asInstanceOf[js.Any], bgcolor = bgcolor.asInstanceOf[js.Any], camera = camera.asInstanceOf[js.Any], captureevents = captureevents.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], dragmode = dragmode.asInstanceOf[js.Any], hovermode = hovermode.asInstanceOf[js.Any], xaxis = xaxis.asInstanceOf[js.Any], yaxis = yaxis.asInstanceOf[js.Any], zaxis = zaxis.asInstanceOf[js.Any])
   

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "jsonschema" : "1.2.5"
+      "jsonschema" : "1.2.6"
     }
   ],
   "test-dependencies" : [
     {
-      "jsonschema" : "1.2.5"
+      "jsonschema" : "1.2.6"
     }
   ],
   "compile-devDependencies" : [

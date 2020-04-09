@@ -22,11 +22,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxSortableOptions extends DraggableBaseOptions[dxSortable] {
-  /** Allows a user to drop an item inside another item. */
+  /** @name dxSortable.Options.allowDropInsideItem */
   var allowDropInsideItem: js.UndefOr[Boolean] = js.undefined
-  /** Allows a user to reorder sortable items. */
+  /** @name dxSortable.Options.allowReordering */
   var allowReordering: js.UndefOr[Boolean] = js.undefined
-  /** Specifies custom markup to be shown instead of the item being dragged. */
+  /** @name dxSortable.Options.dragTemplate */
   var dragTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function2[
       /* dragInfo */ AnonFromIndexItemData, 
@@ -34,27 +34,27 @@ trait dxSortableOptions extends DraggableBaseOptions[dxSortable] {
       String | Element | JQuery
     ])
   ] = js.undefined
-  /** Specifies how to highlight the item's drop position. */
+  /** @name dxSortable.Options.dropFeedbackMode */
   var dropFeedbackMode: js.UndefOr[push | indicate] = js.undefined
-  /** Specifies a CSS selector for the items that can be dragged. */
+  /** @name dxSortable.Options.filter */
   var filter: js.UndefOr[String] = js.undefined
-  /** Notifies the widget of the items' orientation. */
+  /** @name dxSortable.Options.itemOrientation */
   var itemOrientation: js.UndefOr[horizontal | vertical] = js.undefined
-  /** Moves an element in the HTML markup when it is dropped. */
+  /** @name dxSortable.Options.moveItemOnDrop */
   var moveItemOnDrop: js.UndefOr[Boolean] = js.undefined
-  /** A function that is called when a new item is added. */
+  /** @name dxSortable.Options.onAdd */
   var onAdd: js.UndefOr[js.Function1[/* e */ AnonComponentDropInsideItem, _]] = js.undefined
-  /** A function that is called when the dragged item's position in the list is changed. */
+  /** @name dxSortable.Options.onDragChange */
   var onDragChange: js.UndefOr[js.Function1[/* e */ AnonDropInsideItemElement, _]] = js.undefined
-  /** A function that is called when the drag gesture is finished. */
+  /** @name dxSortable.Options.onDragEnd */
   var onDragEnd: js.UndefOr[js.Function1[/* e */ AnonDropInsideItemElement, _]] = js.undefined
-  /** A function that is called every time a draggable item is moved. */
+  /** @name dxSortable.Options.onDragMove */
   var onDragMove: js.UndefOr[js.Function1[/* e */ AnonDropInsideItemElement, _]] = js.undefined
-  /** A function that is called when drag gesture is initialized. */
+  /** @name dxSortable.Options.onDragStart */
   var onDragStart: js.UndefOr[js.Function1[/* e */ AnonFromDataFromIndex, _]] = js.undefined
-  /** A function that is called when a draggable item is removed. */
+  /** @name dxSortable.Options.onRemove */
   var onRemove: js.UndefOr[js.Function1[/* e */ AnonFromComponentFromData, _]] = js.undefined
-  /** A function that is called when the draggable items are reordered. */
+  /** @name dxSortable.Options.onReorder */
   var onReorder: js.UndefOr[js.Function1[/* e */ AnonComponentDropInsideItem, _]] = js.undefined
 }
 

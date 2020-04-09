@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CreateBuildOutput extends js.Object {
   /**
-    * The newly created build record, including a unique build IDs and status. 
+    * The newly created build resource, including a unique build IDs and status. 
     */
   var Build: js.UndefOr[typings.awsSdk.gameliftMod.Build] = js.native
   /**
@@ -15,7 +15,7 @@ trait CreateBuildOutput extends js.Object {
     */
   var StorageLocation: js.UndefOr[S3Location] = js.native
   /**
-    * This element is returned only when the operation is called without a storage location. It contains credentials to use when you are uploading a build file to an Amazon S3 bucket that is owned by Amazon GameLift. Credentials have a limited life span. To refresh these credentials, call RequestUploadCredentials. 
+    * This element is returned only when the operation is called without a storage location. It contains credentials to use when you are uploading a build file to an S3 bucket that is owned by Amazon GameLift. Credentials have a limited life span. To refresh these credentials, call RequestUploadCredentials. 
     */
   var UploadCredentials: js.UndefOr[AwsCredentials] = js.native
 }

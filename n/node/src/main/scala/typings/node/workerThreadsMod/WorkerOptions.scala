@@ -1,5 +1,6 @@
 package typings.node.workerThreadsMod
 
+import typings.node.NodeJS.ProcessEnv
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,6 +13,7 @@ trait WorkerOptions extends js.Object {
     * were passed as CLI options to the script.
     */
   var argv: js.UndefOr[js.Array[_]] = js.undefined
+  var env: js.UndefOr[ProcessEnv | js.Symbol] = js.undefined
   var eval: js.UndefOr[Boolean] = js.undefined
   var execArgv: js.UndefOr[js.Array[String]] = js.undefined
   var resourceLimits: js.UndefOr[ResourceLimits] = js.undefined
@@ -25,6 +27,7 @@ object WorkerOptions {
   @scala.inline
   def apply(
     argv: js.Array[_] = null,
+    env: ProcessEnv | js.Symbol = null,
     eval: js.UndefOr[Boolean] = js.undefined,
     execArgv: js.Array[String] = null,
     resourceLimits: ResourceLimits = null,
@@ -35,6 +38,7 @@ object WorkerOptions {
   ): WorkerOptions = {
     val __obj = js.Dynamic.literal()
     if (argv != null) __obj.updateDynamic("argv")(argv.asInstanceOf[js.Any])
+    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
     if (!js.isUndefined(eval)) __obj.updateDynamic("eval")(eval.asInstanceOf[js.Any])
     if (execArgv != null) __obj.updateDynamic("execArgv")(execArgv.asInstanceOf[js.Any])
     if (resourceLimits != null) __obj.updateDynamic("resourceLimits")(resourceLimits.asInstanceOf[js.Any])

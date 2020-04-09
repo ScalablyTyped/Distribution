@@ -1,7 +1,7 @@
 
 # Scala.js typings for expo-sqlite
 
-Typings are for version 8.0.0
+Typings are for version 8.1.0
 
 ## Library description:
 Provides access to a database that can be queried through a WebSQL-like API (https://www.w3.org/TR/webdatabase/). The database is persisted across restarts of your app.

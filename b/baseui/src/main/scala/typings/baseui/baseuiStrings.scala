@@ -3085,6 +3085,9 @@ object baseuiStrings {
        with JustifySelf
   
   @js.native
+  sealed trait slot extends js.Object
+  
+  @js.native
   sealed trait small_ extends js.Object
   
   @js.native
@@ -5307,6 +5310,8 @@ object baseuiStrings {
   def `self-end`: `self-end` = "self-end".asInstanceOf[`self-end`]
   @scala.inline
   def `self-start`: `self-start` = "self-start".asInstanceOf[`self-start`]
+  @scala.inline
+  def slot: slot = "slot".asInstanceOf[slot]
   @scala.inline
   def small_ : small_ = "small".asInstanceOf[small_]
   @scala.inline

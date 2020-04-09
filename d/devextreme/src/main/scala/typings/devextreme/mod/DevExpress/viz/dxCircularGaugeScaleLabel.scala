@@ -11,9 +11,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxCircularGaugeScaleLabel extends BaseGaugeScaleLabel {
-  /** Specifies which label to hide in case of overlapping. */
+  /** @name dxCircularGauge.Options.scale.label.hideFirstOrLast */
   var hideFirstOrLast: js.UndefOr[first | last] = js.undefined
-  /** Specifies the spacing between scale labels and ticks. */
+  /** @name dxCircularGauge.Options.scale.label.indentFromTick */
   var indentFromTick: js.UndefOr[Double] = js.undefined
 }
 

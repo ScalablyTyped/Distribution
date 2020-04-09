@@ -1,7 +1,7 @@
 
 # Scala.js typings for fortawesome__free-solid-svg-icons
 
-Typings are for version 5.12.1
+Typings are for version 5.13.0
 
 ## Library description:
 The iconic font, CSS, and SVG framework

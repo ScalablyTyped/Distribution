@@ -52,8 +52,6 @@ trait MessageRead extends Item {
   /**
     * Gets an object that provides methods for managing the item's categories.
     *
-    * **Important**: In Outlook on the web, you can't use the API to manage categories on a message in Read mode.
-    *
     * [Api set: Mailbox 1.8]
     *
     * @remarks

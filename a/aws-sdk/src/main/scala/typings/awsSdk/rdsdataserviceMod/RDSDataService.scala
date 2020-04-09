@@ -65,12 +65,12 @@ trait RDSDataService extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ExecuteSqlResponse, Unit]
   ): Request[ExecuteSqlResponse, AWSError] = js.native
   /**
-    * Runs a SQL statement against a database.  If a call isn't part of a transaction because it doesn't include the transactionID parameter, changes that result from the call are committed automatically.  The response size limit is 1 MB or 1,000 records. If the call returns more than 1 MB of response data or over 1,000 records, the call is terminated.
+    * Runs a SQL statement against a database.  If a call isn't part of a transaction because it doesn't include the transactionID parameter, changes that result from the call are committed automatically.  The response size limit is 1 MB. If the call returns more than 1 MB of response data, the call is terminated.
     */
   def executeStatement(): Request[ExecuteStatementResponse, AWSError] = js.native
   def executeStatement(callback: js.Function2[/* err */ AWSError, /* data */ ExecuteStatementResponse, Unit]): Request[ExecuteStatementResponse, AWSError] = js.native
   /**
-    * Runs a SQL statement against a database.  If a call isn't part of a transaction because it doesn't include the transactionID parameter, changes that result from the call are committed automatically.  The response size limit is 1 MB or 1,000 records. If the call returns more than 1 MB of response data or over 1,000 records, the call is terminated.
+    * Runs a SQL statement against a database.  If a call isn't part of a transaction because it doesn't include the transactionID parameter, changes that result from the call are committed automatically.  The response size limit is 1 MB. If the call returns more than 1 MB of response data, the call is terminated.
     */
   def executeStatement(params: ExecuteStatementRequest): Request[ExecuteStatementResponse, AWSError] = js.native
   def executeStatement(

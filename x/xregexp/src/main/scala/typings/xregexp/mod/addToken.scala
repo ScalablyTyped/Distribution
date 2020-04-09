@@ -1,7 +1,6 @@
 package typings.xregexp.mod
 
 import typings.std.RegExp
-import typings.std.RegExpExecArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,21 +8,48 @@ import scala.scalajs.js.annotation._
 @JSImport("xregexp", "addToken")
 @js.native
 object addToken extends js.Object {
-  /* Since xregexp 3.0.0 can be used either via
-    import X = require('xregexp');
-    X();
-    or via
-    import XRegExp = X.XRegExp;
-    XRegExp()
-    I had to duplicate the function declarations. I could simply not
-    find another way to accomplish this with TypeScript.
+  //#endregion
+  //#region methods
+  /**
+    * Extends XRegExp syntax and allows custom flags. This is used internally and can be used to
+    * create XRegExp addons. If more than one token can match the same string, the last added wins.
+    *
+    * @param regex - Regex object that matches the new token.
+    * @param handler - Function that returns a new pattern string (using native regex syntax)
+    *   to replace the matched token within all future XRegExp regexes. Has access to persistent
+    *   properties of the regex being built, through `this`.  The handler function becomes part
+    *   of the XRegExp construction process, so be careful not to construct XRegExps within the
+    *   function or you will trigger infinite recursion.
+    * @param options - Options object with optional properties.
+    * @example
+    *
+    * // Basic usage: Add \a for the ALERT control code
+    * XRegExp.addToken(
+    *   /\\a/,
+    *   () => '\\x07',
+    *   { scope: 'all' }
+    * );
+    * XRegExp('\\a[\\a-\\n]+').test('\x07\n\x07'); // -> true
+    *
+    * // Add the U (ungreedy) flag from PCRE and RE2, which reverses greedy and lazy quantifiers.
+    * // Since `scope` is not specified, it uses 'default' (i.e., transformations apply outside of
+    * // character classes only)
+    * XRegExp.addToken(
+    *   /([?*+]|{\d+(?:,\d*)?})(\??)/,
+    *   (match) => `${match[1]}${match[2] ? '' : '?'}`,
+    *   { flag: 'U' }
+    * );
+    * XRegExp('a+', 'U').exec('aaa')[0]; // -> 'a'
+    * XRegExp('a+?', 'U').exec('aaa')[0]; // -> 'aaa'
     */
-  // begin API definitions
-  def apply(regex: RegExp, handler: js.Function2[/* matchArr */ RegExpExecArray, /* scope */ String, String]): Unit = js.native
   def apply(
     regex: RegExp,
-    handler: js.Function2[/* matchArr */ RegExpExecArray, /* scope */ String, String],
-    options: TokenOpts
+    handler: js.Function3[/* match */ MatchArray, /* scope */ TokenScope, /* flags */ String, String]
+  ): Unit = js.native
+  def apply(
+    regex: RegExp,
+    handler: js.Function3[/* match */ MatchArray, /* scope */ TokenScope, /* flags */ String, String],
+    options: TokenOptions
   ): Unit = js.native
 }
 

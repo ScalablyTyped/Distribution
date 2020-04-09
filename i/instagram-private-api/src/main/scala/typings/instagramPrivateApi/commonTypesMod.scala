@@ -30,6 +30,7 @@ object commonTypesMod extends js.Object {
       ] = js.native
     @JSName("_read")
     var _read_Original: js.Function1[/* size */ Double, Unit] = js.native
+    var aborted: Boolean = js.native
     @JSName("addListener")
     var addListener_Original: js.Function2[close, /* listener */ js.Function0[Unit], this.type] = js.native
     var body: Body = js.native

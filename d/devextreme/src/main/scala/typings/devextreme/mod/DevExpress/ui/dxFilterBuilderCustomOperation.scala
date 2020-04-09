@@ -16,7 +16,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxFilterBuilderCustomOperation extends js.Object {
-  /** Specifies a function that returns a filter expression for this custom operation. */
+  /** @name dxFilterBuilderCustomOperation.calculateFilterExpression */
   var calculateFilterExpression: js.UndefOr[
     js.Function2[
       /* filterValue */ js.Any, 
@@ -24,13 +24,13 @@ trait dxFilterBuilderCustomOperation extends js.Object {
       String | js.Array[_] | js.Function
     ]
   ] = js.undefined
-  /** Specifies the operation's caption. */
+  /** @name dxFilterBuilderCustomOperation.caption */
   var caption: js.UndefOr[String] = js.undefined
-  /** Customizes the field value's text representation. */
+  /** @name dxFilterBuilderCustomOperation.customizeText */
   var customizeText: js.UndefOr[js.Function1[/* fieldInfo */ AnonField, String]] = js.undefined
-  /** Specifies for which data types the operation is available by default. */
+  /** @name dxFilterBuilderCustomOperation.dataTypes */
   var dataTypes: js.UndefOr[js.Array[string_ | number | date | boolean_ | `object` | datetime]] = js.undefined
-  /** Specifies a custom template for the widget used to edit the field value. */
+  /** @name dxFilterBuilderCustomOperation.editorTemplate */
   var editorTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function2[
       /* conditionInfo */ AnonSetValue, 
@@ -38,11 +38,11 @@ trait dxFilterBuilderCustomOperation extends js.Object {
       String | Element | JQuery
     ])
   ] = js.undefined
-  /** Specifies whether the operation can have a value. If it can, the editor is displayed. */
+  /** @name dxFilterBuilderCustomOperation.hasValue */
   var hasValue: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the icon that should represent the filter operation. */
+  /** @name dxFilterBuilderCustomOperation.icon */
   var icon: js.UndefOr[String] = js.undefined
-  /** Specifies the operation's identifier. */
+  /** @name dxFilterBuilderCustomOperation.name */
   var name: js.UndefOr[String] = js.undefined
 }
 

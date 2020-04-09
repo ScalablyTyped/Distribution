@@ -17,17 +17,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxSliderBaseOptions[T] extends dxTrackBarOptions[T] {
-  /** Specifies the step by which a handle moves when a user presses Page Up or Page Down. */
+  /** @name dxSliderBase.Options.keyStep */
   var keyStep: js.UndefOr[Double] = js.undefined
-  /** Configures the labels displayed at the min and max values. */
+  /** @name dxSliderBase.Options.label */
   var label: js.UndefOr[AnonFormatPosition] = js.undefined
-  /** The value to be assigned to the `name` attribute of the underlying HTML element. */
+  /** @name dxSliderBase.Options.name */
   var name: js.UndefOr[String] = js.undefined
-  /** Specifies whether to highlight the selected range. */
+  /** @name dxSliderBase.Options.showRange */
   var showRange: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the step by which the widget's value changes when a user drags a handler. */
+  /** @name dxSliderBase.Options.step */
   var step: js.UndefOr[Double] = js.undefined
-  /** Configures a tooltip. */
+  /** @name dxSliderBase.Options.tooltip */
   var tooltip: js.UndefOr[AnonShowMode] = js.undefined
 }
 

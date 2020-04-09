@@ -70,6 +70,7 @@ import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
@@ -586,7 +587,7 @@ object IonItemDividerPickHTMLAtt {
     onProgress: SyntheticEvent[HTMLIonItemDividerElement, Event_] => Unit = null,
     onRateChange: SyntheticEvent[HTMLIonItemDividerElement, Event_] => Unit = null,
     onReset: FormEvent[HTMLIonItemDividerElement] => Unit = null,
-    onScroll: UIEvent[HTMLIonItemDividerElement] => Unit = null,
+    onScroll: UIEvent[HTMLIonItemDividerElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[HTMLIonItemDividerElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[HTMLIonItemDividerElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[HTMLIonItemDividerElement, Event_] => Unit = null,

@@ -21,7 +21,7 @@ object waveMod extends js.Object {
     var animationStartId: js.Any = js.native
     var clickWaveTimeoutId: js.Any = js.native
     var csp: js.UndefOr[js.Any] = js.native
-    var destroy: js.Any = js.native
+    var destroyed: js.Any = js.native
     var extraNode: js.Any = js.native
     var instance: js.UndefOr[js.Any] = js.native
     def bindAnimationEvent(node: HTMLElement): js.UndefOr[AnonCancel] = js.native

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 trait ReadonlyJestHookEmitter extends js.Object {
   def onFileChange(fs: JestHookExposedFS): Unit
   def onTestRunComplete(results: AggregatedResult): Unit
-  def shouldRunTestSuite(testSuiteInfo: TestSuiteInfo): js.Promise[Boolean]
+  def shouldRunTestSuite(testSuiteInfo: TestSuiteInfo): js.Promise[Boolean] | Boolean
 }
 
 object ReadonlyJestHookEmitter {
@@ -19,7 +19,7 @@ object ReadonlyJestHookEmitter {
   def apply(
     onFileChange: JestHookExposedFS => Unit,
     onTestRunComplete: AggregatedResult => Unit,
-    shouldRunTestSuite: TestSuiteInfo => js.Promise[Boolean]
+    shouldRunTestSuite: TestSuiteInfo => js.Promise[Boolean] | Boolean
   ): ReadonlyJestHookEmitter = {
     val __obj = js.Dynamic.literal(onFileChange = js.Any.fromFunction1(onFileChange), onTestRunComplete = js.Any.fromFunction1(onTestRunComplete), shouldRunTestSuite = js.Any.fromFunction1(shouldRunTestSuite))
   

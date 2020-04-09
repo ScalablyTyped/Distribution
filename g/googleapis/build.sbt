@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "googleapis"
-version := "39.2.0-328c86"
+version := "39.2.0-bd0935"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "gaxios" % "2.3.1-7dc3c2",
-  "org.scalablytyped" %%% "google-auth-library" % "5.10.1-000460",
-  "org.scalablytyped" %%% "googleapis-common" % "0.7.2-5fa5e5",
+  "org.scalablytyped" %%% "gaxios" % "2.3.1-b01bfb",
+  "org.scalablytyped" %%% "google-auth-library" % "5.10.1-a1820b",
+  "org.scalablytyped" %%% "googleapis-common" % "0.7.2-23b6b3",
   "org.scalablytyped" %%% "gtoken" % "4.1.4-7ee270",
-  "org.scalablytyped" %%% "node" % "13.9-dt-20200318Z-96a265",
+  "org.scalablytyped" %%% "node" % "13.11-dt-20200402Z-9a87f0",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")

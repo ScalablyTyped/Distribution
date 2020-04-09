@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait HillshadePaint extends js.Object {
+trait HillshadePaint extends AnyPaint {
   var `hillshade-accent-color`: js.UndefOr[String | Expression] = js.undefined
   var `hillshade-accent-color-transition`: js.UndefOr[Transition] = js.undefined
   var `hillshade-exaggeration`: js.UndefOr[Double | Expression] = js.undefined

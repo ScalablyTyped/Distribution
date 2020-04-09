@@ -1,7 +1,7 @@
 
 # Scala.js typings for instabug-reactnative
 
-Typings are for version 9.1.0
+Typings are for version 9.1.1
 
 ## Library description:
 React Native plugin for integrating the Instabug SDK

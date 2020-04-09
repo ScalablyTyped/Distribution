@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-dnd-multi-backend"
-version := "5.0-dt-20200128Z-1fec00"
+version := "5.0-dt-20200128Z-d5ec51"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.6.9-2d2033",
   "org.scalablytyped" %%% "dnd-core" % "10.0.2-b4497d",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-ece683",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20200320Z-629467",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20200402Z-6f4338",
   "org.scalablytyped" %%% "redux" % "4.0.5-c5ba7d",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false

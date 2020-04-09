@@ -11,6 +11,9 @@ object firebaseAnalyticsTypesStrings {
   sealed trait add_payment_info extends EventNameString
   
   @js.native
+  sealed trait add_shipping_info extends EventNameString
+  
+  @js.native
   sealed trait add_to_cart extends EventNameString
   
   @js.native
@@ -59,6 +62,12 @@ object firebaseAnalyticsTypesStrings {
   sealed trait select_content extends EventNameString
   
   @js.native
+  sealed trait select_item extends EventNameString
+  
+  @js.native
+  sealed trait select_promotion extends EventNameString
+  
+  @js.native
   sealed trait set extends GtagCommand
   
   @js.native
@@ -74,6 +83,9 @@ object firebaseAnalyticsTypesStrings {
   sealed trait timing_complete extends EventNameString
   
   @js.native
+  sealed trait view_cart extends EventNameString
+  
+  @js.native
   sealed trait view_item extends EventNameString
   
   @js.native
@@ -87,6 +99,8 @@ object firebaseAnalyticsTypesStrings {
   
   @scala.inline
   def add_payment_info: add_payment_info = "add_payment_info".asInstanceOf[add_payment_info]
+  @scala.inline
+  def add_shipping_info: add_shipping_info = "add_shipping_info".asInstanceOf[add_shipping_info]
   @scala.inline
   def add_to_cart: add_to_cart = "add_to_cart".asInstanceOf[add_to_cart]
   @scala.inline
@@ -120,6 +134,10 @@ object firebaseAnalyticsTypesStrings {
   @scala.inline
   def select_content: select_content = "select_content".asInstanceOf[select_content]
   @scala.inline
+  def select_item: select_item = "select_item".asInstanceOf[select_item]
+  @scala.inline
+  def select_promotion: select_promotion = "select_promotion".asInstanceOf[select_promotion]
+  @scala.inline
   def set: set = "set".asInstanceOf[set]
   @scala.inline
   def set_checkout_option: set_checkout_option = "set_checkout_option".asInstanceOf[set_checkout_option]
@@ -129,6 +147,8 @@ object firebaseAnalyticsTypesStrings {
   def sign_up: sign_up = "sign_up".asInstanceOf[sign_up]
   @scala.inline
   def timing_complete: timing_complete = "timing_complete".asInstanceOf[timing_complete]
+  @scala.inline
+  def view_cart: view_cart = "view_cart".asInstanceOf[view_cart]
   @scala.inline
   def view_item: view_item = "view_item".asInstanceOf[view_item]
   @scala.inline

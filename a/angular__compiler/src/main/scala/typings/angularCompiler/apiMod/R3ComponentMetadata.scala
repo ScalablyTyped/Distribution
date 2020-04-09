@@ -2,7 +2,7 @@ package typings.angularCompiler.apiMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.angularCompiler.AnonExpressionSelector
-import typings.angularCompiler.AnonNodes
+import typings.angularCompiler.AnonNgContentSelectors
 import typings.angularCompiler.AnonUsesOnChanges
 import typings.angularCompiler.angularCompilerStrings.invalid
 import typings.angularCompiler.coreMod.ChangeDetectionStrategy
@@ -68,7 +68,7 @@ trait R3ComponentMetadata extends R3DirectiveMetadata {
   /**
     * Information about the component's template.
     */
-  var template: AnonNodes
+  var template: AnonNgContentSelectors
   /**
     * The list of view providers defined in the component.
     */
@@ -99,7 +99,7 @@ object R3ComponentMetadata {
     queries: js.Array[R3QueryMetadata],
     relativeContextFilePath: String,
     styles: js.Array[String],
-    template: AnonNodes,
+    template: AnonNgContentSelectors,
     `type`: R3Reference,
     typeArgumentCount: Double,
     typeSourceSpan: ParseSourceSpan,

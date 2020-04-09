@@ -39,8 +39,11 @@ import scala.scalajs.js.annotation._
   * @property {boolean} animLoop Controls whether the sprite sheet animation plays once or loops continuously.
   * @property {number} animTilesX Number of horizontal tiles in the sprite sheet.
   * @property {number} animTilesY Number of vertical tiles in the sprite sheet.
-  * @property {number} animStartFrame The zero based sprite sheet frame that the animation should be played from. The animation will play for animNumFrames frames beyond this. AnimStartFrame + AnimNumFrames should not exceed animTilesX * animTilesY.
-  * @property {number} animNumFrames Number of sprite sheet frames to play. It is valid to set the number of frames to a value less than animTilesX multiplied by animTilesY.
+  * @property {number} animNumAnimations Number of sprite sheet animations contained within the current sprite sheet. The number of animations multiplied by number of frames should be a value less than animTilesX multiplied by animTilesY.
+  * @property {number} animNumFrames Number of sprite sheet frames in the current sprite sheet animation. The number of animations multiplied by number of frames should be a value less than animTilesX multiplied by animTilesY.
+  * @property {number} animStartFrame The sprite sheet frame that the animation should begin playing from. Indexed from the start of the current animation.
+  * @property {number} animIndex When animNumAnimations is greater than 1, the sprite sheet animation index determines which animation the particle system should play.
+  * @property {number} randomizeAnimIndex Each particle emitted by the system will play a random animation from the sprite sheet, up to animNumAnimations.
   * @property {number} animSpeed Sprite sheet animation speed. 1 = particle lifetime, 2 = twice during lifetime etc...
   * @property {number} depthSoftening Controls fading of particles near their intersections with scene geometry. This effect, when it's non-zero, requires scene depth map to be rendered. Multiple depth-dependent effects can share the same map, but if you only use it for particles, bear in mind that it can double engine draw calls.
   * @property {number} initialVelocity Defines magnitude of the initial emitter velocity. Direction is given by emitter shape.
@@ -118,11 +121,19 @@ class ParticleSystemComponent protected () extends Component {
     */
   var alphaGraph2: Curve = js.native
   /**
+    * When animNumAnimations is greater than 1, the sprite sheet animation index determines which animation the particle system should play.
+    */
+  var animIndex: Double = js.native
+  /**
     * Controls whether the sprite sheet animation plays once or loops continuously.
     */
   var animLoop: Boolean = js.native
   /**
-    * Number of sprite sheet frames to play. It is valid to set the number of frames to a value less than animTilesX multiplied by animTilesY.
+    * Number of sprite sheet animations contained within the current sprite sheet. The number of animations multiplied by number of frames should be a value less than animTilesX multiplied by animTilesY.
+    */
+  var animNumAnimations: Double = js.native
+  /**
+    * Number of sprite sheet frames in the current sprite sheet animation. The number of animations multiplied by number of frames should be a value less than animTilesX multiplied by animTilesY.
     */
   var animNumFrames: Double = js.native
   /**
@@ -130,7 +141,7 @@ class ParticleSystemComponent protected () extends Component {
     */
   var animSpeed: Double = js.native
   /**
-    * The zero based sprite sheet frame that the animation should be played from. The animation will play for animNumFrames frames beyond this. AnimStartFrame + AnimNumFrames should not exceed animTilesX * animTilesY.
+    * The sprite sheet frame that the animation should begin playing from. Indexed from the start of the current animation.
     */
   var animStartFrame: Double = js.native
   /**
@@ -287,6 +298,10 @@ class ParticleSystemComponent protected () extends Component {
     * If not null, particles pick random values between radialSpeedGraph and radialSpeedGraph2.
     */
   var radialSpeedGraph2: Curve = js.native
+  /**
+    * Each particle emitted by the system will play a random animation from the sprite sheet, up to animNumAnimations.
+    */
+  var randomizeAnimIndex: Double = js.native
   /**
     * Minimal interval in seconds between particle births.
     */

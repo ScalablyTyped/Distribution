@@ -11,6 +11,10 @@ trait CreateSMBFileShareInput extends js.Object {
     */
   var AdminUserList: js.UndefOr[FileShareUserList] = js.native
   /**
+    * The Amazon Resource Name (ARN) of the storage used for the audit logs.
+    */
+  var AuditDestinationARN: js.UndefOr[typings.awsSdk.storagegatewayMod.AuditDestinationARN] = js.native
+  /**
     * The authentication method that users use to access the file share. Valid values are ActiveDirectory or GuestAccess. The default is ActiveDirectory.
     */
   var Authentication: js.UndefOr[typings.awsSdk.storagegatewayMod.Authentication] = js.native
@@ -23,7 +27,7 @@ trait CreateSMBFileShareInput extends js.Object {
     */
   var DefaultStorageClass: js.UndefOr[StorageClass] = js.native
   /**
-    * The Amazon Resource Name (ARN) of the file gateway on which you want to create a file share.
+    * The ARN of the file gateway on which you want to create a file share.
     */
   var GatewayARN: typings.awsSdk.storagegatewayMod.GatewayARN = js.native
   /**
@@ -84,6 +88,7 @@ object CreateSMBFileShareInput {
     LocationARN: LocationARN,
     Role: Role,
     AdminUserList: FileShareUserList = null,
+    AuditDestinationARN: AuditDestinationARN = null,
     Authentication: Authentication = null,
     DefaultStorageClass: StorageClass = null,
     GuessMIMETypeEnabled: js.UndefOr[scala.Boolean] = js.undefined,
@@ -99,6 +104,7 @@ object CreateSMBFileShareInput {
   ): CreateSMBFileShareInput = {
     val __obj = js.Dynamic.literal(ClientToken = ClientToken.asInstanceOf[js.Any], GatewayARN = GatewayARN.asInstanceOf[js.Any], LocationARN = LocationARN.asInstanceOf[js.Any], Role = Role.asInstanceOf[js.Any])
     if (AdminUserList != null) __obj.updateDynamic("AdminUserList")(AdminUserList.asInstanceOf[js.Any])
+    if (AuditDestinationARN != null) __obj.updateDynamic("AuditDestinationARN")(AuditDestinationARN.asInstanceOf[js.Any])
     if (Authentication != null) __obj.updateDynamic("Authentication")(Authentication.asInstanceOf[js.Any])
     if (DefaultStorageClass != null) __obj.updateDynamic("DefaultStorageClass")(DefaultStorageClass.asInstanceOf[js.Any])
     if (!js.isUndefined(GuessMIMETypeEnabled)) __obj.updateDynamic("GuessMIMETypeEnabled")(GuessMIMETypeEnabled.asInstanceOf[js.Any])

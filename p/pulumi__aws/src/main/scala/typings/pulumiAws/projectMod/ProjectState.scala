@@ -57,7 +57,7 @@ trait ProjectState extends js.Object {
     */
   val logsConfig: js.UndefOr[Input[ProjectLogsConfig]] = js.native
   /**
-    * The name of the project. If `type` is set to `S3`, this is the name of the output artifact object
+    * The projects name.
     */
   val name: js.UndefOr[Input[String]] = js.native
   /**

@@ -7,9 +7,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxHtmlEditorVariables extends js.Object {
-  /** Specifies a collection of variables available for a user. */
+  /** @name dxHtmlEditorVariables.dataSource */
   var dataSource: js.UndefOr[String | js.Array[String] | DataSource | DataSourceOptions] = js.undefined
-  /** Specifies the special character(s) that should surround the variables. */
+  /** @name dxHtmlEditorVariables.escapeChar */
   var escapeChar: js.UndefOr[String | js.Array[String]] = js.undefined
 }
 

@@ -16,6 +16,7 @@ class Survey () extends SurveyModel {
   val cssNavigationPrev: String = js.native
   val cssNavigationStart: String = js.native
   var dummyObservable: js.Any = js.native
+  var koAfterRenderHeader: js.Any = js.native
   var koAfterRenderPage: js.Any = js.native
   var koCompletedState: js.Any = js.native
   var koCompletedStateCss: js.Any = js.native

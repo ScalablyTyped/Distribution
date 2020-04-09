@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxPolarChartArgumentAxisStripsLabel extends dxPolarChartCommonAxisSettingsStripStyleLabel {
-  /** Specifies the text displayed in a strip. */
+  /** @name dxPolarChart.Options.argumentAxis.strips.label.text */
   var text: js.UndefOr[String] = js.undefined
 }
 

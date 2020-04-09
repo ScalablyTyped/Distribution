@@ -9,7 +9,13 @@ import scala.scalajs.js.annotation._
 class AnswerCountValidator () extends SurveyValidator {
   def this(minCount: Double) = this()
   def this(minCount: Double, maxCount: Double) = this()
+  /**
+    * The maxCount property.
+    */
   var maxCount: Double = js.native
+  /**
+    * The minCount property.
+    */
   var minCount: Double = js.native
 }
 

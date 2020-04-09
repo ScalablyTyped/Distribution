@@ -34,6 +34,7 @@ trait DescribeFlowDefinitionResponse extends js.Object {
     * An object containing information about who works on the task, the workforce task price, and other task details.
     */
   var HumanLoopConfig: typings.awsSdk.sagemakerMod.HumanLoopConfig = js.native
+  var HumanLoopRequestSource: js.UndefOr[typings.awsSdk.sagemakerMod.HumanLoopRequestSource] = js.native
   /**
     * An object containing information about the output file.
     */
@@ -55,11 +56,13 @@ object DescribeFlowDefinitionResponse {
     OutputConfig: FlowDefinitionOutputConfig,
     RoleArn: RoleArn,
     FailureReason: FailureReason = null,
-    HumanLoopActivationConfig: HumanLoopActivationConfig = null
+    HumanLoopActivationConfig: HumanLoopActivationConfig = null,
+    HumanLoopRequestSource: HumanLoopRequestSource = null
   ): DescribeFlowDefinitionResponse = {
     val __obj = js.Dynamic.literal(CreationTime = CreationTime.asInstanceOf[js.Any], FlowDefinitionArn = FlowDefinitionArn.asInstanceOf[js.Any], FlowDefinitionName = FlowDefinitionName.asInstanceOf[js.Any], FlowDefinitionStatus = FlowDefinitionStatus.asInstanceOf[js.Any], HumanLoopConfig = HumanLoopConfig.asInstanceOf[js.Any], OutputConfig = OutputConfig.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any])
     if (FailureReason != null) __obj.updateDynamic("FailureReason")(FailureReason.asInstanceOf[js.Any])
     if (HumanLoopActivationConfig != null) __obj.updateDynamic("HumanLoopActivationConfig")(HumanLoopActivationConfig.asInstanceOf[js.Any])
+    if (HumanLoopRequestSource != null) __obj.updateDynamic("HumanLoopRequestSource")(HumanLoopRequestSource.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeFlowDefinitionResponse]
   }
 }

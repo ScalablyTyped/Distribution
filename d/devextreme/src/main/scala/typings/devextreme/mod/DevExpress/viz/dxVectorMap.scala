@@ -6,32 +6,32 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait dxVectorMap extends BaseWidget {
-  /** Gets the current map center coordinates. */
+  /** @name dxVectorMap.center() */
   def center(): js.Array[Double] = js.native
-  /** Sets the map center coordinates. */
+  /** @name dxVectorMap.center(centerCoordinates) */
   def center(centerCoordinates: js.Array[Double]): Unit = js.native
-  /** Deselects all the selected area and markers on a map at once. The areas and markers are displayed in their initial style after. */
+  /** @name dxVectorMap.clearSelection() */
   def clearSelection(): Unit = js.native
-  /** @deprecated Use convertToGeo instead. */
-  /** Converts client area coordinates into map coordinates. */
+  /** @deprecated */
+  /** @name dxVectorMap.convertCoordinates(x, y) */
   def convertCoordinates(x: Double, y: Double): js.Array[Double] = js.native
-  /** Converts coordinates from the widget coordinate system to the dataSource coordinate system. */
+  /** @name dxVectorMap.convertToGeo(x, y) */
   def convertToGeo(x: Double, y: Double): js.Array[Double] = js.native
-  /** Converts coordinates from the dataSource coordinate system to the widget coordinate system. */
+  /** @name dxVectorMap.convertToXY(longitude, latitude) */
   def convertToXY(longitude: Double, latitude: Double): js.Array[Double] = js.native
-  /** Gets a layer with a specific index. */
+  /** @name dxVectorMap.getLayerByIndex(index) */
   def getLayerByIndex(index: Double): MapLayer = js.native
-  /** Gets a layer with a specific name. */
+  /** @name dxVectorMap.getLayerByName(name) */
   def getLayerByName(name: String): MapLayer = js.native
-  /** Gets all layers. */
+  /** @name dxVectorMap.getLayers() */
   def getLayers(): js.Array[MapLayer] = js.native
-  /** Gets the current map viewport coordinates. */
+  /** @name dxVectorMap.viewport() */
   def viewport(): js.Array[Double] = js.native
-  /** Sets the map viewport coordinates. */
+  /** @name dxVectorMap.viewport(viewportCoordinates) */
   def viewport(viewportCoordinates: js.Array[Double]): Unit = js.native
-  /** Gets the current zoom factor value. */
+  /** @name dxVectorMap.zoomFactor() */
   def zoomFactor(): Double = js.native
-  /** Sets the zoom factor value. */
+  /** @name dxVectorMap.zoomFactor(zoomFactor) */
   def zoomFactor(zoomFactor: Double): Unit = js.native
 }
 

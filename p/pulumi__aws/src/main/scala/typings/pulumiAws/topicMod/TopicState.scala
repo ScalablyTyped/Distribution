@@ -69,6 +69,9 @@ trait TopicState extends js.Object {
     * The friendly name for the SNS topic. Conflicts with `name`.
     */
   val namePrefix: js.UndefOr[Input[String]] = js.native
+  /**
+    * The fully-formed AWS policy as JSON.
+    */
   val policy: js.UndefOr[Input[String]] = js.native
   /**
     * IAM role for failure feedback

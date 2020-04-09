@@ -23,18 +23,11 @@ object modelDocumentKeyMod extends js.Object {
   object DocumentKey extends js.Object {
     var EMPTY: DocumentKey = js.native
     def comparator(k1: DocumentKey, k2: DocumentKey): Double = js.native
-    /**
-      * Creates and returns a new document key using '/' to split the string into
-      * segments.
-      *
-      * @param path The slash-separated path string to the document
-      * @return A new instance of DocumentKey
-      */
-    def fromPathString(path: String): DocumentKey = js.native
+    def fromName(name: String): DocumentKey = js.native
     /**
       * Creates and returns a new document key with the given segments.
       *
-      * @param path The segments of the path to the document
+      * @param segments The segments of the path to the document
       * @return A new instance of DocumentKey
       */
     def fromSegments(segments: js.Array[String]): DocumentKey = js.native

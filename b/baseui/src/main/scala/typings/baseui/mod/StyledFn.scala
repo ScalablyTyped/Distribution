@@ -142,6 +142,7 @@ import typings.baseui.baseuiStrings.samp
 import typings.baseui.baseuiStrings.script
 import typings.baseui.baseuiStrings.section
 import typings.baseui.baseuiStrings.select
+import typings.baseui.baseuiStrings.slot
 import typings.baseui.baseuiStrings.small_
 import typings.baseui.baseuiStrings.source
 import typings.baseui.baseuiStrings.span
@@ -331,6 +332,7 @@ trait StyledFn[T]
   def apply[P /* <: js.Object */](component: script, style: js.Function1[/* props */ AnonThemeT[T] with P, StyleObject]): StyletronComponent[(Pick[ComponentProps[script], Exclude[String, AnonClassName]]) with P] = js.native
   def apply[P /* <: js.Object */](component: section, style: js.Function1[/* props */ AnonThemeT[T] with P, StyleObject]): StyletronComponent[(Pick[ComponentProps[section], Exclude[String, AnonClassName]]) with P] = js.native
   def apply[P /* <: js.Object */](component: select, style: js.Function1[/* props */ AnonThemeT[T] with P, StyleObject]): StyletronComponent[(Pick[ComponentProps[select], Exclude[String, AnonClassName]]) with P] = js.native
+  def apply[P /* <: js.Object */](component: slot, style: js.Function1[/* props */ AnonThemeT[T] with P, StyleObject]): StyletronComponent[(Pick[ComponentProps[slot], Exclude[String, AnonClassName]]) with P] = js.native
   def apply[P /* <: js.Object */](component: small_, style: js.Function1[/* props */ AnonThemeT[T] with P, StyleObject]): StyletronComponent[(Pick[ComponentProps[small_], Exclude[String, AnonClassName]]) with P] = js.native
   def apply[P /* <: js.Object */](component: source, style: js.Function1[/* props */ AnonThemeT[T] with P, StyleObject]): StyletronComponent[(Pick[ComponentProps[source], Exclude[String, AnonClassName]]) with P] = js.native
   def apply[P /* <: js.Object */](component: span, style: js.Function1[/* props */ AnonThemeT[T] with P, StyleObject]): StyletronComponent[(Pick[ComponentProps[span], Exclude[String, AnonClassName]]) with P] = js.native

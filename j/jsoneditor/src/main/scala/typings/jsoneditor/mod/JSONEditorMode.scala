@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   - typings.jsoneditor.jsoneditorStrings.form
   - typings.jsoneditor.jsoneditorStrings.code
   - typings.jsoneditor.jsoneditorStrings.text
+  - typings.jsoneditor.jsoneditorStrings.preview
 */
 trait JSONEditorMode extends js.Object
 
@@ -20,6 +21,8 @@ object JSONEditorMode {
   def code: typings.jsoneditor.jsoneditorStrings.code = this.cast("code")
   @scala.inline
   def form: typings.jsoneditor.jsoneditorStrings.form = this.cast("form")
+  @scala.inline
+  def preview: typings.jsoneditor.jsoneditorStrings.preview = this.cast("preview")
   @scala.inline
   def text: typings.jsoneditor.jsoneditorStrings.text = this.cast("text")
   @scala.inline

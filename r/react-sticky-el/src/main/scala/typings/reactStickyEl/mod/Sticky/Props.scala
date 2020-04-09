@@ -13,6 +13,7 @@ import typings.react.mod.HTMLAttributes
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
@@ -109,7 +110,7 @@ trait Props[HolderProps /* <: js.Object */] extends HTMLAttributes[HTMLElement] 
     * Defaults to 'div'.
     */
   var holderCmp: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 117 */ js.Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118 */ js.Any
   ] = js.undefined
   /**
     * These props will be used to create `holderElement`.
@@ -180,7 +181,7 @@ trait Props[HolderProps /* <: js.Object */] extends HTMLAttributes[HTMLElement] 
     * Defaults to 'div'.
     */
   var wrapperCmp: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 117 */ js.Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118 */ js.Any
   ] = js.undefined
 }
 
@@ -256,7 +257,7 @@ object Props {
     draggable: js.UndefOr[Boolean] = js.undefined,
     hidden: js.UndefOr[Boolean] = js.undefined,
     hideOnBoundaryHit: js.UndefOr[Boolean] = js.undefined,
-    holderCmp: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 117 */ js.Any = null,
+    holderCmp: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118 */ js.Any = null,
     holderProps: HolderProps = null,
     id: String = null,
     inlist: js.Any = null,
@@ -333,7 +334,7 @@ object Props {
     onProgress: SyntheticEvent[HTMLElement, Event_] => Unit = null,
     onRateChange: SyntheticEvent[HTMLElement, Event_] => Unit = null,
     onReset: FormEvent[HTMLElement] => Unit = null,
-    onScroll: UIEvent[HTMLElement] => Unit = null,
+    onScroll: UIEvent[HTMLElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[HTMLElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[HTMLElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[HTMLElement, Event_] => Unit = null,
@@ -373,7 +374,7 @@ object Props {
     typeof: String = null,
     unselectable: on | off = null,
     vocab: String = null,
-    wrapperCmp: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 117 */ js.Any = null
+    wrapperCmp: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118 */ js.Any = null
   ): Props[HolderProps] = {
     val __obj = js.Dynamic.literal()
     if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])

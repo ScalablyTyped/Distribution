@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait IconParams extends Params {
   var mask: js.UndefOr[IconLookup] = js.undefined
+  var maskId: js.UndefOr[String] = js.undefined
   var symbol: js.UndefOr[FaSymbol] = js.undefined
   var transform: js.UndefOr[Transform] = js.undefined
 }
@@ -17,18 +18,22 @@ object IconParams {
     attributes: Attributes = null,
     classes: String | js.Array[String] = null,
     mask: IconLookup = null,
+    maskId: String = null,
     styles: Styles = null,
     symbol: FaSymbol = null,
     title: String = null,
+    titleId: String = null,
     transform: Transform = null
   ): IconParams = {
     val __obj = js.Dynamic.literal()
     if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
     if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
     if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
+    if (maskId != null) __obj.updateDynamic("maskId")(maskId.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (titleId != null) __obj.updateDynamic("titleId")(titleId.asInstanceOf[js.Any])
     if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
     __obj.asInstanceOf[IconParams]
   }

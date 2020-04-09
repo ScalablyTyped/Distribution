@@ -22,10 +22,10 @@ class DOMComponent protected ()
 @JSImport("devextreme", "DOMComponent")
 @js.native
 object DOMComponent extends js.Object {
-  /** Specifies the device-dependent default configuration options for this component. */
+  /** @name DOMComponent.defaultOptions(rule) */
   def defaultOptions(rule: AnonDevice): Unit = js.native
   def getInstance(element: JQuery): typings.devextreme.mod.DevExpress.DOMComponent = js.native
-  /** Gets the instance of a widget found using its DOM node. */
+  /** @name DOMComponent.getInstance(element) */
   def getInstance(element: Element): typings.devextreme.mod.DevExpress.DOMComponent = js.native
 }
 

@@ -9,7 +9,8 @@ import typings.firebaseFirestore.firestoreClientMod.FirestoreClient
 import typings.firebaseFirestore.mod.FirebaseApp
 import typings.firebaseFirestore.observerMod.PartialObserver
 import typings.firebaseFirestore.observerMod.Unsubscribe
-import typings.firebaseFirestore.userDataConverterMod.UserDataConverter
+import typings.firebaseFirestore.persistenceMod.PersistenceProvider
+import typings.firebaseFirestore.userDataReaderMod.UserDataReader
 import typings.firebaseFirestoreTypes.mod.FirebaseFirestore
 import typings.firebaseFirestoreTypes.mod.LogLevel
 import scala.scalajs.js
@@ -22,18 +23,29 @@ import scala.scalajs.js.annotation._
 class Firestore protected () extends FirebaseFirestore {
   def this(databaseIdOrApp: FirestoreDatabase, authProvider: Provider[FirebaseAuthInternalName]) = this()
   def this(databaseIdOrApp: FirebaseApp, authProvider: Provider[FirebaseAuthInternalName]) = this()
+  def this(
+    databaseIdOrApp: FirestoreDatabase,
+    authProvider: Provider[FirebaseAuthInternalName],
+    persistenceProvider: PersistenceProvider
+  ) = this()
+  def this(
+    databaseIdOrApp: FirebaseApp,
+    authProvider: Provider[FirebaseAuthInternalName],
+    persistenceProvider: PersistenceProvider
+  ) = this()
   @JSName("INTERNAL")
   var INTERNAL_Firestore: AnonDelete = js.native
   var _credentials: js.Any = js.native
-  val _dataConverter: UserDataConverter = js.native
+  val _dataReader: UserDataReader = js.native
   val _databaseId: DatabaseId = js.native
   val _firebaseApp: js.Any = js.native
   var _firestoreClient: js.Any = js.native
   val _persistenceKey: js.Any = js.native
+  val _persistenceProvider: js.Any = js.native
   val _queue: AsyncQueue = js.native
   var _settings: js.Any = js.native
   var configureClient: js.Any = js.native
-  var createDataConverter: js.Any = js.native
+  var createDataReader: js.Any = js.native
   var makeDatabaseInfo: js.Any = js.native
   var onSnapshotsInSyncInternal: js.Any = js.native
   def _areTimestampsInSnapshotsEnabled(): Boolean = js.native

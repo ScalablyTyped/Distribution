@@ -11,54 +11,54 @@ import scala.scalajs.js.annotation._
 @js.native
 trait PivotGridDataSource extends js.Object {
   def collapseAll(id: String): Unit = js.native
-  /** Collapses all header items of a field with the specified identifier. */
+  /** @name PivotGridDataSource.collapseAll(id) */
   def collapseAll(id: Double): Unit = js.native
-  /** Collapses a specific header item. */
+  /** @name PivotGridDataSource.collapseHeaderItem(area, path) */
   def collapseHeaderItem(area: String, path: js.Array[String | Double | Date]): Unit = js.native
-  /** Provides access to the facts that were used to calculate a specific summary value. */
+  /** @name PivotGridDataSource.createDrillDownDataSource(options) */
   def createDrillDownDataSource(options: AnonColumnPath): DataSource = js.native
-  /** Disposes of all the resources allocated to the PivotGridDataSource instance. */
+  /** @name PivotGridDataSource.dispose() */
   def dispose(): Unit = js.native
   def expandAll(id: String): Unit = js.native
-  /** Expands all the header items of a field with the specified identifier. */
+  /** @name PivotGridDataSource.expandAll(id) */
   def expandAll(id: Double): Unit = js.native
-  /** Expands a specific header item. */
+  /** @name PivotGridDataSource.expandHeaderItem(area, path) */
   def expandHeaderItem(area: String, path: js.Array[_]): Unit = js.native
   def field(id: String): js.Any = js.native
   def field(id: String, options: js.Any): Unit = js.native
-  /** Gets all the options of a field with the specified identifier. */
+  /** @name PivotGridDataSource.field(id) */
   def field(id: Double): js.Any = js.native
-  /** Updates field options' values. */
+  /** @name PivotGridDataSource.field(id, options) */
   def field(id: Double, options: js.Any): Unit = js.native
-  /** Gets all the fields including those generated automatically. */
+  /** @name PivotGridDataSource.fields() */
   def fields(): js.Array[PivotGridDataSourceField] = js.native
-  /** Specifies a new fields collection. */
+  /** @name PivotGridDataSource.fields(fields) */
   def fields(fields: js.Array[PivotGridDataSourceField]): Unit = js.native
-  /** Gets the filter option's value. Does not affect an XmlaStore. */
+  /** @name PivotGridDataSource.filter() */
   def filter(): js.Any = js.native
-  /** Sets the filter option's value. Does not affect an XmlaStore. */
+  /** @name PivotGridDataSource.filter(filterExpr) */
   def filter(filterExpr: js.Any): Unit = js.native
-  /** Gets all the fields within an area. */
+  /** @name PivotGridDataSource.getAreaFields(area, collectGroups) */
   def getAreaFields(area: String, collectGroups: Boolean): js.Array[PivotGridDataSourceField] = js.native
-  /** Gets the loaded data. Another data portion is loaded every time a header item is expanded. */
+  /** @name PivotGridDataSource.getData() */
   def getData(): js.Any = js.native
-  /** Checks whether the PivotGridDataSource is loading data. */
+  /** @name PivotGridDataSource.isLoading() */
   def isLoading(): Boolean = js.native
-  /** Starts loading data. */
+  /** @name PivotGridDataSource.load() */
   def load(): Promise[_] with JQueryPromise[_] = js.native
-  /** Detaches all event handlers from a single event. */
+  /** @name EventsMixin.off(eventName) */
   def off(eventName: String): this.type = js.native
-  /** Detaches a particular event handler from a single event. */
+  /** @name EventsMixin.off(eventName, eventHandler) */
   def off(eventName: String, eventHandler: js.Function): this.type = js.native
-  /** Subscribes to an event. */
+  /** @name EventsMixin.on(eventName, eventHandler) */
   def on(eventName: String, eventHandler: js.Function): this.type = js.native
-  /** Subscribes to events. */
+  /** @name EventsMixin.on(events) */
   def on(events: js.Any): this.type = js.native
-  /** Clears the loaded PivotGridDataSource data and calls the load() method. */
+  /** @name PivotGridDataSource.reload() */
   def reload(): Promise[_] with JQueryPromise[_] = js.native
-  /** Gets the current PivotGridDataSource state. Part of the PivotGrid widget's state storing feature. */
+  /** @name PivotGridDataSource.state() */
   def state(): js.Any = js.native
-  /** Sets the PivotGridDataSource state. Part of the PivotGrid widget's state storing feature. */
+  /** @name PivotGridDataSource.state(state) */
   def state(state: js.Any): Unit = js.native
 }
 

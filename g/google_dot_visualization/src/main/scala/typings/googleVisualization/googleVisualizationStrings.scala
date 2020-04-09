@@ -15,6 +15,12 @@ object googleVisualizationStrings {
   sealed trait absolute extends js.Object
   
   @js.native
+  sealed trait auto extends js.Object
+  
+  @js.native
+  sealed trait both extends js.Object
+  
+  @js.native
   sealed trait bottom extends ChartLegendPosition
   
   @js.native
@@ -62,6 +68,9 @@ object googleVisualizationStrings {
   sealed trait newRow extends js.Object
   
   @js.native
+  sealed trait next extends js.Object
+  
+  @js.native
   sealed trait none
     extends ChartAxisTitlesPosition
        with ChartLegendPosition
@@ -77,6 +86,9 @@ object googleVisualizationStrings {
   
   @js.native
   sealed trait polynomial extends js.Object
+  
+  @js.native
+  sealed trait prev extends js.Object
   
   @js.native
   sealed trait relative extends js.Object
@@ -111,6 +123,10 @@ object googleVisualizationStrings {
   @scala.inline
   def absolute: absolute = "absolute".asInstanceOf[absolute]
   @scala.inline
+  def auto: auto = "auto".asInstanceOf[auto]
+  @scala.inline
+  def both: both = "both".asInstanceOf[both]
+  @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   @scala.inline
   def center: center = "center".asInstanceOf[center]
@@ -141,6 +157,8 @@ object googleVisualizationStrings {
   @scala.inline
   def newRow: newRow = "newRow".asInstanceOf[newRow]
   @scala.inline
+  def next: next = "next".asInstanceOf[next]
+  @scala.inline
   def none: none = "none".asInstanceOf[none]
   @scala.inline
   def out: out = "out".asInstanceOf[out]
@@ -150,6 +168,8 @@ object googleVisualizationStrings {
   def polygon: polygon = "polygon".asInstanceOf[polygon]
   @scala.inline
   def polynomial: polynomial = "polynomial".asInstanceOf[polynomial]
+  @scala.inline
+  def prev: prev = "prev".asInstanceOf[prev]
   @scala.inline
   def relative: relative = "relative".asInstanceOf[relative]
   @scala.inline

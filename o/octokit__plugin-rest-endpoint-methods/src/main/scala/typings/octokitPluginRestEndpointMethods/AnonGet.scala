@@ -12,7 +12,7 @@ trait AnonGet extends js.Object {
     * Lists all the emojis available to use on GitHub.
     */
   @JSName("get")
-  var get_Original: Anon85 = js.native
+  var get_Original: Anon96 = js.native
   /**
     * Lists all the emojis available to use on GitHub.
     */

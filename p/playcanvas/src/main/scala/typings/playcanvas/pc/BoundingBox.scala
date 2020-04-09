@@ -1,5 +1,6 @@
 package typings.playcanvas.pc
 
+import typings.std.Float32Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,12 +37,27 @@ class BoundingBox () extends js.Object {
   def add(other: BoundingBox): Unit = js.native
   /**
     * @function
+    * @name pc.BoundingBox#compute
+    * @description Compute the size of the AABB to encapsulate all specified vertices.
+    * @param {number[]|Float32Array} vertices - The vertices used to compute the new size for the AABB.
+    */
+  def compute(vertices: js.Array[Double]): Unit = js.native
+  def compute(vertices: Float32Array): Unit = js.native
+  /**
+    * @function
     * @name pc.BoundingBox#containsPoint
     * @description Test if a point is inside a AABB.
     * @param {pc.Vec3} point - Point to test.
     * @returns {boolean} True if the point is inside the AABB and false otherwise.
     */
   def containsPoint(point: Vec3): Boolean = js.native
+  /**
+    * @function
+    * @name pc.BoundingBox#copy
+    * @description Copies the contents of a source AABB.
+    * @param {pc.BoundingBox} src - The AABB to copy from.
+    */
+  def copy(src: BoundingBox): Unit = js.native
   /**
     * @function
     * @name pc.BoundingBox#getMax
@@ -91,5 +107,14 @@ class BoundingBox () extends js.Object {
     * @param {pc.Mat4} m - Transformation matrix to apply to source AABB.
     */
   def setFromTransformedAabb(aabb: BoundingBox, m: Mat4): Unit = js.native
+  /**
+    * @function
+    * @name pc.BoundingBox#setMinMax
+    * @description Sets the minimum and maximum corner of the AABB.
+    * Using this function is faster than assigning min and max separately.
+    * @param {pc.Vec3} min - The minimum corner of the AABB.
+    * @param {pc.Vec3} max - The maximum corner of the AABB.
+    */
+  def setMinMax(min: Vec3, max: Vec3): Unit = js.native
 }
 

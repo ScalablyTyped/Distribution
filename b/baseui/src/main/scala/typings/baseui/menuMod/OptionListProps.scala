@@ -18,6 +18,7 @@ trait OptionListProps extends BaseMenuPropsT {
   var item: js.Any
   var onMouseEnter: js.UndefOr[js.Function1[/* event */ MouseEvent, _]] = js.undefined
   var overrides: js.UndefOr[AnonListItem] = js.undefined
+  var renderHrefAsAnchor: js.UndefOr[Boolean] = js.undefined
   var resetMenu: js.UndefOr[js.Function0[Unit]] = js.undefined
   var size: js.UndefOr[default_ | compact] = js.undefined
   def getItemLabel(item: js.Any): ReactNode
@@ -34,6 +35,7 @@ object OptionListProps {
     onMouseEnter: /* event */ MouseEvent => _ = null,
     overrides: AnonListItem = null,
     renderAll: js.UndefOr[Boolean] = js.undefined,
+    renderHrefAsAnchor: js.UndefOr[Boolean] = js.undefined,
     resetMenu: () => Unit = null,
     size: default_ | compact = null
   ): OptionListProps = {
@@ -44,6 +46,7 @@ object OptionListProps {
     if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1(onMouseEnter))
     if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
     if (!js.isUndefined(renderAll)) __obj.updateDynamic("renderAll")(renderAll.asInstanceOf[js.Any])
+    if (!js.isUndefined(renderHrefAsAnchor)) __obj.updateDynamic("renderHrefAsAnchor")(renderHrefAsAnchor.asInstanceOf[js.Any])
     if (resetMenu != null) __obj.updateDynamic("resetMenu")(js.Any.fromFunction0(resetMenu))
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionListProps]

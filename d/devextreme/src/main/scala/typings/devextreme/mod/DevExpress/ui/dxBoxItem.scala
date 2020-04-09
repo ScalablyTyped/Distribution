@@ -8,13 +8,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxBoxItem extends CollectionWidgetItem {
-  /** Specifies the base size of an item element along the main direction. */
+  /** @name dxBoxItem.baseSize */
   var baseSize: js.UndefOr[Double | auto] = js.undefined
-  /** Holds a Box configuration object for the item. */
+  /** @name dxBoxItem.box */
   var box: js.UndefOr[dxBoxOptions] = js.undefined
-  /** Specifies the ratio value used to count the item element size along the main direction. */
+  /** @name dxBoxItem.ratio */
   var ratio: js.UndefOr[Double] = js.undefined
-  /** A factor that defines how much an item shrinks relative to the rest of the items in the container. */
+  /** @name dxBoxItem.shrink */
   var shrink: js.UndefOr[Double] = js.undefined
 }
 

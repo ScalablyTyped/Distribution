@@ -1,7 +1,9 @@
 package typings.jestCli
 
+import typings.jestCli.jestCliBooleans.`true`
 import typings.jestCli.jestCliStrings.`DocumentationColon httpsColonSlashSlashjestjsDotioSlash`
 import typings.jestCli.jestCliStrings.`UsageColon $0 [--configEqualssignLessthansignpathToConfigFileGreaterthansign] [TestPathPattern]`
+import typings.jestTypes.configMod.Argv
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +13,7 @@ import scala.scalajs.js.annotation._
 object argsMod extends js.Object {
   val docs: `DocumentationColon httpsColonSlashSlashjestjsDotioSlash` = js.native
   val usage: `UsageColon $0 [--configEqualssignLessthansignpathToConfigFileGreaterthansign] [TestPathPattern]` = js.native
-  def check(argv: ArgumentsPartialallboolea): Boolean = js.native
+  def check(argv: Argv): `true` = js.native
   @js.native
   object options extends js.Object {
     val all: AnonDefault = js.native

@@ -9,6 +9,12 @@ import scala.scalajs.js.annotation._
 class VariableAst protected ()
   extends typings.angularCompiler.templateAstMod.VariableAst {
   def this(name: String, value: String, sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan) = this()
+  def this(
+    name: String,
+    value: String,
+    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
+    valueSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
+  ) = this()
 }
 
 /* static members */

@@ -74,7 +74,7 @@ trait expoProps {
   type IconZocialTabBarItemProps = TabBarItemIOSProps
   type IconZocialTabBarItemIOSProps = TabBarItemIOSProps
   type IconZocialToolbarAndroidProps = ToolbarAndroidProps
-  type LinearGradientProps = typings.expoLinearGradient.linearGradientMod.Props
+  type LinearGradientProps = typings.expoLinearGradient.linearGradientMod.LinearGradientProps
   @scala.inline
   def RootErrorBoundaryProps: typings.expo.rootErrorBoundaryMod.Props.type = typings.expo.rootErrorBoundaryMod.Props
   type RootErrorBoundaryProps = typings.expo.rootErrorBoundaryMod.Props

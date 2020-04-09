@@ -28,7 +28,7 @@ class LinkAggregationGroup protected () extends CustomResource {
     */
   val arn: Output_[String] = js.native
   /**
-    * The bandwidth of the individual physical connections bundled by the LAG. Available values: 1Gbps, 10Gbps. Case sensitive.
+    * The bandwidth of the individual physical connections bundled by the LAG. Valid values: 50Mbps, 100Mbps, 200Mbps, 300Mbps, 400Mbps, 500Mbps, 1Gbps, 2Gbps, 5Gbps and 10Gbps. Case sensitive.
     */
   val connectionsBandwidth: Output_[String] = js.native
   /**

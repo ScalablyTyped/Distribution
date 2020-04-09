@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "lumino__polling"
-version := "1.0.4-c82ab4"
+version := "1.1.1-1f4f42"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

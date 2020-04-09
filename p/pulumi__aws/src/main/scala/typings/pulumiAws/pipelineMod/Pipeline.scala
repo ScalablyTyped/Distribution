@@ -29,7 +29,7 @@ class Pipeline protected () extends CustomResource {
     */
   val arn: Output_[String] = js.native
   /**
-    * An artifactStore block. Artifact stores are documented below.
+    * One or more artifactStore blocks. Artifact stores are documented below.
     * * `stage` (Minimum of at least two `stage` blocks is required) A stage block. Stages are documented below.
     */
   val artifactStore: Output_[PipelineArtifactStore] = js.native

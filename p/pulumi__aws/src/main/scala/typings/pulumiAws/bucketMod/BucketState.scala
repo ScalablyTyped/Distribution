@@ -32,7 +32,7 @@ trait BucketState extends js.Object {
     */
   val arn: js.UndefOr[Input[String]] = js.native
   /**
-    * The ARN of the S3 bucket where you want Amazon S3 to store replicas of the object identified by the rule.
+    * The name of the bucket. If omitted, this provider will assign a random, unique name.
     */
   val bucket: js.UndefOr[Input[String]] = js.native
   /**
@@ -99,8 +99,7 @@ trait BucketState extends js.Object {
     */
   val serverSideEncryptionConfiguration: js.UndefOr[Input[BucketServerSideEncryptionConfiguration]] = js.native
   /**
-    * A mapping of tags that identifies subset of objects to which the rule applies.
-    * The rule applies only to objects having all the tags in its tagset.
+    * A mapping of tags to assign to the bucket.
     */
   val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**

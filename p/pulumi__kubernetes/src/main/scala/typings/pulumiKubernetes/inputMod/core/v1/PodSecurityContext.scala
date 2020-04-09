@@ -22,6 +22,14 @@ trait PodSecurityContext extends js.Object {
     */
   var fsGroup: js.UndefOr[Input[Double]] = js.undefined
   /**
+    * fsGroupChangePolicy defines behavior of changing ownership and permission of the volume
+    * before being exposed inside Pod. This field will only apply to volume types which support
+    * fsGroup based ownership(and permissions). It will have no effect on ephemeral volume types
+    * such as: secret, configmaps and emptydir. Valid values are "OnRootMismatch" and "Always".
+    * If not specified defaults to "Always".
+    */
+  var fsGroupChangePolicy: js.UndefOr[Input[String]] = js.undefined
+  /**
     * The GID to run the entrypoint of the container process. Uses runtime default if unset. May
     * also be set in SecurityContext.  If set in both SecurityContext and PodSecurityContext, the
     * value specified in SecurityContext takes precedence for that container.
@@ -71,6 +79,7 @@ object PodSecurityContext {
   @scala.inline
   def apply(
     fsGroup: Input[Double] = null,
+    fsGroupChangePolicy: Input[String] = null,
     runAsGroup: Input[Double] = null,
     runAsNonRoot: Input[Boolean] = null,
     runAsUser: Input[Double] = null,
@@ -81,6 +90,7 @@ object PodSecurityContext {
   ): PodSecurityContext = {
     val __obj = js.Dynamic.literal()
     if (fsGroup != null) __obj.updateDynamic("fsGroup")(fsGroup.asInstanceOf[js.Any])
+    if (fsGroupChangePolicy != null) __obj.updateDynamic("fsGroupChangePolicy")(fsGroupChangePolicy.asInstanceOf[js.Any])
     if (runAsGroup != null) __obj.updateDynamic("runAsGroup")(runAsGroup.asInstanceOf[js.Any])
     if (runAsNonRoot != null) __obj.updateDynamic("runAsNonRoot")(runAsNonRoot.asInstanceOf[js.Any])
     if (runAsUser != null) __obj.updateDynamic("runAsUser")(runAsUser.asInstanceOf[js.Any])

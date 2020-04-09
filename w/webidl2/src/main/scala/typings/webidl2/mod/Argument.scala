@@ -14,6 +14,8 @@ trait Argument extends js.Object {
   var name: String
   /** True if the argument is optional. */
   var optional: Boolean
+  /** The container of this type. */
+  var parent: CallbackType | ConstructorMemberType | ExtendedAttribute | OperationMemberType
   /** True if the argument is variadic. */
   var variadic: Boolean
 }
@@ -26,9 +28,10 @@ object Argument {
     idlType: IDLTypeDescription,
     name: String,
     optional: Boolean,
+    parent: CallbackType | ConstructorMemberType | ExtendedAttribute | OperationMemberType,
     variadic: Boolean
   ): Argument = {
-    val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any], extAttrs = extAttrs.asInstanceOf[js.Any], idlType = idlType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any], variadic = variadic.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any], extAttrs = extAttrs.asInstanceOf[js.Any], idlType = idlType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], variadic = variadic.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Argument]
   }

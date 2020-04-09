@@ -43,6 +43,10 @@ trait SetSourceRequest extends js.Object {
     */
   var StreamId: js.UndefOr[string] = js.native
   /**
+    * The name of the VPC interface to use for this source.
+    */
+  var VpcInterfaceName: js.UndefOr[string] = js.native
+  /**
     * The range of IP addresses that should be allowed to contribute content to your source. These IP addresses should be in the form of a Classless Inter-Domain Routing (CIDR) block; for example, 10.0.0.0/16.
     */
   var WhitelistCidr: js.UndefOr[string] = js.native
@@ -60,6 +64,7 @@ object SetSourceRequest {
     Name: string = null,
     Protocol: Protocol = null,
     StreamId: string = null,
+    VpcInterfaceName: string = null,
     WhitelistCidr: string = null
   ): SetSourceRequest = {
     val __obj = js.Dynamic.literal()
@@ -72,6 +77,7 @@ object SetSourceRequest {
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     if (Protocol != null) __obj.updateDynamic("Protocol")(Protocol.asInstanceOf[js.Any])
     if (StreamId != null) __obj.updateDynamic("StreamId")(StreamId.asInstanceOf[js.Any])
+    if (VpcInterfaceName != null) __obj.updateDynamic("VpcInterfaceName")(VpcInterfaceName.asInstanceOf[js.Any])
     if (WhitelistCidr != null) __obj.updateDynamic("WhitelistCidr")(WhitelistCidr.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetSourceRequest]
   }

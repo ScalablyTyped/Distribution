@@ -27,6 +27,7 @@ class TenderCardDetails () extends js.Object {
   var entry_method: js.UndefOr[SWIPED | KEYED | EMV | ON_FILE | CONTACTLESS] = js.native
   /**
     * The credit card payment's current state (such as `AUTHORIZED` or `CAPTURED`).
+    * See `TenderCardDetailsStatus` for possible values.
     * See [TenderCardDetailsStatus](#type-tendercarddetailsstatus) for possible values.
     */
   var status: js.UndefOr[AUTHORIZED | CAPTURED | VOIDED | FAILED] = js.native

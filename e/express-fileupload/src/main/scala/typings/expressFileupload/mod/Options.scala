@@ -16,6 +16,7 @@ trait Options
   /**
     * Returns a HTTP 413 when the file is bigger than the size limit if `true`.
     * Otherwise, it will add a `truncated = true` to the resulting file structure.
+    * @default false
     */
   var abortOnLimit: js.UndefOr[Boolean] = js.undefined
   /** Automatically creates the directory path specified in `.mv(filePathName)` */
@@ -23,6 +24,7 @@ trait Options
   /**
     * Turn on/off upload process logging.
     * Can be useful for troubleshooting.
+    * @default false
     */
   var debug: js.UndefOr[Boolean] = js.undefined
   /**
@@ -61,7 +63,14 @@ trait Options
     * You can use trailing slash, but it is not necessary.
     */
   var tempFileDir: js.UndefOr[String] = js.undefined
-  /** Applies uri decoding to file names if set true. */
+  /**
+    * @default 60000
+    */
+  var uploadTimeout: js.UndefOr[Double] = js.undefined
+  /**
+    * Applies uri decoding to file names if set true.
+    * @default false
+    */
   var uriDecodeFileNames: js.UndefOr[Boolean] = js.undefined
   /**
     * By default this module uploads files into RAM.
@@ -84,6 +93,7 @@ object Options {
     responseOnLimit: String = null,
     safeFileNames: Boolean | RegExp = null,
     tempFileDir: String = null,
+    uploadTimeout: Int | Double = null,
     uriDecodeFileNames: js.UndefOr[Boolean] = js.undefined,
     useTempFiles: js.UndefOr[Boolean] = js.undefined
   ): Options = {
@@ -98,6 +108,7 @@ object Options {
     if (responseOnLimit != null) __obj.updateDynamic("responseOnLimit")(responseOnLimit.asInstanceOf[js.Any])
     if (safeFileNames != null) __obj.updateDynamic("safeFileNames")(safeFileNames.asInstanceOf[js.Any])
     if (tempFileDir != null) __obj.updateDynamic("tempFileDir")(tempFileDir.asInstanceOf[js.Any])
+    if (uploadTimeout != null) __obj.updateDynamic("uploadTimeout")(uploadTimeout.asInstanceOf[js.Any])
     if (!js.isUndefined(uriDecodeFileNames)) __obj.updateDynamic("uriDecodeFileNames")(uriDecodeFileNames.asInstanceOf[js.Any])
     if (!js.isUndefined(useTempFiles)) __obj.updateDynamic("useTempFiles")(useTempFiles.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

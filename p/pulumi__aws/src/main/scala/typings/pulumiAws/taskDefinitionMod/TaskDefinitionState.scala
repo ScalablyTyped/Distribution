@@ -1,6 +1,7 @@
 package typings.pulumiAws.taskDefinitionMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.pulumiAws.inputMod.ecs.TaskDefinitionInferenceAccelerator
 import typings.pulumiAws.inputMod.ecs.TaskDefinitionPlacementConstraint
 import typings.pulumiAws.inputMod.ecs.TaskDefinitionProxyConfiguration
 import typings.pulumiAws.inputMod.ecs.TaskDefinitionVolume
@@ -36,6 +37,10 @@ trait TaskDefinitionState extends js.Object {
     * A unique name for your task definition.
     */
   val family: js.UndefOr[Input[String]] = js.native
+  /**
+    * Configuration block(s) with Inference Accelerators settings. Detailed below.
+    */
+  val inferenceAccelerators: js.UndefOr[Input[js.Array[Input[TaskDefinitionInferenceAccelerator]]]] = js.native
   /**
     * The IPC resource namespace to be used for the containers in the task The valid values are `host`, `task`, and `none`.
     */
@@ -90,6 +95,7 @@ object TaskDefinitionState {
     cpu: Input[String] = null,
     executionRoleArn: Input[String] = null,
     family: Input[String] = null,
+    inferenceAccelerators: Input[js.Array[Input[TaskDefinitionInferenceAccelerator]]] = null,
     ipcMode: Input[String] = null,
     memory: Input[String] = null,
     networkMode: Input[String] = null,
@@ -108,6 +114,7 @@ object TaskDefinitionState {
     if (cpu != null) __obj.updateDynamic("cpu")(cpu.asInstanceOf[js.Any])
     if (executionRoleArn != null) __obj.updateDynamic("executionRoleArn")(executionRoleArn.asInstanceOf[js.Any])
     if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
+    if (inferenceAccelerators != null) __obj.updateDynamic("inferenceAccelerators")(inferenceAccelerators.asInstanceOf[js.Any])
     if (ipcMode != null) __obj.updateDynamic("ipcMode")(ipcMode.asInstanceOf[js.Any])
     if (memory != null) __obj.updateDynamic("memory")(memory.asInstanceOf[js.Any])
     if (networkMode != null) __obj.updateDynamic("networkMode")(networkMode.asInstanceOf[js.Any])

@@ -5,27 +5,27 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GridBaseEditingTexts extends js.Object {
-  /** Specifies text for a hint that appears when a user pauses on the global "Add" button. Applies only if editing.allowAdding is true. */
+  /** @name GridBase.Options.editing.texts.addRow */
   var addRow: js.UndefOr[String] = js.undefined
-  /** Specifies text for a hint that appears when a user pauses on the "Discard" button. Applies only if editing.mode is "batch". */
+  /** @name GridBase.Options.editing.texts.cancelAllChanges */
   var cancelAllChanges: js.UndefOr[String] = js.undefined
-  /** Specifies text for a button that cancels changes in a row. Applies only if editing.allowUpdating is true and editing.mode is "row". */
+  /** @name GridBase.Options.editing.texts.cancelRowChanges */
   var cancelRowChanges: js.UndefOr[String] = js.undefined
-  /** Specifies a message that prompts a user to confirm deletion. */
+  /** @name GridBase.Options.editing.texts.confirmDeleteMessage */
   var confirmDeleteMessage: js.UndefOr[String] = js.undefined
-  /** Specifies a title for the window that asks a user to confirm deletion. */
+  /** @name GridBase.Options.editing.texts.confirmDeleteTitle */
   var confirmDeleteTitle: js.UndefOr[String] = js.undefined
-  /** Specifies text for buttons that delete rows. Applies only if allowDeleting is true. */
+  /** @name GridBase.Options.editing.texts.deleteRow */
   var deleteRow: js.UndefOr[String] = js.undefined
-  /** Specifies text for buttons that switch rows into the editing state. Applies only if allowUpdating is true. */
+  /** @name GridBase.Options.editing.texts.editRow */
   var editRow: js.UndefOr[String] = js.undefined
-  /** Specifies text for a hint that appears when a user pauses on the global "Save" button. Applies only if editing.mode is "batch". */
+  /** @name GridBase.Options.editing.texts.saveAllChanges */
   var saveAllChanges: js.UndefOr[String] = js.undefined
-  /** Specifies text for a button that saves changes made in a row. Applies only if allowUpdating is true. */
+  /** @name GridBase.Options.editing.texts.saveRowChanges */
   var saveRowChanges: js.UndefOr[String] = js.undefined
-  /** Specifies text for buttons that recover deleted rows. Applies only if allowDeleting is true and editing.mode is "batch". */
+  /** @name GridBase.Options.editing.texts.undeleteRow */
   var undeleteRow: js.UndefOr[String] = js.undefined
-  /** Specifies text for a hint appearing when a user pauses on the button that cancels changes in a cell. Applies only if editing.mode is "cell" and data validation is enabled. */
+  /** @name GridBase.Options.editing.texts.validationCancelChanges */
   var validationCancelChanges: js.UndefOr[String] = js.undefined
 }
 

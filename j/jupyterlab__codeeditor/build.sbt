@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__codeeditor"
-version := "2.0.2-9c99d5"
+version := "2.1.0-00ca71"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "jupyterlab__coreutils" % "4.0.2-5aeb71",
-  "org.scalablytyped" %%% "jupyterlab__nbformat" % "2.0.1-03f5a6",
-  "org.scalablytyped" %%% "jupyterlab__observables" % "3.0.1-09bcc0",
+  "org.scalablytyped" %%% "jupyterlab__coreutils" % "4.1.0-c87d6c",
+  "org.scalablytyped" %%% "jupyterlab__nbformat" % "2.1.0-6c39cd",
+  "org.scalablytyped" %%% "jupyterlab__observables" % "3.1.0-74e8c6",
   "org.scalablytyped" %%% "lumino__algorithm" % "1.2.3-935244",
   "org.scalablytyped" %%% "lumino__commands" % "1.10.1-857d11",
   "org.scalablytyped" %%% "lumino__coreutils" % "1.4.2-dc12c7",

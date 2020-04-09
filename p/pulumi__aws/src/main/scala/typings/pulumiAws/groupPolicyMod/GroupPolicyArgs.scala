@@ -23,7 +23,7 @@ trait GroupPolicyArgs extends js.Object {
     */
   val namePrefix: js.UndefOr[Input[String]] = js.native
   /**
-    * The policy document attached to the group.
+    * The policy document. This is a JSON formatted string.
     */
   val policy: Input[String | PolicyDocument] = js.native
 }

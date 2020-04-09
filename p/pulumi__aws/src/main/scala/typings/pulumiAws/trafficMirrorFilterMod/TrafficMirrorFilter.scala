@@ -1,5 +1,6 @@
 package typings.pulumiAws.trafficMirrorFilterMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.mod.CustomResource
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.outputMod.Output_
@@ -27,9 +28,13 @@ class TrafficMirrorFilter protected () extends CustomResource {
     */
   val description: Output_[js.UndefOr[String]] = js.native
   /**
-    * List of amazon network services that should be mirrored. Valid values: amazon-dns
+    * List of amazon network services that should be mirrored. Valid values: `amazon-dns`.
     */
   val networkServices: Output_[js.UndefOr[js.Array[String]]] = js.native
+  /**
+    * Key-value mapping of resource tags.
+    */
+  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
 }
 
 /* static members */

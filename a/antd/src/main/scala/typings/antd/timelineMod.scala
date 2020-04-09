@@ -1,7 +1,7 @@
 package typings.antd
 
 import typings.antd.timelineItemMod.TimeLineItemProps
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ object timelineMod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    var Item: SFC[TimeLineItemProps] = js.native
+    var Item: FC[TimeLineItemProps] = js.native
     var defaultProps: AnonMode = js.native
   }
   

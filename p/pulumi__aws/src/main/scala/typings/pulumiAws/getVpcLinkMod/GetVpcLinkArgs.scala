@@ -12,6 +12,9 @@ trait GetVpcLinkArgs extends js.Object {
     * If multiple API Gateway VPC Links are found with this name, an error will be returned.
     */
   val name: String = js.native
+  /**
+    * Key-value mapping of resource tags
+    */
   val tags: js.UndefOr[StringDictionary[js.Any]] = js.native
 }
 

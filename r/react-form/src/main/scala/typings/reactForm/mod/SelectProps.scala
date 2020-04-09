@@ -13,6 +13,7 @@ import typings.react.mod.FormEvent
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.ReactText
@@ -230,7 +231,7 @@ object SelectProps {
     onProgress: SyntheticEvent[HTMLSelectElement, Event_] => Unit = null,
     onRateChange: SyntheticEvent[HTMLSelectElement, Event_] => Unit = null,
     onReset: FormEvent[HTMLSelectElement] => Unit = null,
-    onScroll: UIEvent[HTMLSelectElement] => Unit = null,
+    onScroll: UIEvent[HTMLSelectElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[HTMLSelectElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[HTMLSelectElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[HTMLSelectElement, Event_] => Unit = null,

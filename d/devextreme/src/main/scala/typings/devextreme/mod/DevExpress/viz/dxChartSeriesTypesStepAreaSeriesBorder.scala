@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Configures the series border (in area-like series) or the series point border (in bar-like and bubble series). */
+/** @name dxChartSeriesTypes.StepAreaSeries.border */
 trait dxChartSeriesTypesStepAreaSeriesBorder extends dxChartSeriesTypesCommonSeriesBorder
 
 object dxChartSeriesTypesStepAreaSeriesBorder {

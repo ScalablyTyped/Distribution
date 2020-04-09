@@ -7,9 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait reachRouterProps {
   @scala.inline
-  def LinkProps: typings.reachRouter.mod.LinkProps.type = typings.reachRouter.mod.LinkProps
-  type LinkProps[TState] = typings.reachRouter.mod.LinkProps[TState]
-  @scala.inline
   def LocationProps: typings.reachRouter.mod.LocationProps.type = typings.reachRouter.mod.LocationProps
   type LocationProps = typings.reachRouter.mod.LocationProps
   @scala.inline

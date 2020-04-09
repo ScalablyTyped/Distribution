@@ -1,12 +1,13 @@
 package typings.jsonapiSerializer.mod
 
+import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SerializerOptions extends js.Object {
   var attributes: js.UndefOr[js.Array[String]] = js.undefined
-  var dataLinks: js.UndefOr[js.Array[js.Function0[Unit] | String]] = js.undefined
+  var dataLinks: js.UndefOr[StringDictionary[String | LinkFunction]] = js.undefined
   var dataMeta: js.UndefOr[js.Function0[Unit] | js.Object] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   var ignoreRelationshipData: js.UndefOr[Boolean] = js.undefined
@@ -16,9 +17,9 @@ trait SerializerOptions extends js.Object {
   var nullIfMissing: js.UndefOr[Boolean] = js.undefined
   var pluralizeType: js.UndefOr[Boolean] = js.undefined
   var ref: js.UndefOr[js.Function0[Unit] | Boolean | String] = js.undefined
-  var relationshipLinks: js.UndefOr[js.Object] = js.undefined
+  var relationshipLinks: js.UndefOr[StringDictionary[String | LinkFunction]] = js.undefined
   var relationshipMeta: js.UndefOr[js.Object] = js.undefined
-  var topLevelLinks: js.UndefOr[js.Array[js.Function0[Unit] | String]] = js.undefined
+  var topLevelLinks: js.UndefOr[StringDictionary[String | LinkFunction]] = js.undefined
   var transform: js.UndefOr[Transform] = js.undefined
   var typeForAttribute: js.UndefOr[TypeForAttribute] = js.undefined
 }
@@ -27,7 +28,7 @@ object SerializerOptions {
   @scala.inline
   def apply(
     attributes: js.Array[String] = null,
-    dataLinks: js.Array[js.Function0[Unit] | String] = null,
+    dataLinks: StringDictionary[String | LinkFunction] = null,
     dataMeta: js.Function0[Unit] | js.Object = null,
     id: String = null,
     ignoreRelationshipData: js.UndefOr[Boolean] = js.undefined,
@@ -37,9 +38,9 @@ object SerializerOptions {
     nullIfMissing: js.UndefOr[Boolean] = js.undefined,
     pluralizeType: js.UndefOr[Boolean] = js.undefined,
     ref: js.Function0[Unit] | Boolean | String = null,
-    relationshipLinks: js.Object = null,
+    relationshipLinks: StringDictionary[String | LinkFunction] = null,
     relationshipMeta: js.Object = null,
-    topLevelLinks: js.Array[js.Function0[Unit] | String] = null,
+    topLevelLinks: StringDictionary[String | LinkFunction] = null,
     transform: /* record */ js.Any => js.Any = null,
     typeForAttribute: (/* attribute */ String, /* object */ js.UndefOr[js.Any]) => js.Any = null
   ): SerializerOptions = {

@@ -8,16 +8,17 @@ import scala.scalajs.js.annotation._
 @js.native
 class BatchRetrieveInventoryCountsRequest () extends js.Object {
   /**
-    * Filters results by [CatalogObject](#type-catalogobject) ID. Only applied when set. Default: unset.
+    * Filters results by `CatalogObject` ID. Only applied when set. Default: unset.
     */
   var catalog_object_ids: js.UndefOr[js.Array[String]] = js.native
   /**
-    * A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of
-    * results for the original query. See [Pagination](/basics/api101/pagination) for more information.
+    * A pagination cursor returned by a previous call to this endpoint.
+    * Provide this to retrieve the next set of results for the original query.
+    * See the [Pagination](https://developer.squareup.com/docs/working-with-apis/pagination) guide for more information.
     */
   var cursor: js.UndefOr[String] = js.native
   /**
-    * Filters results by [Location](#type-location) ID. Only applied when set. Default: unset.
+    * Filters results by `Location` ID. Only applied when set. Default: unset.
     */
   var location_ids: js.UndefOr[js.Array[String]] = js.native
   /**

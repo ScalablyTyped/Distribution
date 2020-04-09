@@ -29,6 +29,14 @@ class LabIcon_ protected ()
   var _className: String = js.native
   var _loading: Boolean = js.native
   var _props: IProps = js.native
+  /**
+    * Cache for svg parsing intermediates
+    *   - undefined: the cache has not yet been populated
+    *   - null: a valid, but empty, value
+    */
+  var _svgElement: js.UndefOr[HTMLElement | Null] = js.native
+  var _svgInnerHTML: js.UndefOr[String | Null] = js.native
+  var _svgReactAttrs: js.UndefOr[js.Any | Null] = js.native
   var _svgReplaced: Signal[this.type, Unit] = js.native
   var _svgstr: String = js.native
   var _uuid: String = js.native
@@ -138,6 +146,9 @@ class LabIcon_ protected ()
   def element(): HTMLElement = js.native
   def element(props: IProps): HTMLElement = js.native
   def render(container: HTMLElement, options: IRendererOptions): Unit = js.native
+  /* protected */ def svgElement(): HTMLElement | Null = js.native
+  /* protected */ def svgInnerHTML(): String | Null = js.native
+  /* protected */ def svgReactAttrs(): js.Any | Null = js.native
   @JSName("svgstr")
   def svgstr_MLabIcon_(): String = js.native
   @JSName("svgstr")

@@ -9,7 +9,7 @@ trait DescribeScalingPoliciesInput extends js.Object {
   /**
     * A unique identifier for a fleet to retrieve scaling policies for. You can use either the fleet ID or ARN value.
     */
-  var FleetId: typings.awsSdk.gameliftMod.FleetId = js.native
+  var FleetId: FleetIdOrArn = js.native
   /**
     * The maximum number of results to return. Use this parameter with NextToken to get results as a set of sequential pages.
     */
@@ -27,7 +27,7 @@ trait DescribeScalingPoliciesInput extends js.Object {
 object DescribeScalingPoliciesInput {
   @scala.inline
   def apply(
-    FleetId: FleetId,
+    FleetId: FleetIdOrArn,
     Limit: Int | scala.Double = null,
     NextToken: NonZeroAndMaxString = null,
     StatusFilter: ScalingStatusType = null

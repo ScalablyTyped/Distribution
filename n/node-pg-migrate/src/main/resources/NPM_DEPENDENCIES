@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "node-pg-migrate" : "4.2.3"
+      "node-pg-migrate" : "4.6.1"
     }
   ],
   "test-dependencies" : [
     {
-      "node-pg-migrate" : "4.2.3"
+      "node-pg-migrate" : "4.6.1"
     }
   ],
   "compile-devDependencies" : [

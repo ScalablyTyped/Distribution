@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object fontLoaderWebMod extends js.Object {
   def fontFamilyNeedsScoping(name: String): Boolean = js.native
-  def getAssetForSource(source: FontSource): FontResource = js.native
+  def getAssetForSource(source: FontSource): Asset | FontResource = js.native
   def getNativeFontName(name: String): String = js.native
   def loadSingleFontAsync(name: String, input: Asset): js.Promise[Unit] = js.native
   def loadSingleFontAsync(name: String, input: FontResource): js.Promise[Unit] = js.native

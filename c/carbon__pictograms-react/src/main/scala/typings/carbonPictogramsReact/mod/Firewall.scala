@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@carbon/pictograms-react", "Firewall")
 @js.native
-object Firewall extends TopLevel[CarbonPictogram]
+object Firewall extends TopLevel[CarbonPictogramType]
 

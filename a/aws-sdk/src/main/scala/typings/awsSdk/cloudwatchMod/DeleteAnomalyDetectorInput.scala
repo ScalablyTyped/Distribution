@@ -21,12 +21,17 @@ trait DeleteAnomalyDetectorInput extends js.Object {
   /**
     * The statistic associated with the anomaly detection model to delete.
     */
-  var Stat: typings.awsSdk.cloudwatchMod.Stat = js.native
+  var Stat: AnomalyDetectorMetricStat = js.native
 }
 
 object DeleteAnomalyDetectorInput {
   @scala.inline
-  def apply(MetricName: MetricName, Namespace: Namespace, Stat: Stat, Dimensions: Dimensions = null): DeleteAnomalyDetectorInput = {
+  def apply(
+    MetricName: MetricName,
+    Namespace: Namespace,
+    Stat: AnomalyDetectorMetricStat,
+    Dimensions: Dimensions = null
+  ): DeleteAnomalyDetectorInput = {
     val __obj = js.Dynamic.literal(MetricName = MetricName.asInstanceOf[js.Any], Namespace = Namespace.asInstanceOf[js.Any], Stat = Stat.asInstanceOf[js.Any])
     if (Dimensions != null) __obj.updateDynamic("Dimensions")(Dimensions.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteAnomalyDetectorInput]

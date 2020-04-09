@@ -27,7 +27,6 @@ trait Props extends js.Object {
   def getPreviousRoute(props: AnonRoute): js.UndefOr[Route[String]]
   def onCloseRoute(props: AnonRoute): Unit
   def onOpenRoute(props: AnonRoute): Unit
-  def onTransitionComplete(props: AnonRoute): Unit
   def onTransitionEnd(props: AnonRoute, closing: Boolean): Unit
   def onTransitionStart(props: AnonRoute, closing: Boolean): Unit
   def renderHeader(props: typings.reactNavigationStack.headerContainerMod.Props): ReactNode
@@ -46,7 +45,6 @@ object Props {
     mode: StackCardMode,
     onCloseRoute: AnonRoute => Unit,
     onOpenRoute: AnonRoute => Unit,
-    onTransitionComplete: AnonRoute => Unit,
     onTransitionEnd: (AnonRoute, Boolean) => Unit,
     onTransitionStart: (AnonRoute, Boolean) => Unit,
     openingRouteKeys: js.Array[String],
@@ -58,7 +56,7 @@ object Props {
     onPageChangeConfirm: () => Unit = null,
     onPageChangeStart: () => Unit = null
   ): Props = {
-    val __obj = js.Dynamic.literal(closingRouteKeys = closingRouteKeys.asInstanceOf[js.Any], descriptors = descriptors.asInstanceOf[js.Any], getGesturesEnabled = js.Any.fromFunction1(getGesturesEnabled), getPreviousRoute = js.Any.fromFunction1(getPreviousRoute), headerMode = headerMode.asInstanceOf[js.Any], insets = insets.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], onCloseRoute = js.Any.fromFunction1(onCloseRoute), onOpenRoute = js.Any.fromFunction1(onOpenRoute), onTransitionComplete = js.Any.fromFunction1(onTransitionComplete), onTransitionEnd = js.Any.fromFunction2(onTransitionEnd), onTransitionStart = js.Any.fromFunction2(onTransitionStart), openingRouteKeys = openingRouteKeys.asInstanceOf[js.Any], renderHeader = js.Any.fromFunction1(renderHeader), renderScene = js.Any.fromFunction1(renderScene), routes = routes.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(closingRouteKeys = closingRouteKeys.asInstanceOf[js.Any], descriptors = descriptors.asInstanceOf[js.Any], getGesturesEnabled = js.Any.fromFunction1(getGesturesEnabled), getPreviousRoute = js.Any.fromFunction1(getPreviousRoute), headerMode = headerMode.asInstanceOf[js.Any], insets = insets.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], onCloseRoute = js.Any.fromFunction1(onCloseRoute), onOpenRoute = js.Any.fromFunction1(onOpenRoute), onTransitionEnd = js.Any.fromFunction2(onTransitionEnd), onTransitionStart = js.Any.fromFunction2(onTransitionStart), openingRouteKeys = openingRouteKeys.asInstanceOf[js.Any], renderHeader = js.Any.fromFunction1(renderHeader), renderScene = js.Any.fromFunction1(renderScene), routes = routes.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
     if (onPageChangeCancel != null) __obj.updateDynamic("onPageChangeCancel")(js.Any.fromFunction0(onPageChangeCancel))
     if (onPageChangeConfirm != null) __obj.updateDynamic("onPageChangeConfirm")(js.Any.fromFunction0(onPageChangeConfirm))
     if (onPageChangeStart != null) __obj.updateDynamic("onPageChangeStart")(js.Any.fromFunction0(onPageChangeStart))

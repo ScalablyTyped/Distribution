@@ -6,13 +6,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Specifies animation options. */
+/** @name BaseGauge.Options.animation */
 trait BaseGaugeAnimation extends js.Object {
-  /** Determines how long animation runs. */
+  /** @name BaseGauge.Options.animation.duration */
   var duration: js.UndefOr[Double] = js.undefined
-  /** Specifies the animation easing mode. */
+  /** @name BaseGauge.Options.animation.easing */
   var easing: js.UndefOr[easeOutCubic | linear] = js.undefined
-  /** Indicates whether or not animation is enabled. */
+  /** @name BaseGauge.Options.animation.enabled */
   var enabled: js.UndefOr[Boolean] = js.undefined
 }
 

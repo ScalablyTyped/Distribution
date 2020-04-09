@@ -46,25 +46,25 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxTreeListColumn extends GridBaseColumn {
-  /** Allows you to customize buttons in the editing column or create a custom command column. Applies only if the column's type is "buttons". */
+  /** @name dxTreeListColumn.buttons */
   var buttons: js.UndefOr[
     js.Array[add | cancel | delete | edit | save | undelete | dxTreeListColumnButton]
   ] = js.undefined
-  /** Specifies a custom template for data cells. */
+  /** @name dxTreeListColumn.cellTemplate */
   var cellTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* cellElement */ dxElement, /* cellInfo */ AnonDisplayValueOldValue, _])
   ] = js.undefined
-  /** Configures columns. */
+  /** @name dxTreeListColumn.columns */
   var columns: js.UndefOr[js.Array[dxTreeListColumn | String]] = js.undefined
-  /** Specifies a custom template for data cells in editing state. */
+  /** @name dxTreeListColumn.editCellTemplate */
   var editCellTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* cellElement */ dxElement, /* cellInfo */ AnonDisplayValueRow, _])
   ] = js.undefined
-  /** Specifies a custom template for column headers. */
+  /** @name dxTreeListColumn.headerCellTemplate */
   var headerCellTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* columnHeader */ dxElement, /* headerInfo */ AnonColumnColumnIndexComponent, _])
   ] = js.undefined
-  /** Specifies the command column that this object customizes. */
+  /** @name dxTreeListColumn.type */
   var `type`: js.UndefOr[adaptive | buttons] = js.undefined
 }
 

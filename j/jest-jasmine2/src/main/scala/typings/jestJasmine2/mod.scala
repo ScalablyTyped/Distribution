@@ -12,7 +12,7 @@ import typings.jestJasmine2.createSpyMod.Fn
 import typings.jestJasmine2.jsApiReporterMod.default
 import typings.jestJasmine2.suiteMod.Attributes
 import typings.jestJasmine2.typesMod.Spy
-import typings.jestRuntime.mod.^
+import typings.jestRuntime.mod.RuntimeType
 import typings.jestTestResult.typesMod.TestResult
 import typings.jestTypes.configMod.GlobalConfig
 import typings.jestTypes.configMod.Path
@@ -72,7 +72,7 @@ object mod extends js.Object {
     globalConfig: GlobalConfig,
     config: ProjectConfig,
     environment: JestEnvironment,
-    runtime: ^,
+    runtime: RuntimeType,
     testPath: String
   ): js.Promise[TestResult] = js.native
 }

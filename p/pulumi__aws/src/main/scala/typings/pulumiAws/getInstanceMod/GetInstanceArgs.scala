@@ -31,6 +31,9 @@ trait GetInstanceArgs extends js.Object {
     * exactly match a pair on the desired Instance.
     */
   val instanceTags: js.UndefOr[StringDictionary[js.Any]] = js.native
+  /**
+    * A mapping of tags assigned to the Instance.
+    */
   val tags: js.UndefOr[StringDictionary[js.Any]] = js.native
 }
 

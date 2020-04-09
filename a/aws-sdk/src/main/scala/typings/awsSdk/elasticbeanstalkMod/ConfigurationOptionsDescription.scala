@@ -11,7 +11,7 @@ trait ConfigurationOptionsDescription extends js.Object {
     */
   var Options: js.UndefOr[ConfigurationOptionDescriptionsList] = js.native
   /**
-    * The ARN of the platform.
+    * The ARN of the platform version.
     */
   var PlatformArn: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.PlatformArn] = js.native
   /**

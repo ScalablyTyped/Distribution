@@ -11,7 +11,7 @@ trait PolicySummary extends js.Object {
     */
   var Arn: js.UndefOr[PolicyArn] = js.native
   /**
-    * A Boolean value that indicates whether the specified policy is an AWS managed policy. If true, then you can attach the policy to roots, OUs, or accounts, but you cannot edit it.
+    * A boolean value that indicates whether the specified policy is an AWS managed policy. If true, then you can attach the policy to roots, OUs, or accounts, but you cannot edit it.
     */
   var AwsManaged: js.UndefOr[AwsManagedPolicy] = js.native
   /**

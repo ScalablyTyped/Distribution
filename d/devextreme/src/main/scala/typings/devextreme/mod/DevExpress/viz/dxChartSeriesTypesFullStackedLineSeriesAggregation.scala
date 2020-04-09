@@ -10,9 +10,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Configures data aggregation for the series. */
+/** @name dxChartSeriesTypes.FullStackedLineSeries.aggregation */
 trait dxChartSeriesTypesFullStackedLineSeriesAggregation extends dxChartSeriesTypesCommonSeriesAggregation {
-  /** Specifies how to aggregate series points. */
+  /** @name dxChartSeriesTypes.FullStackedLineSeries.aggregation.method */
   @JSName("method")
   var method_dxChartSeriesTypesFullStackedLineSeriesAggregation: js.UndefOr[avg | count | max | min | sum | custom] = js.undefined
 }

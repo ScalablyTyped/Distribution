@@ -71,8 +71,8 @@ class Tensor[R /* <: Rank */] protected () extends js.Object {
   def abs[T /* <: Tensor[Rank] */](): T = js.native
   def acos[T /* <: Tensor[Rank] */](): T = js.native
   def acosh[T /* <: Tensor[Rank] */](): T = js.native
-  def add[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
-  def add[T /* <: Tensor[Rank] */](x: Tensor[Rank]): T = js.native
+  def add[T /* <: Tensor[Rank] */](b: TensorLike): T = js.native
+  def add[T /* <: Tensor[Rank] */](b: Tensor[Rank]): T = js.native
   def addStrict[T /* <: this.type */](x: T): T = js.native
   def addStrict[T /* <: this.type */](x: TensorLike): T = js.native
   def all[T /* <: Tensor[Rank] */](): T = js.native
@@ -171,19 +171,19 @@ class Tensor[R /* <: Rank */] protected () extends js.Object {
     pad: Double | same_ | valid_,
     dimRoundingMode: ceil | floor | round
   ): Tensor[R3] = js.native
-  def batchNorm(mean: Tensor[R] | Tensor1D | TensorLike, variance: Tensor[R] | Tensor1D | TensorLike): Tensor[R] = js.native
-  def batchNorm(
+  def batchNorm[T /* <: Tensor[Rank] */](mean: Tensor[R] | Tensor1D | TensorLike, variance: Tensor[R] | Tensor1D | TensorLike): Tensor[R] = js.native
+  def batchNorm[T /* <: Tensor[Rank] */](
     mean: Tensor[R] | Tensor1D | TensorLike,
     variance: Tensor[R] | Tensor1D | TensorLike,
     offset: Tensor[R] | Tensor1D | TensorLike
   ): Tensor[R] = js.native
-  def batchNorm(
+  def batchNorm[T /* <: Tensor[Rank] */](
     mean: Tensor[R] | Tensor1D | TensorLike,
     variance: Tensor[R] | Tensor1D | TensorLike,
     offset: Tensor[R] | Tensor1D | TensorLike,
     scale: Tensor[R] | Tensor1D | TensorLike
   ): Tensor[R] = js.native
-  def batchNorm(
+  def batchNorm[T /* <: Tensor[Rank] */](
     mean: Tensor[R] | Tensor1D | TensorLike,
     variance: Tensor[R] | Tensor1D | TensorLike,
     offset: Tensor[R] | Tensor1D | TensorLike,
@@ -214,6 +214,9 @@ class Tensor[R /* <: Rank */] protected () extends js.Object {
     offset: Tensor[R] | Tensor1D | TensorLike
   ): Tensor[R] = js.native
   def batchToSpaceND[T /* <: Tensor[Rank] */](blockShape: js.Array[Double], crops: js.Array[js.Array[Double]]): T = js.native
+  def broadcastTo[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
+  ): Tensor[R] = js.native
   /**
     * Returns a promise of `tf.TensorBuffer` that holds the underlying data.
     */
@@ -363,10 +366,10 @@ class Tensor[R /* <: Rank */] protected () extends js.Object {
     */
   /** @doc {heading: 'Tensors', subheading: 'Classes'} */
   def dispose(): Unit = js.native
-  def div[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
-  def div[T /* <: Tensor[Rank] */](x: Tensor[Rank]): T = js.native
-  def divNoNan[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
-  def divNoNan[T /* <: Tensor[Rank] */](x: Tensor[Rank]): T = js.native
+  def div[T /* <: Tensor[Rank] */](b: TensorLike): T = js.native
+  def div[T /* <: Tensor[Rank] */](b: Tensor[Rank]): T = js.native
+  def divNoNan[T /* <: Tensor[Rank] */](b: TensorLike): T = js.native
+  def divNoNan[T /* <: Tensor[Rank] */](b: Tensor[Rank]): T = js.native
   def divStrict[T /* <: this.type */](x: T): T = js.native
   def divStrict[T /* <: this.type */](x: TensorLike): T = js.native
   def dot(b: TensorLike): Tensor[Rank] = js.native
@@ -524,8 +527,6 @@ class Tensor[R /* <: Rank */] protected () extends js.Object {
   def notEqual[T /* <: Tensor[Rank] */](x: Tensor[Rank]): T = js.native
   def notEqualStrict[T /* <: this.type */](x: T): T = js.native
   def notEqualStrict[T /* <: this.type */](x: TensorLike): T = js.native
-  def oneHot(depth: Double): Tensor[Rank] = js.native
-  def oneHot(depth: Double, onValue: Double): Tensor[Rank] = js.native
   def oneHot(depth: Double, onValue: Double, offValue: Double): Tensor[Rank] = js.native
   def onesLike[T /* <: Tensor[Rank] */](): T = js.native
   def pad[T /* <: Tensor[Rank] */](paddings: js.Array[js.Tuple2[Double, Double]]): T = js.native
@@ -706,7 +707,7 @@ class Tensor[R /* <: Rank */] protected () extends js.Object {
   def sum[T /* <: Tensor[Rank] */](axis: Double, keepDims: Boolean): T = js.native
   def tan[T /* <: Tensor[Rank] */](): T = js.native
   def tanh[T /* <: Tensor[Rank] */](): T = js.native
-  def tile[T /* <: this.type */](reps: js.Array[Double]): T = js.native
+  def tile[T /* <: Tensor[Rank] */](b: js.Array[Double]): T = js.native
   /** Casts the array to type `bool` */
   /** @doc {heading: 'Tensors', subheading: 'Classes'} */
   def toBool(): this.type = js.native

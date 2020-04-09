@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "akamai-edgeworkers"
-version := "1.0-dt-20200304Z-0724a8"
+version := "1.0-dt-20200331Z-40aa72"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

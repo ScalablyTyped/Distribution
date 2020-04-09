@@ -51,6 +51,8 @@ package object elasticbeanstalkMod {
   type AvailableSolutionStackNamesList = js.Array[typings.awsSdk.elasticbeanstalkMod.SolutionStackName]
   type BoxedBoolean = scala.Boolean
   type BoxedInt = scala.Double
+  type BranchName = java.lang.String
+  type BranchOrder = scala.Double
   type Cause = java.lang.String
   type Causes = js.Array[typings.awsSdk.elasticbeanstalkMod.Cause]
   type ClientConfiguration = typings.awsSdk.serviceMod.ServiceConfigurationOptions with typings.awsSdk.elasticbeanstalkMod.ClientApiVersions
@@ -227,6 +229,9 @@ package object elasticbeanstalkMod {
   type OptionRestrictionMinValue = scala.Double
   type OptionsSpecifierList = js.Array[typings.awsSdk.elasticbeanstalkMod.OptionSpecification]
   type PlatformArn = java.lang.String
+  type PlatformBranchLifecycleState = java.lang.String
+  type PlatformBranchMaxRecords = scala.Double
+  type PlatformBranchSummaryList = js.Array[typings.awsSdk.elasticbeanstalkMod.PlatformBranchSummary]
   type PlatformCategory = java.lang.String
   type PlatformFilterOperator = java.lang.String
   type PlatformFilterType = java.lang.String
@@ -234,6 +239,7 @@ package object elasticbeanstalkMod {
   type PlatformFilterValueList = js.Array[typings.awsSdk.elasticbeanstalkMod.PlatformFilterValue]
   type PlatformFilters = js.Array[typings.awsSdk.elasticbeanstalkMod.PlatformFilter]
   type PlatformFrameworks = js.Array[typings.awsSdk.elasticbeanstalkMod.PlatformFramework]
+  type PlatformLifecycleState = java.lang.String
   type PlatformMaxRecords = scala.Double
   type PlatformName = java.lang.String
   type PlatformOwner = java.lang.String
@@ -261,6 +267,11 @@ package object elasticbeanstalkMod {
   type S3Bucket = java.lang.String
   type S3Key = java.lang.String
   type SampleTimestamp = typings.std.Date
+  type SearchFilterAttribute = java.lang.String
+  type SearchFilterOperator = java.lang.String
+  type SearchFilterValue = java.lang.String
+  type SearchFilterValues = js.Array[typings.awsSdk.elasticbeanstalkMod.SearchFilterValue]
+  type SearchFilters = js.Array[typings.awsSdk.elasticbeanstalkMod.SearchFilter]
   type SolutionStackFileTypeList = js.Array[typings.awsSdk.elasticbeanstalkMod.FileTypeExtension]
   type SolutionStackName = java.lang.String
   type SourceLocation = java.lang.String

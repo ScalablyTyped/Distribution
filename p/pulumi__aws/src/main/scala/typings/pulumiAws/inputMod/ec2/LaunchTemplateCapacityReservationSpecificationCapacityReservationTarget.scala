@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait LaunchTemplateCapacityReservationSpecificationCapacityReservationTarget extends js.Object {
+  /**
+    * The ID of the Capacity Reservation to target.
+    */
   var capacityReservationId: js.UndefOr[Input[String]] = js.native
 }
 

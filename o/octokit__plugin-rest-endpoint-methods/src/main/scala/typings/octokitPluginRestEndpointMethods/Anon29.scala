@@ -1,6 +1,6 @@
 package typings.octokitPluginRestEndpointMethods
 
-import typings.octokitPluginRestEndpointMethods.typesMod.EmptyParams
+import typings.octokitPluginRestEndpointMethods.typesMod.ActivityGetThreadSubscriptionForAuthenticatedUserParams
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 trait Anon29 extends js.Object {
   var endpoint: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EndpointInterface */ js.Any = js.native
   def apply(): js.Promise[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OctokitResponse<UsersListBlockedResponse> */ _
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OctokitResponse<ActivityGetThreadSubscriptionForAuthenticatedUserResponse> */ _
   ] = js.native
   def apply(
-    params: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RequestParameters */ js.Any) with EmptyParams
+    params: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RequestParameters */ js.Any) with ActivityGetThreadSubscriptionForAuthenticatedUserParams
   ): js.Promise[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OctokitResponse<UsersListBlockedResponse> */ _
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OctokitResponse<ActivityGetThreadSubscriptionForAuthenticatedUserResponse> */ _
   ] = js.native
 }
 

@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("jest-matcher-utils/build", "ensureNumbers")
+@JSImport("jest-matcher-utils", "ensureNumbers")
 @js.native
 object ensureNumbers extends js.Object {
   def apply(actual: js.Any, expected: js.Any, matcherName: String): Unit = js.native

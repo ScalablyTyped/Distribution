@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@carbon/pictograms-react", "RelationshipExtraction")
 @js.native
-object RelationshipExtraction extends TopLevel[CarbonPictogram]
+object RelationshipExtraction extends TopLevel[CarbonPictogramType]
 

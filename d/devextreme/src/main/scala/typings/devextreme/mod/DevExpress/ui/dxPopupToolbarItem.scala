@@ -10,23 +10,23 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxPopupToolbarItem extends js.Object {
-  /** Specifies whether a toolbar item should be disabled. */
+  /** @name dxPopup.Options.toolbarItems.disabled */
   var disabled: js.UndefOr[Boolean] = js.undefined
-  /** Specifies html code inserted into the toolbar item element. */
+  /** @name dxPopup.Options.toolbarItems.html */
   var html: js.UndefOr[String] = js.undefined
-  /** Specifies a location for the item on the toolbar. */
+  /** @name dxPopup.Options.toolbarItems.location */
   var location: js.UndefOr[after | before | center] = js.undefined
-  /** Configures the DevExtreme widget used as a toolbar item. */
+  /** @name dxPopup.Options.toolbarItems.options */
   var options: js.UndefOr[js.Any] = js.undefined
-  /** Specifies a template that should be used to render this item only. */
+  /** @name dxPopup.Options.toolbarItems.template */
   var template: js.UndefOr[typings.devextreme.mod.DevExpress.core.template] = js.undefined
-  /** Specifies text displayed for the toolbar item. */
+  /** @name dxPopup.Options.toolbarItems.text */
   var text: js.UndefOr[String] = js.undefined
-  /** Specifies whether the item is displayed on a top or bottom toolbar. */
+  /** @name dxPopup.Options.toolbarItems.toolbar */
   var toolbar: js.UndefOr[bottom | top] = js.undefined
-  /** Specifies whether or not a widget item must be displayed. */
+  /** @name dxPopup.Options.toolbarItems.visible */
   var visible: js.UndefOr[Boolean] = js.undefined
-  /** A widget that presents a toolbar item. */
+  /** @name dxPopup.Options.toolbarItems.widget */
   var widget: js.UndefOr[
     typings.devextreme.devextremeStrings.dxAutocomplete | typings.devextreme.devextremeStrings.dxButton | typings.devextreme.devextremeStrings.dxCheckBox | typings.devextreme.devextremeStrings.dxDateBox | typings.devextreme.devextremeStrings.dxMenu | typings.devextreme.devextremeStrings.dxSelectBox | typings.devextreme.devextremeStrings.dxTabs | typings.devextreme.devextremeStrings.dxTextBox | typings.devextreme.devextremeStrings.dxButtonGroup | typings.devextreme.devextremeStrings.dxDropDownButton
   ] = js.undefined

@@ -6,15 +6,16 @@ import typings.bodyParser.mod.OptionsText
 import typings.bodyParser.mod.OptionsUrlencoded
 import typings.connect.mod.NextHandleFunction
 import typings.express.mod.Application_
+import typings.express.mod.Handler
 import typings.express.mod.Request_
 import typings.express.mod.Response_
 import typings.express.mod.RouterOptions
-import typings.expressServeStaticCore.mod.Handler
 import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Request
 import typings.expressServeStaticCore.mod.Response
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
+import typings.qs.mod.IParseOptions
 import typings.serveStatic.mod.ServeStaticOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -90,6 +91,8 @@ trait Typeofexpress extends js.Object {
     * @since 4.16.0
     */
   def json(options: OptionsJson): NextHandleFunction = js.native
+  def query(options: typings.express.FnCall): Handler = js.native
+  def query(options: IParseOptions): Handler = js.native
   /**
     * This is a built-in middleware function in Express. It parses incoming requests with Buffer payloads and is based on body-parser.
     * @since 4.17.0
@@ -103,11 +106,11 @@ trait Typeofexpress extends js.Object {
   /**
     * This is a built-in middleware function in Express. It serves static files and is based on serve-static.
     */
-  def static(root: String): Handler = js.native
+  def static(root: String): typings.expressServeStaticCore.mod.Handler = js.native
   /**
     * This is a built-in middleware function in Express. It serves static files and is based on serve-static.
     */
-  def static(root: String, options: ServeStaticOptions): Handler = js.native
+  def static(root: String, options: ServeStaticOptions): typings.expressServeStaticCore.mod.Handler = js.native
   /**
     * This is a built-in middleware function in Express. It parses incoming requests with text payloads and is based on body-parser.
     * @since 4.17.0

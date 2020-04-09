@@ -1,7 +1,7 @@
 
 # Scala.js typings for tough-cookie
 
-Typings are for version 2.3
+Typings are for version 4.0
 
 ## Library description:
 RFC6265 Cookies and Cookie Jar for node.js

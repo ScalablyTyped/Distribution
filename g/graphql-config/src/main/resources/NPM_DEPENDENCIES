@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "graphql-config" : "2.2.1"
+      "graphql-config" : "2.2.2"
     }
   ],
   "test-dependencies" : [
     {
-      "graphql-config" : "2.2.1"
+      "graphql-config" : "2.2.2"
     }
   ],
   "compile-devDependencies" : [

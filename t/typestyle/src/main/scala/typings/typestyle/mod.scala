@@ -7,6 +7,7 @@ import typings.typestyle.typesMod.KeyFrames
 import typings.typestyle.typesMod.MediaQuery
 import typings.typestyle.typesMod.NestedCSSProperties
 import typings.typestyle.typestyleBooleans.`false`
+import typings.typestyle.typestyleMod.StylesTarget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,8 +36,10 @@ object mod extends js.Object {
   @JSName("media")
   def media_false(mediaQuery: MediaQuery, objects: (js.UndefOr[`false` | NestedCSSProperties | Null])*): NestedCSSProperties = js.native
   def reinit(): Unit = js.native
-  def setStylesTarget(tag: AnonTextContent): Unit = js.native
-  def stylesheet[Names /* <: String */](classes: Record[Names, NestedCSSProperties]): Record[Names, String] = js.native
+  def setStylesTarget(tag: StylesTarget): Unit = js.native
+  def stylesheet[Classes /* <: Record[String, NestedCSSProperties] */](classes: Classes): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ ClassName in keyof Classes ]: string}
+    */ typings.typestyle.typestyleStrings.stylesheet with js.Any = js.native
   @js.native
   object style extends js.Object {
     def apply(objects: (js.UndefOr[NestedCSSProperties | Null | `false`])*): String = js.native

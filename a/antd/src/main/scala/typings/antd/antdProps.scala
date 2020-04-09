@@ -18,8 +18,8 @@ import typings.antd.siderMod.SiderProps
 import typings.antd.sizeContextMod.SizeContextProps
 import typings.antd.timelineItemMod.TimeLineItemProps
 import typings.react.mod.ConsumerProps
+import typings.react.mod.FC
 import typings.react.mod.ProviderProps
-import typings.react.mod.SFC
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -333,9 +333,12 @@ trait antdProps {
   def SliderProps: typings.antd.sliderMod.SliderProps.type = typings.antd.sliderMod.SliderProps
   type SliderProps = typings.antd.sliderMod.SliderProps
   @scala.inline
+  def SpaceProps: typings.antd.spaceMod.SpaceProps.type = typings.antd.spaceMod.SpaceProps
+  type SpaceProps = typings.antd.spaceMod.SpaceProps
+  @scala.inline
   def SpinProps: typings.antd.spinMod.SpinProps.type = typings.antd.spinMod.SpinProps
   type SpinProps = typings.antd.spinMod.SpinProps
-  type StatisticProps[P] = SFC[P]
+  type StatisticProps[P] = FC[P]
   @scala.inline
   def StepsProps: typings.antd.libStepsMod.StepsProps.type = typings.antd.libStepsMod.StepsProps
   type StepsProps = typings.antd.libStepsMod.StepsProps

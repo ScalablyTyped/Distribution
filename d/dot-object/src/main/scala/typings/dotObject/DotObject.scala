@@ -127,9 +127,9 @@ object DotObject extends js.Object {
       * @param {Object} obj
       * @param {Object} mods
       */
-    def `object`(obj: js.Any): Unit = js.native
-    def `object`(obj: js.Any, mods: js.Array[ModifierFunctionWrapper]): Unit = js.native
-    def `object`(obj: js.Any, mods: ModifierFunctionWrapper): Unit = js.native
+    def `object`(obj: js.Object): js.Object = js.native
+    def `object`(obj: js.Object, mods: js.Array[ModifierFunctionWrapper]): js.Object = js.native
+    def `object`(obj: js.Object, mods: ModifierFunctionWrapper): js.Object = js.native
     /**
       *
       * Pick a value from an object using dot notation.

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 object linearGradientMod extends js.Object {
   @js.native
   trait LinearGradient
-    extends Component[Props, js.Object, js.Any]
+    extends Component[LinearGradientProps, js.Object, js.Any]
   
   @js.native
   class default () extends LinearGradient
@@ -22,7 +22,7 @@ object linearGradientMod extends js.Object {
     var propTypes: AnonAccessibilityActions = js.native
   }
   
-  type Point = AnonX | (js.Tuple2[Double, Double])
-  type Props = AnonColors with ComponentProps[TypeofView]
+  type LinearGradienPoint = AnonX | (js.Tuple2[Double, Double])
+  type LinearGradientProps = AnonColors with ComponentProps[TypeofView]
 }
 

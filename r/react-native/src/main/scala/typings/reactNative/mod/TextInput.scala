@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped new (args : ...any): react-native.react-native.NativeMethodsMixin
+- Dropped new (args : ...any): react-native.react-native.NativeMethodsMixinType
 - Dropped new (args : ...any): react-native.react-native.TimerMixin */ @JSImport("react-native", "TextInput")
 @js.native
 class TextInput ()

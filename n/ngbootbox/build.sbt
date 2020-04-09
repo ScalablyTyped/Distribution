@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "ngbootbox"
-version := "0.0-unknown-dt-20200226Z-7ea9fb"
+version := "0.0-unknown-dt-20200226Z-4a78d4"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "bootbox" % "5.2.0-dt-20200226Z-aea961",
-  "org.scalablytyped" %%% "jquery" % "3.3-dt-20200225Z-e64e66",
+  "org.scalablytyped" %%% "bootbox" % "5.2.0-dt-20200226Z-5a3430",
+  "org.scalablytyped" %%% "jquery" % "3.3-dt-20200326Z-2318d7",
   "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-3d9ead",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false

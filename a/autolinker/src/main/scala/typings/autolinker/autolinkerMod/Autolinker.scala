@@ -1,6 +1,6 @@
 package typings.autolinker.autolinkerMod
 
-import typings.autolinker.autolinkerStrings.`3Dot13Dot0`
+import typings.autolinker.autolinkerStrings.`3Dot14Dot0`
 import typings.autolinker.matchMatchMod.Match
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -232,6 +232,21 @@ trait Autolinker extends js.Object {
     */
   val replaceFn: js.Any
   /**
+    * @cfg {Boolean} [sanitizeHtml=false]
+    *
+    * `true` to HTML-encode the start and end brackets of existing HTML tags found
+    * in the input string. This will escape `<` and `>` characters to `&lt;` and
+    * `&gt;`, respectively.
+    *
+    * Setting this to `true` will prevent XSS (Cross-site Scripting) attacks,
+    * but will remove the significance of existing HTML tags in the input string. If
+    * you would like to maintain the significance of existing HTML tags while also
+    * making the output HTML string safe, leave this option as `false` and use a
+    * tool like https://github.com/cure53/DOMPurify (or others) on the input string
+    * before running Autolinker.
+    */
+  val sanitizeHtml: js.Any
+  /**
     * @cfg {Boolean/Object} [stripPrefix=true]
     *
     * `true` if 'http://' (or 'https://') and/or the 'www.' should be stripped
@@ -372,7 +387,7 @@ trait Autolinker extends js.Object {
     *
     * Ex: 0.25.1
     */
-  val version: `3Dot13Dot0`
+  val version: `3Dot14Dot0`
   /**
     * Automatically links URLs, Email addresses, Phone numbers, Hashtags,
     * and Mentions (Twitter, Instagram, Soundcloud) found in the given chunk of HTML. Does not link
@@ -450,14 +465,15 @@ object Autolinker {
     phone: js.Any,
     removeUnwantedMatches: js.Any,
     replaceFn: js.Any,
+    sanitizeHtml: js.Any,
     stripPrefix: js.Any,
     stripTrailingSlash: js.Any,
     tagBuilder: js.Any,
     truncate: js.Any,
     urls: js.Any,
-    version: `3Dot13Dot0`
+    version: `3Dot14Dot0`
   ): Autolinker = {
-    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], compactMatches = compactMatches.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], createMatchReturnVal = createMatchReturnVal.asInstanceOf[js.Any], decodePercentEncoding = decodePercentEncoding.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], getMatchers = getMatchers.asInstanceOf[js.Any], getTagBuilder = getTagBuilder.asInstanceOf[js.Any], hashtag = hashtag.asInstanceOf[js.Any], link = js.Any.fromFunction1(link), matchers = matchers.asInstanceOf[js.Any], mention = mention.asInstanceOf[js.Any], newWindow = newWindow.asInstanceOf[js.Any], normalizeStripPrefixCfg = normalizeStripPrefixCfg.asInstanceOf[js.Any], normalizeTruncateCfg = normalizeTruncateCfg.asInstanceOf[js.Any], normalizeUrlsCfg = normalizeUrlsCfg.asInstanceOf[js.Any], parse = js.Any.fromFunction1(parse), parseText = parseText.asInstanceOf[js.Any], phone = phone.asInstanceOf[js.Any], removeUnwantedMatches = removeUnwantedMatches.asInstanceOf[js.Any], replaceFn = replaceFn.asInstanceOf[js.Any], stripPrefix = stripPrefix.asInstanceOf[js.Any], stripTrailingSlash = stripTrailingSlash.asInstanceOf[js.Any], tagBuilder = tagBuilder.asInstanceOf[js.Any], truncate = truncate.asInstanceOf[js.Any], urls = urls.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], compactMatches = compactMatches.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], createMatchReturnVal = createMatchReturnVal.asInstanceOf[js.Any], decodePercentEncoding = decodePercentEncoding.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], getMatchers = getMatchers.asInstanceOf[js.Any], getTagBuilder = getTagBuilder.asInstanceOf[js.Any], hashtag = hashtag.asInstanceOf[js.Any], link = js.Any.fromFunction1(link), matchers = matchers.asInstanceOf[js.Any], mention = mention.asInstanceOf[js.Any], newWindow = newWindow.asInstanceOf[js.Any], normalizeStripPrefixCfg = normalizeStripPrefixCfg.asInstanceOf[js.Any], normalizeTruncateCfg = normalizeTruncateCfg.asInstanceOf[js.Any], normalizeUrlsCfg = normalizeUrlsCfg.asInstanceOf[js.Any], parse = js.Any.fromFunction1(parse), parseText = parseText.asInstanceOf[js.Any], phone = phone.asInstanceOf[js.Any], removeUnwantedMatches = removeUnwantedMatches.asInstanceOf[js.Any], replaceFn = replaceFn.asInstanceOf[js.Any], sanitizeHtml = sanitizeHtml.asInstanceOf[js.Any], stripPrefix = stripPrefix.asInstanceOf[js.Any], stripTrailingSlash = stripTrailingSlash.asInstanceOf[js.Any], tagBuilder = tagBuilder.asInstanceOf[js.Any], truncate = truncate.asInstanceOf[js.Any], urls = urls.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Autolinker]
   }

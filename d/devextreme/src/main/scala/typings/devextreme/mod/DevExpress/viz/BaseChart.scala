@@ -7,21 +7,21 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait BaseChart extends BaseWidget {
-  /** Deselects the chart's selected series. The series is displayed in an initial style. */
+  /** @name BaseChart.clearSelection() */
   def clearSelection(): Unit = js.native
-  /** Gets all the series. */
+  /** @name BaseChart.getAllSeries() */
   def getAllSeries(): js.Array[baseSeriesObject] = js.native
-  /** Gets the DataSource instance. */
+  /** @name DataHelperMixin.getDataSource() */
   def getDataSource(): DataSource = js.native
-  /** Gets a series with a specific name. */
+  /** @name BaseChart.getSeriesByName(seriesName) */
   def getSeriesByName(seriesName: js.Any): chartSeriesObject = js.native
-  /** Gets a series with a specific index. */
+  /** @name BaseChart.getSeriesByPos(seriesIndex) */
   def getSeriesByPos(seriesIndex: Double): chartSeriesObject = js.native
-  /** Hides all widget tooltips. */
+  /** @name BaseChart.hideTooltip() */
   def hideTooltip(): Unit = js.native
-  /** Reloads data and repaints the widget. */
+  /** @name BaseChart.refresh() */
   def refresh(): Unit = js.native
-  /** Redraws the widget. */
+  /** @name BaseChart.render(renderOptions) */
   def render(renderOptions: js.Any): Unit = js.native
 }
 

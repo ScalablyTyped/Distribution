@@ -54,7 +54,7 @@ trait Room extends js.Object {
   /**
     * The name of the room.
     */
-  var name: String = js.native
+  val name: String = js.native
   /**
     * The Storage structure of this room, if present, otherwise undefined.
     */

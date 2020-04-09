@@ -31,7 +31,7 @@ trait DomainClusterConfig extends js.Object {
     */
   var zoneAwarenessConfig: js.UndefOr[DomainClusterConfigZoneAwarenessConfig] = js.native
   /**
-    * Indicates whether zone awareness is enabled. To enable awareness with three Availability Zones, the `availabilityZoneCount` within the `zoneAwarenessConfig` must be set to `3`.
+    * Indicates whether zone awareness is enabled, set to `true` for multi-az deployment. To enable awareness with three Availability Zones, the `availabilityZoneCount` within the `zoneAwarenessConfig` must be set to `3`.
     */
   var zoneAwarenessEnabled: js.UndefOr[Boolean] = js.native
 }

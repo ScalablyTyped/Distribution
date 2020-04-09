@@ -1,7 +1,7 @@
 
 # Scala.js typings for i18next
 
-Typings are for version 19.3.3
+Typings are for version 19.3.4
 
 ## Library description:
 i18next internationalization framework

@@ -13,7 +13,7 @@ trait UpdateFleetAttributesInput extends js.Object {
   /**
     * A unique identifier for a fleet to update attribute metadata for. You can use either the fleet ID or ARN value.
     */
-  var FleetId: typings.awsSdk.gameliftMod.FleetId = js.native
+  var FleetId: FleetIdOrArn = js.native
   /**
     * Names of metric groups to include this fleet in. Amazon CloudWatch uses a fleet metric group is to aggregate metrics from multiple fleets. Use an existing metric group name to add this fleet to the group. Or use a new name to create a new metric group. A fleet can only be included in one metric group at a time.
     */
@@ -35,7 +35,7 @@ trait UpdateFleetAttributesInput extends js.Object {
 object UpdateFleetAttributesInput {
   @scala.inline
   def apply(
-    FleetId: FleetId,
+    FleetId: FleetIdOrArn,
     Description: NonZeroAndMaxString = null,
     MetricGroups: MetricGroupList = null,
     Name: NonZeroAndMaxString = null,

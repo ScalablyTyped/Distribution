@@ -7,8 +7,17 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait AnalyticsApplicationReferenceDataSourcesS3 extends js.Object {
+  /**
+    * The S3 Bucket ARN.
+    */
   var bucketArn: Input[String] = js.native
+  /**
+    * The File Key name containing reference data.
+    */
   var fileKey: Input[String] = js.native
+  /**
+    * The ARN of the IAM Role used to send application messages.
+    */
   var roleArn: Input[String] = js.native
 }
 

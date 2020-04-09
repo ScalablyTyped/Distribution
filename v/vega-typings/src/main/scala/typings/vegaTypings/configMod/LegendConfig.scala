@@ -1,11 +1,14 @@
 package typings.vegaTypings.configMod
 
+import typings.std.Exclude
 import typings.vegaTypings.axisMod.LabelOverlap
 import typings.vegaTypings.axisMod.TickCount
 import typings.vegaTypings.colorMod.Color
+import typings.vegaTypings.encodeMod.ColorValueRef
+import typings.vegaTypings.encodeMod.NumericValueRef
 import typings.vegaTypings.encodeMod.Orientation
+import typings.vegaTypings.encodeMod.ScaledValueRef
 import typings.vegaTypings.layoutMod.LayoutAlign
-import typings.vegaTypings.legendMod.BaseLegend
 import typings.vegaTypings.legendMod.LegendOrient
 import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.valuesMod.AlignValue
@@ -23,7 +26,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait LegendConfig extends BaseLegend {
+/* Inlined parent vega-typings.vega-typings/types/spec/config.ExcludeMappedValueRef<vega-typings.vega-typings/types/spec/legend.BaseLegend> */
+trait LegendConfig extends js.Object {
+  var clipHeight: (Exclude[
+    js.UndefOr[Double | SignalRef], 
+    ScaledValueRef[_] | NumericValueRef | ColorValueRef
+  ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
+  var columnPadding: (Exclude[
+    js.UndefOr[Double | SignalRef], 
+    ScaledValueRef[_] | NumericValueRef | ColorValueRef
+  ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
+  var columns: (Exclude[
+    js.UndefOr[Double | SignalRef], 
+    ScaledValueRef[_] | NumericValueRef | ColorValueRef
+  ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
+  var cornerRadius: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+  var fillColor: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
   /**
     * The default direction (`"horizontal"` or `"vertical"`) for gradient legends.
     *
@@ -40,10 +58,57 @@ trait LegendConfig extends BaseLegend {
     * __Default value:__ `2`.
     */
   var gradientLabelOffset: js.UndefOr[Double | SignalRef] = js.undefined
+  var gradientLength: (Exclude[
+    js.UndefOr[Double | SignalRef], 
+    ScaledValueRef[_] | NumericValueRef | ColorValueRef
+  ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
+  var gradientOpacity: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+  var gradientStrokeColor: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
+  var gradientStrokeWidth: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+  var gradientThickness: (Exclude[
+    js.UndefOr[Double | SignalRef], 
+    ScaledValueRef[_] | NumericValueRef | ColorValueRef
+  ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
+  var gridAlign: (Exclude[
+    js.UndefOr[LayoutAlign | SignalRef], 
+    ScaledValueRef[_] | NumericValueRef | ColorValueRef
+  ]) | (KeepSignal[js.UndefOr[LayoutAlign | SignalRef]])
+  var labelAlign: (Exclude[js.UndefOr[AlignValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[AlignValue]]
+  var labelBaseline: (Exclude[js.UndefOr[TextBaselineValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[TextBaselineValue]]
+  var labelColor: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
+  var labelFont: (Exclude[js.UndefOr[StringValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[StringValue]]
+  var labelFontSize: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+  var labelFontStyle: (Exclude[js.UndefOr[FontStyleValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[FontStyleValue]]
+  var labelFontWeight: (Exclude[js.UndefOr[FontWeightValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[FontWeightValue]]
+  var labelLimit: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+  var labelOffset: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+  var labelOpacity: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+  var labelOverlap: (Exclude[
+    js.UndefOr[LabelOverlap | SignalRef], 
+    ScaledValueRef[_] | NumericValueRef | ColorValueRef
+  ]) | (KeepSignal[js.UndefOr[LabelOverlap | SignalRef]])
+  var labelPadding: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+  var labelSeparation: (Exclude[
+    js.UndefOr[Double | SignalRef], 
+    ScaledValueRef[_] | NumericValueRef | ColorValueRef
+  ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
   /**
     * Legend orient group layout parameters.
     */
   var layout: js.UndefOr[LegendLayout] = js.undefined
+  var legendX: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+  var legendY: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+  var offset: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+  var orient: (Exclude[
+    js.UndefOr[LegendOrient | SignalRef], 
+    ScaledValueRef[_] | NumericValueRef | ColorValueRef
+  ]) | (KeepSignal[js.UndefOr[LegendOrient | SignalRef]])
+  var padding: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+  var rowPadding: (Exclude[
+    js.UndefOr[Double | SignalRef], 
+    ScaledValueRef[_] | NumericValueRef | ColorValueRef
+  ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
+  var strokeColor: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
   /**
     * Border stroke dash pattern for the full legend.
     */
@@ -64,81 +129,141 @@ trait LegendConfig extends BaseLegend {
     * __Default value:__ `"gray"`.
     */
   var symbolBaseStrokeColor: js.UndefOr[Null | Color | SignalRef] = js.undefined
+  var symbolDash: (Exclude[js.UndefOr[DashArrayValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[DashArrayValue]]
+  var symbolDashOffset: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
   /**
     * The default direction (`"horizontal"` or `"vertical"`) for symbol legends.
     *
     * __Default value:__ `"vertical"`.
     */
   var symbolDirection: js.UndefOr[Orientation] = js.undefined
+  var symbolFillColor: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
+  var symbolLimit: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+  var symbolOffset: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+  var symbolOpacity: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+  var symbolSize: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+  var symbolStrokeColor: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
+  var symbolStrokeWidth: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+  var symbolType: (Exclude[
+    js.UndefOr[SymbolShapeValue | SignalRef], 
+    ScaledValueRef[_] | NumericValueRef | ColorValueRef
+  ]) | (KeepSignal[js.UndefOr[SymbolShapeValue | SignalRef]])
+  var tickCount: (Exclude[js.UndefOr[TickCount], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[TickCount]]
+  var titleAlign: (Exclude[js.UndefOr[AlignValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[AlignValue]]
+  var titleAnchor: (Exclude[js.UndefOr[AnchorValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[AnchorValue]]
+  var titleBaseline: (Exclude[js.UndefOr[TextBaselineValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[TextBaselineValue]]
+  var titleColor: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
+  var titleFont: (Exclude[js.UndefOr[StringValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[StringValue]]
+  var titleFontSize: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+  var titleFontStyle: (Exclude[js.UndefOr[FontStyleValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[FontStyleValue]]
+  var titleFontWeight: (Exclude[js.UndefOr[FontWeightValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[FontWeightValue]]
+  var titleLimit: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+  var titleLineHeight: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+  var titleOpacity: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+  var titleOrient: (Exclude[js.UndefOr[OrientValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[OrientValue]]
+  var titlePadding: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
 }
 
 object LegendConfig {
   @scala.inline
   def apply(
-    clipHeight: Double | SignalRef = null,
-    columnPadding: Double | SignalRef = null,
-    columns: Double | SignalRef = null,
-    cornerRadius: NumberValue = null,
-    fillColor: ColorValue = null,
+    clipHeight: (Exclude[
+      js.UndefOr[Double | SignalRef], 
+      ScaledValueRef[_] | NumericValueRef | ColorValueRef
+    ]) | (KeepSignal[js.UndefOr[Double | SignalRef]]) = null,
+    columnPadding: (Exclude[
+      js.UndefOr[Double | SignalRef], 
+      ScaledValueRef[_] | NumericValueRef | ColorValueRef
+    ]) | (KeepSignal[js.UndefOr[Double | SignalRef]]) = null,
+    columns: (Exclude[
+      js.UndefOr[Double | SignalRef], 
+      ScaledValueRef[_] | NumericValueRef | ColorValueRef
+    ]) | (KeepSignal[js.UndefOr[Double | SignalRef]]) = null,
+    cornerRadius: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null,
+    fillColor: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]] = null,
     gradientDirection: Orientation = null,
     gradientLabelLimit: Double | SignalRef = null,
     gradientLabelOffset: Double | SignalRef = null,
-    gradientLength: Double | SignalRef = null,
-    gradientOpacity: NumberValue = null,
-    gradientStrokeColor: ColorValue = null,
-    gradientStrokeWidth: NumberValue = null,
-    gradientThickness: Double | SignalRef = null,
-    gridAlign: LayoutAlign | SignalRef = null,
-    labelAlign: AlignValue = null,
-    labelBaseline: TextBaselineValue = null,
-    labelColor: ColorValue = null,
-    labelFont: StringValue = null,
-    labelFontSize: NumberValue = null,
-    labelFontStyle: FontStyleValue = null,
-    labelFontWeight: FontWeightValue = null,
-    labelLimit: NumberValue = null,
-    labelOffset: NumberValue = null,
-    labelOpacity: NumberValue = null,
-    labelOverlap: LabelOverlap | SignalRef = null,
-    labelPadding: NumberValue = null,
-    labelSeparation: Double | SignalRef = null,
+    gradientLength: (Exclude[
+      js.UndefOr[Double | SignalRef], 
+      ScaledValueRef[_] | NumericValueRef | ColorValueRef
+    ]) | (KeepSignal[js.UndefOr[Double | SignalRef]]) = null,
+    gradientOpacity: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null,
+    gradientStrokeColor: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]] = null,
+    gradientStrokeWidth: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null,
+    gradientThickness: (Exclude[
+      js.UndefOr[Double | SignalRef], 
+      ScaledValueRef[_] | NumericValueRef | ColorValueRef
+    ]) | (KeepSignal[js.UndefOr[Double | SignalRef]]) = null,
+    gridAlign: (Exclude[
+      js.UndefOr[LayoutAlign | SignalRef], 
+      ScaledValueRef[_] | NumericValueRef | ColorValueRef
+    ]) | (KeepSignal[js.UndefOr[LayoutAlign | SignalRef]]) = null,
+    labelAlign: (Exclude[js.UndefOr[AlignValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[AlignValue]] = null,
+    labelBaseline: (Exclude[js.UndefOr[TextBaselineValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[TextBaselineValue]] = null,
+    labelColor: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]] = null,
+    labelFont: (Exclude[js.UndefOr[StringValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[StringValue]] = null,
+    labelFontSize: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null,
+    labelFontStyle: (Exclude[js.UndefOr[FontStyleValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[FontStyleValue]] = null,
+    labelFontWeight: (Exclude[js.UndefOr[FontWeightValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[FontWeightValue]] = null,
+    labelLimit: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null,
+    labelOffset: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null,
+    labelOpacity: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null,
+    labelOverlap: (Exclude[
+      js.UndefOr[LabelOverlap | SignalRef], 
+      ScaledValueRef[_] | NumericValueRef | ColorValueRef
+    ]) | (KeepSignal[js.UndefOr[LabelOverlap | SignalRef]]) = null,
+    labelPadding: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null,
+    labelSeparation: (Exclude[
+      js.UndefOr[Double | SignalRef], 
+      ScaledValueRef[_] | NumericValueRef | ColorValueRef
+    ]) | (KeepSignal[js.UndefOr[Double | SignalRef]]) = null,
     layout: LegendLayout = null,
-    legendX: NumberValue = null,
-    legendY: NumberValue = null,
-    offset: NumberValue = null,
-    orient: LegendOrient | SignalRef = null,
-    padding: NumberValue = null,
-    rowPadding: Double | SignalRef = null,
-    strokeColor: ColorValue = null,
+    legendX: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null,
+    legendY: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null,
+    offset: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null,
+    orient: (Exclude[
+      js.UndefOr[LegendOrient | SignalRef], 
+      ScaledValueRef[_] | NumericValueRef | ColorValueRef
+    ]) | (KeepSignal[js.UndefOr[LegendOrient | SignalRef]]) = null,
+    padding: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null,
+    rowPadding: (Exclude[
+      js.UndefOr[Double | SignalRef], 
+      ScaledValueRef[_] | NumericValueRef | ColorValueRef
+    ]) | (KeepSignal[js.UndefOr[Double | SignalRef]]) = null,
+    strokeColor: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]] = null,
     strokeDash: js.Array[Double] | SignalRef = null,
     strokeWidth: Double | SignalRef = null,
     symbolBaseFillColor: Color | SignalRef = null,
     symbolBaseStrokeColor: Color | SignalRef = null,
-    symbolDash: DashArrayValue = null,
-    symbolDashOffset: NumberValue = null,
+    symbolDash: (Exclude[js.UndefOr[DashArrayValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[DashArrayValue]] = null,
+    symbolDashOffset: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null,
     symbolDirection: Orientation = null,
-    symbolFillColor: ColorValue = null,
-    symbolLimit: NumberValue = null,
-    symbolOffset: NumberValue = null,
-    symbolOpacity: NumberValue = null,
-    symbolSize: NumberValue = null,
-    symbolStrokeColor: ColorValue = null,
-    symbolStrokeWidth: NumberValue = null,
-    symbolType: SymbolShapeValue | SignalRef = null,
-    tickCount: TickCount = null,
-    titleAlign: AlignValue = null,
-    titleAnchor: AnchorValue = null,
-    titleBaseline: TextBaselineValue = null,
-    titleColor: ColorValue = null,
-    titleFont: StringValue = null,
-    titleFontSize: NumberValue = null,
-    titleFontStyle: FontStyleValue = null,
-    titleFontWeight: FontWeightValue = null,
-    titleLimit: NumberValue = null,
-    titleLineHeight: NumberValue = null,
-    titleOpacity: NumberValue = null,
-    titleOrient: OrientValue = null,
-    titlePadding: NumberValue = null
+    symbolFillColor: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]] = null,
+    symbolLimit: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null,
+    symbolOffset: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null,
+    symbolOpacity: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null,
+    symbolSize: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null,
+    symbolStrokeColor: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]] = null,
+    symbolStrokeWidth: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null,
+    symbolType: (Exclude[
+      js.UndefOr[SymbolShapeValue | SignalRef], 
+      ScaledValueRef[_] | NumericValueRef | ColorValueRef
+    ]) | (KeepSignal[js.UndefOr[SymbolShapeValue | SignalRef]]) = null,
+    tickCount: (Exclude[js.UndefOr[TickCount], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[TickCount]] = null,
+    titleAlign: (Exclude[js.UndefOr[AlignValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[AlignValue]] = null,
+    titleAnchor: (Exclude[js.UndefOr[AnchorValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[AnchorValue]] = null,
+    titleBaseline: (Exclude[js.UndefOr[TextBaselineValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[TextBaselineValue]] = null,
+    titleColor: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]] = null,
+    titleFont: (Exclude[js.UndefOr[StringValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[StringValue]] = null,
+    titleFontSize: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null,
+    titleFontStyle: (Exclude[js.UndefOr[FontStyleValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[FontStyleValue]] = null,
+    titleFontWeight: (Exclude[js.UndefOr[FontWeightValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[FontWeightValue]] = null,
+    titleLimit: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null,
+    titleLineHeight: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null,
+    titleOpacity: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null,
+    titleOrient: (Exclude[js.UndefOr[OrientValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[OrientValue]] = null,
+    titlePadding: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null
   ): LegendConfig = {
     val __obj = js.Dynamic.literal()
     if (clipHeight != null) __obj.updateDynamic("clipHeight")(clipHeight.asInstanceOf[js.Any])

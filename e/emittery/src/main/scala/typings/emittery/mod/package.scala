@@ -5,10 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mod {
-  /**
-  	Maps event names to their emitted data type.
-  	*/
-  type Events = org.scalablytyped.runtime.StringDictionary[js.Any]
+  type EventName = java.lang.String | js.Symbol
+  type EventNameFromDataMap[EventDataMap] = typings.std.Extract[java.lang.String, typings.emittery.mod.EventName]
   /**
   	Removes an event subscription.
   	*/

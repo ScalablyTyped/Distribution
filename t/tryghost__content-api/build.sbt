@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "tryghost__content-api"
-version := "1.3-dt-20200225Z-3e64a4"
+version := "1.3-dt-20200402Z-727232"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

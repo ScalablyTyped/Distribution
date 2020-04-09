@@ -8,15 +8,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Configures the appearance adopted by the series border (in area-like series) or the series point border (in bar-like and bubble series) when a user points to the series. */
+/** @name dxChartSeriesTypes.CommonSeries.hoverStyle.border */
 trait dxChartSeriesTypesCommonSeriesHoverStyleBorder extends js.Object {
-  /** Colors the series border (in area-like series) or the series point border (in bar-like and bubble series) when a user points to the series. */
+  /** @name dxChartSeriesTypes.CommonSeries.hoverStyle.border.color */
   var color: js.UndefOr[String] = js.undefined
-  /** Sets a dash style for the series border (in area-like series) or for the series point border (in bar-like and bubble series) when a user points to the series. */
+  /** @name dxChartSeriesTypes.CommonSeries.hoverStyle.border.dashStyle */
   var dashStyle: js.UndefOr[dash | dot | longDash | solid] = js.undefined
-  /** Shows the series border (in area-like series) or the series point border (in bar-like and bubble series) when a user points to the series. */
+  /** @name dxChartSeriesTypes.CommonSeries.hoverStyle.border.visible */
   var visible: js.UndefOr[Boolean] = js.undefined
-  /** Sets a pixel-measured width for the series border (in area-like series) or for the series point border (in bar-like and bubble series) when a user points to the series. */
+  /** @name dxChartSeriesTypes.CommonSeries.hoverStyle.border.width */
   var width: js.UndefOr[Double] = js.undefined
 }
 

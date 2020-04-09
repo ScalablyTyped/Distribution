@@ -8,9 +8,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Configures the appearance adopted by the series when a user points to it. */
+/** @name dxChartSeriesTypes.CandleStickSeries.hoverStyle */
 trait dxChartSeriesTypesCandleStickSeriesHoverStyle extends dxChartSeriesTypesCommonSeriesHoverStyle {
-  /** Configures hatching that applies when a user points to the series. */
+  /** @name dxChartSeriesTypes.CandleStickSeries.hoverStyle.hatching */
   @JSName("hatching")
   var hatching_dxChartSeriesTypesCandleStickSeriesHoverStyle: js.UndefOr[dxChartSeriesTypesCandleStickSeriesHoverStyleHatching] = js.undefined
 }

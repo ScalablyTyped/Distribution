@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait dxDropDownMenu extends Widget {
-  /** Closes the drop-down menu. */
+  /** @name dxDropDownMenu.close() */
   def close(): Unit = js.native
-  /** Opens the drop-down menu. */
+  /** @name dxDropDownMenu.open() */
   def open(): Unit = js.native
 }
 

@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AudioTrackMenuItemOptions extends MenuItemOptions {
-  var track: js.UndefOr[typings.std.AudioTrack] = js.undefined
+  var track: js.UndefOr[VideojsAudioTrack] = js.undefined
 }
 
 object AudioTrackMenuItemOptions {
@@ -16,7 +16,7 @@ object AudioTrackMenuItemOptions {
     multiSelectable: js.UndefOr[Boolean] = js.undefined,
     selectable: js.UndefOr[Boolean] = js.undefined,
     selected: js.UndefOr[Boolean] = js.undefined,
-    track: typings.std.AudioTrack = null
+    track: VideojsAudioTrack = null
   ): AudioTrackMenuItemOptions = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])

@@ -6,22 +6,22 @@ import scala.scalajs.js.annotation._
 
 trait PersonMetadata extends js.Object {
   /**
-    * True if the person resource has been deleted. Populated only for
+    * Output only. True if the person resource has been deleted. Populated only for
     * [`connections.list`](/people/api/rest/v1/people.connections/list) requests
     * that include a sync token.
     */
   var deleted: js.UndefOr[Boolean] = js.undefined
-  /** Resource names of people linked to this resource. */
+  /** Output only. Resource names of people linked to this resource. */
   var linkedPeopleResourceNames: js.UndefOr[js.Array[String]] = js.undefined
   /**
-    * &#42;&#42;DEPRECATED&#42;&#42; (Please use
+    * Output only. &#42;&#42;DEPRECATED&#42;&#42; (Please use
     * `person.metadata.sources.profileMetadata.objectType` instead)
     *
     * The type of the person object.
     */
   var objectType: js.UndefOr[String] = js.undefined
   /**
-    * Any former resource names this person has had. Populated only for
+    * Output only. Any former resource names this person has had. Populated only for
     * [`connections.list`](/people/api/rest/v1/people.connections/list) requests
     * that include a sync token.
     *

@@ -48,6 +48,7 @@ package object EChartOption {
   type SeriesCustom = typings.echarts.echarts.EChartOption.SeriesCustom_
   type SeriesEffectScatter = typings.echarts.echarts.EChartOption.SeriesEffectScatter_
   type SeriesFunnel = typings.echarts.echarts.EChartOption.SeriesFunnel_
+  type SeriesGauge = typings.echarts.echarts.EChartOption.SeriesGauge_
   type SeriesGraph = typings.echarts.echarts.EChartOption.SeriesGraph_
   type SeriesHeatmap = typings.echarts.echarts.EChartOption.SeriesHeatmap_
   type SeriesLine = typings.echarts.echarts.EChartOption.SeriesLine_

@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait FillExtrusionPaint extends js.Object {
+trait FillExtrusionPaint extends AnyPaint {
   var `fill-extrusion-base`: js.UndefOr[Double | StyleFunction | Expression] = js.undefined
   var `fill-extrusion-base-transition`: js.UndefOr[Transition] = js.undefined
   var `fill-extrusion-color`: js.UndefOr[String | StyleFunction | Expression] = js.undefined

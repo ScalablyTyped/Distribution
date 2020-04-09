@@ -3,7 +3,6 @@ package typings.tabulatorTables.Tabulator
 import typings.tabulatorTables.tabulatorTablesBooleans.`false`
 import typings.tabulatorTables.tabulatorTablesBooleans.`true`
 import typings.tabulatorTables.tabulatorTablesStrings.both
-import typings.tabulatorTables.tabulatorTablesStrings.bottom
 import typings.tabulatorTables.tabulatorTablesStrings.cell
 import typings.tabulatorTables.tabulatorTablesStrings.collapse
 import typings.tabulatorTables.tabulatorTablesStrings.fitColumns
@@ -13,9 +12,7 @@ import typings.tabulatorTables.tabulatorTablesStrings.fitDataStretch
 import typings.tabulatorTables.tabulatorTablesStrings.group
 import typings.tabulatorTables.tabulatorTablesStrings.header
 import typings.tabulatorTables.tabulatorTablesStrings.hide
-import typings.tabulatorTables.tabulatorTablesStrings.middle
 import typings.tabulatorTables.tabulatorTablesStrings.table
-import typings.tabulatorTables.tabulatorTablesStrings.top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,7 +32,7 @@ trait OptionsColumns extends js.Object {
   /** multiple or single column sorting */
   var columnHeaderSortMulti: js.UndefOr[Boolean] = js.undefined
   /** You can use the columnHeaderVertAlign option to set how the text in your column headers should be vertically  */
-  var columnHeaderVertAlign: js.UndefOr[top | middle | bottom] = js.undefined
+  var columnHeaderVertAlign: js.UndefOr[VerticalAlign] = js.undefined
   /** It is possible to set a minimum column width to prevent resizing columns from becoming too small.
     This can be set globally, by setting the columnMinWidth option to the column width when you create your Tabulator.
     This option can be overridden on a per column basis by setting the minWidth property on the column definition. */
@@ -110,7 +107,7 @@ object OptionsColumns {
     autoColumns: js.UndefOr[Boolean] = js.undefined,
     columnCalcs: Boolean | both | table | group = null,
     columnHeaderSortMulti: js.UndefOr[Boolean] = js.undefined,
-    columnHeaderVertAlign: top | middle | bottom = null,
+    columnHeaderVertAlign: VerticalAlign = null,
     columnMinWidth: Int | Double = null,
     columnMoved: (/* column */ ColumnComponent, /* columns */ js.Array[_]) => Unit = null,
     columnResized: /* column */ ColumnComponent => Unit = null,

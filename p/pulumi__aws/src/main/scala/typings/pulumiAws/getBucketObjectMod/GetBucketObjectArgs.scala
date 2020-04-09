@@ -16,6 +16,9 @@ trait GetBucketObjectArgs extends js.Object {
     */
   val key: String = js.native
   val range: js.UndefOr[String] = js.native
+  /**
+    * A mapping of tags assigned to the object.
+    */
   val tags: js.UndefOr[StringDictionary[js.Any]] = js.native
   /**
     * Specific version ID of the object returned (defaults to latest version)

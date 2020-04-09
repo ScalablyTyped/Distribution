@@ -4,8 +4,8 @@ import typings.ionicCore.componentsMod._Global_.HTMLIonDatetimeElement
 import typings.ionicCore.datetimeInterfaceMod.DatetimeChangeEventDetail
 import typings.ionicCore.datetimeInterfaceMod.DatetimeOptions
 import typings.ionicCore.mod.StyleEventDetail
-import typings.ionicCore.stencilCoreMod.ComponentInterface
-import typings.ionicCore.stencilCoreMod.EventEmitter
+import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
+import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -11,6 +11,9 @@ trait GetRepositoryArgs extends js.Object {
     * The name of the ECR Repository.
     */
   val name: String = js.native
+  /**
+    * A mapping of tags assigned to the resource.
+    */
   val tags: js.UndefOr[StringDictionary[js.Any]] = js.native
 }
 

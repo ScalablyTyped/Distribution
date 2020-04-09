@@ -5,15 +5,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxPolarChartCommonAxisSettingsTick extends js.Object {
-  /** Specifies ticks color. */
+  /** @name dxPolarChart.Options.commonAxisSettings.tick.color */
   var color: js.UndefOr[String] = js.undefined
-  /** Specifies tick length. */
+  /** @name dxPolarChart.Options.commonAxisSettings.tick.length */
   var length: js.UndefOr[Double] = js.undefined
-  /** Specifies tick opacity. */
+  /** @name dxPolarChart.Options.commonAxisSettings.tick.opacity */
   var opacity: js.UndefOr[Double] = js.undefined
-  /** Indicates whether or not ticks are visible on an axis. */
+  /** @name dxPolarChart.Options.commonAxisSettings.tick.visible */
   var visible: js.UndefOr[Boolean] = js.undefined
-  /** Specifies tick width. */
+  /** @name dxPolarChart.Options.commonAxisSettings.tick.width */
   var width: js.UndefOr[Double] = js.undefined
 }
 

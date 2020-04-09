@@ -8,15 +8,15 @@ trait Event extends js.Object {
   /** The date of the event. */
   var date: js.UndefOr[Date] = js.undefined
   /**
-    * The read-only type of the event translated and formatted in the
+    * Output only. The type of the event translated and formatted in the
     * viewer's account locale or the `Accept-Language` HTTP header locale.
     */
   var formattedType: js.UndefOr[String] = js.undefined
   /** Metadata about the event. */
   var metadata: js.UndefOr[FieldMetadata] = js.undefined
   /**
-    * The type of the event. The type can be custom or predefined.
-    * Possible values include, but are not limited to, the following:
+    * The type of the event. The type can be custom or one of these predefined
+    * values:
     *
     * &#42; `anniversary`
     * &#42; `other`

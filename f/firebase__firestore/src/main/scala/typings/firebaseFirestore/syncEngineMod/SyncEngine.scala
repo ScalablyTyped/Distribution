@@ -34,12 +34,28 @@ class SyncEngine protected ()
     localStore: LocalStore,
     remoteStore: RemoteStore,
     sharedClientState: SharedClientState,
-    currentUser: User
+    currentUser: User,
+    maxConcurrentLimboResolutions: Double
   ) = this()
+  /**
+    * Keeps track of the information about an active limbo resolution for each
+    * active target ID that was started for the purpose of limbo resolution.
+    */
+  var activeLimboResolutionsByTarget: js.Any = js.native
+  /**
+    * Keeps track of the target ID for each document that is in limbo with an
+    * active target.
+    */
+  var activeLimboTargetsByKey: js.Any = js.native
   var addMutationCallback: js.Any = js.native
   var assertSubscribed: js.Any = js.native
   var currentUser: js.Any = js.native
   var emitNewSnapsAndNotifyLocalStore: js.Any = js.native
+  /**
+    * The keys of documents that are in limbo for which we haven't yet started a
+    * limbo resolution query.
+    */
+  var enqueuedLimboResolutions: js.Any = js.native
   /**
     * Registers a view for a previously unknown query and computes its initial
     * snapshot.
@@ -47,10 +63,9 @@ class SyncEngine protected ()
   var initializeViewAndComputeSnapshot: js.Any = js.native
   var isPrimary: js.Any = js.native
   var limboDocumentRefs: js.Any = js.native
-  var limboResolutionsByTarget: js.Any = js.native
   var limboTargetIdGenerator: js.Any = js.native
-  var limboTargetsByKey: js.Any = js.native
   var localStore: js.Any = js.native
+  var maxConcurrentLimboResolutions: js.Any = js.native
   /** Stores user completion handlers, indexed by User and BatchId. */
   var mutationUserCallbacks: js.Any = js.native
   var onlineState: js.Any = js.native
@@ -61,6 +76,15 @@ class SyncEngine protected ()
     * it.
     */
   var processUserCallback: js.Any = js.native
+  /**
+    * Starts listens for documents in limbo that are enqueued for resolution,
+    * subject to a maximum number of concurrent resolutions.
+    *
+    * Without bounding the number of concurrent resolutions, the server can fail
+    * with "resource exhausted" errors which can lead to pathological client
+    * behavior as seen in https://github.com/firebase/firebase-js-sdk/issues/2683.
+    */
+  var pumpEnqueuedLimboResolutions: js.Any = js.native
   var queriesByTarget: js.Any = js.native
   var queryViewsByQuery: js.Any = js.native
   /** Reject all outstanding callbacks waiting for pending writes to complete. */
@@ -100,6 +124,7 @@ class SyncEngine protected ()
     */
   var triggerPendingWritesCallbacks: js.Any = js.native
   var updateTrackedLimbos: js.Any = js.native
+  def activeLimboDocumentResolutions(): SortedMap[DocumentKey, TargetId] = js.native
   /**
     * Applies an OnlineState change to the sync engine and notifies any views of
     * the change.
@@ -120,9 +145,9 @@ class SyncEngine protected ()
     */
   /* CompleteClass */
   override def applySuccessfulWrite(result: MutationBatchResult): js.Promise[Unit] = js.native
-  def currentLimboDocs(): SortedMap[DocumentKey, TargetId] = js.native
   def disableNetwork(): js.Promise[Unit] = js.native
   def enableNetwork(): js.Promise[Unit] = js.native
+  def enqueuedLimboDocumentResolutions(): js.Array[DocumentKey] = js.native
   /**
     * Returns the set of remote document keys for the given target ID. This list
     * includes the documents that were assigned to the target when we received

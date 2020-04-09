@@ -4,17 +4,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Configures the loading indicator. */
+/** @name BaseWidget.Options.loadingIndicator */
 trait BaseWidgetLoadingIndicator extends js.Object {
-  /** Colors the background of the loading indicator. */
+  /** @name BaseWidget.Options.loadingIndicator.backgroundColor */
   var backgroundColor: js.UndefOr[String] = js.undefined
-  /** Specifies whether the loading indicator should be displayed and hidden automatically. */
+  /** @name BaseWidget.Options.loadingIndicator.enabled */
   var enabled: js.UndefOr[Boolean] = js.undefined
-  /** Specifies font options for the loading indicator. */
+  /** @name BaseWidget.Options.loadingIndicator.font */
   var font: js.UndefOr[Font] = js.undefined
-  /** Allows you to change the loading indicator's visibility. */
+  /** @name BaseWidget.Options.loadingIndicator.show */
   var show: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the text to be displayed by the loading indicator. */
+  /** @name BaseWidget.Options.loadingIndicator.text */
   var text: js.UndefOr[String] = js.undefined
 }
 

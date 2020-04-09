@@ -14,17 +14,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait StringLengthRule extends js.Object {
-  /** If set to true, empty values are valid. */
+  /** @name StringLengthRule.ignoreEmptyValue */
   var ignoreEmptyValue: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the maximum length allowed for the validated value. */
+  /** @name StringLengthRule.max */
   var max: js.UndefOr[Double] = js.undefined
-  /** Specifies the message that is shown if the rule is broken. */
+  /** @name StringLengthRule.message */
   var message: js.UndefOr[String] = js.undefined
-  /** Specifies the minimum length allowed for the validated value. */
+  /** @name StringLengthRule.min */
   var min: js.UndefOr[Double] = js.undefined
-  /** Indicates whether or not to remove the Space characters from the validated value. */
+  /** @name StringLengthRule.trim */
   var trim: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the rule type. Set it to "stringLength" to use the StringLengthRule. */
+  /** @name StringLengthRule.type */
   var `type`: js.UndefOr[
     required | numeric | range | stringLength | custom | compare | pattern | email | async
   ] = js.undefined

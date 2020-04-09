@@ -9,7 +9,7 @@ trait EmailOptions[T] extends js.Object {
   /**
     * The Template Variables
     */
-  var locals: T
+  var locals: js.UndefOr[T] = js.undefined
   /**
     * Nodemailer Message <Nodemailer.com/message/>
     *
@@ -24,9 +24,9 @@ trait EmailOptions[T] extends js.Object {
 
 object EmailOptions {
   @scala.inline
-  def apply[T](locals: T, message: Options, template: String): EmailOptions[T] = {
-    val __obj = js.Dynamic.literal(locals = locals.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any])
-  
+  def apply[T](message: Options, template: String, locals: T = null): EmailOptions[T] = {
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any])
+    if (locals != null) __obj.updateDynamic("locals")(locals.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmailOptions[T]]
   }
 }

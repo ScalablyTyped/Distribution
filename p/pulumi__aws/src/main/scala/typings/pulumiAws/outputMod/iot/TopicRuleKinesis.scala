@@ -11,7 +11,7 @@ trait TopicRuleKinesis extends js.Object {
     */
   var partitionKey: js.UndefOr[String] = js.native
   /**
-    * The ARN of the IAM role that grants access.
+    * The ARN of the IAM role that grants access to the Amazon Kinesis stream.
     */
   var roleArn: String = js.native
   /**

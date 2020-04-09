@@ -1,5 +1,6 @@
 package typings.pulumiAws.nodejsAppLayerMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiAws.outputMod.opsworks.NodejsAppLayerEbsVolume
 import typings.pulumiPulumi.mod.CustomResource
 import typings.pulumiPulumi.outputMod.Input
@@ -22,6 +23,10 @@ class NodejsAppLayer protected () extends CustomResource {
     */
   def this(name: String, args: NodejsAppLayerArgs) = this()
   def this(name: String, args: NodejsAppLayerArgs, opts: CustomResourceOptions) = this()
+  /**
+    * The Amazon Resource Name(ARN) of the layer.
+    */
+  val arn: Output_[String] = js.native
   /**
     * Whether to automatically assign an elastic IP address to the layer's instances.
     */
@@ -87,6 +92,10 @@ class NodejsAppLayer protected () extends CustomResource {
     * Names of a set of system packages to install on the layer's instances.
     */
   val systemPackages: Output_[js.UndefOr[js.Array[String]]] = js.native
+  /**
+    * A mapping of tags to assign to the resource.
+    */
+  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
   /**
     * Whether to use EBS-optimized instances.
     */

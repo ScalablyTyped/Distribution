@@ -68,6 +68,10 @@ class NfsFileShare protected () extends CustomResource {
     */
   val objectAcl: Output_[js.UndefOr[String]] = js.native
   /**
+    * File share path used by the NFS client to identify the mount point.
+    */
+  val path: Output_[String] = js.native
+  /**
     * Boolean to indicate write status of file share. File share does not accept writes if `true`. Defaults to `false`.
     */
   val readOnly: Output_[js.UndefOr[Boolean]] = js.native

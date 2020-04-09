@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BaseLegendItem extends js.Object {
-  /** A legend item marker. */
+  /** @name BaseLegendItem.marker */
   var marker: js.UndefOr[AnonFill] = js.undefined
-  /** The text that the legend item displays. */
+  /** @name BaseLegendItem.text */
   var text: js.UndefOr[String] = js.undefined
-  /** Indicates and specifies whether the legend item is visible. */
+  /** @name BaseLegendItem.visible */
   var visible: js.UndefOr[Boolean] = js.undefined
 }
 

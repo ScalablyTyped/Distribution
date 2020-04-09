@@ -23,14 +23,17 @@ trait RecurrenceTimeZone extends js.Object {
   /**
     * Integer value representing the difference in minutes between the local time zone and UTC at the date that the meeting series began.
     */
-  var offset: Double
+  var offset: js.UndefOr[Double] = js.undefined
 }
 
 object RecurrenceTimeZone {
   @scala.inline
-  def apply(name: typings.officeJsPreview.Office.MailboxEnums.RecurrenceTimeZone | String, offset: Double): RecurrenceTimeZone = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
-  
+  def apply(
+    name: typings.officeJsPreview.Office.MailboxEnums.RecurrenceTimeZone | String,
+    offset: Int | Double = null
+  ): RecurrenceTimeZone = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecurrenceTimeZone]
   }
 }

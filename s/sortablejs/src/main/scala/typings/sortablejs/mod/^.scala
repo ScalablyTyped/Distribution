@@ -20,7 +20,14 @@ class ^ protected () extends Sortable {
 @JSImport("sortablejs", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var active: Sortable = js.native
+  var active: Sortable | Null = js.native
+  /** The clone element. */
+  @JSName("clone")
+  var `clone_F^`: HTMLElement | Null = js.native
+  /** The element being dragged. */
+  var dragged: HTMLElement | Null = js.native
+  /** The ghost element.*/
+  var ghost: HTMLElement | Null = js.native
   var utils: Utils = js.native
   /**
     * Creation of new instances.
@@ -29,6 +36,8 @@ object ^ extends js.Object {
     */
   def create(element: HTMLElement): Sortable = js.native
   def create(element: HTMLElement, options: Options): Sortable = js.native
+  /** Get the Sortable instance on an element. */
+  def get(element: HTMLElement): js.UndefOr[Sortable] = js.native
   /**
     * Mounts a plugin to Sortable
     * @param sortablePlugin a sortable plugin.

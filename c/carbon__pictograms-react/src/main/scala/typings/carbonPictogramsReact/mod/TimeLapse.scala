@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@carbon/pictograms-react", "TimeLapse")
 @js.native
-object TimeLapse extends TopLevel[CarbonPictogram]
+object TimeLapse extends TopLevel[CarbonPictogramType]
 

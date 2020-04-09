@@ -1,6 +1,7 @@
 
 # Scala.js typings for bootstrap-fileinput
 
+Typings are for version 5.0
 
 ## Library description:
 An enhanced HTML 5 file input for Bootstrap 3.x with file preview, multiple selection, ajax uploads, and more features.

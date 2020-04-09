@@ -88,6 +88,9 @@ class Topic protected () extends CustomResource {
     * The friendly name for the SNS topic. Conflicts with `name`.
     */
   val namePrefix: Output_[js.UndefOr[String]] = js.native
+  /**
+    * The fully-formed AWS policy as JSON.
+    */
   val policy: Output_[String] = js.native
   /**
     * IAM role for failure feedback

@@ -5,11 +5,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BarGaugeBarInfo extends js.Object {
-  /** The bar's hexadecimal color code. */
+  /** @name BarGaugeBarInfo.color */
   var color: js.UndefOr[String] = js.undefined
-  /** The bar's zero-based index. Bars closest to the gauge's center have higher indexes. */
+  /** @name BarGaugeBarInfo.index */
   var index: js.UndefOr[Double] = js.undefined
-  /** The bar's value. */
+  /** @name BarGaugeBarInfo.value */
   var value: js.UndefOr[Double] = js.undefined
 }
 

@@ -12,6 +12,7 @@ import typings.react.mod.KeyboardEvent
 import typings.react.mod.LegacyRef
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
 import typings.react.mod.TouchEvent
@@ -187,7 +188,7 @@ object TableHeaderProps {
     onPlaying: SyntheticEvent[TableHeader, Event_] => Unit = null,
     onProgress: SyntheticEvent[TableHeader, Event_] => Unit = null,
     onRateChange: SyntheticEvent[TableHeader, Event_] => Unit = null,
-    onScroll: UIEvent[TableHeader] => Unit = null,
+    onScroll: UIEvent[TableHeader, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[TableHeader, Event_] => Unit = null,
     onSeeking: SyntheticEvent[TableHeader, Event_] => Unit = null,
     onSelect: SyntheticEvent[TableHeader, Event_] => Unit = null,

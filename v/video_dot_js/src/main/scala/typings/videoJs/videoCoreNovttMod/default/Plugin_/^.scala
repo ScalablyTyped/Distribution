@@ -1,6 +1,7 @@
 package typings.videoJs.videoCoreNovttMod.default.Plugin_
 
 import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import typings.videoJs.TypeofPlugin
@@ -22,13 +23,14 @@ class ^ protected () extends Plugin {
     *        A Video.js player instance.
     */
   def this(player: Player) = this()
+  def this(player: Player, options: js.Any) = this()
 }
 
 @JSImport("video.js/dist/alt/video.core.novtt", "Plugin")
 @js.native
 object ^
   extends TopLevel[
-      /**
+      (/**
   * Creates an instance of this class.
   *
   * Sub-classes should call `super` to ensure plugins are properly initialized.
@@ -36,7 +38,7 @@ object ^
   * @param player
   *        A Video.js player instance.
   */
-Instantiable1[/* player */ Player, Plugin]
+Instantiable1[/* player */ Player, Plugin]) with (Instantiable2[/* player */ Player, /* options */ js.Any, Plugin])
     ] {
   /**
     * The name of the base plugin class as it is registered.

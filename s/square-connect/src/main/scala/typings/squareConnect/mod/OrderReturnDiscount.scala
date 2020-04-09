@@ -8,9 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class OrderReturnDiscount () extends js.Object {
   /**
-    * The total monetary amount of the applicable discount. If it is at order level, it is the value of the order level discount.
-    * If it is at line item level, it is the value of the line item level discount.
-    * The amount_money won't be set for a percentage-based discount.
+    * The total declared monetary amount of the discount. `amount_money` is not set for percentage-based discounts.
     */
   var amount_money: js.UndefOr[Money] = js.native
   /**
@@ -19,7 +17,7 @@ class OrderReturnDiscount () extends js.Object {
     */
   var applied_money: js.UndefOr[Money] = js.native
   /**
-    * The catalog object id referencing [CatalogDiscount](#type-catalogdiscount).
+    * The catalog object id referencing `CatalogDiscount`.
     */
   var catalog_object_id: js.UndefOr[String] = js.native
   /**
@@ -27,9 +25,8 @@ class OrderReturnDiscount () extends js.Object {
     */
   var name: js.UndefOr[String] = js.native
   /**
-    * The percentage of the tax, as a string representation of a decimal number.
-    * A value of `7.25` corresponds to a percentage of 7.25%.
-    * The percentage won't be set for an amount-based discount.
+    * The percentage of the tax, as a string representation of a decimal number. A value of `7.25` corresponds
+    * to a percentage of 7.25%. `percentage` is not set for amount-based discounts.
     */
   var percentage: js.UndefOr[String] = js.native
   /**
@@ -44,8 +41,8 @@ class OrderReturnDiscount () extends js.Object {
   var source_discount_uid: js.UndefOr[String] = js.native
   /**
     * The type of the discount. If it is created by API, it would be either `FIXED_PERCENTAGE` or `FIXED_AMOUNT`.
-    * VARIABLE_* is not supported in API because the order is created at the time of sale and either percentage
-    * or amount has to be specified. See [OrderLineItemDiscountType](#type-orderlineitemdiscounttype) for possible values.
+    * Discounts that don't reference a catalog object ID must have a type of `FIXED_PERCENTAGE` or `FIXED_AMOUNT`.
+    * See [OrderLineItemDiscountType](#type-orderlineitemdiscounttype) for possible values.
     */
   var `type`: js.UndefOr[DiscountType] = js.native
   /**

@@ -48,6 +48,7 @@ object englishStrings extends js.Object {
   var pagePrevText: String = js.native
   var panelDynamicProgressText: String = js.native
   var progressText: String = js.native
+  var questionTitlePatternText: String = js.native
   var questionsProgressText: String = js.native
   var removeFileCaption: String = js.native
   var removePanel: String = js.native

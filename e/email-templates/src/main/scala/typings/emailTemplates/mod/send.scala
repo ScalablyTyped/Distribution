@@ -10,6 +10,6 @@ object send extends js.Object {
   /**
     * Send the Email
     */
-  def apply(options: EmailOptions[_]): js.Any = js.native
+  def apply(options: EmailOptions[_]): js.Promise[_] = js.native
 }
 

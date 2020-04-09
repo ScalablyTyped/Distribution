@@ -436,7 +436,7 @@ package object lightsailMod {
   type PortList = js.Array[typings.awsSdk.lightsailMod.Port]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.open__
-    - typings.awsSdk.awsSdkStrings.closed_
+    - typings.awsSdk.awsSdkStrings.closed__
     - java.lang.String
   */
   type PortState = typings.awsSdk.lightsailMod._PortState | java.lang.String

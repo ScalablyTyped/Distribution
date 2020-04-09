@@ -34,31 +34,31 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GridBaseColumn extends js.Object {
-  /** Aligns the content of the column. */
+  /** @name GridBaseColumn.alignment */
   var alignment: js.UndefOr[center | left | right] = js.undefined
-  /** Specifies whether a user can edit values in the column at runtime. By default, inherits the value of the editing.allowUpdating option. */
+  /** @name GridBaseColumn.allowEditing */
   var allowEditing: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether data can be filtered by this column. Applies only if filterRow.visible is true. */
+  /** @name GridBaseColumn.allowFiltering */
   var allowFiltering: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether a user can fix the column at runtime. Applies only if columnFixing.enabled is true. */
+  /** @name GridBaseColumn.allowFixing */
   var allowFixing: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether the header filter can be used to filter data by this column. Applies only if headerFilter.visible is true. By default, inherits the value of the allowFiltering option. */
+  /** @name GridBaseColumn.allowHeaderFiltering */
   var allowHeaderFiltering: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether a user can hide the column using the column chooser at runtime. Applies only if columnChooser.enabled is true. */
+  /** @name GridBaseColumn.allowHiding */
   var allowHiding: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether this column can be used in column reordering at runtime. Applies only if allowColumnReordering is true. */
+  /** @name GridBaseColumn.allowReordering */
   var allowReordering: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether a user can resize the column at runtime. Applies only if allowColumnResizing is true. */
+  /** @name GridBaseColumn.allowResizing */
   var allowResizing: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether this column can be searched. Applies only if searchPanel.visible is true. Inherits the value of the allowFiltering option by default. */
+  /** @name GridBaseColumn.allowSearch */
   var allowSearch: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether a user can sort rows by this column at runtime. Applies only if sorting.mode differs from "none". */
+  /** @name GridBaseColumn.allowSorting */
   var allowSorting: js.UndefOr[Boolean] = js.undefined
-  /** Calculates custom cell values. Use this function to create an unbound data column. */
+  /** @name GridBaseColumn.calculateCellValue */
   var calculateCellValue: js.UndefOr[js.Function1[/* rowData */ js.Any, _]] = js.undefined
-  /** Calculates custom display values for column cells. Requires specifying the dataField or calculateCellValue option. Used in lookup optimization. */
+  /** @name GridBaseColumn.calculateDisplayValue */
   var calculateDisplayValue: js.UndefOr[String | (js.Function1[/* rowData */ js.Any, _])] = js.undefined
-  /** Specifies the column's custom filtering rules. */
+  /** @name GridBaseColumn.calculateFilterExpression */
   var calculateFilterExpression: js.UndefOr[
     js.Function3[
       /* filterValue */ js.Any, 
@@ -67,65 +67,65 @@ trait GridBaseColumn extends js.Object {
       String | js.Array[_] | js.Function
     ]
   ] = js.undefined
-  /** Calculates custom values to be used in sorting. */
+  /** @name GridBaseColumn.calculateSortValue */
   var calculateSortValue: js.UndefOr[String | (js.Function1[/* rowData */ js.Any, _])] = js.undefined
-  /** Specifies a caption for the column. */
+  /** @name GridBaseColumn.caption */
   var caption: js.UndefOr[String] = js.undefined
-  /** Specifies a CSS class to be applied to the column. */
+  /** @name GridBaseColumn.cssClass */
   var cssClass: js.UndefOr[String] = js.undefined
-  /** Customizes the text displayed in column cells. */
+  /** @name GridBaseColumn.customizeText */
   var customizeText: js.UndefOr[js.Function1[/* cellInfo */ AnonGroupInterval, String]] = js.undefined
-  /** Binds the column to a field of the dataSource. */
+  /** @name GridBaseColumn.dataField */
   var dataField: js.UndefOr[String] = js.undefined
-  /** Casts column values to a specific data type. */
+  /** @name GridBaseColumn.dataType */
   var dataType: js.UndefOr[string_ | number | date | boolean_ | `object` | datetime] = js.undefined
-  /** Configures the default widget used for editing and filtering in the filter row. */
+  /** @name GridBaseColumn.editorOptions */
   var editorOptions: js.UndefOr[js.Any] = js.undefined
-  /** Specifies whether HTML tags are displayed as plain text or applied to the values of the column. */
+  /** @name GridBaseColumn.encodeHtml */
   var encodeHtml: js.UndefOr[Boolean] = js.undefined
-  /** In a boolean column, replaces all false items with a specified text. Applies only if showEditorAlways option is false. */
+  /** @name GridBaseColumn.falseText */
   var falseText: js.UndefOr[String] = js.undefined
-  /** Specifies a set of available filter operations. Applies only if filterRow.visible and allowFiltering are true. */
+  /** @name GridBaseColumn.filterOperations */
   var filterOperations: js.UndefOr[
     js.Array[
       Equalssign | LessthansignGreaterthansign | Lessthansign | LessthansignEqualssign | Greaterthansign | GreaterthansignEqualssign | notcontains | contains | startswith | endswith | between
     ]
   ] = js.undefined
-  /** Specifies whether a user changes the current filter by including (selecting) or excluding (clearing the selection of) values. Applies only if headerFilter.visible and allowHeaderFiltering are true. */
+  /** @name GridBaseColumn.filterType */
   var filterType: js.UndefOr[exclude | include] = js.undefined
-  /** Specifies the column's filter value displayed in the filter row. */
+  /** @name GridBaseColumn.filterValue */
   var filterValue: js.UndefOr[js.Any] = js.undefined
-  /** Specifies values selected in the column's header filter. */
+  /** @name GridBaseColumn.filterValues */
   var filterValues: js.UndefOr[js.Array[_]] = js.undefined
-  /** Fixes the column. */
+  /** @name GridBaseColumn.fixed */
   var fixed: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the widget's edge to which the column is fixed. Applies only if columns[].fixed is true. */
+  /** @name GridBaseColumn.fixedPosition */
   var fixedPosition: js.UndefOr[left | right] = js.undefined
-  /** Configures the form item that the column produces in the editing state. Applies only if editing.mode is "form" or "popup". */
+  /** @name GridBaseColumn.formItem */
   var formItem: js.UndefOr[dxFormSimpleItem] = js.undefined
-  /** Formats a value before it is displayed in a column cell. */
+  /** @name GridBaseColumn.format */
   var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.format] = js.undefined
-  /** Specifies data settings for the header filter. */
+  /** @name GridBaseColumn.headerFilter */
   var headerFilter: js.UndefOr[AnonSearchMode] = js.undefined
-  /** Specifies the order in which columns are hidden when the widget adapts to the screen or container size. Ignored if allowColumnResizing is true and columnResizingMode is "widget". */
+  /** @name GridBaseColumn.hidingPriority */
   var hidingPriority: js.UndefOr[Double] = js.undefined
-  /** Specifies whether the column bands other columns or not. */
+  /** @name GridBaseColumn.isBand */
   var isBand: js.UndefOr[Boolean] = js.undefined
-  /** Specifies options of a lookup column. */
+  /** @name GridBaseColumn.lookup */
   var lookup: js.UndefOr[AnonAllowClearing] = js.undefined
-  /** Specifies the minimum width of the column. */
+  /** @name GridBaseColumn.minWidth */
   var minWidth: js.UndefOr[Double] = js.undefined
-  /** Specifies the identifier of the column. */
+  /** @name GridBaseColumn.name */
   var name: js.UndefOr[String] = js.undefined
-  /** Specifies the band column that owns the current column. Accepts the index of the band column in the columns array. */
+  /** @name GridBaseColumn.ownerBand */
   var ownerBand: js.UndefOr[Double] = js.undefined
-  /** Specifies whether to render the column after other columns and elements. Use if column cells have a complex template. Requires the width option specified. */
+  /** @name GridBaseColumn.renderAsync */
   var renderAsync: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the column's filter operation displayed in the filter row. */
+  /** @name GridBaseColumn.selectedFilterOperation */
   var selectedFilterOperation: js.UndefOr[
     Lessthansign | LessthansignEqualssign | LessthansignGreaterthansign | Equalssign | Greaterthansign | GreaterthansignEqualssign | between | contains | endswith | notcontains | startswith
   ] = js.undefined
-  /** Specifies a function to be invoked after the user has edited a cell value, but before it will be saved in the data source. */
+  /** @name GridBaseColumn.setCellValue */
   var setCellValue: js.UndefOr[
     js.Function3[
       /* newData */ js.Any, 
@@ -134,29 +134,29 @@ trait GridBaseColumn extends js.Object {
       Unit | Promise[Unit] | JQueryPromise[Unit]
     ]
   ] = js.undefined
-  /** Specifies whether the column displays its values using editors. */
+  /** @name GridBaseColumn.showEditorAlways */
   var showEditorAlways: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether the column chooser can contain the column header. */
+  /** @name GridBaseColumn.showInColumnChooser */
   var showInColumnChooser: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the index according to which columns participate in sorting. */
+  /** @name GridBaseColumn.sortIndex */
   var sortIndex: js.UndefOr[Double] = js.undefined
-  /** Specifies the sort order of column values. */
+  /** @name GridBaseColumn.sortOrder */
   var sortOrder: js.UndefOr[asc | desc] = js.undefined
-  /** Specifies a custom comparison function for sorting. Applies only when sorting is performed on the client. */
+  /** @name GridBaseColumn.sortingMethod */
   var sortingMethod: js.UndefOr[js.Function2[/* value1 */ js.Any, /* value2 */ js.Any, Double]] = js.undefined
-  /** In a boolean column, replaces all true items with a specified text. Applies only if showEditorAlways option is false. */
+  /** @name GridBaseColumn.trueText */
   var trueText: js.UndefOr[String] = js.undefined
-  /** Specifies validation rules to be checked when cell values are updated. */
+  /** @name GridBaseColumn.validationRules */
   var validationRules: js.UndefOr[
     js.Array[
       RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule
     ]
   ] = js.undefined
-  /** Specifies whether the column is visible, that is, occupies space in the table. */
+  /** @name GridBaseColumn.visible */
   var visible: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the position of the column regarding other columns in the resulting widget. */
+  /** @name GridBaseColumn.visibleIndex */
   var visibleIndex: js.UndefOr[Double] = js.undefined
-  /** Specifies the column's width in pixels or as a percentage. Ignored if it is less than minWidth. */
+  /** @name GridBaseColumn.width */
   var width: js.UndefOr[Double | String] = js.undefined
 }
 

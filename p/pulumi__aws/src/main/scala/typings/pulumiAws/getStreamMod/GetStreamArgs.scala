@@ -11,6 +11,9 @@ trait GetStreamArgs extends js.Object {
     * The name of the Kinesis Stream.
     */
   val name: String = js.native
+  /**
+    * A mapping of tags to assigned to the stream.
+    */
   val tags: js.UndefOr[StringDictionary[js.Any]] = js.native
 }
 

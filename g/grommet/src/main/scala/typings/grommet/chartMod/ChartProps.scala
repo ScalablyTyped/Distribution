@@ -31,6 +31,7 @@ trait ChartProps extends js.Object {
   var alignSelf: js.UndefOr[AlignSelfType] = js.undefined
   var bounds: js.UndefOr[js.Array[js.Array[Double]]] = js.undefined
   var color: js.UndefOr[String | AnonColor | js.Array[AnonValue]] = js.undefined
+  var dash: js.UndefOr[Boolean] = js.undefined
   var gap: js.UndefOr[GapType] = js.undefined
   var gridArea: js.UndefOr[GridAreaType] = js.undefined
   var margin: js.UndefOr[MarginType] = js.undefined
@@ -52,6 +53,7 @@ object ChartProps {
     alignSelf: AlignSelfType = null,
     bounds: js.Array[js.Array[Double]] = null,
     color: String | AnonColor | js.Array[AnonValue] = null,
+    dash: js.UndefOr[Boolean] = js.undefined,
     gap: GapType = null,
     gridArea: GridAreaType = null,
     margin: MarginType = null,
@@ -68,6 +70,7 @@ object ChartProps {
     if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf.asInstanceOf[js.Any])
     if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (!js.isUndefined(dash)) __obj.updateDynamic("dash")(dash.asInstanceOf[js.Any])
     if (gap != null) __obj.updateDynamic("gap")(gap.asInstanceOf[js.Any])
     if (gridArea != null) __obj.updateDynamic("gridArea")(gridArea.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])

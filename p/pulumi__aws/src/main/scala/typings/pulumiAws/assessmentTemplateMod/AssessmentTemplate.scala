@@ -1,5 +1,6 @@
 package typings.pulumiAws.assessmentTemplateMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.mod.CustomResource
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.outputMod.Output_
@@ -37,6 +38,10 @@ class AssessmentTemplate protected () extends CustomResource {
     * The rules to be used during the run.
     */
   val rulesPackageArns: Output_[js.Array[String]] = js.native
+  /**
+    * Key-value mapping of tags for the Inspector assessment template.
+    */
+  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
   /**
     * The assessment target ARN to attach the template to.
     */

@@ -1,10 +1,10 @@
 package typings.karma.mod
 
-import typings.karma.karmaStrings.debug
-import typings.karma.karmaStrings.error
-import typings.karma.karmaStrings.info
-import typings.karma.karmaStrings.log
-import typings.karma.karmaStrings.warn
+import typings.karma.karmaStrings.debug_
+import typings.karma.karmaStrings.error_
+import typings.karma.karmaStrings.info_
+import typings.karma.karmaStrings.log_
+import typings.karma.karmaStrings.warn_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ trait BrowserConsoleLogOptions extends js.Object {
     */
   var format: js.UndefOr[String] = js.undefined
   /** the desired log-level, where level log always is logged */
-  var level: js.UndefOr[log | error | warn | info | debug] = js.undefined
+  var level: js.UndefOr[log_ | error_ | warn_ | info_ | debug_] = js.undefined
   /** output-path of the output-file */
   var path: js.UndefOr[String] = js.undefined
   /** if the log should be written in the terminal, or not */
@@ -28,7 +28,7 @@ object BrowserConsoleLogOptions {
   @scala.inline
   def apply(
     format: String = null,
-    level: log | error | warn | info | debug = null,
+    level: log_ | error_ | warn_ | info_ | debug_ = null,
     path: String = null,
     terminal: js.UndefOr[Boolean] = js.undefined
   ): BrowserConsoleLogOptions = {

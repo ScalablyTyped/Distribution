@@ -17,7 +17,7 @@ trait ActivationState extends js.Object {
     */
   val description: js.UndefOr[Input[String]] = js.native
   /**
-    * The date by which this activation request should expire. The default value is 24 hours.
+    * UTC timestamp in [RFC3339 format](https://tools.ietf.org/html/rfc3339#section-5.8) by which this activation request should expire. The default value is 24 hours from resource creation time. This provider will only perform drift detection of its value when present in a configuration.
     */
   val expirationDate: js.UndefOr[Input[String]] = js.native
   /**

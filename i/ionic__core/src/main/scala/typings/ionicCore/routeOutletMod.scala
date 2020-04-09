@@ -2,13 +2,12 @@ package typings.ionicCore
 
 import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.interfaceMod.NavOutlet
-import typings.ionicCore.ionicCoreStrings.ios
-import typings.ionicCore.ionicCoreStrings.md
 import typings.ionicCore.mod.FrameworkDelegate
+import typings.ionicCore.mod.Mode
 import typings.ionicCore.navInterfaceMod.RouterOutletOptions
 import typings.ionicCore.navInterfaceMod.SwipeGestureHandler
-import typings.ionicCore.stencilCoreMod.ComponentInterface
-import typings.ionicCore.stencilCoreMod.EventEmitter
+import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
+import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -48,7 +47,7 @@ object routeOutletMod extends js.Object {
     /**
       * The mode determines which platform styles to use.
       */
-    var mode: ios | md = js.native
+    var mode: Mode = js.native
     var setRoot: js.Any = js.native
     /** @internal */
     var swipeHandler: js.UndefOr[SwipeGestureHandler] = js.native

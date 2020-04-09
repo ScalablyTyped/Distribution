@@ -59,54 +59,54 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxFunnelOptions extends BaseWidgetOptions[dxFunnel] {
-  /** Specifies adaptive layout options. */
+  /** @name dxFunnel.Options.adaptiveLayout */
   var adaptiveLayout: js.UndefOr[AnonKeepLabels] = js.undefined
-  /** Specifies the algorithm for building the funnel. */
+  /** @name dxFunnel.Options.algorithm */
   var algorithm: js.UndefOr[dynamicHeight | dynamicSlope] = js.undefined
-  /** Specifies which data source field provides arguments for funnel items. The argument identifies a funnel item and represents it on the legend. */
+  /** @name dxFunnel.Options.argumentField */
   var argumentField: js.UndefOr[String] = js.undefined
-  /** Specifies which data source field provides colors for funnel items. If this field is absent, the palette provides the colors. */
+  /** @name dxFunnel.Options.colorField */
   var colorField: js.UndefOr[String] = js.undefined
-  /** Binds the widget to data. */
+  /** @name dxFunnel.Options.dataSource */
   var dataSource: js.UndefOr[js.Array[_] | DataSource | DataSourceOptions | String] = js.undefined
-  /** Specifies whether funnel items change their style when a user pauses on them. */
+  /** @name dxFunnel.Options.hoverEnabled */
   var hoverEnabled: js.UndefOr[Boolean] = js.undefined
-  /** Turns the funnel upside down. */
+  /** @name dxFunnel.Options.inverted */
   var inverted: js.UndefOr[Boolean] = js.undefined
-  /** Configures funnel items' appearance. */
+  /** @name dxFunnel.Options.item */
   var item: js.UndefOr[AnonHoverStyle] = js.undefined
-  /** Configures funnel item labels. */
+  /** @name dxFunnel.Options.label */
   var label: js.UndefOr[AnonConnector] = js.undefined
-  /** Configures the legend. */
+  /** @name dxFunnel.Options.legend */
   var legend: js.UndefOr[dxFunnelLegend] = js.undefined
-  /** Specifies the ratio between the height of the neck and that of the whole funnel. Accepts values from 0 to 1. Applies only if the algorithm is "dynamicHeight". */
+  /** @name dxFunnel.Options.neckHeight */
   var neckHeight: js.UndefOr[Double] = js.undefined
-  /** Specifies the ratio between the width of the neck and that of the whole funnel. Accepts values from 0 to 1. Applies only if the algorithm is "dynamicHeight". */
+  /** @name dxFunnel.Options.neckWidth */
   var neckWidth: js.UndefOr[Double] = js.undefined
-  /** A function that is executed after the pointer enters or leaves a funnel item. */
+  /** @name dxFunnel.Options.onHoverChanged */
   var onHoverChanged: js.UndefOr[js.Function1[/* e */ AnonElementItem, _]] = js.undefined
-  /** A function that is executed when a funnel item is clicked or tapped. */
+  /** @name dxFunnel.Options.onItemClick */
   var onItemClick: js.UndefOr[(js.Function1[/* e */ AnonEventItem, _]) | String] = js.undefined
-  /** A function that is executed when a legend item is clicked or tapped. */
+  /** @name dxFunnel.Options.onLegendClick */
   var onLegendClick: js.UndefOr[(js.Function1[/* e */ AnonEventItem, _]) | String] = js.undefined
-  /** A function that is executed when a funnel item is selected or selection is canceled. */
+  /** @name dxFunnel.Options.onSelectionChanged */
   var onSelectionChanged: js.UndefOr[js.Function1[/* e */ AnonElementItem, _]] = js.undefined
-  /** Sets the palette to be used to colorize funnel items. */
+  /** @name dxFunnel.Options.palette */
   var palette: js.UndefOr[
     js.Array[String] | Bright | Default | (`Harmony Light`) | Ocean | Pastel | Soft | (`Soft Pastel`) | Vintage | Violet | Carmine | (`Dark Moon`) | (`Dark Violet`) | (`Green Mist`) | (`Soft Blue`) | Material | Office
   ] = js.undefined
-  /** Specifies what to do with colors in the palette when their number is less than the number of funnel items. */
+  /** @name dxFunnel.Options.paletteExtensionMode */
   var paletteExtensionMode: js.UndefOr[alternate | blend | extrapolate] = js.undefined
-  /** Specifies how item labels should behave when they overlap. */
+  /** @name dxFunnel.Options.resolveLabelOverlapping */
   var resolveLabelOverlapping: js.UndefOr[hide | none | shift] = js.undefined
-  /** Specifies whether a single or multiple funnel items can be in the selected state at a time. Assigning "none" disables the selection feature. */
+  /** @name dxFunnel.Options.selectionMode */
   var selectionMode: js.UndefOr[multiple | none | single_] = js.undefined
-  /** Specifies whether to sort funnel items. */
+  /** @name dxFunnel.Options.sortData */
   var sortData: js.UndefOr[Boolean] = js.undefined
-  /** Configures tooltips - small pop-up rectangles that display information about a data-visualizing widget element being pressed or hovered over with the mouse pointer. */
+  /** @name dxFunnel.Options.tooltip */
   @JSName("tooltip")
   var tooltip_dxFunnelOptions: js.UndefOr[dxFunnelTooltip] = js.undefined
-  /** Specifies which data source field provides values for funnel items. The value defines a funnel item's area. */
+  /** @name dxFunnel.Options.valueField */
   var valueField: js.UndefOr[String] = js.undefined
 }
 

@@ -32,7 +32,7 @@ trait SourceProps extends js.Object {
   var lineMetrics: js.UndefOr[Boolean] = js.undefined
   var maxzoom: js.UndefOr[Double] = js.undefined
   var minzoom: js.UndefOr[Double] = js.undefined
-  var schema: js.UndefOr[xyz | tms] = js.undefined
+  var scheme: js.UndefOr[xyz | tms] = js.undefined
   var tileSize: js.UndefOr[Double] = js.undefined
   var tiles: js.UndefOr[js.Array[String]] = js.undefined
   var tolerance: js.UndefOr[Double] = js.undefined
@@ -61,7 +61,7 @@ object SourceProps {
     lineMetrics: js.UndefOr[Boolean] = js.undefined,
     maxzoom: Int | Double = null,
     minzoom: Int | Double = null,
-    schema: xyz | tms = null,
+    scheme: xyz | tms = null,
     tileSize: Int | Double = null,
     tiles: js.Array[String] = null,
     tolerance: Int | Double = null,
@@ -86,7 +86,7 @@ object SourceProps {
     if (!js.isUndefined(lineMetrics)) __obj.updateDynamic("lineMetrics")(lineMetrics.asInstanceOf[js.Any])
     if (maxzoom != null) __obj.updateDynamic("maxzoom")(maxzoom.asInstanceOf[js.Any])
     if (minzoom != null) __obj.updateDynamic("minzoom")(minzoom.asInstanceOf[js.Any])
-    if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
+    if (scheme != null) __obj.updateDynamic("scheme")(scheme.asInstanceOf[js.Any])
     if (tileSize != null) __obj.updateDynamic("tileSize")(tileSize.asInstanceOf[js.Any])
     if (tiles != null) __obj.updateDynamic("tiles")(tiles.asInstanceOf[js.Any])
     if (tolerance != null) __obj.updateDynamic("tolerance")(tolerance.asInstanceOf[js.Any])

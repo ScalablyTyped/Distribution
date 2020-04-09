@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "react-virtual-keyboard"
-version := "1.0-dt-20190212Z-674807"
+version := "1.0-dt-20190212Z-9f2723"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.9-2d2033",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-ece683",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20200320Z-629467",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20200402Z-6f4338",
   "org.scalablytyped" %%% "std" % "3.8-a0108c",
   "org.scalablytyped" %%% "virtual-keyboard" % "1.26-dt-20200225Z-e77f2f")
 publishArtifact in packageDoc := false

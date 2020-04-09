@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "firebase__analytics"
-version := "0.2.18-8145ff"
+version := "0.3.1-9c9ba8"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "firebase__analytics-types" % "0.2.8-4bf81d",
+  "org.scalablytyped" %%% "firebase__analytics-types" % "0.3.0-7468ef",
   "org.scalablytyped" %%% "firebase__app-types" % "0.6.0-6658a6",
   "org.scalablytyped" %%% "firebase__installations-types" % "0.3.3-9ec8c7",
   "org.scalablytyped" %%% "firebase__logger" % "0.2.0-1da808",

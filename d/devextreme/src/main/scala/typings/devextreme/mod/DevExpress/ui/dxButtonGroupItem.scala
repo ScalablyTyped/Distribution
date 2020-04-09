@@ -12,11 +12,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxButtonGroupItem extends CollectionWidgetItem {
-  /** Specifies a text for the hint that appears when the button is hovered over or long-pressed. */
+  /** @name dxButtonGroupItem.hint */
   var hint: js.UndefOr[String] = js.undefined
-  /** Specifies the icon to be displayed on the button. */
+  /** @name dxButtonGroupItem.icon */
   var icon: js.UndefOr[String] = js.undefined
-  /** Specifies the button type. */
+  /** @name dxButtonGroupItem.type */
   var `type`: js.UndefOr[back | danger | default_ | normal | success] = js.undefined
 }
 

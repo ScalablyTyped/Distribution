@@ -7,7 +7,13 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait AnalyticsApplicationOutputLambda extends js.Object {
+  /**
+    * The ARN of the Lambda function.
+    */
   var resourceArn: Input[String] = js.native
+  /**
+    * The ARN of the IAM Role used to access the Lambda function.
+    */
   var roleArn: Input[String] = js.native
 }
 

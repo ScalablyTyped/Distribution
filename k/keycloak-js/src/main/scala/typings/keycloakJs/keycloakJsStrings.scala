@@ -2,7 +2,6 @@ package typings.keycloakJs
 
 import typings.keycloakJs.mod.KeycloakFlow
 import typings.keycloakJs.mod.KeycloakOnLoad
-import typings.keycloakJs.mod.KeycloakPromiseType
 import typings.keycloakJs.mod.KeycloakResponseMode
 import typings.keycloakJs.mod.KeycloakResponseType
 import typings.keycloakJs.mod._KeycloakAdapterName
@@ -45,16 +44,10 @@ object keycloakJsStrings {
   sealed trait `implicit` extends KeycloakFlow
   
   @js.native
-  sealed trait legacy extends KeycloakPromiseType
-  
-  @js.native
   sealed trait login extends js.Object
   
   @js.native
   sealed trait `login-required` extends KeycloakOnLoad
-  
-  @js.native
-  sealed trait native extends KeycloakPromiseType
   
   @js.native
   sealed trait none extends js.Object
@@ -91,13 +84,9 @@ object keycloakJsStrings {
   @scala.inline
   def `implicit`: `implicit` = "implicit".asInstanceOf[`implicit`]
   @scala.inline
-  def legacy: legacy = "legacy".asInstanceOf[legacy]
-  @scala.inline
   def login: login = "login".asInstanceOf[login]
   @scala.inline
   def `login-required`: `login-required` = "login-required".asInstanceOf[`login-required`]
-  @scala.inline
-  def native: native = "native".asInstanceOf[native]
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   @scala.inline

@@ -18,7 +18,26 @@ object compilerHostMod extends js.Object {
     tree: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Tree */ js.Any,
     options: CompilerOptions,
     basePath: String,
-    fakeRead: js.Function1[/* fileName */ String, String | Null]
+    fakeRead: FakeReadFileFn
   ): CompilerHost = js.native
+  def createMigrationProgram(
+    tree: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Tree */ js.Any,
+    tsconfigPath: String,
+    basePath: String
+  ): AnonHost = js.native
+  def createMigrationProgram(
+    tree: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Tree */ js.Any,
+    tsconfigPath: String,
+    basePath: String,
+    fakeFileRead: FakeReadFileFn
+  ): AnonHost = js.native
+  def createMigrationProgram(
+    tree: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Tree */ js.Any,
+    tsconfigPath: String,
+    basePath: String,
+    fakeFileRead: FakeReadFileFn,
+    additionalFiles: js.Array[String]
+  ): AnonHost = js.native
+  type FakeReadFileFn = js.Function1[/* fileName */ String, String | Null]
 }
 

@@ -16,16 +16,16 @@ trait OptionsHTML extends js.Object {
   /**The HTML table will contain column header groups, row groups, and column calculations.
     You can choose to remove any of these from the output data by setting the values in the printConfig option in the table definition */
   var printConfig: js.UndefOr[AddditionalExportOptions] = js.undefined
-  /**If you want your printed table to be styled to match your Tabulator you can set the printCopyStyle to true, this will copy key layout styling to the printed table */
-  var printCopyStyle: js.UndefOr[Boolean] = js.undefined
   /**You can use the printFooter table setup option to define a footer to be displayed when the table is printed. */
   var printFooter: js.UndefOr[StandardStringParam] = js.undefined
   /**The printFormatter table setup option allows you to carry out any manipulation of the print output before it is displayed to the user for printing*/
   var printFormatter: js.UndefOr[js.Function2[/* tableHolderElement */ js.Any, /* tableElement */ js.Any, _]] = js.undefined
   /**You can use the printHeader table setup option to define a header to be displayed when the table is printed. */
   var printHeader: js.UndefOr[StandardStringParam] = js.undefined
-  /**By deafault, only the rows currently visible in the Tabulator will be added to the HTML table, If you want to inclued all the active data (all currently filted/sorted rows) in the table you can set the printVisibleRows option to false. */
-  var printVisibleRows: js.UndefOr[Boolean] = js.undefined
+  /**By default, only the rows currently visible in the Tabulator will be added to the HTML table. For custom row ranges it is also possible to pass a function into the printRowRange option that should return an array of Row Components */
+  var printRowRange: js.UndefOr[RowRangeLookup | js.Function0[js.Array[RowComponent]]] = js.undefined
+  /**If you want your printed table to be styled to match your Tabulator you can set the printCopyStyle to true, this will copy key layout styling to the printed table */
+  var printStyled: js.UndefOr[Boolean] = js.undefined
 }
 
 object OptionsHTML {
@@ -34,21 +34,21 @@ object OptionsHTML {
     htmlOutputConfig: AddditionalExportOptions = null,
     printAsHtml: js.UndefOr[Boolean] = js.undefined,
     printConfig: AddditionalExportOptions = null,
-    printCopyStyle: js.UndefOr[Boolean] = js.undefined,
     printFooter: StandardStringParam = null,
     printFormatter: (/* tableHolderElement */ js.Any, /* tableElement */ js.Any) => _ = null,
     printHeader: StandardStringParam = null,
-    printVisibleRows: js.UndefOr[Boolean] = js.undefined
+    printRowRange: RowRangeLookup | js.Function0[js.Array[RowComponent]] = null,
+    printStyled: js.UndefOr[Boolean] = js.undefined
   ): OptionsHTML = {
     val __obj = js.Dynamic.literal()
     if (htmlOutputConfig != null) __obj.updateDynamic("htmlOutputConfig")(htmlOutputConfig.asInstanceOf[js.Any])
     if (!js.isUndefined(printAsHtml)) __obj.updateDynamic("printAsHtml")(printAsHtml.asInstanceOf[js.Any])
     if (printConfig != null) __obj.updateDynamic("printConfig")(printConfig.asInstanceOf[js.Any])
-    if (!js.isUndefined(printCopyStyle)) __obj.updateDynamic("printCopyStyle")(printCopyStyle.asInstanceOf[js.Any])
     if (printFooter != null) __obj.updateDynamic("printFooter")(printFooter.asInstanceOf[js.Any])
     if (printFormatter != null) __obj.updateDynamic("printFormatter")(js.Any.fromFunction2(printFormatter))
     if (printHeader != null) __obj.updateDynamic("printHeader")(printHeader.asInstanceOf[js.Any])
-    if (!js.isUndefined(printVisibleRows)) __obj.updateDynamic("printVisibleRows")(printVisibleRows.asInstanceOf[js.Any])
+    if (printRowRange != null) __obj.updateDynamic("printRowRange")(printRowRange.asInstanceOf[js.Any])
+    if (!js.isUndefined(printStyled)) __obj.updateDynamic("printStyled")(printStyled.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsHTML]
   }
 }

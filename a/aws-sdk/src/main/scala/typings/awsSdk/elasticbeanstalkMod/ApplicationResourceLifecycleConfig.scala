@@ -11,7 +11,7 @@ trait ApplicationResourceLifecycleConfig extends js.Object {
     */
   var ServiceRole: js.UndefOr[String] = js.native
   /**
-    * The application version lifecycle configuration.
+    * Defines lifecycle settings for application versions.
     */
   var VersionLifecycleConfig: js.UndefOr[ApplicationVersionLifecycleConfig] = js.native
 }

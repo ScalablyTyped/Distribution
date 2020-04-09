@@ -11,13 +11,27 @@ trait AnalyticsApplicationOutput extends js.Object {
     * The ARN of the Kinesis Analytics Application.
     */
   var id: js.UndefOr[Input[String]] = js.native
+  /**
+    * The Kinesis Firehose configuration for the destination stream. Conflicts with `kinesisStream`.
+    * See Kinesis Firehose below for more details.
+    */
   var kinesisFirehose: js.UndefOr[Input[AnalyticsApplicationOutputKinesisFirehose]] = js.native
+  /**
+    * The Kinesis Stream configuration for the destination stream. Conflicts with `kinesisFirehose`.
+    * See Kinesis Stream below for more details.
+    */
   var kinesisStream: js.UndefOr[Input[AnalyticsApplicationOutputKinesisStream]] = js.native
+  /**
+    * The Lambda function destination. See Lambda below for more details.
+    */
   var lambda: js.UndefOr[Input[AnalyticsApplicationOutputLambda]] = js.native
   /**
-    * Name of the Kinesis Analytics Application.
+    * The Name of the in-application stream.
     */
   var name: Input[String] = js.native
+  /**
+    * The Schema format of the data written to the destination. See Destination Schema below for more details.
+    */
   var schema: Input[AnalyticsApplicationOutputSchema] = js.native
 }
 

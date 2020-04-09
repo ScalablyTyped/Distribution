@@ -1,6 +1,6 @@
 package typings.nodePgMigrate.migrationBuilderMod
 
-import typings.nodePgMigrate.dbMod.DB
+import typings.nodePgMigrate.distTypesMod.DB
 import typings.nodePgMigrate.domainsTypesMod.AlterDomain
 import typings.nodePgMigrate.domainsTypesMod.CreateDomain
 import typings.nodePgMigrate.domainsTypesMod.DropDomain

@@ -13,6 +13,7 @@ import typings.ionicCore.rangeInterfaceMod._KnobName
 import typings.ionicCore.refresherUtilsMod.RefresherAnimationType
 import typings.ionicCore.segmentSegmentInterfaceMod.SegmentButtonLayout
 import typings.ionicCore.selectInterfaceMod.SelectInterface
+import typings.ionicCore.stencilPublicRuntimeMod.ListenTargetOptions
 import typings.ionicCore.tabBarInterfaceMod.TabButtonLayout
 import typings.ionicCore.virtualScrollInterfaceMod.CellType
 import scala.scalajs.js
@@ -110,6 +111,9 @@ object ionicCoreStrings {
   sealed trait block extends js.Object
   
   @js.native
+  sealed trait body extends ListenTargetOptions
+  
+  @js.native
   sealed trait both extends AnimationFill
   
   @js.native
@@ -171,6 +175,9 @@ object ionicCoreStrings {
   
   @js.native
   sealed trait determinate extends js.Object
+  
+  @js.native
+  sealed trait document extends ListenTargetOptions
   
   @js.native
   sealed trait eager extends js.Object
@@ -345,7 +352,7 @@ object ionicCoreStrings {
   sealed trait light extends PredefinedColors
   
   @js.native
-  sealed trait linearRGB extends js.Object
+  sealed trait `linear-rGB` extends js.Object
   
   @js.native
   sealed trait loadingEnter extends js.Object
@@ -432,6 +439,9 @@ object ionicCoreStrings {
   sealed trait outline extends js.Object
   
   @js.native
+  sealed trait parent extends ListenTargetOptions
+  
+  @js.native
   sealed trait password extends TextFieldTypes
   
   @js.native
@@ -489,7 +499,7 @@ object ionicCoreStrings {
   sealed trait round extends js.Object
   
   @js.native
-  sealed trait sRGB extends js.Object
+  sealed trait `s-rGB` extends js.Object
   
   @js.native
   sealed trait scale extends RefresherAnimationType
@@ -602,6 +612,9 @@ object ionicCoreStrings {
   sealed trait warning extends PredefinedColors
   
   @js.native
+  sealed trait window extends ListenTargetOptions
+  
+  @js.native
   sealed trait x extends js.Object
   
   @js.native
@@ -669,6 +682,8 @@ object ionicCoreStrings {
   @scala.inline
   def block: block = "block".asInstanceOf[block]
   @scala.inline
+  def body: body = "body".asInstanceOf[body]
+  @scala.inline
   def both: both = "both".asInstanceOf[both]
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
@@ -710,6 +725,8 @@ object ionicCoreStrings {
   def destructive: destructive = "destructive".asInstanceOf[destructive]
   @scala.inline
   def determinate: determinate = "determinate".asInstanceOf[determinate]
+  @scala.inline
+  def document: document = "document".asInstanceOf[document]
   @scala.inline
   def eager: eager = "eager".asInstanceOf[eager]
   @scala.inline
@@ -811,7 +828,7 @@ object ionicCoreStrings {
   @scala.inline
   def light: light = "light".asInstanceOf[light]
   @scala.inline
-  def linearRGB: linearRGB = "linearRGB".asInstanceOf[linearRGB]
+  def `linear-rGB`: `linear-rGB` = "linear-rGB".asInstanceOf[`linear-rGB`]
   @scala.inline
   def loadingEnter: loadingEnter = "loadingEnter".asInstanceOf[loadingEnter]
   @scala.inline
@@ -869,6 +886,8 @@ object ionicCoreStrings {
   @scala.inline
   def outline: outline = "outline".asInstanceOf[outline]
   @scala.inline
+  def parent: parent = "parent".asInstanceOf[parent]
+  @scala.inline
   def password: password = "password".asInstanceOf[password]
   @scala.inline
   def persistConfig: persistConfig = "persistConfig".asInstanceOf[persistConfig]
@@ -907,7 +926,7 @@ object ionicCoreStrings {
   @scala.inline
   def round: round = "round".asInstanceOf[round]
   @scala.inline
-  def sRGB: sRGB = "sRGB".asInstanceOf[sRGB]
+  def `s-rGB`: `s-rGB` = "s-rGB".asInstanceOf[`s-rGB`]
   @scala.inline
   def scale: scale = "scale".asInstanceOf[scale]
   @scala.inline
@@ -980,6 +999,8 @@ object ionicCoreStrings {
   def url: url = "url".asInstanceOf[url]
   @scala.inline
   def warning: warning = "warning".asInstanceOf[warning]
+  @scala.inline
+  def window: window = "window".asInstanceOf[window]
   @scala.inline
   def x: x = "x".asInstanceOf[x]
   @scala.inline

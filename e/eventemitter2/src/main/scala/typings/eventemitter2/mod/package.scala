@@ -11,5 +11,6 @@ package object mod {
     scala.Unit
   ]
   type Listener = js.Function1[/* repeated */ js.Any, scala.Unit]
+  type WaitForFilter = js.Function1[/* repeated */ js.Any, scala.Boolean]
   type eventNS = js.Array[java.lang.String]
 }

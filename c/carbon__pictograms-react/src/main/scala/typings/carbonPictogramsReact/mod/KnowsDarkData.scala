@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@carbon/pictograms-react", "KnowsDarkData")
 @js.native
-object KnowsDarkData extends TopLevel[CarbonPictogram]
+object KnowsDarkData extends TopLevel[CarbonPictogramType]
 

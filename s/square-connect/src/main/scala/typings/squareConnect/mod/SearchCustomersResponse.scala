@@ -9,9 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class SearchCustomersResponse () extends js.Object {
   /**
-    * A pagination cursor that can be used during subsequent calls to SearchCustomers to retrieve the next set of
-    * results associated with the original query. Pagination cursors are only present when a request succeeds and
-    * additional results are available. See [Pagination](/basics/api101/pagination) for more information.
+    * A pagination cursor that can be used during subsequent calls to SearchCustomers to retrieve the next set of results
+    * associated with the original query. Pagination cursors are only present when a request succeeds and additional
+    * results are available.
+    * See the [Pagination guide](https://developer.squareup.com/docs/working-with-apis/pagination) for more information.
     */
   var cursor: js.UndefOr[String] = js.native
   /**

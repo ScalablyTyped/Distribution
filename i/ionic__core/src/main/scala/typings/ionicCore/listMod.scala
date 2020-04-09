@@ -3,7 +3,7 @@ package typings.ionicCore
 import typings.ionicCore.ionicCoreStrings.full
 import typings.ionicCore.ionicCoreStrings.inset
 import typings.ionicCore.ionicCoreStrings.none
-import typings.ionicCore.stencilCoreMod.ComponentInterface
+import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

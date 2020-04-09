@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait EndpointSelector extends js.Object {
-  /** Gets an endpoint with a specific key. */
+  /** @name EndpointSelector.urlFor(key) */
   def urlFor(key: String): String
 }
 

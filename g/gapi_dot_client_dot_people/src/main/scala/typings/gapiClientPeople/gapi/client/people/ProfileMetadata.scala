@@ -5,9 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ProfileMetadata extends js.Object {
-  /** The profile object type. */
+  /** Output only. The profile object type. */
   var objectType: js.UndefOr[String] = js.undefined
-  /** The user types. */
+  /** Output only. The user types. */
   var userTypes: js.UndefOr[js.Array[String]] = js.undefined
 }
 

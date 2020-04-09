@@ -31,8 +31,8 @@ trait CreateAnimationProps extends js.Object {
   var duration: js.UndefOr[Double] = js.undefined
   var easing: js.UndefOr[String] = js.undefined
   var fill: js.UndefOr[AnimationFill] = js.undefined
-  var from: js.UndefOr[PartialPropertyValue] = js.undefined
-  var fromTo: js.UndefOr[PropertyValue] = js.undefined
+  var from: js.UndefOr[js.Array[PartialPropertyValue] | PartialPropertyValue] = js.undefined
+  var fromTo: js.UndefOr[js.Array[PropertyValue] | PropertyValue] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   var iterations: js.UndefOr[Double] = js.undefined
   var keyframes: js.UndefOr[AnimationKeyFrames] = js.undefined
@@ -43,7 +43,7 @@ trait CreateAnimationProps extends js.Object {
   var progressStart: js.UndefOr[AnonForceLinearEasing] = js.undefined
   var progressStep: js.UndefOr[AnonStep] = js.undefined
   var stop: js.UndefOr[Boolean] = js.undefined
-  var to: js.UndefOr[PartialPropertyValue] = js.undefined
+  var to: js.UndefOr[js.Array[PartialPropertyValue] | PartialPropertyValue] = js.undefined
 }
 
 object CreateAnimationProps {
@@ -67,8 +67,8 @@ object CreateAnimationProps {
     duration: Int | Double = null,
     easing: String = null,
     fill: AnimationFill = null,
-    from: PartialPropertyValue = null,
-    fromTo: PropertyValue = null,
+    from: js.Array[PartialPropertyValue] | PartialPropertyValue = null,
+    fromTo: js.Array[PropertyValue] | PropertyValue = null,
     id: String = null,
     iterations: Int | Double = null,
     keyframes: AnimationKeyFrames = null,
@@ -79,7 +79,7 @@ object CreateAnimationProps {
     progressStart: AnonForceLinearEasing = null,
     progressStep: AnonStep = null,
     stop: js.UndefOr[Boolean] = js.undefined,
-    to: PartialPropertyValue = null
+    to: js.Array[PartialPropertyValue] | PartialPropertyValue = null
   ): CreateAnimationProps = {
     val __obj = js.Dynamic.literal()
     if (afterAddClass != null) __obj.updateDynamic("afterAddClass")(afterAddClass.asInstanceOf[js.Any])

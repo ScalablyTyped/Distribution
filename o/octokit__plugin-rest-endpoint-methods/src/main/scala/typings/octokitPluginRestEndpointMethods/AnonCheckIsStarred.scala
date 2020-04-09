@@ -29,79 +29,79 @@ import scala.scalajs.js.annotation._
 @js.native
 trait AnonCheckIsStarred extends js.Object {
   @JSName("checkIsStarred")
-  var checkIsStarred_Original: Anon99 = js.native
+  var checkIsStarred_Original: Anon110 = js.native
   @JSName("createComment")
-  var createComment_Original: Anon101 = js.native
+  var createComment_Original: Anon112 = js.native
   /**
     * Allows you to add a new gist with one or more files.
     *
     * **Note:** Don't name your files "gistfile" with a numerical suffix. This is the format of the automatic naming scheme that Gist uses internally.
     */
   @JSName("create")
-  var create_Original: Anon100 = js.native
+  var create_Original: Anon111 = js.native
   @JSName("deleteComment")
-  var deleteComment_Original: Anon103 = js.native
+  var deleteComment_Original: Anon114 = js.native
   @JSName("delete")
-  var delete_Original: Anon102 = js.native
+  var delete_Original: Anon113 = js.native
   /**
     * **Note**: This was previously `/gists/:gist_id/fork`.
     */
   @JSName("fork")
-  var fork_Original: Anon104 = js.native
+  var fork_Original: Anon115 = js.native
   @JSName("getComment")
-  var getComment_Original: Anon106 = js.native
+  var getComment_Original: Anon117 = js.native
   @JSName("getRevision")
-  var getRevision_Original: Anon107 = js.native
+  var getRevision_Original: Anon118 = js.native
   @JSName("get")
-  var get_Original: Anon105 = js.native
+  var get_Original: Anon116 = js.native
   @JSName("listComments")
-  var listComments_Original: Anon109 = js.native
+  var listComments_Original: Anon120 = js.native
   @JSName("listCommits")
-  var listCommits_Original: Anon110 = js.native
+  var listCommits_Original: Anon121 = js.native
   /**
     * Lists public gists for the specified user:
     */
   @JSName("listForUser")
-  var listForUser_Original: Anon111 = js.native
+  var listForUser_Original: Anon122 = js.native
   @JSName("listForks")
-  var listForks_Original: Anon112 = js.native
+  var listForks_Original: Anon123 = js.native
   /**
     * Lists public gists for the specified user:
     * @deprecated octokit.gists.listPublicForUser() has been renamed to octokit.gists.listForUser() (2020-03-04)
     */
   @JSName("listPublicForUser")
-  var listPublicForUser_Original: Anon114 = js.native
+  var listPublicForUser_Original: Anon125 = js.native
   /**
     * List public gists sorted by most recently updated to least recently updated.
     *
     * Note: With [pagination](https://developer.github.com/v3/#pagination), you can fetch up to 3000 gists. For example, you can fetch 100 pages with 30 gists per page or 30 pages with 100 gists per page.
     */
   @JSName("listPublic")
-  var listPublic_Original: Anon113 = js.native
+  var listPublic_Original: Anon124 = js.native
   /**
     * List the authenticated user's starred gists:
     */
   @JSName("listStarred")
-  var listStarred_Original: Anon115 = js.native
+  var listStarred_Original: Anon126 = js.native
   /**
     * Lists the authenticated user's gists or if called anonymously, this endpoint returns all public gists:
     */
   @JSName("list")
-  var list_Original: Anon108 = js.native
+  var list_Original: Anon119 = js.native
   /**
     * Note that you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://developer.github.com/v3/#http-verbs)."
     */
   @JSName("star")
-  var star_Original: Anon116 = js.native
+  var star_Original: Anon127 = js.native
   @JSName("unstar")
-  var unstar_Original: Anon117 = js.native
+  var unstar_Original: Anon128 = js.native
   @JSName("updateComment")
-  var updateComment_Original: Anon119 = js.native
+  var updateComment_Original: Anon130 = js.native
   /**
     * Allows you to update or delete a gist file and rename gist files. Files from the previous version of the gist that aren't explicitly changed during an edit are unchanged.
     */
   @JSName("update")
-  var update_Original: Anon118 = js.native
+  var update_Original: Anon129 = js.native
   def checkIsStarred(): js.Promise[AnyResponse] = js.native
   def checkIsStarred(
     params: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RequestParameters */ js.Any) with GistsCheckIsStarredParams

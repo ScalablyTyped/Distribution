@@ -20,7 +20,7 @@ class AdditionalRecipient () extends js.Object {
     */
   var location_id: String = js.native
   /**
-    * The unique ID for this [AdditionalRecipientReceivable](#type-additionalrecipientreceivable), assigned by the server.
+    * The unique ID for this `AdditionalRecipientReceivable`, assigned by the server.
     */
   var receivable_id: js.UndefOr[String] = js.native
 }

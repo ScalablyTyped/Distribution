@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@tensorflow/tfjs-converter/dist/src/operations/op_mapper_schema", JSImport.Namespace)
+@JSImport("@tensorflow/tfjs-converter/dist/operations/op_mapper_schema", JSImport.Namespace)
 @js.native
 object opMapperSchemaMod extends js.Object {
   @js.native

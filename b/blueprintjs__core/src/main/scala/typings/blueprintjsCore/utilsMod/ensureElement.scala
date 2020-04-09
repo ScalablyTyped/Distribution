@@ -12,7 +12,7 @@ object ensureElement extends js.Object {
   def apply(): ReactElement = js.native
   def apply(
     child: js.UndefOr[ReactNode],
-    tagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 174 */ js.Any
+    tagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any
   ): ReactElement = js.native
   def apply(child: ReactNode): ReactElement = js.native
 }

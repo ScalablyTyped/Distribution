@@ -8,9 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class BatchDeleteCatalogObjectsRequest () extends js.Object {
   /**
-    * The IDs of the [CatalogObject](#type-catalogobject)s to be deleted. When an object is deleted, other objects in
-    * the graph that depend on that object will be deleted as well (for example, deleting a
-    * [CatalogItem](#type-catalogitem) will delete its [CatalogItemVariation](#type-catalogitemvariation)s).
+    * The IDs of the CatalogObjects to be deleted. When an object is deleted, other objects in the graph that depend on
+    * that object will be deleted as well (for example, deleting a CatalogItem will delete its CatalogItemVariation.
     */
   var object_ids: js.UndefOr[js.Array[String]] = js.native
 }

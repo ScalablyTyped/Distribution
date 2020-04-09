@@ -42,7 +42,7 @@ trait ThemeProps[T] extends js.Object {
   var safeRenderCompletion: js.UndefOr[Boolean] = js.undefined
   var showErrorList: js.UndefOr[Boolean] = js.undefined
   var tagName: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ js.Any
   ] = js.undefined
   var target: js.UndefOr[String] = js.undefined
   var transformErrors: js.UndefOr[js.Function1[/* errors */ js.Array[AjvError], js.Array[AjvError]]] = js.undefined
@@ -84,7 +84,7 @@ object ThemeProps {
     onSubmit: /* e */ ISubmitEvent[T] => _ = null,
     safeRenderCompletion: js.UndefOr[Boolean] = js.undefined,
     showErrorList: js.UndefOr[Boolean] = js.undefined,
-    tagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any = null,
+    tagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ js.Any = null,
     target: String = null,
     transformErrors: /* errors */ js.Array[AjvError] => js.Array[AjvError] = null,
     uiSchema: UiSchema = null,

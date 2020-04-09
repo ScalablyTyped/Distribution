@@ -126,6 +126,12 @@ object pulumiKubernetesStrings {
   sealed trait Ingress extends js.Object
   
   @js.native
+  sealed trait IngressClass extends js.Object
+  
+  @js.native
+  sealed trait IngressClassList extends js.Object
+  
+  @js.native
   sealed trait IngressList extends js.Object
   
   @js.native
@@ -406,18 +412,6 @@ object pulumiKubernetesStrings {
   
   @js.native
   sealed trait apiregistrationDotk8sDotioSlashv1beta1SlashAPIServiceList extends js.Object
-  
-  @js.native
-  sealed trait apiregistrationSlashv1SlashAPIService extends js.Object
-  
-  @js.native
-  sealed trait apiregistrationSlashv1SlashAPIServiceList extends js.Object
-  
-  @js.native
-  sealed trait apiregistrationSlashv1beta1SlashAPIService extends js.Object
-  
-  @js.native
-  sealed trait apiregistrationSlashv1beta1SlashAPIServiceList extends js.Object
   
   @js.native
   sealed trait appsSlashv1 extends js.Object
@@ -768,6 +762,9 @@ object pulumiKubernetesStrings {
   sealed trait imagePullSecrets extends js.Object
   
   @js.native
+  sealed trait immutable extends js.Object
+  
+  @js.native
   sealed trait involvedObject extends js.Object
   
   @js.native
@@ -802,6 +799,12 @@ object pulumiKubernetesStrings {
   
   @js.native
   sealed trait networkingDotk8sDotioSlashv1beta1SlashIngress extends js.Object
+  
+  @js.native
+  sealed trait networkingDotk8sDotioSlashv1beta1SlashIngressClass extends js.Object
+  
+  @js.native
+  sealed trait networkingDotk8sDotioSlashv1beta1SlashIngressClassList extends js.Object
   
   @js.native
   sealed trait networkingDotk8sDotioSlashv1beta1SlashIngressList extends js.Object
@@ -1024,6 +1027,12 @@ object pulumiKubernetesStrings {
   
   @js.native
   sealed trait storageDotk8sDotioSlashv1 extends js.Object
+  
+  @js.native
+  sealed trait storageDotk8sDotioSlashv1SlashCSIDriver extends js.Object
+  
+  @js.native
+  sealed trait storageDotk8sDotioSlashv1SlashCSIDriverList extends js.Object
   
   @js.native
   sealed trait storageDotk8sDotioSlashv1SlashCSINode extends js.Object
@@ -1292,6 +1301,10 @@ object pulumiKubernetesStrings {
   @scala.inline
   def Ingress: Ingress = "Ingress".asInstanceOf[Ingress]
   @scala.inline
+  def IngressClass: IngressClass = "IngressClass".asInstanceOf[IngressClass]
+  @scala.inline
+  def IngressClassList: IngressClassList = "IngressClassList".asInstanceOf[IngressClassList]
+  @scala.inline
   def IngressList: IngressList = "IngressList".asInstanceOf[IngressList]
   @scala.inline
   def Job: Job = "Job".asInstanceOf[Job]
@@ -1479,14 +1492,6 @@ object pulumiKubernetesStrings {
   def apiregistrationDotk8sDotioSlashv1beta1SlashAPIService: apiregistrationDotk8sDotioSlashv1beta1SlashAPIService = "apiregistration.k8s.io/v1beta1/APIService".asInstanceOf[apiregistrationDotk8sDotioSlashv1beta1SlashAPIService]
   @scala.inline
   def apiregistrationDotk8sDotioSlashv1beta1SlashAPIServiceList: apiregistrationDotk8sDotioSlashv1beta1SlashAPIServiceList = "apiregistration.k8s.io/v1beta1/APIServiceList".asInstanceOf[apiregistrationDotk8sDotioSlashv1beta1SlashAPIServiceList]
-  @scala.inline
-  def apiregistrationSlashv1SlashAPIService: apiregistrationSlashv1SlashAPIService = "apiregistration/v1/APIService".asInstanceOf[apiregistrationSlashv1SlashAPIService]
-  @scala.inline
-  def apiregistrationSlashv1SlashAPIServiceList: apiregistrationSlashv1SlashAPIServiceList = "apiregistration/v1/APIServiceList".asInstanceOf[apiregistrationSlashv1SlashAPIServiceList]
-  @scala.inline
-  def apiregistrationSlashv1beta1SlashAPIService: apiregistrationSlashv1beta1SlashAPIService = "apiregistration/v1beta1/APIService".asInstanceOf[apiregistrationSlashv1beta1SlashAPIService]
-  @scala.inline
-  def apiregistrationSlashv1beta1SlashAPIServiceList: apiregistrationSlashv1beta1SlashAPIServiceList = "apiregistration/v1beta1/APIServiceList".asInstanceOf[apiregistrationSlashv1beta1SlashAPIServiceList]
   @scala.inline
   def appsSlashv1: appsSlashv1 = "apps/v1".asInstanceOf[appsSlashv1]
   @scala.inline
@@ -1720,6 +1725,8 @@ object pulumiKubernetesStrings {
   @scala.inline
   def imagePullSecrets: imagePullSecrets = "imagePullSecrets".asInstanceOf[imagePullSecrets]
   @scala.inline
+  def immutable: immutable = "immutable".asInstanceOf[immutable]
+  @scala.inline
   def involvedObject: involvedObject = "involvedObject".asInstanceOf[involvedObject]
   @scala.inline
   def items: items = "items".asInstanceOf[items]
@@ -1743,6 +1750,10 @@ object pulumiKubernetesStrings {
   def networkingDotk8sDotioSlashv1beta1: networkingDotk8sDotioSlashv1beta1 = "networking.k8s.io/v1beta1".asInstanceOf[networkingDotk8sDotioSlashv1beta1]
   @scala.inline
   def networkingDotk8sDotioSlashv1beta1SlashIngress: networkingDotk8sDotioSlashv1beta1SlashIngress = "networking.k8s.io/v1beta1/Ingress".asInstanceOf[networkingDotk8sDotioSlashv1beta1SlashIngress]
+  @scala.inline
+  def networkingDotk8sDotioSlashv1beta1SlashIngressClass: networkingDotk8sDotioSlashv1beta1SlashIngressClass = "networking.k8s.io/v1beta1/IngressClass".asInstanceOf[networkingDotk8sDotioSlashv1beta1SlashIngressClass]
+  @scala.inline
+  def networkingDotk8sDotioSlashv1beta1SlashIngressClassList: networkingDotk8sDotioSlashv1beta1SlashIngressClassList = "networking.k8s.io/v1beta1/IngressClassList".asInstanceOf[networkingDotk8sDotioSlashv1beta1SlashIngressClassList]
   @scala.inline
   def networkingDotk8sDotioSlashv1beta1SlashIngressList: networkingDotk8sDotioSlashv1beta1SlashIngressList = "networking.k8s.io/v1beta1/IngressList".asInstanceOf[networkingDotk8sDotioSlashv1beta1SlashIngressList]
   @scala.inline
@@ -1891,6 +1902,10 @@ object pulumiKubernetesStrings {
   def status_ : status_ = "status".asInstanceOf[status_]
   @scala.inline
   def storageDotk8sDotioSlashv1: storageDotk8sDotioSlashv1 = "storage.k8s.io/v1".asInstanceOf[storageDotk8sDotioSlashv1]
+  @scala.inline
+  def storageDotk8sDotioSlashv1SlashCSIDriver: storageDotk8sDotioSlashv1SlashCSIDriver = "storage.k8s.io/v1/CSIDriver".asInstanceOf[storageDotk8sDotioSlashv1SlashCSIDriver]
+  @scala.inline
+  def storageDotk8sDotioSlashv1SlashCSIDriverList: storageDotk8sDotioSlashv1SlashCSIDriverList = "storage.k8s.io/v1/CSIDriverList".asInstanceOf[storageDotk8sDotioSlashv1SlashCSIDriverList]
   @scala.inline
   def storageDotk8sDotioSlashv1SlashCSINode: storageDotk8sDotioSlashv1SlashCSINode = "storage.k8s.io/v1/CSINode".asInstanceOf[storageDotk8sDotioSlashv1SlashCSINode]
   @scala.inline

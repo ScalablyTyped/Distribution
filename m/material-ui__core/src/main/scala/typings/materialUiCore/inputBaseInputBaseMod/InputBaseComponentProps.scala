@@ -14,6 +14,7 @@ import typings.react.mod.HTMLAttributes
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
@@ -222,7 +223,7 @@ object InputBaseComponentProps {
     onProgress: SyntheticEvent[HTMLInputElement | HTMLTextAreaElement, Event_] => Unit = null,
     onRateChange: SyntheticEvent[HTMLInputElement | HTMLTextAreaElement, Event_] => Unit = null,
     onReset: FormEvent[HTMLInputElement | HTMLTextAreaElement] => Unit = null,
-    onScroll: UIEvent[HTMLInputElement | HTMLTextAreaElement] => Unit = null,
+    onScroll: UIEvent[HTMLInputElement | HTMLTextAreaElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[HTMLInputElement | HTMLTextAreaElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[HTMLInputElement | HTMLTextAreaElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[HTMLInputElement | HTMLTextAreaElement, Event_] => Unit = null,

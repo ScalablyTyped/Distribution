@@ -15,6 +15,10 @@ trait SimulationJob extends js.Object {
     */
   var clientRequestToken: js.UndefOr[ClientRequestToken] = js.native
   /**
+    * Compute information for the simulation job
+    */
+  var compute: js.UndefOr[ComputeResponse] = js.native
+  /**
     * The data sources for the simulation job.
     */
   var dataSources: js.UndefOr[DataSources] = js.native
@@ -93,6 +97,7 @@ object SimulationJob {
   def apply(
     arn: Arn = null,
     clientRequestToken: ClientRequestToken = null,
+    compute: ComputeResponse = null,
     dataSources: DataSources = null,
     failureBehavior: FailureBehavior = null,
     failureCode: SimulationJobErrorCode = null,
@@ -115,6 +120,7 @@ object SimulationJob {
     val __obj = js.Dynamic.literal()
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
     if (clientRequestToken != null) __obj.updateDynamic("clientRequestToken")(clientRequestToken.asInstanceOf[js.Any])
+    if (compute != null) __obj.updateDynamic("compute")(compute.asInstanceOf[js.Any])
     if (dataSources != null) __obj.updateDynamic("dataSources")(dataSources.asInstanceOf[js.Any])
     if (failureBehavior != null) __obj.updateDynamic("failureBehavior")(failureBehavior.asInstanceOf[js.Any])
     if (failureCode != null) __obj.updateDynamic("failureCode")(failureCode.asInstanceOf[js.Any])

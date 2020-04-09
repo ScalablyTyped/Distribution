@@ -19,18 +19,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxAccordionOptions extends CollectionWidgetOptions[dxAccordion] {
-  /** A number specifying the time in milliseconds spent on the animation of the expanding or collapsing of a panel. */
+  /** @name dxAccordion.Options.animationDuration */
   var animationDuration: js.UndefOr[Double] = js.undefined
-  /** Specifies whether all items can be collapsed or whether at least one item must always be expanded. */
+  /** @name dxAccordion.Options.collapsible */
   var collapsible: js.UndefOr[Boolean] = js.undefined
-  /** Binds the widget to data. */
+  /** @name dxAccordion.Options.dataSource */
   @JSName("dataSource")
   var dataSource_dxAccordionOptions: js.UndefOr[
     String | (js.Array[String | dxAccordionItem | _]) | DataSource | DataSourceOptions
   ] = js.undefined
-  /** Specifies whether to render the panel's content when it is displayed. If false, the content is rendered immediately. */
+  /** @name dxAccordion.Options.deferRendering */
   var deferRendering: js.UndefOr[Boolean] = js.undefined
-  /** Specifies a custom template for item titles. */
+  /** @name dxAccordion.Options.itemTitleTemplate */
   var itemTitleTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function3[
       /* itemData */ js.Any, 
@@ -39,14 +39,14 @@ trait dxAccordionOptions extends CollectionWidgetOptions[dxAccordion] {
       String | Element | JQuery
     ])
   ] = js.undefined
-  /** An array of items displayed by the widget. */
+  /** @name dxAccordion.Options.items */
   @JSName("items")
   var items_dxAccordionOptions: js.UndefOr[js.Array[String | dxAccordionItem | _]] = js.undefined
-  /** Specifies whether the widget can expand several items or only a single item at once. */
+  /** @name dxAccordion.Options.multiple */
   var multiple: js.UndefOr[Boolean] = js.undefined
-  /** A function that is executed when an accordion item's title is clicked or tapped. */
+  /** @name dxAccordion.Options.onItemTitleClick */
   var onItemTitleClick: js.UndefOr[(js.Function1[/* e */ AnonItemIndex, _]) | String] = js.undefined
-  /** Specifies whether to repaint only those elements whose data changed. */
+  /** @name dxAccordion.Options.repaintChangesOnly */
   var repaintChangesOnly: js.UndefOr[Boolean] = js.undefined
 }
 

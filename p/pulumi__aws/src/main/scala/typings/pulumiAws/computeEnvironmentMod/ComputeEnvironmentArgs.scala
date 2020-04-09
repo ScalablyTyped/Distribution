@@ -8,6 +8,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ComputeEnvironmentArgs extends js.Object {
+  /**
+    * The name for your compute environment. Up to 128 letters (uppercase and lowercase), numbers, and underscores are allowed. If omitted, this provider will assign a random, unique name.
+    */
   val computeEnvironmentName: js.UndefOr[Input[String]] = js.native
   /**
     * Creates a unique compute environment name beginning with the specified prefix. Conflicts with `computeEnvironmentName`.

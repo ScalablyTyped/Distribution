@@ -5,6 +5,7 @@ import typings.pulumiAws.iamMod.InstanceProfile
 import typings.pulumiAws.inputMod.ec2.InstanceCreditSpecification
 import typings.pulumiAws.inputMod.ec2.InstanceEbsBlockDevice
 import typings.pulumiAws.inputMod.ec2.InstanceEphemeralBlockDevice
+import typings.pulumiAws.inputMod.ec2.InstanceMetadataOptions
 import typings.pulumiAws.inputMod.ec2.InstanceNetworkInterface
 import typings.pulumiAws.inputMod.ec2.InstanceRootBlockDevice
 import typings.pulumiAws.instanceTypeMod.InstanceType
@@ -111,6 +112,10 @@ trait InstanceState extends js.Object {
     */
   val keyName: js.UndefOr[Input[String]] = js.native
   /**
+    * Customize the metadata options of the instance. See Metadata Options below for more details.
+    */
+  val metadataOptions: js.UndefOr[Input[InstanceMetadataOptions]] = js.native
+  /**
     * If true, the launched EC2 instance will have detailed monitoring enabled. (Available since v0.6.0)
     */
   val monitoring: js.UndefOr[Input[Boolean]] = js.native
@@ -161,6 +166,8 @@ trait InstanceState extends js.Object {
   val rootBlockDevice: js.UndefOr[Input[InstanceRootBlockDevice]] = js.native
   /**
     * A list of security group names (EC2-Classic) or IDs (default VPC) to associate with.
+    *
+    * @deprecated Use of `securityGroups` is discouraged as it does not allow for changes and will force your instance to be replaced if changes are made. To avoid this, use `vpcSecurityGroupIds` which allows for updates.
     */
   val securityGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
@@ -222,6 +229,7 @@ object InstanceState {
     ipv6AddressCount: Input[Double] = null,
     ipv6Addresses: Input[js.Array[Input[String]]] = null,
     keyName: Input[String] = null,
+    metadataOptions: Input[InstanceMetadataOptions] = null,
     monitoring: Input[Boolean] = null,
     networkInterfaces: Input[js.Array[Input[InstanceNetworkInterface]]] = null,
     passwordData: Input[String] = null,
@@ -264,6 +272,7 @@ object InstanceState {
     if (ipv6AddressCount != null) __obj.updateDynamic("ipv6AddressCount")(ipv6AddressCount.asInstanceOf[js.Any])
     if (ipv6Addresses != null) __obj.updateDynamic("ipv6Addresses")(ipv6Addresses.asInstanceOf[js.Any])
     if (keyName != null) __obj.updateDynamic("keyName")(keyName.asInstanceOf[js.Any])
+    if (metadataOptions != null) __obj.updateDynamic("metadataOptions")(metadataOptions.asInstanceOf[js.Any])
     if (monitoring != null) __obj.updateDynamic("monitoring")(monitoring.asInstanceOf[js.Any])
     if (networkInterfaces != null) __obj.updateDynamic("networkInterfaces")(networkInterfaces.asInstanceOf[js.Any])
     if (passwordData != null) __obj.updateDynamic("passwordData")(passwordData.asInstanceOf[js.Any])

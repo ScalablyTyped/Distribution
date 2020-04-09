@@ -1,7 +1,7 @@
 
 # Scala.js typings for express-http-proxy
 
-Typings are for version 1.5
+Typings are for version 1.6
 
 ## Library description:
 http proxy middleware for express

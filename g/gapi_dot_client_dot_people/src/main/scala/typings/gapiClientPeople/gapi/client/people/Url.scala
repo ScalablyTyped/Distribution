@@ -6,15 +6,15 @@ import scala.scalajs.js.annotation._
 
 trait Url extends js.Object {
   /**
-    * The read-only type of the URL translated and formatted in the viewer's
+    * Output only. The type of the URL translated and formatted in the viewer's
     * account locale or the `Accept-Language` HTTP header locale.
     */
   var formattedType: js.UndefOr[String] = js.undefined
   /** Metadata about the URL. */
   var metadata: js.UndefOr[FieldMetadata] = js.undefined
   /**
-    * The type of the URL. The type can be custom or predefined.
-    * Possible values include, but are not limited to, the following:
+    * The type of the URL. The type can be custom or one of these predefined
+    * values:
     *
     * &#42; `home`
     * &#42; `work`

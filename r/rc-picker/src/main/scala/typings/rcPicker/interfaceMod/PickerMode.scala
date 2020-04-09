@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /* Rewritten from type alias, can be one of: 
   - typings.rcPicker.rcPickerStrings.month
   - typings.rcPicker.rcPickerStrings.date
+  - typings.rcPicker.rcPickerStrings.quarter
   - typings.rcPicker.rcPickerStrings.year
   - typings.rcPicker.rcPickerStrings.week
   - typings.rcPicker.rcPickerStrings.time
@@ -21,6 +22,8 @@ object PickerMode {
   def date: typings.rcPicker.rcPickerStrings.date = this.cast("date")
   @scala.inline
   def month: typings.rcPicker.rcPickerStrings.month = this.cast("month")
+  @scala.inline
+  def quarter: typings.rcPicker.rcPickerStrings.quarter = this.cast("quarter")
   @scala.inline
   def time: typings.rcPicker.rcPickerStrings.time = this.cast("time")
   @scala.inline

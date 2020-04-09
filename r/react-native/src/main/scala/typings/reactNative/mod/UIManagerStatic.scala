@@ -38,6 +38,8 @@ trait UIManagerStatic extends js.Object {
     * has been completed in native. If you need the measurements as soon as
     * possible, consider using the [`onLayout`
     * prop](docs/view.html#onlayout) instead.
+    *
+    * @deprecated Use `ref.measure` instead.
     */
   def measure(node: Double, callback: MeasureOnSuccessCallback): Unit = js.native
   /**
@@ -54,6 +56,8 @@ trait UIManagerStatic extends js.Object {
     *
     * Note that these measurements are not available until after the rendering
     * has been completed in native.
+    *
+    * @deprecated Use `ref.measureInWindow` instead.
     */
   def measureInWindow(node: Double, callback: MeasureInWindowOnSuccessCallback): Unit = js.native
   /**
@@ -63,6 +67,8 @@ trait UIManagerStatic extends js.Object {
     *
     * As always, to obtain a native node handle for a component, you can use
     * `React.findNodeHandle(component)`.
+    *
+    * @deprecated Use `ref.measureLayout` instead.
     */
   def measureLayout(
     node: Double,

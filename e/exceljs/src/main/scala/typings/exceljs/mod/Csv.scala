@@ -14,6 +14,7 @@ trait Csv extends js.Object {
   	 * Create input stream for reading
   	 */
   def createInputStream(): EventEmitter = js.native
+  def createInputStream(options: PartialCsvReadOptions): EventEmitter = js.native
   /**
   	 * read from a stream
   	 */
@@ -33,6 +34,7 @@ trait Csv extends js.Object {
   	 * write to a buffer
   	 */
   def writeBuffer(): js.Promise[Buffer] = js.native
+  def writeBuffer(options: PartialCsvWriteOptions): js.Promise[Buffer] = js.native
   /**
   	 * write to a file
   	 */

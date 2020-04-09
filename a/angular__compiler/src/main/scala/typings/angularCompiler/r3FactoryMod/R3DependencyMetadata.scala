@@ -7,6 +7,12 @@ import scala.scalajs.js.annotation._
 
 trait R3DependencyMetadata extends js.Object {
   /**
+    * If an @Attribute decorator is present, this is the literal type of the attribute name, or
+    * the unknown type if no literal type is available (e.g. the attribute name is an expression).
+    * Will be null otherwise.
+    */
+  var attribute: Expression | Null
+  /**
     * Whether the dependency has an @Host qualifier.
     */
   var host: Boolean
@@ -41,10 +47,11 @@ object R3DependencyMetadata {
     resolved: R3ResolvedDependencyType,
     self: Boolean,
     skipSelf: Boolean,
-    token: Expression
+    token: Expression,
+    attribute: Expression = null
   ): R3DependencyMetadata = {
     val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any], resolved = resolved.asInstanceOf[js.Any], self = self.asInstanceOf[js.Any], skipSelf = skipSelf.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
-  
+    if (attribute != null) __obj.updateDynamic("attribute")(attribute.asInstanceOf[js.Any])
     __obj.asInstanceOf[R3DependencyMetadata]
   }
 }

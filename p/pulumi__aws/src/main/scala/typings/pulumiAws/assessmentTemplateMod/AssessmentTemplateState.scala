@@ -1,5 +1,6 @@
 package typings.pulumiAws.assessmentTemplateMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -24,6 +25,10 @@ trait AssessmentTemplateState extends js.Object {
     */
   val rulesPackageArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
+    * Key-value mapping of tags for the Inspector assessment template.
+    */
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  /**
     * The assessment target ARN to attach the template to.
     */
   val targetArn: js.UndefOr[Input[String]] = js.native
@@ -36,6 +41,7 @@ object AssessmentTemplateState {
     duration: Input[Double] = null,
     name: Input[String] = null,
     rulesPackageArns: Input[js.Array[Input[String]]] = null,
+    tags: Input[StringDictionary[_]] = null,
     targetArn: Input[String] = null
   ): AssessmentTemplateState = {
     val __obj = js.Dynamic.literal()
@@ -43,6 +49,7 @@ object AssessmentTemplateState {
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (rulesPackageArns != null) __obj.updateDynamic("rulesPackageArns")(rulesPackageArns.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     if (targetArn != null) __obj.updateDynamic("targetArn")(targetArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssessmentTemplateState]
   }

@@ -8,7 +8,7 @@ import typings.ionicCore.mod.ViewController
 import typings.ionicCore.navInterfaceMod.NavComponent
 import typings.ionicCore.navInterfaceMod.NavOptions
 import typings.ionicCore.navInterfaceMod.TransitionDoneFn
-import typings.ionicCore.stencilCoreMod.EventEmitter
+import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -14,23 +14,23 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Device extends js.Object {
-  /** Indicates whether or not the device platform is Android. */
+  /** @name Device.android */
   var android: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the type of the device on which the application is running. */
+  /** @name Device.deviceType */
   var deviceType: js.UndefOr[phone | tablet | desktop] = js.undefined
-  /** Indicates whether or not the device platform is generic, which means that the application will look and behave according to a generic "light" or "dark" theme. */
+  /** @name Device.generic */
   var generic: js.UndefOr[Boolean] = js.undefined
-  /** Specifies a performance grade of the current device. */
+  /** @name Device.grade */
   var grade: js.UndefOr[A | B | C] = js.undefined
-  /** Indicates whether or not the device platform is iOS. */
+  /** @name Device.ios */
   var ios: js.UndefOr[Boolean] = js.undefined
-  /** Indicates whether or not the device type is 'phone'. */
+  /** @name Device.phone */
   var phone: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the platform of the device on which the application is running. */
+  /** @name Device.platform */
   var platform: js.UndefOr[android | ios | generic] = js.undefined
-  /** Indicates whether or not the device type is 'tablet'. */
+  /** @name Device.tablet */
   var tablet: js.UndefOr[Boolean] = js.undefined
-  /** Specifies an array with the major and minor versions of the device platform. */
+  /** @name Device.version */
   var version: js.UndefOr[js.Array[Double]] = js.undefined
 }
 

@@ -10,6 +10,10 @@ trait EventsOptions extends js.Object {
     */
   var beforeDestroy: js.UndefOr[js.Function0[_]] = js.undefined
   /**
+    * Event will be fired right before "loop fix"
+    */
+  var beforeLoopFix: js.UndefOr[js.Function0[_]] = js.undefined
+  /**
     * Triggered when user click/tap on Swiper after 300ms delay. Receives 'touchend' event as an arguments.
     */
   var click: js.UndefOr[js.Function1[/* event */ js.Any, _]] = js.undefined
@@ -57,6 +61,14 @@ trait EventsOptions extends js.Object {
     * });
     */
   var init: js.UndefOr[js.Function0[_]] = js.undefined
+  /**
+    * Event will be fired after "loop fix"
+    */
+  var loopFix: js.UndefOr[js.Function0[_]] = js.undefined
+  /**
+    * Event will be fired if observer is enabled and it detects DOM mutations
+    */
+  var observerUpdate: js.UndefOr[js.Function0[_]] = js.undefined
   /**
     * Triggered when Swiper progress is changed, as an arguments it receives
     * progress that is always from 0 to 1
@@ -152,11 +164,14 @@ object EventsOptions {
   @scala.inline
   def apply(
     beforeDestroy: () => _ = null,
+    beforeLoopFix: () => _ = null,
     click: /* event */ js.Any => _ = null,
     doubleTap: /* event */ js.Any => _ = null,
     fromEdge: () => _ = null,
     imagesReady: () => _ = null,
     init: () => _ = null,
+    loopFix: () => _ = null,
+    observerUpdate: () => _ = null,
     progress: /* progress */ js.Any => _ = null,
     reachBeginning: () => _ = null,
     reachEnd: () => _ = null,
@@ -181,11 +196,14 @@ object EventsOptions {
   ): EventsOptions = {
     val __obj = js.Dynamic.literal()
     if (beforeDestroy != null) __obj.updateDynamic("beforeDestroy")(js.Any.fromFunction0(beforeDestroy))
+    if (beforeLoopFix != null) __obj.updateDynamic("beforeLoopFix")(js.Any.fromFunction0(beforeLoopFix))
     if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction1(click))
     if (doubleTap != null) __obj.updateDynamic("doubleTap")(js.Any.fromFunction1(doubleTap))
     if (fromEdge != null) __obj.updateDynamic("fromEdge")(js.Any.fromFunction0(fromEdge))
     if (imagesReady != null) __obj.updateDynamic("imagesReady")(js.Any.fromFunction0(imagesReady))
     if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction0(init))
+    if (loopFix != null) __obj.updateDynamic("loopFix")(js.Any.fromFunction0(loopFix))
+    if (observerUpdate != null) __obj.updateDynamic("observerUpdate")(js.Any.fromFunction0(observerUpdate))
     if (progress != null) __obj.updateDynamic("progress")(js.Any.fromFunction1(progress))
     if (reachBeginning != null) __obj.updateDynamic("reachBeginning")(js.Any.fromFunction0(reachBeginning))
     if (reachEnd != null) __obj.updateDynamic("reachEnd")(js.Any.fromFunction0(reachEnd))

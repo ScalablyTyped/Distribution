@@ -1,6 +1,6 @@
 package typings.octokitPluginRestEndpointMethods
 
-import typings.octokitPluginRestEndpointMethods.typesMod.ActivityCheckStarringRepoParams
+import typings.octokitPluginRestEndpointMethods.typesMod.ActivityCheckRepoIsStarredByAuthenticatedUserParams
 import typings.octokitPluginRestEndpointMethods.typesMod.AnyResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +11,7 @@ trait Anon21 extends js.Object {
   var endpoint: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EndpointInterface */ js.Any = js.native
   def apply(): js.Promise[AnyResponse] = js.native
   def apply(
-    params: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RequestParameters */ js.Any) with ActivityCheckStarringRepoParams
+    params: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RequestParameters */ js.Any) with ActivityCheckRepoIsStarredByAuthenticatedUserParams
   ): js.Promise[AnyResponse] = js.native
 }
 

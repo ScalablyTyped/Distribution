@@ -20,7 +20,7 @@ object responseDataMod extends js.Object {
     def toJSON(): js.Any = js.native
     /**
       * Convert current object to asn1js object and set correct values
-      * 
+      *
       * @param {boolean} [encodeFlag]
       * @returns {*}
       */

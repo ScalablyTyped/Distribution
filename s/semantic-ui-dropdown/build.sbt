@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "semantic-ui-dropdown"
-version := "2.2-dt-20200225Z-43bf46"
+version := "2.2-dt-20200225Z-b80e71"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "jquery" % "3.3-dt-20200225Z-e64e66",
-  "org.scalablytyped" %%% "semantic-ui-api" % "2.2-dt-20200225Z-0ba5c0",
+  "org.scalablytyped" %%% "jquery" % "3.3-dt-20200326Z-2318d7",
+  "org.scalablytyped" %%% "semantic-ui-api" % "2.2-dt-20200225Z-3ad312",
   "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-3d9ead",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false

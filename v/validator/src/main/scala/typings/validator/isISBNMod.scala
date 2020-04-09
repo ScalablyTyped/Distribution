@@ -1,7 +1,5 @@
 package typings.validator
 
-import typings.validator.validatorStrings.`10`
-import typings.validator.validatorStrings.`13`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,9 +13,7 @@ object isISBNMod extends js.Object {
     * @param [version] - ISBN Version
     */
   def default(str: String): Boolean = js.native
-  @JSName("default")
-  def default_10(str: String, version: `10`): Boolean = js.native
-  @JSName("default")
-  def default_13(str: String, version: `13`): Boolean = js.native
+  def default(str: String, version: typings.validator.mod.validator.ISBNVersion): Boolean = js.native
+  type ISBNVersion = typings.validator.mod.validator.ISBNVersion
 }
 

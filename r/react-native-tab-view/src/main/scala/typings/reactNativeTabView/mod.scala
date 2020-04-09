@@ -20,6 +20,10 @@ object mod extends js.Object {
     extends typings.reactNativeTabView.tabBarMod.default[T]
   
   @js.native
+  class TabBarIndicator[T /* <: Route */] ()
+    extends typings.reactNativeTabView.tabBarIndicatorMod.TabBarIndicator[T]
+  
+  @js.native
   class TabView[T /* <: Route */] ()
     extends typings.reactNativeTabView.tabViewMod.default[T]
   

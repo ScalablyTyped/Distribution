@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait dxMenuBase extends CollectionWidget {
-  /** Selects an item found using its DOM node. */
+  /** @name dxMenuBase.selectItem(itemElement) */
   def selectItem(itemElement: Element): Unit = js.native
-  /** Cancels the selection of an item found using its DOM node. */
+  /** @name dxMenuBase.unselectItem(itemElement) */
   def unselectItem(itemElement: Element): Unit = js.native
 }
 

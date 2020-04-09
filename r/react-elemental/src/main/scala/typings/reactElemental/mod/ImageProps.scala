@@ -13,6 +13,7 @@ import typings.react.mod.ImgHTMLAttributes
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
@@ -242,7 +243,7 @@ object ImageProps {
     onProgress: SyntheticEvent[HTMLImageElement, Event_] => Unit = null,
     onRateChange: SyntheticEvent[HTMLImageElement, Event_] => Unit = null,
     onReset: FormEvent[HTMLImageElement] => Unit = null,
-    onScroll: UIEvent[HTMLImageElement] => Unit = null,
+    onScroll: UIEvent[HTMLImageElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[HTMLImageElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[HTMLImageElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[HTMLImageElement, Event_] => Unit = null,

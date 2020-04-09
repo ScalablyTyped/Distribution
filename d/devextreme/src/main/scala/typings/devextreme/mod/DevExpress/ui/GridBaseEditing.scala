@@ -15,21 +15,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GridBaseEditing extends js.Object {
-  /** Configures the form. Used only if editing.mode is "form" or "popup". */
+  /** @name GridBase.Options.editing.form */
   var form: js.UndefOr[dxFormOptions] = js.undefined
-  /** Specifies how a user edits data. */
+  /** @name GridBase.Options.editing.mode */
   var mode: js.UndefOr[batch | cell | row | form | popup] = js.undefined
-  /** Configures the popup. Used only if editing.mode is "popup". */
+  /** @name GridBase.Options.editing.popup */
   var popup: js.UndefOr[dxPopupOptions[dxPopup]] = js.undefined
-  /** Specifies operations that are performed after saving changes. */
+  /** @name GridBase.Options.editing.refreshMode */
   var refreshMode: js.UndefOr[full | reshape | repaint] = js.undefined
-  /** Specifies whether to select text in a cell when a user starts editing. */
+  /** @name GridBase.Options.editing.selectTextOnEditStart */
   var selectTextOnEditStart: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether a single or double click should switch a cell to the editing state. Applies if editing.mode is "cell" or "batch". */
+  /** @name GridBase.Options.editing.startEditAction */
   var startEditAction: js.UndefOr[click | dblClick] = js.undefined
-  /** Contains options that specify texts for editing-related UI elements. */
+  /** @name GridBase.Options.editing.texts */
   var texts: js.UndefOr[GridBaseEditingTexts] = js.undefined
-  /** Specifies whether the editing column uses icons instead of links. */
+  /** @name GridBase.Options.editing.useIcons */
   var useIcons: js.UndefOr[Boolean] = js.undefined
 }
 

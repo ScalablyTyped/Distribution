@@ -5,15 +5,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Font extends js.Object {
-  /** Specifies font color. */
+  /** @name Font.color */
   var color: js.UndefOr[String] = js.undefined
-  /** Specifies font family. */
+  /** @name Font.family */
   var family: js.UndefOr[String] = js.undefined
-  /** Specifies font opacity. */
+  /** @name Font.opacity */
   var opacity: js.UndefOr[Double] = js.undefined
-  /** Specifies font size. */
+  /** @name Font.size */
   var size: js.UndefOr[String | Double] = js.undefined
-  /** Specifies font weight. Accepts values from 100 to 900 in increments of 100. Higher values increase boldness. */
+  /** @name Font.weight */
   var weight: js.UndefOr[Double] = js.undefined
 }
 

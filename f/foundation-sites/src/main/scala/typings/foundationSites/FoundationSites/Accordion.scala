@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-// http://foundation.zurb.com/sites/docs/accordion.html#javascript-reference
+// https://get.foundation/sites/docs/accordion.html#javascript-reference
 trait Accordion extends js.Object {
   def destroy(): Unit
   def down($target: JQuery, firstTime: Boolean): Unit

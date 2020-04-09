@@ -39,6 +39,15 @@ package object fileMod {
     scala.Unit
   ]
   type FileExistsResponse = js.Array[scala.Boolean]
+  type GenerateSignedPostPolicyV2Callback = typings.googleCloudStorage.fileMod.GetSignedPolicyCallback
+  type GenerateSignedPostPolicyV2Options = typings.googleCloudStorage.fileMod.GetSignedPolicyOptions
+  type GenerateSignedPostPolicyV2Response = typings.googleCloudStorage.fileMod.GetSignedPolicyResponse
+  type GenerateSignedPostPolicyV4Callback = js.Function2[
+    /* err */ typings.std.Error | scala.Null, 
+    /* output */ js.UndefOr[typings.googleCloudStorage.fileMod.SignedPostPolicyV4Output], 
+    scala.Unit
+  ]
+  type GenerateSignedPostPolicyV4Response = js.Array[typings.googleCloudStorage.fileMod.SignedPostPolicyV4Output]
   type GetExpirationDateCallback = js.Function3[
     /* err */ typings.std.Error | scala.Null, 
     /* expirationDate */ js.UndefOr[typings.std.Date | scala.Null], 
@@ -93,6 +102,7 @@ package object fileMod {
     scala.Unit
   ]
   type MoveResponse = js.Array[typings.googleCloudCommon.serviceObjectMod.Metadata]
+  type PolicyFields = org.scalablytyped.runtime.StringDictionary[java.lang.String]
   type RotateEncryptionKeyCallback = typings.googleCloudStorage.fileMod.CopyCallback
   type RotateEncryptionKeyOptions = java.lang.String | typings.node.Buffer | typings.googleCloudStorage.fileMod.EncryptionKeyOptions
   type RotateEncryptionKeyResponse = typings.googleCloudStorage.fileMod.CopyResponse

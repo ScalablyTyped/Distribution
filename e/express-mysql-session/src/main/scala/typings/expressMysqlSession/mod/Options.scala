@@ -1,5 +1,6 @@
 package typings.expressMysqlSession.mod
 
+import typings.expressMysqlSession.PartialSchema
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +14,7 @@ trait Options extends js.Object {
   var host: js.UndefOr[String] = js.undefined
   var password: js.UndefOr[String] = js.undefined
   var port: js.UndefOr[Double] = js.undefined
-  var schema: js.UndefOr[Schema] = js.undefined
+  var schema: js.UndefOr[PartialSchema] = js.undefined
   var user: js.UndefOr[String] = js.undefined
 }
 
@@ -28,7 +29,7 @@ object Options {
     host: String = null,
     password: String = null,
     port: Int | Double = null,
-    schema: Schema = null,
+    schema: PartialSchema = null,
     user: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()

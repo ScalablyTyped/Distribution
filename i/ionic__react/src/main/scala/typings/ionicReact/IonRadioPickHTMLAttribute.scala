@@ -70,6 +70,7 @@ import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
@@ -607,7 +608,7 @@ object IonRadioPickHTMLAttribute {
     onProgress: SyntheticEvent[HTMLIonRadioElement, Event_] => Unit = null,
     onRateChange: SyntheticEvent[HTMLIonRadioElement, Event_] => Unit = null,
     onReset: FormEvent[HTMLIonRadioElement] => Unit = null,
-    onScroll: UIEvent[HTMLIonRadioElement] => Unit = null,
+    onScroll: UIEvent[HTMLIonRadioElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[HTMLIonRadioElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[HTMLIonRadioElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[HTMLIonRadioElement, Event_] => Unit = null,

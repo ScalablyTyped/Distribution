@@ -8,7 +8,9 @@ import typings.pulumiAws.outputMod.cognito.UserPoolLambdaConfig
 import typings.pulumiAws.outputMod.cognito.UserPoolPasswordPolicy
 import typings.pulumiAws.outputMod.cognito.UserPoolSchema
 import typings.pulumiAws.outputMod.cognito.UserPoolSmsConfiguration
+import typings.pulumiAws.outputMod.cognito.UserPoolSoftwareTokenMfaConfiguration
 import typings.pulumiAws.outputMod.cognito.UserPoolUserPoolAddOns
+import typings.pulumiAws.outputMod.cognito.UserPoolUsernameConfiguration
 import typings.pulumiAws.outputMod.cognito.UserPoolVerificationMessageTemplate
 import typings.pulumiPulumi.mod.CustomResource
 import typings.pulumiPulumi.outputMod.Input
@@ -81,7 +83,7 @@ class UserPool protected () extends CustomResource {
     */
   val lastModifiedDate: Output_[String] = js.native
   /**
-    * Set to enable multi-factor authentication. Must be one of the following values (ON, OFF, OPTIONAL)
+    * Multi-Factor Authentication (MFA) configuration for the User Pool. Defaults of `OFF`. Valid values:
     */
   val mfaConfiguration: Output_[js.UndefOr[String]] = js.native
   /**
@@ -97,17 +99,21 @@ class UserPool protected () extends CustomResource {
     */
   val schemas: Output_[js.UndefOr[js.Array[UserPoolSchema]]] = js.native
   /**
-    * A string representing the SMS authentication message.
+    * A string representing the SMS authentication message. The message must contain the `{####}` placeholder, which will be replaced with the code.
     */
   val smsAuthenticationMessage: Output_[js.UndefOr[String]] = js.native
   /**
-    * The SMS Configuration.
+    * Configuration block for Short Message Service (SMS) settings. Detailed below. These settings apply to SMS user verification and SMS Multi-Factor Authentication (MFA). Due to Cognito API restrictions, the SMS configuration cannot be removed without recreating the Cognito User Pool. For user data safety, this resource will ignore the removal of this configuration by disabling drift detection. To force resource recreation after this configuration has been applied, see the [`up` command and use --replace](https://www.pulumi.com/docs/reference/cli/pulumi_up/).
     */
-  val smsConfiguration: Output_[js.UndefOr[UserPoolSmsConfiguration]] = js.native
+  val smsConfiguration: Output_[UserPoolSmsConfiguration] = js.native
   /**
     * A string representing the SMS verification message. Conflicts with `verificationMessageTemplate` configuration block `smsMessage` argument.
     */
   val smsVerificationMessage: Output_[String] = js.native
+  /**
+    * Configuration block for software token Mult-Factor Authentication (MFA) settings. Detailed below.
+    */
+  val softwareTokenMfaConfiguration: Output_[js.UndefOr[UserPoolSoftwareTokenMfaConfiguration]] = js.native
   /**
     * A mapping of tags to assign to the User Pool.
     */
@@ -120,6 +126,10 @@ class UserPool protected () extends CustomResource {
     * Specifies whether email addresses or phone numbers can be specified as usernames when a user signs up. Conflicts with `aliasAttributes`.
     */
   val usernameAttributes: Output_[js.UndefOr[js.Array[String]]] = js.native
+  /**
+    * The Username Configuration.
+    */
+  val usernameConfiguration: Output_[js.UndefOr[UserPoolUsernameConfiguration]] = js.native
   /**
     * The verification message templates configuration.
     */

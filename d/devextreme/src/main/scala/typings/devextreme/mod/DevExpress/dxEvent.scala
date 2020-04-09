@@ -6,25 +6,25 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxEvent extends event {
-  /** The DOM element within the current event propagation stage. */
+  /** @name dxEvent.currentTarget */
   var currentTarget: Element
-  /** Data passed to the event handler. */
+  /** @name dxEvent.data */
   var data: js.Any
-  /** The DOM element to which the currently-called event handler was attached. */
+  /** @name dxEvent.delegateTarget */
   var delegateTarget: Element
-  /** The DOM element that initiated the event. */
+  /** @name dxEvent.target */
   var target: Element
-  /** Checks if the preventDefault() method was called on this event object. */
+  /** @name dxEvent.isDefaultPrevented() */
   def isDefaultPrevented(): Boolean
-  /** Checks if the stopImmediatePropagation() method was called on this event object. */
+  /** @name dxEvent.isImmediatePropagationStopped() */
   def isImmediatePropagationStopped(): Boolean
-  /** Checks if the stopPropagation() method was called on this event object. */
+  /** @name dxEvent.isPropagationStopped() */
   def isPropagationStopped(): Boolean
-  /** Prevents the event's default action from triggering. */
+  /** @name dxEvent.preventDefault() */
   def preventDefault(): Unit
-  /** Stops the event's propagation up the DOM tree, preventing the rest of the handlers from being executed. */
+  /** @name dxEvent.stopImmediatePropagation() */
   def stopImmediatePropagation(): Unit
-  /** Stops the event's propagation up the DOM tree, keeping parent handlers unnotified of the event. */
+  /** @name dxEvent.stopPropagation() */
   def stopPropagation(): Unit
 }
 

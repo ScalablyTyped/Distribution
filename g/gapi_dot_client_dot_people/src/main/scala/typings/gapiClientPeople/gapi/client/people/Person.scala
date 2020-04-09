@@ -8,12 +8,12 @@ trait Person extends js.Object {
   /** The person's street addresses. */
   var addresses: js.UndefOr[js.Array[Address]] = js.undefined
   /**
-    * &#42;&#42;DEPRECATED&#42;&#42; (Please use `person.ageRanges` instead)&#42;&#42;
+    * Output only. &#42;&#42;DEPRECATED&#42;&#42; (Please use `person.ageRanges` instead)
     *
-    * The person's read-only age range.
+    * The person's age range.
     */
   var ageRange: js.UndefOr[String] = js.undefined
-  /** The person's read-only age ranges. */
+  /** Output only. The person's age ranges. */
   var ageRanges: js.UndefOr[js.Array[AgeRangeType]] = js.undefined
   /** The person's biographies. */
   var biographies: js.UndefOr[js.Array[Biography]] = js.undefined
@@ -21,7 +21,7 @@ trait Person extends js.Object {
   var birthdays: js.UndefOr[js.Array[Birthday]] = js.undefined
   /** The person's bragging rights. */
   var braggingRights: js.UndefOr[js.Array[BraggingRights]] = js.undefined
-  /** The person's read-only cover photos. */
+  /** Output only. The person's cover photos. */
   var coverPhotos: js.UndefOr[js.Array[CoverPhoto]] = js.undefined
   /** The person's email addresses. */
   var emailAddresses: js.UndefOr[js.Array[EmailAddress]] = js.undefined
@@ -40,9 +40,9 @@ trait Person extends js.Object {
   var interests: js.UndefOr[js.Array[Interest]] = js.undefined
   /** The person's locale preferences. */
   var locales: js.UndefOr[js.Array[Locale]] = js.undefined
-  /** The person's read-only group memberships. */
+  /** The person's group memberships. */
   var memberships: js.UndefOr[js.Array[Membership]] = js.undefined
-  /** Read-only metadata about the person. */
+  /** Output only. Metadata about the person. */
   var metadata: js.UndefOr[PersonMetadata] = js.undefined
   /** The person's names. */
   var names: js.UndefOr[js.Array[Name]] = js.undefined
@@ -54,25 +54,27 @@ trait Person extends js.Object {
   var organizations: js.UndefOr[js.Array[Organization]] = js.undefined
   /** The person's phone numbers. */
   var phoneNumbers: js.UndefOr[js.Array[PhoneNumber]] = js.undefined
-  /** The person's read-only photos. */
+  /** Output only. The person's photos. */
   var photos: js.UndefOr[js.Array[Photo]] = js.undefined
   /** The person's relations. */
   var relations: js.UndefOr[js.Array[Relation]] = js.undefined
-  /** The person's read-only relationship interests. */
+  /** Output only. The person's relationship interests. */
   var relationshipInterests: js.UndefOr[js.Array[RelationshipInterest]] = js.undefined
-  /** The person's read-only relationship statuses. */
+  /** Output only. The person's relationship statuses. */
   var relationshipStatuses: js.UndefOr[js.Array[RelationshipStatus]] = js.undefined
   /** The person's residences. */
   var residences: js.UndefOr[js.Array[Residence]] = js.undefined
   /**
     * The resource name for the person, assigned by the server. An ASCII string
     * with a max length of 27 characters, in the form of
-    * `people/`<var>person_id</var>.
+    * `people/{person_id}`.
     */
   var resourceName: js.UndefOr[String] = js.undefined
+  /** The person's SIP addresses. */
+  var sipAddresses: js.UndefOr[js.Array[SipAddress]] = js.undefined
   /** The person's skills. */
   var skills: js.UndefOr[js.Array[Skill]] = js.undefined
-  /** The person's read-only taglines. */
+  /** Output only. The person's taglines. */
   var taglines: js.UndefOr[js.Array[Tagline]] = js.undefined
   /** The person's associated URLs. */
   var urls: js.UndefOr[js.Array[Url]] = js.undefined
@@ -110,6 +112,7 @@ object Person {
     relationshipStatuses: js.Array[RelationshipStatus] = null,
     residences: js.Array[Residence] = null,
     resourceName: String = null,
+    sipAddresses: js.Array[SipAddress] = null,
     skills: js.Array[Skill] = null,
     taglines: js.Array[Tagline] = null,
     urls: js.Array[Url] = null,
@@ -143,6 +146,7 @@ object Person {
     if (relationshipStatuses != null) __obj.updateDynamic("relationshipStatuses")(relationshipStatuses.asInstanceOf[js.Any])
     if (residences != null) __obj.updateDynamic("residences")(residences.asInstanceOf[js.Any])
     if (resourceName != null) __obj.updateDynamic("resourceName")(resourceName.asInstanceOf[js.Any])
+    if (sipAddresses != null) __obj.updateDynamic("sipAddresses")(sipAddresses.asInstanceOf[js.Any])
     if (skills != null) __obj.updateDynamic("skills")(skills.asInstanceOf[js.Any])
     if (taglines != null) __obj.updateDynamic("taglines")(taglines.asInstanceOf[js.Any])
     if (urls != null) __obj.updateDynamic("urls")(urls.asInstanceOf[js.Any])

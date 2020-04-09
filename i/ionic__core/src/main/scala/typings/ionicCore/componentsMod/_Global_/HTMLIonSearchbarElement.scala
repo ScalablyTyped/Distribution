@@ -19,7 +19,7 @@ import typings.ionicCore.ionicCoreStrings.tel
 import typings.ionicCore.ionicCoreStrings.text
 import typings.ionicCore.ionicCoreStrings.url
 import typings.ionicCore.mod.Color
-import typings.ionicCore.stencilCoreMod.HTMLStencilElement
+import typings.ionicCore.stencilPublicRuntimeMod.HTMLStencilElement
 import typings.std.HTMLInputElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

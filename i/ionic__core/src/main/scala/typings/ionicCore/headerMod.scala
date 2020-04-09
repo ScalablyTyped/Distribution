@@ -1,7 +1,7 @@
 package typings.ionicCore
 
 import typings.ionicCore.ionicCoreStrings.condense
-import typings.ionicCore.stencilCoreMod.ComponentInterface
+import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

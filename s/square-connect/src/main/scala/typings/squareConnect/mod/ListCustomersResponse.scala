@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 @js.native
 class ListCustomersResponse () extends js.Object {
   /**
-    * A pagination cursor to retrieve the next set of results for your original query to the endpoint.
-    * This value is present only if the request succeeded and additional results are available.
-    * See [Pagination](/basics/api101/pagination) for more information.
+    * A pagination cursor to retrieve the next set of results for the original query.
+    * Only present if the request succeeded and additional results are available.
+    * See the [Pagination guide](https://developer.squareup.com/docs/working-with-apis/pagination) for more information.
     */
   var cursor: js.UndefOr[String] = js.native
   /**
-    * An array of `Customer` objects that match your query.
+    * An array of `Customer` objects that match the provided query.
     */
   var customers: js.UndefOr[js.Array[Customer]] = js.native
   /**

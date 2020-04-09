@@ -12,6 +12,7 @@ import typings.ssh2.ssh2Strings.shell
 import typings.ssh2.ssh2Strings.signal
 import typings.ssh2.ssh2Strings.subsystem
 import typings.ssh2.ssh2Strings.x11
+import typings.ssh2Streams.mod.SFTPStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -53,7 +54,7 @@ trait Session extends EventEmitter {
   def on_exec(
     event: exec,
     listener: js.Function3[
-      /* accept */ SessionAcceptReject, 
+      /* accept */ js.Function0[ServerChannel], 
       /* reject */ SessionAcceptReject, 
       /* info */ ExecInfo, 
       Unit
@@ -79,7 +80,7 @@ trait Session extends EventEmitter {
   @JSName("on")
   def on_sftp(
     event: sftp,
-    listener: js.Function2[/* accept */ SessionAcceptReject, /* reject */ SessionAcceptReject, Unit]
+    listener: js.Function2[/* accept */ js.Function0[SFTPStream], /* reject */ SessionAcceptReject, Unit]
   ): this.type = js.native
   /**
     * Emitted when the client has requested an interactive shell.
@@ -87,7 +88,7 @@ trait Session extends EventEmitter {
   @JSName("on")
   def on_shell(
     event: shell,
-    listener: js.Function2[/* accept */ SessionAcceptReject, /* reject */ SessionAcceptReject, Unit]
+    listener: js.Function2[/* accept */ js.Function0[ServerChannel], /* reject */ SessionAcceptReject, Unit]
   ): this.type = js.native
   /**
     * Emitted when the client has sent a POSIX signal.
@@ -109,7 +110,7 @@ trait Session extends EventEmitter {
   def on_subsystem(
     event: subsystem,
     listener: js.Function3[
-      /* accept */ SessionAcceptReject, 
+      /* accept */ js.Function0[ServerChannel], 
       /* reject */ SessionAcceptReject, 
       /* info */ SubsystemInfo, 
       Unit

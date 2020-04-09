@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DataExpressionMixin extends js.Object {
-  /** Gets the DataSource instance. */
+  /** @name DataHelperMixin.getDataSource() */
   def getDataSource(): DataSource
 }
 

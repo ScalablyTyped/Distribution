@@ -61,8 +61,10 @@ import typings.react.mod.KeyboardEvent
 import typings.react.mod.LegacyRef
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.ReactNode
+import typings.react.mod.Ref
 import typings.react.mod.SyntheticEvent
 import typings.react.mod.TouchEvent
 import typings.react.mod.TransitionEvent
@@ -79,7 +81,6 @@ trait GatsbyLinkProps[TState] extends LinkProps[TState] {
   var activeClassName: js.UndefOr[String] = js.undefined
   /** Inline styles for when this Link is active */
   var activeStyle: js.UndefOr[js.Object] = js.undefined
-  var innerRef: js.UndefOr[js.Function] = js.undefined
   @JSName("onClick")
   var onClick_GatsbyLinkProps: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLAnchorElement, NativeMouseEvent], Unit]] = js.undefined
   /** Class the link as highlighted if there is a partial match via a the `to` being prefixed to the current url */
@@ -162,7 +163,7 @@ object GatsbyLinkProps {
     hrefLang: String = null,
     id: String = null,
     inlist: js.Any = null,
-    innerRef: js.Function = null,
+    innerRef: Ref[HTMLAnchorElement] = null,
     inputMode: none | text | tel | url | email | numeric | decimal | search = null,
     is: String = null,
     itemID: String = null,
@@ -236,7 +237,7 @@ object GatsbyLinkProps {
     onProgress: SyntheticEvent[HTMLAnchorElement, Event_] => Unit = null,
     onRateChange: SyntheticEvent[HTMLAnchorElement, Event_] => Unit = null,
     onReset: FormEvent[HTMLAnchorElement] => Unit = null,
-    onScroll: UIEvent[HTMLAnchorElement] => Unit = null,
+    onScroll: UIEvent[HTMLAnchorElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[HTMLAnchorElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[HTMLAnchorElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[HTMLAnchorElement, Event_] => Unit = null,

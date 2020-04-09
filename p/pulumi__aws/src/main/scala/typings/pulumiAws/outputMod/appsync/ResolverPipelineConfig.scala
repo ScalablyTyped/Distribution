@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ResolverPipelineConfig extends js.Object {
+  /**
+    * The list of Function ID.
+    */
   var functions: js.UndefOr[js.Array[String]] = js.native
 }
 

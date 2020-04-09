@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait LaunchTemplateElasticGpuSpecification extends js.Object {
   /**
-    * Accelerator type.
+    * The [Elastic GPU Type](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/elastic-gpus.html#elastic-gpus-basics)
     */
   var `type`: String = js.native
 }

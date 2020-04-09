@@ -15,6 +15,7 @@ import typings.react.mod.InputHTMLAttributes
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
@@ -307,7 +308,7 @@ object IAutofillProps {
     onProgress: SyntheticEvent[HTMLInputElement | Autofill, Event_] => Unit = null,
     onRateChange: SyntheticEvent[HTMLInputElement | Autofill, Event_] => Unit = null,
     onReset: FormEvent[HTMLInputElement | Autofill] => Unit = null,
-    onScroll: UIEvent[HTMLInputElement | Autofill] => Unit = null,
+    onScroll: UIEvent[HTMLInputElement | Autofill, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[HTMLInputElement | Autofill, Event_] => Unit = null,
     onSeeking: SyntheticEvent[HTMLInputElement | Autofill, Event_] => Unit = null,
     onSelect: SyntheticEvent[HTMLInputElement | Autofill, Event_] => Unit = null,

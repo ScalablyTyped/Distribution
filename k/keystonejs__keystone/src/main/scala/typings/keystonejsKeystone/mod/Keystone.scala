@@ -2,7 +2,6 @@ package typings.keystonejsKeystone.mod
 
 import typings.keystonejsKeystone.AnonApps
 import typings.keystonejsKeystone.AnonConfig
-import typings.keystonejsKeystone.AnonContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,7 +23,8 @@ class Keystone[ListNames /* <: String */] protected () extends js.Object {
   def disconnect(): js.Promise[Unit] = js.native
   // The return type is actually important info here. I don't believe this generic is unnecessary.
   // tslint:disable-next-line:no-unnecessary-generics
-  def executeQuery[Output](query: String, config: AnonContext): Output = js.native
+  def executeQuery[Output](query: String): Output = js.native
+  def executeQuery[Output](query: String, config: QueryExecutionSchema): Output = js.native
   def extendGraphQLSchema(schema: GraphQLExtensionSchema): Unit = js.native
   def prepare(options: AnonApps): js.Promise[KeystonePrepareResult] = js.native
 }

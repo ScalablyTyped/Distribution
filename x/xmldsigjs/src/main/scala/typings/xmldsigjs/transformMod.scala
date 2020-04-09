@@ -2,8 +2,8 @@ package typings.xmldsigjs
 
 import org.scalablytyped.runtime.Instantiable0
 import typings.std.Node
-import typings.xmlCore.mod.IXmlSerializable
 import typings.xmlCore.mod.XmlObject
+import typings.xmlCore.typesMod.IXmlSerializable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

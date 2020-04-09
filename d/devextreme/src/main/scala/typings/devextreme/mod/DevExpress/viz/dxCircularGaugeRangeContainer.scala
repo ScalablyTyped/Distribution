@@ -28,9 +28,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxCircularGaugeRangeContainer extends BaseGaugeRangeContainer {
-  /** Specifies the orientation of the range container in the CircularGauge widget. */
+  /** @name dxCircularGauge.Options.rangeContainer.orientation */
   var orientation: js.UndefOr[center | inside | outside] = js.undefined
-  /** Specifies the range container's width in pixels. */
+  /** @name dxCircularGauge.Options.rangeContainer.width */
   var width: js.UndefOr[Double] = js.undefined
 }
 

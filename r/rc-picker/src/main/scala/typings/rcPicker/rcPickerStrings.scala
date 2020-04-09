@@ -163,6 +163,11 @@ object rcPickerStrings {
   sealed trait popup extends js.Object
   
   @js.native
+  sealed trait quarter
+    extends PanelMode
+       with PickerMode
+  
+  @js.native
   sealed trait removals extends js.Object
   
   @js.native
@@ -322,6 +327,8 @@ object rcPickerStrings {
   def polite: polite = "polite".asInstanceOf[polite]
   @scala.inline
   def popup: popup = "popup".asInstanceOf[popup]
+  @scala.inline
+  def quarter: quarter = "quarter".asInstanceOf[quarter]
   @scala.inline
   def removals: removals = "removals".asInstanceOf[removals]
   @scala.inline

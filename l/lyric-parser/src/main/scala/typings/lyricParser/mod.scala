@@ -10,7 +10,7 @@ object mod extends js.Object {
   @js.native
   trait Lyric extends js.Object {
     var curLine: Double = js.native
-    var lines: js.Array[String] = js.native
+    var lines: js.Array[AnonTime] = js.native
     var lrc: String = js.native
     var state: Double = js.native
     var tags: AnonAlbum = js.native

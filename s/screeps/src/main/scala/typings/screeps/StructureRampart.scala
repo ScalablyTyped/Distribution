@@ -11,7 +11,8 @@ import scala.scalajs.js.annotation._
   */
 trait StructureRampart
   extends OwnedStructure[STRUCTURE_RAMPART]
-     with AnyOwnedStructure {
+     with AnyOwnedStructure
+     with ConcreteStructure[js.Any] {
   /**
     * If false (default), only your creeps can step on the same square. If true, any hostile creeps can pass through.
     */

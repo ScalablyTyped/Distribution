@@ -5,7 +5,7 @@ import typings.std.Document_
 import typings.std.Element
 import typings.std.Node
 import typings.xmlCore.mod.NamespaceManager
-import typings.xmlCore.mod.XmlNodeType
+import typings.xmlCore.xmlMod.XmlNodeType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

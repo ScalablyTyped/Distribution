@@ -1,6 +1,5 @@
 package typings.jestReporters.statusMod
 
-import typings.jestReporters.AnonClear
 import typings.jestReporters.typesMod.ReporterOnStartOptions
 import typings.jestTestResult.typesMod.AggregatedResult
 import typings.jestTestResult.typesMod.TestResult
@@ -23,7 +22,7 @@ trait Status extends js.Object {
   var _interval: js.UndefOr[js.Any] = js.undefined
   var _showStatus: js.Any
   var _tick: js.Any
-  def get(): AnonClear
+  def get(): Cache
   def onChange(callback: js.Function0[Unit]): Unit
   def runFinished(): Unit
   def runStarted(aggregatedResults: AggregatedResult, options: ReporterOnStartOptions): Unit
@@ -43,7 +42,7 @@ object Status {
     _estimatedTime: js.Any,
     _showStatus: js.Any,
     _tick: js.Any,
-    get: () => AnonClear,
+    get: () => Cache,
     onChange: js.Function0[Unit] => Unit,
     runFinished: () => Unit,
     runStarted: (AggregatedResult, ReporterOnStartOptions) => Unit,

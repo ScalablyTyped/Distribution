@@ -12,6 +12,7 @@ import typings.react.mod.FormEvent
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
@@ -194,7 +195,7 @@ object TooltipProps {
     onProgress: SyntheticEvent[Tooltip, Event_] => Unit = null,
     onRateChange: SyntheticEvent[Tooltip, Event_] => Unit = null,
     onReset: FormEvent[Tooltip] => Unit = null,
-    onScroll: UIEvent[Tooltip] => Unit = null,
+    onScroll: UIEvent[Tooltip, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[Tooltip, Event_] => Unit = null,
     onSeeking: SyntheticEvent[Tooltip, Event_] => Unit = null,
     onSelect: SyntheticEvent[Tooltip, Event_] => Unit = null,

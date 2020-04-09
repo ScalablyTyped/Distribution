@@ -1,8 +1,8 @@
 package typings.angularCore
 
 import typings.angularCompiler.mod.AotCompiler
+import typings.angularCore.importManagerMod.ImportManager
 import typings.angularCore.ngDecoratorsMod.NgDecorator
-import typings.angularCore.undecoratedClassesWithDiImportManagerMod.ImportManager
 import typings.typescript.mod.Decorator
 import typings.typescript.mod.ObjectLiteralElementLike
 import typings.typescript.mod.SourceFile

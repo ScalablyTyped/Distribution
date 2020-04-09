@@ -6,12 +6,40 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait AmiEbsBlockDevice extends js.Object {
+  /**
+    * Boolean controlling whether the EBS volumes created to
+    * support each created instance will be deleted once that instance is terminated.
+    */
   var deleteOnTermination: js.UndefOr[Boolean] = js.native
+  /**
+    * The path at which the device is exposed to created instances.
+    */
   var deviceName: String = js.native
+  /**
+    * Boolean controlling whether the created EBS volumes will be encrypted. Can't be used with `snapshotId`.
+    */
   var encrypted: js.UndefOr[Boolean] = js.native
+  /**
+    * Number of I/O operations per second the
+    * created volumes will support.
+    */
   var iops: js.UndefOr[Double] = js.native
+  /**
+    * The id of an EBS snapshot that will be used to initialize the created
+    * EBS volumes. If set, the `volumeSize` attribute must be at least as large as the referenced
+    * snapshot.
+    */
   var snapshotId: js.UndefOr[String] = js.native
+  /**
+    * The size of created volumes in GiB.
+    * If `snapshotId` is set and `volumeSize` is omitted then the volume will have the same size
+    * as the selected snapshot.
+    */
   var volumeSize: Double = js.native
+  /**
+    * The type of EBS volume to create. Can be one of "standard" (the
+    * default), "io1" or "gp2".
+    */
   var volumeType: js.UndefOr[String] = js.native
 }
 

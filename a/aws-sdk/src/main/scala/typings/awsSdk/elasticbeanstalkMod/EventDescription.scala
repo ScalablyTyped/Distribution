@@ -23,7 +23,7 @@ trait EventDescription extends js.Object {
     */
   var Message: js.UndefOr[EventMessage] = js.native
   /**
-    * The ARN of the platform.
+    * The ARN of the platform version.
     */
   var PlatformArn: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.PlatformArn] = js.native
   /**

@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("jest-matcher-utils/build", "EXPECTED_COLOR")
+@JSImport("jest-matcher-utils", "EXPECTED_COLOR")
 @js.native
 object EXPECTED_COLOR extends TopLevel[Chalk]
 

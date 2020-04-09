@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation._
   * In version 8.4.0: introduced
   */
 @js.native
-trait IStringTemplateParameterType extends IParameterType
+trait IStringTemplateParameterType extends IParameterType {
+  /**
+    * In version 8.8.0: introduced
+    */
+  val grammar: StringTemplateParameterGrammar = js.native
+}
 

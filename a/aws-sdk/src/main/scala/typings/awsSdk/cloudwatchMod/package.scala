@@ -23,6 +23,7 @@ package object cloudwatchMod {
   type AlarmTypes = js.Array[typings.awsSdk.cloudwatchMod.AlarmType]
   type AmazonResourceName = java.lang.String
   type AnomalyDetectorExcludedTimeRanges = js.Array[typings.awsSdk.cloudwatchMod.Range]
+  type AnomalyDetectorMetricStat = java.lang.String
   type AnomalyDetectorMetricTimezone = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.PENDING_TRAINING

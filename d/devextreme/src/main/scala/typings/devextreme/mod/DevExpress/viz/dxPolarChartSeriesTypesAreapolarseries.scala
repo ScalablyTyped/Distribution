@@ -16,13 +16,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxPolarChartSeriesTypesAreapolarseries extends dxPolarChartSeriesTypesCommonPolarChartSeries {
-  /** Specifies series elements to be highlighted when a user points to the series. */
+  /** @name dxPolarChartSeriesTypes.areapolarseries.hoverMode */
   @JSName("hoverMode")
   var hoverMode_dxPolarChartSeriesTypesAreapolarseries: js.UndefOr[nearestPoint | includePoints | excludePoints | none] = js.undefined
-  /** An object defining configuration options for points in line and area series. */
+  /** @name dxPolarChartSeriesTypes.areapolarseries.point */
   @JSName("point")
   var point_dxPolarChartSeriesTypesAreapolarseries: js.UndefOr[dxPolarChartSeriesTypesAreapolarseriesPoint] = js.undefined
-  /** Specifies series elements to be highlighted when a user selects the series. */
+  /** @name dxPolarChartSeriesTypes.areapolarseries.selectionMode */
   @JSName("selectionMode")
   var selectionMode_dxPolarChartSeriesTypesAreapolarseries: js.UndefOr[includePoints | excludePoints | none] = js.undefined
 }

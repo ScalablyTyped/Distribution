@@ -21,7 +21,7 @@ object ^ extends TopLevel[
     * @description Wrapper for `URITemplate#expand`. Only present after
     *              importing `urijs/src/URITemplate` explicitly.
     */
-  var expand: js.UndefOr[js.Function2[/* template */ String, /* vals */ js.Object, URI]] = js.native
+  var expand: js.UndefOr[js.Function2[/* template */ String, /* vals */ js.Object, String]] = js.native
   var preventInvalidHostname: Boolean = js.native
   def apply(): URI = js.native
   def apply(value: String): URI = js.native

@@ -24,7 +24,7 @@ class Entity () extends js.Object {
   var label: LabelGraphics = js.native
   var model: ModelGraphics = js.native
   var name: String = js.native
-  var orientation: Property = js.native
+  var orientation: Property | Quaternion = js.native
   var parent: Entity = js.native
   var path: PathGraphics = js.native
   var plane: js.Any = js.native
@@ -37,6 +37,7 @@ class Entity () extends js.Object {
   var propertyNames: js.Array[_] = js.native
   var rectangle: RectangleGraphics = js.native
   var show: Boolean = js.native
+  var tileset: Cesium3DTilesetGraphics = js.native
   var viewFrom: Property = js.native
   var wall: WallGraphics = js.native
   def addProperty(propertyName: String): Unit = js.native

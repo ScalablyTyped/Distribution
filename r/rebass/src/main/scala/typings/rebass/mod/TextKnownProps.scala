@@ -4,6 +4,7 @@ import typings.csstype.mod.AlignSelfProperty
 import typings.csstype.mod.DisplayProperty
 import typings.csstype.mod.FlexProperty
 import typings.csstype.mod.FontFamilyProperty
+import typings.csstype.mod.FontStyleProperty
 import typings.csstype.mod.GlobalsNumber
 import typings.csstype.mod.HeightProperty
 import typings.csstype.mod.MaxHeightProperty
@@ -28,6 +29,7 @@ import typings.rebass.rebassStrings.space
 import typings.styledComponents.styledComponentsMod.CSSObject
 import typings.styledComponents.styledComponentsMod.FlattenSimpleInterpolation
 import typings.styledSystem.mod.FontFamilyProps
+import typings.styledSystem.mod.FontStyleProps
 import typings.styledSystem.mod.FontWeightProps
 import typings.styledSystem.mod.LetterSpacingProps
 import typings.styledSystem.mod.LineHeightProps
@@ -44,6 +46,7 @@ trait TextKnownProps
   extends BoxKnownProps
      with FontFamilyProps[RequiredTheme]
      with FontWeightProps[RequiredTheme, ThemeValue[fontWeights, RequiredTheme, js.Any]]
+     with FontStyleProps[RequiredTheme]
      with TextAlignProps[RequiredTheme]
      with LineHeightProps[RequiredTheme, ThemeValue[lineHeights, RequiredTheme, js.Any]]
      with LetterSpacingProps[RequiredTheme, ThemeValue[letterSpacings, RequiredTheme, js.Any]]
@@ -61,6 +64,7 @@ object TextKnownProps {
     flex: ResponsiveValue[FlexProperty[TLengthStyledSystem], RequiredTheme] = null,
     fontFamily: ResponsiveValue[FontFamilyProperty, RequiredTheme] = null,
     fontSize: ResponsiveValue[ThemeValue[fontSizes, RequiredTheme, js.Any], RequiredTheme] = null,
+    fontStyle: ResponsiveValue[FontStyleProperty, RequiredTheme] = null,
     fontWeight: ResponsiveValue[ThemeValue[fontWeights, RequiredTheme, js.Any], RequiredTheme] = null,
     height: ResponsiveValue[HeightProperty[TLengthStyledSystem], RequiredTheme] = null,
     key: Key = null,
@@ -123,6 +127,7 @@ object TextKnownProps {
     if (flex != null) __obj.updateDynamic("flex")(flex.asInstanceOf[js.Any])
     if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
+    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle.asInstanceOf[js.Any])
     if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])

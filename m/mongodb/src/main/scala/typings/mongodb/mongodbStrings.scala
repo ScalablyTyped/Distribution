@@ -1,6 +1,7 @@
 package typings.mongodb
 
 import typings.mongodb.mod.BSONTypeAlias
+import typings.mongodb.mod.ChangeEventTypes
 import typings.mongodb.mod.ProfilingLevel
 import typings.mongodb.mod.ReadConcernLevel
 import typings.mongodb.mod.ReadPreferenceMode
@@ -58,6 +59,9 @@ object mongodbStrings {
   sealed trait SetFields extends js.Object
   
   @js.native
+  sealed trait UpdateQuery extends js.Object
+  
+  @js.native
   sealed trait _empty extends js.Object
   
   @js.native
@@ -88,13 +92,31 @@ object mongodbStrings {
   sealed trait decimal extends BSONTypeAlias
   
   @js.native
+  sealed trait default_ extends js.Object
+  
+  @js.native
+  sealed trait delete extends ChangeEventTypes
+  
+  @js.native
   sealed trait double extends BSONTypeAlias
+  
+  @js.native
+  sealed trait drop extends ChangeEventTypes
+  
+  @js.native
+  sealed trait dropDatabase extends ChangeEventTypes
   
   @js.native
   sealed trait error extends js.Object
   
   @js.native
+  sealed trait insert extends ChangeEventTypes
+  
+  @js.native
   sealed trait int extends BSONTypeAlias
+  
+  @js.native
+  sealed trait invalidate extends ChangeEventTypes
   
   @js.native
   sealed trait javascript extends BSONTypeAlias
@@ -151,6 +173,12 @@ object mongodbStrings {
   sealed trait regex extends BSONTypeAlias
   
   @js.native
+  sealed trait rename extends ChangeEventTypes
+  
+  @js.native
+  sealed trait replace extends ChangeEventTypes
+  
+  @js.native
   sealed trait secondary extends ReadPreferenceMode
   
   @js.native
@@ -176,6 +204,12 @@ object mongodbStrings {
   
   @js.native
   sealed trait undefined extends BSONTypeAlias
+  
+  @js.native
+  sealed trait update extends ChangeEventTypes
+  
+  @js.native
+  sealed trait updateLookup extends js.Object
   
   @js.native
   sealed trait warn extends js.Object
@@ -213,6 +247,8 @@ object mongodbStrings {
   @scala.inline
   def SetFields: SetFields = "SetFields".asInstanceOf[SetFields]
   @scala.inline
+  def UpdateQuery: UpdateQuery = "UpdateQuery".asInstanceOf[UpdateQuery]
+  @scala.inline
   def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
   def _id: _id = "_id".asInstanceOf[_id]
@@ -233,11 +269,23 @@ object mongodbStrings {
   @scala.inline
   def decimal: decimal = "decimal".asInstanceOf[decimal]
   @scala.inline
+  def default_ : default_ = "default".asInstanceOf[default_]
+  @scala.inline
+  def delete: delete = "delete".asInstanceOf[delete]
+  @scala.inline
   def double: double = "double".asInstanceOf[double]
+  @scala.inline
+  def drop: drop = "drop".asInstanceOf[drop]
+  @scala.inline
+  def dropDatabase: dropDatabase = "dropDatabase".asInstanceOf[dropDatabase]
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   @scala.inline
+  def insert: insert = "insert".asInstanceOf[insert]
+  @scala.inline
   def int: int = "int".asInstanceOf[int]
+  @scala.inline
+  def invalidate: invalidate = "invalidate".asInstanceOf[invalidate]
   @scala.inline
   def javascript: javascript = "javascript".asInstanceOf[javascript]
   @scala.inline
@@ -275,6 +323,10 @@ object mongodbStrings {
   @scala.inline
   def regex: regex = "regex".asInstanceOf[regex]
   @scala.inline
+  def rename: rename = "rename".asInstanceOf[rename]
+  @scala.inline
+  def replace: replace = "replace".asInstanceOf[replace]
+  @scala.inline
   def secondary: secondary = "secondary".asInstanceOf[secondary]
   @scala.inline
   def secondaryPreferred: secondaryPreferred = "secondaryPreferred".asInstanceOf[secondaryPreferred]
@@ -292,6 +344,10 @@ object mongodbStrings {
   def timestamp: timestamp = "timestamp".asInstanceOf[timestamp]
   @scala.inline
   def undefined: undefined = "undefined".asInstanceOf[undefined]
+  @scala.inline
+  def update: update = "update".asInstanceOf[update]
+  @scala.inline
+  def updateLookup: updateLookup = "updateLookup".asInstanceOf[updateLookup]
   @scala.inline
   def warn: warn = "warn".asInstanceOf[warn]
 }

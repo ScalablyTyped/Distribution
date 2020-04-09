@@ -36,6 +36,9 @@ trait GetClusterSnapshotArgs extends js.Object {
     * included in the returned results by default. Possible values are, `automated`, `manual`, `shared` and `public`.
     */
   val snapshotType: js.UndefOr[String] = js.native
+  /**
+    * A mapping of tags for the resource.
+    */
   val tags: js.UndefOr[StringDictionary[js.Any]] = js.native
 }
 

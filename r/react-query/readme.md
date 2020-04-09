@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-query
 
-Typings are for version 0.3
+Typings are for version 1.1
 
 ## Library description:
 Hooks for managing, caching and syncing asynchronous and remote data in React

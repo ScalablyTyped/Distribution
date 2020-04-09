@@ -12,7 +12,7 @@ trait IDragDropEvents extends js.Object {
     */
   var canDrag: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Boolean]] = js.undefined
   /**
-    * Whether drag operation is allowed on groups
+    * Whether the whole group is draggable. This applies after canDrag returns true for the group.
     */
   var canDragGroups: js.UndefOr[Boolean] = js.undefined
   /**

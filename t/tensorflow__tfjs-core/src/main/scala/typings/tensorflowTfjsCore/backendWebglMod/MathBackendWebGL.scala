@@ -71,7 +71,6 @@ class MathBackendWebGL () extends KernelBackend {
   var releaseGPUData: js.Any = js.native
   var segOpCompute: js.Any = js.native
   var shallowSlice: js.Any = js.native
-  var shouldExecuteOnCPU: js.Any = js.native
   var startTimer: js.Any = js.native
   var texData: DataStorage[TextureData] = js.native
   var textureManager: js.Any = js.native
@@ -125,5 +124,7 @@ class MathBackendWebGL () extends KernelBackend {
     customSetup: js.Function2[/* gpgpu */ GPGPUContext, /* webGLProgram */ WebGLProgram, Unit],
     preventEagerUnpackingOfOutput: Boolean
   ): TensorInfo = js.native
+  def shouldExecuteOnCPU(inputs: js.Array[TensorInfo]): Boolean = js.native
+  def shouldExecuteOnCPU(inputs: js.Array[TensorInfo], sizeThreshold: Double): Boolean = js.native
 }
 

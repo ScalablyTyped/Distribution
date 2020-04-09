@@ -1,7 +1,7 @@
 package typings.antd.mod
 
+import typings.antd.Anon1
 import typings.antd.AnonArrowPointAtCenter
-import typings.antd.AnonVisible
 import typings.antd.tooltipMod.TooltipProps
 import typings.antd.tooltipMod.default
 import scala.scalajs.js
@@ -19,6 +19,6 @@ class Tooltip protected () extends default {
 @js.native
 object Tooltip extends js.Object {
   var defaultProps: AnonArrowPointAtCenter = js.native
-  def getDerivedStateFromProps(nextProps: TooltipProps): AnonVisible | Null = js.native
+  def getDerivedStateFromProps(nextProps: TooltipProps): Anon1 | Null = js.native
 }
 

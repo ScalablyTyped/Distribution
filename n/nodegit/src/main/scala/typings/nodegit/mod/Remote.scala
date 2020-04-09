@@ -15,7 +15,7 @@ class Remote ()
 object Remote extends js.Object {
   def addFetch(repo: typings.nodegit.repositoryMod.Repository, remote: String, refspec: String): Double = js.native
   def addPush(repo: typings.nodegit.repositoryMod.Repository, remote: String, refspec: String): Double = js.native
-  def create(repo: typings.nodegit.repositoryMod.Repository, name: String, url: String): typings.nodegit.remoteMod.Remote = js.native
+  def create(repo: typings.nodegit.repositoryMod.Repository, name: String, url: String): js.Promise[typings.nodegit.remoteMod.Remote] = js.native
   def createAnonymous(repo: typings.nodegit.repositoryMod.Repository, url: String): js.Promise[typings.nodegit.remoteMod.Remote] = js.native
   def createDetached(url: String): js.Promise[typings.nodegit.remoteMod.Remote] = js.native
   def createWithFetchspec(repo: typings.nodegit.repositoryMod.Repository, name: String, url: String, fetch: String): js.Promise[typings.nodegit.remoteMod.Remote] = js.native

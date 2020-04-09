@@ -42,13 +42,13 @@ import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - typings.devextreme.mod.DevExpress.ui.DataExpressionMixinOptions because var conflicts: value. Inlined dataSource, displayExpr, itemTemplate, items, valueExpr */ trait dxDropDownListOptions[T] extends dxDropDownEditorOptions[T] {
-  /** Binds the widget to data. */
+  /** @name DataExpressionMixin.Options.dataSource */
   var dataSource: js.UndefOr[String | (js.Array[CollectionWidgetItem | _]) | DataSource | DataSourceOptions] = js.undefined
-  /** Specifies the data field whose values should be displayed. */
+  /** @name DataExpressionMixin.Options.displayExpr */
   var displayExpr: js.UndefOr[String | (js.Function1[/* item */ js.Any, String])] = js.undefined
-  /** Returns the value currently displayed by the widget. */
+  /** @name dxDropDownList.Options.displayValue */
   var displayValue: js.UndefOr[String] = js.undefined
-  /** Specifies a custom template for group captions. */
+  /** @name dxDropDownList.Options.groupTemplate */
   var groupTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function3[
       /* itemData */ js.Any, 
@@ -57,9 +57,9 @@ import scala.scalajs.js.annotation._
       String | Element | JQuery
     ])
   ] = js.undefined
-  /** Specifies whether data items should be grouped. */
+  /** @name dxDropDownList.Options.grouped */
   var grouped: js.UndefOr[Boolean] = js.undefined
-  /** Specifies a custom template for items. */
+  /** @name DataExpressionMixin.Options.itemTemplate */
   var itemTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function3[
       /* itemData */ js.Any, 
@@ -68,34 +68,34 @@ import scala.scalajs.js.annotation._
       String | Element | JQuery
     ])
   ] = js.undefined
-  /** An array of items displayed by the widget. */
+  /** @name DataExpressionMixin.Options.items */
   var items: js.UndefOr[js.Array[CollectionWidgetItem | _]] = js.undefined
-  /** The minimum number of characters that must be entered into the text box to begin a search. Applies only if searchEnabled is true. */
+  /** @name dxDropDownList.Options.minSearchLength */
   var minSearchLength: js.UndefOr[Double] = js.undefined
-  /** The text or HTML markup displayed by the widget if the item collection is empty. */
+  /** @name dxDropDownList.Options.noDataText */
   var noDataText: js.UndefOr[String] = js.undefined
-  /** A function that is executed when a list item is clicked or tapped. */
+  /** @name dxDropDownList.Options.onItemClick */
   var onItemClick: js.UndefOr[js.Function1[/* e */ AnonItemElementItemIndex[T], _]] = js.undefined
-  /** A function that is executed when a list item is selected or selection is canceled. */
+  /** @name dxDropDownList.Options.onSelectionChanged */
   var onSelectionChanged: js.UndefOr[js.Function1[/* e */ AnonModelSelectedItem[T], _]] = js.undefined
-  /** A function that is executed after the widget's value is changed. */
+  /** @name dxDropDownList.Options.onValueChanged */
   @JSName("onValueChanged")
   var onValueChanged_dxDropDownListOptions: js.UndefOr[js.Function1[/* e */ AnonPreviousValue[T], _]] = js.undefined
-  /** Specifies whether to allow searching. */
+  /** @name dxDropDownList.Options.searchEnabled */
   var searchEnabled: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the name of a data source item field or an expression whose value is compared to the search criterion. */
+  /** @name dxDropDownList.Options.searchExpr */
   var searchExpr: js.UndefOr[String | js.Function | (js.Array[String | js.Function])] = js.undefined
-  /** Specifies a comparison operation used to search widget items. */
+  /** @name dxDropDownList.Options.searchMode */
   var searchMode: js.UndefOr[contains | startswith] = js.undefined
-  /** Specifies the time delay, in milliseconds, after the last character has been typed in, before a search is executed. */
+  /** @name dxDropDownList.Options.searchTimeout */
   var searchTimeout: js.UndefOr[Double] = js.undefined
-  /** Gets the currently selected item. */
+  /** @name dxDropDownList.Options.selectedItem */
   var selectedItem: js.UndefOr[js.Any] = js.undefined
-  /** Specifies whether or not the widget displays unfiltered values until a user types a number of characters exceeding the minSearchLength option value. */
+  /** @name dxDropDownList.Options.showDataBeforeSearch */
   var showDataBeforeSearch: js.UndefOr[Boolean] = js.undefined
-  /** Specifies which data field provides unique values to the widget's value. */
+  /** @name DataExpressionMixin.Options.valueExpr */
   var valueExpr: js.UndefOr[String | (js.Function1[/* item */ js.Any, String | Double | Boolean])] = js.undefined
-  /** Specifies whether text that exceeds the drop-down list width should be wrapped. */
+  /** @name dxDropDownList.Options.wrapItemText */
   var wrapItemText: js.UndefOr[Boolean] = js.undefined
 }
 

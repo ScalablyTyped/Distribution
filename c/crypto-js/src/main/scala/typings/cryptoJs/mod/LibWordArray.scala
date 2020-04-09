@@ -4,17 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LibWordArray extends js.Object {
-  var sigBytes: Double
-  var words: js.Array[Double]
-}
-
-object LibWordArray {
-  @scala.inline
-  def apply(sigBytes: Double, words: js.Array[Double]): LibWordArray = {
-    val __obj = js.Dynamic.literal(sigBytes = sigBytes.asInstanceOf[js.Any], words = words.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[LibWordArray]
-  }
+  var sigBytes: Double = js.native
+  var words: js.Array[Double] = js.native
+  def toString(encoder: Encoder): String = js.native
 }
 

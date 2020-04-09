@@ -1,7 +1,7 @@
 
 # Scala.js typings for single-spa-react
 
-Typings are for version 2.8
+Typings are for version 2.12
 
 ## Library description:
 A single spa plugin for React apps

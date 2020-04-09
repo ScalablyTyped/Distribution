@@ -8,25 +8,25 @@ import scala.scalajs.js.annotation._
 @js.native
 class Customer () extends js.Object {
   /**
-    * The customer's physical address.
+    * The physical address associated with the customer profile.
     */
   var address: js.UndefOr[Address] = js.native
   /**
-    * The customer's birthday in RFC-3339 format. Year is optional, timezone and times are not allowed. Example:
-    * `0000-09-01T00:00:00-00:00` for a birthday on September 1st. `1998-09-01T00:00:00-00:00` for a birthday on
-    * September 1st 1998.
+    * The birthday associated with the customer profile, in RFC-3339 format. Year is optional, timezone and times are not allowed.
+    * For example: `0000-09-01T00:00:00-00:00` indicates a birthday on September 1st. `1998-09-01T00:00:00-00:00`
+    * indications a birthday on September 1st 1998.
     */
   var birthday: js.UndefOr[String] = js.native
   /**
-    * The payment details of the customer's cards on file.
+    * Payment details of cards stored on file for the customer profile.
     */
   var cards: js.UndefOr[js.Array[Card]] = js.native
   /**
-    * The name of the customer's company.
+    * A business name associated with the customer profile.
     */
   var company_name: js.UndefOr[String] = js.native
   /**
-    * The time when the customer was created, in RFC 3339 format.
+    * The time when the customer profile was created, in RFC 3339 format.
     */
   var created_at: String = js.native
   /**
@@ -35,15 +35,15 @@ class Customer () extends js.Object {
     */
   var creation_source: js.UndefOr[CustomerSourceType] = js.native
   /**
-    * The customer's email address.
+    * The email address associated with the customer profile.
     */
   var email_address: js.UndefOr[String] = js.native
   /**
-    * The customer's family (i.e., last) name.
+    * The family (i.e., last) name associated with the customer profile.
     */
   var family_name: js.UndefOr[String] = js.native
   /**
-    * The customer's given (i.e., first) name.
+    * The given (i.e., first) name associated with the customer profile.
     */
   var given_name: js.UndefOr[String] = js.native
   /**
@@ -51,31 +51,31 @@ class Customer () extends js.Object {
     */
   var groups: js.UndefOr[js.Array[CustomerGroupInfo]] = js.native
   /**
-    * The customer's unique ID.
+    * A unique, Square-assigned object ID.
     */
   var id: String = js.native
   /**
-    * The customer's nickname.
+    * A nickname for the customer profile.
     */
   var nickname: js.UndefOr[String] = js.native
   /**
-    * A note to associate with the customer.
+    * A custom note associated with the customer profile.
     */
   var note: js.UndefOr[String] = js.native
   /**
-    * The customer's phone number.
+    * The 11-digit phone number associated with the customer profile.
     */
   var phone_number: js.UndefOr[String] = js.native
   /**
-    * The customer's preferences.
+    * Represents general customer preferences.
     */
   var preferences: js.UndefOr[CustomerPreferences] = js.native
   /**
-    * A second ID you can set to associate the customer with an entity in another system.
+    * An optional, second ID used to associate the customer profile with an entity in another system.
     */
   var reference_id: js.UndefOr[String] = js.native
   /**
-    * The time when the customer was last updated, in RFC 3339 format.
+    * The time when the customer profile was last updated, in RFC 3339 format.
     */
   var updated_at: String = js.native
 }

@@ -108,6 +108,7 @@ import scala.scalajs.js.annotation._
     ]
   ] = js.undefined
   var primaryColor: js.UndefOr[String] = js.undefined
+  var pure: js.UndefOr[Boolean] = js.undefined
   var rightContentRender: js.UndefOr[WithFalse[js.Function1[/* props */ this.type, ReactNode]]] = js.undefined
   var title: js.UndefOr[String] = js.undefined
 }
@@ -171,6 +172,7 @@ object BasicLayoutProps {
       ]
     ] = null,
     primaryColor: String = null,
+    pure: js.UndefOr[Boolean] = js.undefined,
     rightContentRender: WithFalse[js.Function1[BasicLayoutProps, ReactNode]] = null,
     siderWidth: Int | Double = null,
     style: CSSProperties = null,
@@ -215,6 +217,7 @@ object BasicLayoutProps {
     if (onPageChange != null) __obj.updateDynamic("onPageChange")(js.Any.fromFunction1(onPageChange))
     if (pageTitleRender != null) __obj.updateDynamic("pageTitleRender")(pageTitleRender.asInstanceOf[js.Any])
     if (primaryColor != null) __obj.updateDynamic("primaryColor")(primaryColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(pure)) __obj.updateDynamic("pure")(pure.asInstanceOf[js.Any])
     if (rightContentRender != null) __obj.updateDynamic("rightContentRender")(rightContentRender.asInstanceOf[js.Any])
     if (siderWidth != null) __obj.updateDynamic("siderWidth")(siderWidth.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])

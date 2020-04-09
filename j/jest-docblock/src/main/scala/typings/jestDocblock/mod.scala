@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("jest-docblock/build", JSImport.Namespace)
+@JSImport("jest-docblock", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
   def extract(contents: String): String = js.native

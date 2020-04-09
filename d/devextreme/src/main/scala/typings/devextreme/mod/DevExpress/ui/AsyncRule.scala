@@ -17,17 +17,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AsyncRule extends js.Object {
-  /** If true, the validationCallback is not executed for null, undefined, false, and empty strings. */
+  /** @name AsyncRule.ignoreEmptyValue */
   var ignoreEmptyValue: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the message that is shown if the rule is broken. */
+  /** @name AsyncRule.message */
   var message: js.UndefOr[String] = js.undefined
-  /** Indicates whether the rule should always be checked for the target value or only when the value changes. */
+  /** @name AsyncRule.reevaluate */
   var reevaluate: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the rule type. Set it to "async" to use the AsyncRule. */
+  /** @name AsyncRule.type */
   var `type`: js.UndefOr[
     required | numeric | range | stringLength | custom | compare | pattern | email | async
   ] = js.undefined
-  /** A function that validates the target value. */
+  /** @name AsyncRule.validationCallback */
   var validationCallback: js.UndefOr[js.Function1[/* options */ AnonColumn, Promise[_] | JQueryPromise[_]]] = js.undefined
 }
 

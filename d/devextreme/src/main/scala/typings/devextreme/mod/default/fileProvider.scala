@@ -18,7 +18,7 @@ object fileProvider extends js.Object {
   class AjaxFileProvider ()
     extends typings.devextreme.mod.DevExpress.fileProvider.FileProvider {
     def this(options: AjaxFileProviderOptions) = this()
-    /** Gets the specified items' content. */
+    /** @name FileProvider.getItemContent() */
     /* CompleteClass */
     override def getItemContent(items: js.Array[_]): Promise[_] with JQueryPromise[_] = js.native
   }
@@ -27,7 +27,7 @@ object fileProvider extends js.Object {
   class ArrayFileProvider ()
     extends typings.devextreme.mod.DevExpress.fileProvider.FileProvider {
     def this(options: ArrayFileProviderOptions) = this()
-    /** Gets the specified items' content. */
+    /** @name FileProvider.getItemContent() */
     /* CompleteClass */
     override def getItemContent(items: js.Array[_]): Promise[_] with JQueryPromise[_] = js.native
   }
@@ -36,7 +36,7 @@ object fileProvider extends js.Object {
   class CustomFileProvider ()
     extends typings.devextreme.mod.DevExpress.fileProvider.FileProvider {
     def this(options: CustomFileProviderOptions) = this()
-    /** Gets the specified items' content. */
+    /** @name FileProvider.getItemContent() */
     /* CompleteClass */
     override def getItemContent(items: js.Array[_]): Promise[_] with JQueryPromise[_] = js.native
   }
@@ -45,7 +45,7 @@ object fileProvider extends js.Object {
   class FileProvider ()
     extends typings.devextreme.mod.DevExpress.fileProvider.FileProvider {
     def this(options: FileProviderOptions[typings.devextreme.mod.DevExpress.fileProvider.FileProvider]) = this()
-    /** Gets the specified items' content. */
+    /** @name FileProvider.getItemContent() */
     /* CompleteClass */
     override def getItemContent(items: js.Array[_]): Promise[_] with JQueryPromise[_] = js.native
   }
@@ -54,7 +54,7 @@ object fileProvider extends js.Object {
   class RemoteFileProvider ()
     extends typings.devextreme.mod.DevExpress.fileProvider.FileProvider {
     def this(options: RemoteFileProviderOptions) = this()
-    /** Gets the specified items' content. */
+    /** @name FileProvider.getItemContent() */
     /* CompleteClass */
     override def getItemContent(items: js.Array[_]): Promise[_] with JQueryPromise[_] = js.native
   }

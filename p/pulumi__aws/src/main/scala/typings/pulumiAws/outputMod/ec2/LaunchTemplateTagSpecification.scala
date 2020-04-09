@@ -7,9 +7,12 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait LaunchTemplateTagSpecification extends js.Object {
+  /**
+    * The type of resource to tag. Valid values are `instance` and `volume`.
+    */
   var resourceType: js.UndefOr[String] = js.native
   /**
-    * A mapping of tags to assign to the launch template.
+    * A mapping of tags to assign to the resource.
     */
   var tags: js.UndefOr[StringDictionary[js.Any]] = js.native
 }

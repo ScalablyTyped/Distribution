@@ -16,13 +16,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxDropDownMenuOptions extends WidgetOptions[dxDropDownMenu] {
-  /** The name of the icon to be displayed by the DropDownMenu button. */
+  /** @name dxDropDownMenu.Options.buttonIcon */
   var buttonIcon: js.UndefOr[String] = js.undefined
-  /** The text displayed in the DropDownMenu button. */
+  /** @name dxDropDownMenu.Options.buttonText */
   var buttonText: js.UndefOr[String] = js.undefined
-  /** Overriden */
+  /** @name dxDropDownMenu.Options.dataSource */
   var dataSource: js.UndefOr[String | js.Array[_] | DataSource | DataSourceOptions] = js.undefined
-  /** Specifies a custom template for items. */
+  /** @name dxDropDownMenu.Options.itemTemplate */
   var itemTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function3[
       /* itemData */ js.Any, 
@@ -31,19 +31,19 @@ trait dxDropDownMenuOptions extends WidgetOptions[dxDropDownMenu] {
       String | Element | JQuery
     ])
   ] = js.undefined
-  /** An array of items displayed by the widget. */
+  /** @name dxDropDownMenu.Options.items */
   var items: js.UndefOr[js.Array[_]] = js.undefined
-  /** A function that is executed when the button that opens the drop-down menu is clicked or tapped. */
+  /** @name dxDropDownMenu.Options.onButtonClick */
   var onButtonClick: js.UndefOr[(js.Function1[/* e */ AnonEventJQueryEvent, _]) | String] = js.undefined
-  /** A function that is executed when a menu item is clicked or tapped. */
+  /** @name dxDropDownMenu.Options.onItemClick */
   var onItemClick: js.UndefOr[(js.Function1[/* e */ AnonItemIndexModel, _]) | String] = js.undefined
-  /** Specifies whether or not the drop-down menu is displayed. */
+  /** @name dxDropDownMenu.Options.opened */
   var opened: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the popup element's height in pixels. */
+  /** @name dxDropDownMenu.Options.popupHeight */
   var popupHeight: js.UndefOr[Double | String | js.Function] = js.undefined
-  /** Specifies the popup element's width in pixels. */
+  /** @name dxDropDownMenu.Options.popupWidth */
   var popupWidth: js.UndefOr[Double | String | js.Function] = js.undefined
-  /** Specifies whether or not to show the drop down menu within a Popover widget. */
+  /** @name dxDropDownMenu.Options.usePopover */
   var usePopover: js.UndefOr[Boolean] = js.undefined
 }
 

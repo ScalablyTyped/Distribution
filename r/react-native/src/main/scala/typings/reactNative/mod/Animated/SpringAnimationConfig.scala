@@ -25,6 +25,7 @@ object SpringAnimationConfig {
   @scala.inline
   def apply(
     toValue: Double | AnimatedValue | AnonX | AnimatedValueXY,
+    useNativeDriver: Boolean,
     bounciness: Int | Double = null,
     damping: Int | Double = null,
     delay: Int | Double = null,
@@ -37,10 +38,9 @@ object SpringAnimationConfig {
     speed: Int | Double = null,
     stiffness: Int | Double = null,
     tension: Int | Double = null,
-    useNativeDriver: js.UndefOr[Boolean] = js.undefined,
     velocity: Double | AnonX = null
   ): SpringAnimationConfig = {
-    val __obj = js.Dynamic.literal(toValue = toValue.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(toValue = toValue.asInstanceOf[js.Any], useNativeDriver = useNativeDriver.asInstanceOf[js.Any])
     if (bounciness != null) __obj.updateDynamic("bounciness")(bounciness.asInstanceOf[js.Any])
     if (damping != null) __obj.updateDynamic("damping")(damping.asInstanceOf[js.Any])
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
@@ -53,7 +53,6 @@ object SpringAnimationConfig {
     if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
     if (stiffness != null) __obj.updateDynamic("stiffness")(stiffness.asInstanceOf[js.Any])
     if (tension != null) __obj.updateDynamic("tension")(tension.asInstanceOf[js.Any])
-    if (!js.isUndefined(useNativeDriver)) __obj.updateDynamic("useNativeDriver")(useNativeDriver.asInstanceOf[js.Any])
     if (velocity != null) __obj.updateDynamic("velocity")(velocity.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpringAnimationConfig]
   }

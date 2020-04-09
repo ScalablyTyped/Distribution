@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-apollo
 
-Typings are for version 3.1.3
+Typings are for version 3.1.4
 
 ## Library description:
 React Apollo Hooks, Components, and HOC.

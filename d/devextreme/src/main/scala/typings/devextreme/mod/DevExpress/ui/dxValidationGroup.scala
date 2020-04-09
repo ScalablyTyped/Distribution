@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait dxValidationGroup extends DOMComponent {
-  /** Resets the value and validation result of the editors that are included to the current validation group. */
+  /** @name dxValidationGroup.reset() */
   def reset(): Unit = js.native
-  /** Validates rules of the validators that belong to the current validation group. */
+  /** @name dxValidationGroup.validate() */
   def validate(): dxValidationGroupResult = js.native
 }
 

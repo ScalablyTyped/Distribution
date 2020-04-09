@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@carbon/pictograms-react", "Justice")
 @js.native
-object Justice extends TopLevel[CarbonPictogram]
+object Justice extends TopLevel[CarbonPictogramType]
 

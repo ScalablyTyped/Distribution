@@ -11,7 +11,7 @@ trait RegexPatternSet extends js.Object {
     */
   var ARN: js.UndefOr[ResourceArn] = js.native
   /**
-    * A friendly description of the set. You cannot change the description of a set after you create it.
+    * A description of the set that helps with identification. You cannot change the description of a set after you create it.
     */
   var Description: js.UndefOr[EntityDescription] = js.native
   /**
@@ -19,7 +19,7 @@ trait RegexPatternSet extends js.Object {
     */
   var Id: js.UndefOr[EntityId] = js.native
   /**
-    * A friendly name of the set. You cannot change the name after you create the set.
+    * The name of the set. You cannot change the name after you create the set.
     */
   var Name: js.UndefOr[EntityName] = js.native
   /**

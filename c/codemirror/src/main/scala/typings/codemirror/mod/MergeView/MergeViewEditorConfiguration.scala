@@ -78,10 +78,14 @@ object MergeViewEditorConfiguration {
   @scala.inline
   def apply(
     orig: js.Any,
+    addModeClass: js.UndefOr[Boolean] = js.undefined,
+    allowDropFileTypes: js.Array[String] = null,
     allowEditingOriginals: js.UndefOr[Boolean] = js.undefined,
     autoCloseBrackets: AutoCloseBrackets | Boolean | String = null,
     autoCloseTags: AutoCloseTags | Boolean = null,
     autoRefresh: Boolean | AnonDelay = null,
+    autocapitalize: js.UndefOr[Boolean] = js.undefined,
+    autocorrect: js.UndefOr[Boolean] = js.undefined,
     autofocus: js.UndefOr[Boolean] = js.undefined,
     collapseIdentical: Boolean | Double = null,
     connect: String = null,
@@ -121,6 +125,7 @@ object MergeViewEditorConfiguration {
     placeholder: String = null,
     pollInterval: Int | Double = null,
     readOnly: js.Any = null,
+    resetSelectionOnContextMenu: js.UndefOr[Boolean] = js.undefined,
     revertButtons: js.UndefOr[Boolean] = js.undefined,
     rtlMoveVisually: js.UndefOr[Boolean] = js.undefined,
     scrollPastEnd: js.UndefOr[Boolean] = js.undefined,
@@ -129,6 +134,7 @@ object MergeViewEditorConfiguration {
     showDifferences: js.UndefOr[Boolean] = js.undefined,
     showHint: js.UndefOr[Boolean] = js.undefined,
     smartIndent: js.UndefOr[Boolean] = js.undefined,
+    spellcheck: js.UndefOr[Boolean] = js.undefined,
     styleActiveLine: StyleActiveLine | Boolean = null,
     tabSize: Int | Double = null,
     tabindex: Int | Double = null,
@@ -140,10 +146,14 @@ object MergeViewEditorConfiguration {
     workTime: Int | Double = null
   ): MergeViewEditorConfiguration = {
     val __obj = js.Dynamic.literal(orig = orig.asInstanceOf[js.Any])
+    if (!js.isUndefined(addModeClass)) __obj.updateDynamic("addModeClass")(addModeClass.asInstanceOf[js.Any])
+    if (allowDropFileTypes != null) __obj.updateDynamic("allowDropFileTypes")(allowDropFileTypes.asInstanceOf[js.Any])
     if (!js.isUndefined(allowEditingOriginals)) __obj.updateDynamic("allowEditingOriginals")(allowEditingOriginals.asInstanceOf[js.Any])
     if (autoCloseBrackets != null) __obj.updateDynamic("autoCloseBrackets")(autoCloseBrackets.asInstanceOf[js.Any])
     if (autoCloseTags != null) __obj.updateDynamic("autoCloseTags")(autoCloseTags.asInstanceOf[js.Any])
     if (autoRefresh != null) __obj.updateDynamic("autoRefresh")(autoRefresh.asInstanceOf[js.Any])
+    if (!js.isUndefined(autocapitalize)) __obj.updateDynamic("autocapitalize")(autocapitalize.asInstanceOf[js.Any])
+    if (!js.isUndefined(autocorrect)) __obj.updateDynamic("autocorrect")(autocorrect.asInstanceOf[js.Any])
     if (!js.isUndefined(autofocus)) __obj.updateDynamic("autofocus")(autofocus.asInstanceOf[js.Any])
     if (collapseIdentical != null) __obj.updateDynamic("collapseIdentical")(collapseIdentical.asInstanceOf[js.Any])
     if (connect != null) __obj.updateDynamic("connect")(connect.asInstanceOf[js.Any])
@@ -183,6 +193,7 @@ object MergeViewEditorConfiguration {
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (pollInterval != null) __obj.updateDynamic("pollInterval")(pollInterval.asInstanceOf[js.Any])
     if (readOnly != null) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(resetSelectionOnContextMenu)) __obj.updateDynamic("resetSelectionOnContextMenu")(resetSelectionOnContextMenu.asInstanceOf[js.Any])
     if (!js.isUndefined(revertButtons)) __obj.updateDynamic("revertButtons")(revertButtons.asInstanceOf[js.Any])
     if (!js.isUndefined(rtlMoveVisually)) __obj.updateDynamic("rtlMoveVisually")(rtlMoveVisually.asInstanceOf[js.Any])
     if (!js.isUndefined(scrollPastEnd)) __obj.updateDynamic("scrollPastEnd")(scrollPastEnd.asInstanceOf[js.Any])
@@ -191,6 +202,7 @@ object MergeViewEditorConfiguration {
     if (!js.isUndefined(showDifferences)) __obj.updateDynamic("showDifferences")(showDifferences.asInstanceOf[js.Any])
     if (!js.isUndefined(showHint)) __obj.updateDynamic("showHint")(showHint.asInstanceOf[js.Any])
     if (!js.isUndefined(smartIndent)) __obj.updateDynamic("smartIndent")(smartIndent.asInstanceOf[js.Any])
+    if (!js.isUndefined(spellcheck)) __obj.updateDynamic("spellcheck")(spellcheck.asInstanceOf[js.Any])
     if (styleActiveLine != null) __obj.updateDynamic("styleActiveLine")(styleActiveLine.asInstanceOf[js.Any])
     if (tabSize != null) __obj.updateDynamic("tabSize")(tabSize.asInstanceOf[js.Any])
     if (tabindex != null) __obj.updateDynamic("tabindex")(tabindex.asInstanceOf[js.Any])

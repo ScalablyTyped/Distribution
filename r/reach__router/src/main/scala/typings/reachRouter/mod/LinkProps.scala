@@ -59,8 +59,10 @@ import typings.react.mod.KeyboardEvent
 import typings.react.mod.LegacyRef
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.ReactNode
+import typings.react.mod.Ref
 import typings.react.mod.SyntheticEvent
 import typings.react.mod.TouchEvent
 import typings.react.mod.TransitionEvent
@@ -74,6 +76,8 @@ import scala.scalajs.js.annotation._
 
 trait LinkProps[TState] extends AnchorProps {
   var getProps: js.UndefOr[js.Function1[/* props */ LinkGetProps, js.Object]] = js.undefined
+  /** @deprecated If using React >= 16.4, use ref instead. */
+  var innerRef: js.UndefOr[Ref[HTMLAnchorElement]] = js.undefined
   var replace: js.UndefOr[Boolean] = js.undefined
   var state: js.UndefOr[TState] = js.undefined
   var to: String
@@ -153,6 +157,7 @@ object LinkProps {
     hrefLang: String = null,
     id: String = null,
     inlist: js.Any = null,
+    innerRef: Ref[HTMLAnchorElement] = null,
     inputMode: none | text | tel | url | email | numeric | decimal | search = null,
     is: String = null,
     itemID: String = null,
@@ -226,7 +231,7 @@ object LinkProps {
     onProgress: SyntheticEvent[HTMLAnchorElement, Event_] => Unit = null,
     onRateChange: SyntheticEvent[HTMLAnchorElement, Event_] => Unit = null,
     onReset: FormEvent[HTMLAnchorElement] => Unit = null,
-    onScroll: UIEvent[HTMLAnchorElement] => Unit = null,
+    onScroll: UIEvent[HTMLAnchorElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[HTMLAnchorElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[HTMLAnchorElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[HTMLAnchorElement, Event_] => Unit = null,
@@ -341,6 +346,7 @@ object LinkProps {
     if (hrefLang != null) __obj.updateDynamic("hrefLang")(hrefLang.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (inlist != null) __obj.updateDynamic("inlist")(inlist.asInstanceOf[js.Any])
+    if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
     if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode.asInstanceOf[js.Any])
     if (is != null) __obj.updateDynamic("is")(is.asInstanceOf[js.Any])
     if (itemID != null) __obj.updateDynamic("itemID")(itemID.asInstanceOf[js.Any])

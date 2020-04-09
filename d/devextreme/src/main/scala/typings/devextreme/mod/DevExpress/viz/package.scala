@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object viz {
-  /** Configures the loading indicator. */
+  /** @name BaseGauge.Options.loadingIndicator */
   type BaseGaugeLoadingIndicator = typings.devextreme.mod.DevExpress.viz.BaseWidgetLoadingIndicator
   type BaseSparkline = typings.devextreme.mod.DevExpress.viz.BaseWidget
   /* Rewritten from type alias, can be one of: 

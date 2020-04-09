@@ -8,9 +8,9 @@ import typings.std.EcdsaParams
 import typings.std.Element
 import typings.std.RsaPssParams
 import typings.std.Uint8Array
-import typings.xmlCore.mod.AssocArray
-import typings.xmlCore.mod.IXmlSerializable
 import typings.xmlCore.mod.XmlObject
+import typings.xmlCore.typesMod.AssocArray
+import typings.xmlCore.typesMod.IXmlSerializable
 import typings.xmldsigjs.xmlMod.Reference
 import typings.xmldsigjs.xmlMod.Signature
 import typings.xmldsigjs.xmlMod.Transform

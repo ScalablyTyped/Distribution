@@ -231,6 +231,32 @@ trait ManagedBlockchain extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ RejectInvitationOutput, Unit]
   ): Request[RejectInvitationOutput, AWSError] = js.native
   /**
+    * Updates a member configuration with new parameters.
+    */
+  def updateMember(): Request[UpdateMemberOutput, AWSError] = js.native
+  def updateMember(callback: js.Function2[/* err */ AWSError, /* data */ UpdateMemberOutput, Unit]): Request[UpdateMemberOutput, AWSError] = js.native
+  /**
+    * Updates a member configuration with new parameters.
+    */
+  def updateMember(params: UpdateMemberInput): Request[UpdateMemberOutput, AWSError] = js.native
+  def updateMember(
+    params: UpdateMemberInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateMemberOutput, Unit]
+  ): Request[UpdateMemberOutput, AWSError] = js.native
+  /**
+    * Updates a node configuration with new parameters.
+    */
+  def updateNode(): Request[UpdateNodeOutput, AWSError] = js.native
+  def updateNode(callback: js.Function2[/* err */ AWSError, /* data */ UpdateNodeOutput, Unit]): Request[UpdateNodeOutput, AWSError] = js.native
+  /**
+    * Updates a node configuration with new parameters.
+    */
+  def updateNode(params: UpdateNodeInput): Request[UpdateNodeOutput, AWSError] = js.native
+  def updateNode(
+    params: UpdateNodeInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateNodeOutput, Unit]
+  ): Request[UpdateNodeOutput, AWSError] = js.native
+  /**
     * Casts a vote for a specified ProposalId on behalf of a member. The member to vote as, specified by VoterMemberId, must be in the same AWS account as the principal that calls the action.
     */
   def voteOnProposal(): Request[VoteOnProposalOutput, AWSError] = js.native

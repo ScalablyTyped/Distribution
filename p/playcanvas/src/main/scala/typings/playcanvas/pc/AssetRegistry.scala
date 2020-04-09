@@ -164,6 +164,22 @@ class AssetRegistry protected () extends EventHandler {
   def loadFromUrl(url: String, `type`: String, callback: LoadAsset): Unit = js.native
   /**
     * @function
+    * @name pc.AssetRegistry#loadFromUrlAndFilename
+    * @description Use this to load and create an asset when both the URL and filename are required. For example, use this function when loading
+    * BLOB assets, where the URL does not adequately identify the file.
+    * @param {string} url - The url to load.
+    * @param {string} filename - The filename of the asset to load.
+    * @param {string} type - The type of asset to load.
+    * @param {pc.callbacks.LoadAsset} callback - Function called when asset is loaded, passed (err, asset), where err is null if no errors were encountered.
+    * @example
+    * var file = magicallyAttainAFile();
+    * app.assets.loadFromUrlAndFilename(URL.createObjectURL(file), "texture.png", "texture", function (err, asset) {
+    *     var texture = asset.resource;
+    * });
+    */
+  def loadFromUrlAndFilename(url: String, filename: String, `type`: String, callback: LoadAsset): Unit = js.native
+  /**
+    * @function
     * @name pc.AssetRegistry#remove
     * @description Remove an asset from the registry.
     * @param {pc.Asset} asset - The asset to remove.

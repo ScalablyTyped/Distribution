@@ -16,7 +16,7 @@ trait FirehoseDeliveryStreamElasticsearchConfiguration extends js.Object {
     */
   var bufferingSize: js.UndefOr[Input[Double]] = js.native
   /**
-    * The CloudWatch Logging Options for the delivery stream. More details are given below.
+    * The CloudWatch Logging Options for the delivery stream. More details are given below
     */
   var cloudwatchLoggingOptions: js.UndefOr[Input[FirehoseDeliveryStreamElasticsearchConfigurationCloudwatchLoggingOptions]] = js.native
   /**
@@ -36,15 +36,15 @@ trait FirehoseDeliveryStreamElasticsearchConfiguration extends js.Object {
     */
   var processingConfiguration: js.UndefOr[Input[FirehoseDeliveryStreamElasticsearchConfigurationProcessingConfiguration]] = js.native
   /**
-    * After an initial failure to deliver to Splunk, the total amount of time, in seconds between 0 to 7200, during which Firehose re-attempts delivery (including the first attempt).  After this time has elapsed, the failed documents are written to Amazon S3.  The default value is 300s.  There will be no retry if the value is 0.
+    * After an initial failure to deliver to Amazon Elasticsearch, the total amount of time, in seconds between 0 to 7200, during which Firehose re-attempts delivery (including the first attempt).  After this time has elapsed, the failed documents are written to Amazon S3.  The default value is 300s.  There will be no retry if the value is 0.
     */
   var retryDuration: js.UndefOr[Input[Double]] = js.native
   /**
-    * The role that Kinesis Data Firehose can use to access AWS Glue. This role must be in the same account you use for Kinesis Data Firehose. Cross-account roles aren't allowed.
+    * The ARN of the IAM role to be assumed by Firehose for calling the Amazon ES Configuration API and for indexing documents.  The pattern needs to be `arn:.*`.
     */
   var roleArn: Input[String] = js.native
   /**
-    * Defines how documents should be delivered to Amazon S3.  Valid values are `FailedEventsOnly` and `AllEvents`.  Default value is `FailedEventsOnly`.
+    * Defines how documents should be delivered to Amazon S3.  Valid values are `FailedDocumentsOnly` and `AllDocuments`.  Default value is `FailedDocumentsOnly`.
     */
   var s3BackupMode: js.UndefOr[Input[String]] = js.native
   /**

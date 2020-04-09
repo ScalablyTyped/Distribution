@@ -1,5 +1,6 @@
 package typings.pulumiAws.haproxyLayerMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiAws.inputMod.opsworks.HaproxyLayerEbsVolume
 import typings.pulumiPulumi.outputMod.Input
 import scala.scalajs.js
@@ -8,6 +9,10 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait HaproxyLayerState extends js.Object {
+  /**
+    * The Amazon Resource Name(ARN) of the layer.
+    */
+  val arn: js.UndefOr[Input[String]] = js.native
   /**
     * Whether to automatically assign an elastic IP address to the layer's instances.
     */
@@ -94,6 +99,10 @@ trait HaproxyLayerState extends js.Object {
     */
   val systemPackages: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
+    * A mapping of tags to assign to the resource.
+    */
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  /**
     * Whether to use EBS-optimized instances.
     */
   val useEbsOptimizedInstances: js.UndefOr[Input[Boolean]] = js.native
@@ -102,6 +111,7 @@ trait HaproxyLayerState extends js.Object {
 object HaproxyLayerState {
   @scala.inline
   def apply(
+    arn: Input[String] = null,
     autoAssignElasticIps: Input[Boolean] = null,
     autoAssignPublicIps: Input[Boolean] = null,
     autoHealing: Input[Boolean] = null,
@@ -127,9 +137,11 @@ object HaproxyLayerState {
     statsUrl: Input[String] = null,
     statsUser: Input[String] = null,
     systemPackages: Input[js.Array[Input[String]]] = null,
+    tags: Input[StringDictionary[_]] = null,
     useEbsOptimizedInstances: Input[Boolean] = null
   ): HaproxyLayerState = {
     val __obj = js.Dynamic.literal()
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
     if (autoAssignElasticIps != null) __obj.updateDynamic("autoAssignElasticIps")(autoAssignElasticIps.asInstanceOf[js.Any])
     if (autoAssignPublicIps != null) __obj.updateDynamic("autoAssignPublicIps")(autoAssignPublicIps.asInstanceOf[js.Any])
     if (autoHealing != null) __obj.updateDynamic("autoHealing")(autoHealing.asInstanceOf[js.Any])
@@ -155,6 +167,7 @@ object HaproxyLayerState {
     if (statsUrl != null) __obj.updateDynamic("statsUrl")(statsUrl.asInstanceOf[js.Any])
     if (statsUser != null) __obj.updateDynamic("statsUser")(statsUser.asInstanceOf[js.Any])
     if (systemPackages != null) __obj.updateDynamic("systemPackages")(systemPackages.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     if (useEbsOptimizedInstances != null) __obj.updateDynamic("useEbsOptimizedInstances")(useEbsOptimizedInstances.asInstanceOf[js.Any])
     __obj.asInstanceOf[HaproxyLayerState]
   }

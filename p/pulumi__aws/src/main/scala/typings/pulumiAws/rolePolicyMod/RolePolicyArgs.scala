@@ -20,7 +20,7 @@ trait RolePolicyArgs extends js.Object {
     */
   val namePrefix: js.UndefOr[Input[String]] = js.native
   /**
-    * The policy document attached to the role.
+    * The policy document. This is a JSON formatted string.
     */
   val policy: Input[String | PolicyDocument] = js.native
   /**

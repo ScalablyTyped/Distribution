@@ -10,19 +10,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxValidationGroupResult extends js.Object {
-  /** An array of the validation rules that failed. */
+  /** @name dxValidationGroupResult.brokenRules */
   var brokenRules: js.UndefOr[
     js.Array[
       RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule
     ]
   ] = js.undefined
-  /** A promise that is fulfilled when all async rules are validated. */
+  /** @name dxValidationGroupResult.complete */
   var complete: js.UndefOr[Promise[dxValidationGroupResult] | JQueryPromise[dxValidationGroupResult]] = js.undefined
-  /** Indicates whether all the rules checked for the group are satisfied. */
+  /** @name dxValidationGroupResult.isValid */
   var isValid: js.UndefOr[Boolean] = js.undefined
-  /** Indicates the validation status. */
+  /** @name dxValidationGroupResult.status */
   var status: js.UndefOr[valid | invalid | pending] = js.undefined
-  /** Validator widgets included in the validated group. */
+  /** @name dxValidationGroupResult.validators */
   var validators: js.UndefOr[js.Array[_]] = js.undefined
 }
 

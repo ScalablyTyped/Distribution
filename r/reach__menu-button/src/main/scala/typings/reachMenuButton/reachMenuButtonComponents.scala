@@ -140,6 +140,7 @@ import typings.reachMenuButton.reachMenuButtonStrings.samp
 import typings.reachMenuButton.reachMenuButtonStrings.script
 import typings.reachMenuButton.reachMenuButtonStrings.section
 import typings.reachMenuButton.reachMenuButtonStrings.select
+import typings.reachMenuButton.reachMenuButtonStrings.slot
 import typings.reachMenuButton.reachMenuButtonStrings.small
 import typings.reachMenuButton.reachMenuButtonStrings.source
 import typings.reachMenuButton.reachMenuButtonStrings.span
@@ -488,6 +489,8 @@ object reachMenuButtonComponents extends reachMenuButtonProps {
   def MenuLinkSection: ComponentType[MenuLinkSectionProps[section]] = typings.reachMenuButton.mod.MenuLink_section.asInstanceOf[typings.react.mod.ComponentType[MenuLinkSectionProps[typings.reachMenuButton.reachMenuButtonStrings.section]]]
   @scala.inline
   def MenuLinkSelect: ComponentType[MenuLinkSelectProps[select]] = typings.reachMenuButton.mod.MenuLink_select.asInstanceOf[typings.react.mod.ComponentType[MenuLinkSelectProps[typings.reachMenuButton.reachMenuButtonStrings.select]]]
+  @scala.inline
+  def MenuLinkSlot: ComponentType[MenuLinkSlotProps[slot]] = typings.reachMenuButton.mod.MenuLink_slot.asInstanceOf[typings.react.mod.ComponentType[MenuLinkSlotProps[typings.reachMenuButton.reachMenuButtonStrings.slot]]]
   @scala.inline
   def MenuLinkSmall: ComponentType[MenuLinkSmallProps[small]] = typings.reachMenuButton.mod.MenuLink_small.asInstanceOf[typings.react.mod.ComponentType[MenuLinkSmallProps[typings.reachMenuButton.reachMenuButtonStrings.small]]]
   @scala.inline

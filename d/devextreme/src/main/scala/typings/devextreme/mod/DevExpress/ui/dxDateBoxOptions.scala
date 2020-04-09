@@ -48,45 +48,45 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxDateBoxOptions extends dxDropDownEditorOptions[dxDateBox] {
-  /** Specifies whether or not adaptive widget rendering is enabled on a small screen. */
+  /** @name dxDateBox.Options.adaptivityEnabled */
   var adaptivityEnabled: js.UndefOr[Boolean] = js.undefined
-  /** The text displayed on the Apply button. */
+  /** @name dxDateBox.Options.applyButtonText */
   var applyButtonText: js.UndefOr[String] = js.undefined
-  /** Configures the calendar's value picker. Applies only if the pickerType is "calendar". */
+  /** @name dxDateBox.Options.calendarOptions */
   var calendarOptions: js.UndefOr[dxCalendarOptions] = js.undefined
-  /** The text displayed on the Cancel button. */
+  /** @name dxDateBox.Options.cancelButtonText */
   var cancelButtonText: js.UndefOr[String] = js.undefined
-  /** Specifies the message displayed if the specified date is later than the max value or earlier than the min value. */
+  /** @name dxDateBox.Options.dateOutOfRangeMessage */
   var dateOutOfRangeMessage: js.UndefOr[String] = js.undefined
-  /** Specifies the date-time value serialization format. Use it only if you do not specify the value at design time. */
+  /** @name dxDateBox.Options.dateSerializationFormat */
   var dateSerializationFormat: js.UndefOr[String] = js.undefined
-  /** Specifies dates to be disabled. Applies only if pickerType is "calendar". */
+  /** @name dxDateBox.Options.disabledDates */
   var disabledDates: js.UndefOr[js.Array[Date] | (js.Function1[/* data */ AnonComponentDate, Boolean])] = js.undefined
-  /** Specifies the date display format. Ignored if the pickerType option is "native" */
+  /** @name dxDateBox.Options.displayFormat */
   var displayFormat: js.UndefOr[format] = js.undefined
-  /** Specifies the interval between neighboring values in the popup list in minutes. */
+  /** @name dxDateBox.Options.interval */
   var interval: js.UndefOr[Double] = js.undefined
-  /** Specifies the message displayed if the typed value is not a valid date or time. */
+  /** @name dxDateBox.Options.invalidDateMessage */
   var invalidDateMessage: js.UndefOr[String] = js.undefined
-  /** The last date that can be selected within the widget. */
+  /** @name dxDateBox.Options.max */
   var max: js.UndefOr[Date | Double | String] = js.undefined
-  /** @deprecated Use the calendarOptions option instead. */
-  /** Specifies the maximum zoom level of a calendar, which is used to pick the date. */
+  /** @deprecated */
+  /** @name dxDateBox.Options.maxZoomLevel */
   var maxZoomLevel: js.UndefOr[century | decade | month | year] = js.undefined
-  /** The minimum date that can be selected within the widget. */
+  /** @name dxDateBox.Options.min */
   var min: js.UndefOr[Date | Double | String] = js.undefined
-  /** @deprecated Use the calendarOptions option instead. */
-  /** Specifies the minimal zoom level of a calendar, which is used to pick the date. */
+  /** @deprecated */
+  /** @name dxDateBox.Options.minZoomLevel */
   var minZoomLevel: js.UndefOr[century | decade | month | year] = js.undefined
-  /** Specifies the type of the date/time picker. */
+  /** @name dxDateBox.Options.pickerType */
   var pickerType: js.UndefOr[calendar | list | native | rollers] = js.undefined
-  /** Specifies whether to show the analog clock in the value picker. Applies only if type is "datetime" and pickerType is "calendar". */
+  /** @name dxDateBox.Options.showAnalogClock */
   var showAnalogClock: js.UndefOr[Boolean] = js.undefined
-  /** A format used to display date/time information. */
+  /** @name dxDateBox.Options.type */
   var `type`: js.UndefOr[date | datetime | time] = js.undefined
-  /** Specifies whether to control user input using a mask created based on the displayFormat. */
+  /** @name dxDateBox.Options.useMaskBehavior */
   var useMaskBehavior: js.UndefOr[Boolean] = js.undefined
-  /** An object or a value specifying the date and time currently selected using the date box. */
+  /** @name dxDateBox.Options.value */
   @JSName("value")
   var value_dxDateBoxOptions: js.UndefOr[Date | Double | String] = js.undefined
 }

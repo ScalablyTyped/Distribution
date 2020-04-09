@@ -16,6 +16,6 @@ class default () extends StackView
 @JSImport("react-navigation-stack/lib/typescript/src/vendor/views/Stack/StackView", JSImport.Default)
 @js.native
 object default extends js.Object {
-  def getDerivedStateFromProps(props: ReadonlyProps, state: ReadonlyState): AnonClosingRouteKeys | AnonDescriptors | Null = js.native
+  def getDerivedStateFromProps(props: ReadonlyProps, state: ReadonlyState): AnonClosingRouteKeys | AnonDescriptors = js.native
 }
 

@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "serverless-jest-plugin"
-version := "0.3-dt-20200219Z-139790"
+version := "0.3-dt-20200219Z-f0d22a"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "aws-lambda" % "8.10-dt-20200302Z-3e52c1",
-  "org.scalablytyped" %%% "lambda-wrapper" % "0.3-dt-20200219Z-0a6b31",
+  "org.scalablytyped" %%% "aws-lambda" % "8.10-dt-20200401Z-b3fd0c",
+  "org.scalablytyped" %%% "lambda-wrapper" % "0.3-dt-20200219Z-ca5329",
   "org.scalablytyped" %%% "serverless" % "1.18-dt-20200304Z-c95c76",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false

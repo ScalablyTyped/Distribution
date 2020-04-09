@@ -9,50 +9,50 @@ import scala.scalajs.js.annotation._
 @js.native
 trait dxTreeList extends GridBase {
   def addColumn(columnOptions: String): Unit = js.native
-  /** Adds a new column. */
+  /** @name dxTreeList.addColumn(columnOptions) */
   def addColumn(columnOptions: js.Any): Unit = js.native
-  /** Adds an empty data row to the highest hierarchical level and switches it to the editing state. */
-  def addRow(): Unit = js.native
-  /** Adds an empty data row to a specified parent row. */
-  def addRow(parentId: js.Any): Unit = js.native
-  /** Collapses a row with a specific key. */
+  /** @name dxTreeList.addRow() */
+  def addRow(): Promise[Unit] with JQueryPromise[Unit] = js.native
+  /** @name dxTreeList.addRow(parentId) */
+  def addRow(parentId: js.Any): Promise[Unit] with JQueryPromise[Unit] = js.native
+  /** @name dxTreeList.collapseRow(key) */
   def collapseRow(key: js.Any): Promise[Unit] with JQueryPromise[Unit] = js.native
-  /** Expands a row with a specific key. */
+  /** @name dxTreeList.expandRow(key) */
   def expandRow(key: js.Any): Promise[Unit] with JQueryPromise[Unit] = js.native
-  /** Performs a pre-order tree traversal, executing a function on each visited node. Starts traversing from the top level nodes. */
+  /** @name dxTreeList.forEachNode(callback) */
   def forEachNode(callback: js.Function): Unit = js.native
-  /** Performs a pre-order tree traversal, executing a function on each visited node. Starts traversing from the specified nodes. */
+  /** @name dxTreeList.forEachNode(nodes, callback) */
   def forEachNode(nodes: js.Array[dxTreeListNode], callback: js.Function): Unit = js.native
   def getNodeByKey(key: String): dxTreeListNode = js.native
-  /** Gets a node with a specific key. */
+  /** @name dxTreeList.getNodeByKey(key) */
   def getNodeByKey(key: js.Any): dxTreeListNode = js.native
   def getNodeByKey(key: Double): dxTreeListNode = js.native
-  /** Gets the root node. */
+  /** @name dxTreeList.getRootNode() */
   def getRootNode(): dxTreeListNode = js.native
-  /** Gets the keys of the rows selected explicitly via the API or via a click or tap. */
+  /** @name dxTreeList.getSelectedRowKeys() */
   def getSelectedRowKeys(): js.Array[_] = js.native
-  /** @deprecated Use the [getSelectedRowKeys(mode)](/api-reference/10%20UI%20Widgets/dxTreeList/3%20Methods/getSelectedRowKeys(mode).md '/Documentation/ApiReference/UI_Widgets/dxTreeList/Methods/#getSelectedRowKeysmode') method instead. */
-  /** Gets the selected rows' keys. */
+  /** @deprecated */
+  /** @name dxTreeList.getSelectedRowKeys(leavesOnly) */
   def getSelectedRowKeys(leavesOnly: Boolean): js.Array[_] = js.native
-  /** Gets the selected rows' keys. */
+  /** @name dxTreeList.getSelectedRowKeys(mode) */
   def getSelectedRowKeys(mode: String): js.Array[_] = js.native
-  /** Gets the data objects of the rows selected explicitly via the API or via a click or tap. */
+  /** @name dxTreeList.getSelectedRowsData() */
   def getSelectedRowsData(): js.Array[_] = js.native
-  /** Gets the selected rows' data objects. */
+  /** @name dxTreeList.getSelectedRowsData(mode) */
   def getSelectedRowsData(mode: String): js.Array[_] = js.native
-  /** Gets all visible columns. */
+  /** @name dxTreeList.getVisibleColumns() */
   def getVisibleColumns(): js.Array[dxTreeListColumn] = js.native
-  /** Gets all visible columns at a specific hierarchical level of column headers. Use it to access banded columns. */
+  /** @name dxTreeList.getVisibleColumns(headerLevel) */
   def getVisibleColumns(headerLevel: Double): js.Array[dxTreeListColumn] = js.native
-  /** Gets currently rendered rows. */
+  /** @name dxTreeList.getVisibleRows() */
   def getVisibleRows(): js.Array[dxTreeListRowObject] = js.native
-  /** Checks whether a row is expanded or collapsed. */
+  /** @name dxTreeList.isRowExpanded(key) */
   def isRowExpanded(key: js.Any): Boolean = js.native
-  /** Loads all root node descendants (all data items). Takes effect only if data has the plain structure and remoteOperations | filtering is true. */
+  /** @name dxTreeList.loadDescendants() */
   def loadDescendants(): Promise[Unit] with JQueryPromise[Unit] = js.native
-  /** Loads a specific node's descendants. Takes effect only if data has the plain structure and remoteOperations | filtering is true. */
+  /** @name dxTreeList.loadDescendants(keys) */
   def loadDescendants(keys: js.Array[_]): Promise[Unit] with JQueryPromise[Unit] = js.native
-  /** Loads all or only direct descendants of specific nodes. Takes effect only if data has the plain structure and remoteOperations | filtering is true. */
+  /** @name dxTreeList.loadDescendants(keys, childrenOnly) */
   def loadDescendants(keys: js.Array[_], childrenOnly: Boolean): Promise[Unit] with JQueryPromise[Unit] = js.native
 }
 

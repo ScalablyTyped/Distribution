@@ -1,7 +1,7 @@
 
 # Scala.js typings for async
 
-Typings are for version 3.0
+Typings are for version 3.2
 
 ## Library description:
 Higher-order functions and common patterns for asynchronous code

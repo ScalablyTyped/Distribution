@@ -14,7 +14,7 @@ package object mod {
   type IRoute = typings.expressServeStaticCore.mod.IRoute
   type IRouter = typings.expressServeStaticCore.mod.IRouter
   type IRouterHandler[T] = typings.expressServeStaticCore.mod.IRouterHandler[T]
-  type IRouterMatcher[T] = typings.expressServeStaticCore.mod.IRouterMatcher[T]
+  type IRouterMatcher[T] = typings.expressServeStaticCore.mod.IRouterMatcher[T, js.Any]
   type MediaType = typings.expressServeStaticCore.mod.MediaType
   type NextFunction = typings.expressServeStaticCore.mod.NextFunction
   type RequestHandler[P /* <: typings.expressServeStaticCore.mod.Params */] = typings.expressServeStaticCore.mod.RequestHandler[P, js.Any, js.Any]

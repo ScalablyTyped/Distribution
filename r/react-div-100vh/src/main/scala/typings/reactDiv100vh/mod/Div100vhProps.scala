@@ -16,6 +16,7 @@ import typings.react.mod.KeyboardEvent
 import typings.react.mod.LegacyRef
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
@@ -78,7 +79,7 @@ trait Div100vhProps
   extends HTMLAttributes[HTMLElement]
      with ClassAttributes[HTMLElement] {
   var as: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any
   ] = js.undefined
 }
 
@@ -135,7 +136,7 @@ object Div100vhProps {
     `aria-valuemin`: Int | Double = null,
     `aria-valuenow`: Int | Double = null,
     `aria-valuetext`: String = null,
-    as: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any = null,
+    as: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any = null,
     autoCapitalize: String = null,
     autoCorrect: String = null,
     autoSave: String = null,
@@ -225,7 +226,7 @@ object Div100vhProps {
     onProgress: SyntheticEvent[HTMLElement, Event_] => Unit = null,
     onRateChange: SyntheticEvent[HTMLElement, Event_] => Unit = null,
     onReset: FormEvent[HTMLElement] => Unit = null,
-    onScroll: UIEvent[HTMLElement] => Unit = null,
+    onScroll: UIEvent[HTMLElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[HTMLElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[HTMLElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[HTMLElement, Event_] => Unit = null,

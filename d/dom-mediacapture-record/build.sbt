@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "dom-mediacapture-record"
-version := "1.0-dt-20200131Z-e1ff87"
+version := "1.0-dt-20200323Z-8226cd"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

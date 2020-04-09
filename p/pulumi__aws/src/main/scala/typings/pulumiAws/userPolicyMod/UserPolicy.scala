@@ -29,6 +29,9 @@ class UserPolicy protected () extends CustomResource {
     * Creates a unique name beginning with the specified prefix. Conflicts with `name`.
     */
   val namePrefix: Output_[js.UndefOr[String]] = js.native
+  /**
+    * The policy document. This is a JSON formatted string.
+    */
   val policy: Output_[String] = js.native
   /**
     * IAM user to which to attach this policy.

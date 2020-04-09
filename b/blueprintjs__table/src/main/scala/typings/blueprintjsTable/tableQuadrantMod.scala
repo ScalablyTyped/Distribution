@@ -6,6 +6,7 @@ import typings.blueprintjsCore.propsMod.IProps
 import typings.blueprintjsTable.gridMod.Grid
 import typings.react.mod.CSSProperties
 import typings.react.mod.EventHandler
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.UIEvent
 import typings.react.mod.WheelEvent
 import typings.react.mod._Global_.JSX.Element
@@ -48,7 +49,7 @@ object tableQuadrantMod extends js.Object {
       * This callback really only makes sense for the MAIN quadrant, because that's the only quadrant whose
       * scrollbar is visible. Other quadrants should simply provide an `onWheel` callback.
       */
-    var onScroll: js.UndefOr[EventHandler[UIEvent[HTMLDivElement]]] = js.native
+    var onScroll: js.UndefOr[EventHandler[UIEvent[HTMLDivElement, NativeUIEvent]]] = js.native
     /**
       * An optional callback invoked when the quadrant is scrolled via the trackpad/mouse wheel. This
       * callback should be provided for all quadrant types except MAIN, which should provide the more

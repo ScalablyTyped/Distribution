@@ -8,45 +8,45 @@ import scala.scalajs.js.annotation._
 @js.native
 class UpdateCustomerRequest () extends js.Object {
   /**
-    * The customer's physical address.
+    * The physical address associated with the customer profile.
     */
   var address: js.UndefOr[Address] = js.native
   /**
-    * The customer birthday in RFC-3339 format. Year is optional, timezone and times are not allowed. Example:
-    * `0000-09-01T00:00:00-00:00` for a birthday on September 1st. `1998-09-01T00:00:00-00:00` for a birthday on
-    * September 1st 1998.
+    * The birthday associated with the customer profile, in RFC-3339 format. Year is optional, timezone and
+    * times are not allowed.For example: `0000-09-01T00:00:00-00:00` indicates a birthday on September 1st.
+    * `1998-09-01T00:00:00-00:00` indications a birthday on September 1st 1998.
     */
   var birthday: js.UndefOr[String] = js.native
   /**
-    * The name of the customer's company.
+    * A business name associated with the customer profile.
     */
   var company_name: js.UndefOr[String] = js.native
   /**
-    * The customer's email address.
+    * The email address associated with the customer profile.
     */
   var email_address: js.UndefOr[String] = js.native
   /**
-    * The customer's family (i.e., last) name.
+    * The family (i.e., last) name associated with the customer profile.
     */
   var family_name: js.UndefOr[String] = js.native
   /**
-    * The customer's given (i.e., first) name.
+    * The given (i.e., first) name associated with the customer profile.
     */
   var given_name: js.UndefOr[String] = js.native
   /**
-    * A nickname for the customer.
+    * A nickname for the customer profile.
     */
   var nickname: js.UndefOr[String] = js.native
   /**
-    * An optional note to associate with the customer.
+    * A custom note associated with the customer profile.
     */
   var note: js.UndefOr[String] = js.native
   /**
-    * The customer's phone number.
+    * The 11-digit phone number associated with the customer profile.
     */
   var phone_number: js.UndefOr[String] = js.native
   /**
-    * An optional second ID you can set to associate the customer with an entity in another system.
+    * An optional, second ID used to associate the customer profile with an entity in another system.
     */
   var reference_id: js.UndefOr[String] = js.native
 }

@@ -1,7 +1,7 @@
 package typings.tensorflowTfjsConverter
 
 import typings.tensorflowTfjsConverter.operationsTypesMod.OpExecutor
-import typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.`1Dot7Dot0`
+import typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.`1Dot7Dot2`
 import typings.tensorflowTfjsCore.typesMod.IOHandler
 import typings.tensorflowTfjsCore.typesMod.LoadOptions
 import scala.scalajs.js
@@ -30,7 +30,7 @@ object mod extends js.Object {
   }
   
   @JSName("version_converter")
-  val versionConverter: `1Dot7Dot0` = js.native
+  val versionConverter: `1Dot7Dot2` = js.native
   def deregisterOp(name: String): Unit = js.native
   def loadGraphModel(modelUrl: String): js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel] = js.native
   def loadGraphModel(modelUrl: String, options: LoadOptions): js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel] = js.native

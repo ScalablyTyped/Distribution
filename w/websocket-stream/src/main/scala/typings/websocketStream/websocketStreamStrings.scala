@@ -33,10 +33,16 @@ object websocketStreamStrings {
   sealed trait listening extends js.Object
   
   @js.native
+  sealed trait pause extends js.Object
+  
+  @js.native
   sealed trait pipe extends js.Object
   
   @js.native
   sealed trait readable extends js.Object
+  
+  @js.native
+  sealed trait resume extends js.Object
   
   @js.native
   sealed trait stream extends js.Object
@@ -63,9 +69,13 @@ object websocketStreamStrings {
   @scala.inline
   def listening: listening = "listening".asInstanceOf[listening]
   @scala.inline
+  def pause: pause = "pause".asInstanceOf[pause]
+  @scala.inline
   def pipe: pipe = "pipe".asInstanceOf[pipe]
   @scala.inline
   def readable: readable = "readable".asInstanceOf[readable]
+  @scala.inline
+  def resume: resume = "resume".asInstanceOf[resume]
   @scala.inline
   def stream: stream = "stream".asInstanceOf[stream]
   @scala.inline

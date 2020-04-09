@@ -11,6 +11,7 @@ import typings.react.mod.DragEvent
 import typings.react.mod.FormEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.RefObject
@@ -226,7 +227,7 @@ object HotKeysProps {
     onProgress: SyntheticEvent[HotKeys, Event_] => Unit = null,
     onRateChange: SyntheticEvent[HotKeys, Event_] => Unit = null,
     onReset: FormEvent[HotKeys] => Unit = null,
-    onScroll: UIEvent[HotKeys] => Unit = null,
+    onScroll: UIEvent[HotKeys, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[HotKeys, Event_] => Unit = null,
     onSeeking: SyntheticEvent[HotKeys, Event_] => Unit = null,
     onSelect: SyntheticEvent[HotKeys, Event_] => Unit = null,

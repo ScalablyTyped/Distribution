@@ -27,7 +27,7 @@ trait TopicRuleCloudwatchMetric extends js.Object {
     */
   var metricValue: String = js.native
   /**
-    * The ARN of the IAM role that grants access.
+    * The IAM role ARN that allows access to the CloudWatch metric.
     */
   var roleArn: String = js.native
 }

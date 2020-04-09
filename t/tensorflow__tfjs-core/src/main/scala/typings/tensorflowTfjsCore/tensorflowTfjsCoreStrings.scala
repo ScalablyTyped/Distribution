@@ -12,10 +12,22 @@ import scala.scalajs.js.annotation._
 
 object tensorflowTfjsCoreStrings {
   @js.native
-  sealed trait `1Dot7Dot0` extends js.Object
+  sealed trait `1Dot7Dot2` extends js.Object
+  
+  @js.native
+  sealed trait Add extends js.Object
+  
+  @js.native
+  sealed trait AddN extends js.Object
   
   @js.native
   sealed trait BYTES_PER_ELEMENT extends DataValues
+  
+  @js.native
+  sealed trait BroadcastTo extends js.Object
+  
+  @js.native
+  sealed trait Div extends js.Object
   
   @js.native
   sealed trait Engine extends js.Object
@@ -24,7 +36,13 @@ object tensorflowTfjsCoreStrings {
   sealed trait FromPixels extends js.Object
   
   @js.native
+  sealed trait FusedBatchNorm extends js.Object
+  
+  @js.native
   sealed trait GraphDef extends js.Object
+  
+  @js.native
+  sealed trait Identity extends js.Object
   
   @js.native
   sealed trait JSON extends js.Object
@@ -108,6 +126,9 @@ object tensorflowTfjsCoreStrings {
   sealed trait `LinefeedifLeftparenthesisa Lessthansign 0Dot0 AmpersandAmpersand floorLeftparenthesisbRightparenthesis Lessthansign bRightparenthesisLeftcurlybracketLinefeed  return NANSemicolonLinefeedRightcurlybracketLinefeedif Leftparenthesisb EqualssignEqualssign 0Dot0Rightparenthesis LeftcurlybracketLinefeed  return 1Dot0SemicolonLinefeedRightcurlybracketLinefeedreturn LeftparenthesisroundLeftparenthesismodLeftparenthesisbComma 2Dot0RightparenthesisRightparenthesis ExclamationmarkEqualssign 1Rightparenthes` extends js.Object
   
   @js.native
+  sealed trait MaxPoolWithArgmax extends js.Object
+  
+  @js.native
   sealed trait NCDHW extends js.Object
   
   @js.native
@@ -132,7 +153,13 @@ object tensorflowTfjsCoreStrings {
   sealed trait NonMaxSuppressionV5 extends js.Object
   
   @js.native
+  sealed trait OneHot extends js.Object
+  
+  @js.native
   sealed trait POST extends js.Object
+  
+  @js.native
+  sealed trait PadV2 extends js.Object
   
   @js.native
   sealed trait SAME extends PadType
@@ -142,6 +169,12 @@ object tensorflowTfjsCoreStrings {
   
   @js.native
   sealed trait SquaredDifference extends js.Object
+  
+  @js.native
+  sealed trait Tile extends js.Object
+  
+  @js.native
+  sealed trait Transpose extends js.Object
   
   @js.native
   sealed trait VALID extends PadType
@@ -485,15 +518,27 @@ object tensorflowTfjsCoreStrings {
   sealed trait values extends DataValues
   
   @scala.inline
-  def `1Dot7Dot0`: `1Dot7Dot0` = "1.7.0".asInstanceOf[`1Dot7Dot0`]
+  def `1Dot7Dot2`: `1Dot7Dot2` = "1.7.2".asInstanceOf[`1Dot7Dot2`]
+  @scala.inline
+  def Add: Add = "Add".asInstanceOf[Add]
+  @scala.inline
+  def AddN: AddN = "AddN".asInstanceOf[AddN]
   @scala.inline
   def BYTES_PER_ELEMENT: BYTES_PER_ELEMENT = "BYTES_PER_ELEMENT".asInstanceOf[BYTES_PER_ELEMENT]
+  @scala.inline
+  def BroadcastTo: BroadcastTo = "BroadcastTo".asInstanceOf[BroadcastTo]
+  @scala.inline
+  def Div: Div = "Div".asInstanceOf[Div]
   @scala.inline
   def Engine: Engine = "Engine".asInstanceOf[Engine]
   @scala.inline
   def FromPixels: FromPixels = "FromPixels".asInstanceOf[FromPixels]
   @scala.inline
+  def FusedBatchNorm: FusedBatchNorm = "FusedBatchNorm".asInstanceOf[FusedBatchNorm]
+  @scala.inline
   def GraphDef: GraphDef = "GraphDef".asInstanceOf[GraphDef]
+  @scala.inline
+  def Identity: Identity = "Identity".asInstanceOf[Identity]
   @scala.inline
   def JSON: JSON = "JSON".asInstanceOf[JSON]
   @scala.inline
@@ -549,6 +594,8 @@ object tensorflowTfjsCoreStrings {
   @scala.inline
   def `LinefeedifLeftparenthesisa Lessthansign 0Dot0 AmpersandAmpersand floorLeftparenthesisbRightparenthesis Lessthansign bRightparenthesisLeftcurlybracketLinefeed  return NANSemicolonLinefeedRightcurlybracketLinefeedif Leftparenthesisb EqualssignEqualssign 0Dot0Rightparenthesis LeftcurlybracketLinefeed  return 1Dot0SemicolonLinefeedRightcurlybracketLinefeedreturn LeftparenthesisroundLeftparenthesismodLeftparenthesisbComma 2Dot0RightparenthesisRightparenthesis ExclamationmarkEqualssign 1Rightparenthes`: `LinefeedifLeftparenthesisa Lessthansign 0Dot0 AmpersandAmpersand floorLeftparenthesisbRightparenthesis Lessthansign bRightparenthesisLeftcurlybracketLinefeed  return NANSemicolonLinefeedRightcurlybracketLinefeedif Leftparenthesisb EqualssignEqualssign 0Dot0Rightparenthesis LeftcurlybracketLinefeed  return 1Dot0SemicolonLinefeedRightcurlybracketLinefeedreturn LeftparenthesisroundLeftparenthesismodLeftparenthesisbComma 2Dot0RightparenthesisRightparenthesis ExclamationmarkEqualssign 1Rightparenthes` = "\nif(a < 0.0 && floor(b) < b){\n  return NAN;\n}\nif (b == 0.0) {\n  return 1.0;\n}\nreturn (round(mod(b, 2.0)) != 1) ?\n    pow(abs(a), b) : sign(a) * pow(abs(a), b);\n".asInstanceOf[`LinefeedifLeftparenthesisa Lessthansign 0Dot0 AmpersandAmpersand floorLeftparenthesisbRightparenthesis Lessthansign bRightparenthesisLeftcurlybracketLinefeed  return NANSemicolonLinefeedRightcurlybracketLinefeedif Leftparenthesisb EqualssignEqualssign 0Dot0Rightparenthesis LeftcurlybracketLinefeed  return 1Dot0SemicolonLinefeedRightcurlybracketLinefeedreturn LeftparenthesisroundLeftparenthesismodLeftparenthesisbComma 2Dot0RightparenthesisRightparenthesis ExclamationmarkEqualssign 1Rightparenthes`]
   @scala.inline
+  def MaxPoolWithArgmax: MaxPoolWithArgmax = "MaxPoolWithArgmax".asInstanceOf[MaxPoolWithArgmax]
+  @scala.inline
   def NCDHW: NCDHW = "NCDHW".asInstanceOf[NCDHW]
   @scala.inline
   def NCHW: NCHW = "NCHW".asInstanceOf[NCHW]
@@ -565,13 +612,21 @@ object tensorflowTfjsCoreStrings {
   @scala.inline
   def NonMaxSuppressionV5: NonMaxSuppressionV5 = "NonMaxSuppressionV5".asInstanceOf[NonMaxSuppressionV5]
   @scala.inline
+  def OneHot: OneHot = "OneHot".asInstanceOf[OneHot]
+  @scala.inline
   def POST: POST = "POST".asInstanceOf[POST]
+  @scala.inline
+  def PadV2: PadV2 = "PadV2".asInstanceOf[PadV2]
   @scala.inline
   def SAME: SAME = "SAME".asInstanceOf[SAME]
   @scala.inline
   def Square: Square = "Square".asInstanceOf[Square]
   @scala.inline
   def SquaredDifference: SquaredDifference = "SquaredDifference".asInstanceOf[SquaredDifference]
+  @scala.inline
+  def Tile: Tile = "Tile".asInstanceOf[Tile]
+  @scala.inline
+  def Transpose: Transpose = "Transpose".asInstanceOf[Transpose]
   @scala.inline
   def VALID: VALID = "VALID".asInstanceOf[VALID]
   @scala.inline

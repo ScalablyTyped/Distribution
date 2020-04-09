@@ -1,9 +1,9 @@
 package typings.antd.popoverMod
 
+import typings.antd.getRenderPropValueMod.RenderFunction
 import typings.antd.placementsMod.AdjustOverflow
 import typings.antd.tooltipMod.AbstractTooltipProps
 import typings.antd.tooltipMod.TooltipPlacement
-import typings.rcTrigger.interfaceMod.BuildInPlacements
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
 import typings.std.HTMLElement
@@ -12,8 +12,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PopoverProps extends AbstractTooltipProps {
-  var content: js.UndefOr[ReactNode] = js.undefined
-  var title: js.UndefOr[ReactNode] = js.undefined
+  var content: js.UndefOr[ReactNode | RenderFunction] = js.undefined
+  var title: js.UndefOr[ReactNode | RenderFunction] = js.undefined
 }
 
 object PopoverProps {
@@ -21,14 +21,14 @@ object PopoverProps {
   def apply(
     arrowPointAtCenter: js.UndefOr[Boolean] = js.undefined,
     autoAdjustOverflow: Boolean | AdjustOverflow = null,
-    builtinPlacements: BuildInPlacements = null,
+    builtinPlacements: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BuildInPlacements */ js.Any = null,
     className: String = null,
-    content: ReactNode = null,
+    content: ReactNode | RenderFunction = null,
     getPopupContainer: /* triggerNode */ HTMLElement => HTMLElement = null,
     openClassName: String = null,
     placement: TooltipPlacement = null,
     style: CSSProperties = null,
-    title: ReactNode = null
+    title: ReactNode | RenderFunction = null
   ): PopoverProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(arrowPointAtCenter)) __obj.updateDynamic("arrowPointAtCenter")(arrowPointAtCenter.asInstanceOf[js.Any])

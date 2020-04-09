@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class ListPaymentRefundsResponse () extends js.Object {
   /**
     * The pagination cursor to be used in a subsequent request. If empty, this is the final response.
-    * See [Pagination](/basics/api101/pagination) for more information.
+    * See [Pagination](https://developer.squareup.com/docs/basics/api101/pagination) for more information.
     */
   var cursor: js.UndefOr[String] = js.native
   /**

@@ -11,6 +11,44 @@ import scala.scalajs.js.annotation._
 @js.native
 object v1 extends js.Object {
   @js.native
+  class CSIDriver protected ()
+    extends typings.pulumiKubernetes.storageV1Mod.CSIDriver {
+    /**
+      * Create a storage.v1.CSIDriver resource with the given unique name, arguments, and options.
+      *
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
+      */
+    def this(name: String) = this()
+    def this(name: String, args: typings.pulumiKubernetes.inputMod.storage.v1.CSIDriver) = this()
+    def this(
+      name: String,
+      args: typings.pulumiKubernetes.inputMod.storage.v1.CSIDriver,
+      opts: CustomResourceOptions
+    ) = this()
+  }
+  
+  @js.native
+  class CSIDriverList protected ()
+    extends typings.pulumiKubernetes.storageV1Mod.CSIDriverList {
+    /**
+      * Create a storage.v1.CSIDriverList resource with the given unique name, arguments, and options.
+      *
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
+      */
+    def this(name: String) = this()
+    def this(name: String, args: typings.pulumiKubernetes.inputMod.storage.v1.CSIDriverList) = this()
+    def this(
+      name: String,
+      args: typings.pulumiKubernetes.inputMod.storage.v1.CSIDriverList,
+      opts: CustomResourceOptions
+    ) = this()
+  }
+  
+  @js.native
   class CSINode protected ()
     extends typings.pulumiKubernetes.storageV1Mod.CSINode {
     /**
@@ -122,6 +160,52 @@ object v1 extends js.Object {
       args: typings.pulumiKubernetes.inputMod.storage.v1.VolumeAttachmentList,
       opts: CustomResourceOptions
     ) = this()
+  }
+  
+  /* static members */
+  @js.native
+  object CSIDriver extends js.Object {
+    /**
+      * Get the state of an existing `CSIDriver` resource, as identified by `id`.
+      * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
+      * Kubernetes convention) the ID becomes `default/<name>`.
+      *
+      * Pulumi will keep track of this resource using `name` as the Pulumi ID.
+      *
+      * @param name _Unique_ name used to register this resource with Pulumi.
+      * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
+      * @param opts Uniquely specifies a CustomResource to select.
+      */
+    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1CsidriverMod.CSIDriver = js.native
+    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1CsidriverMod.CSIDriver = js.native
+    /**
+      * Returns true if the given object is an instance of CSIDriver.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/storage/v1/CSIDriver.CSIDriver */ Boolean = js.native
+  }
+  
+  /* static members */
+  @js.native
+  object CSIDriverList extends js.Object {
+    /**
+      * Get the state of an existing `CSIDriverList` resource, as identified by `id`.
+      * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
+      * Kubernetes convention) the ID becomes `default/<name>`.
+      *
+      * Pulumi will keep track of this resource using `name` as the Pulumi ID.
+      *
+      * @param name _Unique_ name used to register this resource with Pulumi.
+      * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
+      * @param opts Uniquely specifies a CustomResource to select.
+      */
+    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1CsidriverlistMod.CSIDriverList = js.native
+    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1CsidriverlistMod.CSIDriverList = js.native
+    /**
+      * Returns true if the given object is an instance of CSIDriverList.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/storage/v1/CSIDriverList.CSIDriverList */ Boolean = js.native
   }
   
   /* static members */

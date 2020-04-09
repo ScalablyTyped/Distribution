@@ -5,11 +5,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait LocalStoreOptions extends ArrayStoreOptions[LocalStore] {
-  /** Specifies a delay in milliseconds between when data changes and the moment these changes are saved in the local storage. Applies only if immediate is false. */
+  /** @name LocalStore.Options.flushInterval */
   var flushInterval: js.UndefOr[Double] = js.undefined
-  /** Specifies whether the LocalStore saves changes in the local storage immediately. */
+  /** @name LocalStore.Options.immediate */
   var immediate: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the name under which data should be saved in the local storage. The `dx-data-localStore-` prefix will be added to the name. */
+  /** @name LocalStore.Options.name */
   var name: js.UndefOr[String] = js.undefined
 }
 

@@ -1,6 +1,6 @@
 package typings.octokitPluginRestEndpointMethods
 
-import typings.octokitPluginRestEndpointMethods.typesMod.ReposRemoveProtectedBranchAppRestrictionsParams
+import typings.octokitPluginRestEndpointMethods.typesMod.ReposListReleasesParams
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 trait Anon430 extends js.Object {
   var endpoint: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EndpointInterface */ js.Any = js.native
   def apply(): js.Promise[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OctokitResponse<ReposRemoveProtectedBranchAppRestrictionsResponse> */ _
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OctokitResponse<ReposListReleasesResponse> */ _
   ] = js.native
   def apply(
-    params: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RequestParameters */ js.Any) with ReposRemoveProtectedBranchAppRestrictionsParams
+    params: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RequestParameters */ js.Any) with ReposListReleasesParams
   ): js.Promise[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OctokitResponse<ReposRemoveProtectedBranchAppRestrictionsResponse> */ _
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OctokitResponse<ReposListReleasesResponse> */ _
   ] = js.native
 }
 

@@ -25,7 +25,7 @@ trait PutAnomalyDetectorInput extends js.Object {
   /**
     * The statistic to use for the metric and the anomaly detection model.
     */
-  var Stat: typings.awsSdk.cloudwatchMod.Stat = js.native
+  var Stat: AnomalyDetectorMetricStat = js.native
 }
 
 object PutAnomalyDetectorInput {
@@ -33,7 +33,7 @@ object PutAnomalyDetectorInput {
   def apply(
     MetricName: MetricName,
     Namespace: Namespace,
-    Stat: Stat,
+    Stat: AnomalyDetectorMetricStat,
     Configuration: AnomalyDetectorConfiguration = null,
     Dimensions: Dimensions = null
   ): PutAnomalyDetectorInput = {

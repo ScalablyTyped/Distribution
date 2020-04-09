@@ -44,11 +44,26 @@ trait SwiperOptions extends js.Object {
     * If true, then active slide will be centered, not always on the left side.
     */
   var centeredSlides: js.UndefOr[Boolean] = js.undefined
+  /**
+    * If true, then active slide will be centered without adding gaps at the beginning and end of slider.
+    * Required centeredSlides: true. Not intended to be used with loop or pagination
+    *
+    * @default false
+    */
+  var centeredSlidesBounds: js.UndefOr[Boolean] = js.undefined
   // Namespace
   var containerModifierClass: js.UndefOr[String] = js.undefined
   // Components
   var controller: js.UndefOr[ControllerOptions | Boolean] = js.undefined
   var coverflowEffect: js.UndefOr[CoverflowEffectOptions] = js.undefined
+  // CSS Scroll Snap
+  /**
+    * When enabled it will use modern CSS Scroll Snap API.
+    * It doesn't support all of Swiper's features, but potentially should bring a much better performance in simple configurations.
+    *
+    * @default false
+    */
+  var cssMode: js.UndefOr[Boolean] = js.undefined
   var cubeEffect: js.UndefOr[CubeEffectOptions] = js.undefined
   /**
     * Could be 'horizontal' or 'vertical' (for vertical slider).
@@ -146,6 +161,12 @@ trait SwiperOptions extends js.Object {
   var normalizeSlideIndex: js.UndefOr[Boolean] = js.undefined
   var observeParents: js.UndefOr[Boolean] = js.undefined
   // Observer
+  /**
+    * Set to true if you also need to watch Mutations for Swiper slide children elements
+    *
+    * @default false
+    */
+  var observeSlideChildren: js.UndefOr[Boolean] = js.undefined
   var observer: js.UndefOr[Boolean] = js.undefined
   /**
     * Register event handlers.
@@ -234,6 +255,13 @@ trait SwiperOptions extends js.Object {
     */
   var slidesPerGroup: js.UndefOr[Double] = js.undefined
   /**
+    * The parameter works in the following way: If slidesPerGroupSkip equals 0 (default), no slides are excluded from grouping, and the resulting behaviour is the same as without this change.
+    * If slidesPerGroupSkip is equal or greater than 1 the first X slides are treated as single groups, whereas all following slides are grouped by the slidesPerGroup value.
+    *
+    * @default 0
+    */
+  var slidesPerGroupSkip: js.UndefOr[Double] = js.undefined
+  /**
     * Number of slides per view (slides visible at the same time on slider's container).
     * If you use it with "auto" value and along with loop: true then you need to specify loopedSlides parameter with amount of slides to loop (duplicate)
     * slidesPerView: 'auto' is currently not compatible with multirow mode, when slidesPerColumn > 1
@@ -295,6 +323,12 @@ trait SwiperOptions extends js.Object {
     */
   var uniqueNavElements: js.UndefOr[Boolean] = js.undefined
   var updateOnImagesReady: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Swiper will recalculate slides position on window resize (orientationchange)
+    *
+    * @default true
+    */
+  var updateOnWindowResize: js.UndefOr[Boolean] = js.undefined
   var virtual: js.UndefOr[VirtualOptions | Boolean] = js.undefined
   /**
     * Enabled this option and swiper will be operated as usual except it will not move, real translate values on wrapper will not be set.
@@ -335,9 +369,11 @@ object SwiperOptions {
     breakpointsInverse: js.UndefOr[Boolean] = js.undefined,
     centerInsufficientSlides: js.UndefOr[Boolean] = js.undefined,
     centeredSlides: js.UndefOr[Boolean] = js.undefined,
+    centeredSlidesBounds: js.UndefOr[Boolean] = js.undefined,
     containerModifierClass: String = null,
     controller: ControllerOptions | Boolean = null,
     coverflowEffect: CoverflowEffectOptions = null,
+    cssMode: js.UndefOr[Boolean] = js.undefined,
     cubeEffect: CubeEffectOptions = null,
     direction: horizontal | vertical = null,
     effect: slide | fade | cube | coverflow | flip = null,
@@ -377,6 +413,7 @@ object SwiperOptions {
     noSwipingSelector: String = null,
     normalizeSlideIndex: js.UndefOr[Boolean] = js.undefined,
     observeParents: js.UndefOr[Boolean] = js.undefined,
+    observeSlideChildren: js.UndefOr[Boolean] = js.undefined,
     observer: js.UndefOr[Boolean] = js.undefined,
     on: keyinSwiperEventvoid = null,
     pagination: PaginationOptions = null,
@@ -409,6 +446,7 @@ object SwiperOptions {
     slidesPerColumn: Int | Double = null,
     slidesPerColumnFill: row | column = null,
     slidesPerGroup: Int | Double = null,
+    slidesPerGroupSkip: Int | Double = null,
     slidesPerView: Double | auto = null,
     spaceBetween: Int | Double = null,
     speed: Int | Double = null,
@@ -424,6 +462,7 @@ object SwiperOptions {
     touchStartPreventDefault: js.UndefOr[Boolean] = js.undefined,
     uniqueNavElements: js.UndefOr[Boolean] = js.undefined,
     updateOnImagesReady: js.UndefOr[Boolean] = js.undefined,
+    updateOnWindowResize: js.UndefOr[Boolean] = js.undefined,
     virtual: VirtualOptions | Boolean = null,
     virtualTranslate: js.UndefOr[Boolean] = js.undefined,
     watchOverflow: js.UndefOr[Boolean] = js.undefined,
@@ -444,9 +483,11 @@ object SwiperOptions {
     if (!js.isUndefined(breakpointsInverse)) __obj.updateDynamic("breakpointsInverse")(breakpointsInverse.asInstanceOf[js.Any])
     if (!js.isUndefined(centerInsufficientSlides)) __obj.updateDynamic("centerInsufficientSlides")(centerInsufficientSlides.asInstanceOf[js.Any])
     if (!js.isUndefined(centeredSlides)) __obj.updateDynamic("centeredSlides")(centeredSlides.asInstanceOf[js.Any])
+    if (!js.isUndefined(centeredSlidesBounds)) __obj.updateDynamic("centeredSlidesBounds")(centeredSlidesBounds.asInstanceOf[js.Any])
     if (containerModifierClass != null) __obj.updateDynamic("containerModifierClass")(containerModifierClass.asInstanceOf[js.Any])
     if (controller != null) __obj.updateDynamic("controller")(controller.asInstanceOf[js.Any])
     if (coverflowEffect != null) __obj.updateDynamic("coverflowEffect")(coverflowEffect.asInstanceOf[js.Any])
+    if (!js.isUndefined(cssMode)) __obj.updateDynamic("cssMode")(cssMode.asInstanceOf[js.Any])
     if (cubeEffect != null) __obj.updateDynamic("cubeEffect")(cubeEffect.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (effect != null) __obj.updateDynamic("effect")(effect.asInstanceOf[js.Any])
@@ -486,6 +527,7 @@ object SwiperOptions {
     if (noSwipingSelector != null) __obj.updateDynamic("noSwipingSelector")(noSwipingSelector.asInstanceOf[js.Any])
     if (!js.isUndefined(normalizeSlideIndex)) __obj.updateDynamic("normalizeSlideIndex")(normalizeSlideIndex.asInstanceOf[js.Any])
     if (!js.isUndefined(observeParents)) __obj.updateDynamic("observeParents")(observeParents.asInstanceOf[js.Any])
+    if (!js.isUndefined(observeSlideChildren)) __obj.updateDynamic("observeSlideChildren")(observeSlideChildren.asInstanceOf[js.Any])
     if (!js.isUndefined(observer)) __obj.updateDynamic("observer")(observer.asInstanceOf[js.Any])
     if (on != null) __obj.updateDynamic("on")(on.asInstanceOf[js.Any])
     if (pagination != null) __obj.updateDynamic("pagination")(pagination.asInstanceOf[js.Any])
@@ -518,6 +560,7 @@ object SwiperOptions {
     if (slidesPerColumn != null) __obj.updateDynamic("slidesPerColumn")(slidesPerColumn.asInstanceOf[js.Any])
     if (slidesPerColumnFill != null) __obj.updateDynamic("slidesPerColumnFill")(slidesPerColumnFill.asInstanceOf[js.Any])
     if (slidesPerGroup != null) __obj.updateDynamic("slidesPerGroup")(slidesPerGroup.asInstanceOf[js.Any])
+    if (slidesPerGroupSkip != null) __obj.updateDynamic("slidesPerGroupSkip")(slidesPerGroupSkip.asInstanceOf[js.Any])
     if (slidesPerView != null) __obj.updateDynamic("slidesPerView")(slidesPerView.asInstanceOf[js.Any])
     if (spaceBetween != null) __obj.updateDynamic("spaceBetween")(spaceBetween.asInstanceOf[js.Any])
     if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
@@ -533,6 +576,7 @@ object SwiperOptions {
     if (!js.isUndefined(touchStartPreventDefault)) __obj.updateDynamic("touchStartPreventDefault")(touchStartPreventDefault.asInstanceOf[js.Any])
     if (!js.isUndefined(uniqueNavElements)) __obj.updateDynamic("uniqueNavElements")(uniqueNavElements.asInstanceOf[js.Any])
     if (!js.isUndefined(updateOnImagesReady)) __obj.updateDynamic("updateOnImagesReady")(updateOnImagesReady.asInstanceOf[js.Any])
+    if (!js.isUndefined(updateOnWindowResize)) __obj.updateDynamic("updateOnWindowResize")(updateOnWindowResize.asInstanceOf[js.Any])
     if (virtual != null) __obj.updateDynamic("virtual")(virtual.asInstanceOf[js.Any])
     if (!js.isUndefined(virtualTranslate)) __obj.updateDynamic("virtualTranslate")(virtualTranslate.asInstanceOf[js.Any])
     if (!js.isUndefined(watchOverflow)) __obj.updateDynamic("watchOverflow")(watchOverflow.asInstanceOf[js.Any])

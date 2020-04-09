@@ -16,6 +16,9 @@ trait GetRouteTableArgs extends js.Object {
     * Identifier of the EC2 Transit Gateway Route Table.
     */
   val id: js.UndefOr[String] = js.native
+  /**
+    * Key-value tags for the EC2 Transit Gateway Route Table
+    */
   val tags: js.UndefOr[StringDictionary[js.Any]] = js.native
 }
 

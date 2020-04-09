@@ -10,7 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@tensorflow/tfjs-converter/dist/src/executor/graph_executor", JSImport.Namespace)
+@JSImport("@tensorflow/tfjs-converter/dist/executor/graph_executor", JSImport.Namespace)
 @js.native
 object graphExecutorMod extends js.Object {
   @js.native

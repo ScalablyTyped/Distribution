@@ -36,15 +36,16 @@ object mod extends js.Object {
   /* static members */
   @js.native
   object Flowable extends js.Object {
-    def error(error: Error): typings.rsocketFlowable.flowableMod.Flowable[js.Object] = js.native
+    def error(error: Error): typings.rsocketFlowable.flowableMod.Flowable[scala.Nothing] = js.native
     def just[U](values: U*): typings.rsocketFlowable.flowableMod.Flowable[U] = js.native
-    def never(): typings.rsocketFlowable.flowableMod.Flowable[js.Object] = js.native
+    def never(): typings.rsocketFlowable.flowableMod.Flowable[scala.Nothing] = js.native
   }
   
   /* static members */
   @js.native
   object Single extends js.Object {
     def error(error: Error): typings.rsocketFlowable.singleMod.Single[scala.Nothing] = js.native
+    def never(): typings.rsocketFlowable.singleMod.Single[scala.Nothing] = js.native
     def of[U](value: U): typings.rsocketFlowable.singleMod.Single[U] = js.native
   }
   

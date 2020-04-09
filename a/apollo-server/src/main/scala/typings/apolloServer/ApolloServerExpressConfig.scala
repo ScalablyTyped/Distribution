@@ -16,16 +16,13 @@ import typings.apolloServerCore.typesMod.FileUploadOptions
 import typings.apolloServerCore.typesMod.GraphQLService
 import typings.apolloServerCore.typesMod.PluginDefinition
 import typings.apolloServerExpress.apolloServerMod.ExpressContext
-import typings.apolloServerTypes.apolloServerTypesStrings.document
-import typings.apolloServerTypes.apolloServerTypesStrings.operation
-import typings.apolloServerTypes.apolloServerTypesStrings.operationName
-import typings.apolloServerTypes.apolloServerTypesStrings.queryHash
 import typings.apolloServerTypes.mod.GraphQLExecutionResult
 import typings.apolloServerTypes.mod.GraphQLExecutor
 import typings.apolloServerTypes.mod.GraphQLRequestContext
+import typings.apolloServerTypes.mod.GraphQLRequestContextExecutionDidStart
 import typings.apolloServerTypes.mod.GraphQLResponse
+import typings.apolloServerTypes.mod.Logger
 import typings.apolloServerTypes.mod.ValueOrPromise
-import typings.apolloServerTypes.mod.WithRequired
 import typings.apollographqlApolloTools.buildServiceDefinitionMod.GraphQLSchemaModule
 import typings.cors.mod.CorsOptions
 import typings.express.mod.Request_
@@ -69,6 +66,7 @@ trait ApolloServerExpressConfig extends js.Object {
   ] = js.undefined
   var gateway: js.UndefOr[GraphQLService] = js.undefined
   var introspection: js.UndefOr[Boolean] = js.undefined
+  var logger: js.UndefOr[Logger] = js.undefined
   var mockEntireSchema: js.UndefOr[Boolean] = js.undefined
   var mocks: js.UndefOr[Boolean | IMocks] = js.undefined
   var modules: js.UndefOr[js.Array[GraphQLSchemaModule]] = js.undefined
@@ -98,10 +96,7 @@ object ApolloServerExpressConfig {
     dataSources: () => DataSources[Context[js.Object]] = null,
     debug: js.UndefOr[Boolean] = js.undefined,
     engine: Boolean | EngineReportingOptions[Context[js.Object]] = null,
-    executor: /* requestContext */ WithRequired[
-      GraphQLRequestContext[Record[String, _]], 
-      document | operationName | operation | queryHash
-    ] => ValueOrPromise[GraphQLExecutionResult] = null,
+    executor: /* requestContext */ GraphQLRequestContextExecutionDidStart[Record[String, _]] => ValueOrPromise[GraphQLExecutionResult] = null,
     experimental_approximateDocumentStoreMiB: Int | Double = null,
     extensions: js.Array[js.Function0[GraphQLExtension[_]]] = null,
     fieldResolver: (_, StringDictionary[_], Context[js.Object], /* info */ GraphQLResolveInfo) => js.Any = null,
@@ -109,6 +104,7 @@ object ApolloServerExpressConfig {
     formatResponse: (/* response */ GraphQLResponse | Null, /* requestContext */ GraphQLRequestContext[Context[js.Object]]) => GraphQLResponse = null,
     gateway: GraphQLService = null,
     introspection: js.UndefOr[Boolean] = js.undefined,
+    logger: Logger = null,
     mockEntireSchema: js.UndefOr[Boolean] = js.undefined,
     mocks: Boolean | IMocks = null,
     modules: js.Array[GraphQLSchemaModule] = null,
@@ -143,6 +139,7 @@ object ApolloServerExpressConfig {
     if (formatResponse != null) __obj.updateDynamic("formatResponse")(js.Any.fromFunction2(formatResponse))
     if (gateway != null) __obj.updateDynamic("gateway")(gateway.asInstanceOf[js.Any])
     if (!js.isUndefined(introspection)) __obj.updateDynamic("introspection")(introspection.asInstanceOf[js.Any])
+    if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
     if (!js.isUndefined(mockEntireSchema)) __obj.updateDynamic("mockEntireSchema")(mockEntireSchema.asInstanceOf[js.Any])
     if (mocks != null) __obj.updateDynamic("mocks")(mocks.asInstanceOf[js.Any])
     if (modules != null) __obj.updateDynamic("modules")(modules.asInstanceOf[js.Any])

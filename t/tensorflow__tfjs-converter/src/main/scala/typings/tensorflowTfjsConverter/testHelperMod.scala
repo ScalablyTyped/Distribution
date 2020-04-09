@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@tensorflow/tfjs-converter/dist/src/operations/executors/test_helper", JSImport.Namespace)
+@JSImport("@tensorflow/tfjs-converter/dist/operations/executors/test_helper", JSImport.Namespace)
 @js.native
 object testHelperMod extends js.Object {
   def createBoolAttr(value: Boolean): ParamValue = js.native

@@ -12,7 +12,7 @@ class OrderReturnTax () extends js.Object {
     */
   var applied_money: js.UndefOr[Money] = js.native
   /**
-    * The catalog object id referencing [CatalogTax](#type-catalogtax).
+    * The catalog object id referencing `CatalogTax`.
     */
   var catalog_object_id: js.UndefOr[String] = js.native
   /**

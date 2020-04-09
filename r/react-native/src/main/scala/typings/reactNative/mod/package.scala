@@ -25,6 +25,13 @@ package object mod {
   type ButtonProperties = typings.reactNative.mod.ButtonProps
   type CameraRoll = typings.reactNative.mod.CameraRollStatic
   type Clipboard = typings.reactNative.mod.ClipboardStatic
+  /* Rewritten from type alias, can be one of: 
+    - typings.reactNative.reactNativeStrings.light
+    - typings.reactNative.reactNativeStrings.dark
+    - scala.Null
+    - `js.undefined`
+  */
+  type ColorSchemeName = js.UndefOr[typings.reactNative.mod._ColorSchemeName | scala.Null]
   type ComponentProvider = js.Function0[typings.react.mod.ComponentType[js.Any]]
   type Constructor[T] = org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, T]
   type DatePickerAndroid = typings.reactNative.mod.DatePickerAndroidStatic
@@ -106,8 +113,8 @@ package object mod {
   ]
   type ModalProperties = typings.reactNative.mod.ModalProps
   type ModalProps = typings.reactNative.mod.ModalBaseProps with typings.reactNative.mod.ModalPropsIOS with typings.reactNative.mod.ModalPropsAndroid
-  type NativeComponent = typings.reactNative.mod.NativeMethodsMixinStatic
-  type NativeMethodsMixin = typings.reactNative.mod.NativeMethodsMixinStatic
+  type NativeMethodsMixin = typings.reactNative.mod.NativeMethods
+  type NativeMethodsMixinType = typings.reactNative.mod.NativeMethods
   /**
     * Interface for NativeModules which allows to augment NativeModules with type informations.
     * See react-native-sensor-manager for example.

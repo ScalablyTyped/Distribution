@@ -36,6 +36,8 @@ object formUtilMod extends js.Object {
   ): js.Tuple2[Boolean, js.Array[ReactNode]] = js.native
   def useForm(): js.Array[FormInstance] = js.native
   def useForm(form: FormInstance): js.Array[FormInstance] = js.native
+  def useFrameState[ValueType](defaultValue: ValueType): js.Tuple2[ValueType, js.Function1[/* updater */ Updater[ValueType], Unit]] = js.native
   type InternalNamePath = js.Array[String | Double]
+  type Updater[ValueType] = js.Function1[/* prev */ js.UndefOr[ValueType], ValueType]
 }
 

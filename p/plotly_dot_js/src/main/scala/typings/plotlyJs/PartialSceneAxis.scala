@@ -3,6 +3,8 @@ package typings.plotlyJs
 import typings.plotlyJs.mod.AxisType
 import typings.plotlyJs.mod.Calendar
 import typings.plotlyJs.mod.Color
+import typings.plotlyJs.mod.DataTitle
+import typings.plotlyJs.mod.Font
 import typings.plotlyJs.plotlyJsBooleans.`false`
 import typings.plotlyJs.plotlyJsBooleans.`true`
 import typings.plotlyJs.plotlyJsStrings.B
@@ -41,6 +43,7 @@ import typings.plotlyJs.plotlyJsStrings.reversed
 import typings.plotlyJs.plotlyJsStrings.ticks
 import typings.plotlyJs.plotlyJsStrings.tozero
 import typings.plotlyJs.plotlyJsStrings.trace
+import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -82,7 +85,7 @@ trait PartialSceneAxis extends js.Object {
   var tick0: js.UndefOr[Double | String] = js.undefined
   var tickangle: js.UndefOr[Double] = js.undefined
   var tickcolor: js.UndefOr[Color] = js.undefined
-  var tickfont: js.UndefOr[PartialFont] = js.undefined
+  var tickfont: js.UndefOr[Partial[Font]] = js.undefined
   var tickformat: js.UndefOr[String] = js.undefined
   var ticklen: js.UndefOr[Double] = js.undefined
   var tickmode: js.UndefOr[auto | linear | array] = js.undefined
@@ -92,8 +95,8 @@ trait PartialSceneAxis extends js.Object {
   var ticktext: js.UndefOr[js.Array[String]] = js.undefined
   var tickvals: js.UndefOr[js.Array[_]] = js.undefined
   var tickwidth: js.UndefOr[Double] = js.undefined
-  var title: js.UndefOr[String | PartialDataTitle] = js.undefined
-  var titlefont: js.UndefOr[PartialFont] = js.undefined
+  var title: js.UndefOr[String | Partial[DataTitle]] = js.undefined
+  var titlefont: js.UndefOr[Partial[Font]] = js.undefined
   var `type`: js.UndefOr[AxisType] = js.undefined
   var visible: js.UndefOr[Boolean] = js.undefined
   var zeroline: js.UndefOr[Boolean] = js.undefined
@@ -137,7 +140,7 @@ object PartialSceneAxis {
     tick0: Double | String = null,
     tickangle: Int | Double = null,
     tickcolor: Color = null,
-    tickfont: PartialFont = null,
+    tickfont: Partial[Font] = null,
     tickformat: String = null,
     ticklen: Int | Double = null,
     tickmode: auto | linear | array = null,
@@ -147,8 +150,8 @@ object PartialSceneAxis {
     ticktext: js.Array[String] = null,
     tickvals: js.Array[_] = null,
     tickwidth: Int | Double = null,
-    title: String | PartialDataTitle = null,
-    titlefont: PartialFont = null,
+    title: String | Partial[DataTitle] = null,
+    titlefont: Partial[Font] = null,
     `type`: AxisType = null,
     visible: js.UndefOr[Boolean] = js.undefined,
     zeroline: js.UndefOr[Boolean] = js.undefined,

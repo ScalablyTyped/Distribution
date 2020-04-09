@@ -3,6 +3,7 @@ package typings.jupyterlabExtensionmanager
 import typings.jupyterlabExtensionmanager.modelMod.IEntry
 import typings.jupyterlabExtensionmanager.widgetMod.CollapsibleSection.IProperties
 import typings.jupyterlabServices.mod.ServiceManager
+import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry.ISettings
 import typings.react.mod.ReactElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,14 +21,21 @@ object mod extends js.Object {
   @js.native
   class ExtensionView protected ()
     extends typings.jupyterlabExtensionmanager.widgetMod.ExtensionView {
-    def this(serviceManager: ServiceManager) = this()
+    def this(serviceManager: ServiceManager, settings: ISettings) = this()
   }
   
   @js.native
   class ListModel protected ()
     extends typings.jupyterlabExtensionmanager.modelMod.ListModel {
-    def this(serviceManager: ServiceManager) = this()
+    def this(serviceManager: ServiceManager, settings: ISettings) = this()
   }
+  
+  @js.native
+  /**
+    * Create a Lister object.
+    */
+  class Lister ()
+    extends typings.jupyterlabExtensionmanager.listingsMod.Lister
   
   @js.native
   class SearchBar protected ()
@@ -43,7 +51,7 @@ object mod extends js.Object {
     * @param cdnUri The URI of the CDN to use for fetching full package data.
     */
   class Searcher ()
-    extends typings.jupyterlabExtensionmanager.queryMod.Searcher {
+    extends typings.jupyterlabExtensionmanager.npmMod.Searcher {
     def this(repoUri: String) = this()
     def this(repoUri: String, cdnUri: String) = this()
   }
@@ -57,6 +65,8 @@ object mod extends js.Object {
       * @param entry The entry to check.
       */
     def entryHasUpdate(entry: IEntry): Boolean = js.native
+    def isDisclaimed(): Boolean = js.native
+    def toogleDisclaimed(): Unit = js.native
   }
   
   @js.native

@@ -99,6 +99,12 @@ trait IAngularStatic extends js.Object {
   def element(element: Element): JQLite = js.native
   def element(element: Window_): JQLite = js.native
   def equals(value1: js.Any, value2: js.Any): Boolean = js.native
+  /**
+    * Configure several aspects of error handling in AngularJS if used as a setter
+    * or return the current configuration if used as a getter
+    */
+  def errorHandlingConfig(): IErrorHandlingConfig = js.native
+  def errorHandlingConfig(config: IErrorHandlingConfig): Unit = js.native
   def extend(destination: js.Any, sources: js.Any*): js.Any = js.native
   /**
     * Invokes the iterator function once for each item in obj collection, which can be either an object or an array. The iterator function is invoked with iterator(value, key), where value is the value of an object property or an array element and key is the object property key or array element index. Specifying a context for the function is optional.
@@ -178,7 +184,6 @@ trait IAngularStatic extends js.Object {
   def isObject_T[T](value: js.Any): /* is T */ Boolean = js.native
   def isString(value: js.Any): /* is string */ Boolean = js.native
   def isUndefined(value: js.Any): Boolean = js.native
-  def lowercase(str: String): String = js.native
   /**
     * Deeply extends the destination object dst by copying own enumerable properties from the src object(s) to dst. You can specify multiple src objects. If you want to preserve original objects, you can do so by passing an empty object as the target: var object = angular.merge({}, object1, object2).
     *
@@ -205,6 +210,5 @@ trait IAngularStatic extends js.Object {
   def toJson(obj: js.Any): String = js.native
   def toJson(obj: js.Any, pretty: Boolean): String = js.native
   def toJson(obj: js.Any, pretty: Double): String = js.native
-  def uppercase(str: String): String = js.native
 }
 

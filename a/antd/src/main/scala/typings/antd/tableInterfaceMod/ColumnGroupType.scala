@@ -2,8 +2,8 @@ package typings.antd.tableInterfaceMod
 
 import typings.antd.AnonCompare
 import typings.rcTable.interfaceMod.AlignType
-import typings.rcTable.interfaceMod.DataIndex
 import typings.rcTable.interfaceMod.FixedType
+import typings.rcTable.interfaceMod.GetComponentProps
 import typings.rcTable.interfaceMod.RenderedCell
 import typings.react.mod.HTMLAttributes
 import typings.react.mod.MouseEvent
@@ -14,8 +14,52 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ColumnGroupType[RecordType] extends ColumnType[RecordType] {
+/* Inlined parent std.Omit<antd.antd/lib/table/interface.ColumnType<RecordType>, 'dataIndex'> */
+trait ColumnGroupType[RecordType] extends js.Object {
+  var align: js.UndefOr[AlignType] = js.undefined
   var children: ColumnsType[RecordType]
+  var className: js.UndefOr[String] = js.undefined
+  var colSpan: js.UndefOr[Double] = js.undefined
+  var defaultFilteredValue: js.UndefOr[js.Array[Key]] = js.undefined
+  var defaultSortOrder: js.UndefOr[SortOrder] = js.undefined
+  var ellipsis: js.UndefOr[Boolean] = js.undefined
+  var filterDropdown: js.UndefOr[ReactNode | (js.Function1[/* props */ FilterDropdownProps, ReactNode])] = js.undefined
+  var filterDropdownVisible: js.UndefOr[Boolean] = js.undefined
+  var filterIcon: js.UndefOr[ReactNode | (js.Function1[/* filtered */ Boolean, ReactNode])] = js.undefined
+  var filterMultiple: js.UndefOr[Boolean] = js.undefined
+  var filtered: js.UndefOr[Boolean] = js.undefined
+  var filteredValue: js.UndefOr[js.Array[Key]] = js.undefined
+  var filters: js.UndefOr[js.Array[ColumnFilterItem]] = js.undefined
+  var fixed: js.UndefOr[FixedType] = js.undefined
+  var key: js.UndefOr[typings.rcTable.interfaceMod.Key] = js.undefined
+  var onCell: js.UndefOr[GetComponentProps[RecordType]] = js.undefined
+  var onCellClick: js.UndefOr[
+    js.Function2[/* record */ RecordType, /* e */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]
+  ] = js.undefined
+  var onFilter: js.UndefOr[
+    js.Function2[/* value */ String | Double | Boolean, /* record */ RecordType, Boolean]
+  ] = js.undefined
+  var onFilterDropdownVisibleChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.undefined
+  var onHeaderCell: js.UndefOr[
+    GetComponentProps[
+      /* import warning: importer.ImportType#apply Failed type conversion: rc-table.rc-table/lib/interface.ColumnsType<RecordType>[number] */ js.Any
+    ]
+  ] = js.undefined
+  var render: js.UndefOr[
+    js.Function3[
+      /* value */ js.Any, 
+      /* record */ RecordType, 
+      /* index */ Double, 
+      ReactNode | RenderedCell[RecordType]
+    ]
+  ] = js.undefined
+  var rowSpan: js.UndefOr[Double] = js.undefined
+  var showSorterTooltip: js.UndefOr[Boolean] = js.undefined
+  var sortDirections: js.UndefOr[js.Array[SortOrder]] = js.undefined
+  var sortOrder: js.UndefOr[SortOrder] = js.undefined
+  var sorter: js.UndefOr[Boolean | CompareFn[RecordType] | AnonCompare[RecordType]] = js.undefined
+  var title: js.UndefOr[ColumnTitle[RecordType]] = js.undefined
+  var width: js.UndefOr[Double | String] = js.undefined
 }
 
 object ColumnGroupType {
@@ -25,7 +69,6 @@ object ColumnGroupType {
     align: AlignType = null,
     className: String = null,
     colSpan: Int | Double = null,
-    dataIndex: DataIndex = null,
     defaultFilteredValue: js.Array[Key] = null,
     defaultSortOrder: SortOrder = null,
     ellipsis: js.UndefOr[Boolean] = js.undefined,
@@ -39,23 +82,23 @@ object ColumnGroupType {
     fixed: FixedType = null,
     key: typings.rcTable.interfaceMod.Key = null,
     onCell: (RecordType, /* index */ js.UndefOr[Double]) => HTMLAttributes[HTMLElement] = null,
-    onCellClick: (RecordType, /* e */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit = null,
-    onFilter: (/* value */ js.Any, RecordType) => Boolean = null,
+    onCellClick: (/* record */ RecordType, /* e */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit = null,
+    onFilter: (/* value */ String | Double | Boolean, /* record */ RecordType) => Boolean = null,
     onFilterDropdownVisibleChange: /* visible */ Boolean => Unit = null,
     onHeaderCell: (/* import warning: importer.ImportType#apply Failed type conversion: rc-table.rc-table/lib/interface.ColumnsType<RecordType>[number] */ js.Any, /* index */ js.UndefOr[Double]) => HTMLAttributes[HTMLElement] = null,
-    render: (/* value */ js.Any, RecordType, /* index */ Double) => ReactNode | RenderedCell[RecordType] = null,
+    render: (/* value */ js.Any, /* record */ RecordType, /* index */ Double) => ReactNode | RenderedCell[RecordType] = null,
     rowSpan: Int | Double = null,
+    showSorterTooltip: js.UndefOr[Boolean] = js.undefined,
     sortDirections: js.Array[SortOrder] = null,
     sortOrder: SortOrder = null,
     sorter: Boolean | CompareFn[RecordType] | AnonCompare[RecordType] = null,
-    title: ReactNode = null,
+    title: ColumnTitle[RecordType] = null,
     width: Double | String = null
   ): ColumnGroupType[RecordType] = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (colSpan != null) __obj.updateDynamic("colSpan")(colSpan.asInstanceOf[js.Any])
-    if (dataIndex != null) __obj.updateDynamic("dataIndex")(dataIndex.asInstanceOf[js.Any])
     if (defaultFilteredValue != null) __obj.updateDynamic("defaultFilteredValue")(defaultFilteredValue.asInstanceOf[js.Any])
     if (defaultSortOrder != null) __obj.updateDynamic("defaultSortOrder")(defaultSortOrder.asInstanceOf[js.Any])
     if (!js.isUndefined(ellipsis)) __obj.updateDynamic("ellipsis")(ellipsis.asInstanceOf[js.Any])
@@ -75,6 +118,7 @@ object ColumnGroupType {
     if (onHeaderCell != null) __obj.updateDynamic("onHeaderCell")(js.Any.fromFunction2(onHeaderCell))
     if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction3(render))
     if (rowSpan != null) __obj.updateDynamic("rowSpan")(rowSpan.asInstanceOf[js.Any])
+    if (!js.isUndefined(showSorterTooltip)) __obj.updateDynamic("showSorterTooltip")(showSorterTooltip.asInstanceOf[js.Any])
     if (sortDirections != null) __obj.updateDynamic("sortDirections")(sortDirections.asInstanceOf[js.Any])
     if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])
     if (sorter != null) __obj.updateDynamic("sorter")(sorter.asInstanceOf[js.Any])

@@ -44,6 +44,9 @@ trait KeyState extends js.Object {
     * Defaults to `ENCRYPT_DECRYPT`.
     */
   val keyUsage: js.UndefOr[Input[String]] = js.native
+  /**
+    * A valid policy JSON document.
+    */
   val policy: js.UndefOr[Input[String]] = js.native
   /**
     * A mapping of tags to assign to the object.

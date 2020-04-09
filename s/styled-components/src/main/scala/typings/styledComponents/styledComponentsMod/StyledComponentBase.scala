@@ -147,6 +147,7 @@ import typings.styledComponents.styledComponentsStrings.samp
 import typings.styledComponents.styledComponentsStrings.script
 import typings.styledComponents.styledComponentsStrings.section
 import typings.styledComponents.styledComponentsStrings.select
+import typings.styledComponents.styledComponentsStrings.slot
 import typings.styledComponents.styledComponentsStrings.small
 import typings.styledComponents.styledComponentsStrings.source
 import typings.styledComponents.styledComponentsStrings.span
@@ -187,7 +188,7 @@ import scala.scalajs.js.annotation._
 
 /* Inlined parent styled-components.styled-components.ForwardRefExoticBase<styled-components.styled-components.StyledComponentProps<C, T, O, A>> */
 @js.native
-trait StyledComponentBase[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */, T /* <: js.Object */, O /* <: js.Object */, A /* <: String */] extends js.Object {
+trait StyledComponentBase[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any */, T /* <: js.Object */, O /* <: js.Object */, A /* <: String */] extends js.Object {
   @JSName("$$typeof")
   var DollarDollartypeof: js.Symbol = js.native
   var defaultProps: js.UndefOr[Partial[StyledComponentProps[C, T, O, A]]] = js.native
@@ -492,6 +493,8 @@ trait StyledComponentBase[C /* <: /* import warning: LimitUnionLength.leaveTypeR
   def withComponent_section(component: section): StyledComponent[section, T, O, A] = js.native
   @JSName("withComponent")
   def withComponent_select(component: select): StyledComponent[select, T, O, A] = js.native
+  @JSName("withComponent")
+  def withComponent_slot(component: slot): StyledComponent[slot, T, O, A] = js.native
   @JSName("withComponent")
   def withComponent_small(component: small): StyledComponent[small, T, O, A] = js.native
   @JSName("withComponent")

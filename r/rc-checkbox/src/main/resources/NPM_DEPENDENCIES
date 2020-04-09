@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "rc-checkbox" : "2.1.8"
+      "rc-checkbox" : "2.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "rc-checkbox" : "2.1.8"
+      "rc-checkbox" : "2.2.0"
     }
   ],
   "compile-devDependencies" : [

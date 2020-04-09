@@ -48,9 +48,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxDiagramShape extends dxDiagramItem {
-  /** Specifies the shape's text. */
+  /** @name dxDiagramShape.text */
   var text: js.UndefOr[String] = js.undefined
-  /** Specifies the shape type. */
+  /** @name dxDiagramShape.type */
   var `type`: js.UndefOr[
     text | rectangle | ellipse | cross | triangle | diamond | heart | pentagon | octagon | star | arrowLeft | arrowTop | arrowRight | arrowBottom | arrowNorthSouth | arrowEastWest | process | decision | terminator | predefinedProcess | document | multipleDocuments | manualInput | preparation | data | database | hardDisk | internalStorage | paperTape | manualOperation | delay | storedData | display | merge | or | summingJunction | verticalContainer | horizontalContainer | cardWithImageOnLeft | cardWithImageOnTop | cardWithImageOnRight | String
   ] = js.undefined

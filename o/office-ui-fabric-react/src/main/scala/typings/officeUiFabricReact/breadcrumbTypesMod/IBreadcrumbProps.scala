@@ -16,6 +16,7 @@ import typings.react.mod.HTMLAttributes
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
@@ -284,7 +285,7 @@ object IBreadcrumbProps {
     onRenderItem: (/* props */ js.UndefOr[IBreadcrumbItem], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IBreadcrumbItem], Element | Null]]) => Element | Null = null,
     onRenderOverflowIcon: (/* props */ js.UndefOr[IButtonProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IButtonProps], Element | Null]]) => Element | Null = null,
     onReset: FormEvent[HTMLElement] => Unit = null,
-    onScroll: UIEvent[HTMLElement] => Unit = null,
+    onScroll: UIEvent[HTMLElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[HTMLElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[HTMLElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[HTMLElement, Event_] => Unit = null,

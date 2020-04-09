@@ -18,25 +18,25 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxHtmlEditorOptions extends EditorOptions[dxHtmlEditor] {
-  /** Allows you to customize Quill and 3rd-party modules. */
+  /** @name dxHtmlEditor.Options.customizeModules */
   var customizeModules: js.UndefOr[js.Function1[/* config */ js.Any, _]] = js.undefined
-  /** Configures media resizing. */
+  /** @name dxHtmlEditor.Options.mediaResizing */
   var mediaResizing: js.UndefOr[dxHtmlEditorMediaResizing] = js.undefined
-  /** Configures mentions. */
+  /** @name dxHtmlEditor.Options.mentions */
   var mentions: js.UndefOr[js.Array[dxHtmlEditorMention]] = js.undefined
-  /** The value to be assigned to the `name` attribute of the underlying HTML element. */
+  /** @name dxHtmlEditor.Options.name */
   var name: js.UndefOr[String] = js.undefined
-  /** A function that is executed when the widget gets focus. */
+  /** @name dxHtmlEditor.Options.onFocusIn */
   var onFocusIn: js.UndefOr[js.Function1[/* e */ AnonEventModel, _]] = js.undefined
-  /** A function that is executed when the widget loses focus. */
+  /** @name dxHtmlEditor.Options.onFocusOut */
   var onFocusOut: js.UndefOr[js.Function1[/* e */ AnonEventModel, _]] = js.undefined
-  /** Specifies the text displayed when the input field is empty. */
+  /** @name dxHtmlEditor.Options.placeholder */
   var placeholder: js.UndefOr[String] = js.undefined
-  /** Configures the widget's toolbar. */
+  /** @name dxHtmlEditor.Options.toolbar */
   var toolbar: js.UndefOr[dxHtmlEditorToolbar] = js.undefined
-  /** Specifies in which markup language the value is stored. */
+  /** @name dxHtmlEditor.Options.valueType */
   var valueType: js.UndefOr[html | markdown] = js.undefined
-  /** Configures variables, which are placeholders to be replaced with actual values when processing text. */
+  /** @name dxHtmlEditor.Options.variables */
   var variables: js.UndefOr[dxHtmlEditorVariables] = js.undefined
 }
 

@@ -37,6 +37,13 @@ class NativePointer protected ()
     */
   def and(v: NativePointerValue): NativePointer = js.native
   def and(v: UInt64_): NativePointer = js.native
+  /**
+    * Makes a new NativePointer by taking `this` and blending it with
+    * a constant, which may in turn be passed to `sign()` as `data`.
+    *
+    * @param smallInteger Value to blend with.
+    */
+  def blend(smallInteger: Double): NativePointer = js.native
   def compare(v: String): Double = js.native
   def compare(v: Double): Double = js.native
   def compare(v: Int64_): Double = js.native
@@ -111,6 +118,32 @@ class NativePointer protected ()
     */
   def shr(v: NativePointerValue): NativePointer = js.native
   def shr(v: UInt64_): NativePointer = js.native
+  /**
+    * Makes a new NativePointer by taking the bits of `this` and adding
+    * pointer authentication bits, creating a signed pointer. This is a
+    * no-op if the current process does not support pointer
+    * authentication, returning `this` instead of a new value.
+    *
+    * @param key The key to use. Defaults to `ia`.
+    * @param data The data to use. Defaults to `0`.
+    */
+  def sign(): NativePointer = js.native
+  def sign(key: PointerAuthenticationKey): NativePointer = js.native
+  def sign(key: PointerAuthenticationKey, data: String): NativePointer = js.native
+  def sign(key: PointerAuthenticationKey, data: Double): NativePointer = js.native
+  def sign(key: PointerAuthenticationKey, data: Int64_): NativePointer = js.native
+  def sign(key: PointerAuthenticationKey, data: NativePointerValue): NativePointer = js.native
+  def sign(key: PointerAuthenticationKey, data: UInt64_): NativePointer = js.native
+  /**
+    * Makes a new NativePointer by taking the bits of `this` and
+    * removing its pointer authentication bits, creating a raw pointer.
+    * This is a no-op if the current process does not support pointer
+    * authentication, returning `this` instead of a new value.
+    *
+    * @param key The key that was used to sign `this`. Defaults to `ia`.
+    */
+  def strip(): NativePointer = js.native
+  def strip(key: PointerAuthenticationKey): NativePointer = js.native
   def sub(v: String): NativePointer = js.native
   def sub(v: Double): NativePointer = js.native
   def sub(v: Int64_): NativePointer = js.native

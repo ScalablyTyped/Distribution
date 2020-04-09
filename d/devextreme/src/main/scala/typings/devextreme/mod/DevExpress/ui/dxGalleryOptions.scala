@@ -18,33 +18,33 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxGalleryOptions extends CollectionWidgetOptions[dxGallery] {
-  /** The time, in milliseconds, spent on slide animation. */
+  /** @name dxGallery.Options.animationDuration */
   var animationDuration: js.UndefOr[Double] = js.undefined
-  /** Specifies whether or not to animate the displayed item change. */
+  /** @name dxGallery.Options.animationEnabled */
   var animationEnabled: js.UndefOr[Boolean] = js.undefined
-  /** Binds the widget to data. */
+  /** @name dxGallery.Options.dataSource */
   @JSName("dataSource")
   var dataSource_dxGalleryOptions: js.UndefOr[String | (js.Array[String | dxGalleryItem | _]) | DataSource | DataSourceOptions] = js.undefined
-  /** A Boolean value specifying whether or not to allow users to switch between items by clicking an indicator. */
+  /** @name dxGallery.Options.indicatorEnabled */
   var indicatorEnabled: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the width of an area used to display a single image. */
+  /** @name dxGallery.Options.initialItemWidth */
   var initialItemWidth: js.UndefOr[Double] = js.undefined
-  /** An array of items displayed by the widget. */
+  /** @name dxGallery.Options.items */
   @JSName("items")
   var items_dxGalleryOptions: js.UndefOr[js.Array[String | dxGalleryItem | _]] = js.undefined
-  /** A Boolean value specifying whether or not to scroll back to the first item after the last item is swiped. */
+  /** @name dxGallery.Options.loop */
   var loop: js.UndefOr[Boolean] = js.undefined
-  /** A Boolean value specifying whether or not to display an indicator that points to the selected gallery item. */
+  /** @name dxGallery.Options.showIndicator */
   var showIndicator: js.UndefOr[Boolean] = js.undefined
-  /** A Boolean value that specifies the availability of the "Forward" and "Back" navigation buttons. */
+  /** @name dxGallery.Options.showNavButtons */
   var showNavButtons: js.UndefOr[Boolean] = js.undefined
-  /** The time interval in milliseconds, after which the gallery switches to the next item. */
+  /** @name dxGallery.Options.slideshowDelay */
   var slideshowDelay: js.UndefOr[Double] = js.undefined
-  /** Specifies if the widget stretches images to fit the total gallery width. */
+  /** @name dxGallery.Options.stretchImages */
   var stretchImages: js.UndefOr[Boolean] = js.undefined
-  /** A Boolean value specifying whether or not to allow users to switch between items by swiping. */
+  /** @name dxGallery.Options.swipeEnabled */
   var swipeEnabled: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether or not to display parts of previous and next images along the sides of the current image. */
+  /** @name dxGallery.Options.wrapAround */
   var wrapAround: js.UndefOr[Boolean] = js.undefined
 }
 

@@ -15,6 +15,7 @@ import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.ReactEventHandler
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
@@ -162,7 +163,7 @@ object MDLDOMAttributes {
     onPlaying: SyntheticEvent[T, Event_] => Unit = null,
     onProgress: SyntheticEvent[T, Event_] => Unit = null,
     onRateChange: SyntheticEvent[T, Event_] => Unit = null,
-    onScroll: UIEvent[T] => Unit = null,
+    onScroll: UIEvent[T, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[T, Event_] => Unit = null,
     onSeeking: SyntheticEvent[T, Event_] => Unit = null,
     onSelect: SyntheticEvent[T, Event_] => Unit = null,

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pvtsutils"
-version := "1.0.9-fa0c18"
+version := "1.0.10-31ad55"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

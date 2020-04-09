@@ -8,83 +8,83 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait DataSource extends js.Object {
-  /** Cancels the load operation with a specific identifier. */
+  /** @name DataSource.cancel(operationId) */
   def cancel(): Boolean = js.native
-  /** Disposes of all the resources allocated to the DataSource instance. */
+  /** @name DataSource.dispose() */
   def dispose(): Unit = js.native
-  /** Gets the filter option's value. */
+  /** @name DataSource.filter() */
   def filter(): js.Any = js.native
-  /** Sets the filter option's value. */
+  /** @name DataSource.filter(filterExpr) */
   def filter(filterExpr: js.Any): Unit = js.native
-  /** Gets the group option's value. */
+  /** @name DataSource.group() */
   def group(): js.Any = js.native
-  /** Sets the group option's value. */
+  /** @name DataSource.group(groupExpr) */
   def group(groupExpr: js.Any): Unit = js.native
-  /** Checks whether the count of items on the current page is less than the pageSize. Takes effect only with enabled paging. */
+  /** @name DataSource.isLastPage() */
   def isLastPage(): Boolean = js.native
-  /** Checks whether data is loaded in the DataSource. */
+  /** @name DataSource.isLoaded() */
   def isLoaded(): Boolean = js.native
-  /** Checks whether data is being loaded in the DataSource. */
+  /** @name DataSource.isLoading() */
   def isLoading(): Boolean = js.native
-  /** Gets data items the DataSource performs operations on. */
+  /** @name DataSource.items() */
   def items(): js.Array[_] = js.native
-  /** Gets the value of the underlying store's key option. */
+  /** @name DataSource.key() */
   def key(): js.Any with String with Double = js.native
-  /** Starts loading data. */
+  /** @name DataSource.load() */
   def load(): Promise[_] with JQueryPromise[_] = js.native
-  /** Gets an object with current data processing settings. */
+  /** @name DataSource.loadOptions() */
   def loadOptions(): js.Any = js.native
-  /** Detaches all event handlers from a single event. */
+  /** @name EventsMixin.off(eventName) */
   def off(eventName: String): this.type = js.native
-  /** Detaches a particular event handler from a single event. */
+  /** @name EventsMixin.off(eventName, eventHandler) */
   def off(eventName: String, eventHandler: js.Function): this.type = js.native
-  /** Subscribes to an event. */
+  /** @name EventsMixin.on(eventName, eventHandler) */
   def on(eventName: String, eventHandler: js.Function): this.type = js.native
-  /** Subscribes to events. */
+  /** @name EventsMixin.on(events) */
   def on(events: js.Any): this.type = js.native
-  /** Gets the current page index. */
+  /** @name DataSource.pageIndex() */
   def pageIndex(): Double = js.native
-  /** Sets the index of the page that should be loaded on the next load() method call. */
+  /** @name DataSource.pageIndex(newIndex) */
   def pageIndex(newIndex: Double): Unit = js.native
-  /** Gets the page size. */
+  /** @name DataSource.pageSize() */
   def pageSize(): Double = js.native
-  /** Sets the page size. */
+  /** @name DataSource.pageSize(value) */
   def pageSize(value: Double): Unit = js.native
-  /** Gets the paginate option's value. */
+  /** @name DataSource.paginate() */
   def paginate(): Boolean = js.native
-  /** Sets the paginate option's value. */
+  /** @name DataSource.paginate(value) */
   def paginate(value: Boolean): Unit = js.native
-  /** Clears currently loaded DataSource items and calls the load() method. */
+  /** @name DataSource.reload() */
   def reload(): Promise[_] with JQueryPromise[_] = js.native
-  /** Gets the requireTotalCount option's value. */
+  /** @name DataSource.requireTotalCount() */
   def requireTotalCount(): Boolean = js.native
-  /** Sets the requireTotalCount option's value. */
+  /** @name DataSource.requireTotalCount(value) */
   def requireTotalCount(value: Boolean): Unit = js.native
-  /** Gets the searchExpr option's value. */
+  /** @name DataSource.searchExpr() */
   def searchExpr(): String with js.Function with (js.Array[String | js.Function]) = js.native
-  /** Sets the searchExpr option's value. */
+  /** @name DataSource.searchExpr(expr) */
   def searchExpr(expr: String): Unit = js.native
   def searchExpr(expr: js.Array[String | js.Function]): Unit = js.native
   def searchExpr(expr: js.Function): Unit = js.native
-  /** Gets the searchOperation option's value. */
+  /** @name DataSource.searchOperation() */
   def searchOperation(): String = js.native
-  /** Sets the searchOperation option's value. */
+  /** @name DataSource.searchOperation(op) */
   def searchOperation(op: String): Unit = js.native
-  /** Gets the searchValue option's value. */
+  /** @name DataSource.searchValue() */
   def searchValue(): js.Any = js.native
-  /** Sets the searchValue option's value. */
+  /** @name DataSource.searchValue(value) */
   def searchValue(value: js.Any): Unit = js.native
-  /** Gets the select option's value. */
+  /** @name DataSource.select() */
   def select(): js.Any = js.native
-  /** Sets the select option's value. */
+  /** @name DataSource.select(expr) */
   def select(expr: js.Any): Unit = js.native
-  /** Gets the sort option's value. */
+  /** @name DataSource.sort() */
   def sort(): js.Any = js.native
-  /** Sets the sort option's value. */
+  /** @name DataSource.sort(sortExpr) */
   def sort(sortExpr: js.Any): Unit = js.native
-  /** Gets the instance of the store underlying the DataSource. */
+  /** @name DataSource.store() */
   def store(): js.Any = js.native
-  /** Gets the number of data items in the store after the last load() operation without paging. Takes effect only if requireTotalCount is true */
+  /** @name DataSource.totalCount() */
   def totalCount(): Double = js.native
 }
 

@@ -193,6 +193,14 @@ object mod extends js.Object {
       */
     def addPaletteItems(palette: ICommandPalette): Unit = js.native
     /**
+      * Add the replace selection for text editor command
+      */
+    def addReplaceSelectionCommand(
+      commands: CommandRegistry,
+      tracker: WidgetTracker[IDocumentWidget[FileEditor, IModel]],
+      isEnabled: js.Function0[Boolean]
+    ): Unit = js.native
+    /**
       * Add the Run All Code command
       */
     def addRunAllCodeCommand(

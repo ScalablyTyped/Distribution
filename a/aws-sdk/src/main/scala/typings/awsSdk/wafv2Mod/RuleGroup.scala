@@ -15,7 +15,7 @@ trait RuleGroup extends js.Object {
     */
   var Capacity: CapacityUnit = js.native
   /**
-    * A friendly description of the rule group. You cannot change the description of a rule group after you create it.
+    * A description of the rule group that helps with identification. You cannot change the description of a rule group after you create it.
     */
   var Description: js.UndefOr[EntityDescription] = js.native
   /**
@@ -23,7 +23,7 @@ trait RuleGroup extends js.Object {
     */
   var Id: EntityId = js.native
   /**
-    * A friendly name of the rule group. You cannot change the name of a rule group after you create it.
+    * The name of the rule group. You cannot change the name of a rule group after you create it.
     */
   var Name: EntityName = js.native
   /**

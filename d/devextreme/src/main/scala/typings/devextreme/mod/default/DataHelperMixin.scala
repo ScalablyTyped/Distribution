@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class DataHelperMixin ()
   extends typings.devextreme.mod.DevExpress.DataHelperMixin {
-  /** Gets the DataSource instance. */
+  /** @name DataHelperMixin.getDataSource() */
   /* CompleteClass */
   override def getDataSource(): DataSource = js.native
 }

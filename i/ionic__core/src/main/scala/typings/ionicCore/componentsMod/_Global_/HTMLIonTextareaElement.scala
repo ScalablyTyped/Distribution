@@ -7,7 +7,7 @@ import typings.ionicCore.ionicCoreStrings.md
 import typings.ionicCore.ionicCoreStrings.off
 import typings.ionicCore.ionicCoreStrings.soft
 import typings.ionicCore.mod.Color
-import typings.ionicCore.stencilCoreMod.HTMLStencilElement
+import typings.ionicCore.stencilPublicRuntimeMod.HTMLStencilElement
 import typings.std.HTMLTextAreaElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

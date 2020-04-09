@@ -1,17 +1,16 @@
 package typings.angularCore.undecoratedClassesWithDiUpdateRecorderMod
 
+import typings.angularCore.importManagerMod.ImportManagerUpdateRecorder
 import typings.typescript.mod.ClassDeclaration
 import typings.typescript.mod.NamedImports
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait UpdateRecorder extends js.Object {
+trait UpdateRecorder extends ImportManagerUpdateRecorder {
   def addClassComment(node: ClassDeclaration, text: String): Unit
   def addClassDecorator(node: ClassDeclaration, text: String): Unit
-  def addNewImport(start: Double, importText: String): Unit
   def commitUpdate(): Unit
-  def updateExistingImport(namedBindings: NamedImports, newNamedBindings: String): Unit
 }
 
 object UpdateRecorder {

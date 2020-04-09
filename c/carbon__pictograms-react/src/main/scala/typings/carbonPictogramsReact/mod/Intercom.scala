@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@carbon/pictograms-react", "Intercom")
 @js.native
-object Intercom extends TopLevel[CarbonPictogram]
+object Intercom extends TopLevel[CarbonPictogramType]
 

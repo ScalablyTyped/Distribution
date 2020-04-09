@@ -26,13 +26,13 @@ trait SignedData extends js.Object {
   def fromSchema(schema: js.Any): Unit = js.native
   /**
     * Signing current SignedData
-    * 
+    *
     * @param {CryptoKey} privateKey Private key for "subjectPublicKeyInfo" structure
     * @param {number} signerIndex Index number (starting from 0) of signer index to make signature for
     * @param {string} [hashAlgorithm] Hashing algorithm. Default SHA-1
     * @param {BufferSource} [data] Detached data
     * @returns {ArrayBuffer}
-    * 
+    *
     * @memberOf SignedData
     */
   def sign(privateKey: CryptoKey, signerIndex: Double): ArrayBuffer = js.native
@@ -41,7 +41,7 @@ trait SignedData extends js.Object {
   def toJSON(): js.Any = js.native
   /**
     * Convert current object to asn1js object and set correct values
-    * 
+    *
     * @param {boolean} [encodeFlag]
     * @returns {*}
     */

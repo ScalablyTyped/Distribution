@@ -19,7 +19,16 @@ object dockerodeStrings {
   sealed trait cached extends MountConsistency
   
   @js.native
+  sealed trait config extends js.Object
+  
+  @js.native
   sealed trait consistent extends MountConsistency
+  
+  @js.native
+  sealed trait container extends js.Object
+  
+  @js.native
+  sealed trait daemon extends js.Object
   
   @js.native
   sealed trait default extends MountConsistency
@@ -46,6 +55,9 @@ object dockerodeStrings {
   sealed trait https extends js.Object
   
   @js.native
+  sealed trait image extends js.Object
+  
+  @js.native
   sealed trait journald extends LoggingDriverType
   
   @js.native
@@ -55,7 +67,16 @@ object dockerodeStrings {
   sealed trait local extends js.Object
   
   @js.native
+  sealed trait network extends js.Object
+  
+  @js.native
+  sealed trait node extends js.Object
+  
+  @js.native
   sealed trait none extends LoggingDriverType
+  
+  @js.native
+  sealed trait plugin extends js.Object
   
   @js.native
   sealed trait `private` extends MountPropagation
@@ -70,6 +91,12 @@ object dockerodeStrings {
   sealed trait rslave extends MountPropagation
   
   @js.native
+  sealed trait secret extends js.Object
+  
+  @js.native
+  sealed trait service extends js.Object
+  
+  @js.native
   sealed trait shared extends MountPropagation
   
   @js.native
@@ -77,6 +104,9 @@ object dockerodeStrings {
   
   @js.native
   sealed trait splunk extends LoggingDriverType
+  
+  @js.native
+  sealed trait swarm extends js.Object
   
   @js.native
   sealed trait syslog extends LoggingDriverType
@@ -94,7 +124,13 @@ object dockerodeStrings {
   @scala.inline
   def cached: cached = "cached".asInstanceOf[cached]
   @scala.inline
+  def config: config = "config".asInstanceOf[config]
+  @scala.inline
   def consistent: consistent = "consistent".asInstanceOf[consistent]
+  @scala.inline
+  def container: container = "container".asInstanceOf[container]
+  @scala.inline
+  def daemon: daemon = "daemon".asInstanceOf[daemon]
   @scala.inline
   def default: default = "default".asInstanceOf[default]
   @scala.inline
@@ -112,13 +148,21 @@ object dockerodeStrings {
   @scala.inline
   def https: https = "https".asInstanceOf[https]
   @scala.inline
+  def image: image = "image".asInstanceOf[image]
+  @scala.inline
   def journald: journald = "journald".asInstanceOf[journald]
   @scala.inline
   def `json-file`: `json-file` = "json-file".asInstanceOf[`json-file`]
   @scala.inline
   def local: local = "local".asInstanceOf[local]
   @scala.inline
+  def network: network = "network".asInstanceOf[network]
+  @scala.inline
+  def node: node = "node".asInstanceOf[node]
+  @scala.inline
   def none: none = "none".asInstanceOf[none]
+  @scala.inline
+  def plugin: plugin = "plugin".asInstanceOf[plugin]
   @scala.inline
   def `private`: `private` = "private".asInstanceOf[`private`]
   @scala.inline
@@ -128,11 +172,17 @@ object dockerodeStrings {
   @scala.inline
   def rslave: rslave = "rslave".asInstanceOf[rslave]
   @scala.inline
+  def secret: secret = "secret".asInstanceOf[secret]
+  @scala.inline
+  def service: service = "service".asInstanceOf[service]
+  @scala.inline
   def shared: shared = "shared".asInstanceOf[shared]
   @scala.inline
   def slave: slave = "slave".asInstanceOf[slave]
   @scala.inline
   def splunk: splunk = "splunk".asInstanceOf[splunk]
+  @scala.inline
+  def swarm: swarm = "swarm".asInstanceOf[swarm]
   @scala.inline
   def syslog: syslog = "syslog".asInstanceOf[syslog]
   @scala.inline

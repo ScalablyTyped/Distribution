@@ -1,7 +1,6 @@
 package typings.octokitPluginRestEndpointMethods
 
-import typings.octokitPluginRestEndpointMethods.typesMod.AnyResponse
-import typings.octokitPluginRestEndpointMethods.typesMod.ProjectsAddCollaboratorParams
+import typings.octokitPluginRestEndpointMethods.typesMod.OrgsListPendingInvitationsParams
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,9 +8,13 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon242 extends js.Object {
   var endpoint: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EndpointInterface */ js.Any = js.native
-  def apply(): js.Promise[AnyResponse] = js.native
+  def apply(): js.Promise[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OctokitResponse<OrgsListPendingInvitationsResponse> */ _
+  ] = js.native
   def apply(
-    params: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RequestParameters */ js.Any) with ProjectsAddCollaboratorParams
-  ): js.Promise[AnyResponse] = js.native
+    params: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RequestParameters */ js.Any) with OrgsListPendingInvitationsParams
+  ): js.Promise[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OctokitResponse<OrgsListPendingInvitationsResponse> */ _
+  ] = js.native
 }
 

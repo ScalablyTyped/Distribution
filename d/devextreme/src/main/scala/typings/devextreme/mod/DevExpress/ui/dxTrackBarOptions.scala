@@ -15,9 +15,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxTrackBarOptions[T] extends EditorOptions[T] {
-  /** The maximum value the widget can accept. */
+  /** @name dxTrackBar.Options.max */
   var max: js.UndefOr[Double] = js.undefined
-  /** The minimum value the widget can accept. */
+  /** @name dxTrackBar.Options.min */
   var min: js.UndefOr[Double] = js.undefined
 }
 

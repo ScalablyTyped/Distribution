@@ -1,5 +1,6 @@
 package typings.pulumiAws.mysqlLayerMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiAws.inputMod.opsworks.MysqlLayerEbsVolume
 import typings.pulumiPulumi.outputMod.Input
 import scala.scalajs.js
@@ -78,6 +79,10 @@ trait MysqlLayerArgs extends js.Object {
     */
   val systemPackages: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
+    * A mapping of tags to assign to the resource.
+    */
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  /**
     * Whether to use EBS-optimized instances.
     */
   val useEbsOptimizedInstances: js.UndefOr[Input[Boolean]] = js.native
@@ -107,6 +112,7 @@ object MysqlLayerArgs {
     rootPassword: Input[String] = null,
     rootPasswordOnAllInstances: Input[Boolean] = null,
     systemPackages: Input[js.Array[Input[String]]] = null,
+    tags: Input[StringDictionary[_]] = null,
     useEbsOptimizedInstances: Input[Boolean] = null
   ): MysqlLayerArgs = {
     val __obj = js.Dynamic.literal(stackId = stackId.asInstanceOf[js.Any])
@@ -130,6 +136,7 @@ object MysqlLayerArgs {
     if (rootPassword != null) __obj.updateDynamic("rootPassword")(rootPassword.asInstanceOf[js.Any])
     if (rootPasswordOnAllInstances != null) __obj.updateDynamic("rootPasswordOnAllInstances")(rootPasswordOnAllInstances.asInstanceOf[js.Any])
     if (systemPackages != null) __obj.updateDynamic("systemPackages")(systemPackages.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     if (useEbsOptimizedInstances != null) __obj.updateDynamic("useEbsOptimizedInstances")(useEbsOptimizedInstances.asInstanceOf[js.Any])
     __obj.asInstanceOf[MysqlLayerArgs]
   }

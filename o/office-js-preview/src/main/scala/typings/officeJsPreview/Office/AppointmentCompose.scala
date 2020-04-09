@@ -75,6 +75,20 @@ trait AppointmentCompose extends Item {
     */
   var enhancedLocation: EnhancedLocation = js.native
   /**
+    * Gets or sets the {@link Office.IsAllDayEvent} property of an appointment.
+    *
+    * [Api set: Mailbox Preview]
+    *
+    * @remarks
+    * 
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * 
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
+    * 
+    * @beta
+    */
+  var isAllDayEvent: IsAllDayEvent = js.native
+  /**
     * Gets the type of item that an instance represents.
     *
     * The `itemType` property returns one of the `ItemType` enumeration values, indicating whether the `item` object instance is a message or an appointment.
@@ -177,6 +191,20 @@ trait AppointmentCompose extends Item {
     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
     */
   var requiredAttendees: Recipients = js.native
+  /**
+    * Gets or sets the {@link Office.Sensitivity | sensitivity} of an appointment. 
+    *
+    * [Api set: Mailbox Preview]
+    *
+    * @remarks
+    * 
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * 
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
+    * 
+    * @beta
+    */        
+  var sensitivity: Sensitivity = js.native
   /**
     * Gets the id of the series that an instance belongs to.
     * 

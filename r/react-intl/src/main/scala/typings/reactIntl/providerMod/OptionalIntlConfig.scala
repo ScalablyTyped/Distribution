@@ -16,7 +16,7 @@ trait OptionalIntlConfig extends js.Object {
   var messages: js.UndefOr[Record[String, js.Array[MessageFormatElement] | String]] = js.undefined
   var onError: js.UndefOr[js.Function1[/* err */ String, Unit]] = js.undefined
   var textComponent: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 117 */ js.Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118 */ js.Any
   ] = js.undefined
   var timeZone: js.UndefOr[String] = js.undefined
 }
@@ -30,7 +30,7 @@ object OptionalIntlConfig {
     formats: CustomFormats = null,
     messages: Record[String, js.Array[MessageFormatElement] | String] = null,
     onError: /* err */ String => Unit = null,
-    textComponent: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 117 */ js.Any = null,
+    textComponent: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118 */ js.Any = null,
     timeZone: String = null
   ): OptionalIntlConfig = {
     val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any])

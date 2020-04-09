@@ -1,7 +1,7 @@
 
 # Scala.js typings for jsoneditor
 
-Typings are for version v5.28.2
+Typings are for version 8.6
 
 ## Library description:
 A web-based tool to view, edit, format, and validate JSON

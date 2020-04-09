@@ -1,169 +1,215 @@
 package typings.pdfmake
 
-import typings.pdfmake.mod.Alignment
-import typings.pdfmake.mod.Decoration
-import typings.pdfmake.mod.DecorationStyle
-import typings.pdfmake.mod.Layout
-import typings.pdfmake.mod.PageBreak
-import typings.pdfmake.mod.PageOrientation
-import typings.pdfmake.mod.PageSize_
+import typings.pdfmake.interfacesMod.Alignment
+import typings.pdfmake.interfacesMod.Decoration
+import typings.pdfmake.interfacesMod.DecorationStyle
+import typings.pdfmake.interfacesMod.OrderedListType
+import typings.pdfmake.interfacesMod.PDFVersion
+import typings.pdfmake.interfacesMod.PageBreak
+import typings.pdfmake.interfacesMod.PageOrientation
+import typings.pdfmake.interfacesMod.PredefinedPageSize
+import typings.pdfmake.interfacesMod.PredefinedTableLayout
+import typings.pdfmake.interfacesMod.UnorderedListType
+import typings.pdfmake.interfacesMod._Size
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object pdfmakeStrings {
   @js.native
-  sealed trait `2A0` extends PageSize_
+  sealed trait `1Dot3` extends PDFVersion
   
   @js.native
-  sealed trait `4A0` extends PageSize_
+  sealed trait `1Dot4` extends PDFVersion
   
   @js.native
-  sealed trait A0 extends PageSize_
+  sealed trait `1Dot5` extends PDFVersion
   
   @js.native
-  sealed trait A1 extends PageSize_
+  sealed trait `1Dot6` extends PDFVersion
   
   @js.native
-  sealed trait A10 extends PageSize_
+  sealed trait `1Dot7` extends PDFVersion
   
   @js.native
-  sealed trait A2 extends PageSize_
+  sealed trait `1Dot7ext3` extends PDFVersion
   
   @js.native
-  sealed trait A3 extends PageSize_
+  sealed trait `2A0` extends PredefinedPageSize
   
   @js.native
-  sealed trait A4 extends PageSize_
+  sealed trait `4A0` extends PredefinedPageSize
   
   @js.native
-  sealed trait A5 extends PageSize_
+  sealed trait A0 extends PredefinedPageSize
   
   @js.native
-  sealed trait A6 extends PageSize_
+  sealed trait A1 extends PredefinedPageSize
   
   @js.native
-  sealed trait A7 extends PageSize_
+  sealed trait A10 extends PredefinedPageSize
   
   @js.native
-  sealed trait A8 extends PageSize_
+  sealed trait A2 extends PredefinedPageSize
   
   @js.native
-  sealed trait A9 extends PageSize_
+  sealed trait A3 extends PredefinedPageSize
   
   @js.native
-  sealed trait B0 extends PageSize_
+  sealed trait A4 extends PredefinedPageSize
   
   @js.native
-  sealed trait B1 extends PageSize_
+  sealed trait A5 extends PredefinedPageSize
   
   @js.native
-  sealed trait B10 extends PageSize_
+  sealed trait A6 extends PredefinedPageSize
   
   @js.native
-  sealed trait B2 extends PageSize_
+  sealed trait A7 extends PredefinedPageSize
   
   @js.native
-  sealed trait B3 extends PageSize_
+  sealed trait A8 extends PredefinedPageSize
   
   @js.native
-  sealed trait B4 extends PageSize_
+  sealed trait A9 extends PredefinedPageSize
   
   @js.native
-  sealed trait B5 extends PageSize_
+  sealed trait Asterisk extends _Size
   
   @js.native
-  sealed trait B6 extends PageSize_
+  sealed trait B0 extends PredefinedPageSize
   
   @js.native
-  sealed trait B7 extends PageSize_
+  sealed trait B1 extends PredefinedPageSize
   
   @js.native
-  sealed trait B8 extends PageSize_
+  sealed trait B10 extends PredefinedPageSize
   
   @js.native
-  sealed trait B9 extends PageSize_
+  sealed trait B2 extends PredefinedPageSize
   
   @js.native
-  sealed trait C0 extends PageSize_
+  sealed trait B3 extends PredefinedPageSize
   
   @js.native
-  sealed trait C1 extends PageSize_
+  sealed trait B4 extends PredefinedPageSize
   
   @js.native
-  sealed trait C10 extends PageSize_
+  sealed trait B5 extends PredefinedPageSize
   
   @js.native
-  sealed trait C2 extends PageSize_
+  sealed trait B6 extends PredefinedPageSize
   
   @js.native
-  sealed trait C3 extends PageSize_
+  sealed trait B7 extends PredefinedPageSize
   
   @js.native
-  sealed trait C4 extends PageSize_
+  sealed trait B8 extends PredefinedPageSize
   
   @js.native
-  sealed trait C5 extends PageSize_
+  sealed trait B9 extends PredefinedPageSize
   
   @js.native
-  sealed trait C6 extends PageSize_
+  sealed trait C0 extends PredefinedPageSize
   
   @js.native
-  sealed trait C7 extends PageSize_
+  sealed trait C1 extends PredefinedPageSize
   
   @js.native
-  sealed trait C8 extends PageSize_
+  sealed trait C10 extends PredefinedPageSize
   
   @js.native
-  sealed trait C9 extends PageSize_
+  sealed trait C2 extends PredefinedPageSize
   
   @js.native
-  sealed trait EXECUTIVE extends PageSize_
+  sealed trait C3 extends PredefinedPageSize
   
   @js.native
-  sealed trait FOLIO extends PageSize_
+  sealed trait C4 extends PredefinedPageSize
   
   @js.native
-  sealed trait LEGAL extends PageSize_
+  sealed trait C5 extends PredefinedPageSize
   
   @js.native
-  sealed trait LETTER extends PageSize_
+  sealed trait C6 extends PredefinedPageSize
   
   @js.native
-  sealed trait RA1 extends PageSize_
+  sealed trait C7 extends PredefinedPageSize
   
   @js.native
-  sealed trait RA2 extends PageSize_
+  sealed trait C8 extends PredefinedPageSize
   
   @js.native
-  sealed trait RA3 extends PageSize_
+  sealed trait C9 extends PredefinedPageSize
   
   @js.native
-  sealed trait RA4 extends PageSize_
+  sealed trait EXECUTIVE extends PredefinedPageSize
   
   @js.native
-  sealed trait SRA1 extends PageSize_
+  sealed trait FOLIO extends PredefinedPageSize
   
   @js.native
-  sealed trait SRA2 extends PageSize_
+  sealed trait H extends js.Object
   
   @js.native
-  sealed trait SRA3 extends PageSize_
+  sealed trait L extends js.Object
   
   @js.native
-  sealed trait SRA4 extends PageSize_
+  sealed trait LEGAL extends PredefinedPageSize
   
   @js.native
-  sealed trait TABLOID extends PageSize_
+  sealed trait LETTER extends PredefinedPageSize
+  
+  @js.native
+  sealed trait M extends js.Object
+  
+  @js.native
+  sealed trait Q extends js.Object
+  
+  @js.native
+  sealed trait RA1 extends PredefinedPageSize
+  
+  @js.native
+  sealed trait RA2 extends PredefinedPageSize
+  
+  @js.native
+  sealed trait RA3 extends PredefinedPageSize
+  
+  @js.native
+  sealed trait RA4 extends PredefinedPageSize
+  
+  @js.native
+  sealed trait SRA1 extends PredefinedPageSize
+  
+  @js.native
+  sealed trait SRA2 extends PredefinedPageSize
+  
+  @js.native
+  sealed trait SRA3 extends PredefinedPageSize
+  
+  @js.native
+  sealed trait SRA4 extends PredefinedPageSize
+  
+  @js.native
+  sealed trait TABLOID extends PredefinedPageSize
   
   @js.native
   sealed trait after extends PageBreak
+  
+  @js.native
+  sealed trait alphanumeric extends js.Object
+  
+  @js.native
+  sealed trait auto extends _Size
   
   @js.native
   sealed trait before extends PageBreak
   
   @js.native
   sealed trait center extends Alignment
+  
+  @js.native
+  sealed trait circle extends UnorderedListType
   
   @js.native
   sealed trait dashed extends DecorationStyle
@@ -175,7 +221,13 @@ object pdfmakeStrings {
   sealed trait double extends DecorationStyle
   
   @js.native
-  sealed trait headerLineOnly extends Layout
+  sealed trait ellipse extends js.Object
+  
+  @js.native
+  sealed trait headerLineOnly extends PredefinedTableLayout
+  
+  @js.native
+  sealed trait justify extends Alignment
   
   @js.native
   sealed trait landscape extends PageOrientation
@@ -184,29 +236,79 @@ object pdfmakeStrings {
   sealed trait left extends Alignment
   
   @js.native
-  sealed trait lightHorizontalLines extends Layout
+  sealed trait lightHorizontalLines extends PredefinedTableLayout
+  
+  @js.native
+  sealed trait line extends js.Object
   
   @js.native
   sealed trait lineThrough extends Decoration
   
   @js.native
-  sealed trait noBorders extends Layout
+  sealed trait `lower-alpha` extends OrderedListType
+  
+  @js.native
+  sealed trait `lower-roman` extends OrderedListType
+  
+  @js.native
+  sealed trait noBorders extends PredefinedTableLayout
+  
+  @js.native
+  sealed trait none
+    extends OrderedListType
+       with UnorderedListType
+  
+  @js.native
+  sealed trait numeric extends js.Object
+  
+  @js.native
+  sealed trait octet extends js.Object
   
   @js.native
   sealed trait overline extends Decoration
   
   @js.native
+  sealed trait polyline extends js.Object
+  
+  @js.native
   sealed trait portrait extends PageOrientation
+  
+  @js.native
+  sealed trait rect extends js.Object
   
   @js.native
   sealed trait right extends Alignment
   
   @js.native
+  sealed trait round extends js.Object
+  
+  @js.native
+  sealed trait square extends UnorderedListType
+  
+  @js.native
   sealed trait underline extends Decoration
+  
+  @js.native
+  sealed trait `upper-alpha` extends OrderedListType
+  
+  @js.native
+  sealed trait `upper-roman` extends OrderedListType
   
   @js.native
   sealed trait wavy extends DecorationStyle
   
+  @scala.inline
+  def `1Dot3`: `1Dot3` = "1.3".asInstanceOf[`1Dot3`]
+  @scala.inline
+  def `1Dot4`: `1Dot4` = "1.4".asInstanceOf[`1Dot4`]
+  @scala.inline
+  def `1Dot5`: `1Dot5` = "1.5".asInstanceOf[`1Dot5`]
+  @scala.inline
+  def `1Dot6`: `1Dot6` = "1.6".asInstanceOf[`1Dot6`]
+  @scala.inline
+  def `1Dot7`: `1Dot7` = "1.7".asInstanceOf[`1Dot7`]
+  @scala.inline
+  def `1Dot7ext3`: `1Dot7ext3` = "1.7ext3".asInstanceOf[`1Dot7ext3`]
   @scala.inline
   def `2A0`: `2A0` = "2A0".asInstanceOf[`2A0`]
   @scala.inline
@@ -233,6 +335,8 @@ object pdfmakeStrings {
   def A8: A8 = "A8".asInstanceOf[A8]
   @scala.inline
   def A9: A9 = "A9".asInstanceOf[A9]
+  @scala.inline
+  def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
   @scala.inline
   def B0: B0 = "B0".asInstanceOf[B0]
   @scala.inline
@@ -282,9 +386,17 @@ object pdfmakeStrings {
   @scala.inline
   def FOLIO: FOLIO = "FOLIO".asInstanceOf[FOLIO]
   @scala.inline
+  def H: H = "H".asInstanceOf[H]
+  @scala.inline
+  def L: L = "L".asInstanceOf[L]
+  @scala.inline
   def LEGAL: LEGAL = "LEGAL".asInstanceOf[LEGAL]
   @scala.inline
   def LETTER: LETTER = "LETTER".asInstanceOf[LETTER]
+  @scala.inline
+  def M: M = "M".asInstanceOf[M]
+  @scala.inline
+  def Q: Q = "Q".asInstanceOf[Q]
   @scala.inline
   def RA1: RA1 = "RA1".asInstanceOf[RA1]
   @scala.inline
@@ -306,9 +418,15 @@ object pdfmakeStrings {
   @scala.inline
   def after: after = "after".asInstanceOf[after]
   @scala.inline
+  def alphanumeric: alphanumeric = "alphanumeric".asInstanceOf[alphanumeric]
+  @scala.inline
+  def auto: auto = "auto".asInstanceOf[auto]
+  @scala.inline
   def before: before = "before".asInstanceOf[before]
   @scala.inline
   def center: center = "center".asInstanceOf[center]
+  @scala.inline
+  def circle: circle = "circle".asInstanceOf[circle]
   @scala.inline
   def dashed: dashed = "dashed".asInstanceOf[dashed]
   @scala.inline
@@ -316,7 +434,11 @@ object pdfmakeStrings {
   @scala.inline
   def double: double = "double".asInstanceOf[double]
   @scala.inline
+  def ellipse: ellipse = "ellipse".asInstanceOf[ellipse]
+  @scala.inline
   def headerLineOnly: headerLineOnly = "headerLineOnly".asInstanceOf[headerLineOnly]
+  @scala.inline
+  def justify: justify = "justify".asInstanceOf[justify]
   @scala.inline
   def landscape: landscape = "landscape".asInstanceOf[landscape]
   @scala.inline
@@ -324,17 +446,41 @@ object pdfmakeStrings {
   @scala.inline
   def lightHorizontalLines: lightHorizontalLines = "lightHorizontalLines".asInstanceOf[lightHorizontalLines]
   @scala.inline
+  def line: line = "line".asInstanceOf[line]
+  @scala.inline
   def lineThrough: lineThrough = "lineThrough".asInstanceOf[lineThrough]
+  @scala.inline
+  def `lower-alpha`: `lower-alpha` = "lower-alpha".asInstanceOf[`lower-alpha`]
+  @scala.inline
+  def `lower-roman`: `lower-roman` = "lower-roman".asInstanceOf[`lower-roman`]
   @scala.inline
   def noBorders: noBorders = "noBorders".asInstanceOf[noBorders]
   @scala.inline
+  def none: none = "none".asInstanceOf[none]
+  @scala.inline
+  def numeric: numeric = "numeric".asInstanceOf[numeric]
+  @scala.inline
+  def octet: octet = "octet".asInstanceOf[octet]
+  @scala.inline
   def overline: overline = "overline".asInstanceOf[overline]
+  @scala.inline
+  def polyline: polyline = "polyline".asInstanceOf[polyline]
   @scala.inline
   def portrait: portrait = "portrait".asInstanceOf[portrait]
   @scala.inline
+  def rect: rect = "rect".asInstanceOf[rect]
+  @scala.inline
   def right: right = "right".asInstanceOf[right]
   @scala.inline
+  def round: round = "round".asInstanceOf[round]
+  @scala.inline
+  def square: square = "square".asInstanceOf[square]
+  @scala.inline
   def underline: underline = "underline".asInstanceOf[underline]
+  @scala.inline
+  def `upper-alpha`: `upper-alpha` = "upper-alpha".asInstanceOf[`upper-alpha`]
+  @scala.inline
+  def `upper-roman`: `upper-roman` = "upper-roman".asInstanceOf[`upper-roman`]
   @scala.inline
   def wavy: wavy = "wavy".asInstanceOf[wavy]
 }

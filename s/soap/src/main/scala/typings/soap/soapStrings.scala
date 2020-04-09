@@ -27,6 +27,9 @@ object soapStrings {
   sealed trait message extends js.Object
   
   @js.native
+  sealed trait pause extends js.Object
+  
+  @js.native
   sealed trait readable extends js.Object
   
   @js.native
@@ -34,6 +37,9 @@ object soapStrings {
   
   @js.native
   sealed trait response extends js.Object
+  
+  @js.native
+  sealed trait resume extends js.Object
   
   @js.native
   sealed trait soapError extends js.Object
@@ -53,11 +59,15 @@ object soapStrings {
   @scala.inline
   def message: message = "message".asInstanceOf[message]
   @scala.inline
+  def pause: pause = "pause".asInstanceOf[pause]
+  @scala.inline
   def readable: readable = "readable".asInstanceOf[readable]
   @scala.inline
   def request: request = "request".asInstanceOf[request]
   @scala.inline
   def response: response = "response".asInstanceOf[response]
+  @scala.inline
+  def resume: resume = "resume".asInstanceOf[resume]
   @scala.inline
   def soapError: soapError = "soapError".asInstanceOf[soapError]
 }

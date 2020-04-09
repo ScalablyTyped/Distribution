@@ -14,6 +14,6 @@ import scala.scalajs.js.annotation._
 object helperMod extends js.Object {
   type Omit[T, U] = Pick[T, Exclude[String, U]]
   type Overwrapped[T, U] = Pick[T, Extract[String, String]]
-  type PropsOf[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */] = LibraryManagedAttributes[C, ComponentPropsWithRef[C]]
+  type PropsOf[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any */] = LibraryManagedAttributes[C, ComponentPropsWithRef[C]]
 }
 

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object getHashAlgorithm extends js.Object {
   /**
     * Getting hash algorithm by signature algorithm
-    * 
+    *
     * @param {AlgorithmIdentifier} signatureAlgorithm Signature algorithm
     * @returns {string}
     */

@@ -15,7 +15,7 @@ trait IPSet extends js.Object {
     */
   var Addresses: IPAddresses = js.native
   /**
-    * A friendly description of the IP set. You cannot change the description of an IP set after you create it.
+    * A description of the IP set that helps with identification. You cannot change the description of an IP set after you create it.
     */
   var Description: js.UndefOr[EntityDescription] = js.native
   /**
@@ -27,7 +27,7 @@ trait IPSet extends js.Object {
     */
   var Id: EntityId = js.native
   /**
-    * A friendly name of the IP set. You cannot change the name of an IPSet after you create it.
+    * The name of the IP set. You cannot change the name of an IPSet after you create it.
     */
   var Name: EntityName = js.native
 }

@@ -1,5 +1,6 @@
 package typings.pulumiAws.trafficMirrorSessionMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.mod.CustomResource
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.outputMod.Output_
@@ -37,6 +38,10 @@ class TrafficMirrorSession protected () extends CustomResource {
     * - The session number determines the order in which sessions are evaluated when an interface is used by multiple sessions. The first session with a matching filter is the one that mirrors the packets.
     */
   val sessionNumber: Output_[Double] = js.native
+  /**
+    * Key-value mapping of resource tags.
+    */
+  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
   /**
     * ID of the traffic mirror filter to be used
     */

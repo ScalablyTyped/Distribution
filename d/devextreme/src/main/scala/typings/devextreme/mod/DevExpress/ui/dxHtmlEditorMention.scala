@@ -11,11 +11,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxHtmlEditorMention extends js.Object {
-  /** Provides data for the suggestion list. */
+  /** @name dxHtmlEditorMention.dataSource */
   var dataSource: js.UndefOr[js.Array[String] | DataSource | DataSourceOptions] = js.undefined
-  /** Specifies the data field whose values should be displayed in the suggestion list. */
+  /** @name dxHtmlEditorMention.displayExpr */
   var displayExpr: js.UndefOr[String | (js.Function1[/* item */ js.Any, String])] = js.undefined
-  /** Specifies a custom template for suggestion list items. */
+  /** @name dxHtmlEditorMention.itemTemplate */
   var itemTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function3[
       /* itemData */ js.Any, 
@@ -24,19 +24,19 @@ trait dxHtmlEditorMention extends js.Object {
       String | Element | JQuery
     ])
   ] = js.undefined
-  /** Specifies the prefix that a user enters to activate mentions. You can use different prefixes with different dataSources. */
+  /** @name dxHtmlEditorMention.marker */
   var marker: js.UndefOr[String] = js.undefined
-  /** Specifies the minimum number of characters that a user should type to trigger the search. */
+  /** @name dxHtmlEditorMention.minSearchLength */
   var minSearchLength: js.UndefOr[Double] = js.undefined
-  /** Specifies one or several data fields to search. */
+  /** @name dxHtmlEditorMention.searchExpr */
   var searchExpr: js.UndefOr[String | js.Function | (js.Array[String | js.Function])] = js.undefined
-  /** Specifies the delay between when a user stops typing and when the search is executed. */
+  /** @name dxHtmlEditorMention.searchTimeout */
   var searchTimeout: js.UndefOr[Double] = js.undefined
-  /** Specifies a custom template for mentions. */
+  /** @name dxHtmlEditorMention.template */
   var template: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* mentionData */ AnonId, /* contentElement */ dxElement, String | Element | JQuery])
   ] = js.undefined
-  /** Specifies which data field provides unique values to the template's `id` parameter. */
+  /** @name dxHtmlEditorMention.valueExpr */
   var valueExpr: js.UndefOr[String | js.Function] = js.undefined
 }
 

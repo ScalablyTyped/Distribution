@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "babel-plugin-jest-hoist" : "25.1.0"
+      "babel-plugin-jest-hoist" : "25.2.6"
     }
   ],
   "test-dependencies" : [
     {
-      "babel-plugin-jest-hoist" : "25.1.0"
+      "babel-plugin-jest-hoist" : "25.2.6"
     }
   ],
   "compile-devDependencies" : [

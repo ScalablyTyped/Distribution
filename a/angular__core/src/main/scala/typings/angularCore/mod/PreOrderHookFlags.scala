@@ -18,8 +18,10 @@ import scala.scalajs.js.annotation._
 trait PreOrderHookFlags extends js.Object
 
 object PreOrderHookFlags {
-  /** The index of the next pre-order hook to be called in the hooks array, on the first 16
-    bits */
+  /**
+    The index of the next pre-order hook to be called in the hooks array, on the first 16
+    bits
+    */
   @scala.inline
   def IndexOfTheNextPreOrderHookMaskMask: `65535` = this.cast(65535)
   /**

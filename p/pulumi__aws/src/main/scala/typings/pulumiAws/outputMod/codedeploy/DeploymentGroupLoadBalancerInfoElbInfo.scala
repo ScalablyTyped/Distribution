@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DeploymentGroupLoadBalancerInfoElbInfo extends js.Object {
   /**
-    * Name of the target group.
+    * The name of the load balancer that will be used to route traffic from original instances to replacement instances in a blue/green deployment. For in-place deployments, the name of the load balancer that instances are deregistered from so they are not serving traffic during a deployment, and then re-registered with after the deployment completes.
     */
   var name: js.UndefOr[String] = js.native
 }

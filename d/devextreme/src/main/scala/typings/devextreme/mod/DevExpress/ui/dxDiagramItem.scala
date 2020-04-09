@@ -7,11 +7,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxDiagramItem extends js.Object {
-  /**  */
+  /** @name dxDiagramItem.dataItem */
   var dataItem: js.UndefOr[js.Any] = js.undefined
-  /** Specifies the item's internal identifier. */
+  /** @name dxDiagramItem.id */
   var id: js.UndefOr[String] = js.undefined
-  /**  */
+  /** @name dxDiagramItem.itemType */
   var itemType: js.UndefOr[shape | connector] = js.undefined
 }
 

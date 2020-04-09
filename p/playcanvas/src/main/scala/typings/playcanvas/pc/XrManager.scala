@@ -19,6 +19,8 @@ import scala.scalajs.js.annotation._
   * @property {string|null} spaceType Returns reference space type of currently running XR session or null if no session
   * is running. Can be any of pc.XRSPACE_*.
   * @property {pc.Entity|null} camera Active camera for which XR session is running or null.
+  * @property {pc.XrInput} input provides access to Input Sources.
+  * @property {pc.XrHitTest} hitTest provides ability to hit test representation of real world geometry of underlying AR system.
   */
 @JSGlobal("pc.XrManager")
 @js.native
@@ -32,6 +34,14 @@ class XrManager protected () extends EventHandler {
     * Active camera for which XR session is running or null.
     */
   var camera: Entity | Null = js.native
+  /**
+    * provides ability to hit test representation of real world geometry of underlying AR system.
+    */
+  var hitTest: XrHitTest = js.native
+  /**
+    * provides access to Input Sources.
+    */
+  var input: XrInput = js.native
   /**
     * Returns reference space type of currently running XR session or null if no session
     * is running. Can be any of pc.XRSPACE_*.

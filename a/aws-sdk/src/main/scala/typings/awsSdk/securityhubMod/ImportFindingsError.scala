@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ImportFindingsError extends js.Object {
   /**
-    * The code of the error made during the BatchImportFindings operation.
+    * The code of the error returned by the BatchImportFindings operation.
     */
   var ErrorCode: NonEmptyString = js.native
   /**
-    * The message of the error made during the BatchImportFindings operation.
+    * The message of the error returned by the BatchImportFindings operation.
     */
   var ErrorMessage: NonEmptyString = js.native
   /**
-    * The ID of the error made during the BatchImportFindings operation.
+    * The identifier of the finding that could not be updated.
     */
   var Id: NonEmptyString = js.native
 }

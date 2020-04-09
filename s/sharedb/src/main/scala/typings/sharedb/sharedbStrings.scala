@@ -117,6 +117,9 @@ object sharedbStrings {
   sealed trait `ot-text-tp2` extends OTType
   
   @js.native
+  sealed trait pause extends js.Object
+  
+  @js.native
   sealed trait pipe extends js.Object
   
   @js.native
@@ -148,6 +151,9 @@ object sharedbStrings {
   
   @js.native
   sealed trait reply extends js.Object
+  
+  @js.native
+  sealed trait resume extends js.Object
   
   @js.native
   sealed trait `rich-text` extends OTType
@@ -233,6 +239,8 @@ object sharedbStrings {
   @scala.inline
   def `ot-text-tp2`: `ot-text-tp2` = "ot-text-tp2".asInstanceOf[`ot-text-tp2`]
   @scala.inline
+  def pause: pause = "pause".asInstanceOf[pause]
+  @scala.inline
   def pipe: pipe = "pipe".asInstanceOf[pipe]
   @scala.inline
   def qf: qf = "qf".asInstanceOf[qf]
@@ -254,6 +262,8 @@ object sharedbStrings {
   def remove: remove = "remove".asInstanceOf[remove]
   @scala.inline
   def reply: reply = "reply".asInstanceOf[reply]
+  @scala.inline
+  def resume: resume = "resume".asInstanceOf[resume]
   @scala.inline
   def `rich-text`: `rich-text` = "rich-text".asInstanceOf[`rich-text`]
   @scala.inline

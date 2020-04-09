@@ -33,9 +33,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxHtmlEditorToolbar extends js.Object {
-  /** Specifies the container in which to place the toolbar. */
+  /** @name dxHtmlEditorToolbar.container */
   var container: js.UndefOr[String | Element | JQuery] = js.undefined
-  /** Configures toolbar items. These items allow users to format text and execute commands. */
+  /** @name dxHtmlEditorToolbar.items */
   var items: js.UndefOr[
     js.Array[
       dxHtmlEditorToolbarItem | background | bold | color | italic | link | image | strike | subscript | superscript | underline | blockquote | header | increaseIndent | decreaseIndent | orderedList | bulletList | alignLeft | alignCenter | alignRight | alignJustify | codeBlock | variable | separator | undo | redo | clear

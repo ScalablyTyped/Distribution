@@ -182,7 +182,7 @@ package object ec2Mod {
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.active__
     - typings.awsSdk.awsSdkStrings.open__
-    - typings.awsSdk.awsSdkStrings.closed_
+    - typings.awsSdk.awsSdkStrings.closed__
     - typings.awsSdk.awsSdkStrings.cancelled__
     - typings.awsSdk.awsSdkStrings.completed__
     - java.lang.String
@@ -438,8 +438,8 @@ package object ec2Mod {
   type DiskInfoList = js.Array[typings.awsSdk.ec2Mod.DiskInfo]
   type DiskSize = scala.Double
   /* Rewritten from type alias, can be one of: 
-    - typings.awsSdk.awsSdkStrings.hdd
-    - typings.awsSdk.awsSdkStrings.ssd
+    - typings.awsSdk.awsSdkStrings.hdd_
+    - typings.awsSdk.awsSdkStrings.ssd_
     - java.lang.String
   */
   type DiskType = typings.awsSdk.ec2Mod._DiskType | java.lang.String
@@ -1246,7 +1246,7 @@ package object ec2Mod {
     - typings.awsSdk.awsSdkStrings.active__
     - typings.awsSdk.awsSdkStrings.pending__
     - typings.awsSdk.awsSdkStrings.cancelled__
-    - typings.awsSdk.awsSdkStrings.closed_
+    - typings.awsSdk.awsSdkStrings.closed__
     - java.lang.String
   */
   type ListingStatus = typings.awsSdk.ec2Mod._ListingStatus | java.lang.String
@@ -1773,7 +1773,7 @@ package object ec2Mod {
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.open__
     - typings.awsSdk.awsSdkStrings.active__
-    - typings.awsSdk.awsSdkStrings.closed_
+    - typings.awsSdk.awsSdkStrings.closed__
     - typings.awsSdk.awsSdkStrings.cancelled__
     - typings.awsSdk.awsSdkStrings.failed__
     - java.lang.String

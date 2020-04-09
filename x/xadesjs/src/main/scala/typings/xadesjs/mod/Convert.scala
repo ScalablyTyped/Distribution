@@ -3,7 +3,7 @@ package typings.xadesjs.mod
 import typings.std.BufferSource
 import typings.std.Date
 import typings.std.Uint8Array
-import typings.xmlCore.mod.XmlBufferEncoding
+import typings.xmlCore.typesMod.XmlBufferEncoding
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -16,6 +16,9 @@ trait GetCustomerGatewayArgs extends js.Object {
     * The ID of the gateway.
     */
   val id: js.UndefOr[String] = js.native
+  /**
+    * Map of key-value pairs assigned to the gateway.
+    */
   val tags: js.UndefOr[StringDictionary[js.Any]] = js.native
 }
 

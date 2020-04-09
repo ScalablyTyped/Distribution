@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait dxSlideOut extends CollectionWidget {
-  /** Hides the widget's slide-out menu. */
+  /** @name dxSlideOut.hideMenu() */
   def hideMenu(): Promise[Unit] with JQueryPromise[Unit] = js.native
-  /** Displays the widget's slide-out menu. */
+  /** @name dxSlideOut.showMenu() */
   def showMenu(): Promise[Unit] with JQueryPromise[Unit] = js.native
-  /** Shows or hides the slide-out menu depending on the argument. */
+  /** @name dxSlideOut.toggleMenuVisibility(showing) */
   def toggleMenuVisibility(showing: Boolean): Promise[Unit] with JQueryPromise[Unit] = js.native
 }
 

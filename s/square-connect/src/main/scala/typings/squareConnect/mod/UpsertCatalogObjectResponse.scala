@@ -9,15 +9,15 @@ import scala.scalajs.js.annotation._
 @js.native
 class UpsertCatalogObjectResponse () extends js.Object {
   /**
-    * The created [CatalogObject](#type-catalogobject).
+    * The successfully created or updated CatalogObject.
     */
   var catalog_object: js.UndefOr[CatalogObject] = js.native
   /**
-    * The set of [Error](#type-error)s encountered.
+    * Information on any errors encountered.
     */
   var errors: js.UndefOr[js.Array[Error]] = js.native
   /**
-    * The mapping between client and server IDs for this Upsert.
+    * The mapping between client and server IDs for this upsert.
     */
   var id_mappings: js.UndefOr[js.Array[CatalogIdMapping]] = js.native
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Editor extends Widget {
-  /** Resets the value option to the default value. */
+  /** @name Editor.reset() */
   def reset(): Unit = js.native
 }
 

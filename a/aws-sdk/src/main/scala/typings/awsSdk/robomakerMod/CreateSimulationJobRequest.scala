@@ -11,6 +11,10 @@ trait CreateSimulationJobRequest extends js.Object {
     */
   var clientRequestToken: js.UndefOr[ClientRequestToken] = js.native
   /**
+    * Compute information for the simulation job.
+    */
+  var compute: js.UndefOr[Compute] = js.native
+  /**
     * Specify data sources to mount read-only files from S3 into your simulation. These files are available under /opt/robomaker/datasources/data_source_name.   There is a limit of 100 files and a combined size of 25GB for all DataSourceConfig objects.  
     */
   var dataSources: js.UndefOr[DataSourceConfigs] = js.native
@@ -58,6 +62,7 @@ object CreateSimulationJobRequest {
     iamRole: IamRole,
     maxJobDurationInSeconds: JobDuration,
     clientRequestToken: ClientRequestToken = null,
+    compute: Compute = null,
     dataSources: DataSourceConfigs = null,
     failureBehavior: FailureBehavior = null,
     loggingConfig: LoggingConfig = null,
@@ -69,6 +74,7 @@ object CreateSimulationJobRequest {
   ): CreateSimulationJobRequest = {
     val __obj = js.Dynamic.literal(iamRole = iamRole.asInstanceOf[js.Any], maxJobDurationInSeconds = maxJobDurationInSeconds.asInstanceOf[js.Any])
     if (clientRequestToken != null) __obj.updateDynamic("clientRequestToken")(clientRequestToken.asInstanceOf[js.Any])
+    if (compute != null) __obj.updateDynamic("compute")(compute.asInstanceOf[js.Any])
     if (dataSources != null) __obj.updateDynamic("dataSources")(dataSources.asInstanceOf[js.Any])
     if (failureBehavior != null) __obj.updateDynamic("failureBehavior")(failureBehavior.asInstanceOf[js.Any])
     if (loggingConfig != null) __obj.updateDynamic("loggingConfig")(loggingConfig.asInstanceOf[js.Any])

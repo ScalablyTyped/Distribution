@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("jest-matcher-utils/build", "INVERTED_COLOR")
+@JSImport("jest-matcher-utils", "INVERTED_COLOR")
 @js.native
 object INVERTED_COLOR extends TopLevel[Chalk]
 

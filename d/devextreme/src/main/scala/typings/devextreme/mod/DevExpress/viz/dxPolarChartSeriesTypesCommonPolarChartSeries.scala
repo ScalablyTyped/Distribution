@@ -19,57 +19,57 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxPolarChartSeriesTypesCommonPolarChartSeries extends js.Object {
-  /** Specifies the data source field that provides arguments for series points. */
+  /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.argumentField */
   var argumentField: js.UndefOr[String] = js.undefined
-  /** Controls the padding and consequently the angular width of all bars in a series using relative units. Ignored if the barWidth option is set. */
+  /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.barPadding */
   var barPadding: js.UndefOr[Double] = js.undefined
-  /** Specifies a fixed angular width for all bars in a series, measured in degrees. Takes precedence over the barPadding option. */
+  /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.barWidth */
   var barWidth: js.UndefOr[Double] = js.undefined
-  /** An object defining the series border configuration options. */
+  /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.border */
   var border: js.UndefOr[AnonColorDashStyle] = js.undefined
-  /** Specifies whether or not to close the chart by joining the end point with the first point. */
+  /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.closed */
   var closed: js.UndefOr[Boolean] = js.undefined
-  /** Specifies a series color. */
+  /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.color */
   var color: js.UndefOr[String] = js.undefined
-  /** Specifies the dash style of the series' line. */
+  /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.dashStyle */
   var dashStyle: js.UndefOr[dash | dot | longDash | solid] = js.undefined
-  /** Specifies the series elements to highlight when a series is hovered over. */
+  /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.hoverMode */
   var hoverMode: js.UndefOr[
     allArgumentPoints | allSeriesPoints | excludePoints | includePoints | nearestPoint | none | onlyPoint
   ] = js.undefined
-  /** An object defining configuration options for a hovered series. */
+  /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.hoverStyle */
   var hoverStyle: js.UndefOr[AnonBorderColor] = js.undefined
-  /** Specifies whether the series should ignore null data points. */
+  /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.ignoreEmptyPoints */
   var ignoreEmptyPoints: js.UndefOr[Boolean] = js.undefined
-  /** An object defining the label configuration options. */
+  /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.label */
   var label: js.UndefOr[dxPolarChartSeriesTypesCommonPolarChartSeriesLabel] = js.undefined
-  /** Specifies how many points are acceptable to be in a series to display all labels for these points. Otherwise, the labels will not be displayed. */
+  /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.maxLabelCount */
   var maxLabelCount: js.UndefOr[Double] = js.undefined
-  /** Specifies the minimal length of a displayed bar in pixels. */
+  /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.minBarSize */
   var minBarSize: js.UndefOr[Double] = js.undefined
-  /** Specifies opacity for a series. */
+  /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.opacity */
   var opacity: js.UndefOr[Double] = js.undefined
-  /** An object defining configuration options for points in line and area series. */
+  /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.point */
   var point: js.UndefOr[dxPolarChartSeriesTypesCommonPolarChartSeriesPoint] = js.undefined
-  /** Specifies the series elements to highlight when the series is selected. */
+  /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.selectionMode */
   var selectionMode: js.UndefOr[
     allArgumentPoints | allSeriesPoints | excludePoints | includePoints | none | onlyPoint
   ] = js.undefined
-  /** An object defining configuration options for a selected series. */
+  /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.selectionStyle */
   var selectionStyle: js.UndefOr[AnonBorderColor] = js.undefined
-  /** Specifies whether or not to show the series in the chart's legend. */
+  /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.showInLegend */
   var showInLegend: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the name of the stack where the values of the 'stackedBar' series must be located. */
+  /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.stack */
   var stack: js.UndefOr[String] = js.undefined
-  /** Specifies the name of the data source field that provides data about a point. */
+  /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.tagField */
   var tagField: js.UndefOr[String] = js.undefined
-  /** Configures error bars. */
+  /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.valueErrorBar */
   var valueErrorBar: js.UndefOr[AnonDisplayMode] = js.undefined
-  /** Specifies the data source field that provides values for series points. */
+  /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.valueField */
   var valueField: js.UndefOr[String] = js.undefined
-  /** Specifies the visibility of a series. */
+  /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.visible */
   var visible: js.UndefOr[Boolean] = js.undefined
-  /** Specifies a line width. */
+  /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.width */
   var width: js.UndefOr[Double] = js.undefined
 }
 

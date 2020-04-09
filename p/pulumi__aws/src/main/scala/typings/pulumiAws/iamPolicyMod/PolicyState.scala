@@ -30,7 +30,7 @@ trait PolicyState extends js.Object {
     */
   val path: js.UndefOr[Input[String]] = js.native
   /**
-    * The policy document.
+    * The policy document. This is a JSON formatted string.
     */
   val policy: js.UndefOr[Input[String | PolicyDocument]] = js.native
 }

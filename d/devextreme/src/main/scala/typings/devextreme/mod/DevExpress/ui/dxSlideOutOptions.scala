@@ -21,19 +21,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxSlideOutOptions extends CollectionWidgetOptions[dxSlideOut] {
-  /** Specifies a custom template for the widget content. Rendered only once - when the widget is created. */
+  /** @name dxSlideOut.Options.contentTemplate */
   var contentTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function1[/* container */ dxElement, String | Element | JQuery])
   ] = js.undefined
-  /** Binds the widget to data. */
+  /** @name dxSlideOut.Options.dataSource */
   @JSName("dataSource")
   var dataSource_dxSlideOutOptions: js.UndefOr[
     String | (js.Array[String | dxSlideOutItem | _]) | DataSource | DataSourceOptions
   ] = js.undefined
-  /** An array of items displayed by the widget. */
+  /** @name dxSlideOut.Options.items */
   @JSName("items")
   var items_dxSlideOutOptions: js.UndefOr[js.Array[String | dxSlideOutItem | _]] = js.undefined
-  /** Specifies a custom template for group captions. */
+  /** @name dxSlideOut.Options.menuGroupTemplate */
   var menuGroupTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function3[
       /* groupData */ js.Any, 
@@ -42,9 +42,9 @@ trait dxSlideOutOptions extends CollectionWidgetOptions[dxSlideOut] {
       String | Element | JQuery
     ])
   ] = js.undefined
-  /** A Boolean value specifying whether or not to display a grouped menu. */
+  /** @name dxSlideOut.Options.menuGrouped */
   var menuGrouped: js.UndefOr[Boolean] = js.undefined
-  /** Specifies a custom template for menu items. */
+  /** @name dxSlideOut.Options.menuItemTemplate */
   var menuItemTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function3[
       /* itemData */ js.Any, 
@@ -53,15 +53,15 @@ trait dxSlideOutOptions extends CollectionWidgetOptions[dxSlideOut] {
       String | Element | JQuery
     ])
   ] = js.undefined
-  /** Specifies the current menu position. */
+  /** @name dxSlideOut.Options.menuPosition */
   var menuPosition: js.UndefOr[inverted | normal] = js.undefined
-  /** Specifies whether or not the slide-out menu is displayed. */
+  /** @name dxSlideOut.Options.menuVisible */
   var menuVisible: js.UndefOr[Boolean] = js.undefined
-  /** A function that is executed when a group menu item is rendered. */
+  /** @name dxSlideOut.Options.onMenuGroupRendered */
   var onMenuGroupRendered: js.UndefOr[js.Function1[/* e */ AnonComponentDxSlideOut, _]] = js.undefined
-  /** A function that is executed when a regular menu item is rendered. */
+  /** @name dxSlideOut.Options.onMenuItemRendered */
   var onMenuItemRendered: js.UndefOr[js.Function1[/* e */ AnonComponentDxSlideOut, _]] = js.undefined
-  /** Indicates whether the menu can be shown/hidden by swiping the widget's main panel. */
+  /** @name dxSlideOut.Options.swipeEnabled */
   var swipeEnabled: js.UndefOr[Boolean] = js.undefined
 }
 

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait PipelineArgs extends js.Object {
   /**
-    * An artifactStore block. Artifact stores are documented below.
+    * One or more artifactStore blocks. Artifact stores are documented below.
     * * `stage` (Minimum of at least two `stage` blocks is required) A stage block. Stages are documented below.
     */
   val artifactStore: Input[PipelineArtifactStore] = js.native

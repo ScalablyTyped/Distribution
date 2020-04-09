@@ -14,21 +14,21 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Describes settings supported by a series of the spline area type. */
+/** @name dxChartSeriesTypes.SplineAreaSeries */
 trait dxChartSeriesTypesSplineAreaSeries extends dxChartSeriesTypesCommonSeries {
-  /** Configures data aggregation for the series. */
+  /** @name dxChartSeriesTypes.SplineAreaSeries.aggregation */
   @JSName("aggregation")
   var aggregation_dxChartSeriesTypesSplineAreaSeries: js.UndefOr[dxChartSeriesTypesSplineAreaSeriesAggregation] = js.undefined
-  /** Specifies series elements to be highlighted when a user points to a series. */
+  /** @name dxChartSeriesTypes.SplineAreaSeries.hoverMode */
   @JSName("hoverMode")
   var hoverMode_dxChartSeriesTypesSplineAreaSeries: js.UndefOr[nearestPoint | includePoints | excludePoints | none] = js.undefined
-  /** Configures point labels. */
+  /** @name dxChartSeriesTypes.SplineAreaSeries.label */
   @JSName("label")
   var label_dxChartSeriesTypesSplineAreaSeries: js.UndefOr[dxChartSeriesTypesSplineAreaSeriesLabel] = js.undefined
-  /** Configures series points in scatter, line- and area-like series. */
+  /** @name dxChartSeriesTypes.SplineAreaSeries.point */
   @JSName("point")
   var point_dxChartSeriesTypesSplineAreaSeries: js.UndefOr[dxChartSeriesTypesSplineAreaSeriesPoint] = js.undefined
-  /** Specifies series elements to be highlighted when a user selects a series. */
+  /** @name dxChartSeriesTypes.SplineAreaSeries.selectionMode */
   @JSName("selectionMode")
   var selectionMode_dxChartSeriesTypesSplineAreaSeries: js.UndefOr[includePoints | excludePoints | none] = js.undefined
 }

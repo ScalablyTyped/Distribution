@@ -6,8 +6,17 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ApplicationSslConfiguration extends js.Object {
+  /**
+    * The contents of the certificate's domain.crt file.
+    */
   var certificate: String = js.native
+  /**
+    * Can be used to specify an intermediate certificate authority key or client authentication.
+    */
   var chain: js.UndefOr[String] = js.native
+  /**
+    * The private key; the contents of the certificate's domain.key file.
+    */
   var privateKey: String = js.native
 }
 

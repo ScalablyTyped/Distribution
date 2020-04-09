@@ -1,6 +1,7 @@
 package typings.firebase.mod.analytics
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.firebase.AnonAffiliation
 import typings.firebase.AnonAppid
 import typings.firebase.AnonCheckoutoption
 import typings.firebase.AnonCheckoutstep
@@ -10,15 +11,17 @@ import typings.firebase.AnonCoupon
 import typings.firebase.AnonCurrency
 import typings.firebase.AnonDescription
 import typings.firebase.AnonDictkey
-import typings.firebase.AnonDictkeyItems
 import typings.firebase.AnonEventcategory
+import typings.firebase.AnonItemlistid
 import typings.firebase.AnonItems
 import typings.firebase.AnonMethod
 import typings.firebase.AnonPagelocation
-import typings.firebase.AnonPromotions
+import typings.firebase.AnonPromotionid
 import typings.firebase.AnonSearchterm
-import typings.firebase.AnonShipping
+import typings.firebase.AnonTransactionid
+import typings.firebase.AnonValue
 import typings.firebase.firebaseStrings.add_payment_info
+import typings.firebase.firebaseStrings.add_shipping_info
 import typings.firebase.firebaseStrings.add_to_cart
 import typings.firebase.firebaseStrings.add_to_wishlist
 import typings.firebase.firebaseStrings.begin_checkout
@@ -33,10 +36,13 @@ import typings.firebase.firebaseStrings.remove_from_cart
 import typings.firebase.firebaseStrings.screen_view
 import typings.firebase.firebaseStrings.search
 import typings.firebase.firebaseStrings.select_content
+import typings.firebase.firebaseStrings.select_item
+import typings.firebase.firebaseStrings.select_promotion
 import typings.firebase.firebaseStrings.set_checkout_option
 import typings.firebase.firebaseStrings.share
 import typings.firebase.firebaseStrings.sign_up
 import typings.firebase.firebaseStrings.timing_complete
+import typings.firebase.firebaseStrings.view_cart
 import typings.firebase.firebaseStrings.view_item
 import typings.firebase.firebaseStrings.view_item_list
 import typings.firebase.firebaseStrings.view_promotion
@@ -62,7 +68,7 @@ trait Analytics extends js.Object {
     * Sends analytics event with given `eventParams`. This method
     * automatically associates this logged event with this Firebase web
     * app instance on this device.
-    * List of official event parameters can be found in
+    * List of recommended event parameters can be found in
     * {@link https://developers.google.com/gtagjs/reference/event
     * the gtag.js reference documentation}.
     */
@@ -77,49 +83,61 @@ trait Analytics extends js.Object {
     * Sends analytics event with given `eventParams`. This method
     * automatically associates this logged event with this Firebase web
     * app instance on this device.
-    * List of official event parameters can be found in
+    * List of recommended event parameters can be found in
     * {@link https://developers.google.com/gtagjs/reference/event
     * the gtag.js reference documentation}.
     */
   @JSName("logEvent")
   def logEvent_addpaymentinfo(eventName: add_payment_info): Unit = js.native
   @JSName("logEvent")
-  def logEvent_addpaymentinfo(eventName: add_payment_info, eventParams: StringDictionary[js.Any]): Unit = js.native
+  def logEvent_addpaymentinfo(eventName: add_payment_info, eventParams: AnonDictkey): Unit = js.native
   @JSName("logEvent")
-  def logEvent_addpaymentinfo(eventName: add_payment_info, eventParams: StringDictionary[js.Any], options: AnalyticsCallOptions): Unit = js.native
+  def logEvent_addpaymentinfo(eventName: add_payment_info, eventParams: AnonDictkey, options: AnalyticsCallOptions): Unit = js.native
   /**
     * Sends analytics event with given `eventParams`. This method
     * automatically associates this logged event with this Firebase web
     * app instance on this device.
-    * List of official event parameters can be found in
+    * List of recommended event parameters can be found in
     * {@link https://developers.google.com/gtagjs/reference/event
     * the gtag.js reference documentation}.
     */
   @JSName("logEvent")
-  def logEvent_addtocart(eventName: add_to_cart, eventParams: AnonDictkey): Unit = js.native
+  def logEvent_addshippinginfo(eventName: add_shipping_info, eventParams: AnonCoupon): Unit = js.native
   @JSName("logEvent")
-  def logEvent_addtocart(eventName: add_to_cart, eventParams: AnonDictkey, options: AnalyticsCallOptions): Unit = js.native
-  @JSName("logEvent")
-  def logEvent_addtowishlist(eventName: add_to_wishlist, eventParams: AnonDictkey): Unit = js.native
-  @JSName("logEvent")
-  def logEvent_addtowishlist(eventName: add_to_wishlist, eventParams: AnonDictkey, options: AnalyticsCallOptions): Unit = js.native
+  def logEvent_addshippinginfo(eventName: add_shipping_info, eventParams: AnonCoupon, options: AnalyticsCallOptions): Unit = js.native
   /**
     * Sends analytics event with given `eventParams`. This method
     * automatically associates this logged event with this Firebase web
     * app instance on this device.
-    * List of official event parameters can be found in
+    * List of recommended event parameters can be found in
     * {@link https://developers.google.com/gtagjs/reference/event
     * the gtag.js reference documentation}.
     */
   @JSName("logEvent")
-  def logEvent_begincheckout(eventName: begin_checkout, eventParams: AnonCoupon): Unit = js.native
+  def logEvent_addtocart(eventName: add_to_cart, eventParams: AnonCurrency): Unit = js.native
   @JSName("logEvent")
-  def logEvent_begincheckout(eventName: begin_checkout, eventParams: AnonCoupon, options: AnalyticsCallOptions): Unit = js.native
+  def logEvent_addtocart(eventName: add_to_cart, eventParams: AnonCurrency, options: AnalyticsCallOptions): Unit = js.native
+  @JSName("logEvent")
+  def logEvent_addtowishlist(eventName: add_to_wishlist, eventParams: AnonCurrency): Unit = js.native
+  @JSName("logEvent")
+  def logEvent_addtowishlist(eventName: add_to_wishlist, eventParams: AnonCurrency, options: AnalyticsCallOptions): Unit = js.native
   /**
     * Sends analytics event with given `eventParams`. This method
     * automatically associates this logged event with this Firebase web
     * app instance on this device.
-    * List of official event parameters can be found in
+    * List of recommended event parameters can be found in
+    * {@link https://developers.google.com/gtagjs/reference/event
+    * the gtag.js reference documentation}.
+    */
+  @JSName("logEvent")
+  def logEvent_begincheckout(eventName: begin_checkout, eventParams: AnonItems): Unit = js.native
+  @JSName("logEvent")
+  def logEvent_begincheckout(eventName: begin_checkout, eventParams: AnonItems, options: AnalyticsCallOptions): Unit = js.native
+  /**
+    * Sends analytics event with given `eventParams`. This method
+    * automatically associates this logged event with this Firebase web
+    * app instance on this device.
+    * List of recommended event parameters can be found in
     * {@link https://developers.google.com/gtagjs/reference/event
     * the gtag.js reference documentation}.
     */
@@ -131,7 +149,7 @@ trait Analytics extends js.Object {
     * Sends analytics event with given `eventParams`. This method
     * automatically associates this logged event with this Firebase web
     * app instance on this device.
-    * List of official event parameters can be found in
+    * List of recommended event parameters can be found in
     * {@link https://developers.google.com/gtagjs/reference/event
     * the gtag.js reference documentation}.
     */
@@ -143,19 +161,19 @@ trait Analytics extends js.Object {
     * Sends analytics event with given `eventParams`. This method
     * automatically associates this logged event with this Firebase web
     * app instance on this device.
-    * List of official event parameters can be found in
+    * List of recommended event parameters can be found in
     * {@link https://developers.google.com/gtagjs/reference/event
     * the gtag.js reference documentation}.
     */
   @JSName("logEvent")
-  def logEvent_generatelead(eventName: generate_lead, eventParams: AnonCurrency): Unit = js.native
+  def logEvent_generatelead(eventName: generate_lead, eventParams: AnonTransactionid): Unit = js.native
   @JSName("logEvent")
-  def logEvent_generatelead(eventName: generate_lead, eventParams: AnonCurrency, options: AnalyticsCallOptions): Unit = js.native
+  def logEvent_generatelead(eventName: generate_lead, eventParams: AnonTransactionid, options: AnalyticsCallOptions): Unit = js.native
   /**
     * Sends analytics event with given `eventParams`. This method
     * automatically associates this logged event with this Firebase web
     * app instance on this device.
-    * List of official event parameters can be found in
+    * List of recommended event parameters can be found in
     * {@link https://developers.google.com/gtagjs/reference/event
     * the gtag.js reference documentation}.
     */
@@ -167,7 +185,7 @@ trait Analytics extends js.Object {
     * Sends analytics event with given `eventParams`. This method
     * automatically associates this logged event with this Firebase web
     * app instance on this device.
-    * List of official event parameters can be found in
+    * List of recommended event parameters can be found in
     * {@link https://developers.google.com/gtagjs/reference/event
     * the gtag.js reference documentation}.
     */
@@ -179,35 +197,27 @@ trait Analytics extends js.Object {
     * Sends analytics event with given `eventParams`. This method
     * automatically associates this logged event with this Firebase web
     * app instance on this device.
-    * List of official event parameters can be found in
+    * List of recommended event parameters can be found in
     * {@link https://developers.google.com/gtagjs/reference/event
     * the gtag.js reference documentation}.
     */
   @JSName("logEvent")
-  def logEvent_purchase(eventName: purchase, eventParams: AnonItems): Unit = js.native
+  def logEvent_purchase(eventName: purchase, eventParams: AnonAffiliation): Unit = js.native
   @JSName("logEvent")
-  def logEvent_purchase(eventName: purchase, eventParams: AnonItems, options: AnalyticsCallOptions): Unit = js.native
+  def logEvent_purchase(eventName: purchase, eventParams: AnonAffiliation, options: AnalyticsCallOptions): Unit = js.native
+  @JSName("logEvent")
+  def logEvent_refund(eventName: refund, eventParams: AnonAffiliation): Unit = js.native
+  @JSName("logEvent")
+  def logEvent_refund(eventName: refund, eventParams: AnonAffiliation, options: AnalyticsCallOptions): Unit = js.native
+  @JSName("logEvent")
+  def logEvent_removefromcart(eventName: remove_from_cart, eventParams: AnonCurrency): Unit = js.native
+  @JSName("logEvent")
+  def logEvent_removefromcart(eventName: remove_from_cart, eventParams: AnonCurrency, options: AnalyticsCallOptions): Unit = js.native
   /**
     * Sends analytics event with given `eventParams`. This method
     * automatically associates this logged event with this Firebase web
     * app instance on this device.
-    * List of official event parameters can be found in
-    * {@link https://developers.google.com/gtagjs/reference/event
-    * the gtag.js reference documentation}.
-    */
-  @JSName("logEvent")
-  def logEvent_refund(eventName: refund, eventParams: AnonShipping): Unit = js.native
-  @JSName("logEvent")
-  def logEvent_refund(eventName: refund, eventParams: AnonShipping, options: AnalyticsCallOptions): Unit = js.native
-  @JSName("logEvent")
-  def logEvent_removefromcart(eventName: remove_from_cart, eventParams: AnonDictkey): Unit = js.native
-  @JSName("logEvent")
-  def logEvent_removefromcart(eventName: remove_from_cart, eventParams: AnonDictkey, options: AnalyticsCallOptions): Unit = js.native
-  /**
-    * Sends analytics event with given `eventParams`. This method
-    * automatically associates this logged event with this Firebase web
-    * app instance on this device.
-    * List of official event parameters can be found in
+    * List of recommended event parameters can be found in
     * {@link https://developers.google.com/gtagjs/reference/event
     * the gtag.js reference documentation}.
     */
@@ -219,7 +229,7 @@ trait Analytics extends js.Object {
     * Sends analytics event with given `eventParams`. This method
     * automatically associates this logged event with this Firebase web
     * app instance on this device.
-    * List of official event parameters can be found in
+    * List of recommended event parameters can be found in
     * {@link https://developers.google.com/gtagjs/reference/event
     * the gtag.js reference documentation}.
     */
@@ -231,7 +241,7 @@ trait Analytics extends js.Object {
     * Sends analytics event with given `eventParams`. This method
     * automatically associates this logged event with this Firebase web
     * app instance on this device.
-    * List of official event parameters can be found in
+    * List of recommended event parameters can be found in
     * {@link https://developers.google.com/gtagjs/reference/event
     * the gtag.js reference documentation}.
     */
@@ -243,7 +253,31 @@ trait Analytics extends js.Object {
     * Sends analytics event with given `eventParams`. This method
     * automatically associates this logged event with this Firebase web
     * app instance on this device.
-    * List of official event parameters can be found in
+    * List of recommended event parameters can be found in
+    * {@link https://developers.google.com/gtagjs/reference/event
+    * the gtag.js reference documentation}.
+    */
+  @JSName("logEvent")
+  def logEvent_selectitem(eventName: select_item, eventParams: AnonItemlistid): Unit = js.native
+  @JSName("logEvent")
+  def logEvent_selectitem(eventName: select_item, eventParams: AnonItemlistid, options: AnalyticsCallOptions): Unit = js.native
+  /**
+    * Sends analytics event with given `eventParams`. This method
+    * automatically associates this logged event with this Firebase web
+    * app instance on this device.
+    * List of recommended event parameters can be found in
+    * {@link https://developers.google.com/gtagjs/reference/event
+    * the gtag.js reference documentation}.
+    */
+  @JSName("logEvent")
+  def logEvent_selectpromotion(eventName: select_promotion, eventParams: AnonPromotionid): Unit = js.native
+  @JSName("logEvent")
+  def logEvent_selectpromotion(eventName: select_promotion, eventParams: AnonPromotionid, options: AnalyticsCallOptions): Unit = js.native
+  /**
+    * Sends analytics event with given `eventParams`. This method
+    * automatically associates this logged event with this Firebase web
+    * app instance on this device.
+    * List of recommended event parameters can be found in
     * {@link https://developers.google.com/gtagjs/reference/event
     * the gtag.js reference documentation}.
     */
@@ -255,7 +289,7 @@ trait Analytics extends js.Object {
     * Sends analytics event with given `eventParams`. This method
     * automatically associates this logged event with this Firebase web
     * app instance on this device.
-    * List of official event parameters can be found in
+    * List of recommended event parameters can be found in
     * {@link https://developers.google.com/gtagjs/reference/event
     * the gtag.js reference documentation}.
     */
@@ -267,7 +301,7 @@ trait Analytics extends js.Object {
     * Sends analytics event with given `eventParams`. This method
     * automatically associates this logged event with this Firebase web
     * app instance on this device.
-    * List of official event parameters can be found in
+    * List of recommended event parameters can be found in
     * {@link https://developers.google.com/gtagjs/reference/event
     * the gtag.js reference documentation}.
     */
@@ -279,7 +313,7 @@ trait Analytics extends js.Object {
     * Sends analytics event with given `eventParams`. This method
     * automatically associates this logged event with this Firebase web
     * app instance on this device.
-    * List of official event parameters can be found in
+    * List of recommended event parameters can be found in
     * {@link https://developers.google.com/gtagjs/reference/event
     * the gtag.js reference documentation}.
     */
@@ -291,30 +325,34 @@ trait Analytics extends js.Object {
     * Sends analytics event with given `eventParams`. This method
     * automatically associates this logged event with this Firebase web
     * app instance on this device.
-    * List of official event parameters can be found in
+    * List of recommended event parameters can be found in
     * {@link https://developers.google.com/gtagjs/reference/event
     * the gtag.js reference documentation}.
     */
   @JSName("logEvent")
-  def logEvent_viewitem(eventName: view_item, eventParams: AnonDictkeyItems): Unit = js.native
+  def logEvent_viewcart(eventName: view_cart, eventParams: AnonValue): Unit = js.native
   @JSName("logEvent")
-  def logEvent_viewitem(eventName: view_item, eventParams: AnonDictkeyItems, options: AnalyticsCallOptions): Unit = js.native
+  def logEvent_viewcart(eventName: view_cart, eventParams: AnonValue, options: AnalyticsCallOptions): Unit = js.native
   @JSName("logEvent")
-  def logEvent_viewitemlist(eventName: view_item_list, eventParams: AnonDictkeyItems): Unit = js.native
+  def logEvent_viewitem(eventName: view_item, eventParams: AnonValue): Unit = js.native
   @JSName("logEvent")
-  def logEvent_viewitemlist(eventName: view_item_list, eventParams: AnonDictkeyItems, options: AnalyticsCallOptions): Unit = js.native
+  def logEvent_viewitem(eventName: view_item, eventParams: AnonValue, options: AnalyticsCallOptions): Unit = js.native
   /**
     * Sends analytics event with given `eventParams`. This method
     * automatically associates this logged event with this Firebase web
     * app instance on this device.
-    * List of official event parameters can be found in
+    * List of recommended event parameters can be found in
     * {@link https://developers.google.com/gtagjs/reference/event
     * the gtag.js reference documentation}.
     */
   @JSName("logEvent")
-  def logEvent_viewpromotion(eventName: view_promotion, eventParams: AnonPromotions): Unit = js.native
+  def logEvent_viewitemlist(eventName: view_item_list, eventParams: AnonItemlistid): Unit = js.native
   @JSName("logEvent")
-  def logEvent_viewpromotion(eventName: view_promotion, eventParams: AnonPromotions, options: AnalyticsCallOptions): Unit = js.native
+  def logEvent_viewitemlist(eventName: view_item_list, eventParams: AnonItemlistid, options: AnalyticsCallOptions): Unit = js.native
+  @JSName("logEvent")
+  def logEvent_viewpromotion(eventName: view_promotion, eventParams: AnonPromotionid): Unit = js.native
+  @JSName("logEvent")
+  def logEvent_viewpromotion(eventName: view_promotion, eventParams: AnonPromotionid, options: AnalyticsCallOptions): Unit = js.native
   @JSName("logEvent")
   def logEvent_viewsearchresults(eventName: view_search_results, eventParams: AnonSearchterm): Unit = js.native
   @JSName("logEvent")

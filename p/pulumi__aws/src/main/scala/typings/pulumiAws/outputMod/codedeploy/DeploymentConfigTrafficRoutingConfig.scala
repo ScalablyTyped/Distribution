@@ -6,8 +6,17 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait DeploymentConfigTrafficRoutingConfig extends js.Object {
+  /**
+    * The time based canary configuration information. If `type` is `TimeBasedLinear`, use `timeBasedLinear` instead.
+    */
   var timeBasedCanary: js.UndefOr[DeploymentConfigTrafficRoutingConfigTimeBasedCanary] = js.native
+  /**
+    * The time based linear configuration information. If `type` is `TimeBasedCanary`, use `timeBasedCanary` instead.
+    */
   var timeBasedLinear: js.UndefOr[DeploymentConfigTrafficRoutingConfigTimeBasedLinear] = js.native
+  /**
+    * Type of traffic routing config. One of `TimeBasedCanary`, `TimeBasedLinear`, `AllAtOnce`.
+    */
   var `type`: js.UndefOr[String] = js.native
 }
 

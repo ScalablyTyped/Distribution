@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@carbon/pictograms-react", "RichTextFormat")
 @js.native
-object RichTextFormat extends TopLevel[CarbonPictogram]
+object RichTextFormat extends TopLevel[CarbonPictogramType]
 

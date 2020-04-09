@@ -26,6 +26,9 @@ class ComputeEnvironment protected () extends CustomResource {
     * The Amazon Resource Name (ARN) of the compute environment.
     */
   val arn: Output_[String] = js.native
+  /**
+    * The name for your compute environment. Up to 128 letters (uppercase and lowercase), numbers, and underscores are allowed. If omitted, this provider will assign a random, unique name.
+    */
   val computeEnvironmentName: Output_[String] = js.native
   /**
     * Creates a unique compute environment name beginning with the specified prefix. Conflicts with `computeEnvironmentName`.

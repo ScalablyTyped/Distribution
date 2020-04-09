@@ -12,9 +12,9 @@ import scala.scalajs.js.annotation._
 @JSImport("rdf-ext/lib/PrefixMap", JSImport.Namespace)
 @js.native
 class ^ protected () extends PrefixMap {
-  def this(factory: DataFactory[Quad], prefixes: Prefixes) = this()
+  def this(factory: DataFactory[Quad, Quad], prefixes: Prefixes) = this()
   /* CompleteClass */
-  override var factory: DataFactory[Quad] = js.native
+  override var factory: DataFactory[Quad, Quad] = js.native
   /* CompleteClass */
   override var map: Record[String, NamedNode] = js.native
   /* CompleteClass */

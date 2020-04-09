@@ -45,6 +45,7 @@ import typings.antd.antdStrings.tree
 import typings.antd.antdStrings.url
 import typings.antd.antdStrings.vertical
 import typings.antd.antdStrings.yes
+import typings.antd.tabsMod.TabsProps
 import typings.react.AnonHtml
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
@@ -65,6 +66,7 @@ import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
@@ -269,6 +271,7 @@ trait CardProps extends js.Object {
   var tabBarExtraContent: js.UndefOr[ReactNode | Null] = js.undefined
   var tabIndex: js.UndefOr[Double] = js.undefined
   var tabList: js.UndefOr[js.Array[CardTabListType]] = js.undefined
+  var tabProps: js.UndefOr[TabsProps] = js.undefined
   var title: js.UndefOr[ReactNode] = js.undefined
   var translate: js.UndefOr[yes | no] = js.undefined
   var `type`: js.UndefOr[CardType] = js.undefined
@@ -428,7 +431,7 @@ object CardProps {
     onProgress: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onRateChange: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onReset: FormEvent[HTMLDivElement] => Unit = null,
-    onScroll: UIEvent[HTMLDivElement] => Unit = null,
+    onScroll: UIEvent[HTMLDivElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
@@ -463,6 +466,7 @@ object CardProps {
     tabBarExtraContent: ReactNode = null,
     tabIndex: Int | Double = null,
     tabList: js.Array[CardTabListType] = null,
+    tabProps: TabsProps = null,
     title: ReactNode = null,
     translate: yes | no = null,
     `type`: CardType = null,
@@ -654,6 +658,7 @@ object CardProps {
     if (tabBarExtraContent != null) __obj.updateDynamic("tabBarExtraContent")(tabBarExtraContent.asInstanceOf[js.Any])
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
     if (tabList != null) __obj.updateDynamic("tabList")(tabList.asInstanceOf[js.Any])
+    if (tabProps != null) __obj.updateDynamic("tabProps")(tabProps.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (translate != null) __obj.updateDynamic("translate")(translate.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

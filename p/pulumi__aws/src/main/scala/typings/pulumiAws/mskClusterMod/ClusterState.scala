@@ -5,6 +5,7 @@ import typings.pulumiAws.inputMod.msk.ClusterBrokerNodeGroupInfo
 import typings.pulumiAws.inputMod.msk.ClusterClientAuthentication
 import typings.pulumiAws.inputMod.msk.ClusterConfigurationInfo
 import typings.pulumiAws.inputMod.msk.ClusterEncryptionInfo
+import typings.pulumiAws.inputMod.msk.ClusterLoggingInfo
 import typings.pulumiAws.inputMod.msk.ClusterOpenMonitoring
 import typings.pulumiPulumi.outputMod.Input
 import scala.scalajs.js
@@ -59,6 +60,10 @@ trait ClusterState extends js.Object {
     */
   val kafkaVersion: js.UndefOr[Input[String]] = js.native
   /**
+    * Configuration block for streaming broker logs to Cloudwatch/S3/Kinesis Firehose. See below.
+    */
+  val loggingInfo: js.UndefOr[Input[ClusterLoggingInfo]] = js.native
+  /**
     * The desired total number of broker nodes in the kafka cluster.  It must be a multiple of the number of specified client subnets.
     */
   val numberOfBrokerNodes: js.UndefOr[Input[Double]] = js.native
@@ -90,6 +95,7 @@ object ClusterState {
     encryptionInfo: Input[ClusterEncryptionInfo] = null,
     enhancedMonitoring: Input[String] = null,
     kafkaVersion: Input[String] = null,
+    loggingInfo: Input[ClusterLoggingInfo] = null,
     numberOfBrokerNodes: Input[Double] = null,
     openMonitoring: Input[ClusterOpenMonitoring] = null,
     tags: Input[StringDictionary[_]] = null,
@@ -107,6 +113,7 @@ object ClusterState {
     if (encryptionInfo != null) __obj.updateDynamic("encryptionInfo")(encryptionInfo.asInstanceOf[js.Any])
     if (enhancedMonitoring != null) __obj.updateDynamic("enhancedMonitoring")(enhancedMonitoring.asInstanceOf[js.Any])
     if (kafkaVersion != null) __obj.updateDynamic("kafkaVersion")(kafkaVersion.asInstanceOf[js.Any])
+    if (loggingInfo != null) __obj.updateDynamic("loggingInfo")(loggingInfo.asInstanceOf[js.Any])
     if (numberOfBrokerNodes != null) __obj.updateDynamic("numberOfBrokerNodes")(numberOfBrokerNodes.asInstanceOf[js.Any])
     if (openMonitoring != null) __obj.updateDynamic("openMonitoring")(openMonitoring.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])

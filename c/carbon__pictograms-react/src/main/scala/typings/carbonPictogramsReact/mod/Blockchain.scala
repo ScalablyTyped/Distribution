@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@carbon/pictograms-react", "Blockchain")
 @js.native
-object Blockchain extends TopLevel[CarbonPictogram]
+object Blockchain extends TopLevel[CarbonPictogramType]
 

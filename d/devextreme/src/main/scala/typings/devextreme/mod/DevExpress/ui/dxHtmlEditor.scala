@@ -22,56 +22,56 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait dxHtmlEditor extends Editor {
-  /** Clears the history of changes. */
+  /** @name dxHtmlEditor.clearHistory() */
   def clearHistory(): Unit = js.native
-  /** Deletes content from the given range. */
+  /** @name dxHtmlEditor.delete(index, length) */
   def delete(index: Double, length: Double): Unit = js.native
-  /** Applies a format to the selected content. Cannot be used with embedded formats. */
+  /** @name dxHtmlEditor.format(formatName, formatValue) */
   def format(
     formatName: background | bold | color | font | italic | link | size | strike | script | underline | blockquote | header | indent | list | align | `code-block` | String,
     formatValue: js.Any
   ): Unit = js.native
-  /** Applies a single block format to all lines in the given range. */
+  /** @name dxHtmlEditor.formatLine(index, length, formatName, formatValue) */
   def formatLine(
     index: Double,
     length: Double,
     formatName: background | bold | color | font | italic | link | size | strike | script | underline | blockquote | header | indent | list | align | `code-block` | String,
     formatValue: js.Any
   ): Unit = js.native
-  /** Applies several block formats to all lines in the given range. */
+  /** @name dxHtmlEditor.formatLine(index, length, formats) */
   def formatLine(index: Double, length: Double, formats: js.Any): Unit = js.native
-  /** Applies a single text format to all characters in the given range. */
+  /** @name dxHtmlEditor.formatText(index, length, formatName, formatValue) */
   def formatText(
     index: Double,
     length: Double,
     formatName: background | bold | color | font | italic | link | size | strike | script | underline | blockquote | header | indent | list | align | `code-block` | String,
     formatValue: js.Any
   ): Unit = js.native
-  /** Applies several text formats to all characters in the given range. */
+  /** @name dxHtmlEditor.formatText(index, length, formats) */
   def formatText(index: Double, length: Double, formats: js.Any): Unit = js.native
-  /** Gets a format, module, or Parchment. */
+  /** @name dxHtmlEditor.get(componentPath) */
   def get(componentPath: String): js.Any = js.native
-  /** Gets formats applied to the content in the specified range. */
+  /** @name dxHtmlEditor.getFormat(index, length) */
   def getFormat(index: Double, length: Double): js.Any = js.native
-  /** Gets the entire content's length. */
+  /** @name dxHtmlEditor.getLength() */
   def getLength(): Double = js.native
-  /** Gets Quill's instance. */
+  /** @name dxHtmlEditor.getQuillInstance() */
   def getQuillInstance(): js.Any = js.native
-  /** Gets the selected content's position and length. */
+  /** @name dxHtmlEditor.getSelection() */
   def getSelection(): js.Any = js.native
-  /** Inserts an embedded content at the specified position. */
+  /** @name dxHtmlEditor.insertEmbed(index, type, config) */
   def insertEmbed(index: Double, `type`: String, config: js.Any): Unit = js.native
-  /** Inserts formatted text at the specified position. Used with all formats except embedded. */
+  /** @name dxHtmlEditor.insertText(index, text, formats) */
   def insertText(index: Double, text: String, formats: js.Any): Unit = js.native
-  /** Reapplies the most recent undone change. Repeated calls reapply preceding undone changes. */
+  /** @name dxHtmlEditor.redo() */
   def redo(): Unit = js.native
-  /** Registers custom formats and modules. */
+  /** @name dxHtmlEditor.register(components) */
   def register(modules: js.Any): Unit = js.native
-  /** Removes all formatting and embedded content from the specified range. */
+  /** @name dxHtmlEditor.removeFormat(index, length) */
   def removeFormat(index: Double, length: Double): Unit = js.native
-  /** Selects and highlights content in the specified range. */
+  /** @name dxHtmlEditor.setSelection(index, length) */
   def setSelection(index: Double, length: Double): Unit = js.native
-  /** Reverses the most recent change. Repeated calls reverse preceding changes. */
+  /** @name dxHtmlEditor.undo() */
   def undo(): Unit = js.native
 }
 

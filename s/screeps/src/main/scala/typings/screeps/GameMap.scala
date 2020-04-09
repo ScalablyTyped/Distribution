@@ -59,6 +59,12 @@ trait GameMap extends js.Object {
   def getRoomLinearDistance(roomName1: String, roomName2: String): Double = js.native
   def getRoomLinearDistance(roomName1: String, roomName2: String, continuous: Boolean): Double = js.native
   /**
+    * Get the room status to determine if it's available, or in a reserved area.
+    * @param roomName The room name.
+    * @returns An object with the following properties {status: "normal" | "closed" | "novice" | "respawn", timestamp: number}
+    */
+  def getRoomStatus(roomName: String): RoomStatus = js.native
+  /**
     * Get room terrain for the specified room. This method works for any room in the world even if you have no access to it.
     * @param roomName String name of the room.
     */
@@ -66,6 +72,7 @@ trait GameMap extends js.Object {
   /**
     * Get terrain type at the specified room position. This method works for any room in the world even if you have no access to it.
     * @param pos The position object.
+    * @deprecated use `Game.map.getRoomTerrain` instead
     */
   def getTerrainAt(pos: RoomPosition): Terrain = js.native
   /**
@@ -73,6 +80,7 @@ trait GameMap extends js.Object {
     * @param x X position in the room.
     * @param y Y position in the room.
     * @param roomName The room name.
+    * @deprecated use `Game.map.getRoomTerrain` instead
     */
   def getTerrainAt(x: Double, y: Double, roomName: String): Terrain = js.native
   /**
@@ -83,6 +91,7 @@ trait GameMap extends js.Object {
     * Check if the room is available to move into.
     * @param roomName The room name.
     * @returns A boolean value.
+    * @deprecated Use `Game.map.getRoomStatus` instead
     */
   def isRoomAvailable(roomName: String): Boolean = js.native
 }

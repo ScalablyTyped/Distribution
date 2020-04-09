@@ -49,20 +49,6 @@ trait KeycloakInitOptions extends js.Object {
   		 */
   var pkceMethod: js.UndefOr[KeycloakPkceMethod] = js.undefined
   /**
-  		 * Set the promise type. If set to `native` all methods returning a promise
-  		 * will return a native JavaScript promise. If not not specified then
-  		 * Keycloak specific legacy promise objects will be returned instead.
-  		 *
-  		 * Since native promises have become the industry standard it is highly
-  		 * recommended that you always specify `native` as the promise type.
-  		 *
-  		 * Note that in upcoming versions of Keycloak the default will be changed
-  		 * to `native`, and support for legacy promises will eventually be removed.
-  		 *
-  		 * @default legacy
-  		 */
-  var promiseType: js.UndefOr[KeycloakPromiseType] = js.undefined
-  /**
   		 * Specifies a default uri to redirect to after login or logout.
   		 * This is currently supported for adapter 'cordova-native' and 'default'
   		 */
@@ -113,7 +99,6 @@ object KeycloakInitOptions {
     idToken: String = null,
     onLoad: KeycloakOnLoad = null,
     pkceMethod: KeycloakPkceMethod = null,
-    promiseType: KeycloakPromiseType = null,
     redirectUri: String = null,
     refreshToken: String = null,
     responseMode: KeycloakResponseMode = null,
@@ -131,7 +116,6 @@ object KeycloakInitOptions {
     if (idToken != null) __obj.updateDynamic("idToken")(idToken.asInstanceOf[js.Any])
     if (onLoad != null) __obj.updateDynamic("onLoad")(onLoad.asInstanceOf[js.Any])
     if (pkceMethod != null) __obj.updateDynamic("pkceMethod")(pkceMethod.asInstanceOf[js.Any])
-    if (promiseType != null) __obj.updateDynamic("promiseType")(promiseType.asInstanceOf[js.Any])
     if (redirectUri != null) __obj.updateDynamic("redirectUri")(redirectUri.asInstanceOf[js.Any])
     if (refreshToken != null) __obj.updateDynamic("refreshToken")(refreshToken.asInstanceOf[js.Any])
     if (responseMode != null) __obj.updateDynamic("responseMode")(responseMode.asInstanceOf[js.Any])

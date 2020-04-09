@@ -1,6 +1,6 @@
 package typings.angularCompiler.templateAstMod
 
-import typings.angularCompiler.astMod.AST
+import typings.angularCompiler.astMod.ASTWithSource
 import typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler/src/template_parser/template_ast", "BoundDirectivePropertyAst")
 @js.native
 class BoundDirectivePropertyAst protected () extends TemplateAst {
-  def this(directiveName: String, templateName: String, value: AST, sourceSpan: ParseSourceSpan) = this()
+  def this(directiveName: String, templateName: String, value: ASTWithSource, sourceSpan: ParseSourceSpan) = this()
   var directiveName: String = js.native
   /**
     * The source span from which this node was parsed.
@@ -17,7 +17,7 @@ class BoundDirectivePropertyAst protected () extends TemplateAst {
   /* CompleteClass */
   override var sourceSpan: ParseSourceSpan = js.native
   var templateName: String = js.native
-  var value: AST = js.native
+  var value: ASTWithSource = js.native
   /**
     * Visit this node and possibly transform it.
     */

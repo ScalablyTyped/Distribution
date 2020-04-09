@@ -7,7 +7,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxMenuItem extends dxMenuBaseItem {
-  /** Specifies nested menu items. */
+  /** @name dxMenuItem.items */
   @JSName("items")
   var items_dxMenuItem: js.UndefOr[js.Array[dxMenuItem]] = js.undefined
 }

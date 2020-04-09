@@ -7,9 +7,13 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UpdateSecurityProfileRequest extends js.Object {
   /**
-    * A list of metrics whose data is retained (stored). By default, data is retained for any metric used in the profile's behaviors, but it is also retained for any metric specified here.
+    * A list of metrics whose data is retained (stored). By default, data is retained for any metric used in the profile's behaviors, but it is also retained for any metric specified here.  Note: This API field is deprecated. Please use UpdateSecurityProfileRequest$additionalMetricsToRetainV2 instead.
     */
   var additionalMetricsToRetain: js.UndefOr[AdditionalMetricsToRetainList] = js.native
+  /**
+    * A list of metrics whose data is retained (stored). By default, data is retained for any metric used in the profile's behaviors, but it is also retained for any metric specified here.
+    */
+  var additionalMetricsToRetainV2: js.UndefOr[AdditionalMetricsToRetainV2List] = js.native
   /**
     * Where the alerts are sent. (Alerts are always sent to the console.)
     */
@@ -49,6 +53,7 @@ object UpdateSecurityProfileRequest {
   def apply(
     securityProfileName: SecurityProfileName,
     additionalMetricsToRetain: AdditionalMetricsToRetainList = null,
+    additionalMetricsToRetainV2: AdditionalMetricsToRetainV2List = null,
     alertTargets: AlertTargets = null,
     behaviors: Behaviors = null,
     deleteAdditionalMetricsToRetain: js.UndefOr[scala.Boolean] = js.undefined,
@@ -59,6 +64,7 @@ object UpdateSecurityProfileRequest {
   ): UpdateSecurityProfileRequest = {
     val __obj = js.Dynamic.literal(securityProfileName = securityProfileName.asInstanceOf[js.Any])
     if (additionalMetricsToRetain != null) __obj.updateDynamic("additionalMetricsToRetain")(additionalMetricsToRetain.asInstanceOf[js.Any])
+    if (additionalMetricsToRetainV2 != null) __obj.updateDynamic("additionalMetricsToRetainV2")(additionalMetricsToRetainV2.asInstanceOf[js.Any])
     if (alertTargets != null) __obj.updateDynamic("alertTargets")(alertTargets.asInstanceOf[js.Any])
     if (behaviors != null) __obj.updateDynamic("behaviors")(behaviors.asInstanceOf[js.Any])
     if (!js.isUndefined(deleteAdditionalMetricsToRetain)) __obj.updateDynamic("deleteAdditionalMetricsToRetain")(deleteAdditionalMetricsToRetain.asInstanceOf[js.Any])

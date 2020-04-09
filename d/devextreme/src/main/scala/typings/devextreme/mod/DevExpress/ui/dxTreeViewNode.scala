@@ -5,21 +5,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxTreeViewNode extends js.Object {
-  /** Contains all the child nodes of the current node. */
+  /** @name dxTreeViewNode.children */
   var children: js.UndefOr[js.Array[dxTreeViewNode]] = js.undefined
-  /** Equals to true if the node is disabled; otherwise false. */
+  /** @name dxTreeViewNode.disabled */
   var disabled: js.UndefOr[Boolean] = js.undefined
-  /** Equals true if the node is expanded; false if collapsed. */
+  /** @name dxTreeViewNode.expanded */
   var expanded: js.UndefOr[Boolean] = js.undefined
-  /** Contains the data source object corresponding to the node. */
+  /** @name dxTreeViewNode.itemData */
   var itemData: js.UndefOr[js.Any] = js.undefined
-  /** Contains the key value of the node. */
+  /** @name dxTreeViewNode.key */
   var key: js.UndefOr[js.Any] = js.undefined
-  /** Refers to the parent node of the current node. */
+  /** @name dxTreeViewNode.parent */
   var parent: js.UndefOr[dxTreeViewNode] = js.undefined
-  /** Equals to true if the node is selected; false if not. */
+  /** @name dxTreeViewNode.selected */
   var selected: js.UndefOr[Boolean] = js.undefined
-  /** Contains the text displayed by the node. */
+  /** @name dxTreeViewNode.text */
   var text: js.UndefOr[String] = js.undefined
 }
 

@@ -1,6 +1,7 @@
 package typings.jupyterlabNotebook
 
 import typings.jupyterlabApputils.mod.ReactWidget
+import typings.jupyterlabApputils.sessioncontextMod.ISessionContext.IDialogs
 import typings.jupyterlabApputils.tokensMod.ISessionContextDialogs
 import typings.jupyterlabDocregistry.registryMod.DocumentRegistry.IToolbarItem
 import typings.jupyterlabNotebook.panelMod.NotebookPanel
@@ -64,6 +65,11 @@ object defaultToolbarMod extends js.Object {
       * Create a paste toolbar item.
       */
     def createPasteButton(panel: NotebookPanel): Widget = js.native
+    /**
+      * Create a restart run all toolbar item
+      */
+    def createRestartRunAllButton(panel: NotebookPanel): Widget = js.native
+    def createRestartRunAllButton(panel: NotebookPanel, dialogs: IDialogs): Widget = js.native
     /**
       * Create a run toolbar item.
       */

@@ -15,7 +15,7 @@ trait CrawlerJdbcTarget extends js.Object {
     */
   var exclusions: js.UndefOr[js.Array[String]] = js.native
   /**
-    * The path to the Amazon S3 target.
+    * The path of the JDBC target.
     */
   var path: String = js.native
 }

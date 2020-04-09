@@ -65,12 +65,12 @@ trait ElasticBeanstalk extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ EnvironmentDescriptionsMessage, Unit]
   ): Request[EnvironmentDescriptionsMessage, AWSError] = js.native
   /**
-    *  Creates an application that has one configuration template named default and no application versions. 
+    * Creates an application that has one configuration template named default and no application versions.
     */
   def createApplication(): Request[ApplicationDescriptionMessage, AWSError] = js.native
   def createApplication(callback: js.Function2[/* err */ AWSError, /* data */ ApplicationDescriptionMessage, Unit]): Request[ApplicationDescriptionMessage, AWSError] = js.native
   /**
-    *  Creates an application that has one configuration template named default and no application versions. 
+    * Creates an application that has one configuration template named default and no application versions.
     */
   def createApplication(params: CreateApplicationMessage): Request[ApplicationDescriptionMessage, AWSError] = js.native
   def createApplication(
@@ -78,12 +78,12 @@ trait ElasticBeanstalk extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ApplicationDescriptionMessage, Unit]
   ): Request[ApplicationDescriptionMessage, AWSError] = js.native
   /**
-    * Creates an application version for the specified application. You can create an application version from a source bundle in Amazon S3, a commit in AWS CodeCommit, or the output of an AWS CodeBuild build as follows: Specify a commit in an AWS CodeCommit repository with SourceBuildInformation. Specify a build in an AWS CodeBuild with SourceBuildInformation and BuildConfiguration. Specify a source bundle in S3 with SourceBundle  Omit both SourceBuildInformation and SourceBundle to use the default sample application.  Once you create an application version with a specified Amazon S3 bucket and key location, you cannot change that Amazon S3 location. If you change the Amazon S3 location, you receive an exception when you attempt to launch an environment from the application version. 
+    * Creates an application version for the specified application. You can create an application version from a source bundle in Amazon S3, a commit in AWS CodeCommit, or the output of an AWS CodeBuild build as follows: Specify a commit in an AWS CodeCommit repository with SourceBuildInformation. Specify a build in an AWS CodeBuild with SourceBuildInformation and BuildConfiguration. Specify a source bundle in S3 with SourceBundle  Omit both SourceBuildInformation and SourceBundle to use the default sample application.  After you create an application version with a specified Amazon S3 bucket and key location, you can't change that Amazon S3 location. If you change the Amazon S3 location, you receive an exception when you attempt to launch an environment from the application version. 
     */
   def createApplicationVersion(): Request[ApplicationVersionDescriptionMessage, AWSError] = js.native
   def createApplicationVersion(callback: js.Function2[/* err */ AWSError, /* data */ ApplicationVersionDescriptionMessage, Unit]): Request[ApplicationVersionDescriptionMessage, AWSError] = js.native
   /**
-    * Creates an application version for the specified application. You can create an application version from a source bundle in Amazon S3, a commit in AWS CodeCommit, or the output of an AWS CodeBuild build as follows: Specify a commit in an AWS CodeCommit repository with SourceBuildInformation. Specify a build in an AWS CodeBuild with SourceBuildInformation and BuildConfiguration. Specify a source bundle in S3 with SourceBundle  Omit both SourceBuildInformation and SourceBundle to use the default sample application.  Once you create an application version with a specified Amazon S3 bucket and key location, you cannot change that Amazon S3 location. If you change the Amazon S3 location, you receive an exception when you attempt to launch an environment from the application version. 
+    * Creates an application version for the specified application. You can create an application version from a source bundle in Amazon S3, a commit in AWS CodeCommit, or the output of an AWS CodeBuild build as follows: Specify a commit in an AWS CodeCommit repository with SourceBuildInformation. Specify a build in an AWS CodeBuild with SourceBuildInformation and BuildConfiguration. Specify a source bundle in S3 with SourceBundle  Omit both SourceBuildInformation and SourceBundle to use the default sample application.  After you create an application version with a specified Amazon S3 bucket and key location, you can't change that Amazon S3 location. If you change the Amazon S3 location, you receive an exception when you attempt to launch an environment from the application version. 
     */
   def createApplicationVersion(params: CreateApplicationVersionMessage): Request[ApplicationVersionDescriptionMessage, AWSError] = js.native
   def createApplicationVersion(
@@ -91,12 +91,12 @@ trait ElasticBeanstalk extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ApplicationVersionDescriptionMessage, Unit]
   ): Request[ApplicationVersionDescriptionMessage, AWSError] = js.native
   /**
-    * Creates a configuration template. Templates are associated with a specific application and are used to deploy different versions of the application with the same configuration settings. Templates aren't associated with any environment. The EnvironmentName response element is always null. Related Topics    DescribeConfigurationOptions     DescribeConfigurationSettings     ListAvailableSolutionStacks   
+    * Creates an AWS Elastic Beanstalk configuration template, associated with a specific Elastic Beanstalk application. You define application configuration settings in a configuration template. You can then use the configuration template to deploy different versions of the application with the same configuration settings. Templates aren't associated with any environment. The EnvironmentName response element is always null. Related Topics    DescribeConfigurationOptions     DescribeConfigurationSettings     ListAvailableSolutionStacks   
     */
   def createConfigurationTemplate(): Request[ConfigurationSettingsDescription, AWSError] = js.native
   def createConfigurationTemplate(callback: js.Function2[/* err */ AWSError, /* data */ ConfigurationSettingsDescription, Unit]): Request[ConfigurationSettingsDescription, AWSError] = js.native
   /**
-    * Creates a configuration template. Templates are associated with a specific application and are used to deploy different versions of the application with the same configuration settings. Templates aren't associated with any environment. The EnvironmentName response element is always null. Related Topics    DescribeConfigurationOptions     DescribeConfigurationSettings     ListAvailableSolutionStacks   
+    * Creates an AWS Elastic Beanstalk configuration template, associated with a specific Elastic Beanstalk application. You define application configuration settings in a configuration template. You can then use the configuration template to deploy different versions of the application with the same configuration settings. Templates aren't associated with any environment. The EnvironmentName response element is always null. Related Topics    DescribeConfigurationOptions     DescribeConfigurationSettings     ListAvailableSolutionStacks   
     */
   def createConfigurationTemplate(params: CreateConfigurationTemplateMessage): Request[ConfigurationSettingsDescription, AWSError] = js.native
   def createConfigurationTemplate(
@@ -104,12 +104,12 @@ trait ElasticBeanstalk extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ConfigurationSettingsDescription, Unit]
   ): Request[ConfigurationSettingsDescription, AWSError] = js.native
   /**
-    * Launches an environment for the specified application using the specified configuration.
+    * Launches an AWS Elastic Beanstalk environment for the specified application using the specified configuration.
     */
   def createEnvironment(): Request[EnvironmentDescription, AWSError] = js.native
   def createEnvironment(callback: js.Function2[/* err */ AWSError, /* data */ EnvironmentDescription, Unit]): Request[EnvironmentDescription, AWSError] = js.native
   /**
-    * Launches an environment for the specified application using the specified configuration.
+    * Launches an AWS Elastic Beanstalk environment for the specified application using the specified configuration.
     */
   def createEnvironment(params: CreateEnvironmentMessage): Request[EnvironmentDescription, AWSError] = js.native
   def createEnvironment(
@@ -354,12 +354,12 @@ trait ElasticBeanstalk extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeInstancesHealthResult, Unit]
   ): Request[DescribeInstancesHealthResult, AWSError] = js.native
   /**
-    * Describes the version of the platform.
+    * Describes a platform version. Provides full details. Compare to ListPlatformVersions, which provides summary information about a list of platform versions. For definitions of platform version and other platform-related terms, see AWS Elastic Beanstalk Platforms Glossary.
     */
   def describePlatformVersion(): Request[DescribePlatformVersionResult, AWSError] = js.native
   def describePlatformVersion(callback: js.Function2[/* err */ AWSError, /* data */ DescribePlatformVersionResult, Unit]): Request[DescribePlatformVersionResult, AWSError] = js.native
   /**
-    * Describes the version of the platform.
+    * Describes a platform version. Provides full details. Compare to ListPlatformVersions, which provides summary information about a list of platform versions. For definitions of platform version and other platform-related terms, see AWS Elastic Beanstalk Platforms Glossary.
     */
   def describePlatformVersion(params: DescribePlatformVersionRequest): Request[DescribePlatformVersionResult, AWSError] = js.native
   def describePlatformVersion(
@@ -374,12 +374,25 @@ trait ElasticBeanstalk extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListAvailableSolutionStacksResultMessage, Unit]
   ): Request[ListAvailableSolutionStacksResultMessage, AWSError] = js.native
   /**
-    * Lists the available platforms.
+    * Lists the platform branches available for your account in an AWS Region. Provides summary information about each platform branch. For definitions of platform branch and other platform-related terms, see AWS Elastic Beanstalk Platforms Glossary.
+    */
+  def listPlatformBranches(): Request[ListPlatformBranchesResult, AWSError] = js.native
+  def listPlatformBranches(callback: js.Function2[/* err */ AWSError, /* data */ ListPlatformBranchesResult, Unit]): Request[ListPlatformBranchesResult, AWSError] = js.native
+  /**
+    * Lists the platform branches available for your account in an AWS Region. Provides summary information about each platform branch. For definitions of platform branch and other platform-related terms, see AWS Elastic Beanstalk Platforms Glossary.
+    */
+  def listPlatformBranches(params: ListPlatformBranchesRequest): Request[ListPlatformBranchesResult, AWSError] = js.native
+  def listPlatformBranches(
+    params: ListPlatformBranchesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListPlatformBranchesResult, Unit]
+  ): Request[ListPlatformBranchesResult, AWSError] = js.native
+  /**
+    * Lists the platform versions available for your account in an AWS Region. Provides summary information about each platform version. Compare to DescribePlatformVersion, which provides full details about a single platform version. For definitions of platform version and other platform-related terms, see AWS Elastic Beanstalk Platforms Glossary.
     */
   def listPlatformVersions(): Request[ListPlatformVersionsResult, AWSError] = js.native
   def listPlatformVersions(callback: js.Function2[/* err */ AWSError, /* data */ ListPlatformVersionsResult, Unit]): Request[ListPlatformVersionsResult, AWSError] = js.native
   /**
-    * Lists the available platforms.
+    * Lists the platform versions available for your account in an AWS Region. Provides summary information about each platform version. Compare to DescribePlatformVersion, which provides full details about a single platform version. For definitions of platform version and other platform-related terms, see AWS Elastic Beanstalk Platforms Glossary.
     */
   def listPlatformVersions(params: ListPlatformVersionsRequest): Request[ListPlatformVersionsResult, AWSError] = js.native
   def listPlatformVersions(
@@ -387,12 +400,12 @@ trait ElasticBeanstalk extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListPlatformVersionsResult, Unit]
   ): Request[ListPlatformVersionsResult, AWSError] = js.native
   /**
-    * Returns the tags applied to an AWS Elastic Beanstalk resource. The response contains a list of tag key-value pairs. Currently, Elastic Beanstalk only supports tagging of Elastic Beanstalk environments. For details about environment tagging, see Tagging Resources in Your Elastic Beanstalk Environment.
+    * Return the tags applied to an AWS Elastic Beanstalk resource. The response contains a list of tag key-value pairs. Elastic Beanstalk supports tagging of all of its resources. For details about resource tagging, see Tagging Application Resources.
     */
   def listTagsForResource(): Request[ResourceTagsDescriptionMessage, AWSError] = js.native
   def listTagsForResource(callback: js.Function2[/* err */ AWSError, /* data */ ResourceTagsDescriptionMessage, Unit]): Request[ResourceTagsDescriptionMessage, AWSError] = js.native
   /**
-    * Returns the tags applied to an AWS Elastic Beanstalk resource. The response contains a list of tag key-value pairs. Currently, Elastic Beanstalk only supports tagging of Elastic Beanstalk environments. For details about environment tagging, see Tagging Resources in Your Elastic Beanstalk Environment.
+    * Return the tags applied to an AWS Elastic Beanstalk resource. The response contains a list of tag key-value pairs. Elastic Beanstalk supports tagging of all of its resources. For details about resource tagging, see Tagging Application Resources.
     */
   def listTagsForResource(params: ListTagsForResourceMessage): Request[ResourceTagsDescriptionMessage, AWSError] = js.native
   def listTagsForResource(
@@ -545,12 +558,12 @@ trait ElasticBeanstalk extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ EnvironmentDescription, Unit]
   ): Request[EnvironmentDescription, AWSError] = js.native
   /**
-    * Update the list of tags applied to an AWS Elastic Beanstalk resource. Two lists can be passed: TagsToAdd for tags to add or update, and TagsToRemove. Currently, Elastic Beanstalk only supports tagging of Elastic Beanstalk environments. For details about environment tagging, see Tagging Resources in Your Elastic Beanstalk Environment. If you create a custom IAM user policy to control permission to this operation, specify one of the following two virtual actions (or both) instead of the API operation name:  elasticbeanstalk:AddTags  Controls permission to call UpdateTagsForResource and pass a list of tags to add in the TagsToAdd parameter.  elasticbeanstalk:RemoveTags  Controls permission to call UpdateTagsForResource and pass a list of tag keys to remove in the TagsToRemove parameter.   For details about creating a custom user policy, see Creating a Custom User Policy.
+    * Update the list of tags applied to an AWS Elastic Beanstalk resource. Two lists can be passed: TagsToAdd for tags to add or update, and TagsToRemove. Elastic Beanstalk supports tagging of all of its resources. For details about resource tagging, see Tagging Application Resources. If you create a custom IAM user policy to control permission to this operation, specify one of the following two virtual actions (or both) instead of the API operation name:  elasticbeanstalk:AddTags  Controls permission to call UpdateTagsForResource and pass a list of tags to add in the TagsToAdd parameter.  elasticbeanstalk:RemoveTags  Controls permission to call UpdateTagsForResource and pass a list of tag keys to remove in the TagsToRemove parameter.   For details about creating a custom user policy, see Creating a Custom User Policy.
     */
   def updateTagsForResource(): Request[js.Object, AWSError] = js.native
   def updateTagsForResource(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Update the list of tags applied to an AWS Elastic Beanstalk resource. Two lists can be passed: TagsToAdd for tags to add or update, and TagsToRemove. Currently, Elastic Beanstalk only supports tagging of Elastic Beanstalk environments. For details about environment tagging, see Tagging Resources in Your Elastic Beanstalk Environment. If you create a custom IAM user policy to control permission to this operation, specify one of the following two virtual actions (or both) instead of the API operation name:  elasticbeanstalk:AddTags  Controls permission to call UpdateTagsForResource and pass a list of tags to add in the TagsToAdd parameter.  elasticbeanstalk:RemoveTags  Controls permission to call UpdateTagsForResource and pass a list of tag keys to remove in the TagsToRemove parameter.   For details about creating a custom user policy, see Creating a Custom User Policy.
+    * Update the list of tags applied to an AWS Elastic Beanstalk resource. Two lists can be passed: TagsToAdd for tags to add or update, and TagsToRemove. Elastic Beanstalk supports tagging of all of its resources. For details about resource tagging, see Tagging Application Resources. If you create a custom IAM user policy to control permission to this operation, specify one of the following two virtual actions (or both) instead of the API operation name:  elasticbeanstalk:AddTags  Controls permission to call UpdateTagsForResource and pass a list of tags to add in the TagsToAdd parameter.  elasticbeanstalk:RemoveTags  Controls permission to call UpdateTagsForResource and pass a list of tag keys to remove in the TagsToRemove parameter.   For details about creating a custom user policy, see Creating a Custom User Policy.
     */
   def updateTagsForResource(params: UpdateTagsForResourceMessage): Request[js.Object, AWSError] = js.native
   def updateTagsForResource(

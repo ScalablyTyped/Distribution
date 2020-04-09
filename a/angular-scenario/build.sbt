@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "angular-scenario"
-version := "1.3-dt-20200226Z-52d5ca"
+version := "1.3-dt-20200226Z-6dedb9"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "angular" % "1.6-dt-20200225Z-7ee1ed",
+  "org.scalablytyped" %%% "angular" % "1.7-dt-20200331Z-219e30",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")

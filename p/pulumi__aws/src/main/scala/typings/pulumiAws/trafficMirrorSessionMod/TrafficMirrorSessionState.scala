@@ -1,5 +1,6 @@
 package typings.pulumiAws.trafficMirrorSessionMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -24,6 +25,10 @@ trait TrafficMirrorSessionState extends js.Object {
     */
   val sessionNumber: js.UndefOr[Input[Double]] = js.native
   /**
+    * Key-value mapping of resource tags.
+    */
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  /**
     * ID of the traffic mirror filter to be used
     */
   val trafficMirrorFilterId: js.UndefOr[Input[String]] = js.native
@@ -44,6 +49,7 @@ object TrafficMirrorSessionState {
     networkInterfaceId: Input[String] = null,
     packetLength: Input[Double] = null,
     sessionNumber: Input[Double] = null,
+    tags: Input[StringDictionary[_]] = null,
     trafficMirrorFilterId: Input[String] = null,
     trafficMirrorTargetId: Input[String] = null,
     virtualNetworkId: Input[Double] = null
@@ -53,6 +59,7 @@ object TrafficMirrorSessionState {
     if (networkInterfaceId != null) __obj.updateDynamic("networkInterfaceId")(networkInterfaceId.asInstanceOf[js.Any])
     if (packetLength != null) __obj.updateDynamic("packetLength")(packetLength.asInstanceOf[js.Any])
     if (sessionNumber != null) __obj.updateDynamic("sessionNumber")(sessionNumber.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     if (trafficMirrorFilterId != null) __obj.updateDynamic("trafficMirrorFilterId")(trafficMirrorFilterId.asInstanceOf[js.Any])
     if (trafficMirrorTargetId != null) __obj.updateDynamic("trafficMirrorTargetId")(trafficMirrorTargetId.asInstanceOf[js.Any])
     if (virtualNetworkId != null) __obj.updateDynamic("virtualNetworkId")(virtualNetworkId.asInstanceOf[js.Any])

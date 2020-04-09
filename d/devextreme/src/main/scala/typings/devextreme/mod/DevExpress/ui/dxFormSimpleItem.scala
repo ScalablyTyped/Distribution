@@ -15,41 +15,41 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxFormSimpleItem extends js.Object {
-  /** Specifies the number of columns spanned by the item. */
+  /** @name dxFormSimpleItem.colSpan */
   var colSpan: js.UndefOr[Double] = js.undefined
-  /** Specifies a CSS class to be applied to the form item. */
+  /** @name dxFormSimpleItem.cssClass */
   var cssClass: js.UndefOr[String] = js.undefined
-  /** Specifies the path to the formData object field bound to the current form item. */
+  /** @name dxFormSimpleItem.dataField */
   var dataField: js.UndefOr[String] = js.undefined
-  /** Configures the form item's editor. */
+  /** @name dxFormSimpleItem.editorOptions */
   var editorOptions: js.UndefOr[js.Any] = js.undefined
-  /** Specifies which editor widget is used to display and edit the form item value. */
+  /** @name dxFormSimpleItem.editorType */
   var editorType: js.UndefOr[
     typings.devextreme.devextremeStrings.dxAutocomplete | typings.devextreme.devextremeStrings.dxCalendar | typings.devextreme.devextremeStrings.dxCheckBox | typings.devextreme.devextremeStrings.dxColorBox | typings.devextreme.devextremeStrings.dxDateBox | typings.devextreme.devextremeStrings.dxDropDownBox | typings.devextreme.devextremeStrings.dxHtmlEditor | typings.devextreme.devextremeStrings.dxLookup | typings.devextreme.devextremeStrings.dxNumberBox | typings.devextreme.devextremeStrings.dxRadioGroup | typings.devextreme.devextremeStrings.dxRangeSlider | typings.devextreme.devextremeStrings.dxSelectBox | typings.devextreme.devextremeStrings.dxSlider | typings.devextreme.devextremeStrings.dxSwitch | typings.devextreme.devextremeStrings.dxTagBox | typings.devextreme.devextremeStrings.dxTextArea | typings.devextreme.devextremeStrings.dxTextBox
   ] = js.undefined
-  /** Specifies the help text displayed for the current form item. */
+  /** @name dxFormSimpleItem.helpText */
   var helpText: js.UndefOr[String] = js.undefined
-  /** Specifies whether the current form item is required. */
+  /** @name dxFormSimpleItem.isRequired */
   var isRequired: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the item's type. Set it to "simple" to create a simple item. */
+  /** @name dxFormSimpleItem.itemType */
   var itemType: js.UndefOr[empty | group | simple | tabbed | button] = js.undefined
-  /** Specifies options for the form item label. */
+  /** @name dxFormSimpleItem.label */
   var label: js.UndefOr[AnonLocation] = js.undefined
-  /** Specifies a name that identifies the form item. */
+  /** @name dxFormSimpleItem.name */
   var name: js.UndefOr[String] = js.undefined
-  /** A template to be used for rendering the form item. */
+  /** @name dxFormSimpleItem.template */
   var template: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* data */ AnonEditorOptions, /* itemElement */ dxElement, String | Element | JQuery])
   ] = js.undefined
-  /** An array of validation rules to be checked for the form item editor. */
+  /** @name dxFormSimpleItem.validationRules */
   var validationRules: js.UndefOr[
     js.Array[
       RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule
     ]
   ] = js.undefined
-  /** Specifies whether or not the current form item is visible. */
+  /** @name dxFormSimpleItem.visible */
   var visible: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the sequence number of the item in a form, group or tab. */
+  /** @name dxFormSimpleItem.visibleIndex */
   var visibleIndex: js.UndefOr[Double] = js.undefined
 }
 

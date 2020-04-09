@@ -8,6 +8,7 @@ import typings.mapboxGl.mapboxGlStrings.both
 import typings.mapboxGl.mapboxGlStrings.butt
 import typings.mapboxGl.mapboxGlStrings.center
 import typings.mapboxGl.mapboxGlStrings.height
+import typings.mapboxGl.mapboxGlStrings.horizontal
 import typings.mapboxGl.mapboxGlStrings.left
 import typings.mapboxGl.mapboxGlStrings.line
 import typings.mapboxGl.mapboxGlStrings.lowercase
@@ -20,6 +21,7 @@ import typings.mapboxGl.mapboxGlStrings.round
 import typings.mapboxGl.mapboxGlStrings.source_
 import typings.mapboxGl.mapboxGlStrings.square
 import typings.mapboxGl.mapboxGlStrings.uppercase
+import typings.mapboxGl.mapboxGlStrings.vertical
 import typings.mapboxGl.mapboxGlStrings.viewport
 import typings.mapboxGl.mapboxGlStrings.width
 import scala.scalajs.js
@@ -30,11 +32,19 @@ trait _AnyLayout extends js.Object
 
 object _AnyLayout {
   @scala.inline
+  def FillLayout(`fill-sort-key`: Int | Double = null, visibility: Visibility = null): _AnyLayout = {
+    val __obj = js.Dynamic.literal()
+    if (`fill-sort-key` != null) __obj.updateDynamic("fill-sort-key")(`fill-sort-key`.asInstanceOf[js.Any])
+    if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
+    __obj.asInstanceOf[_AnyLayout]
+  }
+  @scala.inline
   def LineLayout(
     `line-cap`: butt | round | square = null,
     `line-join`: bevel | round | miter | Expression = null,
     `line-miter-limit`: Double | Expression = null,
     `line-round-limit`: Double | Expression = null,
+    `line-sort-key`: Int | Double = null,
     visibility: Visibility = null
   ): _AnyLayout = {
     val __obj = js.Dynamic.literal()
@@ -42,6 +52,7 @@ object _AnyLayout {
     if (`line-join` != null) __obj.updateDynamic("line-join")(`line-join`.asInstanceOf[js.Any])
     if (`line-miter-limit` != null) __obj.updateDynamic("line-miter-limit")(`line-miter-limit`.asInstanceOf[js.Any])
     if (`line-round-limit` != null) __obj.updateDynamic("line-round-limit")(`line-round-limit`.asInstanceOf[js.Any])
+    if (`line-sort-key` != null) __obj.updateDynamic("line-sort-key")(`line-sort-key`.asInstanceOf[js.Any])
     if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
     __obj.asInstanceOf[_AnyLayout]
   }
@@ -63,6 +74,7 @@ object _AnyLayout {
     `icon-text-fit-padding`: js.Array[Double] | Expression = null,
     `symbol-avoid-edges`: js.UndefOr[Boolean] = js.undefined,
     `symbol-placement`: point | line | `line-center` = null,
+    `symbol-sort-key`: Int | Double = null,
     `symbol-spacing`: Double | Expression = null,
     `symbol-z-order`: `viewport-y` | source_ = null,
     `text-allow-overlap`: js.UndefOr[Boolean] = js.undefined,
@@ -80,10 +92,13 @@ object _AnyLayout {
     `text-optional`: js.UndefOr[Boolean] = js.undefined,
     `text-padding`: Double | Expression = null,
     `text-pitch-alignment`: map | viewport | auto = null,
+    `text-radial-offset`: Double | Expression = null,
     `text-rotate`: Double | StyleFunction | Expression = null,
     `text-rotation-alignment`: map | viewport | auto = null,
     `text-size`: Double | StyleFunction | Expression = null,
     `text-transform`: none | uppercase | lowercase | StyleFunction | Expression = null,
+    `text-variable-anchor`: js.Array[Anchor] = null,
+    `text-writing-mode`: js.Array[horizontal | vertical] = null,
     visibility: Visibility = null
   ): _AnyLayout = {
     val __obj = js.Dynamic.literal()
@@ -103,6 +118,7 @@ object _AnyLayout {
     if (`icon-text-fit-padding` != null) __obj.updateDynamic("icon-text-fit-padding")(`icon-text-fit-padding`.asInstanceOf[js.Any])
     if (!js.isUndefined(`symbol-avoid-edges`)) __obj.updateDynamic("symbol-avoid-edges")(`symbol-avoid-edges`.asInstanceOf[js.Any])
     if (`symbol-placement` != null) __obj.updateDynamic("symbol-placement")(`symbol-placement`.asInstanceOf[js.Any])
+    if (`symbol-sort-key` != null) __obj.updateDynamic("symbol-sort-key")(`symbol-sort-key`.asInstanceOf[js.Any])
     if (`symbol-spacing` != null) __obj.updateDynamic("symbol-spacing")(`symbol-spacing`.asInstanceOf[js.Any])
     if (`symbol-z-order` != null) __obj.updateDynamic("symbol-z-order")(`symbol-z-order`.asInstanceOf[js.Any])
     if (!js.isUndefined(`text-allow-overlap`)) __obj.updateDynamic("text-allow-overlap")(`text-allow-overlap`.asInstanceOf[js.Any])
@@ -120,10 +136,13 @@ object _AnyLayout {
     if (!js.isUndefined(`text-optional`)) __obj.updateDynamic("text-optional")(`text-optional`.asInstanceOf[js.Any])
     if (`text-padding` != null) __obj.updateDynamic("text-padding")(`text-padding`.asInstanceOf[js.Any])
     if (`text-pitch-alignment` != null) __obj.updateDynamic("text-pitch-alignment")(`text-pitch-alignment`.asInstanceOf[js.Any])
+    if (`text-radial-offset` != null) __obj.updateDynamic("text-radial-offset")(`text-radial-offset`.asInstanceOf[js.Any])
     if (`text-rotate` != null) __obj.updateDynamic("text-rotate")(`text-rotate`.asInstanceOf[js.Any])
     if (`text-rotation-alignment` != null) __obj.updateDynamic("text-rotation-alignment")(`text-rotation-alignment`.asInstanceOf[js.Any])
     if (`text-size` != null) __obj.updateDynamic("text-size")(`text-size`.asInstanceOf[js.Any])
     if (`text-transform` != null) __obj.updateDynamic("text-transform")(`text-transform`.asInstanceOf[js.Any])
+    if (`text-variable-anchor` != null) __obj.updateDynamic("text-variable-anchor")(`text-variable-anchor`.asInstanceOf[js.Any])
+    if (`text-writing-mode` != null) __obj.updateDynamic("text-writing-mode")(`text-writing-mode`.asInstanceOf[js.Any])
     if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
     __obj.asInstanceOf[_AnyLayout]
   }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for npm-registry-fetch
 
-Typings are for version 4.0
+Typings are for version 8.0
 
 ## Library description:
 Fetch-based http client for use with npm registry APIs

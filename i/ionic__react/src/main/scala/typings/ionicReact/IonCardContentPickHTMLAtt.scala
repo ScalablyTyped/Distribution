@@ -69,6 +69,7 @@ import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
@@ -578,7 +579,7 @@ object IonCardContentPickHTMLAtt {
     onProgress: SyntheticEvent[HTMLIonCardContentElement, Event_] => Unit = null,
     onRateChange: SyntheticEvent[HTMLIonCardContentElement, Event_] => Unit = null,
     onReset: FormEvent[HTMLIonCardContentElement] => Unit = null,
-    onScroll: UIEvent[HTMLIonCardContentElement] => Unit = null,
+    onScroll: UIEvent[HTMLIonCardContentElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[HTMLIonCardContentElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[HTMLIonCardContentElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[HTMLIonCardContentElement, Event_] => Unit = null,

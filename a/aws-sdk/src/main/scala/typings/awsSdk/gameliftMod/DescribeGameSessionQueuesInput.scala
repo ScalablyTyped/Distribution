@@ -13,7 +13,7 @@ trait DescribeGameSessionQueuesInput extends js.Object {
   /**
     * A list of queue names to retrieve information for. You can use either the queue ID or ARN value. To request settings for all queues, leave this parameter empty. 
     */
-  var Names: js.UndefOr[GameSessionQueueNameList] = js.native
+  var Names: js.UndefOr[GameSessionQueueNameOrArnList] = js.native
   /**
     * A token that indicates the start of the next sequential page of results. Use the token that is returned with a previous call to this action. To start at the beginning of the result set, do not specify a value.
     */
@@ -24,7 +24,7 @@ object DescribeGameSessionQueuesInput {
   @scala.inline
   def apply(
     Limit: Int | scala.Double = null,
-    Names: GameSessionQueueNameList = null,
+    Names: GameSessionQueueNameOrArnList = null,
     NextToken: NonZeroAndMaxString = null
   ): DescribeGameSessionQueuesInput = {
     val __obj = js.Dynamic.literal()

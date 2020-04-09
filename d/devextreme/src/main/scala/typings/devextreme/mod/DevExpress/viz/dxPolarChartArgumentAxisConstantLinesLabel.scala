@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxPolarChartArgumentAxisConstantLinesLabel extends dxPolarChartCommonAxisSettingsConstantLineStyleLabel {
-  /** Specifies the text to be displayed in a constant line label. */
+  /** @name dxPolarChart.Options.argumentAxis.constantLines.label.text */
   var text: js.UndefOr[String] = js.undefined
 }
 

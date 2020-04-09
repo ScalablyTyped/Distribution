@@ -9,6 +9,12 @@ import scala.scalajs.js.annotation._
 
 object c3Strings {
   @js.native
+  sealed trait Anon2 extends js.Object
+  
+  @js.native
+  sealed trait AnonMaxMin extends js.Object
+  
+  @js.native
   sealed trait area extends ChartType
   
   @js.native
@@ -192,6 +198,10 @@ object c3Strings {
     extends AxisName
        with YAxisName
   
+  @scala.inline
+  def Anon2: Anon2 = "Anon2".asInstanceOf[Anon2]
+  @scala.inline
+  def AnonMaxMin: AnonMaxMin = "AnonMaxMin".asInstanceOf[AnonMaxMin]
   @scala.inline
   def area: area = "area".asInstanceOf[area]
   @scala.inline

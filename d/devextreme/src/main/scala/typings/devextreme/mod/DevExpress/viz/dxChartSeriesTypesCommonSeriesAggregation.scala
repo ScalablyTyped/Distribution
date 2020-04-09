@@ -12,9 +12,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Configures data aggregation for the series. */
+/** @name dxChartSeriesTypes.CommonSeries.aggregation */
 trait dxChartSeriesTypesCommonSeriesAggregation extends js.Object {
-  /** Specifies a custom aggregate function. Applies only if the aggregation method is "custom". */
+  /** @name dxChartSeriesTypes.CommonSeries.aggregation.calculate */
   var calculate: js.UndefOr[
     js.Function2[
       /* aggregationInfo */ chartPointAggregationInfoObject, 
@@ -22,9 +22,9 @@ trait dxChartSeriesTypesCommonSeriesAggregation extends js.Object {
       _ | js.Array[_]
     ]
   ] = js.undefined
-  /** Enables data aggregation for the series. */
+  /** @name dxChartSeriesTypes.CommonSeries.aggregation.enabled */
   var enabled: js.UndefOr[Boolean] = js.undefined
-  /** Specifies how to aggregate series points. */
+  /** @name dxChartSeriesTypes.CommonSeries.aggregation.method */
   var method: js.UndefOr[avg | count | max | min | ohlc | range | sum | custom] = js.undefined
 }
 

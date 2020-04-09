@@ -18,13 +18,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Specifies options of the legend. */
+/** @name BaseChart.Options.legend */
 trait BaseChartLegend extends BaseLegend {
-  /** Allows you to change the order, text, and visibility of legend items. */
+  /** @name BaseChart.Options.legend.customizeItems */
   var customizeItems: js.UndefOr[
     js.Function1[/* items */ js.Array[BaseChartLegendItem], js.Array[BaseChartLegendItem]]
   ] = js.undefined
-  /** Specifies an SVG element that serves as a custom legend item marker. */
+  /** @name BaseChart.Options.legend.markerTemplate */
   var markerTemplate: js.UndefOr[
     template | (js.Function2[
       /* legendItem */ BaseChartLegendItem, 

@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ODataContext extends js.Object {
-  /** Invokes an OData operation that returns a value. */
+  /** @name ODataContext.get(operationName, params) */
   def get(operationName: String, params: js.Any): Promise[_] with JQueryPromise[_] = js.native
-  /** Invokes an OData operation that returns nothing. */
+  /** @name ODataContext.invoke(operationName, params, httpMethod) */
   def invoke(operationName: String, params: js.Any, httpMethod: js.Any): Promise[Unit] with JQueryPromise[Unit] = js.native
   def objectLink(entityAlias: String, key: String): js.Any = js.native
-  /** Gets a link to an entity with a specific key. */
+  /** @name ODataContext.objectLink(entityAlias, key) */
   def objectLink(entityAlias: String, key: js.Any): js.Any = js.native
   def objectLink(entityAlias: String, key: Double): js.Any = js.native
 }

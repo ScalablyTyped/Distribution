@@ -13,6 +13,7 @@ object Chai extends js.Object {
     var displayed: Assertion = js.native
     var empty: Assertion = js.native
     var trimmed: Assertion = js.native
+    var visible: Assertion = js.native
     def attr(name: String): Assertion = js.native
     def attr(name: String, value: String): Assertion = js.native
     def attribute(name: String): Assertion = js.native

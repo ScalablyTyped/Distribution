@@ -58,10 +58,16 @@ object bentStrings {
   sealed trait json extends js.Object
   
   @js.native
+  sealed trait pause extends js.Object
+  
+  @js.native
   sealed trait pipe extends js.Object
   
   @js.native
   sealed trait readable extends js.Object
+  
+  @js.native
+  sealed trait resume extends js.Object
   
   @js.native
   sealed trait string extends js.Object
@@ -104,9 +110,13 @@ object bentStrings {
   @scala.inline
   def json: json = "json".asInstanceOf[json]
   @scala.inline
+  def pause: pause = "pause".asInstanceOf[pause]
+  @scala.inline
   def pipe: pipe = "pipe".asInstanceOf[pipe]
   @scala.inline
   def readable: readable = "readable".asInstanceOf[readable]
+  @scala.inline
+  def resume: resume = "resume".asInstanceOf[resume]
   @scala.inline
   def string: string = "string".asInstanceOf[string]
   @scala.inline

@@ -7,9 +7,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxTabsItem extends CollectionWidgetItem {
-  /** Specifies a badge text for the tab. */
+  /** @name dxTabsItem.badge */
   var badge: js.UndefOr[String] = js.undefined
-  /** Specifies the icon to be displayed on the tab. */
+  /** @name dxTabsItem.icon */
   var icon: js.UndefOr[String] = js.undefined
 }
 

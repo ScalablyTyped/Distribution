@@ -70,103 +70,103 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxChartOptions extends BaseChartOptions[dxChart] {
-  /** Specifies whether to adjust the value axis's visualRange when the argument axis is being zoomed or panned. */
+  /** @name dxChart.Options.adjustOnZoom */
   var adjustOnZoom: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the annotation collection. */
+  /** @name dxChart.Options.annotations */
   var annotations: js.UndefOr[js.Array[dxChartAnnotationConfig | _]] = js.undefined
-  /** Configures the argument axis. */
+  /** @name dxChart.Options.argumentAxis */
   var argumentAxis: js.UndefOr[dxChartArgumentAxis] = js.undefined
-  /** Specifies whether to hide series point markers automatically to reduce visual clutter. */
+  /** @name dxChart.Options.autoHidePointMarkers */
   var autoHidePointMarkers: js.UndefOr[Boolean] = js.undefined
-  /** Controls the padding and consequently the width of a group of bars with the same argument using relative units. Ignored if the barGroupWidth option is set. */
+  /** @name dxChart.Options.barGroupPadding */
   var barGroupPadding: js.UndefOr[Double] = js.undefined
-  /** Specifies a fixed width for groups of bars with the same argument, measured in pixels. Takes precedence over the barGroupPadding option. */
+  /** @name dxChart.Options.barGroupWidth */
   var barGroupWidth: js.UndefOr[Double] = js.undefined
-  /** @deprecated Use CommonSeries.barPadding instead. */
-  /** Controls the width of bars in the widget. Applies only to bar-like series and when the equalBarWidth option is true. */
+  /** @deprecated */
+  /** @name dxChart.Options.barWidth */
   var barWidth: js.UndefOr[Double] = js.undefined
-  /** Specifies settings common for all annotations in the chart. */
+  /** @name dxChart.Options.commonAnnotationSettings */
   var commonAnnotationSettings: js.UndefOr[dxChartCommonAnnotationConfig] = js.undefined
-  /** Defines common settings for both the argument and value axis in a chart. */
+  /** @name dxChart.Options.commonAxisSettings */
   var commonAxisSettings: js.UndefOr[dxChartCommonAxisSettings] = js.undefined
-  /** Defines common settings for all panes in a chart. */
+  /** @name dxChart.Options.commonPaneSettings */
   var commonPaneSettings: js.UndefOr[dxChartCommonPaneSettings] = js.undefined
-  /** Specifies settings common for all series in the chart. */
+  /** @name dxChart.Options.commonSeriesSettings */
   var commonSeriesSettings: js.UndefOr[dxChartCommonSeriesSettings] = js.undefined
-  /** Colors the background of the chart container. */
+  /** @name dxChart.Options.containerBackgroundColor */
   var containerBackgroundColor: js.UndefOr[String] = js.undefined
-  /** Configures the crosshair feature. */
+  /** @name dxChart.Options.crosshair */
   var crosshair: js.UndefOr[AnonHorizontalLine] = js.undefined
-  /** Customizes an individual annotation. */
+  /** @name dxChart.Options.customizeAnnotation */
   var customizeAnnotation: js.UndefOr[
     js.Function1[/* annotation */ dxChartAnnotationConfig | js.Any, dxChartAnnotationConfig]
   ] = js.undefined
-  /** Processes data before visualizing it. */
+  /** @name dxChart.Options.dataPrepareSettings */
   var dataPrepareSettings: js.UndefOr[AnonCheckTypeForAllData] = js.undefined
-  /** Specifies which pane should be used by default. */
+  /** @name dxChart.Options.defaultPane */
   var defaultPane: js.UndefOr[String] = js.undefined
-  /** @deprecated Use CommonSeries.ignoreEmptyPoints instead. */
-  /** Specifies whether all bars should have equal width, even if some values are missing from a series. Applies only to bar-like series. */
+  /** @deprecated */
+  /** @name dxChart.Options.equalBarWidth */
   var equalBarWidth: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the options of a chart's legend. */
+  /** @name dxChart.Options.legend */
   @JSName("legend")
   var legend_dxChartOptions: js.UndefOr[dxChartLegend] = js.undefined
-  /** Specifies a coefficient determining the diameter of the largest bubble. */
+  /** @name dxChart.Options.maxBubbleSize */
   var maxBubbleSize: js.UndefOr[Double] = js.undefined
-  /** Specifies the diameter of the smallest bubble measured in pixels. */
+  /** @name dxChart.Options.minBubbleSize */
   var minBubbleSize: js.UndefOr[Double] = js.undefined
-  /** Forces the widget to treat negative values as zeroes. Applies to stacked-like series only. */
+  /** @name dxChart.Options.negativesAsZeroes */
   var negativesAsZeroes: js.UndefOr[Boolean] = js.undefined
-  /** A function that is executed when a label on the argument axis is clicked or tapped. */
+  /** @name dxChart.Options.onArgumentAxisClick */
   var onArgumentAxisClick: js.UndefOr[(js.Function1[/* e */ AnonArgument, _]) | String] = js.undefined
-  /** A function that is executed when a legend item is clicked or tapped. */
+  /** @name dxChart.Options.onLegendClick */
   var onLegendClick: js.UndefOr[(js.Function1[/* e */ AnonEventJQueryEventModel, _]) | String] = js.undefined
-  /** A function that is executed when a series is clicked or tapped. */
+  /** @name dxChart.Options.onSeriesClick */
   var onSeriesClick: js.UndefOr[(js.Function1[/* e */ AnonEventJQueryEventModel, _]) | String] = js.undefined
-  /** A function that is executed after the pointer enters or leaves a series. */
+  /** @name dxChart.Options.onSeriesHoverChanged */
   var onSeriesHoverChanged: js.UndefOr[js.Function1[/* e */ AnonComponentDxChart, _]] = js.undefined
-  /** A function that is executed when a series is selected or selection is canceled. */
+  /** @name dxChart.Options.onSeriesSelectionChanged */
   var onSeriesSelectionChanged: js.UndefOr[js.Function1[/* e */ AnonComponentDxChart, _]] = js.undefined
-  /** A function that is executed when zooming or panning ends. */
+  /** @name dxChart.Options.onZoomEnd */
   var onZoomEnd: js.UndefOr[js.Function1[/* e */ AnonActionType, _]] = js.undefined
-  /** A function that is executed when zooming or panning begins. */
+  /** @name dxChart.Options.onZoomStart */
   var onZoomStart: js.UndefOr[js.Function1[/* e */ AnonAxis, _]] = js.undefined
-  /** Declares a collection of panes. */
+  /** @name dxChart.Options.panes */
   var panes: js.UndefOr[dxChartPanes | js.Array[dxChartPanes]] = js.undefined
-  /** Specifies whether panes can be resized if other chart elements require more space after zooming or panning. */
+  /** @name dxChart.Options.resizePanesOnZoom */
   var resizePanesOnZoom: js.UndefOr[Boolean] = js.undefined
-  /** Specifies how the chart must behave when series point labels overlap. */
+  /** @name dxChart.Options.resolveLabelOverlapping */
   var resolveLabelOverlapping: js.UndefOr[hide | none | stack] = js.undefined
-  /** Swaps the axes around making the value axis horizontal and the argument axis vertical. */
+  /** @name dxChart.Options.rotated */
   var rotated: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the settings of the scroll bar. */
+  /** @name dxChart.Options.scrollBar */
   var scrollBar: js.UndefOr[AnonOffset] = js.undefined
-  /** @deprecated Use the zoomAndPan option instead. */
-  /** Enables scrolling in your chart. */
+  /** @deprecated */
+  /** @name dxChart.Options.scrollingMode */
   var scrollingMode: js.UndefOr[all | mouse | none | touch] = js.undefined
-  /** Specifies whether a single series or multiple series can be selected in the chart. */
+  /** @name dxChart.Options.seriesSelectionMode */
   var seriesSelectionMode: js.UndefOr[multiple | single_] = js.undefined
-  /** Defines options for the series template. */
+  /** @name dxChart.Options.seriesTemplate */
   var seriesTemplate: js.UndefOr[AnonCustomizeSeries] = js.undefined
-  /** Specifies options for Chart widget series. */
+  /** @name dxChart.Options.series */
   @JSName("series")
   var series_dxChartOptions: js.UndefOr[ChartSeries | js.Array[ChartSeries]] = js.undefined
-  /** Specifies whether a point should remain in the hover state when the mouse pointer moves away. */
+  /** @name dxChart.Options.stickyHovering */
   var stickyHovering: js.UndefOr[Boolean] = js.undefined
-  /** Indicates whether or not to synchronize value axes when they are displayed on a single pane. */
+  /** @name dxChart.Options.synchronizeMultiAxes */
   var synchronizeMultiAxes: js.UndefOr[Boolean] = js.undefined
-  /** Configures tooltips. */
+  /** @name dxChart.Options.tooltip */
   @JSName("tooltip")
   var tooltip_dxChartOptions: js.UndefOr[dxChartTooltip] = js.undefined
-  /** @deprecated Use CommonSeries.aggregation.enabled instead. */
-  /** Specifies whether or not to filter the series points depending on their quantity. */
+  /** @deprecated */
+  /** @name dxChart.Options.useAggregation */
   var useAggregation: js.UndefOr[Boolean] = js.undefined
-  /** Configures the value axis. */
+  /** @name dxChart.Options.valueAxis */
   var valueAxis: js.UndefOr[dxChartValueAxis | js.Array[dxChartValueAxis]] = js.undefined
-  /** Configures zooming and panning. */
+  /** @name dxChart.Options.zoomAndPan */
   var zoomAndPan: js.UndefOr[AnonAllowMouseWheel] = js.undefined
-  /** @deprecated Use the zoomAndPan option instead. */
-  /** Enables zooming in your chart. */
+  /** @deprecated */
+  /** @name dxChart.Options.zoomingMode */
   var zoomingMode: js.UndefOr[all | mouse | none | touch] = js.undefined
 }
 

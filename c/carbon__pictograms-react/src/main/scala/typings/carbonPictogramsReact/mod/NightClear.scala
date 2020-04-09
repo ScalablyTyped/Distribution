@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@carbon/pictograms-react", "NightClear")
 @js.native
-object NightClear extends TopLevel[CarbonPictogram]
+object NightClear extends TopLevel[CarbonPictogramType]
 

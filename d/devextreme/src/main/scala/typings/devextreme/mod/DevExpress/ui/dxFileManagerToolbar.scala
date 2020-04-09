@@ -17,13 +17,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxFileManagerToolbar extends js.Object {
-  /** Configures settings of the toolbar items that are visible when users select files. */
+  /** @name dxFileManagerToolbar.fileSelectionItems */
   var fileSelectionItems: js.UndefOr[
     js.Array[
       dxFileManagerToolbarItem | showNavPane | create | upload | refresh | viewSwitcher | download | move | copy | rename | delete | clear | separator
     ]
   ] = js.undefined
-  /** Configures toolbar items' settings. */
+  /** @name dxFileManagerToolbar.items */
   var items: js.UndefOr[
     js.Array[
       dxFileManagerToolbarItem | showNavPane | create | upload | refresh | viewSwitcher | download | move | copy | rename | delete | clear | separator

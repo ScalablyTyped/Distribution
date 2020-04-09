@@ -54,7 +54,7 @@ trait DataTableProps extends js.Object {
   var onSearch: js.UndefOr[js.Function1[/* search */ String, Unit]] = js.undefined
   var onSort: js.UndefOr[js.Function1[/* sort */ AnonDirection, Unit]] = js.undefined
   var pad: js.UndefOr[none | xxsmall | xsmall | small | medium | large | xlarge | AnonHeader | String] = js.undefined
-  var primaryKey: js.UndefOr[String] = js.undefined
+  var primaryKey: js.UndefOr[String | Boolean] = js.undefined
   var replace: js.UndefOr[Boolean] = js.undefined
   var resizeable: js.UndefOr[Boolean] = js.undefined
   var rowProps: js.UndefOr[StringDictionary[AnonBackground]] = js.undefined
@@ -81,7 +81,7 @@ object DataTableProps {
     onSearch: /* search */ String => Unit = null,
     onSort: /* sort */ AnonDirection => Unit = null,
     pad: none | xxsmall | xsmall | small | medium | large | xlarge | AnonHeader | String = null,
-    primaryKey: String = null,
+    primaryKey: String | Boolean = null,
     replace: js.UndefOr[Boolean] = js.undefined,
     resizeable: js.UndefOr[Boolean] = js.undefined,
     rowProps: StringDictionary[AnonBackground] = null,

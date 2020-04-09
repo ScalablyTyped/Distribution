@@ -8,6 +8,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait RepositoryPolicyState extends js.Object {
+  /**
+    * The policy document. This is a JSON formatted string.
+    */
   val policy: js.UndefOr[Input[String | PolicyDocument]] = js.native
   /**
     * The registry ID where the repository was created.

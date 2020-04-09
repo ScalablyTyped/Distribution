@@ -37,6 +37,7 @@ import typings.antd.antdStrings.text
 import typings.antd.antdStrings.time
 import typings.antd.antdStrings.tree
 import typings.antd.antdStrings.vertical
+import typings.antd.generatePickerMod.PickerLocale
 import typings.antd.sizeContextMod.SizeType
 import typings.moment.mod.Moment
 import typings.rcPicker.dateBodyMod.DateRender
@@ -48,7 +49,6 @@ import typings.rcPicker.interfaceMod.PanelMode
 import typings.rcPicker.monthBodyMod.MonthCellRender
 import typings.rcPicker.pickerMod.PickerRefConfig
 import typings.rcPicker.timePanelMod.SharedTimeProps
-import typings.rcTrigger.interfaceMod.AlignType
 import typings.react.mod.CSSProperties
 import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
@@ -64,7 +64,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined std.Pick<std.Pick<rc-picker.rc-picker/lib/Picker.PickerDateProps<moment.moment.Moment>, 'value' | 'style' | 'direction' | 'className' | 'prefixCls' | 'getPopupContainer' | 'onChange' | 'disabled' | 'onClick' | 'open' | 'suffixIcon' | 'clearIcon' | 'mode' | 'defaultValue' | 'allowClear' | 'defaultOpen' | 'dropdownClassName' | 'dropdownAlign' | 'transitionName' | 'autoFocus' | 'placeholder' | 'tabIndex' | 'onSelect' | 'onBlur' | 'onFocus' | 'onMouseDown' | 'onMouseEnter' | 'onMouseLeave' | 'aria-activedescendant' | 'aria-atomic' | 'aria-autocomplete' | 'aria-busy' | 'aria-checked' | 'aria-colcount' | 'aria-colindex' | 'aria-colspan' | 'aria-controls' | 'aria-current' | 'aria-describedby' | 'aria-details' | 'aria-disabled' | 'aria-dropeffect' | 'aria-errormessage' | 'aria-expanded' | 'aria-flowto' | 'aria-grabbed' | 'aria-haspopup' | 'aria-hidden' | 'aria-invalid' | 'aria-keyshortcuts' | 'aria-label' | 'aria-labelledby' | 'aria-level' | 'aria-live' | 'aria-modal' | 'aria-multiline' | 'aria-multiselectable' | 'aria-orientation' | 'aria-owns' | 'aria-placeholder' | 'aria-posinset' | 'aria-pressed' | 'aria-readonly' | 'aria-relevant' | 'aria-required' | 'aria-roledescription' | 'aria-rowcount' | 'aria-rowindex' | 'aria-rowspan' | 'aria-selected' | 'aria-setsize' | 'aria-sort' | 'aria-valuemax' | 'aria-valuemin' | 'aria-valuenow' | 'aria-valuetext' | 'role' | 'onContextMenu' | 'onMouseUp' | 'name' | 'onOpenChange' | 'picker' | 'defaultPickerValue' | 'disabledDate' | 'dateRender' | 'monthCellRender' | 'renderExtraFooter' | 'onPanelChange' | 'onOk' | 'showToday' | 'showTime' | 'disabledTime' | 'format' | 'popupStyle' | 'inputReadOnly' | 'pickerRef'> & {  locale ? :{  lang  :{  locale  :string,   monthBeforeYear ? :boolean | undefined,   yearFormat  :string,   monthFormat ? :string | undefined,   today  :string,   now  :string,   backToToday  :string,   ok  :string,   timeSelect  :string,   dateSelect  :string,   weekSelect ? :string | undefined,   clear  :string,   month  :string,   year  :string,   previousMonth  :string,   nextMonth  :string,   monthSelect  :string,   yearSelect  :string,   decadeSelect  :string,   dayFormat  :string,   dateFormat  :string,   dateTimeFormat  :string,   previousYear  :string,   nextYear  :string,   previousDecade  :string,   nextDecade  :string,   previousCentury  :string,   nextCentury  :string,   shortWeekDays ? :std.Array<string> | undefined,   shortMonths ? :std.Array<string> | undefined,   placeholder  :string,   yearPlaceholder  :string,   monthPlaceholder  :string,   weekPlaceholder  :string,   rangePlaceholder  :std.Array<string>,   rangeYearPlaceholder  :std.Array<string>,   rangeMonthPlaceholder  :std.Array<string>,   rangeWeekPlaceholder  :std.Array<string>},   timePickerLocale  :{  placeholder  :string,   rangePlaceholder  :std.Array<string>}} | undefined,   size ? :antd.antd/lib/button.ButtonSize,   bordered ? :boolean | undefined}, 'value' | 'style' | 'direction' | 'className' | 'prefixCls' | 'locale' | 'size' | 'getPopupContainer' | 'onChange' | 'disabled' | 'onClick' | 'open' | 'suffixIcon' | 'clearIcon' | 'mode' | 'defaultValue' | 'allowClear' | 'defaultOpen' | 'dropdownClassName' | 'dropdownAlign' | 'transitionName' | 'autoFocus' | 'placeholder' | 'tabIndex' | 'onSelect' | 'onBlur' | 'onFocus' | 'onMouseDown' | 'onMouseEnter' | 'onMouseLeave' | 'aria-activedescendant' | 'aria-atomic' | 'aria-autocomplete' | 'aria-busy' | 'aria-checked' | 'aria-colcount' | 'aria-colindex' | 'aria-colspan' | 'aria-controls' | 'aria-current' | 'aria-describedby' | 'aria-details' | 'aria-disabled' | 'aria-dropeffect' | 'aria-errormessage' | 'aria-expanded' | 'aria-flowto' | 'aria-grabbed' | 'aria-haspopup' | 'aria-hidden' | 'aria-invalid' | 'aria-keyshortcuts' | 'aria-label' | 'aria-labelledby' | 'aria-level' | 'aria-live' | 'aria-modal' | 'aria-multiline' | 'aria-multiselectable' | 'aria-orientation' | 'aria-owns' | 'aria-placeholder' | 'aria-posinset' | 'aria-pressed' | 'aria-readonly' | 'aria-relevant' | 'aria-required' | 'aria-roledescription' | 'aria-rowcount' | 'aria-rowindex' | 'aria-rowspan' | 'aria-selected' | 'aria-setsize' | 'aria-sort' | 'aria-valuemax' | 'aria-valuemin' | 'aria-valuenow' | 'aria-valuetext' | 'bordered' | 'role' | 'onContextMenu' | 'onMouseUp' | 'name' | 'onOpenChange' | 'defaultPickerValue' | 'disabledDate' | 'dateRender' | 'monthCellRender' | 'renderExtraFooter' | 'onPanelChange' | 'onOk' | 'showToday' | 'showTime' | 'disabledTime' | 'format' | 'popupStyle' | 'inputReadOnly' | 'pickerRef'> */
+/* Inlined std.Pick<std.Pick<rc-picker.rc-picker/lib/Picker.PickerDateProps<moment.moment.Moment>, 'style' | 'direction' | 'prefixCls' | 'className' | 'disabled' | 'onClick' | 'defaultValue' | 'placeholder' | 'tabIndex' | 'role' | 'aria-activedescendant' | 'aria-atomic' | 'aria-autocomplete' | 'aria-busy' | 'aria-checked' | 'aria-colcount' | 'aria-colindex' | 'aria-colspan' | 'aria-controls' | 'aria-current' | 'aria-describedby' | 'aria-details' | 'aria-disabled' | 'aria-dropeffect' | 'aria-errormessage' | 'aria-expanded' | 'aria-flowto' | 'aria-grabbed' | 'aria-haspopup' | 'aria-hidden' | 'aria-invalid' | 'aria-keyshortcuts' | 'aria-label' | 'aria-labelledby' | 'aria-level' | 'aria-live' | 'aria-modal' | 'aria-multiline' | 'aria-multiselectable' | 'aria-orientation' | 'aria-owns' | 'aria-placeholder' | 'aria-posinset' | 'aria-pressed' | 'aria-readonly' | 'aria-relevant' | 'aria-required' | 'aria-roledescription' | 'aria-rowcount' | 'aria-rowindex' | 'aria-rowspan' | 'aria-selected' | 'aria-setsize' | 'aria-sort' | 'aria-valuemax' | 'aria-valuemin' | 'aria-valuenow' | 'aria-valuetext' | 'onFocus' | 'onBlur' | 'onChange' | 'onContextMenu' | 'onMouseDown' | 'onMouseEnter' | 'onMouseLeave' | 'onMouseUp' | 'onSelect' | 'autoFocus' | 'name' | 'value' | 'open' | 'picker' | 'mode' | 'defaultPickerValue' | 'disabledDate' | 'dateRender' | 'monthCellRender' | 'renderExtraFooter' | 'onPanelChange' | 'onOk' | 'dropdownClassName' | 'dropdownAlign' | 'popupStyle' | 'transitionName' | 'allowClear' | 'defaultOpen' | 'inputReadOnly' | 'format' | 'suffixIcon' | 'clearIcon' | 'getPopupContainer' | 'onOpenChange' | 'pickerRef' | 'showToday' | 'showTime' | 'disabledTime'> & {  locale ? :antd.antd/lib/date-picker/generatePicker.PickerLocale | undefined,   size ? :antd.antd/lib/button.ButtonSize,   bordered ? :boolean | undefined}, 'size' | 'style' | 'direction' | 'prefixCls' | 'className' | 'disabled' | 'onClick' | 'defaultValue' | 'placeholder' | 'tabIndex' | 'role' | 'aria-activedescendant' | 'aria-atomic' | 'aria-autocomplete' | 'aria-busy' | 'aria-checked' | 'aria-colcount' | 'aria-colindex' | 'aria-colspan' | 'aria-controls' | 'aria-current' | 'aria-describedby' | 'aria-details' | 'aria-disabled' | 'aria-dropeffect' | 'aria-errormessage' | 'aria-expanded' | 'aria-flowto' | 'aria-grabbed' | 'aria-haspopup' | 'aria-hidden' | 'aria-invalid' | 'aria-keyshortcuts' | 'aria-label' | 'aria-labelledby' | 'aria-level' | 'aria-live' | 'aria-modal' | 'aria-multiline' | 'aria-multiselectable' | 'aria-orientation' | 'aria-owns' | 'aria-placeholder' | 'aria-posinset' | 'aria-pressed' | 'aria-readonly' | 'aria-relevant' | 'aria-required' | 'aria-roledescription' | 'aria-rowcount' | 'aria-rowindex' | 'aria-rowspan' | 'aria-selected' | 'aria-setsize' | 'aria-sort' | 'aria-valuemax' | 'aria-valuemin' | 'aria-valuenow' | 'aria-valuetext' | 'onFocus' | 'onBlur' | 'onChange' | 'onContextMenu' | 'onMouseDown' | 'onMouseEnter' | 'onMouseLeave' | 'onMouseUp' | 'onSelect' | 'autoFocus' | 'name' | 'value' | 'open' | 'locale' | 'mode' | 'defaultPickerValue' | 'disabledDate' | 'dateRender' | 'monthCellRender' | 'renderExtraFooter' | 'onPanelChange' | 'onOk' | 'dropdownClassName' | 'dropdownAlign' | 'popupStyle' | 'transitionName' | 'allowClear' | 'defaultOpen' | 'inputReadOnly' | 'format' | 'suffixIcon' | 'clearIcon' | 'getPopupContainer' | 'onOpenChange' | 'pickerRef' | 'showToday' | 'showTime' | 'disabledTime' | 'bordered'> */
 trait PickPickPickerDatePropsMo extends js.Object {
   var allowClear: js.UndefOr[Boolean] = js.undefined
   var `aria-activedescendant`: js.UndefOr[String] = js.undefined
@@ -127,12 +127,14 @@ trait PickPickPickerDatePropsMo extends js.Object {
   var disabled: js.UndefOr[Boolean] = js.undefined
   var disabledDate: js.UndefOr[js.Function1[/* date */ Moment, Boolean]] = js.undefined
   var disabledTime: js.UndefOr[DisabledTime[Moment]] = js.undefined
-  var dropdownAlign: js.UndefOr[AlignType] = js.undefined
+  var dropdownAlign: js.UndefOr[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AlignType */ js.Any
+  ] = js.undefined
   var dropdownClassName: js.UndefOr[String] = js.undefined
   var format: js.UndefOr[String | js.Array[String]] = js.undefined
   var getPopupContainer: js.UndefOr[js.Function1[/* node */ HTMLElement, HTMLElement]] = js.undefined
   var inputReadOnly: js.UndefOr[Boolean] = js.undefined
-  var locale: js.UndefOr[AnonLang] = js.undefined
+  var locale: js.UndefOr[PickerLocale] = js.undefined
   var mode: js.UndefOr[PanelMode] = js.undefined
   var monthCellRender: js.UndefOr[MonthCellRender[Moment]] = js.undefined
   var name: js.UndefOr[String] = js.undefined
@@ -230,12 +232,12 @@ object PickPickPickerDatePropsMo {
     disabled: js.UndefOr[Boolean] = js.undefined,
     disabledDate: /* date */ Moment => Boolean = null,
     disabledTime: /* date */ Moment | Null => DisabledTimes = null,
-    dropdownAlign: AlignType = null,
+    dropdownAlign: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AlignType */ js.Any = null,
     dropdownClassName: String = null,
     format: String | js.Array[String] = null,
     getPopupContainer: /* node */ HTMLElement => HTMLElement = null,
     inputReadOnly: js.UndefOr[Boolean] = js.undefined,
-    locale: AnonLang = null,
+    locale: PickerLocale = null,
     mode: PanelMode = null,
     monthCellRender: (Moment, /* locale */ Locale) => ReactNode = null,
     name: String = null,

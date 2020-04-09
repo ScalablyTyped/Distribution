@@ -39,6 +39,19 @@ trait MediaConnect extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ AddFlowSourcesResponse, Unit]
   ): Request[AddFlowSourcesResponse, AWSError] = js.native
   /**
+    * Adds VPC interfaces to flow
+    */
+  def addFlowVpcInterfaces(): Request[AddFlowVpcInterfacesResponse, AWSError] = js.native
+  def addFlowVpcInterfaces(callback: js.Function2[/* err */ AWSError, /* data */ AddFlowVpcInterfacesResponse, Unit]): Request[AddFlowVpcInterfacesResponse, AWSError] = js.native
+  /**
+    * Adds VPC interfaces to flow
+    */
+  def addFlowVpcInterfaces(params: AddFlowVpcInterfacesRequest): Request[AddFlowVpcInterfacesResponse, AWSError] = js.native
+  def addFlowVpcInterfaces(
+    params: AddFlowVpcInterfacesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ AddFlowVpcInterfacesResponse, Unit]
+  ): Request[AddFlowVpcInterfacesResponse, AWSError] = js.native
+  /**
     * Creates a new flow. The request must include one source. The request optionally can include outputs (up to 50) and entitlements (up to 50).
     */
   def createFlow(): Request[CreateFlowResponse, AWSError] = js.native
@@ -155,6 +168,19 @@ trait MediaConnect extends Service {
     params: RemoveFlowSourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ RemoveFlowSourceResponse, Unit]
   ): Request[RemoveFlowSourceResponse, AWSError] = js.native
+  /**
+    * Removes a VPC Interface from an existing flow. This request can be made only on a VPC interface that does not have a Source or Output associated with it. If the VPC interface is referenced by a Source or Output, you must first delete or update the Source or Output to no longer reference the VPC interface.
+    */
+  def removeFlowVpcInterface(): Request[RemoveFlowVpcInterfaceResponse, AWSError] = js.native
+  def removeFlowVpcInterface(callback: js.Function2[/* err */ AWSError, /* data */ RemoveFlowVpcInterfaceResponse, Unit]): Request[RemoveFlowVpcInterfaceResponse, AWSError] = js.native
+  /**
+    * Removes a VPC Interface from an existing flow. This request can be made only on a VPC interface that does not have a Source or Output associated with it. If the VPC interface is referenced by a Source or Output, you must first delete or update the Source or Output to no longer reference the VPC interface.
+    */
+  def removeFlowVpcInterface(params: RemoveFlowVpcInterfaceRequest): Request[RemoveFlowVpcInterfaceResponse, AWSError] = js.native
+  def removeFlowVpcInterface(
+    params: RemoveFlowVpcInterfaceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ RemoveFlowVpcInterfaceResponse, Unit]
+  ): Request[RemoveFlowVpcInterfaceResponse, AWSError] = js.native
   /**
     * Revokes an entitlement from a flow. Once an entitlement is revoked, the content becomes unavailable to the subscriber and the associated output is removed.
     */

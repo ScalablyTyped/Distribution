@@ -1,7 +1,7 @@
 
 # Scala.js typings for jimp__custom
 
-Typings are for version 0.9.6
+Typings are for version 0.9.8
 
 ## Library description:
 Interface to customize jimp configuration

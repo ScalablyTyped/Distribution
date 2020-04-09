@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@carbon/pictograms-react", "MachineLearning_04")
 @js.native
-object MachineLearning04 extends TopLevel[CarbonPictogram]
+object MachineLearning04 extends TopLevel[CarbonPictogramType]
 

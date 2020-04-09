@@ -17,85 +17,85 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An object that defines configuration options for chart series. */
+/** @name dxChartSeriesTypes.CommonSeries */
 trait dxChartSeriesTypesCommonSeries extends js.Object {
-  /** Configures data aggregation for the series. */
+  /** @name dxChartSeriesTypes.CommonSeries.aggregation */
   var aggregation: js.UndefOr[dxChartSeriesTypesCommonSeriesAggregation] = js.undefined
-  /** Specifies which data source field provides arguments for series points. */
+  /** @name dxChartSeriesTypes.CommonSeries.argumentField */
   var argumentField: js.UndefOr[String] = js.undefined
-  /** Binds the series to a value axis. */
+  /** @name dxChartSeriesTypes.CommonSeries.axis */
   var axis: js.UndefOr[String] = js.undefined
-  /** Allows you to group bar series so that bars with the same argument overlap. */
+  /** @name dxChartSeriesTypes.CommonSeries.barOverlapGroup */
   var barOverlapGroup: js.UndefOr[String] = js.undefined
-  /** Controls the padding and consequently the width of all bars in a series using relative units. Ignored if the barWidth option is set. */
+  /** @name dxChartSeriesTypes.CommonSeries.barPadding */
   var barPadding: js.UndefOr[Double] = js.undefined
-  /** Specifies a fixed width for all bars in a series, measured in pixels. Takes precedence over the barPadding option. */
+  /** @name dxChartSeriesTypes.CommonSeries.barWidth */
   var barWidth: js.UndefOr[Double] = js.undefined
-  /** Configures the series border (in area-like series) or the series point border (in bar-like and bubble series). */
+  /** @name dxChartSeriesTypes.CommonSeries.border */
   var border: js.UndefOr[dxChartSeriesTypesCommonSeriesBorder] = js.undefined
-  /** Specifies which data source field provides close values for points of a financial series. */
+  /** @name dxChartSeriesTypes.CommonSeries.closeValueField */
   var closeValueField: js.UndefOr[String] = js.undefined
-  /** Specifies the color of the series. */
+  /** @name dxChartSeriesTypes.CommonSeries.color */
   var color: js.UndefOr[String] = js.undefined
-  /** Makes bars look rounded. Applies only to bar-like series. */
+  /** @name dxChartSeriesTypes.CommonSeries.cornerRadius */
   var cornerRadius: js.UndefOr[Double] = js.undefined
-  /** Specifies the dash style of the series line. Applies only to line-like series. */
+  /** @name dxChartSeriesTypes.CommonSeries.dashStyle */
   var dashStyle: js.UndefOr[dash | dot | longDash | solid] = js.undefined
-  /** Specifies which data source field provides high values for points of a financial series. */
+  /** @name dxChartSeriesTypes.CommonSeries.highValueField */
   var highValueField: js.UndefOr[String] = js.undefined
-  /** Specifies series elements to be highlighted when a user points to a series. */
+  /** @name dxChartSeriesTypes.CommonSeries.hoverMode */
   var hoverMode: js.UndefOr[
     allArgumentPoints | allSeriesPoints | excludePoints | includePoints | nearestPoint | none | onlyPoint
   ] = js.undefined
-  /** Configures the appearance adopted by the series when a user points to it. */
+  /** @name dxChartSeriesTypes.CommonSeries.hoverStyle */
   var hoverStyle: js.UndefOr[dxChartSeriesTypesCommonSeriesHoverStyle] = js.undefined
-  /** Specifies whether the series should ignore null data points. */
+  /** @name dxChartSeriesTypes.CommonSeries.ignoreEmptyPoints */
   var ignoreEmptyPoints: js.UndefOr[Boolean] = js.undefined
-  /** Specifies a filling color for the body of a series point that visualizes a non-reduced value. Applies only to candlestick series. */
+  /** @name dxChartSeriesTypes.CommonSeries.innerColor */
   var innerColor: js.UndefOr[String] = js.undefined
-  /** Configures point labels. */
+  /** @name dxChartSeriesTypes.CommonSeries.label */
   var label: js.UndefOr[dxChartSeriesTypesCommonSeriesLabel] = js.undefined
-  /** Specifies which data source field provides low values for points of a financial series. */
+  /** @name dxChartSeriesTypes.CommonSeries.lowValueField */
   var lowValueField: js.UndefOr[String] = js.undefined
-  /** Specifies a limit for the number of point labels. */
+  /** @name dxChartSeriesTypes.CommonSeries.maxLabelCount */
   var maxLabelCount: js.UndefOr[Double] = js.undefined
-  /** Specifies the minimal possible height (or length if the chart is rotated) of a bar in pixels. Applies only to bar-like series. */
+  /** @name dxChartSeriesTypes.CommonSeries.minBarSize */
   var minBarSize: js.UndefOr[Double] = js.undefined
-  /** Specifies how transparent the series should be. */
+  /** @name dxChartSeriesTypes.CommonSeries.opacity */
   var opacity: js.UndefOr[Double] = js.undefined
-  /** Specifies which data source field provides open values for points of a financial series. */
+  /** @name dxChartSeriesTypes.CommonSeries.openValueField */
   var openValueField: js.UndefOr[String] = js.undefined
-  /** Specifies which pane the series should belong to. Accepts the name of the pane. */
+  /** @name dxChartSeriesTypes.CommonSeries.pane */
   var pane: js.UndefOr[String] = js.undefined
-  /** Configures series points in scatter, line- and area-like series. */
+  /** @name dxChartSeriesTypes.CommonSeries.point */
   var point: js.UndefOr[dxChartSeriesTypesCommonSeriesPoint] = js.undefined
-  /** Coupled with the rangeValue2Field option, specifies which data source field provides values for a range-like series. */
+  /** @name dxChartSeriesTypes.CommonSeries.rangeValue1Field */
   var rangeValue1Field: js.UndefOr[String] = js.undefined
-  /** Coupled with the rangeValue1Field option, specifies which data source field provides values for a range-like series. */
+  /** @name dxChartSeriesTypes.CommonSeries.rangeValue2Field */
   var rangeValue2Field: js.UndefOr[String] = js.undefined
-  /** Specifies reduction options for financial series. */
+  /** @name dxChartSeriesTypes.CommonSeries.reduction */
   var reduction: js.UndefOr[AnonColorLevel] = js.undefined
-  /** Specifies series elements to be highlighted when a user selects a series. */
+  /** @name dxChartSeriesTypes.CommonSeries.selectionMode */
   var selectionMode: js.UndefOr[
     allArgumentPoints | allSeriesPoints | excludePoints | includePoints | none | onlyPoint
   ] = js.undefined
-  /** Configures the appearance adopted by the series when a user selects it. */
+  /** @name dxChartSeriesTypes.CommonSeries.selectionStyle */
   var selectionStyle: js.UndefOr[dxChartSeriesTypesCommonSeriesSelectionStyle] = js.undefined
-  /** Specifies whether to show the series in the legend or not. */
+  /** @name dxChartSeriesTypes.CommonSeries.showInLegend */
   var showInLegend: js.UndefOr[Boolean] = js.undefined
-  /** Specifies which data source field provides size values for bubbles. Required by and applies only to bubble series. */
+  /** @name dxChartSeriesTypes.CommonSeries.sizeField */
   var sizeField: js.UndefOr[String] = js.undefined
-  /** Specifies which stack the series should belongs to. Applies only to stacked bar and full-stacked bar series. */
+  /** @name dxChartSeriesTypes.CommonSeries.stack */
   var stack: js.UndefOr[String] = js.undefined
-  /** Specifies which data source field provides auxiliary data for series points. */
+  /** @name dxChartSeriesTypes.CommonSeries.tagField */
   var tagField: js.UndefOr[String] = js.undefined
-  /** Configures error bars. */
+  /** @name dxChartSeriesTypes.CommonSeries.valueErrorBar */
   var valueErrorBar: js.UndefOr[AnonDisplayMode] = js.undefined
-  /** Specifies which data source field provides values for series points. */
+  /** @name dxChartSeriesTypes.CommonSeries.valueField */
   var valueField: js.UndefOr[String] = js.undefined
-  /** Specifies whether the series is visible or not. */
+  /** @name dxChartSeriesTypes.CommonSeries.visible */
   var visible: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the width of the series line in pixels. Applies only to line-like series. */
+  /** @name dxChartSeriesTypes.CommonSeries.width */
   var width: js.UndefOr[Double] = js.undefined
 }
 

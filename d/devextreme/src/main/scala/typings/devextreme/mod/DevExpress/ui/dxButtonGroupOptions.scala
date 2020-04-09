@@ -19,28 +19,28 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxButtonGroupOptions extends WidgetOptions[dxButtonGroup] {
-  /** Specifies a template for all the buttons in the group. */
+  /** @name dxButtonGroup.Options.buttonTemplate */
   var buttonTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* buttonData */ js.Any, /* buttonContent */ dxElement, String | Element | JQuery])
   ] = js.undefined
-  /** @deprecated Use the buttonTemplate option instead. */
-  /** Specifies a custom button template. */
+  /** @deprecated */
+  /** @name dxButtonGroup.Options.itemTemplate */
   var itemTemplate: js.UndefOr[typings.devextreme.mod.DevExpress.core.template | js.Function] = js.undefined
-  /** Configures buttons in the group. */
+  /** @name dxButtonGroup.Options.items */
   var items: js.UndefOr[js.Array[dxButtonGroupItem]] = js.undefined
-  /** Specifies which data field provides keys used to distinguish between the selected buttons. */
+  /** @name dxButtonGroup.Options.keyExpr */
   var keyExpr: js.UndefOr[String | js.Function] = js.undefined
-  /** A function that is executed when a button is clicked or tapped. */
+  /** @name dxButtonGroup.Options.onItemClick */
   var onItemClick: js.UndefOr[js.Function1[/* e */ AnonEventItemData, _]] = js.undefined
-  /** A function that is executed when a button is selected or selection is canceled. */
+  /** @name dxButtonGroup.Options.onSelectionChanged */
   var onSelectionChanged: js.UndefOr[js.Function1[/* e */ AnonRemovedItems, _]] = js.undefined
-  /** Contains the keys of the selected buttons and allows selecting buttons initially. */
+  /** @name dxButtonGroup.Options.selectedItemKeys */
   var selectedItemKeys: js.UndefOr[js.Array[_]] = js.undefined
-  /** Contains the data objects that correspond to the selected buttons. The data objects are taken from the items array. */
+  /** @name dxButtonGroup.Options.selectedItems */
   var selectedItems: js.UndefOr[js.Array[_]] = js.undefined
-  /** Specifies whether a single or multiple buttons can be in the selected state simultaneously. */
+  /** @name dxButtonGroup.Options.selectionMode */
   var selectionMode: js.UndefOr[multiple | single_] = js.undefined
-  /** Specifies how buttons in the group are styled. */
+  /** @name dxButtonGroup.Options.stylingMode */
   var stylingMode: js.UndefOr[text | outlined | contained] = js.undefined
 }
 

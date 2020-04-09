@@ -16,10 +16,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxPolarChartSeriesTypesBarpolarseries extends dxPolarChartSeriesTypesCommonPolarChartSeries {
-  /** Specifies series elements to be highlighted when a user points to the series. */
+  /** @name dxPolarChartSeriesTypes.barpolarseries.hoverMode */
   @JSName("hoverMode")
   var hoverMode_dxPolarChartSeriesTypesBarpolarseries: js.UndefOr[onlyPoint | allSeriesPoints | allArgumentPoints | none] = js.undefined
-  /** Specifies series elements to be highlighted when a user selects the series. */
+  /** @name dxPolarChartSeriesTypes.barpolarseries.selectionMode */
   @JSName("selectionMode")
   var selectionMode_dxPolarChartSeriesTypesBarpolarseries: js.UndefOr[onlyPoint | allSeriesPoints | allArgumentPoints | none] = js.undefined
 }

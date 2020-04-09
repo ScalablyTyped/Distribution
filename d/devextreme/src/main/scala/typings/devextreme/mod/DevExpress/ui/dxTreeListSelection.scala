@@ -8,7 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxTreeListSelection extends GridBaseSelection {
-  /** Specifies whether selection is recursive. */
+  /** @name dxTreeList.Options.selection.recursive */
   var recursive: js.UndefOr[Boolean] = js.undefined
 }
 

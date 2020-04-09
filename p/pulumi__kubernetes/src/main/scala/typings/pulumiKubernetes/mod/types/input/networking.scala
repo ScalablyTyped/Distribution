@@ -16,6 +16,8 @@ object networking extends js.Object {
   @js.native
   object v1beta1 extends js.Object {
     def isIngress(o: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/types/input.networking.v1beta1.Ingress */ Boolean = js.native
+    def isIngressClass(o: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/types/input.networking.v1beta1.IngressClass */ Boolean = js.native
+    def isIngressClassList(o: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/types/input.networking.v1beta1.IngressClassList */ Boolean = js.native
     def isIngressList(o: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/types/input.networking.v1beta1.IngressList */ Boolean = js.native
   }
   

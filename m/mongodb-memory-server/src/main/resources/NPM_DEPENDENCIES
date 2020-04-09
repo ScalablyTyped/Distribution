@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "mongodb-memory-server" : "6.4.1"
+      "mongodb-memory-server" : "6.5.2"
     }
   ],
   "test-dependencies" : [
     {
-      "mongodb-memory-server" : "6.4.1"
+      "mongodb-memory-server" : "6.5.2"
     }
   ],
   "compile-devDependencies" : [

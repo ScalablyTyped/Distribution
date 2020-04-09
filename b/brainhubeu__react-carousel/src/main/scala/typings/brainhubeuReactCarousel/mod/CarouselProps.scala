@@ -22,6 +22,7 @@ trait CarouselProps extends js.Object {
   var keepDirectionWhenDragging: js.UndefOr[Boolean] = js.undefined
   var offset: js.UndefOr[Double] = js.undefined
   var onChange: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.undefined
+  var rtl: js.UndefOr[Boolean] = js.undefined
   var slides: js.UndefOr[js.Array[Element]] = js.undefined
   var slidesPerPage: js.UndefOr[Double] = js.undefined
   var slidesPerScroll: js.UndefOr[Double] = js.undefined
@@ -48,6 +49,7 @@ object CarouselProps {
     keepDirectionWhenDragging: js.UndefOr[Boolean] = js.undefined,
     offset: Int | Double = null,
     onChange: /* value */ Double => Unit = null,
+    rtl: js.UndefOr[Boolean] = js.undefined,
     slides: js.Array[Element] = null,
     slidesPerPage: Int | Double = null,
     slidesPerScroll: Int | Double = null,
@@ -71,6 +73,7 @@ object CarouselProps {
     if (!js.isUndefined(keepDirectionWhenDragging)) __obj.updateDynamic("keepDirectionWhenDragging")(keepDirectionWhenDragging.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
+    if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl.asInstanceOf[js.Any])
     if (slides != null) __obj.updateDynamic("slides")(slides.asInstanceOf[js.Any])
     if (slidesPerPage != null) __obj.updateDynamic("slidesPerPage")(slidesPerPage.asInstanceOf[js.Any])
     if (slidesPerScroll != null) __obj.updateDynamic("slidesPerScroll")(slidesPerScroll.asInstanceOf[js.Any])

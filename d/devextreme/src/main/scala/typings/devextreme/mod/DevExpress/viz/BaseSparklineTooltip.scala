@@ -11,13 +11,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Configures the tooltip. */
+/** @name BaseSparkline.Options.tooltip */
 trait BaseSparklineTooltip extends BaseWidgetTooltip {
-  /** Specifies a custom template for tooltips. */
+  /** @name BaseSparkline.Options.tooltip.contentTemplate */
   var contentTemplate: js.UndefOr[
     template | (js.Function2[/* pointsInfo */ js.Any, /* element */ dxElement, String | Element | JQuery])
   ] = js.undefined
-  /** Allows you to change tooltip appearance. */
+  /** @name BaseSparkline.Options.tooltip.customizeTooltip */
   var customizeTooltip: js.UndefOr[js.Function1[/* pointsInfo */ js.Any, _]] = js.undefined
 }
 

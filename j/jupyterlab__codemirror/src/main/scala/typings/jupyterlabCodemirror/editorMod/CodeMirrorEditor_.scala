@@ -357,6 +357,13 @@ class CodeMirrorEditor_ protected () extends IEditor {
   def operation[T](fn: js.Function0[T]): T = js.native
   def removeOverlay(mode: String): Unit = js.native
   def removeOverlay(mode: js.Object): Unit = js.native
+  /**
+    * Replaces the current selection with the given text.
+    *
+    * @param text The text to be inserted.
+    */
+  @JSName("replaceSelection")
+  def replaceSelection_MCodeMirrorEditor_(text: String): Unit = js.native
   def scrollIntoView(pos: AnonFrom, margin: Double): Unit = js.native
   /**
     * The selection style of this editor.

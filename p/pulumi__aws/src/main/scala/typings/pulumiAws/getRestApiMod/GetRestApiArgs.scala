@@ -11,6 +11,9 @@ trait GetRestApiArgs extends js.Object {
     * The name of the REST API to look up. If no REST API is found with this name, an error will be returned. If multiple REST APIs are found with this name, an error will be returned.
     */
   val name: String = js.native
+  /**
+    * Key-value mapping of resource tags.
+    */
   val tags: js.UndefOr[StringDictionary[js.Any]] = js.native
 }
 

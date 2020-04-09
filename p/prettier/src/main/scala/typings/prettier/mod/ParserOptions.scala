@@ -43,7 +43,7 @@ object ParserOptions {
     parser: BuiltInParserName | CustomParser,
     plugins: js.Array[String | Plugin],
     printWidth: Double,
-    proseWrap: Boolean | always | never | preserve,
+    proseWrap: always | never | preserve,
     quoteProps: `as-needed` | consistent | preserve,
     rangeEnd: Double,
     rangeStart: Double,

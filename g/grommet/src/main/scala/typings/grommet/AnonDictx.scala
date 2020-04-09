@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AnonDictx extends /* x */ StringDictionary[AnonBorderSize] {
+trait AnonDictx
+  extends /* x */ StringDictionary[js.UndefOr[AnonBorderSize]] {
   var large: js.UndefOr[AnonBorderSize] = js.undefined
   var medium: js.UndefOr[AnonBorderSize] = js.undefined
   var small: js.UndefOr[AnonBorderSize] = js.undefined
@@ -14,7 +15,7 @@ trait AnonDictx extends /* x */ StringDictionary[AnonBorderSize] {
 object AnonDictx {
   @scala.inline
   def apply(
-    StringDictionary: /* x */ StringDictionary[AnonBorderSize] = null,
+    StringDictionary: /* x */ StringDictionary[js.UndefOr[AnonBorderSize]] = null,
     large: AnonBorderSize = null,
     medium: AnonBorderSize = null,
     small: AnonBorderSize = null

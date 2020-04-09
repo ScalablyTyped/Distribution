@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait dxPivotGridFieldChooser extends Widget {
-  /** Applies changes made in the widget to the PivotGrid. Takes effect only if applyChangesMode is "onDemand". */
+  /** @name dxPivotGridFieldChooser.applyChanges() */
   def applyChanges(): Unit = js.native
-  /** Cancels changes made in the widget without applying them to the PivotGrid. Takes effect only if applyChangesMode is "onDemand". */
+  /** @name dxPivotGridFieldChooser.cancelChanges() */
   def cancelChanges(): Unit = js.native
-  /** Gets the PivotGridDataSource instance. */
+  /** @name dxPivotGridFieldChooser.getDataSource() */
   def getDataSource(): PivotGridDataSource = js.native
-  /** Updates the widget to the size of its content. */
+  /** @name dxPivotGridFieldChooser.updateDimensions() */
   def updateDimensions(): Unit = js.native
 }
 

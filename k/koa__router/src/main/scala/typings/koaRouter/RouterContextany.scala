@@ -2,6 +2,7 @@ package typings.koaRouter
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.accepts.mod.Accepts
+import typings.contentDisposition.mod.Options
 import typings.cookies.mod.Cookies
 import typings.koa.AnonCall
 import typings.koa.mod.Application
@@ -371,9 +372,12 @@ trait RouterContextany extends js.Object {
     */
   def assert(value: js.Any, status: Double, opts: js.Object): Unit = js.native
   /**
-    * Set Content-Disposition header to "attachment" with optional `filename`.
+    * Set Content-Disposition to "attachment" to signal the client to prompt for download.
+    * Optionally specify the filename of the download and some options.
     */
+  def attachment(): Unit = js.native
   def attachment(filename: String): Unit = js.native
+  def attachment(filename: String, options: Options): Unit = js.native
   /**
     * Flush any set headers, and begin the body
     */

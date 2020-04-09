@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "ng-cordova"
-version := "0.0-unknown-dt-20200226Z-9ad3ed"
+version := "0.0-unknown-dt-20200226Z-61e4c5"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "angular" % "1.6-dt-20200225Z-7ee1ed",
+  "org.scalablytyped" %%% "angular" % "1.7-dt-20200331Z-219e30",
   "org.scalablytyped" %%% "cordova-plugin-camera" % "4.1.0-08d8ff",
   "org.scalablytyped" %%% "cordova-plugin-file" % "6.0.2-cb9ce6",
   "org.scalablytyped" %%% "cordova-plugin-file-transfer" % "1.7.1-e18ae5",

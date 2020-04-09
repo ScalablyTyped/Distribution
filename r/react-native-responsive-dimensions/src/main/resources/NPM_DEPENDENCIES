@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-native-responsive-dimensions" : "3.1.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-native-responsive-dimensions" : "3.1.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

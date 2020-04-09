@@ -267,6 +267,9 @@ object mapboxGlStrings {
   sealed trait hillshade extends js.Object
   
   @js.native
+  sealed trait horizontal extends js.Object
+  
+  @js.native
   sealed trait id extends ExpressionName
   
   @js.native
@@ -576,6 +579,9 @@ object mapboxGlStrings {
   sealed trait vector extends js.Object
   
   @js.native
+  sealed trait vertical extends js.Object
+  
+  @js.native
   sealed trait video extends js.Object
   
   @js.native
@@ -782,6 +788,8 @@ object mapboxGlStrings {
   @scala.inline
   def hillshade: hillshade = "hillshade".asInstanceOf[hillshade]
   @scala.inline
+  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  @scala.inline
   def id: id = "id".asInstanceOf[id]
   @scala.inline
   def identity: identity = "identity".asInstanceOf[identity]
@@ -987,6 +995,8 @@ object mapboxGlStrings {
   def `var`: `var` = "var".asInstanceOf[`var`]
   @scala.inline
   def vector: vector = "vector".asInstanceOf[vector]
+  @scala.inline
+  def vertical: vertical = "vertical".asInstanceOf[vertical]
   @scala.inline
   def video: video = "video".asInstanceOf[video]
   @scala.inline

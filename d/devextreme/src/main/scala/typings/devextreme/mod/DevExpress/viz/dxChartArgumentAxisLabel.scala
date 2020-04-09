@@ -18,11 +18,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxChartArgumentAxisLabel extends dxChartCommonAxisSettingsLabel {
-  /** Specifies the hint that appears when a user points to an axis label. */
+  /** @name dxChart.Options.argumentAxis.label.customizeHint */
   var customizeHint: js.UndefOr[js.Function1[/* argument */ AnonValueValueText, String]] = js.undefined
-  /** Customizes the text displayed by axis labels. */
+  /** @name dxChart.Options.argumentAxis.label.customizeText */
   var customizeText: js.UndefOr[js.Function1[/* argument */ AnonValueValueText, String]] = js.undefined
-  /** Formats a value before it is displayed in an axis label. */
+  /** @name dxChart.Options.argumentAxis.label.format */
   var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.format] = js.undefined
 }
 

@@ -414,6 +414,12 @@ class File protected () extends ServiceObject[File] {
   def download(callback: DownloadCallback): Unit = js.native
   def download(options: DownloadOptions): js.Promise[DownloadResponse] = js.native
   def download(options: DownloadOptions, callback: DownloadCallback): Unit = js.native
+  def generateSignedPostPolicyV2(callback: GenerateSignedPostPolicyV2Callback): Unit = js.native
+  def generateSignedPostPolicyV2(options: GenerateSignedPostPolicyV2Options): js.Promise[GenerateSignedPostPolicyV2Response] = js.native
+  def generateSignedPostPolicyV2(options: GenerateSignedPostPolicyV2Options, callback: GenerateSignedPostPolicyV2Callback): Unit = js.native
+  def generateSignedPostPolicyV4(callback: GenerateSignedPostPolicyV4Callback): Unit = js.native
+  def generateSignedPostPolicyV4(options: GenerateSignedPostPolicyV4Options): js.Promise[GenerateSignedPostPolicyV4Response] = js.native
+  def generateSignedPostPolicyV4(options: GenerateSignedPostPolicyV4Options, callback: GenerateSignedPostPolicyV4Callback): Unit = js.native
   def getExpirationDate(): js.Promise[GetExpirationDateResponse] = js.native
   def getExpirationDate(callback: GetExpirationDateCallback): Unit = js.native
   def getSignedPolicy(callback: GetSignedPolicyCallback): Unit = js.native

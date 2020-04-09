@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined @sinonjs/fake-timers.@sinonjs/fake-timers.FakeClock<@sinonjs/fake-timers.@sinonjs/fake-timers.NodeTimer> & {hrtime (prevTime ? : [number, number]): [number, number], queueMicrotask (callback : (): void): void, nextTick (callback : (): void): void, runMicrotasks (): void} */
+/* Inlined @sinonjs/fake-timers.@sinonjs/fake-timers.FakeClock<@sinonjs/fake-timers.@sinonjs/fake-timers.NodeTimer> & {hrtime (prevTime ? : [number, number]): [number, number], queueMicrotask (callback : (): void): void, nextTick (callback : (args : ...any): void, args : ...any): void, runMicrotasks (): void} */
 @js.native
 trait NodeClock extends Clock {
   /**
@@ -55,7 +55,7 @@ trait NodeClock extends Clock {
     *
     * @param id   Timer ID or object.
     */
-  def clearTimeout(id: TimerId): Unit = js.native
+  def clearTimeout(id: NodeTimer): Unit = js.native
   /**
     * Get the number of waiting timers.
     *
@@ -72,18 +72,20 @@ trait NodeClock extends Clock {
   def hrtime(prevTime: js.Tuple2[Double, Double]): js.Tuple2[Double, Double] = js.native
   /**
     * Advances the clock to the the moment of the first scheduled timer, firing it.
+    * @returns Fake milliseconds since the unix epoch.
     */
-  def next(): Unit = js.native
+  def next(): Double = js.native
   /**
     * Advances the clock to the the moment of the first scheduled timer, firing it.
     *
     * Also breaks the event loop, allowing any scheduled promise callbacks to execute _before_ running the timers.
+    * @returns Fake milliseconds since the unix epoch.
     */
-  def nextAsync(): js.Promise[Unit] = js.native
+  def nextAsync(): js.Promise[Double] = js.native
   /**
     * Simulates process.nextTick().
     */
-  def nextTick(callback: js.Function0[Unit]): Unit = js.native
+  def nextTick(callback: js.Function1[/* repeated */ js.Any, Unit], args: js.Any*): Unit = js.native
   /**
     * Mimics process.nextTick() explicitly dropping additional arguments.
     */
@@ -112,44 +114,50 @@ trait NodeClock extends Clock {
     * Runs all pending timers until there are none remaining.
     *
     * @remarks  If new timers are added while it is executing they will be run as well.
+    * @returns Fake milliseconds since the unix epoch.
     */
-  def runAll(): Unit = js.native
+  def runAll(): Double = js.native
   /**
     * Runs all pending timers until there are none remaining.
     *
     * Also breaks the event loop, allowing any scheduled promise callbacks to execute _before_ running the timers.
     *
     * @remarks  If new timers are added while it is executing they will be run as well.
+    * @returns Fake milliseconds since the unix epoch.
     */
-  def runAllAsync(): js.Promise[Unit] = js.native
+  def runAllAsync(): js.Promise[Double] = js.native
   /**
     * Run all pending microtasks scheduled with nextTick.
     */
   def runMicrotasks(): Unit = js.native
   /**
     * Advanced the clock to the next animation frame while firing all scheduled callbacks.
+    * @returns Fake milliseconds since the unix epoch.
     */
-  def runToFrame(): Unit = js.native
+  def runToFrame(): Double = js.native
   /**
     * Takes note of the last scheduled timer when it is run, and advances the clock to
     * that time firing callbacks as necessary.
+    * @returns Fake milliseconds since the unix epoch.
     */
-  def runToLast(): Unit = js.native
+  def runToLast(): Double = js.native
   /**
     * Takes note of the last scheduled timer when it is run, and advances the clock to
     * that time firing callbacks as necessary.
     *
     * Also breaks the event loop, allowing any scheduled promise callbacks to execute _before_ running the timers.
+    * @returns Fake milliseconds since the unix epoch.
     */
-  def runToLastAsync(): js.Promise[Unit] = js.native
+  def runToLastAsync(): js.Promise[Double] = js.native
   /**
     * Schedules the callback to be fired once 0 milliseconds have ticked by.
     *
     * @param callback   Callback to be fired.
+    * @param args   Any extra arguments to pass to the callback.
     * @remarks You'll still have to call clock.tick() for the callback to fire.
     * @remarks If called during a tick the callback won't fire until 1 millisecond has ticked by.
     */
-  def setImmediate(callback: js.Function0[Unit]): NodeTimer = js.native
+  def setImmediate(callback: js.Function1[/* repeated */ js.Any, Unit], args: js.Any*): NodeTimer = js.native
   /**
     * Schedules a callback to be fired every time timeout milliseconds have ticked by.
     *
@@ -158,7 +166,7 @@ trait NodeClock extends Clock {
     * @param args   Any extra arguments to pass to the callback.
     * @returns Time identifier for cancellation.
     */
-  def setInterval(callback: js.Function0[Unit], timeout: Double, args: js.Any*): NodeTimer = js.native
+  def setInterval(callback: js.Function1[/* repeated */ js.Any, Unit], timeout: Double, args: js.Any*): NodeTimer = js.native
   /**
     * Simulates a user changing the system clock.
     *
@@ -176,22 +184,24 @@ trait NodeClock extends Clock {
     * @param args   Any extra arguments to pass to the callback.
     * @returns Time identifier for cancellation.
     */
-  def setTimeout(callback: js.Function0[Unit], timeout: Double, args: js.Any*): NodeTimer = js.native
-  def tick(time: String): Unit = js.native
+  def setTimeout(callback: js.Function1[/* repeated */ js.Any, Unit], timeout: Double, args: js.Any*): NodeTimer = js.native
+  def tick(time: String): Double = js.native
   /**
     * Advance the clock, firing callbacks if necessary.
     *
     * @param time   How many ticks to advance by.
+    * @returns Fake milliseconds since the unix epoch.
     */
-  def tick(time: Double): Unit = js.native
-  def tickAsync(time: String): js.Promise[Unit] = js.native
+  def tick(time: Double): Double = js.native
+  def tickAsync(time: String): js.Promise[Double] = js.native
   /**
     * Advance the clock, firing callbacks if necessary.
     *
     * Also breaks the event loop, allowing any scheduled promise callbacks to execute _before_ running the timers.
     *
     * @param time   How many ticks to advance by.
+    * @returns Fake milliseconds since the unix epoch.
     */
-  def tickAsync(time: Double): js.Promise[Unit] = js.native
+  def tickAsync(time: Double): js.Promise[Double] = js.native
 }
 

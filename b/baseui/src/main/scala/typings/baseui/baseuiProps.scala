@@ -4,7 +4,6 @@ import typings.baseui.dndListMod.StatefulComponentContainerProps
 import typings.baseui.layerMod.TetherProps
 import typings.baseui.listMod.LabelPropsT
 import typings.baseui.listMod.MenuAdapterPropsT
-import typings.baseui.listMod.PropsT
 import typings.baseui.menuMod.NestedMenuProps
 import typings.baseui.selectMod.DropdownProps
 import scala.scalajs.js
@@ -261,9 +260,6 @@ trait baseuiProps {
   @scala.inline
   def ListProps: typings.baseui.dndListMod.ListProps.type = typings.baseui.dndListMod.ListProps
   type ListProps = typings.baseui.dndListMod.ListProps
-  @scala.inline
-  def ListItemProps: PropsT.type = typings.baseui.listMod.PropsT
-  type ListItemProps = PropsT
   @scala.inline
   def ListItemLabelProps: LabelPropsT.type = typings.baseui.listMod.LabelPropsT
   type ListItemLabelProps = LabelPropsT

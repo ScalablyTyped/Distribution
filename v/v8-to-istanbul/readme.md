@@ -1,7 +1,7 @@
 
 # Scala.js typings for v8-to-istanbul
 
-Typings are for version 4.1.2
+Typings are for version 4.1.3
 
 ## Library description:
 convert from v8 coverage format to istanbul's format

@@ -8,17 +8,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Configures the appearance adopted by the series when a user selects it. */
+/** @name dxChartSeriesTypes.CommonSeries.selectionStyle */
 trait dxChartSeriesTypesCommonSeriesSelectionStyle extends js.Object {
-  /** Configures the appearance adopted by the series border (in area-like series) or the series point border (in bar-like and bubble series) when a user selects the series. */
+  /** @name dxChartSeriesTypes.CommonSeries.selectionStyle.border */
   var border: js.UndefOr[dxChartSeriesTypesCommonSeriesSelectionStyleBorder] = js.undefined
-  /** Specifies the color of the series in the selected state. */
+  /** @name dxChartSeriesTypes.CommonSeries.selectionStyle.color */
   var color: js.UndefOr[String] = js.undefined
-  /** Specifies the dash style of the series line when the series is in the selected state. Applies only to line-like series. */
+  /** @name dxChartSeriesTypes.CommonSeries.selectionStyle.dashStyle */
   var dashStyle: js.UndefOr[dash | dot | longDash | solid] = js.undefined
-  /** Configures hatching that applies when a user selects the series. */
+  /** @name dxChartSeriesTypes.CommonSeries.selectionStyle.hatching */
   var hatching: js.UndefOr[dxChartSeriesTypesCommonSeriesSelectionStyleHatching] = js.undefined
-  /** Specifies the pixel-measured width of the series line when the series is in the selected state. */
+  /** @name dxChartSeriesTypes.CommonSeries.selectionStyle.width */
   var width: js.UndefOr[Double] = js.undefined
 }
 

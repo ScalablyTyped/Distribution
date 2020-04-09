@@ -65,6 +65,7 @@ import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
@@ -250,14 +251,14 @@ trait PartialListItemTextProps extends js.Object {
   var placeholder: js.UndefOr[String] = js.native
   var prefix: js.UndefOr[String] = js.native
   var primary: js.UndefOr[ReactNode] = js.native
-  var primaryTypographyProps: js.UndefOr[PartialTypographyProps] = js.native
+  var primaryTypographyProps: js.UndefOr[PartialTypographyPropsAbout] = js.native
   var property: js.UndefOr[String] = js.native
   var radioGroup: js.UndefOr[String] = js.native
   var resource: js.UndefOr[String] = js.native
   var results: js.UndefOr[Double] = js.native
   var role: js.UndefOr[String] = js.native
   var secondary: js.UndefOr[ReactNode] = js.native
-  var secondaryTypographyProps: js.UndefOr[PartialTypographyProps] = js.native
+  var secondaryTypographyProps: js.UndefOr[PartialTypographyPropsAbout] = js.native
   var security: js.UndefOr[String] = js.native
   var slot: js.UndefOr[String] = js.native
   var spellCheck: js.UndefOr[Booleanish] = js.native
@@ -417,7 +418,7 @@ object PartialListItemTextProps {
     onProgress: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onRateChange: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onReset: FormEvent[HTMLDivElement] => Unit = null,
-    onScroll: UIEvent[HTMLDivElement] => Unit = null,
+    onScroll: UIEvent[HTMLDivElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
@@ -436,14 +437,14 @@ object PartialListItemTextProps {
     placeholder: String = null,
     prefix: String = null,
     primary: ReactNode = null,
-    primaryTypographyProps: PartialTypographyProps = null,
+    primaryTypographyProps: PartialTypographyPropsAbout = null,
     property: String = null,
     radioGroup: String = null,
     resource: String = null,
     results: Int | Double = null,
     role: String = null,
     secondary: ReactNode = null,
-    secondaryTypographyProps: PartialTypographyProps = null,
+    secondaryTypographyProps: PartialTypographyPropsAbout = null,
     security: String = null,
     slot: String = null,
     spellCheck: js.UndefOr[Boolean] = js.undefined,

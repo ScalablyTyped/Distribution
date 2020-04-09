@@ -1,7 +1,7 @@
 
 # Scala.js typings for apollo__react-hoc
 
-Typings are for version 3.1.3
+Typings are for version 3.1.4
 
 ## Library description:
 React Apollo `graphql` higher-order component.

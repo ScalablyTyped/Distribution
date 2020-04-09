@@ -6,45 +6,45 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait dxTreeMapNode extends js.Object {
-  /** The object from the data source visualized by the node. */
+  /** @name dxTreeMapNode.data */
   var data: js.Any = js.native
-  /** The index of the current node in the array of all nodes on the same level. */
+  /** @name dxTreeMapNode.index */
   var index: Double = js.native
-  /** The level that the current node occupies in the hierarchy of nodes. */
+  /** @name dxTreeMapNode.level */
   var level: Double = js.native
-  /** Customizes the node. */
+  /** @name dxTreeMapNode.customize(options) */
   def customize(options: js.Any): Unit = js.native
-  /** Drills down into the node. */
+  /** @name dxTreeMapNode.drillDown() */
   def drillDown(): Unit = js.native
-  /** Returns all nodes nested in the current node. */
+  /** @name dxTreeMapNode.getAllChildren() */
   def getAllChildren(): js.Array[dxTreeMapNode] = js.native
-  /** Returns all descendant nodes. */
+  /** @name dxTreeMapNode.getAllNodes() */
   def getAllNodes(): js.Array[dxTreeMapNode] = js.native
-  /** Gets a specific node from a collection of direct descendants. */
+  /** @name dxTreeMapNode.getChild(index) */
   def getChild(index: Double): dxTreeMapNode = js.native
-  /** Indicates how many direct descendants the current node has. */
+  /** @name dxTreeMapNode.getChildrenCount() */
   def getChildrenCount(): Double = js.native
-  /** Returns the parent node of the current node. */
+  /** @name dxTreeMapNode.getParent() */
   def getParent(): dxTreeMapNode = js.native
-  /** Indicates whether the current node is active. */
+  /** @name dxTreeMapNode.isActive() */
   def isActive(): Boolean = js.native
-  /** Indicates whether the node is in the hover state or not. */
+  /** @name dxTreeMapNode.isHovered() */
   def isHovered(): Boolean = js.native
-  /** Indicates whether the node is visualized by a tile or a group of tiles. */
+  /** @name dxTreeMapNode.isLeaf() */
   def isLeaf(): Boolean = js.native
-  /** Indicates whether the node is selected or not. */
+  /** @name dxTreeMapNode.isSelected() */
   def isSelected(): Boolean = js.native
-  /** Returns the label of the node. */
+  /** @name dxTreeMapNode.label() */
   def label(): String = js.native
-  /** Sets the label to the node. */
+  /** @name dxTreeMapNode.label(label) */
   def label(label: String): Unit = js.native
-  /** Reverts the appearance of the node to the initial state. */
+  /** @name dxTreeMapNode.resetCustomization() */
   def resetCustomization(): Unit = js.native
-  /** Sets the selection state of a node. */
+  /** @name dxTreeMapNode.select(state) */
   def select(state: Boolean): Unit = js.native
-  /** Shows the tooltip. */
+  /** @name dxTreeMapNode.showTooltip() */
   def showTooltip(): Unit = js.native
-  /** Gets the raw value of the node. */
+  /** @name dxTreeMapNode.value() */
   def value(): Double = js.native
 }
 

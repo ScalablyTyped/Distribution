@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 /* Inlined std.Partial<exceljs.exceljs.Column> */
 trait PartialColumn extends js.Object {
   var alignment: js.UndefOr[PartialAlignment] = js.undefined
-  var border: js.UndefOr[PartialBorders] = js.undefined
+  var border: js.UndefOr[PartialBordersBottom] = js.undefined
   var collapsed: js.UndefOr[Boolean] = js.undefined
   var defn: js.UndefOr[js.Any] = js.undefined
   var eachCell: js.UndefOr[
@@ -33,7 +33,7 @@ trait PartialColumn extends js.Object {
   var number: js.UndefOr[Double] = js.undefined
   var outlineLevel: js.UndefOr[Double] = js.undefined
   var protection: js.UndefOr[PartialProtection] = js.undefined
-  var style: js.UndefOr[PartialStyle] = js.undefined
+  var style: js.UndefOr[PartialStyleAlignment] = js.undefined
   @JSName("toString")
   var toString_FPartialColumn: js.UndefOr[js.Function0[String]] = js.undefined
   var values: js.UndefOr[js.Array[CellValue]] = js.undefined
@@ -45,7 +45,7 @@ object PartialColumn {
   @scala.inline
   def apply(
     alignment: PartialAlignment = null,
-    border: PartialBorders = null,
+    border: PartialBordersBottom = null,
     collapsed: js.UndefOr[Boolean] = js.undefined,
     defn: js.Any = null,
     eachCell: /* callback */ js.Function2[/* cell */ Cell, /* rowNumber */ Double, Unit] => Unit = null,
@@ -64,7 +64,7 @@ object PartialColumn {
     number: Int | Double = null,
     outlineLevel: Int | Double = null,
     protection: PartialProtection = null,
-    style: PartialStyle = null,
+    style: PartialStyleAlignment = null,
     toString: () => String = null,
     values: js.Array[CellValue] = null,
     width: Int | Double = null,

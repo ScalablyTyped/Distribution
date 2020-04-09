@@ -273,6 +273,9 @@ object reactToastrStrings {
   sealed trait select extends js.Object
   
   @js.native
+  sealed trait slot extends js.Object
+  
+  @js.native
   sealed trait small extends js.Object
   
   @js.native
@@ -528,6 +531,8 @@ object reactToastrStrings {
   def section: section = "section".asInstanceOf[section]
   @scala.inline
   def select: select = "select".asInstanceOf[select]
+  @scala.inline
+  def slot: slot = "slot".asInstanceOf[slot]
   @scala.inline
   def small: small = "small".asInstanceOf[small]
   @scala.inline

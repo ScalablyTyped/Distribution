@@ -9,7 +9,7 @@ trait VpcPeeringConnection extends js.Object {
   /**
     *  The Amazon Resource Name (ARN) associated with the GameLift fleet resource for this connection. 
     */
-  var FleetArn: js.UndefOr[ArnStringModel] = js.native
+  var FleetArn: js.UndefOr[typings.awsSdk.gameliftMod.FleetArn] = js.native
   /**
     * A unique identifier for a fleet. This ID determines the ID of the Amazon GameLift VPC for your fleet.
     */
@@ -39,7 +39,7 @@ trait VpcPeeringConnection extends js.Object {
 object VpcPeeringConnection {
   @scala.inline
   def apply(
-    FleetArn: ArnStringModel = null,
+    FleetArn: FleetArn = null,
     FleetId: FleetId = null,
     GameLiftVpcId: NonZeroAndMaxString = null,
     IpV4CidrBlock: NonZeroAndMaxString = null,

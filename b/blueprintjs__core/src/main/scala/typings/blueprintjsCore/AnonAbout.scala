@@ -53,6 +53,7 @@ import typings.react.mod.DragEvent
 import typings.react.mod.FocusEvent
 import typings.react.mod.FormEvent
 import typings.react.mod.KeyboardEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
@@ -311,8 +312,8 @@ trait AnonAbout extends js.Object {
   var onRateChangeCapture: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLElement, Event_], Unit]] = js.undefined
   var onReset: js.UndefOr[js.Function1[/* event */ FormEvent[HTMLElement], Unit]] = js.undefined
   var onResetCapture: js.UndefOr[js.Function1[/* event */ FormEvent[HTMLElement], Unit]] = js.undefined
-  var onScroll: js.UndefOr[js.Function1[/* event */ UIEvent[HTMLElement], Unit]] = js.undefined
-  var onScrollCapture: js.UndefOr[js.Function1[/* event */ UIEvent[HTMLElement], Unit]] = js.undefined
+  var onScroll: js.UndefOr[js.Function1[/* event */ UIEvent[HTMLElement, NativeUIEvent], Unit]] = js.undefined
+  var onScrollCapture: js.UndefOr[js.Function1[/* event */ UIEvent[HTMLElement, NativeUIEvent], Unit]] = js.undefined
   var onSeeked: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLElement, Event_], Unit]] = js.undefined
   var onSeekedCapture: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLElement, Event_], Unit]] = js.undefined
   var onSeeking: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLElement, Event_], Unit]] = js.undefined
@@ -570,8 +571,8 @@ object AnonAbout {
     onRateChangeCapture: /* event */ SyntheticEvent[HTMLElement, Event_] => Unit = null,
     onReset: /* event */ FormEvent[HTMLElement] => Unit = null,
     onResetCapture: /* event */ FormEvent[HTMLElement] => Unit = null,
-    onScroll: /* event */ UIEvent[HTMLElement] => Unit = null,
-    onScrollCapture: /* event */ UIEvent[HTMLElement] => Unit = null,
+    onScroll: /* event */ UIEvent[HTMLElement, NativeUIEvent] => Unit = null,
+    onScrollCapture: /* event */ UIEvent[HTMLElement, NativeUIEvent] => Unit = null,
     onSeeked: /* event */ SyntheticEvent[HTMLElement, Event_] => Unit = null,
     onSeekedCapture: /* event */ SyntheticEvent[HTMLElement, Event_] => Unit = null,
     onSeeking: /* event */ SyntheticEvent[HTMLElement, Event_] => Unit = null,

@@ -23,7 +23,7 @@ trait CreateAutoMLJobRequest extends js.Object {
     */
   var GenerateCandidateDefinitionsOnly: js.UndefOr[typings.awsSdk.sagemakerMod.GenerateCandidateDefinitionsOnly] = js.native
   /**
-    * Similar to InputDataConfig supported by Tuning. Format(s) supported: CSV.
+    * Similar to InputDataConfig supported by Tuning. Format(s) supported: CSV. Minimum of 1000 rows.
     */
   var InputDataConfig: AutoMLInputDataConfig = js.native
   /**

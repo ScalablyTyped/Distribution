@@ -7,13 +7,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxPolarChartCommonAxisSettingsLabel extends js.Object {
-  /** Specifies font options for axis labels. */
+  /** @name dxPolarChart.Options.commonAxisSettings.label.font */
   var font: js.UndefOr[Font] = js.undefined
-  /** Specifies the spacing between an axis and its labels in pixels. */
+  /** @name dxPolarChart.Options.commonAxisSettings.label.indentFromAxis */
   var indentFromAxis: js.UndefOr[Double] = js.undefined
-  /** Decides how to arrange axis labels when there is not enough space to keep all of them. */
+  /** @name dxPolarChart.Options.commonAxisSettings.label.overlappingBehavior */
   var overlappingBehavior: js.UndefOr[none | hide] = js.undefined
-  /** Indicates whether or not axis labels are visible. */
+  /** @name dxPolarChart.Options.commonAxisSettings.label.visible */
   var visible: js.UndefOr[Boolean] = js.undefined
 }
 

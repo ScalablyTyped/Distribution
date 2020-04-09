@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
   - typings.firebase.firebaseStrings.add_payment_info
+  - typings.firebase.firebaseStrings.add_shipping_info
   - typings.firebase.firebaseStrings.add_to_cart
   - typings.firebase.firebaseStrings.add_to_wishlist
   - typings.firebase.firebaseStrings.begin_checkout
@@ -20,10 +21,13 @@ import scala.scalajs.js.annotation._
   - typings.firebase.firebaseStrings.screen_view
   - typings.firebase.firebaseStrings.search
   - typings.firebase.firebaseStrings.select_content
+  - typings.firebase.firebaseStrings.select_item
+  - typings.firebase.firebaseStrings.select_promotion
   - typings.firebase.firebaseStrings.set_checkout_option
   - typings.firebase.firebaseStrings.share
   - typings.firebase.firebaseStrings.sign_up
   - typings.firebase.firebaseStrings.timing_complete
+  - typings.firebase.firebaseStrings.view_cart
   - typings.firebase.firebaseStrings.view_item
   - typings.firebase.firebaseStrings.view_item_list
   - typings.firebase.firebaseStrings.view_promotion
@@ -34,6 +38,8 @@ trait EventNameString extends js.Object
 object EventNameString {
   @scala.inline
   def add_payment_info: typings.firebase.firebaseStrings.add_payment_info = this.cast("add_payment_info")
+  @scala.inline
+  def add_shipping_info: typings.firebase.firebaseStrings.add_shipping_info = this.cast("add_shipping_info")
   @scala.inline
   def add_to_cart: typings.firebase.firebaseStrings.add_to_cart = this.cast("add_to_cart")
   @scala.inline
@@ -65,6 +71,10 @@ object EventNameString {
   @scala.inline
   def select_content: typings.firebase.firebaseStrings.select_content = this.cast("select_content")
   @scala.inline
+  def select_item: typings.firebase.firebaseStrings.select_item = this.cast("select_item")
+  @scala.inline
+  def select_promotion: typings.firebase.firebaseStrings.select_promotion = this.cast("select_promotion")
+  @scala.inline
   def set_checkout_option: typings.firebase.firebaseStrings.set_checkout_option = this.cast("set_checkout_option")
   @scala.inline
   def share: typings.firebase.firebaseStrings.share = this.cast("share")
@@ -72,6 +82,8 @@ object EventNameString {
   def sign_up: typings.firebase.firebaseStrings.sign_up = this.cast("sign_up")
   @scala.inline
   def timing_complete: typings.firebase.firebaseStrings.timing_complete = this.cast("timing_complete")
+  @scala.inline
+  def view_cart: typings.firebase.firebaseStrings.view_cart = this.cast("view_cart")
   @scala.inline
   def view_item: typings.firebase.firebaseStrings.view_item = this.cast("view_item")
   @scala.inline

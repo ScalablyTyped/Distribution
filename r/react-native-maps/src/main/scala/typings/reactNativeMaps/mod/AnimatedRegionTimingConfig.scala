@@ -18,12 +18,13 @@ trait AnimatedRegionTimingConfig extends js.Object {
   var latitudeDelta: js.UndefOr[Double] = js.undefined
   var longitude: js.UndefOr[Double] = js.undefined
   var longitudeDelta: js.UndefOr[Double] = js.undefined
-  var useNativeDriver: js.UndefOr[Boolean] = js.undefined
+  var useNativeDriver: Boolean
 }
 
 object AnimatedRegionTimingConfig {
   @scala.inline
   def apply(
+    useNativeDriver: Boolean,
     delay: Int | Double = null,
     duration: Int | Double = null,
     easing: /* value */ Double => Double = null,
@@ -31,10 +32,9 @@ object AnimatedRegionTimingConfig {
     latitude: Int | Double = null,
     latitudeDelta: Int | Double = null,
     longitude: Int | Double = null,
-    longitudeDelta: Int | Double = null,
-    useNativeDriver: js.UndefOr[Boolean] = js.undefined
+    longitudeDelta: Int | Double = null
   ): AnimatedRegionTimingConfig = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(useNativeDriver = useNativeDriver.asInstanceOf[js.Any])
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(js.Any.fromFunction1(easing))
@@ -43,7 +43,6 @@ object AnimatedRegionTimingConfig {
     if (latitudeDelta != null) __obj.updateDynamic("latitudeDelta")(latitudeDelta.asInstanceOf[js.Any])
     if (longitude != null) __obj.updateDynamic("longitude")(longitude.asInstanceOf[js.Any])
     if (longitudeDelta != null) __obj.updateDynamic("longitudeDelta")(longitudeDelta.asInstanceOf[js.Any])
-    if (!js.isUndefined(useNativeDriver)) __obj.updateDynamic("useNativeDriver")(useNativeDriver.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimatedRegionTimingConfig]
   }
 }

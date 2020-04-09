@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__rendermime-interfaces"
-version := "2.0.1-10e0ba"
+version := "2.1.0-107b62"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "istanbul-lib-source-maps"
-version := "1.2-dt-20190425Z-2f756c"
+version := "4.0-dt-20200331Z-2c6680"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

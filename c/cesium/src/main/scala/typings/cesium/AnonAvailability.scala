@@ -2,6 +2,7 @@ package typings.cesium
 
 import typings.cesium.mod.BillboardGraphics
 import typings.cesium.mod.BoxGraphics
+import typings.cesium.mod.Cesium3DTilesetGraphics
 import typings.cesium.mod.CorridorGraphics
 import typings.cesium.mod.CylinderGraphics
 import typings.cesium.mod.EllipseGraphics
@@ -17,6 +18,7 @@ import typings.cesium.mod.PolylineVolumeGraphics
 import typings.cesium.mod.PositionProperty
 import typings.cesium.mod.Property
 import typings.cesium.mod.PropertyBag
+import typings.cesium.mod.Quaternion
 import typings.cesium.mod.RectangleGraphics
 import typings.cesium.mod.TimeIntervalCollection
 import typings.cesium.mod.WallGraphics
@@ -37,7 +39,7 @@ trait AnonAvailability extends js.Object {
   var label: js.UndefOr[LabelGraphics] = js.undefined
   var model: js.UndefOr[ModelGraphics] = js.undefined
   var name: js.UndefOr[String] = js.undefined
-  var orientation: js.UndefOr[Property] = js.undefined
+  var orientation: js.UndefOr[Property | Quaternion] = js.undefined
   var parent: js.UndefOr[Entity] = js.undefined
   var path: js.UndefOr[PathGraphics] = js.undefined
   var plane: js.UndefOr[js.Any] = js.undefined
@@ -49,6 +51,7 @@ trait AnonAvailability extends js.Object {
   var properties: js.UndefOr[PropertyBag] = js.undefined
   var rectangle: js.UndefOr[RectangleGraphics] = js.undefined
   var show: js.UndefOr[Boolean] = js.undefined
+  var tileset: js.UndefOr[Cesium3DTilesetGraphics] = js.undefined
   var viewFrom: js.UndefOr[Property] = js.undefined
   var wall: js.UndefOr[WallGraphics] = js.undefined
 }
@@ -68,7 +71,7 @@ object AnonAvailability {
     label: LabelGraphics = null,
     model: ModelGraphics = null,
     name: String = null,
-    orientation: Property = null,
+    orientation: Property | Quaternion = null,
     parent: Entity = null,
     path: PathGraphics = null,
     plane: js.Any = null,
@@ -80,6 +83,7 @@ object AnonAvailability {
     properties: PropertyBag = null,
     rectangle: RectangleGraphics = null,
     show: js.UndefOr[Boolean] = js.undefined,
+    tileset: Cesium3DTilesetGraphics = null,
     viewFrom: Property = null,
     wall: WallGraphics = null
   ): AnonAvailability = {
@@ -108,6 +112,7 @@ object AnonAvailability {
     if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     if (rectangle != null) __obj.updateDynamic("rectangle")(rectangle.asInstanceOf[js.Any])
     if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
+    if (tileset != null) __obj.updateDynamic("tileset")(tileset.asInstanceOf[js.Any])
     if (viewFrom != null) __obj.updateDynamic("viewFrom")(viewFrom.asInstanceOf[js.Any])
     if (wall != null) __obj.updateDynamic("wall")(wall.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnonAvailability]

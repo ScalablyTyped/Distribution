@@ -5,5 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mod {
-  type SharedState = org.scalablytyped.runtime.StringDictionary[typings.webpackbar.mod.State]
+  /**
+    * 'context' is the reference to the plugin
+    * You can use 'context.state' to access status
+    */
+  type ReporterContextFunc = js.Function1[/* context */ typings.webpackbar.mod.WebpackBar, scala.Unit]
 }

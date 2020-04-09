@@ -14,6 +14,7 @@ import typings.react.mod.HTMLAttributes
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.ReactType
@@ -227,7 +228,7 @@ object ToastBodyProps {
     onProgress: SyntheticEvent[HTMLElement, Event_] => Unit = null,
     onRateChange: SyntheticEvent[HTMLElement, Event_] => Unit = null,
     onReset: FormEvent[HTMLElement] => Unit = null,
-    onScroll: UIEvent[HTMLElement] => Unit = null,
+    onScroll: UIEvent[HTMLElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[HTMLElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[HTMLElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[HTMLElement, Event_] => Unit = null,

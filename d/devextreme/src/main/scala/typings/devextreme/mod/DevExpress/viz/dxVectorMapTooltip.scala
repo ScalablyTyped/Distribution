@@ -12,11 +12,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxVectorMapTooltip extends BaseWidgetTooltip {
-  /** Specifies a custom template for a tooltip. */
+  /** @name dxVectorMap.Options.tooltip.contentTemplate */
   var contentTemplate: js.UndefOr[
     template | (js.Function2[/* info */ MapLayerElement, /* element */ dxElement, String | Element | JQuery])
   ] = js.undefined
-  /** Specifies text and appearance of a set of tooltips. */
+  /** @name dxVectorMap.Options.tooltip.customizeTooltip */
   var customizeTooltip: js.UndefOr[js.Function1[/* info */ MapLayerElement, _]] = js.undefined
 }
 

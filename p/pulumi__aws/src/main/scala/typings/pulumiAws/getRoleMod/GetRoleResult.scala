@@ -1,5 +1,6 @@
 package typings.pulumiAws.getRoleMod
 
+import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,6 +41,10 @@ trait GetRoleResult extends js.Object {
     */
   val permissionsBoundary: String = js.native
   /**
+    * The tags attached to the role.
+    */
+  val tags: StringDictionary[js.Any] = js.native
+  /**
     * The stable and unique string identifying the role.
     */
   val uniqueId: String = js.native
@@ -57,9 +62,10 @@ object GetRoleResult {
     name: String,
     path: String,
     permissionsBoundary: String,
+    tags: StringDictionary[js.Any],
     uniqueId: String
   ): GetRoleResult = {
-    val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], assumeRolePolicy = assumeRolePolicy.asInstanceOf[js.Any], createDate = createDate.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], maxSessionDuration = maxSessionDuration.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], permissionsBoundary = permissionsBoundary.asInstanceOf[js.Any], uniqueId = uniqueId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], assumeRolePolicy = assumeRolePolicy.asInstanceOf[js.Any], createDate = createDate.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], maxSessionDuration = maxSessionDuration.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], permissionsBoundary = permissionsBoundary.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], uniqueId = uniqueId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GetRoleResult]
   }

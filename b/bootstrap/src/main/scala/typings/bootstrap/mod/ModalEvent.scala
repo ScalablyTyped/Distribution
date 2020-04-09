@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
   - typings.bootstrap.bootstrapStrings.shownDotbsDotmodal
   - typings.bootstrap.bootstrapStrings.hideDotbsDotmodal
   - typings.bootstrap.bootstrapStrings.hiddenDotbsDotmodal
+  - typings.bootstrap.bootstrapStrings.hidePreventedDotbsDotmodal
 */
 trait ModalEvent extends js.Object
 
@@ -19,6 +20,8 @@ object ModalEvent {
   def hiddenDotbsDotmodal: typings.bootstrap.bootstrapStrings.hiddenDotbsDotmodal = this.cast("hidden.bs.modal")
   @scala.inline
   def hideDotbsDotmodal: typings.bootstrap.bootstrapStrings.hideDotbsDotmodal = this.cast("hide.bs.modal")
+  @scala.inline
+  def hidePreventedDotbsDotmodal: typings.bootstrap.bootstrapStrings.hidePreventedDotbsDotmodal = this.cast("hidePrevented.bs.modal")
   @scala.inline
   def showDotbsDotmodal: typings.bootstrap.bootstrapStrings.showDotbsDotmodal = this.cast("show.bs.modal")
   @scala.inline

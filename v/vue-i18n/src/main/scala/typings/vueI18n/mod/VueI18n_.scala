@@ -22,6 +22,8 @@ trait VueI18n_ extends js.Object {
   var missing_Original: typings.vueI18n.mod.VueI18n.MissingHandler = js.native
   val numberFormats: typings.vueI18n.mod.VueI18n.NumberFormats = js.native
   var pluralizationRules: PluralizationRulesMap = js.native
+  @JSName("postTranslation")
+  var postTranslation_Original: typings.vueI18n.mod.VueI18n.PostTranslationHandler = js.native
   var preserveDirectiveContent: Boolean = js.native
   var silentFallbackWarn: Boolean | RegExp = js.native
   var silentTranslationWarn: Boolean | RegExp = js.native
@@ -65,6 +67,7 @@ trait VueI18n_ extends js.Object {
   def n(value: Double, args: StringDictionary[String]): typings.vueI18n.mod.VueI18n.NumberFormatResult = js.native
   def n(value: Double, key: typings.vueI18n.mod.VueI18n.Path): typings.vueI18n.mod.VueI18n.NumberFormatResult = js.native
   def n(value: Double, key: typings.vueI18n.mod.VueI18n.Path, locale: typings.vueI18n.mod.VueI18n.Locale): typings.vueI18n.mod.VueI18n.NumberFormatResult = js.native
+  def postTranslation(str: String): String = js.native
   def setDateTimeFormat(locale: typings.vueI18n.mod.VueI18n.Locale, format: typings.vueI18n.mod.VueI18n.DateTimeFormat): Unit = js.native
   def setLocaleMessage(
     locale: typings.vueI18n.mod.VueI18n.Locale,

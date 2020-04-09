@@ -5,7 +5,6 @@ import typings.asyncStreamEmitter.mod.AsyncStreamEmitter
 import typings.scErrors.mod.SocketProtocolErrorStatuses_
 import typings.scErrors.mod.SocketProtocolIgnoreStatuses_
 import typings.socketclusterClient.AnonAckTimeout
-import typings.socketclusterClient.AnonChannel
 import typings.socketclusterClient.AnonError
 import typings.socketclusterClient.AnonOldAuthToken
 import typings.socketclusterClient.authMod.AGAuthEngine
@@ -165,9 +164,8 @@ trait AGClientSocket
   def hasAnyReceiverConsumer(consumerId: Double): Boolean = js.native
   def hasProcedureConsumer(procedureName: String, consumerId: Double): Boolean = js.native
   def hasReceiverConsumer(receiverName: String, consumerId: Double): Boolean = js.native
-  def invoke[T](event: String, data: T): js.Promise[T] = js.native
-  def invoke[T](event: String, data: T, options: AnonAckTimeout): js.Promise[T] = js.native
-  def invokePublish[T](channelName: String, data: T): js.Promise[AnonChannel[T]] = js.native
+  def invoke(event: String, data: js.Any): js.Promise[_] = js.native
+  def invoke(event: String, data: js.Any, options: AnonAckTimeout): js.Promise[_] = js.native
   def killAllChannelListeners(): Unit = js.native
   def killAllChannelOutputs(): Unit = js.native
   def killAllChannels(): Unit = js.native

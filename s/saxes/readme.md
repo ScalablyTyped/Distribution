@@ -1,7 +1,7 @@
 
 # Scala.js typings for saxes
 
-Typings are for version 3.1.11
+Typings are for version 5.0.0
 
 ## Library description:
 An evented streaming XML parser in JavaScript

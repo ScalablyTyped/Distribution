@@ -44,7 +44,6 @@ import typings.rcPicker.rcPickerStrings.text
 import typings.rcPicker.rcPickerStrings.time
 import typings.rcPicker.rcPickerStrings.tree
 import typings.rcPicker.rcPickerStrings.vertical
-import typings.rcTrigger.interfaceMod.AlignType
 import typings.react.mod.CSSProperties
 import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
@@ -267,7 +266,9 @@ trait PickerTimeProps[DateType] extends PickerProps[DateType] {
   var disabledHours: js.UndefOr[js.Function0[js.Array[Double]]] = js.undefined
   var disabledMinutes: js.UndefOr[js.Function1[/* hour */ Double, js.Array[Double]]] = js.undefined
   var disabledSeconds: js.UndefOr[js.Function2[/* hour */ Double, /* minute */ Double, js.Array[Double]]] = js.undefined
-  var dropdownAlign: js.UndefOr[AlignType] = js.undefined
+  var dropdownAlign: js.UndefOr[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AlignType */ js.Any
+  ] = js.undefined
   var dropdownClassName: js.UndefOr[String] = js.undefined
   var format: js.UndefOr[String | js.Array[String]] = js.undefined
   var generateConfig: GenerateConfig[DateType]
@@ -389,7 +390,7 @@ object PickerTimeProps {
     disabledHours: () => js.Array[Double] = null,
     disabledMinutes: /* hour */ Double => js.Array[Double] = null,
     disabledSeconds: (/* hour */ Double, /* minute */ Double) => js.Array[Double] = null,
-    dropdownAlign: AlignType = null,
+    dropdownAlign: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AlignType */ js.Any = null,
     dropdownClassName: String = null,
     format: String | js.Array[String] = null,
     getPopupContainer: /* node */ HTMLElement => HTMLElement = null,

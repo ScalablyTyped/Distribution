@@ -38,7 +38,8 @@ class Parser protected () extends js.Object {
     * For example,
     * ```
     *   <div *ngFor="let item of items">
-    *                ^ `absoluteOffset` for `tplValue`
+    *         ^      ^ absoluteValueOffset for `templateValue`
+    *         absoluteKeyOffset for `templateKey`
     * ```
     * contains three bindings:
     * 1. ngFor -> null
@@ -53,9 +54,16 @@ class Parser protected () extends js.Object {
     * @param templateKey name of directive, without the * prefix. For example: ngIf, ngFor
     * @param templateValue RHS of the microsyntax attribute
     * @param templateUrl template filename if it's external, component filename if it's inline
-    * @param absoluteOffset absolute offset of the `tplValue`
+    * @param absoluteKeyOffset start of the `templateKey`
+    * @param absoluteValueOffset start of the `templateValue`
     */
-  def parseTemplateBindings(templateKey: String, templateValue: String, templateUrl: String, absoluteOffset: Double): TemplateBindingParseResult = js.native
+  def parseTemplateBindings(
+    templateKey: String,
+    templateValue: String,
+    templateUrl: String,
+    absoluteKeyOffset: Double,
+    absoluteValueOffset: Double
+  ): TemplateBindingParseResult = js.native
   def splitInterpolation(input: String, location: String): SplitInterpolation | Null = js.native
   def splitInterpolation(input: String, location: String, interpolationConfig: InterpolationConfig): SplitInterpolation | Null = js.native
   def wrapLiteralPrimitive(input: String, location: js.Any, absoluteOffset: Double): ASTWithSource = js.native

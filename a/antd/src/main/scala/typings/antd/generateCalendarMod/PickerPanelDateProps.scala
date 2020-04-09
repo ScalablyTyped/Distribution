@@ -1,11 +1,11 @@
 package typings.antd.generateCalendarMod
 
-import typings.antd.AnonLang
 import typings.antd.antdStrings.date
 import typings.antd.antdStrings.large
 import typings.antd.antdStrings.ltr
 import typings.antd.antdStrings.rtl
 import typings.antd.antdStrings.small
+import typings.antd.generatePickerMod.PickerLocale
 import typings.rcPicker.dateBodyMod.DateRender
 import typings.rcPicker.interfaceMod.Components
 import typings.rcPicker.interfaceMod.DisabledTime
@@ -36,7 +36,7 @@ trait PickerPanelDateProps[DateType] extends PickerProps[DateType] {
   var disabledDate: js.UndefOr[js.Function1[/* date */ DateType, Boolean]] = js.undefined
   var disabledTime: js.UndefOr[DisabledTime[DateType]] = js.undefined
   var hideHeader: js.UndefOr[Boolean] = js.undefined
-  var locale: js.UndefOr[AnonLang] = js.undefined
+  var locale: js.UndefOr[PickerLocale] = js.undefined
   var mode: js.UndefOr[PanelMode] = js.undefined
   var monthCellRender: js.UndefOr[MonthCellRender[DateType]] = js.undefined
   var onChange: js.UndefOr[js.Function1[/* value */ DateType, Unit]] = js.undefined
@@ -69,7 +69,7 @@ object PickerPanelDateProps {
     disabledDate: /* date */ DateType => Boolean = null,
     disabledTime: /* date */ DateType | Null => DisabledTimes = null,
     hideHeader: js.UndefOr[Boolean] = js.undefined,
-    locale: AnonLang = null,
+    locale: PickerLocale = null,
     mode: PanelMode = null,
     monthCellRender: (DateType, /* locale */ Locale) => ReactNode = null,
     onChange: /* value */ DateType => Unit = null,

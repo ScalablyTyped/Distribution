@@ -15,6 +15,7 @@ import typings.tabulatorTables.Tabulator.GroupComponent
 import typings.tabulatorTables.Tabulator.Options
 import typings.tabulatorTables.Tabulator.RowComponent
 import typings.tabulatorTables.Tabulator.RowLookup
+import typings.tabulatorTables.Tabulator.RowRangeLookup
 import typings.tabulatorTables.Tabulator.ScrollToColumnPosition
 import typings.tabulatorTables.Tabulator.ScrollToRowPostition
 import typings.tabulatorTables.Tabulator.SortDirection
@@ -28,8 +29,6 @@ import typings.tabulatorTables.tabulatorTablesStrings.first
 import typings.tabulatorTables.tabulatorTablesStrings.last
 import typings.tabulatorTables.tabulatorTablesStrings.next
 import typings.tabulatorTables.tabulatorTablesStrings.prev
-import typings.tabulatorTables.tabulatorTablesStrings.selected
-import typings.tabulatorTables.tabulatorTablesStrings.table
 import typings.tabulatorTables.tabulatorTablesStrings.visible
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -89,16 +88,15 @@ class Tabulator_ protected () extends js.Object {
   def clearHeaderFilter(): Unit = js.native
   /** To remove all sorting from the table, call the clearSort function. */
   def clearSort(): Unit = js.native
-  /** The copyToClipboard function allows you to copy the current table data to the clipboard.
-    The first argument is the copy selector, you can choose from any of the built in options or pass a function in to the argument, that must return the selected row components.
-    If you leave this argument undefined, Tabulator will use the value of the clipboardCopySelector property, which has a default value of table */
+  /**The copyToClipboard function allows you to copy the current table data to the clipboard.
+    It takes one optional argument, a Row Range Lookup option, that will determine which rows are included in the clipboard output.It can take any following strings as input:
+    visible - Rows currently visible in the table viewport
+    active - Rows currently in the table (rows that pass current filters etc)
+    selected - Rows currently selected by the selection module (this includes not currently active rows)
+    all - All rows in the table reguardless of filters 
+    If you leave this argument undefined, Tabulator will use the value of the clipboardCopyRowRange property, which has a default value of active*/
   def copyToClipboard(): Unit = js.native
-  @JSName("copyToClipboard")
-  def copyToClipboard_active(`type`: active): Unit = js.native
-  @JSName("copyToClipboard")
-  def copyToClipboard_selected(`type`: selected): Unit = js.native
-  @JSName("copyToClipboard")
-  def copyToClipboard_table(`type`: table): Unit = js.native
+  def copyToClipboard(rowRangeLookup: RowRangeLookup): Unit = js.native
   /** To permanently remove a column from the table deleteColumn function. This function takes any of the standard column component look up options as its first parameter */
   def deleteColumn(column: ColumnLookup): js.Promise[Unit] = js.native
   def deleteRow(index: js.Array[RowLookup]): Unit = js.native
@@ -229,6 +227,8 @@ class Tabulator_ protected () extends js.Object {
   def getGroupedData(activeOnly: Boolean): js.Any = js.native
   /** You can use the getGroups function to retrieve an array of all the first level Group Components in the table. */
   def getGroups(): js.Array[GroupComponent] = js.native
+  /**You get the current header filter value of a column */
+  def getHeaderFilterValue(column: ColumnLookup): String = js.native
   /** If you just want to retrieve the current header filters, you can use the getHeaderFilters function: */
   def getHeaderFilters(): js.Array[Filter] = js.native
   /** You can use the getHistoryRedoSize function to get a count of the number of history redo actions available.*/
@@ -237,9 +237,9 @@ class Tabulator_ protected () extends js.Object {
   def getHistoryUndoSize(): Double | `false` = js.native
   /** Returns a table built of all active rows in the table (matching filters and sorts) */
   def getHtml(): js.Any = js.native
-  def getHtml(activeOnly: Boolean): js.Any = js.native
-  def getHtml(activeOnly: Boolean, style: Boolean): js.Any = js.native
-  def getHtml(activeOnly: Boolean, style: Boolean, config: AddditionalExportOptions): js.Any = js.native
+  def getHtml(rowRangeLookup: RowRangeLookup): js.Any = js.native
+  def getHtml(rowRangeLookup: RowRangeLookup, style: Boolean): js.Any = js.native
+  def getHtml(rowRangeLookup: RowRangeLookup, style: Boolean, config: AddditionalExportOptions): js.Any = js.native
   /** You can then access these at any point using the getLang function, which will return the language object for the currently active locale. */
   def getLang(): js.Any = js.native
   def getLang(locale: String): js.Any = js.native
@@ -328,9 +328,11 @@ class Tabulator_ protected () extends js.Object {
   def previousPage(): js.Promise[Unit] = js.native
   /**You can use the print function to trigger a full page printing of the contents of the table without any other elements from the page */
   def print(): js.Any = js.native
-  def print(activeOnly: Boolean): js.Any = js.native
-  def print(activeOnly: Boolean, style: Boolean): js.Any = js.native
-  def print(activeOnly: Boolean, style: Boolean, config: AddditionalExportOptions): js.Any = js.native
+  def print(rowRangeLookup: RowRangeLookup): js.Any = js.native
+  def print(rowRangeLookup: RowRangeLookup, style: Boolean): js.Any = js.native
+  def print(rowRangeLookup: RowRangeLookup, style: Boolean, config: AddditionalExportOptions): js.Any = js.native
+  /**manually trigger recalculation of column calculations */
+  def recalc(): Unit = js.native
   /** With history enabled you can use the redo function to automatically redo user action that has been undone, the more times you call the function, the further up the history log you go. once a user interacts with the table then can no longer redo any further actions until an undo is performe */
   def redo(): Boolean = js.native
   /** If the size of the element containing the Tabulator changes (and you are not able to use the in built auto-resize functionality) or you create a table before its containing element is visible, it will necessary to redraw the table to make sure the rows and columns render correctly.

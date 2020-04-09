@@ -34,25 +34,25 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait positionConfig extends js.Object {
-  /** The target element position that the widget is positioned against. */
+  /** @name positionConfig.at */
   var at: js.UndefOr[
     bottom | center | left | (`left bottom`) | (`left top`) | right | (`right bottom`) | (`right top`) | top | AnonX
   ] = js.undefined
-  /** The element within which the widget is positioned. */
+  /** @name positionConfig.boundary */
   var boundary: js.UndefOr[String | Element | JQuery | Window_] = js.undefined
-  /** Specifies the horizontal and vertical offset from the window's boundaries. */
+  /** @name positionConfig.boundaryOffset */
   var boundaryOffset: js.UndefOr[String | AnonY] = js.undefined
-  /** Specifies how to move the widget if it overflows the screen. */
+  /** @name positionConfig.collision */
   var collision: js.UndefOr[
     fit | (`fit flip`) | (`fit flipfit`) | (`fit none`) | flip | (`flip fit`) | (`flip none`) | flipfit | (`flipfit fit`) | (`flipfit none`) | none | (`none fit`) | (`none flip`) | (`none flipfit`) | AnonXY
   ] = js.undefined
-  /** The position of the widget to align against the target element. */
+  /** @name positionConfig.my */
   var my: js.UndefOr[
     bottom | center | left | (`left bottom`) | (`left top`) | right | (`right bottom`) | (`right top`) | top | AnonX
   ] = js.undefined
-  /** The target element that the widget is positioned against. */
+  /** @name positionConfig.of */
   var of: js.UndefOr[String | Element | JQuery | Window_] = js.undefined
-  /** Specifies horizontal and vertical offset in pixels. */
+  /** @name positionConfig.offset */
   var offset: js.UndefOr[String | AnonY] = js.undefined
 }
 

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 - Dropped {[ P in string ]: any} */ trait UseTableHooks[D /* <: js.Object */] extends js.Object {
   var allColumns: js.Array[
     js.Function2[
-      /* allColumns */ js.Array[Column[D]], 
+      /* allColumns */ js.Array[ColumnInstance[D]], 
       /* meta */ Meta[D, scala.Nothing, MetaBase[D]], 
       js.Array[Column[D]]
     ]
@@ -71,7 +71,7 @@ import scala.scalajs.js.annotation._
   ]
   var visibleColumns: js.Array[
     js.Function2[
-      /* allColumns */ js.Array[Column[D]], 
+      /* allColumns */ js.Array[ColumnInstance[D]], 
       /* meta */ Meta[D, scala.Nothing, MetaBase[D]], 
       js.Array[Column[D]]
     ]
@@ -86,7 +86,7 @@ object UseTableHooks {
   def apply[D /* <: js.Object */](
     allColumns: js.Array[
       js.Function2[
-        /* allColumns */ js.Array[Column[D]], 
+        /* allColumns */ js.Array[ColumnInstance[D]], 
         /* meta */ Meta[D, scala.Nothing, MetaBase[D]], 
         js.Array[Column[D]]
       ]
@@ -149,7 +149,7 @@ object UseTableHooks {
     ],
     visibleColumns: js.Array[
       js.Function2[
-        /* allColumns */ js.Array[Column[D]], 
+        /* allColumns */ js.Array[ColumnInstance[D]], 
         /* meta */ Meta[D, scala.Nothing, MetaBase[D]], 
         js.Array[Column[D]]
       ]

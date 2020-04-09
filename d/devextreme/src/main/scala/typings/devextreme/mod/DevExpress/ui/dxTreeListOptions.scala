@@ -61,75 +61,75 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxTreeListOptions extends GridBaseOptions[dxTreeList] {
-  /** Specifies whether all rows are expanded initially. */
+  /** @name dxTreeList.Options.autoExpandAll */
   var autoExpandAll: js.UndefOr[Boolean] = js.undefined
-  /** Configures columns. */
+  /** @name dxTreeList.Options.columns */
   @JSName("columns")
   var columns_dxTreeListOptions: js.UndefOr[js.Array[dxTreeListColumn | String]] = js.undefined
-  /** Customizes columns after they are created. */
+  /** @name dxTreeList.Options.customizeColumns */
   var customizeColumns: js.UndefOr[js.Function1[/* columns */ js.Array[dxTreeListColumn], _]] = js.undefined
-  /** Notifies the widget of the used data structure. */
+  /** @name dxTreeList.Options.dataStructure */
   var dataStructure: js.UndefOr[plain | tree] = js.undefined
-  /** Configures editing. */
+  /** @name dxTreeList.Options.editing */
   @JSName("editing")
   var editing_dxTreeListOptions: js.UndefOr[dxTreeListEditing] = js.undefined
-  /** Specifies whether nodes appear expanded or collapsed after filtering is applied. */
+  /** @name dxTreeList.Options.expandNodesOnFiltering */
   var expandNodesOnFiltering: js.UndefOr[Boolean] = js.undefined
-  /** Specifies keys of the initially expanded rows. */
+  /** @name dxTreeList.Options.expandedRowKeys */
   var expandedRowKeys: js.UndefOr[js.Array[_]] = js.undefined
-  /** Specifies whether filter and search results should include matching rows only, matching rows with ancestors, or matching rows with ancestors and descendants (full branch). */
+  /** @name dxTreeList.Options.filterMode */
   var filterMode: js.UndefOr[fullBranch | withAncestors | matchOnly] = js.undefined
-  /** Specifies which data field defines whether the node has children. */
+  /** @name dxTreeList.Options.hasItemsExpr */
   var hasItemsExpr: js.UndefOr[String | js.Function] = js.undefined
-  /** Specifies which data field contains nested items. Set this option when your data has a hierarchical structure. */
+  /** @name dxTreeList.Options.itemsExpr */
   var itemsExpr: js.UndefOr[String | js.Function] = js.undefined
-  /** Specifies which data field provides keys for nodes. */
+  /** @name dxTreeList.Options.keyExpr */
   var keyExpr: js.UndefOr[String | js.Function] = js.undefined
-  /** A function that is executed when a cell is clicked or tapped. Executed before onRowClick. */
+  /** @name dxTreeList.Options.onCellClick */
   var onCellClick: js.UndefOr[(js.Function1[/* e */ AnonCellElementColumn, _]) | String] = js.undefined
-  /** A function that is executed when a cell is double-clicked or double-tapped. Executed before onRowDblClick. */
+  /** @name dxTreeList.Options.onCellDblClick */
   var onCellDblClick: js.UndefOr[js.Function1[/* e */ AnonColumnIndexComponent, _]] = js.undefined
-  /** A function that is executed after the pointer enters or leaves a cell. */
+  /** @name dxTreeList.Options.onCellHoverChanged */
   var onCellHoverChanged: js.UndefOr[js.Function1[/* e */ AnonEventType, _]] = js.undefined
-  /** A function that is executed after a grid cell is created. */
+  /** @name dxTreeList.Options.onCellPrepared */
   var onCellPrepared: js.UndefOr[js.Function1[/* e */ AnonDataDisplayValue, _]] = js.undefined
-  /** A function that is executed before the context menu is rendered. */
+  /** @name dxTreeList.Options.onContextMenuPreparing */
   var onContextMenuPreparing: js.UndefOr[js.Function1[/* e */ AnonTarget, _]] = js.undefined
-  /** A function that is executed before a cell or row switches to the editing state. */
+  /** @name dxTreeList.Options.onEditingStart */
   var onEditingStart: js.UndefOr[js.Function1[/* e */ AnonKeyModel, _]] = js.undefined
-  /** A function that is executed after an editor is created. Not executed for cells with an editCellTemplate. */
+  /** @name dxTreeList.Options.onEditorPrepared */
   var onEditorPrepared: js.UndefOr[js.Function1[/* options */ AnonParentType, _]] = js.undefined
-  /** A function used to customize or replace default editors. Not executed for cells with an editCellTemplate. */
+  /** @name dxTreeList.Options.onEditorPreparing */
   var onEditorPreparing: js.UndefOr[js.Function1[/* e */ AnonReadOnly, _]] = js.undefined
-  /** A function that is executed after the focused cell changes. */
+  /** @name dxTreeList.Options.onFocusedCellChanged */
   var onFocusedCellChanged: js.UndefOr[js.Function1[/* e */ AnonModelRow, _]] = js.undefined
-  /** A function that is executed before the focused cell changes. */
+  /** @name dxTreeList.Options.onFocusedCellChanging */
   var onFocusedCellChanging: js.UndefOr[js.Function1[/* e */ AnonIsHighlighted, _]] = js.undefined
-  /** A function that executed when the focused row changes. Applies only when focusedRowEnabled is true. */
+  /** @name dxTreeList.Options.onFocusedRowChanged */
   var onFocusedRowChanged: js.UndefOr[js.Function1[/* e */ AnonRowRowElement, _]] = js.undefined
-  /** A function that is executed before the focused row changes. Applies only when focusedRowEnabled is true. */
+  /** @name dxTreeList.Options.onFocusedRowChanging */
   var onFocusedRowChanging: js.UndefOr[js.Function1[/* e */ AnonPrevRowIndex, _]] = js.undefined
-  /** A function that is executed after the loaded nodes are initialized. */
+  /** @name dxTreeList.Options.onNodesInitialized */
   var onNodesInitialized: js.UndefOr[js.Function1[/* e */ AnonRoot, _]] = js.undefined
-  /** A function that is executed when a grid row is clicked or tapped. */
+  /** @name dxTreeList.Options.onRowClick */
   var onRowClick: js.UndefOr[(js.Function1[/* e */ AnonLevel, _]) | String] = js.undefined
-  /** A function that is executed when a row is double-clicked or double-tapped. Executed after onCellDblClick. */
+  /** @name dxTreeList.Options.onRowDblClick */
   var onRowDblClick: js.UndefOr[js.Function1[/* e */ AnonValues, _]] = js.undefined
-  /** A function that is executed after a row is created. */
+  /** @name dxTreeList.Options.onRowPrepared */
   var onRowPrepared: js.UndefOr[js.Function1[/* e */ AnonNode, _]] = js.undefined
-  /** Configures paging. */
+  /** @name dxTreeList.Options.paging */
   @JSName("paging")
   var paging_dxTreeListOptions: js.UndefOr[dxTreeListPaging] = js.undefined
-  /** Specifies which data field provides parent keys. */
+  /** @name dxTreeList.Options.parentIdExpr */
   var parentIdExpr: js.UndefOr[String | js.Function] = js.undefined
-  /** Notifies the TreeList of the server's data processing operations. Applies only if data has a plain structure. */
+  /** @name dxTreeList.Options.remoteOperations */
   var remoteOperations: js.UndefOr[AnonGrouping | auto] = js.undefined
-  /** Specifies the root node's identifier. Applies if dataStructure is "plain". */
+  /** @name dxTreeList.Options.rootValue */
   var rootValue: js.UndefOr[js.Any] = js.undefined
-  /** Configures scrolling. */
+  /** @name dxTreeList.Options.scrolling */
   @JSName("scrolling")
   var scrolling_dxTreeListOptions: js.UndefOr[dxTreeListScrolling] = js.undefined
-  /** Configures runtime selection. */
+  /** @name dxTreeList.Options.selection */
   @JSName("selection")
   var selection_dxTreeListOptions: js.UndefOr[dxTreeListSelection] = js.undefined
 }

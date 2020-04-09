@@ -8,5 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class LinearInterpolator () extends TransitionInterpolator {
   def this(transitionProps: js.Array[String]) = this()
+  def this(transitionProps: LinearInterpolatorProps) = this()
 }
 

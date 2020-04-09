@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "styled-system__should-forward-prop"
-version := "5.1-dt-20191015Z-c067e5"
+version := "5.1-dt-20200402Z-eab204"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

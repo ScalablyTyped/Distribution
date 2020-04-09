@@ -5,11 +5,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxPieChartSeriesTypes extends js.Object {
-  /** An object that defines configuration options for chart series. */
+  /** @name dxPieChartSeriesTypes.CommonPieChartSeries */
   var CommonPieChartSeries: js.UndefOr[dxPieChartSeriesTypesCommonPieChartSeries] = js.undefined
-  /** An object defining a series of the doughnut type. */
+  /** @name dxPieChartSeriesTypes.DoughnutSeries */
   var DoughnutSeries: js.UndefOr[js.Any] = js.undefined
-  /** An object defining a series of the pie type. */
+  /** @name dxPieChartSeriesTypes.PieSeries */
   var PieSeries: js.UndefOr[js.Any] = js.undefined
 }
 

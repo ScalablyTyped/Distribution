@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-// http://foundation.zurb.com/sites/docs/tabs.html#javascript-reference
+// https://get.foundation/sites/docs/tabs.html#javascript-reference
 @js.native
 trait Tabs extends js.Object {
   def destroy(): Unit = js.native

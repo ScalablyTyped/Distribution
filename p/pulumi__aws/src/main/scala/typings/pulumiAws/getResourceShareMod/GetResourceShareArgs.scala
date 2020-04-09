@@ -20,6 +20,9 @@ trait GetResourceShareArgs extends js.Object {
     * The owner of the resource share. Valid values are SELF or OTHER-ACCOUNTS
     */
   val resourceOwner: String = js.native
+  /**
+    * The Tags attached to the RAM share
+    */
   val tags: js.UndefOr[StringDictionary[js.Any]] = js.native
 }
 

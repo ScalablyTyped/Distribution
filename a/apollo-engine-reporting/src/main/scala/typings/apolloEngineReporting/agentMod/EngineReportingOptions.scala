@@ -3,6 +3,7 @@ package typings.apolloEngineReporting.agentMod
 import typings.apolloEngineReporting.apolloEngineReportingBooleans.`false`
 import typings.apolloServerEnv.fetchMod.RequestAgent
 import typings.apolloServerTypes.mod.GraphQLRequestContext
+import typings.apolloServerTypes.mod.Logger
 import typings.graphql.astMod.DocumentNode
 import typings.graphql.mod.GraphQLError
 import typings.std.Error
@@ -17,6 +18,7 @@ trait EngineReportingOptions[TContext] extends js.Object {
   var endpointUrl: js.UndefOr[String] = js.undefined
   var generateClientInfo: js.UndefOr[GenerateClientInfo[TContext]] = js.undefined
   var handleSignals: js.UndefOr[Boolean] = js.undefined
+  var logger: js.UndefOr[Logger] = js.undefined
   var maskErrorDetails: js.UndefOr[Boolean] = js.undefined
   var maxAttempts: js.UndefOr[Double] = js.undefined
   var maxUncompressedReportSize: js.UndefOr[Double] = js.undefined
@@ -42,6 +44,7 @@ object EngineReportingOptions {
     endpointUrl: String = null,
     generateClientInfo: /* requestContext */ GraphQLRequestContext[TContext] => ClientInfo = null,
     handleSignals: js.UndefOr[Boolean] = js.undefined,
+    logger: Logger = null,
     maskErrorDetails: js.UndefOr[Boolean] = js.undefined,
     maxAttempts: Int | Double = null,
     maxUncompressedReportSize: Int | Double = null,
@@ -64,6 +67,7 @@ object EngineReportingOptions {
     if (endpointUrl != null) __obj.updateDynamic("endpointUrl")(endpointUrl.asInstanceOf[js.Any])
     if (generateClientInfo != null) __obj.updateDynamic("generateClientInfo")(js.Any.fromFunction1(generateClientInfo))
     if (!js.isUndefined(handleSignals)) __obj.updateDynamic("handleSignals")(handleSignals.asInstanceOf[js.Any])
+    if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
     if (!js.isUndefined(maskErrorDetails)) __obj.updateDynamic("maskErrorDetails")(maskErrorDetails.asInstanceOf[js.Any])
     if (maxAttempts != null) __obj.updateDynamic("maxAttempts")(maxAttempts.asInstanceOf[js.Any])
     if (maxUncompressedReportSize != null) __obj.updateDynamic("maxUncompressedReportSize")(maxUncompressedReportSize.asInstanceOf[js.Any])

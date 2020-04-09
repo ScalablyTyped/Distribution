@@ -9,6 +9,8 @@ import scala.scalajs.js.annotation._
 object storage extends js.Object {
   @js.native
   object v1 extends js.Object {
+    def isCSIDriver(o: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/types/input.storage.v1.CSIDriver */ Boolean = js.native
+    def isCSIDriverList(o: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/types/input.storage.v1.CSIDriverList */ Boolean = js.native
     def isCSINode(o: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/types/input.storage.v1.CSINode */ Boolean = js.native
     def isCSINodeList(o: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/types/input.storage.v1.CSINodeList */ Boolean = js.native
     def isStorageClass(o: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/types/input.storage.v1.StorageClass */ Boolean = js.native

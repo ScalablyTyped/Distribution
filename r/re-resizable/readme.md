@@ -1,7 +1,7 @@
 
 # Scala.js typings for re-resizable
 
-Typings are for version 6.2.0
+Typings are for version 6.3.2
 
 ## Library description:
 Resizable component for React.

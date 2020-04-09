@@ -25,6 +25,10 @@ class MeasurementUnit () extends js.Object {
     */
   var length_unit: js.UndefOr[LengthUnitType] = js.native
   /**
+    * Represents a standard unit of time. See [MeasurementUnitTime](#type-measurementunittime) for possible values.
+    */
+  var time_unit: js.UndefOr[String] = js.native
+  /**
     * Represents the type of the measurement unit.
     * See [MeasurementUnitUnitType](#type-measurementunitunittype) for possible values.
     */

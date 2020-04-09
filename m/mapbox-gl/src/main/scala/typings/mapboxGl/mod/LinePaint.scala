@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait LinePaint extends js.Object {
+trait LinePaint extends AnyPaint {
   var `line-blur`: js.UndefOr[Double | StyleFunction | Expression] = js.undefined
   var `line-blur-transition`: js.UndefOr[Transition] = js.undefined
   var `line-color`: js.UndefOr[String | StyleFunction | Expression] = js.undefined

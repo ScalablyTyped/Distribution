@@ -4,7 +4,9 @@ import typings.fileType.fileTypeStrings.close
 import typings.fileType.fileTypeStrings.data
 import typings.fileType.fileTypeStrings.end
 import typings.fileType.fileTypeStrings.error
+import typings.fileType.fileTypeStrings.pause
 import typings.fileType.fileTypeStrings.readable
+import typings.fileType.fileTypeStrings.resume
 import typings.node.AnonEnd
 import typings.node.Buffer
 import typings.node.BufferEncoding
@@ -38,8 +40,10 @@ trait ReadableStreamWithFileType extends js.Object {
     * 1. close
     * 2. data
     * 3. end
-    * 4. readable
-    * 5. error
+    * 4. error
+    * 5. pause
+    * 6. readable
+    * 7. resume
     */
   @JSName("addListener")
   def addListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
@@ -50,7 +54,11 @@ trait ReadableStreamWithFileType extends js.Object {
   @JSName("addListener")
   def addListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
   @JSName("addListener")
+  def addListener_pause(event: pause, listener: js.Function0[Unit]): this.type = js.native
+  @JSName("addListener")
   def addListener_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
+  @JSName("addListener")
+  def addListener_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
   def destroy(): Unit = js.native
   def destroy(error: Error): Unit = js.native
   def emit(event: String, args: js.Any*): Boolean = js.native
@@ -64,7 +72,11 @@ trait ReadableStreamWithFileType extends js.Object {
   @JSName("emit")
   def emit_error(event: error, err: Error): Boolean = js.native
   @JSName("emit")
+  def emit_pause(event: pause): Boolean = js.native
+  @JSName("emit")
   def emit_readable(event: readable): Boolean = js.native
+  @JSName("emit")
+  def emit_resume(event: resume): Boolean = js.native
   def eventNames(): js.Array[String | js.Symbol] = js.native
   def getMaxListeners(): Double = js.native
   def isPaused(): Boolean = js.native
@@ -85,7 +97,11 @@ trait ReadableStreamWithFileType extends js.Object {
   @JSName("on")
   def on_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
   @JSName("on")
+  def on_pause(event: pause, listener: js.Function0[Unit]): this.type = js.native
+  @JSName("on")
   def on_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
+  @JSName("on")
+  def on_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
   def once(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   def once(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("once")
@@ -97,7 +113,11 @@ trait ReadableStreamWithFileType extends js.Object {
   @JSName("once")
   def once_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
   @JSName("once")
+  def once_pause(event: pause, listener: js.Function0[Unit]): this.type = js.native
+  @JSName("once")
   def once_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
+  @JSName("once")
+  def once_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
   def pause(): this.type = js.native
   def pipe[T /* <: WritableStream */](destination: T): T = js.native
   def pipe[T /* <: WritableStream */](destination: T, options: AnonEnd): T = js.native
@@ -112,7 +132,11 @@ trait ReadableStreamWithFileType extends js.Object {
   @JSName("prependListener")
   def prependListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
   @JSName("prependListener")
+  def prependListener_pause(event: pause, listener: js.Function0[Unit]): this.type = js.native
+  @JSName("prependListener")
   def prependListener_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
+  @JSName("prependListener")
+  def prependListener_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
   def prependOnceListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   def prependOnceListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("prependOnceListener")
@@ -124,7 +148,11 @@ trait ReadableStreamWithFileType extends js.Object {
   @JSName("prependOnceListener")
   def prependOnceListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
   @JSName("prependOnceListener")
+  def prependOnceListener_pause(event: pause, listener: js.Function0[Unit]): this.type = js.native
+  @JSName("prependOnceListener")
   def prependOnceListener_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
+  @JSName("prependOnceListener")
+  def prependOnceListener_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
   def push(chunk: js.Any): Boolean = js.native
   def push(chunk: js.Any, encoding: String): Boolean = js.native
   def rawListeners(event: String): js.Array[js.Function] = js.native
@@ -149,7 +177,11 @@ trait ReadableStreamWithFileType extends js.Object {
   @JSName("removeListener")
   def removeListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
   @JSName("removeListener")
+  def removeListener_pause(event: pause, listener: js.Function0[Unit]): this.type = js.native
+  @JSName("removeListener")
   def removeListener_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
+  @JSName("removeListener")
+  def removeListener_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
   def resume(): this.type = js.native
   def setEncoding(encoding: String): this.type = js.native
   def setMaxListeners(n: Double): this.type = js.native

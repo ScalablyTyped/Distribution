@@ -22,18 +22,18 @@ object certificationRequestMod extends js.Object {
     var version: Double = js.native
     /**
       * Aux function making ASN1js Sequence from current TBS
-      * 
+      *
       * @returns {Sequence}
       */
     def encodeTBS(): Sequence = js.native
     def fromSchema(schema: js.Any): Unit = js.native
     /**
       * Makes signature for currect certification request
-      * 
+      *
       * @param {CryptoKey} privateKey WebCrypto private key
       * @param {string} [hashAlgorithm] String representing current hashing algorithm
       * @returns {PromiseLike<ArrayBuffer>}
-      * 
+      *
       * @memberOf CertificationRequest
       */
     def sign(privateKey: CryptoKey): js.Thenable[ArrayBuffer] = js.native
@@ -41,7 +41,7 @@ object certificationRequestMod extends js.Object {
     def toJSON(): js.Any = js.native
     /**
       * Convert current object to asn1js object and set correct values
-      * 
+      *
       * @param {boolean} [encodeFlag]
       * @returns {*}
       */
@@ -49,9 +49,9 @@ object certificationRequestMod extends js.Object {
     def toSchema(encodeFlag: Boolean): js.Any = js.native
     /**
       * Verify existing certification request signature
-      * 
+      *
       * @returns {PromiseLike<boolean>}
-      * 
+      *
       * @memberOf CertificationRequest
       */
     def verify(): js.Thenable[Boolean] = js.native

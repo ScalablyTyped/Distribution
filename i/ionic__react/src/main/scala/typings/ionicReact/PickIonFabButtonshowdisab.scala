@@ -77,6 +77,7 @@ import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
@@ -604,7 +605,7 @@ object PickIonFabButtonshowdisab {
     onProgress: SyntheticEvent[HTMLIonFabButtonElement, Event_] => Unit = null,
     onRateChange: SyntheticEvent[HTMLIonFabButtonElement, Event_] => Unit = null,
     onReset: FormEvent[HTMLIonFabButtonElement] => Unit = null,
-    onScroll: UIEvent[HTMLIonFabButtonElement] => Unit = null,
+    onScroll: UIEvent[HTMLIonFabButtonElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[HTMLIonFabButtonElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[HTMLIonFabButtonElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[HTMLIonFabButtonElement, Event_] => Unit = null,

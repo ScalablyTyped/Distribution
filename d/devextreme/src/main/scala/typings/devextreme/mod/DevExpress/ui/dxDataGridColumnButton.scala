@@ -16,15 +16,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxDataGridColumnButton extends GridBaseColumnButton {
-  /** The name used to identify a built-in button. */
+  /** @name dxDataGridColumnButton.name */
   var name: js.UndefOr[cancel | delete | edit | save | undelete | String] = js.undefined
-  /** A function that is executed when the button is clicked or tapped. Not executed if a template is used. */
+  /** @name dxDataGridColumnButton.onClick */
   var onClick: js.UndefOr[(js.Function1[/* e */ AnonColumnComponent, _]) | String] = js.undefined
-  /** Specifies a custom button template. */
+  /** @name dxDataGridColumnButton.template */
   var template: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* cellElement */ dxElement, /* cellInfo */ AnonRowType, String | Element | JQuery])
   ] = js.undefined
-  /** Specifies the button's visibility. */
+  /** @name dxDataGridColumnButton.visible */
   var visible: js.UndefOr[Boolean | (js.Function1[/* options */ AnonColumnComponentRow, Boolean])] = js.undefined
 }
 

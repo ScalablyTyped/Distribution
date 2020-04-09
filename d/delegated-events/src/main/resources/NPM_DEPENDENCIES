@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "delegated-events" : "1.1.1"
+      "delegated-events" : "1.1.2"
     }
   ],
   "test-dependencies" : [
     {
-      "delegated-events" : "1.1.1"
+      "delegated-events" : "1.1.2"
     }
   ],
   "compile-devDependencies" : [

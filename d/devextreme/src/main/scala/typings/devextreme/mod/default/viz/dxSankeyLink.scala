@@ -9,19 +9,19 @@ import scala.scalajs.js.annotation._
 @js.native
 class dxSankeyLink ()
   extends typings.devextreme.mod.DevExpress.viz.dxSankeyLink {
-  /** An object that describes the connection. */
+  /** @name dxSankeyLink.connection */
   /* CompleteClass */
   override var connection: dxSankeyConnectionInfoObject = js.native
-  /** Hides the sankey link's tooltip. */
+  /** @name dxSankeyLink.hideTooltip() */
   /* CompleteClass */
   override def hideTooltip(): Unit = js.native
-  /** Changes the sankey link's hover state. */
+  /** @name dxSankeyLink.hover(state) */
   /* CompleteClass */
   override def hover(state: Boolean): Unit = js.native
-  /** Indicates whether the sankey link is in the hover state. */
+  /** @name dxSankeyLink.isHovered() */
   /* CompleteClass */
   override def isHovered(): Boolean = js.native
-  /** Shows the sankey link's tooltip. */
+  /** @name dxSankeyLink.showTooltip() */
   /* CompleteClass */
   override def showTooltip(): Unit = js.native
 }

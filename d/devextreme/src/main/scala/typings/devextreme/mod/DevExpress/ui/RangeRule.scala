@@ -15,17 +15,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RangeRule extends js.Object {
-  /** If set to true, empty values are valid. */
+  /** @name RangeRule.ignoreEmptyValue */
   var ignoreEmptyValue: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the maximum value allowed for the validated value. */
+  /** @name RangeRule.max */
   var max: js.UndefOr[Date | Double] = js.undefined
-  /** Specifies the message that is shown if the rule is broken. */
+  /** @name RangeRule.message */
   var message: js.UndefOr[String] = js.undefined
-  /** Specifies the minimum value allowed for the validated value. */
+  /** @name RangeRule.min */
   var min: js.UndefOr[Date | Double] = js.undefined
-  /** Indicates whether the rule should be always checked for the target value or only when the target value changes. */
+  /** @name RangeRule.reevaluate */
   var reevaluate: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the rule type. Set it to "range" to use the RangeRule. */
+  /** @name RangeRule.type */
   var `type`: js.UndefOr[
     required | numeric | range | stringLength | custom | compare | pattern | email | async
   ] = js.undefined

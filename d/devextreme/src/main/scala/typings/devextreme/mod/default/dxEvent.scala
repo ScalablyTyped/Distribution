@@ -9,34 +9,34 @@ import scala.scalajs.js.annotation._
 @js.native
 class dxEvent ()
   extends typings.devextreme.mod.DevExpress.dxEvent {
-  /** The DOM element within the current event propagation stage. */
+  /** @name dxEvent.currentTarget */
   /* CompleteClass */
   override var currentTarget: Element = js.native
-  /** Data passed to the event handler. */
+  /** @name dxEvent.data */
   /* CompleteClass */
   override var data: js.Any = js.native
-  /** The DOM element to which the currently-called event handler was attached. */
+  /** @name dxEvent.delegateTarget */
   /* CompleteClass */
   override var delegateTarget: Element = js.native
-  /** The DOM element that initiated the event. */
+  /** @name dxEvent.target */
   /* CompleteClass */
   override var target: Element = js.native
-  /** Checks if the preventDefault() method was called on this event object. */
+  /** @name dxEvent.isDefaultPrevented() */
   /* CompleteClass */
   override def isDefaultPrevented(): Boolean = js.native
-  /** Checks if the stopImmediatePropagation() method was called on this event object. */
+  /** @name dxEvent.isImmediatePropagationStopped() */
   /* CompleteClass */
   override def isImmediatePropagationStopped(): Boolean = js.native
-  /** Checks if the stopPropagation() method was called on this event object. */
+  /** @name dxEvent.isPropagationStopped() */
   /* CompleteClass */
   override def isPropagationStopped(): Boolean = js.native
-  /** Prevents the event's default action from triggering. */
+  /** @name dxEvent.preventDefault() */
   /* CompleteClass */
   override def preventDefault(): Unit = js.native
-  /** Stops the event's propagation up the DOM tree, preventing the rest of the handlers from being executed. */
+  /** @name dxEvent.stopImmediatePropagation() */
   /* CompleteClass */
   override def stopImmediatePropagation(): Unit = js.native
-  /** Stops the event's propagation up the DOM tree, keeping parent handlers unnotified of the event. */
+  /** @name dxEvent.stopPropagation() */
   /* CompleteClass */
   override def stopPropagation(): Unit = js.native
 }

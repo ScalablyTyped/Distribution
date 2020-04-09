@@ -11,8 +11,6 @@ trait AnonItemDecorator extends js.Object {
   var itemChecked: String
   var itemControl: String
   var itemDecorator: String
-  var itemDisabled: String
-  var itemHover: String
   var itemInline: String
   var label: String
   var labelChecked: String
@@ -30,8 +28,6 @@ object AnonItemDecorator {
     itemChecked: String,
     itemControl: String,
     itemDecorator: String,
-    itemDisabled: String,
-    itemHover: String,
     itemInline: String,
     label: String,
     labelChecked: String,
@@ -39,7 +35,7 @@ object AnonItemDecorator {
     other: String,
     root: String
   ): AnonItemDecorator = {
-    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], controlLabel = controlLabel.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], itemChecked = itemChecked.asInstanceOf[js.Any], itemControl = itemControl.asInstanceOf[js.Any], itemDecorator = itemDecorator.asInstanceOf[js.Any], itemDisabled = itemDisabled.asInstanceOf[js.Any], itemHover = itemHover.asInstanceOf[js.Any], itemInline = itemInline.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], labelChecked = labelChecked.asInstanceOf[js.Any], materialDecorator = materialDecorator.asInstanceOf[js.Any], other = other.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], controlLabel = controlLabel.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], itemChecked = itemChecked.asInstanceOf[js.Any], itemControl = itemControl.asInstanceOf[js.Any], itemDecorator = itemDecorator.asInstanceOf[js.Any], itemInline = itemInline.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], labelChecked = labelChecked.asInstanceOf[js.Any], materialDecorator = materialDecorator.asInstanceOf[js.Any], other = other.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AnonItemDecorator]
   }

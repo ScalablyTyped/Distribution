@@ -21,21 +21,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxToastOptions extends dxOverlayOptions[dxToast] {
-  /** Configures widget visibility animations. This object contains two fields: show and hide. */
+  /** @name dxToast.Options.animation */
   @JSName("animation")
   var animation_dxToastOptions: js.UndefOr[dxToastAnimation] = js.undefined
-  /** A Boolean value specifying whether or not the toast is closed if a user clicks it. */
+  /** @name dxToast.Options.closeOnClick */
   var closeOnClick: js.UndefOr[Boolean] = js.undefined
-  /** A Boolean value specifying whether or not the toast is closed if a user swipes it out of the screen boundaries. */
+  /** @name dxToast.Options.closeOnSwipe */
   var closeOnSwipe: js.UndefOr[Boolean] = js.undefined
-  /** The time span in milliseconds during which the Toast widget is visible. */
+  /** @name dxToast.Options.displayTime */
   var displayTime: js.UndefOr[Double] = js.undefined
-  /** The Toast message text. */
+  /** @name dxToast.Options.message */
   var message: js.UndefOr[String] = js.undefined
-  /** Positions the widget. */
+  /** @name dxToast.Options.position */
   @JSName("position")
   var position_dxToastOptions: js.UndefOr[positionConfig | String] = js.undefined
-  /** Specifies the Toast widget type. */
+  /** @name dxToast.Options.type */
   var `type`: js.UndefOr[custom | error | info | success | warning] = js.undefined
 }
 

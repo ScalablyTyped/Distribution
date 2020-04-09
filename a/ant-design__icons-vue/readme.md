@@ -1,7 +1,7 @@
 
 # Scala.js typings for ant-design__icons-vue
 
-Typings are for version 4.0.2
+Typings are for version 4.0.4
 
 ## Library description:
 Ant Design Icons for Vue

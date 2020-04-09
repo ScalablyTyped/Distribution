@@ -43,6 +43,10 @@ trait Finding extends js.Object {
     */
   var resource: js.UndefOr[String] = js.native
   /**
+    * The AWS account ID that owns the resource.
+    */
+  var resourceOwnerAccount: String = js.native
+  /**
     * The type of the resource reported in the finding.
     */
   var resourceType: ResourceType = js.native
@@ -63,6 +67,7 @@ object Finding {
     condition: ConditionKeyMap,
     createdAt: Timestamp,
     id: FindingId,
+    resourceOwnerAccount: String,
     resourceType: ResourceType,
     status: FindingStatus,
     updatedAt: Timestamp,
@@ -72,7 +77,7 @@ object Finding {
     principal: PrincipalMap = null,
     resource: String = null
   ): Finding = {
-    val __obj = js.Dynamic.literal(analyzedAt = analyzedAt.asInstanceOf[js.Any], condition = condition.asInstanceOf[js.Any], createdAt = createdAt.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], updatedAt = updatedAt.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(analyzedAt = analyzedAt.asInstanceOf[js.Any], condition = condition.asInstanceOf[js.Any], createdAt = createdAt.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resourceOwnerAccount = resourceOwnerAccount.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], updatedAt = updatedAt.asInstanceOf[js.Any])
     if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (!js.isUndefined(isPublic)) __obj.updateDynamic("isPublic")(isPublic.asInstanceOf[js.Any])

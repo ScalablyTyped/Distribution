@@ -73,6 +73,7 @@ import typings.reactNative.mod.AccessibilityRole
 import typings.reactNative.mod.AccessibilityState
 import typings.reactNative.mod.AccessibilityStates
 import typings.reactNative.mod.AccessibilityTrait
+import typings.reactNative.mod.AccessibilityValue
 import typings.reactNative.mod.DataDetectorTypes
 import typings.reactNative.mod.DocumentSelectionState
 import typings.reactNative.mod.GestureResponderEvent
@@ -107,6 +108,7 @@ trait TextInputProps extends js.Object {
   var accessibilityState: js.UndefOr[AccessibilityState] = js.undefined
   var accessibilityStates: js.UndefOr[js.Array[AccessibilityStates]] = js.undefined
   var accessibilityTraits: js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]] = js.undefined
+  var accessibilityValue: js.UndefOr[AccessibilityValue] = js.undefined
   var accessibilityViewIsModal: js.UndefOr[Boolean] = js.undefined
   var accessible: js.UndefOr[Boolean] = js.undefined
   var allowFontScaling: js.UndefOr[Boolean] = js.undefined
@@ -225,6 +227,7 @@ object TextInputProps {
     accessibilityState: AccessibilityState = null,
     accessibilityStates: js.Array[AccessibilityStates] = null,
     accessibilityTraits: AccessibilityTrait | js.Array[AccessibilityTrait] = null,
+    accessibilityValue: AccessibilityValue = null,
     accessibilityViewIsModal: js.UndefOr[Boolean] = js.undefined,
     accessible: js.UndefOr[Boolean] = js.undefined,
     allowFontScaling: js.UndefOr[Boolean] = js.undefined,
@@ -330,6 +333,7 @@ object TextInputProps {
     if (accessibilityState != null) __obj.updateDynamic("accessibilityState")(accessibilityState.asInstanceOf[js.Any])
     if (accessibilityStates != null) __obj.updateDynamic("accessibilityStates")(accessibilityStates.asInstanceOf[js.Any])
     if (accessibilityTraits != null) __obj.updateDynamic("accessibilityTraits")(accessibilityTraits.asInstanceOf[js.Any])
+    if (accessibilityValue != null) __obj.updateDynamic("accessibilityValue")(accessibilityValue.asInstanceOf[js.Any])
     if (!js.isUndefined(accessibilityViewIsModal)) __obj.updateDynamic("accessibilityViewIsModal")(accessibilityViewIsModal.asInstanceOf[js.Any])
     if (!js.isUndefined(accessible)) __obj.updateDynamic("accessible")(accessible.asInstanceOf[js.Any])
     if (!js.isUndefined(allowFontScaling)) __obj.updateDynamic("allowFontScaling")(allowFontScaling.asInstanceOf[js.Any])

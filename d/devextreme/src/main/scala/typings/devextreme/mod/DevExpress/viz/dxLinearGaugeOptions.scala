@@ -28,17 +28,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxLinearGaugeOptions extends BaseGaugeOptions[dxLinearGauge] {
-  /** Specifies the options required to set the geometry of the LinearGauge widget. */
+  /** @name dxLinearGauge.Options.geometry */
   var geometry: js.UndefOr[Anon0] = js.undefined
-  /** Specifies gauge range container options. */
+  /** @name dxLinearGauge.Options.rangeContainer */
   @JSName("rangeContainer")
   var rangeContainer_dxLinearGaugeOptions: js.UndefOr[dxLinearGaugeRangeContainer] = js.undefined
-  /** Specifies the gauge's scale options. */
+  /** @name dxLinearGauge.Options.scale */
   @JSName("scale")
   var scale_dxLinearGaugeOptions: js.UndefOr[dxLinearGaugeScale] = js.undefined
-  /** Specifies the appearance options of subvalue indicators. */
+  /** @name dxLinearGauge.Options.subvalueIndicator */
   var subvalueIndicator: js.UndefOr[GaugeIndicator] = js.undefined
-  /** Specifies the appearance options of the value indicator. */
+  /** @name dxLinearGauge.Options.valueIndicator */
   var valueIndicator: js.UndefOr[GaugeIndicator] = js.undefined
 }
 

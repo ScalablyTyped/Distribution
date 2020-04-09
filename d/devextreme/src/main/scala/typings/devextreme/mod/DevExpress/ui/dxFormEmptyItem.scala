@@ -10,17 +10,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxFormEmptyItem extends js.Object {
-  /** Specifies the number of columns spanned by the item. */
+  /** @name dxFormEmptyItem.colSpan */
   var colSpan: js.UndefOr[Double] = js.undefined
-  /** Specifies a CSS class to be applied to the form item. */
+  /** @name dxFormEmptyItem.cssClass */
   var cssClass: js.UndefOr[String] = js.undefined
-  /** Specifies the item's type. Set it to "empty" to create an empty item. */
+  /** @name dxFormEmptyItem.itemType */
   var itemType: js.UndefOr[empty | group | simple | tabbed | button] = js.undefined
-  /** Specifies a name that identifies the form item. */
+  /** @name dxFormEmptyItem.name */
   var name: js.UndefOr[String] = js.undefined
-  /** Specifies whether or not the current form item is visible. */
+  /** @name dxFormEmptyItem.visible */
   var visible: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the sequence number of the item in a form, group or tab. */
+  /** @name dxFormEmptyItem.visibleIndex */
   var visibleIndex: js.UndefOr[Double] = js.undefined
 }
 

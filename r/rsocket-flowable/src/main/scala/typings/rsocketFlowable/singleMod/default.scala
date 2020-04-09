@@ -16,6 +16,7 @@ class default[T] protected () extends Single[T] {
 @js.native
 object default extends js.Object {
   def error(error: Error): Single[scala.Nothing] = js.native
+  def never(): Single[scala.Nothing] = js.native
   def of[U](value: U): Single[U] = js.native
 }
 

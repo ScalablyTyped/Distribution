@@ -48,72 +48,74 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxLookupOptions extends dxDropDownListOptions[dxLookup] {
-  /** Configures widget visibility animations. This object contains two fields: show and hide. */
+  /** @name dxLookup.Options.animation */
   var animation: js.UndefOr[AnonHide] = js.undefined
-  /** The text displayed on the Apply button. */
+  /** @name dxLookup.Options.applyButtonText */
   var applyButtonText: js.UndefOr[String] = js.undefined
-  /** The text displayed on the Cancel button. */
+  /** @name dxLookup.Options.cancelButtonText */
   var cancelButtonText: js.UndefOr[String] = js.undefined
-  /** Specifies whether or not the widget cleans the search box when the popup window is displayed. */
+  /** @name dxLookup.Options.cleanSearchOnOpening */
   var cleanSearchOnOpening: js.UndefOr[Boolean] = js.undefined
-  /** The text displayed on the Clear button. */
+  /** @name dxLookup.Options.clearButtonText */
   var clearButtonText: js.UndefOr[String] = js.undefined
-  /** Specifies whether to close the drop-down menu if a user clicks outside it. */
+  /** @name dxLookup.Options.closeOnOutsideClick */
   var closeOnOutsideClick: js.UndefOr[Boolean | js.Function0[Boolean]] = js.undefined
-  /** Specifies a custom template for the input field. */
+  /** @name dxLookup.Options.fieldTemplate */
   var fieldTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* selectedItem */ js.Any, /* fieldElement */ dxElement, String | Element | JQuery])
   ] = js.undefined
-  /** A Boolean value specifying whether or not to display the lookup in full-screen mode. */
+  /** @name dxLookup.Options.fullScreen */
   var fullScreen: js.UndefOr[Boolean] = js.undefined
-  /** The text displayed on the button used to load the next page from the data source. */
+  /** @name dxLookup.Options.itemCenteringEnabled */
+  var itemCenteringEnabled: js.UndefOr[Boolean] = js.undefined
+  /** @name dxLookup.Options.nextButtonText */
   var nextButtonText: js.UndefOr[String] = js.undefined
-  /** A function that is executed before the next page is loaded. */
+  /** @name dxLookup.Options.onPageLoading */
   var onPageLoading: js.UndefOr[js.Function1[/* e */ AnonComponentDxLookup, _]] = js.undefined
-  /** A function that is executed when the "pull to refresh" gesture is performed on the drop-down item list. Supported in mobile themes only. */
+  /** @name dxLookup.Options.onPullRefresh */
   var onPullRefresh: js.UndefOr[js.Function1[/* e */ AnonComponentDxLookup, _]] = js.undefined
-  /** A function that is executed on each scroll gesture performed on the drop-down item list. */
+  /** @name dxLookup.Options.onScroll */
   var onScroll: js.UndefOr[js.Function1[/* e */ AnonReachedLeft, _]] = js.undefined
-  /** A function that is executed when the drop-down list's title is rendered. */
+  /** @name dxLookup.Options.onTitleRendered */
   var onTitleRendered: js.UndefOr[js.Function1[/* e */ AnonTitleElement, _]] = js.undefined
-  /** A function that is executed after the widget's value is changed. */
+  /** @name dxLookup.Options.onValueChanged */
   @JSName("onValueChanged")
   var onValueChanged_dxLookupOptions: js.UndefOr[js.Function1[/* e */ AnonPreviousValueValue, _]] = js.undefined
-  /** Specifies whether the next page is loaded when a user scrolls the widget to the bottom or when the "next" button is clicked. */
+  /** @name dxLookup.Options.pageLoadMode */
   var pageLoadMode: js.UndefOr[nextButton | scrollBottom] = js.undefined
-  /** Specifies the text shown in the pullDown panel, which is displayed when the widget is scrolled to the bottom. */
+  /** @name dxLookup.Options.pageLoadingText */
   var pageLoadingText: js.UndefOr[String] = js.undefined
-  /** Specifies the popup element's height. Applies only if fullScreen is false. */
+  /** @name dxLookup.Options.popupHeight */
   var popupHeight: js.UndefOr[Double | String | (js.Function0[Double | String])] = js.undefined
-  /** Specifies the popup element's width. Applies only if fullScreen is false. */
+  /** @name dxLookup.Options.popupWidth */
   var popupWidth: js.UndefOr[Double | String | (js.Function0[Double | String])] = js.undefined
-  /** An object defining widget positioning options. */
+  /** @name dxLookup.Options.position */
   var position: js.UndefOr[positionConfig] = js.undefined
-  /** A Boolean value specifying whether or not the widget supports the "pull down to refresh" gesture. */
+  /** @name dxLookup.Options.pullRefreshEnabled */
   var pullRefreshEnabled: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the text displayed in the pullDown panel when the widget is pulled below the refresh threshold. */
+  /** @name dxLookup.Options.pulledDownText */
   var pulledDownText: js.UndefOr[String] = js.undefined
-  /** Specifies the text shown in the pullDown panel while the list is being pulled down to the refresh threshold. */
+  /** @name dxLookup.Options.pullingDownText */
   var pullingDownText: js.UndefOr[String] = js.undefined
-  /** Specifies the text displayed in the pullDown panel while the widget is being refreshed. */
+  /** @name dxLookup.Options.refreshingText */
   var refreshingText: js.UndefOr[String] = js.undefined
-  /** The text that is provided as a hint in the lookup's search bar. */
+  /** @name dxLookup.Options.searchPlaceholder */
   var searchPlaceholder: js.UndefOr[String] = js.undefined
-  /** Specifies whether to shade the container when the lookup is active. Applies only if usePopover is false. */
+  /** @name dxLookup.Options.shading */
   var shading: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether to display the Cancel button in the lookup window. */
+  /** @name dxLookup.Options.showCancelButton */
   var showCancelButton: js.UndefOr[Boolean] = js.undefined
-  /** A Boolean value specifying whether or not to display the title in the popup window. */
+  /** @name dxLookup.Options.showPopupTitle */
   var showPopupTitle: js.UndefOr[Boolean] = js.undefined
-  /** The title of the lookup window. */
+  /** @name dxLookup.Options.title */
   var title: js.UndefOr[String] = js.undefined
-  /** Specifies a custom template for the title. */
+  /** @name dxLookup.Options.titleTemplate */
   var titleTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function1[/* titleElement */ dxElement, String | Element | JQuery])
   ] = js.undefined
-  /** Specifies whether or not the widget uses native scrolling. */
+  /** @name dxLookup.Options.useNativeScrolling */
   var useNativeScrolling: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether or not to show lookup contents in a Popover widget. */
+  /** @name dxLookup.Options.usePopover */
   var usePopover: js.UndefOr[Boolean] = js.undefined
 }
 
@@ -154,6 +156,7 @@ object dxLookupOptions {
     hoverStateEnabled: js.UndefOr[Boolean] = js.undefined,
     inputAttr: js.Any = null,
     isValid: js.UndefOr[Boolean] = js.undefined,
+    itemCenteringEnabled: js.UndefOr[Boolean] = js.undefined,
     itemTemplate: typings.devextreme.mod.DevExpress.core.template | (js.Function3[
       /* itemData */ js.Any, 
       /* itemIndex */ Double, 
@@ -272,6 +275,7 @@ object dxLookupOptions {
     if (!js.isUndefined(hoverStateEnabled)) __obj.updateDynamic("hoverStateEnabled")(hoverStateEnabled.asInstanceOf[js.Any])
     if (inputAttr != null) __obj.updateDynamic("inputAttr")(inputAttr.asInstanceOf[js.Any])
     if (!js.isUndefined(isValid)) __obj.updateDynamic("isValid")(isValid.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemCenteringEnabled)) __obj.updateDynamic("itemCenteringEnabled")(itemCenteringEnabled.asInstanceOf[js.Any])
     if (itemTemplate != null) __obj.updateDynamic("itemTemplate")(itemTemplate.asInstanceOf[js.Any])
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])

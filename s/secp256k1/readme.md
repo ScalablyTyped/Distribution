@@ -1,7 +1,7 @@
 
 # Scala.js typings for secp256k1
 
-Typings are for version 3.5
+Typings are for version 4.0
 
 ## Library description:
 This module provides native bindings to ecdsa secp256k1 functions

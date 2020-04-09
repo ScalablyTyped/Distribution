@@ -31,29 +31,29 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxMenuOptions extends dxMenuBaseOptions[dxMenu] {
-  /** Specifies whether adaptive widget rendering is enabled on small screens. Applies only if the orientation is "horizontal". */
+  /** @name dxMenu.Options.adaptivityEnabled */
   var adaptivityEnabled: js.UndefOr[Boolean] = js.undefined
-  /** Binds the widget to data. */
+  /** @name dxMenu.Options.dataSource */
   @JSName("dataSource")
   var dataSource_dxMenuOptions: js.UndefOr[String | js.Array[dxMenuItem] | DataSource | DataSourceOptions] = js.undefined
-  /** Specifies whether or not the submenu is hidden when the mouse pointer leaves it. */
+  /** @name dxMenu.Options.hideSubmenuOnMouseLeave */
   var hideSubmenuOnMouseLeave: js.UndefOr[Boolean] = js.undefined
-  /** Holds an array of menu items. */
+  /** @name dxMenu.Options.items */
   @JSName("items")
   var items_dxMenuOptions: js.UndefOr[js.Array[dxMenuItem]] = js.undefined
-  /** A function that is executed after a submenu is hidden. */
+  /** @name dxMenu.Options.onSubmenuHidden */
   var onSubmenuHidden: js.UndefOr[js.Function1[/* e */ AnonRootItem, _]] = js.undefined
-  /** A function that is executed before a submenu is hidden. */
+  /** @name dxMenu.Options.onSubmenuHiding */
   var onSubmenuHiding: js.UndefOr[js.Function1[/* e */ AnonModelRootItem, _]] = js.undefined
-  /** A function that is executed before a submenu is displayed. */
+  /** @name dxMenu.Options.onSubmenuShowing */
   var onSubmenuShowing: js.UndefOr[js.Function1[/* e */ AnonRootItem, _]] = js.undefined
-  /** A function that is executed after a submenu is displayed. */
+  /** @name dxMenu.Options.onSubmenuShown */
   var onSubmenuShown: js.UndefOr[js.Function1[/* e */ AnonRootItem, _]] = js.undefined
-  /** Specifies whether the menu has horizontal or vertical orientation. */
+  /** @name dxMenu.Options.orientation */
   var orientation: js.UndefOr[horizontal | vertical] = js.undefined
-  /** Specifies options for showing and hiding the first level submenu. */
+  /** @name dxMenu.Options.showFirstSubmenuMode */
   var showFirstSubmenuMode: js.UndefOr[AnonDelayName | onClick | onHover] = js.undefined
-  /** Specifies the direction at which the submenus are displayed. */
+  /** @name dxMenu.Options.submenuDirection */
   var submenuDirection: js.UndefOr[auto | leftOrTop | rightOrBottom] = js.undefined
 }
 

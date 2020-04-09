@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
   - typings.webpack.webpackStrings.amd
   - typings.webpack.webpackStrings.umd
   - typings.webpack.webpackStrings.jsonp
+  - typings.webpack.webpackStrings.system
 */
 trait LibraryTarget extends js.Object
 
@@ -33,6 +34,8 @@ object LibraryTarget {
   def global: typings.webpack.webpackStrings.global = this.cast("global")
   @scala.inline
   def jsonp: typings.webpack.webpackStrings.jsonp = this.cast("jsonp")
+  @scala.inline
+  def system: typings.webpack.webpackStrings.system = this.cast("system")
   @scala.inline
   def `this`: typings.webpack.webpackStrings.`this` = this.cast("this")
   @scala.inline

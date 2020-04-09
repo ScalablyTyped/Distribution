@@ -9,7 +9,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxLinearGaugeScaleLabel extends BaseGaugeScaleLabel {
-  /** Specifies the spacing between scale labels and ticks. */
+  /** @name dxLinearGauge.Options.scale.label.indentFromTick */
   var indentFromTick: js.UndefOr[Double] = js.undefined
 }
 

@@ -1,6 +1,5 @@
 package typings.validator
 
-import typings.validator.mod.validator.IsFloatOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,6 +13,8 @@ object isFloatMod extends js.Object {
     * @param [options] - Options
     */
   def default(str: String): Boolean = js.native
-  def default(str: String, options: IsFloatOptions): Boolean = js.native
+  def default(str: String, options: typings.validator.mod.validator.IsFloatOptions): Boolean = js.native
+  type FloatLocale = typings.validator.mod.validator.FloatLocale
+  type IsFloatOptions = typings.validator.mod.validator.IsFloatOptions
 }
 

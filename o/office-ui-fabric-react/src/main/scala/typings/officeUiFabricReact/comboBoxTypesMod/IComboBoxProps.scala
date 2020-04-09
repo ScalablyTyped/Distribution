@@ -26,6 +26,7 @@ import typings.react.mod.FormEvent
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
@@ -199,7 +200,10 @@ trait IComboBoxProps extends ISelectableDroppableTextProps[IComboBox, IComboBox]
     */
   var onMenuOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
   /**
-    * Callback issued when the user changes the pending value in ComboBox
+    * Callback issued when the user changes the pending value in ComboBox.
+    * This will be called any time the component is updated and there is a current
+    * pending value. Option, index, and value will all be undefined if no change
+    * has taken place and the previously entered pending value is still valid.
     */
   var onPendingValueChanged: js.UndefOr[
     js.Function3[
@@ -468,7 +472,7 @@ object IComboBoxProps {
     onRenderUpperContent: (/* props */ js.UndefOr[IComboBoxProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IComboBoxProps], Element | Null]]) => Element | Null = null,
     onReset: FormEvent[IComboBox] => Unit = null,
     onResolveOptions: /* options */ js.Array[IComboBoxOption] => js.Array[IComboBoxOption] | js.Thenable[js.Array[IComboBoxOption]] = null,
-    onScroll: UIEvent[IComboBox] => Unit = null,
+    onScroll: UIEvent[IComboBox, NativeUIEvent] => Unit = null,
     onScrollToItem: /* itemIndex */ Double => Unit = null,
     onSeeked: SyntheticEvent[IComboBox, Event_] => Unit = null,
     onSeeking: SyntheticEvent[IComboBox, Event_] => Unit = null,

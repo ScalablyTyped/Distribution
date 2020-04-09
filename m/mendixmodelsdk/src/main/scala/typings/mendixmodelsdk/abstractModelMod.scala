@@ -216,6 +216,7 @@ object abstractModelMod extends js.Object {
     def onBuildResultEventReceived(callback: js.Function1[/* buildResultEvent */ IBuildResultEvent, Unit]): Unit = js.native
     def onFileChangesReceived(callback: js.Function1[/* files */ js.Array[String], Unit]): Unit = js.native
     def onModelEventProcessed(callback: IVoidCallback): Unit = js.native
+    def onModelOrFilesChanging(callback: IVoidCallback): Unit = js.native
     def onWorkingCopyDataEventReceived(callback: js.Function1[/* workingCopyDataEvent */ IWorkingCopyDataEvent, Unit]): Unit = js.native
     def putFile(inFilePath: String, filePath: String): js.Promise[Unit] = js.native
     /**

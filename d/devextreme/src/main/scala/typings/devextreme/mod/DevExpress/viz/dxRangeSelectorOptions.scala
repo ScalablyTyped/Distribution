@@ -42,35 +42,35 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxRangeSelectorOptions extends BaseWidgetOptions[dxRangeSelector] {
-  /** Specifies the options for the range selector's background. */
+  /** @name dxRangeSelector.Options.background */
   var background: js.UndefOr[AnonImage] = js.undefined
-  /** Specifies the RangeSelector's behavior options. */
+  /** @name dxRangeSelector.Options.behavior */
   var behavior: js.UndefOr[AnonAllowSlidersSwap] = js.undefined
-  /** Specifies the options required to display a chart as the range selector's background. */
+  /** @name dxRangeSelector.Options.chart */
   var chart: js.UndefOr[AnonBarGroupPadding] = js.undefined
-  /** Specifies the color of the parent page element. */
+  /** @name dxRangeSelector.Options.containerBackgroundColor */
   var containerBackgroundColor: js.UndefOr[String] = js.undefined
-  /** Specifies a data source for the scale values and for the chart at the background. */
+  /** @name dxRangeSelector.Options.dataSource */
   var dataSource: js.UndefOr[js.Array[_] | DataSource | DataSourceOptions | String] = js.undefined
-  /** Specifies the data source field that provides data for the scale. */
+  /** @name dxRangeSelector.Options.dataSourceField */
   var dataSourceField: js.UndefOr[String] = js.undefined
-  /** Range selector's indent options. */
+  /** @name dxRangeSelector.Options.indent */
   var indent: js.UndefOr[AnonRight] = js.undefined
-  /** A function that is executed after the widget's value is changed. */
+  /** @name dxRangeSelector.Options.onValueChanged */
   var onValueChanged: js.UndefOr[js.Function1[/* e */ AnonElementEventModel, _]] = js.undefined
-  /** Specifies options of the range selector's scale. */
+  /** @name dxRangeSelector.Options.scale */
   var scale: js.UndefOr[AnonAggregateByCategory] = js.undefined
-  /** Specifies the color of the selected range. */
+  /** @name dxRangeSelector.Options.selectedRangeColor */
   var selectedRangeColor: js.UndefOr[String] = js.undefined
-  /** Specifies how the selected range should behave when data is updated. Applies only when the RangeSelector is bound to a data source. */
+  /** @name dxRangeSelector.Options.selectedRangeUpdateMode */
   var selectedRangeUpdateMode: js.UndefOr[auto | keep | reset | shift] = js.undefined
-  /** Specifies range selector shutter options. */
+  /** @name dxRangeSelector.Options.shutter */
   var shutter: js.UndefOr[AnonOpacity] = js.undefined
-  /** Specifies the appearance of the range selector's slider handles. */
+  /** @name dxRangeSelector.Options.sliderHandle */
   var sliderHandle: js.UndefOr[AnonOpacityWidth] = js.undefined
-  /** Defines the options of the range selector slider markers. */
+  /** @name dxRangeSelector.Options.sliderMarker */
   var sliderMarker: js.UndefOr[AnonInvalidRangeColor] = js.undefined
-  /** The selected range (initial or current). Equals the entire scale when not set. */
+  /** @name dxRangeSelector.Options.value */
   var value: js.UndefOr[(js.Array[Double | String | Date]) | VizRange] = js.undefined
 }
 

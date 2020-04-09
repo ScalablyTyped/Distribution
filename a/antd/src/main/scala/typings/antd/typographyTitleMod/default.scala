@@ -1,12 +1,12 @@
 package typings.antd.typographyTitleMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("antd/lib/typography/Title", JSImport.Default)
 @js.native
-object default extends TopLevel[SFC[TitleProps]]
+object default extends TopLevel[FC[TitleProps]]
 

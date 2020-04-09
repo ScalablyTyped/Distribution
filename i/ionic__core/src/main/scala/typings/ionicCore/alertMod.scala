@@ -3,11 +3,9 @@ package typings.ionicCore
 import typings.ionicCore.alertInterfaceMod.AlertButton
 import typings.ionicCore.alertInterfaceMod.AlertInput
 import typings.ionicCore.componentsMod._Global_.HTMLIonAlertElement
-import typings.ionicCore.ionicCoreStrings.ios
-import typings.ionicCore.ionicCoreStrings.md
 import typings.ionicCore.overlaysInterfaceMod.OverlayEventDetail
 import typings.ionicCore.overlaysInterfaceMod.OverlayInterface
-import typings.ionicCore.stencilCoreMod.ComponentInterface
+import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -59,8 +57,6 @@ object alertMod extends js.Object {
       * For more information: [Security Documentation](https://ionicframework.com/docs/faq/security)
       */
     var message: js.UndefOr[String] = js.native
-    @JSName("mode")
-    var mode_Alert: ios | md = js.native
     var onBackdropTap: js.Any = js.native
     var processedButtons: js.Any = js.native
     var processedInputs: js.Any = js.native

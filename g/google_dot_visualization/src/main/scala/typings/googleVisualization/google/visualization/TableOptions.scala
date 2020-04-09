@@ -1,5 +1,9 @@
 package typings.googleVisualization.google.visualization
 
+import typings.googleVisualization.googleVisualizationStrings.auto
+import typings.googleVisualization.googleVisualizationStrings.both
+import typings.googleVisualization.googleVisualizationStrings.next
+import typings.googleVisualization.googleVisualizationStrings.prev
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,9 +13,11 @@ trait TableOptions extends js.Object {
   var alternatingRowStyle: js.UndefOr[Boolean] = js.undefined
   var cssClassNames: js.UndefOr[CssClassNames] = js.undefined
   var firstRowNumber: js.UndefOr[Double] = js.undefined
+  var frozenColumns: js.UndefOr[Double] = js.undefined
   var height: js.UndefOr[String] = js.undefined
   var page: js.UndefOr[String] = js.undefined
   var pageSize: js.UndefOr[Double] = js.undefined
+  var pagingButtons: js.UndefOr[Double | both | prev | next | auto] = js.undefined
   var rtlTable: js.UndefOr[Boolean] = js.undefined
   var scrollLeftStartPosition: js.UndefOr[Double] = js.undefined
   var showRowNumber: js.UndefOr[Boolean] = js.undefined
@@ -29,9 +35,11 @@ object TableOptions {
     alternatingRowStyle: js.UndefOr[Boolean] = js.undefined,
     cssClassNames: CssClassNames = null,
     firstRowNumber: Int | Double = null,
+    frozenColumns: Int | Double = null,
     height: String = null,
     page: String = null,
     pageSize: Int | Double = null,
+    pagingButtons: Double | both | prev | next | auto = null,
     rtlTable: js.UndefOr[Boolean] = js.undefined,
     scrollLeftStartPosition: Int | Double = null,
     showRowNumber: js.UndefOr[Boolean] = js.undefined,
@@ -46,9 +54,11 @@ object TableOptions {
     if (!js.isUndefined(alternatingRowStyle)) __obj.updateDynamic("alternatingRowStyle")(alternatingRowStyle.asInstanceOf[js.Any])
     if (cssClassNames != null) __obj.updateDynamic("cssClassNames")(cssClassNames.asInstanceOf[js.Any])
     if (firstRowNumber != null) __obj.updateDynamic("firstRowNumber")(firstRowNumber.asInstanceOf[js.Any])
+    if (frozenColumns != null) __obj.updateDynamic("frozenColumns")(frozenColumns.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (pagingButtons != null) __obj.updateDynamic("pagingButtons")(pagingButtons.asInstanceOf[js.Any])
     if (!js.isUndefined(rtlTable)) __obj.updateDynamic("rtlTable")(rtlTable.asInstanceOf[js.Any])
     if (scrollLeftStartPosition != null) __obj.updateDynamic("scrollLeftStartPosition")(scrollLeftStartPosition.asInstanceOf[js.Any])
     if (!js.isUndefined(showRowNumber)) __obj.updateDynamic("showRowNumber")(showRowNumber.asInstanceOf[js.Any])

@@ -37,7 +37,7 @@ trait TrainingJob extends js.Object {
     */
   var EnableInterContainerTrafficEncryption: js.UndefOr[Boolean] = js.native
   /**
-    * When true, enables managed spot training using Amazon EC2 Spot instances to run training jobs instead of on-demand instances. For more information, see model-managed-spot-training.
+    * When true, enables managed spot training using Amazon EC2 Spot instances to run training jobs instead of on-demand instances. For more information, see Managed Spot Training.
     */
   var EnableManagedSpotTraining: js.UndefOr[Boolean] = js.native
   /**

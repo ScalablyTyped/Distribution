@@ -1,6 +1,6 @@
 package typings.ionicCore.overlaysInterfaceMod
 
-import typings.ionicCore.stencilCoreMod.HTMLStencilElement
+import typings.ionicCore.interfaceMod.HTMLStencilElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

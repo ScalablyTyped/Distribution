@@ -18,13 +18,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait HierarchicalCollectionWidgetOptions[T] extends CollectionWidgetOptions[T] {
-  /** Specifies the name of the data source item field whose value defines whether or not the corresponding widget item is disabled. */
+  /** @name HierarchicalCollectionWidget.Options.disabledExpr */
   var disabledExpr: js.UndefOr[String | js.Function] = js.undefined
-  /** Specifies the data field whose values should be displayed. */
+  /** @name HierarchicalCollectionWidget.Options.displayExpr */
   var displayExpr: js.UndefOr[String | (js.Function1[/* item */ js.Any, String])] = js.undefined
-  /** Specifies which data field contains nested items. */
+  /** @name HierarchicalCollectionWidget.Options.itemsExpr */
   var itemsExpr: js.UndefOr[String | js.Function] = js.undefined
-  /** Specifies the name of the data source item field whose value defines whether or not the corresponding widget items is selected. */
+  /** @name HierarchicalCollectionWidget.Options.selectedExpr */
   var selectedExpr: js.UndefOr[String | js.Function] = js.undefined
 }
 

@@ -15,25 +15,25 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DraggableBaseOptions[T] extends DOMComponentOptions[T] {
-  /** Enables automatic scrolling while dragging an item beyond the viewport. */
+  /** @name DraggableBase.Options.autoScroll */
   var autoScroll: js.UndefOr[Boolean] = js.undefined
-  /** Specifies a DOM element that limits the dragging area. */
+  /** @name DraggableBase.Options.boundary */
   var boundary: js.UndefOr[String | Element | JQuery] = js.undefined
-  /** Specifies a custom container in which the draggable item should be rendered. */
+  /** @name DraggableBase.Options.container */
   var container: js.UndefOr[String | Element | JQuery] = js.undefined
-  /** Specifies the cursor offset from the dragged item. */
+  /** @name DraggableBase.Options.cursorOffset */
   var cursorOffset: js.UndefOr[String | AnonY] = js.undefined
-  /** A container for custom data. */
+  /** @name DraggableBase.Options.data */
   var data: js.UndefOr[js.Any] = js.undefined
-  /** Specifies the directions in which an item can be dragged. */
+  /** @name DraggableBase.Options.dragDirection */
   var dragDirection: js.UndefOr[both | horizontal | vertical] = js.undefined
-  /** Allows you to group several widgets, so that users can drag and drop items between them. */
+  /** @name DraggableBase.Options.group */
   var group: js.UndefOr[String] = js.undefined
-  /** Specifies a CSS selector (ID or class) that should act as the drag handle(s) for the item(s). */
+  /** @name DraggableBase.Options.handle */
   var handle: js.UndefOr[String] = js.undefined
-  /** Specifies the distance in pixels from the edge of viewport at which scrolling should start. Applies only if autoScroll is true. */
+  /** @name DraggableBase.Options.scrollSensitivity */
   var scrollSensitivity: js.UndefOr[Double] = js.undefined
-  /** Specifies the scrolling speed when dragging an item beyond the viewport. Applies only if autoScroll is true. */
+  /** @name DraggableBase.Options.scrollSpeed */
   var scrollSpeed: js.UndefOr[Double] = js.undefined
 }
 

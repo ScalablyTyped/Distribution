@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait InventoryArgs extends js.Object {
   /**
-    * The S3 bucket configuration where inventory results are published (documented below).
+    * The name of the bucket where the inventory configuration will be stored.
     */
   val bucket: Input[String] = js.native
   /**

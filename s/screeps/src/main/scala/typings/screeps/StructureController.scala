@@ -12,7 +12,8 @@ import scala.scalajs.js.annotation._
   */
 trait StructureController
   extends OwnedStructure[STRUCTURE_CONTROLLER]
-     with AnyOwnedStructure {
+     with AnyOwnedStructure
+     with ConcreteStructure[js.Any] {
   /**
     * Whether using power is enabled in this room.
     *

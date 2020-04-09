@@ -8,9 +8,11 @@ import typings.std.TimeRanges
 import typings.videoJs.mod.videojs.Button
 import typings.videoJs.mod.videojs.Component
 import typings.videoJs.mod.videojs.ControlBar
+import typings.videoJs.mod.videojs.LiveTracker
 import typings.videoJs.mod.videojs.ModalDialog
 import typings.videoJs.mod.videojs.NetworkState
 import typings.videoJs.mod.videojs.Player
+import typings.videoJs.mod.videojs.Player.MediaObject
 import typings.videoJs.mod.videojs.PlayerOptions
 import typings.videoJs.mod.videojs.ReadyState
 import typings.videoJs.mod.videojs.Tech
@@ -29,6 +31,7 @@ trait VideoJsPlayer extends Component {
   var bigPlayButton: Button = js.native
   var controlBar: ControlBar = js.native
   var errorDisplay: ModalDialog = js.native
+  var liveTracker: LiveTracker = js.native
   var loadingSpinner: Component = js.native
   @JSName("options_")
   var options__VideoJsPlayer: PlayerOptions = js.native
@@ -341,6 +344,11 @@ trait VideoJsPlayer extends Component {
     */
   def getCache(): js.Any = js.native
   /**
+    * Get a clone of the current Player~MediaObject for this player.
+    * If the loadMedia method has not been used, will attempt to return a Player~MediaObject based on the current state of the player.
+    */
+  def getMedia(): MediaObject = js.native
+  /**
     * Gets available media playback quality metrics as specified by the W3C's Media
     * Playback Quality API.
     *
@@ -428,6 +436,10 @@ trait VideoJsPlayer extends Component {
     * Begin loading the src data.
     */
   def load(): Unit = js.native
+  /**
+    * Populate the player using a MediaObject.
+    */
+  def loadMedia(media: MediaObject, ready: js.Function0[_]): Unit = js.native
   def loop(): Boolean = js.native
   def loop(value: Boolean): Unit = js.native
   /**

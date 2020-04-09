@@ -15,6 +15,8 @@ object reactInstantsearchDomComponents extends reactInstantsearchDomProps {
   @scala.inline
   def CurrentRefinements: ComponentType[js.Any] = js.constructorOf[typings.reactInstantsearchDom.mod.CurrentRefinements].asInstanceOf[typings.react.mod.ComponentType[js.Any]]
   @scala.inline
+  def ExperimentalConfigureRelatedItems: ComponentType[js.Any] = js.constructorOf[typings.reactInstantsearchDom.mod.ExperimentalConfigureRelatedItems].asInstanceOf[typings.react.mod.ComponentType[js.Any]]
+  @scala.inline
   def HierarchicalMenu: ComponentType[js.Any] = js.constructorOf[typings.reactInstantsearchDom.mod.HierarchicalMenu].asInstanceOf[typings.react.mod.ComponentType[js.Any]]
   @scala.inline
   def Highlight: ComponentType[js.Any] = js.constructorOf[typings.reactInstantsearchDom.mod.Highlight].asInstanceOf[typings.react.mod.ComponentType[js.Any]]
@@ -41,6 +43,10 @@ object reactInstantsearchDomComponents extends reactInstantsearchDomProps {
   @scala.inline
   def PoweredBy: ComponentType[js.Any] = js.constructorOf[typings.reactInstantsearchDom.mod.PoweredBy].asInstanceOf[typings.react.mod.ComponentType[js.Any]]
   @scala.inline
+  def QueryRuleContext: ComponentType[js.Any] = js.constructorOf[typings.reactInstantsearchDom.mod.QueryRuleContext].asInstanceOf[typings.react.mod.ComponentType[js.Any]]
+  @scala.inline
+  def QueryRuleCustomData: ComponentType[js.Any] = js.constructorOf[typings.reactInstantsearchDom.mod.QueryRuleCustomData].asInstanceOf[typings.react.mod.ComponentType[js.Any]]
+  @scala.inline
   def RangeInput: ComponentType[js.Any] = js.constructorOf[typings.reactInstantsearchDom.mod.RangeInput].asInstanceOf[typings.react.mod.ComponentType[js.Any]]
   @scala.inline
   def RangeSlider: ComponentType[js.Any] = js.constructorOf[typings.reactInstantsearchDom.mod.RangeSlider].asInstanceOf[typings.react.mod.ComponentType[js.Any]]
@@ -60,5 +66,7 @@ object reactInstantsearchDomComponents extends reactInstantsearchDomProps {
   def Stats: ComponentType[StatsProps] = js.constructorOf[typings.reactInstantsearchDom.mod.Stats].asInstanceOf[typings.react.mod.ComponentType[StatsProps]]
   @scala.inline
   def ToggleRefinement: ComponentType[js.Any] = js.constructorOf[typings.reactInstantsearchDom.mod.ToggleRefinement].asInstanceOf[typings.react.mod.ComponentType[js.Any]]
+  @scala.inline
+  def VoiceSearch: ComponentType[js.Any] = js.constructorOf[typings.reactInstantsearchDom.mod.VoiceSearch].asInstanceOf[typings.react.mod.ComponentType[js.Any]]
 }
 

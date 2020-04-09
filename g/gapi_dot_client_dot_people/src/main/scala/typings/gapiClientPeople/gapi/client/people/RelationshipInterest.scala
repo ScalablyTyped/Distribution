@@ -6,17 +6,16 @@ import scala.scalajs.js.annotation._
 
 trait RelationshipInterest extends js.Object {
   /**
-    * The value of the relationship interest translated and formatted in the
-    * viewer's account locale or the locale specified in the Accept-Language
-    * HTTP header.
+    * Output only. The value of the relationship interest translated and formatted
+    * in the viewer's account locale or the locale specified in the
+    * Accept-Language HTTP header.
     */
   var formattedValue: js.UndefOr[String] = js.undefined
   /** Metadata about the relationship interest. */
   var metadata: js.UndefOr[FieldMetadata] = js.undefined
   /**
     * The kind of relationship the person is looking for. The value can be custom
-    * or predefined. Possible values include, but are not limited to, the
-    * following values:
+    * or one of these predefined values:
     *
     * &#42; `friend`
     * &#42; `date`

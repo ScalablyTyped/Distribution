@@ -218,6 +218,7 @@ package object robomakerMod {
   type SimulationSoftwareSuiteType = typings.awsSdk.robomakerMod._SimulationSoftwareSuiteType | java.lang.String
   type SimulationSoftwareSuiteVersionType = java.lang.String
   type SimulationTimeMillis = scala.Double
+  type SimulationUnit = scala.Double
   type SourceConfigs = js.Array[typings.awsSdk.robomakerMod.SourceConfig]
   type Sources = js.Array[typings.awsSdk.robomakerMod.Source]
   type Subnets = js.Array[typings.awsSdk.robomakerMod.NonEmptyString]

@@ -9,7 +9,7 @@ trait DeleteScalingPolicyInput extends js.Object {
   /**
     * A unique identifier for a fleet to be deleted. You can use either the fleet ID or ARN value.
     */
-  var FleetId: typings.awsSdk.gameliftMod.FleetId = js.native
+  var FleetId: FleetIdOrArn = js.native
   /**
     * A descriptive label that is associated with a scaling policy. Policy names do not need to be unique.
     */
@@ -18,7 +18,7 @@ trait DeleteScalingPolicyInput extends js.Object {
 
 object DeleteScalingPolicyInput {
   @scala.inline
-  def apply(FleetId: FleetId, Name: NonZeroAndMaxString): DeleteScalingPolicyInput = {
+  def apply(FleetId: FleetIdOrArn, Name: NonZeroAndMaxString): DeleteScalingPolicyInput = {
     val __obj = js.Dynamic.literal(FleetId = FleetId.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DeleteScalingPolicyInput]

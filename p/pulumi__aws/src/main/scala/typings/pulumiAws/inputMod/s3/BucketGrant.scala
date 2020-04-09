@@ -12,7 +12,7 @@ trait BucketGrant extends js.Object {
     */
   var id: js.UndefOr[Input[String]] = js.native
   /**
-    * List of permissions to apply for grantee. Valid values are `READ`, `WRITE`, `READ_ACP`, `WRITE_ACP`, `FULL_ACCESS`.
+    * List of permissions to apply for grantee. Valid values are `READ`, `WRITE`, `READ_ACP`, `WRITE_ACP`, `FULL_CONTROL`.
     */
   var permissions: Input[js.Array[Input[String]]] = js.native
   /**

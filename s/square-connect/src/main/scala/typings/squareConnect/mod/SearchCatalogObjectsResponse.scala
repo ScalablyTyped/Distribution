@@ -10,19 +10,24 @@ import scala.scalajs.js.annotation._
 class SearchCatalogObjectsResponse () extends js.Object {
   /**
     * The pagination cursor to be used in a subsequent request. If unset, this is the final response.
-    * See [Pagination](/basics/api101/pagination) for more information.
+    * See [Pagination](https://developer.squareup.com/docs/basics/api101/pagination) for more information.
     */
   var cursor: js.UndefOr[String] = js.native
   /**
-    * The set of [Error](#type-error)s encountered.
+    * Information on any errors encountered.
     */
   var errors: js.UndefOr[js.Array[Error]] = js.native
   /**
-    * The [CatalogObject](#type-catalogobject)s returned.
+    * When the associated product catalog was last updated.
+    * Will match the value for `end_time` or `cursor` if either field is included in the `SearchCatalog` request.
+    */
+  var latest_time: js.UndefOr[String] = js.native
+  /**
+    * The CatalogObjects returned.
     */
   var objects: js.UndefOr[js.Array[CatalogObject]] = js.native
   /**
-    * A list of [CatalogObject](#type-catalogobject)s referenced by the objects in the `objects` field.
+    * A list of CatalogObjects referenced by the objects in the `objects` field.
     */
   var related_objects: js.UndefOr[js.Array[CatalogObject]] = js.native
 }

@@ -14,6 +14,7 @@ package object personalizeruntimeMod {
   type ItemID = java.lang.String
   type ItemList = js.Array[typings.awsSdk.personalizeruntimeMod.PredictedItem]
   type NumResults = scala.Double
+  type Score = scala.Double
   type UserID = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.`2018-05-22`

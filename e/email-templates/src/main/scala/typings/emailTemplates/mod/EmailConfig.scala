@@ -37,7 +37,7 @@ trait EmailConfig[T] extends js.Object {
   /**
     * Pass a custom render function if necessary
     */
-  var render: js.UndefOr[js.Function2[/* view */ String, /* locals */ T, js.Promise[_]]] = js.undefined
+  var render: js.UndefOr[js.Function2[/* view */ String, /* locals */ js.UndefOr[T], js.Promise[_]]] = js.undefined
   /**
     * Do you really want to send, false for test or development
     */
@@ -70,7 +70,7 @@ object EmailConfig {
     juice: js.UndefOr[Boolean] = js.undefined,
     juiceResources: js.Any = null,
     preview: Boolean | PreviewEmailOpts = null,
-    render: (/* view */ String, /* locals */ T) => js.Promise[_] = null,
+    render: (/* view */ String, /* locals */ js.UndefOr[T]) => js.Promise[_] = null,
     send: js.UndefOr[Boolean] = js.undefined,
     subjectPrefix: String | `false` = null,
     textOnly: js.UndefOr[Boolean] = js.undefined,

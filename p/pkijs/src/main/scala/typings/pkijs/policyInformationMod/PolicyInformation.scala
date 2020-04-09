@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 trait PolicyInformation extends js.Object {
   var policyIdentifier: String
   /**
-    * Value of the TIME class 
+    * Value of the TIME class
     */
   var policyQualifiers: js.Array[typings.pkijs.policyQualifierInfoMod.default]
   def fromSchema(schema: js.Any): Unit

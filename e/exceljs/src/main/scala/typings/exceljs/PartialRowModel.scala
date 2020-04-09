@@ -15,7 +15,7 @@ trait PartialRowModel extends js.Object {
   var min: js.UndefOr[Double] = js.undefined
   var number: js.UndefOr[Double] = js.undefined
   var outlineLevel: js.UndefOr[Double] = js.undefined
-  var style: js.UndefOr[PartialStyle] = js.undefined
+  var style: js.UndefOr[PartialStyleAlignment] = js.undefined
 }
 
 object PartialRowModel {
@@ -29,7 +29,7 @@ object PartialRowModel {
     min: Int | Double = null,
     number: Int | Double = null,
     outlineLevel: Int | Double = null,
-    style: PartialStyle = null
+    style: PartialStyleAlignment = null
   ): PartialRowModel = {
     val __obj = js.Dynamic.literal()
     if (cells != null) __obj.updateDynamic("cells")(cells.asInstanceOf[js.Any])

@@ -10,6 +10,7 @@ import typings.std.Document_
 import typings.std.EventListener
 import typings.std.IDBFactory
 import typings.std.Storage
+import typings.std.Uint8Array
 import typings.std.VisibilityState
 import typings.std.Window_
 import scala.scalajs.js
@@ -69,6 +70,12 @@ object utilTestPlatformMod extends js.Object {
     val mockDocument: FakeDocument | Null = js.native
     val mockStorage: js.Any = js.native
     val mockWindow: FakeWindow | Null = js.native
+    /**
+      * True if timestamps, bytes and numbers are represented in Proto3 JSON
+      * format (in-memory and on the wire)
+      */
+    /* CompleteClass */
+    override val useProto3Json: Boolean = js.native
     /** The Platform's 'window' implementation or null if not available. */
     /* CompleteClass */
     override val window: Window_ | Null = js.native
@@ -92,9 +99,18 @@ object utilTestPlatformMod extends js.Object {
     /* CompleteClass */
     override def newSerializer(databaseId: DatabaseId): JsonProtoSerializer = js.native
     def raiseVisibilityEvent(visibility: VisibilityState): Unit = js.native
+    /**
+      * Generates `nBytes` of random bytes. If `nBytes` is negative, an empty array
+      * will be returned.
+      */
+    /* CompleteClass */
+    override def randomBytes(nBytes: Double): Uint8Array = js.native
+    @JSName("useProto3Json")
+    def useProto3Json_MTestPlatform(): Boolean = js.native
     @JSName("window")
     def window_MTestPlatform(): Window_ | Null = js.native
   }
   
+  def isNode(): Boolean = js.native
 }
 

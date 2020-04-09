@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ListPlatformVersionsResult extends js.Object {
   /**
-    * The starting index into the remaining list of platforms. if this value is not null, you can use it in a subsequent ListPlatformVersion call. 
+    * In a paginated request, if this value isn't null, it's the token that you can pass in a subsequent request to get the next response page.
     */
   var NextToken: js.UndefOr[Token] = js.native
   /**
-    * Detailed information about the platforms.
+    * Summary information about the platform versions.
     */
   var PlatformSummaryList: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.PlatformSummaryList] = js.native
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jupyterlab/completer" : "2.0.2"
+      "@jupyterlab/completer" : "2.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@jupyterlab/completer" : "2.0.2"
+      "@jupyterlab/completer" : "2.1.0"
     }
   ],
   "compile-devDependencies" : [

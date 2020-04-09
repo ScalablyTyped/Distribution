@@ -11,6 +11,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait NodeGroupState extends js.Object {
+  /**
+    * Type of Amazon Machine Image (AMI) associated with the EKS Node Group. Defaults to `AL2_x86_64`. Valid values: `AL2_x86_64`, `AL2_x86_64_GPU`. This provider will only perform drift detection if a configuration value is provided.
+    */
   val amiType: js.UndefOr[Input[String]] = js.native
   /**
     * Amazon Resource Name (ARN) of the EKS Node Group.
@@ -20,7 +23,13 @@ trait NodeGroupState extends js.Object {
     * Name of the EKS Cluster.
     */
   val clusterName: js.UndefOr[Input[String]] = js.native
+  /**
+    * Disk size in GiB for worker nodes. Defaults to `20`. This provider will only perform drift detection if a configuration value is provided.
+    */
   val diskSize: js.UndefOr[Input[Double]] = js.native
+  /**
+    * Set of instance types associated with the EKS Node Group. Defaults to `["t3.medium"]`. This provider will only perform drift detection if a configuration value is provided. Currently, the EKS API only accepts a single value in the set.
+    */
   val instanceTypes: js.UndefOr[Input[String]] = js.native
   /**
     * Key-value mapping of Kubernetes labels. Only labels that are applied with the EKS API are managed by this argument. Other Kubernetes labels applied to the EKS Node Group will not be managed.
@@ -62,6 +71,9 @@ trait NodeGroupState extends js.Object {
     * Key-value mapping of resource tags.
     */
   val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  /**
+    * Kubernetes version. Defaults to EKS Cluster Kubernetes version. This provider will only perform drift detection if a configuration value is provided.
+    */
   val version: js.UndefOr[Input[String]] = js.native
 }
 

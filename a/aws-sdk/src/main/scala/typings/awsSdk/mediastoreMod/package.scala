@@ -11,6 +11,12 @@ package object mediastoreMod {
   type ClientConfiguration = typings.awsSdk.serviceMod.ServiceConfigurationOptions with typings.awsSdk.mediastoreMod.ClientApiVersions
   type ContainerARN = java.lang.String
   type ContainerAccessLoggingEnabled = scala.Boolean
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.ENABLED
+    - typings.awsSdk.awsSdkStrings.DISABLED
+    - java.lang.String
+  */
+  type ContainerLevelMetrics = typings.awsSdk.mediastoreMod._ContainerLevelMetrics | java.lang.String
   type ContainerList = js.Array[typings.awsSdk.mediastoreMod.Container]
   type ContainerListLimit = scala.Double
   type ContainerName = java.lang.String
@@ -36,6 +42,9 @@ package object mediastoreMod {
     - java.lang.String
   */
   type MethodName = typings.awsSdk.mediastoreMod._MethodName | java.lang.String
+  type MetricPolicyRules = js.Array[typings.awsSdk.mediastoreMod.MetricPolicyRule]
+  type ObjectGroup = java.lang.String
+  type ObjectGroupName = java.lang.String
   type Origin = java.lang.String
   type PaginationToken = java.lang.String
   type TagKey = java.lang.String

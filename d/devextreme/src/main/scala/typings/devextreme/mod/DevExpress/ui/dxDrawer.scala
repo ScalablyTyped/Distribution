@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait dxDrawer extends Widget {
-  /** Gets the drawer's content. */
+  /** @name dxDrawer.content() */
   def content(): dxElement = js.native
-  /** Closes the drawer. */
+  /** @name dxDrawer.hide() */
   def hide(): Promise[Unit] with JQueryPromise[Unit] = js.native
-  /** Opens the drawer. */
+  /** @name dxDrawer.show() */
   def show(): Promise[Unit] with JQueryPromise[Unit] = js.native
-  /** Opens or closes the drawer, reversing the current state. */
+  /** @name dxDrawer.toggle() */
   def toggle(): Promise[Unit] with JQueryPromise[Unit] = js.native
 }
 

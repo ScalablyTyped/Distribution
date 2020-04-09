@@ -1,7 +1,10 @@
 package typings.baseui
 
+import typings.baseui.listMod.PropsT
 import typings.react.mod.ComponentType
+import typings.react.mod.RefAttributes
 import typings.std.HTMLInputElement
+import typings.std.HTMLLIElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -174,7 +177,8 @@ object baseuiComponents extends baseuiProps {
   @scala.inline
   def List: ComponentType[ListProps] = js.constructorOf[typings.baseui.dndListMod.List].asInstanceOf[typings.react.mod.ComponentType[ListProps]]
   @scala.inline
-  def ListItem: ComponentType[ListItemProps] = typings.baseui.listMod.ListItem.asInstanceOf[typings.react.mod.ComponentType[ListItemProps]]
+  def ListItem: ComponentType[PropsT with RefAttributes[HTMLLIElement]] = typings.baseui.listMod.ListItem.asInstanceOf[typings.react.mod.ComponentType[
+  typings.baseui.listMod.PropsT with typings.react.mod.RefAttributes[typings.std.HTMLLIElement]]]
   @scala.inline
   def ListItemLabel: ComponentType[ListItemLabelProps] = typings.baseui.listMod.ListItemLabel.asInstanceOf[typings.react.mod.ComponentType[ListItemLabelProps]]
   @scala.inline

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait LifecyclePolicyPolicyDetailsScheduleCreateRule extends js.Object {
   /**
-    * How often this lifecycle policy should be evaluated. `2`,`3`,`4`,`6`,`8`,`12` or `24` are valid values.
+    * How often this lifecycle policy should be evaluated. `1`, `2`,`3`,`4`,`6`,`8`,`12` or `24` are valid values.
     */
   var interval: Double = js.native
   /**

@@ -2,11 +2,9 @@ package typings.tabulatorTables.Tabulator
 
 import typings.std.HTMLElement
 import typings.std.Record
-import typings.tabulatorTables.AnonColumnCalcs
 import typings.tabulatorTables.PickFilterfieldvalue
 import typings.tabulatorTables.tabulatorTablesBooleans.`false`
 import typings.tabulatorTables.tabulatorTablesBooleans.`true`
-import typings.tabulatorTables.tabulatorTablesStrings.active
 import typings.tabulatorTables.tabulatorTablesStrings.add
 import typings.tabulatorTables.tabulatorTablesStrings.arrow
 import typings.tabulatorTables.tabulatorTablesStrings.both
@@ -28,30 +26,30 @@ import typings.tabulatorTables.tabulatorTablesStrings.group
 import typings.tabulatorTables.tabulatorTablesStrings.header
 import typings.tabulatorTables.tabulatorTablesStrings.hide
 import typings.tabulatorTables.tabulatorTablesStrings.highlight
+import typings.tabulatorTables.tabulatorTablesStrings.html
 import typings.tabulatorTables.tabulatorTablesStrings.insert
 import typings.tabulatorTables.tabulatorTablesStrings.json
 import typings.tabulatorTables.tabulatorTablesStrings.load
 import typings.tabulatorTables.tabulatorTablesStrings.local
-import typings.tabulatorTables.tabulatorTablesStrings.middle
 import typings.tabulatorTables.tabulatorTablesStrings.page
 import typings.tabulatorTables.tabulatorTablesStrings.paste
+import typings.tabulatorTables.tabulatorTablesStrings.plain
 import typings.tabulatorTables.tabulatorTablesStrings.remote
 import typings.tabulatorTables.tabulatorTablesStrings.replace
 import typings.tabulatorTables.tabulatorTablesStrings.scroll
-import typings.tabulatorTables.tabulatorTablesStrings.selected
 import typings.tabulatorTables.tabulatorTablesStrings.sort
 import typings.tabulatorTables.tabulatorTablesStrings.table
 import typings.tabulatorTables.tabulatorTablesStrings.top
 import typings.tabulatorTables.tabulatorTablesStrings.update
-import typings.tabulatorTables.tabulatorTablesStrings.visible
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.tabulatorTables.Tabulator.OptionsCell because var conflicts: cellClick, cellContext, cellDblClick, cellDblTap, cellEditCancelled, cellEdited, cellEditing, cellMouseEnter, cellMouseLeave, cellMouseMove, cellMouseOut, cellMouseOver, cellTap, cellTapHold. Inlined  */ trait Options
+- typings.tabulatorTables.Tabulator.OptionsCell because var conflicts: cellClick, cellContext, cellDblClick, cellDblTap, cellEditCancelled, cellEdited, cellEditing, cellMouseEnter, cellMouseLeave, cellMouseMove, cellMouseOut, cellMouseOver, cellTap, cellTapHold. Inlined cellHozAlign, cellVertAlign */ trait Options
   extends OptionsCells
      with OptionsGeneral
+     with OptionsMenu
      with OptionsHistory
      with OptionsLocale
      with OptionsDownload
@@ -65,7 +63,10 @@ import scala.scalajs.js.annotation._
      with OptionsPersistentConfiguration
      with OptionsClipboard
      with OptionsDataTree
-     with OptionsHTML
+     with OptionsHTML {
+  var cellHozAlign: js.UndefOr[ColumnDefinitionAlign] = js.undefined
+  var cellVertAlign: js.UndefOr[VerticalAlign] = js.undefined
+}
 
 object Options {
   @scala.inline
@@ -98,6 +99,7 @@ object Options {
     cellEditCancelled: /* cell */ CellComponent => Unit = null,
     cellEdited: /* cell */ CellComponent => Unit = null,
     cellEditing: /* cell */ CellComponent => Unit = null,
+    cellHozAlign: ColumnDefinitionAlign = null,
     cellMouseEnter: (/* e */ js.Any, /* cell */ CellComponent) => Unit = null,
     cellMouseLeave: (/* e */ js.Any, /* cell */ CellComponent) => Unit = null,
     cellMouseMove: (/* e */ js.Any, /* cell */ CellComponent) => Unit = null,
@@ -105,12 +107,13 @@ object Options {
     cellMouseOver: (/* e */ js.Any, /* cell */ CellComponent) => Unit = null,
     cellTap: (/* e */ js.Any, /* cell */ CellComponent) => Unit = null,
     cellTapHold: (/* e */ js.Any, /* cell */ CellComponent) => Unit = null,
+    cellVertAlign: VerticalAlign = null,
     clipboard: Boolean | copy | paste = null,
     clipboardCopied: () => Unit = null,
-    clipboardCopyConfig: AnonColumnCalcs | Boolean = null,
-    clipboardCopyFormatter: table | (js.Function1[/* rowData */ js.Array[_], String]) = null,
+    clipboardCopyConfig: AddditionalExportOptions | Boolean = null,
+    clipboardCopyFormatter: table | (js.Function2[/* type */ plain | html, /* output */ String, String]) = null,
     clipboardCopyHeader: js.UndefOr[Boolean] = js.undefined,
-    clipboardCopySelector: active | table | selected | visible = null,
+    clipboardCopyRowRange: RowRangeLookup = null,
     clipboardCopyStyled: js.UndefOr[Boolean] = js.undefined,
     clipboardPasteAction: insert | update | replace = null,
     clipboardPasteError: () => Unit = null,
@@ -118,7 +121,7 @@ object Options {
     clipboardPasted: () => Unit = null,
     columnCalcs: Boolean | both | table | group = null,
     columnHeaderSortMulti: js.UndefOr[Boolean] = js.undefined,
-    columnHeaderVertAlign: top | middle | bottom = null,
+    columnHeaderVertAlign: VerticalAlign = null,
     columnMinWidth: Int | Double = null,
     columnMoved: (/* column */ ColumnComponent, /* columns */ js.Array[_]) => Unit = null,
     columnResized: /* column */ ColumnComponent => Unit = null,
@@ -144,6 +147,7 @@ object Options {
     dataTreeExpandElement: String | HTMLElement | Boolean = null,
     dataTreeRowCollapsed: (/* row */ RowComponent, /* level */ Double) => Unit = null,
     dataTreeRowExpanded: (/* row */ RowComponent, /* level */ Double) => Unit = null,
+    dataTreeSelectPropagate: js.UndefOr[Boolean] = js.undefined,
     dataTreeStartExpanded: Boolean | js.Array[Boolean] | (js.Function2[/* row */ RowComponent, /* level */ Double, Boolean]) = null,
     downloadComplete: () => Unit = null,
     downloadConfig: AddditionalExportOptions = null,
@@ -175,6 +179,7 @@ object Options {
     groupToggleElement: arrow | header | `false` = null,
     groupValues: js.Array[js.Array[_]] = null,
     groupVisibilityChanged: (/* group */ GroupComponent, /* visible */ Boolean) => Unit = null,
+    headerFilterLiveFilterDelay: Int | Double = null,
     headerFilterPlaceholder: String = null,
     headerSort: js.UndefOr[Boolean] = js.undefined,
     headerSortTristate: js.UndefOr[Boolean] = js.undefined,
@@ -197,6 +202,8 @@ object Options {
     layoutColumnsOnNewData: js.UndefOr[Boolean] = js.undefined,
     locale: Boolean | String = null,
     localized: (/* locale */ String, /* lang */ js.Any) => Unit = null,
+    maxHeight: String | Double = null,
+    minHeight: String | Double = null,
     movableColumns: js.UndefOr[Boolean] = js.undefined,
     movableRows: js.UndefOr[Boolean] = js.undefined,
     movableRowsConnectedTables: String | (js.Array[HTMLElement | String]) | HTMLElement = null,
@@ -243,11 +250,11 @@ object Options {
     print: js.UndefOr[Boolean] = js.undefined,
     printAsHtml: js.UndefOr[Boolean] = js.undefined,
     printConfig: AddditionalExportOptions = null,
-    printCopyStyle: js.UndefOr[Boolean] = js.undefined,
     printFooter: StandardStringParam = null,
     printFormatter: (/* tableHolderElement */ js.Any, /* tableElement */ js.Any) => _ = null,
     printHeader: StandardStringParam = null,
-    printVisibleRows: js.UndefOr[Boolean] = js.undefined,
+    printRowRange: RowRangeLookup | js.Function0[js.Array[RowComponent]] = null,
+    printStyled: js.UndefOr[Boolean] = js.undefined,
     reactiveData: js.UndefOr[Boolean] = js.undefined,
     renderComplete: () => Unit = null,
     renderStarted: () => Unit = null,
@@ -261,11 +268,18 @@ object Options {
     rowAdded: /* row */ RowComponent => Unit = null,
     rowClick: (/* e */ js.Any, /* row */ RowComponent) => Unit = null,
     rowContext: (/* e */ js.Any, /* row */ RowComponent) => Unit = null,
+    rowContextMenu: (js.Array[MenuObject | MenuSeparator]) | (js.Function1[
+      /* component */ RowComponent | CellComponent | ColumnComponent, 
+      MenuObject | `false` | js.Array[_]
+    ]) = null,
     rowDblClick: (/* e */ js.Any, /* row */ RowComponent) => Unit = null,
     rowDblTap: (/* e */ js.Any, /* row */ RowComponent) => Unit = null,
     rowDeleted: /* row */ RowComponent => Unit = null,
     rowDeselected: /* row */ RowComponent => Unit = null,
     rowFormatter: /* row */ RowComponent => _ = null,
+    rowFormatterClipboard: `false` | (js.Function1[/* row */ RowComponent, _]) = null,
+    rowFormatterHtmlOutput: `false` | (js.Function1[/* row */ RowComponent, _]) = null,
+    rowFormatterPrint: `false` | (js.Function1[/* row */ RowComponent, _]) = null,
     rowMouseEnter: (/* e */ js.Any, /* row */ RowComponent) => Unit = null,
     rowMouseLeave: (/* e */ js.Any, /* row */ RowComponent) => Unit = null,
     rowMouseMove: (/* e */ js.Any, /* row */ RowComponent) => Unit = null,
@@ -329,6 +343,7 @@ object Options {
     if (cellEditCancelled != null) __obj.updateDynamic("cellEditCancelled")(js.Any.fromFunction1(cellEditCancelled))
     if (cellEdited != null) __obj.updateDynamic("cellEdited")(js.Any.fromFunction1(cellEdited))
     if (cellEditing != null) __obj.updateDynamic("cellEditing")(js.Any.fromFunction1(cellEditing))
+    if (cellHozAlign != null) __obj.updateDynamic("cellHozAlign")(cellHozAlign.asInstanceOf[js.Any])
     if (cellMouseEnter != null) __obj.updateDynamic("cellMouseEnter")(js.Any.fromFunction2(cellMouseEnter))
     if (cellMouseLeave != null) __obj.updateDynamic("cellMouseLeave")(js.Any.fromFunction2(cellMouseLeave))
     if (cellMouseMove != null) __obj.updateDynamic("cellMouseMove")(js.Any.fromFunction2(cellMouseMove))
@@ -336,12 +351,13 @@ object Options {
     if (cellMouseOver != null) __obj.updateDynamic("cellMouseOver")(js.Any.fromFunction2(cellMouseOver))
     if (cellTap != null) __obj.updateDynamic("cellTap")(js.Any.fromFunction2(cellTap))
     if (cellTapHold != null) __obj.updateDynamic("cellTapHold")(js.Any.fromFunction2(cellTapHold))
+    if (cellVertAlign != null) __obj.updateDynamic("cellVertAlign")(cellVertAlign.asInstanceOf[js.Any])
     if (clipboard != null) __obj.updateDynamic("clipboard")(clipboard.asInstanceOf[js.Any])
     if (clipboardCopied != null) __obj.updateDynamic("clipboardCopied")(js.Any.fromFunction0(clipboardCopied))
     if (clipboardCopyConfig != null) __obj.updateDynamic("clipboardCopyConfig")(clipboardCopyConfig.asInstanceOf[js.Any])
     if (clipboardCopyFormatter != null) __obj.updateDynamic("clipboardCopyFormatter")(clipboardCopyFormatter.asInstanceOf[js.Any])
     if (!js.isUndefined(clipboardCopyHeader)) __obj.updateDynamic("clipboardCopyHeader")(clipboardCopyHeader.asInstanceOf[js.Any])
-    if (clipboardCopySelector != null) __obj.updateDynamic("clipboardCopySelector")(clipboardCopySelector.asInstanceOf[js.Any])
+    if (clipboardCopyRowRange != null) __obj.updateDynamic("clipboardCopyRowRange")(clipboardCopyRowRange.asInstanceOf[js.Any])
     if (!js.isUndefined(clipboardCopyStyled)) __obj.updateDynamic("clipboardCopyStyled")(clipboardCopyStyled.asInstanceOf[js.Any])
     if (clipboardPasteAction != null) __obj.updateDynamic("clipboardPasteAction")(clipboardPasteAction.asInstanceOf[js.Any])
     if (clipboardPasteError != null) __obj.updateDynamic("clipboardPasteError")(js.Any.fromFunction0(clipboardPasteError))
@@ -375,6 +391,7 @@ object Options {
     if (dataTreeExpandElement != null) __obj.updateDynamic("dataTreeExpandElement")(dataTreeExpandElement.asInstanceOf[js.Any])
     if (dataTreeRowCollapsed != null) __obj.updateDynamic("dataTreeRowCollapsed")(js.Any.fromFunction2(dataTreeRowCollapsed))
     if (dataTreeRowExpanded != null) __obj.updateDynamic("dataTreeRowExpanded")(js.Any.fromFunction2(dataTreeRowExpanded))
+    if (!js.isUndefined(dataTreeSelectPropagate)) __obj.updateDynamic("dataTreeSelectPropagate")(dataTreeSelectPropagate.asInstanceOf[js.Any])
     if (dataTreeStartExpanded != null) __obj.updateDynamic("dataTreeStartExpanded")(dataTreeStartExpanded.asInstanceOf[js.Any])
     if (downloadComplete != null) __obj.updateDynamic("downloadComplete")(js.Any.fromFunction0(downloadComplete))
     if (downloadConfig != null) __obj.updateDynamic("downloadConfig")(downloadConfig.asInstanceOf[js.Any])
@@ -394,6 +411,7 @@ object Options {
     if (groupToggleElement != null) __obj.updateDynamic("groupToggleElement")(groupToggleElement.asInstanceOf[js.Any])
     if (groupValues != null) __obj.updateDynamic("groupValues")(groupValues.asInstanceOf[js.Any])
     if (groupVisibilityChanged != null) __obj.updateDynamic("groupVisibilityChanged")(js.Any.fromFunction2(groupVisibilityChanged))
+    if (headerFilterLiveFilterDelay != null) __obj.updateDynamic("headerFilterLiveFilterDelay")(headerFilterLiveFilterDelay.asInstanceOf[js.Any])
     if (headerFilterPlaceholder != null) __obj.updateDynamic("headerFilterPlaceholder")(headerFilterPlaceholder.asInstanceOf[js.Any])
     if (!js.isUndefined(headerSort)) __obj.updateDynamic("headerSort")(headerSort.asInstanceOf[js.Any])
     if (!js.isUndefined(headerSortTristate)) __obj.updateDynamic("headerSortTristate")(headerSortTristate.asInstanceOf[js.Any])
@@ -416,6 +434,8 @@ object Options {
     if (!js.isUndefined(layoutColumnsOnNewData)) __obj.updateDynamic("layoutColumnsOnNewData")(layoutColumnsOnNewData.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (localized != null) __obj.updateDynamic("localized")(js.Any.fromFunction2(localized))
+    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
+    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
     if (!js.isUndefined(movableColumns)) __obj.updateDynamic("movableColumns")(movableColumns.asInstanceOf[js.Any])
     if (!js.isUndefined(movableRows)) __obj.updateDynamic("movableRows")(movableRows.asInstanceOf[js.Any])
     if (movableRowsConnectedTables != null) __obj.updateDynamic("movableRowsConnectedTables")(movableRowsConnectedTables.asInstanceOf[js.Any])
@@ -452,11 +472,11 @@ object Options {
     if (!js.isUndefined(print)) __obj.updateDynamic("print")(print.asInstanceOf[js.Any])
     if (!js.isUndefined(printAsHtml)) __obj.updateDynamic("printAsHtml")(printAsHtml.asInstanceOf[js.Any])
     if (printConfig != null) __obj.updateDynamic("printConfig")(printConfig.asInstanceOf[js.Any])
-    if (!js.isUndefined(printCopyStyle)) __obj.updateDynamic("printCopyStyle")(printCopyStyle.asInstanceOf[js.Any])
     if (printFooter != null) __obj.updateDynamic("printFooter")(printFooter.asInstanceOf[js.Any])
     if (printFormatter != null) __obj.updateDynamic("printFormatter")(js.Any.fromFunction2(printFormatter))
     if (printHeader != null) __obj.updateDynamic("printHeader")(printHeader.asInstanceOf[js.Any])
-    if (!js.isUndefined(printVisibleRows)) __obj.updateDynamic("printVisibleRows")(printVisibleRows.asInstanceOf[js.Any])
+    if (printRowRange != null) __obj.updateDynamic("printRowRange")(printRowRange.asInstanceOf[js.Any])
+    if (!js.isUndefined(printStyled)) __obj.updateDynamic("printStyled")(printStyled.asInstanceOf[js.Any])
     if (!js.isUndefined(reactiveData)) __obj.updateDynamic("reactiveData")(reactiveData.asInstanceOf[js.Any])
     if (renderComplete != null) __obj.updateDynamic("renderComplete")(js.Any.fromFunction0(renderComplete))
     if (renderStarted != null) __obj.updateDynamic("renderStarted")(js.Any.fromFunction0(renderStarted))
@@ -470,11 +490,15 @@ object Options {
     if (rowAdded != null) __obj.updateDynamic("rowAdded")(js.Any.fromFunction1(rowAdded))
     if (rowClick != null) __obj.updateDynamic("rowClick")(js.Any.fromFunction2(rowClick))
     if (rowContext != null) __obj.updateDynamic("rowContext")(js.Any.fromFunction2(rowContext))
+    if (rowContextMenu != null) __obj.updateDynamic("rowContextMenu")(rowContextMenu.asInstanceOf[js.Any])
     if (rowDblClick != null) __obj.updateDynamic("rowDblClick")(js.Any.fromFunction2(rowDblClick))
     if (rowDblTap != null) __obj.updateDynamic("rowDblTap")(js.Any.fromFunction2(rowDblTap))
     if (rowDeleted != null) __obj.updateDynamic("rowDeleted")(js.Any.fromFunction1(rowDeleted))
     if (rowDeselected != null) __obj.updateDynamic("rowDeselected")(js.Any.fromFunction1(rowDeselected))
     if (rowFormatter != null) __obj.updateDynamic("rowFormatter")(js.Any.fromFunction1(rowFormatter))
+    if (rowFormatterClipboard != null) __obj.updateDynamic("rowFormatterClipboard")(rowFormatterClipboard.asInstanceOf[js.Any])
+    if (rowFormatterHtmlOutput != null) __obj.updateDynamic("rowFormatterHtmlOutput")(rowFormatterHtmlOutput.asInstanceOf[js.Any])
+    if (rowFormatterPrint != null) __obj.updateDynamic("rowFormatterPrint")(rowFormatterPrint.asInstanceOf[js.Any])
     if (rowMouseEnter != null) __obj.updateDynamic("rowMouseEnter")(js.Any.fromFunction2(rowMouseEnter))
     if (rowMouseLeave != null) __obj.updateDynamic("rowMouseLeave")(js.Any.fromFunction2(rowMouseLeave))
     if (rowMouseMove != null) __obj.updateDynamic("rowMouseMove")(js.Any.fromFunction2(rowMouseMove))

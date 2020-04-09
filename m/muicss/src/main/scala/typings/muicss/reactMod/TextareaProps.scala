@@ -14,6 +14,7 @@ import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.Ref
@@ -240,7 +241,7 @@ object TextareaProps {
     onProgress: SyntheticEvent[HTMLTextAreaElement, Event_] => Unit = null,
     onRateChange: SyntheticEvent[HTMLTextAreaElement, Event_] => Unit = null,
     onReset: FormEvent[HTMLTextAreaElement] => Unit = null,
-    onScroll: UIEvent[HTMLTextAreaElement] => Unit = null,
+    onScroll: UIEvent[HTMLTextAreaElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[HTMLTextAreaElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[HTMLTextAreaElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[HTMLTextAreaElement, Event_] => Unit = null,

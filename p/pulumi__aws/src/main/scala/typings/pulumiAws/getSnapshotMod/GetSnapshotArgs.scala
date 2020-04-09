@@ -30,6 +30,9 @@ trait GetSnapshotArgs extends js.Object {
     * Returns information on a specific snapshot_id.
     */
   val snapshotIds: js.UndefOr[js.Array[String]] = js.native
+  /**
+    * A mapping of tags for the resource.
+    */
   val tags: js.UndefOr[StringDictionary[js.Any]] = js.native
 }
 

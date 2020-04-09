@@ -53,12 +53,36 @@ package object mod {
     */
   type CssSelector = js.Array[java.lang.String | typings.angularCore.mod.SelectorFlags]
   /**
+    * An object literal of this type is used to represent the metadata of a constructor dependency.
+    * The type itself is never referred to from generated code.
+    */
+  type CtorDependency = typings.angularCore.AnonAttribute | scala.Null
+  /**
     * Factory for ViewDefinitions/NgModuleDefinitions.
     * We use a function so we can reexeute it in case an error happens and use the given logger
     * function to log the error from the definition of the node, which is shown in all browser
     * logs.
     */
   type DefinitionFactory[D /* <: typings.angularCore.mod.Definition[_] */] = js.Function1[/* logger */ typings.angularCore.mod.NodeLogger, D]
+  /**
+    * Array of destroy hooks that should be executed for a view and their directive indices.
+    *
+    * The array is set up as a series of number/function or number/(number|function)[]:
+    * - Even indices represent the context with which hooks should be called.
+    * - Odd indices are the hook functions themselves. If a value at an odd index is an array,
+    *   it represents the destroy hooks of a `multi` provider where:
+    *     - Even indices represent the index of the provider for which we've registered a destroy hook,
+    *       inside of the `multi` provider array.
+    *     - Odd indices are the destroy hook functions.
+    * For example:
+    * LView: `[0, 1, 2, AService, 4, [BService, CService, DService]]`
+    * destroyHooks: `[3, AService.ngOnDestroy, 5, [0, BService.ngOnDestroy, 2, DService.ngOnDestroy]]`
+    *
+    * In the example above `AService` is a type provider with an `ngOnDestroy`, whereas `BService`,
+    * `CService` and `DService` are part of a `multi` provider where only `BService` and `DService`
+    * have an `ngOnDestroy` hook.
+    */
+  type DestroyHookData = js.Array[typings.angularCore.mod.HookEntry | typings.angularCore.mod.HookData]
   type DirectiveDefList = js.Array[
     typings.angularCore.mod.ɵDirectiveDef[js.Any] | typings.angularCore.mod.ɵComponentDef[js.Any]
   ]
@@ -100,7 +124,14 @@ package object mod {
     * Special cases:
     *  - a negative directive index flags an init hook (ngOnInit, ngAfterContentInit, ngAfterViewInit)
     */
-  type HookData = js.Array[scala.Double | js.Function0[scala.Unit]]
+  type HookData = js.Array[typings.angularCore.mod.HookEntry]
+  /**
+    * Information necessary to call a hook. E.g. the callback that
+    * needs to invoked and the index at which to find its context.
+    */
+  type HookEntry = scala.Double | typings.angularCore.mod.HookFn
+  /** Single hook callback function. */
+  type HookFn = js.Function0[scala.Unit]
   type HostBindingsFunction[T] = js.Function2[/* rf */ typings.angularCore.mod.ɵRenderFlags, /* ctx */ T, scala.Unit]
   /** See CreateComponentOptions.hostFeatures */
   type HostFeature = js.Function2[
@@ -548,9 +579,9 @@ package object mod {
   type ɵSafeStyle = typings.angularCore.mod.ɵSafeValue
   type ɵSafeUrl = typings.angularCore.mod.ɵSafeValue
   type ɵSetterFn = js.Function2[/* obj */ js.Any, /* value */ js.Any, scala.Unit]
-  type ɵɵComponentDefWithMeta[T, Selector /* <: java.lang.String */, ExportAs /* <: js.Array[java.lang.String] */, InputMap /* <: org.scalablytyped.runtime.StringDictionary[java.lang.String] */, OutputMap /* <: org.scalablytyped.runtime.StringDictionary[java.lang.String] */, QueryFields /* <: js.Array[java.lang.String] */] = typings.angularCore.mod.ɵComponentDef[T]
+  type ɵɵComponentDefWithMeta[T, Selector /* <: java.lang.String */, ExportAs /* <: js.Array[java.lang.String] */, InputMap /* <: org.scalablytyped.runtime.StringDictionary[java.lang.String] */, OutputMap /* <: org.scalablytyped.runtime.StringDictionary[java.lang.String] */, QueryFields /* <: js.Array[java.lang.String] */, NgContentSelectors /* <: js.Array[java.lang.String] */] = typings.angularCore.mod.ɵComponentDef[T]
   type ɵɵDirectiveDefWithMeta[T, Selector /* <: java.lang.String */, ExportAs /* <: js.Array[java.lang.String] */, InputMap /* <: org.scalablytyped.runtime.StringDictionary[java.lang.String] */, OutputMap /* <: org.scalablytyped.runtime.StringDictionary[java.lang.String] */, QueryFields /* <: js.Array[java.lang.String] */] = typings.angularCore.mod.ɵDirectiveDef[T]
-  type ɵɵFactoryDef[T] = js.Function0[T]
+  type ɵɵFactoryDef[T, CtorDependencies /* <: js.Array[typings.angularCore.mod.CtorDependency] */] = js.Function0[T]
   type ɵɵNgModuleDefWithMeta[T, Declarations, Imports, Exports] = typings.angularCore.mod.ɵNgModuleDef[T]
   type ɵɵPipeDefWithMeta[T, Name /* <: java.lang.String */] = typings.angularCore.mod.ɵPipeDef[T]
 }

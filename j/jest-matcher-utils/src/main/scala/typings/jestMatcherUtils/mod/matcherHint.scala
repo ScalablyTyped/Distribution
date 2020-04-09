@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("jest-matcher-utils/build", "matcherHint")
+@JSImport("jest-matcher-utils", "matcherHint")
 @js.native
 object matcherHint extends js.Object {
   def apply(matcherName: String): String = js.native

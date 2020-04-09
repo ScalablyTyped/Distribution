@@ -15,5 +15,6 @@ object utilsMod extends js.Object {
   @JSName("classes")
   def classes_false(classes: (js.UndefOr[String | `false` | Null | StringDictionary[js.Any]])*): String = js.native
   def getReactAttrs(elem: Element): js.Any = js.native
+  def getReactAttrs(elem: Element, hasIgnore: AnonIgnore): js.Any = js.native
 }
 

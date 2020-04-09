@@ -27,11 +27,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxTextAreaOptions extends dxTextBoxOptions[dxTextArea] {
-  /** A Boolean value specifying whether or not the auto resizing mode is enabled. */
+  /** @name dxTextArea.Options.autoResizeEnabled */
   var autoResizeEnabled: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the maximum height of the widget. */
+  /** @name dxTextArea.Options.maxHeight */
   var maxHeight: js.UndefOr[Double | String] = js.undefined
-  /** Specifies the minimum height of the widget. */
+  /** @name dxTextArea.Options.minHeight */
   var minHeight: js.UndefOr[Double | String] = js.undefined
 }
 

@@ -20,6 +20,7 @@ trait Properties extends js.Object {
   var maxAge: js.UndefOr[Double | Infinity | `-Infinity`] = js.undefined
   var path: js.UndefOr[String] = js.undefined
   var pathIsDefault: js.UndefOr[Boolean] = js.undefined
+  var sameSite: js.UndefOr[String] = js.undefined
   var secure: js.UndefOr[Boolean] = js.undefined
   var value: js.UndefOr[String] = js.undefined
 }
@@ -39,6 +40,7 @@ object Properties {
     maxAge: Double | Infinity | `-Infinity` = null,
     path: String = null,
     pathIsDefault: js.UndefOr[Boolean] = js.undefined,
+    sameSite: String = null,
     secure: js.UndefOr[Boolean] = js.undefined,
     value: String = null
   ): Properties = {
@@ -55,6 +57,7 @@ object Properties {
     if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (!js.isUndefined(pathIsDefault)) __obj.updateDynamic("pathIsDefault")(pathIsDefault.asInstanceOf[js.Any])
+    if (sameSite != null) __obj.updateDynamic("sameSite")(sameSite.asInstanceOf[js.Any])
     if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Properties]

@@ -11,6 +11,9 @@ trait GetClusterArgs extends js.Object {
     * The name of the cluster
     */
   val name: String = js.native
+  /**
+    * Key-value mapping of resource tags.
+    */
   val tags: js.UndefOr[StringDictionary[js.Any]] = js.native
 }
 

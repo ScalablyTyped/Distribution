@@ -26,7 +26,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxFileManagerToolbarItem extends dxToolbarItem {
-  /** Specifies the toolbar item's name. */
+  /** @name dxFileManagerToolbarItem.name */
   var name: js.UndefOr[
     showNavPane | create | upload | refresh | viewSwitcher | download | move | copy | rename | delete | clear | separator | String
   ] = js.undefined

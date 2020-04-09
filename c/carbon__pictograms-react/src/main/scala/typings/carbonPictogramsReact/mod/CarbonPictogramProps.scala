@@ -90,6 +90,7 @@ import typings.react.mod.LegacyRef
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
@@ -107,7 +108,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined parent std.Omit<react.react.SVGProps<std.SVGElement>, 'tabIndex'> */
+/* Inlined parent std.Omit<react.react.SVGProps<std.SVGElement>, 'tabIndex' | 'aria-hidden'> */
 trait CarbonPictogramProps extends js.Object {
   var accentHeight: js.UndefOr[Double | String] = js.undefined
   var accumulate: js.UndefOr[none | sum] = js.undefined
@@ -138,7 +139,7 @@ trait CarbonPictogramProps extends js.Object {
   var `aria-flowto`: js.UndefOr[String] = js.undefined
   var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
   var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
-  var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
+  var `aria-hidden`: js.UndefOr[String] = js.undefined
   var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
   var `aria-keyshortcuts`: js.UndefOr[String] = js.undefined
   var `aria-label`: js.UndefOr[String] = js.undefined
@@ -245,7 +246,7 @@ trait CarbonPictogramProps extends js.Object {
   var gradientTransform: js.UndefOr[String] = js.undefined
   var gradientUnits: js.UndefOr[String] = js.undefined
   var hanging: js.UndefOr[Double | String] = js.undefined
-  var height: js.UndefOr[Double | String] = js.undefined
+  var height: js.UndefOr[Double] = js.undefined
   var horizAdvX: js.UndefOr[Double | String] = js.undefined
   var horizOriginX: js.UndefOr[Double | String] = js.undefined
   var href: js.UndefOr[String] = js.undefined
@@ -449,6 +450,7 @@ trait CarbonPictogramProps extends js.Object {
   var textDecoration: js.UndefOr[Double | String] = js.undefined
   var textLength: js.UndefOr[Double | String] = js.undefined
   var textRendering: js.UndefOr[Double | String] = js.undefined
+  var title: js.UndefOr[String] = js.undefined
   var to: js.UndefOr[Double | String] = js.undefined
   var transform: js.UndefOr[String] = js.undefined
   var `type`: js.UndefOr[String] = js.undefined
@@ -473,7 +475,7 @@ trait CarbonPictogramProps extends js.Object {
   var viewBox: js.UndefOr[String] = js.undefined
   var viewTarget: js.UndefOr[Double | String] = js.undefined
   var visibility: js.UndefOr[Double | String] = js.undefined
-  var width: js.UndefOr[Double | String] = js.undefined
+  var width: js.UndefOr[Double] = js.undefined
   var widths: js.UndefOr[Double | String] = js.undefined
   var wordSpacing: js.UndefOr[Double | String] = js.undefined
   var writingMode: js.UndefOr[Double | String] = js.undefined
@@ -532,7 +534,7 @@ object CarbonPictogramProps {
     `aria-flowto`: String = null,
     `aria-grabbed`: js.UndefOr[Boolean] = js.undefined,
     `aria-haspopup`: Boolean | menu | listbox | tree | grid | dialog = null,
-    `aria-hidden`: js.UndefOr[Boolean] = js.undefined,
+    `aria-hidden`: String = null,
     `aria-invalid`: Boolean | grammar | spelling = null,
     `aria-keyshortcuts`: String = null,
     `aria-label`: String = null,
@@ -639,7 +641,7 @@ object CarbonPictogramProps {
     gradientTransform: String = null,
     gradientUnits: String = null,
     hanging: Double | String = null,
-    height: Double | String = null,
+    height: Int | Double = null,
     horizAdvX: Double | String = null,
     horizOriginX: Double | String = null,
     href: String = null,
@@ -748,7 +750,7 @@ object CarbonPictogramProps {
     onProgress: SyntheticEvent[SVGElement, Event_] => Unit = null,
     onRateChange: SyntheticEvent[SVGElement, Event_] => Unit = null,
     onReset: FormEvent[SVGElement] => Unit = null,
-    onScroll: UIEvent[SVGElement] => Unit = null,
+    onScroll: UIEvent[SVGElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[SVGElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[SVGElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[SVGElement, Event_] => Unit = null,
@@ -788,7 +790,7 @@ object CarbonPictogramProps {
     if (`aria-flowto` != null) __obj.updateDynamic("aria-flowto")(`aria-flowto`.asInstanceOf[js.Any])
     if (!js.isUndefined(`aria-grabbed`)) __obj.updateDynamic("aria-grabbed")(`aria-grabbed`.asInstanceOf[js.Any])
     if (`aria-haspopup` != null) __obj.updateDynamic("aria-haspopup")(`aria-haspopup`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-hidden`)) __obj.updateDynamic("aria-hidden")(`aria-hidden`.asInstanceOf[js.Any])
+    if (`aria-hidden` != null) __obj.updateDynamic("aria-hidden")(`aria-hidden`.asInstanceOf[js.Any])
     if (`aria-invalid` != null) __obj.updateDynamic("aria-invalid")(`aria-invalid`.asInstanceOf[js.Any])
     if (`aria-keyshortcuts` != null) __obj.updateDynamic("aria-keyshortcuts")(`aria-keyshortcuts`.asInstanceOf[js.Any])
     if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`.asInstanceOf[js.Any])

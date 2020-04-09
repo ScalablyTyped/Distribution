@@ -5,8 +5,8 @@ import typings.ionicCore.mod.StyleEventDetail
 import typings.ionicCore.selectInterfaceMod.SelectChangeEventDetail
 import typings.ionicCore.selectInterfaceMod.SelectCompareFn
 import typings.ionicCore.selectInterfaceMod.SelectInterface
-import typings.ionicCore.stencilCoreMod.ComponentInterface
-import typings.ionicCore.stencilCoreMod.EventEmitter
+import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
+import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
 import typings.std.UIEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`

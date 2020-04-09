@@ -2,7 +2,6 @@ package typings.rcPicker.pickerMod
 
 import typings.rcPicker.rcPickerStrings.ltr
 import typings.rcPicker.rcPickerStrings.rtl
-import typings.rcTrigger.interfaceMod.AlignType
 import typings.react.mod.AriaAttributes
 import typings.react.mod.CSSProperties
 import typings.react.mod.FocusEvent
@@ -61,7 +60,9 @@ trait PickerSharedProps[DateType] extends AriaAttributes {
   var defaultOpen: js.UndefOr[Boolean] = js.undefined
   var direction: js.UndefOr[ltr | rtl] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
-  var dropdownAlign: js.UndefOr[AlignType] = js.undefined
+  var dropdownAlign: js.UndefOr[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AlignType */ js.Any
+  ] = js.undefined
   var dropdownClassName: js.UndefOr[String] = js.undefined
   var format: js.UndefOr[String | js.Array[String]] = js.undefined
   var getPopupContainer: js.UndefOr[js.Function1[/* node */ HTMLElement, HTMLElement]] = js.undefined
@@ -149,7 +150,7 @@ object PickerSharedProps {
     defaultOpen: js.UndefOr[Boolean] = js.undefined,
     direction: ltr | rtl = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
-    dropdownAlign: AlignType = null,
+    dropdownAlign: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AlignType */ js.Any = null,
     dropdownClassName: String = null,
     format: String | js.Array[String] = null,
     getPopupContainer: /* node */ HTMLElement => HTMLElement = null,

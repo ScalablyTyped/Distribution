@@ -11,6 +11,9 @@ trait GetStackArgs extends js.Object {
     * The name of the stack
     */
   val name: String = js.native
+  /**
+    * A map of tags associated with this stack.
+    */
   val tags: js.UndefOr[StringDictionary[js.Any]] = js.native
 }
 

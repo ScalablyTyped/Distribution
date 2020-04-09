@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait BucketVersioning extends js.Object {
   /**
-    * Boolean which indicates if this criteria is enabled.
+    * Enable versioning. Once you version-enable a bucket, it can never return to an unversioned state. You can, however, suspend versioning on that bucket.
     */
   var enabled: js.UndefOr[Input[Boolean]] = js.native
   /**

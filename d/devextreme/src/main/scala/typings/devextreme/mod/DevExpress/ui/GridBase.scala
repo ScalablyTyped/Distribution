@@ -12,146 +12,146 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait GridBase extends Widget {
-  /** Shows the load panel. */
+  /** @name GridBase.beginCustomLoading(messageText) */
   def beginCustomLoading(messageText: String): Unit = js.native
   def byKey(key: String): Promise[_] with JQueryPromise[_] = js.native
-  /** Gets a data object with a specific key. */
+  /** @name GridBase.byKey(key) */
   def byKey(key: js.Any): Promise[_] with JQueryPromise[_] = js.native
   def byKey(key: Double): Promise[_] with JQueryPromise[_] = js.native
-  /** Discards changes that a user made to data. */
+  /** @name GridBase.cancelEditData() */
   def cancelEditData(): Unit = js.native
-  /** Gets the value of a cell with a specific row index and a data field, column caption or name. */
+  /** @name GridBase.cellValue(rowIndex, dataField) */
   def cellValue(rowIndex: Double, dataField: String): js.Any = js.native
-  /** Sets a new value to a cell with a specific row index and a data field, column caption or name. */
+  /** @name GridBase.cellValue(rowIndex, dataField, value) */
   def cellValue(rowIndex: Double, dataField: String, value: js.Any): Unit = js.native
-  /** Gets the value of a cell with specific row and column indexes. */
+  /** @name GridBase.cellValue(rowIndex, visibleColumnIndex) */
   def cellValue(rowIndex: Double, visibleColumnIndex: Double): js.Any = js.native
-  /** Sets a new value to a cell with specific row and column indexes. */
+  /** @name GridBase.cellValue(rowIndex, visibleColumnIndex, value) */
   def cellValue(rowIndex: Double, visibleColumnIndex: Double, value: js.Any): Unit = js.native
-  /** Clears all filters applied to widget rows. */
+  /** @name GridBase.clearFilter() */
   def clearFilter(): Unit = js.native
-  /** Clears all row filters of a specific type. */
+  /** @name GridBase.clearFilter(filterName) */
   def clearFilter(filterName: String): Unit = js.native
-  /** Clears selection of all rows on all pages. */
+  /** @name GridBase.clearSelection() */
   def clearSelection(): Unit = js.native
-  /** Clears sorting settings of all columns at once. */
+  /** @name GridBase.clearSorting() */
   def clearSorting(): Unit = js.native
-  /** Switches the cell being edited back to the normal state. Takes effect only if editing.mode is batch and showEditorAlways is false. */
+  /** @name GridBase.closeEditCell() */
   def closeEditCell(): Unit = js.native
-  /** Collapses the currently expanded adaptive detail row (if there is one). */
+  /** @name GridBase.collapseAdaptiveDetailRow() */
   def collapseAdaptiveDetailRow(): Unit = js.native
-  /** Gets the data column count. Includes visible and hidden columns, excludes command columns. */
+  /** @name GridBase.columnCount() */
   def columnCount(): Double = js.native
   def columnOption(id: String): js.Any = js.native
   def columnOption(id: String, optionName: String): js.Any = js.native
   def columnOption(id: String, optionName: String, optionValue: js.Any): Unit = js.native
   def columnOption(id: String, options: js.Any): Unit = js.native
-  /** Gets all options of a column with a specific identifier. */
+  /** @name GridBase.columnOption(id) */
   def columnOption(id: Double): js.Any = js.native
-  /** Gets the value of a single column option. */
+  /** @name GridBase.columnOption(id, optionName) */
   def columnOption(id: Double, optionName: String): js.Any = js.native
-  /** Updates the value of a single column option. */
+  /** @name GridBase.columnOption(id, optionName, optionValue) */
   def columnOption(id: Double, optionName: String, optionValue: js.Any): Unit = js.native
-  /** Updates the values of several column options. */
+  /** @name GridBase.columnOption(id, options) */
   def columnOption(id: Double, options: js.Any): Unit = js.native
   def deleteColumn(id: String): Unit = js.native
-  /** Removes a column. */
+  /** @name GridBase.deleteColumn(id) */
   def deleteColumn(id: Double): Unit = js.native
-  /** Removes a row with a specific index. */
+  /** @name GridBase.deleteRow(rowIndex) */
   def deleteRow(rowIndex: Double): Unit = js.native
-  /** Clears the selection of all rows on all pages or the currently rendered page only. */
+  /** @name GridBase.deselectAll() */
   def deselectAll(): Promise[Unit] with JQueryPromise[Unit] = js.native
-  /** Cancels the selection of rows with specific keys. */
+  /** @name GridBase.deselectRows(keys) */
   def deselectRows(keys: js.Array[_]): Promise[_] with JQueryPromise[_] = js.native
-  /** Switches a cell with a specific row index and a data field to the editing state. Takes effect only if the editing mode is "batch" or "cell". */
+  /** @name GridBase.editCell(rowIndex, dataField) */
   def editCell(rowIndex: Double, dataField: String): Unit = js.native
-  /** Switches a cell with specific row and column indexes to the editing state. Takes effect only if the editing mode is "batch" or "cell". */
+  /** @name GridBase.editCell(rowIndex, visibleColumnIndex) */
   def editCell(rowIndex: Double, visibleColumnIndex: Double): Unit = js.native
-  /** Switches a row with a specific index to the editing state. Takes effect only if the editing mode is "row", "popup" or "form". */
+  /** @name GridBase.editRow(rowIndex) */
   def editRow(rowIndex: Double): Unit = js.native
-  /** Hides the load panel. */
+  /** @name GridBase.endCustomLoading() */
   def endCustomLoading(): Unit = js.native
-  /** Expands an adaptive detail row. */
+  /** @name GridBase.expandAdaptiveDetailRow(key) */
   def expandAdaptiveDetailRow(key: js.Any): Unit = js.native
-  /** Gets a filter expression applied to the widget's data source using the filter(filterExpr) method and the DataSource's filter option. */
+  /** @name GridBase.filter() */
   def filter(): js.Any = js.native
-  /** Applies a filter to the widget's data source. */
+  /** @name GridBase.filter(filterExpr) */
   def filter(filterExpr: js.Any): Unit = js.native
   def focus(element: JQuery): Unit = js.native
-  /** Sets focus on a specific cell. */
+  /** @name GridBase.focus(element) */
   def focus(element: Element): Unit = js.native
-  /** Gets a cell with a specific row index and a data field, column caption or name. */
+  /** @name GridBase.getCellElement(rowIndex, dataField) */
   def getCellElement(rowIndex: Double, dataField: String): js.UndefOr[dxElement] = js.native
-  /** Gets a cell with specific row and column indexes. */
+  /** @name GridBase.getCellElement(rowIndex, visibleColumnIndex) */
   def getCellElement(rowIndex: Double, visibleColumnIndex: Double): js.UndefOr[dxElement] = js.native
-  /** Gets the total filter that combines all the filters applied. */
+  /** @name GridBase.getCombinedFilter() */
   def getCombinedFilter(): js.Any = js.native
-  /** Gets the total filter that combines all the filters applied. */
+  /** @name GridBase.getCombinedFilter(returnDataField) */
   def getCombinedFilter(returnDataField: Boolean): js.Any = js.native
-  /** Gets the DataSource instance. */
+  /** @name DataHelperMixin.getDataSource() */
   def getDataSource(): DataSource = js.native
-  /** Gets the key of a row with a specific index. */
+  /** @name GridBase.getKeyByRowIndex(rowIndex) */
   def getKeyByRowIndex(rowIndex: Double): js.Any = js.native
-  /** Gets the container of a row with a specific index. */
+  /** @name GridBase.getRowElement(rowIndex) */
   def getRowElement(rowIndex: Double): js.UndefOr[js.Array[Element] with JQuery] = js.native
   def getRowIndexByKey(key: String): Double = js.native
-  /** Gets the index of a row with a specific key. */
+  /** @name GridBase.getRowIndexByKey(key) */
   def getRowIndexByKey(key: js.Any): Double = js.native
   def getRowIndexByKey(key: Double): Double = js.native
-  /** Gets the instance of the widget's scrollable part. */
+  /** @name GridBase.getScrollable() */
   def getScrollable(): dxScrollable = js.native
   def getVisibleColumnIndex(id: String): Double = js.native
-  /** Gets the index of a visible column. */
+  /** @name GridBase.getVisibleColumnIndex(id) */
   def getVisibleColumnIndex(id: Double): Double = js.native
-  /** Checks whether the widget has unsaved changes. */
+  /** @name GridBase.hasEditData() */
   def hasEditData(): Boolean = js.native
-  /** Hides the column chooser. */
+  /** @name GridBase.hideColumnChooser() */
   def hideColumnChooser(): Unit = js.native
-  /** Checks whether an adaptive detail row is expanded or collapsed. */
+  /** @name GridBase.isAdaptiveDetailRowExpanded(key) */
   def isAdaptiveDetailRowExpanded(key: js.Any): Boolean = js.native
-  /** Checks whether a row with a specific key is focused. */
+  /** @name GridBase.isRowFocused(key) */
   def isRowFocused(key: js.Any): Boolean = js.native
-  /** Checks whether a row with a specific key is selected. */
+  /** @name GridBase.isRowSelected(key) */
   def isRowSelected(key: js.Any): Boolean = js.native
-  /** Gets a data object's key. */
+  /** @name GridBase.keyOf(obj) */
   def keyOf(obj: js.Any): js.Any = js.native
-  /** Navigates the grid to the data page that contains the row with the specified key and scrolls the grid to display the row if it is not in the viewport. */
+  /** @name GridBase.navigateToRow(key) */
   def navigateToRow(key: js.Any): Unit = js.native
-  /** Gets the total page count. */
+  /** @name GridBase.pageCount() */
   def pageCount(): Double = js.native
-  /** Gets the current page index. */
+  /** @name GridBase.pageIndex() */
   def pageIndex(): Double = js.native
-  /** Switches the widget to a specific page using a zero-based index. */
+  /** @name GridBase.pageIndex(newIndex) */
   def pageIndex(newIndex: Double): Promise[Unit] with JQueryPromise[Unit] = js.native
-  /** Gets the current page size. */
+  /** @name GridBase.pageSize() */
   def pageSize(): Double = js.native
-  /** Sets the page size. */
+  /** @name GridBase.pageSize(value) */
   def pageSize(value: Double): Unit = js.native
-  /** Reloads data and repaints the widget. */
+  /** @name GridBase.refresh() */
   def refresh(): Promise[Unit] with JQueryPromise[Unit] = js.native
-  /** Reloads data and repaints the widget or elements whose data changed. */
+  /** @name GridBase.refresh(changesOnly) */
   def refresh(changesOnly: Boolean): Promise[Unit] with JQueryPromise[Unit] = js.native
-  /** Repaints specific rows. */
+  /** @name GridBase.repaintRows(rowIndexes) */
   def repaintRows(rowIndexes: js.Array[Double]): Unit = js.native
-  /** Saves changes that a user made to data. */
+  /** @name GridBase.saveEditData() */
   def saveEditData(): Promise[Unit] with JQueryPromise[Unit] = js.native
-  /** Seeks a search string in the columns whose allowSearch option is true. */
+  /** @name GridBase.searchByText(text) */
   def searchByText(text: String): Unit = js.native
-  /** Selects all rows. */
+  /** @name GridBase.selectAll() */
   def selectAll(): Promise[Unit] with JQueryPromise[Unit] = js.native
-  /** Selects rows with specific keys. */
+  /** @name GridBase.selectRows(keys, preserve) */
   def selectRows(keys: js.Array[_], preserve: Boolean): Promise[_] with JQueryPromise[_] = js.native
-  /** Selects rows with specific indexes. */
+  /** @name GridBase.selectRowsByIndexes(indexes) */
   def selectRowsByIndexes(indexes: js.Array[Double]): Promise[_] with JQueryPromise[_] = js.native
-  /** Shows the column chooser. */
+  /** @name GridBase.showColumnChooser() */
   def showColumnChooser(): Unit = js.native
-  /** Gets the current widget state. */
+  /** @name GridBase.state() */
   def state(): js.Any = js.native
-  /** Sets the widget state. */
+  /** @name GridBase.state(state) */
   def state(state: js.Any): Unit = js.native
-  /** Recovers a row deleted in batch editing mode. */
+  /** @name GridBase.undeleteRow(rowIndex) */
   def undeleteRow(rowIndex: Double): Unit = js.native
-  /** Updates the widget's content after resizing. */
+  /** @name GridBase.updateDimensions() */
   def updateDimensions(): Unit = js.native
 }
 

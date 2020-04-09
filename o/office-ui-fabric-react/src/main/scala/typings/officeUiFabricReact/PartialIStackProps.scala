@@ -49,6 +49,7 @@ import typings.officeUiFabricReact.officeUiFabricReactStrings.vertical
 import typings.officeUiFabricReact.officeUiFabricReactStrings.yes
 import typings.officeUiFabricReact.stackTypesMod.Alignment
 import typings.officeUiFabricReact.stackTypesMod.IStackProps
+import typings.officeUiFabricReact.stackTypesMod.IStackSlots
 import typings.officeUiFabricReact.stackTypesMod.IStackStyles
 import typings.officeUiFabricReact.stackTypesMod.IStackTokens
 import typings.react.AnonHtml
@@ -73,6 +74,7 @@ import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
@@ -273,7 +275,11 @@ trait PartialIStackProps extends js.Object {
   var root: js.UndefOr[IHTMLSlot] = js.undefined
   var security: js.UndefOr[String] = js.undefined
   var slot: js.UndefOr[String] = js.undefined
-  var slots: js.UndefOr[keyinkeyofIStackSlotsISlo] = js.undefined
+  var slots: js.UndefOr[
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ key in 'root' | 'inner' ]:? @uifabric/foundation.@uifabric/foundation/lib/ISlots.ISlotOptions<@uifabric/foundation.@uifabric/foundation/lib/ISlots.ExtractProps<office-ui-fabric-react.office-ui-fabric-react/lib/components/Stack/Stack.types.IStackSlots[key]>>}
+    */ typings.officeUiFabricReact.officeUiFabricReactStrings.PartialIStackProps with IStackSlots
+  ] = js.undefined
   var spellCheck: js.UndefOr[Booleanish] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
   var styles: js.UndefOr[IStylesFunctionOrObject[IStackProps, IStackTokens, IStackStyles]] = js.undefined
@@ -442,7 +448,7 @@ object PartialIStackProps {
     onProgress: SyntheticEvent[HTMLElement, Event_] => Unit = null,
     onRateChange: SyntheticEvent[HTMLElement, Event_] => Unit = null,
     onReset: FormEvent[HTMLElement] => Unit = null,
-    onScroll: UIEvent[HTMLElement] => Unit = null,
+    onScroll: UIEvent[HTMLElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[HTMLElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[HTMLElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[HTMLElement, Event_] => Unit = null,
@@ -470,7 +476,9 @@ object PartialIStackProps {
     root: IHTMLSlot = null,
     security: String = null,
     slot: String = null,
-    slots: keyinkeyofIStackSlotsISlo = null,
+    slots: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ key in 'root' | 'inner' ]:? @uifabric/foundation.@uifabric/foundation/lib/ISlots.ISlotOptions<@uifabric/foundation.@uifabric/foundation/lib/ISlots.ExtractProps<office-ui-fabric-react.office-ui-fabric-react/lib/components/Stack/Stack.types.IStackSlots[key]>>}
+    */ typings.officeUiFabricReact.officeUiFabricReactStrings.PartialIStackProps with IStackSlots = null,
     spellCheck: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null,
     styles: IStylesFunctionOrObject[IStackProps, IStackTokens, IStackStyles] = null,

@@ -9,13 +9,13 @@ trait UpdateFleetPortSettingsInput extends js.Object {
   /**
     * A unique identifier for a fleet to update port settings for. You can use either the fleet ID or ARN value.
     */
-  var FleetId: typings.awsSdk.gameliftMod.FleetId = js.native
+  var FleetId: FleetIdOrArn = js.native
   /**
-    * A collection of port settings to be added to the fleet record.
+    * A collection of port settings to be added to the fleet resource.
     */
   var InboundPermissionAuthorizations: js.UndefOr[IpPermissionsList] = js.native
   /**
-    * A collection of port settings to be removed from the fleet record.
+    * A collection of port settings to be removed from the fleet resource.
     */
   var InboundPermissionRevocations: js.UndefOr[IpPermissionsList] = js.native
 }
@@ -23,7 +23,7 @@ trait UpdateFleetPortSettingsInput extends js.Object {
 object UpdateFleetPortSettingsInput {
   @scala.inline
   def apply(
-    FleetId: FleetId,
+    FleetId: FleetIdOrArn,
     InboundPermissionAuthorizations: IpPermissionsList = null,
     InboundPermissionRevocations: IpPermissionsList = null
   ): UpdateFleetPortSettingsInput = {

@@ -47,6 +47,11 @@ class ChunkExtractor protected () extends js.Object {
   def getLinkTags(attr: js.Object): String = js.native
   def getLinkTags(attr: AttrFn): String = js.native
   /**
+    * Get required assets definition
+    */
+  def getMainAssets(): js.Array[Chunk] = js.native
+  def getMainAssets(scriptType: String): js.Array[Chunk] = js.native
+  /**
   	 * Get scripts as an array of React `<script>` elements.
   	 */
   def getScriptElements(): js.Array[ReactElement] = js.native

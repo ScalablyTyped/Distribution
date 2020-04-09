@@ -8,19 +8,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Specifies common options for scale labels. */
+/** @name BaseGauge.Options.scale.label */
 trait BaseGaugeScaleLabel extends js.Object {
-  /** Specifies a callback function that returns the text to be displayed in scale labels. */
+  /** @name BaseGauge.Options.scale.label.customizeText */
   var customizeText: js.UndefOr[js.Function1[/* scaleValue */ AnonValueText, String]] = js.undefined
-  /** Specifies font options for the text displayed in the scale labels of the gauge. */
+  /** @name BaseGauge.Options.scale.label.font */
   var font: js.UndefOr[Font] = js.undefined
-  /** Formats a value before it is displayed in a scale label. Accepts only numeric formats. */
+  /** @name BaseGauge.Options.scale.label.format */
   var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.format] = js.undefined
-  /** Decides how to arrange scale labels when there is not enough space to keep all of them. */
+  /** @name BaseGauge.Options.scale.label.overlappingBehavior */
   var overlappingBehavior: js.UndefOr[hide | none] = js.undefined
-  /** Specifies whether or not scale labels should be colored similarly to their corresponding ranges in the range container. */
+  /** @name BaseGauge.Options.scale.label.useRangeColors */
   var useRangeColors: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether or not scale labels are visible on the gauge. */
+  /** @name BaseGauge.Options.scale.label.visible */
   var visible: js.UndefOr[Boolean] = js.undefined
 }
 

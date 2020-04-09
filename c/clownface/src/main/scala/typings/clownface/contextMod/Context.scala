@@ -8,6 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+// tslint:disable-next-line no-unnecessary-class
 trait Context[D /* <: DatasetCore[Quad, Quad] */, T /* <: Term */] extends js.Object {
   var dataset: D
   var graph: js.UndefOr[QuadGraph] = js.undefined

@@ -19,6 +19,7 @@ import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactElement
@@ -255,7 +256,7 @@ trait MentionsInputProps extends js.Object {
   var onScroll: js.UndefOr[UIEventHandler[HTMLTextAreaElement]] = js.undefined
   var onSeeked: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] = js.undefined
   var onSeeking: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] = js.undefined
-  var onSelect: js.UndefOr[js.Function1[/* event */ UIEvent[Element], Unit]] = js.undefined
+  var onSelect: js.UndefOr[js.Function1[/* event */ UIEvent[Element, NativeUIEvent], Unit]] = js.undefined
   var onStalled: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] = js.undefined
   var onSubmit: js.UndefOr[FormEventHandler[HTMLTextAreaElement]] = js.undefined
   var onSuspend: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] = js.undefined
@@ -455,10 +456,10 @@ object MentionsInputProps {
     onProgress: SyntheticEvent[HTMLTextAreaElement, Event_] => Unit = null,
     onRateChange: SyntheticEvent[HTMLTextAreaElement, Event_] => Unit = null,
     onReset: FormEvent[HTMLTextAreaElement] => Unit = null,
-    onScroll: UIEvent[HTMLTextAreaElement] => Unit = null,
+    onScroll: UIEvent[HTMLTextAreaElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[HTMLTextAreaElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[HTMLTextAreaElement, Event_] => Unit = null,
-    onSelect: /* event */ UIEvent[Element] => Unit = null,
+    onSelect: /* event */ UIEvent[Element, NativeUIEvent] => Unit = null,
     onStalled: SyntheticEvent[HTMLTextAreaElement, Event_] => Unit = null,
     onSubmit: FormEvent[HTMLTextAreaElement] => Unit = null,
     onSuspend: SyntheticEvent[HTMLTextAreaElement, Event_] => Unit = null,

@@ -1,7 +1,7 @@
 package typings.xmldsigjs.mod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.xmlCore.mod.SelectNodes
+import typings.xmlCore.utilsMod.SelectNodes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

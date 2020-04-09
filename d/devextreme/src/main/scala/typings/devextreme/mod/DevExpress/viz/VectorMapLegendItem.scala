@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait VectorMapLegendItem extends BaseLegendItem {
-  /** The color of the legend item's marker. */
+  /** @name VectorMapLegendItem.color */
   var color: js.UndefOr[String] = js.undefined
-  /** The end value of the group that the legend item indicates. */
+  /** @name VectorMapLegendItem.end */
   var end: js.UndefOr[Double] = js.undefined
-  /** The diameter of the legend item's marker in pixels. */
+  /** @name VectorMapLegendItem.size */
   var size: js.UndefOr[Double] = js.undefined
-  /** The start value of the group that the legend item indicates. */
+  /** @name VectorMapLegendItem.start */
   var start: js.UndefOr[Double] = js.undefined
 }
 

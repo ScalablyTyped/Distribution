@@ -9,52 +9,52 @@ import scala.scalajs.js.annotation._
 @js.native
 class basePointObject ()
   extends typings.devextreme.mod.DevExpress.viz.basePointObject {
-  /** Contains the data object that the series point represents. */
+  /** @name basePointObject.data */
   /* CompleteClass */
   override var data: js.Any = js.native
-  /** Provides information about the state of the point object. */
+  /** @name basePointObject.fullState */
   /* CompleteClass */
   override var fullState: Double = js.native
-  /** Returns the point's argument value that was set in the data source. */
+  /** @name basePointObject.originalArgument */
   /* CompleteClass */
   override var originalArgument: String | Double | Date = js.native
-  /** Returns the point's value that was set in the data source. */
+  /** @name basePointObject.originalValue */
   /* CompleteClass */
   override var originalValue: String | Double | Date = js.native
-  /** Returns the series object to which the point belongs. */
+  /** @name basePointObject.series */
   /* CompleteClass */
   override var series: js.Any = js.native
-  /** Returns the tag of the point. */
+  /** @name basePointObject.tag */
   /* CompleteClass */
   override var tag: js.Any = js.native
-  /** Switches the point from the hover state back to normal. */
+  /** @name basePointObject.clearHover() */
   /* CompleteClass */
   override def clearHover(): Unit = js.native
-  /** Deselects the point. */
+  /** @name basePointObject.clearSelection() */
   /* CompleteClass */
   override def clearSelection(): Unit = js.native
-  /** Gets the color of a particular point. */
+  /** @name basePointObject.getColor() */
   /* CompleteClass */
   override def getColor(): String = js.native
-  /** Allows you to obtain the label(s) of the series point. */
+  /** @name basePointObject.getLabel() */
   /* CompleteClass */
   override def getLabel(): typings.devextreme.mod.DevExpress.viz.baseLabelObject with js.Array[typings.devextreme.mod.DevExpress.viz.baseLabelObject] = js.native
-  /** Hides the tooltip of the point. */
+  /** @name basePointObject.hideTooltip() */
   /* CompleteClass */
   override def hideTooltip(): Unit = js.native
-  /** Switches the point into the hover state, the same as when a user places the mouse pointer on it. */
+  /** @name basePointObject.hover() */
   /* CompleteClass */
   override def hover(): Unit = js.native
-  /** Provides information about the hover state of a point. */
+  /** @name basePointObject.isHovered() */
   /* CompleteClass */
   override def isHovered(): Boolean = js.native
-  /** Provides information about the selection state of a point. */
+  /** @name basePointObject.isSelected() */
   /* CompleteClass */
   override def isSelected(): Boolean = js.native
-  /** Selects the point. The point is displayed in a 'selected' style until another point is selected or the current point is deselected programmatically. */
+  /** @name basePointObject.select() */
   /* CompleteClass */
   override def select(): Unit = js.native
-  /** Shows the tooltip of the point. */
+  /** @name basePointObject.showTooltip() */
   /* CompleteClass */
   override def showTooltip(): Unit = js.native
 }

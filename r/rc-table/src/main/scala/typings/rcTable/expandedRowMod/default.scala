@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object default extends js.Object {
   def apply[RecordType](
-    hasPrefixClsChildrenComponentCellComponentFixHeaderFixColumnClassNameExpandedComponentWidthColSpan: ExpandedRowProps[RecordType]
+    hasPrefixClsChildrenComponentCellComponentFixHeaderFixColumnHorizonScrollClassNameExpandedComponentWidthColSpan: ExpandedRowProps[RecordType]
   ): Element = js.native
 }
 

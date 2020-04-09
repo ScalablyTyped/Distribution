@@ -12,9 +12,18 @@ class Card () extends js.Object {
     */
   var billing_address: js.UndefOr[Address] = js.native
   /**
-    * The card's brand (such as `VISA`). See [CardBrand](#type-cardbrand) for possible values.
+    * The first six digits of the card number, known as the Bank Identification Number (BIN). Only the Payments API returns this field.
+    */
+  var bin: js.UndefOr[String] = js.native
+  /**
+    * The card's brand. See [CardBrand](#type-cardbrand) for possible values
     */
   var card_brand: js.UndefOr[CardBrandType] = js.native
+  /**
+    * The type of the card. The Card object includes this field only in response to Payments API calls.
+    * See [CardType](#type-cardtype) for possible values.
+    */
+  var card_type: js.UndefOr[String] = js.native
   /**
     * The name of the cardholder.
     */
@@ -28,7 +37,8 @@ class Card () extends js.Object {
     */
   var exp_year: js.UndefOr[Double] = js.native
   /**
-    * A unique, Square-assigned ID that identifies the card across multiple locations and applications for a single Square account.
+    * @proposed Intended as a Square-assigned identifier, based on the card number, to identify the card across
+    * multiple locations within a single application.
     */
   var fingerprint: js.UndefOr[String] = js.native
   /**
@@ -39,5 +49,10 @@ class Card () extends js.Object {
     * The last 4 digits of the card number.
     */
   var last_4: js.UndefOr[String] = js.native
+  /**
+    * Indicates whether the Card is prepaid or not. The Card object includes this field only in response to Payments API calls.
+    * See [CardPrepaidType](#type-cardprepaidtype) for possible values.
+    */
+  var prepaid_type: js.UndefOr[String] = js.native
 }
 

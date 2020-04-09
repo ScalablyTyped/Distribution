@@ -13,17 +13,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxDeferRenderingOptions extends WidgetOptions[dxDeferRendering] {
-  /** Specifies the animation to be used to show the rendered content. */
+  /** @name dxDeferRendering.Options.animation */
   var animation: js.UndefOr[animationConfig] = js.undefined
-  /** A function that is executed when the content is rendered but not yet displayed. */
+  /** @name dxDeferRendering.Options.onRendered */
   var onRendered: js.UndefOr[js.Function1[/* e */ AnonComponentDxDeferRendering, _]] = js.undefined
-  /** A function that is executed when the content is displayed and animation is completed. */
+  /** @name dxDeferRendering.Options.onShown */
   var onShown: js.UndefOr[js.Function1[/* e */ AnonComponentDxDeferRendering, _]] = js.undefined
-  /** Specifies when the widget content is rendered. */
+  /** @name dxDeferRendering.Options.renderWhen */
   var renderWhen: js.UndefOr[Promise[Unit] | JQueryPromise[Unit] | Boolean] = js.undefined
-  /** Indicates if a load indicator should be shown until the widget's content is rendered. */
+  /** @name dxDeferRendering.Options.showLoadIndicator */
   var showLoadIndicator: js.UndefOr[Boolean] = js.undefined
-  /** Specifies a jQuery selector of items that should be rendered using a staggered animation. */
+  /** @name dxDeferRendering.Options.staggerItemSelector */
   var staggerItemSelector: js.UndefOr[String] = js.undefined
 }
 

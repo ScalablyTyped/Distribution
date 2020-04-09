@@ -47,6 +47,12 @@ trait H264Settings extends js.Object {
     */
   var FlickerAq: js.UndefOr[H264FlickerAq] = js.native
   /**
+    * This setting applies only when scan type is "interlaced." It controls whether coding is on a field basis or a frame basis. (When the video is progressive, the coding is always on a frame basis.)
+  enabled: Always code on a field basis, so that odd and even sets of fields are coded separately.
+  disabled: Code the two sets of fields separately (on a field basis) or together (on a frame basis, using PAFF or MBAFF), depending on what is most appropriate for the content.
+    */
+  var ForceFieldPictures: js.UndefOr[H264ForceFieldPictures] = js.native
+  /**
     * This field indicates how the output video frame rate is specified.  If "specified" is selected then the output video frame rate is determined by framerateNumerator and framerateDenominator, else if "initializeFromSource" is selected then the output video frame rate will be set equal to the input video frame rate of the first input.
     */
   var FramerateControl: js.UndefOr[H264FramerateControl] = js.native
@@ -193,6 +199,7 @@ object H264Settings {
     EntropyEncoding: H264EntropyEncoding = null,
     FixedAfd: FixedAfd = null,
     FlickerAq: H264FlickerAq = null,
+    ForceFieldPictures: H264ForceFieldPictures = null,
     FramerateControl: H264FramerateControl = null,
     FramerateDenominator: Int | Double = null,
     FramerateNumerator: Int | Double = null,
@@ -233,6 +240,7 @@ object H264Settings {
     if (EntropyEncoding != null) __obj.updateDynamic("EntropyEncoding")(EntropyEncoding.asInstanceOf[js.Any])
     if (FixedAfd != null) __obj.updateDynamic("FixedAfd")(FixedAfd.asInstanceOf[js.Any])
     if (FlickerAq != null) __obj.updateDynamic("FlickerAq")(FlickerAq.asInstanceOf[js.Any])
+    if (ForceFieldPictures != null) __obj.updateDynamic("ForceFieldPictures")(ForceFieldPictures.asInstanceOf[js.Any])
     if (FramerateControl != null) __obj.updateDynamic("FramerateControl")(FramerateControl.asInstanceOf[js.Any])
     if (FramerateDenominator != null) __obj.updateDynamic("FramerateDenominator")(FramerateDenominator.asInstanceOf[js.Any])
     if (FramerateNumerator != null) __obj.updateDynamic("FramerateNumerator")(FramerateNumerator.asInstanceOf[js.Any])

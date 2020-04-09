@@ -593,6 +593,9 @@ object fileTypeStrings {
   sealed trait otf extends FileExtension
   
   @js.native
+  sealed trait pause extends js.Object
+  
+  @js.native
   sealed trait pcap extends FileExtension
   
   @js.native
@@ -621,6 +624,9 @@ object fileTypeStrings {
   
   @js.native
   sealed trait readable extends js.Object
+  
+  @js.native
+  sealed trait resume extends js.Object
   
   @js.native
   sealed trait rpm extends FileExtension
@@ -1142,6 +1148,8 @@ object fileTypeStrings {
   @scala.inline
   def otf: otf = "otf".asInstanceOf[otf]
   @scala.inline
+  def pause: pause = "pause".asInstanceOf[pause]
+  @scala.inline
   def pcap: pcap = "pcap".asInstanceOf[pcap]
   @scala.inline
   def pdf: pdf = "pdf".asInstanceOf[pdf]
@@ -1161,6 +1169,8 @@ object fileTypeStrings {
   def rar: rar = "rar".asInstanceOf[rar]
   @scala.inline
   def readable: readable = "readable".asInstanceOf[readable]
+  @scala.inline
+  def resume: resume = "resume".asInstanceOf[resume]
   @scala.inline
   def rpm: rpm = "rpm".asInstanceOf[rpm]
   @scala.inline

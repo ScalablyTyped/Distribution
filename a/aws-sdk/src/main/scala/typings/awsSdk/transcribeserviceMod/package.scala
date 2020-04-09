@@ -58,6 +58,7 @@ package object transcribeserviceMod {
   */
   type MediaFormat = typings.awsSdk.transcribeserviceMod._MediaFormat | java.lang.String
   type MediaSampleRateHertz = scala.Double
+  type MedicalTranscriptionJobSummaries = js.Array[typings.awsSdk.transcribeserviceMod.MedicalTranscriptionJobSummary]
   type NextToken = java.lang.String
   type OutputBucketName = java.lang.String
   /* Rewritten from type alias, can be one of: 
@@ -75,6 +76,7 @@ package object transcribeserviceMod {
   */
   type RedactionOutput = typings.awsSdk.transcribeserviceMod._RedactionOutput | java.lang.String
   type RedactionType = typings.awsSdk.awsSdkStrings.PII | java.lang.String
+  type Specialty = typings.awsSdk.awsSdkStrings.PRIMARYCARE | java.lang.String
   type TranscriptionJobName = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.QUEUED
@@ -85,6 +87,12 @@ package object transcribeserviceMod {
   */
   type TranscriptionJobStatus = typings.awsSdk.transcribeserviceMod._TranscriptionJobStatus | java.lang.String
   type TranscriptionJobSummaries = js.Array[typings.awsSdk.transcribeserviceMod.TranscriptionJobSummary]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.CONVERSATION
+    - typings.awsSdk.awsSdkStrings.DICTATION
+    - java.lang.String
+  */
+  type Type = typings.awsSdk.transcribeserviceMod._Type | java.lang.String
   type Uri = java.lang.String
   type Vocabularies = js.Array[typings.awsSdk.transcribeserviceMod.VocabularyInfo]
   /* Rewritten from type alias, can be one of: 

@@ -1,7 +1,7 @@
 
 # Scala.js typings for json2csv
 
-Typings are for version 4.5
+Typings are for version 5.0
 
 ## Library description:
 Convert JSON to CSV

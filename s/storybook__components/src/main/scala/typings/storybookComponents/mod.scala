@@ -50,6 +50,7 @@ import typings.react.mod.RefAttributes
 import typings.react.mod.SVGProps
 import typings.react.mod.ScriptHTMLAttributes
 import typings.react.mod.SelectHTMLAttributes
+import typings.react.mod.SlotHTMLAttributes
 import typings.react.mod.SourceHTMLAttributes
 import typings.react.mod.StyleHTMLAttributes
 import typings.react.mod.TableHTMLAttributes
@@ -104,6 +105,7 @@ import typings.std.HTMLProgressElement
 import typings.std.HTMLQuoteElement
 import typings.std.HTMLScriptElement
 import typings.std.HTMLSelectElement
+import typings.std.HTMLSlotElement
 import typings.std.HTMLSourceElement
 import typings.std.HTMLSpanElement
 import typings.std.HTMLStyleElement
@@ -336,6 +338,7 @@ import typings.storybookComponents.storybookComponentsStrings.samp
 import typings.storybookComponents.storybookComponentsStrings.script
 import typings.storybookComponents.storybookComponentsStrings.section
 import typings.storybookComponents.storybookComponentsStrings.select
+import typings.storybookComponents.storybookComponentsStrings.slot
 import typings.storybookComponents.storybookComponentsStrings.small
 import typings.storybookComponents.storybookComponentsStrings.source
 import typings.storybookComponents.storybookComponentsStrings.span
@@ -1153,6 +1156,12 @@ object mod extends js.Object {
     @JSName("withComponent")
     def withComponent_select(tag: select): StyledComponent[
         DetailedHTMLProps[SelectHTMLAttributes[HTMLSelectElement], HTMLSelectElement], 
+        PickDetailedHTMLPropsForm, 
+        Theme
+      ] = js.native
+    @JSName("withComponent")
+    def withComponent_slot(tag: slot): StyledComponent[
+        DetailedHTMLProps[SlotHTMLAttributes[HTMLSlotElement], HTMLSlotElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native

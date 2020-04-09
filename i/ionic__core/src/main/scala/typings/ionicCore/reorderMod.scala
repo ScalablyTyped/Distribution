@@ -1,6 +1,6 @@
 package typings.ionicCore
 
-import typings.ionicCore.stencilCoreMod.ComponentInterface
+import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.std.Event_
 import scala.scalajs.js
 import scala.scalajs.js.`|`

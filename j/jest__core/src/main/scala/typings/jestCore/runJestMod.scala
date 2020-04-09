@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 object runJestMod extends js.Object {
   def default(
     hasContextsGlobalConfigOutputStreamTestWatcherJestHooksStartRunChangedFilesPromiseOnCompleteFailedTestsCacheFilter: AnonChangedFilesPromise
-  ): js.Promise[Unit | Null] = js.native
+  ): js.Promise[Unit] = js.native
 }
 

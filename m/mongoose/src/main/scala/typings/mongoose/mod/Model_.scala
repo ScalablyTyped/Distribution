@@ -8,13 +8,14 @@ import typings.mongodb.mod.BulkWriteOpResultObject
 import typings.mongodb.mod.ChangeStream
 import typings.mongodb.mod.CollectionBulkWriteOptions
 import typings.mongodb.mod.CollectionCreateOptions
+import typings.mongodb.mod.DefaultSchema
 import typings.mongodb.mod.FindAndModifyWriteOpResultObject
 import typings.mongoose.AnonDeletedCount
 import typings.mongoose.AnonLean
 import typings.mongoose.ChangeStreamOptionssessio
 import typings.mongoose.orderedbooleanrawResultbo
 import typings.mongoose.rawResulttrueQueryFindOne
-import typings.mongoose.rawResulttrueQueryFindOneContext
+import typings.mongoose.rawResulttrueQueryFindOneArrayFilters
 import typings.mongoose.rawResulttrueupserttruene
 import typings.mongoose.upserttruenewtrueQueryFin
 import typings.node.NodeJS.EventEmitter
@@ -388,11 +389,11 @@ Instantiable0[T]
     options: QueryFindOneAndUpdateOptions,
     callback: js.Function2[/* err */ js.Any, /* res */ T | Null, Unit]
   ): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
-  def findByIdAndUpdate(id: String, update: js.Any, options: rawResulttrueQueryFindOneContext): (Query[FindAndModifyWriteOpResultObject[T | Null]]) with QueryHelpers = js.native
+  def findByIdAndUpdate(id: String, update: js.Any, options: rawResulttrueQueryFindOneArrayFilters): (Query[FindAndModifyWriteOpResultObject[T | Null]]) with QueryHelpers = js.native
   def findByIdAndUpdate(
     id: String,
     update: js.Any,
-    options: rawResulttrueQueryFindOneContext,
+    options: rawResulttrueQueryFindOneArrayFilters,
     callback: js.Function2[/* err */ js.Any, /* res */ FindAndModifyWriteOpResultObject[T | Null], Unit]
   ): (Query[FindAndModifyWriteOpResultObject[T | Null]]) with QueryHelpers = js.native
   def findByIdAndUpdate(id: String, update: js.Any, options: rawResulttrueupserttruene): (DocumentQuery[T, T, QueryHelpers]) with QueryHelpers = js.native
@@ -418,11 +419,11 @@ Instantiable0[T]
     options: QueryFindOneAndUpdateOptions,
     callback: js.Function2[/* err */ js.Any, /* res */ T | Null, Unit]
   ): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
-  def findByIdAndUpdate(id: js.Any, update: js.Any, options: rawResulttrueQueryFindOneContext): (Query[FindAndModifyWriteOpResultObject[T | Null]]) with QueryHelpers = js.native
+  def findByIdAndUpdate(id: js.Any, update: js.Any, options: rawResulttrueQueryFindOneArrayFilters): (Query[FindAndModifyWriteOpResultObject[T | Null]]) with QueryHelpers = js.native
   def findByIdAndUpdate(
     id: js.Any,
     update: js.Any,
-    options: rawResulttrueQueryFindOneContext,
+    options: rawResulttrueQueryFindOneArrayFilters,
     callback: js.Function2[/* err */ js.Any, /* res */ FindAndModifyWriteOpResultObject[T | Null], Unit]
   ): (Query[FindAndModifyWriteOpResultObject[T | Null]]) with QueryHelpers = js.native
   def findByIdAndUpdate(id: js.Any, update: js.Any, options: rawResulttrueupserttruene): (DocumentQuery[T, T, QueryHelpers]) with QueryHelpers = js.native
@@ -448,11 +449,11 @@ Instantiable0[T]
     options: QueryFindOneAndUpdateOptions,
     callback: js.Function2[/* err */ js.Any, /* res */ T | Null, Unit]
   ): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
-  def findByIdAndUpdate(id: Double, update: js.Any, options: rawResulttrueQueryFindOneContext): (Query[FindAndModifyWriteOpResultObject[T | Null]]) with QueryHelpers = js.native
+  def findByIdAndUpdate(id: Double, update: js.Any, options: rawResulttrueQueryFindOneArrayFilters): (Query[FindAndModifyWriteOpResultObject[T | Null]]) with QueryHelpers = js.native
   def findByIdAndUpdate(
     id: Double,
     update: js.Any,
-    options: rawResulttrueQueryFindOneContext,
+    options: rawResulttrueQueryFindOneArrayFilters,
     callback: js.Function2[/* err */ js.Any, /* res */ FindAndModifyWriteOpResultObject[T | Null], Unit]
   ): (Query[FindAndModifyWriteOpResultObject[T | Null]]) with QueryHelpers = js.native
   def findByIdAndUpdate(id: Double, update: js.Any, options: rawResulttrueupserttruene): (DocumentQuery[T, T, QueryHelpers]) with QueryHelpers = js.native
@@ -572,11 +573,11 @@ Instantiable0[T]
     options: QueryFindOneAndUpdateOptions,
     callback: js.Function3[/* err */ js.Any, /* doc */ T | Null, /* res */ js.Any, Unit]
   ): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
-  def findOneAndUpdate(conditions: FilterQuery[T], update: js.Any, options: rawResulttrueQueryFindOneContext): (Query[FindAndModifyWriteOpResultObject[T | Null]]) with QueryHelpers = js.native
+  def findOneAndUpdate(conditions: FilterQuery[T], update: js.Any, options: rawResulttrueQueryFindOneArrayFilters): (Query[FindAndModifyWriteOpResultObject[T | Null]]) with QueryHelpers = js.native
   def findOneAndUpdate(
     conditions: FilterQuery[T],
     update: js.Any,
-    options: rawResulttrueQueryFindOneContext,
+    options: rawResulttrueQueryFindOneArrayFilters,
     callback: js.Function3[
       /* err */ js.Any, 
       /* doc */ FindAndModifyWriteOpResultObject[T | Null], 
@@ -794,9 +795,9 @@ Instantiable0[T]
     * @param pipeline See http://mongodb.github.io/node-mongodb-native/3.3/api/Collection.html#watch
     * @param options See https://mongodb.github.io/node-mongodb-native/3.3/api/Collection.html#watch
     */
-  def watch(): ChangeStream = js.native
-  def watch(pipeline: js.Array[js.Object]): ChangeStream = js.native
-  def watch(pipeline: js.Array[js.Object], options: ChangeStreamOptionssessio): ChangeStream = js.native
+  def watch(): ChangeStream[DefaultSchema] = js.native
+  def watch(pipeline: js.Array[js.Object]): ChangeStream[DefaultSchema] = js.native
+  def watch(pipeline: js.Array[js.Object], options: ChangeStreamOptionssessio): ChangeStream[DefaultSchema] = js.native
   /** Creates a Query, applies the passed conditions, and returns the Query. */
   def where(path: String): Query[_] with QueryHelpers = js.native
   def where(path: String, `val`: js.Any): Query[_] with QueryHelpers = js.native

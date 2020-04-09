@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "rxjs" : "6.5.4"
+      "rxjs" : "6.5.5"
     }
   ],
   "test-dependencies" : [
     {
-      "rxjs" : "6.5.4"
+      "rxjs" : "6.5.5"
     }
   ],
   "compile-devDependencies" : [

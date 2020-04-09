@@ -1,7 +1,7 @@
 
 # Scala.js typings for nteract__transform-vdom
 
-Typings are for version 4.0.11
+Typings are for version 4.0.15
 
 ## Library description:
 VDOM Transform for jupyter outputs

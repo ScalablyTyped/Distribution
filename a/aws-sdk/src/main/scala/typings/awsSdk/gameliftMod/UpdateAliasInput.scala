@@ -9,7 +9,7 @@ trait UpdateAliasInput extends js.Object {
   /**
     * A unique identifier for the alias that you want to update. You can use either the alias ID or ARN value.
     */
-  var AliasId: typings.awsSdk.gameliftMod.AliasId = js.native
+  var AliasId: AliasIdOrArn = js.native
   /**
     * A human-readable description of the alias.
     */
@@ -27,7 +27,7 @@ trait UpdateAliasInput extends js.Object {
 object UpdateAliasInput {
   @scala.inline
   def apply(
-    AliasId: AliasId,
+    AliasId: AliasIdOrArn,
     Description: NonZeroAndMaxString = null,
     Name: NonBlankAndLengthConstraintString = null,
     RoutingStrategy: RoutingStrategy = null

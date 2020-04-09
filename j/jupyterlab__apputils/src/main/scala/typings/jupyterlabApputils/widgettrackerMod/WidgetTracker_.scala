@@ -84,6 +84,9 @@ class WidgetTracker_[T /* <: Widget */] protected ()
     * the tracker can be checked with the `has()` method. The promise this method
     * returns resolves after the widget has been added and saved to an underlying
     * restoration connector, if one is available.
+    *
+    * The newly added widget becomes the current widget unless the focus tracker
+    * already had a focused widget.
     */
   def add(widget: T): js.Promise[Unit] = js.native
   /**

@@ -1,5 +1,6 @@
 package typings.antd.scrollToMod
 
+import typings.std.Document_
 import typings.std.HTMLElement
 import typings.std.Window_
 import scala.scalajs.js
@@ -12,7 +13,7 @@ trait ScrollToOptions extends js.Object {
   /** Animation duration, default as 450 */
   var duration: js.UndefOr[Double] = js.undefined
   /** Scroll container, default as window */
-  var getContainer: js.UndefOr[js.Function0[HTMLElement | Window_]] = js.undefined
+  var getContainer: js.UndefOr[js.Function0[HTMLElement | Window_ | Document_]] = js.undefined
 }
 
 object ScrollToOptions {
@@ -20,7 +21,7 @@ object ScrollToOptions {
   def apply(
     callback: () => _ = null,
     duration: Int | Double = null,
-    getContainer: () => HTMLElement | Window_ = null
+    getContainer: () => HTMLElement | Window_ | Document_ = null
   ): ScrollToOptions = {
     val __obj = js.Dynamic.literal()
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction0(callback))

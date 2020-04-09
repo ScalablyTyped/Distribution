@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait Name extends js.Object {
   /**
-    * The read-only display name formatted according to the locale specified by
+    * Output only. The display name formatted according to the locale specified by
     * the viewer's account or the `Accept-Language` HTTP header.
     */
   var displayName: js.UndefOr[String] = js.undefined
   /**
-    * The read-only display name with the last name first formatted according to
+    * Output only. The display name with the last name first formatted according to
     * the locale specified by the viewer's account or the
     * `Accept-Language` HTTP header.
     */

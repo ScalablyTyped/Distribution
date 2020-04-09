@@ -9,5 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object defaultLoadBalancingPolicy extends js.Object {
   def apply(): LoadBalancingPolicy = js.native
+  def apply(localDc: String): LoadBalancingPolicy = js.native
 }
 

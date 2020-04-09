@@ -20,13 +20,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxFunnelLegend extends BaseLegend {
-  /** Specifies the hint that appears when a user hovers the mouse pointer over a legend item. */
+  /** @name dxFunnel.Options.legend.customizeHint */
   var customizeHint: js.UndefOr[js.Function1[/* itemInfo */ AnonItemDxFunnelItem, String]] = js.undefined
-  /** Allows you to change the order, text, and visibility of legend items. */
+  /** @name dxFunnel.Options.legend.customizeItems */
   var customizeItems: js.UndefOr[js.Function1[/* items */ js.Array[FunnelLegendItem], js.Array[FunnelLegendItem]]] = js.undefined
-  /** Customizes the text displayed by legend items. */
+  /** @name dxFunnel.Options.legend.customizeText */
   var customizeText: js.UndefOr[js.Function1[/* itemInfo */ AnonItemDxFunnelItem, String]] = js.undefined
-  /** Specifies an SVG element that serves as a custom legend item marker. */
+  /** @name dxFunnel.Options.legend.markerTemplate */
   var markerTemplate: js.UndefOr[
     template | (js.Function2[
       /* legendItem */ FunnelLegendItem, 

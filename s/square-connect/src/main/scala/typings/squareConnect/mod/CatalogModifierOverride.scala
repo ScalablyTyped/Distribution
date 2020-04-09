@@ -8,12 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class CatalogModifierOverride () extends js.Object {
   /**
-    * The ID of the [CatalogModifier](#type-catalogmodifier) whose default behavior is being overridden.
+    * The ID of the `CatalogModifier` whose default behavior is being overridden.
     */
   var modifier_id: String = js.native
   /**
-    * If `true`, this [CatalogModifier](#type-catalogmodifier) should be selected by default for this
-    * [CatalogItem](#type-catalogitem).
+    * If `true`, this `CatalogModifier` should be selected by default for this `CatalogItem`.
     */
   var on_by_default: js.UndefOr[Boolean] = js.native
 }

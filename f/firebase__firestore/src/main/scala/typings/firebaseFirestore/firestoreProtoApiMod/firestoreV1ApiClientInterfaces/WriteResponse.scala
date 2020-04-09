@@ -1,11 +1,12 @@
 package typings.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces
 
+import typings.firebaseFirestore.firestoreProtoApiMod.Timestamp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WriteResponse extends js.Object {
-  var commitTime: js.UndefOr[String] = js.undefined
+  var commitTime: js.UndefOr[Timestamp] = js.undefined
   var streamId: js.UndefOr[String] = js.undefined
   var streamToken: js.UndefOr[String] = js.undefined
   var writeResults: js.UndefOr[js.Array[WriteResult]] = js.undefined
@@ -14,7 +15,7 @@ trait WriteResponse extends js.Object {
 object WriteResponse {
   @scala.inline
   def apply(
-    commitTime: String = null,
+    commitTime: Timestamp = null,
     streamId: String = null,
     streamToken: String = null,
     writeResults: js.Array[WriteResult] = null

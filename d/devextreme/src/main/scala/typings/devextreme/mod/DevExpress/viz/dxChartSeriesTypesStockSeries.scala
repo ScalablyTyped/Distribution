@@ -14,18 +14,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Describes settings supported by a series of the stock type. */
+/** @name dxChartSeriesTypes.StockSeries */
 trait dxChartSeriesTypesStockSeries extends dxChartSeriesTypesCommonSeries {
-  /** Configures data aggregation for the series. */
+  /** @name dxChartSeriesTypes.StockSeries.aggregation */
   @JSName("aggregation")
   var aggregation_dxChartSeriesTypesStockSeries: js.UndefOr[dxChartSeriesTypesStockSeriesAggregation] = js.undefined
-  /** Specifies series elements to be highlighted when a user pauses on a series. */
+  /** @name dxChartSeriesTypes.StockSeries.hoverMode */
   @JSName("hoverMode")
   var hoverMode_dxChartSeriesTypesStockSeries: js.UndefOr[onlyPoint | allSeriesPoints | allArgumentPoints | none] = js.undefined
-  /** Configures point labels. */
+  /** @name dxChartSeriesTypes.StockSeries.label */
   @JSName("label")
   var label_dxChartSeriesTypesStockSeries: js.UndefOr[dxChartSeriesTypesStockSeriesLabel] = js.undefined
-  /** Specifies series elements to be highlighted when a user selects a point. */
+  /** @name dxChartSeriesTypes.StockSeries.selectionMode */
   @JSName("selectionMode")
   var selectionMode_dxChartSeriesTypesStockSeries: js.UndefOr[onlyPoint | allSeriesPoints | allArgumentPoints | none] = js.undefined
 }

@@ -25,7 +25,7 @@ trait GameSession extends js.Object {
   /**
     *  The Amazon Resource Name (ARN) associated with the GameLift fleet that this game session is running on. 
     */
-  var FleetArn: js.UndefOr[ArnStringModel] = js.native
+  var FleetArn: js.UndefOr[typings.awsSdk.gameliftMod.FleetArn] = js.native
   /**
     * A unique identifier for a fleet that the game session is running on.
     */
@@ -87,7 +87,7 @@ object GameSession {
     CreatorId: NonZeroAndMaxString = null,
     CurrentPlayerSessionCount: Int | scala.Double = null,
     DnsName: DnsName = null,
-    FleetArn: ArnStringModel = null,
+    FleetArn: FleetArn = null,
     FleetId: FleetId = null,
     GameProperties: GamePropertyList = null,
     GameSessionData: GameSessionData = null,

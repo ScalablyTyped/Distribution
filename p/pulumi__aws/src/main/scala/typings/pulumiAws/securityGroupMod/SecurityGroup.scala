@@ -30,22 +30,17 @@ class SecurityGroup protected () extends CustomResource {
     */
   val arn: Output_[String] = js.native
   /**
-    * The security group description. Defaults to
-    * "Managed by Pulumi". Cannot be "". __NOTE__: This field maps to the AWS
-    * `GroupDescription` attribute, for which there is no Update API. If you'd like
-    * to classify your security groups in a way that can be updated, use `tags`.
+    * Description of this egress rule.
     */
   val description: Output_[String] = js.native
   /**
     * Can be specified multiple times for each
     * egress rule. Each egress block supports fields documented below.
-    * This argument is processed in [attribute-as-blocks mode](https://www.terraform.io/docs/configuration/attr-as-blocks.html).
     */
   val egress: Output_[js.Array[SecurityGroupEgress]] = js.native
   /**
     * Can be specified multiple times for each
     * ingress rule. Each ingress block supports fields documented below.
-    * This argument is processed in [attribute-as-blocks mode](https://www.terraform.io/docs/configuration/attr-as-blocks.html).
     */
   val ingress: Output_[js.Array[SecurityGroupIngress]] = js.native
   /**

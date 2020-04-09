@@ -53,6 +53,12 @@ trait ClientRequestConstructorOptions extends js.Object {
     * specified as http or https.
     */
   var url: js.UndefOr[String] = js.undefined
+  /**
+    * Whether to send cookies with this request from the provided session.  This will
+    * make the `net` request's cookie behavior match a `fetch` request. Default is
+    * `false`.
+    */
+  var useSessionCookies: js.UndefOr[Boolean] = js.undefined
 }
 
 object ClientRequestConstructorOptions {
@@ -67,7 +73,8 @@ object ClientRequestConstructorOptions {
     protocol: String = null,
     redirect: String = null,
     session: Session_ = null,
-    url: String = null
+    url: String = null,
+    useSessionCookies: js.UndefOr[Boolean] = js.undefined
   ): ClientRequestConstructorOptions = {
     val __obj = js.Dynamic.literal()
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
@@ -80,6 +87,7 @@ object ClientRequestConstructorOptions {
     if (redirect != null) __obj.updateDynamic("redirect")(redirect.asInstanceOf[js.Any])
     if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (!js.isUndefined(useSessionCookies)) __obj.updateDynamic("useSessionCookies")(useSessionCookies.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientRequestConstructorOptions]
   }
 }

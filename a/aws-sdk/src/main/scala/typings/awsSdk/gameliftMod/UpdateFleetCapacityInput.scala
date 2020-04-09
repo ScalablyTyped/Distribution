@@ -13,7 +13,7 @@ trait UpdateFleetCapacityInput extends js.Object {
   /**
     * A unique identifier for a fleet to update capacity for. You can use either the fleet ID or ARN value.
     */
-  var FleetId: typings.awsSdk.gameliftMod.FleetId = js.native
+  var FleetId: FleetIdOrArn = js.native
   /**
     * The maximum value allowed for the fleet's instance count. Default if not set is 1.
     */
@@ -27,7 +27,7 @@ trait UpdateFleetCapacityInput extends js.Object {
 object UpdateFleetCapacityInput {
   @scala.inline
   def apply(
-    FleetId: FleetId,
+    FleetId: FleetIdOrArn,
     DesiredInstances: Int | scala.Double = null,
     MaxSize: Int | scala.Double = null,
     MinSize: Int | scala.Double = null

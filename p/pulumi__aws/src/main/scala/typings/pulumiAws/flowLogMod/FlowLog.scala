@@ -1,5 +1,6 @@
 package typings.pulumiAws.flowLogMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.mod.CustomResource
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.outputMod.Output_
@@ -46,9 +47,20 @@ class FlowLog protected () extends CustomResource {
     */
   val logGroupName: Output_[String] = js.native
   /**
+    * The maximum interval of time
+    * during which a flow of packets is captured and aggregated into a flow
+    * log record. Valid Values: `60` seconds (1 minute) or `600` seconds (10
+    * minutes). Default: `600`.
+    */
+  val maxAggregationInterval: Output_[js.UndefOr[Double]] = js.native
+  /**
     * Subnet ID to attach to
     */
   val subnetId: Output_[js.UndefOr[String]] = js.native
+  /**
+    * Key-value mapping of resource tags
+    */
+  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
   /**
     * The type of traffic to capture. Valid values: `ACCEPT`,`REJECT`, `ALL`.
     */

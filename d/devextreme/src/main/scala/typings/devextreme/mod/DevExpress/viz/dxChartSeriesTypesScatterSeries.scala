@@ -17,12 +17,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Describes settings supported by a series of the scatter type. */
+/** @name dxChartSeriesTypes.ScatterSeries */
 trait dxChartSeriesTypesScatterSeries extends dxChartSeriesTypesCommonSeries {
-  /** Configures data aggregation for the series. */
+  /** @name dxChartSeriesTypes.ScatterSeries.aggregation */
   @JSName("aggregation")
   var aggregation_dxChartSeriesTypesScatterSeries: js.UndefOr[dxChartSeriesTypesScatterSeriesAggregation] = js.undefined
-  /** Configures point labels. */
+  /** @name dxChartSeriesTypes.ScatterSeries.label */
   @JSName("label")
   var label_dxChartSeriesTypesScatterSeries: js.UndefOr[dxChartSeriesTypesScatterSeriesLabel] = js.undefined
 }

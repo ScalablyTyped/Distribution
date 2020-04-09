@@ -1,5 +1,6 @@
 package typings.pulumiAws.acceleratorMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiAws.outputMod.globalaccelerator.AcceleratorAttributes
 import typings.pulumiAws.outputMod.globalaccelerator.AcceleratorIpSet
 import typings.pulumiPulumi.mod.CustomResource
@@ -52,6 +53,10 @@ class Accelerator protected () extends CustomResource {
     * The name of the accelerator.
     */
   val name: Output_[String] = js.native
+  /**
+    * A mapping of tags to assign to the resource.
+    */
+  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
 }
 
 /* static members */

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@carbon/pictograms-react", "CreditCard")
 @js.native
-object CreditCard extends TopLevel[CarbonPictogram]
+object CreditCard extends TopLevel[CarbonPictogramType]
 

@@ -1,7 +1,7 @@
 package typings.tanemSvgInjector.svgInjectorMod
 
-import typings.std.Element
 import typings.std.Error
+import typings.std.SVGElement
 import typings.tanemSvgInjector.typesMod.AfterAll
 import typings.tanemSvgInjector.typesMod.BeforeEach
 import typings.tanemSvgInjector.typesMod.Errback
@@ -22,8 +22,8 @@ object OptionalArgs {
   @scala.inline
   def apply(
     afterAll: /* elementsLoaded */ Double => Unit = null,
-    afterEach: (/* error */ Error | Null, /* svg */ js.UndefOr[Element]) => Unit = null,
-    beforeEach: /* svg */ Element => Unit = null,
+    afterEach: (/* error */ Error | Null, /* svg */ js.UndefOr[SVGElement]) => Unit = null,
+    beforeEach: /* svg */ SVGElement => Unit = null,
     evalScripts: EvalScripts = null,
     renumerateIRIElements: js.UndefOr[Boolean] = js.undefined
   ): OptionalArgs = {

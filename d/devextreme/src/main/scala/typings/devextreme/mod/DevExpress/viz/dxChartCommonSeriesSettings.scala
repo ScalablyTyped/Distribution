@@ -41,53 +41,53 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxChartCommonSeriesSettings extends dxChartSeriesTypesCommonSeries {
-  /** Defines common settings for all area series. */
+  /** @name dxChart.Options.commonSeriesSettings.area */
   var area: js.UndefOr[js.Any] = js.undefined
-  /** Defines common settings for all bar series. */
+  /** @name dxChart.Options.commonSeriesSettings.bar */
   var bar: js.UndefOr[js.Any] = js.undefined
-  /** Defines common settings for all bubble series. */
+  /** @name dxChart.Options.commonSeriesSettings.bubble */
   var bubble: js.UndefOr[js.Any] = js.undefined
-  /** Defines common settings for all candlestick series. */
+  /** @name dxChart.Options.commonSeriesSettings.candlestick */
   var candlestick: js.UndefOr[js.Any] = js.undefined
-  /** Defines common settings for all full-stacked area series. */
+  /** @name dxChart.Options.commonSeriesSettings.fullstackedarea */
   var fullstackedarea: js.UndefOr[js.Any] = js.undefined
-  /** Defines common settings for all full-stacked bar series. */
+  /** @name dxChart.Options.commonSeriesSettings.fullstackedbar */
   var fullstackedbar: js.UndefOr[js.Any] = js.undefined
-  /** Defines common settings for all full-stacked line series. */
+  /** @name dxChart.Options.commonSeriesSettings.fullstackedline */
   var fullstackedline: js.UndefOr[js.Any] = js.undefined
-  /** Defines common settings for all full-stacked spline series. */
+  /** @name dxChart.Options.commonSeriesSettings.fullstackedspline */
   var fullstackedspline: js.UndefOr[js.Any] = js.undefined
-  /** Defines common settings for all full-stacked spline area series. */
+  /** @name dxChart.Options.commonSeriesSettings.fullstackedsplinearea */
   var fullstackedsplinearea: js.UndefOr[js.Any] = js.undefined
-  /** Defines common settings for all line series. */
+  /** @name dxChart.Options.commonSeriesSettings.line */
   var line: js.UndefOr[js.Any] = js.undefined
-  /** Defines common settings for all range area series. */
+  /** @name dxChart.Options.commonSeriesSettings.rangearea */
   var rangearea: js.UndefOr[js.Any] = js.undefined
-  /** Defines common settings for all range bar series. */
+  /** @name dxChart.Options.commonSeriesSettings.rangebar */
   var rangebar: js.UndefOr[js.Any] = js.undefined
-  /** Defines common settings for all scatter series. */
+  /** @name dxChart.Options.commonSeriesSettings.scatter */
   var scatter: js.UndefOr[js.Any] = js.undefined
-  /** Defines common settings for all spline series. */
+  /** @name dxChart.Options.commonSeriesSettings.spline */
   var spline: js.UndefOr[js.Any] = js.undefined
-  /** Defines common settings for all spline area series. */
+  /** @name dxChart.Options.commonSeriesSettings.splinearea */
   var splinearea: js.UndefOr[js.Any] = js.undefined
-  /** Defines common settings for all stacked area series. */
+  /** @name dxChart.Options.commonSeriesSettings.stackedarea */
   var stackedarea: js.UndefOr[js.Any] = js.undefined
-  /** Defines common settings for all stacked bar series. */
+  /** @name dxChart.Options.commonSeriesSettings.stackedbar */
   var stackedbar: js.UndefOr[js.Any] = js.undefined
-  /** Defines common settings for all stacked line series. */
+  /** @name dxChart.Options.commonSeriesSettings.stackedline */
   var stackedline: js.UndefOr[js.Any] = js.undefined
-  /** Defines common settings for all stacked spline series. */
+  /** @name dxChart.Options.commonSeriesSettings.stackedspline */
   var stackedspline: js.UndefOr[js.Any] = js.undefined
-  /** Defines common settings for all stacked spline area series. */
+  /** @name dxChart.Options.commonSeriesSettings.stackedsplinearea */
   var stackedsplinearea: js.UndefOr[js.Any] = js.undefined
-  /** Defines common settings for all step area series. */
+  /** @name dxChart.Options.commonSeriesSettings.steparea */
   var steparea: js.UndefOr[js.Any] = js.undefined
-  /** Defines common settings for all step line series. */
+  /** @name dxChart.Options.commonSeriesSettings.stepline */
   var stepline: js.UndefOr[js.Any] = js.undefined
-  /** Defines common settings for all stock series. */
+  /** @name dxChart.Options.commonSeriesSettings.stock */
   var stock: js.UndefOr[js.Any] = js.undefined
-  /** Specifies the type of the series. */
+  /** @name dxChart.Options.commonSeriesSettings.type */
   var `type`: js.UndefOr[
     area | bar | bubble | candlestick | fullstackedarea | fullstackedbar | fullstackedline | fullstackedspline | fullstackedsplinearea | line | rangearea | rangebar_ | scatter | spline | splinearea | stackedarea | stackedbar | stackedline | stackedspline | stackedsplinearea | steparea | stepline | stock
   ] = js.undefined

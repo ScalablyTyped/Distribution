@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait dxTileView extends CollectionWidget {
-  /** Gets the current scroll position. */
+  /** @name dxTileView.scrollPosition() */
   def scrollPosition(): Double = js.native
 }
 

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@carbon/pictograms-react", "UploadAlt")
 @js.native
-object UploadAlt extends TopLevel[CarbonPictogram]
+object UploadAlt extends TopLevel[CarbonPictogramType]
 

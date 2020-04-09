@@ -6,20 +6,21 @@ import scala.scalajs.js.annotation._
 
 trait PhoneNumber extends js.Object {
   /**
-    * The read-only canonicalized [ITU-T E.164](https://law.resource.org/pub/us/cfr/ibr/004/itu-t.E.164.1.2008.pdf)
+    * Output only. The canonicalized [ITU-T
+    * E.164](https://law.resource.org/pub/us/cfr/ibr/004/itu-t.E.164.1.2008.pdf)
     * form of the phone number.
     */
   var canonicalForm: js.UndefOr[String] = js.undefined
   /**
-    * The read-only type of the phone number translated and formatted in the
+    * Output only. The type of the phone number translated and formatted in the
     * viewer's account locale or the `Accept-Language` HTTP header locale.
     */
   var formattedType: js.UndefOr[String] = js.undefined
   /** Metadata about the phone number. */
   var metadata: js.UndefOr[FieldMetadata] = js.undefined
   /**
-    * The type of the phone number. The type can be custom or predefined.
-    * Possible values include, but are not limited to, the following:
+    * The type of the phone number. The type can be custom or one of these
+    * predefined values:
     *
     * &#42; `home`
     * &#42; `work`

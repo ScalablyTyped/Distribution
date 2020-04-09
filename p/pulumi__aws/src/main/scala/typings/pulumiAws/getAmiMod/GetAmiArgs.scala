@@ -36,6 +36,11 @@ trait GetAmiArgs extends js.Object {
     * List of AMI owners to limit search. At least 1 value must be specified. Valid values: an AWS account ID, `self` (the current account), or an AWS owner alias (e.g. `amazon`, `aws-marketplace`, `microsoft`).
     */
   val owners: js.Array[String] = js.native
+  /**
+    * Any tags assigned to the image.
+    * * `tags.#.key` - The key name of the tag.
+    * * `tags.#.value` - The value of the tag.
+    */
   val tags: js.UndefOr[StringDictionary[js.Any]] = js.native
 }
 

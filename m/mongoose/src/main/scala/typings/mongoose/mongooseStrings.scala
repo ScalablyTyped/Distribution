@@ -69,6 +69,9 @@ object mongooseStrings {
   sealed trait count extends js.Object
   
   @js.native
+  sealed trait default extends js.Object
+  
+  @js.native
   sealed trait discriminatorKey extends js.Object
   
   @js.native
@@ -168,6 +171,9 @@ object mongooseStrings {
   sealed trait update extends js.Object
   
   @js.native
+  sealed trait updateLookup extends js.Object
+  
+  @js.native
   sealed trait updateMany extends js.Object
   
   @js.native
@@ -234,6 +240,8 @@ object mongooseStrings {
   @scala.inline
   def count: count = "count".asInstanceOf[count]
   @scala.inline
+  def default: default = "default".asInstanceOf[default]
+  @scala.inline
   def discriminatorKey: discriminatorKey = "discriminatorKey".asInstanceOf[discriminatorKey]
   @scala.inline
   def emitIndexErrors: emitIndexErrors = "emitIndexErrors".asInstanceOf[emitIndexErrors]
@@ -299,6 +307,8 @@ object mongooseStrings {
   def typePojoToMixed: typePojoToMixed = "typePojoToMixed".asInstanceOf[typePojoToMixed]
   @scala.inline
   def update: update = "update".asInstanceOf[update]
+  @scala.inline
+  def updateLookup: updateLookup = "updateLookup".asInstanceOf[updateLookup]
   @scala.inline
   def updateMany: updateMany = "updateMany".asInstanceOf[updateMany]
   @scala.inline

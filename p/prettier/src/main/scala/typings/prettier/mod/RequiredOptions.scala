@@ -24,14 +24,17 @@ trait RequiredOptions
   extends typings.prettier.mod.doc.printer.Options {
   /**
     * Include parentheses around a sole arrow function parameter.
+    * @default 'always'
     */
   var arrowParens: avoid | always
   /**
     * Print spaces between brackets in object literals.
+    * @default true
     */
   var bracketSpacing: Boolean
   /**
     * Which end of line characters to apply.
+    * @default 'lf'
     */
   var endOfLine: auto | lf | crlf | cr
   /**
@@ -40,6 +43,7 @@ trait RequiredOptions
   var filepath: String
   /**
     * How to handle whitespaces in HTML.
+    * @default 'css'
     */
   var htmlWhitespaceSensitivity: css | strict | ignore
   /**
@@ -47,14 +51,17 @@ trait RequiredOptions
     * the file has been formatted with prettier. This works well when used in tandem with
     * the --require-pragma option. If there is already a docblock at the top of
     * the file then this option will add a newline to it with the @format marker.
+    * @default false
     */
   var insertPragma: Boolean
   /**
     * Put the `>` of a multi-line JSX element at the end of the last line instead of being alone on the next line.
+    * @default false
     */
   var jsxBracketSameLine: Boolean
   /**
     * Use single quotes in JSX.
+    * @default false
     */
   var jsxSingleQuote: Boolean
   /**
@@ -68,39 +75,48 @@ trait RequiredOptions
   /**
     * By default, Prettier will wrap markdown text as-is since some services use a linebreak-sensitive renderer.
     * In some cases you may want to rely on editor/viewer soft wrapping instead, so this option allows you to opt out.
+    * @default 'preserve'
     */
-  var proseWrap: Boolean | always | never | preserve
+  var proseWrap: always | never | preserve
   /**
     * Change when properties in objects are quoted.
+    * @default 'as-needed'
     */
   var quoteProps: `as-needed` | consistent | preserve
   /**
     * Format only a segment of a file.
+    * @default Infinity
     */
   var rangeEnd: Double
   /**
     * Format only a segment of a file.
+    * @default 0
     */
   var rangeStart: Double
   /**
     * Prettier can restrict itself to only format files that contain a special comment, called a pragma, at the top of the file.
     * This is very useful when gradually transitioning large, unformatted codebases to prettier.
+    * @default false
     */
   var requirePragma: Boolean
   /**
     * Print semicolons at the ends of statements.
+    * @default true
     */
   var semi: Boolean
   /**
     * Use single quotes instead of double quotes.
+    * @default false
     */
   var singleQuote: Boolean
   /**
     * Print trailing commas wherever possible.
+    * @default 'es5'
     */
   var trailingComma: none | es5 | all
   /**
     * Whether or not to indent the code inside <script> and <style> tags in Vue files.
+    * @default false
     */
   var vueIndentScriptAndStyle: Boolean
 }
@@ -119,7 +135,7 @@ object RequiredOptions {
     parser: BuiltInParserName | CustomParser,
     plugins: js.Array[String | Plugin],
     printWidth: Double,
-    proseWrap: Boolean | always | never | preserve,
+    proseWrap: always | never | preserve,
     quoteProps: `as-needed` | consistent | preserve,
     rangeEnd: Double,
     rangeStart: Double,

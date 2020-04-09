@@ -136,8 +136,7 @@ trait EphemeralContainer extends js.Object {
     */
   val tty: Boolean
   /**
-    * volumeDevices is the list of block devices to be used by the container. This is a beta
-    * feature.
+    * volumeDevices is the list of block devices to be used by the container.
     */
   val volumeDevices: js.Array[VolumeDevice]
   /**

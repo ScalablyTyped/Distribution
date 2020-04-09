@@ -2,7 +2,7 @@ package typings.ionicCore
 
 import typings.ionicCore.componentsMod._Global_.HTMLIonLabelElement
 import typings.ionicCore.mod.Side
-import typings.ionicCore.stencilCoreMod.EventEmitter
+import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
 import typings.std.HTMLElement
 import typings.std.UIEvent
 import scala.scalajs.js

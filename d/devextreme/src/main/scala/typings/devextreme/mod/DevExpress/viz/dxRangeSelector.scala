@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait dxRangeSelector extends BaseWidget {
-  /** Gets the DataSource instance. */
+  /** @name DataHelperMixin.getDataSource() */
   def getDataSource(): DataSource = js.native
-  /** Gets the currently selected range. */
+  /** @name dxRangeSelector.getValue() */
   def getValue(): js.Array[Double | String | Date] = js.native
-  /** Redraws the widget. */
+  /** @name dxRangeSelector.render(skipChartAnimation) */
   def render(skipChartAnimation: Boolean): Unit = js.native
-  /** Sets the selected range. */
+  /** @name dxRangeSelector.setValue(value) */
   def setValue(value: js.Array[Double | String | Date]): Unit = js.native
   def setValue(value: VizRange): Unit = js.native
 }

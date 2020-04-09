@@ -2,6 +2,7 @@ package typings.cassandraDriver.mod
 
 import typings.cassandraDriver.typesMod.types.ResultSet
 import typings.node.Buffer
+import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,6 +18,11 @@ object datastax extends js.Object {
       def this(rs: ResultSet) = this()
     }
     
+    def asDouble(value: Double): js.Object = js.native
+    def asFloat(value: Double): js.Object = js.native
+    def asInt(value: Double): js.Object = js.native
+    def asTimestamp(value: Date): js.Object = js.native
+    def asUdt(value: js.Object): js.Object = js.native
   }
   
   @js.native

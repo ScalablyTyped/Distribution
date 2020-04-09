@@ -11,15 +11,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxValidatorOptions extends DOMComponentOptions[dxValidator] {
-  /** An object that specifies what and when to validate, and how to apply the validation result. */
+  /** @name dxValidator.Options.adapter */
   var adapter: js.UndefOr[AnonApplyValidationResults] = js.undefined
-  /** Specifies the editor name to be used in the validation default messages. */
+  /** @name dxValidator.Options.name */
   var name: js.UndefOr[String] = js.undefined
-  /** A function that is executed after a value is validated. */
+  /** @name dxValidator.Options.onValidated */
   var onValidated: js.UndefOr[js.Function1[/* validatedInfo */ AnonBrokenRule, _]] = js.undefined
-  /** Specifies the validation group the editor will be related to. */
+  /** @name dxValidator.Options.validationGroup */
   var validationGroup: js.UndefOr[String] = js.undefined
-  /** An array of validation rules to be checked for the editor with which the dxValidator object is associated. */
+  /** @name dxValidator.Options.validationRules */
   var validationRules: js.UndefOr[
     js.Array[
       RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule

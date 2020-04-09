@@ -28,7 +28,6 @@ import typings.ionicCore.ionicCoreStrings.ionViewWillUnload
 import typings.ionicCore.ionicCoreStrings.ios
 import typings.ionicCore.ionicCoreStrings.ipad
 import typings.ionicCore.ionicCoreStrings.iphone
-import typings.ionicCore.ionicCoreStrings.md
 import typings.ionicCore.ionicCoreStrings.mobile
 import typings.ionicCore.ionicCoreStrings.mobileweb
 import typings.ionicCore.ionicCoreStrings.phablet
@@ -37,12 +36,15 @@ import typings.ionicCore.ionicCoreStrings.tablet
 import typings.ionicCore.loadingInterfaceMod.LoadingOptions
 import typings.ionicCore.menuInterfaceMod.MenuI
 import typings.ionicCore.mod.ComponentRef
+import typings.ionicCore.mod.Mode
 import typings.ionicCore.modalInterfaceMod.ModalOptions
 import typings.ionicCore.pickerInterfaceMod.PickerOptions
 import typings.ionicCore.platformMod.IsPlatformSignature
 import typings.ionicCore.popoverInterfaceMod.PopoverOptions
 import typings.ionicCore.toastInterfaceMod.ToastOptions
+import typings.ionicCore.transitionMod.TransitionOptions
 import typings.ionicCore.utilsConfigMod.IonicConfig
+import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -59,7 +61,7 @@ object typesMod extends js.Object {
   def createAnimation(): Animation = js.native
   def createAnimation(animationId: String): Animation = js.native
   def createGesture(config: GestureConfig): Gesture = js.native
-  def getMode(): ios | md = js.native
+  def getMode(): Mode = js.native
   def getPlatforms(win: js.Any): js.Array[
     ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
   ] = js.native
@@ -70,6 +72,8 @@ object typesMod extends js.Object {
     p3: js.Array[Double],
     progression: Double
   ): js.Array[Double] = js.native
+  def iosTransitionAnimation(navEl: HTMLElement, opts: TransitionOptions): Animation = js.native
+  def mdTransitionAnimation(_underscore: HTMLElement, opts: TransitionOptions): Animation = js.native
   def setupConfig(config: IonicConfig): js.Any = js.native
   @js.native
   object actionSheetController extends js.Object {

@@ -12,6 +12,7 @@ import typings.react.mod.FormEvent
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.ProgressHTMLAttributes
 import typings.react.mod.ReactNode
@@ -282,7 +283,7 @@ object NativeProgressProps {
     onProgress: SyntheticEvent[HTMLProgressElement, Event_] => Unit = null,
     onRateChange: SyntheticEvent[HTMLProgressElement, Event_] => Unit = null,
     onReset: FormEvent[HTMLProgressElement] => Unit = null,
-    onScroll: UIEvent[HTMLProgressElement] => Unit = null,
+    onScroll: UIEvent[HTMLProgressElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[HTMLProgressElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[HTMLProgressElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[HTMLProgressElement, Event_] => Unit = null,

@@ -7,9 +7,16 @@ import scala.scalajs.js.annotation._
 trait ListConnectionsResponse extends js.Object {
   /** The list of people that the requestor is connected to. */
   var connections: js.UndefOr[js.Array[Person]] = js.undefined
-  /** The token that can be used to retrieve the next page of results. */
+  /**
+    * A token, which can be sent as `page_token` to retrieve the next page.
+    * If this field is omitted, there are no subsequent pages.
+    */
   var nextPageToken: js.UndefOr[String] = js.undefined
-  /** The token that can be used to retrieve changes since the last request. */
+  /**
+    * A token, which can be sent as `sync_token` to retrieve changes since the
+    * last request. Request must set `request_sync_token` to return the sync
+    * token.
+    */
   var nextSyncToken: js.UndefOr[String] = js.undefined
   /** The total number of items in the list without pagination. */
   var totalItems: js.UndefOr[Double] = js.undefined

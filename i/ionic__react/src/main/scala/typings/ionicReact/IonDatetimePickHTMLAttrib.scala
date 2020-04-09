@@ -71,6 +71,7 @@ import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
@@ -702,7 +703,7 @@ object IonDatetimePickHTMLAttrib {
     onProgress: SyntheticEvent[HTMLIonDatetimeElement, Event_] => Unit = null,
     onRateChange: SyntheticEvent[HTMLIonDatetimeElement, Event_] => Unit = null,
     onReset: FormEvent[HTMLIonDatetimeElement] => Unit = null,
-    onScroll: UIEvent[HTMLIonDatetimeElement] => Unit = null,
+    onScroll: UIEvent[HTMLIonDatetimeElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[HTMLIonDatetimeElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[HTMLIonDatetimeElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[HTMLIonDatetimeElement, Event_] => Unit = null,

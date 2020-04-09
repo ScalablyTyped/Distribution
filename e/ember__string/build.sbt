@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "ember__string"
-version := "3.0-dt-20191003Z-7b0daf"
+version := "3.0-dt-20200328Z-8c74dc"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "ember__template" % "3.0-dt-20191126Z-e0873d",
+  "org.scalablytyped" %%% "ember__template" % "3.0-dt-20200328Z-e0873d",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")

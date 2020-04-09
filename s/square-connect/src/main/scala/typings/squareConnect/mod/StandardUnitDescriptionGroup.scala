@@ -12,7 +12,7 @@ class StandardUnitDescriptionGroup () extends js.Object {
     */
   var language_code: js.UndefOr[String] = js.native
   /**
-    * List of measurement units in this description group.
+    * List of standard (non-custom) measurement units in this description group.
     */
   var standard_unit_descriptions: js.UndefOr[js.Array[StandardUnitDescription]] = js.native
 }

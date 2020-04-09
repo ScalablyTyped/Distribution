@@ -29,6 +29,7 @@ trait Auth[T] extends js.Object {
   ): js.Promise[scala.Nothing] = js.native
   def logout(): js.Promise[scala.Nothing] = js.native
   def onError(handler: js.Function3[/* error */ Error, /* name */ String, /* endpoint */ js.Any, Unit]): js.Any = js.native
+  def onRedirect(listener: js.Function0[Unit]): Unit = js.native
   def redirect(name: String): js.Any = js.native
   def registerStrategy(strategyName: String, strategy: js.Object): Unit = js.native
   def reset(): js.Promise[scala.Nothing] = js.native

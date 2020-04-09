@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxChartCommonPaneSettings extends js.Object {
-  /** Specifies the color of the pane's background. */
+  /** @name dxChart.Options.commonPaneSettings.backgroundColor */
   var backgroundColor: js.UndefOr[String] = js.undefined
-  /** Configures the pane border. */
+  /** @name dxChart.Options.commonPaneSettings.border */
   var border: js.UndefOr[AnonLeft] = js.undefined
 }
 

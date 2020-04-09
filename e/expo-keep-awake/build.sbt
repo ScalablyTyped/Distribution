@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "expo-keep-awake"
-version := "8.0.0-d218eb"
+version := "8.1.0-81d80c"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

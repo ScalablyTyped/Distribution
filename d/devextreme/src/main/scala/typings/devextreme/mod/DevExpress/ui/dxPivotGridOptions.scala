@@ -33,63 +33,63 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxPivotGridOptions extends WidgetOptions[dxPivotGrid] {
-  /** Allows an end-user to expand/collapse all header items within a header level. */
+  /** @name dxPivotGrid.Options.allowExpandAll */
   var allowExpandAll: js.UndefOr[Boolean] = js.undefined
-  /** Allows a user to filter fields by selecting or deselecting values in the popup menu. */
+  /** @name dxPivotGrid.Options.allowFiltering */
   var allowFiltering: js.UndefOr[Boolean] = js.undefined
-  /** Allows an end-user to change sorting options. */
+  /** @name dxPivotGrid.Options.allowSorting */
   var allowSorting: js.UndefOr[Boolean] = js.undefined
-  /** Allows an end-user to sort columns by summary values. */
+  /** @name dxPivotGrid.Options.allowSortingBySummary */
   var allowSortingBySummary: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the area to which data field headers must belong. */
+  /** @name dxPivotGrid.Options.dataFieldArea */
   var dataFieldArea: js.UndefOr[column | row] = js.undefined
-  /** Binds the widget to data. */
+  /** @name dxPivotGrid.Options.dataSource */
   var dataSource: js.UndefOr[js.Array[_] | PivotGridDataSource | PivotGridDataSourceOptions] = js.undefined
-  /** Configures client-side exporting. */
+  /** @name dxPivotGrid.Options.export */
   var export: js.UndefOr[AnonIgnoreExcelErrors] = js.undefined
-  /** The Field Chooser configuration options. */
+  /** @name dxPivotGrid.Options.fieldChooser */
   var fieldChooser: js.UndefOr[AnonApplyChangesMode] = js.undefined
-  /** Configures the field panel. */
+  /** @name dxPivotGrid.Options.fieldPanel */
   var fieldPanel: js.UndefOr[AnonAllowFieldDragging] = js.undefined
-  /** Configures the header filter feature. */
+  /** @name dxPivotGrid.Options.headerFilter */
   var headerFilter: js.UndefOr[AnonSearchTimeout] = js.undefined
-  /** Specifies whether or not to hide rows and columns with no data. */
+  /** @name dxPivotGrid.Options.hideEmptySummaryCells */
   var hideEmptySummaryCells: js.UndefOr[Boolean] = js.undefined
-  /** Specifies options configuring the load panel. */
+  /** @name dxPivotGrid.Options.loadPanel */
   var loadPanel: js.UndefOr[AnonShowIndicator] = js.undefined
-  /** A function that is executed when a pivot grid cell is clicked or tapped. */
+  /** @name dxPivotGrid.Options.onCellClick */
   var onCellClick: js.UndefOr[js.Function1[/* e */ AnonArea, _]] = js.undefined
-  /** A function that is executed after a pivot grid cell is created. */
+  /** @name dxPivotGrid.Options.onCellPrepared */
   var onCellPrepared: js.UndefOr[js.Function1[/* e */ AnonCell, _]] = js.undefined
-  /** A function that is executed before the context menu is rendered. */
+  /** @name dxPivotGrid.Options.onContextMenuPreparing */
   var onContextMenuPreparing: js.UndefOr[js.Function1[/* e */ AnonColumnFields, _]] = js.undefined
-  /** A function that is executed after data is exported. */
+  /** @name dxPivotGrid.Options.onExported */
   var onExported: js.UndefOr[js.Function1[/* e */ AnonComponentDxPivotGrid, _]] = js.undefined
-  /** A function that is executed before data is exported. */
+  /** @name dxPivotGrid.Options.onExporting */
   var onExporting: js.UndefOr[js.Function1[/* e */ AnonFileNameModel, _]] = js.undefined
-  /** A function that is executed before a file with exported data is saved to the user's local storage. */
+  /** @name dxPivotGrid.Options.onFileSaving */
   var onFileSaving: js.UndefOr[js.Function1[/* e */ AnonFileNameFormat, _]] = js.undefined
-  /** Specifies the layout of items in the row header. */
+  /** @name dxPivotGrid.Options.rowHeaderLayout */
   var rowHeaderLayout: js.UndefOr[standard | tree] = js.undefined
-  /** A configuration object specifying scrolling options. */
+  /** @name dxPivotGrid.Options.scrolling */
   var scrolling: js.UndefOr[AnonUseNative] = js.undefined
-  /** Specifies whether the outer borders of the grid are visible or not. */
+  /** @name dxPivotGrid.Options.showBorders */
   var showBorders: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether to display the Grand Total column. */
+  /** @name dxPivotGrid.Options.showColumnGrandTotals */
   var showColumnGrandTotals: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether to display the Total columns. */
+  /** @name dxPivotGrid.Options.showColumnTotals */
   var showColumnTotals: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether to display the Grand Total row. */
+  /** @name dxPivotGrid.Options.showRowGrandTotals */
   var showRowGrandTotals: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether to display the Total rows. Applies only if rowHeaderLayout is "standard". */
+  /** @name dxPivotGrid.Options.showRowTotals */
   var showRowTotals: js.UndefOr[Boolean] = js.undefined
-  /** Specifies where to show the total rows or columns. Applies only if rowHeaderLayout is "standard". */
+  /** @name dxPivotGrid.Options.showTotalsPrior */
   var showTotalsPrior: js.UndefOr[both | columns | none | rows] = js.undefined
-  /** A configuration object specifying options related to state storing. */
+  /** @name dxPivotGrid.Options.stateStoring */
   var stateStoring: js.UndefOr[AnonCustomLoad] = js.undefined
-  /** Strings that can be changed or localized in the PivotGrid widget. */
+  /** @name dxPivotGrid.Options.texts */
   var texts: js.UndefOr[AnonCollapseAll] = js.undefined
-  /** Specifies whether long text in header items should be wrapped. */
+  /** @name dxPivotGrid.Options.wordWrapEnabled */
   var wordWrapEnabled: js.UndefOr[Boolean] = js.undefined
 }
 

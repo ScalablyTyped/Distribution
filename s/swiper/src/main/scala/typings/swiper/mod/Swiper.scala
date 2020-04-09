@@ -391,6 +391,12 @@ trait Swiper extends js.Object {
   def slideToLoop(index: Double, speed: Double): Unit = js.native
   def slideToLoop(index: Double, speed: Double, runCallbacks: Boolean): Unit = js.native
   /**
+    * Animate custom css3 transform's translate value for swiper wrapper
+    */
+  def translateTo(translate: Double, speed: Double): js.Any = js.native
+  def translateTo(translate: Double, speed: Double, runCallbacks: Boolean): js.Any = js.native
+  def translateTo(translate: Double, speed: Double, runCallbacks: Boolean, translateBounds: Boolean): js.Any = js.native
+  /**
     * Unset grab cursor
     */
   def unsetGrabCursor(): Unit = js.native

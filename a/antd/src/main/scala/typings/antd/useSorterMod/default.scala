@@ -10,7 +10,9 @@ import scala.scalajs.js.annotation._
 @JSImport("antd/lib/table/hooks/useSorter", JSImport.Default)
 @js.native
 object default extends js.Object {
-  def apply[RecordType](hasPrefixClsColumnsChildrenOnSorterChangeSortDirections: SorterConfig[RecordType]): js.Tuple4[
+  def apply[RecordType](
+    hasPrefixClsColumnsChildrenOnSorterChangeSortDirectionsTableLocaleShowSorterTooltip: SorterConfig[RecordType]
+  ): js.Tuple4[
     TransformColumns[RecordType], 
     js.Array[SortState[RecordType]], 
     ColumnTitleProps[RecordType], 

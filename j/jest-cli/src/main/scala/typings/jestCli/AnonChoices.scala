@@ -9,18 +9,13 @@ import scala.scalajs.js.annotation._
 
 trait AnonChoices extends js.Object {
   val choices: js.Tuple2[babel, v8]
-  val default: babel
   val description: `Select between Babel and V8 to collect coverage`
 }
 
 object AnonChoices {
   @scala.inline
-  def apply(
-    choices: js.Tuple2[babel, v8],
-    default: babel,
-    description: `Select between Babel and V8 to collect coverage`
-  ): AnonChoices = {
-    val __obj = js.Dynamic.literal(choices = choices.asInstanceOf[js.Any], default = default.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any])
+  def apply(choices: js.Tuple2[babel, v8], description: `Select between Babel and V8 to collect coverage`): AnonChoices = {
+    val __obj = js.Dynamic.literal(choices = choices.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AnonChoices]
   }

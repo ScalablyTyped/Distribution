@@ -14,18 +14,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Describes settings supported by a series of the bar type. */
+/** @name dxChartSeriesTypes.BarSeries */
 trait dxChartSeriesTypesBarSeries extends dxChartSeriesTypesCommonSeries {
-  /** Configures data aggregation for the series. */
+  /** @name dxChartSeriesTypes.BarSeries.aggregation */
   @JSName("aggregation")
   var aggregation_dxChartSeriesTypesBarSeries: js.UndefOr[dxChartSeriesTypesBarSeriesAggregation] = js.undefined
-  /** Specifies series elements to be highlighted when a user points to a series. */
+  /** @name dxChartSeriesTypes.BarSeries.hoverMode */
   @JSName("hoverMode")
   var hoverMode_dxChartSeriesTypesBarSeries: js.UndefOr[onlyPoint | allSeriesPoints | allArgumentPoints | none] = js.undefined
-  /** Configures point labels. */
+  /** @name dxChartSeriesTypes.BarSeries.label */
   @JSName("label")
   var label_dxChartSeriesTypesBarSeries: js.UndefOr[dxChartSeriesTypesBarSeriesLabel] = js.undefined
-  /** Specifies series elements to be highlighted when a user selects a bar. */
+  /** @name dxChartSeriesTypes.BarSeries.selectionMode */
   @JSName("selectionMode")
   var selectionMode_dxChartSeriesTypesBarSeries: js.UndefOr[onlyPoint | allSeriesPoints | allArgumentPoints | none] = js.undefined
 }

@@ -37,6 +37,9 @@ trait RestApiArgs extends js.Object {
     * The name of the REST API
     */
   val name: js.UndefOr[Input[String]] = js.native
+  /**
+    * JSON formatted policy document that controls access to the API Gateway.
+    */
   val policy: js.UndefOr[Input[String]] = js.native
   /**
     * Key-value mapping of resource tags

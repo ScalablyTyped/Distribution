@@ -18,11 +18,21 @@ class CatalogDiscount () extends js.Object {
     */
   var discount_type: js.UndefOr[DiscountType] = js.native
   /**
-    * The color of the discount's display label in the Square Point of Sale app. This must be a valid hex color code.
+    * The color of the discount display label in the Square Point of Sale app. This must be a valid hex color code.
     */
   var label_color: js.UndefOr[String] = js.native
   /**
-    * The discount's name. Searchable. This field has max length of 255 Unicode code points.
+    * Indicates whether this discount should reduce the price used to calculate tax.
+    * Most discounts should use `MODIFY_TAX_BASIS`. However, in some circumstances taxes must be calculated based on
+    * an item's price, ignoring a particular discount. For example, in many US jurisdictions, a manufacturer coupon or
+    * instant rebate reduces the price a customer pays but does not reduce the sale price used to calculate how much
+    * sales tax is due. In this case, the discount representing that manufacturer coupon should have
+    * `DO_NOT_MODIFY_TAX_BASIS` for this field. If you are unsure whether you need to use this field, consult your
+    * tax professional. See [CatalogDiscountModifyTaxBasis](#type-catalogdiscountmodifytaxbasis) for possible values.
+    */
+  var modify_tax_basis: js.UndefOr[String] = js.native
+  /**
+    * The discount name. Searchable. This field has max length of 255 Unicode code points.
     */
   var name: js.UndefOr[String] = js.native
   /**

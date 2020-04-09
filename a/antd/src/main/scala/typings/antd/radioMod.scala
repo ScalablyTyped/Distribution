@@ -3,6 +3,7 @@ package typings.antd
 import typings.antd.radioButtonMod.RadioButtonProps
 import typings.antd.radioInterfaceMod.RadioGroupContextProps
 import typings.antd.radioInterfaceMod.RadioGroupProps
+import typings.antd.radioInterfaceMod.RadioGroupState
 import typings.react.mod.Context
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
@@ -28,7 +29,7 @@ object radioMod extends js.Object {
   @js.native
   object Group extends js.Object {
     var defaultProps: AnonButtonStyle = js.native
-    def getDerivedStateFromProps(nextProps: RadioGroupProps): AnonValueAny | Null = js.native
+    def getDerivedStateFromProps(nextProps: RadioGroupProps, prevState: RadioGroupState): PartialRadioGroupState = js.native
   }
   
   /* static members */

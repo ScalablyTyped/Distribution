@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait DOMComponent extends Component {
-  /** Disposes of all the resources allocated to the widget instance. */
+  /** @name DOMComponent.dispose() */
   def dispose(): Unit = js.native
-  /** Gets the root widget element. */
+  /** @name DOMComponent.element() */
   def element(): dxElement = js.native
 }
 

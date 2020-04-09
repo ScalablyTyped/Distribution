@@ -11,19 +11,29 @@ package object gameliftMod {
     - java.lang.String
   */
   type AcceptanceType = typings.awsSdk.gameliftMod._AcceptanceType | java.lang.String
+  type AliasArn = java.lang.String
   type AliasId = java.lang.String
+  type AliasIdOrArn = java.lang.String
   type AliasList = js.Array[typings.awsSdk.gameliftMod.Alias]
   type AmazonResourceName = java.lang.String
   type ArnStringModel = java.lang.String
+  type AutoScalingGroupArn = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.AUTOMATIC
     - typings.awsSdk.awsSdkStrings.MANUAL
     - java.lang.String
   */
   type BackfillMode = typings.awsSdk.gameliftMod._BackfillMode | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.SPOT_ONLY
+    - typings.awsSdk.awsSdkStrings.SPOT_PREFERRED
+    - java.lang.String
+  */
+  type BalancingStrategy = typings.awsSdk.gameliftMod._BalancingStrategy | java.lang.String
   type BooleanModel = scala.Boolean
   type BuildArn = java.lang.String
   type BuildId = java.lang.String
+  type BuildIdOrArn = java.lang.String
   type BuildList = js.Array[typings.awsSdk.gameliftMod.Build]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.INITIALIZED
@@ -155,10 +165,13 @@ package object gameliftMod {
   type EventList = js.Array[typings.awsSdk.gameliftMod.Event]
   type FleetAction = typings.awsSdk.awsSdkStrings.AUTO_SCALING | java.lang.String
   type FleetActionList = js.Array[typings.awsSdk.gameliftMod.FleetAction]
+  type FleetArn = java.lang.String
   type FleetAttributesList = js.Array[typings.awsSdk.gameliftMod.FleetAttributes]
   type FleetCapacityList = js.Array[typings.awsSdk.gameliftMod.FleetCapacity]
   type FleetId = java.lang.String
   type FleetIdList = js.Array[typings.awsSdk.gameliftMod.FleetId]
+  type FleetIdOrArn = java.lang.String
+  type FleetIdOrArnList = js.Array[typings.awsSdk.gameliftMod.FleetIdOrArn]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.NEW
     - typings.awsSdk.awsSdkStrings.DOWNLOADING
@@ -184,6 +197,94 @@ package object gameliftMod {
   type GamePropertyKey = java.lang.String
   type GamePropertyList = js.Array[typings.awsSdk.gameliftMod.GameProperty]
   type GamePropertyValue = java.lang.String
+  type GameServerClaimStatus = typings.awsSdk.awsSdkStrings.CLAIMED | java.lang.String
+  type GameServerConnectionInfo = java.lang.String
+  type GameServerData = java.lang.String
+  type GameServerGroupAction = typings.awsSdk.awsSdkStrings.REPLACE_INSTANCE_TYPES | java.lang.String
+  type GameServerGroupActions = js.Array[typings.awsSdk.gameliftMod.GameServerGroupAction]
+  type GameServerGroupArn = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.SAFE_DELETE
+    - typings.awsSdk.awsSdkStrings.FORCE_DELETE
+    - typings.awsSdk.awsSdkStrings.RETAIN
+    - java.lang.String
+  */
+  type GameServerGroupDeleteOption = typings.awsSdk.gameliftMod._GameServerGroupDeleteOption | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.c4Dotlarge
+    - typings.awsSdk.awsSdkStrings.c4Dotxlarge
+    - typings.awsSdk.awsSdkStrings.c4Dot2xlarge
+    - typings.awsSdk.awsSdkStrings.c4Dot4xlarge
+    - typings.awsSdk.awsSdkStrings.c4Dot8xlarge
+    - typings.awsSdk.awsSdkStrings.c5Dotlarge
+    - typings.awsSdk.awsSdkStrings.c5Dotxlarge
+    - typings.awsSdk.awsSdkStrings.c5Dot2xlarge
+    - typings.awsSdk.awsSdkStrings.c5Dot4xlarge
+    - typings.awsSdk.awsSdkStrings.c5Dot9xlarge
+    - typings.awsSdk.awsSdkStrings.c5Dot12xlarge
+    - typings.awsSdk.awsSdkStrings.c5Dot18xlarge
+    - typings.awsSdk.awsSdkStrings.c5Dot24xlarge
+    - typings.awsSdk.awsSdkStrings.r4Dotlarge
+    - typings.awsSdk.awsSdkStrings.r4Dotxlarge
+    - typings.awsSdk.awsSdkStrings.r4Dot2xlarge
+    - typings.awsSdk.awsSdkStrings.r4Dot4xlarge
+    - typings.awsSdk.awsSdkStrings.r4Dot8xlarge
+    - typings.awsSdk.awsSdkStrings.r4Dot16xlarge
+    - typings.awsSdk.awsSdkStrings.r5Dotlarge
+    - typings.awsSdk.awsSdkStrings.r5Dotxlarge
+    - typings.awsSdk.awsSdkStrings.r5Dot2xlarge
+    - typings.awsSdk.awsSdkStrings.r5Dot4xlarge
+    - typings.awsSdk.awsSdkStrings.r5Dot8xlarge
+    - typings.awsSdk.awsSdkStrings.r5Dot12xlarge
+    - typings.awsSdk.awsSdkStrings.r5Dot16xlarge
+    - typings.awsSdk.awsSdkStrings.r5Dot24xlarge
+    - typings.awsSdk.awsSdkStrings.m4Dotlarge
+    - typings.awsSdk.awsSdkStrings.m4Dotxlarge
+    - typings.awsSdk.awsSdkStrings.m4Dot2xlarge
+    - typings.awsSdk.awsSdkStrings.m4Dot4xlarge
+    - typings.awsSdk.awsSdkStrings.m4Dot10xlarge
+    - typings.awsSdk.awsSdkStrings.m5Dotlarge
+    - typings.awsSdk.awsSdkStrings.m5Dotxlarge
+    - typings.awsSdk.awsSdkStrings.m5Dot2xlarge
+    - typings.awsSdk.awsSdkStrings.m5Dot4xlarge
+    - typings.awsSdk.awsSdkStrings.m5Dot8xlarge
+    - typings.awsSdk.awsSdkStrings.m5Dot12xlarge
+    - typings.awsSdk.awsSdkStrings.m5Dot16xlarge
+    - typings.awsSdk.awsSdkStrings.m5Dot24xlarge
+    - java.lang.String
+  */
+  type GameServerGroupInstanceType = typings.awsSdk.gameliftMod._GameServerGroupInstanceType | java.lang.String
+  type GameServerGroupName = java.lang.String
+  type GameServerGroupNameOrArn = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.NEW
+    - typings.awsSdk.awsSdkStrings.ACTIVATING
+    - typings.awsSdk.awsSdkStrings.ACTIVE
+    - typings.awsSdk.awsSdkStrings.DELETE_SCHEDULED
+    - typings.awsSdk.awsSdkStrings.DELETING
+    - typings.awsSdk.awsSdkStrings.DELETED
+    - typings.awsSdk.awsSdkStrings.ERROR
+    - java.lang.String
+  */
+  type GameServerGroupStatus = typings.awsSdk.gameliftMod._GameServerGroupStatus | java.lang.String
+  type GameServerGroups = js.Array[typings.awsSdk.gameliftMod.GameServerGroup]
+  type GameServerHealthCheck = typings.awsSdk.awsSdkStrings.HEALTHY | java.lang.String
+  type GameServerId = java.lang.String
+  type GameServerInstanceId = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.NO_PROTECTION
+    - typings.awsSdk.awsSdkStrings.FULL_PROTECTION
+    - java.lang.String
+  */
+  type GameServerProtectionPolicy = typings.awsSdk.gameliftMod._GameServerProtectionPolicy | java.lang.String
+  type GameServerSortKey = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.AVAILABLE
+    - typings.awsSdk.awsSdkStrings.UTILIZED
+    - java.lang.String
+  */
+  type GameServerUtilizationStatus = typings.awsSdk.gameliftMod._GameServerUtilizationStatus | java.lang.String
+  type GameServers = js.Array[typings.awsSdk.gameliftMod.GameServer]
   type GameSessionActivationTimeoutSeconds = scala.Double
   type GameSessionData = java.lang.String
   type GameSessionDetailList = js.Array[typings.awsSdk.gameliftMod.GameSessionDetail]
@@ -197,10 +298,12 @@ package object gameliftMod {
     - java.lang.String
   */
   type GameSessionPlacementState = typings.awsSdk.gameliftMod._GameSessionPlacementState | java.lang.String
+  type GameSessionQueueArn = java.lang.String
   type GameSessionQueueDestinationList = js.Array[typings.awsSdk.gameliftMod.GameSessionQueueDestination]
   type GameSessionQueueList = js.Array[typings.awsSdk.gameliftMod.GameSessionQueue]
   type GameSessionQueueName = java.lang.String
-  type GameSessionQueueNameList = js.Array[typings.awsSdk.gameliftMod.GameSessionQueueName]
+  type GameSessionQueueNameOrArn = java.lang.String
+  type GameSessionQueueNameOrArnList = js.Array[typings.awsSdk.gameliftMod.GameSessionQueueNameOrArn]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.ACTIVE
     - typings.awsSdk.awsSdkStrings.ACTIVATING
@@ -211,7 +314,9 @@ package object gameliftMod {
   */
   type GameSessionStatus = typings.awsSdk.gameliftMod._GameSessionStatus | java.lang.String
   type GameSessionStatusReason = typings.awsSdk.awsSdkStrings.INTERRUPTED | java.lang.String
+  type IamRoleArn = java.lang.String
   type IdStringModel = java.lang.String
+  type InstanceDefinitions = js.Array[typings.awsSdk.gameliftMod.InstanceDefinition]
   type InstanceId = java.lang.String
   type InstanceList = js.Array[typings.awsSdk.gameliftMod.Instance]
   /* Rewritten from type alias, can be one of: 
@@ -231,6 +336,9 @@ package object gameliftMod {
   */
   type IpProtocol = typings.awsSdk.gameliftMod._IpProtocol | java.lang.String
   type LatencyMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.gameliftMod.PositiveInteger]
+  type LaunchTemplateId = java.lang.String
+  type LaunchTemplateName = java.lang.String
+  type LaunchTemplateVersion = java.lang.String
   type MatchedPlayerSessionList = js.Array[typings.awsSdk.gameliftMod.MatchedPlayerSession]
   type MatchmakerData = java.lang.String
   type MatchmakingAcceptanceTimeoutInteger = scala.Double
@@ -279,6 +387,7 @@ package object gameliftMod {
   type NonBlankAndLengthConstraintString = java.lang.String
   type NonBlankString = java.lang.String
   type NonEmptyString = java.lang.String
+  type NonNegativeDouble = scala.Double
   type NonZeroAndMaxString = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.WINDOWS_2012
@@ -356,9 +465,16 @@ package object gameliftMod {
   type ScalingStatusType = typings.awsSdk.gameliftMod._ScalingStatusType | java.lang.String
   type ScriptArn = java.lang.String
   type ScriptId = java.lang.String
+  type ScriptIdOrArn = java.lang.String
   type ScriptList = js.Array[typings.awsSdk.gameliftMod.Script]
   type ServerProcessList = js.Array[typings.awsSdk.gameliftMod.ServerProcess]
   type SnsArnStringModel = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.ASCENDING
+    - typings.awsSdk.awsSdkStrings.DESCENDING
+    - java.lang.String
+  */
+  type SortOrder = typings.awsSdk.gameliftMod._SortOrder | java.lang.String
   type StringDoubleMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.gameliftMod.DoubleObject]
   type StringList = js.Array[typings.awsSdk.gameliftMod.NonZeroAndMaxString]
   type StringModel = java.lang.String
@@ -369,6 +485,9 @@ package object gameliftMod {
   type Timestamp = typings.std.Date
   type VpcPeeringAuthorizationList = js.Array[typings.awsSdk.gameliftMod.VpcPeeringAuthorization]
   type VpcPeeringConnectionList = js.Array[typings.awsSdk.gameliftMod.VpcPeeringConnection]
+  type VpcSubnet = java.lang.String
+  type VpcSubnets = js.Array[typings.awsSdk.gameliftMod.VpcSubnet]
+  type WeightedCapacity = java.lang.String
   type WholeNumber = scala.Double
   type ZipBlob = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.gameliftMod.Blob | java.lang.String
   /* Rewritten from type alias, can be one of: 

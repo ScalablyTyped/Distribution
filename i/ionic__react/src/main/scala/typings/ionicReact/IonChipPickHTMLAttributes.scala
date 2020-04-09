@@ -70,6 +70,7 @@ import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
@@ -586,7 +587,7 @@ object IonChipPickHTMLAttributes {
     onProgress: SyntheticEvent[HTMLIonChipElement, Event_] => Unit = null,
     onRateChange: SyntheticEvent[HTMLIonChipElement, Event_] => Unit = null,
     onReset: FormEvent[HTMLIonChipElement] => Unit = null,
-    onScroll: UIEvent[HTMLIonChipElement] => Unit = null,
+    onScroll: UIEvent[HTMLIonChipElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[HTMLIonChipElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[HTMLIonChipElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[HTMLIonChipElement, Event_] => Unit = null,

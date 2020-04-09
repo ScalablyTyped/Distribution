@@ -7,17 +7,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxMenuBaseItem extends CollectionWidgetItem {
-  /** Specifies whether a group separator is displayed over the item. */
+  /** @name dxMenuBaseItem.beginGroup */
   var beginGroup: js.UndefOr[Boolean] = js.undefined
-  /** Specifies if a menu is closed when a user clicks the item. */
+  /** @name dxMenuBaseItem.closeMenuOnClick */
   var closeMenuOnClick: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the menu item's icon. */
+  /** @name dxMenuBaseItem.icon */
   var icon: js.UndefOr[String] = js.undefined
-  /** Specifies nested menu items. */
+  /** @name dxMenuBaseItem.items */
   var items: js.UndefOr[js.Array[dxMenuBaseItem]] = js.undefined
-  /** Specifies whether or not a user can select a menu item. */
+  /** @name dxMenuBaseItem.selectable */
   var selectable: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether or not the item is selected. */
+  /** @name dxMenuBaseItem.selected */
   var selected: js.UndefOr[Boolean] = js.undefined
 }
 

@@ -1,6 +1,7 @@
 package typings.mendixmodelsdk.pagesMod.pages
 
 import typings.mendixmodelsdk.baseModelMod.IModel
+import typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValue
 import typings.mendixmodelsdk.internalMod.AbstractElement
 import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.internalMod.Element
@@ -26,8 +27,10 @@ class PageVariable protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FPageVariable: IModel = js.native
+  def containerAsAttributeWidget(): AttributeWidget = js.native
   def containerAsMicroflowParameterMapping(): MicroflowParameterMapping = js.native
   def containerAsNanoflowParameterMapping(): NanoflowParameterMapping = js.native
+  def containerAsWidgetValue(): WidgetValue = js.native
   def useAllPages(): Boolean = js.native
   def useAllPages(newValue: Boolean): js.Any = js.native
   def widget(): js.Any = js.native
@@ -51,6 +54,15 @@ object PageVariable extends js.Object {
   def create(model: IModel): PageVariable = js.native
   /**
     * Creates and returns a new PageVariable instance in the SDK and on the server.
+    * The new PageVariable will be automatically stored in the 'sourceVariable' property
+    * of the parent AttributeWidget element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.8.0 and higher
+    */
+  def createInAttributeWidgetUnderSourceVariable(container: AttributeWidget): PageVariable = js.native
+  /**
+    * Creates and returns a new PageVariable instance in the SDK and on the server.
     * The new PageVariable will be automatically stored in the 'variable' property
     * of the parent MicroflowParameterMapping element passed as argument.
     *
@@ -67,5 +79,14 @@ object PageVariable extends js.Object {
     *  8.4.0 and higher
     */
   def createInNanoflowParameterMappingUnderVariable(container: NanoflowParameterMapping): PageVariable = js.native
+  /**
+    * Creates and returns a new PageVariable instance in the SDK and on the server.
+    * The new PageVariable will be automatically stored in the 'sourceVariable' property
+    * of the parent customwidgets.WidgetValue element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.8.0 and higher
+    */
+  def createInWidgetValueUnderSourceVariable(container: WidgetValue): PageVariable = js.native
 }
 

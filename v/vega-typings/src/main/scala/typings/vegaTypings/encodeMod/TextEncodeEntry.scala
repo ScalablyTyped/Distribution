@@ -1,5 +1,8 @@
 package typings.vegaTypings.encodeMod
 
+import typings.vegaTypings.configMod.Cursor
+import typings.vegaTypings.configMod.StrokeCap
+import typings.vegaTypings.configMod.StrokeJoin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,6 +23,9 @@ trait TextEncodeEntry
   var fontWeight: js.UndefOr[ProductionRule[FontWeightValueRef]] = js.undefined
   var limit: js.UndefOr[ProductionRule[NumericValueRef]] = js.undefined
   var lineBreak: js.UndefOr[ProductionRule[StringValueRef]] = js.undefined
+  /**
+    * The height, in pixels, of each line of text in a multi-line text mark or a text mark with `"line-top"` or `"line-bottom"` baseline.
+    */
   var lineHeight: js.UndefOr[ProductionRule[NumericValueRef]] = js.undefined
   var radius: js.UndefOr[ProductionRule[NumericValueRef]] = js.undefined
   var text: js.UndefOr[ProductionRule[TextValueRef]] = js.undefined
@@ -32,7 +38,7 @@ object TextEncodeEntry {
     angle: ProductionRule[NumericValueRef] = null,
     baseline: ProductionRule[TextBaselineValueRef] = null,
     blend: ProductionRule[ScaledValueRef[Blend]] = null,
-    cursor: ProductionRule[StringValueRef] = null,
+    cursor: ProductionRule[ScaledValueRef[Cursor]] = null,
     dir: ProductionRule[ScaledValueRef[TextDirection]] = null,
     dx: ProductionRule[NumericValueRef] = null,
     dy: ProductionRule[NumericValueRef] = null,
@@ -50,10 +56,10 @@ object TextEncodeEntry {
     opacity: ProductionRule[NumericValueRef] = null,
     radius: ProductionRule[NumericValueRef] = null,
     stroke: ProductionRule[ColorValueRef] = null,
-    strokeCap: ProductionRule[StringValueRef] = null,
+    strokeCap: ProductionRule[ScaledValueRef[StrokeCap]] = null,
     strokeDash: ProductionRule[ScaledValueRef[js.Array[Double]]] = null,
     strokeDashOffset: ProductionRule[NumericValueRef] = null,
-    strokeJoin: ProductionRule[StringValueRef] = null,
+    strokeJoin: ProductionRule[ScaledValueRef[StrokeJoin]] = null,
     strokeMiterLimit: ProductionRule[NumericValueRef] = null,
     strokeOpacity: ProductionRule[NumericValueRef] = null,
     strokeWidth: ProductionRule[NumericValueRef] = null,

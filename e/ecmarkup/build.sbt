@@ -1,12 +1,13 @@
 organization := "org.scalablytyped"
 name := "ecmarkup"
-version := "3.19.0-b74e2a"
+version := "3.19.1-45d1aa"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "esfx__cancelable" % "1.0.0-pre.13-2cb8f7",
   "org.scalablytyped" %%% "esfx__disposable" % "1.0.0-pre.13-ef51ff",
+  "org.scalablytyped" %%% "nomnom" % "0.0-unknown-dt-20200225Z-b7edfc",
   "org.scalablytyped" %%% "prex" % "0.4.6-f22824",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false

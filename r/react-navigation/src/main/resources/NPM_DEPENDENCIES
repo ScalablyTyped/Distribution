@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-navigation" : "4.3.2"
+      "react-navigation" : "4.3.7"
     }
   ],
   "test-dependencies" : [
     {
-      "react-navigation" : "4.3.2"
+      "react-navigation" : "4.3.7"
     }
   ],
   "compile-devDependencies" : [

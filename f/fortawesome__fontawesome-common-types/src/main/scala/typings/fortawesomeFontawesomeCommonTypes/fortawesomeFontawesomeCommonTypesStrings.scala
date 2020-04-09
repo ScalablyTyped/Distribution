@@ -416,6 +416,12 @@ object fortawesomeFontawesomeCommonTypesStrings {
   sealed trait bacon extends IconName
   
   @js.native
+  sealed trait bacteria extends IconName
+  
+  @js.native
+  sealed trait bacterium extends IconName
+  
+  @js.native
   sealed trait badge extends IconName
   
   @js.native
@@ -786,6 +792,9 @@ object fortawesomeFontawesomeCommonTypesStrings {
   
   @js.native
   sealed trait `box-open` extends IconName
+  
+  @js.native
+  sealed trait `box-tissue` extends IconName
   
   @js.native
   sealed trait `box-up` extends IconName
@@ -2972,6 +2981,9 @@ object fortawesomeFontawesomeCommonTypesStrings {
   sealed trait `hand-holding-magic` extends IconName
   
   @js.native
+  sealed trait `hand-holding-medical` extends IconName
+  
+  @js.native
   sealed trait `hand-holding-seedling` extends IconName
   
   @js.native
@@ -3017,6 +3029,9 @@ object fortawesomeFontawesomeCommonTypesStrings {
   sealed trait `hand-scissors` extends IconName
   
   @js.native
+  sealed trait `hand-sparkles` extends IconName
+  
+  @js.native
   sealed trait `hand-spock` extends IconName
   
   @js.native
@@ -3032,10 +3047,19 @@ object fortawesomeFontawesomeCommonTypesStrings {
   sealed trait `hands-usd` extends IconName
   
   @js.native
+  sealed trait `hands-wash` extends IconName
+  
+  @js.native
   sealed trait handshake extends IconName
   
   @js.native
   sealed trait `handshake-alt` extends IconName
+  
+  @js.native
+  sealed trait `handshake-alt-slash` extends IconName
+  
+  @js.native
+  sealed trait `handshake-slash` extends IconName
   
   @js.native
   sealed trait hanukiah extends IconName
@@ -3077,10 +3101,22 @@ object fortawesomeFontawesomeCommonTypesStrings {
   sealed trait `head-side-brain` extends IconName
   
   @js.native
+  sealed trait `head-side-cough` extends IconName
+  
+  @js.native
+  sealed trait `head-side-cough-slash` extends IconName
+  
+  @js.native
   sealed trait `head-side-headphones` extends IconName
   
   @js.native
+  sealed trait `head-side-mask` extends IconName
+  
+  @js.native
   sealed trait `head-side-medical` extends IconName
+  
+  @js.native
+  sealed trait `head-side-virus` extends IconName
   
   @js.native
   sealed trait `head-vr` extends IconName
@@ -3255,6 +3291,9 @@ object fortawesomeFontawesomeCommonTypesStrings {
   
   @js.native
   sealed trait `house-signal` extends IconName
+  
+  @js.native
+  sealed trait `house-user` extends IconName
   
   @js.native
   sealed trait houzz extends IconName
@@ -3530,6 +3569,9 @@ object fortawesomeFontawesomeCommonTypesStrings {
   sealed trait `laptop-code` extends IconName
   
   @js.native
+  sealed trait `laptop-house` extends IconName
+  
+  @js.native
   sealed trait `laptop-medical` extends IconName
   
   @js.native
@@ -3744,6 +3786,9 @@ object fortawesomeFontawesomeCommonTypesStrings {
   
   @js.native
   sealed trait lungs extends IconName
+  
+  @js.native
+  sealed trait `lungs-virus` extends IconName
   
   @js.native
   sealed trait lyft extends IconName
@@ -4331,6 +4376,9 @@ object fortawesomeFontawesomeCommonTypesStrings {
   sealed trait `penny-arcade` extends IconName
   
   @js.native
+  sealed trait `people-arrows` extends IconName
+  
+  @js.native
   sealed trait `people-carry` extends IconName
   
   @js.native
@@ -4472,6 +4520,9 @@ object fortawesomeFontawesomeCommonTypesStrings {
   sealed trait `plane-departure` extends IconName
   
   @js.native
+  sealed trait `plane-slash` extends IconName
+  
+  @js.native
   sealed trait `planet-moon` extends IconName
   
   @js.native
@@ -4590,6 +4641,12 @@ object fortawesomeFontawesomeCommonTypesStrings {
   
   @js.native
   sealed trait projector extends IconName
+  
+  @js.native
+  sealed trait `pump-medical` extends IconName
+  
+  @js.native
+  sealed trait `pump-soap` extends IconName
   
   @js.native
   sealed trait pumpkin extends IconName
@@ -5051,6 +5108,9 @@ object fortawesomeFontawesomeCommonTypesStrings {
   sealed trait `shield-cross` extends IconName
   
   @js.native
+  sealed trait `shield-virus` extends IconName
+  
+  @js.native
   sealed trait ship extends IconName
   
   @js.native
@@ -5169,6 +5229,9 @@ object fortawesomeFontawesomeCommonTypesStrings {
   
   @js.native
   sealed trait simplybuilt extends IconName
+  
+  @js.native
+  sealed trait sink extends IconName
   
   @js.native
   sealed trait siren extends IconName
@@ -5313,6 +5376,9 @@ object fortawesomeFontawesomeCommonTypesStrings {
   
   @js.native
   sealed trait snowplow extends IconName
+  
+  @js.native
+  sealed trait soap extends IconName
   
   @js.native
   sealed trait socks extends IconName
@@ -5597,10 +5663,19 @@ object fortawesomeFontawesomeCommonTypesStrings {
   sealed trait stopwatch extends IconName
   
   @js.native
+  sealed trait `stopwatch-20` extends IconName
+  
+  @js.native
   sealed trait store extends IconName
   
   @js.native
   sealed trait `store-alt` extends IconName
+  
+  @js.native
+  sealed trait `store-alt-slash` extends IconName
+  
+  @js.native
+  sealed trait `store-slash` extends IconName
   
   @js.native
   sealed trait strava extends IconName
@@ -5994,6 +6069,9 @@ object fortawesomeFontawesomeCommonTypesStrings {
   
   @js.native
   sealed trait `toilet-paper-alt` extends IconName
+  
+  @js.native
+  sealed trait `toilet-paper-slash` extends IconName
   
   @js.native
   sealed trait tombstone extends IconName
@@ -6416,6 +6494,9 @@ object fortawesomeFontawesomeCommonTypesStrings {
   sealed trait `users-medical` extends IconName
   
   @js.native
+  sealed trait `users-slash` extends IconName
+  
+  @js.native
   sealed trait usps extends IconName
   
   @js.native
@@ -6507,6 +6588,15 @@ object fortawesomeFontawesomeCommonTypesStrings {
   
   @js.native
   sealed trait violin extends IconName
+  
+  @js.native
+  sealed trait virus extends IconName
+  
+  @js.native
+  sealed trait `virus-slash` extends IconName
+  
+  @js.native
+  sealed trait viruses extends IconName
   
   @js.native
   sealed trait vk extends IconName
@@ -7084,6 +7174,10 @@ object fortawesomeFontawesomeCommonTypesStrings {
   @scala.inline
   def bacon: bacon = "bacon".asInstanceOf[bacon]
   @scala.inline
+  def bacteria: bacteria = "bacteria".asInstanceOf[bacteria]
+  @scala.inline
+  def bacterium: bacterium = "bacterium".asInstanceOf[bacterium]
+  @scala.inline
   def badge: badge = "badge".asInstanceOf[badge]
   @scala.inline
   def `badge-check`: `badge-check` = "badge-check".asInstanceOf[`badge-check`]
@@ -7331,6 +7425,8 @@ object fortawesomeFontawesomeCommonTypesStrings {
   def `box-heart`: `box-heart` = "box-heart".asInstanceOf[`box-heart`]
   @scala.inline
   def `box-open`: `box-open` = "box-open".asInstanceOf[`box-open`]
+  @scala.inline
+  def `box-tissue`: `box-tissue` = "box-tissue".asInstanceOf[`box-tissue`]
   @scala.inline
   def `box-up`: `box-up` = "box-up".asInstanceOf[`box-up`]
   @scala.inline
@@ -8786,6 +8882,8 @@ object fortawesomeFontawesomeCommonTypesStrings {
   @scala.inline
   def `hand-holding-magic`: `hand-holding-magic` = "hand-holding-magic".asInstanceOf[`hand-holding-magic`]
   @scala.inline
+  def `hand-holding-medical`: `hand-holding-medical` = "hand-holding-medical".asInstanceOf[`hand-holding-medical`]
+  @scala.inline
   def `hand-holding-seedling`: `hand-holding-seedling` = "hand-holding-seedling".asInstanceOf[`hand-holding-seedling`]
   @scala.inline
   def `hand-holding-usd`: `hand-holding-usd` = "hand-holding-usd".asInstanceOf[`hand-holding-usd`]
@@ -8816,6 +8914,8 @@ object fortawesomeFontawesomeCommonTypesStrings {
   @scala.inline
   def `hand-scissors`: `hand-scissors` = "hand-scissors".asInstanceOf[`hand-scissors`]
   @scala.inline
+  def `hand-sparkles`: `hand-sparkles` = "hand-sparkles".asInstanceOf[`hand-sparkles`]
+  @scala.inline
   def `hand-spock`: `hand-spock` = "hand-spock".asInstanceOf[`hand-spock`]
   @scala.inline
   def hands: hands = "hands".asInstanceOf[hands]
@@ -8826,9 +8926,15 @@ object fortawesomeFontawesomeCommonTypesStrings {
   @scala.inline
   def `hands-usd`: `hands-usd` = "hands-usd".asInstanceOf[`hands-usd`]
   @scala.inline
+  def `hands-wash`: `hands-wash` = "hands-wash".asInstanceOf[`hands-wash`]
+  @scala.inline
   def handshake: handshake = "handshake".asInstanceOf[handshake]
   @scala.inline
   def `handshake-alt`: `handshake-alt` = "handshake-alt".asInstanceOf[`handshake-alt`]
+  @scala.inline
+  def `handshake-alt-slash`: `handshake-alt-slash` = "handshake-alt-slash".asInstanceOf[`handshake-alt-slash`]
+  @scala.inline
+  def `handshake-slash`: `handshake-slash` = "handshake-slash".asInstanceOf[`handshake-slash`]
   @scala.inline
   def hanukiah: hanukiah = "hanukiah".asInstanceOf[hanukiah]
   @scala.inline
@@ -8856,9 +8962,17 @@ object fortawesomeFontawesomeCommonTypesStrings {
   @scala.inline
   def `head-side-brain`: `head-side-brain` = "head-side-brain".asInstanceOf[`head-side-brain`]
   @scala.inline
+  def `head-side-cough`: `head-side-cough` = "head-side-cough".asInstanceOf[`head-side-cough`]
+  @scala.inline
+  def `head-side-cough-slash`: `head-side-cough-slash` = "head-side-cough-slash".asInstanceOf[`head-side-cough-slash`]
+  @scala.inline
   def `head-side-headphones`: `head-side-headphones` = "head-side-headphones".asInstanceOf[`head-side-headphones`]
   @scala.inline
+  def `head-side-mask`: `head-side-mask` = "head-side-mask".asInstanceOf[`head-side-mask`]
+  @scala.inline
   def `head-side-medical`: `head-side-medical` = "head-side-medical".asInstanceOf[`head-side-medical`]
+  @scala.inline
+  def `head-side-virus`: `head-side-virus` = "head-side-virus".asInstanceOf[`head-side-virus`]
   @scala.inline
   def `head-vr`: `head-vr` = "head-vr".asInstanceOf[`head-vr`]
   @scala.inline
@@ -8975,6 +9089,8 @@ object fortawesomeFontawesomeCommonTypesStrings {
   def `house-return`: `house-return` = "house-return".asInstanceOf[`house-return`]
   @scala.inline
   def `house-signal`: `house-signal` = "house-signal".asInstanceOf[`house-signal`]
+  @scala.inline
+  def `house-user`: `house-user` = "house-user".asInstanceOf[`house-user`]
   @scala.inline
   def houzz: houzz = "houzz".asInstanceOf[houzz]
   @scala.inline
@@ -9158,6 +9274,8 @@ object fortawesomeFontawesomeCommonTypesStrings {
   @scala.inline
   def `laptop-code`: `laptop-code` = "laptop-code".asInstanceOf[`laptop-code`]
   @scala.inline
+  def `laptop-house`: `laptop-house` = "laptop-house".asInstanceOf[`laptop-house`]
+  @scala.inline
   def `laptop-medical`: `laptop-medical` = "laptop-medical".asInstanceOf[`laptop-medical`]
   @scala.inline
   def laravel: laravel = "laravel".asInstanceOf[laravel]
@@ -9301,6 +9419,8 @@ object fortawesomeFontawesomeCommonTypesStrings {
   def `luggage-cart`: `luggage-cart` = "luggage-cart".asInstanceOf[`luggage-cart`]
   @scala.inline
   def lungs: lungs = "lungs".asInstanceOf[lungs]
+  @scala.inline
+  def `lungs-virus`: `lungs-virus` = "lungs-virus".asInstanceOf[`lungs-virus`]
   @scala.inline
   def lyft: lyft = "lyft".asInstanceOf[lyft]
   @scala.inline
@@ -9692,6 +9812,8 @@ object fortawesomeFontawesomeCommonTypesStrings {
   @scala.inline
   def `penny-arcade`: `penny-arcade` = "penny-arcade".asInstanceOf[`penny-arcade`]
   @scala.inline
+  def `people-arrows`: `people-arrows` = "people-arrows".asInstanceOf[`people-arrows`]
+  @scala.inline
   def `people-carry`: `people-carry` = "people-carry".asInstanceOf[`people-carry`]
   @scala.inline
   def `pepper-hot`: `pepper-hot` = "pepper-hot".asInstanceOf[`pepper-hot`]
@@ -9786,6 +9908,8 @@ object fortawesomeFontawesomeCommonTypesStrings {
   @scala.inline
   def `plane-departure`: `plane-departure` = "plane-departure".asInstanceOf[`plane-departure`]
   @scala.inline
+  def `plane-slash`: `plane-slash` = "plane-slash".asInstanceOf[`plane-slash`]
+  @scala.inline
   def `planet-moon`: `planet-moon` = "planet-moon".asInstanceOf[`planet-moon`]
   @scala.inline
   def `planet-ringed`: `planet-ringed` = "planet-ringed".asInstanceOf[`planet-ringed`]
@@ -9865,6 +9989,10 @@ object fortawesomeFontawesomeCommonTypesStrings {
   def `project-diagram`: `project-diagram` = "project-diagram".asInstanceOf[`project-diagram`]
   @scala.inline
   def projector: projector = "projector".asInstanceOf[projector]
+  @scala.inline
+  def `pump-medical`: `pump-medical` = "pump-medical".asInstanceOf[`pump-medical`]
+  @scala.inline
+  def `pump-soap`: `pump-soap` = "pump-soap".asInstanceOf[`pump-soap`]
   @scala.inline
   def pumpkin: pumpkin = "pumpkin".asInstanceOf[pumpkin]
   @scala.inline
@@ -10172,6 +10300,8 @@ object fortawesomeFontawesomeCommonTypesStrings {
   @scala.inline
   def `shield-cross`: `shield-cross` = "shield-cross".asInstanceOf[`shield-cross`]
   @scala.inline
+  def `shield-virus`: `shield-virus` = "shield-virus".asInstanceOf[`shield-virus`]
+  @scala.inline
   def ship: ship = "ship".asInstanceOf[ship]
   @scala.inline
   def `shipping-fast`: `shipping-fast` = "shipping-fast".asInstanceOf[`shipping-fast`]
@@ -10251,6 +10381,8 @@ object fortawesomeFontawesomeCommonTypesStrings {
   def `sim-card`: `sim-card` = "sim-card".asInstanceOf[`sim-card`]
   @scala.inline
   def simplybuilt: simplybuilt = "simplybuilt".asInstanceOf[simplybuilt]
+  @scala.inline
+  def sink: sink = "sink".asInstanceOf[sink]
   @scala.inline
   def siren: siren = "siren".asInstanceOf[siren]
   @scala.inline
@@ -10347,6 +10479,8 @@ object fortawesomeFontawesomeCommonTypesStrings {
   def snowmobile: snowmobile = "snowmobile".asInstanceOf[snowmobile]
   @scala.inline
   def snowplow: snowplow = "snowplow".asInstanceOf[snowplow]
+  @scala.inline
+  def soap: soap = "soap".asInstanceOf[soap]
   @scala.inline
   def socks: socks = "socks".asInstanceOf[socks]
   @scala.inline
@@ -10536,9 +10670,15 @@ object fortawesomeFontawesomeCommonTypesStrings {
   @scala.inline
   def stopwatch: stopwatch = "stopwatch".asInstanceOf[stopwatch]
   @scala.inline
+  def `stopwatch-20`: `stopwatch-20` = "stopwatch-20".asInstanceOf[`stopwatch-20`]
+  @scala.inline
   def store: store = "store".asInstanceOf[store]
   @scala.inline
   def `store-alt`: `store-alt` = "store-alt".asInstanceOf[`store-alt`]
+  @scala.inline
+  def `store-alt-slash`: `store-alt-slash` = "store-alt-slash".asInstanceOf[`store-alt-slash`]
+  @scala.inline
+  def `store-slash`: `store-slash` = "store-slash".asInstanceOf[`store-slash`]
   @scala.inline
   def strava: strava = "strava".asInstanceOf[strava]
   @scala.inline
@@ -10801,6 +10941,8 @@ object fortawesomeFontawesomeCommonTypesStrings {
   def `toilet-paper`: `toilet-paper` = "toilet-paper".asInstanceOf[`toilet-paper`]
   @scala.inline
   def `toilet-paper-alt`: `toilet-paper-alt` = "toilet-paper-alt".asInstanceOf[`toilet-paper-alt`]
+  @scala.inline
+  def `toilet-paper-slash`: `toilet-paper-slash` = "toilet-paper-slash".asInstanceOf[`toilet-paper-slash`]
   @scala.inline
   def tombstone: tombstone = "tombstone".asInstanceOf[tombstone]
   @scala.inline
@@ -11082,6 +11224,8 @@ object fortawesomeFontawesomeCommonTypesStrings {
   @scala.inline
   def `users-medical`: `users-medical` = "users-medical".asInstanceOf[`users-medical`]
   @scala.inline
+  def `users-slash`: `users-slash` = "users-slash".asInstanceOf[`users-slash`]
+  @scala.inline
   def usps: usps = "usps".asInstanceOf[usps]
   @scala.inline
   def ussunnah: ussunnah = "ussunnah".asInstanceOf[ussunnah]
@@ -11143,6 +11287,12 @@ object fortawesomeFontawesomeCommonTypesStrings {
   def vine: vine = "vine".asInstanceOf[vine]
   @scala.inline
   def violin: violin = "violin".asInstanceOf[violin]
+  @scala.inline
+  def virus: virus = "virus".asInstanceOf[virus]
+  @scala.inline
+  def `virus-slash`: `virus-slash` = "virus-slash".asInstanceOf[`virus-slash`]
+  @scala.inline
+  def viruses: viruses = "viruses".asInstanceOf[viruses]
   @scala.inline
   def vk: vk = "vk".asInstanceOf[vk]
   @scala.inline

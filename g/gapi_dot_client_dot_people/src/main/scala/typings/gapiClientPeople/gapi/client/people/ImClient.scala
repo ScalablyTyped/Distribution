@@ -6,20 +6,20 @@ import scala.scalajs.js.annotation._
 
 trait ImClient extends js.Object {
   /**
-    * The read-only protocol of the IM client formatted in the viewer's account
+    * Output only. The protocol of the IM client formatted in the viewer's account
     * locale or the `Accept-Language` HTTP header locale.
     */
   var formattedProtocol: js.UndefOr[String] = js.undefined
   /**
-    * The read-only type of the IM client translated and formatted in the
+    * Output only. The type of the IM client translated and formatted in the
     * viewer's account locale or the `Accept-Language` HTTP header locale.
     */
   var formattedType: js.UndefOr[String] = js.undefined
   /** Metadata about the IM client. */
   var metadata: js.UndefOr[FieldMetadata] = js.undefined
   /**
-    * The protocol of the IM client. The protocol can be custom or predefined.
-    * Possible values include, but are not limited to, the following:
+    * The protocol of the IM client. The protocol can be custom or one of these
+    * predefined values:
     *
     * &#42; `aim`
     * &#42; `msn`
@@ -33,8 +33,8 @@ trait ImClient extends js.Object {
     */
   var protocol: js.UndefOr[String] = js.undefined
   /**
-    * The type of the IM client. The type can be custom or predefined.
-    * Possible values include, but are not limited to, the following:
+    * The type of the IM client. The type can be custom or one of these
+    * predefined values:
     *
     * &#42; `home`
     * &#42; `work`

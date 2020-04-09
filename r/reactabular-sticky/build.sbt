@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "reactabular-sticky"
-version := "8.14-dt-20191119Z-4e599e"
+version := "8.14-dt-20191119Z-d0d2ec"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.9-2d2033",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-ece683",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20200320Z-629467",
-  "org.scalablytyped" %%% "reactabular-table" % "8.14-dt-20191118Z-126ba2",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20200402Z-6f4338",
+  "org.scalablytyped" %%% "reactabular-table" % "8.14-dt-20191118Z-49a02d",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")

@@ -9,11 +9,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxPolarChartValueAxisLabel extends dxPolarChartCommonAxisSettingsLabel {
-  /** Specifies the text for a hint that appears when a user hovers the mouse pointer over a label on the value axis. */
+  /** @name dxPolarChart.Options.valueAxis.label.customizeHint */
   var customizeHint: js.UndefOr[js.Function1[/* axisValue */ AnonValueValueText, String]] = js.undefined
-  /** Specifies a callback function that returns the text to be displayed in value axis labels. */
+  /** @name dxPolarChart.Options.valueAxis.label.customizeText */
   var customizeText: js.UndefOr[js.Function1[/* axisValue */ AnonValueValueText, String]] = js.undefined
-  /** Formats a value before it is displayed in an axis label. */
+  /** @name dxPolarChart.Options.valueAxis.label.format */
   var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.format] = js.undefined
 }
 

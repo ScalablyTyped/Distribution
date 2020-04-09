@@ -19,21 +19,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxResponsiveBoxOptions extends CollectionWidgetOptions[dxResponsiveBox] {
-  /** Specifies the collection of columns for the grid used to position layout elements. */
+  /** @name dxResponsiveBox.Options.cols */
   var cols: js.UndefOr[js.Array[AnonBaseSize]] = js.undefined
-  /** Binds the widget to data. */
+  /** @name dxResponsiveBox.Options.dataSource */
   @JSName("dataSource")
   var dataSource_dxResponsiveBoxOptions: js.UndefOr[
     String | (js.Array[String | dxResponsiveBoxItem | _]) | DataSource | DataSourceOptions
   ] = js.undefined
-  /** An array of items displayed by the widget. */
+  /** @name dxResponsiveBox.Options.items */
   @JSName("items")
   var items_dxResponsiveBoxOptions: js.UndefOr[js.Array[String | dxResponsiveBoxItem | _]] = js.undefined
-  /** Specifies the collection of rows for the grid used to position layout elements. */
+  /** @name dxResponsiveBox.Options.rows */
   var rows: js.UndefOr[js.Array[AnonBaseSize]] = js.undefined
-  /** Specifies the function returning the size qualifier depending on the screen's width. */
+  /** @name dxResponsiveBox.Options.screenByWidth */
   var screenByWidth: js.UndefOr[js.Function] = js.undefined
-  /** Specifies on which screens all layout elements should be arranged in a single column. Accepts a single or several size qualifiers separated by a space. */
+  /** @name dxResponsiveBox.Options.singleColumnScreen */
   var singleColumnScreen: js.UndefOr[String] = js.undefined
 }
 

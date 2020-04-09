@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nuxtjs__auth"
-version := "4.8-dt-20200225Z-1ecfc0"
+version := "4.8-dt-20200327Z-a60332"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

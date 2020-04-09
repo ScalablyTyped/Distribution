@@ -77,6 +77,7 @@ import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
@@ -759,7 +760,7 @@ object IPersonaPropskeystringnum {
     onRenderSecondaryText: (/* props */ js.UndefOr[IPersonaProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IPersonaProps], Element | Null]]) => Element | Null = null,
     onRenderTertiaryText: (/* props */ js.UndefOr[IPersonaProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IPersonaProps], Element | Null]]) => Element | Null = null,
     onReset: FormEvent[PersonaBase | PersonaCoinBase | HTMLDivElement] => Unit = null,
-    onScroll: UIEvent[PersonaBase | PersonaCoinBase | HTMLDivElement] => Unit = null,
+    onScroll: UIEvent[PersonaBase | PersonaCoinBase | HTMLDivElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[PersonaBase | PersonaCoinBase | HTMLDivElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[PersonaBase | PersonaCoinBase | HTMLDivElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[PersonaBase | PersonaCoinBase | HTMLDivElement, Event_] => Unit = null,

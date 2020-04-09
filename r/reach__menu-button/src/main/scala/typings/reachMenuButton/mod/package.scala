@@ -101,6 +101,7 @@ package object mod {
     - typings.reachMenuButton.reachMenuButtonStrings.ruby
     - typings.reachMenuButton.reachMenuButtonStrings.s
     - typings.reachMenuButton.reachMenuButtonStrings.samp
+    - typings.reachMenuButton.reachMenuButtonStrings.slot
     - typings.reachMenuButton.reachMenuButtonStrings.script
     - typings.reachMenuButton.reachMenuButtonStrings.section
     - typings.reachMenuButton.reachMenuButtonStrings.select

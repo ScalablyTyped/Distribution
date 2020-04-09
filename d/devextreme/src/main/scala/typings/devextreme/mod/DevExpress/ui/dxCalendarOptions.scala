@@ -32,7 +32,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxCalendarOptions extends EditorOptions[dxCalendar] {
-  /** Specifies a custom template for calendar cells. */
+  /** @name dxCalendar.Options.cellTemplate */
   var cellTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function3[
       /* itemData */ AnonDate, 
@@ -41,28 +41,28 @@ trait dxCalendarOptions extends EditorOptions[dxCalendar] {
       String | Element | JQuery
     ])
   ] = js.undefined
-  /** Specifies the date-time value serialization format. Use it only if you do not specify the value at design time. */
+  /** @name dxCalendar.Options.dateSerializationFormat */
   var dateSerializationFormat: js.UndefOr[String] = js.undefined
-  /** Specifies dates to be disabled. */
+  /** @name dxCalendar.Options.disabledDates */
   var disabledDates: js.UndefOr[js.Array[Date] | (js.Function1[/* data */ AnonView, Boolean])] = js.undefined
-  /** Specifies the first day of a week. */
+  /** @name dxCalendar.Options.firstDayOfWeek */
   var firstDayOfWeek: js.UndefOr[`0` | `1` | `2` | `3` | `4` | `5` | `6`] = js.undefined
-  /** The latest date the widget allows to select. */
+  /** @name dxCalendar.Options.max */
   var max: js.UndefOr[Date | Double | String] = js.undefined
-  /** Specifies the maximum zoom level of the calendar. */
+  /** @name dxCalendar.Options.maxZoomLevel */
   var maxZoomLevel: js.UndefOr[century | decade | month | year] = js.undefined
-  /** The earliest date the widget allows to select. */
+  /** @name dxCalendar.Options.min */
   var min: js.UndefOr[Date | Double | String] = js.undefined
-  /** Specifies the minimum zoom level of the calendar. */
+  /** @name dxCalendar.Options.minZoomLevel */
   var minZoomLevel: js.UndefOr[century | decade | month | year] = js.undefined
-  /** The value to be assigned to the `name` attribute of the underlying HTML element. */
+  /** @name dxCalendar.Options.name */
   var name: js.UndefOr[String] = js.undefined
-  /** Specifies whether or not the widget displays a button that selects the current date. */
+  /** @name dxCalendar.Options.showTodayButton */
   var showTodayButton: js.UndefOr[Boolean] = js.undefined
-  /** An object or a value specifying the date and time currently selected in the calendar. */
+  /** @name dxCalendar.Options.value */
   @JSName("value")
   var value_dxCalendarOptions: js.UndefOr[Date | Double | String] = js.undefined
-  /** Specifies the current calendar zoom level. */
+  /** @name dxCalendar.Options.zoomLevel */
   var zoomLevel: js.UndefOr[century | decade | month | year] = js.undefined
 }
 

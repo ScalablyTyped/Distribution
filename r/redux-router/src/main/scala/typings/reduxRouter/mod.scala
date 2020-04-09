@@ -109,7 +109,7 @@ object mod extends js.Object {
     def useParams[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof Params ]:? string}
       */ typings.reduxRouter.reduxRouterStrings.useParams with js.Any */](): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ p in keyof Params ]: string}
+    {[ p in keyof Params ]: keyof Params[p] extends undefined? string | undefined : string}
       */ typings.reduxRouter.reduxRouterStrings.useParams with js.Any = js.native
     def useRouteMatch[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof Params ]:? string}

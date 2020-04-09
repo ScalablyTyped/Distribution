@@ -17,6 +17,7 @@ import typings.jupyterlabFileeditorExtension.jupyterlabFileeditorExtensionString
 import typings.jupyterlabFileeditorExtension.jupyterlabFileeditorExtensionStrings.`fileeditorColoncreate-new-markdown-file`
 import typings.jupyterlabFileeditorExtension.jupyterlabFileeditorExtensionStrings.`fileeditorColoncreate-new`
 import typings.jupyterlabFileeditorExtension.jupyterlabFileeditorExtensionStrings.`fileeditorColonmarkdown-preview`
+import typings.jupyterlabFileeditorExtension.jupyterlabFileeditorExtensionStrings.`fileeditorColonreplace-selection`
 import typings.jupyterlabFileeditorExtension.jupyterlabFileeditorExtensionStrings.`fileeditorColonrun-all`
 import typings.jupyterlabFileeditorExtension.jupyterlabFileeditorExtensionStrings.`fileeditorColonrun-code`
 import typings.jupyterlabFileeditorExtension.jupyterlabFileeditorExtensionStrings.`fileeditorColontoggle-autoclosing-brackets`
@@ -48,6 +49,7 @@ object commandsMod extends js.Object {
     val lineWrap: `fileeditorColontoggle-line-wrap` = js.native
     val markdownPreview: `fileeditorColonmarkdown-preview` = js.native
     val matchBrackets: `fileeditorColontoggle-match-brackets` = js.native
+    val replaceSelection: `fileeditorColonreplace-selection` = js.native
     val runAllCode: `fileeditorColonrun-all` = js.native
     val runCode: `fileeditorColonrun-code` = js.native
   }
@@ -216,6 +218,14 @@ object commandsMod extends js.Object {
       * Wrapper function for adding the default items to the File Editor palette
       */
     def addPaletteItems(palette: ICommandPalette): Unit = js.native
+    /**
+      * Add the replace selection for text editor command
+      */
+    def addReplaceSelectionCommand(
+      commands: CommandRegistry,
+      tracker: WidgetTracker[IDocumentWidget[FileEditor, IModel]],
+      isEnabled: js.Function0[Boolean]
+    ): Unit = js.native
     /**
       * Add the Run All Code command
       */

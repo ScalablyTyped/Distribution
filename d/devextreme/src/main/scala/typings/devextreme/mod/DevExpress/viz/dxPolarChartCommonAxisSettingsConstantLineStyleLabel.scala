@@ -5,9 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxPolarChartCommonAxisSettingsConstantLineStyleLabel extends js.Object {
-  /** Specifies font options for a constant line label. */
+  /** @name dxPolarChart.Options.commonAxisSettings.constantLineStyle.label.font */
   var font: js.UndefOr[Font] = js.undefined
-  /** Indicates whether or not to display labels for the axis constant lines. */
+  /** @name dxPolarChart.Options.commonAxisSettings.constantLineStyle.label.visible */
   var visible: js.UndefOr[Boolean] = js.undefined
 }
 

@@ -1,7 +1,7 @@
 
 # Scala.js typings for jimp__tiff
 
-Typings are for version 0.9.6
+Typings are for version 0.9.8
 
 ## Library description:
 Default Jimp tiff encoder/decoder.

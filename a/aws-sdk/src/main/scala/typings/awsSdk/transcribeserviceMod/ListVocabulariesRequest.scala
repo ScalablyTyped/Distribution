@@ -11,7 +11,7 @@ trait ListVocabulariesRequest extends js.Object {
     */
   var MaxResults: js.UndefOr[typings.awsSdk.transcribeserviceMod.MaxResults] = js.native
   /**
-    * When specified, the vocabularies returned in the list are limited to vocabularies whose name contains the specified string. The search is case-insensitive, ListVocabularies will return both "vocabularyname" and "VocabularyName" in the response list.
+    * When specified, the vocabularies returned in the list are limited to vocabularies whose name contains the specified string. The search is case-insensitive, ListVocabularies returns both "vocabularyname" and "VocabularyName" in the response list.
     */
   var NameContains: js.UndefOr[VocabularyName] = js.native
   /**

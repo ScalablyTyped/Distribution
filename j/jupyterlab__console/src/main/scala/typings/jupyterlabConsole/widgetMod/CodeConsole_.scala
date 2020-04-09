@@ -199,6 +199,12 @@ class CodeConsole_ protected () extends Widget {
     */
   def promptCellCreated(): ISignal[this.type, CodeCell] = js.native
   /**
+    * Replaces the selected text in the prompt cell.
+    *
+    * @param text - The text to replace the selection.
+    */
+  def replaceSelection(text: String): Unit = js.native
+  /**
     * Serialize the output.
     *
     * #### Notes

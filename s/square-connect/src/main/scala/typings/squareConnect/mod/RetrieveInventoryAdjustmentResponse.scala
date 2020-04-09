@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class RetrieveInventoryAdjustmentResponse () extends js.Object {
   /**
-    * The requested [InventoryAdjustment](#type-inventoryadjustment).
+    * The requested `InventoryAdjustment`.
     */
   var adjustment: js.UndefOr[InventoryAdjustment] = js.native
   /**

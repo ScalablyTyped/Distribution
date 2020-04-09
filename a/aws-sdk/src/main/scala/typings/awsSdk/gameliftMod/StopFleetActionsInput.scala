@@ -13,12 +13,12 @@ trait StopFleetActionsInput extends js.Object {
   /**
     * A unique identifier for a fleet to stop actions on. You can use either the fleet ID or ARN value.
     */
-  var FleetId: typings.awsSdk.gameliftMod.FleetId = js.native
+  var FleetId: FleetIdOrArn = js.native
 }
 
 object StopFleetActionsInput {
   @scala.inline
-  def apply(Actions: FleetActionList, FleetId: FleetId): StopFleetActionsInput = {
+  def apply(Actions: FleetActionList, FleetId: FleetIdOrArn): StopFleetActionsInput = {
     val __obj = js.Dynamic.literal(Actions = Actions.asInstanceOf[js.Any], FleetId = FleetId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[StopFleetActionsInput]

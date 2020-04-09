@@ -14,6 +14,7 @@ package object kendraMod {
   type ChangeDetectingColumns = js.Array[typings.awsSdk.kendraMod.ColumnName]
   type ClickFeedbackList = js.Array[typings.awsSdk.kendraMod.ClickFeedback]
   type ClientConfiguration = typings.awsSdk.serviceMod.ServiceConfigurationOptions with typings.awsSdk.kendraMod.ClientApiVersions
+  type ClientTokenName = java.lang.String
   type ColumnName = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.PDF

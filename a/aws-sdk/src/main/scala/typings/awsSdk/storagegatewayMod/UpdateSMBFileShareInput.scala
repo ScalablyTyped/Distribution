@@ -11,6 +11,10 @@ trait UpdateSMBFileShareInput extends js.Object {
     */
   var AdminUserList: js.UndefOr[FileShareUserList] = js.native
   /**
+    * The Amazon Resource Name (ARN) of the storage used for the audit logs.
+    */
+  var AuditDestinationARN: js.UndefOr[typings.awsSdk.storagegatewayMod.AuditDestinationARN] = js.native
+  /**
     * The default storage class for objects put into an Amazon S3 bucket by the file gateway. Possible values are S3_STANDARD, S3_STANDARD_IA, or S3_ONEZONE_IA. If this field is not populated, the default value S3_STANDARD is used. Optional.
     */
   var DefaultStorageClass: js.UndefOr[StorageClass] = js.native
@@ -61,6 +65,7 @@ object UpdateSMBFileShareInput {
   def apply(
     FileShareARN: FileShareARN,
     AdminUserList: FileShareUserList = null,
+    AuditDestinationARN: AuditDestinationARN = null,
     DefaultStorageClass: StorageClass = null,
     GuessMIMETypeEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     InvalidUserList: FileShareUserList = null,
@@ -74,6 +79,7 @@ object UpdateSMBFileShareInput {
   ): UpdateSMBFileShareInput = {
     val __obj = js.Dynamic.literal(FileShareARN = FileShareARN.asInstanceOf[js.Any])
     if (AdminUserList != null) __obj.updateDynamic("AdminUserList")(AdminUserList.asInstanceOf[js.Any])
+    if (AuditDestinationARN != null) __obj.updateDynamic("AuditDestinationARN")(AuditDestinationARN.asInstanceOf[js.Any])
     if (DefaultStorageClass != null) __obj.updateDynamic("DefaultStorageClass")(DefaultStorageClass.asInstanceOf[js.Any])
     if (!js.isUndefined(GuessMIMETypeEnabled)) __obj.updateDynamic("GuessMIMETypeEnabled")(GuessMIMETypeEnabled.asInstanceOf[js.Any])
     if (InvalidUserList != null) __obj.updateDynamic("InvalidUserList")(InvalidUserList.asInstanceOf[js.Any])

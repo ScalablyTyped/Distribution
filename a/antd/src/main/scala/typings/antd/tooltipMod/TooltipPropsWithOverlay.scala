@@ -1,7 +1,6 @@
 package typings.antd.tooltipMod
 
 import typings.antd.placementsMod.AdjustOverflow
-import typings.rcTrigger.interfaceMod.BuildInPlacements
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
 import typings.std.HTMLElement
@@ -21,7 +20,7 @@ object TooltipPropsWithOverlay {
   def apply(
     arrowPointAtCenter: js.UndefOr[Boolean] = js.undefined,
     autoAdjustOverflow: Boolean | AdjustOverflow = null,
-    builtinPlacements: BuildInPlacements = null,
+    builtinPlacements: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BuildInPlacements */ js.Any = null,
     className: String = null,
     getPopupContainer: /* triggerNode */ HTMLElement => HTMLElement = null,
     openClassName: String = null,

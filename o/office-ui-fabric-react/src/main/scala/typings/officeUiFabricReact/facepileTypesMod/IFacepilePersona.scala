@@ -15,6 +15,7 @@ import typings.react.mod.FormEvent
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
@@ -304,7 +305,7 @@ object IFacepilePersona {
     onProgress: SyntheticEvent[HTMLButtonElement | HTMLDivElement, Event_] => Unit = null,
     onRateChange: SyntheticEvent[HTMLButtonElement | HTMLDivElement, Event_] => Unit = null,
     onReset: FormEvent[HTMLButtonElement | HTMLDivElement] => Unit = null,
-    onScroll: UIEvent[HTMLButtonElement | HTMLDivElement] => Unit = null,
+    onScroll: UIEvent[HTMLButtonElement | HTMLDivElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[HTMLButtonElement | HTMLDivElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[HTMLButtonElement | HTMLDivElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[HTMLButtonElement | HTMLDivElement, Event_] => Unit = null,

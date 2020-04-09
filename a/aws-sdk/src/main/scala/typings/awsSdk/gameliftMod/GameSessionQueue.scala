@@ -13,7 +13,7 @@ trait GameSessionQueue extends js.Object {
   /**
     * Amazon Resource Name (ARN) that is assigned to a GameLift game session queue resource and uniquely identifies it. ARNs are unique across all Regions. In a GameLift game session queue ARN, the resource ID matches the Name value.
     */
-  var GameSessionQueueArn: js.UndefOr[ArnStringModel] = js.native
+  var GameSessionQueueArn: js.UndefOr[typings.awsSdk.gameliftMod.GameSessionQueueArn] = js.native
   /**
     * A descriptive label that is associated with game session queue. Queue names must be unique within each Region.
     */
@@ -32,7 +32,7 @@ object GameSessionQueue {
   @scala.inline
   def apply(
     Destinations: GameSessionQueueDestinationList = null,
-    GameSessionQueueArn: ArnStringModel = null,
+    GameSessionQueueArn: GameSessionQueueArn = null,
     Name: GameSessionQueueName = null,
     PlayerLatencyPolicies: PlayerLatencyPolicyList = null,
     TimeoutInSeconds: Int | scala.Double = null

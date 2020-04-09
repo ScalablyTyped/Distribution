@@ -66,7 +66,7 @@ class Job protected () extends CustomResource {
     */
   val maxRetries: Output_[js.UndefOr[Double]] = js.native
   /**
-    * The name of the job command. Defaults to `glueetl`. Use `pythonshell` for Python Shell Job Type, `maxCapacity` needs to be set if `pythonshell` is chosen.
+    * The name you assign to this job. It must be unique in your account.
     */
   val name: Output_[String] = js.native
   /**

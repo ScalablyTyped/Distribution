@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "lumino__datagrid"
-version := "0.5.3-9f11ed"
+version := "0.6.0-4c784f"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

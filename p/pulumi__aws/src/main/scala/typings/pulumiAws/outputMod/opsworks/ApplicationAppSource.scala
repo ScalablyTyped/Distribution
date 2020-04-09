@@ -6,11 +6,17 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ApplicationAppSource extends js.Object {
+  /**
+    * Password to use when authenticating to the source. This provider cannot perform drift detection of this configuration.
+    */
   var password: js.UndefOr[String] = js.native
   /**
     * For sources that are version-aware, the revision to use.
     */
   var revision: js.UndefOr[String] = js.native
+  /**
+    * SSH key to use when authenticating to the source. This provider cannot perform drift detection of this configuration.
+    */
   var sshKey: js.UndefOr[String] = js.native
   /**
     * The type of source to use. For example, "archive".

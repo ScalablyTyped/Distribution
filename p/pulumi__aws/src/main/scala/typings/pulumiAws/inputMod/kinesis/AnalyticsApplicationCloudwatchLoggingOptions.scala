@@ -11,7 +11,13 @@ trait AnalyticsApplicationCloudwatchLoggingOptions extends js.Object {
     * The ARN of the Kinesis Analytics Application.
     */
   var id: js.UndefOr[Input[String]] = js.native
+  /**
+    * The ARN of the CloudWatch Log Stream.
+    */
   var logStreamArn: Input[String] = js.native
+  /**
+    * The ARN of the IAM Role used to send application messages.
+    */
   var roleArn: Input[String] = js.native
 }
 

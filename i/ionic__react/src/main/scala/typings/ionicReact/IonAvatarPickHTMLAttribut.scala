@@ -67,6 +67,7 @@ import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
@@ -571,7 +572,7 @@ object IonAvatarPickHTMLAttribut {
     onProgress: SyntheticEvent[HTMLIonAvatarElement, Event_] => Unit = null,
     onRateChange: SyntheticEvent[HTMLIonAvatarElement, Event_] => Unit = null,
     onReset: FormEvent[HTMLIonAvatarElement] => Unit = null,
-    onScroll: UIEvent[HTMLIonAvatarElement] => Unit = null,
+    onScroll: UIEvent[HTMLIonAvatarElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[HTMLIonAvatarElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[HTMLIonAvatarElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[HTMLIonAvatarElement, Event_] => Unit = null,

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ProjectCache extends js.Object {
   /**
-    * The location of the source code from git or s3.
+    * The location where the AWS CodeBuild project stores cached resources. For type `S3` the value must be a valid S3 bucket name/prefix.
     */
   var location: js.UndefOr[Input[String]] = js.native
   /**
@@ -16,7 +16,7 @@ trait ProjectCache extends js.Object {
     */
   var modes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
-    * The type of repository that contains the source code to be built. Valid values for this parameter are: `CODECOMMIT`, `CODEPIPELINE`, `GITHUB`, `GITHUB_ENTERPRISE`, `BITBUCKET` or `S3`.
+    * The type of storage that will be used for the AWS CodeBuild project cache. Valid values: `NO_CACHE`, `LOCAL`, and `S3`. Defaults to `NO_CACHE`.
     */
   var `type`: js.UndefOr[Input[String]] = js.native
 }

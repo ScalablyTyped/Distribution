@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "tcp-ping"
-version := "0.1-dt-20180214Z-c17c67"
+version := "0.1-dt-20200406Z-047dfa"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

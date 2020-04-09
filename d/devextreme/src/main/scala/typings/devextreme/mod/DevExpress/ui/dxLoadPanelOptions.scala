@@ -25,25 +25,25 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxLoadPanelOptions extends dxOverlayOptions[dxLoadPanel] {
-  /** Configures widget visibility animations. This object contains two fields: show and hide. */
+  /** @name dxLoadPanel.Options.animation */
   @JSName("animation")
   var animation_dxLoadPanelOptions: js.UndefOr[dxLoadPanelAnimation] = js.undefined
-  /** Specifies the widget's container. */
+  /** @name dxLoadPanel.Options.container */
   var container: js.UndefOr[String | Element | JQuery] = js.undefined
-  /** The delay in milliseconds after which the load panel is displayed. */
+  /** @name dxLoadPanel.Options.delay */
   var delay: js.UndefOr[Double] = js.undefined
-  /** A URL pointing to an image to be used as a load indicator. */
+  /** @name dxLoadPanel.Options.indicatorSrc */
   var indicatorSrc: js.UndefOr[String] = js.undefined
-  /** Specifies the text displayed in the load panel. Ignored in the Material Design theme. */
+  /** @name dxLoadPanel.Options.message */
   var message: js.UndefOr[String] = js.undefined
-  /** Positions the widget. */
+  /** @name dxLoadPanel.Options.position */
   @JSName("position")
   var position_dxLoadPanelOptions: js.UndefOr[
     bottom | center | left | (`left bottom`) | (`left top`) | right | (`right bottom`) | (`right top`) | top | positionConfig | js.Function
   ] = js.undefined
-  /** A Boolean value specifying whether or not to show a load indicator. */
+  /** @name dxLoadPanel.Options.showIndicator */
   var showIndicator: js.UndefOr[Boolean] = js.undefined
-  /** A Boolean value specifying whether or not to show the pane behind the load indicator. */
+  /** @name dxLoadPanel.Options.showPane */
   var showPane: js.UndefOr[Boolean] = js.undefined
 }
 

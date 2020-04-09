@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait AnonForceUpdate extends js.Object {
   var context: js.Any = js.native
-  var props: ReadonlychildrenReactNode = js.native
+  var props: AnonChildren with IDecoratorProps = js.native
   var refs: StringDictionary[ReactInstance] = js.native
   var state: js.Any = js.native
   def forceUpdate(): Unit = js.native

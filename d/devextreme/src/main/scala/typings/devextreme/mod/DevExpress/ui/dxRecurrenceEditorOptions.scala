@@ -15,7 +15,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxRecurrenceEditorOptions extends EditorOptions[dxRecurrenceEditor] {
-  /** Specifies the widget's value. */
+  /** @name dxRecurrenceEditor.Options.value */
   @JSName("value")
   var value_dxRecurrenceEditorOptions: js.UndefOr[String] = js.undefined
 }

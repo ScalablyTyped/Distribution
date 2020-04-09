@@ -7,7 +7,13 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait GrantConstraint extends js.Object {
+  /**
+    * A list of key-value pairs that must match the encryption context in subsequent cryptographic operation requests. The grant allows the operation only when the encryption context in the request is the same as the encryption context specified in this constraint. Conflicts with `encryptionContextSubset`.
+    */
   var encryptionContextEquals: js.UndefOr[StringDictionary[String]] = js.native
+  /**
+    * A list of key-value pairs that must be included in the encryption context of subsequent cryptographic operation requests. The grant allows the cryptographic operation only when the encryption context in the request includes the key-value pairs specified in this constraint, although it can include additional key-value pairs. Conflicts with `encryptionContextEquals`.
+    */
   var encryptionContextSubset: js.UndefOr[StringDictionary[String]] = js.native
 }
 

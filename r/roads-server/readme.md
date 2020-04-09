@@ -1,7 +1,7 @@
 
 # Scala.js typings for roads-server
 
-Typings are for version 1.0.2
+Typings are for version 1.0.3
 
 ## Library description:
 A simple web server for the roads framework

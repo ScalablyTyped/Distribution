@@ -18,10 +18,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxDraggableOptions extends DraggableBaseOptions[dxDraggable] {
-  /** Allows a user to drag clones of items instead of actual items. */
+  /** @name dxDraggable.Options.clone */
   @JSName("clone")
   var clone_FdxDraggableOptions: js.UndefOr[Boolean] = js.undefined
-  /** Specifies custom markup to be shown instead of the item being dragged. */
+  /** @name dxDraggable.Options.dragTemplate */
   var dragTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function2[
       /* dragInfo */ AnonItemDataItemElement, 
@@ -29,11 +29,11 @@ trait dxDraggableOptions extends DraggableBaseOptions[dxDraggable] {
       String | Element | JQuery
     ])
   ] = js.undefined
-  /** A function that is called when drag gesture is finished. */
+  /** @name dxDraggable.Options.onDragEnd */
   var onDragEnd: js.UndefOr[js.Function1[/* e */ AnonToComponent, _]] = js.undefined
-  /** A function that is called every time a draggable item is moved. */
+  /** @name dxDraggable.Options.onDragMove */
   var onDragMove: js.UndefOr[js.Function1[/* e */ AnonToComponent, _]] = js.undefined
-  /** A function that is called when the drag gesture is initialized. */
+  /** @name dxDraggable.Options.onDragStart */
   var onDragStart: js.UndefOr[js.Function1[/* e */ AnonEventFromData, _]] = js.undefined
 }
 

@@ -60,6 +60,11 @@ class Cesium3DTileset protected () extends js.Object {
   val root: Cesium3DTileset = js.native
   var shadow: ShadowMode = js.native
   var show: Boolean = js.native
+  /**
+    * Optimization option.
+    * Determines if level of detail skipping should be applied during the traversal.
+    * @default false
+    */
   var skipLevelOfDetail: Boolean = js.native
   var skipLevels: Double = js.native
   var skipScreenSpaceErrorFactor: Double = js.native

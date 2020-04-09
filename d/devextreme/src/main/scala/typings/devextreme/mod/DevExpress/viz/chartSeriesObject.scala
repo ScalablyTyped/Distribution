@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait chartSeriesObject extends baseSeriesObject {
-  /** Returns the name of the value axis of the series. */
+  /** @name chartSeriesObject.axis */
   var axis: String = js.native
-  /** The name of the series' barOverlapGroup. */
+  /** @name chartSeriesObject.barOverlapGroup */
   var barOverlapGroup: String = js.native
-  /** Returns the name of the series pane. */
+  /** @name chartSeriesObject.pane */
   var pane: String = js.native
-  /** The name of the series' stack. */
+  /** @name chartSeriesObject.stack */
   var stack: String = js.native
-  /** Gets the argument axis to which the series belongs. */
+  /** @name chartSeriesObject.getArgumentAxis() */
   def getArgumentAxis(): chartAxisObject = js.native
-  /** Gets the value axis to which the series belongs. */
+  /** @name chartSeriesObject.getValueAxis() */
   def getValueAxis(): chartAxisObject = js.native
 }
 

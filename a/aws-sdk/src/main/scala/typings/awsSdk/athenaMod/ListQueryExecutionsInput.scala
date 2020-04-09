@@ -15,7 +15,7 @@ trait ListQueryExecutionsInput extends js.Object {
     */
   var NextToken: js.UndefOr[Token] = js.native
   /**
-    * The name of the workgroup from which queries are being returned.
+    * The name of the workgroup from which queries are returned. If a workgroup is not specified, a list of available query execution IDs for the queries in the primary workgroup is returned.
     */
   var WorkGroup: js.UndefOr[WorkGroupName] = js.native
 }

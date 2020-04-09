@@ -8,5 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object permuteDomain extends js.Object {
   def apply(domain: String): js.Array[String] = js.native
+  def apply(domain: String, allowSpecialUseDomain: Boolean): js.Array[String] = js.native
 }
 

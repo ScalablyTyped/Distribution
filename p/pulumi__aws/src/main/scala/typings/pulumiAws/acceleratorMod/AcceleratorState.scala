@@ -1,5 +1,6 @@
 package typings.pulumiAws.acceleratorMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiAws.inputMod.globalaccelerator.AcceleratorAttributes
 import typings.pulumiAws.inputMod.globalaccelerator.AcceleratorIpSet
 import typings.pulumiPulumi.outputMod.Input
@@ -37,6 +38,10 @@ trait AcceleratorState extends js.Object {
     * The name of the accelerator.
     */
   val name: js.UndefOr[Input[String]] = js.native
+  /**
+    * A mapping of tags to assign to the resource.
+    */
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 
 object AcceleratorState {
@@ -48,7 +53,8 @@ object AcceleratorState {
     hostedZoneId: Input[String] = null,
     ipAddressType: Input[String] = null,
     ipSets: Input[js.Array[Input[AcceleratorIpSet]]] = null,
-    name: Input[String] = null
+    name: Input[String] = null,
+    tags: Input[StringDictionary[_]] = null
   ): AcceleratorState = {
     val __obj = js.Dynamic.literal()
     if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
@@ -58,6 +64,7 @@ object AcceleratorState {
     if (ipAddressType != null) __obj.updateDynamic("ipAddressType")(ipAddressType.asInstanceOf[js.Any])
     if (ipSets != null) __obj.updateDynamic("ipSets")(ipSets.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[AcceleratorState]
   }
 }

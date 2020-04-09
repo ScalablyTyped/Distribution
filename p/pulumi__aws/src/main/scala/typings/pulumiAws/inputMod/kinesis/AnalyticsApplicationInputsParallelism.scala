@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait AnalyticsApplicationInputsParallelism extends js.Object {
+  /**
+    * The Count of streams.
+    */
   var count: Input[Double] = js.native
 }
 

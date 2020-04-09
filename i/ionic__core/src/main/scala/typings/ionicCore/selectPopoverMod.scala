@@ -1,7 +1,7 @@
 package typings.ionicCore
 
 import typings.ionicCore.selectPopoverInterfaceMod.SelectPopoverOption
-import typings.ionicCore.stencilCoreMod.ComponentInterface
+import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

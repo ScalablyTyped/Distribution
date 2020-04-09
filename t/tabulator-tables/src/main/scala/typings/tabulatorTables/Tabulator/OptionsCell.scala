@@ -13,6 +13,7 @@ trait OptionsCell extends js.Object {
   var cellEditCancelled: js.UndefOr[CellEditEventCallback] = js.undefined
   var cellEdited: js.UndefOr[CellEditEventCallback] = js.undefined
   var cellEditing: js.UndefOr[CellEditEventCallback] = js.undefined
+  var cellHozAlign: js.UndefOr[ColumnDefinitionAlign] = js.undefined
   var cellMouseEnter: js.UndefOr[CellEventCallback] = js.undefined
   var cellMouseLeave: js.UndefOr[CellEventCallback] = js.undefined
   var cellMouseMove: js.UndefOr[CellEventCallback] = js.undefined
@@ -20,6 +21,7 @@ trait OptionsCell extends js.Object {
   var cellMouseOver: js.UndefOr[CellEventCallback] = js.undefined
   var cellTap: js.UndefOr[CellEventCallback] = js.undefined
   var cellTapHold: js.UndefOr[CellEventCallback] = js.undefined
+  var cellVertAlign: js.UndefOr[VerticalAlign] = js.undefined
 }
 
 object OptionsCell {
@@ -32,13 +34,15 @@ object OptionsCell {
     cellEditCancelled: /* cell */ CellComponent => Unit = null,
     cellEdited: /* cell */ CellComponent => Unit = null,
     cellEditing: /* cell */ CellComponent => Unit = null,
+    cellHozAlign: ColumnDefinitionAlign = null,
     cellMouseEnter: (/* e */ js.Any, /* cell */ CellComponent) => Unit = null,
     cellMouseLeave: (/* e */ js.Any, /* cell */ CellComponent) => Unit = null,
     cellMouseMove: (/* e */ js.Any, /* cell */ CellComponent) => Unit = null,
     cellMouseOut: (/* e */ js.Any, /* cell */ CellComponent) => Unit = null,
     cellMouseOver: (/* e */ js.Any, /* cell */ CellComponent) => Unit = null,
     cellTap: (/* e */ js.Any, /* cell */ CellComponent) => Unit = null,
-    cellTapHold: (/* e */ js.Any, /* cell */ CellComponent) => Unit = null
+    cellTapHold: (/* e */ js.Any, /* cell */ CellComponent) => Unit = null,
+    cellVertAlign: VerticalAlign = null
   ): OptionsCell = {
     val __obj = js.Dynamic.literal()
     if (cellClick != null) __obj.updateDynamic("cellClick")(js.Any.fromFunction2(cellClick))
@@ -48,6 +52,7 @@ object OptionsCell {
     if (cellEditCancelled != null) __obj.updateDynamic("cellEditCancelled")(js.Any.fromFunction1(cellEditCancelled))
     if (cellEdited != null) __obj.updateDynamic("cellEdited")(js.Any.fromFunction1(cellEdited))
     if (cellEditing != null) __obj.updateDynamic("cellEditing")(js.Any.fromFunction1(cellEditing))
+    if (cellHozAlign != null) __obj.updateDynamic("cellHozAlign")(cellHozAlign.asInstanceOf[js.Any])
     if (cellMouseEnter != null) __obj.updateDynamic("cellMouseEnter")(js.Any.fromFunction2(cellMouseEnter))
     if (cellMouseLeave != null) __obj.updateDynamic("cellMouseLeave")(js.Any.fromFunction2(cellMouseLeave))
     if (cellMouseMove != null) __obj.updateDynamic("cellMouseMove")(js.Any.fromFunction2(cellMouseMove))
@@ -55,6 +60,7 @@ object OptionsCell {
     if (cellMouseOver != null) __obj.updateDynamic("cellMouseOver")(js.Any.fromFunction2(cellMouseOver))
     if (cellTap != null) __obj.updateDynamic("cellTap")(js.Any.fromFunction2(cellTap))
     if (cellTapHold != null) __obj.updateDynamic("cellTapHold")(js.Any.fromFunction2(cellTapHold))
+    if (cellVertAlign != null) __obj.updateDynamic("cellVertAlign")(cellVertAlign.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsCell]
   }
 }

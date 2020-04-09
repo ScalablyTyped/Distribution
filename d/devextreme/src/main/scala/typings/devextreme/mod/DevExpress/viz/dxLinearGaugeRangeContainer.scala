@@ -31,11 +31,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxLinearGaugeRangeContainer extends BaseGaugeRangeContainer {
-  /** Specifies the orientation of the range container. Applies only if the geometry.orientation option is "vertical". */
+  /** @name dxLinearGauge.Options.rangeContainer.horizontalOrientation */
   var horizontalOrientation: js.UndefOr[center | left | right] = js.undefined
-  /** Specifies the orientation of the range container. Applies only if the geometry.orientation option is "horizontal". */
+  /** @name dxLinearGauge.Options.rangeContainer.verticalOrientation */
   var verticalOrientation: js.UndefOr[bottom | center | top] = js.undefined
-  /** Specifies the width of the range container's start and end boundaries in the LinearGauge widget. */
+  /** @name dxLinearGauge.Options.rangeContainer.width */
   var width: js.UndefOr[AnonStart | Double] = js.undefined
 }
 

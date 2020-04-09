@@ -22,6 +22,7 @@ import typings.react.mod.LegacyRef
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
@@ -579,7 +580,7 @@ object MenuHeaderProps {
     onProgress: SyntheticEvent[li, Event_] => Unit = null,
     onRateChange: SyntheticEvent[li, Event_] => Unit = null,
     onReset: FormEvent[li] => Unit = null,
-    onScroll: UIEvent[li] => Unit = null,
+    onScroll: UIEvent[li, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[li, Event_] => Unit = null,
     onSeeking: SyntheticEvent[li, Event_] => Unit = null,
     onSelect: SyntheticEvent[li, Event_] => Unit = null,

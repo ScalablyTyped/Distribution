@@ -9,34 +9,34 @@ import scala.scalajs.js.annotation._
 @js.native
 class dxFunnelItem ()
   extends typings.devextreme.mod.DevExpress.viz.dxFunnelItem {
-  /** The item's argument. */
+  /** @name dxFunnelItem.argument */
   /* CompleteClass */
   override var argument: String | Date | Double = js.native
-  /** The item's original data object. */
+  /** @name dxFunnelItem.data */
   /* CompleteClass */
   override var data: js.Any = js.native
-  /** The item's calculated percentage value. */
+  /** @name dxFunnelItem.percent */
   /* CompleteClass */
   override var percent: Double = js.native
-  /** The item's value. */
+  /** @name dxFunnelItem.value */
   /* CompleteClass */
   override var value: Double = js.native
-  /** Gets the funnel item's color specified in the data source or palette. */
+  /** @name dxFunnelItem.getColor() */
   /* CompleteClass */
   override def getColor(): String = js.native
-  /** Changes the funnel item's hover state. */
+  /** @name dxFunnelItem.hover(state) */
   /* CompleteClass */
   override def hover(state: Boolean): Unit = js.native
-  /** Indicates whether the funnel item is in the hover state. */
+  /** @name dxFunnelItem.isHovered() */
   /* CompleteClass */
   override def isHovered(): Boolean = js.native
-  /** Indicates whether the funnel item is selected. */
+  /** @name dxFunnelItem.isSelected() */
   /* CompleteClass */
   override def isSelected(): Boolean = js.native
-  /** Selects or cancels the funnel item's selection. */
+  /** @name dxFunnelItem.select(state) */
   /* CompleteClass */
   override def select(state: Boolean): Unit = js.native
-  /** Shows the funnel item's tooltip. */
+  /** @name dxFunnelItem.showTooltip() */
   /* CompleteClass */
   override def showTooltip(): Unit = js.native
 }

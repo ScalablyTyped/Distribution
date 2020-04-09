@@ -2,8 +2,6 @@ package typings.firebaseFirestore
 
 import typings.firebaseFirestore.coreViewSnapshotMod.ChangeType
 import typings.firebaseFirestore.coreViewSnapshotMod.SyncState
-import typings.firebaseFirestore.logMod.LogLevel
-import typings.firebaseFirestore.modelFieldValueMod.ServerTimestampBehavior
 import typings.firebaseFirestore.modelFieldValueMod.TypeOrder
 import typings.firebaseFirestore.modelMutationMod.MutationType
 import typings.firebaseFirestore.remoteConnectivityMonitorMod.NetworkStatus
@@ -22,16 +20,12 @@ object firebaseFirestoreNumbers {
   sealed trait `0`
     extends ChangeType
        with typings.firebaseFirestore.viewSnapshotMod.ChangeType
-       with LogLevel
-       with typings.firebaseFirestore.utilLogMod.LogLevel
        with MutationType
        with typings.firebaseFirestore.mutationMod.MutationType
        with NetworkStatus
        with typings.firebaseFirestore.connectivityMonitorMod.NetworkStatus
        with OnlineStateSource
        with typings.firebaseFirestore.coreTypesMod.OnlineStateSource
-       with ServerTimestampBehavior
-       with typings.firebaseFirestore.srcModelFieldValueMod.ServerTimestampBehavior
        with SyncState
        with typings.firebaseFirestore.viewSnapshotMod.SyncState
        with TargetPurpose
@@ -45,16 +39,12 @@ object firebaseFirestoreNumbers {
   sealed trait `1`
     extends ChangeType
        with typings.firebaseFirestore.viewSnapshotMod.ChangeType
-       with LogLevel
-       with typings.firebaseFirestore.utilLogMod.LogLevel
        with MutationType
        with typings.firebaseFirestore.mutationMod.MutationType
        with NetworkStatus
        with typings.firebaseFirestore.connectivityMonitorMod.NetworkStatus
        with OnlineStateSource
        with typings.firebaseFirestore.coreTypesMod.OnlineStateSource
-       with ServerTimestampBehavior
-       with typings.firebaseFirestore.srcModelFieldValueMod.ServerTimestampBehavior
        with SyncState
        with typings.firebaseFirestore.viewSnapshotMod.SyncState
        with TargetPurpose
@@ -65,15 +55,16 @@ object firebaseFirestoreNumbers {
        with typings.firebaseFirestore.watchChangeMod.WatchTargetChangeState
   
   @js.native
+  sealed trait `10`
+    extends TypeOrder
+       with typings.firebaseFirestore.srcModelFieldValueMod.TypeOrder
+  
+  @js.native
   sealed trait `2`
     extends ChangeType
        with typings.firebaseFirestore.viewSnapshotMod.ChangeType
-       with LogLevel
-       with typings.firebaseFirestore.utilLogMod.LogLevel
        with MutationType
        with typings.firebaseFirestore.mutationMod.MutationType
-       with ServerTimestampBehavior
-       with typings.firebaseFirestore.srcModelFieldValueMod.ServerTimestampBehavior
        with TargetPurpose
        with typings.firebaseFirestore.localTargetDataMod.TargetPurpose
        with TypeOrder
@@ -132,6 +123,8 @@ object firebaseFirestoreNumbers {
   def `0`: `0` = 0.asInstanceOf[`0`]
   @scala.inline
   def `1`: `1` = 1.asInstanceOf[`1`]
+  @scala.inline
+  def `10`: `10` = 10.asInstanceOf[`10`]
   @scala.inline
   def `2`: `2` = 2.asInstanceOf[`2`]
   @scala.inline

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait GetVpcEndpointFilter extends js.Object {
   /**
     * The name of the field to filter by, as defined by
-    * [the underlying AWS API](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeVpcPeeringConnections.html).
+    * [the underlying AWS API](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeVpcEndpoints.html).
     */
   var name: String = js.native
   /**

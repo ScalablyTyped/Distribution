@@ -42,49 +42,49 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxSparklineOptions extends BaseSparklineOptions[dxSparkline] {
-  /** Specifies the data source field that provides arguments for a sparkline. */
+  /** @name dxSparkline.Options.argumentField */
   var argumentField: js.UndefOr[String] = js.undefined
-  /** Sets a color for the bars indicating negative values. Available for a sparkline of the bar type only. */
+  /** @name dxSparkline.Options.barNegativeColor */
   var barNegativeColor: js.UndefOr[String] = js.undefined
-  /** Sets a color for the bars indicating positive values. Available for a sparkline of the bar type only. */
+  /** @name dxSparkline.Options.barPositiveColor */
   var barPositiveColor: js.UndefOr[String] = js.undefined
-  /** Binds the widget to data. */
+  /** @name dxSparkline.Options.dataSource */
   var dataSource: js.UndefOr[js.Array[_] | DataSource | DataSourceOptions | String] = js.undefined
-  /** Sets a color for the boundary of both the first and last points on a sparkline. */
+  /** @name dxSparkline.Options.firstLastColor */
   var firstLastColor: js.UndefOr[String] = js.undefined
-  /** Specifies whether the sparkline should ignore null data points. */
+  /** @name dxSparkline.Options.ignoreEmptyPoints */
   var ignoreEmptyPoints: js.UndefOr[Boolean] = js.undefined
-  /** Sets a color for a line on a sparkline. Available for the sparklines of the line- and area-like types. */
+  /** @name dxSparkline.Options.lineColor */
   var lineColor: js.UndefOr[String] = js.undefined
-  /** Specifies a width for a line on a sparkline. Available for the sparklines of the line- and area-like types. */
+  /** @name dxSparkline.Options.lineWidth */
   var lineWidth: js.UndefOr[Double] = js.undefined
-  /** Sets a color for the bars indicating the values that are less than the winloss threshold. Available for a sparkline of the winloss type only. */
+  /** @name dxSparkline.Options.lossColor */
   var lossColor: js.UndefOr[String] = js.undefined
-  /** Sets a color for the boundary of the maximum point on a sparkline. */
+  /** @name dxSparkline.Options.maxColor */
   var maxColor: js.UndefOr[String] = js.undefined
-  /** Specifies the maximum value of the sparkline's value axis. */
+  /** @name dxSparkline.Options.maxValue */
   var maxValue: js.UndefOr[Double] = js.undefined
-  /** Sets a color for the boundary of the minimum point on a sparkline. */
+  /** @name dxSparkline.Options.minColor */
   var minColor: js.UndefOr[String] = js.undefined
-  /** Specifies the minimum value of the sparkline value axis. */
+  /** @name dxSparkline.Options.minValue */
   var minValue: js.UndefOr[Double] = js.undefined
-  /** Sets a color for points on a sparkline. Available for the sparklines of the line- and area-like types. */
+  /** @name dxSparkline.Options.pointColor */
   var pointColor: js.UndefOr[String] = js.undefined
-  /** Specifies the diameter of sparkline points in pixels. Available for the sparklines of line- and area-like types. */
+  /** @name dxSparkline.Options.pointSize */
   var pointSize: js.UndefOr[Double] = js.undefined
-  /** Specifies a symbol to use as a point marker on a sparkline. Available for the sparklines of the line- and area-like types. */
+  /** @name dxSparkline.Options.pointSymbol */
   var pointSymbol: js.UndefOr[circle | cross | polygon | square | triangle] = js.undefined
-  /** Specifies whether or not to indicate both the first and last values on a sparkline. */
+  /** @name dxSparkline.Options.showFirstLast */
   var showFirstLast: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether or not to indicate both the minimum and maximum values on a sparkline. */
+  /** @name dxSparkline.Options.showMinMax */
   var showMinMax: js.UndefOr[Boolean] = js.undefined
-  /** Determines the type of a sparkline. */
+  /** @name dxSparkline.Options.type */
   var `type`: js.UndefOr[area | bar | line | spline | splinearea | steparea | stepline | winloss] = js.undefined
-  /** Specifies the data source field that provides values for a sparkline. */
+  /** @name dxSparkline.Options.valueField */
   var valueField: js.UndefOr[String] = js.undefined
-  /** Sets a color for the bars indicating the values greater than a winloss threshold. Available for a sparkline of the winloss type only. */
+  /** @name dxSparkline.Options.winColor */
   var winColor: js.UndefOr[String] = js.undefined
-  /** Specifies a value that serves as a threshold for the sparkline of the winloss type. */
+  /** @name dxSparkline.Options.winlossThreshold */
   var winlossThreshold: js.UndefOr[Double] = js.undefined
 }
 

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait FirehoseDeliveryStreamRedshiftConfiguration extends js.Object {
   /**
-    * The CloudWatch Logging Options for the delivery stream. More details are given below.
+    * The CloudWatch Logging Options for the delivery stream. More details are given below
     */
   var cloudwatchLoggingOptions: js.UndefOr[Input[FirehoseDeliveryStreamRedshiftConfigurationCloudwatchLoggingOptions]] = js.native
   /**
@@ -36,11 +36,11 @@ trait FirehoseDeliveryStreamRedshiftConfiguration extends js.Object {
     */
   var processingConfiguration: js.UndefOr[Input[FirehoseDeliveryStreamRedshiftConfigurationProcessingConfiguration]] = js.native
   /**
-    * After an initial failure to deliver to Splunk, the total amount of time, in seconds between 0 to 7200, during which Firehose re-attempts delivery (including the first attempt).  After this time has elapsed, the failed documents are written to Amazon S3.  The default value is 300s.  There will be no retry if the value is 0.
+    * The length of time during which Firehose retries delivery after a failure, starting from the initial request and including the first attempt. The default value is 3600 seconds (60 minutes). Firehose does not retry if the value of DurationInSeconds is 0 (zero) or if the first delivery attempt takes longer than the current value.
     */
   var retryDuration: js.UndefOr[Input[Double]] = js.native
   /**
-    * The role that Kinesis Data Firehose can use to access AWS Glue. This role must be in the same account you use for Kinesis Data Firehose. Cross-account roles aren't allowed.
+    * The arn of the role the stream assumes.
     */
   var roleArn: Input[String] = js.native
   /**
@@ -48,7 +48,7 @@ trait FirehoseDeliveryStreamRedshiftConfiguration extends js.Object {
     */
   var s3BackupConfiguration: js.UndefOr[Input[FirehoseDeliveryStreamRedshiftConfigurationS3BackupConfiguration]] = js.native
   /**
-    * Defines how documents should be delivered to Amazon S3.  Valid values are `FailedEventsOnly` and `AllEvents`.  Default value is `FailedEventsOnly`.
+    * The Amazon S3 backup mode.  Valid values are `Disabled` and `Enabled`.  Default value is `Disabled`.
     */
   var s3BackupMode: js.UndefOr[Input[String]] = js.native
   /**

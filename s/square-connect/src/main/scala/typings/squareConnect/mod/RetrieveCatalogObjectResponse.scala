@@ -9,15 +9,15 @@ import scala.scalajs.js.annotation._
 @js.native
 class RetrieveCatalogObjectResponse () extends js.Object {
   /**
-    * The set of [Error](#type-error)s encountered.
+    * Information on any errors encountered.
     */
   var errors: js.UndefOr[js.Array[Error]] = js.native
   /**
-    * The [CatalogObject](#type-catalogobject)s returned.
+    * The CatalogObjects returned.
     */
   var `object`: js.UndefOr[CatalogObject] = js.native
   /**
-    * A list of [CatalogObject](#type-catalogobject)s referenced by the object in the `object` field.
+    * A list of CatalogObjects referenced by the object in the `object` field.
     */
   var related_objects: js.UndefOr[js.Array[CatalogObject]] = js.native
 }

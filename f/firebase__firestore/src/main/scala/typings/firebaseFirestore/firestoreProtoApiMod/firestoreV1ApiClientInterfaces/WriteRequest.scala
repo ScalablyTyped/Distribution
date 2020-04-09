@@ -1,6 +1,7 @@
 package typings.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces
 
 import typings.firebaseFirestore.firestoreProtoApiMod.ApiClientObjectMap
+import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait WriteRequest extends js.Object {
   var labels: js.UndefOr[ApiClientObjectMap[String]] = js.undefined
   var streamId: js.UndefOr[String] = js.undefined
-  var streamToken: js.UndefOr[String] = js.undefined
+  var streamToken: js.UndefOr[String | Uint8Array] = js.undefined
   var writes: js.UndefOr[js.Array[Write]] = js.undefined
 }
 
@@ -17,7 +18,7 @@ object WriteRequest {
   def apply(
     labels: ApiClientObjectMap[String] = null,
     streamId: String = null,
-    streamToken: String = null,
+    streamToken: String | Uint8Array = null,
     writes: js.Array[Write] = null
   ): WriteRequest = {
     val __obj = js.Dynamic.literal()

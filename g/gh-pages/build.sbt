@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gh-pages"
-version := "2.0-dt-20191002Z-de0a06"
+version := "2.2-dt-20200325Z-c3c4cb"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

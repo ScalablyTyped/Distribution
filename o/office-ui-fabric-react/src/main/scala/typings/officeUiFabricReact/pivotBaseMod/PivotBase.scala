@@ -29,7 +29,7 @@ class PivotBase protected ()
     */
   var _isKeyValid: js.Any = js.native
   /**
-    * Handle the onKeyPress eventon the PivotLinks
+    * Handle the onKeyPress event on the PivotLinks
     */
   var _onKeyPress: js.Any = js.native
   /**

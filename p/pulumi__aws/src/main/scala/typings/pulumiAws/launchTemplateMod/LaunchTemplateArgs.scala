@@ -7,9 +7,11 @@ import typings.pulumiAws.inputMod.ec2.LaunchTemplateCpuOptions
 import typings.pulumiAws.inputMod.ec2.LaunchTemplateCreditSpecification
 import typings.pulumiAws.inputMod.ec2.LaunchTemplateElasticGpuSpecification
 import typings.pulumiAws.inputMod.ec2.LaunchTemplateElasticInferenceAccelerator
+import typings.pulumiAws.inputMod.ec2.LaunchTemplateHibernationOptions
 import typings.pulumiAws.inputMod.ec2.LaunchTemplateIamInstanceProfile
 import typings.pulumiAws.inputMod.ec2.LaunchTemplateInstanceMarketOptions
 import typings.pulumiAws.inputMod.ec2.LaunchTemplateLicenseSpecification
+import typings.pulumiAws.inputMod.ec2.LaunchTemplateMetadataOptions
 import typings.pulumiAws.inputMod.ec2.LaunchTemplateMonitoring
 import typings.pulumiAws.inputMod.ec2.LaunchTemplateNetworkInterface
 import typings.pulumiAws.inputMod.ec2.LaunchTemplatePlacement
@@ -62,6 +64,10 @@ trait LaunchTemplateArgs extends js.Object {
     */
   val elasticInferenceAccelerator: js.UndefOr[Input[LaunchTemplateElasticInferenceAccelerator]] = js.native
   /**
+    * The hibernation options for the instance. See Hibernation Options below for more details.
+    */
+  val hibernationOptions: js.UndefOr[Input[LaunchTemplateHibernationOptions]] = js.native
+  /**
     * The IAM Instance Profile to launch the instance with. See Instance Profile
     * below for more details.
     */
@@ -96,6 +102,10 @@ trait LaunchTemplateArgs extends js.Object {
     * A list of license specifications to associate with. See License Specification below for more details.
     */
   val licenseSpecifications: js.UndefOr[Input[js.Array[Input[LaunchTemplateLicenseSpecification]]]] = js.native
+  /**
+    * Customize the metadata options for the instance. See Metadata Options below for more details.
+    */
+  val metadataOptions: js.UndefOr[Input[LaunchTemplateMetadataOptions]] = js.native
   /**
     * The monitoring option for the instance. See Monitoring below for more details.
     */
@@ -156,6 +166,7 @@ object LaunchTemplateArgs {
     ebsOptimized: Input[String] = null,
     elasticGpuSpecifications: Input[js.Array[Input[LaunchTemplateElasticGpuSpecification]]] = null,
     elasticInferenceAccelerator: Input[LaunchTemplateElasticInferenceAccelerator] = null,
+    hibernationOptions: Input[LaunchTemplateHibernationOptions] = null,
     iamInstanceProfile: Input[LaunchTemplateIamInstanceProfile] = null,
     imageId: Input[String] = null,
     instanceInitiatedShutdownBehavior: Input[String] = null,
@@ -164,6 +175,7 @@ object LaunchTemplateArgs {
     kernelId: Input[String] = null,
     keyName: Input[String] = null,
     licenseSpecifications: Input[js.Array[Input[LaunchTemplateLicenseSpecification]]] = null,
+    metadataOptions: Input[LaunchTemplateMetadataOptions] = null,
     monitoring: Input[LaunchTemplateMonitoring] = null,
     name: Input[String] = null,
     namePrefix: Input[String] = null,
@@ -186,6 +198,7 @@ object LaunchTemplateArgs {
     if (ebsOptimized != null) __obj.updateDynamic("ebsOptimized")(ebsOptimized.asInstanceOf[js.Any])
     if (elasticGpuSpecifications != null) __obj.updateDynamic("elasticGpuSpecifications")(elasticGpuSpecifications.asInstanceOf[js.Any])
     if (elasticInferenceAccelerator != null) __obj.updateDynamic("elasticInferenceAccelerator")(elasticInferenceAccelerator.asInstanceOf[js.Any])
+    if (hibernationOptions != null) __obj.updateDynamic("hibernationOptions")(hibernationOptions.asInstanceOf[js.Any])
     if (iamInstanceProfile != null) __obj.updateDynamic("iamInstanceProfile")(iamInstanceProfile.asInstanceOf[js.Any])
     if (imageId != null) __obj.updateDynamic("imageId")(imageId.asInstanceOf[js.Any])
     if (instanceInitiatedShutdownBehavior != null) __obj.updateDynamic("instanceInitiatedShutdownBehavior")(instanceInitiatedShutdownBehavior.asInstanceOf[js.Any])
@@ -194,6 +207,7 @@ object LaunchTemplateArgs {
     if (kernelId != null) __obj.updateDynamic("kernelId")(kernelId.asInstanceOf[js.Any])
     if (keyName != null) __obj.updateDynamic("keyName")(keyName.asInstanceOf[js.Any])
     if (licenseSpecifications != null) __obj.updateDynamic("licenseSpecifications")(licenseSpecifications.asInstanceOf[js.Any])
+    if (metadataOptions != null) __obj.updateDynamic("metadataOptions")(metadataOptions.asInstanceOf[js.Any])
     if (monitoring != null) __obj.updateDynamic("monitoring")(monitoring.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])

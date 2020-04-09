@@ -5,17 +5,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FileProviderOptions[T] extends js.Object {
-  /** Specifies which data field provides timestamps that indicate when a file was last modified. */
+  /** @name FileProvider.Options.dateModifiedExpr */
   var dateModifiedExpr: js.UndefOr[String | js.Function] = js.undefined
-  /** Specifies which data field provides information about whether a file system item is a directory. */
+  /** @name FileProvider.Options.isDirectoryExpr */
   var isDirectoryExpr: js.UndefOr[String | js.Function] = js.undefined
-  /** Specifies the data field that provides keys. */
+  /** @name FileProvider.Options.keyExpr */
   var keyExpr: js.UndefOr[String | js.Function] = js.undefined
-  /** Specifies which data field provides file and directory names. */
+  /** @name FileProvider.Options.nameExpr */
   var nameExpr: js.UndefOr[String | js.Function] = js.undefined
-  /** Specifies which data field provides file sizes. */
+  /** @name FileProvider.Options.sizeExpr */
   var sizeExpr: js.UndefOr[String | js.Function] = js.undefined
-  /** Specifies which data field provides icons to be used as thumbnails. */
+  /** @name FileProvider.Options.thumbnailExpr */
   var thumbnailExpr: js.UndefOr[String | js.Function] = js.undefined
 }
 

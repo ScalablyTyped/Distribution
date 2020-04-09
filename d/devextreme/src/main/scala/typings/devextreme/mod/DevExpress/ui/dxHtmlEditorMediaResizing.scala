@@ -5,9 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxHtmlEditorMediaResizing extends js.Object {
-  /** Specifies media types that can be resized. Currently, only images are supported. */
+  /** @name dxHtmlEditorMediaResizing.allowedTargets */
   var allowedTargets: js.UndefOr[js.Array[String]] = js.undefined
-  /** Enables media resizing. */
+  /** @name dxHtmlEditorMediaResizing.enabled */
   var enabled: js.UndefOr[Boolean] = js.undefined
 }
 

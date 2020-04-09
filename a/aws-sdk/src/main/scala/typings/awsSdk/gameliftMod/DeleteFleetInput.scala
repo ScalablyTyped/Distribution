@@ -9,12 +9,12 @@ trait DeleteFleetInput extends js.Object {
   /**
     * A unique identifier for a fleet to be deleted. You can use either the fleet ID or ARN value.
     */
-  var FleetId: typings.awsSdk.gameliftMod.FleetId = js.native
+  var FleetId: FleetIdOrArn = js.native
 }
 
 object DeleteFleetInput {
   @scala.inline
-  def apply(FleetId: FleetId): DeleteFleetInput = {
+  def apply(FleetId: FleetIdOrArn): DeleteFleetInput = {
     val __obj = js.Dynamic.literal(FleetId = FleetId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DeleteFleetInput]

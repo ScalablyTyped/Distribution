@@ -17,6 +17,17 @@ trait ScrollViewPropsAndroid extends js.Object {
     */
   var endFillColor: js.UndefOr[String] = js.undefined
   /**
+    * Fades out the edges of the the scroll content.
+    *
+    * If the value is greater than 0, the fading edges will be set accordingly
+    * to the current scroll direction and position,
+    * indicating if there is more content to show.
+    *
+    * The default value is 0.
+    * @platform android
+    */
+  var fadingEdgeLength: js.UndefOr[Double] = js.undefined
+  /**
     * Enables nested scrolling for Android API level 21+. Nested scrolling is supported by default on iOS.
     */
   var nestedScrollEnabled: js.UndefOr[Boolean] = js.undefined
@@ -42,12 +53,14 @@ object ScrollViewPropsAndroid {
   @scala.inline
   def apply(
     endFillColor: String = null,
+    fadingEdgeLength: Int | Double = null,
     nestedScrollEnabled: js.UndefOr[Boolean] = js.undefined,
     overScrollMode: auto | always | never = null,
     scrollPerfTag: String = null
   ): ScrollViewPropsAndroid = {
     val __obj = js.Dynamic.literal()
     if (endFillColor != null) __obj.updateDynamic("endFillColor")(endFillColor.asInstanceOf[js.Any])
+    if (fadingEdgeLength != null) __obj.updateDynamic("fadingEdgeLength")(fadingEdgeLength.asInstanceOf[js.Any])
     if (!js.isUndefined(nestedScrollEnabled)) __obj.updateDynamic("nestedScrollEnabled")(nestedScrollEnabled.asInstanceOf[js.Any])
     if (overScrollMode != null) __obj.updateDynamic("overScrollMode")(overScrollMode.asInstanceOf[js.Any])
     if (scrollPerfTag != null) __obj.updateDynamic("scrollPerfTag")(scrollPerfTag.asInstanceOf[js.Any])

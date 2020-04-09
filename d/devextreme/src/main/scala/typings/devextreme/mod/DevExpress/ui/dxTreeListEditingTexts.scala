@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxTreeListEditingTexts extends GridBaseEditingTexts {
-  /** Specifies text for the button that adds a new nested row. Applies if the editing.mode is "batch" or "cell". */
+  /** @name dxTreeList.Options.editing.texts.addRowToNode */
   var addRowToNode: js.UndefOr[String] = js.undefined
 }
 

@@ -48,6 +48,17 @@ class Engine protected ()
   var endTape: js.Any = js.native
   var getSortedBackends: js.Any = js.native
   /**
+    * Returns a list of tensors to save for a given gradient calculation.
+    *
+    * Returns undefined if their is no registered gradient for this kernel in the
+    * gradient registry.
+    *
+    * @param kernelName name of kernel to look up gradient for.
+    * @param inputs a map of input tensors.
+    * @param outputs an array of output tensors from forward mode of kernel.
+    */
+  var getTensorsForGradient: js.Any = js.native
+  /**
     * Initializes a backend by looking up the backend name in the factory
     * registry and calling the factory method. Returns a boolean representing
     * whether the initialization of the backend suceeded. Throws an error if
@@ -63,6 +74,12 @@ class Engine protected ()
   val registeredVariables: NamedVariableMap = js.native
   var registry: StringDictionary[KernelBackend] = js.native
   var registryFactory: StringDictionary[AnonFactory] = js.native
+  /**
+    * Saves tensors used in forward mode for use in backward mode.
+    *
+    * @param tensors the list of tensors to save.
+    */
+  var saveTensorsForBackwardMode: js.Any = js.native
   var scopedRun: js.Any = js.native
   var setupRegisteredKernels: js.Any = js.native
   var shouldCheckForMemLeaks: js.Any = js.native

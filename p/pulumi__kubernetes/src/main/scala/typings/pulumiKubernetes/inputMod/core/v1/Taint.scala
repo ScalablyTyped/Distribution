@@ -25,7 +25,7 @@ trait Taint extends js.Object {
     */
   var timeAdded: js.UndefOr[Input[String]] = js.undefined
   /**
-    * Required. The taint value corresponding to the taint key.
+    * The taint value corresponding to the taint key.
     */
   var value: js.UndefOr[Input[String]] = js.undefined
 }

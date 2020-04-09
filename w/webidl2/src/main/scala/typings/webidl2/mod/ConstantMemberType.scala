@@ -14,6 +14,8 @@ trait ConstantMemberType extends IDLInterfaceMemberType {
   var name: String
   /** Whether its type is nullable. */
   var nullable: Boolean
+  /** The container of this type. */
+  var parent: InterfaceType | InterfaceMixinType
   var `type`: const
   /** The constant value */
   var value: ValueDescription
@@ -26,10 +28,11 @@ object ConstantMemberType {
     idlType: IDLTypeDescription,
     name: String,
     nullable: Boolean,
+    parent: InterfaceType | InterfaceMixinType,
     `type`: const,
     value: ValueDescription
   ): ConstantMemberType = {
-    val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], idlType = idlType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nullable = nullable.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], idlType = idlType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nullable = nullable.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConstantMemberType]
   }

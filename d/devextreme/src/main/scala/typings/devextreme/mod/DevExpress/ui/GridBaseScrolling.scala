@@ -12,19 +12,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GridBaseScrolling extends js.Object {
-  /** Specifies the rendering mode for columns. Applies when columns are left outside the viewport. Requires the columnWidth, columnAutoWidth, or width (for all columns) option specified. */
+  /** @name GridBase.Options.scrolling.columnRenderingMode */
   var columnRenderingMode: js.UndefOr[standard | virtual] = js.undefined
-  /** Specifies whether the widget should load adjacent pages. Applies only if scrolling.mode is "virtual" or "infinite". */
+  /** @name GridBase.Options.scrolling.preloadEnabled */
   var preloadEnabled: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the rendering mode for loaded rows. */
+  /** @name GridBase.Options.scrolling.rowRenderingMode */
   var rowRenderingMode: js.UndefOr[standard | virtual] = js.undefined
-  /** Specifies whether a user can scroll the content with a swipe gesture. Applies only if useNative is false. */
+  /** @name GridBase.Options.scrolling.scrollByContent */
   var scrollByContent: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether a user can scroll the content with the scrollbar. Applies only if useNative is false. */
+  /** @name GridBase.Options.scrolling.scrollByThumb */
   var scrollByThumb: js.UndefOr[Boolean] = js.undefined
-  /** Specifies when to show scrollbars. Applies only if useNative is false. */
+  /** @name GridBase.Options.scrolling.showScrollbar */
   var showScrollbar: js.UndefOr[always | never | onHover | onScroll] = js.undefined
-  /** Specifies whether the widget should use native or simulated scrolling. */
+  /** @name GridBase.Options.scrolling.useNative */
   var useNative: js.UndefOr[Boolean | auto] = js.undefined
 }
 

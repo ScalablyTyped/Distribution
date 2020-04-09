@@ -10,13 +10,15 @@ import typings.surveyKnockout.AnonContainer
 import typings.surveyKnockout.AnonContentLeft
 import typings.surveyKnockout.AnonControl
 import typings.surveyKnockout.AnonControlOther
+import typings.surveyKnockout.AnonControls
 import typings.surveyKnockout.AnonDescription
 import typings.surveyKnockout.AnonDisabled
 import typings.surveyKnockout.AnonError
 import typings.surveyKnockout.AnonFileDecorator
 import typings.surveyKnockout.AnonIcon
-import typings.surveyKnockout.AnonItemChecked
+import typings.surveyKnockout.AnonImage
 import typings.surveyKnockout.AnonItemControl
+import typings.surveyKnockout.AnonItemDecorator
 import typings.surveyKnockout.AnonItemTitle
 import typings.surveyKnockout.AnonItemValueRoot
 import typings.surveyKnockout.AnonRoot
@@ -30,7 +32,7 @@ object defaultBootstrapMaterialCss extends js.Object {
   var body: String = js.native
   var bodyEmpty: String = js.native
   var boolean: AnonControl = js.native
-  var checkbox: AnonItemControl = js.native
+  var checkbox: AnonItemDecorator = js.native
   var comment: String = js.native
   var completedPage: String = js.native
   var container: String = js.native
@@ -41,8 +43,12 @@ object defaultBootstrapMaterialCss extends js.Object {
   var file: AnonFileDecorator = js.native
   var footer: String = js.native
   var header: String = js.native
+  var headerText: String = js.native
   var html: AnonRoot = js.native
-  var imagepicker: AnonItemChecked = js.native
+  var image: AnonImage = js.native
+  var imagepicker: AnonItemControl = js.native
+  var logo: String = js.native
+  var logoImage: String = js.native
   var matrix: AnonCellText = js.native
   var matrixdropdown: AnonItemValueRoot = js.native
   var matrixdynamic: AnonButtonRemove = js.native
@@ -63,6 +69,7 @@ object defaultBootstrapMaterialCss extends js.Object {
   var root: String = js.native
   var row: String = js.native
   var saveData: AnonError = js.native
+  var signaturepad: AnonControls = js.native
   var text: String = js.native
   var title: String = js.native
   var window: AnonBody = js.native

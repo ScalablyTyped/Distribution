@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "jest-dev-server"
-version := "4.2-dt-20190614Z-1662aa"
+version := "4.2-dt-20190614Z-c1c03a"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "13.9-dt-20200318Z-96a265",
+  "org.scalablytyped" %%% "node" % "13.11-dt-20200402Z-9a87f0",
   "org.scalablytyped" %%% "std" % "3.8-a0108c",
   "org.scalablytyped" %%% "wait-on" % "4.0-dt-20200214Z-2f2883")
 publishArtifact in packageDoc := false

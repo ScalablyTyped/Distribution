@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact
 
-import typings.react.mod.Component
+import typings.react.mod._Global_.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,9 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("office-ui-fabric-react/lib/components/Divider/examples/VerticalDivider.Custom.Example", JSImport.Namespace)
 @js.native
 object verticalDividerCustomExampleMod extends js.Object {
-  @js.native
-  class VerticalDividerCustomExample ()
-    extends Component[js.Any, js.Any, js.Any]
-  
+  def VerticalDividerCustomExample(): Element = js.native
 }
 

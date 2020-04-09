@@ -5,6 +5,7 @@ import typings.jupyterlabExtensionmanager.modelMod.Action
 import typings.jupyterlabExtensionmanager.modelMod.IEntry
 import typings.jupyterlabExtensionmanager.modelMod.ListModel
 import typings.jupyterlabServices.mod.ServiceManager
+import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry.ISettings
 import typings.std.Event_
 import typings.std.HTMLInputElement
 import scala.scalajs.js
@@ -14,7 +15,9 @@ import scala.scalajs.js.annotation._
 @JSImport("@jupyterlab/extensionmanager/lib/widget", "ExtensionView")
 @js.native
 class ExtensionView protected () extends VDomRenderer[ListModel] {
-  def this(serviceManager: ServiceManager) = this()
+  def this(serviceManager: ServiceManager, settings: ISettings) = this()
+  var _forceOpen: js.Any = js.native
+  var _settings: js.Any = js.native
   /**
     * Toggle the focused modifier based on the input node focus state.
     */

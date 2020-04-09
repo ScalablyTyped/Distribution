@@ -12,7 +12,7 @@ trait BucketLifecycleRuleExpiration extends js.Object {
     */
   var date: js.UndefOr[Input[String]] = js.native
   /**
-    * The number of days that you want to specify for the default retention period.
+    * Specifies the number of days after object creation when the specific rule action takes effect.
     */
   var days: js.UndefOr[Input[Double]] = js.native
   /**

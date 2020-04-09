@@ -3,7 +3,7 @@ package typings.zapierPlatformCore.mod
 import typings.node.Buffer
 import typings.node.NodeJS.ReadableStream
 import typings.std.Console_
-import typings.zapierPlatformCore.AnonExpiredAuthError
+import typings.zapierPlatformCore.AnonError
 import typings.zapierPlatformCore.AnonGet
 import typings.zapierPlatformCore.AnonParse
 import typings.zapierPlatformCore.HttpRequestOptionsrawtrue
@@ -18,7 +18,7 @@ trait ZObject extends js.Object {
   var JSON: AnonParse = js.native
   var console: Console_ = js.native
   var cursor: AnonGet = js.native
-  var errors: AnonExpiredAuthError = js.native
+  var errors: AnonError = js.native
   def dehydrate[T](func: js.Function2[/* z */ this.type, /* bundle */ Bundle[T], _], inputData: js.Object): String = js.native
   def generateCallbackUrl(): String = js.native
   /**

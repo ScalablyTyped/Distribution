@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jest/core" : "25.1.0"
+      "@jest/core" : "25.2.7"
     }
   ],
   "test-dependencies" : [
     {
-      "@jest/core" : "25.1.0"
+      "@jest/core" : "25.2.7"
     }
   ],
   "compile-devDependencies" : [

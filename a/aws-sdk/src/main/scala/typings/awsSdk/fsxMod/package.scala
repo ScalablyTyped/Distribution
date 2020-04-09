@@ -125,6 +125,12 @@ package object fsxMod {
   type SecurityGroupIds = js.Array[typings.awsSdk.fsxMod.SecurityGroupId]
   type StartTime = typings.std.Date
   type StorageCapacity = scala.Double
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.SSD
+    - typings.awsSdk.awsSdkStrings.HDD
+    - java.lang.String
+  */
+  type StorageType = typings.awsSdk.fsxMod._StorageType | java.lang.String
   type SubnetId = java.lang.String
   type SubnetIds = js.Array[typings.awsSdk.fsxMod.SubnetId]
   type SucceededCount = scala.Double
@@ -140,6 +146,7 @@ package object fsxMod {
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.MULTI_AZ_1
     - typings.awsSdk.awsSdkStrings.SINGLE_AZ_1
+    - typings.awsSdk.awsSdkStrings.SINGLE_AZ_2
     - java.lang.String
   */
   type WindowsDeploymentType = typings.awsSdk.fsxMod._WindowsDeploymentType | java.lang.String

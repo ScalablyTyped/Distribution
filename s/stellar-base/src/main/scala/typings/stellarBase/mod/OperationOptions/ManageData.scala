@@ -7,14 +7,15 @@ import scala.scalajs.js.annotation._
 
 trait ManageData extends BaseOptions {
   var name: String
-  var value: String | Buffer
+  var value: String | Buffer | Null
 }
 
 object ManageData {
   @scala.inline
-  def apply(name: String, value: String | Buffer, source: String = null): ManageData = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+  def apply(name: String, source: String = null, value: String | Buffer = null): ManageData = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManageData]
   }
 }

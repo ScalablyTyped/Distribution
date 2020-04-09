@@ -10,7 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxChartValueAxisStripsLabel extends dxChartCommonAxisSettingsStripStyleLabel {
-  /** Specifies the text of the strip label. */
+  /** @name dxChart.Options.valueAxis.strips.label.text */
   var text: js.UndefOr[String] = js.undefined
 }
 

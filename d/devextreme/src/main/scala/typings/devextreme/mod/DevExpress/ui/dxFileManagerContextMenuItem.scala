@@ -15,10 +15,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxFileManagerContextMenuItem extends dxContextMenuItem {
-  /**  */
+  /** @name dxFileManagerContextMenuItem.items */
   @JSName("items")
   var items_dxFileManagerContextMenuItem: js.UndefOr[js.Array[dxFileManagerContextMenuItem]] = js.undefined
-  /** Specifies the context menu item's name. */
+  /** @name dxFileManagerContextMenuItem.name */
   var name: js.UndefOr[create | upload | refresh | download | move | copy | rename | delete | String] = js.undefined
 }
 

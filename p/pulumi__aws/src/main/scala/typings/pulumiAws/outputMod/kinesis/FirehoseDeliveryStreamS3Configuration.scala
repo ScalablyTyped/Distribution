@@ -20,7 +20,7 @@ trait FirehoseDeliveryStreamS3Configuration extends js.Object {
     */
   var bufferSize: js.UndefOr[Double] = js.native
   /**
-    * The CloudWatch Logging Options for the delivery stream. More details are given below.
+    * The CloudWatch Logging Options for the delivery stream. More details are given below
     */
   var cloudwatchLoggingOptions: FirehoseDeliveryStreamS3ConfigurationCloudwatchLoggingOptions = js.native
   /**

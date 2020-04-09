@@ -7,14 +7,17 @@ import scala.scalajs.js.annotation._
 trait Options extends js.Object {
   /**
     * Specify the line length that the printer will wrap on.
+    * @default 80
     */
   var printWidth: Double
   /**
     * Specify the number of spaces per indentation-level.
+    * @default 2
     */
   var tabWidth: Double
   /**
     * Indent lines with tabs instead of spaces
+    * @default false
     */
   var useTabs: Boolean
 }

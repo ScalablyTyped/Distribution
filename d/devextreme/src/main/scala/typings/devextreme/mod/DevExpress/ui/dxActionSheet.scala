@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait dxActionSheet extends CollectionWidget {
-  /** Hides the widget. */
+  /** @name dxActionSheet.hide() */
   def hide(): Promise[Unit] with JQueryPromise[Unit] = js.native
-  /** Shows the widget. */
+  /** @name dxActionSheet.show() */
   def show(): Promise[Unit] with JQueryPromise[Unit] = js.native
-  /** Shows or hides the widget depending on the argument. */
+  /** @name dxActionSheet.toggle(showing) */
   def toggle(showing: Boolean): Promise[Unit] with JQueryPromise[Unit] = js.native
 }
 

@@ -10,6 +10,7 @@ trait keyinSwiperEventvoid extends js.Object {
   var autoplayStart: js.UndefOr[js.Function0[Unit]] = js.undefined
   var autoplayStop: js.UndefOr[js.Function0[Unit]] = js.undefined
   var beforeDestroy: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var beforeLoopFix: js.UndefOr[js.Function0[Unit]] = js.undefined
   var click: js.UndefOr[js.Function0[Unit]] = js.undefined
   var doubleTap: js.UndefOr[js.Function0[Unit]] = js.undefined
   var fromEdge: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -17,6 +18,8 @@ trait keyinSwiperEventvoid extends js.Object {
   var init: js.UndefOr[js.Function0[Unit]] = js.undefined
   var lazyImageLoad: js.UndefOr[js.Function0[Unit]] = js.undefined
   var lazyImageReady: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var loopFix: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var observerUpdate: js.UndefOr[js.Function0[Unit]] = js.undefined
   var paginationRender: js.UndefOr[js.Function0[Unit]] = js.undefined
   var paginationUpdate: js.UndefOr[js.Function0[Unit]] = js.undefined
   var progress: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -49,6 +52,7 @@ object keyinSwiperEventvoid {
     autoplayStart: () => Unit = null,
     autoplayStop: () => Unit = null,
     beforeDestroy: () => Unit = null,
+    beforeLoopFix: () => Unit = null,
     click: () => Unit = null,
     doubleTap: () => Unit = null,
     fromEdge: () => Unit = null,
@@ -56,6 +60,8 @@ object keyinSwiperEventvoid {
     init: () => Unit = null,
     lazyImageLoad: () => Unit = null,
     lazyImageReady: () => Unit = null,
+    loopFix: () => Unit = null,
+    observerUpdate: () => Unit = null,
     paginationRender: () => Unit = null,
     paginationUpdate: () => Unit = null,
     progress: () => Unit = null,
@@ -85,6 +91,7 @@ object keyinSwiperEventvoid {
     if (autoplayStart != null) __obj.updateDynamic("autoplayStart")(js.Any.fromFunction0(autoplayStart))
     if (autoplayStop != null) __obj.updateDynamic("autoplayStop")(js.Any.fromFunction0(autoplayStop))
     if (beforeDestroy != null) __obj.updateDynamic("beforeDestroy")(js.Any.fromFunction0(beforeDestroy))
+    if (beforeLoopFix != null) __obj.updateDynamic("beforeLoopFix")(js.Any.fromFunction0(beforeLoopFix))
     if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction0(click))
     if (doubleTap != null) __obj.updateDynamic("doubleTap")(js.Any.fromFunction0(doubleTap))
     if (fromEdge != null) __obj.updateDynamic("fromEdge")(js.Any.fromFunction0(fromEdge))
@@ -92,6 +99,8 @@ object keyinSwiperEventvoid {
     if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction0(init))
     if (lazyImageLoad != null) __obj.updateDynamic("lazyImageLoad")(js.Any.fromFunction0(lazyImageLoad))
     if (lazyImageReady != null) __obj.updateDynamic("lazyImageReady")(js.Any.fromFunction0(lazyImageReady))
+    if (loopFix != null) __obj.updateDynamic("loopFix")(js.Any.fromFunction0(loopFix))
+    if (observerUpdate != null) __obj.updateDynamic("observerUpdate")(js.Any.fromFunction0(observerUpdate))
     if (paginationRender != null) __obj.updateDynamic("paginationRender")(js.Any.fromFunction0(paginationRender))
     if (paginationUpdate != null) __obj.updateDynamic("paginationUpdate")(js.Any.fromFunction0(paginationUpdate))
     if (progress != null) __obj.updateDynamic("progress")(js.Any.fromFunction0(progress))

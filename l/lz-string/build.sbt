@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "lz-string"
-version := "1.3-dt-20200226Z-45abbb"
+version := "1.3-dt-20200402Z-9f2b0e"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

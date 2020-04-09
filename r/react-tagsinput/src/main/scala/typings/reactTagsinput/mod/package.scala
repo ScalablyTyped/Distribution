@@ -11,6 +11,5 @@ package object mod {
     /* inputElement */ typings.react.mod.ReactElement, 
     typings.react.mod.ReactChild
   ]
-  type Tag = js.Any
   type TagProps = org.scalablytyped.runtime.StringDictionary[js.Any]
 }

@@ -24,19 +24,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Specifies options of the gauge's range container. */
+/** @name BaseGauge.Options.rangeContainer */
 trait BaseGaugeRangeContainer extends js.Object {
-  /** Specifies a range container's background color. */
+  /** @name BaseGauge.Options.rangeContainer.backgroundColor */
   var backgroundColor: js.UndefOr[String] = js.undefined
-  /** Specifies the offset of the range container from an invisible scale line in pixels. */
+  /** @name BaseGauge.Options.rangeContainer.offset */
   var offset: js.UndefOr[Double] = js.undefined
-  /** Specifies the palette to be used for colorizing ranges in the range container. */
+  /** @name BaseGauge.Options.rangeContainer.palette */
   var palette: js.UndefOr[
     js.Array[String] | Bright | Default | (`Harmony Light`) | Ocean | Pastel | Soft | (`Soft Pastel`) | Vintage | Violet | Carmine | (`Dark Moon`) | (`Dark Violet`) | (`Green Mist`) | (`Soft Blue`) | Material | Office
   ] = js.undefined
-  /** Specifies what to do with colors in the palette when their number is less than the number of ranges in the range container. */
+  /** @name BaseGauge.Options.rangeContainer.paletteExtensionMode */
   var paletteExtensionMode: js.UndefOr[alternate | blend | extrapolate] = js.undefined
-  /** An array of objects representing ranges contained in the range container. */
+  /** @name BaseGauge.Options.rangeContainer.ranges */
   var ranges: js.UndefOr[js.Array[AnonEndValue]] = js.undefined
 }
 

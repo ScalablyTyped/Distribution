@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait FirehoseDeliveryStreamServerSideEncryption extends js.Object {
   /**
-    * Defaults to `true`. Set it to `false` if you want to disable format conversion while preserving the configuration details.
+    * Whether to enable encryption at rest. Default is `false`.
     */
   var enabled: js.UndefOr[Boolean] = js.native
 }

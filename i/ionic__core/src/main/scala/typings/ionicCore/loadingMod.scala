@@ -1,12 +1,10 @@
 package typings.ionicCore
 
 import typings.ionicCore.componentsMod._Global_.HTMLIonLoadingElement
-import typings.ionicCore.ionicCoreStrings.ios
-import typings.ionicCore.ionicCoreStrings.md
 import typings.ionicCore.overlaysInterfaceMod.OverlayEventDetail
 import typings.ionicCore.overlaysInterfaceMod.OverlayInterface
 import typings.ionicCore.spinnerConfigsMod.SpinnerTypes
-import typings.ionicCore.stencilCoreMod.ComponentInterface
+import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,8 +36,6 @@ object loadingMod extends js.Object {
       * Optional text content to display in the loading indicator.
       */
     var message: js.UndefOr[String] = js.native
-    @JSName("mode")
-    var mode_Loading: ios | md = js.native
     var onBackdropTap: js.Any = js.native
     /**
       * If `true`, a backdrop will be displayed behind the loading indicator.

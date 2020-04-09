@@ -53,11 +53,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxSchedulerOptions extends WidgetOptions[dxScheduler] {
-  /** Specifies whether the widget adapts to small screens. */
+  /** @name dxScheduler.Options.adaptivityEnabled */
   var adaptivityEnabled: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the name of the data source item field whose value defines whether or not the corresponding appointment is an all-day appointment. */
+  /** @name dxScheduler.Options.allDayExpr */
   var allDayExpr: js.UndefOr[String] = js.undefined
-  /** Specifies a custom template for cell overflow indicators. */
+  /** @name dxScheduler.Options.appointmentCollectorTemplate */
   var appointmentCollectorTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function2[
       /* data */ AnonAppointmentCount, 
@@ -65,9 +65,9 @@ trait dxSchedulerOptions extends WidgetOptions[dxScheduler] {
       String | Element | JQuery
     ])
   ] = js.undefined
-  /** Configures appointment reordering using drag and drop gestures. */
+  /** @name dxScheduler.Options.appointmentDragging */
   var appointmentDragging: js.UndefOr[AnonAutoScroll] = js.undefined
-  /** Specifies a custom template for appointments. */
+  /** @name dxScheduler.Options.appointmentTemplate */
   var appointmentTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function3[
       /* model */ AnonAppointmentData, 
@@ -76,7 +76,7 @@ trait dxSchedulerOptions extends WidgetOptions[dxScheduler] {
       String | Element | JQuery
     ])
   ] = js.undefined
-  /** Specifies a custom template for tooltips displayed when users click an appointment or cell overflow indicator. */
+  /** @name dxScheduler.Options.appointmentTooltipTemplate */
   var appointmentTooltipTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function3[
       /* model */ AnonAppointmentData, 
@@ -85,19 +85,19 @@ trait dxSchedulerOptions extends WidgetOptions[dxScheduler] {
       String | Element | JQuery
     ])
   ] = js.undefined
-  /** Specifies cell duration in minutes. */
+  /** @name dxScheduler.Options.cellDuration */
   var cellDuration: js.UndefOr[Double] = js.undefined
-  /** Specifies whether or not an end-user can scroll the view in both directions at the same time. */
+  /** @name dxScheduler.Options.crossScrollingEnabled */
   var crossScrollingEnabled: js.UndefOr[Boolean] = js.undefined
-  /** Specifies a date displayed on the current scheduler view by default. */
+  /** @name dxScheduler.Options.currentDate */
   var currentDate: js.UndefOr[Date | Double | String] = js.undefined
-  /** Specifies the currently displayed view. Accepts the view's name or type. */
+  /** @name dxScheduler.Options.currentView */
   var currentView: js.UndefOr[
     agenda | day | month | timelineDay | timelineMonth | timelineWeek | timelineWorkWeek | week | workWeek
   ] = js.undefined
-  /** Customizes the date navigator's text. */
+  /** @name dxScheduler.Options.customizeDateNavigatorText */
   var customizeDateNavigatorText: js.UndefOr[js.Function1[/* info */ AnonEndDate, String]] = js.undefined
-  /** Specifies a custom template for table cells. */
+  /** @name dxScheduler.Options.dataCellTemplate */
   var dataCellTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function3[
       /* itemData */ js.Any, 
@@ -106,9 +106,9 @@ trait dxSchedulerOptions extends WidgetOptions[dxScheduler] {
       String | Element | JQuery
     ])
   ] = js.undefined
-  /** Binds the widget to data. */
+  /** @name dxScheduler.Options.dataSource */
   var dataSource: js.UndefOr[String | js.Array[dxSchedulerAppointment] | DataSource | DataSourceOptions] = js.undefined
-  /** Specifies a custom template for day scale items. */
+  /** @name dxScheduler.Options.dateCellTemplate */
   var dateCellTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function3[
       /* itemData */ js.Any, 
@@ -117,12 +117,12 @@ trait dxSchedulerOptions extends WidgetOptions[dxScheduler] {
       String | Element | JQuery
     ])
   ] = js.undefined
-  /** Specifies the date-time values' serialization format. Use it only if you do not specify the dataSource at design time. */
+  /** @name dxScheduler.Options.dateSerializationFormat */
   var dateSerializationFormat: js.UndefOr[String] = js.undefined
-  /** Specifies the name of the data source item field whose value holds the description of the corresponding appointment. */
+  /** @name dxScheduler.Options.descriptionExpr */
   var descriptionExpr: js.UndefOr[String] = js.undefined
-  /** @deprecated Use the appointmentTooltipTemplate option instead. */
-  /** Specifies a custom template for tooltips displayed when users click a cell overflow indicator. */
+  /** @deprecated */
+  /** @name dxScheduler.Options.dropDownAppointmentTemplate */
   var dropDownAppointmentTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function3[
       /* itemData */ js.Any, 
@@ -131,68 +131,68 @@ trait dxSchedulerOptions extends WidgetOptions[dxScheduler] {
       String | Element | JQuery
     ])
   ] = js.undefined
-  /** Specifies which editing operations an end-user can perform on appointments. */
+  /** @name dxScheduler.Options.editing */
   var editing: js.UndefOr[Boolean | AnonAllowAdding] = js.undefined
-  /** Specifies the name of the data source item field that defines the ending of an appointment. */
+  /** @name dxScheduler.Options.endDateExpr */
   var endDateExpr: js.UndefOr[String] = js.undefined
-  /** Specifies the name of the data source item field that defines the timezone of the appointment end date. */
+  /** @name dxScheduler.Options.endDateTimeZoneExpr */
   var endDateTimeZoneExpr: js.UndefOr[String] = js.undefined
-  /** Specifies the last hour on the time scale. Accepts integer values from 0 to 24. */
+  /** @name dxScheduler.Options.endDayHour */
   var endDayHour: js.UndefOr[Double] = js.undefined
-  /** Specifies the first day of a week. Does not apply to the agenda view. */
+  /** @name dxScheduler.Options.firstDayOfWeek */
   var firstDayOfWeek: js.UndefOr[`0` | `1` | `2` | `3` | `4` | `5` | `6`] = js.undefined
-  /** If true, appointments are grouped by date first and then by resource; opposite if false. Applies only if appointments are grouped and groupOrientation is "horizontal". */
+  /** @name dxScheduler.Options.groupByDate */
   var groupByDate: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the resource kinds by which the scheduler's appointments are grouped in a timetable. */
+  /** @name dxScheduler.Options.groups */
   var groups: js.UndefOr[js.Array[String]] = js.undefined
-  /** Specifies the time interval between when the date-time indicator changes its position, in milliseconds. */
+  /** @name dxScheduler.Options.indicatorUpdateInterval */
   var indicatorUpdateInterval: js.UndefOr[Double] = js.undefined
-  /** The latest date the widget allows you to select. */
+  /** @name dxScheduler.Options.max */
   var max: js.UndefOr[Date | Double | String] = js.undefined
-  /** Specifies the limit of full-sized appointments displayed per cell. Applies to all views except "agenda". */
+  /** @name dxScheduler.Options.maxAppointmentsPerCell */
   var maxAppointmentsPerCell: js.UndefOr[Double | auto | unlimited] = js.undefined
-  /** The earliest date the widget allows you to select. */
+  /** @name dxScheduler.Options.min */
   var min: js.UndefOr[Date | Double | String] = js.undefined
-  /** The text or HTML markup displayed by the widget if the item collection is empty. Available for the Agenda view only. */
+  /** @name dxScheduler.Options.noDataText */
   var noDataText: js.UndefOr[String] = js.undefined
-  /** A function that is executed after an appointment is added to the data source. */
+  /** @name dxScheduler.Options.onAppointmentAdded */
   var onAppointmentAdded: js.UndefOr[js.Function1[/* e */ AnonAppointmentDataComponent, _]] = js.undefined
-  /** A function that is executed before an appointment is added to the data source. */
+  /** @name dxScheduler.Options.onAppointmentAdding */
   var onAppointmentAdding: js.UndefOr[js.Function1[/* e */ AnonAppointmentDataCancel, _]] = js.undefined
-  /** A function that is executed when an appointment is clicked or tapped. */
+  /** @name dxScheduler.Options.onAppointmentClick */
   var onAppointmentClick: js.UndefOr[(js.Function1[/* e */ AnonAppointmentElement, _]) | String] = js.undefined
-  /** A function that is executed when a user attempts to open the browser's context menu for an appointment. Allows you to replace this context menu with a custom context menu. */
+  /** @name dxScheduler.Options.onAppointmentContextMenu */
   var onAppointmentContextMenu: js.UndefOr[(js.Function1[/* e */ AnonTargetedAppointmentData, _]) | String] = js.undefined
-  /** A function that is executed when an appointment is double-clicked or double-tapped. */
+  /** @name dxScheduler.Options.onAppointmentDblClick */
   var onAppointmentDblClick: js.UndefOr[(js.Function1[/* e */ AnonAppointmentElement, _]) | String] = js.undefined
-  /** A function that is executed after an appointment is deleted from the data source. */
+  /** @name dxScheduler.Options.onAppointmentDeleted */
   var onAppointmentDeleted: js.UndefOr[js.Function1[/* e */ AnonAppointmentDataComponent, _]] = js.undefined
-  /** A function that is executed before an appointment is deleted from the data source. */
+  /** @name dxScheduler.Options.onAppointmentDeleting */
   var onAppointmentDeleting: js.UndefOr[js.Function1[/* e */ AnonAppointmentDataCancel, _]] = js.undefined
-  /** @deprecated Use the onAppointmentFormOpening option instead. */
-  /** A function that is executed before an appointment details form is opened. */
+  /** @deprecated */
+  /** @name dxScheduler.Options.onAppointmentFormCreated */
   var onAppointmentFormCreated: js.UndefOr[js.Function1[/* e */ AnonForm, _]] = js.undefined
-  /** A function that is executed before an appointment details form is opened. */
+  /** @name dxScheduler.Options.onAppointmentFormOpening */
   var onAppointmentFormOpening: js.UndefOr[js.Function1[/* e */ AnonElementForm, _]] = js.undefined
-  /** A function that is executed when an appointment is rendered. */
+  /** @name dxScheduler.Options.onAppointmentRendered */
   var onAppointmentRendered: js.UndefOr[js.Function1[/* e */ AnonAppointmentDataAppointmentElement, _]] = js.undefined
-  /** A function that is executed after an appointment is updated in the data source. */
+  /** @name dxScheduler.Options.onAppointmentUpdated */
   var onAppointmentUpdated: js.UndefOr[js.Function1[/* e */ AnonAppointmentDataComponent, _]] = js.undefined
-  /** A function that is executed before an appointment is updated in the data source. */
+  /** @name dxScheduler.Options.onAppointmentUpdating */
   var onAppointmentUpdating: js.UndefOr[js.Function1[/* e */ AnonOldData, _]] = js.undefined
-  /** A function that is executed when a view cell is clicked. */
+  /** @name dxScheduler.Options.onCellClick */
   var onCellClick: js.UndefOr[(js.Function1[/* e */ AnonCellData, _]) | String] = js.undefined
-  /** A function that is executed when a user attempts to open the browser's context menu for a cell. Allows you to replace this context menu with a custom context menu. */
+  /** @name dxScheduler.Options.onCellContextMenu */
   var onCellContextMenu: js.UndefOr[(js.Function1[/* e */ AnonCellDataCellElement, _]) | String] = js.undefined
-  /** Specifies the edit mode for recurring appointments. */
+  /** @name dxScheduler.Options.recurrenceEditMode */
   var recurrenceEditMode: js.UndefOr[dialog | occurrence | series] = js.undefined
-  /** Specifies the name of the data source item field that defines exceptions for the current recurring appointment. */
+  /** @name dxScheduler.Options.recurrenceExceptionExpr */
   var recurrenceExceptionExpr: js.UndefOr[String] = js.undefined
-  /** Specifies the name of the data source item field that defines a recurrence rule for generating recurring appointments. */
+  /** @name dxScheduler.Options.recurrenceRuleExpr */
   var recurrenceRuleExpr: js.UndefOr[String] = js.undefined
-  /** Specifies whether filtering is performed on the server or client side. */
+  /** @name dxScheduler.Options.remoteFiltering */
   var remoteFiltering: js.UndefOr[Boolean] = js.undefined
-  /** Specifies a custom template for resource headers. */
+  /** @name dxScheduler.Options.resourceCellTemplate */
   var resourceCellTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function3[
       /* itemData */ js.Any, 
@@ -201,25 +201,25 @@ trait dxSchedulerOptions extends WidgetOptions[dxScheduler] {
       String | Element | JQuery
     ])
   ] = js.undefined
-  /** Specifies an array of resources available in the scheduler. */
+  /** @name dxScheduler.Options.resources */
   var resources: js.UndefOr[js.Array[AnonAllowMultiple]] = js.undefined
-  /** Currently selected cells' data. */
+  /** @name dxScheduler.Options.selectedCellData */
   var selectedCellData: js.UndefOr[js.Array[_]] = js.undefined
-  /** Specifies whether to apply shading to cover the timetable up to the current time. */
+  /** @name dxScheduler.Options.shadeUntilCurrentTime */
   var shadeUntilCurrentTime: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the "All-day" panel's visibility. Setting this option to false hides the panel along with the all-day appointments. */
+  /** @name dxScheduler.Options.showAllDayPanel */
   var showAllDayPanel: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the current date-time indicator's visibility. */
+  /** @name dxScheduler.Options.showCurrentTimeIndicator */
   var showCurrentTimeIndicator: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the name of the data source item field that defines the start of an appointment. */
+  /** @name dxScheduler.Options.startDateExpr */
   var startDateExpr: js.UndefOr[String] = js.undefined
-  /** Specifies the name of the data source item field that defines the timezone of the appointment start date. */
+  /** @name dxScheduler.Options.startDateTimeZoneExpr */
   var startDateTimeZoneExpr: js.UndefOr[String] = js.undefined
-  /** Specifies the first hour on the time scale. Accepts integer values from 0 to 24. */
+  /** @name dxScheduler.Options.startDayHour */
   var startDayHour: js.UndefOr[Double] = js.undefined
-  /** Specifies the name of the data source item field that holds the subject of an appointment. */
+  /** @name dxScheduler.Options.textExpr */
   var textExpr: js.UndefOr[String] = js.undefined
-  /** Specifies a custom template for time scale items. */
+  /** @name dxScheduler.Options.timeCellTemplate */
   var timeCellTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function3[
       /* itemData */ js.Any, 
@@ -228,11 +228,11 @@ trait dxSchedulerOptions extends WidgetOptions[dxScheduler] {
       String | Element | JQuery
     ])
   ] = js.undefined
-  /** Specifies the timezone of the widget. */
+  /** @name dxScheduler.Options.timeZone */
   var timeZone: js.UndefOr[String] = js.undefined
-  /** Specifies whether a user can switch views using tabs or a drop-down menu. */
+  /** @name dxScheduler.Options.useDropDownViewSwitcher */
   var useDropDownViewSwitcher: js.UndefOr[Boolean] = js.undefined
-  /** Specifies and configures the views to be available in the view switcher. */
+  /** @name dxScheduler.Options.views */
   var views: js.UndefOr[
     js.Array[
       day | week | workWeek | month | timelineDay | timelineWeek | timelineWorkWeek | timelineMonth | agenda | AnonAgendaDuration

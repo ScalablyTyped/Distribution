@@ -143,12 +143,12 @@ trait GlobalAccelerator extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeAcceleratorAttributesResponse, Unit]
   ): Request[DescribeAcceleratorAttributesResponse, AWSError] = js.native
   /**
-    * Describe an endpoint group.
+    * Describe an endpoint group. To see an AWS CLI example of describing an endpoint group, scroll down to Example.
     */
   def describeEndpointGroup(): Request[DescribeEndpointGroupResponse, AWSError] = js.native
   def describeEndpointGroup(callback: js.Function2[/* err */ AWSError, /* data */ DescribeEndpointGroupResponse, Unit]): Request[DescribeEndpointGroupResponse, AWSError] = js.native
   /**
-    * Describe an endpoint group.
+    * Describe an endpoint group. To see an AWS CLI example of describing an endpoint group, scroll down to Example.
     */
   def describeEndpointGroup(params: DescribeEndpointGroupRequest): Request[DescribeEndpointGroupResponse, AWSError] = js.native
   def describeEndpointGroup(
@@ -182,12 +182,12 @@ trait GlobalAccelerator extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListAcceleratorsResponse, Unit]
   ): Request[ListAcceleratorsResponse, AWSError] = js.native
   /**
-    * Lists the IP address ranges that were specified in calls to ProvisionByoipCidr. To see an AWS CLI example of listing BYOIP CIDR addresses, scroll down to Example.
+    * Lists the IP address ranges that were specified in calls to ProvisionByoipCidr, including the current state and a history of state changes. To see an AWS CLI example of listing BYOIP CIDR addresses, scroll down to Example.
     */
   def listByoipCidrs(): Request[ListByoipCidrsResponse, AWSError] = js.native
   def listByoipCidrs(callback: js.Function2[/* err */ AWSError, /* data */ ListByoipCidrsResponse, Unit]): Request[ListByoipCidrsResponse, AWSError] = js.native
   /**
-    * Lists the IP address ranges that were specified in calls to ProvisionByoipCidr. To see an AWS CLI example of listing BYOIP CIDR addresses, scroll down to Example.
+    * Lists the IP address ranges that were specified in calls to ProvisionByoipCidr, including the current state and a history of state changes. To see an AWS CLI example of listing BYOIP CIDR addresses, scroll down to Example.
     */
   def listByoipCidrs(params: ListByoipCidrsRequest): Request[ListByoipCidrsResponse, AWSError] = js.native
   def listByoipCidrs(

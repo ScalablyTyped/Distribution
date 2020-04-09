@@ -243,6 +243,19 @@ trait Chime extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreatePhoneNumberOrderResponse, Unit]
   ): Request[CreatePhoneNumberOrderResponse, AWSError] = js.native
   /**
+    * 
+    */
+  def createProxySession(): Request[CreateProxySessionResponse, AWSError] = js.native
+  def createProxySession(callback: js.Function2[/* err */ AWSError, /* data */ CreateProxySessionResponse, Unit]): Request[CreateProxySessionResponse, AWSError] = js.native
+  /**
+    * 
+    */
+  def createProxySession(params: CreateProxySessionRequest): Request[CreateProxySessionResponse, AWSError] = js.native
+  def createProxySession(
+    params: CreateProxySessionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateProxySessionResponse, Unit]
+  ): Request[CreateProxySessionResponse, AWSError] = js.native
+  /**
     * Creates a chat room for the specified Amazon Chime Enterprise account.
     */
   def createRoom(): Request[CreateRoomResponse, AWSError] = js.native
@@ -373,6 +386,19 @@ trait Chime extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
+    * 
+    */
+  def deleteProxySession(): Request[js.Object, AWSError] = js.native
+  def deleteProxySession(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * 
+    */
+  def deleteProxySession(params: DeleteProxySessionRequest): Request[js.Object, AWSError] = js.native
+  def deleteProxySession(
+    params: DeleteProxySessionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  /**
     * Deletes a chat room in an Amazon Chime Enterprise account.
     */
   def deleteRoom(): Request[js.Object, AWSError] = js.native
@@ -432,6 +458,19 @@ trait Chime extends Service {
   def deleteVoiceConnectorOrigination(params: DeleteVoiceConnectorOriginationRequest): Request[js.Object, AWSError] = js.native
   def deleteVoiceConnectorOrigination(
     params: DeleteVoiceConnectorOriginationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  /**
+    * 
+    */
+  def deleteVoiceConnectorProxy(): Request[js.Object, AWSError] = js.native
+  def deleteVoiceConnectorProxy(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * 
+    */
+  def deleteVoiceConnectorProxy(params: DeleteVoiceConnectorProxyRequest): Request[js.Object, AWSError] = js.native
+  def deleteVoiceConnectorProxy(
+    params: DeleteVoiceConnectorProxyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
@@ -669,6 +708,19 @@ trait Chime extends Service {
   def getPhoneNumberSettings(): Request[GetPhoneNumberSettingsResponse, AWSError] = js.native
   def getPhoneNumberSettings(callback: js.Function2[/* err */ AWSError, /* data */ GetPhoneNumberSettingsResponse, Unit]): Request[GetPhoneNumberSettingsResponse, AWSError] = js.native
   /**
+    * 
+    */
+  def getProxySession(): Request[GetProxySessionResponse, AWSError] = js.native
+  def getProxySession(callback: js.Function2[/* err */ AWSError, /* data */ GetProxySessionResponse, Unit]): Request[GetProxySessionResponse, AWSError] = js.native
+  /**
+    * 
+    */
+  def getProxySession(params: GetProxySessionRequest): Request[GetProxySessionResponse, AWSError] = js.native
+  def getProxySession(
+    params: GetProxySessionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetProxySessionResponse, Unit]
+  ): Request[GetProxySessionResponse, AWSError] = js.native
+  /**
     * Retrieves room details, such as the room name, for a room in an Amazon Chime Enterprise account.
     */
   def getRoom(): Request[GetRoomResponse, AWSError] = js.native
@@ -761,6 +813,19 @@ trait Chime extends Service {
     params: GetVoiceConnectorOriginationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetVoiceConnectorOriginationResponse, Unit]
   ): Request[GetVoiceConnectorOriginationResponse, AWSError] = js.native
+  /**
+    * 
+    */
+  def getVoiceConnectorProxy(): Request[GetVoiceConnectorProxyResponse, AWSError] = js.native
+  def getVoiceConnectorProxy(callback: js.Function2[/* err */ AWSError, /* data */ GetVoiceConnectorProxyResponse, Unit]): Request[GetVoiceConnectorProxyResponse, AWSError] = js.native
+  /**
+    * 
+    */
+  def getVoiceConnectorProxy(params: GetVoiceConnectorProxyRequest): Request[GetVoiceConnectorProxyResponse, AWSError] = js.native
+  def getVoiceConnectorProxy(
+    params: GetVoiceConnectorProxyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetVoiceConnectorProxyResponse, Unit]
+  ): Request[GetVoiceConnectorProxyResponse, AWSError] = js.native
   /**
     * Retrieves the streaming configuration details for the specified Amazon Chime Voice Connector. Shows whether media streaming is enabled for sending to Amazon Kinesis. It also shows the retention period, in hours, for the Amazon Kinesis data.
     */
@@ -895,6 +960,19 @@ trait Chime extends Service {
     params: ListPhoneNumbersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListPhoneNumbersResponse, Unit]
   ): Request[ListPhoneNumbersResponse, AWSError] = js.native
+  /**
+    * 
+    */
+  def listProxySessions(): Request[ListProxySessionsResponse, AWSError] = js.native
+  def listProxySessions(callback: js.Function2[/* err */ AWSError, /* data */ ListProxySessionsResponse, Unit]): Request[ListProxySessionsResponse, AWSError] = js.native
+  /**
+    * 
+    */
+  def listProxySessions(params: ListProxySessionsRequest): Request[ListProxySessionsResponse, AWSError] = js.native
+  def listProxySessions(
+    params: ListProxySessionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListProxySessionsResponse, Unit]
+  ): Request[ListProxySessionsResponse, AWSError] = js.native
   /**
     * Lists the membership details for the specified room in an Amazon Chime Enterprise account, such as the members' IDs, email addresses, and names.
     */
@@ -1037,6 +1115,19 @@ trait Chime extends Service {
     params: PutVoiceConnectorOriginationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ PutVoiceConnectorOriginationResponse, Unit]
   ): Request[PutVoiceConnectorOriginationResponse, AWSError] = js.native
+  /**
+    * 
+    */
+  def putVoiceConnectorProxy(): Request[PutVoiceConnectorProxyResponse, AWSError] = js.native
+  def putVoiceConnectorProxy(callback: js.Function2[/* err */ AWSError, /* data */ PutVoiceConnectorProxyResponse, Unit]): Request[PutVoiceConnectorProxyResponse, AWSError] = js.native
+  /**
+    * 
+    */
+  def putVoiceConnectorProxy(params: PutVoiceConnectorProxyRequest): Request[PutVoiceConnectorProxyResponse, AWSError] = js.native
+  def putVoiceConnectorProxy(
+    params: PutVoiceConnectorProxyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ PutVoiceConnectorProxyResponse, Unit]
+  ): Request[PutVoiceConnectorProxyResponse, AWSError] = js.native
   /**
     * Adds a streaming configuration for the specified Amazon Chime Voice Connector. The streaming configuration specifies whether media streaming is enabled for sending to Amazon Kinesis. It also sets the retention period, in hours, for the Amazon Kinesis data.
     */
@@ -1208,6 +1299,19 @@ trait Chime extends Service {
     params: UpdatePhoneNumberSettingsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  /**
+    * 
+    */
+  def updateProxySession(): Request[UpdateProxySessionResponse, AWSError] = js.native
+  def updateProxySession(callback: js.Function2[/* err */ AWSError, /* data */ UpdateProxySessionResponse, Unit]): Request[UpdateProxySessionResponse, AWSError] = js.native
+  /**
+    * 
+    */
+  def updateProxySession(params: UpdateProxySessionRequest): Request[UpdateProxySessionResponse, AWSError] = js.native
+  def updateProxySession(
+    params: UpdateProxySessionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateProxySessionResponse, Unit]
+  ): Request[UpdateProxySessionResponse, AWSError] = js.native
   /**
     * Updates room details, such as the room name, for a room in an Amazon Chime Enterprise account.
     */

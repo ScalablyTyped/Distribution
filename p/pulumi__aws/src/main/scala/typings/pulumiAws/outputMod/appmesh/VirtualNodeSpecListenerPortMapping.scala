@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait VirtualNodeSpecListenerPortMapping extends js.Object {
   /**
-    * The destination port for the health check request. This port must match the port defined in the `portMapping` for the listener.
+    * The port used for the port mapping.
     */
   var port: Double = js.native
   /**
-    * The protocol for the health check request. Valid values are `http` and `tcp`.
+    * The protocol used for the port mapping. Valid values are `http` and `tcp`.
     */
   var protocol: String = js.native
 }

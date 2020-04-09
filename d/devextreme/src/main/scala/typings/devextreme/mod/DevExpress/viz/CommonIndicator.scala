@@ -26,43 +26,43 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CommonIndicator extends js.Object {
-  /** Specifies the length of an arrow for the indicator of the textCloud type in pixels. */
+  /** @name CommonIndicator.arrowLength */
   var arrowLength: js.UndefOr[Double] = js.undefined
-  /** Specifies the background color for the indicator of the rangeBar type. */
+  /** @name CommonIndicator.backgroundColor */
   var backgroundColor: js.UndefOr[String] = js.undefined
-  /** Specifies the base value for the indicator of the rangeBar type. */
+  /** @name CommonIndicator.baseValue */
   var baseValue: js.UndefOr[Double] = js.undefined
-  /** Specifies a radius small enough for the indicator to begin adapting. */
+  /** @name CommonIndicator.beginAdaptingAtRadius */
   var beginAdaptingAtRadius: js.UndefOr[Double] = js.undefined
-  /** Specifies a color of the indicator. */
+  /** @name CommonIndicator.color */
   var color: js.UndefOr[String] = js.undefined
-  /** Specifies the orientation of the rangeBar indicator. Applies only if the geometry.orientation option is "vertical". */
+  /** @name CommonIndicator.horizontalOrientation */
   var horizontalOrientation: js.UndefOr[left | right] = js.undefined
-  /** Specifies the distance between the needle and the center of a gauge for the indicator of a needle-like type. */
+  /** @name CommonIndicator.indentFromCenter */
   var indentFromCenter: js.UndefOr[Double] = js.undefined
-  /** Specifies the indicator length. */
+  /** @name CommonIndicator.length */
   var length: js.UndefOr[Double] = js.undefined
-  /** Specifies the distance between the indicator and the invisible scale line. */
+  /** @name CommonIndicator.offset */
   var offset: js.UndefOr[Double] = js.undefined
-  /** Sets the palette to be used to colorize indicators differently. */
+  /** @name CommonIndicator.palette */
   var palette: js.UndefOr[
     js.Array[String] | Bright | Default | (`Harmony Light`) | Ocean | Pastel | Soft | (`Soft Pastel`) | Vintage | Violet | Carmine | (`Dark Moon`) | (`Dark Violet`) | (`Green Mist`) | (`Soft Blue`) | Material | Office
   ] = js.undefined
-  /** Specifies the second color for the indicator of the twoColorNeedle type. */
+  /** @name CommonIndicator.secondColor */
   var secondColor: js.UndefOr[String] = js.undefined
-  /** Specifies the length of a twoNeedleColor type indicator tip as a percentage. */
+  /** @name CommonIndicator.secondFraction */
   var secondFraction: js.UndefOr[Double] = js.undefined
-  /** Specifies the range bar size for an indicator of the rangeBar type. */
+  /** @name CommonIndicator.size */
   var size: js.UndefOr[Double] = js.undefined
-  /** Specifies the inner diameter in pixels, so that the spindle has the shape of a ring. */
+  /** @name CommonIndicator.spindleGapSize */
   var spindleGapSize: js.UndefOr[Double] = js.undefined
-  /** Specifies the spindle's diameter in pixels for the indicator of a needle-like type. */
+  /** @name CommonIndicator.spindleSize */
   var spindleSize: js.UndefOr[Double] = js.undefined
-  /** Specifies the appearance of the text displayed in an indicator of the rangeBar type. */
+  /** @name CommonIndicator.text */
   var text: js.UndefOr[AnonIndent] = js.undefined
-  /** Specifies the orientation of the rangeBar indicator. Applies only if the geometry.orientation option is "horizontal". */
+  /** @name CommonIndicator.verticalOrientation */
   var verticalOrientation: js.UndefOr[bottom | top] = js.undefined
-  /** Specifies the width of an indicator in pixels. */
+  /** @name CommonIndicator.width */
   var width: js.UndefOr[Double] = js.undefined
 }
 

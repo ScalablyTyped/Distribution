@@ -16,6 +16,7 @@ trait ConstructorProps extends js.Object {
   var onSwiping: js.UndefOr[EventHandler] = js.undefined
   var onTap: js.UndefOr[js.Function1[/* e */ Event_, Unit]] = js.undefined
   var preventDefaultTouchmoveEvent: js.UndefOr[Boolean] = js.undefined
+  var preventTrackingOnMouseleave: js.UndefOr[Boolean] = js.undefined
   var rotationAngle: js.UndefOr[Double | `0`] = js.undefined
   var touchTrackingEnabled: js.UndefOr[Boolean] = js.undefined
 }
@@ -30,6 +31,7 @@ object ConstructorProps {
     onSwiping: (/* e */ Event_, /* deltaX */ Double, /* deltaY */ Double, /* absX */ Double, /* absY */ Double, /* duration */ Double) => Unit = null,
     onTap: /* e */ Event_ => Unit = null,
     preventDefaultTouchmoveEvent: js.UndefOr[Boolean] = js.undefined,
+    preventTrackingOnMouseleave: js.UndefOr[Boolean] = js.undefined,
     rotationAngle: Double | `0` = null,
     touchTrackingEnabled: js.UndefOr[Boolean] = js.undefined
   ): ConstructorProps = {
@@ -41,6 +43,7 @@ object ConstructorProps {
     if (onSwiping != null) __obj.updateDynamic("onSwiping")(js.Any.fromFunction6(onSwiping))
     if (onTap != null) __obj.updateDynamic("onTap")(js.Any.fromFunction1(onTap))
     if (!js.isUndefined(preventDefaultTouchmoveEvent)) __obj.updateDynamic("preventDefaultTouchmoveEvent")(preventDefaultTouchmoveEvent.asInstanceOf[js.Any])
+    if (!js.isUndefined(preventTrackingOnMouseleave)) __obj.updateDynamic("preventTrackingOnMouseleave")(preventTrackingOnMouseleave.asInstanceOf[js.Any])
     if (rotationAngle != null) __obj.updateDynamic("rotationAngle")(rotationAngle.asInstanceOf[js.Any])
     if (!js.isUndefined(touchTrackingEnabled)) __obj.updateDynamic("touchTrackingEnabled")(touchTrackingEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConstructorProps]

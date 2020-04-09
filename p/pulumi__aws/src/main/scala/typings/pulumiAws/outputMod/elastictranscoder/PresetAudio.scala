@@ -11,7 +11,7 @@ trait PresetAudio extends js.Object {
     */
   var audioPackingMode: js.UndefOr[String] = js.native
   /**
-    * The bit rate of the video stream in the output file, in kilobits/second. You can configure variable bit rate or constant bit rate encoding.
+    * The bit rate of the audio stream in the output file, in kilobits/second. Enter an integer between 64 and 320, inclusive.
     */
   var bitRate: js.UndefOr[String] = js.native
   /**
@@ -19,7 +19,7 @@ trait PresetAudio extends js.Object {
     */
   var channels: js.UndefOr[String] = js.native
   /**
-    * The video codec for the output file. Valid values are `gif`, `H.264`, `mpeg2`, `vp8`, and `vp9`.
+    * The audio codec for the output file. Valid values are `AAC`, `flac`, `mp2`, `mp3`, `pcm`, and `vorbis`.
     */
   var codec: js.UndefOr[String] = js.native
   /**

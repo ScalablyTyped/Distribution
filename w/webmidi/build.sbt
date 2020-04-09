@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "webmidi"
-version := "2.0-dt-20200227Z-435ba7"
+version := "2.0-dt-20200322Z-435ba7"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

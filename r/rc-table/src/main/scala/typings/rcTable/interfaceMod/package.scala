@@ -98,6 +98,7 @@ package object interfaceMod {
     - typings.rcTable.rcTableStrings.ruby
     - typings.rcTable.rcTableStrings.s
     - typings.rcTable.rcTableStrings.samp
+    - typings.rcTable.rcTableStrings.slot
     - typings.rcTable.rcTableStrings.script
     - typings.rcTable.rcTableStrings.section
     - typings.rcTable.rcTableStrings.select

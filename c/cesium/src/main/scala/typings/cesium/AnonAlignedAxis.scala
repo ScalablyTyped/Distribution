@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 trait AnonAlignedAxis extends js.Object {
   var alignedAxis: js.UndefOr[Property] = js.undefined
   var color: js.UndefOr[Property] = js.undefined
+  var disableDepthTestDistance: js.UndefOr[Property] = js.undefined
   var eyeOffset: js.UndefOr[Property] = js.undefined
   var height: js.UndefOr[Property] = js.undefined
   var heightReference: js.UndefOr[Property] = js.undefined
@@ -30,6 +31,7 @@ object AnonAlignedAxis {
   def apply(
     alignedAxis: Property = null,
     color: Property = null,
+    disableDepthTestDistance: Property = null,
     eyeOffset: Property = null,
     height: Property = null,
     heightReference: Property = null,
@@ -49,6 +51,7 @@ object AnonAlignedAxis {
     val __obj = js.Dynamic.literal()
     if (alignedAxis != null) __obj.updateDynamic("alignedAxis")(alignedAxis.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (disableDepthTestDistance != null) __obj.updateDynamic("disableDepthTestDistance")(disableDepthTestDistance.asInstanceOf[js.Any])
     if (eyeOffset != null) __obj.updateDynamic("eyeOffset")(eyeOffset.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (heightReference != null) __obj.updateDynamic("heightReference")(heightReference.asInstanceOf[js.Any])

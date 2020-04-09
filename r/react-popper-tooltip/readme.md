@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-popper-tooltip
 
-Typings are for version 2.10.1
+Typings are for version 2.11.1
 
 ## Library description:
 React tooltip library built around react-popper

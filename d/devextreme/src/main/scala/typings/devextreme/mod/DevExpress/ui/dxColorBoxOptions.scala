@@ -35,17 +35,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxColorBoxOptions extends dxDropDownEditorOptions[dxColorBox] {
-  /** Specifies the text displayed on the button that applies changes and closes the drop-down editor. */
+  /** @name dxColorBox.Options.applyButtonText */
   var applyButtonText: js.UndefOr[String] = js.undefined
-  /** Specifies the text displayed on the button that cancels changes and closes the drop-down editor. */
+  /** @name dxColorBox.Options.cancelButtonText */
   var cancelButtonText: js.UndefOr[String] = js.undefined
-  /** Specifies whether or not the widget value includes the alpha channel component. */
+  /** @name dxColorBox.Options.editAlphaChannel */
   var editAlphaChannel: js.UndefOr[Boolean] = js.undefined
-  /** Specifies a custom template for the input field. Must contain the TextBox widget. */
+  /** @name dxColorBox.Options.fieldTemplate */
   var fieldTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* value */ String, /* fieldElement */ dxElement, String | Element | JQuery])
   ] = js.undefined
-  /** Specifies the size of a step by which a handle is moved using a keyboard shortcut. */
+  /** @name dxColorBox.Options.keyStep */
   var keyStep: js.UndefOr[Double] = js.undefined
 }
 

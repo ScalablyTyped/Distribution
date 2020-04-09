@@ -1,7 +1,6 @@
 package typings.antd.tooltipMod
 
 import typings.antd.contextMod.ConfigConsumerProps
-import typings.rcTrigger.interfaceMod.BuildInPlacements
 import typings.react.mod.Component
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
@@ -16,7 +15,7 @@ trait Tooltip
   extends Component[TooltipProps, js.Any, js.Any] {
   var tooltip: js.Any = js.native
   def getOverlay(): js.Object = js.native
-  def getPlacements(): BuildInPlacements = js.native
+  def getPlacements(): js.Any = js.native
   def getPopupDomNode(): js.Any = js.native
   def isNoTitle(): Boolean = js.native
   def onPopupAlign(domNode: HTMLElement, align: js.Any): Unit = js.native

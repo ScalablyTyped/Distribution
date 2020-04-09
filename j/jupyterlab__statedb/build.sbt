@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__statedb"
-version := "2.0.1-eadf5c"
+version := "2.1.0-4f454d"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -11,6 +11,7 @@ import typings.rcFieldForm.interfaceMod.Store
 import typings.rcFieldForm.interfaceMod.StoreValue
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
+import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,6 +35,7 @@ trait FormItemProps extends js.Object {
   var label: js.UndefOr[ReactNode] = js.undefined
   var labelAlign: js.UndefOr[FormLabelAlign] = js.undefined
   var labelCol: js.UndefOr[ColProps] = js.undefined
+  var messageVariables: js.UndefOr[Record[String, String]] = js.undefined
   var name: js.UndefOr[NamePath] = js.undefined
   var noStyle: js.UndefOr[Boolean] = js.undefined
   var normalize: js.UndefOr[
@@ -70,6 +72,7 @@ object FormItemProps {
     label: ReactNode = null,
     labelAlign: FormLabelAlign = null,
     labelCol: ColProps = null,
+    messageVariables: Record[String, String] = null,
     name: NamePath = null,
     noStyle: js.UndefOr[Boolean] = js.undefined,
     normalize: (/* value */ StoreValue, /* prevValue */ StoreValue, /* allValues */ Store) => StoreValue = null,
@@ -101,6 +104,7 @@ object FormItemProps {
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (labelAlign != null) __obj.updateDynamic("labelAlign")(labelAlign.asInstanceOf[js.Any])
     if (labelCol != null) __obj.updateDynamic("labelCol")(labelCol.asInstanceOf[js.Any])
+    if (messageVariables != null) __obj.updateDynamic("messageVariables")(messageVariables.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (!js.isUndefined(noStyle)) __obj.updateDynamic("noStyle")(noStyle.asInstanceOf[js.Any])
     if (normalize != null) __obj.updateDynamic("normalize")(js.Any.fromFunction3(normalize))

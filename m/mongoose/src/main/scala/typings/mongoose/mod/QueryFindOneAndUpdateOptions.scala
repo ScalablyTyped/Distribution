@@ -1,10 +1,15 @@
 package typings.mongoose.mod
 
+import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait QueryFindOneAndUpdateOptions extends QueryFindOneAndRemoveOptions {
+  /**
+    * Only update elements that match the arrayFilters conditions in the document or documents that match the query conditions.
+    */
+  var arrayFilters: js.UndefOr[js.Array[StringDictionary[_]]] = js.undefined
   /**
     * if set to 'query' and runValidators is on, this will refer to the query in custom validator
     * functions that update validation runs. Does nothing if runValidators is false.
@@ -37,6 +42,7 @@ trait QueryFindOneAndUpdateOptions extends QueryFindOneAndRemoveOptions {
 object QueryFindOneAndUpdateOptions {
   @scala.inline
   def apply(
+    arrayFilters: js.Array[StringDictionary[_]] = null,
     context: String = null,
     fields: js.Any | String = null,
     maxTimeMS: Int | Double = null,
@@ -54,6 +60,7 @@ object QueryFindOneAndUpdateOptions {
     upsert: js.UndefOr[Boolean] = js.undefined
   ): QueryFindOneAndUpdateOptions = {
     val __obj = js.Dynamic.literal()
+    if (arrayFilters != null) __obj.updateDynamic("arrayFilters")(arrayFilters.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (maxTimeMS != null) __obj.updateDynamic("maxTimeMS")(maxTimeMS.asInstanceOf[js.Any])

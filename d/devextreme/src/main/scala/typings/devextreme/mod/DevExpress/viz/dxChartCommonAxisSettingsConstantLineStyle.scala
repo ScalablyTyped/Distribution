@@ -9,17 +9,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxChartCommonAxisSettingsConstantLineStyle extends js.Object {
-  /** Specifies the color of constant lines. */
+  /** @name dxChart.Options.commonAxisSettings.constantLineStyle.color */
   var color: js.UndefOr[String] = js.undefined
-  /** Specifies the dash style of constant lines. */
+  /** @name dxChart.Options.commonAxisSettings.constantLineStyle.dashStyle */
   var dashStyle: js.UndefOr[dash | dot | longDash | solid] = js.undefined
-  /** Configures constant line labels. */
+  /** @name dxChart.Options.commonAxisSettings.constantLineStyle.label */
   var label: js.UndefOr[dxChartCommonAxisSettingsConstantLineStyleLabel] = js.undefined
-  /** Generates a pixel-measured empty space between the left/right side of a constant line and the constant line label. */
+  /** @name dxChart.Options.commonAxisSettings.constantLineStyle.paddingLeftRight */
   var paddingLeftRight: js.UndefOr[Double] = js.undefined
-  /** Generates a pixel-measured empty space between the top/bottom side of a constant line and the constant line label. */
+  /** @name dxChart.Options.commonAxisSettings.constantLineStyle.paddingTopBottom */
   var paddingTopBottom: js.UndefOr[Double] = js.undefined
-  /** Specifies the width of constant lines in pixels. */
+  /** @name dxChart.Options.commonAxisSettings.constantLineStyle.width */
   var width: js.UndefOr[Double] = js.undefined
 }
 

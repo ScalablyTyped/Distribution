@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 object getAlgorithmParameters extends js.Object {
   /**
     * Get default algorithm parameters for each kind of operation
-    * 
+    *
     * @param {string} algorithmName Algorithm name to get common parameters for
     * @param {string} operation Kind of operation: "sign", "encrypt", "generatekey", "importkey", "exportkey", "verify"
-    * @returns {{ algorithm: Algorithm; usages: string[]; }}
+    * @returns {{ algorithm: Algorithm; usages: KeyUsage[]; }}
     */
   def apply(algorithmName: String, operation: String): AnonAlgorithm = js.native
 }

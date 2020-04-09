@@ -25,6 +25,7 @@ trait TabsProps extends js.Object {
   var defaultActiveKey: js.UndefOr[String] = js.undefined
   var destroyInactiveTabPane: js.UndefOr[Boolean] = js.undefined
   var hideAdd: js.UndefOr[Boolean] = js.undefined
+  var keyboard: js.UndefOr[Boolean] = js.undefined
   var onChange: js.UndefOr[js.Function1[/* activeKey */ String, Unit]] = js.undefined
   var onEdit: js.UndefOr[
     js.Function2[
@@ -62,6 +63,7 @@ object TabsProps {
     defaultActiveKey: String = null,
     destroyInactiveTabPane: js.UndefOr[Boolean] = js.undefined,
     hideAdd: js.UndefOr[Boolean] = js.undefined,
+    keyboard: js.UndefOr[Boolean] = js.undefined,
     onChange: /* activeKey */ String => Unit = null,
     onEdit: (/* targetKey */ String | (MouseEvent[HTMLElement, NativeMouseEvent]), /* action */ add | remove) => Unit = null,
     onNextClick: MouseEvent[HTMLElement, NativeMouseEvent] => Unit = null,
@@ -84,6 +86,7 @@ object TabsProps {
     if (defaultActiveKey != null) __obj.updateDynamic("defaultActiveKey")(defaultActiveKey.asInstanceOf[js.Any])
     if (!js.isUndefined(destroyInactiveTabPane)) __obj.updateDynamic("destroyInactiveTabPane")(destroyInactiveTabPane.asInstanceOf[js.Any])
     if (!js.isUndefined(hideAdd)) __obj.updateDynamic("hideAdd")(hideAdd.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onEdit != null) __obj.updateDynamic("onEdit")(js.Any.fromFunction2(onEdit))
     if (onNextClick != null) __obj.updateDynamic("onNextClick")(js.Any.fromFunction1(onNextClick))

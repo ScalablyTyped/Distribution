@@ -38,5 +38,32 @@ object MetadataReference extends js.Object {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   def create(model: IModel): typings.mendixmodelsdk.restMod.rest.MetadataReference = js.native
+  /**
+    * Creates and returns a new MetadataReference instance in the SDK and on the server.
+    * The new MetadataReference will be automatically stored in the 'metadataReferences' property
+    * of the parent ConsumedODataService element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.6.0 to 8.7.0
+    */
+  def createIn(container: typings.mendixmodelsdk.restMod.rest.ConsumedODataService): typings.mendixmodelsdk.restMod.rest.MetadataReference = js.native
+  /**
+    * Creates and returns a new MetadataReference instance in the SDK and on the server.
+    * The new MetadataReference will be automatically stored in the 'metadataReferences' property
+    * of the parent ConsumedODataService element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.6.0 and higher
+    */
+  def createInConsumedODataServiceUnderMetadataReferences(container: typings.mendixmodelsdk.restMod.rest.ConsumedODataService): typings.mendixmodelsdk.restMod.rest.MetadataReference = js.native
+  /**
+    * Creates and returns a new MetadataReference instance in the SDK and on the server.
+    * The new MetadataReference will be automatically stored in the 'metadataReferences' property
+    * of the parent MetadataReference element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.8.0 and higher
+    */
+  def createInMetadataReferenceUnderMetadataReferences(container: typings.mendixmodelsdk.restMod.rest.MetadataReference): typings.mendixmodelsdk.restMod.rest.MetadataReference = js.native
 }
 

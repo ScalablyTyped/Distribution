@@ -8,6 +8,8 @@ import typings.vegaTypings.colorMod.ColorName
 import typings.vegaTypings.configMod.AxisConfigKeys
 import typings.vegaTypings.configMod.Cursor
 import typings.vegaTypings.configMod.MarkConfigKeys
+import typings.vegaTypings.configMod.StrokeCap
+import typings.vegaTypings.configMod.StrokeJoin
 import typings.vegaTypings.dataMod.DataType
 import typings.vegaTypings.encodeMod.Align
 import typings.vegaTypings.encodeMod.Baseline
@@ -200,6 +202,9 @@ object vegaTypingsStrings {
   
   @js.native
   sealed trait beige extends ColorName
+  
+  @js.native
+  sealed trait bevel extends StrokeJoin
   
   @js.native
   sealed trait bin extends js.Object
@@ -448,6 +453,9 @@ object vegaTypingsStrings {
   
   @js.native
   sealed trait burlywood extends ColorName
+  
+  @js.native
+  sealed trait butt extends StrokeCap
   
   @js.native
   sealed trait cadetblue extends ColorName
@@ -1320,6 +1328,9 @@ object vegaTypingsStrings {
   
   @js.native
   sealed trait mistyrose extends ColorName
+  
+  @js.native
+  sealed trait miter extends StrokeJoin
   
   @js.native
   sealed trait mixture extends js.Object
@@ -2232,6 +2243,11 @@ object vegaTypingsStrings {
   sealed trait rosybrown extends ColorName
   
   @js.native
+  sealed trait round
+    extends StrokeCap
+       with StrokeJoin
+  
+  @js.native
   sealed trait `row-resize` extends Cursor
   
   @js.native
@@ -2415,7 +2431,9 @@ object vegaTypingsStrings {
        with ScaleType
   
   @js.native
-  sealed trait square extends _SymbolShape
+  sealed trait square
+    extends StrokeCap
+       with _SymbolShape
   
   @js.native
   sealed trait squarify extends TreemapMethod
@@ -2948,6 +2966,8 @@ object vegaTypingsStrings {
   @scala.inline
   def beige: beige = "beige".asInstanceOf[beige]
   @scala.inline
+  def bevel: bevel = "bevel".asInstanceOf[bevel]
+  @scala.inline
   def bin: bin = "bin".asInstanceOf[bin]
   @scala.inline
   def `bin-ordinal`: `bin-ordinal` = "bin-ordinal".asInstanceOf[`bin-ordinal`]
@@ -3057,6 +3077,8 @@ object vegaTypingsStrings {
   def bundle: bundle = "bundle".asInstanceOf[bundle]
   @scala.inline
   def burlywood: burlywood = "burlywood".asInstanceOf[burlywood]
+  @scala.inline
+  def butt: butt = "butt".asInstanceOf[butt]
   @scala.inline
   def cadetblue: cadetblue = "cadetblue".asInstanceOf[cadetblue]
   @scala.inline
@@ -3586,6 +3608,8 @@ object vegaTypingsStrings {
   @scala.inline
   def mistyrose: mistyrose = "mistyrose".asInstanceOf[mistyrose]
   @scala.inline
+  def miter: miter = "miter".asInstanceOf[miter]
+  @scala.inline
   def mixture: mixture = "mixture".asInstanceOf[mixture]
   @scala.inline
   def moccasin: moccasin = "moccasin".asInstanceOf[moccasin]
@@ -4011,6 +4035,8 @@ object vegaTypingsStrings {
   def right: right = "right".asInstanceOf[right]
   @scala.inline
   def rosybrown: rosybrown = "rosybrown".asInstanceOf[rosybrown]
+  @scala.inline
+  def round: round = "round".asInstanceOf[round]
   @scala.inline
   def `row-resize`: `row-resize` = "row-resize".asInstanceOf[`row-resize`]
   @scala.inline

@@ -55,7 +55,7 @@ trait UpdateHealthCheckRequest extends js.Object {
     */
   var Inverted: js.UndefOr[typings.awsSdk.route53Mod.Inverted] = js.native
   /**
-    * The port on the endpoint on which you want Amazon Route 53 to perform health checks.
+    * The port on the endpoint that you want Amazon Route 53 to perform health checks on.  Don't specify a value for Port when you specify a value for Type of CLOUDWATCH_METRIC or CALCULATED. 
     */
   var Port: js.UndefOr[typings.awsSdk.route53Mod.Port] = js.native
   /**
@@ -71,7 +71,7 @@ trait UpdateHealthCheckRequest extends js.Object {
     */
   var ResourcePath: js.UndefOr[typings.awsSdk.route53Mod.ResourcePath] = js.native
   /**
-    * If the value of Type is HTTP_STR_MATCH or HTTP_STR_MATCH, the string that you want Amazon Route 53 to search for in the response body from the specified resource. If the string appears in the response body, Route 53 considers the resource healthy. (You can't change the value of Type when you update a health check.)
+    * If the value of Type is HTTP_STR_MATCH or HTTPS_STR_MATCH, the string that you want Amazon Route 53 to search for in the response body from the specified resource. If the string appears in the response body, Route 53 considers the resource healthy. (You can't change the value of Type when you update a health check.)
     */
   var SearchString: js.UndefOr[typings.awsSdk.route53Mod.SearchString] = js.native
 }

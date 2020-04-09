@@ -1,6 +1,5 @@
 package typings.firebaseFirestore
 
-import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
@@ -12,10 +11,12 @@ import typings.firebaseFirestore.apiDatabaseMod.FirestoreDatabase
 import typings.firebaseFirestore.apiFieldValueMod.FieldValueImpl
 import typings.firebaseFirestore.coreQueryMod.Query
 import typings.firebaseFirestore.coreViewSnapshotMod.ViewSnapshot
+import typings.firebaseFirestore.localPersistenceMod.PersistenceProvider
 import typings.firebaseFirestore.mod.FirebaseApp
 import typings.firebaseFirestore.modelDocumentKeyMod.DocumentKey
 import typings.firebaseFirestore.modelDocumentMod.Document
 import typings.firebaseFirestore.modelPathMod.ResourcePath
+import typings.firebaseFirestore.utilByteStringMod.ByteString
 import typings.firebaseFirestoreTypes.mod.FirestoreDataConverter
 import typings.firebaseFirestoreTypes.mod.LogLevel
 import typings.std.Date
@@ -28,8 +29,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object indexConsoleMod extends js.Object {
   @js.native
-  class Blob ()
-    extends typings.firebaseFirestore.apiBlobMod.Blob
+  class Blob protected ()
+    extends typings.firebaseFirestore.apiBlobMod.Blob {
+    def this(byteString: ByteString) = this()
+  }
   
   @js.native
   class DocumentReference[T] protected ()
@@ -64,6 +67,16 @@ object indexConsoleMod extends js.Object {
     extends typings.firebaseFirestore.apiDatabaseMod.Firestore {
     def this(databaseIdOrApp: FirestoreDatabase, authProvider: Provider[FirebaseAuthInternalName]) = this()
     def this(databaseIdOrApp: FirebaseApp, authProvider: Provider[FirebaseAuthInternalName]) = this()
+    def this(
+      databaseIdOrApp: FirestoreDatabase,
+      authProvider: Provider[FirebaseAuthInternalName],
+      persistenceProvider: PersistenceProvider
+    ) = this()
+    def this(
+      databaseIdOrApp: FirebaseApp,
+      authProvider: Provider[FirebaseAuthInternalName],
+      persistenceProvider: PersistenceProvider
+    ) = this()
   }
   
   @js.native
@@ -108,7 +121,7 @@ object indexConsoleMod extends js.Object {
   ] = js.native
   @js.native
   object Blob
-    extends Instantiable0[typings.firebaseFirestore.apiBlobMod.Blob] {
+    extends Instantiable1[/* byteString */ ByteString, typings.firebaseFirestore.apiBlobMod.Blob] {
     def fromBase64String(base64: String): typings.firebaseFirestore.apiBlobMod.Blob = js.native
     def fromUint8Array(array: Uint8Array): typings.firebaseFirestore.apiBlobMod.Blob = js.native
   }

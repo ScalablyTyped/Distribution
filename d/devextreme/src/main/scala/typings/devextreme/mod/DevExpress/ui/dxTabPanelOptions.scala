@@ -20,12 +20,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxTabPanelOptions extends dxMultiViewOptions[dxTabPanel] {
-  /** Binds the widget to data. */
+  /** @name dxTabPanel.Options.dataSource */
   @JSName("dataSource")
   var dataSource_dxTabPanelOptions: js.UndefOr[
     String | (js.Array[String | dxTabPanelItem | _]) | DataSource | DataSourceOptions
   ] = js.undefined
-  /** Specifies a custom template for item titles. */
+  /** @name dxTabPanel.Options.itemTitleTemplate */
   var itemTitleTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function3[
       /* itemData */ js.Any, 
@@ -34,22 +34,22 @@ trait dxTabPanelOptions extends dxMultiViewOptions[dxTabPanel] {
       String | Element | JQuery
     ])
   ] = js.undefined
-  /** An array of items displayed by the widget. */
+  /** @name dxTabPanel.Options.items */
   @JSName("items")
   var items_dxTabPanelOptions: js.UndefOr[js.Array[String | dxTabPanelItem | _]] = js.undefined
-  /** A function that is executed when a tab is clicked or tapped. */
+  /** @name dxTabPanel.Options.onTitleClick */
   var onTitleClick: js.UndefOr[(js.Function1[/* e */ AnonElementEventItemData, _]) | String] = js.undefined
-  /** A function that is executed when a tab has been held for a specified period. */
+  /** @name dxTabPanel.Options.onTitleHold */
   var onTitleHold: js.UndefOr[js.Function1[/* e */ AnonElementEventItemData, _]] = js.undefined
-  /** A function that is executed after a tab is rendered. */
+  /** @name dxTabPanel.Options.onTitleRendered */
   var onTitleRendered: js.UndefOr[js.Function1[/* e */ AnonElementItemDataItemElement, _]] = js.undefined
-  /** Specifies whether to repaint only those elements whose data changed. */
+  /** @name dxTabPanel.Options.repaintChangesOnly */
   var repaintChangesOnly: js.UndefOr[Boolean] = js.undefined
-  /** A Boolean value specifying if tabs in the title are scrolled by content. */
+  /** @name dxTabPanel.Options.scrollByContent */
   var scrollByContent: js.UndefOr[Boolean] = js.undefined
-  /** A Boolean indicating whether or not to add scrolling support for tabs in the title. */
+  /** @name dxTabPanel.Options.scrollingEnabled */
   var scrollingEnabled: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether navigation buttons should be available when tabs exceed the widget's width. */
+  /** @name dxTabPanel.Options.showNavButtons */
   var showNavButtons: js.UndefOr[Boolean] = js.undefined
 }
 

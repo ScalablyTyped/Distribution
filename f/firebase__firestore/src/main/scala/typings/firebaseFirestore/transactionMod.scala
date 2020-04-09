@@ -3,8 +3,8 @@ package typings.firebaseFirestore
 import typings.firebaseFirestore.datastoreMod.Datastore
 import typings.firebaseFirestore.documentKeyMod.DocumentKey
 import typings.firebaseFirestore.documentMod.MaybeDocument
-import typings.firebaseFirestore.userDataConverterMod.ParsedSetData
-import typings.firebaseFirestore.userDataConverterMod.ParsedUpdateData
+import typings.firebaseFirestore.userDataReaderMod.ParsedSetData
+import typings.firebaseFirestore.userDataReaderMod.ParsedUpdateData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

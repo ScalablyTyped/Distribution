@@ -71,6 +71,7 @@ import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
@@ -590,7 +591,7 @@ object IonListPickHTMLAttributes {
     onProgress: SyntheticEvent[HTMLIonListElement, Event_] => Unit = null,
     onRateChange: SyntheticEvent[HTMLIonListElement, Event_] => Unit = null,
     onReset: FormEvent[HTMLIonListElement] => Unit = null,
-    onScroll: UIEvent[HTMLIonListElement] => Unit = null,
+    onScroll: UIEvent[HTMLIonListElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[HTMLIonListElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[HTMLIonListElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[HTMLIonListElement, Event_] => Unit = null,

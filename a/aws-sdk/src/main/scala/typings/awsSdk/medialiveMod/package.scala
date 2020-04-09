@@ -491,6 +491,12 @@ package object medialiveMod {
   */
   type H264FlickerAq = typings.awsSdk.medialiveMod._H264FlickerAq | java.lang.String
   /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.DISABLED
+    - typings.awsSdk.awsSdkStrings.ENABLED
+    - java.lang.String
+  */
+  type H264ForceFieldPictures = typings.awsSdk.medialiveMod._H264ForceFieldPictures | java.lang.String
+  /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.INITIALIZE_FROM_SOURCE
     - typings.awsSdk.awsSdkStrings.SPECIFIED
     - java.lang.String
@@ -905,6 +911,12 @@ package object medialiveMod {
     - java.lang.String
   */
   type InputMaximumBitrate = typings.awsSdk.medialiveMod._InputMaximumBitrate | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.EQUAL_INPUT_PREFERENCE
+    - typings.awsSdk.awsSdkStrings.PRIMARY_INPUT_PREFERRED
+    - java.lang.String
+  */
+  type InputPreference = typings.awsSdk.medialiveMod._InputPreference | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.SD
     - typings.awsSdk.awsSdkStrings.HD

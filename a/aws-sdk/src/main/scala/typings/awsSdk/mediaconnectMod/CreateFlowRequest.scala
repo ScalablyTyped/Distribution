@@ -25,6 +25,10 @@ trait CreateFlowRequest extends js.Object {
   var Source: js.UndefOr[SetSourceRequest] = js.native
   var SourceFailoverConfig: js.UndefOr[FailoverConfig] = js.native
   var Sources: js.UndefOr[listOfSetSourceRequest] = js.native
+  /**
+    * The VPC interfaces you want on the flow.
+    */
+  var VpcInterfaces: js.UndefOr[listOfVpcInterfaceRequest] = js.native
 }
 
 object CreateFlowRequest {
@@ -36,7 +40,8 @@ object CreateFlowRequest {
     Outputs: listOfAddOutputRequest = null,
     Source: SetSourceRequest = null,
     SourceFailoverConfig: FailoverConfig = null,
-    Sources: listOfSetSourceRequest = null
+    Sources: listOfSetSourceRequest = null,
+    VpcInterfaces: listOfVpcInterfaceRequest = null
   ): CreateFlowRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone.asInstanceOf[js.Any])
@@ -45,6 +50,7 @@ object CreateFlowRequest {
     if (Source != null) __obj.updateDynamic("Source")(Source.asInstanceOf[js.Any])
     if (SourceFailoverConfig != null) __obj.updateDynamic("SourceFailoverConfig")(SourceFailoverConfig.asInstanceOf[js.Any])
     if (Sources != null) __obj.updateDynamic("Sources")(Sources.asInstanceOf[js.Any])
+    if (VpcInterfaces != null) __obj.updateDynamic("VpcInterfaces")(VpcInterfaces.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateFlowRequest]
   }
 }

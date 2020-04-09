@@ -97,7 +97,7 @@ object mod extends js.Object {
   /* static members */
   @js.native
   object StackView extends js.Object {
-    def getDerivedStateFromProps(props: ReadonlyProps, state: ReadonlyState): AnonClosingRouteKeys | AnonDescriptors | Null = js.native
+    def getDerivedStateFromProps(props: ReadonlyProps, state: ReadonlyState): AnonClosingRouteKeys | AnonDescriptors = js.native
   }
   
   @js.native

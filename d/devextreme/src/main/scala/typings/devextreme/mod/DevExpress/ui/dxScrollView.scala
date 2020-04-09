@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait dxScrollView extends dxScrollable {
-  /** Locks the widget until the release(preventScrollBottom) method is called and executes the function passed to the onPullDown option and the handler assigned to the pullDown event. */
+  /** @name dxScrollView.refresh() */
   def refresh(): Unit = js.native
-  /** Notifies the ScrollView that data loading is finished. */
+  /** @name dxScrollView.release(preventScrollBottom) */
   def release(preventScrollBottom: Boolean): Promise[Unit] with JQueryPromise[Unit] = js.native
 }
 

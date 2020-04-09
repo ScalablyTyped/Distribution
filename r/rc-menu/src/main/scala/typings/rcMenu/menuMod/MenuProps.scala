@@ -59,7 +59,6 @@ import typings.rcMenu.rcMenuStrings.tree
 import typings.rcMenu.rcMenuStrings.url
 import typings.rcMenu.rcMenuStrings.vertical
 import typings.rcMenu.rcMenuStrings.yes
-import typings.rcTrigger.interfaceMod.MotionType
 import typings.react.AnonHtml
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
@@ -81,6 +80,7 @@ import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
@@ -192,7 +192,9 @@ trait MenuProps extends js.Object {
   var level: js.UndefOr[Double] = js.undefined
   var mode: js.UndefOr[MenuMode] = js.undefined
   /** Menu motion define */
-  var motion: js.UndefOr[MotionType] = js.undefined
+  var motion: js.UndefOr[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MotionType */ js.Any
+  ] = js.undefined
   var multiple: js.UndefOr[Boolean] = js.undefined
   var onAbort: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLDivElement]] = js.undefined
@@ -399,7 +401,7 @@ object MenuProps {
     lang: String = null,
     level: Int | Double = null,
     mode: MenuMode = null,
-    motion: MotionType = null,
+    motion: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MotionType */ js.Any = null,
     multiple: js.UndefOr[Boolean] = js.undefined,
     onAbort: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onAnimationEnd: AnimationEvent[HTMLDivElement] => Unit = null,
@@ -467,7 +469,7 @@ object MenuProps {
     onProgress: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onRateChange: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onReset: FormEvent[HTMLDivElement] => Unit = null,
-    onScroll: UIEvent[HTMLDivElement] => Unit = null,
+    onScroll: UIEvent[HTMLDivElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onSelect: /* info */ SelectInfo => Unit = null,

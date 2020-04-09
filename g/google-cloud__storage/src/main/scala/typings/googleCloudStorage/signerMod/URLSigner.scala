@@ -42,7 +42,7 @@ class URLSigner protected () extends js.Object {
   ): String = js.native
   def getResourcePath(cname: Boolean, bucket: String): String = js.native
   def getResourcePath(cname: Boolean, bucket: String, file: String): String = js.native
-  def getSignedUrl(cfg: SignerGetSignedUrlConfig): js.Promise[GetSignedUrlResponse] = js.native
+  def getSignedUrl(cfg: SignerGetSignedUrlConfig): js.Promise[SignerGetSignedUrlResponse] = js.native
   def parseExpires(expires: String): Double = js.native
   def parseExpires(expires: String, current: Date): Double = js.native
   def parseExpires(expires: Double): Double = js.native

@@ -10,6 +10,6 @@ class UpdateBreakTypeRequest () extends js.Object {
   /**
     * The updated `BreakType`.
     */
-  var break_type: js.UndefOr[BreakType] = js.native
+  var break_type: BreakType = js.native
 }
 

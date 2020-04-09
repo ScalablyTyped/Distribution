@@ -13,7 +13,7 @@ trait FieldMetadata extends js.Object {
   /** The source of the field. */
   var source: js.UndefOr[Source] = js.undefined
   /**
-    * True if the field is verified; false if the field is unverified. A
+    * Output only. True if the field is verified; false if the field is unverified. A
     * verified field is typically a name, email address, phone number, or
     * website that has been confirmed to be owned by the person.
     */

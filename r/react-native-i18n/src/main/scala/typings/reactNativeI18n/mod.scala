@@ -28,6 +28,12 @@ object mod extends js.Object {
     var defaultLocale: String = js.native
     var defaultSeparator: String = js.native
     var fallbacks: Boolean = js.native
+    // tslint:disable-next-line prefer-declare-function
+    var getFullScope: js.Function2[
+        /* scope */ String | js.Array[String], 
+        /* options */ js.UndefOr[TranslateOptions], 
+        String
+      ] = js.native
     var locale: String = js.native
     var missingBehaviour: message | guess = js.native
     // tslint:disable-next-line prefer-declare-function

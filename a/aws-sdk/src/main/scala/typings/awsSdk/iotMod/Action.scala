@@ -11,7 +11,7 @@ trait Action extends js.Object {
     */
   var cloudwatchAlarm: js.UndefOr[CloudwatchAlarmAction] = js.native
   /**
-    * Send data to CloudWatch logs.
+    * Send data to CloudWatch Logs.
     */
   var cloudwatchLogs: js.UndefOr[CloudwatchLogsAction] = js.native
   /**

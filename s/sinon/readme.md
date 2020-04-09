@@ -1,7 +1,7 @@
 
 # Scala.js typings for sinon
 
-Typings are for version 7.5
+Typings are for version 9.0
 
 ## Library description:
 JavaScript test spies, stubs and mocks.

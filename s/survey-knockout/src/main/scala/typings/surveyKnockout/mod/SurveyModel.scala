@@ -10,7 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.surveyKnockout.mod.ISurvey because var conflicts: isLoadingFromJson. Inlined currentPage, pages, getCss, isPageStarted, pageVisibilityChanged, panelVisibilityChanged, questionVisibilityChanged, questionsOrder, questionAdded, panelAdded, questionRemoved, panelRemoved, questionRenamed, validateQuestion, validatePanel, hasVisibleQuestionByValueName, questionCountByValueName, processHtml, getSurveyMarkdownHtml, isDisplayMode, isDesignMode, areInvisibleElementsShowing, isUpdateValueTextOnTyping, requiredText, beforeSettingQuestionErrors, getQuestionTitleTemplate, getUpdatedQuestionTitle, questionStartIndex, questionTitleLocation, questionDescriptionLocation, questionErrorLocation, storeOthersAsComment, maxTextLength, maxOthersLength, clearValueOnDisableItems, uploadFiles, downloadFile, clearFiles, updateChoicesFromServer, updateQuestionCssClasses, updatePanelCssClasses, updatePageCssClasses, afterRenderQuestion, afterRenderQuestionInput, afterRenderPanel, afterRenderPage, getQuestionByValueNameFromArray, matrixRowAdded, matrixBeforeRowAdded, matrixRowRemoved, matrixAllowRemoveRow, matrixCellCreated, matrixAfterCellRender, matrixCellValueChanged, matrixCellValueChanging, matrixCellValidate, dynamicPanelAdded, dynamicPanelRemoved, dynamicPanelItemValueChanged, dragAndDropAllow */ @JSImport("survey-knockout", "SurveyModel")
+- typings.surveyKnockout.mod.ISurvey because var conflicts: isLoadingFromJson. Inlined currentPage, pages, getCss, isPageStarted, pageVisibilityChanged, panelVisibilityChanged, questionVisibilityChanged, questionsOrder, questionAdded, panelAdded, questionRemoved, panelRemoved, questionRenamed, validateQuestion, validatePanel, hasVisibleQuestionByValueName, questionCountByValueName, processHtml, getSurveyMarkdownHtml, isDisplayMode, isDesignMode, areInvisibleElementsShowing, isUpdateValueTextOnTyping, requiredText, beforeSettingQuestionErrors, questionTitlePattern, getUpdatedQuestionTitle, questionStartIndex, questionTitleLocation, questionDescriptionLocation, questionErrorLocation, storeOthersAsComment, maxTextLength, maxOthersLength, clearValueOnDisableItems, uploadFiles, downloadFile, clearFiles, updateChoicesFromServer, updateQuestionCssClasses, updatePanelCssClasses, updatePageCssClasses, afterRenderQuestion, afterRenderQuestionInput, afterRenderPanel, afterRenderPage, getQuestionByValueNameFromArray, matrixRowAdded, matrixBeforeRowAdded, matrixRowRemoved, matrixAllowRemoveRow, matrixCellCreated, matrixAfterCellRender, matrixCellValueChanged, matrixCellValueChanging, matrixCellValidate, dynamicPanelAdded, dynamicPanelRemoved, dynamicPanelItemValueChanged, dragAndDropAllow, scrollElementToTop */ @JSImport("survey-knockout", "SurveyModel")
 @js.native
 class SurveyModel ()
   extends Base
@@ -172,6 +172,7 @@ class SurveyModel ()
     * @see state
     */
   val hasCookie: Boolean = js.native
+  val hasLogo: Boolean = js.native
   /**
     * Gets or sets whether to hide all required errors.
     */
@@ -215,6 +216,8 @@ class SurveyModel ()
     * Gets whether the current page is the last one.
     */
   val isLastPage: Boolean = js.native
+  val isLogoAfter: Boolean = js.native
+  val isLogoBefore: Boolean = js.native
   /**
     * Returns the navigation buttons (i.e., 'Prev', 'Next', or 'Complete') position.
     */
@@ -251,6 +254,7 @@ class SurveyModel ()
   val locCompletedHtml: LocalizableString = js.native
   val locDescription: LocalizableString = js.native
   val locLoadingHtml: LocalizableString = js.native
+  val locLogo: LocalizableString = js.native
   val locPageNextText: LocalizableString = js.native
   val locPagePrevText: LocalizableString = js.native
   val locQuestionTitleTemplate: LocalizableString = js.native
@@ -261,6 +265,32 @@ class SurveyModel ()
     * You can set it to 'de' - German, 'fr' - French and so on. The library has built-in localization for several languages. The library has a multi-language support as well.
     */
   var locale: String = js.native
+  /**
+    * Gets or sets a survey logo.
+    * @see title
+    */
+  var logo: String = js.native
+  val logoClassNames: String = js.native
+  /**
+    * The logo fit mode.
+    * @see logo
+    */
+  var logoFit: String = js.native
+  /**
+    * Gets or sets a survey logo height.
+    * @see logo
+    */
+  var logoHeight: Double = js.native
+  /**
+    * Gets or sets a survey logo position.
+    * @see logo
+    */
+  var logoPosition: String = js.native
+  /**
+    * Gets or sets a survey logo width.
+    * @see logo
+    */
+  var logoWidth: Double = js.native
   /**
     * Gets or sets the default maximum length for question comments and others
     *
@@ -312,6 +342,12 @@ class SurveyModel ()
     * @see navigateToUrl
     */
   var navigateToUrlOnCondition: js.Array[UrlConditionItem] = js.native
+  /**
+    * The event is fired right after a page is rendered in DOM. Use it to modify HTML elements.
+    * <br/> `sender` - the survey object that fires the event.
+    * <br/> `options.htmlElement` - an HTML element bound to the survey header object.
+    */
+  var onAfterRenderHeader: Event[js.Function2[/* sender */ this.type, /* options */ _, _], _] = js.native
   /**
     * The event is fired right after a page is rendered in DOM. Use it to modify HTML elements.
     * <br/> `sender` - the survey object that fires the event.
@@ -614,6 +650,7 @@ class SurveyModel ()
     * The event is fired on adding a new row in Matrix Dynamic question.
     * <br/> `sender` - the survey object that fires the event
     * <br/> `options.question` - a matrix question.
+    * <br/> `options.row` - a new added row.
     * @see QuestionMatrixDynamicModel
     * @see QuestionMatrixDynamicModel.visibleRows
     */
@@ -723,6 +760,16 @@ class SurveyModel ()
     * @see Question
     */
   var onQuestionRemoved: Event[js.Function2[/* sender */ this.type, /* options */ _, _], _] = js.native
+  /**
+    * Use this event to control scrolling element to top. You can cancel the default behavior by setting options.cancel property to true.
+    * <br/> `sender` - the survey object that fires the event.
+    * <br/> `options.element` - an element that is going to be scrolled on top.
+    * <br/> `options.question` - a question that is going to be scrolled on top. It can be null if options.page is not null.
+    * <br/> `options.page` - a page that is going to be scrolled on top. It can be null if options.question is not null.
+    * <br/> `options.elementId` - the unique element DOM Id.
+    * <br/> `options.cancel` - set this property to true to cancel the default scrolling.
+    */
+  var onScrollingElementToTop: Event[js.Function2[/* sender */ this.type, /* options */ _, _], _] = js.native
   /**
     * The event fires when it gets response from the [dxsurvey.com](http://www.dxsurvey.com) service on saving survey results. Use it to find out if the results have been saved successfully.
     * <br/> `sender` - the survey object that fires the event.
@@ -943,6 +990,7 @@ class SurveyModel ()
   var questionErrorLocation: String = js.native
   /**
     * Gets or sets the first question index. The first question index is '1' by default. You may start it from '100' or from 'A', by setting '100' or 'A' to this property.
+    * You can set the start index to "(1)" or "# A)" or "a)" to render question number as (1), # A) and a) accordingly.
     * @see Question.title
     * @see requiredText
     */
@@ -960,8 +1008,17 @@ class SurveyModel ()
     */
   var questionTitleLocation: String = js.native
   /**
-    * Gets or sets a question title template.
+    * Set the pattern for question title. Default is "numTitleRequire", 1. What is your name? *,
+    * You can set it to numRequireTitle: 1. * What is your name?
+    * You can set it to requireNumTitle: * 1. What is your name?
+    * You can set it to numTitle (remove require symbol completely): 1. What is your name?
     * @see QuestionModel.title
+    */
+  var questionTitlePattern: String = js.native
+  /**
+    * Gets or sets a question title template. Obsolete, please use questionTitlePattern
+    * @see QuestionModel.title
+    * @see questionTitlePattern
     */
   var questionTitleTemplate: String = js.native
   /**
@@ -1181,6 +1238,7 @@ class SurveyModel ()
     * @see addNewPage
     */
   def addPage(page: PageModel): Unit = js.native
+  def afterRenderHeader(htmlElement: js.Any): Unit = js.native
   def afterRenderPage(htmlElement: js.Any): js.Any = js.native
   @JSName("afterRenderPage")
   def afterRenderPage_Unit(htmlElement: js.Any): Unit = js.native
@@ -1424,12 +1482,7 @@ class SurveyModel ()
   def getQuestionByValueName(valueName: String): IQuestion = js.native
   def getQuestionByValueName(valueName: String, caseInsensitive: Boolean): IQuestion = js.native
   def getQuestionByValueNameFromArray(valueName: String, name: String, index: Double): IQuestion = js.native
-  /**
-    * Returns a question title template.
-    * @see questionTitleTemplate
-    * @see QuestionModel.title
-    */
-  def getQuestionTitleTemplate(): String = js.native
+  def getQuestionTitlePatternOptions(): js.Array[_] = js.native
   /**
     * Gets a list of questions by their names.
     * @param names an array of question names
@@ -1502,9 +1555,9 @@ class SurveyModel ()
   def matrixCellValueChanging(question: IQuestion, options: js.Any): js.Any = js.native
   @JSName("matrixCellValueChanging")
   def matrixCellValueChanging_Unit(question: IQuestion, options: js.Any): Unit = js.native
-  def matrixRowAdded(question: IQuestion): js.Any = js.native
+  def matrixRowAdded(question: IQuestion, row: js.Any): js.Any = js.native
   @JSName("matrixRowAdded")
-  def matrixRowAdded_Unit(question: IQuestion): Unit = js.native
+  def matrixRowAdded_Unit(question: IQuestion, row: js.Any): Unit = js.native
   def matrixRowRemoved(question: IQuestion, rowIndex: Double, row: js.Any): js.Any = js.native
   @JSName("matrixRowRemoved")
   def matrixRowRemoved_Unit(question: IQuestion, rowIndex: Double, row: js.Any): Unit = js.native
@@ -1579,6 +1632,7 @@ class SurveyModel ()
     * @param expression
     */
   def runExpression(expression: String): js.Any = js.native
+  def scrollElementToTop(element: ISurveyElement, question: IQuestion, page: IPage, id: String): js.Any = js.native
   def scrollToTopOnPageChange(): Unit = js.native
   /**
     * Sends a survey result to the [dxsurvey.com](http://www.dxsurvey.com) service.

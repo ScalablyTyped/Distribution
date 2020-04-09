@@ -25,7 +25,7 @@ class Inventory protected () extends CustomResource {
   def this(name: String, args: InventoryArgs) = this()
   def this(name: String, args: InventoryArgs, opts: CustomResourceOptions) = this()
   /**
-    * The S3 bucket configuration where inventory results are published (documented below).
+    * The name of the bucket where the inventory configuration will be stored.
     */
   val bucket: Output_[String] = js.native
   /**

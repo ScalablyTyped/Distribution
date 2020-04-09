@@ -13,10 +13,10 @@ trait RecordBuiltInParserNameBu extends js.Object {
   var angular_Original: BuiltInParser = js.native
   @JSName("babel-flow")
   var `babel-flow_Original`: BuiltInParser = js.native
+  @JSName("babel-ts")
+  var `babel-ts_Original`: BuiltInParser = js.native
   @JSName("babel")
   var babel_Original: BuiltInParser = js.native
-  @JSName("babylon")
-  var babylon_Original: BuiltInParser = js.native
   @JSName("css")
   var css_Original: BuiltInParser = js.native
   @JSName("flow")
@@ -39,8 +39,6 @@ trait RecordBuiltInParserNameBu extends js.Object {
   var markdown_Original: BuiltInParser = js.native
   @JSName("mdx")
   var mdx_Original: BuiltInParser = js.native
-  @JSName("postcss")
-  var postcss_Original: BuiltInParser = js.native
   @JSName("scss")
   var scss_Original: BuiltInParser = js.native
   @JSName("typescript")
@@ -55,8 +53,8 @@ trait RecordBuiltInParserNameBu extends js.Object {
   def babel(text: String, options: js.Any): AST = js.native
   def `babel-flow`(text: String): AST = js.native
   def `babel-flow`(text: String, options: js.Any): AST = js.native
-  def babylon(text: String): AST = js.native
-  def babylon(text: String, options: js.Any): AST = js.native
+  def `babel-ts`(text: String): AST = js.native
+  def `babel-ts`(text: String, options: js.Any): AST = js.native
   def css(text: String): AST = js.native
   def css(text: String, options: js.Any): AST = js.native
   def flow(text: String): AST = js.native
@@ -79,8 +77,6 @@ trait RecordBuiltInParserNameBu extends js.Object {
   def markdown(text: String, options: js.Any): AST = js.native
   def mdx(text: String): AST = js.native
   def mdx(text: String, options: js.Any): AST = js.native
-  def postcss(text: String): AST = js.native
-  def postcss(text: String, options: js.Any): AST = js.native
   def scss(text: String): AST = js.native
   def scss(text: String, options: js.Any): AST = js.native
   def typescript(text: String): AST = js.native

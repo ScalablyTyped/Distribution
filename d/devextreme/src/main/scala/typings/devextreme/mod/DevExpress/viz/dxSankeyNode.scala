@@ -5,22 +5,22 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxSankeyNode extends js.Object {
-  /** The node's label. */
+  /** @name dxSankeyNode.label */
   var label: String
-  /** The node's incoming links. */
+  /** @name dxSankeyNode.linksIn */
   var linksIn: js.Array[_]
-  /** The node's outgoing links. */
+  /** @name dxSankeyNode.linksOut */
   var linksOut: js.Array[_]
-  /** @deprecated Use [label](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/6%20Node/2%20Fields/label.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSankey/Node/Fields/#label') instead. */
-  /** The node's label. */
+  /** @deprecated */
+  /** @name dxSankeyNode.title */
   var title: String
-  /** Hides the sankey node's tooltip. */
+  /** @name dxSankeyNode.hideTooltip() */
   def hideTooltip(): Unit
-  /** Changes the sankey node's hover state. */
+  /** @name dxSankeyNode.hover(state) */
   def hover(state: Boolean): Unit
-  /** Indicates whether the sankey node is in the hover state. */
+  /** @name dxSankeyNode.isHovered() */
   def isHovered(): Boolean
-  /** Shows the sankey node's tooltip. */
+  /** @name dxSankeyNode.showTooltip() */
   def showTooltip(): Unit
 }
 

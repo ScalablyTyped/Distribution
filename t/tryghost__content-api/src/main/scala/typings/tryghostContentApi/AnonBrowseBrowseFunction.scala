@@ -1,7 +1,6 @@
 package typings.tryghostContentApi
 
 import typings.tryghostContentApi.mod.BrowseFunction
-import typings.tryghostContentApi.mod.GhostData
 import typings.tryghostContentApi.mod.Nullable
 import typings.tryghostContentApi.mod.PagesObject
 import typings.tryghostContentApi.mod.Params
@@ -20,8 +19,11 @@ trait AnonBrowseBrowseFunction extends js.Object {
   def browse(): js.Promise[PagesObject] = js.native
   def browse(options: Params): js.Promise[PagesObject] = js.native
   def browse(options: Params, memberToken: Nullable[String]): js.Promise[PagesObject] = js.native
-  def read(data: GhostData): js.Promise[PostOrPage] = js.native
-  def read(data: GhostData, options: Params): js.Promise[PostOrPage] = js.native
-  def read(data: GhostData, options: Params, memberToken: Nullable[String]): js.Promise[PostOrPage] = js.native
+  def read(data: AnonId): js.Promise[PostOrPage] = js.native
+  def read(data: AnonId, options: Params): js.Promise[PostOrPage] = js.native
+  def read(data: AnonId, options: Params, memberToken: Nullable[String]): js.Promise[PostOrPage] = js.native
+  def read(data: AnonSlug): js.Promise[PostOrPage] = js.native
+  def read(data: AnonSlug, options: Params): js.Promise[PostOrPage] = js.native
+  def read(data: AnonSlug, options: Params, memberToken: Nullable[String]): js.Promise[PostOrPage] = js.native
 }
 

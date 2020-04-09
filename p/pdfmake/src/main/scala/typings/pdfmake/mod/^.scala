@@ -1,13 +1,15 @@
 package typings.pdfmake.mod
 
+import typings.pdfmake.interfacesMod.TFontDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("pdfmake/build/pdfmake", JSImport.Namespace)
+// 'export =' syntax forbids any other export.
+// tslint:disable-next-line: strict-export-declare-modifiers
+@JSImport("pdfmake", JSImport.Namespace)
 @js.native
-object ^ extends js.Object {
-  var pdfMake: pdfMakeStatic = js.native
-  var vfs: TFontFamily = js.native
+class ^ protected () extends PdfPrinter {
+  def this(fontDescriptors: TFontDictionary) = this()
 }
 

@@ -1,8 +1,7 @@
 package typings.ionicCore.overlaysInterfaceMod
 
 import typings.ionicCore.animationInterfaceMod.AnimationBuilder
-import typings.ionicCore.mod.Mode
-import typings.ionicCore.stencilCoreMod.EventEmitter
+import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,7 +16,6 @@ trait OverlayInterface extends js.Object {
   var enterAnimation: js.UndefOr[AnimationBuilder] = js.native
   var keyboardClose: Boolean = js.native
   var leaveAnimation: js.UndefOr[AnimationBuilder] = js.native
-  var mode: Mode = js.native
   var overlayIndex: Double = js.native
   var presented: Boolean = js.native
   var willDismiss: EventEmitter[OverlayEventDetail[_]] = js.native

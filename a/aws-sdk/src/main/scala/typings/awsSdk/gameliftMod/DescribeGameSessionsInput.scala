@@ -9,11 +9,11 @@ trait DescribeGameSessionsInput extends js.Object {
   /**
     * A unique identifier for an alias associated with the fleet to retrieve all game sessions for. You can use either the alias ID or ARN value.
     */
-  var AliasId: js.UndefOr[typings.awsSdk.gameliftMod.AliasId] = js.native
+  var AliasId: js.UndefOr[AliasIdOrArn] = js.native
   /**
     * A unique identifier for a fleet to retrieve all game sessions for. You can use either the fleet ID or ARN value. 
     */
-  var FleetId: js.UndefOr[typings.awsSdk.gameliftMod.FleetId] = js.native
+  var FleetId: js.UndefOr[FleetIdOrArn] = js.native
   /**
     * A unique identifier for the game session to retrieve. 
     */
@@ -35,8 +35,8 @@ trait DescribeGameSessionsInput extends js.Object {
 object DescribeGameSessionsInput {
   @scala.inline
   def apply(
-    AliasId: AliasId = null,
-    FleetId: FleetId = null,
+    AliasId: AliasIdOrArn = null,
+    FleetId: FleetIdOrArn = null,
     GameSessionId: ArnStringModel = null,
     Limit: Int | scala.Double = null,
     NextToken: NonZeroAndMaxString = null,

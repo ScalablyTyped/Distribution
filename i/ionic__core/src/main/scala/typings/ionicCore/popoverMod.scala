@@ -1,14 +1,12 @@
 package typings.ionicCore
 
 import typings.ionicCore.componentsMod._Global_.HTMLIonPopoverElement
-import typings.ionicCore.ionicCoreStrings.ios
-import typings.ionicCore.ionicCoreStrings.md
 import typings.ionicCore.mod.ComponentProps
 import typings.ionicCore.mod.ComponentRef
 import typings.ionicCore.mod.FrameworkDelegate
 import typings.ionicCore.overlaysInterfaceMod.OverlayEventDetail
 import typings.ionicCore.overlaysInterfaceMod.OverlayInterface
-import typings.ionicCore.stencilCoreMod.ComponentInterface
+import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -45,8 +43,6 @@ object popoverMod extends js.Object {
       * The event to pass to the popover animation.
       */
     var event: js.Any = js.native
-    @JSName("mode")
-    var mode_Popover: ios | md = js.native
     var onBackdropTap: js.Any = js.native
     var onDismiss: js.Any = js.native
     var onLifecycle: js.Any = js.native

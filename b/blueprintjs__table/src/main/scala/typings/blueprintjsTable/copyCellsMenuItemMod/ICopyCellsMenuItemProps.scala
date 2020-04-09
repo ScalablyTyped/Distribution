@@ -57,7 +57,7 @@ object ICopyCellsMenuItemProps {
     onCopy: /* success */ Boolean => Unit = null,
     popoverProps: PartialIPopoverProps = null,
     shouldDismissPopover: js.UndefOr[Boolean] = js.undefined,
-    tagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any = null,
+    tagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any = null,
     target: String = null,
     text: ReactNode = null,
     textClassName: String = null

@@ -11,6 +11,9 @@ trait GetClusterArgs extends js.Object {
     * The cluster identifier
     */
   val clusterIdentifier: String = js.native
+  /**
+    * The tags associated to the cluster
+    */
   val tags: js.UndefOr[StringDictionary[js.Any]] = js.native
 }
 

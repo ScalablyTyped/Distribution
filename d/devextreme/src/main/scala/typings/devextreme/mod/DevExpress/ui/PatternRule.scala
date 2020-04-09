@@ -15,13 +15,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PatternRule extends js.Object {
-  /** If set to true, empty values are valid. */
+  /** @name PatternRule.ignoreEmptyValue */
   var ignoreEmptyValue: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the message that is shown if the rule is broken. */
+  /** @name PatternRule.message */
   var message: js.UndefOr[String] = js.undefined
-  /** Specifies the regular expression that the validated value must match. */
+  /** @name PatternRule.pattern */
   var pattern: js.UndefOr[RegExp | String] = js.undefined
-  /** Specifies the rule type. Set it to "pattern" to use the PatternRule. */
+  /** @name PatternRule.type */
   var `type`: js.UndefOr[
     required | numeric | range | stringLength | custom | compare | pattern | email | async
   ] = js.undefined

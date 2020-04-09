@@ -1,6 +1,6 @@
 package typings.gapiClient.gapi.client
 
-import typings.std.PromiseLike
+import typings.std.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
   * An object encapsulating an HTTP request. This object is not instantiated directly, rather it is returned by gapi.client.request.
   */
 @js.native
-trait Request_[T] extends PromiseLike[Response[T]] {
+trait Request_[T] extends Promise[Response[T]] {
   /**
     * Executes the request and runs the supplied callback on response.
     * @param callback The callback function which executes when the request succeeds or fails.

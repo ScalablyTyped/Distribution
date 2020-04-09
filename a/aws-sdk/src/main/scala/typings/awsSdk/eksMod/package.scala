@@ -79,8 +79,11 @@ package object eksMod {
     - typings.awsSdk.awsSdkStrings.Ec2LaunchTemplateNotFound
     - typings.awsSdk.awsSdkStrings.Ec2LaunchTemplateVersionMismatch
     - typings.awsSdk.awsSdkStrings.Ec2SubnetNotFound
+    - typings.awsSdk.awsSdkStrings.Ec2SubnetInvalidConfiguration
     - typings.awsSdk.awsSdkStrings.IamInstanceProfileNotFound
+    - typings.awsSdk.awsSdkStrings.IamLimitExceeded
     - typings.awsSdk.awsSdkStrings.IamNodeRoleNotFound
+    - typings.awsSdk.awsSdkStrings.NodeCreationFailure
     - typings.awsSdk.awsSdkStrings.AsgInstanceLaunchFailures
     - typings.awsSdk.awsSdkStrings.InstanceLimitExceeded
     - typings.awsSdk.awsSdkStrings.InsufficientFreeAddresses

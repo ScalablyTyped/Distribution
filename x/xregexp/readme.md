@@ -1,7 +1,7 @@
 
 # Scala.js typings for xregexp
 
-Typings are for version 3.0.0
+Typings are for version 4.3
 
 ## Library description:
 Extended regular expressions

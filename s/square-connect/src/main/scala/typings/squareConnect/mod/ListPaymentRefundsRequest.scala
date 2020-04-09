@@ -13,9 +13,8 @@ class ListPaymentRefundsRequest () extends js.Object {
     */
   var begin_time: js.UndefOr[String] = js.native
   /**
-    * A pagination cursor returned by a previous call to this endpoint.
-    * Provide this to retrieve the next set of results for the original query.
-    * See [Pagination](/basics/api101/pagination) for more information.
+    * A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.
+    * See [Pagination](https://developer.squareup.com/docs/basics/api101/pagination) for more information.
     */
   var cursor: js.UndefOr[String] = js.native
   /**
@@ -37,7 +36,7 @@ class ListPaymentRefundsRequest () extends js.Object {
     */
   var source_type: js.UndefOr[String] = js.native
   /**
-    * If provided, only refunds with the given status are returned. For a list of refund status values, see [PaymentRefund](#type-paymentrefund).
+    * If provided, only refunds with the given status are returned. For a list of refund status values, see `PaymentRefund`.
     * Default: If omitted refunds are returned regardless of status.
     */
   var status: js.UndefOr[String] = js.native

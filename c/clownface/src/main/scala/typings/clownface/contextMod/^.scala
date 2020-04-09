@@ -8,6 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+// tslint:disable-next-line no-unnecessary-class
 @JSImport("clownface/lib/Context", JSImport.Namespace)
 @js.native
 class ^[D /* <: DatasetCore[Quad, Quad] */, T /* <: Term */] protected () extends js.Object {

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "expect" : "25.1.0"
+      "expect" : "25.2.7"
     }
   ],
   "test-dependencies" : [
     {
-      "expect" : "25.1.0"
+      "expect" : "25.2.7"
     }
   ],
   "compile-devDependencies" : [

@@ -6,6 +6,7 @@ import typings.reResizable.AnonHeightWidth
 import typings.reResizable.AnonMaxHeight
 import typings.reResizable.AnonNewHeight
 import typings.reResizable.AnonWidth
+import typings.reResizable.mod._Global_.Window
 import typings.reResizable.reResizableStrings.column
 import typings.reResizable.reResizableStrings.height
 import typings.reResizable.reResizableStrings.row
@@ -72,6 +73,7 @@ class Resizable protected ()
   def sizeStyle(): AnonHeight = js.native
   def unbindEvents(): Unit = js.native
   def updateSize(size: Size): Unit = js.native
+  def window(): Window | Null = js.native
 }
 
 /* static members */

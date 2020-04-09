@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@carbon/pictograms-react", "Delete")
 @js.native
-object Delete extends TopLevel[CarbonPictogram]
+object Delete extends TopLevel[CarbonPictogramType]
 

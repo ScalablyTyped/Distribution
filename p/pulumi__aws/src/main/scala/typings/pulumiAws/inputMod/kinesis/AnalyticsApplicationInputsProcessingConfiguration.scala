@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait AnalyticsApplicationInputsProcessingConfiguration extends js.Object {
+  /**
+    * The Lambda function configuration. See Lambda below for more details.
+    */
   var lambda: Input[AnalyticsApplicationInputsProcessingConfigurationLambda] = js.native
 }
 

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@angular/compiler" : "9.0.7"
+      "@angular/compiler" : "9.1.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@angular/compiler" : "9.0.7"
+      "@angular/compiler" : "9.1.1"
     }
   ],
   "compile-devDependencies" : [

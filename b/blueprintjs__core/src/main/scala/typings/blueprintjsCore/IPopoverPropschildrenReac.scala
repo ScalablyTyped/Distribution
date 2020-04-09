@@ -242,7 +242,7 @@ trait IPopoverPropschildrenReac extends js.Object {
     * @default "span"
     */
   var targetTagName: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any
   ] = js.undefined
   /**
     * Indicates how long (in milliseconds) the overlay's enter/leave transition takes.
@@ -273,7 +273,7 @@ trait IPopoverPropschildrenReac extends js.Object {
     * @default "span"
     */
   var wrapperTagName: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any
   ] = js.undefined
 }
 
@@ -316,10 +316,10 @@ object IPopoverPropschildrenReac {
     target: String | Element = null,
     targetClassName: String = null,
     targetProps: HTMLAttributes[HTMLElement] = null,
-    targetTagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any = null,
+    targetTagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any = null,
     transitionDuration: Int | Double = null,
     usePortal: js.UndefOr[Boolean] = js.undefined,
-    wrapperTagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any = null
+    wrapperTagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any = null
   ): IPopoverPropschildrenReac = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])

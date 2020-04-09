@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait dxOverlay extends Widget {
-  /** Gets the widget's content. */
+  /** @name dxOverlay.content() */
   def content(): dxElement = js.native
-  /** Hides the widget. */
+  /** @name dxOverlay.hide() */
   def hide(): Promise[Boolean] with JQueryPromise[Boolean] = js.native
-  /** Shows the widget. */
+  /** @name dxOverlay.show() */
   def show(): Promise[Boolean] with JQueryPromise[Boolean] = js.native
-  /** Shows or hides the widget depending on the argument. */
+  /** @name dxOverlay.toggle(showing) */
   def toggle(showing: Boolean): Promise[Boolean] with JQueryPromise[Boolean] = js.native
 }
 

@@ -12,19 +12,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxSlideOutViewOptions extends WidgetOptions[dxSlideOutView] {
-  /** Specifies a custom template for the widget content. */
+  /** @name dxSlideOutView.Options.contentTemplate */
   var contentTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function1[/* contentElement */ dxElement, _])
   ] = js.undefined
-  /** Specifies the current menu position. */
+  /** @name dxSlideOutView.Options.menuPosition */
   var menuPosition: js.UndefOr[inverted | normal] = js.undefined
-  /** Specifies a custom template for the menu content. */
+  /** @name dxSlideOutView.Options.menuTemplate */
   var menuTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function1[/* menuElement */ dxElement, _])
   ] = js.undefined
-  /** Specifies whether or not the menu panel is visible. */
+  /** @name dxSlideOutView.Options.menuVisible */
   var menuVisible: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether or not the menu is shown when a user swipes the widget content. */
+  /** @name dxSlideOutView.Options.swipeEnabled */
   var swipeEnabled: js.UndefOr[Boolean] = js.undefined
 }
 

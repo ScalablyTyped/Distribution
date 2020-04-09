@@ -133,6 +133,7 @@ package object lambdaMod {
     - typings.awsSdk.awsSdkStrings.dotnetcore1Dot0
     - typings.awsSdk.awsSdkStrings.dotnetcore2Dot0
     - typings.awsSdk.awsSdkStrings.dotnetcore2Dot1
+    - typings.awsSdk.awsSdkStrings.dotnetcore3Dot1
     - typings.awsSdk.awsSdkStrings.`nodejs4Dot3-edge`
     - typings.awsSdk.awsSdkStrings.go1Dotx
     - typings.awsSdk.awsSdkStrings.ruby2Dot5

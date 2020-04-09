@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@carbon/pictograms-react", "Printer")
 @js.native
-object Printer extends TopLevel[CarbonPictogram]
+object Printer extends TopLevel[CarbonPictogramType]
 

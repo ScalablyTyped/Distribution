@@ -23,9 +23,8 @@ object APIGatewayAuthorizerEvent {
   }
   @scala.inline
   def APIGatewayRequestAuthorizerEvent(
-    apiId: String,
-    domainName: String,
     httpMethod: String,
+    methodArn: String,
     path: String,
     requestContext: APIGatewayEventRequestContextWithAuthorizer[js.UndefOr[scala.Nothing]],
     resource: String,
@@ -37,7 +36,7 @@ object APIGatewayAuthorizerEvent {
     queryStringParameters: StringDictionary[String] = null,
     stageVariables: StringDictionary[String] = null
   ): APIGatewayAuthorizerEvent = {
-    val __obj = js.Dynamic.literal(apiId = apiId.asInstanceOf[js.Any], domainName = domainName.asInstanceOf[js.Any], httpMethod = httpMethod.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], requestContext = requestContext.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(httpMethod = httpMethod.asInstanceOf[js.Any], methodArn = methodArn.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], requestContext = requestContext.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (multiValueHeaders != null) __obj.updateDynamic("multiValueHeaders")(multiValueHeaders.asInstanceOf[js.Any])

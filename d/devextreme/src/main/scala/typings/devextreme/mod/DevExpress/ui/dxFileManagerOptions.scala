@@ -16,35 +16,35 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxFileManagerOptions extends WidgetOptions[dxFileManager] {
-  /** Specifies the allowed upload file extensions. */
+  /** @name dxFileManager.Options.allowedFileExtensions */
   var allowedFileExtensions: js.UndefOr[js.Array[String]] = js.undefined
-  /** Configures the context menu settings. */
+  /** @name dxFileManager.Options.contextMenu */
   var contextMenu: js.UndefOr[dxFileManagerContextMenu] = js.undefined
-  /** Specifies the path that is used when the FileManager is initialized. */
+  /** @name dxFileManager.Options.currentPath */
   var currentPath: js.UndefOr[String] = js.undefined
-  /** Customizes columns in details view. Applies only if itemView.mode is "details". */
+  /** @name dxFileManager.Options.customizeDetailColumns */
   var customizeDetailColumns: js.UndefOr[
     js.Function1[/* columns */ js.Array[dxDataGridColumn], js.Array[dxDataGridColumn]]
   ] = js.undefined
-  /** Allows you to provide custom icons to be used as thumbnails. */
+  /** @name dxFileManager.Options.customizeThumbnail */
   var customizeThumbnail: js.UndefOr[js.Function1[/* fileItem */ js.Any, String]] = js.undefined
-  /** Specifies the file provider. */
+  /** @name dxFileManager.Options.fileProvider */
   var fileProvider: js.UndefOr[js.Any] = js.undefined
-  /** Configures the file and folder view. */
+  /** @name dxFileManager.Options.itemView */
   var itemView: js.UndefOr[AnonMode] = js.undefined
-  /** A function that is executed when the current directory is changed. */
+  /** @name dxFileManager.Options.onCurrentDirectoryChanged */
   var onCurrentDirectoryChanged: js.UndefOr[js.Function1[/* e */ AnonComponentDxFileManager, _]] = js.undefined
-  /** A function that is executed when the selected file is opened. */
+  /** @name dxFileManager.Options.onSelectedFileOpened */
   var onSelectedFileOpened: js.UndefOr[js.Function1[/* e */ AnonFileItem, _]] = js.undefined
-  /** Specifies actions that a user is allowed to perform on files and folders. */
+  /** @name dxFileManager.Options.permissions */
   var permissions: js.UndefOr[AnonCopy] = js.undefined
-  /** Specifies the root folder name. */
+  /** @name dxFileManager.Options.rootFolderName */
   var rootFolderName: js.UndefOr[String] = js.undefined
-  /** Specifies whether a user can select a single or multiple files and folders in the item view simultaneously. */
+  /** @name dxFileManager.Options.selectionMode */
   var selectionMode: js.UndefOr[multiple | single_] = js.undefined
-  /** Configures toolbar settings. */
+  /** @name dxFileManager.Options.toolbar */
   var toolbar: js.UndefOr[dxFileManagerToolbar] = js.undefined
-  /** Configures upload settings. */
+  /** @name dxFileManager.Options.upload */
   var upload: js.UndefOr[AnonMaxFileSize] = js.undefined
 }
 

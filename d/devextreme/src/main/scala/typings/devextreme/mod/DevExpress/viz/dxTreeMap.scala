@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait dxTreeMap extends BaseWidget {
-  /** Deselects all nodes in the widget. */
+  /** @name dxTreeMap.clearSelection() */
   def clearSelection(): Unit = js.native
-  /** Drills one level up. */
+  /** @name dxTreeMap.drillUp() */
   def drillUp(): Unit = js.native
-  /** Gets the current node. */
+  /** @name dxTreeMap.getCurrentNode() */
   def getCurrentNode(): dxTreeMapNode = js.native
-  /** Gets the DataSource instance. */
+  /** @name DataHelperMixin.getDataSource() */
   def getDataSource(): DataSource = js.native
-  /** Gets the root node. */
+  /** @name dxTreeMap.getRootNode() */
   def getRootNode(): dxTreeMapNode = js.native
-  /** Hides the tooltip. */
+  /** @name dxTreeMap.hideTooltip() */
   def hideTooltip(): Unit = js.native
-  /** Resets the drill down level. */
+  /** @name dxTreeMap.resetDrillDown() */
   def resetDrillDown(): Unit = js.native
 }
 

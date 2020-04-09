@@ -10,11 +10,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxChartCommonAxisSettingsStripStyleLabel extends js.Object {
-  /** Specifies font options for strip labels. */
+  /** @name dxChart.Options.commonAxisSettings.stripStyle.label.font */
   var font: js.UndefOr[Font] = js.undefined
-  /** Aligns strip labels in the horizontal direction. */
+  /** @name dxChart.Options.commonAxisSettings.stripStyle.label.horizontalAlignment */
   var horizontalAlignment: js.UndefOr[center | left | right] = js.undefined
-  /** Aligns strip labels in the vertical direction. */
+  /** @name dxChart.Options.commonAxisSettings.stripStyle.label.verticalAlignment */
   var verticalAlignment: js.UndefOr[bottom | center | top] = js.undefined
 }
 

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait reactQueryProps {
   @scala.inline
-  def ReactQueryConfigProviderProps: AnonConfig.type = typings.reactQuery.AnonConfig
-  type ReactQueryConfigProviderProps = AnonConfig
+  def ReactQueryConfigProviderProps: AnonConfigReactQueryProviderConfig.type = typings.reactQuery.AnonConfigReactQueryProviderConfig
+  type ReactQueryConfigProviderProps = AnonConfigReactQueryProviderConfig
 }
 

@@ -68,40 +68,40 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxPieChartOptions extends BaseChartOptions[dxPieChart] {
-  /** Specifies adaptive layout options. */
+  /** @name dxPieChart.Options.adaptiveLayout */
   @JSName("adaptiveLayout")
   var adaptiveLayout_dxPieChartOptions: js.UndefOr[dxPieChartAdaptiveLayout] = js.undefined
-  /** Specifies a custom template for content in the pie's center. */
+  /** @name dxPieChart.Options.centerTemplate */
   var centerTemplate: js.UndefOr[
     template | (js.Function2[/* component */ dxPieChart, /* element */ SVGGElement, String | SVGElement | JQuery])
   ] = js.undefined
-  /** An object defining the configuration options that are common for all series of the PieChart widget. */
+  /** @name dxPieChart.Options.commonSeriesSettings */
   var commonSeriesSettings: js.UndefOr[js.Any] = js.undefined
-  /** Specifies the diameter of the pie. */
+  /** @name dxPieChart.Options.diameter */
   var diameter: js.UndefOr[Double] = js.undefined
-  /** Specifies the fraction of the inner radius relative to the total radius in the series of the 'doughnut' type. The value should be between 0 and 1. */
+  /** @name dxPieChart.Options.innerRadius */
   var innerRadius: js.UndefOr[Double] = js.undefined
-  /** Specifies PieChart legend options. */
+  /** @name dxPieChart.Options.legend */
   @JSName("legend")
   var legend_dxPieChartOptions: js.UndefOr[dxPieChartLegend] = js.undefined
-  /** Specifies the minimum diameter of the pie. */
+  /** @name dxPieChart.Options.minDiameter */
   var minDiameter: js.UndefOr[Double] = js.undefined
-  /** A function that is executed when a legend item is clicked or tapped. */
+  /** @name dxPieChart.Options.onLegendClick */
   var onLegendClick: js.UndefOr[(js.Function1[/* e */ AnonPoints, _]) | String] = js.undefined
-  /** Specifies how a chart must behave when point labels overlap. */
+  /** @name dxPieChart.Options.resolveLabelOverlapping */
   var resolveLabelOverlapping: js.UndefOr[hide | none | shift] = js.undefined
-  /** Specifies the direction that the pie chart segments will occupy. */
+  /** @name dxPieChart.Options.segmentsDirection */
   var segmentsDirection: js.UndefOr[anticlockwise | clockwise] = js.undefined
-  /** Defines options for the series template. */
+  /** @name dxPieChart.Options.seriesTemplate */
   var seriesTemplate: js.UndefOr[AnonNameField] = js.undefined
-  /** Specifies options for the series of the PieChart widget. */
+  /** @name dxPieChart.Options.series */
   @JSName("series")
   var series_dxPieChartOptions: js.UndefOr[PieChartSeries | js.Array[PieChartSeries]] = js.undefined
-  /** Allows you to display several adjoining pies in the same size. */
+  /** @name dxPieChart.Options.sizeGroup */
   var sizeGroup: js.UndefOr[String] = js.undefined
-  /** Specifies the angle in arc degrees from which the first segment of a pie chart should start. */
+  /** @name dxPieChart.Options.startAngle */
   var startAngle: js.UndefOr[Double] = js.undefined
-  /** Specifies the type of the pie chart series. */
+  /** @name dxPieChart.Options.type */
   var `type`: js.UndefOr[donut | doughnut | pie] = js.undefined
 }
 

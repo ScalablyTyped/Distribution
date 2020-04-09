@@ -7,13 +7,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxListItem extends CollectionWidgetItem {
-  /** Specifies the text of a badge displayed for the list item. */
+  /** @name dxListItem.badge */
   var badge: js.UndefOr[String] = js.undefined
-  /** Specifies the list item's icon. */
+  /** @name dxListItem.icon */
   var icon: js.UndefOr[String] = js.undefined
-  /** Specifies the name of the list items group in a grouped list. */
+  /** @name dxListItem.key */
   var key: js.UndefOr[String] = js.undefined
-  /** Specifies whether or not to display a chevron for the list item. */
+  /** @name dxListItem.showChevron */
   var showChevron: js.UndefOr[Boolean] = js.undefined
 }
 

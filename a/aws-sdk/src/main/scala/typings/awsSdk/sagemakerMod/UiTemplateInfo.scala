@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UiTemplateInfo extends js.Object {
   /**
-    * The SHA 256 hash that you used to create the request signature.
+    * The SHA-256 digest of the contents of the template.
     */
   var ContentSha256: js.UndefOr[TemplateContentSha256] = js.native
   /**

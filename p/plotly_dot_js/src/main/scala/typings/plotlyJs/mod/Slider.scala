@@ -1,6 +1,6 @@
 package typings.plotlyJs.mod
 
-import typings.plotlyJs.AnonFont
+import typings.plotlyJs.AnonOffset
 import typings.plotlyJs.PartialPadding
 import typings.plotlyJs.PartialSliderStep
 import typings.plotlyJs.plotlyJsStrings.auto
@@ -39,7 +39,7 @@ trait Slider extends js.Object {
   	 * Sets the width (in px) of the border enclosing the slider.
   	 */
   var borderwidth: Double
-  var currentvalue: AnonFont
+  var currentvalue: AnonOffset
   /**
   	 * Sets the font of the slider step labels.
   	 */
@@ -113,7 +113,7 @@ object Slider {
     bgcolor: Color,
     bordercolor: Color,
     borderwidth: Double,
-    currentvalue: AnonFont,
+    currentvalue: AnonOffset,
     font: Font,
     len: Double,
     lenmode: fraction | pixels,

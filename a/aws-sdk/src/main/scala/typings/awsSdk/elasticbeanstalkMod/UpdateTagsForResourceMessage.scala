@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UpdateTagsForResourceMessage extends js.Object {
   /**
-    * The Amazon Resource Name (ARN) of the resouce to be updated. Must be the ARN of an Elastic Beanstalk environment.
+    * The Amazon Resource Name (ARN) of the resouce to be updated. Must be the ARN of an Elastic Beanstalk resource.
     */
   var ResourceArn: typings.awsSdk.elasticbeanstalkMod.ResourceArn = js.native
   /**

@@ -23,9 +23,9 @@ trait StartGameSessionPlacementInput extends js.Object {
     */
   var GameSessionName: js.UndefOr[NonZeroAndMaxString] = js.native
   /**
-    * Name of the queue to use to place the new game session. You can use either the qieue name or ARN value. 
+    * Name of the queue to use to place the new game session. You can use either the queue name or ARN value. 
     */
-  var GameSessionQueueName: typings.awsSdk.gameliftMod.GameSessionQueueName = js.native
+  var GameSessionQueueName: GameSessionQueueNameOrArn = js.native
   /**
     * The maximum number of players that can be connected simultaneously to the game session.
     */
@@ -43,7 +43,7 @@ trait StartGameSessionPlacementInput extends js.Object {
 object StartGameSessionPlacementInput {
   @scala.inline
   def apply(
-    GameSessionQueueName: GameSessionQueueName,
+    GameSessionQueueName: GameSessionQueueNameOrArn,
     MaximumPlayerSessionCount: WholeNumber,
     PlacementId: IdStringModel,
     DesiredPlayerSessions: DesiredPlayerSessionList = null,

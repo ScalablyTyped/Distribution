@@ -21,17 +21,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxBarGaugeLegend extends BaseLegend {
-  /** Specifies the hint that appears when a user hovers the mouse pointer over a legend item. */
+  /** @name dxBarGauge.Options.legend.customizeHint */
   var customizeHint: js.UndefOr[js.Function1[/* arg */ AnonItemText, String]] = js.undefined
-  /** Allows you to change the order, text, and visibility of legend items. */
+  /** @name dxBarGauge.Options.legend.customizeItems */
   var customizeItems: js.UndefOr[
     js.Function1[/* items */ js.Array[BarGaugeLegendItem], js.Array[BarGaugeLegendItem]]
   ] = js.undefined
-  /** Customizes the text displayed by legend items. */
+  /** @name dxBarGauge.Options.legend.customizeText */
   var customizeText: js.UndefOr[js.Function1[/* arg */ AnonItemText, String]] = js.undefined
-  /** Formats the item text before it is displayed. Accepts only numeric formats. When unspecified, it inherits the label's format. */
+  /** @name dxBarGauge.Options.legend.itemTextFormat */
   var itemTextFormat: js.UndefOr[format] = js.undefined
-  /** Specifies an SVG element that serves as a custom legend item marker. */
+  /** @name dxBarGauge.Options.legend.markerTemplate */
   var markerTemplate: js.UndefOr[
     template | (js.Function2[
       /* legendItem */ BarGaugeLegendItem, 

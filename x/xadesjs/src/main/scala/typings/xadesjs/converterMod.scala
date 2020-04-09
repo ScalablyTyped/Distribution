@@ -1,7 +1,7 @@
 package typings.xadesjs
 
 import typings.std.Date
-import typings.xmlCore.mod.IConverter
+import typings.xmlCore.typesMod.IConverter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

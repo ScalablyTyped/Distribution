@@ -8,7 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxResponsiveBoxItem extends CollectionWidgetItem {
-  /** Specifies the item location and size against the widget grid. */
+  /** @name dxResponsiveBoxItem.location */
   var location: js.UndefOr[AnonCol | js.Array[AnonCol]] = js.undefined
 }
 

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@carbon/pictograms-react", "Time")
 @js.native
-object Time extends TopLevel[CarbonPictogram]
+object Time extends TopLevel[CarbonPictogramType]
 

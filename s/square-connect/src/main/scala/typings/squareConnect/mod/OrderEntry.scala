@@ -18,7 +18,7 @@ class OrderEntry () extends js.Object {
   /**
     * Version number which is incremented each time an update is committed to the order.
     * Orders that were not created through the API will not include a version and thus cannot be updated.
-    * [Read more about working with versions](/orders-api/manage-orders#update-orders).
+    * [Read more about working with versions](https://developer.squareup.com/docs/orders-api/manage-orders#update-orders).
     */
   var version: js.UndefOr[Double] = js.native
 }

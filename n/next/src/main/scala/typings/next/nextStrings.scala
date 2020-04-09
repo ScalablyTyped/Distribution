@@ -35,6 +35,9 @@ object nextStrings {
   sealed trait hybrid extends js.Object
   
   @js.native
+  sealed trait pause extends js.Object
+  
+  @js.native
   sealed trait pipe extends js.Object
   
   @js.native
@@ -51,6 +54,9 @@ object nextStrings {
   
   @js.native
   sealed trait replaceState extends HistoryMethod
+  
+  @js.native
+  sealed trait resume extends js.Object
   
   @js.native
   sealed trait rewrite extends RouteType
@@ -80,6 +86,8 @@ object nextStrings {
   @scala.inline
   def hybrid: hybrid = "hybrid".asInstanceOf[hybrid]
   @scala.inline
+  def pause: pause = "pause".asInstanceOf[pause]
+  @scala.inline
   def pipe: pipe = "pipe".asInstanceOf[pipe]
   @scala.inline
   def production: production = "production".asInstanceOf[production]
@@ -91,6 +99,8 @@ object nextStrings {
   def redirect: redirect = "redirect".asInstanceOf[redirect]
   @scala.inline
   def replaceState: replaceState = "replaceState".asInstanceOf[replaceState]
+  @scala.inline
+  def resume: resume = "resume".asInstanceOf[resume]
   @scala.inline
   def rewrite: rewrite = "rewrite".asInstanceOf[rewrite]
   @scala.inline

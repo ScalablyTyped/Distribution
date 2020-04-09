@@ -143,6 +143,7 @@ import typings.styledComponents.styledComponentsStrings.samp
 import typings.styledComponents.styledComponentsStrings.script
 import typings.styledComponents.styledComponentsStrings.section
 import typings.styledComponents.styledComponentsStrings.select
+import typings.styledComponents.styledComponentsStrings.slot
 import typings.styledComponents.styledComponentsStrings.small
 import typings.styledComponents.styledComponentsStrings.source
 import typings.styledComponents.styledComponentsStrings.span
@@ -883,6 +884,11 @@ trait ThemedBaseStyledInterface[T /* <: js.Object */] extends ThemedStyledCompon
   // causes tests to fail in TS 3.1
   component: select
   ): ThemedStyledFunction[select, T, js.Object, scala.Nothing] = js.native
+  def apply(
+    // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
+  // causes tests to fail in TS 3.1
+  component: slot
+  ): ThemedStyledFunction[slot, T, js.Object, scala.Nothing] = js.native
   def apply(
     // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
   // causes tests to fail in TS 3.1

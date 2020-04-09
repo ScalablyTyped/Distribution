@@ -1,5 +1,6 @@
 package typings.angularCore.updateRecorderMod
 
+import typings.angularCore.importManagerMod.ImportManagerUpdateRecorder
 import typings.typescript.mod.ClassDeclaration
 import typings.typescript.mod.Decorator
 import typings.typescript.mod.NamedImports
@@ -8,12 +9,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait UpdateRecorder extends js.Object {
+trait UpdateRecorder extends ImportManagerUpdateRecorder {
   def addClassDecorator(node: ClassDeclaration, text: String, className: String): Unit
-  def addNewImport(start: Double, importText: String): Unit
   def commitUpdate(): Unit
   def replaceDecorator(node: Decorator, newText: String, className: String): Unit
-  def updateExistingImport(namedBindings: NamedImports, newNamedBindings: String): Unit
   def updateObjectLiteral(node: ObjectLiteralExpression, newText: String): Unit
 }
 

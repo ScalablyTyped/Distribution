@@ -8,17 +8,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SearchBoxMixinOptions[T] extends js.Object {
-  /** Configures the search panel. */
+  /** @name SearchBoxMixin.Options.searchEditorOptions */
   var searchEditorOptions: js.UndefOr[dxTextBoxOptions[dxTextBox]] = js.undefined
-  /** Specifies whether the search panel is visible. */
+  /** @name SearchBoxMixin.Options.searchEnabled */
   var searchEnabled: js.UndefOr[Boolean] = js.undefined
-  /** Specifies a data object's field name or an expression whose value is compared to the search string. */
+  /** @name SearchBoxMixin.Options.searchExpr */
   var searchExpr: js.UndefOr[String | js.Function | (js.Array[String | js.Function])] = js.undefined
-  /** Specifies a comparison operation used to search widget items. */
+  /** @name SearchBoxMixin.Options.searchMode */
   var searchMode: js.UndefOr[contains | startswith | equals] = js.undefined
-  /** Specifies a delay in milliseconds between when a user finishes typing, and the search is executed. */
+  /** @name SearchBoxMixin.Options.searchTimeout */
   var searchTimeout: js.UndefOr[Double] = js.undefined
-  /** Specifies the current search string. */
+  /** @name SearchBoxMixin.Options.searchValue */
   var searchValue: js.UndefOr[String] = js.undefined
 }
 

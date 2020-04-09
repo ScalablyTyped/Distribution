@@ -11,43 +11,43 @@ trait FetchRetryOptions extends js.Object {
     *
     * See also `opts.retry` to provide all retry options as a single object.
     */
-  var `fetch-retries`: js.UndefOr[Double] = js.undefined
+  var fetchRetries: js.UndefOr[Double] = js.undefined
   /**
     * The "factor" config for `retry` to use when fetching packages.
     *
     * See also `opts.retry` to provide all retry options as a single
     * object.
     */
-  var `fetch-retry-factor`: js.UndefOr[Double] = js.undefined
+  var fetchRetryFactor: js.UndefOr[Double] = js.undefined
   /**
     * The "maxTimeout" config for `retry` to use when fetching packages.
     *
     * See also `opts.retry` to provide all retry options as a single
     * object.
     */
-  var `fetch-retry-maxtimeout`: js.UndefOr[Double] = js.undefined
+  var fetchRetryMaxtimeout: js.UndefOr[Double] = js.undefined
   /**
     * The "minTimeout" config for `retry` to use when fetching packages.
     *
     * See also `opts.retry` to provide all retry options as a single
     * object.
     */
-  var `fetch-retry-mintimeout`: js.UndefOr[Double] = js.undefined
+  var fetchRetryMintimeout: js.UndefOr[Double] = js.undefined
 }
 
 object FetchRetryOptions {
   @scala.inline
   def apply(
-    `fetch-retries`: Int | Double = null,
-    `fetch-retry-factor`: Int | Double = null,
-    `fetch-retry-maxtimeout`: Int | Double = null,
-    `fetch-retry-mintimeout`: Int | Double = null
+    fetchRetries: Int | Double = null,
+    fetchRetryFactor: Int | Double = null,
+    fetchRetryMaxtimeout: Int | Double = null,
+    fetchRetryMintimeout: Int | Double = null
   ): FetchRetryOptions = {
     val __obj = js.Dynamic.literal()
-    if (`fetch-retries` != null) __obj.updateDynamic("fetch-retries")(`fetch-retries`.asInstanceOf[js.Any])
-    if (`fetch-retry-factor` != null) __obj.updateDynamic("fetch-retry-factor")(`fetch-retry-factor`.asInstanceOf[js.Any])
-    if (`fetch-retry-maxtimeout` != null) __obj.updateDynamic("fetch-retry-maxtimeout")(`fetch-retry-maxtimeout`.asInstanceOf[js.Any])
-    if (`fetch-retry-mintimeout` != null) __obj.updateDynamic("fetch-retry-mintimeout")(`fetch-retry-mintimeout`.asInstanceOf[js.Any])
+    if (fetchRetries != null) __obj.updateDynamic("fetchRetries")(fetchRetries.asInstanceOf[js.Any])
+    if (fetchRetryFactor != null) __obj.updateDynamic("fetchRetryFactor")(fetchRetryFactor.asInstanceOf[js.Any])
+    if (fetchRetryMaxtimeout != null) __obj.updateDynamic("fetchRetryMaxtimeout")(fetchRetryMaxtimeout.asInstanceOf[js.Any])
+    if (fetchRetryMintimeout != null) __obj.updateDynamic("fetchRetryMintimeout")(fetchRetryMintimeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[FetchRetryOptions]
   }
 }

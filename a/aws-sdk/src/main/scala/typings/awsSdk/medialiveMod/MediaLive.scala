@@ -597,7 +597,7 @@ trait MediaLive extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeChannelResponse, Unit]
   ): Request[DescribeChannelResponse, AWSError] = js.native
   /**
-    * Waits for the channelDeleted state by periodically calling the underlying MediaLive.describeChanneloperation every 5 seconds (at most 20 times). Wait until a channel has been deleted
+    * Waits for the channelDeleted state by periodically calling the underlying MediaLive.describeChanneloperation every 5 seconds (at most 84 times). Wait until a channel has been deleted
     */
   @JSName("waitFor")
   def waitFor_channelDeleted(state: channelDeleted): Request[DescribeChannelResponse, AWSError] = js.native
@@ -607,7 +607,7 @@ trait MediaLive extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeChannelResponse, Unit]
   ): Request[DescribeChannelResponse, AWSError] = js.native
   /**
-    * Waits for the channelDeleted state by periodically calling the underlying MediaLive.describeChanneloperation every 5 seconds (at most 20 times). Wait until a channel has been deleted
+    * Waits for the channelDeleted state by periodically calling the underlying MediaLive.describeChanneloperation every 5 seconds (at most 84 times). Wait until a channel has been deleted
     */
   @JSName("waitFor")
   def waitFor_channelDeleted(state: channelDeleted, params: DescribeChannelRequestwai): Request[DescribeChannelResponse, AWSError] = js.native
@@ -639,7 +639,7 @@ trait MediaLive extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeChannelResponse, Unit]
   ): Request[DescribeChannelResponse, AWSError] = js.native
   /**
-    * Waits for the channelStopped state by periodically calling the underlying MediaLive.describeChanneloperation every 5 seconds (at most 28 times). Wait until a channel has is stopped
+    * Waits for the channelStopped state by periodically calling the underlying MediaLive.describeChanneloperation every 5 seconds (at most 60 times). Wait until a channel has is stopped
     */
   @JSName("waitFor")
   def waitFor_channelStopped(state: channelStopped): Request[DescribeChannelResponse, AWSError] = js.native
@@ -649,7 +649,7 @@ trait MediaLive extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeChannelResponse, Unit]
   ): Request[DescribeChannelResponse, AWSError] = js.native
   /**
-    * Waits for the channelStopped state by periodically calling the underlying MediaLive.describeChanneloperation every 5 seconds (at most 28 times). Wait until a channel has is stopped
+    * Waits for the channelStopped state by periodically calling the underlying MediaLive.describeChanneloperation every 5 seconds (at most 60 times). Wait until a channel has is stopped
     */
   @JSName("waitFor")
   def waitFor_channelStopped(state: channelStopped, params: DescribeChannelRequestwai): Request[DescribeChannelResponse, AWSError] = js.native

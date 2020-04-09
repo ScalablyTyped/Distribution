@@ -10,6 +10,7 @@ trait ConfigOptions extends js.Object {
   var getContainer: js.UndefOr[js.Function0[HTMLElement]] = js.undefined
   var maxCount: js.UndefOr[Double] = js.undefined
   var prefixCls: js.UndefOr[String] = js.undefined
+  var rtl: js.UndefOr[Boolean] = js.undefined
   var top: js.UndefOr[Double] = js.undefined
   var transitionName: js.UndefOr[String] = js.undefined
 }
@@ -21,6 +22,7 @@ object ConfigOptions {
     getContainer: () => HTMLElement = null,
     maxCount: Int | Double = null,
     prefixCls: String = null,
+    rtl: js.UndefOr[Boolean] = js.undefined,
     top: Int | Double = null,
     transitionName: String = null
   ): ConfigOptions = {
@@ -29,6 +31,7 @@ object ConfigOptions {
     if (getContainer != null) __obj.updateDynamic("getContainer")(js.Any.fromFunction0(getContainer))
     if (maxCount != null) __obj.updateDynamic("maxCount")(maxCount.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
+    if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl.asInstanceOf[js.Any])
     if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
     if (transitionName != null) __obj.updateDynamic("transitionName")(transitionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigOptions]

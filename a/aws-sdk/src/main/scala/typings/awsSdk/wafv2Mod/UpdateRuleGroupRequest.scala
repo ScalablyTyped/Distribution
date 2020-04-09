@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UpdateRuleGroupRequest extends js.Object {
   /**
-    * A friendly description of the rule group. You cannot change the description of a rule group after you create it.
+    * A description of the rule group that helps with identification. You cannot change the description of a rule group after you create it.
     */
   var Description: js.UndefOr[EntityDescription] = js.native
   /**
@@ -19,7 +19,7 @@ trait UpdateRuleGroupRequest extends js.Object {
     */
   var LockToken: typings.awsSdk.wafv2Mod.LockToken = js.native
   /**
-    * A friendly name of the rule group. You cannot change the name of a rule group after you create it.
+    * The name of the rule group. You cannot change the name of a rule group after you create it.
     */
   var Name: EntityName = js.native
   /**
@@ -27,7 +27,7 @@ trait UpdateRuleGroupRequest extends js.Object {
     */
   var Rules: js.UndefOr[typings.awsSdk.wafv2Mod.Rules] = js.native
   /**
-    * Specifies whether this is for an AWS CloudFront distribution or for a regional application. A regional application can be an Application Load Balancer (ALB) or an API Gateway stage.  To work with CloudFront, you must also specify the Region US East (N. Virginia) as follows:    CLI - Specify the region when you use the CloudFront scope: --scope=CLOUDFRONT --region=us-east-1.    API and SDKs - For all calls, use the Region endpoint us-east-1.   
+    * Specifies whether this is for an AWS CloudFront distribution or for a regional application. A regional application can be an Application Load Balancer (ALB) or an API Gateway stage.  To work with CloudFront, you must also specify the Region US East (N. Virginia) as follows:    CLI - Specify the Region when you use the CloudFront scope: --scope=CLOUDFRONT --region=us-east-1.    API and SDKs - For all calls, use the Region endpoint us-east-1.   
     */
   var Scope: typings.awsSdk.wafv2Mod.Scope = js.native
   /**

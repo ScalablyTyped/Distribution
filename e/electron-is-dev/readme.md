@@ -1,7 +1,7 @@
 
 # Scala.js typings for electron-is-dev
 
-Typings are for version 1.1.0
+Typings are for version 1.2.0
 
 ## Library description:
 Check if Electron is running in development

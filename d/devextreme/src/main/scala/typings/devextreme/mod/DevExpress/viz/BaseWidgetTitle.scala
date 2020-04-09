@@ -16,25 +16,25 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Configures the widget's title. */
+/** @name BaseWidget.Options.title */
 trait BaseWidgetTitle extends js.Object {
-  /** Specifies font options for the title. */
+  /** @name BaseWidget.Options.title.font */
   var font: js.UndefOr[Font] = js.undefined
-  /** Specifies the title's alignment in a horizontal direction. */
+  /** @name BaseWidget.Options.title.horizontalAlignment */
   var horizontalAlignment: js.UndefOr[center | left | right] = js.undefined
-  /** Generates space around the title. */
+  /** @name BaseWidget.Options.title.margin */
   var margin: js.UndefOr[Double | AnonBottom] = js.undefined
-  /** Reserves a pixel-measured space for the title. */
+  /** @name BaseWidget.Options.title.placeholderSize */
   var placeholderSize: js.UndefOr[Double] = js.undefined
-  /** Configures the widget's subtitle. */
+  /** @name BaseWidget.Options.title.subtitle */
   var subtitle: js.UndefOr[AnonFontOffset | String] = js.undefined
-  /** Specifies the title's text. */
+  /** @name BaseWidget.Options.title.text */
   var text: js.UndefOr[String] = js.undefined
-  /** Specifies what to do with the title when it overflows the allocated space after applying wordWrap: hide, truncate it and display an ellipsis, or do nothing. */
+  /** @name BaseWidget.Options.title.textOverflow */
   var textOverflow: js.UndefOr[ellipsis | hide | none] = js.undefined
-  /** Specifies the title's alignment in a vertical direction. */
+  /** @name BaseWidget.Options.title.verticalAlignment */
   var verticalAlignment: js.UndefOr[bottom | top] = js.undefined
-  /** Specifies how to wrap the title if it does not fit into a single line. */
+  /** @name BaseWidget.Options.title.wordWrap */
   var wordWrap: js.UndefOr[normal | breakWord | none] = js.undefined
 }
 

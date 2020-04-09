@@ -54,7 +54,7 @@ trait JobState extends js.Object {
     */
   val maxRetries: js.UndefOr[Input[Double]] = js.native
   /**
-    * The name of the job command. Defaults to `glueetl`. Use `pythonshell` for Python Shell Job Type, `maxCapacity` needs to be set if `pythonshell` is chosen.
+    * The name you assign to this job. It must be unique in your account.
     */
   val name: js.UndefOr[Input[String]] = js.native
   /**

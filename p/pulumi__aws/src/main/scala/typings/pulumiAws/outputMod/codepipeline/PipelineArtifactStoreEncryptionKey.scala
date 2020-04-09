@@ -7,9 +7,12 @@ import scala.scalajs.js.annotation._
 @js.native
 trait PipelineArtifactStoreEncryptionKey extends js.Object {
   /**
-    * The codepipeline ID.
+    * The KMS key ARN or ID
     */
   var id: String = js.native
+  /**
+    * The type of key; currently only `KMS` is supported
+    */
   var `type`: String = js.native
 }
 

@@ -10,6 +10,6 @@ class UpdateWorkweekConfigRequest () extends js.Object {
   /**
     * The updated `WorkweekConfig` object.
     */
-  var workweek_config: js.UndefOr[WorkweekConfig] = js.native
+  var workweek_config: WorkweekConfig = js.native
 }
 

@@ -12,34 +12,34 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait dxScrollable extends DOMComponent {
-  /** Gets the widget's height. */
+  /** @name dxScrollable.clientHeight() */
   def clientHeight(): Double = js.native
-  /** Gets the widget's width. */
+  /** @name dxScrollable.clientWidth() */
   def clientWidth(): Double = js.native
-  /** Gets the widget's content. */
+  /** @name dxScrollable.content() */
   def content(): dxElement = js.native
-  /** Scrolls the content by a specific distance in horizontal and vertical directions. */
+  /** @name dxScrollable.scrollBy(distanceObject) */
   def scrollBy(distanceObject: js.Any): Unit = js.native
-  /** Scrolls the content by a specific distance. */
+  /** @name dxScrollable.scrollBy(distance) */
   def scrollBy(distance: Double): Unit = js.native
-  /** Gets the scrollable content's height in pixels. */
+  /** @name dxScrollable.scrollHeight() */
   def scrollHeight(): Double = js.native
-  /** Gets the left scroll offset. */
+  /** @name dxScrollable.scrollLeft() */
   def scrollLeft(): Double = js.native
-  /** Gets the scroll offset. */
+  /** @name dxScrollable.scrollOffset() */
   def scrollOffset(): js.Any = js.native
-  /** Scrolls the content to a specific position. */
+  /** @name dxScrollable.scrollTo(targetLocationObject) */
   def scrollTo(targetLocation: js.Any): Unit = js.native
-  /** Scrolls the content to a specific position. */
+  /** @name dxScrollable.scrollTo(targetLocation) */
   def scrollTo(targetLocation: Double): Unit = js.native
   def scrollToElement(element: JQuery): Unit = js.native
-  /** Scrolls the content to an element. */
+  /** @name dxScrollable.scrollToElement(targetLocation) */
   def scrollToElement(element: Element): Unit = js.native
-  /** Gets the top scroll offset. */
+  /** @name dxScrollable.scrollTop() */
   def scrollTop(): Double = js.native
-  /** Gets the scrollable content's width in pixels. */
+  /** @name dxScrollable.scrollWidth() */
   def scrollWidth(): Double = js.native
-  /** Updates the scrollable contents' dimensions. */
+  /** @name dxScrollable.update() */
   def update(): Promise[Unit] with JQueryPromise[Unit] = js.native
 }
 

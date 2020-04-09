@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class StandardUnitDescription () extends js.Object {
   /**
-    * Abbreviation for the measurement unit. For example, 'lb'.
+    * UI display abbreviation for the measurement unit. For example, 'lb'.
     */
   var abbreviation: js.UndefOr[String] = js.native
   /**
-    * Display name of the measurement unit. For example, 'Pound'.
+    * UI display name of the measurement unit. For example, 'Pound'.
     */
   var name: js.UndefOr[String] = js.native
   /**

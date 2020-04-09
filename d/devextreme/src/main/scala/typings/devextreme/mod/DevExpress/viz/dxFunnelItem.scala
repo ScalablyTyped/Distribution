@@ -6,25 +6,25 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxFunnelItem extends js.Object {
-  /** The item's argument. */
+  /** @name dxFunnelItem.argument */
   var argument: String | Date | Double
-  /** The item's original data object. */
+  /** @name dxFunnelItem.data */
   var data: js.Any
-  /** The item's calculated percentage value. */
+  /** @name dxFunnelItem.percent */
   var percent: Double
-  /** The item's value. */
+  /** @name dxFunnelItem.value */
   var value: Double
-  /** Gets the funnel item's color specified in the data source or palette. */
+  /** @name dxFunnelItem.getColor() */
   def getColor(): String
-  /** Changes the funnel item's hover state. */
+  /** @name dxFunnelItem.hover(state) */
   def hover(state: Boolean): Unit
-  /** Indicates whether the funnel item is in the hover state. */
+  /** @name dxFunnelItem.isHovered() */
   def isHovered(): Boolean
-  /** Indicates whether the funnel item is selected. */
+  /** @name dxFunnelItem.isSelected() */
   def isSelected(): Boolean
-  /** Selects or cancels the funnel item's selection. */
+  /** @name dxFunnelItem.select(state) */
   def select(state: Boolean): Unit
-  /** Shows the funnel item's tooltip. */
+  /** @name dxFunnelItem.showTooltip() */
   def showTooltip(): Unit
 }
 

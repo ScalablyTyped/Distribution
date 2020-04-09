@@ -10,7 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@tensorflow/tfjs-converter/dist/src/operations/executors/utils", JSImport.Namespace)
+@JSImport("@tensorflow/tfjs-converter/dist/operations/executors/utils", JSImport.Namespace)
 @js.native
 object utilsMod extends js.Object {
   def getNodeNameAndIndex(inputName: String): js.Tuple2[String, Double] = js.native

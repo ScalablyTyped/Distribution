@@ -8,6 +8,10 @@ import scala.scalajs.js.annotation._
 trait MockInstance[T, Y /* <: js.Array[_] */] extends js.Object {
   /** Provides access to the mock's metadata */
   var mock: MockContext[T, Y] = js.native
+  /**
+    * Returns the function that was set as the implementation of the mock (using mockImplementation).
+    */
+  def getMockImplementation(): js.Function1[/* args */ Y, js.UndefOr[T]] = js.native
   /** Returns the mock name string set by calling `mockFn.mockName(value)`. */
   def getMockName(): String = js.native
   /**
@@ -19,7 +23,7 @@ trait MockInstance[T, Y /* <: js.Array[_] */] extends js.Object {
     * You should therefore avoid assigning mockFn.mock to other variables, temporary or not, to make sure you
     * don't access stale data.
     */
-  def mockClear(): Unit = js.native
+  def mockClear(): this.type = js.native
   /**
     * Accepts a function that should be used as the implementation of the mock. The mock itself will still record
     * all calls that go into and instances that come from itself – the only difference is that the implementation
@@ -85,7 +89,7 @@ trait MockInstance[T, Y /* <: js.Array[_] */] extends js.Object {
     * You should therefore avoid assigning mockFn.mock to other variables, temporary or not, to make sure you
     * don't access stale data.
     */
-  def mockReset(): Unit = js.native
+  def mockReset(): this.type = js.native
   /**
     * Simple sugar function for: `jest.fn().mockImplementation(() => Promise.resolve(value));`
     */

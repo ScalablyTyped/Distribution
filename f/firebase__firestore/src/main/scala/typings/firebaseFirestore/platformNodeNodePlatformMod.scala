@@ -2,12 +2,14 @@ package typings.firebaseFirestore
 
 import typings.firebaseFirestore.coreDatabaseInfoMod.DatabaseId
 import typings.firebaseFirestore.coreDatabaseInfoMod.DatabaseInfo
+import typings.firebaseFirestore.firebaseFirestoreBooleans.`false`
 import typings.firebaseFirestore.firebaseFirestoreBooleans.`true`
 import typings.firebaseFirestore.platformPlatformMod.Platform
 import typings.firebaseFirestore.remoteConnectionMod.Connection
 import typings.firebaseFirestore.remoteConnectivityMonitorMod.ConnectivityMonitor
 import typings.firebaseFirestore.remoteSerializerMod.JsonProtoSerializer
 import typings.std.Document_
+import typings.std.Uint8Array
 import typings.std.Window_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -28,6 +30,14 @@ object platformNodeNodePlatformMod extends js.Object {
     override val document: Document_ | Null = js.native
     @JSName("document")
     val document_NodePlatform: Null = js.native
+    /**
+      * True if timestamps, bytes and numbers are represented in Proto3 JSON
+      * format (in-memory and on the wire)
+      */
+    /* CompleteClass */
+    override val useProto3Json: Boolean = js.native
+    @JSName("useProto3Json")
+    val useProto3Json_NodePlatform: `false` = js.native
     /** The Platform's 'window' implementation or null if not available. */
     /* CompleteClass */
     override val window: Window_ | Null = js.native
@@ -46,6 +56,12 @@ object platformNodeNodePlatformMod extends js.Object {
     override def newConnectivityMonitor(): ConnectivityMonitor = js.native
     /* CompleteClass */
     override def newSerializer(databaseId: DatabaseId): JsonProtoSerializer = js.native
+    /**
+      * Generates `nBytes` of random bytes. If `nBytes` is negative, an empty array
+      * will be returned.
+      */
+    /* CompleteClass */
+    override def randomBytes(nBytes: Double): Uint8Array = js.native
     @JSName("window")
     def window_MNodePlatform(): Window_ | Null = js.native
   }

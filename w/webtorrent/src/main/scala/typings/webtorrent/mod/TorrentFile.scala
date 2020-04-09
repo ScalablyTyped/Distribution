@@ -19,6 +19,7 @@ trait TorrentFile extends EventEmitter {
   val length: Double = js.native
   val name: String = js.native
   val path: String = js.native
+  val progress: Double = js.native
   def appendTo(rootElement: String): Unit = js.native
   def appendTo(
     rootElement: String,

@@ -75,6 +75,7 @@ import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
@@ -103,7 +104,7 @@ import scala.scalajs.js.annotation._
 trait PartialDrawerProps extends js.Object {
   var BackdropComponent: js.UndefOr[ReactType[BackdropProps]] = js.native
   var BackdropProps: js.UndefOr[PartialBackdropProps] = js.native
-  var ModalProps: js.UndefOr[PartialModalProps] = js.native
+  var ModalProps: js.UndefOr[PartialModalPropsAbout] = js.native
   var PaperProps: js.UndefOr[PartialPaperProps] = js.native
   var SlideProps: js.UndefOr[PartialSlideProps] = js.native
   var about: js.UndefOr[String] = js.native
@@ -316,7 +317,7 @@ object PartialDrawerProps {
   def apply(
     BackdropComponent: ReactType[BackdropProps] = null,
     BackdropProps: PartialBackdropProps = null,
-    ModalProps: PartialModalProps = null,
+    ModalProps: PartialModalPropsAbout = null,
     PaperProps: PartialPaperProps = null,
     SlideProps: PartialSlideProps = null,
     about: String = null,
@@ -483,7 +484,7 @@ object PartialDrawerProps {
     onRateChange: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onRendered: () => Unit = null,
     onReset: FormEvent[HTMLDivElement] => Unit = null,
-    onScroll: UIEvent[HTMLDivElement] => Unit = null,
+    onScroll: UIEvent[HTMLDivElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,

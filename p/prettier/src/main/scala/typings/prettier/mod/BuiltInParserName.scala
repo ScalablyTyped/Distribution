@@ -5,12 +5,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.prettier.prettierStrings.babylon
   - typings.prettier.prettierStrings.babel
   - typings.prettier.prettierStrings.`babel-flow`
+  - typings.prettier.prettierStrings.`babel-ts`
   - typings.prettier.prettierStrings.flow
   - typings.prettier.prettierStrings.typescript
-  - typings.prettier.prettierStrings.postcss
   - typings.prettier.prettierStrings.css
   - typings.prettier.prettierStrings.less
   - typings.prettier.prettierStrings.scss
@@ -36,7 +35,7 @@ object BuiltInParserName {
   @scala.inline
   def `babel-flow`: typings.prettier.prettierStrings.`babel-flow` = this.cast("babel-flow")
   @scala.inline
-  def babylon: typings.prettier.prettierStrings.babylon = this.cast("babylon")
+  def `babel-ts`: typings.prettier.prettierStrings.`babel-ts` = this.cast("babel-ts")
   @scala.inline
   /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
   @scala.inline
@@ -61,8 +60,6 @@ object BuiltInParserName {
   def markdown: typings.prettier.prettierStrings.markdown = this.cast("markdown")
   @scala.inline
   def mdx: typings.prettier.prettierStrings.mdx = this.cast("mdx")
-  @scala.inline
-  def postcss: typings.prettier.prettierStrings.postcss = this.cast("postcss")
   @scala.inline
   def scss: typings.prettier.prettierStrings.scss = this.cast("scss")
   @scala.inline

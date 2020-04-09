@@ -11,6 +11,7 @@ trait AnonCoupon
   var coupon: js.UndefOr[String] = js.undefined
   var currency: js.UndefOr[String] = js.undefined
   var items: js.UndefOr[js.Array[Item]] = js.undefined
+  var shipping_tier: js.UndefOr[String] = js.undefined
   var value: js.UndefOr[Double] = js.undefined
 }
 
@@ -21,6 +22,7 @@ object AnonCoupon {
     coupon: String = null,
     currency: String = null,
     items: js.Array[Item] = null,
+    shipping_tier: String = null,
     value: Int | Double = null
   ): AnonCoupon = {
     val __obj = js.Dynamic.literal()
@@ -28,6 +30,7 @@ object AnonCoupon {
     if (coupon != null) __obj.updateDynamic("coupon")(coupon.asInstanceOf[js.Any])
     if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (shipping_tier != null) __obj.updateDynamic("shipping_tier")(shipping_tier.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnonCoupon]
   }

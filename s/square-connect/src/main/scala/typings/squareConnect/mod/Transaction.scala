@@ -46,8 +46,8 @@ class Transaction () extends js.Object {
     REGISTER | EXTERNAL_API | BILLING | APPOINTMENTS | INVOICES | ONLINE_STORE | PAYROLL | OTHER
   ] = js.native
   /**
-    * If the transaction was created with the [Charge](#endpoint-transactions-charge) endpoint, this value is the same as
-    * the value provided for the `reference_id` parameter in the request to that endpoint. Otherwise, it is not set.
+    * If the transaction was created with the `Charge` endpoint, this value is the same as the value provided for
+    * the `reference_id` parameter in the request to that endpoint. Otherwise, it is not set.
     */
   var reference_id: js.UndefOr[String] = js.native
   /**

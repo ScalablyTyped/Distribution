@@ -4,27 +4,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait WaitForOptions extends js.Object {
   /**
-    * @default false
+    * @default Promise
     */
-  var handleError: Boolean
-  /**
-    * @default 0
-    */
-  var timeout: Double
+  var Promise: js.Function = js.native
   /**
     * @default null
     */
-  def filter(values: js.Any*): Boolean
-}
-
-object WaitForOptions {
-  @scala.inline
-  def apply(filter: /* repeated */ js.Any => Boolean, handleError: Boolean, timeout: Double): WaitForOptions = {
-    val __obj = js.Dynamic.literal(filter = js.Any.fromFunction1(filter), handleError = handleError.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[WaitForOptions]
-  }
+  @JSName("filter")
+  var filter_Original: WaitForFilter = js.native
+  /**
+    * @default false
+    */
+  var handleError: Boolean = js.native
+  /**
+    * @default false
+    */
+  var overload: Boolean = js.native
+  /**
+    * @default 0
+    */
+  var timeout: Double = js.native
+  /**
+    * @default null
+    */
+  def filter(values: js.Any*): Boolean = js.native
 }
 

@@ -1,7 +1,7 @@
 
 # Scala.js typings for notyf
 
-Typings are for version 3.1.0
+Typings are for version 3.6.0
 
 ## Library description:
 A dead simple, responsive, a11y, dependency-free, vanilla JavaScript toast library.

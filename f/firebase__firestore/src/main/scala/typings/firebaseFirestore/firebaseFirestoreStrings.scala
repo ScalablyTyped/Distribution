@@ -21,6 +21,7 @@ import typings.firebaseFirestore.simpleDbMod.SimpleDbTransactionMode
 import typings.firebaseFirestore.specTestRunnerMod.SpecLimitType
 import typings.firebaseFirestore.typesMod.MutationBatchState
 import typings.firebaseFirestore.typesMod.OnlineState
+import typings.firebaseFirestore.userDataWriterMod.ServerTimestampBehavior
 import typings.firebaseFirestore.utilAsyncQueueMod.TimerId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -133,6 +134,9 @@ object firebaseFirestoreStrings {
   sealed trait NULL_VALUE extends js.Object
   
   @js.native
+  sealed trait NaN extends js.Object
+  
+  @js.native
   sealed trait OAuth
     extends TokenType
        with typings.firebaseFirestore.apiCredentialsMod.TokenType
@@ -205,6 +209,11 @@ object firebaseFirestoreStrings {
        with typings.firebaseFirestore.sharedClientStateSyncerMod.QueryTargetState
   
   @js.native
+  sealed trait estimate
+    extends ServerTimestampBehavior
+       with typings.firebaseFirestore.apiUserDataWriterMod.ServerTimestampBehavior
+  
+  @js.native
   sealed trait firestore_clients extends js.Object
   
   @js.native
@@ -261,6 +270,11 @@ object firebaseFirestoreStrings {
        with typings.firebaseFirestore.utilInputValidationMod.ValidationType
   
   @js.native
+  sealed trait none
+    extends ServerTimestampBehavior
+       with typings.firebaseFirestore.apiUserDataWriterMod.ServerTimestampBehavior
+  
+  @js.native
   sealed trait `not-current`
     extends QueryTargetState
        with typings.firebaseFirestore.sharedClientStateSyncerMod.QueryTargetState
@@ -286,6 +300,11 @@ object firebaseFirestoreStrings {
        with typings.firebaseFirestore.coreTypesMod.MutationBatchState
   
   @js.native
+  sealed trait previous
+    extends ServerTimestampBehavior
+       with typings.firebaseFirestore.apiUserDataWriterMod.ServerTimestampBehavior
+  
+  @js.native
   sealed trait proto
     extends ProjectsDatabasesDocumentsApiClientAlt
        with ProjectsDatabasesIndexesApiClientAlt
@@ -301,13 +320,6 @@ object firebaseFirestoreStrings {
        with typings.firebaseFirestore.localSimpleDbMod.SimpleDbTransactionMode
   
   @js.native
-  sealed trait `readonly-idempotent`
-    extends PersistenceTransactionMode
-       with typings.firebaseFirestore.localPersistenceMod.PersistenceTransactionMode
-       with SimpleDbTransactionMode
-       with typings.firebaseFirestore.localSimpleDbMod.SimpleDbTransactionMode
-  
-  @js.native
   sealed trait readwrite
     extends PersistenceTransactionMode
        with typings.firebaseFirestore.localPersistenceMod.PersistenceTransactionMode
@@ -315,19 +327,7 @@ object firebaseFirestoreStrings {
        with typings.firebaseFirestore.localSimpleDbMod.SimpleDbTransactionMode
   
   @js.native
-  sealed trait `readwrite-idempotent`
-    extends PersistenceTransactionMode
-       with typings.firebaseFirestore.localPersistenceMod.PersistenceTransactionMode
-       with SimpleDbTransactionMode
-       with typings.firebaseFirestore.localSimpleDbMod.SimpleDbTransactionMode
-  
-  @js.native
   sealed trait `readwrite-primary`
-    extends PersistenceTransactionMode
-       with typings.firebaseFirestore.localPersistenceMod.PersistenceTransactionMode
-  
-  @js.native
-  sealed trait `readwrite-primary-idempotent`
     extends PersistenceTransactionMode
        with typings.firebaseFirestore.localPersistenceMod.PersistenceTransactionMode
   
@@ -425,6 +425,8 @@ object firebaseFirestoreStrings {
   @scala.inline
   def NULL_VALUE: NULL_VALUE = "NULL_VALUE".asInstanceOf[NULL_VALUE]
   @scala.inline
+  def NaN: NaN = "NaN".asInstanceOf[NaN]
+  @scala.inline
   def OAuth: OAuth = "OAuth".asInstanceOf[OAuth]
   @scala.inline
   def OPERATOR_UNSPECIFIED: OPERATOR_UNSPECIFIED = "OPERATOR_UNSPECIFIED".asInstanceOf[OPERATOR_UNSPECIFIED]
@@ -459,6 +461,8 @@ object firebaseFirestoreStrings {
   @scala.inline
   def current_ : current_ = "current".asInstanceOf[current_]
   @scala.inline
+  def estimate: estimate = "estimate".asInstanceOf[estimate]
+  @scala.inline
   def firestore_clients: firestore_clients = "firestore_clients".asInstanceOf[firestore_clients]
   @scala.inline
   def firestore_mutations: firestore_mutations = "firestore_mutations".asInstanceOf[firestore_mutations]
@@ -487,6 +491,8 @@ object firebaseFirestoreStrings {
   @scala.inline
   def `non-empty string`: `non-empty string` = "non-empty string".asInstanceOf[`non-empty string`]
   @scala.inline
+  def none: none = "none".asInstanceOf[none]
+  @scala.inline
   def `not-current`: `not-current` = "not-current".asInstanceOf[`not-current`]
   @scala.inline
   def number: number = "number".asInstanceOf[number]
@@ -497,21 +503,17 @@ object firebaseFirestoreStrings {
   @scala.inline
   def pending: pending = "pending".asInstanceOf[pending]
   @scala.inline
+  def previous: previous = "previous".asInstanceOf[previous]
+  @scala.inline
   def proto: proto = "proto".asInstanceOf[proto]
   @scala.inline
   def provider: provider = "provider".asInstanceOf[provider]
   @scala.inline
   def readonly: readonly = "readonly".asInstanceOf[readonly]
   @scala.inline
-  def `readonly-idempotent`: `readonly-idempotent` = "readonly-idempotent".asInstanceOf[`readonly-idempotent`]
-  @scala.inline
   def readwrite: readwrite = "readwrite".asInstanceOf[readwrite]
   @scala.inline
-  def `readwrite-idempotent`: `readwrite-idempotent` = "readwrite-idempotent".asInstanceOf[`readwrite-idempotent`]
-  @scala.inline
   def `readwrite-primary`: `readwrite-primary` = "readwrite-primary".asInstanceOf[`readwrite-primary`]
-  @scala.inline
-  def `readwrite-primary-idempotent`: `readwrite-primary-idempotent` = "readwrite-primary-idempotent".asInstanceOf[`readwrite-primary-idempotent`]
   @scala.inline
   def rejected: rejected = "rejected".asInstanceOf[rejected]
   @scala.inline

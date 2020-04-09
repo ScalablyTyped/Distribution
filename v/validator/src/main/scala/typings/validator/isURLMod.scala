@@ -1,6 +1,5 @@
 package typings.validator
 
-import typings.validator.mod.validator.IsURLOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,6 +13,7 @@ object isURLMod extends js.Object {
     * @param [options] - Options
     */
   def default(str: String): Boolean = js.native
-  def default(str: String, options: IsURLOptions): Boolean = js.native
+  def default(str: String, options: typings.validator.mod.validator.IsURLOptions): Boolean = js.native
+  type IsURLOptions = typings.validator.mod.validator.IsURLOptions
 }
 

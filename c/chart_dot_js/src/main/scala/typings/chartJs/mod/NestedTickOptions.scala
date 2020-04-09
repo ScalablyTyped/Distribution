@@ -14,8 +14,16 @@ trait NestedTickOptions extends js.Object {
   var backdropPaddingX: js.UndefOr[Double] = js.undefined
   var backdropPaddingY: js.UndefOr[Double] = js.undefined
   var beginAtZero: js.UndefOr[Boolean] = js.undefined
+  /**
+    * If the callback returns null or undefined the associated grid line will be hidden.
+    */
   var callback: js.UndefOr[
-    js.Function3[/* value */ js.Any, /* index */ js.Any, /* values */ js.Any, String | Double]
+    js.Function3[
+      /* value */ Double | String, 
+      /* index */ Double, 
+      /* values */ js.Array[Double | String], 
+      js.UndefOr[String | Double | Null]
+    ]
   ] = js.undefined
   var display: js.UndefOr[Boolean] = js.undefined
   var fontColor: js.UndefOr[ChartColor] = js.undefined
@@ -55,7 +63,7 @@ object NestedTickOptions {
     backdropPaddingX: Int | Double = null,
     backdropPaddingY: Int | Double = null,
     beginAtZero: js.UndefOr[Boolean] = js.undefined,
-    callback: (/* value */ js.Any, /* index */ js.Any, /* values */ js.Any) => String | Double = null,
+    callback: (/* value */ Double | String, /* index */ Double, /* values */ js.Array[Double | String]) => js.UndefOr[String | Double | Null] = null,
     display: js.UndefOr[Boolean] = js.undefined,
     fontColor: ChartColor = null,
     fontFamily: String = null,

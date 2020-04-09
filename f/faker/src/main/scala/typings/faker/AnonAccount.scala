@@ -25,7 +25,6 @@ trait AnonAccount extends js.Object {
   def mask(length: Double): String = js.native
   def mask(length: Double, parens: Boolean): String = js.native
   def mask(length: Double, parens: Boolean, elipsis: Boolean): String = js.native
-  def routingNumber(): String = js.native
   def transactionType(): String = js.native
 }
 

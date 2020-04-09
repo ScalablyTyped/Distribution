@@ -1,7 +1,7 @@
 
 # Scala.js typings for firebase
 
-Typings are for version 7.12.0
+Typings are for version 7.13.2
 
 ## Library description:
 Firebase JavaScript library for web and Node.js

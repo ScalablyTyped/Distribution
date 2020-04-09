@@ -20,6 +20,7 @@ import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
@@ -903,7 +904,7 @@ object IconBasePropsattrundefine {
     onProgress: SyntheticEvent[SVGElement, Event_] => Unit = null,
     onRateChange: SyntheticEvent[SVGElement, Event_] => Unit = null,
     onReset: FormEvent[SVGElement] => Unit = null,
-    onScroll: UIEvent[SVGElement] => Unit = null,
+    onScroll: UIEvent[SVGElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[SVGElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[SVGElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[SVGElement, Event_] => Unit = null,

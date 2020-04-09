@@ -13,7 +13,7 @@ trait BucketLifecycleRule extends js.Object {
     */
   var abortIncompleteMultipartUploadDays: js.UndefOr[Input[Double]] = js.native
   /**
-    * Boolean which indicates if this criteria is enabled.
+    * Specifies lifecycle rule status.
     */
   var enabled: Input[Boolean] = js.native
   /**
@@ -21,7 +21,7 @@ trait BucketLifecycleRule extends js.Object {
     */
   var expiration: js.UndefOr[Input[BucketLifecycleRuleExpiration]] = js.native
   /**
-    * Canonical user id to grant for. Used only when `type` is `CanonicalUser`.
+    * Unique identifier for the rule.
     */
   var id: js.UndefOr[Input[String]] = js.native
   /**
@@ -33,12 +33,11 @@ trait BucketLifecycleRule extends js.Object {
     */
   var noncurrentVersionTransitions: js.UndefOr[Input[js.Array[Input[BucketLifecycleRuleNoncurrentVersionTransition]]]] = js.native
   /**
-    * Object keyname prefix that identifies subset of objects to which the rule applies.
+    * Object key prefix identifying one or more objects to which the rule applies.
     */
   var prefix: js.UndefOr[Input[String]] = js.native
   /**
-    * A mapping of tags that identifies subset of objects to which the rule applies.
-    * The rule applies only to objects having all the tags in its tagset.
+    * Specifies object tags key and value.
     */
   var tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**

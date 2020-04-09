@@ -1,7 +1,7 @@
 package typings.firebaseFirestore.modelMutationMod
 
 import typings.firebaseFirestore.coreSnapshotVersionMod.SnapshotVersion
-import typings.firebaseFirestore.srcModelFieldValueMod.FieldValue
+import typings.firebaseFirestore.firestoreProtoApiMod.Value
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,7 +39,7 @@ class MutationResult protected () extends js.Object {
     *
     * Will be null if the mutation was not a TransformMutation.
     */
-  transformResults: js.Array[FieldValue | Null]
+  transformResults: js.Array[Value | Null]
   ) = this()
   /**
     * The resulting fields returned from the backend after a
@@ -48,7 +48,7 @@ class MutationResult protected () extends js.Object {
     *
     * Will be null if the mutation was not a TransformMutation.
     */
-  val transformResults: (js.Array[FieldValue | Null]) | Null = js.native
+  val transformResults: (js.Array[Value | Null]) | Null = js.native
   /**
     * The version at which the mutation was committed:
     *

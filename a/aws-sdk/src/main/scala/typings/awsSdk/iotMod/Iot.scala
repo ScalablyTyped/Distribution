@@ -249,6 +249,19 @@ trait Iot extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateCertificateFromCsrResponse, Unit]
   ): Request[CreateCertificateFromCsrResponse, AWSError] = js.native
   /**
+    * Create a dimension that you can use to limit the scope of a metric used in a security profile for AWS IoT Device Defender. For example, using a TOPIC_FILTER dimension, you can narrow down the scope of the metric only to MQTT topics whose name match the pattern specified in the dimension.
+    */
+  def createDimension(): Request[CreateDimensionResponse, AWSError] = js.native
+  def createDimension(callback: js.Function2[/* err */ AWSError, /* data */ CreateDimensionResponse, Unit]): Request[CreateDimensionResponse, AWSError] = js.native
+  /**
+    * Create a dimension that you can use to limit the scope of a metric used in a security profile for AWS IoT Device Defender. For example, using a TOPIC_FILTER dimension, you can narrow down the scope of the metric only to MQTT topics whose name match the pattern specified in the dimension.
+    */
+  def createDimension(params: CreateDimensionRequest): Request[CreateDimensionResponse, AWSError] = js.native
+  def createDimension(
+    params: CreateDimensionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateDimensionResponse, Unit]
+  ): Request[CreateDimensionResponse, AWSError] = js.native
+  /**
     * Creates a domain configuration.  The domain configuration feature is in public preview and is subject to change. 
     */
   def createDomainConfiguration(): Request[CreateDomainConfigurationResponse, AWSError] = js.native
@@ -577,6 +590,19 @@ trait Iot extends Service {
     params: DeleteCertificateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  /**
+    * Removes the specified dimension from your AWS account.
+    */
+  def deleteDimension(): Request[DeleteDimensionResponse, AWSError] = js.native
+  def deleteDimension(callback: js.Function2[/* err */ AWSError, /* data */ DeleteDimensionResponse, Unit]): Request[DeleteDimensionResponse, AWSError] = js.native
+  /**
+    * Removes the specified dimension from your AWS account.
+    */
+  def deleteDimension(params: DeleteDimensionRequest): Request[DeleteDimensionResponse, AWSError] = js.native
+  def deleteDimension(
+    params: DeleteDimensionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteDimensionResponse, Unit]
+  ): Request[DeleteDimensionResponse, AWSError] = js.native
   /**
     * Deletes the specified domain configuration.  The domain configuration feature is in public preview and is subject to change. 
     */
@@ -983,6 +1009,19 @@ trait Iot extends Service {
     params: DescribeDefaultAuthorizerRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeDefaultAuthorizerResponse, Unit]
   ): Request[DescribeDefaultAuthorizerResponse, AWSError] = js.native
+  /**
+    * Provides details about a dimension that is defined in your AWS account.
+    */
+  def describeDimension(): Request[DescribeDimensionResponse, AWSError] = js.native
+  def describeDimension(callback: js.Function2[/* err */ AWSError, /* data */ DescribeDimensionResponse, Unit]): Request[DescribeDimensionResponse, AWSError] = js.native
+  /**
+    * Provides details about a dimension that is defined in your AWS account.
+    */
+  def describeDimension(params: DescribeDimensionRequest): Request[DescribeDimensionResponse, AWSError] = js.native
+  def describeDimension(
+    params: DescribeDimensionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeDimensionResponse, Unit]
+  ): Request[DescribeDimensionResponse, AWSError] = js.native
   /**
     * Gets summary information about a domain configuration.  The domain configuration feature is in public preview and is subject to change. 
     */
@@ -1613,6 +1652,19 @@ trait Iot extends Service {
     params: ListCertificatesByCARequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListCertificatesByCAResponse, Unit]
   ): Request[ListCertificatesByCAResponse, AWSError] = js.native
+  /**
+    * List the set of dimensions that are defined for your AWS account.
+    */
+  def listDimensions(): Request[ListDimensionsResponse, AWSError] = js.native
+  def listDimensions(callback: js.Function2[/* err */ AWSError, /* data */ ListDimensionsResponse, Unit]): Request[ListDimensionsResponse, AWSError] = js.native
+  /**
+    * List the set of dimensions that are defined for your AWS account.
+    */
+  def listDimensions(params: ListDimensionsRequest): Request[ListDimensionsResponse, AWSError] = js.native
+  def listDimensions(
+    params: ListDimensionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListDimensionsResponse, Unit]
+  ): Request[ListDimensionsResponse, AWSError] = js.native
   /**
     * Gets a list of domain configurations for the user. This list is sorted alphabetically by domain configuration name.  The domain configuration feature is in public preview and is subject to change. 
     */
@@ -2440,6 +2492,19 @@ trait Iot extends Service {
     params: UpdateCertificateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  /**
+    * Updates the definition for a dimension. You cannot change the type of a dimension after it is created (you can delete it and re-create it).
+    */
+  def updateDimension(): Request[UpdateDimensionResponse, AWSError] = js.native
+  def updateDimension(callback: js.Function2[/* err */ AWSError, /* data */ UpdateDimensionResponse, Unit]): Request[UpdateDimensionResponse, AWSError] = js.native
+  /**
+    * Updates the definition for a dimension. You cannot change the type of a dimension after it is created (you can delete it and re-create it).
+    */
+  def updateDimension(params: UpdateDimensionRequest): Request[UpdateDimensionResponse, AWSError] = js.native
+  def updateDimension(
+    params: UpdateDimensionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateDimensionResponse, Unit]
+  ): Request[UpdateDimensionResponse, AWSError] = js.native
   /**
     * Updates values stored in the domain configuration. Domain configurations for default endpoints can't be updated.  The domain configuration feature is in public preview and is subject to change. 
     */

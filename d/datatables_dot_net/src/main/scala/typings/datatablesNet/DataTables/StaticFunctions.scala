@@ -18,7 +18,7 @@ trait StaticFunctions extends js.Object {
     * @param table Selector string for table
     */
   var Api: Instantiable1[
-    /* selector */ String | Node | js.Array[Node] | JQuery, 
+    /* selector */ String | Node | js.Array[Node] | JQuery | SettingsLegacy, 
     typings.datatablesNet.DataTables.Api
   ] = js.native
   /**

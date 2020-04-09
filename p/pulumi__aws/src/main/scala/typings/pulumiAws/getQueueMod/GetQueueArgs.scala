@@ -11,6 +11,9 @@ trait GetQueueArgs extends js.Object {
     * The name of the queue to match.
     */
   val name: String = js.native
+  /**
+    * A mapping of tags for the resource.
+    */
   val tags: js.UndefOr[StringDictionary[js.Any]] = js.native
 }
 

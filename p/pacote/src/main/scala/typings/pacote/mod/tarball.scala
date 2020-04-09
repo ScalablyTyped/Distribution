@@ -1,7 +1,7 @@
 package typings.pacote.mod
 
 import typings.node.Buffer
-import typings.node.streamMod.PassThrough
+import typings.node.streamMod.Transform
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,22 +9,29 @@ import scala.scalajs.js.annotation._
 @JSImport("pacote", "tarball")
 @js.native
 object tarball extends js.Object {
+  def apply(spec: String): js.Promise[Buffer with FetchResult] = js.native
+  def apply(spec: String, opts: Options): js.Promise[Buffer with FetchResult] = js.native
   /**
-    * Fetches package data identified by `spec` and returns the data as a buffer.
+    * Save a package tarball data to a file on disk.
     */
-  def apply(spec: String): js.Promise[Buffer] = js.native
-  def apply(spec: String, opts: Options): js.Promise[Buffer] = js.native
+  def file(spec: String, dest: String): js.Promise[FetchResult] = js.native
+  def file(spec: String, dest: String, opts: Options): js.Promise[FetchResult] = js.native
   /**
-    * Same as `pacote.tarball`, except it returns a stream instead of a Promise.
+    * Fetch a tarball and make the stream available to the streamHandler
+    * function.
+    *
+    * This is mostly an internal function, but it is exposed because it does
+    * provide some functionality that may be difficult to achieve otherwise.
+    *
+    * The `streamHandler` function MUST return a Promise that resolves when the
+    * stream (and all associated work) is ended, or rejects if the stream has
+    * an error.
+    *
+    * The `streamHandler` function MAY be called multiple times, as Pacote
+    * retries requests in some scenarios, such as cache corruption or retriable
+    * network failures.
     */
-  def stream(spec: String): PassThrough = js.native
-  def stream(spec: String, opts: Options): PassThrough = js.native
-  /**
-    * Like `pacote.tarball`, but instead of returning data directly, data will
-    * be written directly to `dest`, and create any required directories along
-    * the way.
-    */
-  def toFile(spec: String, dest: String): js.Promise[Unit] = js.native
-  def toFile(spec: String, dest: String, opts: Options): js.Promise[Unit] = js.native
+  def stream[T](spec: String, streamHandler: js.Function1[/* stream */ Transform, js.Promise[T]]): js.Promise[T] = js.native
+  def stream[T](spec: String, streamHandler: js.Function1[/* stream */ Transform, js.Promise[T]], opts: Options): js.Promise[T] = js.native
 }
 

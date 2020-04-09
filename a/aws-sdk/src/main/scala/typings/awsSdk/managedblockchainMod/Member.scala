@@ -23,6 +23,10 @@ trait Member extends js.Object {
     */
   var Id: js.UndefOr[ResourceIdString] = js.native
   /**
+    * Configuration properties for logging events associated with a member.
+    */
+  var LogPublishingConfiguration: js.UndefOr[MemberLogPublishingConfiguration] = js.native
+  /**
     * The name of the member.
     */
   var Name: js.UndefOr[NetworkMemberNameString] = js.native
@@ -43,6 +47,7 @@ object Member {
     Description: DescriptionString = null,
     FrameworkAttributes: MemberFrameworkAttributes = null,
     Id: ResourceIdString = null,
+    LogPublishingConfiguration: MemberLogPublishingConfiguration = null,
     Name: NetworkMemberNameString = null,
     NetworkId: ResourceIdString = null,
     Status: MemberStatus = null
@@ -52,6 +57,7 @@ object Member {
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (FrameworkAttributes != null) __obj.updateDynamic("FrameworkAttributes")(FrameworkAttributes.asInstanceOf[js.Any])
     if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
+    if (LogPublishingConfiguration != null) __obj.updateDynamic("LogPublishingConfiguration")(LogPublishingConfiguration.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     if (NetworkId != null) __obj.updateDynamic("NetworkId")(NetworkId.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])

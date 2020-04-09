@@ -5,11 +5,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxSankeyConnectionInfoObject extends js.Object {
-  /** The title of the link's source node. */
+  /** @name dxSankeyConnectionInfoObject.source */
   var source: js.UndefOr[String] = js.undefined
-  /** The title of the link's target node. */
+  /** @name dxSankeyConnectionInfoObject.target */
   var target: js.UndefOr[String] = js.undefined
-  /** The link's weight. */
+  /** @name dxSankeyConnectionInfoObject.weight */
   var weight: js.UndefOr[Double] = js.undefined
 }
 

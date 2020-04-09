@@ -40,7 +40,7 @@ class Route protected () extends CustomResource {
     */
   val meshName: Output_[String] = js.native
   /**
-    * A name for the HTTP header in the client request that will be matched on.
+    * The name to use for the route.
     */
   val name: Output_[String] = js.native
   /**

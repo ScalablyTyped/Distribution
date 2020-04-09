@@ -1,6 +1,7 @@
 package typings.antd.generatePickerMod
 
-import typings.antd.AnonLang
+import typings.antd.antdNumbers.`0`
+import typings.antd.antdNumbers.`1`
 import typings.antd.antdStrings.`additions text`
 import typings.antd.antdStrings.`inline`
 import typings.antd.antdStrings.additions
@@ -49,7 +50,6 @@ import typings.rcPicker.interfaceMod.PickerMode
 import typings.rcPicker.interfaceMod.RangeValue
 import typings.rcPicker.pickerMod.PickerRefConfig
 import typings.rcPicker.rangePickerMod.RangeShowTimeObject
-import typings.rcTrigger.interfaceMod.AlignType
 import typings.react.mod.CSSProperties
 import typings.react.mod.FocusEvent
 import typings.react.mod.MouseEvent
@@ -76,6 +76,7 @@ object RangePickerProps {
   @scala.inline
   def RangePickerBaseProps[DateType](
     picker: Exclude[PickerMode, date | time],
+    activePickerIndex: `0` | `1` = null,
     allowClear: js.UndefOr[Boolean] = js.undefined,
     allowEmpty: js.Tuple2[Boolean, Boolean] = null,
     `aria-activedescendant`: String = null,
@@ -138,12 +139,12 @@ object RangePickerProps {
     disabled: Boolean | (js.Tuple2[Boolean, Boolean]) = null,
     disabledDate: DateType => Boolean = null,
     disabledTime: (/* date */ EventValue[DateType], /* type */ start | end) => DisabledTimes = null,
-    dropdownAlign: AlignType = null,
+    dropdownAlign: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AlignType */ js.Any = null,
     dropdownClassName: String = null,
     format: String | js.Array[String] = null,
     getPopupContainer: /* node */ HTMLElement => HTMLElement = null,
     inputReadOnly: js.UndefOr[Boolean] = js.undefined,
-    locale: AnonLang = null,
+    locale: PickerLocale = null,
     mode: js.Tuple2[PanelMode, PanelMode] = null,
     monthCellRender: (DateType, /* locale */ Locale) => ReactNode = null,
     name: String = null,
@@ -180,6 +181,7 @@ object RangePickerProps {
     value: RangeValue[DateType] = null
   ): RangePickerProps[DateType] = {
     val __obj = js.Dynamic.literal(picker = picker.asInstanceOf[js.Any])
+    if (activePickerIndex != null) __obj.updateDynamic("activePickerIndex")(activePickerIndex.asInstanceOf[js.Any])
     if (!js.isUndefined(allowClear)) __obj.updateDynamic("allowClear")(allowClear.asInstanceOf[js.Any])
     if (allowEmpty != null) __obj.updateDynamic("allowEmpty")(allowEmpty.asInstanceOf[js.Any])
     if (`aria-activedescendant` != null) __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`.asInstanceOf[js.Any])
@@ -283,6 +285,7 @@ object RangePickerProps {
   }
   @scala.inline
   def RangePickerDateProps[DateType](
+    activePickerIndex: `0` | `1` = null,
     allowClear: js.UndefOr[Boolean] = js.undefined,
     allowEmpty: js.Tuple2[Boolean, Boolean] = null,
     `aria-activedescendant`: String = null,
@@ -345,12 +348,12 @@ object RangePickerProps {
     disabled: Boolean | (js.Tuple2[Boolean, Boolean]) = null,
     disabledDate: DateType => Boolean = null,
     disabledTime: (/* date */ EventValue[DateType], /* type */ start | end) => DisabledTimes = null,
-    dropdownAlign: AlignType = null,
+    dropdownAlign: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AlignType */ js.Any = null,
     dropdownClassName: String = null,
     format: String | js.Array[String] = null,
     getPopupContainer: /* node */ HTMLElement => HTMLElement = null,
     inputReadOnly: js.UndefOr[Boolean] = js.undefined,
-    locale: AnonLang = null,
+    locale: PickerLocale = null,
     mode: js.Tuple2[PanelMode, PanelMode] = null,
     monthCellRender: (DateType, /* locale */ Locale) => ReactNode = null,
     name: String = null,
@@ -389,6 +392,7 @@ object RangePickerProps {
     value: RangeValue[DateType] = null
   ): RangePickerProps[DateType] = {
     val __obj = js.Dynamic.literal()
+    if (activePickerIndex != null) __obj.updateDynamic("activePickerIndex")(activePickerIndex.asInstanceOf[js.Any])
     if (!js.isUndefined(allowClear)) __obj.updateDynamic("allowClear")(allowClear.asInstanceOf[js.Any])
     if (allowEmpty != null) __obj.updateDynamic("allowEmpty")(allowEmpty.asInstanceOf[js.Any])
     if (`aria-activedescendant` != null) __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`.asInstanceOf[js.Any])
@@ -495,6 +499,7 @@ object RangePickerProps {
   @scala.inline
   def RangePickerTimeProps[DateType](
     picker: time,
+    activePickerIndex: `0` | `1` = null,
     allowClear: js.UndefOr[Boolean] = js.undefined,
     allowEmpty: js.Tuple2[Boolean, Boolean] = null,
     `aria-activedescendant`: String = null,
@@ -561,14 +566,14 @@ object RangePickerProps {
     disabledMinutes: /* hour */ Double => js.Array[Double] = null,
     disabledSeconds: (/* hour */ Double, /* minute */ Double) => js.Array[Double] = null,
     disabledTime: (/* date */ EventValue[DateType], /* type */ start | end) => DisabledTimes = null,
-    dropdownAlign: AlignType = null,
+    dropdownAlign: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AlignType */ js.Any = null,
     dropdownClassName: String = null,
     format: String | js.Array[String] = null,
     getPopupContainer: /* node */ HTMLElement => HTMLElement = null,
     hideDisabledOptions: js.UndefOr[Boolean] = js.undefined,
     hourStep: Int | Double = null,
     inputReadOnly: js.UndefOr[Boolean] = js.undefined,
-    locale: AnonLang = null,
+    locale: PickerLocale = null,
     minuteStep: Int | Double = null,
     mode: js.Tuple2[PanelMode, PanelMode] = null,
     monthCellRender: (DateType, /* locale */ Locale) => ReactNode = null,
@@ -587,6 +592,7 @@ object RangePickerProps {
     onOpenChange: /* open */ Boolean => Unit = null,
     onPanelChange: (/* values */ RangeValue[DateType], /* modes */ js.Tuple2[PanelMode, PanelMode]) => Unit = null,
     open: js.UndefOr[Boolean] = js.undefined,
+    order: js.UndefOr[Boolean] = js.undefined,
     pickerRef: MutableRefObject[PickerRefConfig] = null,
     placeholder: js.Tuple2[String, String] = null,
     popupStyle: CSSProperties = null,
@@ -611,6 +617,7 @@ object RangePickerProps {
     value: RangeValue[DateType] = null
   ): RangePickerProps[DateType] = {
     val __obj = js.Dynamic.literal(picker = picker.asInstanceOf[js.Any])
+    if (activePickerIndex != null) __obj.updateDynamic("activePickerIndex")(activePickerIndex.asInstanceOf[js.Any])
     if (!js.isUndefined(allowClear)) __obj.updateDynamic("allowClear")(allowClear.asInstanceOf[js.Any])
     if (allowEmpty != null) __obj.updateDynamic("allowEmpty")(allowEmpty.asInstanceOf[js.Any])
     if (`aria-activedescendant` != null) __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`.asInstanceOf[js.Any])
@@ -703,6 +710,7 @@ object RangePickerProps {
     if (onOpenChange != null) __obj.updateDynamic("onOpenChange")(js.Any.fromFunction1(onOpenChange))
     if (onPanelChange != null) __obj.updateDynamic("onPanelChange")(js.Any.fromFunction2(onPanelChange))
     if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
+    if (!js.isUndefined(order)) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
     if (pickerRef != null) __obj.updateDynamic("pickerRef")(pickerRef.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (popupStyle != null) __obj.updateDynamic("popupStyle")(popupStyle.asInstanceOf[js.Any])

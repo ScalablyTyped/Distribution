@@ -13,11 +13,11 @@ trait TriggerAction extends js.Object {
     */
   var arguments: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
-    * The name of the crawler to watch. If this is specified, `crawlState` must also be specified. Conflicts with `jobName`.
+    * The name of the crawler to be executed. Conflicts with `jobName`.
     */
   var crawlerName: js.UndefOr[Input[String]] = js.native
   /**
-    * The name of the job to watch. If this is specified, `state` must also be specified. Conflicts with `crawlerName`.
+    * The name of a job to be executed. Conflicts with `crawlerName`.
     */
   var jobName: js.UndefOr[Input[String]] = js.native
   /**

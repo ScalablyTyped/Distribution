@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CropTrueOptions extends js.Object {
+trait CropTrueOptions extends CropOptions {
   var aspectRatio: js.UndefOr[AspectRatio] = js.undefined
   var crop: js.UndefOr[`true`] = js.undefined
 }

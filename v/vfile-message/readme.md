@@ -1,7 +1,7 @@
 
 # Scala.js typings for vfile-message
 
-Typings are for version 2.0.3
+Typings are for version 2.0.4
 
 ## Library description:
 Create a virtual message

@@ -33,31 +33,31 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxContextMenuOptions extends dxMenuBaseOptions[dxContextMenu] {
-  /** Specifies whether to close the ContextMenu if a user clicks outside it. */
+  /** @name dxContextMenu.Options.closeOnOutsideClick */
   var closeOnOutsideClick: js.UndefOr[Boolean | (js.Function1[/* event */ event, Boolean])] = js.undefined
-  /** Binds the widget to data. */
+  /** @name dxContextMenu.Options.dataSource */
   @JSName("dataSource")
   var dataSource_dxContextMenuOptions: js.UndefOr[String | js.Array[dxContextMenuItem] | DataSource | DataSourceOptions] = js.undefined
-  /** Holds an array of menu items. */
+  /** @name dxContextMenu.Options.items */
   @JSName("items")
   var items_dxContextMenuOptions: js.UndefOr[js.Array[dxContextMenuItem]] = js.undefined
-  /** A function that is executed after the ContextMenu is hidden. */
+  /** @name dxContextMenu.Options.onHidden */
   var onHidden: js.UndefOr[js.Function1[/* e */ AnonComponentElementModel, _]] = js.undefined
-  /** A function that is executed before the ContextMenu is hidden. */
+  /** @name dxContextMenu.Options.onHiding */
   var onHiding: js.UndefOr[js.Function1[/* e */ AnonCancelComponentElement, _]] = js.undefined
-  /** A function that is executed before the ContextMenu is positioned. */
+  /** @name dxContextMenu.Options.onPositioning */
   var onPositioning: js.UndefOr[js.Function1[/* e */ AnonPosition, _]] = js.undefined
-  /** A function that is executed before the ContextMenu is shown. */
+  /** @name dxContextMenu.Options.onShowing */
   var onShowing: js.UndefOr[js.Function1[/* e */ AnonCancelComponentElement, _]] = js.undefined
-  /** A function that is executed after the ContextMenu is shown. */
+  /** @name dxContextMenu.Options.onShown */
   var onShown: js.UndefOr[js.Function1[/* e */ AnonComponentElementModel, _]] = js.undefined
-  /** An object defining widget positioning options. */
+  /** @name dxContextMenu.Options.position */
   var position: js.UndefOr[positionConfig] = js.undefined
-  /** Specifies options for displaying the widget. */
+  /** @name dxContextMenu.Options.showEvent */
   var showEvent: js.UndefOr[AnonDelay | String] = js.undefined
-  /** Specifies the direction at which submenus are displayed. */
+  /** @name dxContextMenu.Options.submenuDirection */
   var submenuDirection: js.UndefOr[auto | left | right] = js.undefined
-  /** The target element associated with the context menu. */
+  /** @name dxContextMenu.Options.target */
   var target: js.UndefOr[String | Element | JQuery] = js.undefined
 }
 

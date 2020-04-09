@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped {[ P in keyof std.Promise<T> & knex.knex.ExposedPromiseKeys ]: std.Promise<T>[P]} */ @js.native
-trait ChainableInterface[T] extends js.Object {
+trait ChainableInterface[T] extends StringTagSupport {
   def asCallback(callback: js.Function): js.Promise[T] = js.native
   def connection(connection: js.Any): this.type = js.native
   def debug(enabled: Boolean): this.type = js.native

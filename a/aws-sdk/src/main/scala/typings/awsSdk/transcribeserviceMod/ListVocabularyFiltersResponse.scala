@@ -11,7 +11,7 @@ trait ListVocabularyFiltersResponse extends js.Object {
     */
   var NextToken: js.UndefOr[typings.awsSdk.transcribeserviceMod.NextToken] = js.native
   /**
-    * The list of vocabulary filters. It will contain at most MaxResults number of filters. If there are more filters, call the ListVocabularyFilters operation again with the NextToken parameter in the request set to the value of the NextToken field in the response.
+    * The list of vocabulary filters. It contains at most MaxResults number of filters. If there are more filters, call the ListVocabularyFilters operation again with the NextToken parameter in the request set to the value of the NextToken field in the response.
     */
   var VocabularyFilters: js.UndefOr[typings.awsSdk.transcribeserviceMod.VocabularyFilters] = js.native
 }

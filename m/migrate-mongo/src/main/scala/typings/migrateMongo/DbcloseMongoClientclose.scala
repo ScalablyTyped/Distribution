@@ -166,8 +166,8 @@ trait DbcloseMongoClientclose extends js.Object {
   def stats(options: AnonScale): js.Promise[_] = js.native
   def stats(options: AnonScale, callback: MongoCallback[_]): Unit = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.3/api/Db.html#watch */
-  def watch(): ChangeStream = js.native
-  def watch(pipeline: js.Array[js.Object]): ChangeStream = js.native
-  def watch(pipeline: js.Array[js.Object], options: ChangeStreamOptionssessio): ChangeStream = js.native
+  def watch[TSchema /* <: js.Object */](): ChangeStream[TSchema] = js.native
+  def watch[TSchema /* <: js.Object */](pipeline: js.Array[js.Object]): ChangeStream[TSchema] = js.native
+  def watch[TSchema /* <: js.Object */](pipeline: js.Array[js.Object], options: ChangeStreamOptionssessio): ChangeStream[TSchema] = js.native
 }
 

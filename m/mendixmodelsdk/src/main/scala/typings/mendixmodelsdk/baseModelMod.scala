@@ -73,6 +73,7 @@ import typings.mendixmodelsdk.webservicesMod.webservices.IImportedWebService
 import typings.mendixmodelsdk.webservicesMod.webservices.IPublishedAppService
 import typings.mendixmodelsdk.webservicesMod.webservices.IPublishedServiceBase
 import typings.mendixmodelsdk.webservicesMod.webservices.IPublishedWebService
+import typings.mendixmodelsdk.workflowsMod.workflows.IWorkflow
 import typings.mendixmodelsdk.xmlschemasMod.xmlschemas.IMxSchema
 import typings.mendixmodelsdk.xmlschemasMod.xmlschemas.IXmlSchema
 import scala.scalajs.js
@@ -84,7 +85,7 @@ import scala.scalajs.js.annotation._
 object baseModelMod extends js.Object {
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
   - typings.mendixmodelsdk.abstractModelMod.IAbstractModel because Already inherited
-  - typings.mendixmodelsdk.baseModelMod.IBaseModel because var conflicts: id, metaModelVersion, mxVersionForModel, workingCopy. Inlined allBuildingBlocks, allCodeActions, allConstants, allConsumedAppServices, allConsumedODataServices, allDataSets, allDocuments, allDocumentTemplates, allDomainModels, allEnumerations, allExportMappings, allFolders, allFolderBases, allFormBases, allImageCollections, allImportMappings, allImportedWebServices, allJavaActions, allJavaScriptActions, allJsonStructures, allLayouts, allMappingDocuments, allMenuDocuments, allMessageDefinitionCollections, allMicroflows, allMicroflowBases, allModules, allModuleDocuments, allModuleSecurities, allMxSchemas, allNanoflows, allNativeLayouts, allNativePages, allNavigationDocuments, allPages, allPageTemplates, allProjects, allProjectConversions, allProjectDocuments, allProjectSecurities, allProjectSettings, allPublishedAppServices, allPublishedODataServices, allPublishedRestServices, allPublishedServiceBases, allPublishedWebServices, allRegularExpressions, allRemoteEntitySourceDocuments, allRules, allScheduledEvents, allServerSideMicroflows, allSnippets, allSystemTextCollections, allTemplateFormBases, allXmlSchemas, findAppServiceActionByQualifiedName, findAppServiceActionParameterByQualifiedName, findConstantByQualifiedName, findDataSetByQualifiedName, findDataSetParameterByQualifiedName, findDocumentTemplateByQualifiedName, findAssociationBaseByQualifiedName, findAttributeByQualifiedName, findEntityByQualifiedName, findRemoteEntitySourceDocumentByQualifiedName, findEnumerationByQualifiedName, findEnumerationValueByQualifiedName, findExportMappingByQualifiedName, findImageByQualifiedName, findImportMappingByQualifiedName, findJavaActionByQualifiedName, findJavaActionParameterByQualifiedName, findJavaScriptActionByQualifiedName, findJavaScriptActionParameterByQualifiedName, findJsonStructureByQualifiedName, findMenuDocumentByQualifiedName, findMessageDefinitionByQualifiedName, findMicroflowByQualifiedName, findMicroflowParameterByQualifiedName, findNanoflowByQualifiedName, findNanoflowParameterByQualifiedName, findRuleByQualifiedName, findRuleParameterByQualifiedName, findNativeLayoutByQualifiedName, findNativePageByQualifiedName, findNavigationProfileByQualifiedName, findLayoutByQualifiedName, findLayoutParameterByQualifiedName, findPageByQualifiedName, findSnippetByQualifiedName, findRegularExpressionByQualifiedName, findModuleRoleByQualifiedName, findUserRoleByQualifiedName, findImportedWebServiceByQualifiedName, findXmlSchemaByQualifiedName */ @js.native
+  - typings.mendixmodelsdk.baseModelMod.IBaseModel because var conflicts: id, metaModelVersion, mxVersionForModel, workingCopy. Inlined allBuildingBlocks, allCodeActions, allConstants, allConsumedAppServices, allConsumedODataServices, allDataSets, allDocuments, allDocumentTemplates, allDomainModels, allEnumerations, allExportMappings, allFolders, allFolderBases, allFormBases, allImageCollections, allImportMappings, allImportedWebServices, allJavaActions, allJavaScriptActions, allJsonStructures, allLayouts, allMappingDocuments, allMenuDocuments, allMessageDefinitionCollections, allMicroflows, allMicroflowBases, allModules, allModuleDocuments, allModuleSecurities, allMxSchemas, allNanoflows, allNativeLayouts, allNativePages, allNavigationDocuments, allPages, allPageTemplates, allProjects, allProjectConversions, allProjectDocuments, allProjectSecurities, allProjectSettings, allPublishedAppServices, allPublishedODataServices, allPublishedRestServices, allPublishedServiceBases, allPublishedWebServices, allRegularExpressions, allRemoteEntitySourceDocuments, allRules, allScheduledEvents, allServerSideMicroflows, allSnippets, allSystemTextCollections, allTemplateFormBases, allWorkflows, allXmlSchemas, findAppServiceActionByQualifiedName, findAppServiceActionParameterByQualifiedName, findConstantByQualifiedName, findDataSetByQualifiedName, findDataSetParameterByQualifiedName, findDocumentTemplateByQualifiedName, findAssociationBaseByQualifiedName, findAttributeByQualifiedName, findEntityByQualifiedName, findRemoteEntitySourceDocumentByQualifiedName, findEnumerationByQualifiedName, findEnumerationValueByQualifiedName, findExportMappingByQualifiedName, findImageByQualifiedName, findImportMappingByQualifiedName, findJavaActionByQualifiedName, findJavaActionParameterByQualifiedName, findJavaScriptActionByQualifiedName, findJavaScriptActionParameterByQualifiedName, findJsonStructureByQualifiedName, findMenuDocumentByQualifiedName, findMessageDefinitionByQualifiedName, findMicroflowByQualifiedName, findMicroflowParameterByQualifiedName, findNanoflowByQualifiedName, findNanoflowParameterByQualifiedName, findRuleByQualifiedName, findRuleParameterByQualifiedName, findNativeLayoutByQualifiedName, findNativePageByQualifiedName, findNavigationProfileByQualifiedName, findLayoutByQualifiedName, findLayoutParameterByQualifiedName, findPageByQualifiedName, findSnippetByQualifiedName, findRegularExpressionByQualifiedName, findModuleRoleByQualifiedName, findUserRoleByQualifiedName, findImportedWebServiceByQualifiedName, findXmlSchemaByQualifiedName */ @js.native
   abstract class BaseModel () extends AbstractModel {
     def allBuildingBlocks(): js.Array[IBuildingBlock] = js.native
     def allCodeActions(): js.Array[ICodeAction] = js.native
@@ -140,47 +141,48 @@ object baseModelMod extends js.Object {
     def allSnippets(): js.Array[ISnippet] = js.native
     def allSystemTextCollections(): js.Array[ISystemTextCollection] = js.native
     def allTemplateFormBases(): js.Array[ITemplateFormBase] = js.native
+    def allWorkflows(): js.Array[IWorkflow] = js.native
     def allXmlSchemas(): js.Array[IXmlSchema] = js.native
-    def findAppServiceActionByQualifiedName(qname: String): IAppServiceAction = js.native
-    def findAppServiceActionParameterByQualifiedName(qname: String): IAppServiceActionParameter = js.native
-    def findAssociationBaseByQualifiedName(qname: String): IAssociationBase = js.native
-    def findAttributeByQualifiedName(qname: String): IAttribute = js.native
-    def findConstantByQualifiedName(qname: String): IConstant = js.native
-    def findDataSetByQualifiedName(qname: String): IDataSet = js.native
-    def findDataSetParameterByQualifiedName(qname: String): IDataSetParameter = js.native
-    def findDocumentTemplateByQualifiedName(qname: String): IDocumentTemplate = js.native
-    def findEntityByQualifiedName(qname: String): IEntity = js.native
-    def findEnumerationByQualifiedName(qname: String): IEnumeration = js.native
-    def findEnumerationValueByQualifiedName(qname: String): IEnumerationValue = js.native
-    def findExportMappingByQualifiedName(qname: String): IExportMapping = js.native
-    def findImageByQualifiedName(qname: String): IImage = js.native
-    def findImportMappingByQualifiedName(qname: String): IImportMapping = js.native
-    def findImportedWebServiceByQualifiedName(qname: String): IImportedWebService = js.native
-    def findJavaActionByQualifiedName(qname: String): IJavaAction = js.native
-    def findJavaActionParameterByQualifiedName(qname: String): IJavaActionParameter = js.native
-    def findJavaScriptActionByQualifiedName(qname: String): IJavaScriptAction = js.native
-    def findJavaScriptActionParameterByQualifiedName(qname: String): IJavaScriptActionParameter = js.native
-    def findJsonStructureByQualifiedName(qname: String): IJsonStructure = js.native
-    def findLayoutByQualifiedName(qname: String): ILayout = js.native
-    def findLayoutParameterByQualifiedName(qname: String): ILayoutParameter = js.native
-    def findMenuDocumentByQualifiedName(qname: String): IMenuDocument = js.native
-    def findMessageDefinitionByQualifiedName(qname: String): IMessageDefinition = js.native
-    def findMicroflowByQualifiedName(qname: String): IMicroflow = js.native
-    def findMicroflowParameterByQualifiedName(qname: String): IMicroflowParameter = js.native
-    def findModuleRoleByQualifiedName(qname: String): IModuleRole = js.native
-    def findNanoflowByQualifiedName(qname: String): INanoflow = js.native
-    def findNanoflowParameterByQualifiedName(qname: String): INanoflowParameter = js.native
-    def findNativeLayoutByQualifiedName(qname: String): INativeLayout = js.native
-    def findNativePageByQualifiedName(qname: String): INativePage = js.native
-    def findNavigationProfileByQualifiedName(qname: String): INavigationProfile = js.native
-    def findPageByQualifiedName(qname: String): IPage = js.native
-    def findRegularExpressionByQualifiedName(qname: String): IRegularExpression = js.native
-    def findRemoteEntitySourceDocumentByQualifiedName(qname: String): IRemoteEntitySourceDocument = js.native
-    def findRuleByQualifiedName(qname: String): IRule = js.native
-    def findRuleParameterByQualifiedName(qname: String): IRuleParameter = js.native
-    def findSnippetByQualifiedName(qname: String): ISnippet = js.native
-    def findUserRoleByQualifiedName(qname: String): IUserRole = js.native
-    def findXmlSchemaByQualifiedName(qname: String): IXmlSchema = js.native
+    def findAppServiceActionByQualifiedName(qname: String): IAppServiceAction | Null = js.native
+    def findAppServiceActionParameterByQualifiedName(qname: String): IAppServiceActionParameter | Null = js.native
+    def findAssociationBaseByQualifiedName(qname: String): IAssociationBase | Null = js.native
+    def findAttributeByQualifiedName(qname: String): IAttribute | Null = js.native
+    def findConstantByQualifiedName(qname: String): IConstant | Null = js.native
+    def findDataSetByQualifiedName(qname: String): IDataSet | Null = js.native
+    def findDataSetParameterByQualifiedName(qname: String): IDataSetParameter | Null = js.native
+    def findDocumentTemplateByQualifiedName(qname: String): IDocumentTemplate | Null = js.native
+    def findEntityByQualifiedName(qname: String): IEntity | Null = js.native
+    def findEnumerationByQualifiedName(qname: String): IEnumeration | Null = js.native
+    def findEnumerationValueByQualifiedName(qname: String): IEnumerationValue | Null = js.native
+    def findExportMappingByQualifiedName(qname: String): IExportMapping | Null = js.native
+    def findImageByQualifiedName(qname: String): IImage | Null = js.native
+    def findImportMappingByQualifiedName(qname: String): IImportMapping | Null = js.native
+    def findImportedWebServiceByQualifiedName(qname: String): IImportedWebService | Null = js.native
+    def findJavaActionByQualifiedName(qname: String): IJavaAction | Null = js.native
+    def findJavaActionParameterByQualifiedName(qname: String): IJavaActionParameter | Null = js.native
+    def findJavaScriptActionByQualifiedName(qname: String): IJavaScriptAction | Null = js.native
+    def findJavaScriptActionParameterByQualifiedName(qname: String): IJavaScriptActionParameter | Null = js.native
+    def findJsonStructureByQualifiedName(qname: String): IJsonStructure | Null = js.native
+    def findLayoutByQualifiedName(qname: String): ILayout | Null = js.native
+    def findLayoutParameterByQualifiedName(qname: String): ILayoutParameter | Null = js.native
+    def findMenuDocumentByQualifiedName(qname: String): IMenuDocument | Null = js.native
+    def findMessageDefinitionByQualifiedName(qname: String): IMessageDefinition | Null = js.native
+    def findMicroflowByQualifiedName(qname: String): IMicroflow | Null = js.native
+    def findMicroflowParameterByQualifiedName(qname: String): IMicroflowParameter | Null = js.native
+    def findModuleRoleByQualifiedName(qname: String): IModuleRole | Null = js.native
+    def findNanoflowByQualifiedName(qname: String): INanoflow | Null = js.native
+    def findNanoflowParameterByQualifiedName(qname: String): INanoflowParameter | Null = js.native
+    def findNativeLayoutByQualifiedName(qname: String): INativeLayout | Null = js.native
+    def findNativePageByQualifiedName(qname: String): INativePage | Null = js.native
+    def findNavigationProfileByQualifiedName(qname: String): INavigationProfile | Null = js.native
+    def findPageByQualifiedName(qname: String): IPage | Null = js.native
+    def findRegularExpressionByQualifiedName(qname: String): IRegularExpression | Null = js.native
+    def findRemoteEntitySourceDocumentByQualifiedName(qname: String): IRemoteEntitySourceDocument | Null = js.native
+    def findRuleByQualifiedName(qname: String): IRule | Null = js.native
+    def findRuleParameterByQualifiedName(qname: String): IRuleParameter | Null = js.native
+    def findSnippetByQualifiedName(qname: String): ISnippet | Null = js.native
+    def findUserRoleByQualifiedName(qname: String): IUserRole | Null = js.native
+    def findXmlSchemaByQualifiedName(qname: String): IXmlSchema | Null = js.native
   }
   
   @js.native
@@ -239,47 +241,48 @@ object baseModelMod extends js.Object {
     def allSnippets(): js.Array[ISnippet] = js.native
     def allSystemTextCollections(): js.Array[ISystemTextCollection] = js.native
     def allTemplateFormBases(): js.Array[ITemplateFormBase] = js.native
+    def allWorkflows(): js.Array[IWorkflow] = js.native
     def allXmlSchemas(): js.Array[IXmlSchema] = js.native
-    def findAppServiceActionByQualifiedName(qname: String): IAppServiceAction = js.native
-    def findAppServiceActionParameterByQualifiedName(qname: String): IAppServiceActionParameter = js.native
-    def findAssociationBaseByQualifiedName(qname: String): IAssociationBase = js.native
-    def findAttributeByQualifiedName(qname: String): IAttribute = js.native
-    def findConstantByQualifiedName(qname: String): IConstant = js.native
-    def findDataSetByQualifiedName(qname: String): IDataSet = js.native
-    def findDataSetParameterByQualifiedName(qname: String): IDataSetParameter = js.native
-    def findDocumentTemplateByQualifiedName(qname: String): IDocumentTemplate = js.native
-    def findEntityByQualifiedName(qname: String): IEntity = js.native
-    def findEnumerationByQualifiedName(qname: String): IEnumeration = js.native
-    def findEnumerationValueByQualifiedName(qname: String): IEnumerationValue = js.native
-    def findExportMappingByQualifiedName(qname: String): IExportMapping = js.native
-    def findImageByQualifiedName(qname: String): IImage = js.native
-    def findImportMappingByQualifiedName(qname: String): IImportMapping = js.native
-    def findImportedWebServiceByQualifiedName(qname: String): IImportedWebService = js.native
-    def findJavaActionByQualifiedName(qname: String): IJavaAction = js.native
-    def findJavaActionParameterByQualifiedName(qname: String): IJavaActionParameter = js.native
-    def findJavaScriptActionByQualifiedName(qname: String): IJavaScriptAction = js.native
-    def findJavaScriptActionParameterByQualifiedName(qname: String): IJavaScriptActionParameter = js.native
-    def findJsonStructureByQualifiedName(qname: String): IJsonStructure = js.native
-    def findLayoutByQualifiedName(qname: String): ILayout = js.native
-    def findLayoutParameterByQualifiedName(qname: String): ILayoutParameter = js.native
-    def findMenuDocumentByQualifiedName(qname: String): IMenuDocument = js.native
-    def findMessageDefinitionByQualifiedName(qname: String): IMessageDefinition = js.native
-    def findMicroflowByQualifiedName(qname: String): IMicroflow = js.native
-    def findMicroflowParameterByQualifiedName(qname: String): IMicroflowParameter = js.native
-    def findModuleRoleByQualifiedName(qname: String): IModuleRole = js.native
-    def findNanoflowByQualifiedName(qname: String): INanoflow = js.native
-    def findNanoflowParameterByQualifiedName(qname: String): INanoflowParameter = js.native
-    def findNativeLayoutByQualifiedName(qname: String): INativeLayout = js.native
-    def findNativePageByQualifiedName(qname: String): INativePage = js.native
-    def findNavigationProfileByQualifiedName(qname: String): INavigationProfile = js.native
-    def findPageByQualifiedName(qname: String): IPage = js.native
-    def findRegularExpressionByQualifiedName(qname: String): IRegularExpression = js.native
-    def findRemoteEntitySourceDocumentByQualifiedName(qname: String): IRemoteEntitySourceDocument = js.native
-    def findRuleByQualifiedName(qname: String): IRule = js.native
-    def findRuleParameterByQualifiedName(qname: String): IRuleParameter = js.native
-    def findSnippetByQualifiedName(qname: String): ISnippet = js.native
-    def findUserRoleByQualifiedName(qname: String): IUserRole = js.native
-    def findXmlSchemaByQualifiedName(qname: String): IXmlSchema = js.native
+    def findAppServiceActionByQualifiedName(qname: String): IAppServiceAction | Null = js.native
+    def findAppServiceActionParameterByQualifiedName(qname: String): IAppServiceActionParameter | Null = js.native
+    def findAssociationBaseByQualifiedName(qname: String): IAssociationBase | Null = js.native
+    def findAttributeByQualifiedName(qname: String): IAttribute | Null = js.native
+    def findConstantByQualifiedName(qname: String): IConstant | Null = js.native
+    def findDataSetByQualifiedName(qname: String): IDataSet | Null = js.native
+    def findDataSetParameterByQualifiedName(qname: String): IDataSetParameter | Null = js.native
+    def findDocumentTemplateByQualifiedName(qname: String): IDocumentTemplate | Null = js.native
+    def findEntityByQualifiedName(qname: String): IEntity | Null = js.native
+    def findEnumerationByQualifiedName(qname: String): IEnumeration | Null = js.native
+    def findEnumerationValueByQualifiedName(qname: String): IEnumerationValue | Null = js.native
+    def findExportMappingByQualifiedName(qname: String): IExportMapping | Null = js.native
+    def findImageByQualifiedName(qname: String): IImage | Null = js.native
+    def findImportMappingByQualifiedName(qname: String): IImportMapping | Null = js.native
+    def findImportedWebServiceByQualifiedName(qname: String): IImportedWebService | Null = js.native
+    def findJavaActionByQualifiedName(qname: String): IJavaAction | Null = js.native
+    def findJavaActionParameterByQualifiedName(qname: String): IJavaActionParameter | Null = js.native
+    def findJavaScriptActionByQualifiedName(qname: String): IJavaScriptAction | Null = js.native
+    def findJavaScriptActionParameterByQualifiedName(qname: String): IJavaScriptActionParameter | Null = js.native
+    def findJsonStructureByQualifiedName(qname: String): IJsonStructure | Null = js.native
+    def findLayoutByQualifiedName(qname: String): ILayout | Null = js.native
+    def findLayoutParameterByQualifiedName(qname: String): ILayoutParameter | Null = js.native
+    def findMenuDocumentByQualifiedName(qname: String): IMenuDocument | Null = js.native
+    def findMessageDefinitionByQualifiedName(qname: String): IMessageDefinition | Null = js.native
+    def findMicroflowByQualifiedName(qname: String): IMicroflow | Null = js.native
+    def findMicroflowParameterByQualifiedName(qname: String): IMicroflowParameter | Null = js.native
+    def findModuleRoleByQualifiedName(qname: String): IModuleRole | Null = js.native
+    def findNanoflowByQualifiedName(qname: String): INanoflow | Null = js.native
+    def findNanoflowParameterByQualifiedName(qname: String): INanoflowParameter | Null = js.native
+    def findNativeLayoutByQualifiedName(qname: String): INativeLayout | Null = js.native
+    def findNativePageByQualifiedName(qname: String): INativePage | Null = js.native
+    def findNavigationProfileByQualifiedName(qname: String): INavigationProfile | Null = js.native
+    def findPageByQualifiedName(qname: String): IPage | Null = js.native
+    def findRegularExpressionByQualifiedName(qname: String): IRegularExpression | Null = js.native
+    def findRemoteEntitySourceDocumentByQualifiedName(qname: String): IRemoteEntitySourceDocument | Null = js.native
+    def findRuleByQualifiedName(qname: String): IRule | Null = js.native
+    def findRuleParameterByQualifiedName(qname: String): IRuleParameter | Null = js.native
+    def findSnippetByQualifiedName(qname: String): ISnippet | Null = js.native
+    def findUserRoleByQualifiedName(qname: String): IUserRole | Null = js.native
+    def findXmlSchemaByQualifiedName(qname: String): IXmlSchema | Null = js.native
   }
   
   @js.native

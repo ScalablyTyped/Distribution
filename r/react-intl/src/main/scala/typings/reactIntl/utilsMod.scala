@@ -59,7 +59,7 @@ object utilsMod extends js.Object {
     var messages: Record[String, js.Array[MessageFormatElement] | String] = js.native
     var onError: js.Function1[/* err */ String, Unit] = js.native
     var textComponent: js.UndefOr[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 117 */ js.Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118 */ js.Any
       ] = js.native
     var timeZone: js.UndefOr[String] = js.native
   }

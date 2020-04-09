@@ -12,7 +12,8 @@ import scala.scalajs.js.annotation._
 trait StructureStorage
   extends OwnedStructure[STRUCTURE_STORAGE]
      with AnyOwnedStructure
-     with AnyStoreStructure {
+     with AnyStoreStructure
+     with ConcreteStructure[js.Any] {
   /**
     * An object with the storage contents.
     */

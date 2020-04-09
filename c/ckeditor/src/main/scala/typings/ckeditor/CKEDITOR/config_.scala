@@ -91,6 +91,9 @@ trait config_ extends js.Object {
   var easyimage_toolbar: js.UndefOr[js.Array[String] | String] = js.undefined
   var emailProtection: js.UndefOr[String] = js.undefined
   var embed_provider: js.UndefOr[String] = js.undefined
+  var emoji_emojiListUrl: js.UndefOr[String] = js.undefined
+  var emoji_minChars: js.UndefOr[Double] = js.undefined
+  var enableContextMenu: js.UndefOr[Boolean] = js.undefined
   var enableTabKeyTools: js.UndefOr[Boolean] = js.undefined
   var enterMode: js.UndefOr[Double] = js.undefined
   var entities: js.UndefOr[Boolean] = js.undefined
@@ -348,6 +351,9 @@ object config_ {
     easyimage_toolbar: js.Array[String] | String = null,
     emailProtection: String = null,
     embed_provider: String = null,
+    emoji_emojiListUrl: String = null,
+    emoji_minChars: Int | Double = null,
+    enableContextMenu: js.UndefOr[Boolean] = js.undefined,
     enableTabKeyTools: js.UndefOr[Boolean] = js.undefined,
     enterMode: Int | Double = null,
     entities: js.UndefOr[Boolean] = js.undefined,
@@ -600,6 +606,9 @@ object config_ {
     if (easyimage_toolbar != null) __obj.updateDynamic("easyimage_toolbar")(easyimage_toolbar.asInstanceOf[js.Any])
     if (emailProtection != null) __obj.updateDynamic("emailProtection")(emailProtection.asInstanceOf[js.Any])
     if (embed_provider != null) __obj.updateDynamic("embed_provider")(embed_provider.asInstanceOf[js.Any])
+    if (emoji_emojiListUrl != null) __obj.updateDynamic("emoji_emojiListUrl")(emoji_emojiListUrl.asInstanceOf[js.Any])
+    if (emoji_minChars != null) __obj.updateDynamic("emoji_minChars")(emoji_minChars.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableContextMenu)) __obj.updateDynamic("enableContextMenu")(enableContextMenu.asInstanceOf[js.Any])
     if (!js.isUndefined(enableTabKeyTools)) __obj.updateDynamic("enableTabKeyTools")(enableTabKeyTools.asInstanceOf[js.Any])
     if (enterMode != null) __obj.updateDynamic("enterMode")(enterMode.asInstanceOf[js.Any])
     if (!js.isUndefined(entities)) __obj.updateDynamic("entities")(entities.asInstanceOf[js.Any])

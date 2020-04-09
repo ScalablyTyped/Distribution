@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait VirtualNodeSpecLoggingAccessLogFile extends js.Object {
   /**
-    * The destination path for the health check request. This is only required if the specified protocol is `http`.
+    * The file path to write access logs to. You can use `/dev/stdout` to send access logs to standard out.
     */
   var path: Input[String] = js.native
 }

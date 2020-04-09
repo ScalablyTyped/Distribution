@@ -889,6 +889,9 @@ object grommetStrings {
   sealed trait slideUp extends js.Object
   
   @js.native
+  sealed trait slot extends _PolymorphicType
+  
+  @js.native
   sealed trait small
     extends EdgeSizeType
        with _BasisType
@@ -1634,6 +1637,8 @@ object grommetStrings {
   def slideRight: slideRight = "slideRight".asInstanceOf[slideRight]
   @scala.inline
   def slideUp: slideUp = "slideUp".asInstanceOf[slideUp]
+  @scala.inline
+  def slot: slot = "slot".asInstanceOf[slot]
   @scala.inline
   def small: small = "small".asInstanceOf[small]
   @scala.inline

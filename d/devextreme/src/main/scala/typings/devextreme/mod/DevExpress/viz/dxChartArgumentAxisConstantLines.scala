@@ -10,14 +10,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxChartArgumentAxisConstantLines extends dxChartCommonAxisSettingsConstantLineStyle {
-  /** Specifies whether to display the constant line behind or in front of the series. */
+  /** @name dxChart.Options.argumentAxis.constantLines.displayBehindSeries */
   var displayBehindSeries: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether to extend the axis's default visual range to display the constant line. */
+  /** @name dxChart.Options.argumentAxis.constantLines.extendAxis */
   var extendAxis: js.UndefOr[Boolean] = js.undefined
-  /** Configures the constant line label. */
+  /** @name dxChart.Options.argumentAxis.constantLines.label */
   @JSName("label")
   var label_dxChartArgumentAxisConstantLines: js.UndefOr[dxChartArgumentAxisConstantLinesLabel] = js.undefined
-  /** Specifies the value indicated by a constant line. Setting this option is necessary. */
+  /** @name dxChart.Options.argumentAxis.constantLines.value */
   var value: js.UndefOr[Double | Date | String] = js.undefined
 }
 

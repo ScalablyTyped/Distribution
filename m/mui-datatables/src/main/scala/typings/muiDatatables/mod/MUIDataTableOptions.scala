@@ -2,10 +2,11 @@ package typings.muiDatatables.mod
 
 import typings.muiDatatables.AnonColIndex
 import typings.muiDatatables.AnonDataDataIndex
-import typings.muiDatatables.AnonFilename
 import typings.muiDatatables.AnonLookup
 import typings.muiDatatables.AnonRowIndex
 import typings.muiDatatables.AnonXAxis
+import typings.muiDatatables.PartialMUIDataTableTextLa
+import typings.muiDatatables.Partialfilenamestringsepa
 import typings.muiDatatables.muiDatatablesStrings.chip
 import typings.muiDatatables.muiDatatablesStrings.reset
 import typings.react.mod.Component
@@ -63,7 +64,7 @@ trait MUIDataTableOptions extends js.Object {
   ] = js.undefined
   var disableToolbarSelect: js.UndefOr[Boolean] = js.undefined
   var download: js.UndefOr[Boolean] = js.undefined
-  var downloadOptions: js.UndefOr[AnonFilename] = js.undefined
+  var downloadOptions: js.UndefOr[Partialfilenamestringsepa] = js.undefined
   var elevation: js.UndefOr[Double] = js.undefined
   var expandableRows: js.UndefOr[Boolean] = js.undefined
   var expandableRowsOnClick: js.UndefOr[Boolean] = js.undefined
@@ -153,7 +154,7 @@ trait MUIDataTableOptions extends js.Object {
   var setTableProps: js.UndefOr[js.Function0[js.Object]] = js.undefined
   var sort: js.UndefOr[Boolean] = js.undefined
   var sortFilterList: js.UndefOr[Boolean] = js.undefined
-  var textLabels: js.UndefOr[MUIDataTableTextLabels] = js.undefined
+  var textLabels: js.UndefOr[PartialMUIDataTableTextLa] = js.undefined
   var viewColumns: js.UndefOr[Boolean] = js.undefined
 }
 
@@ -172,7 +173,7 @@ object MUIDataTableOptions {
     customToolbarSelect: (/* selectedRows */ AnonLookup, /* displayData */ js.Array[AnonDataDataIndex], /* setSelectedRows */ js.Function1[/* rows */ js.Array[Double], Unit]) => ReactNode = null,
     disableToolbarSelect: js.UndefOr[Boolean] = js.undefined,
     download: js.UndefOr[Boolean] = js.undefined,
-    downloadOptions: AnonFilename = null,
+    downloadOptions: Partialfilenamestringsepa = null,
     elevation: Int | Double = null,
     expandableRows: js.UndefOr[Boolean] = js.undefined,
     expandableRowsOnClick: js.UndefOr[Boolean] = js.undefined,
@@ -224,7 +225,7 @@ object MUIDataTableOptions {
     setTableProps: () => js.Object = null,
     sort: js.UndefOr[Boolean] = js.undefined,
     sortFilterList: js.UndefOr[Boolean] = js.undefined,
-    textLabels: MUIDataTableTextLabels = null,
+    textLabels: PartialMUIDataTableTextLa = null,
     viewColumns: js.UndefOr[Boolean] = js.undefined
   ): MUIDataTableOptions = {
     val __obj = js.Dynamic.literal()

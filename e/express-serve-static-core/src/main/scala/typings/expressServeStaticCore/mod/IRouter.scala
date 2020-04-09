@@ -1,5 +1,13 @@
 package typings.expressServeStaticCore.mod
 
+import typings.expressServeStaticCore.expressServeStaticCoreStrings.all
+import typings.expressServeStaticCore.expressServeStaticCoreStrings.delete
+import typings.expressServeStaticCore.expressServeStaticCoreStrings.get
+import typings.expressServeStaticCore.expressServeStaticCoreStrings.head
+import typings.expressServeStaticCore.expressServeStaticCoreStrings.options
+import typings.expressServeStaticCore.expressServeStaticCoreStrings.patch
+import typings.expressServeStaticCore.expressServeStaticCoreStrings.post
+import typings.expressServeStaticCore.expressServeStaticCoreStrings.put
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,65 +21,65 @@ trait IRouter
     * middleware, and callback to _every_ HTTP method.
     */
   @JSName("all")
-  var all_Original: IRouterMatcher[this.type] = js.native
+  var all_Original: IRouterMatcher[this.type, all] = js.native
   @JSName("checkout")
-  var checkout_Original: IRouterMatcher[this.type] = js.native
+  var checkout_Original: IRouterMatcher[this.type, _] = js.native
   @JSName("connect")
-  var connect_Original: IRouterMatcher[this.type] = js.native
+  var connect_Original: IRouterMatcher[this.type, _] = js.native
   @JSName("copy")
-  var copy_Original: IRouterMatcher[this.type] = js.native
+  var copy_Original: IRouterMatcher[this.type, _] = js.native
   @JSName("delete")
-  var delete_Original: IRouterMatcher[this.type] = js.native
+  var delete_Original: IRouterMatcher[this.type, delete] = js.native
   @JSName("get")
-  var get_Original: IRouterMatcher[this.type] = js.native
+  var get_Original: IRouterMatcher[this.type, get] = js.native
   @JSName("head")
-  var head_Original: IRouterMatcher[this.type] = js.native
+  var head_Original: IRouterMatcher[this.type, head] = js.native
   @JSName("lock")
-  var lock_Original: IRouterMatcher[this.type] = js.native
+  var lock_Original: IRouterMatcher[this.type, _] = js.native
   @JSName("m-search")
-  var `m-search_Original`: IRouterMatcher[this.type] = js.native
+  var `m-search_Original`: IRouterMatcher[this.type, _] = js.native
   @JSName("merge")
-  var merge_Original: IRouterMatcher[this.type] = js.native
+  var merge_Original: IRouterMatcher[this.type, _] = js.native
   @JSName("mkactivity")
-  var mkactivity_Original: IRouterMatcher[this.type] = js.native
+  var mkactivity_Original: IRouterMatcher[this.type, _] = js.native
   @JSName("mkcol")
-  var mkcol_Original: IRouterMatcher[this.type] = js.native
+  var mkcol_Original: IRouterMatcher[this.type, _] = js.native
   @JSName("move")
-  var move_Original: IRouterMatcher[this.type] = js.native
+  var move_Original: IRouterMatcher[this.type, _] = js.native
   @JSName("notify")
-  var notify_Original: IRouterMatcher[this.type] = js.native
+  var notify_Original: IRouterMatcher[this.type, _] = js.native
   @JSName("options")
-  var options_Original: IRouterMatcher[this.type] = js.native
+  var options_Original: IRouterMatcher[this.type, options] = js.native
   @JSName("patch")
-  var patch_Original: IRouterMatcher[this.type] = js.native
+  var patch_Original: IRouterMatcher[this.type, patch] = js.native
   @JSName("post")
-  var post_Original: IRouterMatcher[this.type] = js.native
+  var post_Original: IRouterMatcher[this.type, post] = js.native
   @JSName("propfind")
-  var propfind_Original: IRouterMatcher[this.type] = js.native
+  var propfind_Original: IRouterMatcher[this.type, _] = js.native
   @JSName("proppatch")
-  var proppatch_Original: IRouterMatcher[this.type] = js.native
+  var proppatch_Original: IRouterMatcher[this.type, _] = js.native
   @JSName("purge")
-  var purge_Original: IRouterMatcher[this.type] = js.native
+  var purge_Original: IRouterMatcher[this.type, _] = js.native
   @JSName("put")
-  var put_Original: IRouterMatcher[this.type] = js.native
+  var put_Original: IRouterMatcher[this.type, put] = js.native
   @JSName("report")
-  var report_Original: IRouterMatcher[this.type] = js.native
+  var report_Original: IRouterMatcher[this.type, _] = js.native
   @JSName("search")
-  var search_Original: IRouterMatcher[this.type] = js.native
+  var search_Original: IRouterMatcher[this.type, _] = js.native
   /**
     * Stack of configured routes
     */
   var stack: js.Array[_] = js.native
   @JSName("subscribe")
-  var subscribe_Original: IRouterMatcher[this.type] = js.native
+  var subscribe_Original: IRouterMatcher[this.type, _] = js.native
   @JSName("trace")
-  var trace_Original: IRouterMatcher[this.type] = js.native
+  var trace_Original: IRouterMatcher[this.type, _] = js.native
   @JSName("unlock")
-  var unlock_Original: IRouterMatcher[this.type] = js.native
+  var unlock_Original: IRouterMatcher[this.type, _] = js.native
   @JSName("unsubscribe")
-  var unsubscribe_Original: IRouterMatcher[this.type] = js.native
+  var unsubscribe_Original: IRouterMatcher[this.type, _] = js.native
   @JSName("use")
-  var use_Original: IRouterHandler[this.type] with IRouterMatcher[this.type] = js.native
+  var use_Original: IRouterHandler[this.type] with (IRouterMatcher[this.type, _]) = js.native
   /**
     * Special-cased "all" method, applying the given route `path`,
     * middleware, and callback to _every_ HTTP method.

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@carbon/pictograms-react", "VideoChat")
 @js.native
-object VideoChat extends TopLevel[CarbonPictogram]
+object VideoChat extends TopLevel[CarbonPictogramType]
 

@@ -12,7 +12,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@tensorflow/tfjs-converter/dist/src/operations/custom_op/node_value_impl", JSImport.Namespace)
+@JSImport("@tensorflow/tfjs-converter/dist/operations/custom_op/node_value_impl", JSImport.Namespace)
 @js.native
 object nodeValueImplMod extends js.Object {
   @js.native

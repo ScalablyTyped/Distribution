@@ -2,8 +2,8 @@ package typings.echarts.echarts.EChartOption
 
 import typings.echarts.Anon2
 import typings.echarts.AnonAnimationDelay
+import typings.echarts.AnonAnimationDelayAnimationDelayUpdate
 import typings.echarts.AnonAnimationDelayUpdate
-import typings.echarts.AnonAnimationDelayUpdateAnimationDuration
 import typings.echarts.AnonAnimationDuration
 import typings.echarts.AnonBorderRadius
 import typings.echarts.AnonBorderType
@@ -508,7 +508,7 @@ trait SeriesPictorialBar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.hoverAnimation
     */
-  var hoverAnimation: js.UndefOr[AnonAnimationDelayUpdateAnimationDuration] = js.undefined
+  var hoverAnimation: js.UndefOr[AnonAnimationDelayAnimationDelayUpdate] = js.undefined
   /**
     * Component ID, not specified by default.
     * If specified, it can be used to refer the component in option
@@ -1209,7 +1209,7 @@ object SeriesPictorialBar_ {
     dimensions: js.Array[_] = null,
     emphasis: AnonLabelAnonBorderRadius = null,
     encode: js.Object = null,
-    hoverAnimation: AnonAnimationDelayUpdateAnimationDuration = null,
+    hoverAnimation: AnonAnimationDelayAnimationDelayUpdate = null,
     id: String = null,
     itemStyle: AnonBorderType = null,
     label: AnonBorderRadius = null,

@@ -1,6 +1,7 @@
 package typings.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces
 
 import typings.firebaseFirestore.firestoreProtoApiMod.ApiClientObjectMap
+import typings.firebaseFirestore.firestoreProtoApiMod.Timestamp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +10,7 @@ trait Document extends js.Object {
   var createTime: js.UndefOr[String] = js.undefined
   var fields: js.UndefOr[ApiClientObjectMap[Value]] = js.undefined
   var name: js.UndefOr[String] = js.undefined
-  var updateTime: js.UndefOr[String] = js.undefined
+  var updateTime: js.UndefOr[Timestamp] = js.undefined
 }
 
 object Document {
@@ -18,7 +19,7 @@ object Document {
     createTime: String = null,
     fields: ApiClientObjectMap[Value] = null,
     name: String = null,
-    updateTime: String = null
+    updateTime: Timestamp = null
   ): Document = {
     val __obj = js.Dynamic.literal()
     if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])

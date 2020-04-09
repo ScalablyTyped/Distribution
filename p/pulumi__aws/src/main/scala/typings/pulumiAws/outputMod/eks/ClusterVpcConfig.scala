@@ -18,6 +18,9 @@ trait ClusterVpcConfig extends js.Object {
     * Indicates whether or not the Amazon EKS public API server endpoint is enabled. Default is `true`.
     */
   var endpointPublicAccess: js.UndefOr[Boolean] = js.native
+  /**
+    * List of CIDR blocks. Indicates which CIDR blocks can access the Amazon EKS public API server endpoint when enabled. EKS defaults this to a list with `0.0.0.0/0`. This provider will only perform drift detection of its value when present in a configuration.
+    */
   var publicAccessCidrs: js.Array[String] = js.native
   /**
     * List of security group IDs for the cross-account elastic network interfaces that Amazon EKS creates to use to allow communication between your worker nodes and the Kubernetes control plane.

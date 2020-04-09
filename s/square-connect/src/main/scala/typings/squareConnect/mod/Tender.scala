@@ -20,7 +20,7 @@ class Tender () extends js.Object {
   var additional_recipients: js.UndefOr[js.Array[AdditionalRecipient]] = js.native
   /**
     * The total amount of the tender, including `tip_money`. If the tender has a `payment_id`, the `total_money` of
-    * the corresponding [Payment](#type-payment) will be equal to the `amount_money` of the tender.
+    * the corresponding `Payment` will be equal to the `amount_money` of the tender.
     */
   var amount_money: js.UndefOr[Money] = js.native
   /**
@@ -53,8 +53,7 @@ class Tender () extends js.Object {
     */
   var note: js.UndefOr[String] = js.native
   /**
-    * The ID of the [Payment](#type-payment) that corresponds to this tender.
-    * This value is only present for payments created with the v2 Payments API.
+    * The ID of the `Payment` that corresponds to this tender. This value is only present for payments created with the v2 Payments API.
     */
   var payment_id: js.UndefOr[String] = js.native
   /**

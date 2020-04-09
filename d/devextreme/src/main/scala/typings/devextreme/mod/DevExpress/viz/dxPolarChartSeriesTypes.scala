@@ -5,17 +5,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxPolarChartSeriesTypes extends js.Object {
-  /** An object that defines configuration options for polar chart series. */
+  /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries */
   var CommonPolarChartSeries: js.UndefOr[dxPolarChartSeriesTypesCommonPolarChartSeries] = js.undefined
-  /** An object defining a series of the area type. */
+  /** @name dxPolarChartSeriesTypes.areapolarseries */
   var areapolarseries: js.UndefOr[dxPolarChartSeriesTypesAreapolarseries] = js.undefined
-  /** An object defining a series of the bar type. */
+  /** @name dxPolarChartSeriesTypes.barpolarseries */
   var barpolarseries: js.UndefOr[dxPolarChartSeriesTypesBarpolarseries] = js.undefined
-  /** An object defining a series of the line type. */
+  /** @name dxPolarChartSeriesTypes.linepolarseries */
   var linepolarseries: js.UndefOr[dxPolarChartSeriesTypesLinepolarseries] = js.undefined
-  /** An object defining a series of the scatter type. */
+  /** @name dxPolarChartSeriesTypes.scatterpolarseries */
   var scatterpolarseries: js.UndefOr[js.Any] = js.undefined
-  /** An object defining a series of the stackedBar type. */
+  /** @name dxPolarChartSeriesTypes.stackedbarpolarseries */
   var stackedbarpolarseries: js.UndefOr[dxPolarChartSeriesTypesStackedbarpolarseries] = js.undefined
 }
 

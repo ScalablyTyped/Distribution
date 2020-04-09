@@ -107,6 +107,7 @@ class QuestionMatrixDropdownModelBase protected () extends QuestionMatrixBaseMod
   def onRenderedTableResetCallback(): Unit = js.native
   def onRowChanged(row: MatrixDropdownRowModelBase, columnName: String, newRowValue: js.Any, isDeletingValue: Boolean): Unit = js.native
   def onRowChanging(row: MatrixDropdownRowModelBase, columnName: String, rowValue: js.Any): js.Any = js.native
+  def onShowInMultipleColumnsChanged(column: MatrixDropdownColumn): Unit = js.native
   /* protected */ def onStartRowAddingRemoving(): Unit = js.native
   def onTotalValueChanged(): js.Any = js.native
   /* protected */ def resetRenderedTable(): Unit = js.native

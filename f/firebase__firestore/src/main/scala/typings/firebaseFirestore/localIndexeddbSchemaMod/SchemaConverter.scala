@@ -21,6 +21,7 @@ class SchemaConverter protected () extends SimpleDbSchemaConverter {
     */
   var ensureSequenceNumbers: js.Any = js.native
   var removeAcknowledgedMutations: js.Any = js.native
+  var rewriteCanonicalIds: js.Any = js.native
   val serializer: js.Any = js.native
   /* CompleteClass */
   override def createOrUpgrade(db: IDBDatabase, txn: IDBTransaction, fromVersion: Double, toVersion: Double): PersistencePromise[Unit] = js.native

@@ -15,7 +15,6 @@ import typings.rcMenu.interfaceMod.SelectInfo
 import typings.rcMenu.interfaceMod.TriggerSubMenuAction
 import typings.rcMenu.rcMenuStrings.ltr
 import typings.rcMenu.rcMenuStrings.rtl
-import typings.rcTrigger.interfaceMod.MotionType
 import typings.react.mod.CSSProperties
 import typings.react.mod.Key
 import typings.react.mod.ReactInstance
@@ -43,7 +42,9 @@ trait SubPopupMenuProps extends js.Object {
   var level: js.UndefOr[Double] = js.undefined
   var manualRef: js.UndefOr[LegacyFunctionRef] = js.undefined
   var mode: js.UndefOr[MenuMode] = js.undefined
-  var motion: js.UndefOr[MotionType] = js.undefined
+  var motion: js.UndefOr[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MotionType */ js.Any
+  ] = js.undefined
   var multiple: js.UndefOr[Boolean] = js.undefined
   var onClick: js.UndefOr[MenuClickEventHandler] = js.undefined
   var onDeselect: js.UndefOr[SelectEventHandler] = js.undefined
@@ -86,7 +87,7 @@ object SubPopupMenuProps {
     level: Int | Double = null,
     manualRef: /* node */ ReactInstance => Unit = null,
     mode: MenuMode = null,
-    motion: MotionType = null,
+    motion: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MotionType */ js.Any = null,
     multiple: js.UndefOr[Boolean] = js.undefined,
     onClick: /* info */ MenuInfo => Unit = null,
     onDeselect: /* info */ SelectInfo => Unit = null,

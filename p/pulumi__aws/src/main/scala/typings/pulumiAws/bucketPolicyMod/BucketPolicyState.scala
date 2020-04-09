@@ -12,6 +12,9 @@ trait BucketPolicyState extends js.Object {
     * The name of the bucket to which to apply the policy.
     */
   val bucket: js.UndefOr[Input[String]] = js.native
+  /**
+    * The text of the policy.
+    */
   val policy: js.UndefOr[Input[String | PolicyDocument]] = js.native
 }
 

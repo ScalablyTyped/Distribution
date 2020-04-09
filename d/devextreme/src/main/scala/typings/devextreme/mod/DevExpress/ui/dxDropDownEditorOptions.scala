@@ -35,28 +35,28 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxDropDownEditorOptions[T] extends dxTextBoxOptions[T] {
-  /** Specifies whether or not the widget allows an end-user to enter a custom value. */
+  /** @name dxDropDownEditor.Options.acceptCustomValue */
   var acceptCustomValue: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the way an end-user applies the selected value. */
+  /** @name dxDropDownEditor.Options.applyValueMode */
   var applyValueMode: js.UndefOr[instantly | useButtons] = js.undefined
-  /** Allows you to add custom buttons to the input text field. */
+  /** @name dxDropDownEditor.Options.buttons */
   @JSName("buttons")
   var buttons_dxDropDownEditorOptions: js.UndefOr[js.Array[clear | dropDown | dxTextEditorButton]] = js.undefined
-  /** Specifies whether to render the drop-down field's content when it is displayed. If false, the content is rendered immediately. */
+  /** @name dxDropDownEditor.Options.deferRendering */
   var deferRendering: js.UndefOr[Boolean] = js.undefined
-  /** Specifies a custom template for the drop-down button. */
+  /** @name dxDropDownEditor.Options.dropDownButtonTemplate */
   var dropDownButtonTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* buttonData */ AnonIcon, /* contentElement */ dxElement, String | Element | JQuery])
   ] = js.undefined
-  /** A function that is executed once the drop-down editor is closed. */
+  /** @name dxDropDownEditor.Options.onClosed */
   var onClosed: js.UndefOr[js.Function1[/* e */ AnonComponentT[T], _]] = js.undefined
-  /** A function that is executed once the drop-down editor is opened. */
+  /** @name dxDropDownEditor.Options.onOpened */
   var onOpened: js.UndefOr[js.Function1[/* e */ AnonComponentT[T], _]] = js.undefined
-  /** Specifies whether a user can open the drop-down list by clicking a text field. */
+  /** @name dxDropDownEditor.Options.openOnFieldClick */
   var openOnFieldClick: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether or not the drop-down editor is displayed. */
+  /** @name dxDropDownEditor.Options.opened */
   var opened: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether the drop-down button is visible. */
+  /** @name dxDropDownEditor.Options.showDropDownButton */
   var showDropDownButton: js.UndefOr[Boolean] = js.undefined
 }
 

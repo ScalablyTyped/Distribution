@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation._
 
 trait Relation extends js.Object {
   /**
-    * The type of the relation translated and formatted in the viewer's account
-    * locale or the locale specified in the Accept-Language HTTP header.
+    * Output only. The type of the relation translated and formatted in the viewer's
+    * account locale or the locale specified in the Accept-Language HTTP header.
     */
   var formattedType: js.UndefOr[String] = js.undefined
   /** Metadata about the relation. */
@@ -15,8 +15,8 @@ trait Relation extends js.Object {
   /** The name of the other person this relation refers to. */
   var person: js.UndefOr[String] = js.undefined
   /**
-    * The person's relation to the other person. The type can be custom or predefined.
-    * Possible values include, but are not limited to, the following values:
+    * The person's relation to the other person. The type can be custom or one of
+    * these predefined values:
     *
     * &#42; `spouse`
     * &#42; `child`

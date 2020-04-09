@@ -1,12 +1,12 @@
 package typings.mongodb.mod
 
-import typings.mongodb.AnonId
+import typings.mongodb.AnonIdAny
 import typings.mongodb.AnonOk
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait InsertOneWriteOpResult[TSchema /* <: AnonId */] extends js.Object {
+trait InsertOneWriteOpResult[TSchema /* <: AnonIdAny */] extends js.Object {
   var connection: js.Any
   var insertedCount: scala.Double
   var insertedId: /* import warning: importer.ImportType#apply Failed type conversion: TSchema['_id'] */ js.Any
@@ -16,7 +16,7 @@ trait InsertOneWriteOpResult[TSchema /* <: AnonId */] extends js.Object {
 
 object InsertOneWriteOpResult {
   @scala.inline
-  def apply[TSchema /* <: AnonId */](
+  def apply[TSchema /* <: AnonIdAny */](
     connection: js.Any,
     insertedCount: scala.Double,
     insertedId: /* import warning: importer.ImportType#apply Failed type conversion: TSchema['_id'] */ js.Any,

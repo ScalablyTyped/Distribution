@@ -64,6 +64,7 @@ class Scene () extends js.Object {
   val renderError: Event[js.Array[_]] = js.native
   var requestRenderMode: Boolean = js.native
   var rethrowRenderErrors: Boolean = js.native
+  val sampleHeightSupported: Boolean = js.native
   val scene3DOnly: Boolean = js.native
   val screenSpaceCameraController: ScreenSpaceCameraController = js.native
   var shadowMap: ShadowMap = js.native
@@ -78,6 +79,13 @@ class Scene () extends js.Object {
   var useWebVR: Boolean = js.native
   def cartesianToCanvasCoordinates(position: Cartesian3): Cartesian2 = js.native
   def cartesianToCanvasCoordinates(position: Cartesian3, result: Cartesian2): Cartesian2 = js.native
+  def clampToHeight(cartesian: Cartesian3): Cartesian3 = js.native
+  def clampToHeight(cartesian: Cartesian3, objectsToExclude: js.Array[_]): Cartesian3 = js.native
+  def clampToHeight(cartesian: Cartesian3, objectsToExclude: js.Array[_], width: Double): Cartesian3 = js.native
+  def clampToHeight(cartesian: Cartesian3, objectsToExclude: js.Array[_], width: Double, result: Cartesian3): Cartesian3 = js.native
+  def clampToHeightMostDetailed(cartesian: js.Array[Cartesian3]): js.Promise[js.Array[Cartesian3]] = js.native
+  def clampToHeightMostDetailed(cartesian: js.Array[Cartesian3], objectsToExclude: js.Array[_]): js.Promise[js.Array[Cartesian3]] = js.native
+  def clampToHeightMostDetailed(cartesian: js.Array[Cartesian3], objectsToExclude: js.Array[_], width: Double): js.Promise[js.Array[Cartesian3]] = js.native
   def completeMorph(): Unit = js.native
   def debugCommandFilter(command: js.Any): Boolean = js.native
   def destroy(): Unit = js.native
@@ -97,5 +105,11 @@ class Scene () extends js.Object {
   def pickPosition(windowPosition: Cartesian2): Cartesian3 = js.native
   def pickPosition(windowPosition: Cartesian2, result: Cartesian3): Cartesian3 = js.native
   def requestRender(): Unit = js.native
+  def sampleHeight(cartographic: Cartographic): Double = js.native
+  def sampleHeight(cartographic: Cartographic, objectsToExclude: js.Array[_]): Double = js.native
+  def sampleHeight(cartographic: Cartographic, objectsToExclude: js.Array[_], width: Double): Double = js.native
+  def sampleHeightMostDetailed(cartographic: Cartographic): js.Promise[js.Array[Double]] = js.native
+  def sampleHeightMostDetailed(cartographic: Cartographic, objectsToExclude: js.Array[_]): js.Promise[js.Array[Double]] = js.native
+  def sampleHeightMostDetailed(cartographic: Cartographic, objectsToExclude: js.Array[_], width: Double): js.Promise[js.Array[Double]] = js.native
 }
 

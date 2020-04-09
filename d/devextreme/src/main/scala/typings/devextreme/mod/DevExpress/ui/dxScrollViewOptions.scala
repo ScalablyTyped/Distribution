@@ -17,17 +17,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxScrollViewOptions extends dxScrollableOptions[dxScrollView] {
-  /** A function that is executed when the "pull to refresh" gesture is performed. Supported in mobile themes only. */
+  /** @name dxScrollView.Options.onPullDown */
   var onPullDown: js.UndefOr[js.Function1[/* e */ AnonComponentDxScrollView, _]] = js.undefined
-  /** A function that is executed when the content is scrolled down to the bottom. */
+  /** @name dxScrollView.Options.onReachBottom */
   var onReachBottom: js.UndefOr[js.Function1[/* e */ AnonComponentDxScrollView, _]] = js.undefined
-  /** Specifies the text shown in the pullDown panel when pulling the content down lowers the refresh threshold. */
+  /** @name dxScrollView.Options.pulledDownText */
   var pulledDownText: js.UndefOr[String] = js.undefined
-  /** Specifies the text shown in the pullDown panel while pulling the content down to the refresh threshold. */
+  /** @name dxScrollView.Options.pullingDownText */
   var pullingDownText: js.UndefOr[String] = js.undefined
-  /** Specifies the text shown in the pullDown panel displayed when content is scrolled to the bottom. */
+  /** @name dxScrollView.Options.reachBottomText */
   var reachBottomText: js.UndefOr[String] = js.undefined
-  /** Specifies the text shown in the pullDown panel displayed when the content is being refreshed. */
+  /** @name dxScrollView.Options.refreshingText */
   var refreshingText: js.UndefOr[String] = js.undefined
 }
 

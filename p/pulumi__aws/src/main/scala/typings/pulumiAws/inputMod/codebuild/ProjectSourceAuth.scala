@@ -12,7 +12,7 @@ trait ProjectSourceAuth extends js.Object {
     */
   var resource: js.UndefOr[Input[String]] = js.native
   /**
-    * The type of repository that contains the source code to be built. Valid values for this parameter are: `CODECOMMIT`, `CODEPIPELINE`, `GITHUB`, `GITHUB_ENTERPRISE`, `BITBUCKET` or `S3`.
+    * The authorization type to use. The only valid value is `OAUTH`
     */
   var `type`: Input[String] = js.native
 }

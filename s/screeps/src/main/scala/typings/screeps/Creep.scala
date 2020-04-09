@@ -17,7 +17,7 @@ trait Creep
   /**
     * An array describing the creep's body.
     */
-  var body: js.Array[BodyPartDefinition] = js.native
+  var body: js.Array[BodyPartDefinition[BodyPartConstant]] = js.native
   /**
     * An object with the creep's cargo contents.
     * @deprecated Is an alias for Creep.store

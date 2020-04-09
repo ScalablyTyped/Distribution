@@ -5,15 +5,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxPolarChartCommonAxisSettingsMinorTick extends js.Object {
-  /** Specifies a color for the minor ticks. */
+  /** @name dxPolarChart.Options.commonAxisSettings.minorTick.color */
   var color: js.UndefOr[String] = js.undefined
-  /** Specifies minor tick length. */
+  /** @name dxPolarChart.Options.commonAxisSettings.minorTick.length */
   var length: js.UndefOr[Double] = js.undefined
-  /** Specifies an opacity for the minor ticks. */
+  /** @name dxPolarChart.Options.commonAxisSettings.minorTick.opacity */
   var opacity: js.UndefOr[Double] = js.undefined
-  /** Indicates whether or not the minor ticks are displayed on an axis. */
+  /** @name dxPolarChart.Options.commonAxisSettings.minorTick.visible */
   var visible: js.UndefOr[Boolean] = js.undefined
-  /** Specifies minor tick width. */
+  /** @name dxPolarChart.Options.commonAxisSettings.minorTick.width */
   var width: js.UndefOr[Double] = js.undefined
 }
 

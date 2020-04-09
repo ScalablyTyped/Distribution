@@ -6,7 +6,13 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersCsv extends js.Object {
+  /**
+    * The Column Delimiter.
+    */
   var recordColumnDelimiter: String = js.native
+  /**
+    * The Row Delimiter.
+    */
   var recordRowDelimiter: String = js.native
 }
 

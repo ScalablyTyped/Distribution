@@ -4,8 +4,11 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiAws.outputMod.ec2.GetLaunchTemplateBlockDeviceMapping
 import typings.pulumiAws.outputMod.ec2.GetLaunchTemplateCreditSpecification
 import typings.pulumiAws.outputMod.ec2.GetLaunchTemplateElasticGpuSpecification
+import typings.pulumiAws.outputMod.ec2.GetLaunchTemplateFilter
+import typings.pulumiAws.outputMod.ec2.GetLaunchTemplateHibernationOption
 import typings.pulumiAws.outputMod.ec2.GetLaunchTemplateIamInstanceProfile
 import typings.pulumiAws.outputMod.ec2.GetLaunchTemplateInstanceMarketOption
+import typings.pulumiAws.outputMod.ec2.GetLaunchTemplateMetadataOption
 import typings.pulumiAws.outputMod.ec2.GetLaunchTemplateMonitoring
 import typings.pulumiAws.outputMod.ec2.GetLaunchTemplateNetworkInterface
 import typings.pulumiAws.outputMod.ec2.GetLaunchTemplatePlacement
@@ -51,6 +54,11 @@ trait GetLaunchTemplateResult extends js.Object {
     * below for more details.
     */
   val elasticGpuSpecifications: js.Array[GetLaunchTemplateElasticGpuSpecification] = js.native
+  val filters: js.UndefOr[js.Array[GetLaunchTemplateFilter]] = js.native
+  /**
+    * The hibernation options for the instance.
+    */
+  val hibernationOptions: js.Array[GetLaunchTemplateHibernationOption] = js.native
   /**
     * The IAM Instance Profile to launch the instance with. See Instance Profile
     * below for more details.
@@ -91,10 +99,14 @@ trait GetLaunchTemplateResult extends js.Object {
     */
   val latestVersion: Double = js.native
   /**
+    * The metadata options for the instance.
+    */
+  val metadataOptions: js.Array[GetLaunchTemplateMetadataOption] = js.native
+  /**
     * The monitoring option for the instance.
     */
   val monitorings: js.Array[GetLaunchTemplateMonitoring] = js.native
-  val name: String = js.native
+  val name: js.UndefOr[String] = js.native
   /**
     * Customize network interfaces to be attached at instance boot time. See Network
     * Interfaces below for more details.
@@ -142,6 +154,7 @@ object GetLaunchTemplateResult {
     disableApiTermination: Boolean,
     ebsOptimized: String,
     elasticGpuSpecifications: js.Array[GetLaunchTemplateElasticGpuSpecification],
+    hibernationOptions: js.Array[GetLaunchTemplateHibernationOption],
     iamInstanceProfiles: js.Array[GetLaunchTemplateIamInstanceProfile],
     id: String,
     imageId: String,
@@ -151,8 +164,8 @@ object GetLaunchTemplateResult {
     kernelId: String,
     keyName: String,
     latestVersion: Double,
+    metadataOptions: js.Array[GetLaunchTemplateMetadataOption],
     monitorings: js.Array[GetLaunchTemplateMonitoring],
-    name: String,
     networkInterfaces: js.Array[GetLaunchTemplateNetworkInterface],
     placements: js.Array[GetLaunchTemplatePlacement],
     ramDiskId: String,
@@ -160,10 +173,13 @@ object GetLaunchTemplateResult {
     tagSpecifications: js.Array[GetLaunchTemplateTagSpecification],
     tags: StringDictionary[js.Any],
     userData: String,
-    vpcSecurityGroupIds: js.Array[String]
+    vpcSecurityGroupIds: js.Array[String],
+    filters: js.Array[GetLaunchTemplateFilter] = null,
+    name: String = null
   ): GetLaunchTemplateResult = {
-    val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], blockDeviceMappings = blockDeviceMappings.asInstanceOf[js.Any], creditSpecifications = creditSpecifications.asInstanceOf[js.Any], defaultVersion = defaultVersion.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], disableApiTermination = disableApiTermination.asInstanceOf[js.Any], ebsOptimized = ebsOptimized.asInstanceOf[js.Any], elasticGpuSpecifications = elasticGpuSpecifications.asInstanceOf[js.Any], iamInstanceProfiles = iamInstanceProfiles.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], imageId = imageId.asInstanceOf[js.Any], instanceInitiatedShutdownBehavior = instanceInitiatedShutdownBehavior.asInstanceOf[js.Any], instanceMarketOptions = instanceMarketOptions.asInstanceOf[js.Any], instanceType = instanceType.asInstanceOf[js.Any], kernelId = kernelId.asInstanceOf[js.Any], keyName = keyName.asInstanceOf[js.Any], latestVersion = latestVersion.asInstanceOf[js.Any], monitorings = monitorings.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], networkInterfaces = networkInterfaces.asInstanceOf[js.Any], placements = placements.asInstanceOf[js.Any], ramDiskId = ramDiskId.asInstanceOf[js.Any], securityGroupNames = securityGroupNames.asInstanceOf[js.Any], tagSpecifications = tagSpecifications.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], userData = userData.asInstanceOf[js.Any], vpcSecurityGroupIds = vpcSecurityGroupIds.asInstanceOf[js.Any])
-  
+    val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], blockDeviceMappings = blockDeviceMappings.asInstanceOf[js.Any], creditSpecifications = creditSpecifications.asInstanceOf[js.Any], defaultVersion = defaultVersion.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], disableApiTermination = disableApiTermination.asInstanceOf[js.Any], ebsOptimized = ebsOptimized.asInstanceOf[js.Any], elasticGpuSpecifications = elasticGpuSpecifications.asInstanceOf[js.Any], hibernationOptions = hibernationOptions.asInstanceOf[js.Any], iamInstanceProfiles = iamInstanceProfiles.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], imageId = imageId.asInstanceOf[js.Any], instanceInitiatedShutdownBehavior = instanceInitiatedShutdownBehavior.asInstanceOf[js.Any], instanceMarketOptions = instanceMarketOptions.asInstanceOf[js.Any], instanceType = instanceType.asInstanceOf[js.Any], kernelId = kernelId.asInstanceOf[js.Any], keyName = keyName.asInstanceOf[js.Any], latestVersion = latestVersion.asInstanceOf[js.Any], metadataOptions = metadataOptions.asInstanceOf[js.Any], monitorings = monitorings.asInstanceOf[js.Any], networkInterfaces = networkInterfaces.asInstanceOf[js.Any], placements = placements.asInstanceOf[js.Any], ramDiskId = ramDiskId.asInstanceOf[js.Any], securityGroupNames = securityGroupNames.asInstanceOf[js.Any], tagSpecifications = tagSpecifications.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], userData = userData.asInstanceOf[js.Any], vpcSecurityGroupIds = vpcSecurityGroupIds.asInstanceOf[js.Any])
+    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetLaunchTemplateResult]
   }
 }

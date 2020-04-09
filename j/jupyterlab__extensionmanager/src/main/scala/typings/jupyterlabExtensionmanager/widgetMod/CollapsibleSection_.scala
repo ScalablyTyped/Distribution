@@ -12,6 +12,8 @@ import scala.scalajs.js.annotation._
 class CollapsibleSection_ protected ()
   extends Component[IProperties, IState, js.Any] {
   def this(props: IProperties) = this()
+  @JSName("componentWillReceiveProps")
+  def componentWillReceiveProps_MCollapsibleSection_(nextProps: IProperties): Unit = js.native
   /**
     * Handler for search input changes.
     */

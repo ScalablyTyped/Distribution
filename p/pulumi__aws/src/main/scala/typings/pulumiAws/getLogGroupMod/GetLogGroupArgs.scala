@@ -11,6 +11,9 @@ trait GetLogGroupArgs extends js.Object {
     * The name of the Cloudwatch log group
     */
   val name: String = js.native
+  /**
+    * A mapping of tags to assign to the resource.
+    */
   val tags: js.UndefOr[StringDictionary[js.Any]] = js.native
 }
 

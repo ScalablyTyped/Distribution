@@ -1,6 +1,6 @@
 package typings.instagramPrivateApi.postingOptionsMod
 
-import typings.instagramPrivateApi.AnonStorystickerids
+import typings.instagramPrivateApi.AnonStorystickeridsAny
 import typings.instagramPrivateApi.instagramPrivateApiStrings.once
 import typings.instagramPrivateApi.instagramPrivateApiStrings.replayable
 import typings.instagramPrivateApi.instagramPrivateApiStrings.story
@@ -33,7 +33,7 @@ trait PostingStoryOptions extends js.Object {
   var recipientUsers: js.UndefOr[js.Array[String]] = js.undefined
   var replyType: js.UndefOr[story | String] = js.undefined
   var slider: js.UndefOr[StorySlider] = js.undefined
-  var stickerConfig: js.UndefOr[(js.Any with AnonStorystickerids) | StickerBuilder] = js.undefined
+  var stickerConfig: js.UndefOr[(js.Any with AnonStorystickeridsAny) | StickerBuilder] = js.undefined
   var threadIds: js.UndefOr[js.Array[String]] = js.undefined
   var toBesties: js.UndefOr[Boolean] = js.undefined
   var viewMode: js.UndefOr[replayable | once | String] = js.undefined
@@ -56,7 +56,7 @@ object PostingStoryOptions {
     recipientUsers: js.Array[String] = null,
     replyType: story | String = null,
     slider: StorySlider = null,
-    stickerConfig: (js.Any with AnonStorystickerids) | StickerBuilder = null,
+    stickerConfig: (js.Any with AnonStorystickeridsAny) | StickerBuilder = null,
     threadIds: js.Array[String] = null,
     toBesties: js.UndefOr[Boolean] = js.undefined,
     viewMode: replayable | once | String = null

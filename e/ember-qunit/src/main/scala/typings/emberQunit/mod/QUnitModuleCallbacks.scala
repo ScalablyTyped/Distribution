@@ -23,11 +23,11 @@ trait QUnitModuleCallbacks
 object QUnitModuleCallbacks {
   @scala.inline
   def apply(
-    after: /* assert */ Assert => Unit = null,
-    afterEach: /* assert */ Assert => Unit = null,
+    after: /* assert */ Assert => Unit | js.Promise[Unit] = null,
+    afterEach: /* assert */ Assert => Unit | js.Promise[Unit] = null,
     afterTeardown: /* assert */ Assert => Unit = null,
-    before: /* assert */ Assert => Unit = null,
-    beforeEach: /* assert */ Assert => Unit = null,
+    before: /* assert */ Assert => Unit | js.Promise[Unit] = null,
+    beforeEach: /* assert */ Assert => Unit | js.Promise[Unit] = null,
     beforeSetup: /* assert */ Assert => Unit = null,
     integration: js.UndefOr[Boolean] = js.undefined,
     needs: js.Array[String] = null,

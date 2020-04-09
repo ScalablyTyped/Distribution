@@ -74,6 +74,13 @@ class TLSSocket protected () extends Socket {
     */
   def enableTrace(): Unit = js.native
   /**
+    * @param length number of bytes to retrieve from keying material
+    * @param label an application specific label, typically this will be a value from the
+    * [IANA Exporter Label Registry](https://www.iana.org/assignments/tls-parameters/tls-parameters.xhtml#exporter-labels).
+    * @param context optionally provide a context.
+    */
+  def exportKeyingMaterial(length: Double, label: String, context: Buffer): Buffer = js.native
+  /**
     * Returns an object representing the local certificate. The returned
     * object has some properties corresponding to the fields of the
     * certificate.

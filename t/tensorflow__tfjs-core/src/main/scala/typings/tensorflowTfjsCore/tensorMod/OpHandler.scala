@@ -44,8 +44,6 @@ trait OpHandler extends js.Object {
   def abs[T /* <: Tensor[Rank] */](x: T): T = js.native
   def acos[T /* <: Tensor[Rank] */](x: T): T = js.native
   def acosh[T /* <: Tensor[Rank] */](x: T): T = js.native
-  def add[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike): T = js.native
-  def add[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = js.native
   def addStrict[T /* <: Tensor[Rank] */](a: T, b: T): T = js.native
   def addStrict[T /* <: Tensor[Rank] */](a: T, b: TensorLike): T = js.native
   def all[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: js.Array[Double], keepDims: Boolean): T = js.native
@@ -73,28 +71,6 @@ trait OpHandler extends js.Object {
     pad: Double | same_ | valid_,
     dimRoundingMode: ceil | floor | round
   ): Tensor[R3] = js.native
-  def batchNorm[R /* <: Rank */](x: Tensor[R], mean: Tensor[R] | Tensor1D | TensorLike, variance: Tensor[R] | Tensor1D | TensorLike): Tensor[R] = js.native
-  def batchNorm[R /* <: Rank */](
-    x: Tensor[R],
-    mean: Tensor[R] | Tensor1D | TensorLike,
-    variance: Tensor[R] | Tensor1D | TensorLike,
-    offset: Tensor[R] | Tensor1D | TensorLike
-  ): Tensor[R] = js.native
-  def batchNorm[R /* <: Rank */](
-    x: Tensor[R],
-    mean: Tensor[R] | Tensor1D | TensorLike,
-    variance: Tensor[R] | Tensor1D | TensorLike,
-    offset: Tensor[R] | Tensor1D | TensorLike,
-    scale: Tensor[R] | Tensor1D | TensorLike
-  ): Tensor[R] = js.native
-  def batchNorm[R /* <: Rank */](
-    x: Tensor[R],
-    mean: Tensor[R] | Tensor1D | TensorLike,
-    variance: Tensor[R] | Tensor1D | TensorLike,
-    offset: Tensor[R] | Tensor1D | TensorLike,
-    scale: Tensor[R] | Tensor1D | TensorLike,
-    varianceEpsilon: Double
-  ): Tensor[R] = js.native
   def batchToSpaceND[T /* <: Tensor[Rank] */](x: T, blockShape: js.Array[Double], crops: js.Array[js.Array[Double]]): T = js.native
   @JSName("buffer")
   def buffer_bool[R /* <: Rank */](
@@ -226,10 +202,6 @@ trait OpHandler extends js.Object {
     dilations: Double | (js.Tuple2[Double, Double]),
     dimRoundingMode: ceil | floor | round
   ): Tensor[R3] = js.native
-  def div[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike): T = js.native
-  def div[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = js.native
-  def divNoNan[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike): T = js.native
-  def divNoNan[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = js.native
   def divStrict[T /* <: Tensor[Rank] */](a: T, b: T): T = js.native
   def divStrict[T /* <: Tensor[Rank] */](a: T, b: TensorLike): T = js.native
   def dot(t1: Tensor[Rank], t2: TensorLike): Tensor[Rank] = js.native
@@ -334,14 +306,7 @@ trait OpHandler extends js.Object {
   def notEqual[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = js.native
   def notEqualStrict[T /* <: Tensor[Rank] */](a: T, b: T): T = js.native
   def notEqualStrict[T /* <: Tensor[Rank] */](a: T, b: TensorLike): T = js.native
-  def oneHot(x: TensorLike, depth: Double): Tensor[Rank] = js.native
-  def oneHot(x: TensorLike, depth: Double, onValue: Double): Tensor[Rank] = js.native
-  def oneHot(x: TensorLike, depth: Double, onValue: Double, offValue: Double): Tensor[Rank] = js.native
-  def oneHot(x: Tensor[Rank], depth: Double): Tensor[Rank] = js.native
-  def oneHot(x: Tensor[Rank], depth: Double, onValue: Double): Tensor[Rank] = js.native
-  def oneHot(x: Tensor[Rank], depth: Double, onValue: Double, offValue: Double): Tensor[Rank] = js.native
   def onesLike[T /* <: Tensor[Rank] */](x: T): T = js.native
-  def pad[T /* <: Tensor[Rank] */](x: T, paddings: js.Array[js.Tuple2[Double, Double]], constantValue: Double): T = js.native
   def pool(
     input: Tensor[R3 | R4],
     windowShape: Double | (js.Tuple2[Double, Double]),
@@ -438,10 +403,7 @@ trait OpHandler extends js.Object {
   def sum[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Double, keepDims: Boolean): T = js.native
   def tan[T /* <: Tensor[Rank] */](x: T): T = js.native
   def tanh[T /* <: Tensor[Rank] */](x: T): T = js.native
-  def tile[T /* <: Tensor[Rank] */](x: T, reps: js.Array[Double]): T = js.native
   def topk[T /* <: Tensor[Rank] */](x: T, k: Double, sorted: Boolean): AnonIndices[T] = js.native
-  def transpose[T /* <: Tensor[Rank] */](x: T): T = js.native
-  def transpose[T /* <: Tensor[Rank] */](x: T, perm: js.Array[Double]): T = js.native
   def unsortedSegmentSum[T /* <: Tensor[Rank] */](x: T, segmentIds: TensorLike1D, numSegments: Double): T = js.native
   def unsortedSegmentSum[T /* <: Tensor[Rank] */](x: T, segmentIds: Tensor1D, numSegments: Double): T = js.native
   def unstack[T /* <: Tensor[Rank] */](value: T, axis: Double): js.Array[Tensor[Rank]] = js.native

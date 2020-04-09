@@ -34,16 +34,6 @@ class StructureRampartCls protected () extends StructureRampart {
   /* CompleteClass */
   override var isPublic: Boolean = js.native
   /**
-    * Whether this is your own structure. Walls and roads don't have this property as they are considered neutral structures.
-    */
-  /* CompleteClass */
-  override var my: Boolean = js.native
-  /**
-    * An object with the structure’s owner info (if present) containing the following properties: username
-    */
-  /* CompleteClass */
-  override var owner: Owner = js.native
-  /**
     * An object representing the position of this object in the room.
     */
   /* CompleteClass */

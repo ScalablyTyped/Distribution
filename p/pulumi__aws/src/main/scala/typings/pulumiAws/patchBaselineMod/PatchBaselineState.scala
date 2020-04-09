@@ -42,6 +42,9 @@ trait PatchBaselineState extends js.Object {
     * A list of rejected patches.
     */
   val rejectedPatches: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  /**
+    * A mapping of tags to assign to the resource.
+    */
   val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 

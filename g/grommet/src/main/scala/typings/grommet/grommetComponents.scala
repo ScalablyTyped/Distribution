@@ -3,6 +3,7 @@ package typings.grommet
 import typings.grommet.accordionMod.AccordionProps
 import typings.grommet.accordionPanelMod.AccordionPanelProps
 import typings.grommet.anchorMod.AnchorProps
+import typings.grommet.avatarMod.AvatarProps
 import typings.grommet.boxMod.BoxProps
 import typings.grommet.boxMod.BoxTypes
 import typings.grommet.buttonMod.ButtonProps
@@ -127,6 +128,8 @@ object grommetComponents extends grommetProps {
     ], 
     typings.grommet.grommetStrings.color
   ])]]
+  @scala.inline
+  def Avatar: ComponentType[BoxProps with AvatarProps] = typings.grommet.mod.Avatar.asInstanceOf[typings.react.mod.ComponentType[typings.grommet.boxMod.BoxProps with typings.grommet.avatarMod.AvatarProps]]
   @scala.inline
   def Box: ComponentType[
     BoxProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])

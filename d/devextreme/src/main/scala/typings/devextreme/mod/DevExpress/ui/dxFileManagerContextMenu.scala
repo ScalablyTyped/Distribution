@@ -13,7 +13,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxFileManagerContextMenu extends js.Object {
-  /** Configures context menu items' settings. */
+  /** @name dxFileManagerContextMenu.items */
   var items: js.UndefOr[
     js.Array[
       dxFileManagerContextMenuItem | create | upload | refresh | download | move | copy | rename | delete

@@ -23,7 +23,7 @@ trait CreateFileSystemWindowsConfiguration extends js.Object {
     */
   var DailyAutomaticBackupStartTime: js.UndefOr[DailyTime] = js.native
   /**
-    * Specifies the file system deployment type, valid values are the following:   MULTI_AZ_1 - Deploys a high availability file system that is configured for Multi-AZ redundancy to tolerate temporary Availability Zone (AZ) unavailability. You can only deploy a Multi-AZ file system in AWS Regions that have a minimum of three Availability Zones.   SINGLE_AZ_1 - (Default) Choose to deploy a file system that is configured for single AZ redundancy.   To learn more about high availability Multi-AZ file systems, see  High Availability for Amazon FSx for Windows File Server.
+    * Specifies the file system deployment type, valid values are the following:    MULTI_AZ_1 - Deploys a high availability file system that is configured for Multi-AZ redundancy to tolerate temporary Availability Zone (AZ) unavailability. You can only deploy a Multi-AZ file system in AWS Regions that have a minimum of three Availability Zones. Also supports HDD storage type    SINGLE_AZ_1 - (Default) Choose to deploy a file system that is configured for single AZ redundancy.    SINGLE_AZ_2 - The latest generation Single AZ file system. Specifies a file system that is configured for single AZ redundancy and supports HDD storage type.   For more information, see  Availability and Durability: Single-AZ and Multi-AZ File Systems.
     */
   var DeploymentType: js.UndefOr[WindowsDeploymentType] = js.native
   /**

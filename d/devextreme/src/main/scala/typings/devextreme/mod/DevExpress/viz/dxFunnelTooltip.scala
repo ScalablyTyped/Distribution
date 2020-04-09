@@ -13,11 +13,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxFunnelTooltip extends BaseWidgetTooltip {
-  /** Specifies a custom template for a tooltip. */
+  /** @name dxFunnel.Options.tooltip.contentTemplate */
   var contentTemplate: js.UndefOr[
     template | (js.Function2[/* info */ AnonPercent, /* element */ dxElement, String | Element | JQuery])
   ] = js.undefined
-  /** Customizes a specific tooltip's appearance. */
+  /** @name dxFunnel.Options.tooltip.customizeTooltip */
   var customizeTooltip: js.UndefOr[js.Function1[/* info */ AnonPercent, _]] = js.undefined
 }
 

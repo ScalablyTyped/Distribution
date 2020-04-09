@@ -270,7 +270,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined parent std.Pick<std.Window, std.Exclude<keyof std.Window, 'top' | 'self' | 'window'>> */
-/* Inlined parent node.vm.Context */
 @js.native
 trait DOMWindow
   extends /* key */ StringDictionary[js.Any] {

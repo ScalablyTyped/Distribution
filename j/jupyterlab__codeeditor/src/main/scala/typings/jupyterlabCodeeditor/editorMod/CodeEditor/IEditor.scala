@@ -54,6 +54,10 @@ trait IEditor
     */
   val model: IModel = js.native
   /**
+    * Replaces selection with the given text.
+    */
+  var replaceSelection: js.UndefOr[js.Function1[/* text */ String, Unit]] = js.native
+  /**
     * The default selection style for the editor.
     */
   var selectionStyle: ISelectionStyle = js.native

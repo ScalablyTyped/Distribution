@@ -19,7 +19,7 @@ trait ExecuteStatementRequest extends js.Object {
     */
   var includeResultMetadata: js.UndefOr[Boolean] = js.native
   /**
-    * The parameters for the SQL statement.
+    * The parameters for the SQL statement.  Array parameters are not supported. 
     */
   var parameters: js.UndefOr[SqlParametersList] = js.native
   /**

@@ -49,39 +49,39 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxDataGridColumn extends GridBaseColumn {
-  /** Specifies whether data from this column should be exported. Applies only if the column is visible. */
+  /** @name dxDataGridColumn.allowExporting */
   var allowExporting: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether the user can group data by values of this column. Applies only when grouping is enabled. */
+  /** @name dxDataGridColumn.allowGrouping */
   var allowGrouping: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether groups appear expanded or not when records are grouped by a specific column. Setting this option makes sense only when grouping is allowed for this column. */
+  /** @name dxDataGridColumn.autoExpandGroup */
   var autoExpandGroup: js.UndefOr[Boolean] = js.undefined
-  /** Allows you to customize buttons in the editing column or create a custom command column. Applies only if the column's type is "buttons". */
+  /** @name dxDataGridColumn.buttons */
   var buttons: js.UndefOr[js.Array[cancel | delete | edit | save | undelete | dxDataGridColumnButton]] = js.undefined
-  /** Specifies a field name or a function that returns a field name or a value to be used for grouping column cells. */
+  /** @name dxDataGridColumn.calculateGroupValue */
   var calculateGroupValue: js.UndefOr[String | (js.Function1[/* rowData */ js.Any, _])] = js.undefined
-  /** Specifies a custom template for data cells. */
+  /** @name dxDataGridColumn.cellTemplate */
   var cellTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* cellElement */ dxElement, /* cellInfo */ AnonOldValue, _])
   ] = js.undefined
-  /** An array of grid columns. */
+  /** @name dxDataGridColumn.columns */
   var columns: js.UndefOr[js.Array[dxDataGridColumn | String]] = js.undefined
-  /** Specifies a custom template for data cells in editing state. */
+  /** @name dxDataGridColumn.editCellTemplate */
   var editCellTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* cellElement */ dxElement, /* cellInfo */ AnonRowIndex, _])
   ] = js.undefined
-  /** Specifies a custom template for group cells (group rows). */
+  /** @name dxDataGridColumn.groupCellTemplate */
   var groupCellTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* cellElement */ dxElement, /* cellInfo */ AnonGroupContinuedMessage, _])
   ] = js.undefined
-  /** Specifies the index of a column when grid records are grouped by the values of this column. */
+  /** @name dxDataGridColumn.groupIndex */
   var groupIndex: js.UndefOr[Double] = js.undefined
-  /** Specifies a custom template for column headers. */
+  /** @name dxDataGridColumn.headerCellTemplate */
   var headerCellTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* columnHeader */ dxElement, /* headerInfo */ AnonColumnColumnIndex, _])
   ] = js.undefined
-  /** Specifies whether or not to display the column when grid records are grouped by it. */
+  /** @name dxDataGridColumn.showWhenGrouped */
   var showWhenGrouped: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the command column that this object customizes. */
+  /** @name dxDataGridColumn.type */
   var `type`: js.UndefOr[adaptive | buttons | detailExpand | groupExpand | selection] = js.undefined
 }
 

@@ -1,6 +1,5 @@
 package typings.validator
 
-import typings.validator.mod.validator.AlphaLocale
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,6 +13,7 @@ object isAlphaMod extends js.Object {
     * @param [locale] - AlphaLocale
     */
   def default(str: String): Boolean = js.native
-  def default(str: String, locale: AlphaLocale): Boolean = js.native
+  def default(str: String, locale: typings.validator.mod.validator.AlphaLocale): Boolean = js.native
+  type AlphaLocale = typings.validator.mod.validator.AlphaLocale
 }
 

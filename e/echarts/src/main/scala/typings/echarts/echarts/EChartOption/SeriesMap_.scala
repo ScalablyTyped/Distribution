@@ -1,12 +1,12 @@
 package typings.echarts.echarts.EChartOption
 
 import typings.echarts.AnonAnimationAnimationDelay
-import typings.echarts.AnonAnimationDelayAnimationDelayUpdate
 import typings.echarts.AnonAreaColorEmphasis
 import typings.echarts.AnonBorderWidth
 import typings.echarts.AnonExtraCssText
 import typings.echarts.AnonMin
 import typings.echarts.AnonPrecision
+import typings.echarts.AnonSymbolSize
 import typings.echarts.echarts.EChartOption.SeriesMap.DataObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -304,7 +304,7 @@ trait SeriesMap_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-map.markArea
     */
-  var markArea: js.UndefOr[AnonAnimationDelayAnimationDelayUpdate] = js.undefined
+  var markArea: js.UndefOr[AnonAnimationAnimationDelay] = js.undefined
   /**
     * Use a line in the chart to illustrate.
     *
@@ -318,7 +318,7 @@ trait SeriesMap_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-map.markPoint
     */
-  var markPoint: js.UndefOr[AnonAnimationAnimationDelay] = js.undefined
+  var markPoint: js.UndefOr[AnonSymbolSize] = js.undefined
   /**
     * Series name used for displaying in
     * [tooltip](https://echarts.apache.org/en/option.html#tooltip)
@@ -518,9 +518,9 @@ object SeriesMap_ {
     left: Double | String = null,
     map: String = null,
     mapValueCalculation: String = null,
-    markArea: AnonAnimationDelayAnimationDelayUpdate = null,
+    markArea: AnonAnimationAnimationDelay = null,
     markLine: AnonPrecision = null,
-    markPoint: AnonAnimationAnimationDelay = null,
+    markPoint: AnonSymbolSize = null,
     name: String = null,
     nameMap: js.Object = null,
     right: Double | String = null,

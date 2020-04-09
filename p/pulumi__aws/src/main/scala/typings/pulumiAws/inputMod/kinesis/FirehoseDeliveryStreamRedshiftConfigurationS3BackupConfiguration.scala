@@ -21,7 +21,7 @@ trait FirehoseDeliveryStreamRedshiftConfigurationS3BackupConfiguration extends j
     */
   var bufferSize: js.UndefOr[Input[Double]] = js.native
   /**
-    * The CloudWatch Logging Options for the delivery stream. More details are given below.
+    * The CloudWatch Logging Options for the delivery stream. More details are given below
     */
   var cloudwatchLoggingOptions: js.UndefOr[
     Input[

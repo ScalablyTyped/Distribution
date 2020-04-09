@@ -1,8 +1,8 @@
 package typings.ionicCore
 
 import typings.ionicCore.mod.Color
-import typings.ionicCore.stencilCoreMod.ComponentInterface
-import typings.ionicCore.stencilCoreMod.EventEmitter
+import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
+import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
 import typings.ionicCore.tabBarInterfaceMod.TabBarChangedEventDetail
 import typings.std.HTMLElement
 import scala.scalajs.js

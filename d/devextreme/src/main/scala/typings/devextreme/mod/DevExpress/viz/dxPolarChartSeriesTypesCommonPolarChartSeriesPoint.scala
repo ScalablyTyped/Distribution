@@ -17,25 +17,25 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxPolarChartSeriesTypesCommonPolarChartSeriesPoint extends js.Object {
-  /** Specifies border options for points in the line and area series. */
+  /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.point.border */
   var border: js.UndefOr[AnonColorVisible] = js.undefined
-  /** Specifies the points color. */
+  /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.point.color */
   var color: js.UndefOr[String] = js.undefined
-  /** Specifies what series points to highlight when a point is hovered over. */
+  /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.point.hoverMode */
   var hoverMode: js.UndefOr[allArgumentPoints | allSeriesPoints | none | onlyPoint] = js.undefined
-  /** An object defining configuration options for a hovered point. */
+  /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.point.hoverStyle */
   var hoverStyle: js.UndefOr[AnonSize] = js.undefined
-  /** An object specifying the parameters of an image that is used as a point marker. */
+  /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.point.image */
   var image: js.UndefOr[String | AnonUrl] = js.undefined
-  /** Specifies what series points to highlight when a point is selected. */
+  /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.point.selectionMode */
   var selectionMode: js.UndefOr[allArgumentPoints | allSeriesPoints | none | onlyPoint] = js.undefined
-  /** An object defining configuration options for a selected point. */
+  /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.point.selectionStyle */
   var selectionStyle: js.UndefOr[AnonSize] = js.undefined
-  /** Specifies the point diameter in pixels for those series that represent data points as symbols (not as bars for instance). */
+  /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.point.size */
   var size: js.UndefOr[Double] = js.undefined
-  /** Specifies a symbol for presenting points of the line and area series. */
+  /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.point.symbol */
   var symbol: js.UndefOr[circle | cross | polygon | square | triangle] = js.undefined
-  /** Specifies the points visibility for a line and area series. */
+  /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.point.visible */
   var visible: js.UndefOr[Boolean] = js.undefined
 }
 

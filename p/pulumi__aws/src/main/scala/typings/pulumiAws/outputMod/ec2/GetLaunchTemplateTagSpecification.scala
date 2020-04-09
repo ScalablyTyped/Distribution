@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait GetLaunchTemplateTagSpecification extends js.Object {
   var resourceType: String = js.native
   /**
-    * (Optional) A mapping of tags to assign to the launch template.
+    * A mapping of tags, each pair of which must exactly match a pair on the desired Launch Template.
     */
   var tags: StringDictionary[js.Any] = js.native
 }

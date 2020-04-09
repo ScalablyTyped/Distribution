@@ -151,6 +151,7 @@ trait reachMenuButtonProps {
   type MenuLinkScriptProps[T /* <: SupportedMenuLinkComponent */] = typings.reachMenuButton.mod.MenuLinkProps[T]
   type MenuLinkSectionProps[T /* <: SupportedMenuLinkComponent */] = typings.reachMenuButton.mod.MenuLinkProps[T]
   type MenuLinkSelectProps[T /* <: SupportedMenuLinkComponent */] = typings.reachMenuButton.mod.MenuLinkProps[T]
+  type MenuLinkSlotProps[T /* <: SupportedMenuLinkComponent */] = typings.reachMenuButton.mod.MenuLinkProps[T]
   type MenuLinkSmallProps[T /* <: SupportedMenuLinkComponent */] = typings.reachMenuButton.mod.MenuLinkProps[T]
   type MenuLinkSourceProps[T /* <: SupportedMenuLinkComponent */] = typings.reachMenuButton.mod.MenuLinkProps[T]
   type MenuLinkSpanProps[T /* <: SupportedMenuLinkComponent */] = typings.reachMenuButton.mod.MenuLinkProps[T]

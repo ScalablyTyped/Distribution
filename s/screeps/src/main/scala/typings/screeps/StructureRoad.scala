@@ -11,7 +11,8 @@ import scala.scalajs.js.annotation._
   */
 trait StructureRoad
   extends Structure[STRUCTURE_ROAD]
-     with AnyStructure {
+     with AnyStructure
+     with ConcreteStructure[js.Any] {
   /**
     * The amount of game ticks when this road will lose some hit points.
     */

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 object reactTagsinputComponents extends reactTagsinputProps {
   @scala.inline
-  def ReactTagsinput: ComponentType[ReactTagsinputProps] = js.constructorOf[typings.reactTagsinput.mod.^].asInstanceOf[typings.react.mod.ComponentType[ReactTagsinputProps]]
+  def ReactTagsinput[Tag]: ComponentType[ReactTagsinputProps[Tag]] = js.constructorOf[typings.reactTagsinput.mod.^[Tag]].asInstanceOf[typings.react.mod.ComponentType[ReactTagsinputProps[Tag]]]
 }
 

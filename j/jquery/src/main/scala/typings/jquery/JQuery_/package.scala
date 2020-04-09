@@ -65,7 +65,7 @@ package object JQuery_ {
     - typings.std.HTMLAllCollection
   */
   type Falsy = js.UndefOr[typings.jquery.JQuery_._Falsy | scala.Null | typings.std.HTMLAllCollection]
-  type Node = typings.std.Element | typings.std.Text | typings.std.Comment | typings.std.DocumentFragment
+  type Node = typings.std.Element | typings.std.Text | typings.std.Comment | typings.std.Document_ | typings.std.DocumentFragment
   /**
     * The PlainObject type is a JavaScript object containing zero or more key-value pairs. The plain object is, in other words, an Object object. It is designated "plain" in jQuery documentation to distinguish it from other kinds of JavaScript objects: for example, null, user-defined arrays, and host objects such as document, all of which have a typeof value of "object."
     *

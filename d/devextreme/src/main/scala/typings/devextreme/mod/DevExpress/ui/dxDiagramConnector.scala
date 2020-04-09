@@ -7,11 +7,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxDiagramConnector extends dxDiagramItem {
-  /** Specifies the connector's start node key. */
+  /** @name dxDiagramConnector.fromKey */
   var fromKey: js.UndefOr[js.Any] = js.undefined
-  /** Specifies the connector's text. */
+  /** @name dxDiagramConnector.texts */
   var texts: js.UndefOr[js.Array[String]] = js.undefined
-  /** Specifies the connector's end node key. */
+  /** @name dxDiagramConnector.toKey */
   var toKey: js.UndefOr[js.Any] = js.undefined
 }
 

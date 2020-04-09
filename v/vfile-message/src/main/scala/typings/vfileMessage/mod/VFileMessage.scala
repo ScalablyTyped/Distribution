@@ -1,5 +1,8 @@
 package typings.vfileMessage.mod
 
+import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.Instantiable2
+import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Error
 import typings.unist.mod.Node
@@ -18,7 +21,27 @@ trait VFileMessage
      with /**
   * It’s OK to store custom data directly on the VMessage, some of those are handled by utilities.
   */
-/* key */ StringDictionary[js.Any] {
+/* key */ StringDictionary[js.Any]
+     with /**
+  * Constructor of a message for `reason` at `position` from `origin`.
+  * When an error is passed in as `reason`, copies the `stack`.
+  *
+  * @param reason Reason for message (`string` or `Error`). Uses the stack and message of the error if given.
+  * @param position Place at which the message occurred in a file (`Node`, `Position`, or `Point`, optional).
+  * @param origin Place in code the message originates from (`string`, optional).
+  */
+Instantiable1[(/* reason */ Error) | (/* reason */ String), VFileMessage]
+     with Instantiable2[
+      (/* reason */ Error) | (/* reason */ String), 
+      (/* position */ Node) | (/* position */ Point) | (/* position */ Position), 
+      VFileMessage
+    ]
+     with Instantiable3[
+      (/* reason */ Error) | (/* reason */ String), 
+      (/* position */ Node) | (/* position */ Point) | (/* position */ Position), 
+      /* origin */ String, 
+      VFileMessage
+    ] {
   /**
     * Starting column of error.
     */

@@ -6,16 +6,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * A default resolver that uses a session and a contents manager.
+  * A default resolver that uses a given reference path and a contents manager.
   */
 @JSImport("@jupyterlab/rendermime/lib/registry", "RenderMimeRegistry.UrlResolver")
 @js.native
 class UrlResolver protected () extends IResolver {
   /**
-    * Create a new url resolver for a console.
+    * Create a new url resolver.
     */
   def this(options: IUrlResolverOptions) = this()
   var _contents: js.Any = js.native
+  var _path: js.Any = js.native
   var _session: js.Any = js.native
   /**
     * Get the download url for a given absolute url path.
@@ -37,6 +38,11 @@ class UrlResolver protected () extends IResolver {
     */
   @JSName("isLocal")
   def isLocal_MUrlResolver(url: String): Boolean = js.native
+  /**
+    * The path of the object, from which local urls can be derived.
+    */
+  def path(): String = js.native
+  def path(value: String): js.Any = js.native
   /**
     * Resolve a relative url to an absolute url path.
     */

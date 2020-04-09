@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait TagsInput
-  extends Component[ReactTagsInputProps, js.Object, js.Any] {
+trait TagsInput[Tag]
+  extends Component[ReactTagsInputProps[Tag], js.Object, js.Any] {
   def accept(): js.Any = js.native
   def addTag(tag: Tag): js.Any = js.native
   def blur(): Unit = js.native

@@ -13,15 +13,14 @@ trait SpotInstanceRequestRootBlockDevice extends js.Object {
     */
   var deleteOnTermination: js.UndefOr[Input[Boolean]] = js.native
   /**
-    * Enables [EBS
-    * encryption](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html)
-    * on the volume (Default: `false`). Cannot be used with `snapshotId`. Must be configured to perform drift detection.
+    * Enable volume encryption. (Default: `false`). Must be configured to perform drift detection.
     */
   var encrypted: js.UndefOr[Input[Boolean]] = js.native
   /**
     * The amount of provisioned
     * [IOPS](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-io-characteristics.html).
-    * This must be set with a `volumeType` of `"io1"`.
+    * This is only valid for `volumeType` of `"io1"`, and must be specified if
+    * using that type
     */
   var iops: js.UndefOr[Input[Double]] = js.native
   /**
@@ -34,8 +33,7 @@ trait SpotInstanceRequestRootBlockDevice extends js.Object {
     */
   var volumeSize: js.UndefOr[Input[Double]] = js.native
   /**
-    * The type of volume. Can be `"standard"`, `"gp2"`,
-    * or `"io1"`. (Default: `"gp2"`).
+    * The type of volume. Can be `"standard"`, `"gp2"`, `"io1"`, `"sc1"`, or `"st1"`. (Default: `"standard"`).
     */
   var volumeType: js.UndefOr[Input[String]] = js.native
 }

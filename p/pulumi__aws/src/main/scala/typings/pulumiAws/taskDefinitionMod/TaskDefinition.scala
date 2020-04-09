@@ -1,6 +1,7 @@
 package typings.pulumiAws.taskDefinitionMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.pulumiAws.outputMod.ecs.TaskDefinitionInferenceAccelerator
 import typings.pulumiAws.outputMod.ecs.TaskDefinitionPlacementConstraint
 import typings.pulumiAws.outputMod.ecs.TaskDefinitionProxyConfiguration
 import typings.pulumiAws.outputMod.ecs.TaskDefinitionVolume
@@ -50,6 +51,10 @@ class TaskDefinition protected () extends CustomResource {
     * A unique name for your task definition.
     */
   val family: Output_[String] = js.native
+  /**
+    * Configuration block(s) with Inference Accelerators settings. Detailed below.
+    */
+  val inferenceAccelerators: Output_[js.UndefOr[js.Array[TaskDefinitionInferenceAccelerator]]] = js.native
   /**
     * The IPC resource namespace to be used for the containers in the task The valid values are `host`, `task`, and `none`.
     */

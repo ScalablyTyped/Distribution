@@ -331,7 +331,13 @@ object fridaGumStrings {
   sealed trait d9 extends Arm64Register
   
   @js.native
+  sealed trait da extends PointerAuthenticationKey
+  
+  @js.native
   sealed trait darwin extends Platform
+  
+  @js.native
+  sealed trait db extends PointerAuthenticationKey
   
   @js.native
   sealed trait default
@@ -433,7 +439,13 @@ object fridaGumStrings {
        with ArmConditionCode
   
   @js.native
+  sealed trait ia extends PointerAuthenticationKey
+  
+  @js.native
   sealed trait ia32 extends Architecture
+  
+  @js.native
+  sealed trait ib extends PointerAuthenticationKey
   
   @js.native
   sealed trait `illegal-instruction` extends ExceptionType
@@ -1663,7 +1675,11 @@ object fridaGumStrings {
   @scala.inline
   def d9: d9 = "d9".asInstanceOf[d9]
   @scala.inline
+  def da: da = "da".asInstanceOf[da]
+  @scala.inline
   def darwin: darwin = "darwin".asInstanceOf[darwin]
+  @scala.inline
+  def db: db = "db".asInstanceOf[db]
   @scala.inline
   def default: default = "default".asInstanceOf[default]
   @scala.inline
@@ -1717,7 +1733,11 @@ object fridaGumStrings {
   @scala.inline
   def hs: hs = "hs".asInstanceOf[hs]
   @scala.inline
+  def ia: ia = "ia".asInstanceOf[ia]
+  @scala.inline
   def ia32: ia32 = "ia32".asInstanceOf[ia32]
+  @scala.inline
+  def ib: ib = "ib".asInstanceOf[ib]
   @scala.inline
   def `illegal-instruction`: `illegal-instruction` = "illegal-instruction".asInstanceOf[`illegal-instruction`]
   @scala.inline

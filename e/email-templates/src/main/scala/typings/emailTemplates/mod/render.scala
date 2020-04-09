@@ -12,6 +12,7 @@ object render extends js.Object {
     * @param view The Html pug to render
     * @param locals The template Variables
     */
+  def apply(view: String): js.Promise[String] = js.native
   def apply(view: String, locals: js.Any): js.Promise[String] = js.native
 }
 

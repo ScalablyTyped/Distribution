@@ -50,6 +50,10 @@ trait AddOutputRequest extends js.Object {
     * The stream ID that you want to use for this transport. This parameter applies only to Zixi-based streams.
     */
   var StreamId: js.UndefOr[string] = js.native
+  /**
+    * The name of the VPC interface attachment to use for this output.
+    */
+  var VpcInterfaceAttachment: js.UndefOr[typings.awsSdk.mediaconnectMod.VpcInterfaceAttachment] = js.native
 }
 
 object AddOutputRequest {
@@ -65,7 +69,8 @@ object AddOutputRequest {
     Port: Int | Double = null,
     RemoteId: string = null,
     SmoothingLatency: Int | Double = null,
-    StreamId: string = null
+    StreamId: string = null,
+    VpcInterfaceAttachment: VpcInterfaceAttachment = null
   ): AddOutputRequest = {
     val __obj = js.Dynamic.literal(Protocol = Protocol.asInstanceOf[js.Any])
     if (CidrAllowList != null) __obj.updateDynamic("CidrAllowList")(CidrAllowList.asInstanceOf[js.Any])
@@ -78,6 +83,7 @@ object AddOutputRequest {
     if (RemoteId != null) __obj.updateDynamic("RemoteId")(RemoteId.asInstanceOf[js.Any])
     if (SmoothingLatency != null) __obj.updateDynamic("SmoothingLatency")(SmoothingLatency.asInstanceOf[js.Any])
     if (StreamId != null) __obj.updateDynamic("StreamId")(StreamId.asInstanceOf[js.Any])
+    if (VpcInterfaceAttachment != null) __obj.updateDynamic("VpcInterfaceAttachment")(VpcInterfaceAttachment.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddOutputRequest]
   }
 }

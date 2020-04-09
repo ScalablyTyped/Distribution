@@ -17,8 +17,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Dropdown
   extends Component[DropDownProps, js.Any, js.Any] {
-  def getPlacement(): bottomRight | topLeft | topCenter | topRight | bottomLeft | bottomCenter = js.native
-  def getPlacement(direction: String): bottomRight | topLeft | topCenter | topRight | bottomLeft | bottomCenter = js.native
+  def getPlacement(): topLeft | topCenter | topRight | bottomLeft | bottomCenter | bottomRight = js.native
+  def getPlacement(direction: String): topLeft | topCenter | topRight | bottomLeft | bottomCenter | bottomRight = js.native
   def getTransitionName(): String = js.native
   def renderDropDown(hasGetPopupContainerGetPrefixClsDirection: ConfigConsumerProps): Element = js.native
   def renderOverlay(prefixCls: String): ReactElement = js.native

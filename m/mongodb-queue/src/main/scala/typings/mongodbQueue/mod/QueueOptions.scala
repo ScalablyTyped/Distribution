@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait QueueOptions extends js.Object {
-  var deadQueue: js.UndefOr[String] = js.undefined
+  var deadQueue: js.UndefOr[Queue] = js.undefined
   var delay: js.UndefOr[Double] = js.undefined
   var maxRetries: js.UndefOr[Double] = js.undefined
   var visibility: js.UndefOr[Double] = js.undefined
@@ -14,7 +14,7 @@ trait QueueOptions extends js.Object {
 object QueueOptions {
   @scala.inline
   def apply(
-    deadQueue: String = null,
+    deadQueue: Queue = null,
     delay: Int | Double = null,
     maxRetries: Int | Double = null,
     visibility: Int | Double = null

@@ -30,11 +30,14 @@ class Connection protected () extends BaseConnection {
   var instanceUrl: String = js.native
   var metadata: Metadata = js.native
   var oauth2: OAuth2 = js.native
+  var refreshToken: js.UndefOr[String] = js.native
   var streaming: Streaming = js.native
   var tooling: Tooling = js.native
   var version: String = js.native
   def authorize(code: String): js.Promise[UserInfo] = js.native
   def authorize(code: String, callback: js.Function2[/* err */ Error, /* res */ UserInfo, Unit]): js.Promise[UserInfo] = js.native
+  def identity(): js.Promise[IdentityInfo] = js.native
+  def identity(callback: js.Function2[/* err */ Error, /* res */ IdentityInfo, Unit]): js.Promise[IdentityInfo] = js.native
   def initialize(): Unit = js.native
   def initialize(options: ConnectionOptions): Unit = js.native
   def limits(): js.Promise[LimitsInfo] = js.native

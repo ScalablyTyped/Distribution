@@ -26,33 +26,33 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxGanttOptions extends WidgetOptions[dxGantt] {
-  /** Specifies whether users can select tasks in the Gantt. */
+  /** @name dxGantt.Options.allowSelection */
   var allowSelection: js.UndefOr[Boolean] = js.undefined
-  /** An array of columns in the Gantt. */
+  /** @name dxGantt.Options.columns */
   var columns: js.UndefOr[js.Array[dxTreeListColumn | String]] = js.undefined
-  /** Configures dependencies. */
+  /** @name dxGantt.Options.dependencies */
   var dependencies: js.UndefOr[AnonKeyExpr] = js.undefined
-  /** Configures edit options. */
+  /** @name dxGantt.Options.editing */
   var editing: js.UndefOr[AnonAllowDependencyAdding] = js.undefined
-  /** A function that is executed after users select a task or clear its selection. */
+  /** @name dxGantt.Options.onSelectionChanged */
   var onSelectionChanged: js.UndefOr[js.Function1[/* e */ AnonSelectedRowKey, _]] = js.undefined
-  /** Configures resource assignments. */
+  /** @name dxGantt.Options.resourceAssignments */
   var resourceAssignments: js.UndefOr[AnonResourceIdExpr] = js.undefined
-  /** Configures task resources. */
+  /** @name dxGantt.Options.resources */
   var resources: js.UndefOr[AnonTextExpr] = js.undefined
-  /** Specifies the zoom level of tasks in the Gantt chart. */
+  /** @name dxGantt.Options.scaleType */
   var scaleType: js.UndefOr[auto | minutes | hours | days | weeks | months | quarters | years] = js.undefined
-  /** Allows you to select a row or determine which row is selected. */
+  /** @name dxGantt.Options.selectedRowKey */
   var selectedRowKey: js.UndefOr[js.Any] = js.undefined
-  /** Specifies whether to display task resources. */
+  /** @name dxGantt.Options.showResources */
   var showResources: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether to show/hide horizontal faint lines that separate tasks. */
+  /** @name dxGantt.Options.showRowLines */
   var showRowLines: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the width of the task list in pixels. */
+  /** @name dxGantt.Options.taskListWidth */
   var taskListWidth: js.UndefOr[Double] = js.undefined
-  /** Specifies a task's title position. */
+  /** @name dxGantt.Options.taskTitlePosition */
   var taskTitlePosition: js.UndefOr[inside | outside | none] = js.undefined
-  /** Configures tasks. */
+  /** @name dxGantt.Options.tasks */
   var tasks: js.UndefOr[AnonEndExpr] = js.undefined
 }
 

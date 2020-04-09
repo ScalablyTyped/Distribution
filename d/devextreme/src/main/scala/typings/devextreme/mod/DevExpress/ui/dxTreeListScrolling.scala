@@ -12,7 +12,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxTreeListScrolling extends GridBaseScrolling {
-  /** Specifies the scrolling mode. */
+  /** @name dxTreeList.Options.scrolling.mode */
   var mode: js.UndefOr[standard | virtual] = js.undefined
 }
 

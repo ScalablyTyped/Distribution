@@ -12,6 +12,7 @@ import typings.react.mod.FormEvent
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
@@ -271,7 +272,7 @@ object StrictTableCellProps {
     onProgress: SyntheticEvent[HTMLTableCellElement, Event_] => Unit = null,
     onRateChange: SyntheticEvent[HTMLTableCellElement, Event_] => Unit = null,
     onReset: FormEvent[HTMLTableCellElement] => Unit = null,
-    onScroll: UIEvent[HTMLTableCellElement] => Unit = null,
+    onScroll: UIEvent[HTMLTableCellElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[HTMLTableCellElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[HTMLTableCellElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[HTMLTableCellElement, Event_] => Unit = null,

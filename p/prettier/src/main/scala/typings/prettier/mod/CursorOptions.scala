@@ -42,7 +42,7 @@ object CursorOptions {
     parser: BuiltInParserName | CustomParser = null,
     plugins: js.Array[String | Plugin] = null,
     printWidth: Int | Double = null,
-    proseWrap: Boolean | always | never | preserve = null,
+    proseWrap: always | never | preserve = null,
     quoteProps: `as-needed` | consistent | preserve = null,
     rangeEnd: Int | Double = null,
     rangeStart: Int | Double = null,

@@ -4,11 +4,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Specifies the widget's size in pixels. */
+/** @name BaseWidget.Options.size */
 trait BaseWidgetSize extends js.Object {
-  /** Specifies the height of the widget in pixels. */
+  /** @name BaseWidget.Options.size.height */
   var height: js.UndefOr[Double] = js.undefined
-  /** Specifies the width of the widget in pixels. */
+  /** @name BaseWidget.Options.size.width */
   var width: js.UndefOr[Double] = js.undefined
 }
 

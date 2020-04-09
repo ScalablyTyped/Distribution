@@ -11,7 +11,8 @@ import scala.scalajs.js.annotation._
   */
 trait StructureKeeperLair
   extends OwnedStructure[STRUCTURE_KEEPER_LAIR]
-     with AnyOwnedStructure {
+     with AnyOwnedStructure
+     with ConcreteStructure[js.Any] {
   /**
     * Time to spawning of the next Source Keeper.
     */

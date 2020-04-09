@@ -1,7 +1,7 @@
 
 # Scala.js typings for expo-web-browser
 
-Typings are for version 8.0.0
+Typings are for version 8.1.0
 
 ## Library description:
 Provides access to the system's web browser and supports handling redirects. On iOS, it uses SFSafariViewController or SFAuthenticationSession, depending on the method you call, and on Android it uses ChromeCustomTabs. As of iOS 11, SFSafariViewController

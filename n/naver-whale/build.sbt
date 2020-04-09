@@ -1,13 +1,14 @@
 organization := "org.scalablytyped"
 name := "naver-whale"
-version := "0.0-unknown-dt-20200310Z-298573"
+version := "0.0-unknown-dt-20200310Z-554476"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "chrome" % "0.0-unknown-dt-20200318Z-a80a5a",
+  "org.scalablytyped" %%% "chrome" % "0.0-unknown-dt-20200327Z-9bf1c7",
   "org.scalablytyped" %%% "filesystem" % "0.0-unknown-dt-20200225Z-0b7aec",
   "org.scalablytyped" %%% "filewriter" % "0.0-unknown-dt-20200226Z-e61265",
+  "org.scalablytyped" %%% "har-format" % "1.2-dt-20190213Z-547015",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")

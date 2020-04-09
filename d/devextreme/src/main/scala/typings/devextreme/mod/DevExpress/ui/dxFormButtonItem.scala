@@ -15,26 +15,26 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxFormButtonItem extends js.Object {
-  /** @deprecated Use horizontalAlignment instead. */
-  /** Specifies the button's horizontal alignment. */
+  /** @deprecated */
+  /** @name dxFormButtonItem.alignment */
   var alignment: js.UndefOr[center | left | right] = js.undefined
-  /** Configures the button. */
+  /** @name dxFormButtonItem.buttonOptions */
   var buttonOptions: js.UndefOr[dxButtonOptions] = js.undefined
-  /** Specifies how many columns the item spans. */
+  /** @name dxFormButtonItem.colSpan */
   var colSpan: js.UndefOr[Double] = js.undefined
-  /** Specifies a CSS class to be applied to the item. */
+  /** @name dxFormButtonItem.cssClass */
   var cssClass: js.UndefOr[String] = js.undefined
-  /** Specifies the button's horizontal alignment. */
+  /** @name dxFormButtonItem.horizontalAlignment */
   var horizontalAlignment: js.UndefOr[center | left | right] = js.undefined
-  /** Specifies the item's type. Set it to "button" to create a button item. */
+  /** @name dxFormButtonItem.itemType */
   var itemType: js.UndefOr[empty | group | simple | tabbed | button] = js.undefined
-  /** Specifies the item's identifier. */
+  /** @name dxFormButtonItem.name */
   var name: js.UndefOr[String] = js.undefined
-  /** Specifies the button's vertical alignment. */
+  /** @name dxFormButtonItem.verticalAlignment */
   var verticalAlignment: js.UndefOr[bottom | center | top] = js.undefined
-  /** Specifies whether the item is visible. */
+  /** @name dxFormButtonItem.visible */
   var visible: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the item's position regarding other items in a group, tab, or the whole widget. */
+  /** @name dxFormButtonItem.visibleIndex */
   var visibleIndex: js.UndefOr[Double] = js.undefined
 }
 

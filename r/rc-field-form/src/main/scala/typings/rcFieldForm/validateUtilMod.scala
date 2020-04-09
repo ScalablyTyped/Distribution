@@ -4,6 +4,7 @@ import typings.rcFieldForm.interfaceMod.InternalNamePath
 import typings.rcFieldForm.interfaceMod.RuleObject
 import typings.rcFieldForm.interfaceMod.StoreValue
 import typings.rcFieldForm.interfaceMod.ValidateOptions
+import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,14 +16,16 @@ object validateUtilMod extends js.Object {
     namePath: InternalNamePath,
     value: StoreValue,
     rules: js.Array[RuleObject],
-    options: ValidateOptions
+    options: ValidateOptions,
+    validateFirst: Boolean
   ): js.Promise[js.Array[String]] = js.native
   def validateRules(
     namePath: InternalNamePath,
     value: StoreValue,
     rules: js.Array[RuleObject],
     options: ValidateOptions,
-    validateFirst: Boolean
+    validateFirst: Boolean,
+    messageVariables: Record[String, String]
   ): js.Promise[js.Array[String]] = js.native
 }
 

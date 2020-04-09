@@ -17,9 +17,9 @@ class PaymentRefund () extends js.Object {
     */
   var amount_money: Money = js.native
   /**
-    * Amount of money the app developer contributed to help cover the refunded amount.
-    * Specified in the smallest denomination of the applicable currency. For example, US dollar amounts are specified in cents.
-    * See [Working with monetary amounts](/build-basics/working-with-monetary-amounts) for details.
+    * Amount of money the app developer contributed to help cover the refunded amount. Specified in the smallest
+    * denomination of the applicable currency. For example, US dollar amounts are specified in cents.
+    * See [Working with monetary amounts](https://developer.squareup.com/docs/build-basics/working-with-monetary-amounts) for details.
     */
   var app_fee_money: js.UndefOr[Money] = js.native
   /**

@@ -1,13 +1,6 @@
 package typings.sequelize.mod
 
 import typings.sequelize.sequelizeBooleans.`false`
-import typings.sequelize.sequelizeNumbers.`3`
-import typings.sequelize.sequelizeNumbers.`5`
-import typings.sequelize.sequelizeStrings.`10`
-import typings.sequelize.sequelizeStrings.`13`
-import typings.sequelize.sequelizeStrings.`4`
-import typings.sequelize.sequelizeStrings.`6`
-import typings.sequelize.sequelizeStrings.all
 import typings.sequelize.sequelizeStrings.any
 import typings.std.Date
 import typings.std.RegExp
@@ -15,6 +8,8 @@ import typings.validator.mod.validator.AlphaLocale
 import typings.validator.mod.validator.AlphanumericLocale
 import typings.validator.mod.validator.FloatLocale
 import typings.validator.mod.validator.HashAlgorithm
+import typings.validator.mod.validator.IPVersion
+import typings.validator.mod.validator.ISBNVersion
 import typings.validator.mod.validator.IdentityCardLocale
 import typings.validator.mod.validator.IsByteLengthOptions
 import typings.validator.mod.validator.IsCurrencyOptions
@@ -34,6 +29,7 @@ import typings.validator.mod.validator.IsURLOptions
 import typings.validator.mod.validator.MobilePhoneLocale
 import typings.validator.mod.validator.NormalizeEmailOptions
 import typings.validator.mod.validator.PostalCodeLocale
+import typings.validator.mod.validator.UUIDVersion
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -126,6 +122,10 @@ trait ValidatorJSType extends js.Object {
     */
   def isBoolean(str: String): Boolean = js.native
   /**
+    * Check if the string is a valid BTC address.
+    */
+  def isBtcAddress(str: String): Boolean = js.native
+  /**
     * Check if the string's length (in UTF-8 bytes) falls in a range.
     *
     * @param [options] - Options
@@ -162,6 +162,10 @@ trait ValidatorJSType extends js.Object {
     */
   def isDivisibleBy(str: String, number: Double): Boolean = js.native
   /**
+    * Check if the string is an EAN (European Article Number).
+    */
+  def isEAN(str: String): Boolean = js.native
+  /**
     * Check if the string is an email.
     *
     * @param [options] - Options
@@ -175,6 +179,10 @@ trait ValidatorJSType extends js.Object {
     */
   def isEmpty(str: String): Boolean = js.native
   def isEmpty(str: String, options: IsEmptyOptions): Boolean = js.native
+  /**
+    * Check if the string is an [Ethereum](https://ethereum.org/) address using basic regex. Does not validate address checksums.
+    */
+  def isEthereumAddress(str: String): Boolean = js.native
   /**
     * Check if the string is a fully qualified domain name (e.g. `domain.com`).
     *
@@ -194,6 +202,11 @@ trait ValidatorJSType extends js.Object {
     */
   def isFullWidth(str: String): Boolean = js.native
   /**
+    * Check if the string is an HSL (hue, saturation, lightness, optional alpha) color based on CSS Colors Level 4 specification.
+    * Comma-separated format supported. Space-separated format supported with the exception of a few edge cases (ex: hsl(200grad+.1%62%/1)).
+    */
+  def isHSL(str: String): Boolean = js.native
+  /**
     * Check if the string contains any half-width chars.
     */
   def isHalfWidth(str: String): Boolean = js.native
@@ -212,29 +225,27 @@ trait ValidatorJSType extends js.Object {
     */
   def isHexadecimal(str: String): Boolean = js.native
   /**
+    * Check if a string is a IBAN (International Bank Account Number).
+    */
+  def isIBAN(str: String): Boolean = js.native
+  /**
     * Check if the string is an IP (version 4 or 6).
     *
     * @param [version] - IP Version
     */
   def isIP(str: String): Boolean = js.native
+  def isIP(str: String, version: IPVersion): Boolean = js.native
   /**
     * Check if the string is an IP Range (version 4 only).
     */
   def isIPRange(str: String): Boolean = js.native
-  @JSName("isIP")
-  def isIP_4(str: String, version: `4`): Boolean = js.native
-  @JSName("isIP")
-  def isIP_6(str: String, version: `6`): Boolean = js.native
   /**
     * Check if the string is an ISBN (version 10 or 13).
     *
     * @param [version] - ISBN Version
     */
   def isISBN(str: String): Boolean = js.native
-  @JSName("isISBN")
-  def isISBN_10(str: String, version: `10`): Boolean = js.native
-  @JSName("isISBN")
-  def isISBN_13(str: String, version: `13`): Boolean = js.native
+  def isISBN(str: String, version: ISBNVersion): Boolean = js.native
   /**
     * Check if the string is an [ISIN](https://en.wikipedia.org/wiki/International_Securities_Identification_Number) (stock/security identifier).
     */
@@ -311,6 +322,10 @@ trait ValidatorJSType extends js.Object {
   def isLength(str: String): Boolean = js.native
   def isLength(str: String, options: IsLengthOptions): Boolean = js.native
   /**
+    * Check if the string is a locale.
+    */
+  def isLocale(str: String): Boolean = js.native
+  /**
     * Check if the string is lowercase.
     */
   def isLowercase(str: String): Boolean = js.native
@@ -368,6 +383,13 @@ trait ValidatorJSType extends js.Object {
     */
   def isOctal(str: String): Boolean = js.native
   /**
+    * Check if the string is a valid passport number relative to a specific country code.
+    *
+    * @param [countryCode] - Country code
+    */
+  def isPassportNumber(str: String): Boolean = js.native
+  def isPassportNumber(str: String, countryCode: String): Boolean = js.native
+  /**
     * Check if the string is a valid port number.
     */
   def isPort(str: String): Boolean = js.native
@@ -383,6 +405,17 @@ trait ValidatorJSType extends js.Object {
     * Check if the string is a valid [RFC 3339](https://tools.ietf.org/html/rfc3339) date.
     */
   def isRFC3339(str: String): Boolean = js.native
+  /**
+    * Check if the string is a rgb or rgba color.
+    *
+    * @param [includePercentValues=true] - If you don't want to allow to set rgb or rgba values with percents, like rgb(5%,5%,5%), or rgba(90%,90%,90%,.3), then set it to false. (defaults to true)
+    */
+  def isRgbColor(str: String): Boolean = js.native
+  def isRgbColor(str: String, includePercentValues: Boolean): Boolean = js.native
+  /**
+    * Check if the string is a Semantic Versioning Specification (SemVer).
+    */
+  def isSemVer(str: String): Boolean = js.native
   /**
     * Check if the string is of type slug.
     */
@@ -404,20 +437,7 @@ trait ValidatorJSType extends js.Object {
     * @param [version="all"] - UUID version
     */
   def isUUID(str: String): Boolean = js.native
-  @JSName("isUUID")
-  def isUUID_3(str: String, version: `3`): Boolean = js.native
-  @JSName("isUUID")
-  def isUUID_3(str: String, version: typings.sequelize.sequelizeStrings.`3`): Boolean = js.native
-  @JSName("isUUID")
-  def isUUID_4(str: String, version: typings.sequelize.sequelizeNumbers.`4`): Boolean = js.native
-  @JSName("isUUID")
-  def isUUID_4(str: String, version: `4`): Boolean = js.native
-  @JSName("isUUID")
-  def isUUID_5(str: String, version: `5`): Boolean = js.native
-  @JSName("isUUID")
-  def isUUID_5(str: String, version: typings.sequelize.sequelizeStrings.`5`): Boolean = js.native
-  @JSName("isUUID")
-  def isUUID_all(str: String, version: all): Boolean = js.native
+  def isUUID(str: String, version: UUIDVersion): Boolean = js.native
   /**
     * Check if the string is uppercase.
     */

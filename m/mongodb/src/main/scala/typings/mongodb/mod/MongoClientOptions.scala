@@ -79,6 +79,12 @@ import scala.scalajs.js.annotation._
     */
   var secondaryAcceptableLatencyMS: js.UndefOr[scala.Double] = js.undefined
   /**
+    * With `useUnifiedTopology`, the MongoDB driver will try to find a server to send any given operation to
+    * and keep retrying for `serverSelectionTimeoutMS` milliseconds.
+    * Default: 30000
+    */
+  var serverSelectionTimeoutMS: js.UndefOr[scala.Double] = js.undefined
+  /**
     * Determines whether or not to use the new url parser. Enables the new, spec-compliant
     * url parser shipped in the core driver. This url parser fixes a number of problems with
     * the original parser, and aims to outright replace that parser in the near future.
@@ -144,6 +150,7 @@ object MongoClientOptions {
     replicaSet: String = null,
     secondaryAcceptableLatencyMS: Int | scala.Double = null,
     serializeFunctions: js.UndefOr[Boolean] = js.undefined,
+    serverSelectionTimeoutMS: Int | scala.Double = null,
     servername: String = null,
     session: ClientSession = null,
     socketOptions: SocketOptions = null,
@@ -215,6 +222,7 @@ object MongoClientOptions {
     if (replicaSet != null) __obj.updateDynamic("replicaSet")(replicaSet.asInstanceOf[js.Any])
     if (secondaryAcceptableLatencyMS != null) __obj.updateDynamic("secondaryAcceptableLatencyMS")(secondaryAcceptableLatencyMS.asInstanceOf[js.Any])
     if (!js.isUndefined(serializeFunctions)) __obj.updateDynamic("serializeFunctions")(serializeFunctions.asInstanceOf[js.Any])
+    if (serverSelectionTimeoutMS != null) __obj.updateDynamic("serverSelectionTimeoutMS")(serverSelectionTimeoutMS.asInstanceOf[js.Any])
     if (servername != null) __obj.updateDynamic("servername")(servername.asInstanceOf[js.Any])
     if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
     if (socketOptions != null) __obj.updateDynamic("socketOptions")(socketOptions.asInstanceOf[js.Any])

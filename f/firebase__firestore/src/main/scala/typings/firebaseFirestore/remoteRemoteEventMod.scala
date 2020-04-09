@@ -1,12 +1,12 @@
 package typings.firebaseFirestore
 
-import org.scalablytyped.runtime.NumberDictionary
 import typings.firebaseFirestore.coreSnapshotVersionMod.SnapshotVersion
 import typings.firebaseFirestore.coreTypesMod.TargetId
 import typings.firebaseFirestore.modelCollectionsMod.DocumentKeySet_
 import typings.firebaseFirestore.modelCollectionsMod.MaybeDocumentMap_
 import typings.firebaseFirestore.utilByteStringMod.ByteString
 import typings.firebaseFirestore.utilSortedSetMod.SortedSet
+import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,7 +24,7 @@ object remoteRemoteEventMod extends js.Object {
       /**
       * A map from target to changes to the target. See TargetChange.
       */
-    targetChanges: NumberDictionary[TargetChange],
+    targetChanges: Map[TargetId, TargetChange],
       /**
       * A set of targets that is known to be inconsistent. Listens for these
       * targets should be re-established without resume tokens.
@@ -56,7 +56,7 @@ object remoteRemoteEventMod extends js.Object {
     /**
       * A map from target to changes to the target. See TargetChange.
       */
-    val targetChanges: NumberDictionary[TargetChange] = js.native
+    val targetChanges: Map[TargetId, TargetChange] = js.native
     /**
       * A set of targets that is known to be inconsistent. Listens for these
       * targets should be re-established without resume tokens.

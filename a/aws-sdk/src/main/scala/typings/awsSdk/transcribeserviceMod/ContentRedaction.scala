@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ContentRedaction extends js.Object {
   /**
-    * Request parameter where you choose whether to output only the redacted transcript or generate an additional unredacted transcript. When you choose redacted Amazon Transcribe outputs a JSON file with only the redacted transcript and related information. When you choose redacted_and_unredacted Amazon Transcribe outputs a JSON file with the unredacted transcript and related information in addition to the JSON file with the redacted transcript.
+    * The output transcript file stored in either the default S3 bucket or in a bucket you specify. When you choose redacted Amazon Transcribe outputs only the redacted transcript. When you choose redacted_and_unredacted Amazon Transcribe outputs both the redacted and unredacted transcripts.
     */
   var RedactionOutput: typings.awsSdk.transcribeserviceMod.RedactionOutput = js.native
   /**

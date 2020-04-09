@@ -1,5 +1,7 @@
 package typings.lunr.mod
 
+import typings.lunr.AnonBoost
+import typings.lunr.AnonBoostNumber
 import typings.lunr.Typeoftokenizer
 import typings.lunr.mod.Builder.Plugin
 import scala.scalajs.js
@@ -87,7 +89,7 @@ class Builder () extends js.Object {
     * @param attributes - Optional attributes associated with this document.
     */
   def add(doc: js.Object): Unit = js.native
-  def add(doc: js.Object, attributes: js.Object): Unit = js.native
+  def add(doc: js.Object, attributes: AnonBoostNumber): Unit = js.native
   /**
     * A parameter to tune the amount of field length normalisation that is applied when
     * calculating relevance scores. A value of 0 will completely disable any normalisation
@@ -117,11 +119,11 @@ class Builder () extends js.Object {
     * importance when ranking search results. Use a field boost to specify that matches
     * within one field are more important than other fields.
     *
-    * @param field - The name of a field to index in all documents.
+    * @param fieldName - The name of a field to index in all documents.
     * @param attributes - Optional attributes associated with this field.
     */
-  def field(field: String): Unit = js.native
-  def field(field: String, attributes: js.Object): Unit = js.native
+  def field(fieldName: String): Unit = js.native
+  def field(fieldName: String, attributes: AnonBoost): Unit = js.native
   /**
     * A parameter that controls the speed at which a rise in term frequency results in term
     * frequency saturation. The default value is 1.2. Setting this to a higher value will give

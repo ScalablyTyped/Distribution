@@ -15,6 +15,9 @@ trait GetZoneArgs extends js.Object {
     * Used with `name` field to get a private Hosted Zone.
     */
   val privateZone: js.UndefOr[Boolean] = js.native
+  /**
+    * The number of Record Set in the Hosted Zone.
+    */
   val resourceRecordSetCount: js.UndefOr[Double] = js.native
   /**
     * Used with `name` field. A mapping of tags, each pair of which must exactly match a pair on the desired Hosted Zone.

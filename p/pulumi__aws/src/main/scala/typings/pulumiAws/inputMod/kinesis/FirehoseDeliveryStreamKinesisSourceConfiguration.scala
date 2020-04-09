@@ -12,7 +12,7 @@ trait FirehoseDeliveryStreamKinesisSourceConfiguration extends js.Object {
     */
   var kinesisStreamArn: Input[String] = js.native
   /**
-    * The role that Kinesis Data Firehose can use to access AWS Glue. This role must be in the same account you use for Kinesis Data Firehose. Cross-account roles aren't allowed.
+    * The ARN of the role that provides access to the source Kinesis stream.
     */
   var roleArn: Input[String] = js.native
 }

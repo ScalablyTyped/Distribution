@@ -12,35 +12,35 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Configures point labels. */
+/** @name dxChartSeriesTypes.CommonSeries.label */
 trait dxChartSeriesTypesCommonSeriesLabel extends js.Object {
-  /** Aligns point labels in relation to their points. */
+  /** @name dxChartSeriesTypes.CommonSeries.label.alignment */
   var alignment: js.UndefOr[center | left | right] = js.undefined
-  /** Formats the point argument before it is displayed in the point label. To format the point value, use the format option. */
+  /** @name dxChartSeriesTypes.CommonSeries.label.argumentFormat */
   var argumentFormat: js.UndefOr[format] = js.undefined
-  /** Colors the point labels' background. The default color is inherited from the points. */
+  /** @name dxChartSeriesTypes.CommonSeries.label.backgroundColor */
   var backgroundColor: js.UndefOr[String] = js.undefined
-  /** Configures the borders of point labels. */
+  /** @name dxChartSeriesTypes.CommonSeries.label.border */
   var border: js.UndefOr[AnonColorDashStyle] = js.undefined
-  /** Configures the label connectors. */
+  /** @name dxChartSeriesTypes.CommonSeries.label.connector */
   var connector: js.UndefOr[AnonColorVisible] = js.undefined
-  /** Customizes the text displayed by point labels. */
+  /** @name dxChartSeriesTypes.CommonSeries.label.customizeText */
   var customizeText: js.UndefOr[js.Function1[/* pointInfo */ js.Any, String]] = js.undefined
-  /** Specifies font options for point labels. */
+  /** @name dxChartSeriesTypes.CommonSeries.label.font */
   var font: js.UndefOr[Font] = js.undefined
-  /** Formats the point value before it will be displayed in the point label. */
+  /** @name dxChartSeriesTypes.CommonSeries.label.format */
   var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.format] = js.undefined
-  /** Along with verticalOffset, shifts point labels from their initial positions. */
+  /** @name dxChartSeriesTypes.CommonSeries.label.horizontalOffset */
   var horizontalOffset: js.UndefOr[Double] = js.undefined
-  /** Specifies whether to display point labels inside or outside of series points. Applies only to bubble, range-like and bar-like series. */
+  /** @name dxChartSeriesTypes.CommonSeries.label.position */
   var position: js.UndefOr[inside | outside] = js.undefined
-  /** Rotates point labels. */
+  /** @name dxChartSeriesTypes.CommonSeries.label.rotationAngle */
   var rotationAngle: js.UndefOr[Double] = js.undefined
-  /** Specifies whether or not to show labels for points with zero value. Applies only to bar-like series. */
+  /** @name dxChartSeriesTypes.CommonSeries.label.showForZeroValues */
   var showForZeroValues: js.UndefOr[Boolean] = js.undefined
-  /** Along with horizontalOffset, shifts point labels from their initial positions. */
+  /** @name dxChartSeriesTypes.CommonSeries.label.verticalOffset */
   var verticalOffset: js.UndefOr[Double] = js.undefined
-  /** Makes the point labels visible. */
+  /** @name dxChartSeriesTypes.CommonSeries.label.visible */
   var visible: js.UndefOr[Boolean] = js.undefined
 }
 

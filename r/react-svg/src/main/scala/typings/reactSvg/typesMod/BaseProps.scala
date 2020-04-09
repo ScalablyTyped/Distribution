@@ -3,8 +3,8 @@ package typings.reactSvg.typesMod
 import typings.react.mod.ReactType
 import typings.reactSvg.reactSvgStrings.div
 import typings.reactSvg.reactSvgStrings.span
-import typings.std.Element
 import typings.std.Error
+import typings.std.SVGElement
 import typings.tanemSvgInjector.typesMod.BeforeEach
 import typings.tanemSvgInjector.typesMod.Errback
 import typings.tanemSvgInjector.typesMod.EvalScripts
@@ -27,8 +27,8 @@ object BaseProps {
   @scala.inline
   def apply(
     src: String,
-    afterInjection: (/* error */ Error | Null, /* svg */ js.UndefOr[Element]) => Unit = null,
-    beforeInjection: /* svg */ Element => Unit = null,
+    afterInjection: (/* error */ Error | Null, /* svg */ js.UndefOr[SVGElement]) => Unit = null,
+    beforeInjection: /* svg */ SVGElement => Unit = null,
     evalScripts: EvalScripts = null,
     fallback: ReactType[_] = null,
     loading: ReactType[_] = null,

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class RetrieveInventoryPhysicalCountResponse () extends js.Object {
   /**
-    * The requested [InventoryPhysicalCount](#type-inventoryphysicalcount).
+    * The requested `InventoryPhysicalCount`.
     */
   var count: js.UndefOr[InventoryPhysicalCount] = js.native
   /**

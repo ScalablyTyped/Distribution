@@ -1,7 +1,7 @@
 
 # Scala.js typings for keystonejs__adapter-knex
 
-Typings are for version 5.1
+Typings are for version 6.3
 
 ## Library description:
 KeystoneJS Knex Database Adapter

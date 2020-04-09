@@ -170,6 +170,7 @@ trait WebFrame_ extends EventEmitter {
   /**
     * Changes the zoom factor to the specified factor. Zoom factor is zoom percent
     * divided by 100, so 300% = 3.0.
+  The factor must be greater than 0.0.
     */
   def setZoomFactor(factor: Double): Unit = js.native
   /**

@@ -40,11 +40,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxHtmlEditorToolbarItem extends dxToolbarItem {
-  /** Specifies the predefined item that this object customizes or a format with multiple choices. */
+  /** @name dxHtmlEditorToolbarItem.formatName */
   var formatName: js.UndefOr[
     background | bold | color | italic | link | image | strike | subscript | superscript | underline | blockquote | header | increaseIndent | decreaseIndent | orderedList | bulletList | alignLeft | alignCenter | alignRight | alignJustify | codeBlock | variable | separator | undo | redo | clear | String
   ] = js.undefined
-  /** Specifies values for a format with multiple choices. Should be used with the formatName. */
+  /** @name dxHtmlEditorToolbarItem.formatValues */
   var formatValues: js.UndefOr[js.Array[String | Double | Boolean]] = js.undefined
 }
 

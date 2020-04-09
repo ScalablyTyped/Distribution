@@ -111,6 +111,7 @@ object mod extends js.Object {
   val faBowlingBall: IconDefinition = js.native
   val faBox: IconDefinition = js.native
   val faBoxOpen: IconDefinition = js.native
+  val faBoxTissue: IconDefinition = js.native
   val faBoxes: IconDefinition = js.native
   val faBraille: IconDefinition = js.native
   val faBrain: IconDefinition = js.native
@@ -269,6 +270,7 @@ object mod extends js.Object {
   val faDiceTwo: IconDefinition = js.native
   val faDigitalTachograph: IconDefinition = js.native
   val faDirections: IconDefinition = js.native
+  val faDisease: IconDefinition = js.native
   val faDivide: IconDefinition = js.native
   val faDizzy: IconDefinition = js.native
   val faDna: IconDefinition = js.native
@@ -320,6 +322,7 @@ object mod extends js.Object {
   val faFan: IconDefinition = js.native
   val faFastBackward: IconDefinition = js.native
   val faFastForward: IconDefinition = js.native
+  val faFaucet: IconDefinition = js.native
   val faFax: IconDefinition = js.native
   val faFeather: IconDefinition = js.native
   val faFeatherAlt: IconDefinition = js.native
@@ -425,7 +428,9 @@ object mod extends js.Object {
   val faHamsa: IconDefinition = js.native
   val faHandHolding: IconDefinition = js.native
   val faHandHoldingHeart: IconDefinition = js.native
+  val faHandHoldingMedical: IconDefinition = js.native
   val faHandHoldingUsd: IconDefinition = js.native
+  val faHandHoldingWater: IconDefinition = js.native
   val faHandLizard: IconDefinition = js.native
   val faHandMiddleFinger: IconDefinition = js.native
   val faHandPaper: IconDefinition = js.native
@@ -437,10 +442,14 @@ object mod extends js.Object {
   val faHandPointer: IconDefinition = js.native
   val faHandRock: IconDefinition = js.native
   val faHandScissors: IconDefinition = js.native
+  val faHandSparkles: IconDefinition = js.native
   val faHandSpock: IconDefinition = js.native
   val faHands: IconDefinition = js.native
   val faHandsHelping: IconDefinition = js.native
+  val faHandsWash: IconDefinition = js.native
   val faHandshake: IconDefinition = js.native
+  val faHandshakeAltSlash: IconDefinition = js.native
+  val faHandshakeSlash: IconDefinition = js.native
   val faHanukiah: IconDefinition = js.native
   val faHardHat: IconDefinition = js.native
   val faHashtag: IconDefinition = js.native
@@ -448,6 +457,10 @@ object mod extends js.Object {
   val faHatCowboySide: IconDefinition = js.native
   val faHatWizard: IconDefinition = js.native
   val faHdd: IconDefinition = js.native
+  val faHeadSideCough: IconDefinition = js.native
+  val faHeadSideCoughSlash: IconDefinition = js.native
+  val faHeadSideMask: IconDefinition = js.native
+  val faHeadSideVirus: IconDefinition = js.native
   val faHeading: IconDefinition = js.native
   val faHeadphones: IconDefinition = js.native
   val faHeadphonesAlt: IconDefinition = js.native
@@ -468,6 +481,7 @@ object mod extends js.Object {
   val faHospital: IconDefinition = js.native
   val faHospitalAlt: IconDefinition = js.native
   val faHospitalSymbol: IconDefinition = js.native
+  val faHospitalUser: IconDefinition = js.native
   val faHotTub: IconDefinition = js.native
   val faHotdog: IconDefinition = js.native
   val faHotel: IconDefinition = js.native
@@ -476,6 +490,7 @@ object mod extends js.Object {
   val faHourglassHalf: IconDefinition = js.native
   val faHourglassStart: IconDefinition = js.native
   val faHouseDamage: IconDefinition = js.native
+  val faHouseUser: IconDefinition = js.native
   val faHryvnia: IconDefinition = js.native
   val faICursor: IconDefinition = js.native
   val faIceCream: IconDefinition = js.native
@@ -509,6 +524,7 @@ object mod extends js.Object {
   val faLanguage: IconDefinition = js.native
   val faLaptop: IconDefinition = js.native
   val faLaptopCode: IconDefinition = js.native
+  val faLaptopHouse: IconDefinition = js.native
   val faLaptopMedical: IconDefinition = js.native
   val faLaugh: IconDefinition = js.native
   val faLaughBeam: IconDefinition = js.native
@@ -538,6 +554,8 @@ object mod extends js.Object {
   val faLongArrowAltUp: IconDefinition = js.native
   val faLowVision: IconDefinition = js.native
   val faLuggageCart: IconDefinition = js.native
+  val faLungs: IconDefinition = js.native
+  val faLungsVirus: IconDefinition = js.native
   val faMagic: IconDefinition = js.native
   val faMagnet: IconDefinition = js.native
   val faMailBulk: IconDefinition = js.native
@@ -628,6 +646,7 @@ object mod extends js.Object {
   val faPenSquare: IconDefinition = js.native
   val faPencilAlt: IconDefinition = js.native
   val faPencilRuler: IconDefinition = js.native
+  val faPeopleArrows: IconDefinition = js.native
   val faPeopleCarry: IconDefinition = js.native
   val faPepperHot: IconDefinition = js.native
   val faPercent: IconDefinition = js.native
@@ -647,6 +666,7 @@ object mod extends js.Object {
   val faPlane: IconDefinition = js.native
   val faPlaneArrival: IconDefinition = js.native
   val faPlaneDeparture: IconDefinition = js.native
+  val faPlaneSlash: IconDefinition = js.native
   val faPlay: IconDefinition = js.native
   val faPlayCircle: IconDefinition = js.native
   val faPlug: IconDefinition = js.native
@@ -670,6 +690,8 @@ object mod extends js.Object {
   val faPrint: IconDefinition = js.native
   val faProcedures: IconDefinition = js.native
   val faProjectDiagram: IconDefinition = js.native
+  val faPumpMedical: IconDefinition = js.native
+  val faPumpSoap: IconDefinition = js.native
   val faPuzzlePiece: IconDefinition = js.native
   val faQrcode: IconDefinition = js.native
   val faQuestion: IconDefinition = js.native
@@ -732,6 +754,7 @@ object mod extends js.Object {
   val faShareSquare: IconDefinition = js.native
   val faShekelSign: IconDefinition = js.native
   val faShieldAlt: IconDefinition = js.native
+  val faShieldVirus: IconDefinition = js.native
   val faShip: IconDefinition = js.native
   val faShippingFast: IconDefinition = js.native
   val faShoePrints: IconDefinition = js.native
@@ -767,6 +790,7 @@ object mod extends js.Object {
   val faSnowflake: IconDefinition = js.native
   val faSnowman: IconDefinition = js.native
   val faSnowplow: IconDefinition = js.native
+  val faSoap: IconDefinition = js.native
   val faSocks: IconDefinition = js.native
   val faSolarPanel: IconDefinition = js.native
   val faSort: IconDefinition = js.native
@@ -808,8 +832,11 @@ object mod extends js.Object {
   val faStop: IconDefinition = js.native
   val faStopCircle: IconDefinition = js.native
   val faStopwatch: IconDefinition = js.native
+  val faStopwatch20: IconDefinition = js.native
   val faStore: IconDefinition = js.native
   val faStoreAlt: IconDefinition = js.native
+  val faStoreAltSlash: IconDefinition = js.native
+  val faStoreSlash: IconDefinition = js.native
   val faStream: IconDefinition = js.native
   val faStreetView: IconDefinition = js.native
   val faStrikethrough: IconDefinition = js.native
@@ -870,6 +897,7 @@ object mod extends js.Object {
   val faToggleOn: IconDefinition = js.native
   val faToilet: IconDefinition = js.native
   val faToiletPaper: IconDefinition = js.native
+  val faToiletPaperSlash: IconDefinition = js.native
   val faToolbox: IconDefinition = js.native
   val faTools: IconDefinition = js.native
   val faTooth: IconDefinition = js.native
@@ -945,6 +973,9 @@ object mod extends js.Object {
   val faVideo: IconDefinition = js.native
   val faVideoSlash: IconDefinition = js.native
   val faVihara: IconDefinition = js.native
+  val faVirus: IconDefinition = js.native
+  val faVirusSlash: IconDefinition = js.native
+  val faViruses: IconDefinition = js.native
   val faVoicemail: IconDefinition = js.native
   val faVolleyballBall: IconDefinition = js.native
   val faVolumeDown: IconDefinition = js.native

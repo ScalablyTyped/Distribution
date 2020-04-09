@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @JSImport("@ant-design/pro-layout/lib/utils/utils", JSImport.Namespace)
 @js.native
 object utilsMod extends js.Object {
-  def debounce(func: js.Function, wait: Double): js.Function0[_] = js.native
-  def debounce(func: js.Function, wait: Double, immediate: Boolean): js.Function0[_] = js.native
+  def debounce(func: js.Function, wait: Double): js.Any = js.native
+  def debounce(func: js.Function, wait: Double, immediate: Boolean): js.Any = js.native
   def genStringToTheme(): String = js.native
   def genStringToTheme(`val`: String): String = js.native
   def genThemeToString(): String = js.native

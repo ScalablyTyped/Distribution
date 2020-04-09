@@ -41,7 +41,7 @@ class Crawler protected () extends CustomResource {
     */
   val configuration: Output_[js.UndefOr[String]] = js.native
   /**
-    * The name of the Glue database to be synchronized.
+    * Glue database where results are written.
     */
   val databaseName: Output_[String] = js.native
   /**

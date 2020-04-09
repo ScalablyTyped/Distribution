@@ -38,11 +38,27 @@ trait GroupOptions extends js.Object {
   /**
     * ability to move from the list. clone — copy the item, rather than move.
     */
-  var pull: js.UndefOr[PullResult | (js.Function2[/* to */ Sortable, /* from */ Sortable, PullResult])] = js.undefined
+  var pull: js.UndefOr[
+    PullResult | (js.Function4[
+      /* to */ Sortable, 
+      /* from */ Sortable, 
+      /* dragEl */ HTMLElement, 
+      /* event */ SortableEvent, 
+      PullResult
+    ])
+  ] = js.undefined
   /**
     * whether elements can be added from other lists, or an array of group names from which elements can be taken.
     */
-  var put: js.UndefOr[PutResult | (js.Function1[/* to */ Sortable, PullResult])] = js.undefined
+  var put: js.UndefOr[
+    PutResult | (js.Function4[
+      /* to */ Sortable, 
+      /* from */ Sortable, 
+      /* dragEl */ HTMLElement, 
+      /* event */ SortableEvent, 
+      PutResult
+    ])
+  ] = js.undefined
   /**
     * revert cloned element to initial position after moving to a another list.
     */
@@ -55,8 +71,20 @@ object GroupOptions {
     name: String,
     checkPull: (/* sortable */ Sortable, /* activeSortable */ Sortable, /* dragEl */ HTMLElement, /* event */ SortableEvent) => Boolean | String | js.Array[String] = null,
     checkPut: (/* sortable */ Sortable, /* activeSortable */ Sortable, /* dragEl */ HTMLElement, /* event */ SortableEvent) => Boolean | String | clone | js.Array[String] = null,
-    pull: PullResult | (js.Function2[/* to */ Sortable, /* from */ Sortable, PullResult]) = null,
-    put: PutResult | (js.Function1[/* to */ Sortable, PullResult]) = null,
+    pull: PullResult | (js.Function4[
+      /* to */ Sortable, 
+      /* from */ Sortable, 
+      /* dragEl */ HTMLElement, 
+      /* event */ SortableEvent, 
+      PullResult
+    ]) = null,
+    put: PutResult | (js.Function4[
+      /* to */ Sortable, 
+      /* from */ Sortable, 
+      /* dragEl */ HTMLElement, 
+      /* event */ SortableEvent, 
+      PutResult
+    ]) = null,
     revertClone: js.UndefOr[Boolean] = js.undefined
   ): GroupOptions = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])

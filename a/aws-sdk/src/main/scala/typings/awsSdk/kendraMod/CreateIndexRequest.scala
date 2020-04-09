@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CreateIndexRequest extends js.Object {
   /**
+    * A token that you provide to identify the request to create an index. Multiple calls to the CreateIndex operation with the same client token will create only one index.”
+    */
+  var ClientToken: js.UndefOr[ClientTokenName] = js.native
+  /**
     * A description for the index.
     */
   var Description: js.UndefOr[typings.awsSdk.kendraMod.Description] = js.native
@@ -29,10 +33,12 @@ object CreateIndexRequest {
   def apply(
     Name: IndexName,
     RoleArn: RoleArn,
+    ClientToken: ClientTokenName = null,
     Description: Description = null,
     ServerSideEncryptionConfiguration: ServerSideEncryptionConfiguration = null
   ): CreateIndexRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any])
+    if (ClientToken != null) __obj.updateDynamic("ClientToken")(ClientToken.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (ServerSideEncryptionConfiguration != null) __obj.updateDynamic("ServerSideEncryptionConfiguration")(ServerSideEncryptionConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateIndexRequest]

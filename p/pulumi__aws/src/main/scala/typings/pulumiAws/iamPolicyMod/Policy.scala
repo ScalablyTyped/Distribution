@@ -43,7 +43,7 @@ class Policy protected () extends CustomResource {
     */
   val path: Output_[js.UndefOr[String]] = js.native
   /**
-    * The policy document.
+    * The policy document. This is a JSON formatted string.
     */
   val policy: Output_[String] = js.native
 }

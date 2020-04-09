@@ -7,15 +7,23 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonFields extends js.Object {
-  var client: Client_
+  var authorization: js.UndefOr[String] = js.undefined
+  var client: js.UndefOr[Client_] = js.undefined
   var fields: HostedFieldFieldOptions
   var styles: js.UndefOr[js.Any] = js.undefined
 }
 
 object AnonFields {
   @scala.inline
-  def apply(client: Client_, fields: HostedFieldFieldOptions, styles: js.Any = null): AnonFields = {
-    val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any])
+  def apply(
+    fields: HostedFieldFieldOptions,
+    authorization: String = null,
+    client: Client_ = null,
+    styles: js.Any = null
+  ): AnonFields = {
+    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
+    if (authorization != null) __obj.updateDynamic("authorization")(authorization.asInstanceOf[js.Any])
+    if (client != null) __obj.updateDynamic("client")(client.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnonFields]
   }

@@ -41,7 +41,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxAutocompleteOptions extends dxDropDownListOptions[dxAutocomplete] {
-  /** Specifies the maximum count of items displayed by the widget. */
+  /** @name dxAutocomplete.Options.maxItemCount */
   var maxItemCount: js.UndefOr[Double] = js.undefined
 }
 

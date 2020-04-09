@@ -12,6 +12,9 @@ trait VpcEndpointArgs extends js.Object {
     * Accept the VPC endpoint (the VPC endpoint and service need to be in the same AWS account).
     */
   val autoAccept: js.UndefOr[Input[Boolean]] = js.native
+  /**
+    * A policy to attach to the endpoint that controls access to the service. Defaults to full access. All `Gateway` and some `Interface` endpoints support policies - see the [relevant AWS documentation](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-endpoints-access.html) for more details.
+    */
   val policy: js.UndefOr[Input[String]] = js.native
   /**
     * Whether or not to associate a private hosted zone with the specified VPC. Applicable for endpoints of type `Interface`.
@@ -27,7 +30,7 @@ trait VpcEndpointArgs extends js.Object {
     */
   val securityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
-    * The service name, in the form `com.amazonaws.region.service` for AWS services.
+    * The service name. For AWS services the service name is usually in the form `com.amazonaws.<region>.<service>` (the SageMaker Notebook service is an exception to this rule, the service name is in the form `aws.sagemaker.<region>.notebook`).
     */
   val serviceName: Input[String] = js.native
   /**

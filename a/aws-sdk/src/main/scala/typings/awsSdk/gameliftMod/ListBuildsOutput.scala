@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ListBuildsOutput extends js.Object {
   /**
-    * A collection of build records that match the request.
+    * A collection of build resources that match the request.
     */
   var Builds: js.UndefOr[BuildList] = js.native
   /**

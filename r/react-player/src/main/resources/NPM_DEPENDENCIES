@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-player" : "1.15.2"
+      "react-player" : "1.15.3"
     }
   ],
   "test-dependencies" : [
     {
-      "react-player" : "1.15.2"
+      "react-player" : "1.15.3"
     }
   ],
   "compile-devDependencies" : [

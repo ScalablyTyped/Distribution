@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
   - typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.add_payment_info
+  - typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.add_shipping_info
   - typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.add_to_cart
   - typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.add_to_wishlist
   - typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.begin_checkout
@@ -20,10 +21,13 @@ import scala.scalajs.js.annotation._
   - typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.screen_view
   - typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.search
   - typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.select_content
+  - typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.select_item
+  - typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.select_promotion
   - typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.set_checkout_option
   - typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.share
   - typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.sign_up
   - typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.timing_complete
+  - typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.view_cart
   - typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.view_item
   - typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.view_item_list
   - typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.view_promotion
@@ -34,6 +38,8 @@ trait EventNameString extends js.Object
 object EventNameString {
   @scala.inline
   def add_payment_info: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.add_payment_info = this.cast("add_payment_info")
+  @scala.inline
+  def add_shipping_info: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.add_shipping_info = this.cast("add_shipping_info")
   @scala.inline
   def add_to_cart: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.add_to_cart = this.cast("add_to_cart")
   @scala.inline
@@ -65,6 +71,10 @@ object EventNameString {
   @scala.inline
   def select_content: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.select_content = this.cast("select_content")
   @scala.inline
+  def select_item: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.select_item = this.cast("select_item")
+  @scala.inline
+  def select_promotion: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.select_promotion = this.cast("select_promotion")
+  @scala.inline
   def set_checkout_option: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.set_checkout_option = this.cast("set_checkout_option")
   @scala.inline
   def share: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.share = this.cast("share")
@@ -72,6 +82,8 @@ object EventNameString {
   def sign_up: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.sign_up = this.cast("sign_up")
   @scala.inline
   def timing_complete: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.timing_complete = this.cast("timing_complete")
+  @scala.inline
+  def view_cart: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.view_cart = this.cast("view_cart")
   @scala.inline
   def view_item: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.view_item = this.cast("view_item")
   @scala.inline

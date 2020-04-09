@@ -1,8 +1,9 @@
 package typings.plotlyJs.mod
 
 import typings.plotlyJs.AnonEnd
-import typings.plotlyJs.PartialDataTitle
+import typings.plotlyJs.PartialDataTitleFont
 import typings.plotlyJs.PartialDelta
+import typings.plotlyJs.PartialFont
 import typings.plotlyJs.PartialGauge
 import typings.plotlyJs.PartialHoverLabel
 import typings.plotlyJs.PartialPlotMarker
@@ -65,6 +66,7 @@ import typings.plotlyJs.plotlyJsStrings.none
 import typings.plotlyJs.plotlyJsStrings.number
 import typings.plotlyJs.plotlyJsStrings.numberPlussigndelta
 import typings.plotlyJs.plotlyJsStrings.ohlc
+import typings.plotlyJs.plotlyJsStrings.outside
 import typings.plotlyJs.plotlyJsStrings.parcoords
 import typings.plotlyJs.plotlyJsStrings.percent
 import typings.plotlyJs.plotlyJsStrings.pie
@@ -156,6 +158,7 @@ trait Data extends js.Object {
   var hoverlabel: js.UndefOr[PartialHoverLabel] = js.undefined
   var hoveron: js.UndefOr[points | fills] = js.undefined
   var hovertemplate: js.UndefOr[String | js.Array[String]] = js.undefined
+  var hovertext: js.UndefOr[String | js.Array[String]] = js.undefined
   var labels: js.UndefOr[js.Array[Datum]] = js.undefined
   var legendgroup: js.UndefOr[String] = js.undefined
   var line: js.UndefOr[PartialScatterLine] = js.undefined
@@ -221,16 +224,18 @@ trait Data extends js.Object {
   var r: js.UndefOr[js.Array[Datum]] = js.undefined
   var rotation: js.UndefOr[Double] = js.undefined
   var showlegend: js.UndefOr[Boolean] = js.undefined
+  var showscale: js.UndefOr[Boolean] = js.undefined
   var stackgroup: js.UndefOr[String] = js.undefined
   var text: js.UndefOr[String | js.Array[String]] = js.undefined
+  var textfont: js.UndefOr[PartialFont] = js.undefined
   var textinfo: js.UndefOr[
     label | labelPlussigntext | labelPlussignvalue | labelPlussignpercent | labelPlussigntextPlussignvalue | labelPlussigntextPlussignpercent | labelPlussignvaluePlussignpercent | text | textPlussignvalue | textPlussignpercent | textPlussignvaluePlussignpercent | value | valuePlussignpercent | percent | none
   ] = js.undefined
   var textposition: js.UndefOr[
-    (`top left`) | (`top center`) | (`top right`) | (`middle left`) | (`middle center`) | (`middle right`) | (`bottom left`) | (`bottom center`) | (`bottom right`) | inside
+    (`top left`) | (`top center`) | (`top right`) | (`middle left`) | (`middle center`) | (`middle right`) | (`bottom left`) | (`bottom center`) | (`bottom right`) | inside | outside
   ] = js.undefined
   var theta: js.UndefOr[js.Array[Datum]] = js.undefined
-  var title: js.UndefOr[PartialDataTitle] = js.undefined
+  var title: js.UndefOr[PartialDataTitleFont] = js.undefined
   var transforms: js.UndefOr[js.Array[DataTransform]] = js.undefined
   var transpose: js.UndefOr[Boolean] = js.undefined
   var `type`: js.UndefOr[
@@ -273,6 +278,7 @@ object Data {
     hoverlabel: PartialHoverLabel = null,
     hoveron: points | fills = null,
     hovertemplate: String | js.Array[String] = null,
+    hovertext: String | js.Array[String] = null,
     labels: js.Array[Datum] = null,
     legendgroup: String = null,
     line: PartialScatterLine = null,
@@ -311,12 +317,14 @@ object Data {
     r: js.Array[Datum] = null,
     rotation: Int | Double = null,
     showlegend: js.UndefOr[Boolean] = js.undefined,
+    showscale: js.UndefOr[Boolean] = js.undefined,
     stackgroup: String = null,
     text: String | js.Array[String] = null,
+    textfont: PartialFont = null,
     textinfo: label | labelPlussigntext | labelPlussignvalue | labelPlussignpercent | labelPlussigntextPlussignvalue | labelPlussigntextPlussignpercent | labelPlussignvaluePlussignpercent | text | textPlussignvalue | textPlussignpercent | textPlussignvaluePlussignpercent | value | valuePlussignpercent | percent | none = null,
-    textposition: (`top left`) | (`top center`) | (`top right`) | (`middle left`) | (`middle center`) | (`middle right`) | (`bottom left`) | (`bottom center`) | (`bottom right`) | inside = null,
+    textposition: (`top left`) | (`top center`) | (`top right`) | (`middle left`) | (`middle center`) | (`middle right`) | (`bottom left`) | (`bottom center`) | (`bottom right`) | inside | outside = null,
     theta: js.Array[Datum] = null,
-    title: PartialDataTitle = null,
+    title: PartialDataTitleFont = null,
     transforms: js.Array[DataTransform] = null,
     transpose: js.UndefOr[Boolean] = js.undefined,
     `type`: bar | box | candlestick | choropleth | contour | heatmap | histogram | indicator | mesh3d | ohlc | parcoords | pie | pointcloud | scatter | scatter3d | scattergeo | scattergl | scatterpolar | scatterternary | surface | treemap | waterfall | funnel | funnelarea = null,
@@ -354,6 +362,7 @@ object Data {
     if (hoverlabel != null) __obj.updateDynamic("hoverlabel")(hoverlabel.asInstanceOf[js.Any])
     if (hoveron != null) __obj.updateDynamic("hoveron")(hoveron.asInstanceOf[js.Any])
     if (hovertemplate != null) __obj.updateDynamic("hovertemplate")(hovertemplate.asInstanceOf[js.Any])
+    if (hovertext != null) __obj.updateDynamic("hovertext")(hovertext.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
     if (legendgroup != null) __obj.updateDynamic("legendgroup")(legendgroup.asInstanceOf[js.Any])
     if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
@@ -392,8 +401,10 @@ object Data {
     if (r != null) __obj.updateDynamic("r")(r.asInstanceOf[js.Any])
     if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
     if (!js.isUndefined(showlegend)) __obj.updateDynamic("showlegend")(showlegend.asInstanceOf[js.Any])
+    if (!js.isUndefined(showscale)) __obj.updateDynamic("showscale")(showscale.asInstanceOf[js.Any])
     if (stackgroup != null) __obj.updateDynamic("stackgroup")(stackgroup.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (textfont != null) __obj.updateDynamic("textfont")(textfont.asInstanceOf[js.Any])
     if (textinfo != null) __obj.updateDynamic("textinfo")(textinfo.asInstanceOf[js.Any])
     if (textposition != null) __obj.updateDynamic("textposition")(textposition.asInstanceOf[js.Any])
     if (theta != null) __obj.updateDynamic("theta")(theta.asInstanceOf[js.Any])

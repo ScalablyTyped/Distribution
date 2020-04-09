@@ -27,6 +27,10 @@ trait Node extends js.Object {
     */
   var InstanceType: js.UndefOr[InstanceTypeString] = js.native
   /**
+    * 
+    */
+  var LogPublishingConfiguration: js.UndefOr[NodeLogPublishingConfiguration] = js.native
+  /**
     * The unique identifier of the member to which the node belongs.
     */
   var MemberId: js.UndefOr[ResourceIdString] = js.native
@@ -48,6 +52,7 @@ object Node {
     FrameworkAttributes: NodeFrameworkAttributes = null,
     Id: ResourceIdString = null,
     InstanceType: InstanceTypeString = null,
+    LogPublishingConfiguration: NodeLogPublishingConfiguration = null,
     MemberId: ResourceIdString = null,
     NetworkId: ResourceIdString = null,
     Status: NodeStatus = null
@@ -58,6 +63,7 @@ object Node {
     if (FrameworkAttributes != null) __obj.updateDynamic("FrameworkAttributes")(FrameworkAttributes.asInstanceOf[js.Any])
     if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
     if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType.asInstanceOf[js.Any])
+    if (LogPublishingConfiguration != null) __obj.updateDynamic("LogPublishingConfiguration")(LogPublishingConfiguration.asInstanceOf[js.Any])
     if (MemberId != null) __obj.updateDynamic("MemberId")(MemberId.asInstanceOf[js.Any])
     if (NetworkId != null) __obj.updateDynamic("NetworkId")(NetworkId.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])

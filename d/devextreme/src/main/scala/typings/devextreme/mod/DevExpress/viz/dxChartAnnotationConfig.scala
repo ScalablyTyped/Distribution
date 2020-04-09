@@ -23,7 +23,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxChartAnnotationConfig extends dxChartCommonAnnotationConfig {
-  /** Specifies the annotation's name. */
+  /** @name dxChartAnnotationConfig.name */
   var name: js.UndefOr[String] = js.undefined
 }
 

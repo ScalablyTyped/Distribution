@@ -114,8 +114,10 @@ class Application () extends ClientObject {
     */
   def suspendApiCalculationUntilNextSync(): Unit = js.native
   /**
-    * Suspends sceen updating until the next "context.sync()" is called.
-    *
+    * Suspends screen updating until the next `context.sync()`is called.
+    * 
+    * **Note**: Don't call `suspendScreenUpdatingUntilNextSync` repeatedly (such as in a loop). Repeated calls will cause the Excel window to flicker.
+    * 
     * [Api set: ExcelApi 1.9]
     */
   def suspendScreenUpdatingUntilNextSync(): Unit = js.native

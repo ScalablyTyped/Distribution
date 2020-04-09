@@ -17,9 +17,9 @@ trait GetText extends js.Object {
   def ngettext(msgid: String, msgidPlural: String, count: Double): String
   def npgettext(msgctxt: String, msgid: String, msgidPlural: String, count: Double): String
   @JSName("off")
-  def off_error(eventName: error, callback: js.Function1[/* error */ String, Unit]): Unit
+  def off_error(eventName: error, callback: js.Function1[/* error */ js.Any, Unit]): Unit
   @JSName("on")
-  def on_error(eventName: error, callback: js.Function1[/* error */ String, Unit]): Unit
+  def on_error(eventName: error, callback: js.Function1[/* error */ js.Any, Unit]): Unit
   def pgettext(msgctxt: String, msgid: String): String
   def setLocale(locale: String): Unit
   def setTextDomain(domain: String): Unit
@@ -40,8 +40,8 @@ object GetText {
     gettext: String => String,
     ngettext: (String, String, Double) => String,
     npgettext: (String, String, String, Double) => String,
-    off: (error, js.Function1[/* error */ String, Unit]) => Unit,
-    on: (error, js.Function1[/* error */ String, Unit]) => Unit,
+    off: (error, js.Function1[/* error */ js.Any, Unit]) => Unit,
+    on: (error, js.Function1[/* error */ js.Any, Unit]) => Unit,
     pgettext: (String, String) => String,
     setLocale: String => Unit,
     setTextDomain: String => Unit,

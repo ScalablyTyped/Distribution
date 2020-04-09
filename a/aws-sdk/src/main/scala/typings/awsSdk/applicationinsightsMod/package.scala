@@ -9,7 +9,22 @@ package object applicationinsightsMod {
   type AmazonResourceName = java.lang.String
   type ApplicationComponentList = js.Array[typings.awsSdk.applicationinsightsMod.ApplicationComponent]
   type ApplicationInfoList = js.Array[typings.awsSdk.applicationinsightsMod.ApplicationInfo]
+  type CWEMonitorEnabled = scala.Boolean
   type ClientConfiguration = typings.awsSdk.serviceMod.ServiceConfigurationOptions with typings.awsSdk.applicationinsightsMod.ClientApiVersions
+  type CloudWatchEventDetailType = java.lang.String
+  type CloudWatchEventId = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.EC2
+    - typings.awsSdk.awsSdkStrings.CODE_DEPLOY
+    - typings.awsSdk.awsSdkStrings.HEALTH
+    - java.lang.String
+  */
+  type CloudWatchEventSource = typings.awsSdk.applicationinsightsMod._CloudWatchEventSource | java.lang.String
+  type CodeDeployApplication = java.lang.String
+  type CodeDeployDeploymentGroup = java.lang.String
+  type CodeDeployDeploymentId = java.lang.String
+  type CodeDeployInstanceGroupId = java.lang.String
+  type CodeDeployState = java.lang.String
   type ComponentConfiguration = java.lang.String
   type ComponentName = java.lang.String
   type ConfigurationEventDetail = java.lang.String
@@ -31,6 +46,7 @@ package object applicationinsightsMod {
   */
   type ConfigurationEventStatus = typings.awsSdk.applicationinsightsMod._ConfigurationEventStatus | java.lang.String
   type ConfigurationEventTime = typings.std.Date
+  type Ec2State = java.lang.String
   type EndTime = typings.std.Date
   type Feedback = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.applicationinsightsMod.FeedbackValue]
   type FeedbackKey = typings.awsSdk.awsSdkStrings.INSIGHTS_FEEDBACK | java.lang.String
@@ -41,6 +57,11 @@ package object applicationinsightsMod {
     - java.lang.String
   */
   type FeedbackValue = typings.awsSdk.applicationinsightsMod._FeedbackValue | java.lang.String
+  type HealthEventArn = java.lang.String
+  type HealthEventDescription = java.lang.String
+  type HealthEventTypeCategory = java.lang.String
+  type HealthEventTypeCode = java.lang.String
+  type HealthService = java.lang.String
   type Insights = java.lang.String
   type LifeCycle = java.lang.String
   type LineTime = typings.std.Date
@@ -110,6 +131,13 @@ package object applicationinsightsMod {
   type Title = java.lang.String
   type Unit = java.lang.String
   type Value = scala.Double
+  type XRayErrorPercent = scala.Double
+  type XRayFaultPercent = scala.Double
+  type XRayNodeName = java.lang.String
+  type XRayNodeType = java.lang.String
+  type XRayRequestAverageLatency = scala.Double
+  type XRayRequestCount = scala.Double
+  type XRayThrottlePercent = scala.Double
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.`2018-11-25`
     - typings.awsSdk.awsSdkStrings.latest_

@@ -280,6 +280,7 @@ package object wafv2Mod {
   type EntityName = java.lang.String
   type ExcludedRules = js.Array[typings.awsSdk.wafv2Mod.ExcludedRule]
   type FieldToMatchData = java.lang.String
+  type FirewallManagerRuleGroups = js.Array[typings.awsSdk.wafv2Mod.FirewallManagerRuleGroup]
   type HTTPHeaders = js.Array[typings.awsSdk.wafv2Mod.HTTPHeader]
   type HTTPMethod = java.lang.String
   type HTTPVersion = java.lang.String
@@ -303,6 +304,7 @@ package object wafv2Mod {
   type MetricName = java.lang.String
   type NextMarker = java.lang.String
   type PaginationLimit = scala.Double
+  type PolicyString = java.lang.String
   type PopulationSize = scala.Double
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.EXACTLY

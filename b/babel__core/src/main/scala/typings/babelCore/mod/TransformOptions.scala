@@ -1,8 +1,6 @@
 package typings.babelCore.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.babelCore.babelCoreBooleans.`false`
-import typings.babelCore.babelCoreBooleans.`true`
 import typings.babelCore.babelCoreStrings.`inline`
 import typings.babelCore.babelCoreStrings.`upward-optional`
 import typings.babelCore.babelCoreStrings.auto
@@ -16,7 +14,6 @@ import typings.babelCore.babelCoreStrings.unambiguous
 import typings.babelCore.babelCoreStrings.upward
 import typings.babelGenerator.mod.GeneratorOptions
 import typings.babelParser.mod.ParserOptions
-import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -53,7 +50,7 @@ trait TransformOptions extends js.Object {
     *
     * Default: `(root)`
     */
-  var babelrcRoots: js.UndefOr[`true` | String | js.Array[String] | Null] = js.undefined
+  var babelrcRoots: js.UndefOr[Boolean | MatchPattern | js.Array[MatchPattern] | Null] = js.undefined
   /**
     * Utilities may pass a caller object to identify themselves to Babel and
     * pass capability-related flags for use by configs, presets and plugins.
@@ -84,7 +81,7 @@ trait TransformOptions extends js.Object {
     *
     * Default: `undefined`
     */
-  var configFile: js.UndefOr[String | `false` | Null] = js.undefined
+  var configFile: js.UndefOr[String | Boolean | Null] = js.undefined
   /**
     * The working directory that Babel's programmatic options are loaded relative to.
     *
@@ -149,7 +146,7 @@ trait TransformOptions extends js.Object {
     *
     * Default: `null`
     */
-  var ignore: js.UndefOr[js.Array[String] | Null] = js.undefined
+  var ignore: js.UndefOr[js.Array[MatchPattern] | Null] = js.undefined
   /**
     * This option is a synonym for "test"
     */
@@ -190,7 +187,7 @@ trait TransformOptions extends js.Object {
     *
     * Default: `null`
     */
-  var only: js.UndefOr[String | RegExp | (js.Array[String | RegExp]) | Null] = js.undefined
+  var only: js.UndefOr[js.Array[MatchPattern] | Null] = js.undefined
   /**
     * Allows users to provide an array of options that will be merged into the current configuration one at a time.
     * This feature is best used alongside the "test"/"include"/"exclude" options to provide conditions for which an override should apply
@@ -299,12 +296,12 @@ object TransformOptions {
     auxiliaryCommentAfter: String = null,
     auxiliaryCommentBefore: String = null,
     babelrc: js.UndefOr[Boolean] = js.undefined,
-    babelrcRoots: `true` | String | js.Array[String] = null,
+    babelrcRoots: Boolean | MatchPattern | js.Array[MatchPattern] = null,
     caller: TransformCaller = null,
     code: js.UndefOr[Boolean] = js.undefined,
     comments: js.UndefOr[Boolean] = js.undefined,
     compact: Boolean | auto = null,
-    configFile: String | `false` = null,
+    configFile: String | Boolean = null,
     cwd: String = null,
     env: StringDictionary[js.UndefOr[TransformOptions | Null]] = null,
     envName: String = null,
@@ -315,14 +312,14 @@ object TransformOptions {
     generatorOpts: GeneratorOptions = null,
     getModuleId: /* moduleName */ String => js.UndefOr[String | Null] = null,
     highlightCode: js.UndefOr[Boolean] = js.undefined,
-    ignore: js.Array[String] = null,
+    ignore: js.Array[MatchPattern] = null,
     include: MatchPattern | js.Array[MatchPattern] = null,
     inputSourceMap: js.Object = null,
     minified: js.UndefOr[Boolean] = js.undefined,
     moduleId: String = null,
     moduleIds: js.UndefOr[Boolean] = js.undefined,
     moduleRoot: String = null,
-    only: String | RegExp | (js.Array[String | RegExp]) = null,
+    only: js.Array[MatchPattern] = null,
     overrides: js.Array[TransformOptions] = null,
     parserOpts: ParserOptions = null,
     plugins: js.Array[PluginItem] = null,

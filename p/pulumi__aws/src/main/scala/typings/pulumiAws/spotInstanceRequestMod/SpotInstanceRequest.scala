@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiAws.outputMod.ec2.SpotInstanceRequestCreditSpecification
 import typings.pulumiAws.outputMod.ec2.SpotInstanceRequestEbsBlockDevice
 import typings.pulumiAws.outputMod.ec2.SpotInstanceRequestEphemeralBlockDevice
+import typings.pulumiAws.outputMod.ec2.SpotInstanceRequestMetadataOptions
 import typings.pulumiAws.outputMod.ec2.SpotInstanceRequestNetworkInterface
 import typings.pulumiAws.outputMod.ec2.SpotInstanceRequestRootBlockDevice
 import typings.pulumiPulumi.mod.CustomResource
@@ -131,6 +132,10 @@ class SpotInstanceRequest protected () extends CustomResource {
     * If left empty instances are launched and terminated individually.
     */
   val launchGroup: Output_[js.UndefOr[String]] = js.native
+  /**
+    * Customize the metadata options of the instance. See Metadata Options below for more details.
+    */
+  val metadataOptions: Output_[SpotInstanceRequestMetadataOptions] = js.native
   /**
     * If true, the launched EC2 instance will have detailed monitoring enabled. (Available since v0.6.0)
     */

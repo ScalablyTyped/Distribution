@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@carbon/pictograms-react", "PetriCulture")
 @js.native
-object PetriCulture extends TopLevel[CarbonPictogram]
+object PetriCulture extends TopLevel[CarbonPictogramType]
 

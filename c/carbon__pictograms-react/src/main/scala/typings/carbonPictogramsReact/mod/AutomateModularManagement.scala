@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@carbon/pictograms-react", "AutomateModularManagement")
 @js.native
-object AutomateModularManagement extends TopLevel[CarbonPictogram]
+object AutomateModularManagement extends TopLevel[CarbonPictogramType]
 

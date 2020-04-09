@@ -1,6 +1,5 @@
 package typings.validator
 
-import typings.validator.mod.validator.IsByteLengthOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,6 +13,7 @@ object isByteLengthMod extends js.Object {
     * @param [options] - Options
     */
   def default(str: String): Boolean = js.native
-  def default(str: String, options: IsByteLengthOptions): Boolean = js.native
+  def default(str: String, options: typings.validator.mod.validator.IsByteLengthOptions): Boolean = js.native
+  type IsByteLengthOptions = typings.validator.mod.validator.IsByteLengthOptions
 }
 

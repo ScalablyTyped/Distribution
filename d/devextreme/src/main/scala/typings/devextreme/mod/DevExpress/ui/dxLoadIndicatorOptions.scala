@@ -9,7 +9,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxLoadIndicatorOptions extends WidgetOptions[dxLoadIndicator] {
-  /** Specifies the path to an image used as the indicator. */
+  /** @name dxLoadIndicator.Options.indicatorSrc */
   var indicatorSrc: js.UndefOr[String] = js.undefined
 }
 

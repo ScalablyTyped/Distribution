@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait BaseGauge extends BaseWidget {
-  /** Gets subvalues. */
+  /** @name BaseGauge.subvalues() */
   def subvalues(): js.Array[Double] = js.native
-  /** Updates subvalues. */
+  /** @name BaseGauge.subvalues(subvalues) */
   def subvalues(subvalues: js.Array[Double]): Unit = js.native
-  /** Gets the main value. */
+  /** @name BaseGauge.value() */
   def value(): Double = js.native
-  /** Updates the main value. */
+  /** @name BaseGauge.value(value) */
   def value(value: Double): Unit = js.native
 }
 

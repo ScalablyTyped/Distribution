@@ -20,6 +20,8 @@ import typings.node.AnonRecursive
 import typings.node.AnonWithFileTypes
 import typings.node.Buffer
 import typings.node.BufferEncoding
+import typings.node.MakeDirectoryOptionsrecur
+import typings.node.MakeDirectoryOptionsrecurMode
 import typings.node.NodeJS.ArrayBufferView
 import typings.node.fsMod.Dir
 import typings.node.fsMod.Dirent
@@ -275,10 +277,30 @@ trait Typeoffs extends js.Object {
     * @param options Either the file mode, or an object optionally specifying the file mode and whether parent folders
     * should be created. If a string is passed, it is parsed as an octal integer. If not specified, defaults to `0o777`.
     */
-  def mkdirSync(path: PathLike): Unit = js.native
-  def mkdirSync(path: PathLike, options: String): Unit = js.native
-  def mkdirSync(path: PathLike, options: Double): Unit = js.native
-  def mkdirSync(path: PathLike, options: MakeDirectoryOptions): Unit = js.native
+  def mkdirSync(path: PathLike): js.UndefOr[String] = js.native
+  def mkdirSync(path: PathLike, options: String): js.UndefOr[String] = js.native
+  def mkdirSync(path: PathLike, options: Double): js.UndefOr[String] = js.native
+  /**
+    * Synchronous mkdir(2) - create a directory.
+    * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
+    * @param options Either the file mode, or an object optionally specifying the file mode and whether parent folders
+    * should be created. If a string is passed, it is parsed as an octal integer. If not specified, defaults to `0o777`.
+    */
+  def mkdirSync(path: PathLike, options: MakeDirectoryOptionsrecur): String = js.native
+  def mkdirSync(path: PathLike, options: MakeDirectoryOptionsrecurMode): Unit = js.native
+  def mkdirSync(path: PathLike, options: MakeDirectoryOptions): js.UndefOr[String] = js.native
+  /**
+    * Synchronous mkdir(2) - create a directory.
+    * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
+    * @param options Either the file mode, or an object optionally specifying the file mode and whether parent folders
+    * should be created. If a string is passed, it is parsed as an octal integer. If not specified, defaults to `0o777`.
+    */
+  @JSName("mkdirSync")
+  def mkdirSync_Unit(path: PathLike): Unit = js.native
+  @JSName("mkdirSync")
+  def mkdirSync_Unit(path: PathLike, options: String): Unit = js.native
+  @JSName("mkdirSync")
+  def mkdirSync_Unit(path: PathLike, options: Double): Unit = js.native
   /**
     * Synchronously creates a unique temporary directory.
     * Generates six random characters to be appended behind a required prefix to create a unique temporary directory.

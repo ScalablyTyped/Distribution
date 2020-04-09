@@ -4,7 +4,7 @@ import typings.jest.mod.jest.EqualityTester
 import typings.jest.mod.jest.MatcherColorFn
 import typings.jest.mod.jest.MatcherHintOptions
 import typings.jest.mod.jest.PrintLabel
-import typings.jestDiff.mod.DiffOptions
+import typings.jestDiff.typesMod.DiffOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

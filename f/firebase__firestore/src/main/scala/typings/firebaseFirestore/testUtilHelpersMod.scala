@@ -1,7 +1,9 @@
 package typings.firebaseFirestore
 
 import typings.firebaseFirestore.apiBlobMod.Blob
-import typings.firebaseFirestore.apiUserDataConverterMod.DocumentKeyReference
+import typings.firebaseFirestore.apiUserDataReaderMod.DocumentKeyReference
+import typings.firebaseFirestore.apiUserDataReaderMod.UserDataReader
+import typings.firebaseFirestore.apiUserDataWriterMod.UserDataWriter
 import typings.firebaseFirestore.coreDatabaseInfoMod.DatabaseId
 import typings.firebaseFirestore.coreQueryMod.Bound
 import typings.firebaseFirestore.coreQueryMod.FieldFilter
@@ -12,6 +14,7 @@ import typings.firebaseFirestore.coreViewMod.LimboDocumentChange
 import typings.firebaseFirestore.coreViewMod.View
 import typings.firebaseFirestore.coreViewMod.ViewChange
 import typings.firebaseFirestore.firebaseFirestoreStrings.LessthansignDELETEGreaterthansign
+import typings.firebaseFirestore.firestoreProtoApiMod.Value
 import typings.firebaseFirestore.localLocalViewChangesMod.LocalViewChanges
 import typings.firebaseFirestore.localTargetDataMod.TargetData
 import typings.firebaseFirestore.localTargetDataMod.TargetPurpose
@@ -36,15 +39,16 @@ import typings.firebaseFirestore.modelPathMod.FieldPath
 import typings.firebaseFirestore.modelPathMod.ResourcePath
 import typings.firebaseFirestore.remoteRemoteEventMod.RemoteEvent
 import typings.firebaseFirestore.remoteRemoteEventMod.TargetChange
-import typings.firebaseFirestore.srcModelFieldValueMod.FieldValue
 import typings.firebaseFirestore.srcModelFieldValueMod.JsonObject
 import typings.firebaseFirestore.srcModelFieldValueMod.ObjectValue
 import typings.firebaseFirestore.utilByteStringMod.ByteString
 import typings.firebaseFirestore.utilObjMod.Dict
 import typings.firebaseFirestore.utilSortedMapMod.SortedMap
 import typings.firebaseFirestore.utilSortedSetMod.SortedSet
+import typings.firebaseFirestoreTypes.mod.DocumentData
 import typings.firebaseFirestoreTypes.mod.OrderByDirection
 import typings.std.Error
+import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -121,6 +125,7 @@ object testUtilHelpersMod extends js.Object {
   def expectSetToEqual[T](set: SortedSet[T], arr: js.Array[T]): Unit = js.native
   def field(path: String): FieldPath = js.native
   def filter(path: String, op: String, value: js.Any): FieldFilter = js.native
+  def forEachNumber[V](obj: Dict[V], fn: js.Function2[/* key */ Double, /* val */ V, Unit]): Unit = js.native
   def key(path: String): DocumentKey = js.native
   def keySet(keys: DocumentKey*): DocumentKeySet_ = js.native
   def keys(documents: (MaybeDocument | String)*): DocumentKeySet_ = js.native
@@ -142,8 +147,13 @@ object testUtilHelpersMod extends js.Object {
   def removedDoc(keyStr: String): NoDocument = js.native
   def resumeTokenForSnapshot(snapshotVersion: SnapshotVersion): ByteString = js.native
   def setMutation(keyStr: String, json: JsonObject[_]): SetMutation = js.native
-  def size(obj: JsonObject[_]): Double = js.native
+  def stringFromBase64String(): ByteString = js.native
+  def stringFromBase64String(value: String): ByteString = js.native
+  def stringFromBase64String(value: Uint8Array): ByteString = js.native
   def targetData(targetId: TargetId, queryPurpose: TargetPurpose, path: String): TargetData = js.native
+  def testUserDataReader(): UserDataReader = js.native
+  def testUserDataReader(useProto3Json: Boolean): UserDataReader = js.native
+  def testUserDataWriter(): UserDataWriter[DocumentData] = js.native
   def transformMutation(keyStr: String, data: Dict[_]): TransformMutation = js.native
   def unknownDoc(keyStr: String, ver: TestSnapshotVersion): UnknownDocument = js.native
   def updateMapping(
@@ -160,7 +170,7 @@ object testUtilHelpersMod extends js.Object {
     current: Boolean
   ): TargetChange = js.native
   def version(v: TestSnapshotVersion): SnapshotVersion = js.native
-  def wrap(value: js.Any): FieldValue = js.native
+  def wrap(value: js.Any): Value = js.native
   def wrapObject(obj: JsonObject[_]): ObjectValue = js.native
   /* static members */
   @js.native

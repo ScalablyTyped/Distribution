@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object getAlgorithmByOID extends js.Object {
   /**
     * Get WebCrypto algorithm by wel-known OID
-    * 
+    *
     * @param {string} oid Wel-known OID to search for
     * @returns {Algorithm}
     */

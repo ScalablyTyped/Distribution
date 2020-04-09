@@ -11,7 +11,7 @@ trait TopicRuleCloudwatchAlarm extends js.Object {
     */
   var alarmName: String = js.native
   /**
-    * The ARN of the IAM role that grants access.
+    * The IAM role ARN that allows access to the CloudWatch alarm.
     */
   var roleArn: String = js.native
   /**

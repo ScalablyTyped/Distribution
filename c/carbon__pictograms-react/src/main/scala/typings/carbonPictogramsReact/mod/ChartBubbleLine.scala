@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@carbon/pictograms-react", "ChartBubbleLine")
 @js.native
-object ChartBubbleLine extends TopLevel[CarbonPictogram]
+object ChartBubbleLine extends TopLevel[CarbonPictogramType]
 

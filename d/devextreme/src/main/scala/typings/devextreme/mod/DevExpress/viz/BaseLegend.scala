@@ -15,41 +15,41 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BaseLegend extends js.Object {
-  /** Colors the legend's background. */
+  /** @name BaseLegend.backgroundColor */
   var backgroundColor: js.UndefOr[String] = js.undefined
-  /** Configures the legend's border. */
+  /** @name BaseLegend.border */
   var border: js.UndefOr[AnonCornerRadius] = js.undefined
-  /** Arranges legend items into several columns. */
+  /** @name BaseLegend.columnCount */
   var columnCount: js.UndefOr[Double] = js.undefined
-  /** Specifies an empty space between item columns in pixels. */
+  /** @name BaseLegend.columnItemSpacing */
   var columnItemSpacing: js.UndefOr[Double] = js.undefined
-  /** Specifies the legend items' font options. */
+  /** @name BaseLegend.font */
   var font: js.UndefOr[Font] = js.undefined
-  /** Along with verticalAlignment, specifies the legend's position. */
+  /** @name BaseLegend.horizontalAlignment */
   var horizontalAlignment: js.UndefOr[center | left | right] = js.undefined
-  /** Specifies the text's position relative to the marker in a legend item. */
+  /** @name BaseLegend.itemTextPosition */
   var itemTextPosition: js.UndefOr[bottom | left | right | top] = js.undefined
-  /** Aligns items in the last column or row (depending on the legend's orientation). Applies when legend items are not divided into columns or rows equally. */
+  /** @name BaseLegend.itemsAlignment */
   var itemsAlignment: js.UndefOr[center | left | right] = js.undefined
-  /** Generates an empty space, measured in pixels, around the legend. */
+  /** @name BaseLegend.margin */
   var margin: js.UndefOr[Double | AnonBottom] = js.undefined
-  /** Specifies the marker's size in a legend item in pixels. */
+  /** @name BaseLegend.markerSize */
   var markerSize: js.UndefOr[Double] = js.undefined
-  /** Arranges legend items vertically (in a column) or horizontally (in a row). The default value is "horizontal" if the legend.horizontalAlignment is "center". Otherwise, it is "vertical". */
+  /** @name BaseLegend.orientation */
   var orientation: js.UndefOr[horizontal | vertical] = js.undefined
-  /** Generates an empty space, measured in pixels, between the legend's left/right border and its items. */
+  /** @name BaseLegend.paddingLeftRight */
   var paddingLeftRight: js.UndefOr[Double] = js.undefined
-  /** Generates an empty space, measured in pixels, between the legend's top/bottom border and its items. */
+  /** @name BaseLegend.paddingTopBottom */
   var paddingTopBottom: js.UndefOr[Double] = js.undefined
-  /** Arranges legend items in several rows. */
+  /** @name BaseLegend.rowCount */
   var rowCount: js.UndefOr[Double] = js.undefined
-  /** Specifies an empty space between item rows in pixels. */
+  /** @name BaseLegend.rowItemSpacing */
   var rowItemSpacing: js.UndefOr[Double] = js.undefined
-  /** Configures the legend title. */
+  /** @name BaseLegend.title */
   var title: js.UndefOr[AnonHorizontalAlignment | String] = js.undefined
-  /** Along with horizontalAlignment, specifies the legend's position. */
+  /** @name BaseLegend.verticalAlignment */
   var verticalAlignment: js.UndefOr[bottom | top] = js.undefined
-  /** Specifies the legend's visibility. */
+  /** @name BaseLegend.visible */
   var visible: js.UndefOr[Boolean] = js.undefined
 }
 

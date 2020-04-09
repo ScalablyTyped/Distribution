@@ -11,6 +11,7 @@ import typings.rdfExt.propTypeMod.PropType
 import typings.rdfExt.quadMod.QuadExt
 import typings.rdfExt.rdfExtStrings.graph
 import typings.rdfExt.variableMod.VariableExt
+import typings.rdfJs.mod.DataFactory
 import typings.rdfJs.mod.NamedNode
 import typings.rdfJs.mod.Quad
 import typings.rdfJs.mod.QuadGraph
@@ -21,9 +22,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+// tslint:disable-next-line no-unnecessary-class
 @JSImport("rdf-ext/lib/DataFactory", JSImport.Namespace)
 @js.native
-class ^ () extends DataFactoryExt
+class ^ () extends DataFactory[QuadExt, Quad]
 
 @JSImport("rdf-ext/lib/DataFactory", JSImport.Namespace)
 @js.native

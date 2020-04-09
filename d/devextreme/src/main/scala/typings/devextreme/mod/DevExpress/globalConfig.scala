@@ -9,27 +9,29 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait globalConfig extends js.Object {
-  /** @deprecated  */
-  /** A decimal separator. No longer applies. */
+  /** @deprecated */
+  /** @name globalConfig.decimalSeparator */
   var decimalSeparator: js.UndefOr[String] = js.undefined
-  /** The default currency. Accepts a 3-letter ISO 4217 code. */
+  /** @name globalConfig.defaultCurrency */
   var defaultCurrency: js.UndefOr[String] = js.undefined
-  /** Specifies how editors' text fields are styled in your application. */
+  /** @name globalConfig.editorStylingMode */
   var editorStylingMode: js.UndefOr[outlined | underlined | filled] = js.undefined
-  /** Configures a Floating Action Button (FAB) that emits a stack of related actions (speed dial). */
+  /** @name globalConfig.floatingActionButtonConfig */
   var floatingActionButtonConfig: js.UndefOr[AnonCloseIcon] = js.undefined
-  /** Specifies whether dates are parsed and serialized according to the ISO 8601 standard in all browsers. */
+  /** @name globalConfig.forceIsoDateParsing */
   var forceIsoDateParsing: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether to convert string values to lowercase in filter and search requests to OData services. Applies to the following operations: "startswith", "endswith", "contains", and "notcontains". */
+  /** @name globalConfig.oDataFilterToLower */
   var oDataFilterToLower: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether the widgets support a right-to-left representation. Available for individual widgets as well. */
+  /** @name globalConfig.rtlEnabled */
   var rtlEnabled: js.UndefOr[Boolean] = js.undefined
-  /** The decimal separator that is used when submitting a value to the server. */
+  /** @name globalConfig.serverDecimalSeparator */
   var serverDecimalSeparator: js.UndefOr[String] = js.undefined
-  /** @deprecated  */
-  /** A group separator. No longer applies. */
+  /** @deprecated */
+  /** @name globalConfig.thousandsSeparator */
   var thousandsSeparator: js.UndefOr[String] = js.undefined
+  /** @name globalConfig.useLegacyStoreResult */
   var useLegacyStoreResult: js.UndefOr[Boolean] = js.undefined
+  /** @name globalConfig.useLegacyVisibleIndex */
   var useLegacyVisibleIndex: js.UndefOr[Boolean] = js.undefined
 }
 

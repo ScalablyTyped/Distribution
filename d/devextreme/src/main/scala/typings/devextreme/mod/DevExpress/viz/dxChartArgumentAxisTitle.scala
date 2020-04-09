@@ -13,7 +13,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxChartArgumentAxisTitle extends dxChartCommonAxisSettingsTitle {
-  /** Specifies the text of the axis title. */
+  /** @name dxChart.Options.argumentAxis.title.text */
   var text: js.UndefOr[String] = js.undefined
 }
 

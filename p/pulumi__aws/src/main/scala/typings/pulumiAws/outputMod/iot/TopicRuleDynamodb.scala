@@ -35,7 +35,7 @@ trait TopicRuleDynamodb extends js.Object {
     */
   var rangeKeyValue: js.UndefOr[String] = js.native
   /**
-    * The ARN of the IAM role that grants access.
+    * The ARN of the IAM role that grants access to the DynamoDB table.
     */
   var roleArn: String = js.native
   /**

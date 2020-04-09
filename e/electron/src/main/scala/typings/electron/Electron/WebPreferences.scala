@@ -89,6 +89,11 @@ trait WebPreferences extends js.Object {
     */
   var disableBlinkFeatures: js.UndefOr[String] = js.undefined
   /**
+    * Whether to disable dialogs completely. Overrides `safeDialogs`. Default is
+    * `false`.
+    */
+  var disableDialogs: js.UndefOr[Boolean] = js.undefined
+  /**
     * Whether to prevent the window from resizing when entering HTML Fullscreen.
     * Default is `false`.
     */
@@ -249,6 +254,7 @@ object WebPreferences {
     defaultMonospaceFontSize: Int | Double = null,
     devTools: js.UndefOr[Boolean] = js.undefined,
     disableBlinkFeatures: String = null,
+    disableDialogs: js.UndefOr[Boolean] = js.undefined,
     disableHtmlFullscreenWindowResize: js.UndefOr[Boolean] = js.undefined,
     enableBlinkFeatures: String = null,
     enableRemoteModule: js.UndefOr[Boolean] = js.undefined,
@@ -291,6 +297,7 @@ object WebPreferences {
     if (defaultMonospaceFontSize != null) __obj.updateDynamic("defaultMonospaceFontSize")(defaultMonospaceFontSize.asInstanceOf[js.Any])
     if (!js.isUndefined(devTools)) __obj.updateDynamic("devTools")(devTools.asInstanceOf[js.Any])
     if (disableBlinkFeatures != null) __obj.updateDynamic("disableBlinkFeatures")(disableBlinkFeatures.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableDialogs)) __obj.updateDynamic("disableDialogs")(disableDialogs.asInstanceOf[js.Any])
     if (!js.isUndefined(disableHtmlFullscreenWindowResize)) __obj.updateDynamic("disableHtmlFullscreenWindowResize")(disableHtmlFullscreenWindowResize.asInstanceOf[js.Any])
     if (enableBlinkFeatures != null) __obj.updateDynamic("enableBlinkFeatures")(enableBlinkFeatures.asInstanceOf[js.Any])
     if (!js.isUndefined(enableRemoteModule)) __obj.updateDynamic("enableRemoteModule")(enableRemoteModule.asInstanceOf[js.Any])

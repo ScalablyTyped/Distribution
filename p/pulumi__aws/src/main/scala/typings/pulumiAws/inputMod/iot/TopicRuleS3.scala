@@ -16,7 +16,7 @@ trait TopicRuleS3 extends js.Object {
     */
   var key: Input[String] = js.native
   /**
-    * The ARN of the IAM role that grants access.
+    * The IAM role ARN that allows access to the CloudWatch alarm.
     */
   var roleArn: Input[String] = js.native
 }

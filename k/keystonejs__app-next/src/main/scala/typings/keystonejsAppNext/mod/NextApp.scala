@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class NextApp () extends BaseApp {
   def this(options: NextOptions) = this()
-  def prepareMiddleware(hasDev: AnonDev): js.Promise[Unit] = js.native
+  def prepareMiddleware(hasDevDistDir: AnonDev): js.Promise[_] = js.native
 }
 

@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ArrayStoreOptions[T] extends StoreOptions[T] {
-  /** Specifies the store's associated array. */
+  /** @name ArrayStore.Options.data */
   var data: js.UndefOr[js.Array[_]] = js.undefined
 }
 

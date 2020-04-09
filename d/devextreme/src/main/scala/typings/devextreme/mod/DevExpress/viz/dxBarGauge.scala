@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait dxBarGauge extends BaseWidget {
-  /** Gets all the values. */
+  /** @name dxBarGauge.values() */
   def values(): js.Array[Double] = js.native
-  /** Updates all the values. */
+  /** @name dxBarGauge.values(newValues) */
   def values(values: js.Array[Double]): Unit = js.native
 }
 

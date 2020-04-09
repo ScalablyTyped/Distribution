@@ -15,7 +15,7 @@ trait UpdateEndpointInput extends js.Object {
     */
   var EndpointName: typings.awsSdk.sagemakerMod.EndpointName = js.native
   /**
-    * When you are updating endpoint resources with RetainAllVariantProperties, whose value is set to true, ExcludeRetainedVariantProperties specifies the list of type VariantProperty to override with the values provided by EndpointConfig. If you don't specify a value for ExcludeAllVariantProperties, no variant properties are overridden. 
+    * When you are updating endpoint resources with UpdateEndpointInput$RetainAllVariantProperties, whose value is set to true, ExcludeRetainedVariantProperties specifies the list of type VariantProperty to override with the values provided by EndpointConfig. If you don't specify a value for ExcludeAllVariantProperties, no variant properties are overridden. 
     */
   var ExcludeRetainedVariantProperties: js.UndefOr[VariantPropertyList] = js.native
   /**

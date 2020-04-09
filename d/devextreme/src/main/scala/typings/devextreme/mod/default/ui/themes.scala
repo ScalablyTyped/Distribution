@@ -13,11 +13,11 @@ class themes ()
 @JSImport("devextreme", "ui.themes")
 @js.native
 object themes extends js.Object {
-  /** Gets the current theme's name. */
+  /** @name ui.themes.current() */
   def current(): String = js.native
-  /** Sets a theme with a specific name. */
+  /** @name ui.themes.current(themeName) */
   def current(themeName: String): Unit = js.native
-  /** Specifies a function to be executed after the theme is loaded. */
+  /** @name ui.themes.ready(callback) */
   def ready(callback: js.Function): Unit = js.native
 }
 

@@ -1,7 +1,6 @@
 package typings.tryghostContentApi
 
 import typings.tryghostContentApi.mod.BrowseFunction
-import typings.tryghostContentApi.mod.GhostData
 import typings.tryghostContentApi.mod.Nullable
 import typings.tryghostContentApi.mod.Params
 import typings.tryghostContentApi.mod.ReadFunction
@@ -20,8 +19,11 @@ trait AnonBrowseRead extends js.Object {
   def browse(): js.Promise[TagsObject] = js.native
   def browse(options: Params): js.Promise[TagsObject] = js.native
   def browse(options: Params, memberToken: Nullable[String]): js.Promise[TagsObject] = js.native
-  def read(data: GhostData): js.Promise[Tag] = js.native
-  def read(data: GhostData, options: Params): js.Promise[Tag] = js.native
-  def read(data: GhostData, options: Params, memberToken: Nullable[String]): js.Promise[Tag] = js.native
+  def read(data: AnonId): js.Promise[Tag] = js.native
+  def read(data: AnonId, options: Params): js.Promise[Tag] = js.native
+  def read(data: AnonId, options: Params, memberToken: Nullable[String]): js.Promise[Tag] = js.native
+  def read(data: AnonSlug): js.Promise[Tag] = js.native
+  def read(data: AnonSlug, options: Params): js.Promise[Tag] = js.native
+  def read(data: AnonSlug, options: Params, memberToken: Nullable[String]): js.Promise[Tag] = js.native
 }
 

@@ -2,6 +2,7 @@ package typings.firebaseFirestore.remotePersistentStreamMod
 
 import typings.firebaseFirestore.firestoreProtoApiMod.ApiClientObjectMap
 import typings.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces.Write
+import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +18,7 @@ object WriteRequest {
     database: String = null,
     labels: ApiClientObjectMap[String] = null,
     streamId: String = null,
-    streamToken: String = null,
+    streamToken: String | Uint8Array = null,
     writes: js.Array[Write] = null
   ): WriteRequest = {
     val __obj = js.Dynamic.literal()

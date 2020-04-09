@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FunnelLegendItem extends BaseLegendItem {
-  /** The funnel item that the legend item represents. */
+  /** @name FunnelLegendItem.item */
   var item: js.UndefOr[dxFunnelItem] = js.undefined
 }
 

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@tensorflow/tfjs-converter/dist/src/data/compiled_api", "SaverDef")
+@JSImport("@tensorflow/tfjs-converter/dist/data/compiled_api", "SaverDef")
 @js.native
 object SaverDef extends js.Object {
   @js.native

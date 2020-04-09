@@ -1,6 +1,6 @@
 package typings.instagramPrivateApi.postingVideoOptionsMod
 
-import typings.instagramPrivateApi.AnonStorystickerids
+import typings.instagramPrivateApi.AnonStorystickeridsAny
 import typings.instagramPrivateApi.instagramPrivateApiStrings.once
 import typings.instagramPrivateApi.instagramPrivateApiStrings.replayable
 import typings.instagramPrivateApi.instagramPrivateApiStrings.story
@@ -46,7 +46,7 @@ object PostingStoryVideoOptions {
     recipientUsers: js.Array[String] = null,
     replyType: story | String = null,
     slider: StorySlider = null,
-    stickerConfig: (js.Any with AnonStorystickerids) | StickerBuilder = null,
+    stickerConfig: (js.Any with AnonStorystickeridsAny) | StickerBuilder = null,
     threadIds: js.Array[String] = null,
     toBesties: js.UndefOr[Boolean] = js.undefined,
     transcodeDelay: Int | Double = null,

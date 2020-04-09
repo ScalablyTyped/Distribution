@@ -21,57 +21,57 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxTextEditorOptions[T] extends EditorOptions[T] {
-  /** Allows you to add custom buttons to the input text field. */
+  /** @name dxTextEditor.Options.buttons */
   var buttons: js.UndefOr[js.Array[String | clear | dxTextEditorButton]] = js.undefined
-  /** Specifies the attributes to be passed on to the underlying HTML element. */
+  /** @name dxTextEditor.Options.inputAttr */
   var inputAttr: js.UndefOr[js.Any] = js.undefined
-  /** The editor mask that specifies the custom format of the entered string. */
+  /** @name dxTextEditor.Options.mask */
   var mask: js.UndefOr[String] = js.undefined
-  /** Specifies a mask placeholder. A single character is recommended. */
+  /** @name dxTextEditor.Options.maskChar */
   var maskChar: js.UndefOr[String] = js.undefined
-  /** A message displayed when the entered text does not match the specified pattern. */
+  /** @name dxTextEditor.Options.maskInvalidMessage */
   var maskInvalidMessage: js.UndefOr[String] = js.undefined
-  /** Specifies custom mask rules. */
+  /** @name dxTextEditor.Options.maskRules */
   var maskRules: js.UndefOr[js.Any] = js.undefined
-  /** The value to be assigned to the `name` attribute of the underlying HTML element. */
+  /** @name dxTextEditor.Options.name */
   var name: js.UndefOr[String] = js.undefined
-  /** A function that is executed when the widget loses focus after the text field's content was changed using the keyboard. */
+  /** @name dxTextEditor.Options.onChange */
   var onChange: js.UndefOr[js.Function1[/* e */ AnonElementEventJQueryEvent[T], _]] = js.undefined
-  /** A function that is executed when the widget's input has been copied. */
+  /** @name dxTextEditor.Options.onCopy */
   var onCopy: js.UndefOr[js.Function1[/* e */ AnonElementEventJQueryEvent[T], _]] = js.undefined
-  /** A function that is executed when the widget's input has been cut. */
+  /** @name dxTextEditor.Options.onCut */
   var onCut: js.UndefOr[js.Function1[/* e */ AnonElementEventJQueryEvent[T], _]] = js.undefined
-  /** A function that is executed when the Enter key has been pressed while the widget is focused. */
+  /** @name dxTextEditor.Options.onEnterKey */
   var onEnterKey: js.UndefOr[js.Function1[/* e */ AnonElementEventJQueryEvent[T], _]] = js.undefined
-  /** A function that is executed when the widget gets focus. */
+  /** @name dxTextEditor.Options.onFocusIn */
   var onFocusIn: js.UndefOr[js.Function1[/* e */ AnonElementEventJQueryEvent[T], _]] = js.undefined
-  /** A function that is executed when the widget loses focus. */
+  /** @name dxTextEditor.Options.onFocusOut */
   var onFocusOut: js.UndefOr[js.Function1[/* e */ AnonElementEventJQueryEvent[T], _]] = js.undefined
-  /** A function that is executed each time the widget's input is changed while the widget is focused. */
+  /** @name dxTextEditor.Options.onInput */
   var onInput: js.UndefOr[js.Function1[/* e */ AnonElementEventJQueryEvent[T], _]] = js.undefined
-  /** A function that is executed when a user is pressing a key on the keyboard. */
+  /** @name dxTextEditor.Options.onKeyDown */
   var onKeyDown: js.UndefOr[js.Function1[/* e */ AnonElementEventJQueryEvent[T], _]] = js.undefined
-  /** A function that is executed when a user presses a key on the keyboard. */
+  /** @name dxTextEditor.Options.onKeyPress */
   var onKeyPress: js.UndefOr[js.Function1[/* e */ AnonElementEventJQueryEvent[T], _]] = js.undefined
-  /** A function that is executed when a user releases a key on the keyboard. */
+  /** @name dxTextEditor.Options.onKeyUp */
   var onKeyUp: js.UndefOr[js.Function1[/* e */ AnonElementEventJQueryEvent[T], _]] = js.undefined
-  /** A function that is executed when the widget's input has been pasted. */
+  /** @name dxTextEditor.Options.onPaste */
   var onPaste: js.UndefOr[js.Function1[/* e */ AnonElementEventJQueryEvent[T], _]] = js.undefined
-  /** The text displayed by the widget when the widget value is empty. */
+  /** @name dxTextEditor.Options.placeholder */
   var placeholder: js.UndefOr[String] = js.undefined
-  /** Specifies whether to display the Clear button in the widget. */
+  /** @name dxTextEditor.Options.showClearButton */
   var showClearButton: js.UndefOr[Boolean] = js.undefined
-  /** Specifies when the widget shows the mask. Applies only if useMaskedValue is true. */
+  /** @name dxTextEditor.Options.showMaskMode */
   var showMaskMode: js.UndefOr[always | onFocus] = js.undefined
-  /** Specifies whether or not the widget checks the inner text for spelling mistakes. */
+  /** @name dxTextEditor.Options.spellcheck */
   var spellcheck: js.UndefOr[Boolean] = js.undefined
-  /** Specifies how the widget's text field is styled. */
+  /** @name dxTextEditor.Options.stylingMode */
   var stylingMode: js.UndefOr[outlined | underlined | filled] = js.undefined
-  /** The read-only option that holds the text displayed by the widget input element. */
+  /** @name dxTextEditor.Options.text */
   var text: js.UndefOr[String] = js.undefined
-  /** Specifies whether the value should contain mask characters or not. */
+  /** @name dxTextEditor.Options.useMaskedValue */
   var useMaskedValue: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the DOM events after which the widget's value should be updated. */
+  /** @name dxTextEditor.Options.valueChangeEvent */
   var valueChangeEvent: js.UndefOr[String] = js.undefined
 }
 

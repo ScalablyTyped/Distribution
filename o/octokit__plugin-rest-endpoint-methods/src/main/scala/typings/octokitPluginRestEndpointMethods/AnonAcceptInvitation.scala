@@ -154,7 +154,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait AnonAcceptInvitation extends js.Object {
   @JSName("acceptInvitation")
-  var acceptInvitation_Original: Anon314 = js.native
+  var acceptInvitation_Original: Anon325 = js.native
   /**
     * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
     *
@@ -169,19 +169,19 @@ trait AnonAcceptInvitation extends js.Object {
     * To prevent abuse, you are limited to sending 50 invitations to a repository per 24 hour period. Note there is no limit if you are inviting organization members to an organization repository.
     */
   @JSName("addCollaborator")
-  var addCollaborator_Original: Anon315 = js.native
+  var addCollaborator_Original: Anon326 = js.native
   /**
     * Here's how you can create a read-only deploy key:
     */
   @JSName("addDeployKey")
-  var addDeployKey_Original: Anon316 = js.native
+  var addDeployKey_Original: Anon327 = js.native
   /**
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     *
     * Adding admin enforcement requires admin or owner permissions to the repository and branch protection to be enabled.
     */
   @JSName("addProtectedBranchAdminEnforcement")
-  var addProtectedBranchAdminEnforcement_Original: Anon317 = js.native
+  var addProtectedBranchAdminEnforcement_Original: Anon328 = js.native
   /**
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     *
@@ -192,19 +192,19 @@ trait AnonAcceptInvitation extends js.Object {
     * | `array` | The GitHub Apps that have push access to this branch. Use the app's `slug`. **Note**: The list of users, apps, and teams in total is limited to 100 items. |
     */
   @JSName("addProtectedBranchAppRestrictions")
-  var addProtectedBranchAppRestrictions_Original: Anon318 = js.native
+  var addProtectedBranchAppRestrictions_Original: Anon329 = js.native
   /**
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     *
     * When authenticated with admin or owner permissions to the repository, you can use this endpoint to require signed commits on a branch. You must enable branch protection to require signed commits.
     */
   @JSName("addProtectedBranchRequiredSignatures")
-  var addProtectedBranchRequiredSignatures_Original: Anon319 = js.native
+  var addProtectedBranchRequiredSignatures_Original: Anon330 = js.native
   /**
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     */
   @JSName("addProtectedBranchRequiredStatusChecksContexts")
-  var addProtectedBranchRequiredStatusChecksContexts_Original: Anon320 = js.native
+  var addProtectedBranchRequiredStatusChecksContexts_Original: Anon331 = js.native
   /**
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     *
@@ -215,7 +215,7 @@ trait AnonAcceptInvitation extends js.Object {
     * | `array` | The teams that can have push access. Use the team's `slug`. **Note**: The list of users, apps, and teams in total is limited to 100 items. |
     */
   @JSName("addProtectedBranchTeamRestrictions")
-  var addProtectedBranchTeamRestrictions_Original: Anon321 = js.native
+  var addProtectedBranchTeamRestrictions_Original: Anon332 = js.native
   /**
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     *
@@ -226,19 +226,19 @@ trait AnonAcceptInvitation extends js.Object {
     * | `array` | Usernames for people who can have push access. **Note**: The list of users, apps, and teams in total is limited to 100 items. |
     */
   @JSName("addProtectedBranchUserRestrictions")
-  var addProtectedBranchUserRestrictions_Original: Anon322 = js.native
+  var addProtectedBranchUserRestrictions_Original: Anon333 = js.native
   /**
     * For organization-owned repositories, the list of collaborators includes outside collaborators, organization members that are direct collaborators, organization members with access through team memberships, organization members with access through default organization permissions, and organization owners.
     *
     * Team members will include the members of child teams.
     */
   @JSName("checkCollaborator")
-  var checkCollaborator_Original: Anon323 = js.native
+  var checkCollaborator_Original: Anon334 = js.native
   /**
     * Shows whether vulnerability alerts are enabled or disabled for a repository. The authenticated user must have admin access to the repository. For more information, see "[About security alerts for vulnerable dependencies](https://help.github.com/en/articles/about-security-alerts-for-vulnerable-dependencies)" in the GitHub Help documentation.
     */
   @JSName("checkVulnerabilityAlerts")
-  var checkVulnerabilityAlerts_Original: Anon324 = js.native
+  var checkVulnerabilityAlerts_Original: Anon335 = js.native
   /**
     * Both `:base` and `:head` must be branch names in `:repo`. To compare branches across other repositories in the same network as `:repo`, use the format `<USERNAME>:branch`.
     *
@@ -275,21 +275,21 @@ trait AnonAcceptInvitation extends js.Object {
     * | `valid`                  | None of the above errors applied, so the signature is considered to be verified.                                                  |
     */
   @JSName("compareCommits")
-  var compareCommits_Original: Anon325 = js.native
+  var compareCommits_Original: Anon336 = js.native
   /**
     * Create a comment for a commit using its `:commit_sha`.
     *
     * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
     */
   @JSName("createCommitComment")
-  var createCommitComment_Original: Anon326 = js.native
+  var createCommitComment_Original: Anon337 = js.native
   /**
     * Users with `push` access can create deployment statuses for a given deployment.
     *
     * GitHub Apps require `read & write` access to "Deployments" and `read-only` access to "Repo contents" (for private repos). OAuth Apps require the `repo_deployment` scope.
     */
   @JSName("createDeploymentStatus")
-  var createDeploymentStatus_Original: Anon328 = js.native
+  var createDeploymentStatus_Original: Anon339 = js.native
   /**
     * Deployments offer a few configurable parameters with sane defaults.
     *
@@ -324,7 +324,7 @@ trait AnonAcceptInvitation extends js.Object {
     * This error happens when the `required_contexts` parameter indicates that one or more contexts need to have a `success` status for the commit to be deployed, but one or more of the required contexts do not have a state of `success`.
     */
   @JSName("createDeployment")
-  var createDeployment_Original: Anon327 = js.native
+  var createDeployment_Original: Anon338 = js.native
   /**
     * You can use this endpoint to trigger a webhook event called `repository_dispatch` when you want activity that happens outside of GitHub to trigger a GitHub Actions workflow or GitHub App webhook. You must configure your GitHub Actions workflow or GitHub App to run when the `repository_dispatch` event occurs. For an example `repository_dispatch` webhook payload, see "[RepositoryDispatchEvent](https://developer.github.com/v3/activity/events/types/#repositorydispatchevent)."
     *
@@ -335,7 +335,7 @@ trait AnonAcceptInvitation extends js.Object {
     * This input example shows how you can use the `client_payload` as a test to debug your workflow.
     */
   @JSName("createDispatchEvent")
-  var createDispatchEvent_Original: Anon329 = js.native
+  var createDispatchEvent_Original: Anon340 = js.native
   /**
     * Creates a new repository for the authenticated user.
     *
@@ -347,21 +347,21 @@ trait AnonAcceptInvitation extends js.Object {
     * *   `repo` scope to create a private repository
     */
   @JSName("createForAuthenticatedUser")
-  var createForAuthenticatedUser_Original: Anon330 = js.native
+  var createForAuthenticatedUser_Original: Anon341 = js.native
   /**
     * Create a fork for the authenticated user.
     *
     * **Note**: Forking a Repository happens asynchronously. You may have to wait a short period of time before you can access the git objects. If this takes longer than 5 minutes, be sure to contact [GitHub Support](https://github.com/contact) or [GitHub Premium Support](https://premium.githubsupport.com).
     */
   @JSName("createFork")
-  var createFork_Original: Anon331 = js.native
+  var createFork_Original: Anon342 = js.native
   /**
     * Repositories can have multiple webhooks installed. Each webhook should have a unique `config`. Multiple webhooks can share the same `config` as long as those webhooks do not have any `events` that overlap.
     *
     * Here's how you can create a hook that posts payloads in JSON format:
     */
   @JSName("createHook")
-  var createHook_Original: Anon332 = js.native
+  var createHook_Original: Anon343 = js.native
   /**
     * Creates a new repository in the specified organization. The authenticated user must be a member of the organization.
     *
@@ -373,26 +373,26 @@ trait AnonAcceptInvitation extends js.Object {
     * *   `repo` scope to create a private repository
     */
   @JSName("createInOrg")
-  var createInOrg_Original: Anon333 = js.native
+  var createInOrg_Original: Anon344 = js.native
   /**
     * Creates a new file or updates an existing file in a repository.
     */
   @JSName("createOrUpdateFile")
-  var createOrUpdateFile_Original: Anon334 = js.native
+  var createOrUpdateFile_Original: Anon345 = js.native
   /**
     * Users with push access to the repository can create a release.
     *
     * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
     */
   @JSName("createRelease")
-  var createRelease_Original: Anon335 = js.native
+  var createRelease_Original: Anon346 = js.native
   /**
     * Users with push access in a repository can create commit statuses for a given SHA.
     *
     * Note: there is a limit of 1000 statuses per `sha` and `context` within a repository. Attempts to create more than 1000 statuses will result in a validation error.
     */
   @JSName("createStatus")
-  var createStatus_Original: Anon336 = js.native
+  var createStatus_Original: Anon347 = js.native
   /**
     * Creates a new repository using a repository template. Use the `template_owner` and `template_repo` route parameters to specify the repository to use as the template. The authenticated user must own or be a member of an organization that owns the repository. To check if a repository is available to use as a template, get the repository's information using the [Get a repository](https://developer.github.com/v3/repos/#get-a-repository) endpoint and check that the `is_template` key is `true`.
     *
@@ -406,11 +406,11 @@ trait AnonAcceptInvitation extends js.Object {
     * \`
     */
   @JSName("createUsingTemplate")
-  var createUsingTemplate_Original: Anon337 = js.native
+  var createUsingTemplate_Original: Anon348 = js.native
   @JSName("declineInvitation")
-  var declineInvitation_Original: Anon338 = js.native
+  var declineInvitation_Original: Anon349 = js.native
   @JSName("deleteCommitComment")
-  var deleteCommitComment_Original: Anon340 = js.native
+  var deleteCommitComment_Original: Anon351 = js.native
   /**
     * To ensure there can always be an active deployment, you can only delete an _inactive_ deployment. Anyone with `repo` or `repo_deployment` scopes can delete an inactive deployment.
     *
@@ -422,9 +422,9 @@ trait AnonAcceptInvitation extends js.Object {
     * For more information, see "[Create a deployment](https://developer.github.com/v3/repos/deployments/#create-a-deployment)" and "[Create a deployment status](https://developer.github.com/v3/repos/deployments/#create-a-deployment-status)."
     */
   @JSName("deleteDeployment")
-  var deleteDeployment_Original: Anon341 = js.native
+  var deleteDeployment_Original: Anon352 = js.native
   @JSName("deleteDownload")
-  var deleteDownload_Original: Anon342 = js.native
+  var deleteDownload_Original: Anon353 = js.native
   /**
     * Deletes a file in a repository.
     *
@@ -435,58 +435,58 @@ trait AnonAcceptInvitation extends js.Object {
     * You must provide values for both `name` and `email`, whether you choose to use `author` or `committer`. Otherwise, you'll receive a `422` status code.
     */
   @JSName("deleteFile")
-  var deleteFile_Original: Anon343 = js.native
+  var deleteFile_Original: Anon354 = js.native
   @JSName("deleteHook")
-  var deleteHook_Original: Anon344 = js.native
+  var deleteHook_Original: Anon355 = js.native
   @JSName("deleteInvitation")
-  var deleteInvitation_Original: Anon345 = js.native
+  var deleteInvitation_Original: Anon356 = js.native
   @JSName("deleteReleaseAsset")
-  var deleteReleaseAsset_Original: Anon347 = js.native
+  var deleteReleaseAsset_Original: Anon358 = js.native
   /**
     * Users with push access to the repository can delete a release.
     */
   @JSName("deleteRelease")
-  var deleteRelease_Original: Anon346 = js.native
+  var deleteRelease_Original: Anon357 = js.native
   /**
     * Deleting a repository requires admin access. If OAuth is used, the `delete_repo` scope is required.
     *
     * If an organization owner has configured the organization to prevent members from deleting organization-owned repositories, a member will get this response:
     */
   @JSName("delete")
-  var delete_Original: Anon339 = js.native
+  var delete_Original: Anon350 = js.native
   /**
     * Disables automated security fixes for a repository. The authenticated user must have admin access to the repository. For more information, see "[Configuring automated security fixes](https://help.github.com/en/articles/configuring-automated-security-fixes)" in the GitHub Help documentation.
     */
   @JSName("disableAutomatedSecurityFixes")
-  var disableAutomatedSecurityFixes_Original: Anon348 = js.native
+  var disableAutomatedSecurityFixes_Original: Anon359 = js.native
   @JSName("disablePagesSite")
-  var disablePagesSite_Original: Anon349 = js.native
+  var disablePagesSite_Original: Anon360 = js.native
   /**
     * Disables vulnerability alerts and the dependency graph for a repository. The authenticated user must have admin access to the repository. For more information, see "[About security alerts for vulnerable dependencies](https://help.github.com/en/articles/about-security-alerts-for-vulnerable-dependencies)" in the GitHub Help documentation.
     */
   @JSName("disableVulnerabilityAlerts")
-  var disableVulnerabilityAlerts_Original: Anon350 = js.native
+  var disableVulnerabilityAlerts_Original: Anon361 = js.native
   /**
     * Enables automated security fixes for a repository. The authenticated user must have admin access to the repository. For more information, see "[Configuring automated security fixes](https://help.github.com/en/articles/configuring-automated-security-fixes)" in the GitHub Help documentation.
     */
   @JSName("enableAutomatedSecurityFixes")
-  var enableAutomatedSecurityFixes_Original: Anon351 = js.native
+  var enableAutomatedSecurityFixes_Original: Anon362 = js.native
   @JSName("enablePagesSite")
-  var enablePagesSite_Original: Anon352 = js.native
+  var enablePagesSite_Original: Anon363 = js.native
   /**
     * Enables vulnerability alerts and the dependency graph for a repository. The authenticated user must have admin access to the repository. For more information, see "[About security alerts for vulnerable dependencies](https://help.github.com/en/articles/about-security-alerts-for-vulnerable-dependencies)" in the GitHub Help documentation.
     */
   @JSName("enableVulnerabilityAlerts")
-  var enableVulnerabilityAlerts_Original: Anon353 = js.native
+  var enableVulnerabilityAlerts_Original: Anon364 = js.native
   @JSName("getAllTopics")
-  var getAllTopics_Original: Anon355 = js.native
+  var getAllTopics_Original: Anon366 = js.native
   /**
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     *
     * Lists the GitHub Apps that have push access to this branch. Only installed GitHub Apps with `write` access to the `contents` permission can be added as authorized actors on a protected branch.
     */
   @JSName("getAppsWithAccessToProtectedBranch")
-  var getAppsWithAccessToProtectedBranch_Original: Anon356 = js.native
+  var getAppsWithAccessToProtectedBranch_Original: Anon367 = js.native
   /**
     * Gets a redirect URL to download an archive for a repository. The `:archive_format` can be either `tarball` or `zipball`. The `:ref` must be a valid Git reference. If you omit `:ref`, the repository’s default branch (usually `master`) will be used. Please make sure your HTTP framework is configured to follow redirects or you will need to use the `Location` header to make a second `GET` request.
     *
@@ -495,29 +495,29 @@ trait AnonAcceptInvitation extends js.Object {
     * To follow redirects with curl, use the `-L` switch:
     */
   @JSName("getArchiveLink")
-  var getArchiveLink_Original: Anon357 = js.native
+  var getArchiveLink_Original: Anon368 = js.native
   /**
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     */
   @JSName("getBranchProtection")
-  var getBranchProtection_Original: Anon359 = js.native
+  var getBranchProtection_Original: Anon370 = js.native
   @JSName("getBranch")
-  var getBranch_Original: Anon358 = js.native
+  var getBranch_Original: Anon369 = js.native
   /**
     * Get the total number of clones and breakdown per day or week for the last 14 days. Timestamps are aligned to UTC midnight of the beginning of the day or week. Week begins on Monday.
     */
   @JSName("getClones")
-  var getClones_Original: Anon360 = js.native
+  var getClones_Original: Anon371 = js.native
   /**
     * Returns a weekly aggregate of the number of additions and deletions pushed to a repository.
     */
   @JSName("getCodeFrequencyStats")
-  var getCodeFrequencyStats_Original: Anon361 = js.native
+  var getCodeFrequencyStats_Original: Anon372 = js.native
   /**
-    * Possible values for the `permission` key: `admin`, `write`, `read`, `none`.
+    * Checks the repository permission of a collaborator. The possible repository permissions are `admin`, `write`, `read`, and `none`.
     */
   @JSName("getCollaboratorPermissionLevel")
-  var getCollaboratorPermissionLevel_Original: Anon362 = js.native
+  var getCollaboratorPermissionLevel_Original: Anon373 = js.native
   /**
     * Users with pull access in a repository can access a combined view of commit statuses for a given ref. The ref can be a SHA, a branch name, or a tag name.
     *
@@ -530,14 +530,14 @@ trait AnonAcceptInvitation extends js.Object {
     * *   **success** if the latest status for all contexts is `success`
     */
   @JSName("getCombinedStatusForRef")
-  var getCombinedStatusForRef_Original: Anon363 = js.native
+  var getCombinedStatusForRef_Original: Anon374 = js.native
   /**
     * Returns the last year of commit activity grouped by week. The `days` array is a group of commits per day, starting on `Sunday`.
     */
   @JSName("getCommitActivityStats")
-  var getCommitActivityStats_Original: Anon365 = js.native
+  var getCommitActivityStats_Original: Anon376 = js.native
   @JSName("getCommitComment")
-  var getCommitComment_Original: Anon366 = js.native
+  var getCommitComment_Original: Anon377 = js.native
   /**
     * Returns the contents of a single commit reference. You must have `read` access for the repository to use this endpoint.
     *
@@ -568,7 +568,7 @@ trait AnonAcceptInvitation extends js.Object {
     * | `valid`                  | None of the above errors applied, so the signature is considered to be verified.                                                  |
     */
   @JSName("getCommit")
-  var getCommit_Original: Anon364 = js.native
+  var getCommit_Original: Anon375 = js.native
   /**
     * Gets the contents of a file or directory in a repository. Specify the file path or directory in `:path`. If you omit `:path`, you will receive the contents of all files in the repository.
     *
@@ -593,7 +593,7 @@ trait AnonAcceptInvitation extends js.Object {
     * If the submodule repository is not hosted on github.com, the Git URLs (`git_url` and `_links["git"]`) and the github.com URLs (`html_url` and `_links["html"]`) will have null values.
     */
   @JSName("getContents")
-  var getContents_Original: Anon367 = js.native
+  var getContents_Original: Anon378 = js.native
   /**
     * *   `total` - The Total number of commits authored by the contributor.
     *
@@ -605,50 +605,50 @@ trait AnonAcceptInvitation extends js.Object {
     * *   `c` - Number of commits
     */
   @JSName("getContributorsStats")
-  var getContributorsStats_Original: Anon368 = js.native
+  var getContributorsStats_Original: Anon379 = js.native
   @JSName("getDeployKey")
-  var getDeployKey_Original: Anon369 = js.native
+  var getDeployKey_Original: Anon380 = js.native
   /**
     * Users with pull access can view a deployment status for a deployment:
     */
   @JSName("getDeploymentStatus")
-  var getDeploymentStatus_Original: Anon371 = js.native
+  var getDeploymentStatus_Original: Anon382 = js.native
   @JSName("getDeployment")
-  var getDeployment_Original: Anon370 = js.native
+  var getDeployment_Original: Anon381 = js.native
   @JSName("getDownload")
-  var getDownload_Original: Anon372 = js.native
+  var getDownload_Original: Anon383 = js.native
   @JSName("getHook")
-  var getHook_Original: Anon373 = js.native
+  var getHook_Original: Anon384 = js.native
   @JSName("getLatestPagesBuild")
-  var getLatestPagesBuild_Original: Anon374 = js.native
+  var getLatestPagesBuild_Original: Anon385 = js.native
   /**
     * View the latest published full release for the repository.
     *
     * The latest release is the most recent non-prerelease, non-draft release, sorted by the `created_at` attribute. The `created_at` attribute is the date of the commit used for the release, and not the date when the release was drafted or published.
     */
   @JSName("getLatestRelease")
-  var getLatestRelease_Original: Anon375 = js.native
+  var getLatestRelease_Original: Anon386 = js.native
   @JSName("getPagesBuild")
-  var getPagesBuild_Original: Anon377 = js.native
+  var getPagesBuild_Original: Anon388 = js.native
   @JSName("getPages")
-  var getPages_Original: Anon376 = js.native
+  var getPages_Original: Anon387 = js.native
   /**
     * Returns the total commit counts for the `owner` and total commit counts in `all`. `all` is everyone combined, including the `owner` in the last 52 weeks. If you'd like to get the commit counts for non-owners, you can subtract `owner` from `all`.
     *
     * The array order is oldest week (index 0) to most recent week.
     */
   @JSName("getParticipationStats")
-  var getParticipationStats_Original: Anon378 = js.native
+  var getParticipationStats_Original: Anon389 = js.native
   /**
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     */
   @JSName("getProtectedBranchAdminEnforcement")
-  var getProtectedBranchAdminEnforcement_Original: Anon379 = js.native
+  var getProtectedBranchAdminEnforcement_Original: Anon390 = js.native
   /**
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     */
   @JSName("getProtectedBranchPullRequestReviewEnforcement")
-  var getProtectedBranchPullRequestReviewEnforcement_Original: Anon380 = js.native
+  var getProtectedBranchPullRequestReviewEnforcement_Original: Anon391 = js.native
   /**
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     *
@@ -657,12 +657,12 @@ trait AnonAcceptInvitation extends js.Object {
     * **Note**: You must enable branch protection to require signed commits.
     */
   @JSName("getProtectedBranchRequiredSignatures")
-  var getProtectedBranchRequiredSignatures_Original: Anon381 = js.native
+  var getProtectedBranchRequiredSignatures_Original: Anon392 = js.native
   /**
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     */
   @JSName("getProtectedBranchRequiredStatusChecks")
-  var getProtectedBranchRequiredStatusChecks_Original: Anon382 = js.native
+  var getProtectedBranchRequiredStatusChecks_Original: Anon393 = js.native
   /**
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     *
@@ -671,7 +671,7 @@ trait AnonAcceptInvitation extends js.Object {
     * **Note**: Users, apps, and teams `restrictions` are only available for organization-owned repositories.
     */
   @JSName("getProtectedBranchRestrictions")
-  var getProtectedBranchRestrictions_Original: Anon383 = js.native
+  var getProtectedBranchRestrictions_Original: Anon394 = js.native
   /**
     * Each array contains the day number, hour number, and number of commits:
     *
@@ -682,95 +682,95 @@ trait AnonAcceptInvitation extends js.Object {
     * For example, `[2, 14, 25]` indicates that there were 25 total commits, during the 2:00pm hour on Tuesdays. All times are based on the time zone of individual commits.
     */
   @JSName("getPunchCardStats")
-  var getPunchCardStats_Original: Anon384 = js.native
+  var getPunchCardStats_Original: Anon395 = js.native
   /**
     * Gets the preferred README for a repository.
     *
     * READMEs support [custom media types](https://developer.github.com/v3/repos/contents/#custom-media-types) for retrieving the raw content or rendered HTML.
     */
   @JSName("getReadme")
-  var getReadme_Original: Anon385 = js.native
+  var getReadme_Original: Anon396 = js.native
   /**
     * To download the asset's binary content, set the `Accept` header of the request to [`application/octet-stream`](https://developer.github.com/v3/media/#media-types). The API will either redirect the client to the location, or stream it directly if possible. API clients should handle both a `200` or `302` response.
     */
   @JSName("getReleaseAsset")
-  var getReleaseAsset_Original: Anon387 = js.native
+  var getReleaseAsset_Original: Anon398 = js.native
   /**
     * Get a published release with the specified tag.
     */
   @JSName("getReleaseByTag")
-  var getReleaseByTag_Original: Anon388 = js.native
+  var getReleaseByTag_Original: Anon399 = js.native
   /**
     * **Note:** This returns an `upload_url` key corresponding to the endpoint for uploading release assets. This key is a [hypermedia resource](https://developer.github.com/v3/#hypermedia).
     */
   @JSName("getRelease")
-  var getRelease_Original: Anon386 = js.native
+  var getRelease_Original: Anon397 = js.native
   /**
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     *
     * Lists the teams who have push access to this branch. The list includes child teams.
     */
   @JSName("getTeamsWithAccessToProtectedBranch")
-  var getTeamsWithAccessToProtectedBranch_Original: Anon389 = js.native
+  var getTeamsWithAccessToProtectedBranch_Original: Anon400 = js.native
   /**
     * Get the top 10 popular contents over the last 14 days.
     */
   @JSName("getTopPaths")
-  var getTopPaths_Original: Anon390 = js.native
+  var getTopPaths_Original: Anon401 = js.native
   /**
     * Get the top 10 referrers over the last 14 days.
     */
   @JSName("getTopReferrers")
-  var getTopReferrers_Original: Anon391 = js.native
+  var getTopReferrers_Original: Anon402 = js.native
   /**
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     *
     * Lists the people who have push access to this branch.
     */
   @JSName("getUsersWithAccessToProtectedBranch")
-  var getUsersWithAccessToProtectedBranch_Original: Anon392 = js.native
+  var getUsersWithAccessToProtectedBranch_Original: Anon403 = js.native
   /**
     * Get the total number of views and breakdown per day or week for the last 14 days. Timestamps are aligned to UTC midnight of the beginning of the day or week. Week begins on Monday.
     */
   @JSName("getViews")
-  var getViews_Original: Anon393 = js.native
+  var getViews_Original: Anon404 = js.native
   /**
     * When you pass the `scarlet-witch-preview` media type, requests to get a repository will also return the repository's code of conduct if it can be detected from the repository's code of conduct file.
     *
     * The `parent` and `source` objects are present when the repository is a fork. `parent` is the repository this repository was forked from, `source` is the ultimate source for the network.
     */
   @JSName("get")
-  var get_Original: Anon354 = js.native
+  var get_Original: Anon365 = js.native
   @JSName("listAssetsForRelease")
-  var listAssetsForRelease_Original: Anon395 = js.native
+  var listAssetsForRelease_Original: Anon406 = js.native
   /**
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     *
     * Returns all branches where the given commit SHA is the HEAD, or latest commit for the branch.
     */
   @JSName("listBranchesForHeadCommit")
-  var listBranchesForHeadCommit_Original: Anon397 = js.native
+  var listBranchesForHeadCommit_Original: Anon408 = js.native
   @JSName("listBranches")
-  var listBranches_Original: Anon396 = js.native
+  var listBranches_Original: Anon407 = js.native
   /**
     * For organization-owned repositories, the list of collaborators includes outside collaborators, organization members that are direct collaborators, organization members with access through team memberships, organization members with access through default organization permissions, and organization owners.
     *
     * Team members will include the members of child teams.
     */
   @JSName("listCollaborators")
-  var listCollaborators_Original: Anon398 = js.native
+  var listCollaborators_Original: Anon409 = js.native
   /**
     * Use the `:commit_sha` to specify the commit that will have its comments listed.
     */
   @JSName("listCommentsForCommit")
-  var listCommentsForCommit_Original: Anon399 = js.native
+  var listCommentsForCommit_Original: Anon410 = js.native
   /**
     * Commit Comments use [these custom media types](https://developer.github.com/v3/repos/comments/#custom-media-types). You can read more about the use of media types in the API [here](https://developer.github.com/v3/media/).
     *
     * Comments are ordered by ascending ID.
     */
   @JSName("listCommitComments")
-  var listCommitComments_Original: Anon400 = js.native
+  var listCommitComments_Original: Anon411 = js.native
   /**
     * **Signature verification object**
     *
@@ -795,106 +795,106 @@ trait AnonAcceptInvitation extends js.Object {
     * | `valid`                  | None of the above errors applied, so the signature is considered to be verified.                                                  |
     */
   @JSName("listCommits")
-  var listCommits_Original: Anon401 = js.native
+  var listCommits_Original: Anon412 = js.native
   /**
     * Lists contributors to the specified repository and sorts them by the number of commits per contributor in descending order. This endpoint may return information that is a few hours old because the GitHub REST API v3 caches contributor data to improve performance.
     *
     * GitHub identifies contributors by author email address. This endpoint groups contribution counts by GitHub user, which includes all associated email addresses. To improve performance, only the first 500 author email addresses in the repository link to GitHub users. The rest will appear as anonymous contributors without associated GitHub user information.
     */
   @JSName("listContributors")
-  var listContributors_Original: Anon402 = js.native
+  var listContributors_Original: Anon413 = js.native
   @JSName("listDeployKeys")
-  var listDeployKeys_Original: Anon403 = js.native
+  var listDeployKeys_Original: Anon414 = js.native
   /**
     * Users with pull access can view deployment statuses for a deployment:
     */
   @JSName("listDeploymentStatuses")
-  var listDeploymentStatuses_Original: Anon404 = js.native
+  var listDeploymentStatuses_Original: Anon415 = js.native
   /**
     * Simple filtering of deployments is available via query parameters:
     */
   @JSName("listDeployments")
-  var listDeployments_Original: Anon405 = js.native
+  var listDeployments_Original: Anon416 = js.native
   @JSName("listDownloads")
-  var listDownloads_Original: Anon406 = js.native
+  var listDownloads_Original: Anon417 = js.native
   /**
     * Lists repositories that the authenticated user has explicit permission (`:read`, `:write`, or `:admin`) to access.
     *
     * The authenticated user has explicit permission to access repositories they own, repositories where they are a collaborator, and repositories that they can access through an organization membership.
     */
   @JSName("listForAuthenticatedUser")
-  var listForAuthenticatedUser_Original: Anon407 = js.native
+  var listForAuthenticatedUser_Original: Anon418 = js.native
   /**
     * Lists repositories for the specified organization.
     */
   @JSName("listForOrg")
-  var listForOrg_Original: Anon408 = js.native
+  var listForOrg_Original: Anon419 = js.native
   /**
     * Lists public repositories for the specified user.
     */
   @JSName("listForUser")
-  var listForUser_Original: Anon409 = js.native
+  var listForUser_Original: Anon420 = js.native
   @JSName("listForks")
-  var listForks_Original: Anon410 = js.native
+  var listForks_Original: Anon421 = js.native
   @JSName("listHooks")
-  var listHooks_Original: Anon411 = js.native
+  var listHooks_Original: Anon422 = js.native
   /**
     * When authenticating as a user, this endpoint will list all currently open repository invitations for that user.
     */
   @JSName("listInvitationsForAuthenticatedUser")
-  var listInvitationsForAuthenticatedUser_Original: Anon413 = js.native
+  var listInvitationsForAuthenticatedUser_Original: Anon424 = js.native
   /**
     * When authenticating as a user with admin rights to a repository, this endpoint will list all currently open repository invitations.
     */
   @JSName("listInvitations")
-  var listInvitations_Original: Anon412 = js.native
+  var listInvitations_Original: Anon423 = js.native
   /**
     * Lists languages for the specified repository. The value shown for each language is the number of bytes of code written in that language.
     */
   @JSName("listLanguages")
-  var listLanguages_Original: Anon414 = js.native
+  var listLanguages_Original: Anon425 = js.native
   @JSName("listPagesBuilds")
-  var listPagesBuilds_Original: Anon415 = js.native
+  var listPagesBuilds_Original: Anon426 = js.native
   /**
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     */
   @JSName("listProtectedBranchRequiredStatusChecksContexts")
-  var listProtectedBranchRequiredStatusChecksContexts_Original: Anon416 = js.native
+  var listProtectedBranchRequiredStatusChecksContexts_Original: Anon427 = js.native
   /**
     * Lists all public repositories in the order that they were created.
     *
     * Note: Pagination is powered exclusively by the `since` parameter. Use the [Link header](https://developer.github.com/v3/#link-header) to get the URL for the next page of repositories.
     */
   @JSName("listPublic")
-  var listPublic_Original: Anon417 = js.native
+  var listPublic_Original: Anon428 = js.native
   /**
     * Lists all pull requests containing the provided commit SHA, which can be from any point in the commit history. The results will include open and closed pull requests. Additional preview headers may be required to see certain details for associated pull requests, such as whether a pull request is in a draft state. For more information about previews that might affect this endpoint, see the [List pull requests](https://developer.github.com/v3/pulls/#list-pull-requests) endpoint.
     */
   @JSName("listPullRequestsAssociatedWithCommit")
-  var listPullRequestsAssociatedWithCommit_Original: Anon418 = js.native
+  var listPullRequestsAssociatedWithCommit_Original: Anon429 = js.native
   /**
     * This returns a list of releases, which does not include regular Git tags that have not been associated with a release. To get a list of Git tags, use the [Repository Tags API](https://developer.github.com/v3/repos/#list-tags).
     *
     * Information about published releases are available to everyone. Only users with push access will receive listings for draft releases.
     */
   @JSName("listReleases")
-  var listReleases_Original: Anon419 = js.native
+  var listReleases_Original: Anon430 = js.native
   /**
     * Users with pull access in a repository can view commit statuses for a given ref. The ref can be a SHA, a branch name, or a tag name. Statuses are returned in reverse chronological order. The first status in the list will be the latest one.
     *
     * This resource is also available via a legacy route: `GET /repos/:owner/:repo/statuses/:ref`.
     */
   @JSName("listStatusesForRef")
-  var listStatusesForRef_Original: Anon420 = js.native
+  var listStatusesForRef_Original: Anon431 = js.native
   @JSName("listTags")
-  var listTags_Original: Anon421 = js.native
+  var listTags_Original: Anon432 = js.native
   @JSName("listTeams")
-  var listTeams_Original: Anon422 = js.native
+  var listTeams_Original: Anon433 = js.native
   /**
     * @deprecated octokit.repos.listTopics() has been renamed to octokit.repos.getAllTopics() (2020-03-04)
     */
   @JSName("listTopics")
-  var listTopics_Original: Anon423 = js.native
+  var listTopics_Original: Anon434 = js.native
   /**
     * Lists repositories that the authenticated user has explicit permission (`:read`, `:write`, or `:admin`) to access.
     *
@@ -902,30 +902,30 @@ trait AnonAcceptInvitation extends js.Object {
     * @deprecated octokit.repos.list() has been renamed to octokit.repos.listForAuthenticatedUser() (2020-03-04)
     */
   @JSName("list")
-  var list_Original: Anon394 = js.native
+  var list_Original: Anon405 = js.native
   @JSName("merge")
-  var merge_Original: Anon424 = js.native
+  var merge_Original: Anon435 = js.native
   /**
     * This will trigger a [ping event](https://developer.github.com/webhooks/#ping-event) to be sent to the hook.
     */
   @JSName("pingHook")
-  var pingHook_Original: Anon425 = js.native
+  var pingHook_Original: Anon436 = js.native
   /**
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     */
   @JSName("removeBranchProtection")
-  var removeBranchProtection_Original: Anon426 = js.native
+  var removeBranchProtection_Original: Anon437 = js.native
   @JSName("removeCollaborator")
-  var removeCollaborator_Original: Anon427 = js.native
+  var removeCollaborator_Original: Anon438 = js.native
   @JSName("removeDeployKey")
-  var removeDeployKey_Original: Anon428 = js.native
+  var removeDeployKey_Original: Anon439 = js.native
   /**
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     *
     * Removing admin enforcement requires admin or owner permissions to the repository and branch protection to be enabled.
     */
   @JSName("removeProtectedBranchAdminEnforcement")
-  var removeProtectedBranchAdminEnforcement_Original: Anon429 = js.native
+  var removeProtectedBranchAdminEnforcement_Original: Anon440 = js.native
   /**
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     *
@@ -936,36 +936,36 @@ trait AnonAcceptInvitation extends js.Object {
     * | `array` | The GitHub Apps that have push access to this branch. Use the app's `slug`. **Note**: The list of users, apps, and teams in total is limited to 100 items. |
     */
   @JSName("removeProtectedBranchAppRestrictions")
-  var removeProtectedBranchAppRestrictions_Original: Anon430 = js.native
+  var removeProtectedBranchAppRestrictions_Original: Anon441 = js.native
   /**
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     */
   @JSName("removeProtectedBranchPullRequestReviewEnforcement")
-  var removeProtectedBranchPullRequestReviewEnforcement_Original: Anon431 = js.native
+  var removeProtectedBranchPullRequestReviewEnforcement_Original: Anon442 = js.native
   /**
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     *
     * When authenticated with admin or owner permissions to the repository, you can use this endpoint to disable required signed commits on a branch. You must enable branch protection to require signed commits.
     */
   @JSName("removeProtectedBranchRequiredSignatures")
-  var removeProtectedBranchRequiredSignatures_Original: Anon432 = js.native
+  var removeProtectedBranchRequiredSignatures_Original: Anon443 = js.native
   /**
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     */
   @JSName("removeProtectedBranchRequiredStatusChecksContexts")
-  var removeProtectedBranchRequiredStatusChecksContexts_Original: Anon434 = js.native
+  var removeProtectedBranchRequiredStatusChecksContexts_Original: Anon445 = js.native
   /**
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     */
   @JSName("removeProtectedBranchRequiredStatusChecks")
-  var removeProtectedBranchRequiredStatusChecks_Original: Anon433 = js.native
+  var removeProtectedBranchRequiredStatusChecks_Original: Anon444 = js.native
   /**
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     *
     * Disables the ability to restrict who can push to this branch.
     */
   @JSName("removeProtectedBranchRestrictions")
-  var removeProtectedBranchRestrictions_Original: Anon435 = js.native
+  var removeProtectedBranchRestrictions_Original: Anon446 = js.native
   /**
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     *
@@ -976,7 +976,7 @@ trait AnonAcceptInvitation extends js.Object {
     * | `array` | Teams that should no longer have push access. Use the team's `slug`. **Note**: The list of users, apps, and teams in total is limited to 100 items. |
     */
   @JSName("removeProtectedBranchTeamRestrictions")
-  var removeProtectedBranchTeamRestrictions_Original: Anon436 = js.native
+  var removeProtectedBranchTeamRestrictions_Original: Anon447 = js.native
   /**
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     *
@@ -987,9 +987,9 @@ trait AnonAcceptInvitation extends js.Object {
     * | `array` | Usernames of the people who should no longer have push access. **Note**: The list of users, apps, and teams in total is limited to 100 items. |
     */
   @JSName("removeProtectedBranchUserRestrictions")
-  var removeProtectedBranchUserRestrictions_Original: Anon437 = js.native
+  var removeProtectedBranchUserRestrictions_Original: Anon448 = js.native
   @JSName("replaceAllTopics")
-  var replaceAllTopics_Original: Anon438 = js.native
+  var replaceAllTopics_Original: Anon449 = js.native
   /**
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     *
@@ -1000,12 +1000,12 @@ trait AnonAcceptInvitation extends js.Object {
     * | `array` | The GitHub Apps that have push access to this branch. Use the app's `slug`. **Note**: The list of users, apps, and teams in total is limited to 100 items. |
     */
   @JSName("replaceProtectedBranchAppRestrictions")
-  var replaceProtectedBranchAppRestrictions_Original: Anon439 = js.native
+  var replaceProtectedBranchAppRestrictions_Original: Anon450 = js.native
   /**
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     */
   @JSName("replaceProtectedBranchRequiredStatusChecksContexts")
-  var replaceProtectedBranchRequiredStatusChecksContexts_Original: Anon440 = js.native
+  var replaceProtectedBranchRequiredStatusChecksContexts_Original: Anon451 = js.native
   /**
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     *
@@ -1016,7 +1016,7 @@ trait AnonAcceptInvitation extends js.Object {
     * | `array` | The teams that can have push access. Use the team's `slug`. **Note**: The list of users, apps, and teams in total is limited to 100 items. |
     */
   @JSName("replaceProtectedBranchTeamRestrictions")
-  var replaceProtectedBranchTeamRestrictions_Original: Anon441 = js.native
+  var replaceProtectedBranchTeamRestrictions_Original: Anon452 = js.native
   /**
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     *
@@ -1027,36 +1027,36 @@ trait AnonAcceptInvitation extends js.Object {
     * | `array` | Usernames for people who can have push access. **Note**: The list of users, apps, and teams in total is limited to 100 items. |
     */
   @JSName("replaceProtectedBranchUserRestrictions")
-  var replaceProtectedBranchUserRestrictions_Original: Anon442 = js.native
+  var replaceProtectedBranchUserRestrictions_Original: Anon453 = js.native
   /**
     * @deprecated octokit.repos.replaceTopics() has been renamed to octokit.repos.replaceAllTopics() (2020-03-04)
     */
   @JSName("replaceTopics")
-  var replaceTopics_Original: Anon443 = js.native
+  var replaceTopics_Original: Anon454 = js.native
   /**
     * You can request that your site be built from the latest revision on the default branch. This has the same effect as pushing a commit to your default branch, but does not require an additional commit. Manually triggering page builds can be helpful when diagnosing build warnings and failures.
     *
     * Build requests are limited to one concurrent build per repository and one concurrent build per requester. If you request a build while another is still in progress, the second request will be queued until the first completes.
     */
   @JSName("requestPageBuild")
-  var requestPageBuild_Original: Anon444 = js.native
+  var requestPageBuild_Original: Anon455 = js.native
   /**
     * This endpoint will return all community profile metrics, including an overall health score, repository description, the presence of documentation, detected code of conduct, detected license, and the presence of ISSUE\_TEMPLATE, PULL\_REQUEST\_TEMPLATE, README, and CONTRIBUTING files.
     */
   @JSName("retrieveCommunityProfileMetrics")
-  var retrieveCommunityProfileMetrics_Original: Anon445 = js.native
+  var retrieveCommunityProfileMetrics_Original: Anon456 = js.native
   /**
     * This will trigger the hook with the latest push to the current repository if the hook is subscribed to `push` events. If the hook is not subscribed to `push` events, the server will respond with 204 but no test POST will be generated.
     *
     * **Note**: Previously `/repos/:owner/:repo/hooks/:hook_id/test`
     */
   @JSName("testPushHook")
-  var testPushHook_Original: Anon446 = js.native
+  var testPushHook_Original: Anon457 = js.native
   /**
     * A transfer request will need to be accepted by the new owner when transferring a personal repository to another user. The response will contain the original `owner`, and the transfer will continue asynchronously. For more details on the requirements to transfer personal and organization-owned repositories, see [about repository transfers](https://help.github.com/articles/about-repository-transfers/).
     */
   @JSName("transfer")
-  var transfer_Original: Anon447 = js.native
+  var transfer_Original: Anon458 = js.native
   /**
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     *
@@ -1067,15 +1067,15 @@ trait AnonAcceptInvitation extends js.Object {
     * **Note**: The list of users, apps, and teams in total is limited to 100 items.
     */
   @JSName("updateBranchProtection")
-  var updateBranchProtection_Original: Anon449 = js.native
+  var updateBranchProtection_Original: Anon460 = js.native
   @JSName("updateCommitComment")
-  var updateCommitComment_Original: Anon450 = js.native
+  var updateCommitComment_Original: Anon461 = js.native
   @JSName("updateHook")
-  var updateHook_Original: Anon451 = js.native
+  var updateHook_Original: Anon462 = js.native
   @JSName("updateInformationAboutPagesSite")
-  var updateInformationAboutPagesSite_Original: Anon452 = js.native
+  var updateInformationAboutPagesSite_Original: Anon463 = js.native
   @JSName("updateInvitation")
-  var updateInvitation_Original: Anon453 = js.native
+  var updateInvitation_Original: Anon464 = js.native
   /**
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     *
@@ -1084,29 +1084,29 @@ trait AnonAcceptInvitation extends js.Object {
     * **Note**: Passing new arrays of `users` and `teams` replaces their previous values.
     */
   @JSName("updateProtectedBranchPullRequestReviewEnforcement")
-  var updateProtectedBranchPullRequestReviewEnforcement_Original: Anon454 = js.native
+  var updateProtectedBranchPullRequestReviewEnforcement_Original: Anon465 = js.native
   /**
     * Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     *
     * Updating required status checks requires admin or owner permissions to the repository and branch protection to be enabled.
     */
   @JSName("updateProtectedBranchRequiredStatusChecks")
-  var updateProtectedBranchRequiredStatusChecks_Original: Anon455 = js.native
+  var updateProtectedBranchRequiredStatusChecks_Original: Anon466 = js.native
   /**
     * Users with push access to the repository can edit a release asset.
     */
   @JSName("updateReleaseAsset")
-  var updateReleaseAsset_Original: Anon457 = js.native
+  var updateReleaseAsset_Original: Anon468 = js.native
   /**
     * Users with push access to the repository can edit a release.
     */
   @JSName("updateRelease")
-  var updateRelease_Original: Anon456 = js.native
+  var updateRelease_Original: Anon467 = js.native
   /**
     * **Note**: To edit a repository's topics, use the [Replace all repository topics](https://developer.github.com/v3/repos/#replace-all-repository-topics) endpoint.
     */
   @JSName("update")
-  var update_Original: Anon448 = js.native
+  var update_Original: Anon459 = js.native
   /**
     * This endpoint makes use of [a Hypermedia relation](https://developer.github.com/v3/#hypermedia) to determine which URL to access. The endpoint you call to upload release assets is specific to your release. Use the `upload_url` returned in the response of the [Create a release endpoint](https://developer.github.com/v3/repos/releases/#create-a-release) to upload a release asset.
     *
@@ -1126,7 +1126,7 @@ trait AnonAcceptInvitation extends js.Object {
     * This may leave an empty asset with a state of `starter`. It can be safely deleted.
     */
   @JSName("uploadReleaseAsset")
-  var uploadReleaseAsset_Original: Anon458 = js.native
+  var uploadReleaseAsset_Original: Anon469 = js.native
   def acceptInvitation(): js.Promise[AnyResponse] = js.native
   def acceptInvitation(
     params: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RequestParameters */ js.Any) with ReposAcceptInvitationParams
@@ -1711,7 +1711,7 @@ trait AnonAcceptInvitation extends js.Object {
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OctokitResponse<ReposGetCodeFrequencyStatsResponse> */ _
   ] = js.native
   /**
-    * Possible values for the `permission` key: `admin`, `write`, `read`, `none`.
+    * Checks the repository permission of a collaborator. The possible repository permissions are `admin`, `write`, `read`, and `none`.
     */
   def getCollaboratorPermissionLevel(): js.Promise[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OctokitResponse<ReposGetCollaboratorPermissionLevelResponse> */ _

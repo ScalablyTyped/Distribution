@@ -6,10 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object mod {
   type GraphQLExecutor[TContext] = js.Function1[
-    /* requestContext */ typings.apolloServerTypes.mod.WithRequired[
-      typings.apolloServerTypes.mod.GraphQLRequestContext[TContext], 
-      typings.apolloServerTypes.apolloServerTypesStrings.document | typings.apolloServerTypes.apolloServerTypesStrings.operationName | typings.apolloServerTypes.apolloServerTypesStrings.operation | typings.apolloServerTypes.apolloServerTypesStrings.queryHash
-    ], 
+    /* requestContext */ typings.apolloServerTypes.mod.GraphQLRequestContextExecutionDidStart[TContext], 
     typings.apolloServerTypes.mod.ValueOrPromise[typings.apolloServerTypes.mod.GraphQLExecutionResult]
   ]
   type Mutable[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 

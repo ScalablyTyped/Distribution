@@ -35,26 +35,26 @@ trait LimitRangeItem extends js.Object {
   /**
     * Type of resource that this limit applies to.
     */
-  var `type`: js.UndefOr[Input[String]] = js.undefined
+  var `type`: Input[String]
 }
 
 object LimitRangeItem {
   @scala.inline
   def apply(
+    `type`: Input[String],
     default: Input[js.Object] = null,
     defaultRequest: Input[js.Object] = null,
     max: Input[js.Object] = null,
     maxLimitRequestRatio: Input[js.Object] = null,
-    min: Input[js.Object] = null,
-    `type`: Input[String] = null
+    min: Input[js.Object] = null
   ): LimitRangeItem = {
     val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     if (defaultRequest != null) __obj.updateDynamic("defaultRequest")(defaultRequest.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (maxLimitRequestRatio != null) __obj.updateDynamic("maxLimitRequestRatio")(maxLimitRequestRatio.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LimitRangeItem]
   }
 }

@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SubmitKycDocument extends js.Object {
+  var Id: String
   /**
     * The status of this KYC/Dispute document
     */
@@ -15,8 +16,8 @@ trait SubmitKycDocument extends js.Object {
 
 object SubmitKycDocument {
   @scala.inline
-  def apply(Status: VALIDATION_ASKED, Tag: String = null): SubmitKycDocument = {
-    val __obj = js.Dynamic.literal(Status = Status.asInstanceOf[js.Any])
+  def apply(Id: String, Status: VALIDATION_ASKED, Tag: String = null): SubmitKycDocument = {
+    val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
     if (Tag != null) __obj.updateDynamic("Tag")(Tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubmitKycDocument]
   }

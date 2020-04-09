@@ -17,18 +17,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxRangeSliderOptions extends dxSliderBaseOptions[dxRangeSlider] {
-  /** The right edge of the interval currently selected using the range slider. */
+  /** @name dxRangeSlider.Options.end */
   var end: js.UndefOr[Double] = js.undefined
-  /** The value to be assigned to the name attribute of the underlying `` element. */
+  /** @name dxRangeSlider.Options.endName */
   var endName: js.UndefOr[String] = js.undefined
-  /** A function that is executed after the widget's value is changed. */
+  /** @name dxRangeSlider.Options.onValueChanged */
   @JSName("onValueChanged")
   var onValueChanged_dxRangeSliderOptions: js.UndefOr[js.Function1[/* e */ AnonEnd, _]] = js.undefined
-  /** The left edge of the interval currently selected using the range slider. */
+  /** @name dxRangeSlider.Options.start */
   var start: js.UndefOr[Double] = js.undefined
-  /** The value to be assigned to the name attribute of the underlying `` element. */
+  /** @name dxRangeSlider.Options.startName */
   var startName: js.UndefOr[String] = js.undefined
-  /** Specifies the widget's value. */
+  /** @name dxRangeSlider.Options.value */
   @JSName("value")
   var value_dxRangeSliderOptions: js.UndefOr[js.Array[Double]] = js.undefined
 }

@@ -12,7 +12,7 @@ import typings.ionicCore.ionicCoreStrings.reset
 import typings.ionicCore.ionicCoreStrings.submit
 import typings.ionicCore.mod.Color
 import typings.ionicCore.mod.StyleEventDetail
-import typings.ionicCore.stencilCoreMod.ComponentInterface
+import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.std.CustomEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`

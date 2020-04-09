@@ -95,6 +95,8 @@ object officeUiFabricReactComponents extends officeUiFabricReactProps {
   @scala.inline
   def ButtonIconExample: ComponentType[ButtonIconExampleProps] = typings.officeUiFabricReact.buttonIconExampleMod.ButtonIconExample.asInstanceOf[typings.react.mod.ComponentType[ButtonIconExampleProps]]
   @scala.inline
+  def ButtonIconWithTooltipExample: ComponentType[ButtonIconWithTooltipExampleProps] = typings.officeUiFabricReact.buttonIconWithTooltipExampleMod.ButtonIconWithTooltipExample.asInstanceOf[typings.react.mod.ComponentType[ButtonIconWithTooltipExampleProps]]
+  @scala.inline
   def ButtonScreenReaderExample: ComponentType[ButtonScreenReaderExampleProps] = typings.officeUiFabricReact.buttonScreenReaderExampleMod.ButtonScreenReaderExample.asInstanceOf[typings.react.mod.ComponentType[ButtonScreenReaderExampleProps]]
   @scala.inline
   def ButtonSplitCustomExample: ComponentType[ButtonSplitCustomExampleProps] = typings.officeUiFabricReact.buttonCustomSplitExampleMod.ButtonSplitCustomExample.asInstanceOf[typings.react.mod.ComponentType[ButtonSplitCustomExampleProps]]
@@ -577,23 +579,23 @@ object officeUiFabricReactComponents extends officeUiFabricReactProps {
   @scala.inline
   def ImageBase: ComponentType[ImageBaseProps] = js.constructorOf[typings.officeUiFabricReact.mod.ImageBase].asInstanceOf[typings.react.mod.ComponentType[ImageBaseProps]]
   @scala.inline
-  def ImageCenterContainExample: ComponentType[js.Any] = js.constructorOf[typings.officeUiFabricReact.imageCenterContainExampleMod.ImageCenterContainExample].asInstanceOf[typings.react.mod.ComponentType[js.Any]]
+  def ImageCenterContainExample: ComponentType[js.Object] = typings.officeUiFabricReact.imageCenterContainExampleMod.asInstanceOf[js.Dynamic].selectDynamic("ImageCenterContainExample").asInstanceOf[typings.react.mod.ComponentType[js.Object]]
   @scala.inline
-  def ImageCenterCoverExample: ComponentType[js.Any] = js.constructorOf[typings.officeUiFabricReact.imageCenterCoverExampleMod.ImageCenterCoverExample].asInstanceOf[typings.react.mod.ComponentType[js.Any]]
+  def ImageCenterCoverExample: ComponentType[js.Object] = typings.officeUiFabricReact.imageCenterCoverExampleMod.asInstanceOf[js.Dynamic].selectDynamic("ImageCenterCoverExample").asInstanceOf[typings.react.mod.ComponentType[js.Object]]
   @scala.inline
-  def ImageCenterExample: ComponentType[js.Any] = js.constructorOf[typings.officeUiFabricReact.imageCenterExampleMod.ImageCenterExample].asInstanceOf[typings.react.mod.ComponentType[js.Any]]
+  def ImageCenterExample: ComponentType[js.Object] = typings.officeUiFabricReact.imageCenterExampleMod.asInstanceOf[js.Dynamic].selectDynamic("ImageCenterExample").asInstanceOf[typings.react.mod.ComponentType[js.Object]]
   @scala.inline
-  def ImageContainExample: ComponentType[js.Any] = js.constructorOf[typings.officeUiFabricReact.imageContainExampleMod.ImageContainExample].asInstanceOf[typings.react.mod.ComponentType[js.Any]]
+  def ImageContainExample: ComponentType[js.Object] = typings.officeUiFabricReact.imageContainExampleMod.asInstanceOf[js.Dynamic].selectDynamic("ImageContainExample").asInstanceOf[typings.react.mod.ComponentType[js.Object]]
   @scala.inline
-  def ImageCoverExample: ComponentType[js.Any] = js.constructorOf[typings.officeUiFabricReact.imageCoverExampleMod.ImageCoverExample].asInstanceOf[typings.react.mod.ComponentType[js.Any]]
+  def ImageCoverExample: ComponentType[js.Object] = typings.officeUiFabricReact.imageCoverExampleMod.asInstanceOf[js.Dynamic].selectDynamic("ImageCoverExample").asInstanceOf[typings.react.mod.ComponentType[js.Object]]
   @scala.inline
-  def ImageDefaultExample: ComponentType[js.Any] = js.constructorOf[typings.officeUiFabricReact.imageDefaultExampleMod.ImageDefaultExample].asInstanceOf[typings.react.mod.ComponentType[js.Any]]
+  def ImageDefaultExample: ComponentType[js.Object] = typings.officeUiFabricReact.imageDefaultExampleMod.asInstanceOf[js.Dynamic].selectDynamic("ImageDefaultExample").asInstanceOf[typings.react.mod.ComponentType[js.Object]]
   @scala.inline
   def ImageIcon: ComponentType[ImageIconProps] = typings.officeUiFabricReact.mod.ImageIcon.asInstanceOf[typings.react.mod.ComponentType[ImageIconProps]]
   @scala.inline
-  def ImageMaximizeFrameExample: ComponentType[js.Any] = js.constructorOf[typings.officeUiFabricReact.imageMaximizeFrameExampleMod.ImageMaximizeFrameExample].asInstanceOf[typings.react.mod.ComponentType[js.Any]]
+  def ImageMaximizeFrameExample: ComponentType[js.Object] = typings.officeUiFabricReact.imageMaximizeFrameExampleMod.asInstanceOf[js.Dynamic].selectDynamic("ImageMaximizeFrameExample").asInstanceOf[typings.react.mod.ComponentType[js.Object]]
   @scala.inline
-  def ImageNoneExample: ComponentType[js.Any] = js.constructorOf[typings.officeUiFabricReact.imageNoneExampleMod.ImageNoneExample].asInstanceOf[typings.react.mod.ComponentType[js.Any]]
+  def ImageNoneExample: ComponentType[js.Object] = typings.officeUiFabricReact.imageNoneExampleMod.asInstanceOf[js.Dynamic].selectDynamic("ImageNoneExample").asInstanceOf[typings.react.mod.ComponentType[js.Object]]
   @scala.inline
   def IndividualCommandBarButtonAsExampleWrapper: ComponentType[js.Object] = typings.officeUiFabricReact.commandBarCommandBarButtonAsExampleMod.IndividualCommandBarButtonAsExampleWrapper.asInstanceOf[typings.react.mod.ComponentType[js.Object]]
   @scala.inline
@@ -630,15 +632,15 @@ object officeUiFabricReactComponents extends officeUiFabricReactProps {
   @scala.inline
   def LayerBase: ComponentType[LayerBaseProps] = js.constructorOf[typings.officeUiFabricReact.mod.LayerBase].asInstanceOf[typings.react.mod.ComponentType[LayerBaseProps]]
   @scala.inline
-  def LayerBasicExample: ComponentType[js.Object] = js.constructorOf[typings.officeUiFabricReact.layerBasicExampleMod.LayerBasicExample].asInstanceOf[typings.react.mod.ComponentType[js.Object]]
+  def LayerBasicExample: ComponentType[js.Object] = typings.officeUiFabricReact.layerBasicExampleMod.LayerBasicExample.asInstanceOf[typings.react.mod.ComponentType[js.Object]]
   @scala.inline
-  def LayerCustomizedExample: ComponentType[js.Object] = js.constructorOf[typings.officeUiFabricReact.layerCustomizedExampleMod.LayerCustomizedExample].asInstanceOf[typings.react.mod.ComponentType[js.Object]]
+  def LayerCustomizedExample: ComponentType[js.Object] = typings.officeUiFabricReact.layerCustomizedExampleMod.LayerCustomizedExample.asInstanceOf[typings.react.mod.ComponentType[js.Object]]
   @scala.inline
   def LayerHost: ComponentType[LayerHostProps] = js.constructorOf[typings.officeUiFabricReact.mod.LayerHost].asInstanceOf[typings.react.mod.ComponentType[LayerHostProps]]
   @scala.inline
-  def LayerHostedExample: ComponentType[js.Object] = js.constructorOf[typings.officeUiFabricReact.layerHostedExampleMod.LayerHostedExample].asInstanceOf[typings.react.mod.ComponentType[js.Object]]
+  def LayerHostedExample: ComponentType[js.Object] = typings.officeUiFabricReact.layerHostedExampleMod.LayerHostedExample.asInstanceOf[typings.react.mod.ComponentType[js.Object]]
   @scala.inline
-  def LayerNestedLayersExample: ComponentType[js.Object] = js.constructorOf[typings.officeUiFabricReact.layerNestedLayersExampleMod.LayerNestedLayersExample].asInstanceOf[typings.react.mod.ComponentType[js.Object]]
+  def LayerNestedLayersExample: ComponentType[js.Object] = typings.officeUiFabricReact.layerNestedLayersExampleMod.LayerNestedLayersExample.asInstanceOf[typings.react.mod.ComponentType[js.Object]]
   @scala.inline
   def Link: ComponentType[LinkProps] = typings.officeUiFabricReact.mod.Link.asInstanceOf[typings.react.mod.ComponentType[LinkProps]]
   @scala.inline
@@ -682,9 +684,9 @@ object officeUiFabricReactComponents extends officeUiFabricReactProps {
   @scala.inline
   def ModalBase: ComponentType[ModalBaseProps] = js.constructorOf[typings.officeUiFabricReact.mod.ModalBase].asInstanceOf[typings.react.mod.ComponentType[ModalBaseProps]]
   @scala.inline
-  def ModalBasicExample: ComponentType[js.Object] = js.constructorOf[typings.officeUiFabricReact.modalBasicExampleMod.ModalBasicExample].asInstanceOf[typings.react.mod.ComponentType[js.Object]]
+  def ModalBasicExample: ComponentType[js.Object] = typings.officeUiFabricReact.modalBasicExampleMod.ModalBasicExample.asInstanceOf[typings.react.mod.ComponentType[js.Object]]
   @scala.inline
-  def ModalModelessExample: ComponentType[js.Object] = js.constructorOf[typings.officeUiFabricReact.modalModelessExampleMod.ModalModelessExample].asInstanceOf[typings.react.mod.ComponentType[js.Object]]
+  def ModalModelessExample: ComponentType[js.Object] = typings.officeUiFabricReact.modalModelessExampleMod.ModalModelessExample.asInstanceOf[typings.react.mod.ComponentType[js.Object]]
   @scala.inline
   def Nav: ComponentType[NavProps] = typings.officeUiFabricReact.mod.Nav.asInstanceOf[typings.react.mod.ComponentType[NavProps]]
   @scala.inline
@@ -796,7 +798,7 @@ object officeUiFabricReactComponents extends officeUiFabricReactProps {
   @scala.inline
   def PersonaPresenceColorExample: ComponentType[js.Object] = typings.officeUiFabricReact.personaPresenceColorExampleMod.PersonaPresenceColorExample.asInstanceOf[typings.react.mod.ComponentType[js.Object]]
   @scala.inline
-  def PersonaPresenceExample: ComponentType[js.Object] = js.constructorOf[typings.officeUiFabricReact.personaPresenceExampleMod.PersonaPresenceExample].asInstanceOf[typings.react.mod.ComponentType[js.Object]]
+  def PersonaPresenceExample: ComponentType[js.Object] = typings.officeUiFabricReact.personaPresenceExampleMod.asInstanceOf[js.Dynamic].selectDynamic("PersonaPresenceExample").asInstanceOf[typings.react.mod.ComponentType[js.Object]]
   @scala.inline
   def PickerCustomResultExample: ComponentType[js.Object] = js.constructorOf[typings.officeUiFabricReact.pickerCustomResultExampleMod.PickerCustomResultExample].asInstanceOf[typings.react.mod.ComponentType[js.Object]]
   @scala.inline
@@ -870,15 +872,15 @@ object officeUiFabricReactComponents extends officeUiFabricReactProps {
   @scala.inline
   def SearchBoxBase: ComponentType[SearchBoxBaseProps] = js.constructorOf[typings.officeUiFabricReact.mod.SearchBoxBase].asInstanceOf[typings.react.mod.ComponentType[SearchBoxBaseProps]]
   @scala.inline
-  def SearchBoxCustomIconExample: ComponentType[js.Any] = js.constructorOf[typings.officeUiFabricReact.searchBoxCustomIconExampleMod.SearchBoxCustomIconExample].asInstanceOf[typings.react.mod.ComponentType[js.Any]]
+  def SearchBoxCustomIconExample: ComponentType[js.Object] = typings.officeUiFabricReact.searchBoxCustomIconExampleMod.asInstanceOf[js.Dynamic].selectDynamic("SearchBoxCustomIconExample").asInstanceOf[typings.react.mod.ComponentType[js.Object]]
   @scala.inline
-  def SearchBoxDisabledExample: ComponentType[js.Any] = js.constructorOf[typings.officeUiFabricReact.searchBoxDisabledExampleMod.SearchBoxDisabledExample].asInstanceOf[typings.react.mod.ComponentType[js.Any]]
+  def SearchBoxDisabledExample: ComponentType[js.Object] = typings.officeUiFabricReact.searchBoxDisabledExampleMod.asInstanceOf[js.Dynamic].selectDynamic("SearchBoxDisabledExample").asInstanceOf[typings.react.mod.ComponentType[js.Object]]
   @scala.inline
-  def SearchBoxFullSizeExample: ComponentType[js.Any] = js.constructorOf[typings.officeUiFabricReact.searchBoxFullSizeExampleMod.SearchBoxFullSizeExample].asInstanceOf[typings.react.mod.ComponentType[js.Any]]
+  def SearchBoxFullSizeExample: ComponentType[js.Object] = typings.officeUiFabricReact.searchBoxFullSizeExampleMod.asInstanceOf[js.Dynamic].selectDynamic("SearchBoxFullSizeExample").asInstanceOf[typings.react.mod.ComponentType[js.Object]]
   @scala.inline
-  def SearchBoxSmallExample: ComponentType[js.Any] = js.constructorOf[typings.officeUiFabricReact.searchBoxSmallExampleMod.SearchBoxSmallExample].asInstanceOf[typings.react.mod.ComponentType[js.Any]]
+  def SearchBoxSmallExample: ComponentType[js.Object] = typings.officeUiFabricReact.searchBoxSmallExampleMod.asInstanceOf[js.Dynamic].selectDynamic("SearchBoxSmallExample").asInstanceOf[typings.react.mod.ComponentType[js.Object]]
   @scala.inline
-  def SearchBoxUnderlinedExample: ComponentType[js.Any] = js.constructorOf[typings.officeUiFabricReact.searchBoxUnderlinedExampleMod.SearchBoxUnderlinedExample].asInstanceOf[typings.react.mod.ComponentType[js.Any]]
+  def SearchBoxUnderlinedExample: ComponentType[js.Object] = typings.officeUiFabricReact.searchBoxUnderlinedExampleMod.asInstanceOf[js.Dynamic].selectDynamic("SearchBoxUnderlinedExample").asInstanceOf[typings.react.mod.ComponentType[js.Object]]
   @scala.inline
   def SelectedItemDefault: ComponentType[SelectedItemDefaultProps] = typings.officeUiFabricReact.selectedItemDefaultMod.asInstanceOf[js.Dynamic].selectDynamic("SelectedItemDefault").asInstanceOf[typings.react.mod.ComponentType[SelectedItemDefaultProps]]
   @scala.inline
@@ -1100,9 +1102,9 @@ object officeUiFabricReactComponents extends officeUiFabricReactProps {
   @scala.inline
   def VerticalDividerBase: ComponentType[VerticalDividerBaseProps] = typings.officeUiFabricReact.verticalDividerBaseMod.asInstanceOf[js.Dynamic].selectDynamic("VerticalDividerBase").asInstanceOf[typings.react.mod.ComponentType[VerticalDividerBaseProps]]
   @scala.inline
-  def VerticalDividerBasicExample: ComponentType[js.Any] = js.constructorOf[typings.officeUiFabricReact.verticalDividerBasicExampleMod.VerticalDividerBasicExample].asInstanceOf[typings.react.mod.ComponentType[js.Any]]
+  def VerticalDividerBasicExample: ComponentType[js.Object] = typings.officeUiFabricReact.verticalDividerBasicExampleMod.asInstanceOf[js.Dynamic].selectDynamic("VerticalDividerBasicExample").asInstanceOf[typings.react.mod.ComponentType[js.Object]]
   @scala.inline
-  def VerticalDividerCustomExample: ComponentType[js.Any] = js.constructorOf[typings.officeUiFabricReact.verticalDividerCustomExampleMod.VerticalDividerCustomExample].asInstanceOf[typings.react.mod.ComponentType[js.Any]]
+  def VerticalDividerCustomExample: ComponentType[js.Object] = typings.officeUiFabricReact.verticalDividerCustomExampleMod.asInstanceOf[js.Dynamic].selectDynamic("VerticalDividerCustomExample").asInstanceOf[typings.react.mod.ComponentType[js.Object]]
   @scala.inline
   def VerticalStackBasicExample: ComponentType[js.Object] = typings.officeUiFabricReact.stackVerticalBasicExampleMod.VerticalStackBasicExample.asInstanceOf[typings.react.mod.ComponentType[js.Object]]
   @scala.inline

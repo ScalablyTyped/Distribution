@@ -19,7 +19,7 @@ trait CreateApiKeyRequest extends js.Object {
     */
   var enabled: js.UndefOr[Boolean] = js.native
   /**
-    * Specifies whether (true) or not (false) the key identifier is distinct from the created API key value.
+    * Specifies whether (true) or not (false) the key identifier is distinct from the created API key value. This parameter is deprecated and should not be used.
     */
   var generateDistinctId: js.UndefOr[Boolean] = js.native
   /**

@@ -4,6 +4,7 @@ import typings.popperJs.mod.Popper.Modifiers
 import typings.popperJs.mod.Popper.Placement
 import typings.react.mod.ReactNode
 import typings.std.HTMLElement
+import typings.std.MutationObserverInit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -48,6 +49,12 @@ trait TooltipTriggerProps extends js.Object {
     * @link https://popper.js.org/popper-documentation.html#modifiers
     */
   var modifiers: js.UndefOr[Modifiers] = js.undefined
+  /**
+    * Options to MutationObserver, used internally for updating
+    * tooltip position based on trigger DOM changes
+    * @default  { childList: true, subtree: true }
+    */
+  var mutationObserverOptions: MutationObserverInit
   /**
     * Tooltip placement w.r.t. trigger
     *  @default right
@@ -96,6 +103,7 @@ object TooltipTriggerProps {
     delayHide: Double,
     delayShow: Double,
     followCursor: Boolean,
+    mutationObserverOptions: MutationObserverInit,
     onVisibilityChange: Boolean => Unit,
     placement: Placement,
     portalContainer: HTMLElement,
@@ -107,7 +115,7 @@ object TooltipTriggerProps {
     modifiers: Modifiers = null,
     tooltipShown: js.UndefOr[Boolean] = js.undefined
   ): TooltipTriggerProps = {
-    val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), closeOnOutOfBoundaries = closeOnOutOfBoundaries.asInstanceOf[js.Any], defaultTooltipShown = defaultTooltipShown.asInstanceOf[js.Any], delayHide = delayHide.asInstanceOf[js.Any], delayShow = delayShow.asInstanceOf[js.Any], followCursor = followCursor.asInstanceOf[js.Any], onVisibilityChange = js.Any.fromFunction1(onVisibilityChange), placement = placement.asInstanceOf[js.Any], portalContainer = portalContainer.asInstanceOf[js.Any], tooltip = js.Any.fromFunction1(tooltip), trigger = trigger.asInstanceOf[js.Any], usePortal = usePortal.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), closeOnOutOfBoundaries = closeOnOutOfBoundaries.asInstanceOf[js.Any], defaultTooltipShown = defaultTooltipShown.asInstanceOf[js.Any], delayHide = delayHide.asInstanceOf[js.Any], delayShow = delayShow.asInstanceOf[js.Any], followCursor = followCursor.asInstanceOf[js.Any], mutationObserverOptions = mutationObserverOptions.asInstanceOf[js.Any], onVisibilityChange = js.Any.fromFunction1(onVisibilityChange), placement = placement.asInstanceOf[js.Any], portalContainer = portalContainer.asInstanceOf[js.Any], tooltip = js.Any.fromFunction1(tooltip), trigger = trigger.asInstanceOf[js.Any], usePortal = usePortal.asInstanceOf[js.Any])
     if (getTooltipRef != null) __obj.updateDynamic("getTooltipRef")(getTooltipRef.asInstanceOf[js.Any])
     if (getTriggerRef != null) __obj.updateDynamic("getTriggerRef")(getTriggerRef.asInstanceOf[js.Any])
     if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers.asInstanceOf[js.Any])

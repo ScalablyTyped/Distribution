@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ProjectEnvironmentEnvironmentVariable extends js.Object {
   /**
-    * The name of the project. If `type` is set to `S3`, this is the name of the output artifact object
+    * The environment variable's name or key.
     */
   var name: Input[String] = js.native
   /**
-    * The type of repository that contains the source code to be built. Valid values for this parameter are: `CODECOMMIT`, `CODEPIPELINE`, `GITHUB`, `GITHUB_ENTERPRISE`, `BITBUCKET` or `S3`.
+    * The type of environment variable. Valid values: `PARAMETER_STORE`, `PLAINTEXT`.
     */
   var `type`: js.UndefOr[Input[String]] = js.native
   /**

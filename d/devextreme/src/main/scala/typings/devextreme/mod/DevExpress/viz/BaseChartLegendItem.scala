@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BaseChartLegendItem extends BaseLegendItem {
-  /** The series that the item represents on the legend. */
+  /** @name BaseChartLegendItem.series */
   var series: js.UndefOr[baseSeriesObject] = js.undefined
 }
 

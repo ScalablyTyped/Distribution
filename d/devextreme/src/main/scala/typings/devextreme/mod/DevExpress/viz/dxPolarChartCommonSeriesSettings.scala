@@ -24,17 +24,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxPolarChartCommonSeriesSettings extends dxPolarChartSeriesTypesCommonPolarChartSeries {
-  /** An object that specifies configuration options for all series of the area type in the chart. */
+  /** @name dxPolarChart.Options.commonSeriesSettings.area */
   var area: js.UndefOr[js.Any] = js.undefined
-  /** An object that specifies configuration options for all series of the 'bar' type in the chart. */
+  /** @name dxPolarChart.Options.commonSeriesSettings.bar */
   var bar: js.UndefOr[js.Any] = js.undefined
-  /** An object that specifies configuration options for all series of the 'line' type in the chart. */
+  /** @name dxPolarChart.Options.commonSeriesSettings.line */
   var line: js.UndefOr[js.Any] = js.undefined
-  /** An object that specifies configuration options for all series of the 'scatter' type in the chart. */
+  /** @name dxPolarChart.Options.commonSeriesSettings.scatter */
   var scatter: js.UndefOr[js.Any] = js.undefined
-  /** An object that specifies configuration options for all series of the 'stackedBar' type in the chart. */
+  /** @name dxPolarChart.Options.commonSeriesSettings.stackedbar */
   var stackedbar: js.UndefOr[js.Any] = js.undefined
-  /** Sets a series type. */
+  /** @name dxPolarChart.Options.commonSeriesSettings.type */
   var `type`: js.UndefOr[area | bar | line | scatter | stackedbar] = js.undefined
 }
 

@@ -25,11 +25,11 @@ trait ListenerState extends js.Object {
     */
   val loadBalancerArn: js.UndefOr[Input[String]] = js.native
   /**
-    * The port. Specify a value from `1` to `65535` or `#{port}`. Defaults to `#{port}`.
+    * The port on which the load balancer is listening.
     */
   val port: js.UndefOr[Input[Double]] = js.native
   /**
-    * The protocol. Valid values are `HTTP`, `HTTPS`, or `#{protocol}`. Defaults to `#{protocol}`.
+    * The protocol for connections from clients to the load balancer. Valid values are `TCP`, `TLS`, `UDP`, `TCP_UDP`, `HTTP` and `HTTPS`. Defaults to `HTTP`.
     */
   val protocol: js.UndefOr[Input[String]] = js.native
   /**

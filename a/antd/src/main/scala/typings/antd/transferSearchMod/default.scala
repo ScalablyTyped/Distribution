@@ -1,6 +1,6 @@
 package typings.antd.transferSearchMod
 
-import typings.antd.AnonPlaceholderString
+import typings.antd.AnonPlaceholder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +13,6 @@ class default () extends Search
 @JSImport("antd/lib/transfer/search", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: AnonPlaceholderString = js.native
+  var defaultProps: AnonPlaceholder = js.native
 }
 

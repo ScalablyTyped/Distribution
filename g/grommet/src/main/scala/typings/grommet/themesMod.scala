@@ -17,7 +17,8 @@ object themesMod extends js.Object {
   @js.native
   object base extends js.Object {
     val accordion: js.UndefOr[AnonBorderHeading | DeepReadonly[js.UndefOr[AnonBorderHeading]]] = js.native
-    val anchor: js.UndefOr[AnonFontWeight | DeepReadonly[js.UndefOr[AnonFontWeight]]] = js.native
+    val anchor: js.UndefOr[AnonExtendFontWeight | DeepReadonly[js.UndefOr[AnonExtendFontWeight]]] = js.native
+    val avatar: js.UndefOr[AnonText | DeepReadonly[js.UndefOr[AnonText]]] = js.native
     val box: js.UndefOr[AnonResponsiveBreakpoint | DeepReadonly[js.UndefOr[AnonResponsiveBreakpoint]]] = js.native
     val button: js.UndefOr[AnonMinWidth | DeepReadonly[js.UndefOr[AnonMinWidth]]] = js.native
     val calendar: js.UndefOr[AnonHeading | DeepReadonly[js.UndefOr[AnonHeading]]] = js.native

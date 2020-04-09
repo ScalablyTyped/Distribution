@@ -57,6 +57,9 @@ class PatchBaseline protected () extends CustomResource {
     * A list of rejected patches.
     */
   val rejectedPatches: Output_[js.UndefOr[js.Array[String]]] = js.native
+  /**
+    * A mapping of tags to assign to the resource.
+    */
   val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
 }
 

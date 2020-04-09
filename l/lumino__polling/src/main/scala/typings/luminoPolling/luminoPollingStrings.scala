@@ -19,6 +19,9 @@ object luminoPollingStrings {
   sealed trait invoked extends js.Object
   
   @js.native
+  sealed trait leading extends js.Object
+  
+  @js.native
   sealed trait never extends Standby
   
   @js.native
@@ -50,6 +53,9 @@ object luminoPollingStrings {
     extends _Phase[js.Any]
   
   @js.native
+  sealed trait trailing extends js.Object
+  
+  @js.native
   sealed trait `when-hidden` extends Standby
   
   @scala.inline
@@ -58,6 +64,8 @@ object luminoPollingStrings {
   def disposed: disposed = "disposed".asInstanceOf[disposed]
   @scala.inline
   def invoked: invoked = "invoked".asInstanceOf[invoked]
+  @scala.inline
+  def leading: leading = "leading".asInstanceOf[leading]
   @scala.inline
   def never: never = "never".asInstanceOf[never]
   @scala.inline
@@ -74,6 +82,8 @@ object luminoPollingStrings {
   def started: started = "started".asInstanceOf[started]
   @scala.inline
   def stopped: stopped = "stopped".asInstanceOf[stopped]
+  @scala.inline
+  def trailing: trailing = "trailing".asInstanceOf[trailing]
   @scala.inline
   def `when-hidden`: `when-hidden` = "when-hidden".asInstanceOf[`when-hidden`]
 }

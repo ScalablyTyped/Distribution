@@ -1,5 +1,6 @@
 package typings.antDesignProLayout.typingsMod
 
+import typings.antDesignProLayout.antDesignProLayoutBooleans.`false`
 import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,7 +19,7 @@ object Route {
     hideInMenu: js.UndefOr[Boolean] = js.undefined,
     icon: ReactNode = null,
     key: String = null,
-    locale: String = null,
+    locale: String | `false` = null,
     name: String = null,
     parentKeys: js.Array[String] = null,
     path: String = null,

@@ -38,7 +38,7 @@ trait Schema extends js.Object {
   var pattern: js.UndefOr[String | RegExp] = js.undefined
   var patternProperties: js.UndefOr[StringDictionary[Schema]] = js.undefined
   var properties: js.UndefOr[StringDictionary[Schema]] = js.undefined
-  var required: js.UndefOr[js.Array[String]] = js.undefined
+  var required: js.UndefOr[js.Array[String] | Boolean] = js.undefined
   var title: js.UndefOr[String] = js.undefined
   var `type`: js.UndefOr[String | js.Array[String]] = js.undefined
   var uniqueItems: js.UndefOr[Boolean] = js.undefined
@@ -76,7 +76,7 @@ object Schema {
     pattern: String | RegExp = null,
     patternProperties: StringDictionary[Schema] = null,
     properties: StringDictionary[Schema] = null,
-    required: js.Array[String] = null,
+    required: js.Array[String] | Boolean = null,
     title: String = null,
     `type`: String | js.Array[String] = null,
     uniqueItems: js.UndefOr[Boolean] = js.undefined

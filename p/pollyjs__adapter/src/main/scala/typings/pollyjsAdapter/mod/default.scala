@@ -1,7 +1,7 @@
 package typings.pollyjsAdapter.mod
 
 import typings.pollyjsAdapter.AnonBody
-import typings.std.Request
+import typings.pollyjsCore.mod.Request
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

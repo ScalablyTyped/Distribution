@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /* Inlined grommet.grommet/utils.DeepReadonly<grommet.grommet/themes/base.ThemeType> */
 trait DeepReadonlyThemeType extends js.Object {
   val accordion: js.UndefOr[AnonBorderHeading | DeepReadonly[js.UndefOr[AnonBorderHeading]]] = js.undefined
-  val anchor: js.UndefOr[AnonFontWeight | DeepReadonly[js.UndefOr[AnonFontWeight]]] = js.undefined
+  val anchor: js.UndefOr[AnonExtendFontWeight | DeepReadonly[js.UndefOr[AnonExtendFontWeight]]] = js.undefined
+  val avatar: js.UndefOr[AnonText | DeepReadonly[js.UndefOr[AnonText]]] = js.undefined
   val box: js.UndefOr[AnonResponsiveBreakpoint | DeepReadonly[js.UndefOr[AnonResponsiveBreakpoint]]] = js.undefined
   val button: js.UndefOr[AnonMinWidth | DeepReadonly[js.UndefOr[AnonMinWidth]]] = js.undefined
   val calendar: js.UndefOr[AnonHeading | DeepReadonly[js.UndefOr[AnonHeading]]] = js.undefined
@@ -49,7 +50,8 @@ object DeepReadonlyThemeType {
   @scala.inline
   def apply(
     accordion: AnonBorderHeading | DeepReadonly[js.UndefOr[AnonBorderHeading]] = null,
-    anchor: AnonFontWeight | DeepReadonly[js.UndefOr[AnonFontWeight]] = null,
+    anchor: AnonExtendFontWeight | DeepReadonly[js.UndefOr[AnonExtendFontWeight]] = null,
+    avatar: AnonText | DeepReadonly[js.UndefOr[AnonText]] = null,
     box: AnonResponsiveBreakpoint | DeepReadonly[js.UndefOr[AnonResponsiveBreakpoint]] = null,
     button: AnonMinWidth | DeepReadonly[js.UndefOr[AnonMinWidth]] = null,
     calendar: AnonHeading | DeepReadonly[js.UndefOr[AnonHeading]] = null,
@@ -88,6 +90,7 @@ object DeepReadonlyThemeType {
     val __obj = js.Dynamic.literal()
     if (accordion != null) __obj.updateDynamic("accordion")(accordion.asInstanceOf[js.Any])
     if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
+    if (avatar != null) __obj.updateDynamic("avatar")(avatar.asInstanceOf[js.Any])
     if (box != null) __obj.updateDynamic("box")(box.asInstanceOf[js.Any])
     if (button != null) __obj.updateDynamic("button")(button.asInstanceOf[js.Any])
     if (calendar != null) __obj.updateDynamic("calendar")(calendar.asInstanceOf[js.Any])

@@ -10,14 +10,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxPolarChartValueAxisConstantLines extends dxPolarChartCommonAxisSettingsConstantLineStyle {
-  /** Specifies whether to display the constant line behind or in front of the series. */
+  /** @name dxPolarChart.Options.valueAxis.constantLines.displayBehindSeries */
   var displayBehindSeries: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether to extend the axis to display the constant line. */
+  /** @name dxPolarChart.Options.valueAxis.constantLines.extendAxis */
   var extendAxis: js.UndefOr[Boolean] = js.undefined
-  /** An object defining constant line label options. */
+  /** @name dxPolarChart.Options.valueAxis.constantLines.label */
   @JSName("label")
   var label_dxPolarChartValueAxisConstantLines: js.UndefOr[dxPolarChartValueAxisConstantLinesLabel] = js.undefined
-  /** Specifies a value to be displayed by a constant line. */
+  /** @name dxPolarChart.Options.valueAxis.constantLines.value */
   var value: js.UndefOr[Double | Date | String] = js.undefined
 }
 

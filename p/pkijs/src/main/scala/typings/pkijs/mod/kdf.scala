@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object kdf extends js.Object {
   /**
     * ANS X9.63 Key Derivation Function
-    * 
+    *
     * @param {string} hashFunction Used hash function
     * @param {ArrayBuffer} Zbuffer ArrayBuffer containing ECDH shared secret to derive from
     * @param {number} keydatalen Length (!!! in BITS !!!) of used kew derivation function

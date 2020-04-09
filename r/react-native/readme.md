@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native
 
-Typings are for version 0.61
+Typings are for version 0.62
 
 ## Library description:
 A framework for building native apps using React

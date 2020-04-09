@@ -22,6 +22,7 @@ import typings.react.mod.LegacyRef
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
@@ -573,7 +574,7 @@ object PartialDetailedHTMLPropsF {
     onRateChangeCapture: js.Any = null,
     onReset: FormEvent[HTMLFormElement] => Unit = null,
     onResetCapture: js.Any = null,
-    onScroll: UIEvent[HTMLFormElement] => Unit = null,
+    onScroll: UIEvent[HTMLFormElement, NativeUIEvent] => Unit = null,
     onScrollCapture: js.Any = null,
     onSeeked: SyntheticEvent[HTMLFormElement, Event_] => Unit = null,
     onSeekedCapture: js.Any = null,

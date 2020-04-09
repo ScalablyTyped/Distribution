@@ -10,6 +10,10 @@ trait SMBFileShareInfo extends js.Object {
     * A list of users or groups in the Active Directory that have administrator rights to the file share. A group must be prefixed with the @ character. For example @group1. Can only be set if Authentication is set to ActiveDirectory.
     */
   var AdminUserList: js.UndefOr[FileShareUserList] = js.native
+  /**
+    * The Amazon Resource Name (ARN) of the storage used for the audit logs.
+    */
+  var AuditDestinationARN: js.UndefOr[typings.awsSdk.storagegatewayMod.AuditDestinationARN] = js.native
   var Authentication: js.UndefOr[typings.awsSdk.storagegatewayMod.Authentication] = js.native
   /**
     * The default storage class for objects put into an Amazon S3 bucket by the file gateway. Possible values are S3_STANDARD, S3_STANDARD_IA, or S3_ONEZONE_IA. If this field is not populated, the default value S3_STANDARD is used. Optional.
@@ -65,6 +69,7 @@ object SMBFileShareInfo {
   @scala.inline
   def apply(
     AdminUserList: FileShareUserList = null,
+    AuditDestinationARN: AuditDestinationARN = null,
     Authentication: Authentication = null,
     DefaultStorageClass: StorageClass = null,
     FileShareARN: FileShareARN = null,
@@ -87,6 +92,7 @@ object SMBFileShareInfo {
   ): SMBFileShareInfo = {
     val __obj = js.Dynamic.literal()
     if (AdminUserList != null) __obj.updateDynamic("AdminUserList")(AdminUserList.asInstanceOf[js.Any])
+    if (AuditDestinationARN != null) __obj.updateDynamic("AuditDestinationARN")(AuditDestinationARN.asInstanceOf[js.Any])
     if (Authentication != null) __obj.updateDynamic("Authentication")(Authentication.asInstanceOf[js.Any])
     if (DefaultStorageClass != null) __obj.updateDynamic("DefaultStorageClass")(DefaultStorageClass.asInstanceOf[js.Any])
     if (FileShareARN != null) __obj.updateDynamic("FileShareARN")(FileShareARN.asInstanceOf[js.Any])

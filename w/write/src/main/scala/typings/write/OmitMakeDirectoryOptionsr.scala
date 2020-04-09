@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 /* Inlined std.Omit<node.fs.MakeDirectoryOptions, 'recursive'> */
 trait OmitMakeDirectoryOptionsr extends js.Object {
-  var mode: js.UndefOr[Double] = js.undefined
+  var mode: js.UndefOr[Double | String] = js.undefined
 }
 
 object OmitMakeDirectoryOptionsr {
   @scala.inline
-  def apply(mode: Int | Double = null): OmitMakeDirectoryOptionsr = {
+  def apply(mode: Double | String = null): OmitMakeDirectoryOptionsr = {
     val __obj = js.Dynamic.literal()
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[OmitMakeDirectoryOptionsr]

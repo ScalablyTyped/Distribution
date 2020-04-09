@@ -65,12 +65,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxDataGridOptions extends GridBaseOptions[dxDataGrid] {
-  /** An array of grid columns. */
+  /** @name dxDataGrid.Options.columns */
   @JSName("columns")
   var columns_dxDataGridOptions: js.UndefOr[js.Array[dxDataGridColumn | String]] = js.undefined
-  /** Customizes columns after they are created. */
+  /** @name dxDataGrid.Options.customizeColumns */
   var customizeColumns: js.UndefOr[js.Function1[/* columns */ js.Array[dxDataGridColumn], _]] = js.undefined
-  /** Customizes data before export. You can use the export.customizeExcelCell function instead. */
+  /** @name dxDataGrid.Options.customizeExportData */
   var customizeExportData: js.UndefOr[
     js.Function2[
       /* columns */ js.Array[dxDataGridColumn], 
@@ -78,72 +78,72 @@ trait dxDataGridOptions extends GridBaseOptions[dxDataGrid] {
       _
     ]
   ] = js.undefined
-  /** Configures editing. */
+  /** @name dxDataGrid.Options.editing */
   @JSName("editing")
   var editing_dxDataGridOptions: js.UndefOr[dxDataGridEditing] = js.undefined
-  /** Configures client-side exporting. */
+  /** @name dxDataGrid.Options.export */
   var export: js.UndefOr[AnonAllowExportSelectedData] = js.undefined
-  /** Configures the group panel. */
+  /** @name dxDataGrid.Options.groupPanel */
   var groupPanel: js.UndefOr[AnonAllowColumnDragging] = js.undefined
-  /** Configures grouping. */
+  /** @name dxDataGrid.Options.grouping */
   var grouping: js.UndefOr[AnonAllowCollapsing] = js.undefined
-  /** Specifies which data field provides keys for data items. Applies only if data is a simple array. */
+  /** @name dxDataGrid.Options.keyExpr */
   var keyExpr: js.UndefOr[String | js.Array[String]] = js.undefined
-  /** Allows you to build a master-detail interface in the grid. */
+  /** @name dxDataGrid.Options.masterDetail */
   var masterDetail: js.UndefOr[AnonAutoExpandAll] = js.undefined
-  /** A function that is executed when a cell is clicked or tapped. Executed before onRowClick. */
+  /** @name dxDataGrid.Options.onCellClick */
   var onCellClick: js.UndefOr[(js.Function1[/* e */ AnonCellElement, _]) | String] = js.undefined
-  /** A function that is executed when a cell is double-clicked or double-tapped. Executed before onRowDblClick. */
+  /** @name dxDataGrid.Options.onCellDblClick */
   var onCellDblClick: js.UndefOr[js.Function1[/* e */ AnonColumnIndex, _]] = js.undefined
-  /** A function that is executed after the pointer enters or leaves a cell. */
+  /** @name dxDataGrid.Options.onCellHoverChanged */
   var onCellHoverChanged: js.UndefOr[js.Function1[/* e */ AnonDisplayValue, _]] = js.undefined
-  /** A function that is executed after a cell is created. */
+  /** @name dxDataGrid.Options.onCellPrepared */
   var onCellPrepared: js.UndefOr[js.Function1[/* e */ AnonIsExpanded, _]] = js.undefined
-  /** A function that is executed before the context menu is rendered. */
+  /** @name dxDataGrid.Options.onContextMenuPreparing */
   var onContextMenuPreparing: js.UndefOr[js.Function1[/* e */ AnonItems, _]] = js.undefined
-  /** A function that is executed before a cell or row switches to the editing state. */
+  /** @name dxDataGrid.Options.onEditingStart */
   var onEditingStart: js.UndefOr[js.Function1[/* e */ AnonCancelColumn, _]] = js.undefined
-  /** A function that is executed after an editor is created. Not executed for cells with an editCellTemplate. */
+  /** @name dxDataGrid.Options.onEditorPrepared */
   var onEditorPrepared: js.UndefOr[js.Function1[/* options */ AnonDataField, _]] = js.undefined
-  /** A function used to customize or replace default editors. Not executed for cells with an editCellTemplate. */
+  /** @name dxDataGrid.Options.onEditorPreparing */
   var onEditorPreparing: js.UndefOr[js.Function1[/* e */ AnonDisabled, _]] = js.undefined
-  /** A function that is executed after data is exported. */
+  /** @name dxDataGrid.Options.onExported */
   var onExported: js.UndefOr[js.Function1[/* e */ AnonComponentDxDataGrid, _]] = js.undefined
-  /** A function that is executed before data is exported. */
+  /** @name dxDataGrid.Options.onExporting */
   var onExporting: js.UndefOr[js.Function1[/* e */ AnonElementFileName, _]] = js.undefined
-  /** A function that is executed before a file with exported data is saved to the user's local storage. */
+  /** @name dxDataGrid.Options.onFileSaving */
   var onFileSaving: js.UndefOr[js.Function1[/* e */ AnonFormat, _]] = js.undefined
-  /** A function that is executed after the focused cell changes. */
+  /** @name dxDataGrid.Options.onFocusedCellChanged */
   var onFocusedCellChanged: js.UndefOr[js.Function1[/* e */ AnonRow, _]] = js.undefined
-  /** A function that is executed before the focused cell changes. */
+  /** @name dxDataGrid.Options.onFocusedCellChanging */
   var onFocusedCellChanging: js.UndefOr[js.Function1[/* e */ AnonColumns, _]] = js.undefined
-  /** A function that is executed after the focused row changes. Applies only when focusedRowEnabled is true. */
+  /** @name dxDataGrid.Options.onFocusedRowChanged */
   var onFocusedRowChanged: js.UndefOr[js.Function1[/* e */ AnonRowElement, _]] = js.undefined
-  /** A function that is executed before the focused row changes. Applies only when focusedRowEnabled is true. */
+  /** @name dxDataGrid.Options.onFocusedRowChanging */
   var onFocusedRowChanging: js.UndefOr[js.Function1[/* e */ AnonNewRowIndex, _]] = js.undefined
-  /** A function that is executed when a row is clicked or tapped. */
+  /** @name dxDataGrid.Options.onRowClick */
   var onRowClick: js.UndefOr[(js.Function1[/* e */ AnonGroupIndex, _]) | String] = js.undefined
-  /** A function that is executed when a row is double-clicked or double-tapped. Executed after onCellDblClick. */
+  /** @name dxDataGrid.Options.onRowDblClick */
   var onRowDblClick: js.UndefOr[js.Function1[/* e */ AnonIsNewRow, _]] = js.undefined
-  /** A function that is executed after a row is created. */
+  /** @name dxDataGrid.Options.onRowPrepared */
   var onRowPrepared: js.UndefOr[js.Function1[/* e */ AnonIsSelected, _]] = js.undefined
-  /** Notifies the DataGrid of the server's data processing operations. */
+  /** @name dxDataGrid.Options.remoteOperations */
   var remoteOperations: js.UndefOr[Boolean | AnonFiltering | auto] = js.undefined
-  /** Specifies a custom template for rows. */
+  /** @name dxDataGrid.Options.rowTemplate */
   var rowTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* rowElement */ dxElement, /* rowInfo */ js.Any, _])
   ] = js.undefined
-  /** Configures scrolling. */
+  /** @name dxDataGrid.Options.scrolling */
   @JSName("scrolling")
   var scrolling_dxDataGridOptions: js.UndefOr[dxDataGridScrolling] = js.undefined
-  /** Specifies filters for the rows that must be selected initially. Applies only if selection.deferred is true. */
+  /** @name dxDataGrid.Options.selectionFilter */
   var selectionFilter: js.UndefOr[String | js.Array[_] | js.Function] = js.undefined
-  /** Configures runtime selection. */
+  /** @name dxDataGrid.Options.selection */
   @JSName("selection")
   var selection_dxDataGridOptions: js.UndefOr[dxDataGridSelection] = js.undefined
-  /** Allows you to sort groups according to the values of group summary items. */
+  /** @name dxDataGrid.Options.sortByGroupSummaryInfo */
   var sortByGroupSummaryInfo: js.UndefOr[js.Array[AnonGroupColumn]] = js.undefined
-  /** Specifies the options of the grid summary. */
+  /** @name dxDataGrid.Options.summary */
   var summary: js.UndefOr[AnonCalculateCustomSummary] = js.undefined
 }
 

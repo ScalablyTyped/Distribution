@@ -553,6 +553,8 @@ import scala.scalajs.js.annotation._
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.backspace
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.backward
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bacon
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bacteria
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bacterium
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.badge
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`badge-check`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`badge-dollar`
@@ -662,6 +664,7 @@ import scala.scalajs.js.annotation._
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`box-full`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`box-heart`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`box-open`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`box-tissue`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`box-up`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`box-usd`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.boxes
@@ -1238,6 +1241,7 @@ import scala.scalajs.js.annotation._
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-holding-box`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-holding-heart`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-holding-magic`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-holding-medical`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-holding-seedling`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-holding-usd`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-holding-water`
@@ -1253,13 +1257,17 @@ import scala.scalajs.js.annotation._
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-receiving`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-rock`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-scissors`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-sparkles`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-spock`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.hands
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hands-heart`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hands-helping`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hands-usd`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hands-wash`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.handshake
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`handshake-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`handshake-alt-slash`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`handshake-slash`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.hanukiah
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hard-hat`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.hashtag
@@ -1273,8 +1281,12 @@ import scala.scalajs.js.annotation._
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.hdd
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`head-side`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`head-side-brain`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`head-side-cough`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`head-side-cough-slash`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`head-side-headphones`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`head-side-mask`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`head-side-medical`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`head-side-virus`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`head-vr`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.heading
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.headphones
@@ -1328,6 +1340,7 @@ import scala.scalajs.js.annotation._
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`house-night`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`house-return`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`house-signal`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`house-user`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.hryvnia
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.humidity
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.hurricane
@@ -1390,6 +1403,7 @@ import scala.scalajs.js.annotation._
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.language
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.laptop
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`laptop-code`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`laptop-house`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`laptop-medical`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.lasso
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.laugh
@@ -1452,6 +1466,7 @@ import scala.scalajs.js.annotation._
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.luchador
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`luggage-cart`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.lungs
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`lungs-virus`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.mace
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.magic
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.magnet
@@ -1601,6 +1616,7 @@ import scala.scalajs.js.annotation._
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`pencil-paintbrush`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`pencil-ruler`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.pennant
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`people-arrows`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`people-carry`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`pepper-hot`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.percent
@@ -1635,6 +1651,7 @@ import scala.scalajs.js.annotation._
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`plane-alt`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`plane-arrival`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`plane-departure`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`plane-slash`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`planet-moon`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`planet-ringed`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.play
@@ -1673,6 +1690,8 @@ import scala.scalajs.js.annotation._
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.procedures
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`project-diagram`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.projector
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`pump-medical`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`pump-soap`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.pumpkin
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`puzzle-piece`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.qrcode
@@ -1793,6 +1812,7 @@ import scala.scalajs.js.annotation._
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`shield-alt`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`shield-check`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`shield-cross`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`shield-virus`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.ship
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`shipping-fast`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`shipping-timed`
@@ -1829,6 +1849,7 @@ import scala.scalajs.js.annotation._
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`signal-stream`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.signature
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sim-card`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sink
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.siren
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`siren-on`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sitemap
@@ -1866,6 +1887,7 @@ import scala.scalajs.js.annotation._
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.snowman
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.snowmobile
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.snowplow
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.soap
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.socks
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`solar-panel`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`solar-system`
@@ -1946,8 +1968,11 @@ import scala.scalajs.js.annotation._
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.stop
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`stop-circle`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.stopwatch
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`stopwatch-20`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.store
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`store-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`store-alt-slash`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`store-slash`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.stream
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`street-view`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.stretcher
@@ -2060,6 +2085,7 @@ import scala.scalajs.js.annotation._
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.toilet
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`toilet-paper`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`toilet-paper-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`toilet-paper-slash`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.tombstone
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tombstone-alt`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.toolbox
@@ -2182,6 +2208,7 @@ import scala.scalajs.js.annotation._
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`users-cog`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`users-crown`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`users-medical`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`users-slash`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`utensil-fork`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`utensil-knife`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`utensil-spoon`
@@ -2202,6 +2229,9 @@ import scala.scalajs.js.annotation._
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`video-slash`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.vihara
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.violin
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.virus
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`virus-slash`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.viruses
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.voicemail
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.volcano
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`volleyball-ball`
@@ -2545,6 +2575,10 @@ object IconName {
   @scala.inline
   def bacon: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bacon = this.cast("bacon")
   @scala.inline
+  def bacteria: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bacteria = this.cast("bacteria")
+  @scala.inline
+  def bacterium: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bacterium = this.cast("bacterium")
+  @scala.inline
   def badge: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.badge = this.cast("badge")
   @scala.inline
   def `badge-check`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`badge-check` = this.cast("badge-check")
@@ -2792,6 +2826,8 @@ object IconName {
   def `box-heart`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`box-heart` = this.cast("box-heart")
   @scala.inline
   def `box-open`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`box-open` = this.cast("box-open")
+  @scala.inline
+  def `box-tissue`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`box-tissue` = this.cast("box-tissue")
   @scala.inline
   def `box-up`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`box-up` = this.cast("box-up")
   @scala.inline
@@ -4239,6 +4275,8 @@ object IconName {
   @scala.inline
   def `hand-holding-magic`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-holding-magic` = this.cast("hand-holding-magic")
   @scala.inline
+  def `hand-holding-medical`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-holding-medical` = this.cast("hand-holding-medical")
+  @scala.inline
   def `hand-holding-seedling`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-holding-seedling` = this.cast("hand-holding-seedling")
   @scala.inline
   def `hand-holding-usd`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-holding-usd` = this.cast("hand-holding-usd")
@@ -4269,6 +4307,8 @@ object IconName {
   @scala.inline
   def `hand-scissors`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-scissors` = this.cast("hand-scissors")
   @scala.inline
+  def `hand-sparkles`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-sparkles` = this.cast("hand-sparkles")
+  @scala.inline
   def `hand-spock`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-spock` = this.cast("hand-spock")
   @scala.inline
   def hands: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.hands = this.cast("hands")
@@ -4279,9 +4319,15 @@ object IconName {
   @scala.inline
   def `hands-usd`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hands-usd` = this.cast("hands-usd")
   @scala.inline
+  def `hands-wash`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hands-wash` = this.cast("hands-wash")
+  @scala.inline
   def handshake: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.handshake = this.cast("handshake")
   @scala.inline
   def `handshake-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`handshake-alt` = this.cast("handshake-alt")
+  @scala.inline
+  def `handshake-alt-slash`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`handshake-alt-slash` = this.cast("handshake-alt-slash")
+  @scala.inline
+  def `handshake-slash`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`handshake-slash` = this.cast("handshake-slash")
   @scala.inline
   def hanukiah: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.hanukiah = this.cast("hanukiah")
   @scala.inline
@@ -4309,9 +4355,17 @@ object IconName {
   @scala.inline
   def `head-side-brain`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`head-side-brain` = this.cast("head-side-brain")
   @scala.inline
+  def `head-side-cough`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`head-side-cough` = this.cast("head-side-cough")
+  @scala.inline
+  def `head-side-cough-slash`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`head-side-cough-slash` = this.cast("head-side-cough-slash")
+  @scala.inline
   def `head-side-headphones`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`head-side-headphones` = this.cast("head-side-headphones")
   @scala.inline
+  def `head-side-mask`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`head-side-mask` = this.cast("head-side-mask")
+  @scala.inline
   def `head-side-medical`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`head-side-medical` = this.cast("head-side-medical")
+  @scala.inline
+  def `head-side-virus`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`head-side-virus` = this.cast("head-side-virus")
   @scala.inline
   def `head-vr`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`head-vr` = this.cast("head-vr")
   @scala.inline
@@ -4428,6 +4482,8 @@ object IconName {
   def `house-return`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`house-return` = this.cast("house-return")
   @scala.inline
   def `house-signal`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`house-signal` = this.cast("house-signal")
+  @scala.inline
+  def `house-user`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`house-user` = this.cast("house-user")
   @scala.inline
   def houzz: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.houzz = this.cast("houzz")
   @scala.inline
@@ -4613,6 +4669,8 @@ object IconName {
   @scala.inline
   def `laptop-code`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`laptop-code` = this.cast("laptop-code")
   @scala.inline
+  def `laptop-house`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`laptop-house` = this.cast("laptop-house")
+  @scala.inline
   def `laptop-medical`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`laptop-medical` = this.cast("laptop-medical")
   @scala.inline
   def laravel: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.laravel = this.cast("laravel")
@@ -4756,6 +4814,8 @@ object IconName {
   def `luggage-cart`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`luggage-cart` = this.cast("luggage-cart")
   @scala.inline
   def lungs: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.lungs = this.cast("lungs")
+  @scala.inline
+  def `lungs-virus`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`lungs-virus` = this.cast("lungs-virus")
   @scala.inline
   def lyft: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.lyft = this.cast("lyft")
   @scala.inline
@@ -5147,6 +5207,8 @@ object IconName {
   @scala.inline
   def `penny-arcade`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`penny-arcade` = this.cast("penny-arcade")
   @scala.inline
+  def `people-arrows`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`people-arrows` = this.cast("people-arrows")
+  @scala.inline
   def `people-carry`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`people-carry` = this.cast("people-carry")
   @scala.inline
   def `pepper-hot`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`pepper-hot` = this.cast("pepper-hot")
@@ -5241,6 +5303,8 @@ object IconName {
   @scala.inline
   def `plane-departure`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`plane-departure` = this.cast("plane-departure")
   @scala.inline
+  def `plane-slash`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`plane-slash` = this.cast("plane-slash")
+  @scala.inline
   def `planet-moon`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`planet-moon` = this.cast("planet-moon")
   @scala.inline
   def `planet-ringed`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`planet-ringed` = this.cast("planet-ringed")
@@ -5320,6 +5384,10 @@ object IconName {
   def `project-diagram`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`project-diagram` = this.cast("project-diagram")
   @scala.inline
   def projector: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.projector = this.cast("projector")
+  @scala.inline
+  def `pump-medical`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`pump-medical` = this.cast("pump-medical")
+  @scala.inline
+  def `pump-soap`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`pump-soap` = this.cast("pump-soap")
   @scala.inline
   def pumpkin: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.pumpkin = this.cast("pumpkin")
   @scala.inline
@@ -5627,6 +5695,8 @@ object IconName {
   @scala.inline
   def `shield-cross`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`shield-cross` = this.cast("shield-cross")
   @scala.inline
+  def `shield-virus`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`shield-virus` = this.cast("shield-virus")
+  @scala.inline
   def ship: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.ship = this.cast("ship")
   @scala.inline
   def `shipping-fast`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`shipping-fast` = this.cast("shipping-fast")
@@ -5706,6 +5776,8 @@ object IconName {
   def `sim-card`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sim-card` = this.cast("sim-card")
   @scala.inline
   def simplybuilt: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.simplybuilt = this.cast("simplybuilt")
+  @scala.inline
+  def sink: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sink = this.cast("sink")
   @scala.inline
   def siren: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.siren = this.cast("siren")
   @scala.inline
@@ -5802,6 +5874,8 @@ object IconName {
   def snowmobile: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.snowmobile = this.cast("snowmobile")
   @scala.inline
   def snowplow: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.snowplow = this.cast("snowplow")
+  @scala.inline
+  def soap: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.soap = this.cast("soap")
   @scala.inline
   def socks: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.socks = this.cast("socks")
   @scala.inline
@@ -5991,9 +6065,15 @@ object IconName {
   @scala.inline
   def stopwatch: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.stopwatch = this.cast("stopwatch")
   @scala.inline
+  def `stopwatch-20`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`stopwatch-20` = this.cast("stopwatch-20")
+  @scala.inline
   def store: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.store = this.cast("store")
   @scala.inline
   def `store-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`store-alt` = this.cast("store-alt")
+  @scala.inline
+  def `store-alt-slash`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`store-alt-slash` = this.cast("store-alt-slash")
+  @scala.inline
+  def `store-slash`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`store-slash` = this.cast("store-slash")
   @scala.inline
   def strava: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.strava = this.cast("strava")
   @scala.inline
@@ -6256,6 +6336,8 @@ object IconName {
   def `toilet-paper`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`toilet-paper` = this.cast("toilet-paper")
   @scala.inline
   def `toilet-paper-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`toilet-paper-alt` = this.cast("toilet-paper-alt")
+  @scala.inline
+  def `toilet-paper-slash`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`toilet-paper-slash` = this.cast("toilet-paper-slash")
   @scala.inline
   def tombstone: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.tombstone = this.cast("tombstone")
   @scala.inline
@@ -6537,6 +6619,8 @@ object IconName {
   @scala.inline
   def `users-medical`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`users-medical` = this.cast("users-medical")
   @scala.inline
+  def `users-slash`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`users-slash` = this.cast("users-slash")
+  @scala.inline
   def usps: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.usps = this.cast("usps")
   @scala.inline
   def ussunnah: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.ussunnah = this.cast("ussunnah")
@@ -6598,6 +6682,12 @@ object IconName {
   def vine: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.vine = this.cast("vine")
   @scala.inline
   def violin: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.violin = this.cast("violin")
+  @scala.inline
+  def virus: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.virus = this.cast("virus")
+  @scala.inline
+  def `virus-slash`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`virus-slash` = this.cast("virus-slash")
+  @scala.inline
+  def viruses: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.viruses = this.cast("viruses")
   @scala.inline
   def vk: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.vk = this.cast("vk")
   @scala.inline

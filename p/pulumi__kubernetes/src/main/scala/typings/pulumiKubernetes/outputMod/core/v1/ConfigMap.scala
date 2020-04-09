@@ -32,6 +32,13 @@ trait ConfigMap extends js.Object {
     */
   val data: StringDictionary[String]
   /**
+    * Immutable, if set to true, ensures that data stored in the ConfigMap cannot be updated
+    * (only object metadata can be modified). If not set to true, the field can be modified at
+    * any time. Defaulted to nil. This is an alpha field enabled by ImmutableEphemeralVolumes
+    * feature gate.
+    */
+  val immutable: Boolean
+  /**
     * Kind is a string value representing the REST resource this object represents. Servers may
     * infer this from the endpoint the client submits requests to. Cannot be updated. In
     * CamelCase. More info:
@@ -51,10 +58,11 @@ object ConfigMap {
     apiVersion: typings.pulumiKubernetes.pulumiKubernetesStrings.v1,
     binaryData: js.Object,
     data: StringDictionary[String],
+    immutable: Boolean,
     kind: typings.pulumiKubernetes.pulumiKubernetesStrings.ConfigMap,
     metadata: ObjectMeta
   ): ConfigMap = {
-    val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], binaryData = binaryData.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], binaryData = binaryData.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], immutable = immutable.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ConfigMap]
   }

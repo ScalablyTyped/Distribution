@@ -41,15 +41,21 @@ class Socket () extends Stream {
   @JSName("on")
   def on_open(event: open, handler: js.Function0[Unit]): this.type = js.native
   @JSName("on")
-  def on_reconnect(event: reconnect, handler: js.Function0[Unit]): this.type = js.native
+  def on_reconnect(event: reconnect, handler: js.Function1[/* opts */ ReconnectEventOpts, Unit]): this.type = js.native
   @JSName("on")
-  def on_reconnected(event: reconnected, handler: js.Function0[Unit]): this.type = js.native
+  def on_reconnected(event: reconnected, handler: js.Function1[/* opts */ ReconnectEventOpts, Unit]): this.type = js.native
   @JSName("on")
-  def on_reconnectfailed(event: `reconnect failed`, handler: js.Function0[Unit]): this.type = js.native
+  def on_reconnectfailed(
+    event: `reconnect failed`,
+    handler: js.Function2[/* err */ Error, /* opts */ ReconnectEventOpts, Unit]
+  ): this.type = js.native
   @JSName("on")
-  def on_reconnectscheduled(event: `reconnect scheduled`, handler: js.Function0[Unit]): this.type = js.native
+  def on_reconnectscheduled(event: `reconnect scheduled`, handler: js.Function1[/* opts */ ReconnectEventOpts, Unit]): this.type = js.native
   @JSName("on")
-  def on_reconnecttimeout(event: `reconnect timeout`, handler: js.Function0[Unit]): this.type = js.native
+  def on_reconnecttimeout(
+    event: `reconnect timeout`,
+    handler: js.Function2[/* err */ Error, /* opts */ ReconnectEventOpts, Unit]
+  ): this.type = js.native
   def write(data: js.Any): this.type = js.native
 }
 

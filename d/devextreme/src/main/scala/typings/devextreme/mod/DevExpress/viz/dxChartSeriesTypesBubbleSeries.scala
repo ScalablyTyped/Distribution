@@ -14,18 +14,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Describes settings supported by a series of the bubble type. */
+/** @name dxChartSeriesTypes.BubbleSeries */
 trait dxChartSeriesTypesBubbleSeries extends dxChartSeriesTypesCommonSeries {
-  /** Configures data aggregation for the series. */
+  /** @name dxChartSeriesTypes.BubbleSeries.aggregation */
   @JSName("aggregation")
   var aggregation_dxChartSeriesTypesBubbleSeries: js.UndefOr[dxChartSeriesTypesBubbleSeriesAggregation] = js.undefined
-  /** Specifies series elements to be highlighted when a user points to a series. */
+  /** @name dxChartSeriesTypes.BubbleSeries.hoverMode */
   @JSName("hoverMode")
   var hoverMode_dxChartSeriesTypesBubbleSeries: js.UndefOr[onlyPoint | allSeriesPoints | allArgumentPoints | none] = js.undefined
-  /** Configures point labels. */
+  /** @name dxChartSeriesTypes.BubbleSeries.label */
   @JSName("label")
   var label_dxChartSeriesTypesBubbleSeries: js.UndefOr[dxChartSeriesTypesBubbleSeriesLabel] = js.undefined
-  /** Specifies series elements to be highlighted when a user selects a bubble. */
+  /** @name dxChartSeriesTypes.BubbleSeries.selectionMode */
   @JSName("selectionMode")
   var selectionMode_dxChartSeriesTypesBubbleSeries: js.UndefOr[onlyPoint | allSeriesPoints | allArgumentPoints | none] = js.undefined
 }

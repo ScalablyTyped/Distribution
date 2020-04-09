@@ -9,45 +9,45 @@ import scala.scalajs.js.annotation._
 @js.native
 trait dxDataGrid extends GridBase {
   def addColumn(columnOptions: String): Unit = js.native
-  /** Adds a new column. */
+  /** @name dxDataGrid.addColumn(columnOptions) */
   def addColumn(columnOptions: js.Any): Unit = js.native
-  /** Adds an empty data row and switches it to the editing state. */
-  def addRow(): Unit = js.native
-  /** Ungroups grid records. */
+  /** @name dxDataGrid.addRow() */
+  def addRow(): Promise[Unit] with JQueryPromise[Unit] = js.native
+  /** @name dxDataGrid.clearGrouping() */
   def clearGrouping(): Unit = js.native
-  /** Collapses master rows or groups of a specific level. */
+  /** @name dxDataGrid.collapseAll(groupIndex) */
   def collapseAll(): Unit = js.native
   def collapseAll(groupIndex: Double): Unit = js.native
-  /** Collapses a group or a master row with a specific key. */
+  /** @name dxDataGrid.collapseRow(key) */
   def collapseRow(key: js.Any): Promise[Unit] with JQueryPromise[Unit] = js.native
-  /** Expands master rows or groups of a specific level. Does not apply if data is remote. */
+  /** @name dxDataGrid.expandAll(groupIndex) */
   def expandAll(): Unit = js.native
   def expandAll(groupIndex: Double): Unit = js.native
-  /** Expands a group or a master row with a specific key. */
+  /** @name dxDataGrid.expandRow(key) */
   def expandRow(key: js.Any): Promise[Unit] with JQueryPromise[Unit] = js.native
-  /** Exports grid data to Excel. */
+  /** @name dxDataGrid.exportToExcel(selectionOnly) */
   def exportToExcel(selectionOnly: Boolean): Unit = js.native
-  /** Gets the currently selected rows' keys. */
+  /** @name dxDataGrid.getSelectedRowKeys() */
   def getSelectedRowKeys(): js.Array[_] with Promise[_] with JQueryPromise[_] = js.native
-  /** Gets the selected rows' data objects. */
+  /** @name dxDataGrid.getSelectedRowsData() */
   def getSelectedRowsData(): js.Array[_] with Promise[_] with JQueryPromise[_] = js.native
-  /** Gets the value of a total summary item. */
+  /** @name dxDataGrid.getTotalSummaryValue(summaryItemName) */
   def getTotalSummaryValue(summaryItemName: String): js.Any = js.native
-  /** Gets all visible columns. */
+  /** @name dxDataGrid.getVisibleColumns() */
   def getVisibleColumns(): js.Array[dxDataGridColumn] = js.native
-  /** Gets all visible columns at a specific hierarchical level of column headers. Use it to access banded columns. */
+  /** @name dxDataGrid.getVisibleColumns(headerLevel) */
   def getVisibleColumns(headerLevel: Double): js.Array[dxDataGridColumn] = js.native
-  /** Gets currently rendered rows. */
+  /** @name dxDataGrid.getVisibleRows() */
   def getVisibleRows(): js.Array[dxDataGridRowObject] = js.native
-  /** @deprecated Use addRow instead. */
-  /** Adds a new data row to a grid. */
+  /** @deprecated */
+  /** @name dxDataGrid.insertRow() */
   def insertRow(): Unit = js.native
-  /** Checks whether a specific group or master row is expanded or collapsed. */
+  /** @name dxDataGrid.isRowExpanded(key) */
   def isRowExpanded(key: js.Any): Boolean = js.native
-  /** @deprecated Use deleteRow instead. */
-  /** Removes a row with a specific index. */
+  /** @deprecated */
+  /** @name dxDataGrid.removeRow(rowIndex) */
   def removeRow(rowIndex: Double): Unit = js.native
-  /** Gets the total row count. */
+  /** @name dxDataGrid.totalCount() */
   def totalCount(): Double = js.native
 }
 

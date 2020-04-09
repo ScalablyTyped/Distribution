@@ -18,13 +18,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CollectionWidgetOptions[T] extends WidgetOptions[T] {
-  /** Binds the widget to data. */
+  /** @name CollectionWidget.Options.dataSource */
   var dataSource: js.UndefOr[
     String | (js.Array[String | CollectionWidgetItem]) | DataSource | DataSourceOptions
   ] = js.undefined
-  /** The time period in milliseconds before the onItemHold event is raised. */
+  /** @name CollectionWidget.Options.itemHoldTimeout */
   var itemHoldTimeout: js.UndefOr[Double] = js.undefined
-  /** Specifies a custom template for items. */
+  /** @name CollectionWidget.Options.itemTemplate */
   var itemTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function3[
       /* itemData */ js.Any, 
@@ -33,29 +33,29 @@ trait CollectionWidgetOptions[T] extends WidgetOptions[T] {
       String | Element | JQuery
     ])
   ] = js.undefined
-  /** An array of items displayed by the widget. */
+  /** @name CollectionWidget.Options.items */
   var items: js.UndefOr[js.Array[String | CollectionWidgetItem | _]] = js.undefined
-  /** Specifies which data field provides keys for widget items. */
+  /** @name CollectionWidget.Options.keyExpr */
   var keyExpr: js.UndefOr[String | js.Function] = js.undefined
-  /** The text or HTML markup displayed by the widget if the item collection is empty. */
+  /** @name CollectionWidget.Options.noDataText */
   var noDataText: js.UndefOr[String] = js.undefined
-  /** A function that is executed when a collection item is clicked or tapped. */
+  /** @name CollectionWidget.Options.onItemClick */
   var onItemClick: js.UndefOr[(js.Function1[/* e */ AnonEvent[T], _]) | String] = js.undefined
-  /** A function that is executed when a collection item is right-clicked or pressed. */
+  /** @name CollectionWidget.Options.onItemContextMenu */
   var onItemContextMenu: js.UndefOr[js.Function1[/* e */ AnonEvent[T], _]] = js.undefined
-  /** A function that is executed when a collection item has been held for a specified period. */
+  /** @name CollectionWidget.Options.onItemHold */
   var onItemHold: js.UndefOr[js.Function1[/* e */ AnonItemData[T], _]] = js.undefined
-  /** A function that is executed after a collection item is rendered. */
+  /** @name CollectionWidget.Options.onItemRendered */
   var onItemRendered: js.UndefOr[js.Function1[/* e */ AnonItemElement[T], _]] = js.undefined
-  /** A function that is executed when a collection item is selected or selection is canceled. */
+  /** @name CollectionWidget.Options.onSelectionChanged */
   var onSelectionChanged: js.UndefOr[js.Function1[/* e */ AnonAddedItems[T], _]] = js.undefined
-  /** The index of the currently selected widget item. */
+  /** @name CollectionWidget.Options.selectedIndex */
   var selectedIndex: js.UndefOr[Double] = js.undefined
-  /** The selected item object. */
+  /** @name CollectionWidget.Options.selectedItem */
   var selectedItem: js.UndefOr[js.Any] = js.undefined
-  /** Specifies an array of currently selected item keys. */
+  /** @name CollectionWidget.Options.selectedItemKeys */
   var selectedItemKeys: js.UndefOr[js.Array[_]] = js.undefined
-  /** An array of currently selected item objects. */
+  /** @name CollectionWidget.Options.selectedItems */
   var selectedItems: js.UndefOr[js.Array[_]] = js.undefined
 }
 

@@ -63,63 +63,63 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxPolarChartOptions extends BaseChartOptions[dxPolarChart] {
-  /** Specifies adaptive layout options. */
+  /** @name dxPolarChart.Options.adaptiveLayout */
   @JSName("adaptiveLayout")
   var adaptiveLayout_dxPolarChartOptions: js.UndefOr[dxPolarChartAdaptiveLayout] = js.undefined
-  /** Specifies argument axis options for the PolarChart widget. */
+  /** @name dxPolarChart.Options.argumentAxis */
   var argumentAxis: js.UndefOr[dxPolarChartArgumentAxis] = js.undefined
-  /** Controls the padding and consequently the angular width of a group of bars with the same argument using relative units. Ignored if the barGroupWidth option is set. */
+  /** @name dxPolarChart.Options.barGroupPadding */
   var barGroupPadding: js.UndefOr[Double] = js.undefined
-  /** Specifies a fixed angular width for groups of bars with the same argument, measured in degrees. Takes precedence over the barGroupPadding option. */
+  /** @name dxPolarChart.Options.barGroupWidth */
   var barGroupWidth: js.UndefOr[Double] = js.undefined
-  /** @deprecated Use CommonPolarChartSeries.barPadding instead. */
-  /** Specifies a common bar width as a percentage from 0 to 1. */
+  /** @deprecated */
+  /** @name dxPolarChart.Options.barWidth */
   var barWidth: js.UndefOr[Double] = js.undefined
-  /** An object defining the configuration options that are common for all axes of the PolarChart widget. */
+  /** @name dxPolarChart.Options.commonAxisSettings */
   var commonAxisSettings: js.UndefOr[dxPolarChartCommonAxisSettings] = js.undefined
-  /** An object defining the configuration options that are common for all series of the PolarChart widget. */
+  /** @name dxPolarChart.Options.commonSeriesSettings */
   var commonSeriesSettings: js.UndefOr[dxPolarChartCommonSeriesSettings] = js.undefined
-  /** Specifies the color of the parent page element. */
+  /** @name dxPolarChart.Options.containerBackgroundColor */
   var containerBackgroundColor: js.UndefOr[String] = js.undefined
-  /** An object providing options for managing data from a data source. */
+  /** @name dxPolarChart.Options.dataPrepareSettings */
   var dataPrepareSettings: js.UndefOr[AnonConvertToAxisDataType] = js.undefined
-  /** @deprecated Use CommonPolarChartSeries.ignoreEmptyPoints instead. */
-  /** Specifies whether or not all bars in a series must have the same angle, or may have different angles if any points in other series are missing. */
+  /** @deprecated */
+  /** @name dxPolarChart.Options.equalBarWidth */
   var equalBarWidth: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the options of a chart's legend. */
+  /** @name dxPolarChart.Options.legend */
   @JSName("legend")
   var legend_dxPolarChartOptions: js.UndefOr[dxPolarChartLegend] = js.undefined
-  /** Forces the widget to treat negative values as zeroes. Applies to stacked-like series only. */
+  /** @name dxPolarChart.Options.negativesAsZeroes */
   var negativesAsZeroes: js.UndefOr[Boolean] = js.undefined
-  /** A function that is executed when a label on the argument axis is clicked or tapped. */
+  /** @name dxPolarChart.Options.onArgumentAxisClick */
   var onArgumentAxisClick: js.UndefOr[(js.Function1[/* e */ AnonArgumentComponent, _]) | String] = js.undefined
-  /** A function that is executed when a legend item is clicked or tapped. */
+  /** @name dxPolarChart.Options.onLegendClick */
   var onLegendClick: js.UndefOr[(js.Function1[/* e */ AnonJQueryEventModelTarget, _]) | String] = js.undefined
-  /** A function that is executed when a series is clicked or tapped. */
+  /** @name dxPolarChart.Options.onSeriesClick */
   var onSeriesClick: js.UndefOr[(js.Function1[/* e */ AnonJQueryEventModelTarget, _]) | String] = js.undefined
-  /** A function that is executed after the pointer enters or leaves a series. */
+  /** @name dxPolarChart.Options.onSeriesHoverChanged */
   var onSeriesHoverChanged: js.UndefOr[js.Function1[/* e */ AnonComponentDxPolarChart, _]] = js.undefined
-  /** A function that is executed when a series is selected or selection is canceled. */
+  /** @name dxPolarChart.Options.onSeriesSelectionChanged */
   var onSeriesSelectionChanged: js.UndefOr[js.Function1[/* e */ AnonComponentDxPolarChart, _]] = js.undefined
-  /** A function that is executed when zooming or panning ends. */
+  /** @name dxPolarChart.Options.onZoomEnd */
   var onZoomEnd: js.UndefOr[js.Function1[/* e */ AnonPreviousRange, _]] = js.undefined
-  /** A function that is executed when zooming or panning begins. */
+  /** @name dxPolarChart.Options.onZoomStart */
   var onZoomStart: js.UndefOr[js.Function1[/* e */ AnonRange, _]] = js.undefined
-  /** Specifies how the chart must behave when series point labels overlap. */
+  /** @name dxPolarChart.Options.resolveLabelOverlapping */
   var resolveLabelOverlapping: js.UndefOr[hide | none] = js.undefined
-  /** Specifies whether a single series or multiple series can be selected in the chart. */
+  /** @name dxPolarChart.Options.seriesSelectionMode */
   var seriesSelectionMode: js.UndefOr[multiple | single_] = js.undefined
-  /** Defines options for the series template. */
+  /** @name dxPolarChart.Options.seriesTemplate */
   var seriesTemplate: js.UndefOr[AnonCustomizeSeriesNameField] = js.undefined
-  /** Specifies options for PolarChart widget series. */
+  /** @name dxPolarChart.Options.series */
   @JSName("series")
   var series_dxPolarChartOptions: js.UndefOr[PolarChartSeries | js.Array[PolarChartSeries]] = js.undefined
-  /** Configures tooltips. */
+  /** @name dxPolarChart.Options.tooltip */
   @JSName("tooltip")
   var tooltip_dxPolarChartOptions: js.UndefOr[dxPolarChartTooltip] = js.undefined
-  /** Indicates whether or not to display a "spider web". */
+  /** @name dxPolarChart.Options.useSpiderWeb */
   var useSpiderWeb: js.UndefOr[Boolean] = js.undefined
-  /** Specifies value axis options for the PolarChart widget. */
+  /** @name dxPolarChart.Options.valueAxis */
   var valueAxis: js.UndefOr[dxPolarChartValueAxis] = js.undefined
 }
 

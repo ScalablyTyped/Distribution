@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "jest-changed-files" : "25.1.0"
+      "jest-changed-files" : "25.2.6"
     }
   ],
   "test-dependencies" : [
     {
-      "jest-changed-files" : "25.1.0"
+      "jest-changed-files" : "25.2.6"
     }
   ],
   "compile-devDependencies" : [

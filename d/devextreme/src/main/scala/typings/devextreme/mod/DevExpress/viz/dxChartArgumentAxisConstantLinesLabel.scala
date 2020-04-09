@@ -12,11 +12,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxChartArgumentAxisConstantLinesLabel extends dxChartCommonAxisSettingsConstantLineStyleLabel {
-  /** Aligns constant line labels in the horizontal direction. */
+  /** @name dxChart.Options.argumentAxis.constantLines.label.horizontalAlignment */
   var horizontalAlignment: js.UndefOr[center | left | right] = js.undefined
-  /** Specifies the text of a constant line label. By default, equals to the value of the constant line. */
+  /** @name dxChart.Options.argumentAxis.constantLines.label.text */
   var text: js.UndefOr[String] = js.undefined
-  /** Aligns constant line labels in the vertical direction. */
+  /** @name dxChart.Options.argumentAxis.constantLines.label.verticalAlignment */
   var verticalAlignment: js.UndefOr[bottom | center | top] = js.undefined
 }
 

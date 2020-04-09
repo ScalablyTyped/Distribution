@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * @classdesc Provides access to input sources for WebXR.
   * @description Provides access to input sources for WebXR.
   * @param {pc.XrManager} manager - WebXR Manager.
-  * @property {pc.XrInputSource[]} inputSources List of active {pc.XrInputSource}
+  * @property {pc.XrInputSource[]} inputSources List of active {@link pc.XrInputSource}.
   */
 @JSImport("playcanvas", "XrInput")
 @js.native

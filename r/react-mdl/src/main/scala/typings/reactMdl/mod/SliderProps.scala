@@ -12,6 +12,7 @@ import typings.react.mod.FormEvent
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
@@ -191,7 +192,7 @@ object SliderProps {
     onProgress: SyntheticEvent[Slider, Event_] => Unit = null,
     onRateChange: SyntheticEvent[Slider, Event_] => Unit = null,
     onReset: FormEvent[Slider] => Unit = null,
-    onScroll: UIEvent[Slider] => Unit = null,
+    onScroll: UIEvent[Slider, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[Slider, Event_] => Unit = null,
     onSeeking: SyntheticEvent[Slider, Event_] => Unit = null,
     onSelect: SyntheticEvent[Slider, Event_] => Unit = null,

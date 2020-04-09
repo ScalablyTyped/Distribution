@@ -32,10 +32,10 @@ class ^ () extends GetText {
   override def npgettext(msgctxt: String, msgid: String, msgidPlural: String, count: Double): String = js.native
   /* CompleteClass */
   @JSName("off")
-  override def off_error(eventName: error, callback: js.Function1[/* error */ String, Unit]): Unit = js.native
+  override def off_error(eventName: error, callback: js.Function1[/* error */ js.Any, Unit]): Unit = js.native
   /* CompleteClass */
   @JSName("on")
-  override def on_error(eventName: error, callback: js.Function1[/* error */ String, Unit]): Unit = js.native
+  override def on_error(eventName: error, callback: js.Function1[/* error */ js.Any, Unit]): Unit = js.native
   /* CompleteClass */
   override def pgettext(msgctxt: String, msgid: String): String = js.native
   /* CompleteClass */

@@ -33,6 +33,13 @@ trait ConfigMap extends js.Object {
     */
   var data: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   /**
+    * Immutable, if set to true, ensures that data stored in the ConfigMap cannot be updated
+    * (only object metadata can be modified). If not set to true, the field can be modified at
+    * any time. Defaulted to nil. This is an alpha field enabled by ImmutableEphemeralVolumes
+    * feature gate.
+    */
+  var immutable: js.UndefOr[Input[Boolean]] = js.undefined
+  /**
     * Kind is a string value representing the REST resource this object represents. Servers may
     * infer this from the endpoint the client submits requests to. Cannot be updated. In
     * CamelCase. More info:
@@ -52,6 +59,7 @@ object ConfigMap {
     apiVersion: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.v1] = null,
     binaryData: Input[js.Object] = null,
     data: Input[StringDictionary[Input[String]]] = null,
+    immutable: Input[Boolean] = null,
     kind: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.ConfigMap] = null,
     metadata: Input[ObjectMeta] = null
   ): ConfigMap = {
@@ -59,6 +67,7 @@ object ConfigMap {
     if (apiVersion != null) __obj.updateDynamic("apiVersion")(apiVersion.asInstanceOf[js.Any])
     if (binaryData != null) __obj.updateDynamic("binaryData")(binaryData.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (immutable != null) __obj.updateDynamic("immutable")(immutable.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigMap]

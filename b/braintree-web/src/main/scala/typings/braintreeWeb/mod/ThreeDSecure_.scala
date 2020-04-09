@@ -50,6 +50,7 @@ trait ThreeDSecure_ extends js.Object {
     * @static
     * @function create
     * @param {object} options Creation options:
+    * @param {string} [options.authorization] A tokenizationKey or clientToken. Can be used in place of `options.client`.
     * @param {Version} options.version=1 The version of 3DS to use. Pass in 2 to use 3DS 2.0.
     * @param {Client} options.client A {@link Client} instance.
     * @param {callback} callback The second argument, `data`, is the {@link ThreeDSecure} instance.

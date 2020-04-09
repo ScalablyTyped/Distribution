@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SymbolPaint extends js.Object {
+trait SymbolPaint extends AnyPaint {
   var `icon-color`: js.UndefOr[String | StyleFunction | Expression] = js.undefined
   var `icon-color-transition`: js.UndefOr[Transition] = js.undefined
   var `icon-halo-blur`: js.UndefOr[Double | StyleFunction | Expression] = js.undefined

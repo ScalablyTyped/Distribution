@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jupyterlab/console-extension" : "2.0.2"
+      "@jupyterlab/console-extension" : "2.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@jupyterlab/console-extension" : "2.0.2"
+      "@jupyterlab/console-extension" : "2.1.0"
     }
   ],
   "compile-devDependencies" : [

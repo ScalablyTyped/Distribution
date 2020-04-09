@@ -1,7 +1,7 @@
 
 # Scala.js typings for raphael
 
-Typings are for version 2.1
+Typings are for version 2.3
 
 ## Library description:
 JavaScript Vector Library

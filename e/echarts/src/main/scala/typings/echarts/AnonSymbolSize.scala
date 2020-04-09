@@ -6,67 +6,154 @@ import scala.scalajs.js.annotation._
 
 trait AnonSymbolSize extends js.Object {
   /**
-    * Coordinates of the starting point or ending point, whose
-    * format depends on the coordinate of the series.
-    * It can be `x`, and `y` for
-    * [rectangular coordinates](https://echarts.apache.org/en/option.html#grid)
-    * , or `radius`, and `angle` for
-    * [polar coordinates](https://echarts.apache.org/en/option.html#polar)
-    * .
-    *
-    * **Notice:** For axis with
-    * [axis.type](https://echarts.apache.org/en/option.html#xAixs.type)
-    * `'category'`:
-    *
-    * + If coord value is `number`, it represents index of
-    * [axis.data](https://echarts.apache.org/en/option.html#xAxis.data)
-    * .
-    * + If coord value is `string`, it represents concrete
-    * value in
-    * [axis.data](https://echarts.apache.org/en/option.html#xAxis.data)
+    * Whether to enable animation.
     *
     *
-    * Please notice that in this case `xAxis.data`
-    * must not be written as \[number, number,
-    *
-    *
-    *
-    * \], but can only be written \[string, string,
-    *
-    *
-    *
-    * \].
-    * Otherwise it is not able to be located by markPoint /
-    * markLine.
+    * @default
+    * "true"
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.animation
+    */
+  var animation: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Delay before updating the first animation, which supports
+    * callback function for different data to have different animation
+    * effect.
     *
     * For example:
     *
-    * [see doc](https://echarts.apache.org/en/option.html#series-map.map.markPoint.data)
+    * [see doc](https://echarts.apache.org/en/option.html#series-map.map.markPoint)
+    *
+    * See
+    * [this example](https://echarts.apache.org/examples/en/editor.html?c=bar-animation-delay)
+    * for more information.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.data.coord
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.animationDelay
     */
-  var coord: js.UndefOr[js.Array[_]] = js.undefined
+  var animationDelay: js.UndefOr[js.Function | Double] = js.undefined
+  /**
+    * Delay before updating animation, which supports callback
+    * function for different data to have different animation effect.
+    *
+    * For example:
+    *
+    * [see doc](https://echarts.apache.org/en/option.html#series-map.map.markPoint)
+    *
+    * See
+    * [this example](https://echarts.apache.org/examples/en/editor.html?c=bar-animation-delay)
+    * for more information.
+    *
+    * prefix
+    *
+    *
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.animationDelayUpdate
+    */
+  var animationDelayUpdate: js.UndefOr[js.Function | Double] = js.undefined
+  /**
+    * Duration of the first animation, which supports callback
+    * function for different data to have different animation effect:
+    *
+    * [see doc](https://echarts.apache.org/en/option.html#series-map.map.markPoint)
+    *
+    *
+    * @default
+    * 1000
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.animationDuration
+    */
+  var animationDuration: js.UndefOr[js.Function | Double] = js.undefined
+  /**
+    * Time for animation to complete, which supports callback function
+    * for different data to have different animation effect:
+    *
+    * [see doc](https://echarts.apache.org/en/option.html#series-map.map.markPoint)
+    *
+    *
+    * @default
+    * 300
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.animationDurationUpdate
+    */
+  var animationDurationUpdate: js.UndefOr[js.Function | Double] = js.undefined
+  /**
+    * Easing method used for the first animation.
+    * Varied easing effects can be found at
+    * [easing effect example](https://echarts.apache.org/examples/en/editor.html?c=line-easing)
+    * .
+    *
+    *
+    * @default
+    * "cubicOut"
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.animationEasing
+    */
+  var animationEasing: js.UndefOr[String] = js.undefined
+  /**
+    * Easing method used for animation.
+    *
+    *
+    * @default
+    * "cubicOut"
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.animationEasingUpdate
+    */
+  var animationEasingUpdate: js.UndefOr[String] = js.undefined
+  /**
+    * Whether to set graphic number threshold to animation.
+    * Animation will be disabled when graphic number is larger
+    * than threshold.
+    *
+    *
+    * @default
+    * 2000
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.animationThreshold
+    */
+  var animationThreshold: js.UndefOr[Double] = js.undefined
+  /**
+    * Data array for mark points, each of which is an object.
+    * Here are some ways to assign mark point position.
+    *
+    * 1. Assign coordinate according to container with
+    * [x](https://echarts.apache.org/en/option.html#series-map.markPoint.data.x)
+    * ,
+    * [y](https://echarts.apache.org/en/option.html#series-map.markPoint.data.y)
+    * attribute, in which pixel values and percentage are supported.
+    *
+    * 2. Assign coordinate position with
+    * [coord](https://echarts.apache.org/en/option.html#series-map.markPoint.data.coord)
+    * attribute, in which `'min'`, `'max'`, `'average'` are supported
+    * for each dimension.
+    *
+    * When multiple attributes exist, priority is as the above
+    * order.
+    *
+    * **For example:**
+    *
+    * [see doc](https://echarts.apache.org/en/option.html#series-map.map.markPoint)
+    *
+    *
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.data
+    */
+  var data: js.UndefOr[AnonSymbolRotate] = js.undefined
   /**
     * Mark point style.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.data.itemStyle
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.itemStyle
     */
   var itemStyle: js.UndefOr[AnonEmphasis] = js.undefined
   /**
-    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.data.label
+    * Label of mark point.
+    *
+    *
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.label
     */
-  var label: js.UndefOr[AnonFontFamily] = js.undefined
+  var label: js.UndefOr[AnonBorderWidth] = js.undefined
   /**
-    * Mark point name.
+    * Whether to ignore mouse events.
+    * Default value is false, for triggering and responding to
+    * mouse events.
     *
     *
-    * @default
-    * ''
-    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.data.name
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.silent
     */
-  var name: js.UndefOr[String] = js.undefined
+  var silent: js.UndefOr[Boolean] = js.undefined
   /**
     * Symbol of .
     *
@@ -86,7 +173,7 @@ trait AnonSymbolSize extends js.Object {
     *
     * A `dataURI` example:
     *
-    * [see doc](https://echarts.apache.org/en/option.html#series-map.map.markPoint.data)
+    * [see doc](https://echarts.apache.org/en/option.html#series-map.map.markPoint)
     *
     * Icons can be set to arbitrary vector path via `'path://'`
     * in ECharts.
@@ -101,144 +188,120 @@ trait AnonSymbolSize extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://echarts.apache.org/en/option.html#series-map.map.markPoint.data)
+    * [see doc](https://echarts.apache.org/en/option.html#series-map.map.markPoint)
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.data.symbol
+    * @default
+    * "pin"
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.symbol
     */
   var symbol: js.UndefOr[String] = js.undefined
   /**
     * Whether to keep aspect for symbols in the form of `path://`.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.data.symbolKeepAspect
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.symbolKeepAspect
     */
   var symbolKeepAspect: js.UndefOr[Boolean] = js.undefined
   /**
     * Offset of symbol relative to original position.
-    * By default, symbol will be put in the center position
-    * of data.
+    * By default, symbol will be put in the center position of
+    * data.
     * But if symbol is from user-defined vector path or image,
     * you may not expect symbol to be in center.
-    * In this case, you may use this attribute to set offset
-    * to default position.
+    * In this case, you may use this attribute to set offset to
+    * default position.
     * It can be in absolute pixel value, or in relative percentage
     * value.
     *
     * For example, `[0, '50%']` means to move upside side position
     * of symbol height.
-    * It can be used to make the arrow in the bottom to be
-    * at data position when symbol is pin.
+    * It can be used to make the arrow in the bottom to be at data
+    * position when symbol is pin.
     *
     *
     * @default
     * [0, 0]
-    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.data.symbolOffset
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.symbolOffset
     */
   var symbolOffset: js.UndefOr[js.Array[_]] = js.undefined
   /**
     * Rotate degree of symbol.
     * Note that when `symbol` is set to be `'arrow'` in `markLine`,
-    * `symbolRotate` value will be ignored, and compulsively
-    * use tangent angle.
+    * `symbolRotate` value will be ignored, and compulsively use
+    * tangent angle.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.data.symbolRotate
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.symbolRotate
     */
   var symbolRotate: js.UndefOr[Double] = js.undefined
   /**
     * symbol size.
-    * It can be set to single numbers like `10`, or use an
-    * array to represent width and height.
-    * For example, `[20, 10]` means symbol width is `20`, and
-    * height is`10`.
+    * It can be set to single numbers like `10`, or use an array
+    * to represent width and height.
+    * For example, `[20, 10]` means symbol width is `20`, and height
+    * is`10`.
+    *
+    * If size of symbols needs to be different, you can set with
+    * callback function in the following format:
+    *
+    * ```
+    * (value: Array|number, params: Object) => number|Array
+    *
+    * ```
+    *
+    * The first parameter `value` is the value in
+    * [data](https://echarts.apache.org/en/option.html#series-.data)
+    * , and the second parameter `params` is the rest parameters
+    * of data item.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.data.symbolSize
+    * @default
+    * 50
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.symbolSize
     */
-  var symbolSize: js.UndefOr[js.Array[_] | Double] = js.undefined
-  /**
-    * Label value, which can be ignored.
-    *
-    *
-    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.data.value
-    */
-  var value: js.UndefOr[Double] = js.undefined
-  /**
-    * Works only when
-    * [type](https://echarts.apache.org/en/option.html#series-map.markPoint.data.type)
-    * is assigned.
-    * It is used to state the dimension used to calculate maximum
-    * value or minimum value.
-    * It may be the direct name of a dimension, like `x`, or
-    * `angle` for line charts, or `open`, or `close` for candlestick
-    * charts.
-    *
-    *
-    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.data.valueDim
-    */
-  var valueDim: js.UndefOr[String] = js.undefined
-  /**
-    * Available when using
-    * [type](https://echarts.apache.org/en/option.html#series-map.markPoint.data.type)
-    * it is used to assign maximum value and minimum value
-    * in dimensions, it could be `0` (xAxis, radiusAxis), `1`
-    * (yAxis, angleAxis), and use the first value axis dimension
-    * by default.
-    *
-    *
-    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.data.valueIndex
-    */
-  var valueIndex: js.UndefOr[Double] = js.undefined
-  /**
-    * X position according to container, in pixel.
-    *
-    *
-    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.data.x
-    */
-  var x: js.UndefOr[Double] = js.undefined
-  /**
-    * Y position according to container, in pixel.
-    *
-    *
-    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.data.y
-    */
-  var y: js.UndefOr[Double] = js.undefined
+  var symbolSize: js.UndefOr[js.Array[_] | js.Function | Double] = js.undefined
 }
 
 object AnonSymbolSize {
   @scala.inline
   def apply(
-    coord: js.Array[_] = null,
+    animation: js.UndefOr[Boolean] = js.undefined,
+    animationDelay: js.Function | Double = null,
+    animationDelayUpdate: js.Function | Double = null,
+    animationDuration: js.Function | Double = null,
+    animationDurationUpdate: js.Function | Double = null,
+    animationEasing: String = null,
+    animationEasingUpdate: String = null,
+    animationThreshold: Int | Double = null,
+    data: AnonSymbolRotate = null,
     itemStyle: AnonEmphasis = null,
-    label: AnonFontFamily = null,
-    name: String = null,
+    label: AnonBorderWidth = null,
+    silent: js.UndefOr[Boolean] = js.undefined,
     symbol: String = null,
     symbolKeepAspect: js.UndefOr[Boolean] = js.undefined,
     symbolOffset: js.Array[_] = null,
     symbolRotate: Int | Double = null,
-    symbolSize: js.Array[_] | Double = null,
-    value: Int | Double = null,
-    valueDim: String = null,
-    valueIndex: Int | Double = null,
-    x: Int | Double = null,
-    y: Int | Double = null
+    symbolSize: js.Array[_] | js.Function | Double = null
   ): AnonSymbolSize = {
     val __obj = js.Dynamic.literal()
-    if (coord != null) __obj.updateDynamic("coord")(coord.asInstanceOf[js.Any])
+    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (animationDelay != null) __obj.updateDynamic("animationDelay")(animationDelay.asInstanceOf[js.Any])
+    if (animationDelayUpdate != null) __obj.updateDynamic("animationDelayUpdate")(animationDelayUpdate.asInstanceOf[js.Any])
+    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
+    if (animationDurationUpdate != null) __obj.updateDynamic("animationDurationUpdate")(animationDurationUpdate.asInstanceOf[js.Any])
+    if (animationEasing != null) __obj.updateDynamic("animationEasing")(animationEasing.asInstanceOf[js.Any])
+    if (animationEasingUpdate != null) __obj.updateDynamic("animationEasingUpdate")(animationEasingUpdate.asInstanceOf[js.Any])
+    if (animationThreshold != null) __obj.updateDynamic("animationThreshold")(animationThreshold.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
     if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
     if (!js.isUndefined(symbolKeepAspect)) __obj.updateDynamic("symbolKeepAspect")(symbolKeepAspect.asInstanceOf[js.Any])
     if (symbolOffset != null) __obj.updateDynamic("symbolOffset")(symbolOffset.asInstanceOf[js.Any])
     if (symbolRotate != null) __obj.updateDynamic("symbolRotate")(symbolRotate.asInstanceOf[js.Any])
     if (symbolSize != null) __obj.updateDynamic("symbolSize")(symbolSize.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (valueDim != null) __obj.updateDynamic("valueDim")(valueDim.asInstanceOf[js.Any])
-    if (valueIndex != null) __obj.updateDynamic("valueIndex")(valueIndex.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnonSymbolSize]
   }
 }

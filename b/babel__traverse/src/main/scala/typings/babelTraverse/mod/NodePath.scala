@@ -524,16 +524,14 @@ class NodePath[T] protected () extends js.Object {
   /** Hoist the current node to the highest scope possible and return a UID referencing it. */
   def hoist(scope: Scope): Unit = js.native
   def inType(candidateTypes: String*): Boolean = js.native
-  def insertAfter(nodes: js.Array[Node]): js.Any = js.native
   /**
     * Insert the provided nodes after the current one. When inserting nodes after an
     * expression, ensure that the completion record is correct by pushing the current node.
     */
-  def insertAfter(nodes: Node): js.Any = js.native
-  def insertBefore(nodes: js.Array[Node]): js.Any = js.native
+  def insertAfter[Nodes /* <: Node | js.Array[Node] */](nodes: Nodes): NodePaths[Nodes] = js.native
   // ------------------------- modification -------------------------
   /** Insert the provided nodes before the current one. */
-  def insertBefore(nodes: Node): js.Any = js.native
+  def insertBefore[Nodes /* <: Node | js.Array[Node] */](nodes: Nodes): NodePaths[Nodes] = js.native
   /** Alias of `has`. */
   def is(key: String): Boolean = js.native
   def isAnyTypeAnnotation(): /* is @babel/traverse.@babel/traverse.NodePath<@babel/types.@babel/types.AnyTypeAnnotation> */ Boolean = js.native
@@ -927,13 +925,12 @@ class NodePath[T] protected () extends js.Object {
   def matchesPattern(pattern: String): Boolean = js.native
   def matchesPattern(pattern: String, allowPartial: Boolean): Boolean = js.native
   def popContext(): Unit = js.native
-  def pushContainer(listKey: String, nodes: js.Array[Node]): Unit = js.native
   /**
     * Insert child nodes at the end of the current node.
     * @param listKey - The key at which the child nodes are stored (usually body).
     * @param nodes - the nodes to insert.
     */
-  def pushContainer(listKey: String, nodes: Node): Unit = js.native
+  def pushContainer[Nodes /* <: Node | js.Array[Node] */](listKey: ArrayKeys[T], nodes: Nodes): NodePaths[Nodes] = js.native
   def pushContext(context: TraversalContext): Unit = js.native
   /** Check if the currently assigned path references the `importName` of `moduleSource`. */
   def referencesImport(moduleSource: String, importName: String): Boolean = js.native
@@ -984,7 +981,7 @@ class NodePath[T] protected () extends js.Object {
     * @param listKey - The key at which the child nodes are stored (usually body).
     * @param nodes - the nodes to insert.
     */
-  def unshiftContainer[Nodes /* <: Node | js.Array[Node] */](listKey: String, nodes: Nodes): NodePaths[Nodes] = js.native
+  def unshiftContainer[Nodes /* <: Node | js.Array[Node] */](listKey: ArrayKeys[T], nodes: Nodes): NodePaths[Nodes] = js.native
   /** Update all sibling node paths after `fromIndex` by `incrementBy`. */
   def updateSiblingKeys(fromIndex: Double, incrementBy: Double): Unit = js.native
   def visit(): Boolean = js.native

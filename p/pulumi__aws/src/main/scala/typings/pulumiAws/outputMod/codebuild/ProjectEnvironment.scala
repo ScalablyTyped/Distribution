@@ -35,7 +35,7 @@ trait ProjectEnvironment extends js.Object {
     */
   var registryCredential: js.UndefOr[ProjectEnvironmentRegistryCredential] = js.native
   /**
-    * The type of repository that contains the source code to be built. Valid values for this parameter are: `CODECOMMIT`, `CODEPIPELINE`, `GITHUB`, `GITHUB_ENTERPRISE`, `BITBUCKET` or `S3`.
+    * The type of build environment to use for related builds. Available values are: `LINUX_CONTAINER`, `LINUX_GPU_CONTAINER`, `WINDOWS_CONTAINER` or `ARM_CONTAINER`.
     */
   var `type`: String = js.native
 }

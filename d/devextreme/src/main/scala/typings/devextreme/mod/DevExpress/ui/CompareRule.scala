@@ -22,19 +22,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CompareRule extends js.Object {
-  /** Specifies the function whose return value is used for comparison with the validated value. */
+  /** @name CompareRule.comparisonTarget */
   var comparisonTarget: js.UndefOr[js.Function0[_]] = js.undefined
-  /** Specifies the operator to be used for comparing the validated value with the target. */
+  /** @name CompareRule.comparisonType */
   var comparisonType: js.UndefOr[
     ExclamationmarkEqualssign | ExclamationmarkEqualssignEqualssign | Lessthansign | LessthansignEqualssign | EqualssignEqualssign | EqualssignEqualssignEqualssign | Greaterthansign | GreaterthansignEqualssign
   ] = js.undefined
-  /** If set to true, empty values are valid. */
+  /** @name CompareRule.ignoreEmptyValue */
   var ignoreEmptyValue: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the message that is shown if the rule is broken. */
+  /** @name CompareRule.message */
   var message: js.UndefOr[String] = js.undefined
-  /** Indicates whether or not the rule should be always checked for the target value or only when the target value changes. */
+  /** @name CompareRule.reevaluate */
   var reevaluate: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the rule type. Set it to "compare" to use the CompareRule. */
+  /** @name CompareRule.type */
   var `type`: js.UndefOr[
     required | numeric | range | stringLength | custom | compare | pattern | email | async
   ] = js.undefined

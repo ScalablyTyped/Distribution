@@ -58,12 +58,12 @@ trait EKS extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateNodegroupResponse, Unit]
   ): Request[CreateNodegroupResponse, AWSError] = js.native
   /**
-    * Deletes the Amazon EKS cluster control plane. If you have active services in your cluster that are associated with a load balancer, you must delete those services before deleting the cluster so that the load balancers are deleted properly. Otherwise, you can have orphaned resources in your VPC that prevent you from being able to delete the VPC. For more information, see Deleting a Cluster in the Amazon EKS User Guide. If you have managed node groups or Fargate profiles attached to the cluster, you must delete them first. For more information, see DeleteNodegroup andDeleteFargateProfile.
+    * Deletes the Amazon EKS cluster control plane. If you have active services in your cluster that are associated with a load balancer, you must delete those services before deleting the cluster so that the load balancers are deleted properly. Otherwise, you can have orphaned resources in your VPC that prevent you from being able to delete the VPC. For more information, see Deleting a Cluster in the Amazon EKS User Guide. If you have managed node groups or Fargate profiles attached to the cluster, you must delete them first. For more information, see DeleteNodegroup and DeleteFargateProfile.
     */
   def deleteCluster(): Request[DeleteClusterResponse, AWSError] = js.native
   def deleteCluster(callback: js.Function2[/* err */ AWSError, /* data */ DeleteClusterResponse, Unit]): Request[DeleteClusterResponse, AWSError] = js.native
   /**
-    * Deletes the Amazon EKS cluster control plane. If you have active services in your cluster that are associated with a load balancer, you must delete those services before deleting the cluster so that the load balancers are deleted properly. Otherwise, you can have orphaned resources in your VPC that prevent you from being able to delete the VPC. For more information, see Deleting a Cluster in the Amazon EKS User Guide. If you have managed node groups or Fargate profiles attached to the cluster, you must delete them first. For more information, see DeleteNodegroup andDeleteFargateProfile.
+    * Deletes the Amazon EKS cluster control plane. If you have active services in your cluster that are associated with a load balancer, you must delete those services before deleting the cluster so that the load balancers are deleted properly. Otherwise, you can have orphaned resources in your VPC that prevent you from being able to delete the VPC. For more information, see Deleting a Cluster in the Amazon EKS User Guide. If you have managed node groups or Fargate profiles attached to the cluster, you must delete them first. For more information, see DeleteNodegroup and DeleteFargateProfile.
     */
   def deleteCluster(params: DeleteClusterRequest): Request[DeleteClusterResponse, AWSError] = js.native
   def deleteCluster(
@@ -175,12 +175,12 @@ trait EKS extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListFargateProfilesResponse, Unit]
   ): Request[ListFargateProfilesResponse, AWSError] = js.native
   /**
-    * Lists the Amazon EKS node groups associated with the specified cluster in your AWS account in the specified Region.
+    * Lists the Amazon EKS managed node groups associated with the specified cluster in your AWS account in the specified Region. Self-managed node groups are not listed.
     */
   def listNodegroups(): Request[ListNodegroupsResponse, AWSError] = js.native
   def listNodegroups(callback: js.Function2[/* err */ AWSError, /* data */ ListNodegroupsResponse, Unit]): Request[ListNodegroupsResponse, AWSError] = js.native
   /**
-    * Lists the Amazon EKS node groups associated with the specified cluster in your AWS account in the specified Region.
+    * Lists the Amazon EKS managed node groups associated with the specified cluster in your AWS account in the specified Region. Self-managed node groups are not listed.
     */
   def listNodegroups(params: ListNodegroupsRequest): Request[ListNodegroupsResponse, AWSError] = js.native
   def listNodegroups(

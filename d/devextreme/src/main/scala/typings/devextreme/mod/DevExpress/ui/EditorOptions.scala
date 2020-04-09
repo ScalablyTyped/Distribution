@@ -15,21 +15,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait EditorOptions[T] extends WidgetOptions[T] {
-  /** Specifies or indicates whether the editor's value is valid. */
+  /** @name Editor.Options.isValid */
   var isValid: js.UndefOr[Boolean] = js.undefined
-  /** A function that is executed after the widget's value is changed. */
+  /** @name Editor.Options.onValueChanged */
   var onValueChanged: js.UndefOr[js.Function1[/* e */ AnonJQueryEvent[T], _]] = js.undefined
-  /** Specifies whether the editor is read-only. */
+  /** @name Editor.Options.readOnly */
   var readOnly: js.UndefOr[Boolean] = js.undefined
-  /** Information on the broken validation rule. Contains the first item from the validationErrors array. */
+  /** @name Editor.Options.validationError */
   var validationError: js.UndefOr[js.Any] = js.undefined
-  /** An array of the validation rules that failed. */
+  /** @name Editor.Options.validationErrors */
   var validationErrors: js.UndefOr[js.Array[_]] = js.undefined
-  /** Specifies how the message about the validation rules that are not satisfied by this editor's value is displayed. */
+  /** @name Editor.Options.validationMessageMode */
   var validationMessageMode: js.UndefOr[always | auto] = js.undefined
-  /** Indicates or specifies the current validation status. */
+  /** @name Editor.Options.validationStatus */
   var validationStatus: js.UndefOr[valid | invalid | pending] = js.undefined
-  /** Specifies the widget's value. */
+  /** @name Editor.Options.value */
   var value: js.UndefOr[js.Any] = js.undefined
 }
 

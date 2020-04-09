@@ -19,7 +19,7 @@ import typings.mongoose.mod.QueryFindOneAndUpdateOptions
 import typings.mongoose.mod.QueryPopulateOptions
 import typings.mongoose.mod.QueryUpdateOptions
 import typings.mongoose.rawResulttrueQueryFindOne
-import typings.mongoose.rawResulttrueQueryFindOneContext
+import typings.mongoose.rawResulttrueQueryFindOneArrayFilters
 import typings.mongoose.rawResulttrueupserttruene
 import typings.mongoose.upserttruenewtrueQueryFin
 import typings.std.RegExp
@@ -266,11 +266,11 @@ trait DocumentQueryanynullany extends js.Object {
     options: QueryFindOneAndUpdateOptions,
     callback: js.Function3[/* err */ js.Any, /* doc */ js.Any | Null, /* res */ js.Any, Unit]
   ): (DocumentQuery[_ | Null, _, js.Object]) with js.Object = js.native
-  def findOneAndUpdate(query: FilterQuery[_], update: js.Any, options: rawResulttrueQueryFindOneContext): (Query[FindAndModifyWriteOpResultObject[_ | Null]]) with js.Object = js.native
+  def findOneAndUpdate(query: FilterQuery[_], update: js.Any, options: rawResulttrueQueryFindOneArrayFilters): (Query[FindAndModifyWriteOpResultObject[_ | Null]]) with js.Object = js.native
   def findOneAndUpdate(
     query: FilterQuery[_],
     update: js.Any,
-    options: rawResulttrueQueryFindOneContext,
+    options: rawResulttrueQueryFindOneArrayFilters,
     callback: js.Function3[
       /* err */ js.Any, 
       /* doc */ FindAndModifyWriteOpResultObject[_ | Null], 

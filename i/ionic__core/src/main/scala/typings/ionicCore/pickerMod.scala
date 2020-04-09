@@ -1,13 +1,11 @@
 package typings.ionicCore
 
 import typings.ionicCore.componentsMod._Global_.HTMLIonPickerElement
-import typings.ionicCore.ionicCoreStrings.ios
-import typings.ionicCore.ionicCoreStrings.md
 import typings.ionicCore.overlaysInterfaceMod.OverlayEventDetail
 import typings.ionicCore.overlaysInterfaceMod.OverlayInterface
 import typings.ionicCore.pickerInterfaceMod.PickerButton
 import typings.ionicCore.pickerInterfaceMod.PickerColumn
-import typings.ionicCore.stencilCoreMod.ComponentInterface
+import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -47,8 +45,6 @@ object pickerMod extends js.Object {
     @JSName("el")
     var el_Picker: HTMLIonPickerElement = js.native
     var getSelected: js.Any = js.native
-    @JSName("mode")
-    var mode_Picker: ios | md = js.native
     var onBackdropTap: js.Any = js.native
     /**
       * If `true`, a backdrop will be displayed behind the picker.

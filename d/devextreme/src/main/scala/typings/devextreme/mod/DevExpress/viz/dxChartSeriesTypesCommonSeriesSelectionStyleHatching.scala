@@ -7,15 +7,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Configures hatching that applies when a user selects the series. */
+/** @name dxChartSeriesTypes.CommonSeries.selectionStyle.hatching */
 trait dxChartSeriesTypesCommonSeriesSelectionStyleHatching extends js.Object {
-  /** Specifies the direction of hatching lines. */
+  /** @name dxChartSeriesTypes.CommonSeries.selectionStyle.hatching.direction */
   var direction: js.UndefOr[left | none | right] = js.undefined
-  /** Specifies how transparent hatching lines should be. */
+  /** @name dxChartSeriesTypes.CommonSeries.selectionStyle.hatching.opacity */
   var opacity: js.UndefOr[Double] = js.undefined
-  /** Specifies the distance between two side-by-side hatching lines in pixels. */
+  /** @name dxChartSeriesTypes.CommonSeries.selectionStyle.hatching.step */
   var step: js.UndefOr[Double] = js.undefined
-  /** Specifies the width of hatching lines in pixels. */
+  /** @name dxChartSeriesTypes.CommonSeries.selectionStyle.hatching.width */
   var width: js.UndefOr[Double] = js.undefined
 }
 

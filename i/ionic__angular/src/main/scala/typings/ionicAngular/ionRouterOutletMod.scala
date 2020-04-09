@@ -16,6 +16,8 @@ import typings.angularRouter.mod.Router
 import typings.ionicAngular.configMod.Config
 import typings.ionicAngular.navControllerMod.NavController
 import typings.ionicAngular.stackUtilsMod.RouteView
+import typings.ionicCore.animationInterfaceMod.Animation
+import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.componentsMod._Global_.HTMLIonRouterOutletElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -65,6 +67,8 @@ object ionRouterOutletMod extends js.Object {
     val activatedRouteData: js.Any = js.native
     var activatedView: js.Any = js.native
     var animated: Boolean = js.native
+    @JSName("animation")
+    var animation_Original: AnimationBuilder = js.native
     val component: js.Object = js.native
     var config: js.Any = js.native
     /**
@@ -98,6 +102,8 @@ object ionRouterOutletMod extends js.Object {
     var updateActivatedRouteProxy: js.Any = js.native
     def activateWith(activatedRoute: ActivatedRoute): Unit = js.native
     def activateWith(activatedRoute: ActivatedRoute, resolver: ComponentFactoryResolver): Unit = js.native
+    def animation(baseEl: js.Any): Animation = js.native
+    def animation(baseEl: js.Any, opts: js.Any): Animation = js.native
     /**
       * Called when the `RouteReuseStrategy` instructs to re-attach a previously detached subtree
       */

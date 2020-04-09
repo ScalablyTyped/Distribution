@@ -9,7 +9,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxChartValueAxisConstantLineStyle extends dxChartCommonAxisSettingsConstantLineStyle {
-  /** Specifies the appearance of the labels of those constant lines that belong to the value axis. */
+  /** @name dxChart.Options.valueAxis.constantLineStyle.label */
   @JSName("label")
   var label_dxChartValueAxisConstantLineStyle: js.UndefOr[dxChartValueAxisConstantLineStyleLabel] = js.undefined
 }

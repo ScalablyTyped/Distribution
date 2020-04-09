@@ -23,6 +23,7 @@ import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
@@ -581,7 +582,7 @@ object PartialPickSelectHTMLAttr {
     onRateChangeCapture: js.Any = null,
     onReset: FormEvent[HTMLSelectElement] => Unit = null,
     onResetCapture: js.Any = null,
-    onScroll: UIEvent[HTMLSelectElement] => Unit = null,
+    onScroll: UIEvent[HTMLSelectElement, NativeUIEvent] => Unit = null,
     onScrollCapture: js.Any = null,
     onSeeked: SyntheticEvent[HTMLSelectElement, Event_] => Unit = null,
     onSeekedCapture: js.Any = null,

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "hoek"
-version := "4.1-dt-20180214Z-0410be"
+version := "4.1-dt-20200331Z-0410be"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

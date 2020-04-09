@@ -17,7 +17,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxSliderOptions extends dxSliderBaseOptions[dxSlider] {
-  /** The current slider value. */
+  /** @name dxSlider.Options.value */
   @JSName("value")
   var value_dxSliderOptions: js.UndefOr[Double] = js.undefined
 }

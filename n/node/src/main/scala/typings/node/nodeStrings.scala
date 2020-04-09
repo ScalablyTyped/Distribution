@@ -22,6 +22,7 @@ import typings.node.fsMod.symlink.Type
 import typings.node.perfHooksMod.EntryType
 import typings.node.tlsMod.SecureVersion
 import typings.node.utilMod.Style
+import typings.node.vmMod.MeasureMemoryMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -636,6 +637,9 @@ object nodeStrings {
   sealed trait der extends KeyFormat
   
   @js.native
+  sealed trait detailed extends MeasureMemoryMode
+  
+  @js.native
   sealed trait dir extends Type
   
   @js.native
@@ -836,6 +840,9 @@ object nodeStrings {
   sealed trait readable extends js.Object
   
   @js.native
+  sealed trait ready extends js.Object
+  
+  @js.native
   sealed trait regexp extends Style
   
   @js.native
@@ -915,6 +922,9 @@ object nodeStrings {
   
   @js.native
   sealed trait string extends Style
+  
+  @js.native
+  sealed trait summary extends MeasureMemoryMode
   
   @js.native
   sealed trait sunos extends Platform
@@ -1392,6 +1402,8 @@ object nodeStrings {
   @scala.inline
   def der: der = "der".asInstanceOf[der]
   @scala.inline
+  def detailed: detailed = "detailed".asInstanceOf[detailed]
+  @scala.inline
   def dir: dir = "dir".asInstanceOf[dir]
   @scala.inline
   def disconnect: disconnect = "disconnect".asInstanceOf[disconnect]
@@ -1518,6 +1530,8 @@ object nodeStrings {
   @scala.inline
   def readable: readable = "readable".asInstanceOf[readable]
   @scala.inline
+  def ready: ready = "ready".asInstanceOf[ready]
+  @scala.inline
   def regexp: regexp = "regexp".asInstanceOf[regexp]
   @scala.inline
   def reject: reject = "reject".asInstanceOf[reject]
@@ -1571,6 +1585,8 @@ object nodeStrings {
   def streamClosed: streamClosed = "streamClosed".asInstanceOf[streamClosed]
   @scala.inline
   def string: string = "string".asInstanceOf[string]
+  @scala.inline
+  def summary: summary = "summary".asInstanceOf[summary]
   @scala.inline
   def sunos: sunos = "sunos".asInstanceOf[sunos]
   @scala.inline

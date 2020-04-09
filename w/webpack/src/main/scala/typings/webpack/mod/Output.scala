@@ -77,6 +77,7 @@ trait Output extends js.Object {
     * - "window" - Assign to window
     * - "assign" - Assign to a global variable
     * - "jsonp" - Generate Webpack JSONP module
+    * - "system" - Generate a SystemJS module
     */
   var libraryTarget: js.UndefOr[LibraryTarget] = js.undefined
   /** The output directory as absolute path. */

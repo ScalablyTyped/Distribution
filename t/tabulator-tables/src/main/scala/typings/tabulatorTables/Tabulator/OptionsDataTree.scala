@@ -21,6 +21,8 @@ trait OptionsDataTree extends js.Object {
   var dataTreeElementColumn: js.UndefOr[Boolean | String] = js.undefined
   /** The toggle button that allows users to expand the column */
   var dataTreeExpandElement: js.UndefOr[String | HTMLElement | Boolean] = js.undefined
+  /**Propagte selection events from parent rows to children */
+  var dataTreeSelectPropagate: js.UndefOr[Boolean] = js.undefined
   /**  By default all nodes on the tree will start collapsed, you can customize the initial expansion state of the tree using the dataTreeStartExpanded option.*
     This option can take one of three possible value types, either a boolean to indicate whether all nodes should start expanded or collapsed: */
   var dataTreeStartExpanded: js.UndefOr[
@@ -38,6 +40,7 @@ object OptionsDataTree {
     dataTreeCollapseElement: String | HTMLElement | Boolean = null,
     dataTreeElementColumn: Boolean | String = null,
     dataTreeExpandElement: String | HTMLElement | Boolean = null,
+    dataTreeSelectPropagate: js.UndefOr[Boolean] = js.undefined,
     dataTreeStartExpanded: Boolean | js.Array[Boolean] | (js.Function2[/* row */ RowComponent, /* level */ Double, Boolean]) = null
   ): OptionsDataTree = {
     val __obj = js.Dynamic.literal()
@@ -48,6 +51,7 @@ object OptionsDataTree {
     if (dataTreeCollapseElement != null) __obj.updateDynamic("dataTreeCollapseElement")(dataTreeCollapseElement.asInstanceOf[js.Any])
     if (dataTreeElementColumn != null) __obj.updateDynamic("dataTreeElementColumn")(dataTreeElementColumn.asInstanceOf[js.Any])
     if (dataTreeExpandElement != null) __obj.updateDynamic("dataTreeExpandElement")(dataTreeExpandElement.asInstanceOf[js.Any])
+    if (!js.isUndefined(dataTreeSelectPropagate)) __obj.updateDynamic("dataTreeSelectPropagate")(dataTreeSelectPropagate.asInstanceOf[js.Any])
     if (dataTreeStartExpanded != null) __obj.updateDynamic("dataTreeStartExpanded")(dataTreeStartExpanded.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsDataTree]
   }

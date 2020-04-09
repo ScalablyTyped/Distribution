@@ -1,22 +1,20 @@
 package typings.mongodb.mod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.mongodb.AnonTransformFunction
-import typings.node.streamMod.Readable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("mongodb", "ChangeStream")
 @js.native
-class ChangeStream protected () extends Readable {
-  def this(changeDomain: Collection[DefaultSchema], pipeline: js.Array[js.Object]) = this()
-  def this(changeDomain: Db, pipeline: js.Array[js.Object]) = this()
-  def this(
-    changeDomain: Collection[DefaultSchema],
-    pipeline: js.Array[js.Object],
-    options: ChangeStreamOptions
-  ) = this()
-  def this(changeDomain: Db, pipeline: js.Array[js.Object], options: ChangeStreamOptions) = this()
+class ChangeStream[TSchema /* <: StringDictionary[js.Any] */] protected () extends TypedEventEmitter[ChangeStreamEvents[TSchema]] {
+  def this(parent: Collection[DefaultSchema], pipeline: js.Array[js.Object]) = this()
+  def this(parent: Db, pipeline: js.Array[js.Object]) = this()
+  def this(parent: MongoClient, pipeline: js.Array[js.Object]) = this()
+  def this(parent: Collection[DefaultSchema], pipeline: js.Array[js.Object], options: ChangeStreamOptions) = this()
+  def this(parent: Db, pipeline: js.Array[js.Object], options: ChangeStreamOptions) = this()
+  def this(parent: MongoClient, pipeline: js.Array[js.Object], options: ChangeStreamOptions) = this()
   var resumeToken: ResumeToken = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/ChangeStream.html#close */
   def close(): js.Promise[_] = js.native

@@ -20,10 +20,9 @@ trait IFuture[REQUEST /* <: IShellControlMessage */, REPLY /* <: IShellControlMe
     * The future is done when there are no more responses expected from the
     * kernel.
     *
-    * The `done` promise resolves to the reply message if there is one,
-    * otherwise it resolves to `undefined`.
+    * The `done` promise resolves to the reply message.
     */
-  val done: js.Promise[js.UndefOr[REPLY]]
+  val done: js.Promise[REPLY]
   /**
     * The original outgoing message.
     */
@@ -93,7 +92,7 @@ object IFuture {
   @scala.inline
   def apply[REQUEST /* <: IShellControlMessage */, REPLY /* <: IShellControlMessage */](
     dispose: () => Unit,
-    done: js.Promise[js.UndefOr[REPLY]],
+    done: js.Promise[REPLY],
     isDisposed: Boolean,
     msg: REQUEST,
     onIOPub: IIOPubMessage[IOPubMessageType] => Unit | js.Thenable[Unit],

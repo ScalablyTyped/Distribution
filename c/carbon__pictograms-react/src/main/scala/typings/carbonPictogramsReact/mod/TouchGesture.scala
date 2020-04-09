@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@carbon/pictograms-react", "TouchGesture")
 @js.native
-object TouchGesture extends TopLevel[CarbonPictogram]
+object TouchGesture extends TopLevel[CarbonPictogramType]
 

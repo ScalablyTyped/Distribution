@@ -40,6 +40,7 @@ package object tableInterfaceMod {
     - scala.Null
   */
   type SortOrder = typings.antd.tableInterfaceMod._SortOrder | scala.Null
+  type TablePaginationConfig = typings.antd.paginationPaginationMod.PaginationConfig
   type TransformColumns[RecordType] = js.Function1[
     /* columns */ typings.antd.tableInterfaceMod.ColumnsType[RecordType], 
     typings.antd.tableInterfaceMod.ColumnsType[RecordType]

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class OrderQuantityUnit () extends js.Object {
   /**
-    * A [MeasurementUnit](#type-measurementunit) that represents the unit of measure for the quantity.
+    * A `MeasurementUnit` that represents the unit of measure for the quantity.
     */
   var measurement_unit: js.UndefOr[MeasurementUnit] = js.native
   /**

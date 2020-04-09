@@ -41,11 +41,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ChartSeries extends dxChartSeriesTypesCommonSeries {
-  /** Specifies the name that identifies the series. */
+  /** @name ChartSeries.name */
   var name: js.UndefOr[String] = js.undefined
-  /** Specifies data about a series. */
+  /** @name ChartSeries.tag */
   var tag: js.UndefOr[js.Any] = js.undefined
-  /** Sets the series type. */
+  /** @name ChartSeries.type */
   var `type`: js.UndefOr[
     area | bar | bubble | candlestick | fullstackedarea | fullstackedbar | fullstackedline | fullstackedspline | fullstackedsplinearea | line | rangearea | rangebar_ | scatter | spline | splinearea | stackedarea | stackedbar | stackedline | stackedspline | stackedsplinearea | steparea | stepline | stock
   ] = js.undefined

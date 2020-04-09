@@ -84,6 +84,7 @@ trait TableProps[RecordType] extends js.Object {
   var rowSelection: js.UndefOr[TableRowSelection[RecordType]] = js.undefined
   var scroll: js.UndefOr[js.UndefOr[AnonX] with AnonScrollToFirstRowOnChange] = js.undefined
   var showHeader: js.UndefOr[Boolean] = js.undefined
+  var showSorterTooltip: js.UndefOr[Boolean] = js.undefined
   var size: js.UndefOr[SizeType] = js.undefined
   var sortDirections: js.UndefOr[js.Array[SortOrder]] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
@@ -132,6 +133,7 @@ object TableProps {
     rowSelection: TableRowSelection[RecordType] = null,
     scroll: js.UndefOr[AnonX] with AnonScrollToFirstRowOnChange = null,
     showHeader: js.UndefOr[Boolean] = js.undefined,
+    showSorterTooltip: js.UndefOr[Boolean] = js.undefined,
     size: SizeType = null,
     sortDirections: js.Array[SortOrder] = null,
     style: CSSProperties = null,
@@ -177,6 +179,7 @@ object TableProps {
     if (rowSelection != null) __obj.updateDynamic("rowSelection")(rowSelection.asInstanceOf[js.Any])
     if (scroll != null) __obj.updateDynamic("scroll")(scroll.asInstanceOf[js.Any])
     if (!js.isUndefined(showHeader)) __obj.updateDynamic("showHeader")(showHeader.asInstanceOf[js.Any])
+    if (!js.isUndefined(showSorterTooltip)) __obj.updateDynamic("showSorterTooltip")(showSorterTooltip.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (sortDirections != null) __obj.updateDynamic("sortDirections")(sortDirections.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])

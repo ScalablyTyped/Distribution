@@ -125,8 +125,8 @@ object PluginConfig {
     __obj.asInstanceOf[PluginConfig]
   }
   @scala.inline
-  def PluginInlineStyles(cleanupAttrs: Boolean | js.Object): PluginConfig = {
-    val __obj = js.Dynamic.literal(cleanupAttrs = cleanupAttrs.asInstanceOf[js.Any])
+  def PluginInlineStyles(inlineStyles: Boolean | js.Object): PluginConfig = {
+    val __obj = js.Dynamic.literal(inlineStyles = inlineStyles.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PluginConfig]
   }

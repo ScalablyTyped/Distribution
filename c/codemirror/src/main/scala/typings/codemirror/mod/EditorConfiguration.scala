@@ -8,6 +8,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait EditorConfiguration extends js.Object {
+  /** When enabled (off by default), an extra CSS class will be added to each token, indicating the (inner) mode that produced it, prefixed with "cm-m-".
+    For example, tokens from the XML mode will get the cm-m-xml class. */
+  var addModeClass: js.UndefOr[Boolean] = js.undefined
+  /** When set (default is null) only files whose type is in the array can be dropped into the editor.
+    The strings should be MIME types, and will be checked against the type of the File object as reported by the browser. */
+  var allowDropFileTypes: js.UndefOr[js.Array[String]] = js.undefined
   /**
     * Will auto-close brackets and quotes when typed.
     * By default, it'll auto-close ()[]{}''"", but you can pass it a string similar to that (containing pairs of matching characters),
@@ -22,6 +28,10 @@ trait EditorConfiguration extends js.Object {
   // if true, it will be refreshed the first time the editor becomes visible.
   // you can pass delay (msec) time as polling duration
   var autoRefresh: js.UndefOr[Boolean | AnonDelay] = js.undefined
+  /** Specifies whether or not autocapitalization will be enabled on the input. */
+  var autocapitalize: js.UndefOr[Boolean] = js.undefined
+  /** Specifies whether or not autocorrect will be enabled on the input. */
+  var autocorrect: js.UndefOr[Boolean] = js.undefined
   /** Can be used to make CodeMirror focus itself on initialization. Defaults to off.
     When fromTextArea is used, and no explicit value is given for this option, it will be set to true when either the source textarea is focused,
     or it has an autofocus attribute and no other element is focused. */
@@ -129,7 +139,10 @@ trait EditorConfiguration extends js.Object {
     If you respond to an event, you should probably inspect its type property and only do something when it is keydown
     (or keypress for actions that need character data). */
   var onKeyEvent: js.UndefOr[js.Function2[/* instance */ Editor, /* event */ KeyboardEvent, Boolean]] = js.undefined
-  /** Optional value to be used in conjunction with CodeMirror’s placeholder add-on. */
+  /**
+    * Adds a placeholder option that can be used to make content appear in the editor when it is empty and not focused.
+    * It can hold either a string or a DOM node. Also gives the editor a CodeMirror-empty CSS class whenever it doesn't contain any text.
+    */
   var placeholder: js.UndefOr[String] = js.undefined
   /** Indicates how quickly CodeMirror should poll its input textarea for changes(when focused).
     Most input is captured by events, but some things, like IME input on some browsers, don't generate events that allow CodeMirror to properly detect it.
@@ -137,6 +150,9 @@ trait EditorConfiguration extends js.Object {
   var pollInterval: js.UndefOr[Double] = js.undefined
   /** boolean|string. This disables editing of the editor content by the user. If the special value "nocursor" is given (instead of simply true), focusing of the editor is also disallowed. */
   var readOnly: js.UndefOr[js.Any] = js.undefined
+  /** Controls whether, when the context menu is opened with a click outside of the current selection,
+    the cursor is moved to the point of the click. Defaults to true. */
+  var resetSelectionOnContextMenu: js.UndefOr[Boolean] = js.undefined
   /** Determines whether horizontal cursor movement through right-to-left (Arabic, Hebrew) text
     is visual (pressing the left arrow moves the cursor left)
     or logical (pressing the left arrow moves to the next lower index in the string, which is visually right in right-to-left text).
@@ -156,6 +172,8 @@ trait EditorConfiguration extends js.Object {
   var showHint: js.UndefOr[Boolean] = js.undefined
   /** Whether to use the context-sensitive indentation that the mode provides (or just indent the same as the line before). Defaults to true. */
   var smartIndent: js.UndefOr[Boolean] = js.undefined
+  /** Specifies whether or not spellcheck will be enabled on the input. */
+  var spellcheck: js.UndefOr[Boolean] = js.undefined
   /**
     * When enabled gives the wrapper of the line that contains the cursor the class CodeMirror-activeline,
     * adds a background with the class CodeMirror-activeline-background, and adds the class CodeMirror-activeline-gutter to the line's gutter space is enabled.
@@ -188,9 +206,13 @@ trait EditorConfiguration extends js.Object {
 object EditorConfiguration {
   @scala.inline
   def apply(
+    addModeClass: js.UndefOr[Boolean] = js.undefined,
+    allowDropFileTypes: js.Array[String] = null,
     autoCloseBrackets: AutoCloseBrackets | Boolean | String = null,
     autoCloseTags: AutoCloseTags | Boolean = null,
     autoRefresh: Boolean | AnonDelay = null,
+    autocapitalize: js.UndefOr[Boolean] = js.undefined,
+    autocorrect: js.UndefOr[Boolean] = js.undefined,
     autofocus: js.UndefOr[Boolean] = js.undefined,
     coverGutterNextToScrollbar: js.UndefOr[Boolean] = js.undefined,
     cursorBlinkRate: Int | Double = null,
@@ -225,12 +247,14 @@ object EditorConfiguration {
     placeholder: String = null,
     pollInterval: Int | Double = null,
     readOnly: js.Any = null,
+    resetSelectionOnContextMenu: js.UndefOr[Boolean] = js.undefined,
     rtlMoveVisually: js.UndefOr[Boolean] = js.undefined,
     scrollPastEnd: js.UndefOr[Boolean] = js.undefined,
     scrollbarStyle: String = null,
     showCursorWhenSelecting: js.UndefOr[Boolean] = js.undefined,
     showHint: js.UndefOr[Boolean] = js.undefined,
     smartIndent: js.UndefOr[Boolean] = js.undefined,
+    spellcheck: js.UndefOr[Boolean] = js.undefined,
     styleActiveLine: StyleActiveLine | Boolean = null,
     tabSize: Int | Double = null,
     tabindex: Int | Double = null,
@@ -242,9 +266,13 @@ object EditorConfiguration {
     workTime: Int | Double = null
   ): EditorConfiguration = {
     val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(addModeClass)) __obj.updateDynamic("addModeClass")(addModeClass.asInstanceOf[js.Any])
+    if (allowDropFileTypes != null) __obj.updateDynamic("allowDropFileTypes")(allowDropFileTypes.asInstanceOf[js.Any])
     if (autoCloseBrackets != null) __obj.updateDynamic("autoCloseBrackets")(autoCloseBrackets.asInstanceOf[js.Any])
     if (autoCloseTags != null) __obj.updateDynamic("autoCloseTags")(autoCloseTags.asInstanceOf[js.Any])
     if (autoRefresh != null) __obj.updateDynamic("autoRefresh")(autoRefresh.asInstanceOf[js.Any])
+    if (!js.isUndefined(autocapitalize)) __obj.updateDynamic("autocapitalize")(autocapitalize.asInstanceOf[js.Any])
+    if (!js.isUndefined(autocorrect)) __obj.updateDynamic("autocorrect")(autocorrect.asInstanceOf[js.Any])
     if (!js.isUndefined(autofocus)) __obj.updateDynamic("autofocus")(autofocus.asInstanceOf[js.Any])
     if (!js.isUndefined(coverGutterNextToScrollbar)) __obj.updateDynamic("coverGutterNextToScrollbar")(coverGutterNextToScrollbar.asInstanceOf[js.Any])
     if (cursorBlinkRate != null) __obj.updateDynamic("cursorBlinkRate")(cursorBlinkRate.asInstanceOf[js.Any])
@@ -279,12 +307,14 @@ object EditorConfiguration {
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (pollInterval != null) __obj.updateDynamic("pollInterval")(pollInterval.asInstanceOf[js.Any])
     if (readOnly != null) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(resetSelectionOnContextMenu)) __obj.updateDynamic("resetSelectionOnContextMenu")(resetSelectionOnContextMenu.asInstanceOf[js.Any])
     if (!js.isUndefined(rtlMoveVisually)) __obj.updateDynamic("rtlMoveVisually")(rtlMoveVisually.asInstanceOf[js.Any])
     if (!js.isUndefined(scrollPastEnd)) __obj.updateDynamic("scrollPastEnd")(scrollPastEnd.asInstanceOf[js.Any])
     if (scrollbarStyle != null) __obj.updateDynamic("scrollbarStyle")(scrollbarStyle.asInstanceOf[js.Any])
     if (!js.isUndefined(showCursorWhenSelecting)) __obj.updateDynamic("showCursorWhenSelecting")(showCursorWhenSelecting.asInstanceOf[js.Any])
     if (!js.isUndefined(showHint)) __obj.updateDynamic("showHint")(showHint.asInstanceOf[js.Any])
     if (!js.isUndefined(smartIndent)) __obj.updateDynamic("smartIndent")(smartIndent.asInstanceOf[js.Any])
+    if (!js.isUndefined(spellcheck)) __obj.updateDynamic("spellcheck")(spellcheck.asInstanceOf[js.Any])
     if (styleActiveLine != null) __obj.updateDynamic("styleActiveLine")(styleActiveLine.asInstanceOf[js.Any])
     if (tabSize != null) __obj.updateDynamic("tabSize")(tabSize.asInstanceOf[js.Any])
     if (tabindex != null) __obj.updateDynamic("tabindex")(tabindex.asInstanceOf[js.Any])

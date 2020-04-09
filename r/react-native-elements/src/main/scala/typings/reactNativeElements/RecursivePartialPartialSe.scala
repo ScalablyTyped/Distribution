@@ -7,6 +7,7 @@ import typings.reactNative.mod.AccessibilityRole
 import typings.reactNative.mod.AccessibilityState
 import typings.reactNative.mod.AccessibilityStates
 import typings.reactNative.mod.AccessibilityTrait
+import typings.reactNative.mod.AccessibilityValue
 import typings.reactNative.mod.ActivityIndicatorProperties
 import typings.reactNative.mod.DataDetectorTypes
 import typings.reactNative.mod.DocumentSelectionState
@@ -117,6 +118,7 @@ trait RecursivePartialPartialSe extends js.Object {
   var accessibilityState: js.UndefOr[RecursivePartial[js.UndefOr[AccessibilityState]]] = js.undefined
   var accessibilityStates: js.UndefOr[RecursivePartial[js.UndefOr[js.Array[AccessibilityStates]]]] = js.undefined
   var accessibilityTraits: js.UndefOr[RecursivePartial[js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]]]] = js.undefined
+  var accessibilityValue: js.UndefOr[RecursivePartial[js.UndefOr[AccessibilityValue]]] = js.undefined
   var accessibilityViewIsModal: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   var accessible: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   var allowFontScaling: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
@@ -332,6 +334,7 @@ object RecursivePartialPartialSe {
     accessibilityState: RecursivePartial[js.UndefOr[AccessibilityState]] = null,
     accessibilityStates: RecursivePartial[js.UndefOr[js.Array[AccessibilityStates]]] = null,
     accessibilityTraits: RecursivePartial[js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]]] = null,
+    accessibilityValue: RecursivePartial[js.UndefOr[AccessibilityValue]] = null,
     accessibilityViewIsModal: RecursivePartial[js.UndefOr[Boolean]] = null,
     accessible: RecursivePartial[js.UndefOr[Boolean]] = null,
     allowFontScaling: RecursivePartial[js.UndefOr[Boolean]] = null,
@@ -486,6 +489,7 @@ object RecursivePartialPartialSe {
     if (accessibilityState != null) __obj.updateDynamic("accessibilityState")(accessibilityState.asInstanceOf[js.Any])
     if (accessibilityStates != null) __obj.updateDynamic("accessibilityStates")(accessibilityStates.asInstanceOf[js.Any])
     if (accessibilityTraits != null) __obj.updateDynamic("accessibilityTraits")(accessibilityTraits.asInstanceOf[js.Any])
+    if (accessibilityValue != null) __obj.updateDynamic("accessibilityValue")(accessibilityValue.asInstanceOf[js.Any])
     if (accessibilityViewIsModal != null) __obj.updateDynamic("accessibilityViewIsModal")(accessibilityViewIsModal.asInstanceOf[js.Any])
     if (accessible != null) __obj.updateDynamic("accessible")(accessible.asInstanceOf[js.Any])
     if (allowFontScaling != null) __obj.updateDynamic("allowFontScaling")(allowFontScaling.asInstanceOf[js.Any])

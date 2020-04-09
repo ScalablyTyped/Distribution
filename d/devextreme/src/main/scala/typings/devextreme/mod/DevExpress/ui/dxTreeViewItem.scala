@@ -7,17 +7,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxTreeViewItem extends CollectionWidgetItem {
-  /** Specifies whether or not the tree view item is displayed expanded. */
+  /** @name dxTreeViewItem.expanded */
   var expanded: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether or not the tree view item has children. */
+  /** @name dxTreeViewItem.hasItems */
   var hasItems: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the tree view item's icon. */
+  /** @name dxTreeViewItem.icon */
   var icon: js.UndefOr[String] = js.undefined
-  /** Specifies nested tree view items. */
+  /** @name dxTreeViewItem.items */
   var items: js.UndefOr[js.Array[dxTreeViewItem]] = js.undefined
-  /** Holds the key of the parent item. */
+  /** @name dxTreeViewItem.parentId */
   var parentId: js.UndefOr[Double | String] = js.undefined
-  /** Specifies whether or not the tree view item is displayed selected. */
+  /** @name dxTreeViewItem.selected */
   var selected: js.UndefOr[Boolean] = js.undefined
 }
 

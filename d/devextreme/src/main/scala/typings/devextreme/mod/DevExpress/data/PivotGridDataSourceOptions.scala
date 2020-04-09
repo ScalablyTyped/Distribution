@@ -6,25 +6,25 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PivotGridDataSourceOptions extends js.Object {
-  /** Configures pivot grid fields. */
+  /** @name PivotGridDataSource.Options.fields */
   var fields: js.UndefOr[js.Array[PivotGridDataSourceField]] = js.undefined
-  /** Specifies data filtering conditions. Cannot be used with an XmlaStore. */
+  /** @name PivotGridDataSource.Options.filter */
   var filter: js.UndefOr[String | js.Array[_] | js.Function] = js.undefined
-  /** A function that is executed after data is successfully loaded. */
+  /** @name PivotGridDataSource.Options.onChanged */
   var onChanged: js.UndefOr[js.Function] = js.undefined
-  /** A function that is executed when all fields are loaded from the store and they are ready to be displayed in the PivotGrid. */
+  /** @name PivotGridDataSource.Options.onFieldsPrepared */
   var onFieldsPrepared: js.UndefOr[js.Function1[/* fields */ js.Array[PivotGridDataSourceField], _]] = js.undefined
-  /** A function that is executed when data loading fails. */
+  /** @name PivotGridDataSource.Options.onLoadError */
   var onLoadError: js.UndefOr[js.Function1[/* error */ js.Any, _]] = js.undefined
-  /** A function that is executed when the data loading status changes. */
+  /** @name PivotGridDataSource.Options.onLoadingChanged */
   var onLoadingChanged: js.UndefOr[js.Function1[/* isLoading */ Boolean, _]] = js.undefined
-  /** Specifies whether the PivotGridDataSource should load data in portions. Can be used only with an XmlaStore. */
+  /** @name PivotGridDataSource.Options.paginate */
   var paginate: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether the data processing operations (filtering, grouping, summary calculation) should be performed on the server. */
+  /** @name PivotGridDataSource.Options.remoteOperations */
   var remoteOperations: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether to auto-generate pivot grid fields from the store's data. */
+  /** @name PivotGridDataSource.Options.retrieveFields */
   var retrieveFields: js.UndefOr[Boolean] = js.undefined
-  /** Configures the DataSource's underlying store. */
+  /** @name PivotGridDataSource.Options.store */
   var store: js.UndefOr[
     Store | StoreOptions[Store] | XmlaStore | XmlaStoreOptions | js.Array[AnonType] | AnonType
   ] = js.undefined

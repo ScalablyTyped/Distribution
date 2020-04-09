@@ -35,6 +35,9 @@ class SnapshotSchedule protected () extends CustomResource {
     * Whether to destroy all associated clusters with this snapshot schedule on deletion. Must be enabled and applied before attempting deletion.
     */
   val forceDestroy: Output_[js.UndefOr[Boolean]] = js.native
+  /**
+    * The snapshot schedule identifier. If omitted, this provider will assign a random, unique identifier.
+    */
   val identifier: Output_[String] = js.native
   /**
     * Creates a unique

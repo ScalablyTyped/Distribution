@@ -69,6 +69,7 @@ import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
@@ -671,7 +672,7 @@ object IonSlidesPickHTMLAttribut {
     onProgress: SyntheticEvent[HTMLIonSlidesElement, Event_] => Unit = null,
     onRateChange: SyntheticEvent[HTMLIonSlidesElement, Event_] => Unit = null,
     onReset: FormEvent[HTMLIonSlidesElement] => Unit = null,
-    onScroll: UIEvent[HTMLIonSlidesElement] => Unit = null,
+    onScroll: UIEvent[HTMLIonSlidesElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[HTMLIonSlidesElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[HTMLIonSlidesElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[HTMLIonSlidesElement, Event_] => Unit = null,

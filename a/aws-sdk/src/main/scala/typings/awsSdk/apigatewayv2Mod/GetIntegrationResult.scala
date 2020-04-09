@@ -76,9 +76,9 @@ trait GetIntegrationResult extends js.Object {
     */
   var TemplateSelectionExpression: js.UndefOr[SelectionExpression] = js.native
   /**
-    * Custom timeout between 50 and 29,000 milliseconds. The default value is 29,000 milliseconds or 29 seconds for WebSocket APIs. The default value is 5,000 milliseconds, or 5 seconds for HTTP APIs.
+    * Custom timeout between 50 and 29,000 milliseconds for WebSocket APIs and between 50 and 30,000 milliseconds for HTTP APIs. The default timeout is 29 seconds for WebSocket APIs and 30 seconds for HTTP APIs.
     */
-  var TimeoutInMillis: js.UndefOr[IntegerWithLengthBetween50And29000] = js.native
+  var TimeoutInMillis: js.UndefOr[IntegerWithLengthBetween50And30000] = js.native
   /**
     * The TLS configuration for a private integration. If you specify a TLS configuration, private integration traffic uses the HTTPS protocol. Supported only for HTTP APIs.
     */

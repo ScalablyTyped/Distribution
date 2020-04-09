@@ -1,6 +1,7 @@
 package typings.antd.timePickerMod
 
-import typings.antd.AnonLang
+import typings.antd.antdNumbers.`0`
+import typings.antd.antdNumbers.`1`
 import typings.antd.antdStrings.`additions text`
 import typings.antd.antdStrings.`inline`
 import typings.antd.antdStrings.additions
@@ -40,6 +41,7 @@ import typings.antd.antdStrings.text
 import typings.antd.antdStrings.time
 import typings.antd.antdStrings.tree
 import typings.antd.antdStrings.vertical
+import typings.antd.generatePickerMod.PickerLocale
 import typings.antd.sizeContextMod.SizeType
 import typings.moment.mod.Moment
 import typings.rcPicker.dateBodyMod.DateRender
@@ -50,7 +52,6 @@ import typings.rcPicker.interfaceMod.PanelMode
 import typings.rcPicker.interfaceMod.RangeValue
 import typings.rcPicker.monthBodyMod.MonthCellRender
 import typings.rcPicker.pickerMod.PickerRefConfig
-import typings.rcTrigger.interfaceMod.AlignType
 import typings.react.mod.CSSProperties
 import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
@@ -70,6 +71,7 @@ import scala.scalajs.js.annotation._
 
 /* Inlined parent antd.antd/lib/date-picker/generatePicker.RangePickerTimeProps<moment.moment.Moment> */
 trait TimeRangePickerProps extends js.Object {
+  var activePickerIndex: js.UndefOr[`0` | `1`] = js.undefined
   var allowClear: js.UndefOr[Boolean] = js.undefined
   var allowEmpty: js.UndefOr[js.Tuple2[Boolean, Boolean]] = js.undefined
   var `aria-activedescendant`: js.UndefOr[String] = js.undefined
@@ -138,14 +140,16 @@ trait TimeRangePickerProps extends js.Object {
   var disabledTime: js.UndefOr[
     js.Function2[/* date */ EventValue[Moment], /* type */ start | end, DisabledTimes]
   ] = js.undefined
-  var dropdownAlign: js.UndefOr[AlignType] = js.undefined
+  var dropdownAlign: js.UndefOr[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AlignType */ js.Any
+  ] = js.undefined
   var dropdownClassName: js.UndefOr[String] = js.undefined
   var format: js.UndefOr[String | js.Array[String]] = js.undefined
   var getPopupContainer: js.UndefOr[js.Function1[/* node */ HTMLElement, HTMLElement]] = js.undefined
   var hideDisabledOptions: js.UndefOr[Boolean] = js.undefined
   var hourStep: js.UndefOr[Double] = js.undefined
   var inputReadOnly: js.UndefOr[Boolean] = js.undefined
-  var locale: js.UndefOr[AnonLang] = js.undefined
+  var locale: js.UndefOr[PickerLocale] = js.undefined
   var minuteStep: js.UndefOr[Double] = js.undefined
   var mode: js.UndefOr[js.Tuple2[PanelMode, PanelMode]] = js.undefined
   var monthCellRender: js.UndefOr[MonthCellRender[Moment]] = js.undefined
@@ -170,6 +174,7 @@ trait TimeRangePickerProps extends js.Object {
     js.Function2[/* values */ RangeValue[Moment], /* modes */ js.Tuple2[PanelMode, PanelMode], Unit]
   ] = js.undefined
   var open: js.UndefOr[Boolean] = js.undefined
+  var order: js.UndefOr[Boolean] = js.undefined
   var picker: time
   var pickerRef: js.UndefOr[MutableRefObject[PickerRefConfig]] = js.undefined
   var placeholder: js.UndefOr[js.Tuple2[String, String]] = js.undefined
@@ -201,6 +206,7 @@ object TimeRangePickerProps {
   @scala.inline
   def apply(
     picker: time,
+    activePickerIndex: `0` | `1` = null,
     allowClear: js.UndefOr[Boolean] = js.undefined,
     allowEmpty: js.Tuple2[Boolean, Boolean] = null,
     `aria-activedescendant`: String = null,
@@ -267,14 +273,14 @@ object TimeRangePickerProps {
     disabledMinutes: /* hour */ Double => js.Array[Double] = null,
     disabledSeconds: (/* hour */ Double, /* minute */ Double) => js.Array[Double] = null,
     disabledTime: (/* date */ EventValue[Moment], /* type */ start | end) => DisabledTimes = null,
-    dropdownAlign: AlignType = null,
+    dropdownAlign: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AlignType */ js.Any = null,
     dropdownClassName: String = null,
     format: String | js.Array[String] = null,
     getPopupContainer: /* node */ HTMLElement => HTMLElement = null,
     hideDisabledOptions: js.UndefOr[Boolean] = js.undefined,
     hourStep: Int | Double = null,
     inputReadOnly: js.UndefOr[Boolean] = js.undefined,
-    locale: AnonLang = null,
+    locale: PickerLocale = null,
     minuteStep: Int | Double = null,
     mode: js.Tuple2[PanelMode, PanelMode] = null,
     monthCellRender: (Moment, /* locale */ Locale) => ReactNode = null,
@@ -293,6 +299,7 @@ object TimeRangePickerProps {
     onOpenChange: /* open */ Boolean => Unit = null,
     onPanelChange: (/* values */ RangeValue[Moment], /* modes */ js.Tuple2[PanelMode, PanelMode]) => Unit = null,
     open: js.UndefOr[Boolean] = js.undefined,
+    order: js.UndefOr[Boolean] = js.undefined,
     pickerRef: MutableRefObject[PickerRefConfig] = null,
     placeholder: js.Tuple2[String, String] = null,
     popupStyle: CSSProperties = null,
@@ -317,6 +324,7 @@ object TimeRangePickerProps {
     value: RangeValue[Moment] = null
   ): TimeRangePickerProps = {
     val __obj = js.Dynamic.literal(picker = picker.asInstanceOf[js.Any])
+    if (activePickerIndex != null) __obj.updateDynamic("activePickerIndex")(activePickerIndex.asInstanceOf[js.Any])
     if (!js.isUndefined(allowClear)) __obj.updateDynamic("allowClear")(allowClear.asInstanceOf[js.Any])
     if (allowEmpty != null) __obj.updateDynamic("allowEmpty")(allowEmpty.asInstanceOf[js.Any])
     if (`aria-activedescendant` != null) __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`.asInstanceOf[js.Any])
@@ -409,6 +417,7 @@ object TimeRangePickerProps {
     if (onOpenChange != null) __obj.updateDynamic("onOpenChange")(js.Any.fromFunction1(onOpenChange))
     if (onPanelChange != null) __obj.updateDynamic("onPanelChange")(js.Any.fromFunction2(onPanelChange))
     if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
+    if (!js.isUndefined(order)) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
     if (pickerRef != null) __obj.updateDynamic("pickerRef")(pickerRef.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (popupStyle != null) __obj.updateDynamic("popupStyle")(popupStyle.asInstanceOf[js.Any])

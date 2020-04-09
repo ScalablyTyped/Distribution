@@ -11,7 +11,7 @@ trait FilterDropdownProps extends js.Object {
   var selectedKeys: js.Array[typings.react.mod.Key]
   var visible: Boolean
   def confirm(): Unit
-  def setSelectedKeys(selectedKeys: js.Array[String]): Unit
+  def setSelectedKeys(selectedKeys: js.Array[typings.react.mod.Key]): Unit
 }
 
 object FilterDropdownProps {
@@ -20,7 +20,7 @@ object FilterDropdownProps {
     confirm: () => Unit,
     prefixCls: String,
     selectedKeys: js.Array[typings.react.mod.Key],
-    setSelectedKeys: js.Array[String] => Unit,
+    setSelectedKeys: js.Array[typings.react.mod.Key] => Unit,
     visible: Boolean,
     clearFilters: () => Unit = null,
     filters: js.Array[ColumnFilterItem] = null

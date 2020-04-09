@@ -1,6 +1,9 @@
 package typings.vegaTypings.encodeMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.vegaTypings.configMod.Cursor
+import typings.vegaTypings.configMod.StrokeCap
+import typings.vegaTypings.configMod.StrokeJoin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,16 +11,16 @@ import scala.scalajs.js.annotation._
 trait EncodeEntry
   extends /* k */ StringDictionary[js.UndefOr[ProductionRule[ArbitraryValueRef]]] {
   var blend: js.UndefOr[ProductionRule[ScaledValueRef[Blend]]] = js.undefined
-  var cursor: js.UndefOr[ProductionRule[StringValueRef]] = js.undefined
+  var cursor: js.UndefOr[ProductionRule[ScaledValueRef[Cursor]]] = js.undefined
   var fill: js.UndefOr[ProductionRule[ColorValueRef]] = js.undefined
   var fillOpacity: js.UndefOr[ProductionRule[NumericValueRef]] = js.undefined
   var height: js.UndefOr[ProductionRule[NumericValueRef]] = js.undefined
   var opacity: js.UndefOr[ProductionRule[NumericValueRef]] = js.undefined
   var stroke: js.UndefOr[ProductionRule[ColorValueRef]] = js.undefined
-  var strokeCap: js.UndefOr[ProductionRule[StringValueRef]] = js.undefined
+  var strokeCap: js.UndefOr[ProductionRule[ScaledValueRef[StrokeCap]]] = js.undefined
   var strokeDash: js.UndefOr[ProductionRule[ScaledValueRef[js.Array[Double]]]] = js.undefined
   var strokeDashOffset: js.UndefOr[ProductionRule[NumericValueRef]] = js.undefined
-  var strokeJoin: js.UndefOr[ProductionRule[StringValueRef]] = js.undefined
+  var strokeJoin: js.UndefOr[ProductionRule[ScaledValueRef[StrokeJoin]]] = js.undefined
   var strokeMiterLimit: js.UndefOr[ProductionRule[NumericValueRef]] = js.undefined
   var strokeOpacity: js.UndefOr[ProductionRule[NumericValueRef]] = js.undefined
   var strokeWidth: js.UndefOr[ProductionRule[NumericValueRef]] = js.undefined
@@ -37,16 +40,16 @@ object EncodeEntry {
   def apply(
     StringDictionary: /* k */ StringDictionary[js.UndefOr[ProductionRule[ArbitraryValueRef]]] = null,
     blend: ProductionRule[ScaledValueRef[Blend]] = null,
-    cursor: ProductionRule[StringValueRef] = null,
+    cursor: ProductionRule[ScaledValueRef[Cursor]] = null,
     fill: ProductionRule[ColorValueRef] = null,
     fillOpacity: ProductionRule[NumericValueRef] = null,
     height: ProductionRule[NumericValueRef] = null,
     opacity: ProductionRule[NumericValueRef] = null,
     stroke: ProductionRule[ColorValueRef] = null,
-    strokeCap: ProductionRule[StringValueRef] = null,
+    strokeCap: ProductionRule[ScaledValueRef[StrokeCap]] = null,
     strokeDash: ProductionRule[ScaledValueRef[js.Array[Double]]] = null,
     strokeDashOffset: ProductionRule[NumericValueRef] = null,
-    strokeJoin: ProductionRule[StringValueRef] = null,
+    strokeJoin: ProductionRule[ScaledValueRef[StrokeJoin]] = null,
     strokeMiterLimit: ProductionRule[NumericValueRef] = null,
     strokeOpacity: ProductionRule[NumericValueRef] = null,
     strokeWidth: ProductionRule[NumericValueRef] = null,

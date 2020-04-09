@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait dxSparkline extends BaseWidget {
-  /** Gets the DataSource instance. */
+  /** @name DataHelperMixin.getDataSource() */
   def getDataSource(): DataSource = js.native
 }
 

@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "ember__array"
-version := "3.0-dt-20191126Z-b9af08"
+version := "3.0-dt-20200328Z-0843e7"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "ember__object" % "3.1-dt-20200225Z-2bba69",
+  "org.scalablytyped" %%% "ember__object" % "3.1-dt-20200328Z-2bba69",
   "org.scalablytyped" %%% "rsvp" % "4.0-dt-20200225Z-c58757",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false

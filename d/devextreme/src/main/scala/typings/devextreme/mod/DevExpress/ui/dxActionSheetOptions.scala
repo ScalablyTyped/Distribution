@@ -19,27 +19,27 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxActionSheetOptions extends CollectionWidgetOptions[dxActionSheet] {
-  /** The text displayed in the button that closes the action sheet. */
+  /** @name dxActionSheet.Options.cancelText */
   var cancelText: js.UndefOr[String] = js.undefined
-  /** Binds the widget to data. */
+  /** @name dxActionSheet.Options.dataSource */
   @JSName("dataSource")
   var dataSource_dxActionSheetOptions: js.UndefOr[
     String | (js.Array[String | dxActionSheetItem | _]) | DataSource | DataSourceOptions
   ] = js.undefined
-  /** An array of items displayed by the widget. */
+  /** @name dxActionSheet.Options.items */
   @JSName("items")
   var items_dxActionSheetOptions: js.UndefOr[js.Array[String | dxActionSheetItem | _]] = js.undefined
-  /** A function that is executed when the Cancel button is clicked or tapped. */
+  /** @name dxActionSheet.Options.onCancelClick */
   var onCancelClick: js.UndefOr[(js.Function1[/* e */ AnonElementModel, _]) | String] = js.undefined
-  /** Specifies whether or not to display the Cancel button in action sheet. */
+  /** @name dxActionSheet.Options.showCancelButton */
   var showCancelButton: js.UndefOr[Boolean] = js.undefined
-  /** A Boolean value specifying whether or not the title of the action sheet is visible. */
+  /** @name dxActionSheet.Options.showTitle */
   var showTitle: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the element the action sheet popover points at. Applies only if usePopover is true. */
+  /** @name dxActionSheet.Options.target */
   var target: js.UndefOr[String | Element | JQuery] = js.undefined
-  /** The title of the action sheet. */
+  /** @name dxActionSheet.Options.title */
   var title: js.UndefOr[String] = js.undefined
-  /** Specifies whether or not to show the action sheet within a Popover widget. */
+  /** @name dxActionSheet.Options.usePopover */
   var usePopover: js.UndefOr[Boolean] = js.undefined
 }
 

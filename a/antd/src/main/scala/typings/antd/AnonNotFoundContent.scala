@@ -1,18 +1,29 @@
 package typings.antd
 
+import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonNotFoundContent extends js.Object {
-  var notFoundContent: String
+  var itemUnit: String
+  var itemsUnit: String
+  var notFoundContent: ReactNode
+  var searchPlaceholder: String
+  var titles: js.Array[String]
 }
 
 object AnonNotFoundContent {
   @scala.inline
-  def apply(notFoundContent: String): AnonNotFoundContent = {
-    val __obj = js.Dynamic.literal(notFoundContent = notFoundContent.asInstanceOf[js.Any])
-  
+  def apply(
+    itemUnit: String,
+    itemsUnit: String,
+    searchPlaceholder: String,
+    titles: js.Array[String],
+    notFoundContent: ReactNode = null
+  ): AnonNotFoundContent = {
+    val __obj = js.Dynamic.literal(itemUnit = itemUnit.asInstanceOf[js.Any], itemsUnit = itemsUnit.asInstanceOf[js.Any], searchPlaceholder = searchPlaceholder.asInstanceOf[js.Any], titles = titles.asInstanceOf[js.Any])
+    if (notFoundContent != null) __obj.updateDynamic("notFoundContent")(notFoundContent.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnonNotFoundContent]
   }
 }

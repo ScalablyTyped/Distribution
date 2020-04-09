@@ -1,7 +1,7 @@
 package typings.firebaseFirestore
 
-import typings.firebaseFirestore.apiUserDataConverterMod.ParsedSetData
-import typings.firebaseFirestore.apiUserDataConverterMod.ParsedUpdateData
+import typings.firebaseFirestore.apiUserDataReaderMod.ParsedSetData
+import typings.firebaseFirestore.apiUserDataReaderMod.ParsedUpdateData
 import typings.firebaseFirestore.modelDocumentKeyMod.DocumentKey
 import typings.firebaseFirestore.modelDocumentMod.MaybeDocument
 import typings.firebaseFirestore.remoteDatastoreMod.Datastore

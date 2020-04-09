@@ -47,7 +47,7 @@ trait AnonAddRepoToInstallation extends js.Object {
     * You must use a personal access token (which you can create via the [command line](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) or the [OAuth Authorizations API](https://developer.github.com/v3/oauth_authorizations/#create-a-new-authorization)) or [Basic Authentication](https://developer.github.com/v3/auth/#basic-authentication) to access this endpoint.
     */
   @JSName("addRepoToInstallation")
-  var addRepoToInstallation_Original: Anon52 = js.native
+  var addRepoToInstallation_Original: Anon63 = js.native
   /**
     * Shows whether the user or organization account actively subscribes to a plan listed by the authenticated GitHub App. When someone submits a plan change that won't be processed until the end of their billing cycle, you will also see the upcoming pending change.
     *
@@ -55,7 +55,7 @@ trait AnonAddRepoToInstallation extends js.Object {
     * @deprecated octokit.apps.checkAccountIsAssociatedWithAnyStubbed() has been renamed to octokit.apps.getSubscriptionPlanForAccountStubbed() (2020-03-08)
     */
   @JSName("checkAccountIsAssociatedWithAnyStubbed")
-  var checkAccountIsAssociatedWithAnyStubbed_Original: Anon54 = js.native
+  var checkAccountIsAssociatedWithAnyStubbed_Original: Anon65 = js.native
   /**
     * Shows whether the user or organization account actively subscribes to a plan listed by the authenticated GitHub App. When someone submits a plan change that won't be processed until the end of their billing cycle, you will also see the upcoming pending change.
     *
@@ -63,12 +63,12 @@ trait AnonAddRepoToInstallation extends js.Object {
     * @deprecated octokit.apps.checkAccountIsAssociatedWithAny() has been renamed to octokit.apps.getSubscriptionPlanForAccount() (2020-03-08)
     */
   @JSName("checkAccountIsAssociatedWithAny")
-  var checkAccountIsAssociatedWithAny_Original: Anon53 = js.native
+  var checkAccountIsAssociatedWithAny_Original: Anon64 = js.native
   /**
     * OAuth applications can use a special API method for checking OAuth token validity without exceeding the normal rate limits for failed login attempts. Authentication works differently with this particular endpoint. You must use [Basic Authentication](https://developer.github.com/v3/auth#basic-authentication) to use this endpoint, where the username is the OAuth application `client_id` and the password is its `client_secret`. Invalid tokens will return `404 NOT FOUND`.
     */
   @JSName("checkToken")
-  var checkToken_Original: Anon55 = js.native
+  var checkToken_Original: Anon66 = js.native
   /**
     * Creates an attachment under a content reference URL in the body or comment of an issue or pull request. Use the `id` of the content reference from the [`content_reference` event](https://developer.github.com/v3/activity/events/types/#contentreferenceevent) to create an attachment.
     *
@@ -79,12 +79,12 @@ trait AnonAddRepoToInstallation extends js.Object {
     * This example creates a content attachment for the domain `https://errors.ai/`.
     */
   @JSName("createContentAttachment")
-  var createContentAttachment_Original: Anon56 = js.native
+  var createContentAttachment_Original: Anon67 = js.native
   /**
     * Use this endpoint to complete the handshake necessary when implementing the [GitHub App Manifest flow](https://developer.github.com/apps/building-github-apps/creating-github-apps-from-a-manifest/). When you create a GitHub App with the manifest flow, you receive a temporary `code` used to retrieve the GitHub App's `id`, `pem` (private key), and `webhook_secret`.
     */
   @JSName("createFromManifest")
-  var createFromManifest_Original: Anon57 = js.native
+  var createFromManifest_Original: Anon68 = js.native
   /**
     * Creates an installation access token that enables a GitHub App to make authenticated API requests for the app's installation on an organization or individual account. Installation tokens expire one hour from the time you create them. Using an expired token produces a status code of `401 - Unauthorized`, and requires creating a new installation token. By default the installation token has access to all repositories that the installation can access. To restrict the access to specific repositories, you can provide the `repository_ids` when creating the token. When you omit `repository_ids`, the response does not contain the `repositories` key.
     *
@@ -93,94 +93,94 @@ trait AnonAddRepoToInstallation extends js.Object {
     * This example grants the token "Read and write" permission to `issues` and "Read" permission to `contents`, and restricts the token's access to the repository with an `id` of 1296269.
     */
   @JSName("createInstallationToken")
-  var createInstallationToken_Original: Anon58 = js.native
+  var createInstallationToken_Original: Anon69 = js.native
   /**
     * OAuth application owners can revoke a grant for their OAuth application and a specific user. You must use [Basic Authentication](https://developer.github.com/v3/auth#basic-authentication) when accessing this endpoint, using the OAuth application's `client_id` and `client_secret` as the username and password. You must also provide a valid OAuth `access_token` as an input parameter and the grant for the token's owner will be deleted.
     *
     * Deleting an OAuth application's grant will also delete all OAuth tokens associated with the application for the user. Once deleted, the application will have no access to the user's account and will no longer be listed on [the application authorizations settings screen within GitHub](https://github.com/settings/applications#authorized).
     */
   @JSName("deleteAuthorization")
-  var deleteAuthorization_Original: Anon59 = js.native
+  var deleteAuthorization_Original: Anon70 = js.native
   /**
     * Uninstalls a GitHub App on a user, organization, or business account.
     *
     * You must use a [JWT](https://developer.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint.
     */
   @JSName("deleteInstallation")
-  var deleteInstallation_Original: Anon60 = js.native
+  var deleteInstallation_Original: Anon71 = js.native
   /**
     * OAuth application owners can revoke a single token for an OAuth application. You must use [Basic Authentication](https://developer.github.com/v3/auth#basic-authentication) when accessing this endpoint, using the OAuth application's `client_id` and `client_secret` as the username and password.
     */
   @JSName("deleteToken")
-  var deleteToken_Original: Anon61 = js.native
+  var deleteToken_Original: Anon72 = js.native
   /**
     * Returns the GitHub App associated with the authentication credentials used. To see how many app installations are associated with this GitHub App, see the `installations_count` in the response. For more details about your app's installations, see the "[List installations](https://developer.github.com/v3/apps/#list-installations)" endpoint.
     *
     * You must use a [JWT](https://developer.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint.
     */
   @JSName("getAuthenticated")
-  var getAuthenticated_Original: Anon29 = js.native
+  var getAuthenticated_Original: Anon25 = js.native
   /**
     * **Note**: The `:app_slug` is just the URL-friendly name of your GitHub App. You can find this on the settings page for your GitHub App (e.g., `https://github.com/settings/apps/:app_slug`).
     *
     * If the GitHub App you specify is public, you can access this endpoint without authenticating. If the GitHub App you specify is private, you must authenticate with a [personal access token](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) or an [installation access token](https://developer.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-an-installation) to access this endpoint.
     */
   @JSName("getBySlug")
-  var getBySlug_Original: Anon62 = js.native
+  var getBySlug_Original: Anon73 = js.native
   /**
     * You must use a [JWT](https://developer.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint.
     */
   @JSName("getInstallation")
-  var getInstallation_Original: Anon63 = js.native
+  var getInstallation_Original: Anon74 = js.native
   /**
     * Enables an authenticated GitHub App to find the organization's installation information.
     *
     * You must use a [JWT](https://developer.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint.
     */
   @JSName("getOrgInstallation")
-  var getOrgInstallation_Original: Anon64 = js.native
+  var getOrgInstallation_Original: Anon75 = js.native
   /**
     * Enables an authenticated GitHub App to find the repository's installation information. The installation's account type will be either an organization or a user account, depending which account the repository belongs to.
     *
     * You must use a [JWT](https://developer.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint.
     */
   @JSName("getRepoInstallation")
-  var getRepoInstallation_Original: Anon65 = js.native
+  var getRepoInstallation_Original: Anon76 = js.native
   /**
     * Shows whether the user or organization account actively subscribes to a plan listed by the authenticated GitHub App. When someone submits a plan change that won't be processed until the end of their billing cycle, you will also see the upcoming pending change.
     *
     * GitHub Apps must use a [JWT](https://developer.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint. OAuth Apps must use [basic authentication](https://developer.github.com/v3/auth/#basic-authentication) with their client ID and client secret to access this endpoint.
     */
   @JSName("getSubscriptionPlanForAccountStubbed")
-  var getSubscriptionPlanForAccountStubbed_Original: Anon67 = js.native
+  var getSubscriptionPlanForAccountStubbed_Original: Anon78 = js.native
   /**
     * Shows whether the user or organization account actively subscribes to a plan listed by the authenticated GitHub App. When someone submits a plan change that won't be processed until the end of their billing cycle, you will also see the upcoming pending change.
     *
     * GitHub Apps must use a [JWT](https://developer.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint. OAuth Apps must use [basic authentication](https://developer.github.com/v3/auth/#basic-authentication) with their client ID and client secret to access this endpoint.
     */
   @JSName("getSubscriptionPlanForAccount")
-  var getSubscriptionPlanForAccount_Original: Anon66 = js.native
+  var getSubscriptionPlanForAccount_Original: Anon77 = js.native
   /**
     * Enables an authenticated GitHub App to find the user’s installation information.
     *
     * You must use a [JWT](https://developer.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint.
     */
   @JSName("getUserInstallation")
-  var getUserInstallation_Original: Anon68 = js.native
+  var getUserInstallation_Original: Anon79 = js.native
   /**
     * Returns repository and organization accounts associated with the specified plan, including free plans. For per-seat pricing, you see the list of accounts that have purchased the plan, including the number of seats purchased. When someone submits a plan change that won't be processed until the end of their billing cycle, you will also see the upcoming pending change.
     *
     * GitHub Apps must use a [JWT](https://developer.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint. OAuth Apps must use [basic authentication](https://developer.github.com/v3/auth/#basic-authentication) with their client ID and client secret to access this endpoint.
     */
   @JSName("listAccountsForPlanStubbed")
-  var listAccountsForPlanStubbed_Original: Anon70 = js.native
+  var listAccountsForPlanStubbed_Original: Anon81 = js.native
   /**
     * Returns user and organization accounts associated with the specified plan, including free plans. For per-seat pricing, you see the list of accounts that have purchased the plan, including the number of seats purchased. When someone submits a plan change that won't be processed until the end of their billing cycle, you will also see the upcoming pending change.
     *
     * GitHub Apps must use a [JWT](https://developer.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint. OAuth Apps must use [basic authentication](https://developer.github.com/v3/auth/#basic-authentication) with their client ID and client secret to access this endpoint.
     */
   @JSName("listAccountsForPlan")
-  var listAccountsForPlan_Original: Anon69 = js.native
+  var listAccountsForPlan_Original: Anon80 = js.native
   /**
     * Returns repository and organization accounts associated with the specified plan, including free plans. For per-seat pricing, you see the list of accounts that have purchased the plan, including the number of seats purchased. When someone submits a plan change that won't be processed until the end of their billing cycle, you will also see the upcoming pending change.
     *
@@ -188,7 +188,7 @@ trait AnonAddRepoToInstallation extends js.Object {
     * @deprecated octokit.apps.listAccountsUserOrOrgOnPlanStubbed() has been renamed to octokit.apps.listAccountsForPlanStubbed() (2020-03-04)
     */
   @JSName("listAccountsUserOrOrgOnPlanStubbed")
-  var listAccountsUserOrOrgOnPlanStubbed_Original: Anon72 = js.native
+  var listAccountsUserOrOrgOnPlanStubbed_Original: Anon83 = js.native
   /**
     * Returns user and organization accounts associated with the specified plan, including free plans. For per-seat pricing, you see the list of accounts that have purchased the plan, including the number of seats purchased. When someone submits a plan change that won't be processed until the end of their billing cycle, you will also see the upcoming pending change.
     *
@@ -196,7 +196,7 @@ trait AnonAddRepoToInstallation extends js.Object {
     * @deprecated octokit.apps.listAccountsUserOrOrgOnPlan() has been renamed to octokit.apps.listAccountsForPlan() (2020-03-04)
     */
   @JSName("listAccountsUserOrOrgOnPlan")
-  var listAccountsUserOrOrgOnPlan_Original: Anon71 = js.native
+  var listAccountsUserOrOrgOnPlan_Original: Anon82 = js.native
   /**
     * List repositories that the authenticated user has explicit permission (`:read`, `:write`, or `:admin`) to access for an installation.
     *
@@ -207,7 +207,7 @@ trait AnonAddRepoToInstallation extends js.Object {
     * The access the user has to each repository is included in the hash under the `permissions` key.
     */
   @JSName("listInstallationReposForAuthenticatedUser")
-  var listInstallationReposForAuthenticatedUser_Original: Anon73 = js.native
+  var listInstallationReposForAuthenticatedUser_Original: Anon84 = js.native
   /**
     * Lists installations of your GitHub App that the authenticated user has explicit permission (`:read`, `:write`, or `:admin`) to access.
     *
@@ -218,69 +218,69 @@ trait AnonAddRepoToInstallation extends js.Object {
     * You can find the permissions for the installation under the `permissions` key.
     */
   @JSName("listInstallationsForAuthenticatedUser")
-  var listInstallationsForAuthenticatedUser_Original: Anon75 = js.native
+  var listInstallationsForAuthenticatedUser_Original: Anon86 = js.native
   /**
     * You must use a [JWT](https://developer.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint.
     *
     * The permissions the installation has are included under the `permissions` key.
     */
   @JSName("listInstallations")
-  var listInstallations_Original: Anon74 = js.native
+  var listInstallations_Original: Anon85 = js.native
   /**
     * Lists the active subscriptions for the authenticated user. You must use a [user-to-server OAuth access token](https://developer.github.com/apps/building-github-apps/identifying-and-authorizing-users-for-github-apps/#identifying-users-on-your-site), created for a user who has authorized your GitHub App, to access this endpoint. . OAuth Apps must authenticate using an [OAuth token](https://developer.github.com/apps/building-github-apps/authenticating-with-github-apps/).
     * @deprecated octokit.apps.listMarketplacePurchasesForAuthenticatedUserStubbed() has been renamed to octokit.apps.listSubscriptionsForAuthenticatedUserStubbed() (2020-03-08)
     */
   @JSName("listMarketplacePurchasesForAuthenticatedUserStubbed")
-  var listMarketplacePurchasesForAuthenticatedUserStubbed_Original: Anon77 = js.native
+  var listMarketplacePurchasesForAuthenticatedUserStubbed_Original: Anon88 = js.native
   /**
     * Lists the active subscriptions for the authenticated user. You must use a [user-to-server OAuth access token](https://developer.github.com/apps/building-github-apps/identifying-and-authorizing-users-for-github-apps/#identifying-users-on-your-site), created for a user who has authorized your GitHub App, to access this endpoint. . OAuth Apps must authenticate using an [OAuth token](https://developer.github.com/apps/building-github-apps/authenticating-with-github-apps/).
     * @deprecated octokit.apps.listMarketplacePurchasesForAuthenticatedUser() has been renamed to octokit.apps.listSubscriptionsForAuthenticatedUser() (2020-03-08)
     */
   @JSName("listMarketplacePurchasesForAuthenticatedUser")
-  var listMarketplacePurchasesForAuthenticatedUser_Original: Anon76 = js.native
+  var listMarketplacePurchasesForAuthenticatedUser_Original: Anon87 = js.native
   /**
     * Lists all plans that are part of your GitHub Marketplace listing.
     *
     * GitHub Apps must use a [JWT](https://developer.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint. OAuth Apps must use [basic authentication](https://developer.github.com/v3/auth/#basic-authentication) with their client ID and client secret to access this endpoint.
     */
   @JSName("listPlansStubbed")
-  var listPlansStubbed_Original: Anon79 = js.native
+  var listPlansStubbed_Original: Anon90 = js.native
   /**
     * Lists all plans that are part of your GitHub Marketplace listing.
     *
     * GitHub Apps must use a [JWT](https://developer.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint. OAuth Apps must use [basic authentication](https://developer.github.com/v3/auth/#basic-authentication) with their client ID and client secret to access this endpoint.
     */
   @JSName("listPlans")
-  var listPlans_Original: Anon78 = js.native
+  var listPlans_Original: Anon89 = js.native
   /**
     * List repositories that an installation can access.
     *
     * You must use an [installation access token](https://developer.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-an-installation) to access this endpoint.
     */
   @JSName("listRepos")
-  var listRepos_Original: Anon80 = js.native
+  var listRepos_Original: Anon91 = js.native
   /**
     * Lists the active subscriptions for the authenticated user. You must use a [user-to-server OAuth access token](https://developer.github.com/apps/building-github-apps/identifying-and-authorizing-users-for-github-apps/#identifying-users-on-your-site), created for a user who has authorized your GitHub App, to access this endpoint. . OAuth Apps must authenticate using an [OAuth token](https://developer.github.com/apps/building-github-apps/authenticating-with-github-apps/).
     */
   @JSName("listSubscriptionsForAuthenticatedUserStubbed")
-  var listSubscriptionsForAuthenticatedUserStubbed_Original: Anon82 = js.native
+  var listSubscriptionsForAuthenticatedUserStubbed_Original: Anon93 = js.native
   /**
     * Lists the active subscriptions for the authenticated user. You must use a [user-to-server OAuth access token](https://developer.github.com/apps/building-github-apps/identifying-and-authorizing-users-for-github-apps/#identifying-users-on-your-site), created for a user who has authorized your GitHub App, to access this endpoint. . OAuth Apps must authenticate using an [OAuth token](https://developer.github.com/apps/building-github-apps/authenticating-with-github-apps/).
     */
   @JSName("listSubscriptionsForAuthenticatedUser")
-  var listSubscriptionsForAuthenticatedUser_Original: Anon81 = js.native
+  var listSubscriptionsForAuthenticatedUser_Original: Anon92 = js.native
   /**
     * Remove a single repository from an installation. The authenticated user must have admin access to the repository.
     *
     * You must use a personal access token (which you can create via the [command line](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) or the [OAuth Authorizations API](https://developer.github.com/v3/oauth_authorizations/#create-a-new-authorization)) or [Basic Authentication](https://developer.github.com/v3/auth/#basic-authentication) to access this endpoint.
     */
   @JSName("removeRepoFromInstallation")
-  var removeRepoFromInstallation_Original: Anon83 = js.native
+  var removeRepoFromInstallation_Original: Anon94 = js.native
   /**
     * OAuth applications can use this API method to reset a valid OAuth token without end-user involvement. Applications must save the "token" property in the response because changes take effect immediately. You must use [Basic Authentication](https://developer.github.com/v3/auth#basic-authentication) when accessing this endpoint, using the OAuth application's `client_id` and `client_secret` as the username and password. Invalid tokens will return `404 NOT FOUND`.
     */
   @JSName("resetToken")
-  var resetToken_Original: Anon84 = js.native
+  var resetToken_Original: Anon95 = js.native
   /**
     * Revokes the installation token you're using to authenticate as an installation and access this endpoint.
     *
@@ -289,7 +289,7 @@ trait AnonAddRepoToInstallation extends js.Object {
     * You must use an [installation access token](https://developer.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-an-installation) to access this endpoint.
     */
   @JSName("revokeInstallationToken")
-  var revokeInstallationToken_Original: Anon85 = js.native
+  var revokeInstallationToken_Original: Anon96 = js.native
   /**
     * Add a single repository to an installation. The authenticated user must have admin access to the repository.
     *

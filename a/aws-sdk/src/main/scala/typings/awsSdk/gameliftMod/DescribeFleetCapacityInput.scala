@@ -9,7 +9,7 @@ trait DescribeFleetCapacityInput extends js.Object {
   /**
     * A unique identifier for a fleet(s) to retrieve capacity information for. You can use either the fleet ID or ARN value.
     */
-  var FleetIds: js.UndefOr[FleetIdList] = js.native
+  var FleetIds: js.UndefOr[FleetIdOrArnList] = js.native
   /**
     * The maximum number of results to return. Use this parameter with NextToken to get results as a set of sequential pages. This parameter is ignored when the request specifies one or a list of fleet IDs.
     */
@@ -23,7 +23,7 @@ trait DescribeFleetCapacityInput extends js.Object {
 object DescribeFleetCapacityInput {
   @scala.inline
   def apply(
-    FleetIds: FleetIdList = null,
+    FleetIds: FleetIdOrArnList = null,
     Limit: Int | scala.Double = null,
     NextToken: NonZeroAndMaxString = null
   ): DescribeFleetCapacityInput = {

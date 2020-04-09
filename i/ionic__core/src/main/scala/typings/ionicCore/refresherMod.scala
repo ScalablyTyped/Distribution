@@ -2,8 +2,8 @@ package typings.ionicCore
 
 import typings.ionicCore.componentsMod._Global_.HTMLIonRefresherElement
 import typings.ionicCore.refresherInterfaceMod.RefresherEventDetail
-import typings.ionicCore.stencilCoreMod.ComponentInterface
-import typings.ionicCore.stencilCoreMod.EventEmitter
+import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
+import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CreateEnvironmentMessage extends js.Object {
   /**
-    * The name of the application that contains the version to be deployed.  If no application is found with this name, CreateEnvironment returns an InvalidParameterValue error. 
+    * The name of the application that is associated with this environment.
     */
   var ApplicationName: typings.awsSdk.elasticbeanstalkMod.ApplicationName = js.native
   /**
-    * If specified, the environment attempts to use this value as the prefix for the CNAME. If not specified, the CNAME is generated automatically by appending a random alphanumeric string to the environment name.
+    * If specified, the environment attempts to use this value as the prefix for the CNAME in your Elastic Beanstalk environment URL. If not specified, the CNAME is generated automatically by appending a random alphanumeric string to the environment name.
     */
   var CNAMEPrefix: js.UndefOr[DNSCnamePrefix] = js.native
   /**
-    * Describes this environment.
+    * Your description for this environment.
     */
   var Description: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.Description] = js.native
   /**
-    * A unique name for the deployment environment. Used in the application URL. Constraint: Must be from 4 to 40 characters in length. The name can contain only letters, numbers, and hyphens. It cannot start or end with a hyphen. This name must be unique within a region in your account. If the specified name already exists in the region, AWS Elastic Beanstalk returns an InvalidParameterValue error.  Default: If the CNAME parameter is not specified, the environment name becomes part of the CNAME, and therefore part of the visible URL for your application.
+    * A unique name for the environment. Constraint: Must be from 4 to 40 characters in length. The name can contain only letters, numbers, and hyphens. It can't start or end with a hyphen. This name must be unique within a region in your account. If the specified name already exists in the region, Elastic Beanstalk returns an InvalidParameterValue error.  If you don't specify the CNAMEPrefix parameter, the environment name becomes part of the CNAME, and therefore part of the visible URL for your application.
     */
   var EnvironmentName: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.EnvironmentName] = js.native
   /**
@@ -35,11 +35,11 @@ trait CreateEnvironmentMessage extends js.Object {
     */
   var OptionsToRemove: js.UndefOr[OptionsSpecifierList] = js.native
   /**
-    * The ARN of the platform.
+    * The Amazon Resource Name (ARN) of the custom platform to use with the environment. For more information, see  Custom Platforms in the AWS Elastic Beanstalk Developer Guide.  If you specify PlatformArn, don't specify SolutionStackName. 
     */
   var PlatformArn: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.PlatformArn] = js.native
   /**
-    * This is an alternative to specifying a template name. If specified, AWS Elastic Beanstalk sets the configuration values to the default values associated with the specified solution stack. For a list of current solution stacks, see Elastic Beanstalk Supported Platforms.
+    * The name of an Elastic Beanstalk solution stack (platform version) to use with the environment. If specified, Elastic Beanstalk sets the configuration values to the default values associated with the specified solution stack. For a list of current solution stacks, see Elastic Beanstalk Supported Platforms in the AWS Elastic Beanstalk Platforms guide.  If you specify SolutionStackName, don't specify PlatformArn or TemplateName. 
     */
   var SolutionStackName: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.SolutionStackName] = js.native
   /**
@@ -47,15 +47,15 @@ trait CreateEnvironmentMessage extends js.Object {
     */
   var Tags: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.Tags] = js.native
   /**
-    *  The name of the configuration template to use in deployment. If no configuration template is found with this name, AWS Elastic Beanstalk returns an InvalidParameterValue error. 
+    * The name of the Elastic Beanstalk configuration template to use with the environment.  If you specify TemplateName, then don't specify SolutionStackName. 
     */
   var TemplateName: js.UndefOr[ConfigurationTemplateName] = js.native
   /**
-    * This specifies the tier to use for creating this environment.
+    * Specifies the tier to use in creating this environment. The environment tier that you choose determines whether Elastic Beanstalk provisions resources to support a web application that handles HTTP(S) requests or a web application that handles background-processing tasks.
     */
   var Tier: js.UndefOr[EnvironmentTier] = js.native
   /**
-    * The name of the application version to deploy.  If the specified application has no associated application versions, AWS Elastic Beanstalk UpdateEnvironment returns an InvalidParameterValue error.  Default: If not specified, AWS Elastic Beanstalk attempts to launch the sample application in the container.
+    * The name of the application version to deploy. Default: If not specified, Elastic Beanstalk attempts to deploy the sample application.
     */
   var VersionLabel: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.VersionLabel] = js.native
 }

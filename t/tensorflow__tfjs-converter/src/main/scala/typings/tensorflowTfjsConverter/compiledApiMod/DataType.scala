@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait DataType extends js.Object
 
-@JSImport("@tensorflow/tfjs-converter/dist/src/data/compiled_api", "DataType")
+@JSImport("@tensorflow/tfjs-converter/dist/data/compiled_api", "DataType")
 @js.native
 object DataType extends js.Object {
   @js.native

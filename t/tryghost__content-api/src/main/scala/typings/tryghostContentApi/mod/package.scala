@@ -18,7 +18,7 @@ package object mod {
   type OrderParam = java.lang.String
   type PageParam = scala.Double
   type ReadFunction[T] = js.Function3[
-    /* data */ typings.tryghostContentApi.mod.GhostData, 
+    /* data */ typings.tryghostContentApi.AnonId | typings.tryghostContentApi.AnonSlug, 
     /* options */ js.UndefOr[typings.tryghostContentApi.mod.Params], 
     /* memberToken */ js.UndefOr[typings.tryghostContentApi.mod.Nullable[java.lang.String]], 
     js.Promise[T]

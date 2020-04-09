@@ -20,24 +20,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxTabsOptions[T] extends CollectionWidgetOptions[T] {
-  /** Binds the widget to data. */
+  /** @name dxTabs.Options.dataSource */
   @JSName("dataSource")
   var dataSource_dxTabsOptions: js.UndefOr[String | (js.Array[String | dxTabsItem | _]) | DataSource | DataSourceOptions] = js.undefined
-  /** An array of items displayed by the widget. */
+  /** @name dxTabs.Options.items */
   @JSName("items")
   var items_dxTabsOptions: js.UndefOr[js.Array[String | dxTabsItem | _]] = js.undefined
-  /** Specifies whether to repaint only those elements whose data changed. */
+  /** @name dxTabs.Options.repaintChangesOnly */
   var repaintChangesOnly: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether or not an end-user can scroll tabs by swiping. */
+  /** @name dxTabs.Options.scrollByContent */
   var scrollByContent: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether or not an end-user can scroll tabs. */
+  /** @name dxTabs.Options.scrollingEnabled */
   var scrollingEnabled: js.UndefOr[Boolean] = js.undefined
-  /** An array of currently selected item objects. */
+  /** @name dxTabs.Options.selectedItems */
   @JSName("selectedItems")
   var selectedItems_dxTabsOptions: js.UndefOr[js.Array[String | Double | _]] = js.undefined
-  /** Specifies whether the widget enables an end-user to select only a single item or multiple items. */
+  /** @name dxTabs.Options.selectionMode */
   var selectionMode: js.UndefOr[multiple | single_] = js.undefined
-  /** Specifies whether navigation buttons should be available when tabs exceed the widget's width. */
+  /** @name dxTabs.Options.showNavButtons */
   var showNavButtons: js.UndefOr[Boolean] = js.undefined
 }
 

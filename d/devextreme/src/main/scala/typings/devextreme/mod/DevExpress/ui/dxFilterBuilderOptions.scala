@@ -18,27 +18,27 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxFilterBuilderOptions extends WidgetOptions[dxFilterBuilder] {
-  /** Specifies whether the widget can display hierarchical data fields. */
+  /** @name dxFilterBuilder.Options.allowHierarchicalFields */
   var allowHierarchicalFields: js.UndefOr[Boolean] = js.undefined
-  /** Configures custom filter operations. */
+  /** @name dxFilterBuilder.Options.customOperations */
   var customOperations: js.UndefOr[js.Array[dxFilterBuilderCustomOperation]] = js.undefined
-  /** Configures fields. */
+  /** @name dxFilterBuilder.Options.fields */
   var fields: js.UndefOr[js.Array[dxFilterBuilderField]] = js.undefined
-  /** Specifies filter operation descriptions. */
+  /** @name dxFilterBuilder.Options.filterOperationDescriptions */
   var filterOperationDescriptions: js.UndefOr[AnonContains] = js.undefined
-  /** Specifies group operation descriptions. */
+  /** @name dxFilterBuilder.Options.groupOperationDescriptions */
   var groupOperationDescriptions: js.UndefOr[AnonAnd] = js.undefined
-  /** Specifies a set of available group operations. */
+  /** @name dxFilterBuilder.Options.groupOperations */
   var groupOperations: js.UndefOr[js.Array[and | or | notAnd | notOr]] = js.undefined
-  /** Specifies groups' maximum nesting level. */
+  /** @name dxFilterBuilder.Options.maxGroupLevel */
   var maxGroupLevel: js.UndefOr[Double] = js.undefined
-  /** A function that is executed after an editor is created. */
+  /** @name dxFilterBuilder.Options.onEditorPrepared */
   var onEditorPrepared: js.UndefOr[js.Function1[/* e */ AnonEditorElement, _]] = js.undefined
-  /** A function that is executed before an editor is created. */
+  /** @name dxFilterBuilder.Options.onEditorPreparing */
   var onEditorPreparing: js.UndefOr[js.Function1[/* e */ AnonEditorName, _]] = js.undefined
-  /** A function that is executed after the widget's value is changed. */
+  /** @name dxFilterBuilder.Options.onValueChanged */
   var onValueChanged: js.UndefOr[js.Function1[/* e */ AnonModelPreviousValue, _]] = js.undefined
-  /** Allows you to specify a filter. */
+  /** @name dxFilterBuilder.Options.value */
   var value: js.UndefOr[String | js.Array[_] | js.Function] = js.undefined
 }
 

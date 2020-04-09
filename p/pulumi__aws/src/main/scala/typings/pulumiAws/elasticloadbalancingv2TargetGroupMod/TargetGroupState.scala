@@ -43,11 +43,11 @@ trait TargetGroupState extends js.Object {
     */
   val namePrefix: js.UndefOr[Input[String]] = js.native
   /**
-    * The port to use to connect with the target. Valid values are either ports 1-65535, or `traffic-port`. Defaults to `traffic-port`.
+    * The port on which targets receive traffic, unless overridden when registering a specific target. Required when `targetType` is `instance` or `ip`. Does not apply when `targetType` is `lambda`.
     */
   val port: js.UndefOr[Input[Double]] = js.native
   /**
-    * The protocol to use to connect with the target. Defaults to `HTTP`. Not applicable when `targetType` is `lambda`.
+    * The protocol to use for routing traffic to the targets. Should be one of "TCP", "TLS", "UDP", "TCP_UDP", "HTTP" or "HTTPS". Required when `targetType` is `instance` or `ip`. Does not apply when `targetType` is `lambda`.
     */
   val protocol: js.UndefOr[Input[String]] = js.native
   /**

@@ -66,6 +66,7 @@ import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
@@ -263,12 +264,12 @@ trait PartialCardHeaderProps extends js.Object {
   var spellCheck: js.UndefOr[Booleanish] = js.native
   var style: js.UndefOr[CSSProperties] = js.native
   var subheader: js.UndefOr[ReactNode] = js.native
-  var subheaderTypographyProps: js.UndefOr[PartialTypographyProps] = js.native
+  var subheaderTypographyProps: js.UndefOr[PartialTypographyPropsAbout] = js.native
   var suppressContentEditableWarning: js.UndefOr[Boolean] = js.native
   var suppressHydrationWarning: js.UndefOr[Boolean] = js.native
   var tabIndex: js.UndefOr[Double] = js.native
   var title: js.UndefOr[ReactNode] = js.native
-  var titleTypographyProps: js.UndefOr[PartialTypographyProps] = js.native
+  var titleTypographyProps: js.UndefOr[PartialTypographyPropsAbout] = js.native
   var translate: js.UndefOr[yes | no] = js.native
   var typeof: js.UndefOr[String] = js.native
   var unselectable: js.UndefOr[on | off] = js.native
@@ -422,7 +423,7 @@ object PartialCardHeaderProps {
     onProgress: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onRateChange: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onReset: FormEvent[HTMLDivElement] => Unit = null,
-    onScroll: UIEvent[HTMLDivElement] => Unit = null,
+    onScroll: UIEvent[HTMLDivElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
@@ -450,12 +451,12 @@ object PartialCardHeaderProps {
     spellCheck: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null,
     subheader: ReactNode = null,
-    subheaderTypographyProps: PartialTypographyProps = null,
+    subheaderTypographyProps: PartialTypographyPropsAbout = null,
     suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined,
     suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined,
     tabIndex: Int | Double = null,
     title: ReactNode = null,
-    titleTypographyProps: PartialTypographyProps = null,
+    titleTypographyProps: PartialTypographyPropsAbout = null,
     translate: yes | no = null,
     typeof: String = null,
     unselectable: on | off = null,

@@ -1,5 +1,6 @@
 package typings.pulumiAws.userPoolClientMod
 
+import typings.pulumiAws.outputMod.cognito.UserPoolClientAnalyticsConfiguration
 import typings.pulumiPulumi.mod.CustomResource
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.outputMod.Output_
@@ -34,6 +35,10 @@ class UserPoolClient protected () extends CustomResource {
     */
   val allowedOauthScopes: Output_[js.UndefOr[js.Array[String]]] = js.native
   /**
+    * The Amazon Pinpoint analytics configuration for collecting metrics for this user pool.
+    */
+  val analyticsConfiguration: Output_[js.UndefOr[UserPoolClientAnalyticsConfiguration]] = js.native
+  /**
     * List of allowed callback URLs for the identity providers.
     */
   val callbackUrls: Output_[js.UndefOr[js.Array[String]]] = js.native
@@ -61,6 +66,10 @@ class UserPoolClient protected () extends CustomResource {
     * The name of the application client.
     */
   val name: Output_[String] = js.native
+  /**
+    * Choose which errors and responses are returned by Cognito APIs during authentication, account confirmation, and password recovery when the user does not exist in the user pool. When set to `ENABLED` and the user does not exist, authentication returns an error indicating either the username or password was incorrect, and account confirmation and password recovery return a response indicating a code was sent to a simulated destination. When set to `LEGACY`, those APIs will return a `UserNotFoundException` exception if the user does not exist in the user pool.
+    */
+  val preventUserExistenceErrors: Output_[String] = js.native
   /**
     * List of user pool attributes the application client can read from.
     */

@@ -15,6 +15,9 @@ trait IdentityPolicyArgs extends js.Object {
     * Name of the policy.
     */
   val name: js.UndefOr[Input[String]] = js.native
+  /**
+    * JSON string of the policy.
+    */
   val policy: Input[String] = js.native
 }
 

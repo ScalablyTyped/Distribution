@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "lyric-parser"
-version := "1.0-dt-20190827Z-e5b4b9"
+version := "1.0-dt-20200406Z-15a8f8"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

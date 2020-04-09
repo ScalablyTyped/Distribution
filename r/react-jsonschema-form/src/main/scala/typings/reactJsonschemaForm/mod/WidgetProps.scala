@@ -233,6 +233,7 @@ trait WidgetProps extends js.Object {
   var prefix: js.UndefOr[String] = js.native
   var property: js.UndefOr[String] = js.native
   var radioGroup: js.UndefOr[String] = js.native
+  var rawErrors: js.Array[String] = js.native
   var readonly: Boolean = js.native
   var required: Boolean = js.native
   var resource: js.UndefOr[String] = js.native

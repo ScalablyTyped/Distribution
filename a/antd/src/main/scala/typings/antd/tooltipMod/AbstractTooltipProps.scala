@@ -1,7 +1,6 @@
 package typings.antd.tooltipMod
 
 import typings.antd.placementsMod.AdjustOverflow
-import typings.rcTrigger.interfaceMod.BuildInPlacements
 import typings.react.mod.CSSProperties
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -12,7 +11,9 @@ import scala.scalajs.js.annotation._
 - Dropped {[ P in keyof / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RcTooltipProps * / any ]:? / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RcTooltipProps * / any[P]} */ trait AbstractTooltipProps extends js.Object {
   var arrowPointAtCenter: js.UndefOr[Boolean] = js.undefined
   var autoAdjustOverflow: js.UndefOr[Boolean | AdjustOverflow] = js.undefined
-  var builtinPlacements: js.UndefOr[BuildInPlacements] = js.undefined
+  var builtinPlacements: js.UndefOr[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BuildInPlacements */ js.Any
+  ] = js.undefined
   var className: js.UndefOr[String] = js.undefined
   var getPopupContainer: js.UndefOr[js.Function1[/* triggerNode */ HTMLElement, HTMLElement]] = js.undefined
   var openClassName: js.UndefOr[String] = js.undefined
@@ -25,7 +26,7 @@ object AbstractTooltipProps {
   def apply(
     arrowPointAtCenter: js.UndefOr[Boolean] = js.undefined,
     autoAdjustOverflow: Boolean | AdjustOverflow = null,
-    builtinPlacements: BuildInPlacements = null,
+    builtinPlacements: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BuildInPlacements */ js.Any = null,
     className: String = null,
     getPopupContainer: /* triggerNode */ HTMLElement => HTMLElement = null,
     openClassName: String = null,

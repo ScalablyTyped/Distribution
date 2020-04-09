@@ -16,6 +16,9 @@ trait GetTransitGatewayArgs extends js.Object {
     * Identifier of the EC2 Transit Gateway.
     */
   val id: js.UndefOr[String] = js.native
+  /**
+    * Key-value tags for the EC2 Transit Gateway
+    */
   val tags: js.UndefOr[StringDictionary[js.Any]] = js.native
 }
 

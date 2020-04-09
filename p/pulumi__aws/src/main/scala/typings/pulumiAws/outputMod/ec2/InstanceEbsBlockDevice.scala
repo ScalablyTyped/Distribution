@@ -12,7 +12,7 @@ trait InstanceEbsBlockDevice extends js.Object {
     */
   var deleteOnTermination: js.UndefOr[Boolean] = js.native
   /**
-    * The name of the block device to mount on the instance.
+    * The name of the device to mount.
     */
   var deviceName: String = js.native
   /**

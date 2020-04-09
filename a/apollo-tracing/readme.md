@@ -1,7 +1,7 @@
 
 # Scala.js typings for apollo-tracing
 
-Typings are for version 0.9.0
+Typings are for version 0.9.1
 
 ## Library description:
 Collect and expose trace data for GraphQL requests

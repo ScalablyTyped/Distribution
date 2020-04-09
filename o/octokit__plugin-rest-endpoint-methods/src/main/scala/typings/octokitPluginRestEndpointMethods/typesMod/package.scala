@@ -8,14 +8,17 @@ package object typesMod {
   type ActionsListDownloadsForSelfHostedRunnerApplicationResponse = js.Array[
     typings.octokitPluginRestEndpointMethods.typesMod.ActionsListDownloadsForSelfHostedRunnerApplicationResponseItem
   ]
-  type ActionsListSelfHostedRunnersForRepoResponse = js.Array[
-    typings.octokitPluginRestEndpointMethods.typesMod.ActionsListSelfHostedRunnersForRepoResponseItem
+  type ActivityListNotificationsForAuthenticatedUserResponse = js.Array[
+    typings.octokitPluginRestEndpointMethods.typesMod.ActivityListNotificationsForAuthenticatedUserResponseItem
   ]
   type ActivityListNotificationsForRepoResponse = js.Array[
     typings.octokitPluginRestEndpointMethods.typesMod.ActivityListNotificationsForRepoResponseItem
   ]
   type ActivityListNotificationsResponse = js.Array[
     typings.octokitPluginRestEndpointMethods.typesMod.ActivityListNotificationsResponseItem
+  ]
+  type ActivityListRepoNotificationsForAuthenticatedUserResponse = js.Array[
+    typings.octokitPluginRestEndpointMethods.typesMod.ActivityListRepoNotificationsForAuthenticatedUserResponseItem
   ]
   type ActivityListReposStarredByAuthenticatedUserResponse = js.Array[
     typings.octokitPluginRestEndpointMethods.typesMod.ActivityListReposStarredByAuthenticatedUserResponseItem

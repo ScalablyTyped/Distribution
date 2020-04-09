@@ -9,12 +9,12 @@ trait DescribeRuntimeConfigurationInput extends js.Object {
   /**
     * A unique identifier for a fleet to get the runtime configuration for. You can use either the fleet ID or ARN value.
     */
-  var FleetId: typings.awsSdk.gameliftMod.FleetId = js.native
+  var FleetId: FleetIdOrArn = js.native
 }
 
 object DescribeRuntimeConfigurationInput {
   @scala.inline
-  def apply(FleetId: FleetId): DescribeRuntimeConfigurationInput = {
+  def apply(FleetId: FleetIdOrArn): DescribeRuntimeConfigurationInput = {
     val __obj = js.Dynamic.literal(FleetId = FleetId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DescribeRuntimeConfigurationInput]

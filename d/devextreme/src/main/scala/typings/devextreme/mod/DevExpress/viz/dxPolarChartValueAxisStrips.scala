@@ -6,14 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxPolarChartValueAxisStrips extends dxPolarChartCommonAxisSettingsStripStyle {
-  /** Specifies a color for a strip. */
+  /** @name dxPolarChart.Options.valueAxis.strips.color */
   var color: js.UndefOr[String] = js.undefined
-  /** Specifies an end value for a strip. */
+  /** @name dxPolarChart.Options.valueAxis.strips.endValue */
   var endValue: js.UndefOr[Double | Date | String] = js.undefined
-  /** An object that defines the label configuration options of a strip. */
+  /** @name dxPolarChart.Options.valueAxis.strips.label */
   @JSName("label")
   var label_dxPolarChartValueAxisStrips: js.UndefOr[dxPolarChartValueAxisStripsLabel] = js.undefined
-  /** Specifies a start value for a strip. */
+  /** @name dxPolarChart.Options.valueAxis.strips.startValue */
   var startValue: js.UndefOr[Double | Date | String] = js.undefined
 }
 

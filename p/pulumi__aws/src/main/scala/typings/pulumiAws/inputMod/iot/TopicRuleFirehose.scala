@@ -12,7 +12,7 @@ trait TopicRuleFirehose extends js.Object {
     */
   var deliveryStreamName: Input[String] = js.native
   /**
-    * The ARN of the IAM role that grants access.
+    * The IAM role ARN that grants access to the Amazon Kinesis Firehose stream.
     */
   var roleArn: Input[String] = js.native
   /**

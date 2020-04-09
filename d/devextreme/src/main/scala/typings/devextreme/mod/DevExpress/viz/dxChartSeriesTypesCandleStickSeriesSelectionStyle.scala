@@ -8,9 +8,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Configures the appearance adopted by the series when a user selects it. */
+/** @name dxChartSeriesTypes.CandleStickSeries.selectionStyle */
 trait dxChartSeriesTypesCandleStickSeriesSelectionStyle extends dxChartSeriesTypesCommonSeriesSelectionStyle {
-  /** Configures hatching that applies when a user selects the series. */
+  /** @name dxChartSeriesTypes.CandleStickSeries.selectionStyle.hatching */
   @JSName("hatching")
   var hatching_dxChartSeriesTypesCandleStickSeriesSelectionStyle: js.UndefOr[dxChartSeriesTypesCandleStickSeriesSelectionStyleHatching] = js.undefined
 }

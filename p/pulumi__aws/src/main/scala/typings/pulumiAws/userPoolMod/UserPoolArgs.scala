@@ -8,7 +8,9 @@ import typings.pulumiAws.inputMod.cognito.UserPoolLambdaConfig
 import typings.pulumiAws.inputMod.cognito.UserPoolPasswordPolicy
 import typings.pulumiAws.inputMod.cognito.UserPoolSchema
 import typings.pulumiAws.inputMod.cognito.UserPoolSmsConfiguration
+import typings.pulumiAws.inputMod.cognito.UserPoolSoftwareTokenMfaConfiguration
 import typings.pulumiAws.inputMod.cognito.UserPoolUserPoolAddOns
+import typings.pulumiAws.inputMod.cognito.UserPoolUsernameConfiguration
 import typings.pulumiAws.inputMod.cognito.UserPoolVerificationMessageTemplate
 import typings.pulumiPulumi.outputMod.Input
 import scala.scalajs.js
@@ -50,7 +52,7 @@ trait UserPoolArgs extends js.Object {
     */
   val lambdaConfig: js.UndefOr[Input[UserPoolLambdaConfig]] = js.native
   /**
-    * Set to enable multi-factor authentication. Must be one of the following values (ON, OFF, OPTIONAL)
+    * Multi-Factor Authentication (MFA) configuration for the User Pool. Defaults of `OFF`. Valid values:
     */
   val mfaConfiguration: js.UndefOr[Input[String]] = js.native
   /**
@@ -66,17 +68,21 @@ trait UserPoolArgs extends js.Object {
     */
   val schemas: js.UndefOr[Input[js.Array[Input[UserPoolSchema]]]] = js.native
   /**
-    * A string representing the SMS authentication message.
+    * A string representing the SMS authentication message. The message must contain the `{####}` placeholder, which will be replaced with the code.
     */
   val smsAuthenticationMessage: js.UndefOr[Input[String]] = js.native
   /**
-    * The SMS Configuration.
+    * Configuration block for Short Message Service (SMS) settings. Detailed below. These settings apply to SMS user verification and SMS Multi-Factor Authentication (MFA). Due to Cognito API restrictions, the SMS configuration cannot be removed without recreating the Cognito User Pool. For user data safety, this resource will ignore the removal of this configuration by disabling drift detection. To force resource recreation after this configuration has been applied, see the [`up` command and use --replace](https://www.pulumi.com/docs/reference/cli/pulumi_up/).
     */
   val smsConfiguration: js.UndefOr[Input[UserPoolSmsConfiguration]] = js.native
   /**
     * A string representing the SMS verification message. Conflicts with `verificationMessageTemplate` configuration block `smsMessage` argument.
     */
   val smsVerificationMessage: js.UndefOr[Input[String]] = js.native
+  /**
+    * Configuration block for software token Mult-Factor Authentication (MFA) settings. Detailed below.
+    */
+  val softwareTokenMfaConfiguration: js.UndefOr[Input[UserPoolSoftwareTokenMfaConfiguration]] = js.native
   /**
     * A mapping of tags to assign to the User Pool.
     */
@@ -89,6 +95,10 @@ trait UserPoolArgs extends js.Object {
     * Specifies whether email addresses or phone numbers can be specified as usernames when a user signs up. Conflicts with `aliasAttributes`.
     */
   val usernameAttributes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  /**
+    * The Username Configuration.
+    */
+  val usernameConfiguration: js.UndefOr[Input[UserPoolUsernameConfiguration]] = js.native
   /**
     * The verification message templates configuration.
     */
@@ -113,9 +123,11 @@ object UserPoolArgs {
     smsAuthenticationMessage: Input[String] = null,
     smsConfiguration: Input[UserPoolSmsConfiguration] = null,
     smsVerificationMessage: Input[String] = null,
+    softwareTokenMfaConfiguration: Input[UserPoolSoftwareTokenMfaConfiguration] = null,
     tags: Input[StringDictionary[_]] = null,
     userPoolAddOns: Input[UserPoolUserPoolAddOns] = null,
     usernameAttributes: Input[js.Array[Input[String]]] = null,
+    usernameConfiguration: Input[UserPoolUsernameConfiguration] = null,
     verificationMessageTemplate: Input[UserPoolVerificationMessageTemplate] = null
   ): UserPoolArgs = {
     val __obj = js.Dynamic.literal()
@@ -134,9 +146,11 @@ object UserPoolArgs {
     if (smsAuthenticationMessage != null) __obj.updateDynamic("smsAuthenticationMessage")(smsAuthenticationMessage.asInstanceOf[js.Any])
     if (smsConfiguration != null) __obj.updateDynamic("smsConfiguration")(smsConfiguration.asInstanceOf[js.Any])
     if (smsVerificationMessage != null) __obj.updateDynamic("smsVerificationMessage")(smsVerificationMessage.asInstanceOf[js.Any])
+    if (softwareTokenMfaConfiguration != null) __obj.updateDynamic("softwareTokenMfaConfiguration")(softwareTokenMfaConfiguration.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     if (userPoolAddOns != null) __obj.updateDynamic("userPoolAddOns")(userPoolAddOns.asInstanceOf[js.Any])
     if (usernameAttributes != null) __obj.updateDynamic("usernameAttributes")(usernameAttributes.asInstanceOf[js.Any])
+    if (usernameConfiguration != null) __obj.updateDynamic("usernameConfiguration")(usernameConfiguration.asInstanceOf[js.Any])
     if (verificationMessageTemplate != null) __obj.updateDynamic("verificationMessageTemplate")(verificationMessageTemplate.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserPoolArgs]
   }

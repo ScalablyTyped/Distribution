@@ -30,10 +30,10 @@ import typings.antd.menuMod.MenuMode
 import typings.antd.messageMod.NoticeType
 import typings.antd.notificationMod.IconType
 import typings.antd.notificationMod.NotificationPlacement
+import typings.antd.paginationPaginationMod.PaginationPosition
 import typings.antd.progressProgressMod.ProgressSize
 import typings.antd.progressProgressMod.ProgressType
 import typings.antd.radioInterfaceMod.RadioGroupButtonStyle
-import typings.antd.renderListBodyMod.OmitProp
 import typings.antd.responsiveObserveMod.Breakpoint
 import typings.antd.resultMod.ExceptionStatusType
 import typings.antd.siderMod.CollapseType
@@ -157,7 +157,7 @@ object antdStrings {
   sealed trait `404` extends ExceptionStatusType
   
   @js.native
-  sealed trait `4Dot0Dot3` extends js.Object
+  sealed trait `4Dot1Dot1` extends js.Object
   
   @js.native
   sealed trait `500` extends ExceptionStatusType
@@ -454,28 +454,33 @@ object antdStrings {
   sealed trait bordered extends js.Object
   
   @js.native
-  sealed trait both extends js.Object
+  sealed trait both extends PaginationPosition
   
   @js.native
   sealed trait bottom
     extends DotPosition
        with MentionPlacement
+       with PaginationPosition
        with TabsPosition
        with TooltipPlacement
        with placementType
   
   @js.native
-  sealed trait bottomCenter extends Placement
+  sealed trait bottomCenter
+    extends PaginationPosition
+       with Placement
   
   @js.native
   sealed trait bottomLeft
     extends NotificationPlacement
+       with PaginationPosition
        with Placement
        with TooltipPlacement
   
   @js.native
   sealed trait bottomRight
     extends NotificationPlacement
+       with PaginationPosition
        with Placement
        with TooltipPlacement
   
@@ -549,7 +554,7 @@ object antdStrings {
   sealed trait `checkbox-label` extends js.Object
   
   @js.native
-  sealed trait checkedKeys extends OmitProp
+  sealed trait checkedKeys extends js.Object
   
   @js.native
   sealed trait checkmenuitem extends js.Object
@@ -867,10 +872,10 @@ object antdStrings {
   sealed trait gutter extends ColumnType
   
   @js.native
-  sealed trait handleClear extends OmitProp
+  sealed trait handleClear extends js.Object
   
   @js.native
-  sealed trait handleFilter extends OmitProp
+  sealed trait handleFilter extends js.Object
   
   @js.native
   sealed trait hanging extends js.Object
@@ -1400,6 +1405,9 @@ object antdStrings {
   
   @js.native
   sealed trait `petite-caps` extends js.Object
+  
+  @js.native
+  sealed trait picker extends js.Object
   
   @js.native
   sealed trait pickerRef extends js.Object
@@ -1979,22 +1987,27 @@ object antdStrings {
   sealed trait top
     extends DotPosition
        with MentionPlacement
+       with PaginationPosition
        with TabsPosition
        with TooltipPlacement
        with placementType
   
   @js.native
-  sealed trait topCenter extends Placement
+  sealed trait topCenter
+    extends PaginationPosition
+       with Placement
   
   @js.native
   sealed trait topLeft
     extends NotificationPlacement
+       with PaginationPosition
        with Placement
        with TooltipPlacement
   
   @js.native
   sealed trait topRight
     extends NotificationPlacement
+       with PaginationPosition
        with Placement
        with TooltipPlacement
   
@@ -2226,7 +2239,7 @@ object antdStrings {
   @scala.inline
   def `404`: `404` = "404".asInstanceOf[`404`]
   @scala.inline
-  def `4Dot0Dot3`: `4Dot0Dot3` = "4.0.3".asInstanceOf[`4Dot0Dot3`]
+  def `4Dot1Dot1`: `4Dot1Dot1` = "4.1.1".asInstanceOf[`4Dot1Dot1`]
   @scala.inline
   def `500`: `500` = "500".asInstanceOf[`500`]
   @scala.inline
@@ -3013,6 +3026,8 @@ object antdStrings {
   def part: part = "part".asInstanceOf[part]
   @scala.inline
   def `petite-caps`: `petite-caps` = "petite-caps".asInstanceOf[`petite-caps`]
+  @scala.inline
+  def picker: picker = "picker".asInstanceOf[picker]
   @scala.inline
   def pickerRef: pickerRef = "pickerRef".asInstanceOf[pickerRef]
   @scala.inline

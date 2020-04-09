@@ -14,6 +14,7 @@ import typings.react.mod.HTMLAttributes
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
@@ -278,7 +279,7 @@ object IResizeGroupProps {
     onProgress: SyntheticEvent[ResizeGroupBase | HTMLElement, Event_] => Unit = null,
     onRateChange: SyntheticEvent[ResizeGroupBase | HTMLElement, Event_] => Unit = null,
     onReset: FormEvent[ResizeGroupBase | HTMLElement] => Unit = null,
-    onScroll: UIEvent[ResizeGroupBase | HTMLElement] => Unit = null,
+    onScroll: UIEvent[ResizeGroupBase | HTMLElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[ResizeGroupBase | HTMLElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[ResizeGroupBase | HTMLElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[ResizeGroupBase | HTMLElement, Event_] => Unit = null,

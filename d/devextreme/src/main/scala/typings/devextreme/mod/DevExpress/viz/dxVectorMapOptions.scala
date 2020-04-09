@@ -37,48 +37,48 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxVectorMapOptions extends BaseWidgetOptions[dxVectorMap] {
-  /** Specifies the options for the map background. */
+  /** @name dxVectorMap.Options.background */
   var background: js.UndefOr[AnonBorderColorColor] = js.undefined
-  /** Specifies the positioning of a map in geographical coordinates. */
+  /** @name dxVectorMap.Options.bounds */
   var bounds: js.UndefOr[js.Array[Double]] = js.undefined
-  /** Specifies the geographical coordinates of the center for a map. */
+  /** @name dxVectorMap.Options.center */
   var center: js.UndefOr[js.Array[Double]] = js.undefined
-  /** Configures the control bar. */
+  /** @name dxVectorMap.Options.controlBar */
   var controlBar: js.UndefOr[AnonMargin] = js.undefined
-  /** Specifies options for VectorMap widget layers. */
+  /** @name dxVectorMap.Options.layers */
   var layers: js.UndefOr[js.Array[AnonBorderWidth] | AnonBorderWidth] = js.undefined
-  /** Configures map legends. */
+  /** @name dxVectorMap.Options.legends */
   var legends: js.UndefOr[js.Array[dxVectorMapLegends]] = js.undefined
-  /** Specifies a map's maximum zoom factor. */
+  /** @name dxVectorMap.Options.maxZoomFactor */
   var maxZoomFactor: js.UndefOr[Double] = js.undefined
-  /** A function that is executed each time the center coordinates are changed. */
+  /** @name dxVectorMap.Options.onCenterChanged */
   var onCenterChanged: js.UndefOr[js.Function1[/* e */ AnonCenter, _]] = js.undefined
-  /** A function that is executed when any location on the map is clicked or tapped. */
+  /** @name dxVectorMap.Options.onClick */
   var onClick: js.UndefOr[(js.Function1[/* e */ AnonComponentElementEventJQueryEvent, _]) | String] = js.undefined
-  /** A function that is executed when a layer element is selected or selection is canceled. */
+  /** @name dxVectorMap.Options.onSelectionChanged */
   var onSelectionChanged: js.UndefOr[js.Function1[/* e */ AnonComponentDxVectorMap, _]] = js.undefined
-  /** A function that is executed when a tooltip becomes hidden. */
+  /** @name dxVectorMap.Options.onTooltipHidden */
   var onTooltipHidden: js.UndefOr[js.Function1[/* e */ AnonComponentDxVectorMap, _]] = js.undefined
-  /** A function that is executed when a tooltip appears. */
+  /** @name dxVectorMap.Options.onTooltipShown */
   var onTooltipShown: js.UndefOr[js.Function1[/* e */ AnonComponentDxVectorMap, _]] = js.undefined
-  /** A function that is executed each time the zoom factor is changed. */
+  /** @name dxVectorMap.Options.onZoomFactorChanged */
   var onZoomFactorChanged: js.UndefOr[js.Function1[/* e */ AnonZoomFactor, _]] = js.undefined
-  /** Disables the panning capability. */
+  /** @name dxVectorMap.Options.panningEnabled */
   var panningEnabled: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the map projection. */
+  /** @name dxVectorMap.Options.projection */
   var projection: js.UndefOr[
     equirectangular | lambert | mercator | miller | VectorMapProjectionConfig | String | js.Any
   ] = js.undefined
-  /** Configures tooltips. */
+  /** @name dxVectorMap.Options.tooltip */
   @JSName("tooltip")
   var tooltip_dxVectorMapOptions: js.UndefOr[dxVectorMapTooltip] = js.undefined
-  /** Specifies whether the map should respond to touch gestures. */
+  /** @name dxVectorMap.Options.touchEnabled */
   var touchEnabled: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether or not the map should respond when a user rolls the mouse wheel. */
+  /** @name dxVectorMap.Options.wheelEnabled */
   var wheelEnabled: js.UndefOr[Boolean] = js.undefined
-  /** Specifies a number that is used to zoom a map initially. */
+  /** @name dxVectorMap.Options.zoomFactor */
   var zoomFactor: js.UndefOr[Double] = js.undefined
-  /** Disables the zooming capability. */
+  /** @name dxVectorMap.Options.zoomingEnabled */
   var zoomingEnabled: js.UndefOr[Boolean] = js.undefined
 }
 

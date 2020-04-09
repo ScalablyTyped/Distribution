@@ -31,7 +31,7 @@ trait DescribeEventsMessage extends js.Object {
     */
   var NextToken: js.UndefOr[Token] = js.native
   /**
-    * The ARN of the version of the custom platform.
+    * The ARN of a custom platform version. If specified, AWS Elastic Beanstalk restricts the returned descriptions to those associated with this custom platform version.
     */
   var PlatformArn: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.PlatformArn] = js.native
   /**

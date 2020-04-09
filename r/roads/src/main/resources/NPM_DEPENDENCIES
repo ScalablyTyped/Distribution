@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "roads" : "6.1.2"
+      "roads" : "6.2.5"
     }
   ],
   "test-dependencies" : [
     {
-      "roads" : "6.1.2"
+      "roads" : "6.2.5"
     }
   ],
   "compile-devDependencies" : [

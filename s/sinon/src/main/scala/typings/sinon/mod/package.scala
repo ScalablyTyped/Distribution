@@ -18,5 +18,5 @@ package object mod {
     * Replaces a type with a Sinon stub if it's a function.
     */
   type SinonStubbedMember[T] = T | typings.sinon.mod.SinonStub
-  type SinonTimerId = scala.Double | typings.sinon.AnonId
+  type SinonTimerId = typings.sinonjsFakeTimers.mod.TimerId
 }

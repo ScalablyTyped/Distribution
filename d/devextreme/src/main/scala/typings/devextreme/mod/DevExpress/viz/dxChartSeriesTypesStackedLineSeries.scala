@@ -14,18 +14,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Describes settings supported by a series of the stacked line type. */
+/** @name dxChartSeriesTypes.StackedLineSeries */
 trait dxChartSeriesTypesStackedLineSeries extends dxChartSeriesTypesCommonSeries {
-  /** Configures data aggregation for the series. */
+  /** @name dxChartSeriesTypes.StackedLineSeries.aggregation */
   @JSName("aggregation")
   var aggregation_dxChartSeriesTypesStackedLineSeries: js.UndefOr[dxChartSeriesTypesStackedLineSeriesAggregation] = js.undefined
-  /** Specifies series elements to be highlighted when a user points to a series. */
+  /** @name dxChartSeriesTypes.StackedLineSeries.hoverMode */
   @JSName("hoverMode")
   var hoverMode_dxChartSeriesTypesStackedLineSeries: js.UndefOr[nearestPoint | includePoints | excludePoints | none] = js.undefined
-  /** Configures point labels. */
+  /** @name dxChartSeriesTypes.StackedLineSeries.label */
   @JSName("label")
   var label_dxChartSeriesTypesStackedLineSeries: js.UndefOr[dxChartSeriesTypesStackedLineSeriesLabel] = js.undefined
-  /** Specifies series elements to be highlighted when a user selects a series. */
+  /** @name dxChartSeriesTypes.StackedLineSeries.selectionMode */
   @JSName("selectionMode")
   var selectionMode_dxChartSeriesTypesStackedLineSeries: js.UndefOr[includePoints | excludePoints | none] = js.undefined
 }

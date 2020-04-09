@@ -7,9 +7,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxAccordionItem extends CollectionWidgetItem {
-  /** Specifies the icon to be displayed in the panel's title. */
+  /** @name dxAccordionItem.icon */
   var icon: js.UndefOr[String] = js.undefined
-  /** Specifies text displayed for the widget item title. */
+  /** @name dxAccordionItem.title */
   var title: js.UndefOr[String] = js.undefined
 }
 

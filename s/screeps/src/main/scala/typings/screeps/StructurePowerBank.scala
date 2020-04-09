@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation._
   */
 trait StructurePowerBank
   extends OwnedStructure[STRUCTURE_POWER_BANK]
-     with AnyOwnedStructure {
+     with AnyOwnedStructure
+     with ConcreteStructure[js.Any] {
   /**
     * The amount of power containing.
     */

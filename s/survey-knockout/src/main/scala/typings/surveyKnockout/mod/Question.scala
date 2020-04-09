@@ -20,6 +20,8 @@ class Question protected ()
      with IConditionRunner {
   def this(name: String) = this()
   var allowNotifyValueChanged: Boolean = js.native
+  val ariaRole: String = js.native
+  val ariaTitleId: String = js.native
   /**
     * The question comment value.
     */
@@ -118,6 +120,9 @@ class Question protected ()
   val isInputTextUpdate: Boolean = js.native
   val isReady: Boolean = js.native
   var isReadyValue: Boolean = js.native
+  val isRequireTextAfterTitle: Boolean = js.native
+  val isRequireTextBeforeTitle: Boolean = js.native
+  val isRequireTextOnStart: Boolean = js.native
   /**
     * Set this property to true, to make the question a required. If a user doesn't answer the question then a validation error will be generated.
     */
@@ -157,6 +162,7 @@ class Question protected ()
     * Returns the rendred question title.
     */
   val processedTitle: String = js.native
+  val questionTitlePattern: String = js.native
   /**
     * Returns questions count: 1 for the non-matrix questions and all inner visible questions that has input(s) widgets for question of matrix types.
     * @see getQuizQuestions
@@ -243,15 +249,16 @@ class Question protected ()
     * Use it to set the specific width to the question like css style (%, px, em etc).
     */
   var width: String = js.native
-  def addConditionNames(names: js.Array[String]): Unit = js.native
   def addConditionObjectsByContext(objects: js.Array[IConditionObject], context: js.Any): Unit = js.native
+  def addError(error: String): Unit = js.native
   /**
     * Add error into the question error list.
     * @param error
     */
   def addError(error: SurveyError): Unit = js.native
   /* protected */ def addSupportedValidators(supportedValidators: js.Array[String]): Unit = js.native
-  def afterRenderInput(el: js.Any): Unit = js.native
+  def afterRenderQuestionElement(el: js.Any): Unit = js.native
+  def beforeDestoyQuestionElement(el: js.Any): Unit = js.native
   /**
     * Get is question ready to use
     */
@@ -294,7 +301,6 @@ class Question protected ()
     */
   def getAllErrors(): js.Array[SurveyError] = js.native
   def getAllValues(): js.Any = js.native
-  /* protected */ def getComment(): String = js.native
   def getConditionJson(): js.Any = js.native
   def getConditionJson(operator: String): js.Any = js.native
   def getConditionJson(operator: String, path: String): js.Any = js.native
@@ -335,8 +341,8 @@ class Question protected ()
   /* CompleteClass */
   override def getProcessedText(text: String): String = js.native
   /* protected */ def getProcessedTextValue(textValue: TextPreProcessorValue): Unit = js.native
+  /* protected */ def getQuestionComment(): String = js.native
   def getQuestionFromArray(name: String, index: Double): IQuestion = js.native
-  def getQuestionTitleTemplate(): String = js.native
   /* protected */ def getQuizQuestionCount(): Double = js.native
   /* protected */ def getRootCss(classes: js.Any): js.Any = js.native
   def getSupportedValidators(): js.Array[String] = js.native
@@ -412,11 +418,11 @@ class Question protected ()
   /* CompleteClass */
   override def runCondition(values: HashTable[_], properties: HashTable[_]): js.Any = js.native
   /* protected */ def runValidators(): js.Array[SurveyError] = js.native
-  /* protected */ def setComment(newValue: String): Unit = js.native
   /* protected */ def setDefaultValue(): Unit = js.native
   /* protected */ def setNewComment(newValue: String): Unit = js.native
   /* protected */ def setNewValue(newValue: js.Any): Unit = js.native
   /* protected */ def setNewValueInData(newValue: js.Any): Unit = js.native
+  /* protected */ def setQuestionComment(newValue: String): Unit = js.native
   /* protected */ def setQuestionValue(newValue: js.Any): Unit = js.native
   /* protected */ def setQuestionValue(newValue: js.Any, updateIsAnswered: Boolean): Unit = js.native
   /* protected */ def setValueCore(newValue: js.Any): Unit = js.native

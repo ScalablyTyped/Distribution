@@ -59,7 +59,7 @@ trait OrderableDBInstanceOption extends js.Object {
     */
   var MultiAZCapable: js.UndefOr[Boolean] = js.native
   /**
-    * Indicates whether a DB instance can have a Read Replica.
+    * Indicates whether a DB instance can have a read replica.
     */
   var ReadReplicaCapable: js.UndefOr[Boolean] = js.native
   /**
@@ -67,7 +67,7 @@ trait OrderableDBInstanceOption extends js.Object {
     */
   var StorageType: js.UndefOr[String] = js.native
   /**
-    * A list of the supported DB engine modes.
+    * A list of the supported DB engine modes.   global engine mode only applies for global database clusters created with Aurora MySQL version 5.6.10a. For higher Aurora MySQL versions, the clusters in a global database use provisioned engine mode.  
     */
   var SupportedEngineModes: js.UndefOr[EngineModeList] = js.native
   /**

@@ -27,6 +27,7 @@ object ConnectionOptions {
   @scala.inline
   def apply(
     accessToken: String = null,
+    authzServiceUrl: String = null,
     callOptions: js.Object = null,
     clientId: String = null,
     clientSecret: String = null,
@@ -42,10 +43,12 @@ object ConnectionOptions {
     serverUrl: String = null,
     sessionId: String = null,
     signedRequest: String | js.Object = null,
+    tokenServiceUrl: String = null,
     version: String = null
   ): ConnectionOptions = {
     val __obj = js.Dynamic.literal()
     if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken.asInstanceOf[js.Any])
+    if (authzServiceUrl != null) __obj.updateDynamic("authzServiceUrl")(authzServiceUrl.asInstanceOf[js.Any])
     if (callOptions != null) __obj.updateDynamic("callOptions")(callOptions.asInstanceOf[js.Any])
     if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
     if (clientSecret != null) __obj.updateDynamic("clientSecret")(clientSecret.asInstanceOf[js.Any])
@@ -61,6 +64,7 @@ object ConnectionOptions {
     if (serverUrl != null) __obj.updateDynamic("serverUrl")(serverUrl.asInstanceOf[js.Any])
     if (sessionId != null) __obj.updateDynamic("sessionId")(sessionId.asInstanceOf[js.Any])
     if (signedRequest != null) __obj.updateDynamic("signedRequest")(signedRequest.asInstanceOf[js.Any])
+    if (tokenServiceUrl != null) __obj.updateDynamic("tokenServiceUrl")(tokenServiceUrl.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionOptions]
   }

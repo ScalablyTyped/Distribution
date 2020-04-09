@@ -29,6 +29,7 @@ import typings.reactNative.mod.ReturnKeyTypeIOS
 import typings.reactNative.mod.ReturnKeyTypeOptions
 import typings.reactNative.mod.StatusBarAnimation
 import typings.reactNative.mod.StatusBarStyle
+import typings.reactNative.mod._ColorSchemeName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -431,7 +432,7 @@ object reactNativeStrings {
   sealed trait creditCardNumber extends js.Object
   
   @js.native
-  sealed trait dark extends js.Object
+  sealed trait dark extends _ColorSchemeName
   
   @js.native
   sealed trait `dark-content` extends StatusBarStyle
@@ -465,6 +466,9 @@ object reactNativeStrings {
        with ReturnKeyTypeIOS
        with ReturnKeyTypeOptions
        with StatusBarStyle
+  
+  @js.native
+  sealed trait defaultProps extends js.Object
   
   @js.native
   sealed trait denied extends PermissionStatus
@@ -591,6 +595,12 @@ object reactNativeStrings {
   
   @js.native
   sealed trait fullStreetAddress extends js.Object
+  
+  @js.native
+  sealed trait getDerivedStateFromError extends js.Object
+  
+  @js.native
+  sealed trait getDerivedStateFromProps extends js.Object
   
   @js.native
   sealed trait givenName extends js.Object
@@ -744,7 +754,7 @@ object reactNativeStrings {
   sealed trait left extends js.Object
   
   @js.native
-  sealed trait light extends js.Object
+  sealed trait light extends _ColorSchemeName
   
   @js.native
   sealed trait `light-content` extends StatusBarStyle
@@ -1004,6 +1014,9 @@ object reactNativeStrings {
   
   @js.native
   sealed trait progressbar extends AccessibilityRole
+  
+  @js.native
+  sealed trait propTypes extends js.Object
   
   @js.native
   sealed trait `proportional-nums` extends FontVariant
@@ -1588,6 +1601,8 @@ object reactNativeStrings {
   @scala.inline
   def default: default = "default".asInstanceOf[default]
   @scala.inline
+  def defaultProps: defaultProps = "defaultProps".asInstanceOf[defaultProps]
+  @scala.inline
   def denied: denied = "denied".asInstanceOf[denied]
   @scala.inline
   def destructive: destructive = "destructive".asInstanceOf[destructive]
@@ -1667,6 +1682,10 @@ object reactNativeStrings {
   def fullScreen: fullScreen = "fullScreen".asInstanceOf[fullScreen]
   @scala.inline
   def fullStreetAddress: fullStreetAddress = "fullStreetAddress".asInstanceOf[fullStreetAddress]
+  @scala.inline
+  def getDerivedStateFromError: getDerivedStateFromError = "getDerivedStateFromError".asInstanceOf[getDerivedStateFromError]
+  @scala.inline
+  def getDerivedStateFromProps: getDerivedStateFromProps = "getDerivedStateFromProps".asInstanceOf[getDerivedStateFromProps]
   @scala.inline
   def givenName: givenName = "givenName".asInstanceOf[givenName]
   @scala.inline
@@ -1927,6 +1946,8 @@ object reactNativeStrings {
   def progress: progress = "progress".asInstanceOf[progress]
   @scala.inline
   def progressbar: progressbar = "progressbar".asInstanceOf[progressbar]
+  @scala.inline
+  def propTypes: propTypes = "propTypes".asInstanceOf[propTypes]
   @scala.inline
   def `proportional-nums`: `proportional-nums` = "proportional-nums".asInstanceOf[`proportional-nums`]
   @scala.inline

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "collect-v8-coverage" : "1.0.0"
+      "collect-v8-coverage" : "1.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "collect-v8-coverage" : "1.0.0"
+      "collect-v8-coverage" : "1.0.1"
     }
   ],
   "compile-devDependencies" : [

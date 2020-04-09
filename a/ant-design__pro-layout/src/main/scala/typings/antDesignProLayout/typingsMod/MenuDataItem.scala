@@ -1,6 +1,7 @@
 package typings.antDesignProLayout.typingsMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.antDesignProLayout.antDesignProLayoutBooleans.`false`
 import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +15,7 @@ trait MenuDataItem
   var hideInMenu: js.UndefOr[Boolean] = js.undefined
   var icon: js.UndefOr[ReactNode] = js.undefined
   var key: js.UndefOr[String] = js.undefined
-  var locale: js.UndefOr[String] = js.undefined
+  var locale: js.UndefOr[String | `false`] = js.undefined
   var name: js.UndefOr[String] = js.undefined
   var parentKeys: js.UndefOr[js.Array[String]] = js.undefined
   var path: js.UndefOr[String] = js.undefined
@@ -30,7 +31,7 @@ object MenuDataItem {
     hideInMenu: js.UndefOr[Boolean] = js.undefined,
     icon: ReactNode = null,
     key: String = null,
-    locale: String = null,
+    locale: String | `false` = null,
     name: String = null,
     parentKeys: js.Array[String] = null,
     path: String = null

@@ -13,6 +13,7 @@ import typings.react.mod.IframeHTMLAttributes
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
@@ -235,7 +236,7 @@ object FrameComponentProps {
     onProgress: SyntheticEvent[HTMLIFrameElement, Event_] => Unit = null,
     onRateChange: SyntheticEvent[HTMLIFrameElement, Event_] => Unit = null,
     onReset: FormEvent[HTMLIFrameElement] => Unit = null,
-    onScroll: UIEvent[HTMLIFrameElement] => Unit = null,
+    onScroll: UIEvent[HTMLIFrameElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[HTMLIFrameElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[HTMLIFrameElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[HTMLIFrameElement, Event_] => Unit = null,

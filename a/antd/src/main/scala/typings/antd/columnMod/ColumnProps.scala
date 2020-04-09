@@ -46,11 +46,12 @@ object ColumnProps {
     key: typings.rcTable.interfaceMod.Key = null,
     onCell: (RecordType, /* index */ js.UndefOr[Double]) => HTMLAttributes[HTMLElement] = null,
     onCellClick: (RecordType, /* e */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit = null,
-    onFilter: (/* value */ js.Any, RecordType) => Boolean = null,
+    onFilter: (/* value */ String | Double | Boolean, RecordType) => Boolean = null,
     onFilterDropdownVisibleChange: /* visible */ Boolean => Unit = null,
     onHeaderCell: (/* import warning: importer.ImportType#apply Failed type conversion: rc-table.rc-table/lib/interface.ColumnsType<RecordType>[number] */ js.Any, /* index */ js.UndefOr[Double]) => HTMLAttributes[HTMLElement] = null,
     render: (/* value */ js.Any, RecordType, /* index */ Double) => ReactNode | RenderedCell[RecordType] = null,
     rowSpan: Int | Double = null,
+    showSorterTooltip: js.UndefOr[Boolean] = js.undefined,
     sortDirections: js.Array[SortOrder] = null,
     sortOrder: SortOrder = null,
     sorter: Boolean | CompareFn[RecordType] | AnonCompare[RecordType] = null,
@@ -82,6 +83,7 @@ object ColumnProps {
     if (onHeaderCell != null) __obj.updateDynamic("onHeaderCell")(js.Any.fromFunction2(onHeaderCell))
     if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction3(render))
     if (rowSpan != null) __obj.updateDynamic("rowSpan")(rowSpan.asInstanceOf[js.Any])
+    if (!js.isUndefined(showSorterTooltip)) __obj.updateDynamic("showSorterTooltip")(showSorterTooltip.asInstanceOf[js.Any])
     if (sortDirections != null) __obj.updateDynamic("sortDirections")(sortDirections.asInstanceOf[js.Any])
     if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])
     if (sorter != null) __obj.updateDynamic("sorter")(sorter.asInstanceOf[js.Any])

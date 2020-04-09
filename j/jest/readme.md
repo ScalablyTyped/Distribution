@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest
 
-Typings are for version 25.1
+Typings are for version 25.2
 
 ## Library description:
 Delightful JavaScript Testing.

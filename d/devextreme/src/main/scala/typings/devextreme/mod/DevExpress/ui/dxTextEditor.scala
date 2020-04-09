@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait dxTextEditor extends Editor {
-  /** Removes focus from the input element. */
+  /** @name dxTextEditor.blur() */
   def blur(): Unit = js.native
-  /** Gets an instance of a custom action button. */
+  /** @name dxTextEditor.getButton(name) */
   def getButton(name: String): js.UndefOr[dxButton] = js.native
 }
 

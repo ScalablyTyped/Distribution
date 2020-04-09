@@ -5,19 +5,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxTreeListNode extends js.Object {
-  /** Contains all child nodes. */
+  /** @name dxTreeListNode.children */
   var children: js.UndefOr[js.Array[dxTreeListNode]] = js.undefined
-  /** The node's data object. */
+  /** @name dxTreeListNode.data */
   var data: js.UndefOr[js.Any] = js.undefined
-  /** Indicates whether the node has child nodes. */
+  /** @name dxTreeListNode.hasChildren */
   var hasChildren: js.UndefOr[Boolean] = js.undefined
-  /** The node's key. */
+  /** @name dxTreeListNode.key */
   var key: js.UndefOr[js.Any] = js.undefined
-  /** The node's hierarchical level. */
+  /** @name dxTreeListNode.level */
   var level: js.UndefOr[Double] = js.undefined
-  /** The parent node. */
+  /** @name dxTreeListNode.parent */
   var parent: js.UndefOr[dxTreeListNode] = js.undefined
-  /** Indicates whether the node is visualized as a row. */
+  /** @name dxTreeListNode.visible */
   var visible: js.UndefOr[Boolean] = js.undefined
 }
 

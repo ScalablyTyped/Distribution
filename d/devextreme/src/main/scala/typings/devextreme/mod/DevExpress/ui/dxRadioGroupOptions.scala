@@ -23,11 +23,11 @@ import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - typings.devextreme.mod.DevExpress.ui.DataExpressionMixinOptions because var conflicts: value. Inlined dataSource, displayExpr, itemTemplate, items, valueExpr */ trait dxRadioGroupOptions extends EditorOptions[dxRadioGroup] {
-  /** Binds the widget to data. */
+  /** @name DataExpressionMixin.Options.dataSource */
   var dataSource: js.UndefOr[String | (js.Array[CollectionWidgetItem | _]) | DataSource | DataSourceOptions] = js.undefined
-  /** Specifies the data field whose values should be displayed. */
+  /** @name DataExpressionMixin.Options.displayExpr */
   var displayExpr: js.UndefOr[String | (js.Function1[/* item */ js.Any, String])] = js.undefined
-  /** Specifies a custom template for items. */
+  /** @name DataExpressionMixin.Options.itemTemplate */
   var itemTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function3[
       /* itemData */ js.Any, 
@@ -36,13 +36,13 @@ import scala.scalajs.js.annotation._
       String | Element | JQuery
     ])
   ] = js.undefined
-  /** An array of items displayed by the widget. */
+  /** @name DataExpressionMixin.Options.items */
   var items: js.UndefOr[js.Array[CollectionWidgetItem | _]] = js.undefined
-  /** Specifies the radio group layout. */
+  /** @name dxRadioGroup.Options.layout */
   var layout: js.UndefOr[horizontal | vertical] = js.undefined
-  /** The value to be assigned to the `name` attribute of the underlying HTML element. */
+  /** @name dxRadioGroup.Options.name */
   var name: js.UndefOr[String] = js.undefined
-  /** Specifies which data field provides unique values to the widget's value. */
+  /** @name DataExpressionMixin.Options.valueExpr */
   var valueExpr: js.UndefOr[String | (js.Function1[/* item */ js.Any, String | Double | Boolean])] = js.undefined
 }
 

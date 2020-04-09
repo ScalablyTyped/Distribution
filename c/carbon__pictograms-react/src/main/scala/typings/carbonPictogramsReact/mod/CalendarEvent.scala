@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@carbon/pictograms-react", "CalendarEvent")
 @js.native
-object CalendarEvent extends TopLevel[CarbonPictogram]
+object CalendarEvent extends TopLevel[CarbonPictogramType]
 

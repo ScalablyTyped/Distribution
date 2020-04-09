@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "re-resizable" : "6.2.0"
+      "re-resizable" : "6.3.2"
     }
   ],
   "test-dependencies" : [
     {
-      "re-resizable" : "6.2.0"
+      "re-resizable" : "6.3.2"
     }
   ],
   "compile-devDependencies" : [

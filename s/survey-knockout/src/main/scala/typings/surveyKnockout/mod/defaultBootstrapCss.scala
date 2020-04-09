@@ -10,13 +10,15 @@ import typings.surveyKnockout.AnonContent
 import typings.surveyKnockout.AnonControl
 import typings.surveyKnockout.AnonControlLabel
 import typings.surveyKnockout.AnonControlOther
+import typings.surveyKnockout.AnonControls
 import typings.surveyKnockout.AnonDescription
 import typings.surveyKnockout.AnonDisabled
 import typings.surveyKnockout.AnonError
 import typings.surveyKnockout.AnonFileDecorator
 import typings.surveyKnockout.AnonIcon
-import typings.surveyKnockout.AnonItem
+import typings.surveyKnockout.AnonImage
 import typings.surveyKnockout.AnonItemChecked
+import typings.surveyKnockout.AnonItemControl
 import typings.surveyKnockout.AnonItemValue
 import typings.surveyKnockout.AnonRoot
 import scala.scalajs.js
@@ -40,8 +42,12 @@ object defaultBootstrapCss extends js.Object {
   var file: AnonFileDecorator = js.native
   var footer: String = js.native
   var header: String = js.native
+  var headerText: String = js.native
   var html: AnonRoot = js.native
-  var imagepicker: AnonItemChecked = js.native
+  var image: AnonImage = js.native
+  var imagepicker: AnonItemControl = js.native
+  var logo: String = js.native
+  var logoImage: String = js.native
   var matrix: AnonCellLabel = js.native
   var matrixdropdown: AnonRoot = js.native
   var matrixdynamic: AnonButton = js.native
@@ -57,11 +63,12 @@ object defaultBootstrapCss extends js.Object {
   var progressBar: String = js.native
   var progressTextUnderBar: String = js.native
   var question: AnonContent = js.native
-  var radiogroup: AnonItem = js.native
+  var radiogroup: AnonItemChecked = js.native
   var rating: AnonDisabled = js.native
   var root: String = js.native
   var row: String = js.native
   var saveData: AnonError = js.native
+  var signaturepad: AnonControls = js.native
   var text: String = js.native
   var title: String = js.native
   var window: AnonBody = js.native

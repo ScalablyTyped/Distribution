@@ -5,11 +5,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxChartCommonAxisSettingsStripStyle extends js.Object {
-  /** Configures the appearance of strip labels. */
+  /** @name dxChart.Options.commonAxisSettings.stripStyle.label */
   var label: js.UndefOr[dxChartCommonAxisSettingsStripStyleLabel] = js.undefined
-  /** Generates a pixel-measured empty space between the left/right border of a strip and the strip label. */
+  /** @name dxChart.Options.commonAxisSettings.stripStyle.paddingLeftRight */
   var paddingLeftRight: js.UndefOr[Double] = js.undefined
-  /** Generates a pixel-measured empty space between the top/bottom border of a strip and the strip label. */
+  /** @name dxChart.Options.commonAxisSettings.stripStyle.paddingTopBottom */
   var paddingTopBottom: js.UndefOr[Double] = js.undefined
 }
 

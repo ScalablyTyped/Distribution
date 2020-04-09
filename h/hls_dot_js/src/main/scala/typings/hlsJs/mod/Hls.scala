@@ -8,15 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Hls extends js.Object {
   /**
-    * get: returns audio track id
-    * set: sets audio track id (returned by)
-    */
-  var audioTrack: Double = js.native
-  /**
-    * array of audio tracks exposed in manifest
-    */
-  val audioTracks: js.Array[AudioTrack] = js.native
-  /**
     * capping/max level (index of level) that could be used by ABR Controller. Defaults to -1
     * which means no limit
     * set: max level value that could be used by the ABR Controller

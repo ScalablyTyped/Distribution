@@ -1,46 +1,68 @@
 package typings.webpackbar.mod
 
-import typings.node.processMod._Global_.NodeJS.WriteStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
-  /** Color output of the progress bar */
+  /**
+    * Enable a simple log reporter (only start and end)
+    * Defaults to 'true' when running in minimal environments
+    * @default true
+    */
+  var basic: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Color output of the progress bar
+    * @default 'green'
+    */
   var color: js.UndefOr[String] = js.undefined
-  /** Show compiled in time */
-  var compiledIn: js.UndefOr[Boolean] = js.undefined
-  /** Function called when all builds are finished */
-  var done: js.UndefOr[js.Function2[/* sharedState */ SharedState, /* ctx */ WebpackBar, Unit]] = js.undefined
-  /** Minimal output */
-  var minimal: js.UndefOr[Boolean] = js.undefined
-  /** Display name */
+  /**
+    * Enable bars reporter
+    * Defaults to 'true' when not in CI or testing mod
+    * @default true
+    */
+  var fancy: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Display name
+    * @default 'webpack'
+    */
   var name: js.UndefOr[String] = js.undefined
-  /** Enable the profiler for files and loaders */
+  /**
+    * Enable profiler
+    * @default false
+    */
   var profile: js.UndefOr[Boolean] = js.undefined
-  /** Stream to rwite to */
-  var stream: js.UndefOr[WriteStream] = js.undefined
+  /**
+    * Register a custom reporter
+    * @default null
+    */
+  var reporter: js.UndefOr[Reporter | Null] = js.undefined
+  /**
+    * Register an Array of your custom reporters.
+    * @default ['basic'] | ['fancy']
+    */
+  var reporters: js.UndefOr[js.Array[String]] = js.undefined
 }
 
 object Options {
   @scala.inline
   def apply(
+    basic: js.UndefOr[Boolean] = js.undefined,
     color: String = null,
-    compiledIn: js.UndefOr[Boolean] = js.undefined,
-    done: (/* sharedState */ SharedState, /* ctx */ WebpackBar) => Unit = null,
-    minimal: js.UndefOr[Boolean] = js.undefined,
+    fancy: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
     profile: js.UndefOr[Boolean] = js.undefined,
-    stream: WriteStream = null
+    reporter: Reporter = null,
+    reporters: js.Array[String] = null
   ): Options = {
     val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(basic)) __obj.updateDynamic("basic")(basic.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(compiledIn)) __obj.updateDynamic("compiledIn")(compiledIn.asInstanceOf[js.Any])
-    if (done != null) __obj.updateDynamic("done")(js.Any.fromFunction2(done))
-    if (!js.isUndefined(minimal)) __obj.updateDynamic("minimal")(minimal.asInstanceOf[js.Any])
+    if (!js.isUndefined(fancy)) __obj.updateDynamic("fancy")(fancy.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (!js.isUndefined(profile)) __obj.updateDynamic("profile")(profile.asInstanceOf[js.Any])
-    if (stream != null) __obj.updateDynamic("stream")(stream.asInstanceOf[js.Any])
+    if (reporter != null) __obj.updateDynamic("reporter")(reporter.asInstanceOf[js.Any])
+    if (reporters != null) __obj.updateDynamic("reporters")(reporters.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

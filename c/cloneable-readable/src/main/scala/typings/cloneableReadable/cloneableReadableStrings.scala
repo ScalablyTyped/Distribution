@@ -18,7 +18,13 @@ object cloneableReadableStrings {
   sealed trait error extends js.Object
   
   @js.native
+  sealed trait pause extends js.Object
+  
+  @js.native
   sealed trait readable extends js.Object
+  
+  @js.native
+  sealed trait resume extends js.Object
   
   @scala.inline
   def close: close = "close".asInstanceOf[close]
@@ -29,6 +35,10 @@ object cloneableReadableStrings {
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   @scala.inline
+  def pause: pause = "pause".asInstanceOf[pause]
+  @scala.inline
   def readable: readable = "readable".asInstanceOf[readable]
+  @scala.inline
+  def resume: resume = "resume".asInstanceOf[resume]
 }
 

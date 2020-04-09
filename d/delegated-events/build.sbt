@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "delegated-events"
-version := "1.1.1-055e77"
+version := "1.1.2-6ed8bb"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

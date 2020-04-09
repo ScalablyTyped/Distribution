@@ -251,7 +251,7 @@ trait BaseLegend extends js.Object {
     */
   var titleAnchor: js.UndefOr[AnchorValue] = js.undefined
   /**
-    * Vertical text baseline for legend titles.
+    * Vertical text baseline for legend titles.  One of `"alphabetic"` (default), `"top"`, `"middle"`, `"bottom"`, `"line-top"`, or `"line-bottom"`. The `"line-top"` and `"line-bottom"` values operate similarly to `"top"` and `"bottom"`, but are calculated relative to the *lineHeight* rather than *fontSize* alone.
     *
     * __Default value:__ `"top"`.
     */
@@ -285,7 +285,7 @@ trait BaseLegend extends js.Object {
     */
   var titleLimit: js.UndefOr[NumberValue] = js.undefined
   /**
-    * Line height in pixels for multi-line title text.
+    * Line height in pixels for multi-line title text or title text with `"line-top"` or `"line-bottom"` baseline.
     */
   var titleLineHeight: js.UndefOr[NumberValue] = js.undefined
   /**

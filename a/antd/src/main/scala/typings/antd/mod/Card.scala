@@ -3,7 +3,7 @@ package typings.antd.mod
 import typings.antd.cardMod.default
 import typings.antd.gridMod.CardGridProps
 import typings.antd.metaMod.CardMetaProps
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ class Card () extends default
 @JSImport("antd", "Card")
 @js.native
 object Card extends js.Object {
-  var Grid: SFC[CardGridProps] = js.native
-  var Meta: SFC[CardMetaProps] = js.native
+  var Grid: FC[CardGridProps] = js.native
+  var Meta: FC[CardMetaProps] = js.native
 }
 

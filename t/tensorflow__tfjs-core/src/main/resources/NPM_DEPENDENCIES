@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@tensorflow/tfjs-core" : "1.7.0"
+      "@tensorflow/tfjs-core" : "1.7.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@tensorflow/tfjs-core" : "1.7.0"
+      "@tensorflow/tfjs-core" : "1.7.2"
     }
   ],
   "compile-devDependencies" : [

@@ -25,26 +25,26 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxNumberBoxOptions extends dxTextEditorOptions[dxNumberBox] {
-  /** Allows you to add custom buttons to the input text field. */
+  /** @name dxNumberBox.Options.buttons */
   @JSName("buttons")
   var buttons_dxNumberBoxOptions: js.UndefOr[js.Array[clear | spins | dxTextEditorButton]] = js.undefined
-  /** Specifies the value's display format and controls user input accordingly. */
+  /** @name dxNumberBox.Options.format */
   var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.format] = js.undefined
-  /** Specifies the text of the message displayed if the specified value is not a number. */
+  /** @name dxNumberBox.Options.invalidValueMessage */
   var invalidValueMessage: js.UndefOr[String] = js.undefined
-  /** The maximum value accepted by the number box. */
+  /** @name dxNumberBox.Options.max */
   var max: js.UndefOr[Double] = js.undefined
-  /** The minimum value accepted by the number box. */
+  /** @name dxNumberBox.Options.min */
   var min: js.UndefOr[Double] = js.undefined
-  /** Specifies the value to be passed to the type attribute of the underlying `` element. */
+  /** @name dxNumberBox.Options.mode */
   var mode: js.UndefOr[number | text | tel] = js.undefined
-  /** Specifies whether to show the buttons that change the value by a step. */
+  /** @name dxNumberBox.Options.showSpinButtons */
   var showSpinButtons: js.UndefOr[Boolean] = js.undefined
-  /** Specifies how much the widget's value changes when using the spin buttons, Up/Down arrow keys, or mouse wheel. */
+  /** @name dxNumberBox.Options.step */
   var step: js.UndefOr[Double] = js.undefined
-  /** Specifies whether to use touch friendly spin buttons. Applies only if showSpinButtons is true. */
+  /** @name dxNumberBox.Options.useLargeSpinButtons */
   var useLargeSpinButtons: js.UndefOr[Boolean] = js.undefined
-  /** The current number box value. */
+  /** @name dxNumberBox.Options.value */
   @JSName("value")
   var value_dxNumberBoxOptions: js.UndefOr[Double] = js.undefined
 }

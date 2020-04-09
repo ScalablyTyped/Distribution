@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "smooth-scrollbar" : "8.5.1"
+      "smooth-scrollbar" : "8.5.2"
     }
   ],
   "test-dependencies" : [
     {
-      "smooth-scrollbar" : "8.5.1"
+      "smooth-scrollbar" : "8.5.2"
     }
   ],
   "compile-devDependencies" : [

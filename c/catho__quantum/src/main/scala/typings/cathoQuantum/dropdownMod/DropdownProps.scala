@@ -1,7 +1,7 @@
 package typings.cathoQuantum.dropdownMod
 
 import typings.cathoQuantum.AnonBaseFontSize
-import typings.react.mod.ElementType
+import typings.downshift.mod.ControllerStateAndHelpers
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,8 +18,8 @@ trait DropdownProps extends js.Object {
   /** More about stateAndHelpers parameter here https://github.com/downshift-js/downshift#children-function */
   var onChange: js.UndefOr[
     js.Function2[
-      /* selectedItem */ js.UndefOr[ElementType[_] | Null], 
-      /* stateAndHelpers */ js.UndefOr[js.Any], 
+      /* selectedItem */ ItemPropType | Null, 
+      /* stateAndHelpers */ ControllerStateAndHelpers[ItemPropType], 
       Unit
     ]
   ] = js.undefined
@@ -40,7 +40,7 @@ object DropdownProps {
     ignoreSpecialChars: js.UndefOr[Boolean] = js.undefined,
     items: js.Array[ItemPropType] = null,
     label: String = null,
-    onChange: (/* selectedItem */ js.UndefOr[ElementType[_] | Null], /* stateAndHelpers */ js.UndefOr[js.Any]) => Unit = null,
+    onChange: (/* selectedItem */ ItemPropType | Null, /* stateAndHelpers */ ControllerStateAndHelpers[ItemPropType]) => Unit = null,
     placeholder: String = null,
     required: js.UndefOr[Boolean] = js.undefined,
     selectedItem: ItemPropType = null,

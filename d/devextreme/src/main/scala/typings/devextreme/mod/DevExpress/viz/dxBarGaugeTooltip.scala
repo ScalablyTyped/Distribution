@@ -13,11 +13,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxBarGaugeTooltip extends BaseWidgetTooltip {
-  /** Specifies a custom template for a tooltip. */
+  /** @name dxBarGauge.Options.tooltip.contentTemplate */
   var contentTemplate: js.UndefOr[
     template | (js.Function2[/* scaleValue */ AnonIndex, /* element */ dxElement, String | Element | JQuery])
   ] = js.undefined
-  /** Allows you to change tooltip appearance. */
+  /** @name dxBarGauge.Options.tooltip.customizeTooltip */
   var customizeTooltip: js.UndefOr[js.Function1[/* scaleValue */ AnonIndex, _]] = js.undefined
 }
 

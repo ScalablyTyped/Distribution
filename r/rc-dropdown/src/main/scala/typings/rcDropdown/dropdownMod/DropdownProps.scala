@@ -1,9 +1,5 @@
 package typings.rcDropdown.dropdownMod
 
-import typings.rcTrigger.interfaceMod.ActionType
-import typings.rcTrigger.interfaceMod.AlignType
-import typings.rcTrigger.interfaceMod.AnimationType
-import typings.rcTrigger.interfaceMod.BuildInPlacements
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactElement
 import typings.std.Event_
@@ -13,12 +9,20 @@ import scala.scalajs.js.annotation._
 
 /* Inlined parent std.Pick</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TriggerProps * / any, 'getPopupContainer' | 'children'> */
 trait DropdownProps extends js.Object {
-  var align: js.UndefOr[AlignType] = js.undefined
+  var align: js.UndefOr[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AlignType */ js.Any
+  ] = js.undefined
   var alignPoint: js.UndefOr[Boolean] = js.undefined
-  var animation: js.UndefOr[AnimationType] = js.undefined
+  var animation: js.UndefOr[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnimationType */ js.Any
+  ] = js.undefined
   var children: js.Any
   var getPopupContainer: js.Any
-  var hideAction: js.UndefOr[js.Array[ActionType]] = js.undefined
+  var hideAction: js.UndefOr[
+    js.Array[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionType */ _
+    ]
+  ] = js.undefined
   var minOverlayWidthMatchTrigger: js.UndefOr[Boolean] = js.undefined
   var onOverlayClick: js.UndefOr[js.Function1[/* e */ Event_, Unit]] = js.undefined
   var onVisibleChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.undefined
@@ -27,11 +31,21 @@ trait DropdownProps extends js.Object {
   var overlayClassName: js.UndefOr[String] = js.undefined
   var overlayStyle: js.UndefOr[CSSProperties] = js.undefined
   var placement: js.UndefOr[String] = js.undefined
-  var placements: js.UndefOr[BuildInPlacements] = js.undefined
+  var placements: js.UndefOr[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BuildInPlacements */ js.Any
+  ] = js.undefined
   var prefixCls: js.UndefOr[String] = js.undefined
-  var showAction: js.UndefOr[js.Array[ActionType]] = js.undefined
+  var showAction: js.UndefOr[
+    js.Array[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionType */ _
+    ]
+  ] = js.undefined
   var transitionName: js.UndefOr[String] = js.undefined
-  var trigger: js.UndefOr[ActionType | js.Array[ActionType]] = js.undefined
+  var trigger: js.UndefOr[
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionType */ js.Any) | (js.Array[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionType */ _
+    ])
+  ] = js.undefined
   var visible: js.UndefOr[Boolean] = js.undefined
 }
 
@@ -40,10 +54,12 @@ object DropdownProps {
   def apply(
     children: js.Any,
     getPopupContainer: js.Any,
-    align: AlignType = null,
+    align: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AlignType */ js.Any = null,
     alignPoint: js.UndefOr[Boolean] = js.undefined,
-    animation: AnimationType = null,
-    hideAction: js.Array[ActionType] = null,
+    animation: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnimationType */ js.Any = null,
+    hideAction: js.Array[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionType */ _
+    ] = null,
     minOverlayWidthMatchTrigger: js.UndefOr[Boolean] = js.undefined,
     onOverlayClick: /* e */ Event_ => Unit = null,
     onVisibleChange: /* visible */ Boolean => Unit = null,
@@ -52,11 +68,15 @@ object DropdownProps {
     overlayClassName: String = null,
     overlayStyle: CSSProperties = null,
     placement: String = null,
-    placements: BuildInPlacements = null,
+    placements: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BuildInPlacements */ js.Any = null,
     prefixCls: String = null,
-    showAction: js.Array[ActionType] = null,
+    showAction: js.Array[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionType */ _
+    ] = null,
     transitionName: String = null,
-    trigger: ActionType | js.Array[ActionType] = null,
+    trigger: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionType */ js.Any) | (js.Array[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionType */ _
+    ]) = null,
     visible: js.UndefOr[Boolean] = js.undefined
   ): DropdownProps = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], getPopupContainer = getPopupContainer.asInstanceOf[js.Any])

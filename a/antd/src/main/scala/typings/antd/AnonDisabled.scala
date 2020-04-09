@@ -26,9 +26,9 @@ import scala.scalajs.js.annotation._
 trait AnonDisabled extends js.Object {
   var disabled: Boolean
   var icon: Element
-  var okType: js.UndefOr[link | dashed | default | primary | ghost | danger] = js.undefined
+  var okType: js.UndefOr[link | default | primary | ghost | dashed | danger] = js.undefined
   var placement: js.UndefOr[
-    bottom | left | right | top | bottomRight | topLeft | topRight | bottomLeft | leftTop | leftBottom | rightTop | rightBottom
+    bottom | left | right | top | topLeft | topRight | bottomLeft | bottomRight | leftTop | leftBottom | rightTop | rightBottom
   ] = js.undefined
   var transitionName: String
   var trigger: js.UndefOr[String | js.Array[String]] = js.undefined
@@ -40,8 +40,8 @@ object AnonDisabled {
     disabled: Boolean,
     icon: Element,
     transitionName: String,
-    okType: link | dashed | default | primary | ghost | danger = null,
-    placement: bottom | left | right | top | bottomRight | topLeft | topRight | bottomLeft | leftTop | leftBottom | rightTop | rightBottom = null,
+    okType: link | default | primary | ghost | dashed | danger = null,
+    placement: bottom | left | right | top | topLeft | topRight | bottomLeft | bottomRight | leftTop | leftBottom | rightTop | rightBottom = null,
     trigger: String | js.Array[String] = null
   ): AnonDisabled = {
     val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], transitionName = transitionName.asInstanceOf[js.Any])

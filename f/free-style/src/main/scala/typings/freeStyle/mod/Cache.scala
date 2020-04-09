@@ -14,7 +14,7 @@ class Cache[T /* <: Container[_] */] () extends js.Object {
   var changeId: Double = js.native
   var changes: Changes = js.native
   var sheet: js.Array[String] = js.native
-  def add[U /* <: T */](style: U): U = js.native
+  def add(style: T): Unit = js.native
   def merge(cache: Cache[_]): this.type = js.native
   def remove(style: T): Unit = js.native
   def unmerge(cache: Cache[_]): this.type = js.native

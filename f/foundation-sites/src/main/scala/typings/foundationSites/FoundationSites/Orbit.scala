@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-// http://foundation.zurb.com/sites/docs/orbit.html#javascript-reference
+// https://get.foundation/sites/docs/orbit.html#javascript-reference
 @js.native
 trait Orbit extends js.Object {
   def changeSlide(isLTR: Boolean): Unit = js.native

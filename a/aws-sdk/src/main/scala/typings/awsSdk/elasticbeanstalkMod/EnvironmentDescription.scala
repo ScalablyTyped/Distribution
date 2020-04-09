@@ -59,7 +59,7 @@ trait EnvironmentDescription extends js.Object {
     */
   var HealthStatus: js.UndefOr[EnvironmentHealthStatus] = js.native
   /**
-    * The ARN of the platform.
+    * The ARN of the platform version.
     */
   var PlatformArn: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.PlatformArn] = js.native
   /**

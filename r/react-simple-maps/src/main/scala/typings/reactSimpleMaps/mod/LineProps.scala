@@ -22,6 +22,7 @@ import typings.react.mod.LegacyRef
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
@@ -768,7 +769,7 @@ object LineProps {
     onProgress: SyntheticEvent[SVGPathElement, Event_] => Unit = null,
     onRateChange: SyntheticEvent[SVGPathElement, Event_] => Unit = null,
     onReset: FormEvent[SVGPathElement] => Unit = null,
-    onScroll: UIEvent[SVGPathElement] => Unit = null,
+    onScroll: UIEvent[SVGPathElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[SVGPathElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[SVGPathElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[SVGPathElement, Event_] => Unit = null,

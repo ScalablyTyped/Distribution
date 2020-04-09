@@ -7,47 +7,47 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait baseSeriesObject extends js.Object {
-  /** Provides information about the state of the series object. */
+  /** @name baseSeriesObject.fullState */
   var fullState: Double = js.native
-  /** Returns the name of the series. */
+  /** @name baseSeriesObject.name */
   var name: js.Any = js.native
-  /** Returns the tag of the series. */
+  /** @name baseSeriesObject.tag */
   var tag: js.Any = js.native
-  /** Returns the type of the series. */
+  /** @name baseSeriesObject.type */
   var `type`: String = js.native
-  /** Switches the series from the hover state back to normal. */
+  /** @name baseSeriesObject.clearHover() */
   def clearHover(): Unit = js.native
-  /** Cancels the selection of this particular series. The series is displayed in its initial style. */
+  /** @name baseSeriesObject.clearSelection() */
   def clearSelection(): Unit = js.native
-  /** Deselects the specified point. The point is displayed in an initial style. */
+  /** @name baseSeriesObject.deselectPoint(point) */
   def deselectPoint(point: basePointObject): Unit = js.native
-  /** Gets all points in the series. */
+  /** @name baseSeriesObject.getAllPoints() */
   def getAllPoints(): js.Array[basePointObject] = js.native
-  /** Gets the color of a particular series. */
+  /** @name baseSeriesObject.getColor() */
   def getColor(): String = js.native
-  /** Gets a series point with the specified index. */
+  /** @name baseSeriesObject.getPointByPos(positionIndex) */
   def getPointByPos(positionIndex: Double): basePointObject = js.native
   def getPointsByArg(pointArg: String): js.Array[basePointObject] = js.native
-  /** Gets a series point with the specified argument value. */
+  /** @name baseSeriesObject.getPointsByArg(pointArg) */
   def getPointsByArg(pointArg: Double): js.Array[basePointObject] = js.native
   def getPointsByArg(pointArg: Date): js.Array[basePointObject] = js.native
-  /** Gets visible series points. */
+  /** @name baseSeriesObject.getVisiblePoints() */
   def getVisiblePoints(): js.Array[basePointObject] = js.native
-  /** Hides a series at runtime. */
+  /** @name baseSeriesObject.hide() */
   def hide(): Unit = js.native
-  /** Switches the series into the hover state, the same as when a user places the mouse pointer on it. */
+  /** @name baseSeriesObject.hover() */
   def hover(): Unit = js.native
-  /** Provides information about the hover state of a series. */
+  /** @name baseSeriesObject.isHovered() */
   def isHovered(): Boolean = js.native
-  /** Provides information about the selection state of a series. */
+  /** @name baseSeriesObject.isSelected() */
   def isSelected(): Boolean = js.native
-  /** Provides information about the visibility state of a series. */
+  /** @name baseSeriesObject.isVisible() */
   def isVisible(): Boolean = js.native
-  /** Selects the series. */
+  /** @name baseSeriesObject.select() */
   def select(): Unit = js.native
-  /** Selects the specified point. The point is displayed in a 'selected' style. */
+  /** @name baseSeriesObject.selectPoint(point) */
   def selectPoint(point: basePointObject): Unit = js.native
-  /** Makes a particular series visible. */
+  /** @name baseSeriesObject.show() */
   def show(): Unit = js.native
 }
 

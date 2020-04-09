@@ -50,45 +50,45 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxBarGaugeOptions extends BaseWidgetOptions[dxBarGauge] {
-  /** Specifies animation options. */
+  /** @name dxBarGauge.Options.animation */
   var animation: js.UndefOr[js.Any] = js.undefined
-  /** Specifies a color for the remaining segment of the bar's track. */
+  /** @name dxBarGauge.Options.backgroundColor */
   var backgroundColor: js.UndefOr[String] = js.undefined
-  /** Specifies a distance between bars in pixels. */
+  /** @name dxBarGauge.Options.barSpacing */
   var barSpacing: js.UndefOr[Double] = js.undefined
-  /** Specifies a base value for bars. */
+  /** @name dxBarGauge.Options.baseValue */
   var baseValue: js.UndefOr[Double] = js.undefined
-  /** Specifies an end value for the gauge's invisible scale. */
+  /** @name dxBarGauge.Options.endValue */
   var endValue: js.UndefOr[Double] = js.undefined
-  /** Defines the shape of the gauge's arc. */
+  /** @name dxBarGauge.Options.geometry */
   var geometry: js.UndefOr[AnonEndAngle] = js.undefined
-  /** Specifies the options of the labels that accompany gauge bars. */
+  /** @name dxBarGauge.Options.label */
   var label: js.UndefOr[AnonConnectorColor] = js.undefined
-  /** Configures the legend. */
+  /** @name dxBarGauge.Options.legend */
   var legend: js.UndefOr[dxBarGaugeLegend] = js.undefined
-  /** Configures the loading indicator. */
+  /** @name dxBarGauge.Options.loadingIndicator */
   @JSName("loadingIndicator")
   var loadingIndicator_dxBarGaugeOptions: js.UndefOr[dxBarGaugeLoadingIndicator] = js.undefined
-  /** A function that is executed when a tooltip becomes hidden. */
+  /** @name dxBarGauge.Options.onTooltipHidden */
   var onTooltipHidden: js.UndefOr[js.Function1[/* e */ AnonComponentDxBarGauge, _]] = js.undefined
-  /** A function that is executed when a tooltip appears. */
+  /** @name dxBarGauge.Options.onTooltipShown */
   var onTooltipShown: js.UndefOr[js.Function1[/* e */ AnonComponentDxBarGauge, _]] = js.undefined
-  /** Sets the palette to be used for colorizing bars in the gauge. */
+  /** @name dxBarGauge.Options.palette */
   var palette: js.UndefOr[
     js.Array[String] | Bright | Default | (`Harmony Light`) | Ocean | Pastel | Soft | (`Soft Pastel`) | Vintage | Violet | Carmine | (`Dark Moon`) | (`Dark Violet`) | (`Green Mist`) | (`Soft Blue`) | Material | Office
   ] = js.undefined
-  /** Specifies what to do with colors in the palette when their number is less than the number of bars in the gauge. */
+  /** @name dxBarGauge.Options.paletteExtensionMode */
   var paletteExtensionMode: js.UndefOr[alternate | blend | extrapolate] = js.undefined
-  /** Defines the radius of the bar that is closest to the center relatively to the radius of the topmost bar. */
+  /** @name dxBarGauge.Options.relativeInnerRadius */
   var relativeInnerRadius: js.UndefOr[Double] = js.undefined
-  /** Specifies how the widget should behave when bar labels overlap: hide certain labels or leave them overlapped. */
+  /** @name dxBarGauge.Options.resolveLabelOverlapping */
   var resolveLabelOverlapping: js.UndefOr[hide | none] = js.undefined
-  /** Specifies a start value for the gauge's invisible scale. */
+  /** @name dxBarGauge.Options.startValue */
   var startValue: js.UndefOr[Double] = js.undefined
-  /** Configures tooltips. */
+  /** @name dxBarGauge.Options.tooltip */
   @JSName("tooltip")
   var tooltip_dxBarGaugeOptions: js.UndefOr[dxBarGaugeTooltip] = js.undefined
-  /** Specifies the array of values to be indicated on a bar gauge. */
+  /** @name dxBarGauge.Options.values */
   var values: js.UndefOr[js.Array[Double]] = js.undefined
 }
 

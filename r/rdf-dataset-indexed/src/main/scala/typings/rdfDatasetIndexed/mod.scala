@@ -13,6 +13,9 @@ import scala.scalajs.js.annotation._
 object mod extends js.Object {
   def apply[Q /* <: BaseQuad */](): DatasetCore[Q, BaseQuad] = js.native
   def apply[Q /* <: BaseQuad */](quads: js.Array[Q]): DatasetCore[Q, BaseQuad] = js.native
-  def apply[Q /* <: BaseQuad */](quads: js.Array[Q], dataFactory: DataFactory[Q] with (DatasetCoreFactory[Q, Q, DatasetCore[Q, Q]])): DatasetCore[Q, BaseQuad] = js.native
+  def apply[Q /* <: BaseQuad */](
+    quads: js.Array[Q],
+    dataFactory: (DataFactory[Q, Q]) with (DatasetCoreFactory[Q, Q, DatasetCore[Q, Q]])
+  ): DatasetCore[Q, BaseQuad] = js.native
 }
 

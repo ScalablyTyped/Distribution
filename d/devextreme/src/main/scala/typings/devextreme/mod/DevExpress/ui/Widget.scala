@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Widget extends DOMComponent {
-  /** Sets focus on the widget. */
+  /** @name Widget.focus() */
   def focus(): Unit = js.native
-  /** Registers a handler to be executed when a user presses a specific key. */
+  /** @name Widget.registerKeyHandler(key, handler) */
   def registerKeyHandler(key: String, handler: js.Function): Unit = js.native
-  /** Repaints the widget without reloading data. Call it to update the widget's markup. */
+  /** @name Widget.repaint() */
   def repaint(): Unit = js.native
 }
 

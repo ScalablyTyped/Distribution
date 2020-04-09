@@ -1,5 +1,6 @@
 package typings.antd.breadcrumbItemMod
 
+import typings.antd.dropdownDropdownMod.DropDownProps
 import typings.antd.dropdownDropdownMod.OverlayFunc
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
@@ -13,6 +14,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BreadcrumbItemProps extends js.Object {
+  var dropdownProps: js.UndefOr[DropDownProps] = js.undefined
   var href: js.UndefOr[String] = js.undefined
   var onClick: js.UndefOr[MouseEventHandler[HTMLAnchorElement | HTMLSpanElement]] = js.undefined
   var overlay: js.UndefOr[ReactElement | OverlayFunc] = js.undefined
@@ -23,6 +25,7 @@ trait BreadcrumbItemProps extends js.Object {
 object BreadcrumbItemProps {
   @scala.inline
   def apply(
+    dropdownProps: DropDownProps = null,
     href: String = null,
     onClick: MouseEvent[HTMLAnchorElement | HTMLSpanElement, NativeMouseEvent] => Unit = null,
     overlay: ReactElement | OverlayFunc = null,
@@ -30,6 +33,7 @@ object BreadcrumbItemProps {
     separator: ReactNode = null
   ): BreadcrumbItemProps = {
     val __obj = js.Dynamic.literal()
+    if (dropdownProps != null) __obj.updateDynamic("dropdownProps")(dropdownProps.asInstanceOf[js.Any])
     if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (overlay != null) __obj.updateDynamic("overlay")(overlay.asInstanceOf[js.Any])

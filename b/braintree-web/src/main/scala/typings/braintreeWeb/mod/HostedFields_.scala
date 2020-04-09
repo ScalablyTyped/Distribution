@@ -90,6 +90,7 @@ trait HostedFields_ extends js.Object {
     * @function create
     * @param {object} options Creation options:
     * @param {Client} options.client A {@link Client} instance.
+    * @param {string} options.authorization A tokenizationKey or clientToken. Can be used in place of `options.client`.
     * @param {fieldOptions} options.fields A {@link module:braintree-web/hosted-fields~fieldOptions set of options for each field}.
     * @param {styleOptions} options.styles {@link module:braintree-web/hosted-fields~styleOptions Styles} applied to each field.
     * @param {callback} callback The second argument, `data`, is the {@link HostedFields} instance.

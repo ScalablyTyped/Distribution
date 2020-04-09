@@ -25,6 +25,7 @@ trait AmqpConnectionManager extends EventEmitter {
   	 * Create a new ChannelWrapper. This is a proxy for the actual channel (which may or may not exist at any moment, depending on whether or not we are currently connected.)
   	 * @param opts
   	 */
+  def createChannel(): ChannelWrapper = js.native
   def createChannel(opts: CreateChannelOpts): ChannelWrapper = js.native
   /**
   	 * Returns true if the AmqpConnectionManager is connected to a broker, false otherwise.

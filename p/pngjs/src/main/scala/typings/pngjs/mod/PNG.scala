@@ -30,14 +30,15 @@ class PNG () extends Duplex {
     deltaX: js.UndefOr[Double],
     deltaY: js.UndefOr[Double]
   ): PNG = js.native
+  def on(event: String, callback: js.ThisFunction1[/* this */ this.type, /* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("on")
-  def on_close(event: close, callback: js.Function0[Unit]): this.type = js.native
+  def on_close(event: close, callback: js.ThisFunction0[/* this */ this.type, Unit]): this.type = js.native
   @JSName("on")
-  def on_error(event: error, callback: js.Function1[/* error */ Error, Unit]): this.type = js.native
+  def on_error(event: error, callback: js.ThisFunction1[/* this */ this.type, /* error */ Error, Unit]): this.type = js.native
   @JSName("on")
-  def on_metadata(event: metadata, callback: js.Function1[/* metadata */ Metadata, Unit]): this.type = js.native
+  def on_metadata(event: metadata, callback: js.ThisFunction1[/* this */ this.type, /* metadata */ Metadata, Unit]): this.type = js.native
   @JSName("on")
-  def on_parsed(event: parsed, callback: js.Function1[/* data */ Buffer, Unit]): this.type = js.native
+  def on_parsed(event: parsed, callback: js.ThisFunction1[/* this */ this.type, /* data */ Buffer, Unit]): this.type = js.native
   def pack(): PNG = js.native
   def parse(data: String): PNG = js.native
   def parse(data: String, callback: js.Function2[/* error */ Error, /* data */ this.type, Unit]): PNG = js.native

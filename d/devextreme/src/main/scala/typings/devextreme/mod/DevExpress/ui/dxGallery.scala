@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait dxGallery extends CollectionWidget {
-  /** Shows a specific image. */
+  /** @name dxGallery.goToItem(itemIndex, animation) */
   def goToItem(itemIndex: Double, animation: Boolean): Promise[Unit] with JQueryPromise[Unit] = js.native
-  /** Shows the next image. */
+  /** @name dxGallery.nextItem(animation) */
   def nextItem(animation: Boolean): Promise[Unit] with JQueryPromise[Unit] = js.native
-  /** Shows the previous image. */
+  /** @name dxGallery.prevItem(animation) */
   def prevItem(animation: Boolean): Promise[Unit] with JQueryPromise[Unit] = js.native
 }
 

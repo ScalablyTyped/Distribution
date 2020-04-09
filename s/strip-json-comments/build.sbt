@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "strip-json-comments"
-version := "3.0.1-7bba44"
+version := "3.1.0-bf17d3"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

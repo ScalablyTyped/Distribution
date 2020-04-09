@@ -17,6 +17,7 @@ import typings.mendixmodelsdk.pagesMod.pages.ClientTemplate
 import typings.mendixmodelsdk.pagesMod.pages.DataSource
 import typings.mendixmodelsdk.pagesMod.pages.IPage
 import typings.mendixmodelsdk.pagesMod.pages.Icon
+import typings.mendixmodelsdk.pagesMod.pages.PageVariable
 import typings.mendixmodelsdk.pagesMod.pages.Widget
 import typings.mendixmodelsdk.textsMod.texts.Text
 import scala.scalajs.js
@@ -117,6 +118,13 @@ class WidgetValue protected () extends Element {
   def page_Union(): IPage | Null = js.native
   def primitiveValue(): String = js.native
   def primitiveValue(newValue: String): js.Any = js.native
+  def sourceVariable(): js.Any = js.native
+  def sourceVariable(newValue: PageVariable): js.Any = js.native
+  /**
+    * In version 8.8.0: introduced
+    */
+  @JSName("sourceVariable")
+  def sourceVariable_Union(): PageVariable | Null = js.native
   def textTemplate(): js.Any = js.native
   def textTemplate(newValue: ClientTemplate): js.Any = js.native
   /**

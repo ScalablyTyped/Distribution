@@ -54,24 +54,6 @@ class ScriptType protected () extends EventHandler {
     */
   var app: Application = js.native
   /**
-    * @field
-    * @static
-    * @readonly
-    * @name pc.ScriptType#attributes
-    * @type {pc.ScriptAttributes}
-    * @description The interface to define attributes for Script Types. Refer to {@link pc.ScriptAttributes}.
-    * @example
-    * var PlayerController = pc.createScript('playerController');
-    *
-    * PlayerController.attributes.add('speed', {
-    *     type: 'number',
-    *     title: 'Speed',
-    *     placeholder: 'km/h',
-    *     default: 22.2
-    * });
-    */
-  val attributes: ScriptAttributes = js.native
-  /**
     * True if the instance of this type is in running state. False
     * when script is not running, because the Entity or any of its parents are disabled or the
     * Script Component is disabled or the Script Instance is disabled. When disabled no update
@@ -123,6 +105,24 @@ class ScriptType protected () extends EventHandler {
 @JSGlobal("pc.ScriptType")
 @js.native
 object ScriptType extends js.Object {
+  /**
+    * @field
+    * @static
+    * @readonly
+    * @name pc.ScriptType.attributes
+    * @type {pc.ScriptAttributes}
+    * @description The interface to define attributes for Script Types. Refer to {@link pc.ScriptAttributes}.
+    * @example
+    * var PlayerController = pc.createScript('playerController');
+    *
+    * PlayerController.attributes.add('speed', {
+    *     type: 'number',
+    *     title: 'Speed',
+    *     placeholder: 'km/h',
+    *     default: 22.2
+    * });
+    */
+  val attributes: ScriptAttributes = js.native
   /**
     * @readonly
     * @static

@@ -1,13 +1,16 @@
 package typings.reactSplitPane
 
-import typings.reactSplitPane.mod.Props
+import typings.reactSplitPane.mod.SplitPaneProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait reactSplitPaneProps {
   @scala.inline
-  def ReactSplitPaneProps: Props.type = typings.reactSplitPane.mod.Props
-  type ReactSplitPaneProps = Props
+  def PaneProps: typings.reactSplitPane.mod.PaneProps.type = typings.reactSplitPane.mod.PaneProps
+  type PaneProps = typings.reactSplitPane.mod.PaneProps
+  @scala.inline
+  def ReactSplitPaneProps: SplitPaneProps.type = typings.reactSplitPane.mod.SplitPaneProps
+  type ReactSplitPaneProps = SplitPaneProps
 }
 

@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CreateApplicationMessage extends js.Object {
   /**
-    * The name of the application. Constraint: This name must be unique within your account. If the specified name already exists, the action returns an InvalidParameterValue error.
+    * The name of the application. Must be unique within your account.
     */
   var ApplicationName: typings.awsSdk.elasticbeanstalkMod.ApplicationName = js.native
   /**
-    * Describes the application.
+    * Your description of the application.
     */
   var Description: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.Description] = js.native
   /**
-    * Specify an application resource lifecycle configuration to prevent your application from accumulating too many versions.
+    * Specifies an application resource lifecycle configuration to prevent your application from accumulating too many versions.
     */
   var ResourceLifecycleConfig: js.UndefOr[ApplicationResourceLifecycleConfig] = js.native
   /**

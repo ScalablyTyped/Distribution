@@ -12,9 +12,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxChartValueAxisConstantLineStyleLabel extends dxChartCommonAxisSettingsConstantLineStyleLabel {
-  /** Aligns constant line labels in the horizontal direction. */
+  /** @name dxChart.Options.valueAxis.constantLineStyle.label.horizontalAlignment */
   var horizontalAlignment: js.UndefOr[center | left | right] = js.undefined
-  /** Aligns constant line labels in the vertical direction. */
+  /** @name dxChart.Options.valueAxis.constantLineStyle.label.verticalAlignment */
   var verticalAlignment: js.UndefOr[bottom | center | top] = js.undefined
 }
 

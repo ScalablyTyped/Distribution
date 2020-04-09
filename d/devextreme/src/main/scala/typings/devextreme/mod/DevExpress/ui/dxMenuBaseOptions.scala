@@ -24,21 +24,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxMenuBaseOptions[T] extends HierarchicalCollectionWidgetOptions[T] {
-  /** Configures widget visibility animations. This object contains two fields: show and hide. */
+  /** @name dxMenuBase.Options.animation */
   var animation: js.UndefOr[AnonHide] = js.undefined
-  /** Specifies the name of the CSS class to be applied to the root menu level and all submenus. */
+  /** @name dxMenuBase.Options.cssClass */
   var cssClass: js.UndefOr[String] = js.undefined
-  /** Binds the widget to data. */
+  /** @name dxMenuBase.Options.dataSource */
   @JSName("dataSource")
   var dataSource_dxMenuBaseOptions: js.UndefOr[String | js.Array[dxMenuBaseItem] | DataSource | DataSourceOptions] = js.undefined
-  /** Holds an array of menu items. */
+  /** @name dxMenuBase.Options.items */
   @JSName("items")
   var items_dxMenuBaseOptions: js.UndefOr[js.Array[dxMenuBaseItem]] = js.undefined
-  /** Specifies whether or not an item becomes selected if a user clicks it. */
+  /** @name dxMenuBase.Options.selectByClick */
   var selectByClick: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the selection mode supported by the menu. */
+  /** @name dxMenuBase.Options.selectionMode */
   var selectionMode: js.UndefOr[none | single_] = js.undefined
-  /** Specifies options of submenu showing and hiding. */
+  /** @name dxMenuBase.Options.showSubmenuMode */
   var showSubmenuMode: js.UndefOr[AnonDelayName | onClick | onHover] = js.undefined
 }
 

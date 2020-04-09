@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@carbon/pictograms-react", "AlchemyLanguageAlphabetAExpanded")
 @js.native
-object AlchemyLanguageAlphabetAExpanded extends TopLevel[CarbonPictogram]
+object AlchemyLanguageAlphabetAExpanded extends TopLevel[CarbonPictogramType]
 

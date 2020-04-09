@@ -10,6 +10,10 @@ trait IBarChartOptions extends IChartOptions {
   var axisX: js.UndefOr[IBarChartAxis] = js.undefined
   var axisY: js.UndefOr[IBarChartAxis] = js.undefined
   var chartPadding: js.UndefOr[IChartPadding] = js.undefined
+  /**
+    * Override the class names that are used to generate the SVG structure of the chart
+    */
+  var classNames: js.UndefOr[IBarChartClasses] = js.undefined
   var distributeSeries: js.UndefOr[Boolean] = js.undefined
   var height: js.UndefOr[Double | String] = js.undefined
   var high: js.UndefOr[Double] = js.undefined
@@ -32,6 +36,7 @@ object IBarChartOptions {
     axisX: IBarChartAxis = null,
     axisY: IBarChartAxis = null,
     chartPadding: IChartPadding = null,
+    classNames: IBarChartClasses = null,
     distributeSeries: js.UndefOr[Boolean] = js.undefined,
     height: Double | String = null,
     high: Int | Double = null,
@@ -50,6 +55,7 @@ object IBarChartOptions {
     if (axisX != null) __obj.updateDynamic("axisX")(axisX.asInstanceOf[js.Any])
     if (axisY != null) __obj.updateDynamic("axisY")(axisY.asInstanceOf[js.Any])
     if (chartPadding != null) __obj.updateDynamic("chartPadding")(chartPadding.asInstanceOf[js.Any])
+    if (classNames != null) __obj.updateDynamic("classNames")(classNames.asInstanceOf[js.Any])
     if (!js.isUndefined(distributeSeries)) __obj.updateDynamic("distributeSeries")(distributeSeries.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (high != null) __obj.updateDynamic("high")(high.asInstanceOf[js.Any])

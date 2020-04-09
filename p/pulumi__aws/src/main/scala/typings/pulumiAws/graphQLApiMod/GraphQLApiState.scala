@@ -52,6 +52,10 @@ trait GraphQLApiState extends js.Object {
     * The Amazon Cognito User Pool configuration. Defined below.
     */
   val userPoolConfig: js.UndefOr[Input[GraphQLApiUserPoolConfig]] = js.native
+  /**
+    * Whether tracing with X-ray is enabled. Defaults to false.
+    */
+  val xrayEnabled: js.UndefOr[Input[Boolean]] = js.native
 }
 
 object GraphQLApiState {
@@ -66,7 +70,8 @@ object GraphQLApiState {
     schema: Input[String] = null,
     tags: Input[StringDictionary[_]] = null,
     uris: Input[StringDictionary[Input[String]]] = null,
-    userPoolConfig: Input[GraphQLApiUserPoolConfig] = null
+    userPoolConfig: Input[GraphQLApiUserPoolConfig] = null,
+    xrayEnabled: Input[Boolean] = null
   ): GraphQLApiState = {
     val __obj = js.Dynamic.literal()
     if (additionalAuthenticationProviders != null) __obj.updateDynamic("additionalAuthenticationProviders")(additionalAuthenticationProviders.asInstanceOf[js.Any])
@@ -79,6 +84,7 @@ object GraphQLApiState {
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     if (uris != null) __obj.updateDynamic("uris")(uris.asInstanceOf[js.Any])
     if (userPoolConfig != null) __obj.updateDynamic("userPoolConfig")(userPoolConfig.asInstanceOf[js.Any])
+    if (xrayEnabled != null) __obj.updateDynamic("xrayEnabled")(xrayEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLApiState]
   }
 }

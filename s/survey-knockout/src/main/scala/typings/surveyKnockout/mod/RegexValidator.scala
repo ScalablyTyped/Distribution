@@ -8,6 +8,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class RegexValidator () extends SurveyValidator {
   def this(regex: String) = this()
+  /**
+    * The regex property.
+    */
   var regex: String = js.native
 }
 

@@ -12,7 +12,8 @@ import scala.scalajs.js.annotation._
 trait StructureFactory
   extends OwnedStructure[STRUCTURE_FACTORY]
      with AnyOwnedStructure
-     with AnyStoreStructure {
+     with AnyStoreStructure
+     with ConcreteStructure[js.Any] {
   /**
     * The amount of game ticks the factory has to wait until the next produce is possible.
     */

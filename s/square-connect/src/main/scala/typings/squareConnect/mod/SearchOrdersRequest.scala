@@ -10,7 +10,7 @@ class SearchOrdersRequest () extends js.Object {
   /**
     * A pagination cursor returned by a previous call to this endpoint.
     * Provide this to retrieve the next set of results for your original query.
-    * See [Pagination](/basics/api101/pagination) for more information.
+    * See [Pagination](https://developer.squareup.com/docs/basics/api101/pagination) for more information.
     */
   var cursor: js.UndefOr[String] = js.native
   /**
@@ -30,8 +30,9 @@ class SearchOrdersRequest () extends js.Object {
   var query: js.UndefOr[SearchOrdersQuery] = js.native
   /**
     * Boolean that controls the format of the search results.
-    * - If `true`, SearchOrders will return [`OrderEntry`](#type-orderentry) objects.
-    * - If `false`, SearchOrders will return complete Order objects. Default: `false`.
+    *  - If `true`, SearchOrders will return `OrderEntry` objects.
+    *  - If `false`, SearchOrders will return complete Order objects.
+    *  Default: `false`.
     */
   var return_entries: js.UndefOr[Boolean] = js.native
 }

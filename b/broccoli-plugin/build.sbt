@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "broccoli-plugin"
-version := "4.0.1-40e345"
+version := "4.0.2-9607d0"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "broccoli-node-api" % "1.7.0-b85e5d",
-  "org.scalablytyped" %%% "broccoli-output-wrapper" % "3.2.1-7a803e",
-  "org.scalablytyped" %%% "fs-merger" % "3.0.2-cbba47",
+  "org.scalablytyped" %%% "broccoli-output-wrapper" % "3.2.1-48af6a",
+  "org.scalablytyped" %%% "fs-merger" % "3.0.2-e50304",
   "org.scalablytyped" %%% "minimatch" % "3.0-dt-20200226Z-1967d2",
-  "org.scalablytyped" %%% "node" % "13.9-dt-20200318Z-96a265",
+  "org.scalablytyped" %%% "node" % "13.11-dt-20200402Z-9a87f0",
   "org.scalablytyped" %%% "std" % "3.8-a0108c",
   "org.scalablytyped" %%% "walk-sync" % "2.0.2-3f7773")
 publishArtifact in packageDoc := false

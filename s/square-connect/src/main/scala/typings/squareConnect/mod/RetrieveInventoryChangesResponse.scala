@@ -14,7 +14,7 @@ class RetrieveInventoryChangesResponse () extends js.Object {
   var changes: js.UndefOr[js.Array[InventoryChange]] = js.native
   /**
     * The pagination cursor to be used in a subsequent request. If unset, this is the final response.
-    * See [Pagination](/basics/api101/pagination) for more information.
+    * See the [Pagination](https://developer.squareup.com/docs/docs/working-with-apis/pagination) guide for more information.
     */
   var cursor: js.UndefOr[String] = js.native
   /**

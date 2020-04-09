@@ -2,6 +2,7 @@ package typings.typedRestClient.restClientMod
 
 import typings.node.NodeJS.ReadableStream
 import typings.typedRestClient.httpClientMod.HttpClient
+import typings.typedRestClient.httpClientMod.HttpClientResponse
 import typings.typedRestClient.interfacesMod.IRequestHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -45,7 +46,6 @@ class RestClient () extends js.Object {
   ) = this()
   var _baseUrl: js.Any = js.native
   var _headersFromOptions: js.Any = js.native
-  var _processResponse: js.Any = js.native
   var client: HttpClient = js.native
   var versionParam: String = js.native
   /**
@@ -81,6 +81,7 @@ class RestClient () extends js.Object {
     */
   def options[T](requestUrl: String): js.Promise[IRestResponse[T]] = js.native
   def options[T](requestUrl: String, options: IRequestOptions): js.Promise[IRestResponse[T]] = js.native
+  /* protected */ def processResponse[T](res: HttpClientResponse, options: IRequestOptions): js.Promise[IRestResponse[T]] = js.native
   /**
     * Replaces resource(s) from an endpoint
     * T type of object returned.

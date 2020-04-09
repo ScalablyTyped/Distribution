@@ -12,6 +12,7 @@ import typings.react.mod.FormEvent
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
@@ -188,7 +189,7 @@ object FooterLinkListProps {
     onProgress: SyntheticEvent[FooterLinkList, Event_] => Unit = null,
     onRateChange: SyntheticEvent[FooterLinkList, Event_] => Unit = null,
     onReset: FormEvent[FooterLinkList] => Unit = null,
-    onScroll: UIEvent[FooterLinkList] => Unit = null,
+    onScroll: UIEvent[FooterLinkList, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[FooterLinkList, Event_] => Unit = null,
     onSeeking: SyntheticEvent[FooterLinkList, Event_] => Unit = null,
     onSelect: SyntheticEvent[FooterLinkList, Event_] => Unit = null,

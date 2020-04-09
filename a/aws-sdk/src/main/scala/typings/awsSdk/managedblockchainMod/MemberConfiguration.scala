@@ -15,6 +15,10 @@ trait MemberConfiguration extends js.Object {
     */
   var FrameworkConfiguration: MemberFrameworkConfiguration = js.native
   /**
+    * 
+    */
+  var LogPublishingConfiguration: js.UndefOr[MemberLogPublishingConfiguration] = js.native
+  /**
     * The name of the member.
     */
   var Name: NetworkMemberNameString = js.native
@@ -25,10 +29,12 @@ object MemberConfiguration {
   def apply(
     FrameworkConfiguration: MemberFrameworkConfiguration,
     Name: NetworkMemberNameString,
-    Description: DescriptionString = null
+    Description: DescriptionString = null,
+    LogPublishingConfiguration: MemberLogPublishingConfiguration = null
   ): MemberConfiguration = {
     val __obj = js.Dynamic.literal(FrameworkConfiguration = FrameworkConfiguration.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
+    if (LogPublishingConfiguration != null) __obj.updateDynamic("LogPublishingConfiguration")(LogPublishingConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[MemberConfiguration]
   }
 }

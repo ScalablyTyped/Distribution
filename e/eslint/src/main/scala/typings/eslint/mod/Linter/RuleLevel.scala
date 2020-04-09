@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
   - typings.eslint.eslintStrings.warn
   - typings.eslint.eslintStrings.error
 */
-trait RuleLevel extends js.Object
+trait RuleLevel extends RuleEntry
 
 object RuleLevel {
   @scala.inline

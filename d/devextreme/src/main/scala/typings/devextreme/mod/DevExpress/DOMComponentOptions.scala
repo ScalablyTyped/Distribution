@@ -8,20 +8,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DOMComponentOptions[T] extends ComponentOptions[T] {
+  /** @name DOMComponent.Options.bindingOptions */
   var bindingOptions: js.UndefOr[js.Any] = js.undefined
-  /** Specifies the attributes to be attached to the widget's root element. */
+  /** @name DOMComponent.Options.elementAttr */
   var elementAttr: js.UndefOr[js.Any] = js.undefined
-  /** Specifies the widget's height. */
+  /** @name DOMComponent.Options.height */
   var height: js.UndefOr[Double | String | (js.Function0[Double | String])] = js.undefined
-  /** A function that is executed before the widget is disposed of. */
+  /** @name DOMComponent.Options.onDisposing */
   @JSName("onDisposing")
   var onDisposing_DOMComponentOptions: js.UndefOr[js.Function1[/* e */ AnonModel[T], _]] = js.undefined
-  /** A function that is executed after a widget option is changed. */
+  /** @name DOMComponent.Options.onOptionChanged */
   @JSName("onOptionChanged")
   var onOptionChanged_DOMComponentOptions: js.UndefOr[js.Function1[/* e */ AnonName[T], _]] = js.undefined
-  /** Switches the widget to a right-to-left representation. */
+  /** @name DOMComponent.Options.rtlEnabled */
   var rtlEnabled: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the widget's width. */
+  /** @name DOMComponent.Options.width */
   var width: js.UndefOr[Double | String | (js.Function0[Double | String])] = js.undefined
 }
 

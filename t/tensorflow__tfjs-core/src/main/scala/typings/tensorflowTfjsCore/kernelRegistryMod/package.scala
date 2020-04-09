@@ -8,18 +8,15 @@ package object kernelRegistryMod {
   type Attribute = typings.tensorflowTfjsCore.kernelRegistryMod.AttributeValue | typings.tensorflowTfjsCore.distTypesMod.RecursiveArray[typings.tensorflowTfjsCore.kernelRegistryMod.AttributeValue]
   type AttributeValue = scala.Double | (js.Array[scala.Boolean | scala.Double | java.lang.String]) | scala.Boolean | java.lang.String | typings.tensorflowTfjsCore.kernelRegistryMod.NamedAttrMap
   type DataId = js.Object
-  type GradFunc = js.Function2[
+  type GradFunc = js.Function3[
     /* dy */ typings.tensorflowTfjsCore.tensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | (js.Array[
       typings.tensorflowTfjsCore.tensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
     ]), 
     /* saved */ js.Array[
       typings.tensorflowTfjsCore.tensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
     ], 
-    org.scalablytyped.runtime.StringDictionary[
-      js.Function0[
-        typings.tensorflowTfjsCore.tensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
-      ]
-    ]
+    /* attrs */ typings.tensorflowTfjsCore.kernelRegistryMod.NamedAttrMap, 
+    typings.tensorflowTfjsCore.tapeMod.NamedGradientMap
   ]
   type KernelDisposeFunc = typings.tensorflowTfjsCore.kernelRegistryMod.KernelSetupFunc
   type KernelFunc = js.Function1[

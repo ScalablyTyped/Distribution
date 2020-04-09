@@ -5,29 +5,29 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CustomFileProviderOptions extends FileProviderOptions[CustomFileProvider] {
-  /** A function that cancels the file upload. */
+  /** @name CustomFileProvider.Options.abortFileUpload */
   var abortFileUpload: js.UndefOr[js.Function] = js.undefined
-  /** A function that copies files or folders. */
+  /** @name CustomFileProvider.Options.copyItem */
   var copyItem: js.UndefOr[js.Function] = js.undefined
-  /** A function that creates a folder. */
+  /** @name CustomFileProvider.Options.createDirectory */
   var createDirectory: js.UndefOr[js.Function] = js.undefined
-  /** A function that deletes a file or folder. */
+  /** @name CustomFileProvider.Options.deleteItem */
   var deleteItem: js.UndefOr[js.Function] = js.undefined
-  /** A function that downloads a file or folder. */
+  /** @name CustomFileProvider.Options.downloadItems */
   var downloadItems: js.UndefOr[js.Function] = js.undefined
-  /** A function that gets file system items. */
+  /** @name CustomFileProvider.Options.getItems */
   var getItems: js.UndefOr[js.Function] = js.undefined
-  /** A function that get items content. */
+  /** @name CustomFileProvider.Options.getItemsContent */
   var getItemsContent: js.UndefOr[js.Function] = js.undefined
-  /** A function or the name of a data source field that provides information on whether a file or folder contains sub directories. */
+  /** @name CustomFileProvider.Options.hasSubDirectoriesExpr */
   var hasSubDirectoriesExpr: js.UndefOr[String | js.Function] = js.undefined
-  /** A function that moves files and folders. */
+  /** @name CustomFileProvider.Options.moveItem */
   var moveItem: js.UndefOr[js.Function] = js.undefined
-  /** A function that renames files and folders. */
+  /** @name CustomFileProvider.Options.renameItem */
   var renameItem: js.UndefOr[js.Function] = js.undefined
-  /** Specifies a chunk size in bytes. */
+  /** @name CustomFileProvider.Options.uploadChunkSize */
   var uploadChunkSize: js.UndefOr[Double] = js.undefined
-  /** A function that uploads a file in chunks. */
+  /** @name CustomFileProvider.Options.uploadFileChunk */
   var uploadFileChunk: js.UndefOr[js.Function] = js.undefined
 }
 

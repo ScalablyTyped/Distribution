@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait FirehoseDeliveryStreamSplunkConfigurationProcessingConfiguration extends js.Object {
   /**
-    * Defaults to `true`. Set it to `false` if you want to disable format conversion while preserving the configuration details.
+    * Enables or disables data processing.
     */
   var enabled: js.UndefOr[Input[Boolean]] = js.native
   /**

@@ -6,14 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxChartArgumentAxisStrips extends dxChartCommonAxisSettingsStripStyle {
-  /** Specifies the color of the strip. */
+  /** @name dxChart.Options.argumentAxis.strips.color */
   var color: js.UndefOr[String] = js.undefined
-  /** Along with the startValue option, limits the strip. */
+  /** @name dxChart.Options.argumentAxis.strips.endValue */
   var endValue: js.UndefOr[Double | Date | String] = js.undefined
-  /** Configures the strip label. */
+  /** @name dxChart.Options.argumentAxis.strips.label */
   @JSName("label")
   var label_dxChartArgumentAxisStrips: js.UndefOr[dxChartArgumentAxisStripsLabel] = js.undefined
-  /** Along with the endValue option, limits the strip. */
+  /** @name dxChart.Options.argumentAxis.strips.startValue */
   var startValue: js.UndefOr[Double | Date | String] = js.undefined
 }
 

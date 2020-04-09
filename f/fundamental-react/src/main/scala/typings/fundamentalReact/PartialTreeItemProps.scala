@@ -65,6 +65,7 @@ import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
@@ -405,7 +406,7 @@ object PartialTreeItemProps {
     onProgress: SyntheticEvent[HTMLLIElement, Event_] => Unit = null,
     onRateChange: SyntheticEvent[HTMLLIElement, Event_] => Unit = null,
     onReset: FormEvent[HTMLLIElement] => Unit = null,
-    onScroll: UIEvent[HTMLLIElement] => Unit = null,
+    onScroll: UIEvent[HTMLLIElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[HTMLLIElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[HTMLLIElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[HTMLLIElement, Event_] => Unit = null,

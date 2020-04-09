@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait SavingsPlansPurchaseRecommendation extends js.Object {
   /**
+    * The account scope that you want your recommendations for. Amazon Web Services calculates recommendations including the payer account and linked accounts if the value is set to PAYER. If the value is LINKED, recommendations are calculated for individual linked accounts only.
+    */
+  var AccountScope: js.UndefOr[typings.awsSdk.costexplorerMod.AccountScope] = js.native
+  /**
     * The lookback period in days, used to generate the recommendation.
     */
   var LookbackPeriodInDays: js.UndefOr[typings.awsSdk.costexplorerMod.LookbackPeriodInDays] = js.native
@@ -35,6 +39,7 @@ trait SavingsPlansPurchaseRecommendation extends js.Object {
 object SavingsPlansPurchaseRecommendation {
   @scala.inline
   def apply(
+    AccountScope: AccountScope = null,
     LookbackPeriodInDays: LookbackPeriodInDays = null,
     PaymentOption: PaymentOption = null,
     SavingsPlansPurchaseRecommendationDetails: SavingsPlansPurchaseRecommendationDetailList = null,
@@ -43,6 +48,7 @@ object SavingsPlansPurchaseRecommendation {
     TermInYears: TermInYears = null
   ): SavingsPlansPurchaseRecommendation = {
     val __obj = js.Dynamic.literal()
+    if (AccountScope != null) __obj.updateDynamic("AccountScope")(AccountScope.asInstanceOf[js.Any])
     if (LookbackPeriodInDays != null) __obj.updateDynamic("LookbackPeriodInDays")(LookbackPeriodInDays.asInstanceOf[js.Any])
     if (PaymentOption != null) __obj.updateDynamic("PaymentOption")(PaymentOption.asInstanceOf[js.Any])
     if (SavingsPlansPurchaseRecommendationDetails != null) __obj.updateDynamic("SavingsPlansPurchaseRecommendationDetails")(SavingsPlansPurchaseRecommendationDetails.asInstanceOf[js.Any])

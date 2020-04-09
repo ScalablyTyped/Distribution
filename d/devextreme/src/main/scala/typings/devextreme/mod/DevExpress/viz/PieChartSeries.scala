@@ -14,9 +14,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PieChartSeries extends dxPieChartSeriesTypesCommonPieChartSeries {
-  /** Specifies the name that identifies the series. */
+  /** @name PieChartSeries.name */
   var name: js.UndefOr[String] = js.undefined
-  /** Specifies data about a series. */
+  /** @name PieChartSeries.tag */
   var tag: js.UndefOr[js.Any] = js.undefined
 }
 

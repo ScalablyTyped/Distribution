@@ -35,8 +35,8 @@ trait SumoLogger extends js.Object {
     * If you call the function with a JSON object, each field in the object is included as a separate field.
     * Fields called `sessionId`, `url`, and `timestamp` are sent in both cases.
     */
-  def log(message: String): Unit = js.native
-  def log(message: String, options: PerMessageOptions): Unit = js.native
+  def log(message: String): Boolean | js.Promise[_] = js.native
+  def log(message: String, options: PerMessageOptions): Boolean | js.Promise[_] = js.native
   /**
     * Set a log message to be sent.
     * All logs are sent as JSON objects.
@@ -44,7 +44,7 @@ trait SumoLogger extends js.Object {
     * If you call the function with a JSON object, each field in the object is included as a separate field.
     * Fields called `sessionId`, `url`, and `timestamp` are sent in both cases.
     */
-  def log[T /* <: js.Object */](event: PartialPerMessageOptions with T): Unit = js.native
+  def log[T /* <: js.Object */](event: PartialPerMessageOptions with T): Boolean | js.Promise[_] = js.native
   /**
     * Start sending batched logs at the preconfigured interval
     */

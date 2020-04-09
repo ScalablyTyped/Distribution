@@ -14,11 +14,19 @@ class QuestionTextModel protected () extends Question {
   var inputType: String = js.native
   val locPlaceHolder: LocalizableString = js.native
   /**
+    * The maximum value
+    */
+  var max: String = js.native
+  /**
     * The maximim text length. If it is -1, defaul value, then the survey maxTextLength property will be used.
     * If it is 0, then the value is unlimited
     * @see SurveyModel.maxTextLength
     */
   var maxLength: Double = js.native
+  /**
+    * The minimum value
+    */
+  var min: String = js.native
   /**
     * The input place holder.
     */
@@ -27,6 +35,10 @@ class QuestionTextModel protected () extends Question {
     * The text input size
     */
   var size: Double = js.native
+  /**
+    * The step value
+    */
+  var step: String = js.native
   /* protected */ def correctValueType(newValue: js.Any): js.Any = js.native
   def getMaxLength(): js.Any = js.native
 }

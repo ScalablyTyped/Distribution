@@ -7,6 +7,17 @@ import scala.scalajs.js.annotation._
 @JSImport("xregexp", "isInstalled")
 @js.native
 object isInstalled extends js.Object {
-  def apply(feature: String): Boolean = js.native
+  /**
+    * Checks whether an individual optional feature is installed.
+    *
+    * @param feature - Name of the feature to check. One of:
+    *   - `astral`
+    *   - `namespacing`
+    * @returns Whether the feature is installed.
+    * @example
+    *
+    * XRegExp.isInstalled('astral');
+    */
+  def apply(feature: Feature): Boolean = js.native
 }
 

@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.autolinker.AnonEmail
 import typings.autolinker.AnonHashtag
 import typings.autolinker.anchorTagBuilderMod.AnchorTagBuilderCfg
-import typings.autolinker.autolinkerStrings.`3Dot13Dot0`
+import typings.autolinker.autolinkerStrings.`3Dot14Dot0`
 import typings.autolinker.htmlTagMod.HtmlTagCfg
 import typings.autolinker.matchMatchMod.Match
 import scala.scalajs.js
@@ -264,6 +264,22 @@ class default () extends Autolinker {
   /* CompleteClass */
   override val replaceFn: js.Any = js.native
   /**
+    * @cfg {Boolean} [sanitizeHtml=false]
+    *
+    * `true` to HTML-encode the start and end brackets of existing HTML tags found
+    * in the input string. This will escape `<` and `>` characters to `&lt;` and
+    * `&gt;`, respectively.
+    *
+    * Setting this to `true` will prevent XSS (Cross-site Scripting) attacks,
+    * but will remove the significance of existing HTML tags in the input string. If
+    * you would like to maintain the significance of existing HTML tags while also
+    * making the output HTML string safe, leave this option as `false` and use a
+    * tool like https://github.com/cure53/DOMPurify (or others) on the input string
+    * before running Autolinker.
+    */
+  /* CompleteClass */
+  override val sanitizeHtml: js.Any = js.native
+  /**
     * @cfg {Boolean/Object} [stripPrefix=true]
     *
     * `true` if 'http://' (or 'https://') and/or the 'www.' should be stripped
@@ -410,7 +426,7 @@ class default () extends Autolinker {
     * Ex: 0.25.1
     */
   /* CompleteClass */
-  override val version: `3Dot13Dot0` = js.native
+  override val version: `3Dot14Dot0` = js.native
   /**
     * Automatically links URLs, Email addresses, Phone numbers, Hashtags,
     * and Mentions (Twitter, Instagram, Soundcloud) found in the given chunk of HTML. Does not link
@@ -501,7 +517,7 @@ object default extends js.Object {
     *
     * Ex: 0.25.1
     */
-  val version: `3Dot13Dot0` = js.native
+  val version: `3Dot14Dot0` = js.native
   /**
     * Automatically links URLs, Email addresses, Phone Numbers, Twitter handles,
     * Hashtags, and Mentions found in the given chunk of HTML. Does not link URLs

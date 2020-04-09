@@ -1,6 +1,5 @@
 package typings.validator
 
-import typings.validator.mod.validator.IsEmailOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,6 +13,7 @@ object isEmailMod extends js.Object {
     * @param [options] - Options
     */
   def default(str: String): Boolean = js.native
-  def default(str: String, options: IsEmailOptions): Boolean = js.native
+  def default(str: String, options: typings.validator.mod.validator.IsEmailOptions): Boolean = js.native
+  type IsEmailOptions = typings.validator.mod.validator.IsEmailOptions
 }
 

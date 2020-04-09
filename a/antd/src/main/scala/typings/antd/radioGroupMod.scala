@@ -29,7 +29,7 @@ object radioGroupMod extends js.Object {
   @js.native
   object default extends js.Object {
     var defaultProps: AnonButtonStyle = js.native
-    def getDerivedStateFromProps(nextProps: RadioGroupProps): AnonValueAny | Null = js.native
+    def getDerivedStateFromProps(nextProps: RadioGroupProps, prevState: RadioGroupState): PartialRadioGroupState = js.native
   }
   
 }

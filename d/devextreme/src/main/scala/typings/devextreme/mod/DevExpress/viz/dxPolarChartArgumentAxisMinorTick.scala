@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxPolarChartArgumentAxisMinorTick extends dxPolarChartCommonAxisSettingsMinorTick {
-  /** Shifts minor ticks from the reference position. */
+  /** @name dxPolarChart.Options.argumentAxis.minorTick.shift */
   var shift: js.UndefOr[Double] = js.undefined
 }
 

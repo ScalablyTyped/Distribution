@@ -7,11 +7,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxChartCommonAxisSettingsConstantLineStyleLabel extends js.Object {
-  /** Specifies font options for constant line labels. */
+  /** @name dxChart.Options.commonAxisSettings.constantLineStyle.label.font */
   var font: js.UndefOr[Font] = js.undefined
-  /** Specifies the position of constant line labels on the chart plot. */
+  /** @name dxChart.Options.commonAxisSettings.constantLineStyle.label.position */
   var position: js.UndefOr[inside | outside] = js.undefined
-  /** Makes constant line labels visible. */
+  /** @name dxChart.Options.commonAxisSettings.constantLineStyle.label.visible */
   var visible: js.UndefOr[Boolean] = js.undefined
 }
 

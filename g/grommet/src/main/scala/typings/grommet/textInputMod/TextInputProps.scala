@@ -27,8 +27,8 @@ trait TextInputProps extends js.Object {
   var messages: js.UndefOr[AnonEnterSelect] = js.undefined
   var name: js.UndefOr[String] = js.undefined
   var onSelect: js.UndefOr[js.Function1[/* x */ AnonSuggestion, Unit]] = js.undefined
-  var onSuggestionsClose: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
-  var onSuggestionsOpen: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
+  var onSuggestionsClose: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var onSuggestionsOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
   var placeholder: js.UndefOr[PlaceHolderType] = js.undefined
   var plain: js.UndefOr[Boolean] = js.undefined
   var reverse: js.UndefOr[Boolean] = js.undefined
@@ -50,8 +50,8 @@ object TextInputProps {
     messages: AnonEnterSelect = null,
     name: String = null,
     onSelect: /* x */ AnonSuggestion => Unit = null,
-    onSuggestionsClose: /* repeated */ js.Any => _ = null,
-    onSuggestionsOpen: /* repeated */ js.Any => _ = null,
+    onSuggestionsClose: () => Unit = null,
+    onSuggestionsOpen: () => Unit = null,
     placeholder: PlaceHolderType = null,
     plain: js.UndefOr[Boolean] = js.undefined,
     reverse: js.UndefOr[Boolean] = js.undefined,
@@ -70,8 +70,8 @@ object TextInputProps {
     if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1(onSelect))
-    if (onSuggestionsClose != null) __obj.updateDynamic("onSuggestionsClose")(js.Any.fromFunction1(onSuggestionsClose))
-    if (onSuggestionsOpen != null) __obj.updateDynamic("onSuggestionsOpen")(js.Any.fromFunction1(onSuggestionsOpen))
+    if (onSuggestionsClose != null) __obj.updateDynamic("onSuggestionsClose")(js.Any.fromFunction0(onSuggestionsClose))
+    if (onSuggestionsOpen != null) __obj.updateDynamic("onSuggestionsOpen")(js.Any.fromFunction0(onSuggestionsOpen))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain.asInstanceOf[js.Any])
     if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.asInstanceOf[js.Any])

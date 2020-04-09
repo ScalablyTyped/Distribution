@@ -10,6 +10,7 @@ package object signerMod {
     /* url */ js.UndefOr[java.lang.String], 
     scala.Unit
   ]
-  type GetSignedUrlResponse = java.lang.String
+  type GetSignedUrlResponse = js.Array[typings.googleCloudStorage.signerMod.SignerGetSignedUrlResponse]
   type Query = org.scalablytyped.runtime.StringDictionary[java.lang.String]
+  type SignerGetSignedUrlResponse = java.lang.String
 }

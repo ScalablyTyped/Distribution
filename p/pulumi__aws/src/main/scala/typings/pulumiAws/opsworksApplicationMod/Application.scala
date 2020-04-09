@@ -89,7 +89,7 @@ class Application protected () extends CustomResource {
     */
   val stackId: Output_[String] = js.native
   /**
-    * The type of source to use. For example, "archive".
+    * Opsworks application type. One of `aws-flow-ruby`, `java`, `rails`, `php`, `nodejs`, `static` or `other`.
     */
   val `type`: Output_[String] = js.native
 }

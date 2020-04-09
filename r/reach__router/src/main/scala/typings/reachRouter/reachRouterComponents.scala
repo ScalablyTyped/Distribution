@@ -10,8 +10,6 @@ import scala.scalajs.js.annotation._
 
 object reachRouterComponents extends reachRouterProps {
   @scala.inline
-  def Link[TState]: ComponentType[LinkProps[TState]] = js.constructorOf[typings.reachRouter.mod.Link[TState]].asInstanceOf[typings.react.mod.ComponentType[LinkProps[TState]]]
-  @scala.inline
   def Location: ComponentType[LocationProps] = js.constructorOf[typings.reachRouter.mod.Location].asInstanceOf[typings.react.mod.ComponentType[LocationProps]]
   @scala.inline
   def LocationProvider: ComponentType[LocationProviderProps] = js.constructorOf[typings.reachRouter.mod.LocationProvider].asInstanceOf[typings.react.mod.ComponentType[LocationProviderProps]]

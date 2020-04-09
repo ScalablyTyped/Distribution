@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class CatalogObjectBatch () extends js.Object {
   /**
-    * A list of [CatalogObject](#type-catalogobject)s belonging to this batch.
+    * A list of CatalogObjects belonging to this batch.
     */
-  var objects: js.UndefOr[js.Array[CatalogObject]] = js.native
+  var objects: js.Array[CatalogObject] = js.native
 }
 

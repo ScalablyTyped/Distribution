@@ -10,27 +10,27 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CustomStoreOptions extends StoreOptions[CustomStore] {
-  /** Specifies a custom implementation of the byKey(key) method. */
+  /** @name CustomStore.Options.byKey */
   var byKey: js.UndefOr[js.Function1[/* key */ js.Any | String | Double, Promise[_] | JQueryPromise[_]]] = js.undefined
-  /** Specifies whether raw data should be saved in the cache. Applies only if loadMode is "raw". */
+  /** @name CustomStore.Options.cacheRawData */
   var cacheRawData: js.UndefOr[Boolean] = js.undefined
-  /** Specifies a custom implementation of the insert(values) method. */
+  /** @name CustomStore.Options.insert */
   var insert: js.UndefOr[js.Function1[/* values */ js.Any, Promise[_] | JQueryPromise[_]]] = js.undefined
-  /** Specifies a custom implementation of the load(options) method. */
+  /** @name CustomStore.Options.load */
   var load: js.UndefOr[
     js.Function1[/* options */ LoadOptions, Promise[_] | JQueryPromise[_] | js.Array[_]]
   ] = js.undefined
-  /** Specifies how data returned by the load function is treated. */
+  /** @name CustomStore.Options.loadMode */
   var loadMode: js.UndefOr[processed | raw] = js.undefined
-  /** Specifies a custom implementation of the remove(key) method. */
+  /** @name CustomStore.Options.remove */
   var remove: js.UndefOr[
     js.Function1[/* key */ js.Any | String | Double, Promise[Unit] | JQueryPromise[Unit]]
   ] = js.undefined
-  /** Specifies a custom implementation of the totalCount(options) method. */
+  /** @name CustomStore.Options.totalCount */
   var totalCount: js.UndefOr[
     js.Function1[/* loadOptions */ AnonFilter, Promise[Double] | JQueryPromise[Double]]
   ] = js.undefined
-  /** Specifies a custom implementation of the update(key, values) method. */
+  /** @name CustomStore.Options.update */
   var update: js.UndefOr[
     js.Function2[
       /* key */ js.Any | String | Double, 
@@ -38,7 +38,7 @@ trait CustomStoreOptions extends StoreOptions[CustomStore] {
       Promise[_] | JQueryPromise[_]
     ]
   ] = js.undefined
-  /** Specifies whether the store combines the search and filter expressions. Defaults to true if the loadMode is "raw" and false if it is "processed". */
+  /** @name CustomStore.Options.useDefaultSearch */
   var useDefaultSearch: js.UndefOr[Boolean] = js.undefined
 }
 

@@ -13,7 +13,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxDataGridScrolling extends GridBaseScrolling {
-  /** Specifies the scrolling mode. */
+  /** @name dxDataGrid.Options.scrolling.mode */
   var mode: js.UndefOr[infinite | standard | virtual] = js.undefined
 }
 

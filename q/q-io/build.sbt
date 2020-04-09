@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "q-io"
-version := "0.0-unknown-dt-20200225Z-1d6fd3"
+version := "0.0-unknown-dt-20200225Z-d7748a"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "13.9-dt-20200318Z-96a265",
+  "org.scalablytyped" %%% "node" % "13.11-dt-20200402Z-9a87f0",
   "org.scalablytyped" %%% "q" % "1.5-dt-20200225Z-aa5e08",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false

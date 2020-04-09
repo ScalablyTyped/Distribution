@@ -238,7 +238,9 @@ trait Body extends js.Object {
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   /**
-    * Adds or replaces the signature of the email body.
+    * Adds or replaces the signature of the item body.
+    * 
+    * **Important**: In Outlook on the web, `setSignatureAsync` only works on messages.
     *
     * [Api set: Mailbox Preview]
     *

@@ -6,7 +6,13 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait DeploymentConfigTrafficRoutingConfigTimeBasedCanary extends js.Object {
+  /**
+    * The number of minutes between the first and second traffic shifts of a `TimeBasedCanary` deployment.
+    */
   var interval: js.UndefOr[Double] = js.native
+  /**
+    * The percentage of traffic to shift in the first increment of a `TimeBasedCanary` deployment.
+    */
   var percentage: js.UndefOr[Double] = js.native
 }
 

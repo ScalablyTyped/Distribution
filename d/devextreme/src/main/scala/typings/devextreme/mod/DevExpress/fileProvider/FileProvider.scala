@@ -7,7 +7,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FileProvider extends js.Object {
-  /** Gets the specified items' content. */
+  /** @name FileProvider.getItemContent() */
   def getItemContent(items: js.Array[_]): Promise[_] with JQueryPromise[_]
 }
 

@@ -39,7 +39,7 @@ import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - typings.devextreme.mod.DevExpress.ui.DataExpressionMixinOptions because var conflicts: value. Inlined dataSource, displayExpr, itemTemplate, items, valueExpr */ trait dxDropDownBoxOptions extends dxDropDownEditorOptions[dxDropDownBox] {
-  /** Specifies a custom template for the drop-down content. */
+  /** @name dxDropDownBox.Options.contentTemplate */
   var contentTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function2[
       /* templateData */ AnonComponentValue, 
@@ -47,19 +47,19 @@ import scala.scalajs.js.annotation._
       String | Element | JQuery
     ])
   ] = js.undefined
-  /** Binds the widget to data. */
+  /** @name DataExpressionMixin.Options.dataSource */
   var dataSource: js.UndefOr[String | (js.Array[CollectionWidgetItem | _]) | DataSource | DataSourceOptions] = js.undefined
-  /** Specifies the data field whose values should be displayed. */
+  /** @name DataExpressionMixin.Options.displayExpr */
   var displayExpr: js.UndefOr[String | (js.Function1[/* item */ js.Any, String])] = js.undefined
-  /** Customizes text before it is displayed in the input field. */
+  /** @name dxDropDownBox.Options.displayValueFormatter */
   var displayValueFormatter: js.UndefOr[js.Function1[/* value */ String | js.Array[_], String]] = js.undefined
-  /** Configures the drop-down field which holds the content. */
+  /** @name dxDropDownBox.Options.dropDownOptions */
   var dropDownOptions: js.UndefOr[dxPopupOptions[dxPopup]] = js.undefined
-  /** Specifies a custom template for the text field. Must contain the TextBox widget. */
+  /** @name dxDropDownBox.Options.fieldTemplate */
   var fieldTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* value */ js.Any, /* fieldElement */ dxElement, String | Element | JQuery])
   ] = js.undefined
-  /** Specifies a custom template for items. */
+  /** @name DataExpressionMixin.Options.itemTemplate */
   var itemTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function3[
       /* itemData */ js.Any, 
@@ -68,9 +68,9 @@ import scala.scalajs.js.annotation._
       String | Element | JQuery
     ])
   ] = js.undefined
-  /** An array of items displayed by the widget. */
+  /** @name DataExpressionMixin.Options.items */
   var items: js.UndefOr[js.Array[CollectionWidgetItem | _]] = js.undefined
-  /** Specifies which data field provides unique values to the widget's value. */
+  /** @name DataExpressionMixin.Options.valueExpr */
   var valueExpr: js.UndefOr[String | (js.Function1[/* item */ js.Any, String | Double | Boolean])] = js.undefined
 }
 

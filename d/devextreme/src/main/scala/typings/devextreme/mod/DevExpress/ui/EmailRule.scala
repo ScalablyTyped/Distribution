@@ -14,11 +14,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait EmailRule extends js.Object {
-  /** If set to true, empty values are valid. */
+  /** @name EmailRule.ignoreEmptyValue */
   var ignoreEmptyValue: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the message that is shown if the rule is broken. */
+  /** @name EmailRule.message */
   var message: js.UndefOr[String] = js.undefined
-  /** Specifies the rule type. Set it to "email" to use the EmailRule. */
+  /** @name EmailRule.type */
   var `type`: js.UndefOr[
     required | numeric | range | stringLength | custom | compare | pattern | email | async
   ] = js.undefined

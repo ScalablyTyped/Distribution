@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BarGaugeLegendItem extends BaseLegendItem {
-  /** The bar that the legend item represents. */
+  /** @name BarGaugeLegendItem.item */
   var item: js.UndefOr[BarGaugeBarInfo] = js.undefined
 }
 

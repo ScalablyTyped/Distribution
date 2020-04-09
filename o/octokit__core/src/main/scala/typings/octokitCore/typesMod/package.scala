@@ -18,9 +18,5 @@ package object typesMod {
       /* import warning: importer.ImportType#apply Failed type conversion: T[number] */ js.Any
     ]
   ]) | typings.std.ReturnType[T]
-  /**
-    * @author https://stackoverflow.com/users/2887218/jcalz
-    * @see https://stackoverflow.com/a/50375286/10325032
-    */
   type UnionToIntersection[Union] = js.Any
 }

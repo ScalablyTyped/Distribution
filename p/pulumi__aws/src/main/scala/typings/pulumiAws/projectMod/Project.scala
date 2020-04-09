@@ -71,7 +71,7 @@ class Project protected () extends CustomResource {
     */
   val logsConfig: Output_[js.UndefOr[ProjectLogsConfig]] = js.native
   /**
-    * The name of the project. If `type` is set to `S3`, this is the name of the output artifact object
+    * The projects name.
     */
   val name: Output_[String] = js.native
   /**

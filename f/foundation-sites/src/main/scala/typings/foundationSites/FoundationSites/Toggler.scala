@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-// http://foundation.zurb.com/sites/docs/toggler.html#javascript-reference
+// https://get.foundation/sites/docs/toggler.html#javascript-reference
 trait Toggler extends js.Object {
   def destroy(): Unit
   def toggle(): Unit

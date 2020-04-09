@@ -20,13 +20,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxToolbarOptions extends CollectionWidgetOptions[dxToolbar] {
-  /** Binds the widget to data. */
+  /** @name dxToolbar.Options.dataSource */
   @JSName("dataSource")
   var dataSource_dxToolbarOptions: js.UndefOr[String | (js.Array[String | dxToolbarItem | _]) | DataSource | DataSourceOptions] = js.undefined
-  /** An array of items displayed by the widget. */
+  /** @name dxToolbar.Options.items */
   @JSName("items")
   var items_dxToolbarOptions: js.UndefOr[js.Array[String | dxToolbarItem | _]] = js.undefined
-  /** Specifies a custom template for menu items. */
+  /** @name dxToolbar.Options.menuItemTemplate */
   var menuItemTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function3[
       /* itemData */ js.Any, 
@@ -35,7 +35,7 @@ trait dxToolbarOptions extends CollectionWidgetOptions[dxToolbar] {
       String | Element | JQuery
     ])
   ] = js.undefined
-  /** Informs the widget about its location in a view HTML markup. */
+  /** @name dxToolbar.Options.renderAs */
   var renderAs: js.UndefOr[bottomToolbar | topToolbar] = js.undefined
 }
 

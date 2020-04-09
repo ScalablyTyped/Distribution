@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@tensorflow/tfjs-converter/dist/src/operations/op_list/control", JSImport.Namespace)
+@JSImport("@tensorflow/tfjs-converter/dist/operations/op_list/control", JSImport.Namespace)
 @js.native
 object controlMod extends js.Object {
   val json: js.Array[OpMapper] = js.native

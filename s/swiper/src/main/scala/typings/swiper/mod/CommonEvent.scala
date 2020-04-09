@@ -32,12 +32,17 @@ import scala.scalajs.js.annotation._
   - typings.swiper.swiperStrings.setTranslate
   - typings.swiper.swiperStrings.setTransition
   - typings.swiper.swiperStrings.resize
+  - typings.swiper.swiperStrings.observerUpdate
+  - typings.swiper.swiperStrings.beforeLoopFix
+  - typings.swiper.swiperStrings.loopFix
 */
 trait CommonEvent extends js.Object
 
 object CommonEvent {
   @scala.inline
   def beforeDestroy: typings.swiper.swiperStrings.beforeDestroy = this.cast("beforeDestroy")
+  @scala.inline
+  def beforeLoopFix: typings.swiper.swiperStrings.beforeLoopFix = this.cast("beforeLoopFix")
   @scala.inline
   /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
   @scala.inline
@@ -50,6 +55,10 @@ object CommonEvent {
   def imagesReady: typings.swiper.swiperStrings.imagesReady = this.cast("imagesReady")
   @scala.inline
   def init: typings.swiper.swiperStrings.init = this.cast("init")
+  @scala.inline
+  def loopFix: typings.swiper.swiperStrings.loopFix = this.cast("loopFix")
+  @scala.inline
+  def observerUpdate: typings.swiper.swiperStrings.observerUpdate = this.cast("observerUpdate")
   @scala.inline
   def progress: typings.swiper.swiperStrings.progress = this.cast("progress")
   @scala.inline

@@ -13,7 +13,6 @@ import typings.squareConnect.mod.ErrorCategoryType
 import typings.squareConnect.mod.ErrorCodeType
 import typings.squareConnect.mod.FulfillmentStateType
 import typings.squareConnect.mod.FulfillmentType
-import typings.squareConnect.mod.InventoryAlertType
 import typings.squareConnect.mod.InventoryStateType
 import typings.squareConnect.mod.InventoryType
 import typings.squareConnect.mod.LengthUnitType
@@ -437,9 +436,6 @@ object squareConnectStrings {
   sealed trait CREATED_AT extends js.Object
   
   @js.native
-  sealed trait CREDIT_CARD_PROCESSING extends js.Object
-  
-  @js.native
   sealed trait CU extends CountryType
   
   @js.native
@@ -618,6 +614,9 @@ object squareConnectStrings {
   
   @js.native
   sealed trait FAILED extends FulfillmentStateType
+  
+  @js.native
+  sealed trait FAILURE extends js.Object
   
   @js.native
   sealed trait FEEDBACK extends CustomerSourceType
@@ -1122,7 +1121,7 @@ object squareConnectStrings {
   sealed trait LOCATION_MISMATCH extends ErrorCodeType
   
   @js.native
-  sealed trait LOW_QUANTITY extends InventoryAlertType
+  sealed trait LOW_QUANTITY extends js.Object
   
   @js.native
   sealed trait LOYALTY extends CustomerSourceType
@@ -1377,9 +1376,7 @@ object squareConnectStrings {
   sealed trait NOK extends CurrencyType
   
   @js.native
-  sealed trait NONE
-    extends InventoryAlertType
-       with InventoryStateType
+  sealed trait NONE extends InventoryStateType
   
   @js.native
   sealed trait NOT_ACCEPTABLE extends ErrorCodeType
@@ -1748,6 +1745,9 @@ object squareConnectStrings {
   sealed trait STD extends CurrencyType
   
   @js.native
+  sealed trait SUCCESS extends js.Object
+  
+  @js.native
   sealed trait SUN extends DayOfWeekType
   
   @js.native
@@ -1899,6 +1899,9 @@ object squareConnectStrings {
   
   @js.native
   sealed trait UNEXPECTED_VALUE extends ErrorCodeType
+  
+  @js.native
+  sealed trait UNKNOWN extends js.Object
   
   @js.native
   sealed trait UNKNOWN_CURRENCY extends CurrencyType
@@ -2395,8 +2398,6 @@ object squareConnectStrings {
   @scala.inline
   def CREATED_AT: CREATED_AT = "CREATED_AT".asInstanceOf[CREATED_AT]
   @scala.inline
-  def CREDIT_CARD_PROCESSING: CREDIT_CARD_PROCESSING = "CREDIT_CARD_PROCESSING".asInstanceOf[CREDIT_CARD_PROCESSING]
-  @scala.inline
   def CU: CU = "CU".asInstanceOf[CU]
   @scala.inline
   def CUC: CUC = "CUC".asInstanceOf[CUC]
@@ -2516,6 +2517,8 @@ object squareConnectStrings {
   def EXTERNAL_API: EXTERNAL_API = "EXTERNAL_API".asInstanceOf[EXTERNAL_API]
   @scala.inline
   def FAILED: FAILED = "FAILED".asInstanceOf[FAILED]
+  @scala.inline
+  def FAILURE: FAILURE = "FAILURE".asInstanceOf[FAILURE]
   @scala.inline
   def FEEDBACK: FEEDBACK = "FEEDBACK".asInstanceOf[FEEDBACK]
   @scala.inline
@@ -3261,6 +3264,8 @@ object squareConnectStrings {
   @scala.inline
   def STD: STD = "STD".asInstanceOf[STD]
   @scala.inline
+  def SUCCESS: SUCCESS = "SUCCESS".asInstanceOf[SUCCESS]
+  @scala.inline
   def SUN: SUN = "SUN".asInstanceOf[SUN]
   @scala.inline
   def SV: SV = "SV".asInstanceOf[SV]
@@ -3362,6 +3367,8 @@ object squareConnectStrings {
   def UNAUTHORIZED: UNAUTHORIZED = "UNAUTHORIZED".asInstanceOf[UNAUTHORIZED]
   @scala.inline
   def UNEXPECTED_VALUE: UNEXPECTED_VALUE = "UNEXPECTED_VALUE".asInstanceOf[UNEXPECTED_VALUE]
+  @scala.inline
+  def UNKNOWN: UNKNOWN = "UNKNOWN".asInstanceOf[UNKNOWN]
   @scala.inline
   def UNKNOWN_CURRENCY: UNKNOWN_CURRENCY = "UNKNOWN_CURRENCY".asInstanceOf[UNKNOWN_CURRENCY]
   @scala.inline

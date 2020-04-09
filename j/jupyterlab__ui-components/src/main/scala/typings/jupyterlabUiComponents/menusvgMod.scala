@@ -1,6 +1,7 @@
 package typings.jupyterlabUiComponents
 
-import typings.luminoWidgets.menuMod.Menu.IOptions
+import typings.luminoWidgets.contextmenuMod.ContextMenu.IOptions
+import typings.luminoWidgets.mod.ContextMenu
 import typings.luminoWidgets.mod.Menu
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,13 +11,25 @@ import scala.scalajs.js.annotation._
 @js.native
 object menusvgMod extends js.Object {
   @js.native
+  class ContextMenuSvg protected () extends ContextMenu {
+    /**
+      * Construct a new context menu.
+      *
+      * @param options - The options for initializing the menu.
+      */
+    def this(options: IOptions) = this()
+    @JSName("menu")
+    val menu_ContextMenuSvg: MenuSvg = js.native
+  }
+  
+  @js.native
   class MenuSvg protected () extends Menu {
     /**
       * construct a new menu. Overrides the default renderer
       *
       * @param options - The options for initializing the tab bar.
       */
-    def this(options: IOptions) = this()
+    def this(options: typings.luminoWidgets.menuMod.Menu.IOptions) = this()
   }
   
   @js.native
@@ -29,6 +42,7 @@ object menusvgMod extends js.Object {
       extends typings.luminoWidgets.mod.Menu.Renderer
     
     val defaultRenderer: Renderer = js.native
+    def overrideDefaultRenderer(menu: Menu): Unit = js.native
   }
   
 }

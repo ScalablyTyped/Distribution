@@ -14,8 +14,8 @@ import typings.ionicCore.ionicCoreStrings.url
 import typings.ionicCore.mod.Color
 import typings.ionicCore.mod.StyleEventDetail
 import typings.ionicCore.mod.TextFieldTypes
-import typings.ionicCore.stencilCoreMod.ComponentInterface
-import typings.ionicCore.stencilCoreMod.EventEmitter
+import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
+import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
 import typings.std.KeyboardEvent
@@ -101,16 +101,6 @@ object inputMod extends js.Object {
       * Emitted when a keyboard input occurred.
       */
     var ionInput: EventEmitter[KeyboardEvent] = js.native
-    /**
-      * Emitted when the input has been created.
-      * @internal
-      */
-    var ionInputDidLoad: EventEmitter[Unit] = js.native
-    /**
-      * Emitted when the input has been removed.
-      * @internal
-      */
-    var ionInputDidUnload: EventEmitter[Unit] = js.native
     /**
       * Emitted when the styles change.
       * @internal

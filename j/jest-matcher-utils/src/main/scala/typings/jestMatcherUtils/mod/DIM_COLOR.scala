@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("jest-matcher-utils/build", "DIM_COLOR")
+@JSImport("jest-matcher-utils", "DIM_COLOR")
 @js.native
 object DIM_COLOR extends TopLevel[Chalk]
 

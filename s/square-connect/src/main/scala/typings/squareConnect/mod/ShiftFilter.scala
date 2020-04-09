@@ -12,7 +12,7 @@ class ShiftFilter () extends js.Object {
   /**
     * Fetch shifts for the specified employee.
     */
-  var employee_id: js.UndefOr[js.Array[String]] = js.native
+  var employee_ids: js.UndefOr[js.Array[String]] = js.native
   /**
     * Fetch the `Shift`s that end in the time range - Inclusive.
     */
@@ -20,7 +20,7 @@ class ShiftFilter () extends js.Object {
   /**
     * Fetch shifts for the specified location.
     */
-  var location_id: js.UndefOr[js.Array[String]] = js.native
+  var location_ids: js.UndefOr[js.Array[String]] = js.native
   /**
     * Fetch `Shift`s that start in the time range - Inclusive.
     */

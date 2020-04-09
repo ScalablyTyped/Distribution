@@ -54,7 +54,6 @@ import scala.scalajs.js.annotation._
 trait VideoHTMLAttributes[T] extends MediaHTMLAttributes[T] {
   var disablePictureInPicture: js.UndefOr[Boolean] = js.undefined
   var height: js.UndefOr[Double | String] = js.undefined
-  var playsInline: js.UndefOr[Boolean] = js.undefined
   var poster: js.UndefOr[String] = js.undefined
   var width: js.UndefOr[Double | String] = js.undefined
 }
@@ -209,7 +208,7 @@ object VideoHTMLAttributes {
     onProgress: SyntheticEvent[T, Event_] => Unit = null,
     onRateChange: SyntheticEvent[T, Event_] => Unit = null,
     onReset: FormEvent[T] => Unit = null,
-    onScroll: UIEvent[T] => Unit = null,
+    onScroll: UIEvent[T, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[T, Event_] => Unit = null,
     onSeeking: SyntheticEvent[T, Event_] => Unit = null,
     onSelect: SyntheticEvent[T, Event_] => Unit = null,
@@ -227,7 +226,6 @@ object VideoHTMLAttributes {
     onWheel: WheelEvent[T] => Unit = null,
     placeholder: String = null,
     playsInline: js.UndefOr[Boolean] = js.undefined,
-    playsinline: js.UndefOr[Boolean] = js.undefined,
     poster: String = null,
     prefix: String = null,
     preload: String = null,
@@ -417,7 +415,6 @@ object VideoHTMLAttributes {
     if (onWheel != null) __obj.updateDynamic("onWheel")(js.Any.fromFunction1(onWheel))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (!js.isUndefined(playsInline)) __obj.updateDynamic("playsInline")(playsInline.asInstanceOf[js.Any])
-    if (!js.isUndefined(playsinline)) __obj.updateDynamic("playsinline")(playsinline.asInstanceOf[js.Any])
     if (poster != null) __obj.updateDynamic("poster")(poster.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     if (preload != null) __obj.updateDynamic("preload")(preload.asInstanceOf[js.Any])

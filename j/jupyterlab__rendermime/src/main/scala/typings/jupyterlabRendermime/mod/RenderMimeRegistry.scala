@@ -22,13 +22,13 @@ class RenderMimeRegistry ()
 @js.native
 object RenderMimeRegistry extends js.Object {
   /**
-    * A default resolver that uses a session and a contents manager.
+    * A default resolver that uses a given reference path and a contents manager.
     */
   @js.native
   class UrlResolver protected ()
     extends typings.jupyterlabRendermime.registryMod.RenderMimeRegistry.UrlResolver {
     /**
-      * Create a new url resolver for a console.
+      * Create a new url resolver.
       */
     def this(options: IUrlResolverOptions) = this()
   }

@@ -9,6 +9,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait AccessPointArgs extends js.Object {
+  /**
+    * The AWS account ID for the owner of the bucket for which you want to create an access point. Defaults to automatically determined account ID of the provider.
+    */
   val accountId: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the bucket that you want to associate this access point with.

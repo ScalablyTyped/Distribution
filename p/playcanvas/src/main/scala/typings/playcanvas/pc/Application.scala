@@ -5,6 +5,7 @@ import typings.playcanvas.AnonLayer
 import typings.playcanvas.AnonPhysics
 import typings.playcanvas.pc.callbacks.ConfigureApp
 import typings.playcanvas.pc.callbacks.LoadHierarchy
+import typings.playcanvas.pc.callbacks.LoadScene
 import typings.playcanvas.pc.callbacks.LoadSettings
 import typings.playcanvas.pc.callbacks.PreloadApp
 import typings.std.Element
@@ -101,6 +102,17 @@ class Application protected () extends EventHandler {
     */
   var elementInput: ElementInput = js.native
   /**
+    * @readonly
+    * @name pc.Application#fillMode
+    * @type {string}
+    * @description The current fill mode of the canvas. Can be:
+    *
+    * * {@link pc.FILLMODE_NONE}: the canvas will always match the size provided.
+    * * {@link pc.FILLMODE_FILL_WINDOW}: the canvas will simply fill the window, changing aspect ratio.
+    * * {@link pc.FILLMODE_KEEP_ASPECT}: the canvas will grow to fill the window as best it can while maintaining the aspect ratio.
+    */
+  val fillMode: String = js.native
+  /**
     * @name pc.Application#gamepads
     * @type {pc.GamePads}
     * @description Used to access GamePad input.
@@ -161,6 +173,16 @@ class Application protected () extends EventHandler {
     * }
     */
   var renderNextFrame: Boolean = js.native
+  /**
+    * @readonly
+    * @name pc.Application#resolutionMode
+    * @type {string}
+    * @description The current resolution mode of the canvas, Can be:
+    *
+    * * {@link pc.RESOLUTION_AUTO}: if width and height are not provided, canvas will be resized to match canvas client size.
+    * * {@link pc.RESOLUTION_FIXED}: resolution of canvas will be fixed.
+    */
+  val resolutionMode: String = js.native
   /**
     * @name pc.Application#root
     * @type {pc.Entity}
@@ -343,6 +365,23 @@ class Application protected () extends EventHandler {
     * @returns {boolean} True if the application is not visible and false otherwise.
     */
   def isHidden(): Boolean = js.native
+  /**
+    * @function
+    * @name pc.Application#loadScene
+    * @description Load a scene file.
+    * @param {string} url - The URL of the scene file. Usually this will be "scene_id.json".
+    * @param {pc.callbacks.LoadScene} callback - The function to call after loading, passed (err, entity) where err is null if no errors occurred.
+    * @example
+    *
+    * app.loadScene("1000.json", function (err, entity) {
+    *     if (!err) {
+    *         var e = app.root.find("My New Entity");
+    *     } else {
+    *         // error
+    *     }
+    * });
+    */
+  def loadScene(url: String, callback: LoadScene): Unit = js.native
   /**
     * @function
     * @name pc.Application#loadSceneHierarchy

@@ -12,7 +12,7 @@ class BoundEventAst protected ()
     name: String,
     target: String,
     phase: String,
-    handler: typings.angularCompiler.astMod.AST,
+    handler: typings.angularCompiler.astMod.ASTWithSource,
     sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
     handlerSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
   ) = this()
@@ -20,7 +20,7 @@ class BoundEventAst protected ()
     name: String,
     target: String,
     phase: Null,
-    handler: typings.angularCompiler.astMod.AST,
+    handler: typings.angularCompiler.astMod.ASTWithSource,
     sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
     handlerSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
   ) = this()
@@ -28,7 +28,7 @@ class BoundEventAst protected ()
     name: String,
     target: Null,
     phase: String,
-    handler: typings.angularCompiler.astMod.AST,
+    handler: typings.angularCompiler.astMod.ASTWithSource,
     sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
     handlerSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
   ) = this()
@@ -36,7 +36,7 @@ class BoundEventAst protected ()
     name: String,
     target: Null,
     phase: Null,
-    handler: typings.angularCompiler.astMod.AST,
+    handler: typings.angularCompiler.astMod.ASTWithSource,
     sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
     handlerSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
   ) = this()

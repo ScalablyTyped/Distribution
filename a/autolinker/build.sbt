@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "autolinker"
-version := "3.13.0-aaeea1"
+version := "3.14.0-8eefdd"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

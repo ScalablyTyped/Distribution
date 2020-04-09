@@ -7,7 +7,13 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait LaunchTemplateInstanceMarketOptions extends js.Object {
+  /**
+    * The market type. Can be `spot`.
+    */
   var marketType: js.UndefOr[Input[String]] = js.native
+  /**
+    * The options for [Spot Instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-instances.html)
+    */
   var spotOptions: js.UndefOr[Input[LaunchTemplateInstanceMarketOptionsSpotOptions]] = js.native
 }
 

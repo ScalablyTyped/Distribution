@@ -10,37 +10,37 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait dxScheduler extends Widget {
-  /** Adds an appointment. */
+  /** @name dxScheduler.addAppointment(appointment) */
   def addAppointment(appointment: js.Any): Unit = js.native
-  /** Deletes an appointment from the timetable and its object from the data source. */
+  /** @name dxScheduler.deleteAppointment(appointment) */
   def deleteAppointment(appointment: js.Any): Unit = js.native
-  /** Gets the DataSource instance. */
+  /** @name DataHelperMixin.getDataSource() */
   def getDataSource(): DataSource = js.native
-  /** Gets the current view's end date. */
+  /** @name dxScheduler.getEndViewDate() */
   def getEndViewDate(): Date = js.native
-  /** Gets the current view's start date. */
+  /** @name dxScheduler.getStartViewDate() */
   def getStartViewDate(): Date = js.native
-  /** Hides an appointment details form. */
+  /** @name dxScheduler.hideAppointmentPopup(saveChanges) */
   def hideAppointmentPopup(): Unit = js.native
   def hideAppointmentPopup(saveChanges: Boolean): Unit = js.native
-  /** Hides an appointment's or cell overflow indicator's tooltip. */
+  /** @name dxScheduler.hideAppointmentTooltip() */
   def hideAppointmentTooltip(): Unit = js.native
-  /** Scrolls the current view to a specific day and time. */
+  /** @name dxScheduler.scrollToTime(hours, minutes, date) */
   def scrollToTime(hours: Double, minutes: Double): Unit = js.native
   def scrollToTime(hours: Double, minutes: Double, date: Date): Unit = js.native
-  /** Shows the appointment details form. */
+  /** @name dxScheduler.showAppointmentPopup(appointmentData, createNewAppointment, currentAppointmentData) */
   def showAppointmentPopup(): Unit = js.native
   def showAppointmentPopup(appointmentData: js.Any): Unit = js.native
   def showAppointmentPopup(appointmentData: js.Any, createNewAppointment: Boolean): Unit = js.native
   def showAppointmentPopup(appointmentData: js.Any, createNewAppointment: Boolean, currentAppointmentData: js.Any): Unit = js.native
-  /** Shows a tooltip for a target element. */
+  /** @name dxScheduler.showAppointmentTooltip(appointmentData, target, currentAppointmentData) */
   def showAppointmentTooltip(appointmentData: js.Any, target: String): Unit = js.native
   def showAppointmentTooltip(appointmentData: js.Any, target: String, currentAppointmentData: js.Any): Unit = js.native
   def showAppointmentTooltip(appointmentData: js.Any, target: JQuery): Unit = js.native
   def showAppointmentTooltip(appointmentData: js.Any, target: JQuery, currentAppointmentData: js.Any): Unit = js.native
   def showAppointmentTooltip(appointmentData: js.Any, target: Element): Unit = js.native
   def showAppointmentTooltip(appointmentData: js.Any, target: Element, currentAppointmentData: js.Any): Unit = js.native
-  /** Updates an appointment. */
+  /** @name dxScheduler.updateAppointment(target, appointment) */
   def updateAppointment(target: js.Any, appointment: js.Any): Unit = js.native
 }
 

@@ -1,8 +1,8 @@
 package typings.ionicCore
 
 import typings.ionicCore.elementInterfaceMod.AnchorInterface
-import typings.ionicCore.stencilCoreMod.ComponentInterface
-import typings.ionicCore.stencilCoreMod.EventEmitter
+import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
+import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
 import typings.ionicCore.tabBarInterfaceMod.TabBarChangedEventDetail
 import typings.ionicCore.tabBarInterfaceMod.TabButtonClickEventDetail
 import typings.ionicCore.tabBarInterfaceMod.TabButtonLayout

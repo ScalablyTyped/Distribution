@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofSearchInstantiable extends Instantiable0[default] {
-  var defaultProps: AnonPlaceholderString = js.native
+  var defaultProps: AnonPlaceholder = js.native
 }
 

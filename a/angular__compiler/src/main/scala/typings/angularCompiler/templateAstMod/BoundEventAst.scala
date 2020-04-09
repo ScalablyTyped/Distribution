@@ -1,6 +1,6 @@
 package typings.angularCompiler.templateAstMod
 
-import typings.angularCompiler.astMod.AST
+import typings.angularCompiler.astMod.ASTWithSource
 import typings.angularCompiler.astMod.ParsedEvent
 import typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
 import scala.scalajs.js
@@ -14,7 +14,7 @@ class BoundEventAst protected () extends TemplateAst {
     name: String,
     target: String,
     phase: String,
-    handler: AST,
+    handler: ASTWithSource,
     sourceSpan: ParseSourceSpan,
     handlerSpan: ParseSourceSpan
   ) = this()
@@ -22,7 +22,7 @@ class BoundEventAst protected () extends TemplateAst {
     name: String,
     target: String,
     phase: Null,
-    handler: AST,
+    handler: ASTWithSource,
     sourceSpan: ParseSourceSpan,
     handlerSpan: ParseSourceSpan
   ) = this()
@@ -30,7 +30,7 @@ class BoundEventAst protected () extends TemplateAst {
     name: String,
     target: Null,
     phase: String,
-    handler: AST,
+    handler: ASTWithSource,
     sourceSpan: ParseSourceSpan,
     handlerSpan: ParseSourceSpan
   ) = this()
@@ -38,12 +38,12 @@ class BoundEventAst protected () extends TemplateAst {
     name: String,
     target: Null,
     phase: Null,
-    handler: AST,
+    handler: ASTWithSource,
     sourceSpan: ParseSourceSpan,
     handlerSpan: ParseSourceSpan
   ) = this()
   val fullName: String = js.native
-  var handler: AST = js.native
+  var handler: ASTWithSource = js.native
   var handlerSpan: ParseSourceSpan = js.native
   val isAnimation: Boolean = js.native
   var name: String = js.native

@@ -14,9 +14,9 @@ class EventEmitter2 () extends js.Object {
   def emitAsync(event: String, values: js.Any*): js.Promise[js.Array[_]] = js.native
   def emitAsync(event: js.Array[String], values: js.Any*): js.Promise[js.Array[_]] = js.native
   def eventNames(): js.Array[String] = js.native
+  def getMaxListeners(): Double = js.native
   def listeners(event: String): js.Array[Listener] = js.native
   def listeners(event: js.Array[String]): js.Array[Listener] = js.native
-  // TODO: not in documentation by Willian
   def listenersAny(): js.Array[Listener] = js.native
   def many(event: String, timesToListen: Double, listener: Listener): this.type = js.native
   def many(event: js.Array[String], timesToListen: Double, listener: Listener): this.type = js.native
@@ -41,7 +41,20 @@ class EventEmitter2 () extends js.Object {
   def removeListener(event: js.Array[String], listener: Listener): this.type = js.native
   def setMaxListeners(n: Double): Unit = js.native
   // TODO: not in documentation by Willian
-  def waitFor(event: String): WaitForThenable[_] = js.native
-  def waitFor(event: String, options: WaitForOptions): WaitForThenable[_] = js.native
+  def waitFor(event: String): CancelablePromise[js.Array[_]] = js.native
+  def waitFor(event: String, filter: WaitForFilter): CancelablePromise[js.Array[_]] = js.native
+  def waitFor(event: String, options: WaitForOptions): CancelablePromise[js.Array[_]] = js.native
+  def waitFor(event: String, timeout: Double): CancelablePromise[js.Array[_]] = js.native
+}
+
+/* static members */
+@JSImport("eventemitter2", "EventEmitter2")
+@js.native
+object EventEmitter2 extends js.Object {
+  var defaultMaxListeners: Double = js.native
+  def once(emitter: EventEmitter2, event: String): CancelablePromise[js.Array[_]] = js.native
+  def once(emitter: EventEmitter2, event: String, options: OnceOptions): CancelablePromise[js.Array[_]] = js.native
+  def once(emitter: EventEmitter2, event: js.Symbol): CancelablePromise[js.Array[_]] = js.native
+  def once(emitter: EventEmitter2, event: js.Symbol, options: OnceOptions): CancelablePromise[js.Array[_]] = js.native
 }
 

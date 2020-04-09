@@ -1,5 +1,7 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,28 +14,41 @@ class CatalogObject () extends js.Object {
     */
   var absent_at_location_ids: js.UndefOr[js.Array[String]] = js.native
   /**
-    * The Connect V1 IDs for this object at each [location](#type-location) where it is present, where they differ from
-    * the object's Connect V2 ID. The field will only be present for objects that have been created or modified by
-    * legacy APIs.
+    * The Connect v1 IDs for this object at each location where it is present, where they differ from the object's Connect V2 ID.
+    * The field will only be present for objects that have been created or modified by legacy APIs.
     */
-  var catalog_v1_ids: js.UndefOr[js.Array[CatalogV1Id]] = js.native
+  var catalog_v1_ids: js.UndefOr[js.Array[Record[String, _]]] = js.native
   /**
-    * Structured data for a [CatalogCategory](#type-catalogcategory), set for CatalogObjects of type `CATEGORY`.
+    * Structured data for a `CatalogCategory`, set for CatalogObjects of type `CATEGORY`.
     */
   var category_data: js.UndefOr[CatalogCategory] = js.native
   /**
-    * Structured data for a [CatalogDiscount](#type-catalogdiscount), set for CatalogObjects of type `DISCOUNT`.
+    * Structured data for a `CatalogCustomAttributeDefinition`, set for CatalogObjects of type `CUSTOM_ATTRIBUTE_DEFINITION`.
+    */
+  var custom_attribute_definition_data: js.UndefOr[CatalogCustomAttributeDefinition] = js.native
+  /**
+    * Application-defined key/value attributes that are set at a global (location-independent) level.
+    * Values from the `*_data` fields may not be duplicated. Custom Attribute fields are intended to store additional
+    * information about a Catalog Object or associations with an entity in another system. Do not use custom attributes
+    * to store any sensitive information (personally identifiable information, card details, etc.).
+    * For CustomAttributesDefinitions defined by the app making the request, the map key is the key defined in
+    * CustomAttributeDefinition (eg. `reference_id`). For CustomAttributesDefinitions by other apps, the map key is the key
+    * defined in CustomAttributeDefinition prefixed with the application ID and a colon (eg. "abcd1234:reference_id").
+    */
+  var custom_attribute_values: js.UndefOr[StringDictionary[CatalogCustomAttributeValue]] = js.native
+  /**
+    * Structured data for a `CatalogDiscount`, set for CatalogObjects of type `DISCOUNT`.
     */
   var discount_data: js.UndefOr[CatalogDiscount] = js.native
   /**
-    * An identifier to reference this object in the catalog. When a new CatalogObject is inserted, the client should
-    * set the id to a temporary identifier starting with a `'#'` character. Other objects being inserted or updated
-    * within the same request may use this identifier to refer to the new object. When the server receives the new
-    * object, it will supply a unique identifier that replaces the temporary identifier for all future references.
+    * An identifier to reference this object in the catalog. When a new `CatalogObject` is inserted, the client should
+    * set the id to a temporary identifier starting with a `#` character. Other objects being inserted or updated
+    * within the same request may use this identifier to refer to the new object. When the server receives the new object,
+    * it will supply a unique identifier that replaces the temporary identifier for all future references.
     */
   var id: String = js.native
   /**
-    * Structured data for a [CatalogImage](#type-catalogimage), set for CatalogObjects of type `IMAGE`.
+    * Structured data for a `CatalogImage`, set for CatalogObjects of type `IMAGE`.
     */
   var image_data: js.UndefOr[CatalogImage] = js.native
   /**
@@ -46,31 +61,31 @@ class CatalogObject () extends js.Object {
     */
   var is_deleted: js.UndefOr[Boolean] = js.native
   /**
-    * Structured data for a [CatalogItem](#type-catalogitem), set for CatalogObjects of type `ITEM`.
+    * Structured data for a `CatalogItem`, set for CatalogObjects of type `ITEM`.
     */
   var item_data: js.UndefOr[CatalogItem] = js.native
   /**
-    * Structured data for a [CatalogItemOption](#type-catalogitemoption), set for CatalogObjects of type `ITEM_OPTION`.
+    * Structured data for a `CatalogItemOption`, set for CatalogObjects of type `ITEM_OPTION`.
     */
   var item_option_data: js.UndefOr[CatalogItemOption] = js.native
   /**
-    * Structured data for a [CatalogItemOptionValue](#type-catalogitemoptionvalue), set for CatalogObjects of type `ITEM_OPTION_VAL`.
+    * Structured data for a `CatalogItemOptionValue`, set for CatalogObjects of type `ITEM_OPTION_VAL`.
     */
   var item_option_value_data: js.UndefOr[CatalogItemOptionValue] = js.native
   /**
-    * Structured data for a [CatalogItemVariation](#type-catalogitemvariation), set for CatalogObjects of type `ITEM_VARIATION`.
+    * Structured data for a `CatalogItemVariation`, set for CatalogObjects of type `ITEM_VARIATION`.
     */
   var item_variation_data: js.UndefOr[CatalogItemVariation] = js.native
   /**
-    * Structured data for a [CatalogMeasurementUnit](#type-catalogmeasurementunit), set for CatalogObjects of type `MEASUREMENT_UNIT`.
+    * Structured data for a `CatalogMeasurementUnit`, set for CatalogObjects of type `MEASUREMENT_UNIT`.
     */
   var measurement_unit_data: js.UndefOr[CatalogMeasurementUnit] = js.native
   /**
-    * Structured data for a [CatalogModifier](#type-catalogmodifier), set for CatalogObjects of type `MODIFIER`.
+    * Structured data for a `CatalogModifier`, set for CatalogObjects of type `MODIFIER`.
     */
   var modifier_data: js.UndefOr[CatalogModifier] = js.native
   /**
-    * Structured data for a [CatalogModifierList](#type-catalogmodifierlist), set for CatalogObjects of type `MODIFIER_LIST`.
+    * Structured data for a `CatalogModifierList`, set for CatalogObjects of type `MODIFIER_LIST`.
     */
   var modifier_list_data: js.UndefOr[CatalogModifierList] = js.native
   /**
@@ -84,19 +99,19 @@ class CatalogObject () extends js.Object {
     */
   var present_at_location_ids: js.UndefOr[js.Array[String]] = js.native
   /**
-    * Structured data for a [CatalogPricingRule](#type-catalogpricingrule), set for CatalogObjects of type `PRICING_RULE`.
+    * Structured data for a `CatalogPricingRule`, set for CatalogObjects of type `PRICING_RULE`.
     */
   var pricing_rule_data: js.UndefOr[CatalogPricingRule] = js.native
   /**
-    * Structured data for a [CatalogProductSet](#type-catalogproductset), set for CatalogObjects of type `PRODUCT_SET`.
+    * Structured data for a `CatalogProductSet`, set for CatalogObjects of type `PRODUCT_SET`.
     */
   var product_set_data: js.UndefOr[CatalogProductSet] = js.native
   /**
-    * Structured data for a [CatalogTax](#type-catalogtax), set for CatalogObjects of type `TAX`.
+    * Structured data for a `CatalogTax`, set for CatalogObjects of type `TAX`.
     */
   var tax_data: js.UndefOr[CatalogTax] = js.native
   /**
-    * Structured data for a [CatalogTimePeriod](#type-catalogtimeperiod), set for CatalogObjects of type `TIME_PERIOD`.
+    * Structured data for a `CatalogTimePeriod`, set for CatalogObjects of type `TIME_PERIOD`.
     */
   var time_period_data: js.UndefOr[CatalogTimePeriod] = js.native
   /**
@@ -105,8 +120,8 @@ class CatalogObject () extends js.Object {
     */
   var `type`: ObjectType = js.native
   /**
-    * Last modification [timestamp](#workingwithdates) in RFC 3339 format, e.g., `\"2016-08-15T23:59:33.123Z\"` would
-    * indicate the UTC time (denoted by `Z`) of August 15, 2016 at 23:59:33 and 123 milliseconds.
+    * Last modification [timestamp](https://developer.squareup.com/docs/build-basics/working-with-dates) in RFC 3339 format,
+    * e.g., "2016-08-15T23:59:33.123Z" would indicate the UTC time (denoted by `Z`) of August 15, 2016 at 23:59:33 and 123 milliseconds.
     */
   var updated_at: js.UndefOr[String] = js.native
   /**

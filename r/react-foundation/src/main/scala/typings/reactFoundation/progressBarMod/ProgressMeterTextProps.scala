@@ -14,6 +14,7 @@ import typings.react.mod.FormEvent
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.SyntheticEvent
 import typings.react.mod.TouchEvent
@@ -309,7 +310,7 @@ object ProgressMeterTextProps {
     onProgress: SyntheticEvent[HTMLParagraphElement, Event_] => Unit = null,
     onRateChange: SyntheticEvent[HTMLParagraphElement, Event_] => Unit = null,
     onReset: FormEvent[HTMLParagraphElement] => Unit = null,
-    onScroll: UIEvent[HTMLParagraphElement] => Unit = null,
+    onScroll: UIEvent[HTMLParagraphElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[HTMLParagraphElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[HTMLParagraphElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[HTMLParagraphElement, Event_] => Unit = null,

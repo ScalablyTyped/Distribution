@@ -11,6 +11,7 @@ class GroupedListSection protected ()
   extends Component[IGroupedListSectionProps, IGroupedListSectionState, js.Any] {
   def this(props: IGroupedListSectionProps) = this()
   var _dragDropSubscription: js.Any = js.native
+  var _droppingClassName: js.Any = js.native
   var _events: js.Any = js.native
   /**
     * get the correct css class to reflect the dropping state for a given group

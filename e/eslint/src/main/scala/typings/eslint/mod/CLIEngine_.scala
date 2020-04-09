@@ -14,7 +14,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class CLIEngine_ protected () extends js.Object {
   def this(options: Options) = this()
-  var version: String = js.native
   def addPlugin(name: String, pluginObject: js.Any): Unit = js.native
   def executeOnFiles(patterns: js.Array[String]): LintReport = js.native
   def executeOnText(text: String): LintReport = js.native

@@ -11,7 +11,7 @@ trait DeploymentGroupAlarmConfiguration extends js.Object {
     */
   var alarms: js.UndefOr[js.Array[String]] = js.native
   /**
-    * Indicates whether a defined automatic rollback configuration is currently enabled for this Deployment Group. If you enable automatic rollback, you must specify at least one event type.
+    * Indicates whether the alarm configuration is enabled. This option is useful when you want to temporarily deactivate alarm monitoring for a deployment group without having to add the same alarms again later.
     */
   var enabled: js.UndefOr[Boolean] = js.native
   /**

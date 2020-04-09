@@ -7,11 +7,17 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait AnalyticsApplicationReferenceDataSourcesSchemaRecordColumn extends js.Object {
+  /**
+    * The Mapping reference to the data element.
+    */
   var mapping: js.UndefOr[Input[String]] = js.native
   /**
-    * Name of the Kinesis Analytics Application.
+    * Name of the column.
     */
   var name: Input[String] = js.native
+  /**
+    * The SQL Type of the column.
+    */
   var sqlType: Input[String] = js.native
 }
 

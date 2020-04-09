@@ -14,18 +14,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Describes settings supported by a series of the range bar type. */
+/** @name dxChartSeriesTypes.RangeBarSeries */
 trait dxChartSeriesTypesRangeBarSeries extends dxChartSeriesTypesCommonSeries {
-  /** Configures data aggregation for the series. */
+  /** @name dxChartSeriesTypes.RangeBarSeries.aggregation */
   @JSName("aggregation")
   var aggregation_dxChartSeriesTypesRangeBarSeries: js.UndefOr[dxChartSeriesTypesRangeBarSeriesAggregation] = js.undefined
-  /** Specifies series elements to be highlighted when a user points to a series. */
+  /** @name dxChartSeriesTypes.RangeBarSeries.hoverMode */
   @JSName("hoverMode")
   var hoverMode_dxChartSeriesTypesRangeBarSeries: js.UndefOr[onlyPoint | allSeriesPoints | allArgumentPoints | none] = js.undefined
-  /** Configures point labels. */
+  /** @name dxChartSeriesTypes.RangeBarSeries.label */
   @JSName("label")
   var label_dxChartSeriesTypesRangeBarSeries: js.UndefOr[dxChartSeriesTypesRangeBarSeriesLabel] = js.undefined
-  /** Specifies series elements to be highlighted when a user selects a range bar. */
+  /** @name dxChartSeriesTypes.RangeBarSeries.selectionMode */
   @JSName("selectionMode")
   var selectionMode_dxChartSeriesTypesRangeBarSeries: js.UndefOr[onlyPoint | allSeriesPoints | allArgumentPoints | none] = js.undefined
 }

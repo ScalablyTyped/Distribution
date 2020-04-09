@@ -6,15 +6,15 @@ import scala.scalajs.js.annotation._
 
 trait RelationshipStatus extends js.Object {
   /**
-    * The read-only value of the relationship status translated and formatted in
+    * Output only. The value of the relationship status translated and formatted in
     * the viewer's account locale or the `Accept-Language` HTTP header locale.
     */
   var formattedValue: js.UndefOr[String] = js.undefined
   /** Metadata about the relationship status. */
   var metadata: js.UndefOr[FieldMetadata] = js.undefined
   /**
-    * The relationship status. The value can be custom or predefined.
-    * Possible values include, but are not limited to, the following:
+    * The relationship status. The value can be custom or one of these
+    * predefined values:
     *
     * &#42; `single`
     * &#42; `inARelationship`

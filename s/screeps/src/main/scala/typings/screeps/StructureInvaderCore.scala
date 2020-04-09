@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation._
   */
 trait StructureInvaderCore
   extends OwnedStructure[STRUCTURE_INVADER_CORE]
-     with AnyOwnedStructure {
+     with AnyOwnedStructure
+     with ConcreteStructure[js.Any] {
   /**
     * The level of the stronghold. The amount and quality of the loot depends on the level.
     */

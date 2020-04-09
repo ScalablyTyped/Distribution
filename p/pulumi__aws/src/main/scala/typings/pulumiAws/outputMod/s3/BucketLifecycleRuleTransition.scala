@@ -11,11 +11,11 @@ trait BucketLifecycleRuleTransition extends js.Object {
     */
   var date: js.UndefOr[String] = js.native
   /**
-    * The number of days that you want to specify for the default retention period.
+    * Specifies the number of days after object creation when the specific rule action takes effect.
     */
   var days: js.UndefOr[Double] = js.native
   /**
-    * The class of storage used to store the object. Can be `STANDARD`, `REDUCED_REDUNDANCY`, `STANDARD_IA`, `ONEZONE_IA`, `INTELLIGENT_TIERING`, `GLACIER`, or `DEEP_ARCHIVE`.
+    * Specifies the Amazon S3 storage class to which you want the object to transition. Can be `ONEZONE_IA`, `STANDARD_IA`, `INTELLIGENT_TIERING`, `GLACIER`, or `DEEP_ARCHIVE`.
     */
   var storageClass: String = js.native
 }

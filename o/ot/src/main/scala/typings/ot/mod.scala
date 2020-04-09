@@ -8,6 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   @js.native
+  class Selection () extends js.Object {
+    def createCursor(position: Double): Selection = js.native
+  }
+  
+  @js.native
   class TextOperation () extends js.Object {
     var baseLength: Double = js.native
     var targetLength: Double = js.native
@@ -18,6 +23,18 @@ object mod extends js.Object {
     def insert(str: String): TextOperation = js.native
     def retain(length: Double): TextOperation = js.native
     def toJSON(): SerializedTextOperation = js.native
+  }
+  
+  @js.native
+  object Selection extends js.Object {
+    @js.native
+    class Range protected () extends js.Object {
+      def this(anchor: Double, head: Double) = this()
+      var anchor: Double = js.native
+      var head: Double = js.native
+      def transform(operation: TextOperation): Range = js.native
+    }
+    
   }
   
   /* static members */

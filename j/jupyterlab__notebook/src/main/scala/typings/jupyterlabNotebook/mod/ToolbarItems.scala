@@ -1,5 +1,6 @@
 package typings.jupyterlabNotebook.mod
 
+import typings.jupyterlabApputils.sessioncontextMod.ISessionContext.IDialogs
 import typings.jupyterlabApputils.tokensMod.ISessionContextDialogs
 import typings.jupyterlabDocregistry.registryMod.DocumentRegistry.IToolbarItem
 import typings.luminoWidgets.mod.Widget
@@ -38,6 +39,11 @@ object ToolbarItems extends js.Object {
     * Create a paste toolbar item.
     */
   def createPasteButton(panel: typings.jupyterlabNotebook.panelMod.NotebookPanel): Widget = js.native
+  /**
+    * Create a restart run all toolbar item
+    */
+  def createRestartRunAllButton(panel: typings.jupyterlabNotebook.panelMod.NotebookPanel): Widget = js.native
+  def createRestartRunAllButton(panel: typings.jupyterlabNotebook.panelMod.NotebookPanel, dialogs: IDialogs): Widget = js.native
   /**
     * Create a run toolbar item.
     */

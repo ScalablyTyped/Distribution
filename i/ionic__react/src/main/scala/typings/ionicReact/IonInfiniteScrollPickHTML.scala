@@ -69,6 +69,7 @@ import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
@@ -592,7 +593,7 @@ object IonInfiniteScrollPickHTML {
     onProgress: SyntheticEvent[HTMLIonInfiniteScrollElement, Event_] => Unit = null,
     onRateChange: SyntheticEvent[HTMLIonInfiniteScrollElement, Event_] => Unit = null,
     onReset: FormEvent[HTMLIonInfiniteScrollElement] => Unit = null,
-    onScroll: UIEvent[HTMLIonInfiniteScrollElement] => Unit = null,
+    onScroll: UIEvent[HTMLIonInfiniteScrollElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[HTMLIonInfiniteScrollElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[HTMLIonInfiniteScrollElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[HTMLIonInfiniteScrollElement, Event_] => Unit = null,

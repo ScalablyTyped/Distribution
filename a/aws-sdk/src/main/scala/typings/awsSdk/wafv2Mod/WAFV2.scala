@@ -13,12 +13,12 @@ trait WAFV2 extends Service {
   @JSName("config")
   var config_WAFV2: ConfigBase with ClientConfiguration = js.native
   /**
-    *  This is the latest version of AWS WAF, named AWS WAFV2, released in November, 2019. For information, including how to migrate your AWS WAF resources from the prior release, see the AWS WAF Developer Guide.   Associates a Web ACL with a regional application resource, to protect the resource. A regional application can be an Application Load Balancer (ALB) or an API Gateway stage.  For AWS CloudFront, you can associate the Web ACL by providing the ARN of the WebACL to the CloudFront API call UpdateDistribution. For information, see UpdateDistribution.
+    *  This is the latest version of AWS WAF, named AWS WAFV2, released in November, 2019. For information, including how to migrate your AWS WAF resources from the prior release, see the AWS WAF Developer Guide.   Associates a Web ACL with a regional application resource, to protect the resource. A regional application can be an Application Load Balancer (ALB) or an API Gateway stage.  For AWS CloudFront, don't use this call. Instead, use your CloudFront distribution configuration. To associate a Web ACL, in the CloudFront call UpdateDistribution, set the web ACL ID to the Amazon Resource Name (ARN) of the Web ACL. For information, see UpdateDistribution.
     */
   def associateWebACL(): Request[AssociateWebACLResponse, AWSError] = js.native
   def associateWebACL(callback: js.Function2[/* err */ AWSError, /* data */ AssociateWebACLResponse, Unit]): Request[AssociateWebACLResponse, AWSError] = js.native
   /**
-    *  This is the latest version of AWS WAF, named AWS WAFV2, released in November, 2019. For information, including how to migrate your AWS WAF resources from the prior release, see the AWS WAF Developer Guide.   Associates a Web ACL with a regional application resource, to protect the resource. A regional application can be an Application Load Balancer (ALB) or an API Gateway stage.  For AWS CloudFront, you can associate the Web ACL by providing the ARN of the WebACL to the CloudFront API call UpdateDistribution. For information, see UpdateDistribution.
+    *  This is the latest version of AWS WAF, named AWS WAFV2, released in November, 2019. For information, including how to migrate your AWS WAF resources from the prior release, see the AWS WAF Developer Guide.   Associates a Web ACL with a regional application resource, to protect the resource. A regional application can be an Application Load Balancer (ALB) or an API Gateway stage.  For AWS CloudFront, don't use this call. Instead, use your CloudFront distribution configuration. To associate a Web ACL, in the CloudFront call UpdateDistribution, set the web ACL ID to the Amazon Resource Name (ARN) of the Web ACL. For information, see UpdateDistribution.
     */
   def associateWebACL(params: AssociateWebACLRequest): Request[AssociateWebACLResponse, AWSError] = js.native
   def associateWebACL(
@@ -91,6 +91,21 @@ trait WAFV2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateWebACLResponse, Unit]
   ): Request[CreateWebACLResponse, AWSError] = js.native
   /**
+    * Deletes all rule groups that are managed by AWS Firewall Manager for the specified web ACL.  You can only use this if ManagedByFirewallManager is false in the specified WebACL. 
+    */
+  def deleteFirewallManagerRuleGroups(): Request[DeleteFirewallManagerRuleGroupsResponse, AWSError] = js.native
+  def deleteFirewallManagerRuleGroups(
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteFirewallManagerRuleGroupsResponse, Unit]
+  ): Request[DeleteFirewallManagerRuleGroupsResponse, AWSError] = js.native
+  /**
+    * Deletes all rule groups that are managed by AWS Firewall Manager for the specified web ACL.  You can only use this if ManagedByFirewallManager is false in the specified WebACL. 
+    */
+  def deleteFirewallManagerRuleGroups(params: DeleteFirewallManagerRuleGroupsRequest): Request[DeleteFirewallManagerRuleGroupsResponse, AWSError] = js.native
+  def deleteFirewallManagerRuleGroups(
+    params: DeleteFirewallManagerRuleGroupsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteFirewallManagerRuleGroupsResponse, Unit]
+  ): Request[DeleteFirewallManagerRuleGroupsResponse, AWSError] = js.native
+  /**
     *  This is the latest version of AWS WAF, named AWS WAFV2, released in November, 2019. For information, including how to migrate your AWS WAF resources from the prior release, see the AWS WAF Developer Guide.   Deletes the specified IPSet. 
     */
   def deleteIPSet(): Request[DeleteIPSetResponse, AWSError] = js.native
@@ -116,6 +131,19 @@ trait WAFV2 extends Service {
     params: DeleteLoggingConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteLoggingConfigurationResponse, Unit]
   ): Request[DeleteLoggingConfigurationResponse, AWSError] = js.native
+  /**
+    * Permanently deletes an IAM policy from the specified rule group. You must be the owner of the rule group to perform this operation.
+    */
+  def deletePermissionPolicy(): Request[DeletePermissionPolicyResponse, AWSError] = js.native
+  def deletePermissionPolicy(callback: js.Function2[/* err */ AWSError, /* data */ DeletePermissionPolicyResponse, Unit]): Request[DeletePermissionPolicyResponse, AWSError] = js.native
+  /**
+    * Permanently deletes an IAM policy from the specified rule group. You must be the owner of the rule group to perform this operation.
+    */
+  def deletePermissionPolicy(params: DeletePermissionPolicyRequest): Request[DeletePermissionPolicyResponse, AWSError] = js.native
+  def deletePermissionPolicy(
+    params: DeletePermissionPolicyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeletePermissionPolicyResponse, Unit]
+  ): Request[DeletePermissionPolicyResponse, AWSError] = js.native
   /**
     *  This is the latest version of AWS WAF, named AWS WAFV2, released in November, 2019. For information, including how to migrate your AWS WAF resources from the prior release, see the AWS WAF Developer Guide.   Deletes the specified RegexPatternSet.
     */
@@ -143,12 +171,12 @@ trait WAFV2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteRuleGroupResponse, Unit]
   ): Request[DeleteRuleGroupResponse, AWSError] = js.native
   /**
-    *  This is the latest version of AWS WAF, named AWS WAFV2, released in November, 2019. For information, including how to migrate your AWS WAF resources from the prior release, see the AWS WAF Developer Guide.   Deletes the specified WebACL.
+    *  This is the latest version of AWS WAF, named AWS WAFV2, released in November, 2019. For information, including how to migrate your AWS WAF resources from the prior release, see the AWS WAF Developer Guide.   Deletes the specified WebACL. You can only use this if ManagedByFirewallManager is false in the specified WebACL. 
     */
   def deleteWebACL(): Request[DeleteWebACLResponse, AWSError] = js.native
   def deleteWebACL(callback: js.Function2[/* err */ AWSError, /* data */ DeleteWebACLResponse, Unit]): Request[DeleteWebACLResponse, AWSError] = js.native
   /**
-    *  This is the latest version of AWS WAF, named AWS WAFV2, released in November, 2019. For information, including how to migrate your AWS WAF resources from the prior release, see the AWS WAF Developer Guide.   Deletes the specified WebACL.
+    *  This is the latest version of AWS WAF, named AWS WAFV2, released in November, 2019. For information, including how to migrate your AWS WAF resources from the prior release, see the AWS WAF Developer Guide.   Deletes the specified WebACL. You can only use this if ManagedByFirewallManager is false in the specified WebACL. 
     */
   def deleteWebACL(params: DeleteWebACLRequest): Request[DeleteWebACLResponse, AWSError] = js.native
   def deleteWebACL(
@@ -169,12 +197,12 @@ trait WAFV2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeManagedRuleGroupResponse, Unit]
   ): Request[DescribeManagedRuleGroupResponse, AWSError] = js.native
   /**
-    *  This is the latest version of AWS WAF, named AWS WAFV2, released in November, 2019. For information, including how to migrate your AWS WAF resources from the prior release, see the AWS WAF Developer Guide.   Disassociates a Web ACL from a regional application resource. A regional application can be an Application Load Balancer (ALB) or an API Gateway stage.  For AWS CloudFront, you can disassociate the Web ACL by providing an empty web ACL ARN in the CloudFront API call UpdateDistribution. For information, see UpdateDistribution.
+    *  This is the latest version of AWS WAF, named AWS WAFV2, released in November, 2019. For information, including how to migrate your AWS WAF resources from the prior release, see the AWS WAF Developer Guide.   Disassociates a Web ACL from a regional application resource. A regional application can be an Application Load Balancer (ALB) or an API Gateway stage.  For AWS CloudFront, don't use this call. Instead, use your CloudFront distribution configuration. To disassociate a Web ACL, provide an empty web ACL ID in the CloudFront call UpdateDistribution. For information, see UpdateDistribution.
     */
   def disassociateWebACL(): Request[DisassociateWebACLResponse, AWSError] = js.native
   def disassociateWebACL(callback: js.Function2[/* err */ AWSError, /* data */ DisassociateWebACLResponse, Unit]): Request[DisassociateWebACLResponse, AWSError] = js.native
   /**
-    *  This is the latest version of AWS WAF, named AWS WAFV2, released in November, 2019. For information, including how to migrate your AWS WAF resources from the prior release, see the AWS WAF Developer Guide.   Disassociates a Web ACL from a regional application resource. A regional application can be an Application Load Balancer (ALB) or an API Gateway stage.  For AWS CloudFront, you can disassociate the Web ACL by providing an empty web ACL ARN in the CloudFront API call UpdateDistribution. For information, see UpdateDistribution.
+    *  This is the latest version of AWS WAF, named AWS WAFV2, released in November, 2019. For information, including how to migrate your AWS WAF resources from the prior release, see the AWS WAF Developer Guide.   Disassociates a Web ACL from a regional application resource. A regional application can be an Application Load Balancer (ALB) or an API Gateway stage.  For AWS CloudFront, don't use this call. Instead, use your CloudFront distribution configuration. To disassociate a Web ACL, provide an empty web ACL ID in the CloudFront call UpdateDistribution. For information, see UpdateDistribution.
     */
   def disassociateWebACL(params: DisassociateWebACLRequest): Request[DisassociateWebACLResponse, AWSError] = js.native
   def disassociateWebACL(
@@ -207,6 +235,19 @@ trait WAFV2 extends Service {
     params: GetLoggingConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetLoggingConfigurationResponse, Unit]
   ): Request[GetLoggingConfigurationResponse, AWSError] = js.native
+  /**
+    * Returns the IAM policy that is attached to the specified rule group. You must be the owner of the rule group to perform this operation.
+    */
+  def getPermissionPolicy(): Request[GetPermissionPolicyResponse, AWSError] = js.native
+  def getPermissionPolicy(callback: js.Function2[/* err */ AWSError, /* data */ GetPermissionPolicyResponse, Unit]): Request[GetPermissionPolicyResponse, AWSError] = js.native
+  /**
+    * Returns the IAM policy that is attached to the specified rule group. You must be the owner of the rule group to perform this operation.
+    */
+  def getPermissionPolicy(params: GetPermissionPolicyRequest): Request[GetPermissionPolicyResponse, AWSError] = js.native
+  def getPermissionPolicy(
+    params: GetPermissionPolicyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetPermissionPolicyResponse, Unit]
+  ): Request[GetPermissionPolicyResponse, AWSError] = js.native
   /**
     *  This is the latest version of AWS WAF, named AWS WAFV2, released in November, 2019. For information, including how to migrate your AWS WAF resources from the prior release, see the AWS WAF Developer Guide.   Retrieves the keys that are currently blocked by a rate-based rule. The maximum number of managed keys that can be blocked for a single rate-based rule is 10,000. If more than 10,000 addresses exceed the rate limit, those with the highest rates are blocked.
     */
@@ -394,18 +435,31 @@ trait WAFV2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListWebACLsResponse, Unit]
   ): Request[ListWebACLsResponse, AWSError] = js.native
   /**
-    *  This is the latest version of AWS WAF, named AWS WAFV2, released in November, 2019. For information, including how to migrate your AWS WAF resources from the prior release, see the AWS WAF Developer Guide.   Enables the specified LoggingConfiguration, to start logging from a web ACL, according to the configuration provided. You can access information about all traffic that AWS WAF inspects using the following steps:   Create an Amazon Kinesis Data Firehose.  Create the data firehose with a PUT source and in the region that you are operating. If you are capturing logs for Amazon CloudFront, always create the firehose in US East (N. Virginia).   Do not create the data firehose using a Kinesis stream as your source.    Associate that firehose to your web ACL using a PutLoggingConfiguration request.   When you successfully enable logging using a PutLoggingConfiguration request, AWS WAF will create a service linked role with the necessary permissions to write logs to the Amazon Kinesis Data Firehose. For more information, see Logging Web ACL Traffic Information in the AWS WAF Developer Guide.
+    *  This is the latest version of AWS WAF, named AWS WAFV2, released in November, 2019. For information, including how to migrate your AWS WAF resources from the prior release, see the AWS WAF Developer Guide.   Enables the specified LoggingConfiguration, to start logging from a web ACL, according to the configuration provided. You can access information about all traffic that AWS WAF inspects using the following steps:   Create an Amazon Kinesis Data Firehose.  Create the data firehose with a PUT source and in the Region that you are operating. If you are capturing logs for Amazon CloudFront, always create the firehose in US East (N. Virginia).   Do not create the data firehose using a Kinesis stream as your source.    Associate that firehose to your web ACL using a PutLoggingConfiguration request.   When you successfully enable logging using a PutLoggingConfiguration request, AWS WAF will create a service linked role with the necessary permissions to write logs to the Amazon Kinesis Data Firehose. For more information, see Logging Web ACL Traffic Information in the AWS WAF Developer Guide.
     */
   def putLoggingConfiguration(): Request[PutLoggingConfigurationResponse, AWSError] = js.native
   def putLoggingConfiguration(callback: js.Function2[/* err */ AWSError, /* data */ PutLoggingConfigurationResponse, Unit]): Request[PutLoggingConfigurationResponse, AWSError] = js.native
   /**
-    *  This is the latest version of AWS WAF, named AWS WAFV2, released in November, 2019. For information, including how to migrate your AWS WAF resources from the prior release, see the AWS WAF Developer Guide.   Enables the specified LoggingConfiguration, to start logging from a web ACL, according to the configuration provided. You can access information about all traffic that AWS WAF inspects using the following steps:   Create an Amazon Kinesis Data Firehose.  Create the data firehose with a PUT source and in the region that you are operating. If you are capturing logs for Amazon CloudFront, always create the firehose in US East (N. Virginia).   Do not create the data firehose using a Kinesis stream as your source.    Associate that firehose to your web ACL using a PutLoggingConfiguration request.   When you successfully enable logging using a PutLoggingConfiguration request, AWS WAF will create a service linked role with the necessary permissions to write logs to the Amazon Kinesis Data Firehose. For more information, see Logging Web ACL Traffic Information in the AWS WAF Developer Guide.
+    *  This is the latest version of AWS WAF, named AWS WAFV2, released in November, 2019. For information, including how to migrate your AWS WAF resources from the prior release, see the AWS WAF Developer Guide.   Enables the specified LoggingConfiguration, to start logging from a web ACL, according to the configuration provided. You can access information about all traffic that AWS WAF inspects using the following steps:   Create an Amazon Kinesis Data Firehose.  Create the data firehose with a PUT source and in the Region that you are operating. If you are capturing logs for Amazon CloudFront, always create the firehose in US East (N. Virginia).   Do not create the data firehose using a Kinesis stream as your source.    Associate that firehose to your web ACL using a PutLoggingConfiguration request.   When you successfully enable logging using a PutLoggingConfiguration request, AWS WAF will create a service linked role with the necessary permissions to write logs to the Amazon Kinesis Data Firehose. For more information, see Logging Web ACL Traffic Information in the AWS WAF Developer Guide.
     */
   def putLoggingConfiguration(params: PutLoggingConfigurationRequest): Request[PutLoggingConfigurationResponse, AWSError] = js.native
   def putLoggingConfiguration(
     params: PutLoggingConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ PutLoggingConfigurationResponse, Unit]
   ): Request[PutLoggingConfigurationResponse, AWSError] = js.native
+  /**
+    * Attaches an IAM policy to the specified resource. Use this to share a rule group across accounts. You must be the owner of the rule group to perform this operation. This action is subject to the following restrictions:   You can attach only one policy with each PutPermissionPolicy request.   The ARN in the request must be a valid WAF RuleGroup ARN and the rule group must exist in the same region.   The user making the request must be the owner of the rule group.  
+    */
+  def putPermissionPolicy(): Request[PutPermissionPolicyResponse, AWSError] = js.native
+  def putPermissionPolicy(callback: js.Function2[/* err */ AWSError, /* data */ PutPermissionPolicyResponse, Unit]): Request[PutPermissionPolicyResponse, AWSError] = js.native
+  /**
+    * Attaches an IAM policy to the specified resource. Use this to share a rule group across accounts. You must be the owner of the rule group to perform this operation. This action is subject to the following restrictions:   You can attach only one policy with each PutPermissionPolicy request.   The ARN in the request must be a valid WAF RuleGroup ARN and the rule group must exist in the same region.   The user making the request must be the owner of the rule group.  
+    */
+  def putPermissionPolicy(params: PutPermissionPolicyRequest): Request[PutPermissionPolicyResponse, AWSError] = js.native
+  def putPermissionPolicy(
+    params: PutPermissionPolicyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ PutPermissionPolicyResponse, Unit]
+  ): Request[PutPermissionPolicyResponse, AWSError] = js.native
   /**
     *  This is the latest version of AWS WAF, named AWS WAFV2, released in November, 2019. For information, including how to migrate your AWS WAF resources from the prior release, see the AWS WAF Developer Guide.   Associates tags with the specified AWS resource. Tags are key:value pairs that you can associate with AWS resources. For example, the tag key might be "customer" and the tag value might be "companyA." You can specify one or more tags to add to each container. You can add up to 50 tags to each AWS resource.
     */

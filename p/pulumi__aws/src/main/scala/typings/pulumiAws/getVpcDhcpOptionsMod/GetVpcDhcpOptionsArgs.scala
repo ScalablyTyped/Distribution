@@ -16,6 +16,9 @@ trait GetVpcDhcpOptionsArgs extends js.Object {
     * List of custom filters as described below.
     */
   val filters: js.UndefOr[js.Array[GetVpcDhcpOptionsFilter]] = js.native
+  /**
+    * A mapping of tags assigned to the resource.
+    */
   val tags: js.UndefOr[StringDictionary[js.Any]] = js.native
 }
 

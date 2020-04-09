@@ -1,5 +1,6 @@
 package typings.pulumiAws.javaAppLayerMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiAws.inputMod.opsworks.JavaAppLayerEbsVolume
 import typings.pulumiPulumi.outputMod.Input
 import scala.scalajs.js
@@ -16,6 +17,10 @@ trait JavaAppLayerState extends js.Object {
     * Version of the selected application container to use. Defaults to "7".
     */
   val appServerVersion: js.UndefOr[Input[String]] = js.native
+  /**
+    * The Amazon Resource Name(ARN) of the layer.
+    */
+  val arn: js.UndefOr[Input[String]] = js.native
   /**
     * Whether to automatically assign an elastic IP address to the layer's instances.
     */
@@ -90,6 +95,10 @@ trait JavaAppLayerState extends js.Object {
     */
   val systemPackages: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
+    * A mapping of tags to assign to the resource.
+    */
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  /**
     * Whether to use EBS-optimized instances.
     */
   val useEbsOptimizedInstances: js.UndefOr[Input[Boolean]] = js.native
@@ -100,6 +109,7 @@ object JavaAppLayerState {
   def apply(
     appServer: Input[String] = null,
     appServerVersion: Input[String] = null,
+    arn: Input[String] = null,
     autoAssignElasticIps: Input[Boolean] = null,
     autoAssignPublicIps: Input[Boolean] = null,
     autoHealing: Input[Boolean] = null,
@@ -122,11 +132,13 @@ object JavaAppLayerState {
     name: Input[String] = null,
     stackId: Input[String] = null,
     systemPackages: Input[js.Array[Input[String]]] = null,
+    tags: Input[StringDictionary[_]] = null,
     useEbsOptimizedInstances: Input[Boolean] = null
   ): JavaAppLayerState = {
     val __obj = js.Dynamic.literal()
     if (appServer != null) __obj.updateDynamic("appServer")(appServer.asInstanceOf[js.Any])
     if (appServerVersion != null) __obj.updateDynamic("appServerVersion")(appServerVersion.asInstanceOf[js.Any])
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
     if (autoAssignElasticIps != null) __obj.updateDynamic("autoAssignElasticIps")(autoAssignElasticIps.asInstanceOf[js.Any])
     if (autoAssignPublicIps != null) __obj.updateDynamic("autoAssignPublicIps")(autoAssignPublicIps.asInstanceOf[js.Any])
     if (autoHealing != null) __obj.updateDynamic("autoHealing")(autoHealing.asInstanceOf[js.Any])
@@ -149,6 +161,7 @@ object JavaAppLayerState {
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (stackId != null) __obj.updateDynamic("stackId")(stackId.asInstanceOf[js.Any])
     if (systemPackages != null) __obj.updateDynamic("systemPackages")(systemPackages.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     if (useEbsOptimizedInstances != null) __obj.updateDynamic("useEbsOptimizedInstances")(useEbsOptimizedInstances.asInstanceOf[js.Any])
     __obj.asInstanceOf[JavaAppLayerState]
   }

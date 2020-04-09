@@ -9,7 +9,7 @@ trait DescribeInstancesInput extends js.Object {
   /**
     * A unique identifier for a fleet to retrieve instance information for. You can use either the fleet ID or ARN value.
     */
-  var FleetId: typings.awsSdk.gameliftMod.FleetId = js.native
+  var FleetId: FleetIdOrArn = js.native
   /**
     * A unique identifier for an instance to retrieve. Specify an instance ID or leave blank to retrieve all instances in the fleet.
     */
@@ -27,7 +27,7 @@ trait DescribeInstancesInput extends js.Object {
 object DescribeInstancesInput {
   @scala.inline
   def apply(
-    FleetId: FleetId,
+    FleetId: FleetIdOrArn,
     InstanceId: InstanceId = null,
     Limit: Int | scala.Double = null,
     NextToken: NonZeroAndMaxString = null

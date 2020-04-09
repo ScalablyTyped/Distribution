@@ -43,7 +43,7 @@ class Cluster protected () extends CustomResource {
     */
   val autoscalingRole: Output_[js.UndefOr[String]] = js.native
   /**
-    * List of bootstrap actions that will be run before Hadoop is started on the cluster nodes. Defined below
+    * Ordered list of bootstrap actions that will be run before Hadoop is started on the cluster nodes. Defined below.
     */
   val bootstrapActions: Output_[js.UndefOr[js.Array[ClusterBootstrapAction]]] = js.native
   val clusterState: Output_[String] = js.native
@@ -133,7 +133,7 @@ class Cluster protected () extends CustomResource {
     */
   val stepConcurrencyLevel: Output_[js.UndefOr[Double]] = js.native
   /**
-    * List of steps to run when creating the cluster. Defined below. It is highly recommended to utilize the [lifecycle configuration block](https://www.terraform.io/docs/configuration/resources.html) with `ignoreChanges` if other steps are being managed outside of this provider. This argument is processed in [attribute-as-blocks mode](https://www.terraform.io/docs/configuration/attr-as-blocks.html).
+    * List of steps to run when creating the cluster. Defined below. It is highly recommended to utilize [`ignoreChanges`](https://www.pulumi.com/docs/intro/concepts/programming-model/#ignorechanges) if other steps are being managed outside of this provider.
     */
   val steps: Output_[js.Array[ClusterStep]] = js.native
   /**

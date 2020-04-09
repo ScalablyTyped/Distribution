@@ -14,18 +14,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Describes settings supported by a series of the stacked bar type. */
+/** @name dxChartSeriesTypes.StackedBarSeries */
 trait dxChartSeriesTypesStackedBarSeries extends dxChartSeriesTypesCommonSeries {
-  /** Configures data aggregation for the series. */
+  /** @name dxChartSeriesTypes.StackedBarSeries.aggregation */
   @JSName("aggregation")
   var aggregation_dxChartSeriesTypesStackedBarSeries: js.UndefOr[dxChartSeriesTypesStackedBarSeriesAggregation] = js.undefined
-  /** Specifies series elements to be highlighted when a user points to a series. */
+  /** @name dxChartSeriesTypes.StackedBarSeries.hoverMode */
   @JSName("hoverMode")
   var hoverMode_dxChartSeriesTypesStackedBarSeries: js.UndefOr[onlyPoint | allSeriesPoints | allArgumentPoints | none] = js.undefined
-  /** Configures point labels. */
+  /** @name dxChartSeriesTypes.StackedBarSeries.label */
   @JSName("label")
   var label_dxChartSeriesTypesStackedBarSeries: js.UndefOr[dxChartSeriesTypesStackedBarSeriesLabel] = js.undefined
-  /** Specifies series elements to be highlighted when a user selects a bar. */
+  /** @name dxChartSeriesTypes.StackedBarSeries.selectionMode */
   @JSName("selectionMode")
   var selectionMode_dxChartSeriesTypesStackedBarSeries: js.UndefOr[onlyPoint | allSeriesPoints | allArgumentPoints | none] = js.undefined
 }

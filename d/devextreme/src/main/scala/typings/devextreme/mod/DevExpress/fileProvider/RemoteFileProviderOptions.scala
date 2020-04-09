@@ -5,9 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RemoteFileProviderOptions extends FileProviderOptions[RemoteFileProvider] {
-  /** Specifies the URL of an endpoint used to access and modify a file system located on the server. */
+  /** @name RemoteFileProvider.Options.endpointUrl */
   var endpointUrl: js.UndefOr[String] = js.undefined
-  /** Specifies which data field provides information about whether a directory has subdirectories. */
+  /** @name RemoteFileProvider.Options.hasSubDirectoriesExpr */
   var hasSubDirectoriesExpr: js.UndefOr[String | js.Function] = js.undefined
 }
 

@@ -30,55 +30,55 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxDiagramOptions extends WidgetOptions[dxDiagram] {
-  /** Specifies whether the Diagram widget automatically zooms the work area. */
+  /** @name dxDiagram.Options.autoZoom */
   var autoZoom: js.UndefOr[fitContent | fitWidth | disabled] = js.undefined
-  /** Configures the context menu's settings. */
+  /** @name dxDiagram.Options.contextMenu */
   var contextMenu: js.UndefOr[AnonCommands] = js.undefined
-  /** Provide access to an array of custom shapes. */
+  /** @name dxDiagram.Options.customShapes */
   var customShapes: js.UndefOr[js.Array[AnonAllowEditImage]] = js.undefined
-  /** Allows you to bind the collection of diagram edges to a data source. */
+  /** @name dxDiagram.Options.edges */
   var edges: js.UndefOr[AnonFromExpr] = js.undefined
-  /** Configures export settings. */
+  /** @name dxDiagram.Options.export */
   var export: js.UndefOr[AnonProxyUrl] = js.undefined
-  /** Specifies whether or not to display the widget in full-screen mode. */
+  /** @name dxDiagram.Options.fullScreen */
   var fullScreen: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the grid pitch. */
+  /** @name dxDiagram.Options.gridSize */
   var gridSize: js.UndefOr[Double | AnonItemsValue] = js.undefined
-  /** Allows you to bind the collection of diagram nodes to a data source. */
+  /** @name dxDiagram.Options.nodes */
   var nodes: js.UndefOr[AnonAutoLayout] = js.undefined
-  /** A function that is executed when the diagram's data changes. */
+  /** @name dxDiagram.Options.onDataChanged */
   var onDataChanged: js.UndefOr[js.Function1[/* e */ AnonComponentDxDiagram, _]] = js.undefined
-  /** A function that is executed after a shape or connector is clicked. */
+  /** @name dxDiagram.Options.onItemClick */
   var onItemClick: js.UndefOr[js.Function1[/* e */ AnonItem, _]] = js.undefined
-  /** A function that is executed after a shape or connector is double-clicked. */
+  /** @name dxDiagram.Options.onItemDblClick */
   var onItemDblClick: js.UndefOr[js.Function1[/* e */ AnonItem, _]] = js.undefined
-  /** A function that is executed after the selection is changed in the Diagram. */
+  /** @name dxDiagram.Options.onSelectionChanged */
   var onSelectionChanged: js.UndefOr[js.Function1[/* e */ AnonElementItems, _]] = js.undefined
-  /** Specifies the color of a diagram page. */
+  /** @name dxDiagram.Options.pageColor */
   var pageColor: js.UndefOr[String] = js.undefined
-  /** Specifies the page orientation. */
+  /** @name dxDiagram.Options.pageOrientation */
   var pageOrientation: js.UndefOr[portrait | landscape] = js.undefined
-  /** Specifies a size of pages. */
+  /** @name dxDiagram.Options.pageSize */
   var pageSize: js.UndefOr[AnonWidth] = js.undefined
-  /** Provides access to Properties panel settings. */
+  /** @name dxDiagram.Options.propertiesPanel */
   var propertiesPanel: js.UndefOr[AnonCollapsible] = js.undefined
-  /** Specifies whether the diagram is read-only. */
+  /** @name dxDiagram.Options.readOnly */
   var readOnly: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether grid lines are visible. */
+  /** @name dxDiagram.Options.showGrid */
   var showGrid: js.UndefOr[Boolean] = js.undefined
-  /** Switch the Diagram widget to simple view mode. */
+  /** @name dxDiagram.Options.simpleView */
   var simpleView: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether diagram elements should snap to grid lines. */
+  /** @name dxDiagram.Options.snapToGrid */
   var snapToGrid: js.UndefOr[Boolean] = js.undefined
-  /** Provides access to toolbar settings. */
+  /** @name dxDiagram.Options.toolbar */
   var toolbar: js.UndefOr[AnonVisible] = js.undefined
-  /** Provides access to toolbox settings. */
+  /** @name dxDiagram.Options.toolbox */
   var toolbox: js.UndefOr[AnonGroups] = js.undefined
-  /** Specifies the unit for measurement options (for example, defaultHeight, gridSize, leftExpr). */
+  /** @name dxDiagram.Options.units */
   var units: js.UndefOr[in | cm | px] = js.undefined
-  /** Specifies the measurement unit that is displayed in user interface elements. */
+  /** @name dxDiagram.Options.viewUnits */
   var viewUnits: js.UndefOr[in | cm | px] = js.undefined
-  /** Specifies the zoom level. */
+  /** @name dxDiagram.Options.zoomLevel */
   var zoomLevel: js.UndefOr[Double | AnonItemsValue] = js.undefined
 }
 

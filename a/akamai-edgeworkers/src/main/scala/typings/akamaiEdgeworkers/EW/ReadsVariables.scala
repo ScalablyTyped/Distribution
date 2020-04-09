@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait ReadsVariables extends js.Object {
   /**
-    * Get's the value of a request variable
+    * Gets the value of a metadata variable
     */
   def getVariable(name: String): js.UndefOr[String]
 }

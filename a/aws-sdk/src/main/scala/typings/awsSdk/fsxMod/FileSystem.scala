@@ -49,7 +49,11 @@ trait FileSystem extends js.Object {
     */
   var StorageCapacity: js.UndefOr[typings.awsSdk.fsxMod.StorageCapacity] = js.native
   /**
-    * The ID of the subnet to contain the endpoint for the file system. One and only one is supported. The file system is launched in the Availability Zone associated with this subnet.
+    * The storage type of the file system. Valid values are SSD and HDD. If set to SSD, the file system uses solid state drive storage. If set to HDD, the file system uses hard disk drive storage. 
+    */
+  var StorageType: js.UndefOr[typings.awsSdk.fsxMod.StorageType] = js.native
+  /**
+    * Specifies the IDs of the subnets that the file system is accessible from. For Windows MULTI_AZ_1 file system deployment type, there are two subnet IDs, one for the preferred file server and one for the standby file server. The preferred file server subnet identified in the PreferredSubnetID property. All other file systems have only one subnet ID. For Lustre file systems, and Single-AZ Windows file systems, this is the ID of the subnet that contains the endpoint for the file system. For MULTI_AZ_1 Windows file systems, the endpoint for the file system is available in the PreferredSubnetID.
     */
   var SubnetIds: js.UndefOr[typings.awsSdk.fsxMod.SubnetIds] = js.native
   /**
@@ -81,6 +85,7 @@ object FileSystem {
     OwnerId: AWSAccountId = null,
     ResourceARN: ResourceARN = null,
     StorageCapacity: Int | Double = null,
+    StorageType: StorageType = null,
     SubnetIds: SubnetIds = null,
     Tags: Tags = null,
     VpcId: VpcId = null,
@@ -99,6 +104,7 @@ object FileSystem {
     if (OwnerId != null) __obj.updateDynamic("OwnerId")(OwnerId.asInstanceOf[js.Any])
     if (ResourceARN != null) __obj.updateDynamic("ResourceARN")(ResourceARN.asInstanceOf[js.Any])
     if (StorageCapacity != null) __obj.updateDynamic("StorageCapacity")(StorageCapacity.asInstanceOf[js.Any])
+    if (StorageType != null) __obj.updateDynamic("StorageType")(StorageType.asInstanceOf[js.Any])
     if (SubnetIds != null) __obj.updateDynamic("SubnetIds")(SubnetIds.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     if (VpcId != null) __obj.updateDynamic("VpcId")(VpcId.asInstanceOf[js.Any])

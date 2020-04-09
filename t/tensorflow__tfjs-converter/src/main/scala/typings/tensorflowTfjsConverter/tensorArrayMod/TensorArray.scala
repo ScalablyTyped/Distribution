@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@tensorflow/tfjs-converter/dist/src/executor/tensor_array", "TensorArray")
+@JSImport("@tensorflow/tfjs-converter/dist/executor/tensor_array", "TensorArray")
 @js.native
 class TensorArray protected () extends js.Object {
   def this(
@@ -94,7 +94,7 @@ class TensorArray protected () extends js.Object {
 }
 
 /* static members */
-@JSImport("@tensorflow/tfjs-converter/dist/src/executor/tensor_array", "TensorArray")
+@JSImport("@tensorflow/tfjs-converter/dist/executor/tensor_array", "TensorArray")
 @js.native
 object TensorArray extends js.Object {
   var nextId: js.Any = js.native

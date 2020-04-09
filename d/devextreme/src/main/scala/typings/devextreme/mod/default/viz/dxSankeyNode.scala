@@ -8,29 +8,29 @@ import scala.scalajs.js.annotation._
 @js.native
 class dxSankeyNode ()
   extends typings.devextreme.mod.DevExpress.viz.dxSankeyNode {
-  /** The node's label. */
+  /** @name dxSankeyNode.label */
   /* CompleteClass */
   override var label: String = js.native
-  /** The node's incoming links. */
+  /** @name dxSankeyNode.linksIn */
   /* CompleteClass */
   override var linksIn: js.Array[_] = js.native
-  /** The node's outgoing links. */
+  /** @name dxSankeyNode.linksOut */
   /* CompleteClass */
   override var linksOut: js.Array[_] = js.native
-  /** @deprecated Use [label](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/6%20Node/2%20Fields/label.md '/Documentation/ApiReference/Data_Visualization_Widgets/dxSankey/Node/Fields/#label') instead. */
-  /** The node's label. */
+  /** @deprecated */
+  /** @name dxSankeyNode.title */
   /* CompleteClass */
   override var title: String = js.native
-  /** Hides the sankey node's tooltip. */
+  /** @name dxSankeyNode.hideTooltip() */
   /* CompleteClass */
   override def hideTooltip(): Unit = js.native
-  /** Changes the sankey node's hover state. */
+  /** @name dxSankeyNode.hover(state) */
   /* CompleteClass */
   override def hover(state: Boolean): Unit = js.native
-  /** Indicates whether the sankey node is in the hover state. */
+  /** @name dxSankeyNode.isHovered() */
   /* CompleteClass */
   override def isHovered(): Boolean = js.native
-  /** Shows the sankey node's tooltip. */
+  /** @name dxSankeyNode.showTooltip() */
   /* CompleteClass */
   override def showTooltip(): Unit = js.native
 }

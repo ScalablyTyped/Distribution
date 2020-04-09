@@ -5,6 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+//#endregion
+//#region constants
+/**
+  * The XRegExp version number as a string containing three dot-separated parts. For example,
+  * '2.0.0-beta-3'.
+  */
 @JSImport("xregexp", "version")
 @js.native
 object version extends TopLevel[String]

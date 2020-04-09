@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest-matcher-utils
 
-Typings are for version 25.1.0
+Typings are for version 25.2.7
 
 ## Library description:
 A set of utility functions for expect and related packages

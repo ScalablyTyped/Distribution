@@ -54,6 +54,10 @@ trait NfsFileShareState extends js.Object {
     */
   val objectAcl: js.UndefOr[Input[String]] = js.native
   /**
+    * File share path used by the NFS client to identify the mount point.
+    */
+  val path: js.UndefOr[Input[String]] = js.native
+  /**
     * Boolean to indicate write status of file share. File share does not accept writes if `true`. Defaults to `false`.
     */
   val readOnly: js.UndefOr[Input[Boolean]] = js.native
@@ -89,6 +93,7 @@ object NfsFileShareState {
     locationArn: Input[String] = null,
     nfsFileShareDefaults: Input[NfsFileShareNfsFileShareDefaults] = null,
     objectAcl: Input[String] = null,
+    path: Input[String] = null,
     readOnly: Input[Boolean] = null,
     requesterPays: Input[Boolean] = null,
     roleArn: Input[String] = null,
@@ -107,6 +112,7 @@ object NfsFileShareState {
     if (locationArn != null) __obj.updateDynamic("locationArn")(locationArn.asInstanceOf[js.Any])
     if (nfsFileShareDefaults != null) __obj.updateDynamic("nfsFileShareDefaults")(nfsFileShareDefaults.asInstanceOf[js.Any])
     if (objectAcl != null) __obj.updateDynamic("objectAcl")(objectAcl.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (readOnly != null) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
     if (requesterPays != null) __obj.updateDynamic("requesterPays")(requesterPays.asInstanceOf[js.Any])
     if (roleArn != null) __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])

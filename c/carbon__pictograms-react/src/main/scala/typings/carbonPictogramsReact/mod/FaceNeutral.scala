@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@carbon/pictograms-react", "FaceNeutral")
 @js.native
-object FaceNeutral extends TopLevel[CarbonPictogram]
+object FaceNeutral extends TopLevel[CarbonPictogramType]
 

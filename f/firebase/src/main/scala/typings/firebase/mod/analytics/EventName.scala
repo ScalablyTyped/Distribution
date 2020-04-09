@@ -15,6 +15,9 @@ object EventName extends js.Object {
   sealed trait ADD_PAYMENT_INFO extends EventName
   
   @js.native
+  sealed trait ADD_SHIPPING_INFO extends EventName
+  
+  @js.native
   sealed trait ADD_TO_CART extends EventName
   
   @js.native
@@ -23,6 +26,7 @@ object EventName extends js.Object {
   @js.native
   sealed trait BEGIN_CHECKOUT extends EventName
   
+  /** @deprecated */
   @js.native
   sealed trait CHECKOUT_PROGRESS extends EventName
   
@@ -57,6 +61,13 @@ object EventName extends js.Object {
   sealed trait SELECT_CONTENT extends EventName
   
   @js.native
+  sealed trait SELECT_ITEM extends EventName
+  
+  @js.native
+  sealed trait SELECT_PROMOTION extends EventName
+  
+  /** @deprecated */
+  @js.native
   sealed trait SET_CHECKOUT_OPTION extends EventName
   
   @js.native
@@ -67,6 +78,9 @@ object EventName extends js.Object {
   
   @js.native
   sealed trait TIMING_COMPLETE extends EventName
+  
+  @js.native
+  sealed trait VIEW_CART extends EventName
   
   @js.native
   sealed trait VIEW_ITEM extends EventName
@@ -84,6 +98,9 @@ object EventName extends js.Object {
   def apply(value: String): js.UndefOr[EventName with String] = js.native
   /* "add_payment_info" */ @js.native
   object ADD_PAYMENT_INFO extends TopLevel[ADD_PAYMENT_INFO with String]
+  
+  /* "add_shipping_info" */ @js.native
+  object ADD_SHIPPING_INFO extends TopLevel[ADD_SHIPPING_INFO with String]
   
   /* "add_to_cart" */ @js.native
   object ADD_TO_CART extends TopLevel[ADD_TO_CART with String]
@@ -127,6 +144,12 @@ object EventName extends js.Object {
   /* "select_content" */ @js.native
   object SELECT_CONTENT extends TopLevel[SELECT_CONTENT with String]
   
+  /* "select_item" */ @js.native
+  object SELECT_ITEM extends TopLevel[SELECT_ITEM with String]
+  
+  /* "select_promotion" */ @js.native
+  object SELECT_PROMOTION extends TopLevel[SELECT_PROMOTION with String]
+  
   /* "set_checkout_option" */ @js.native
   object SET_CHECKOUT_OPTION extends TopLevel[SET_CHECKOUT_OPTION with String]
   
@@ -138,6 +161,9 @@ object EventName extends js.Object {
   
   /* "timing_complete" */ @js.native
   object TIMING_COMPLETE extends TopLevel[TIMING_COMPLETE with String]
+  
+  /* "view_cart" */ @js.native
+  object VIEW_CART extends TopLevel[VIEW_CART with String]
   
   /* "view_item" */ @js.native
   object VIEW_ITEM extends TopLevel[VIEW_ITEM with String]

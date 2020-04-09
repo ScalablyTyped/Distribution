@@ -14,6 +14,7 @@ import typings.react.mod.FormEvent
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
@@ -257,7 +258,7 @@ object ICheckboxProps {
     onProgress: SyntheticEvent[HTMLInputElement, Event_] => Unit = null,
     onRateChange: SyntheticEvent[HTMLInputElement, Event_] => Unit = null,
     onReset: FormEvent[HTMLInputElement] => Unit = null,
-    onScroll: UIEvent[HTMLInputElement] => Unit = null,
+    onScroll: UIEvent[HTMLInputElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[HTMLInputElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[HTMLInputElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[HTMLInputElement, Event_] => Unit = null,
@@ -293,7 +294,7 @@ object ICheckboxProps {
     suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined,
     suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined,
     tabIndex: Int | Double = null,
-    tagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any = null,
+    tagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any = null,
     title: String = null,
     translate: yes | no = null,
     `type`: String = null,

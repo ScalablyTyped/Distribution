@@ -24,11 +24,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PolarChartSeries extends dxPolarChartSeriesTypesCommonPolarChartSeries {
-  /** Specifies the name that identifies the series. */
+  /** @name PolarChartSeries.name */
   var name: js.UndefOr[String] = js.undefined
-  /** Specifies data about a series. */
+  /** @name PolarChartSeries.tag */
   var tag: js.UndefOr[js.Any] = js.undefined
-  /** Sets the series type. */
+  /** @name PolarChartSeries.type */
   var `type`: js.UndefOr[area | bar | line | scatter | stackedbar] = js.undefined
 }
 

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "phonegap-nfc"
-version := "0.0-unknown-dt-20200225Z-4633b7"
+version := "0.0-unknown-dt-20200331Z-4633b7"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

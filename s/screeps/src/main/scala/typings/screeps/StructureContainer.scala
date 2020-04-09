@@ -11,7 +11,8 @@ import scala.scalajs.js.annotation._
 trait StructureContainer
   extends Structure[STRUCTURE_CONTAINER]
      with AnyStoreStructure
-     with AnyStructure {
+     with AnyStructure
+     with ConcreteStructure[js.Any] {
   /**
     * An object with the structure contents. Each object key is one of the RESOURCE_* constants, values are resources
     * amounts. Use _.sum(structure.store) to get the total amount of contents

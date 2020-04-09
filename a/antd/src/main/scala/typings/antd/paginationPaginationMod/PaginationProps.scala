@@ -6,6 +6,7 @@ import typings.antd.antdStrings.`jump-prev`
 import typings.antd.antdStrings.next
 import typings.antd.antdStrings.page
 import typings.antd.antdStrings.prev
+import typings.antd.antdStrings.small
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
@@ -34,6 +35,7 @@ trait PaginationProps extends js.Object {
   var pageSize: js.UndefOr[Double] = js.undefined
   var pageSizeOptions: js.UndefOr[js.Array[String]] = js.undefined
   var prefixCls: js.UndefOr[String] = js.undefined
+  var responsive: js.UndefOr[Boolean] = js.undefined
   var role: js.UndefOr[String] = js.undefined
   var selectPrefixCls: js.UndefOr[String] = js.undefined
   var showLessItems: js.UndefOr[Boolean] = js.undefined
@@ -43,7 +45,7 @@ trait PaginationProps extends js.Object {
     js.Function2[/* total */ Double, /* range */ js.Tuple2[Double, Double], ReactNode]
   ] = js.undefined
   var simple: js.UndefOr[Boolean] = js.undefined
-  var size: js.UndefOr[String] = js.undefined
+  var size: js.UndefOr[typings.antd.antdStrings.default | small] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
   var total: js.UndefOr[Double] = js.undefined
 }
@@ -64,6 +66,7 @@ object PaginationProps {
     pageSize: Int | Double = null,
     pageSizeOptions: js.Array[String] = null,
     prefixCls: String = null,
+    responsive: js.UndefOr[Boolean] = js.undefined,
     role: String = null,
     selectPrefixCls: String = null,
     showLessItems: js.UndefOr[Boolean] = js.undefined,
@@ -71,7 +74,7 @@ object PaginationProps {
     showSizeChanger: js.UndefOr[Boolean] = js.undefined,
     showTotal: (/* total */ Double, /* range */ js.Tuple2[Double, Double]) => ReactNode = null,
     simple: js.UndefOr[Boolean] = js.undefined,
-    size: String = null,
+    size: typings.antd.antdStrings.default | small = null,
     style: CSSProperties = null,
     total: Int | Double = null
   ): PaginationProps = {
@@ -89,6 +92,7 @@ object PaginationProps {
     if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
     if (pageSizeOptions != null) __obj.updateDynamic("pageSizeOptions")(pageSizeOptions.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
+    if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive.asInstanceOf[js.Any])
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     if (selectPrefixCls != null) __obj.updateDynamic("selectPrefixCls")(selectPrefixCls.asInstanceOf[js.Any])
     if (!js.isUndefined(showLessItems)) __obj.updateDynamic("showLessItems")(showLessItems.asInstanceOf[js.Any])

@@ -1,0 +1,46 @@
+package typings.awsSdk.iotMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait CreateDimensionRequest extends js.Object {
+  /**
+    * Each dimension must have a unique client request token. If you try to create a new dimension with the same token as a dimension that already exists, an exception occurs. If you omit this value, AWS SDKs will automatically generate a unique client request.
+    */
+  var clientRequestToken: ClientRequestToken = js.native
+  /**
+    * A unique identifier for the dimension. Choose something that describes the type and value to make it easy to remember what it does.
+    */
+  var name: DimensionName = js.native
+  /**
+    * Specifies the value or list of values for the dimension. For TOPIC_FILTER dimensions, this is a pattern used to match the MQTT topic (for example, "admin/#").
+    */
+  var stringValues: DimensionStringValues = js.native
+  /**
+    * Metadata that can be used to manage the dimension.
+    */
+  var tags: js.UndefOr[TagList] = js.native
+  /**
+    * Specifies the type of dimension. Supported types: TOPIC_FILTER. 
+    */
+  var `type`: DimensionType = js.native
+}
+
+object CreateDimensionRequest {
+  @scala.inline
+  def apply(
+    clientRequestToken: ClientRequestToken,
+    name: DimensionName,
+    stringValues: DimensionStringValues,
+    `type`: DimensionType,
+    tags: TagList = null
+  ): CreateDimensionRequest = {
+    val __obj = js.Dynamic.literal(clientRequestToken = clientRequestToken.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], stringValues = stringValues.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CreateDimensionRequest]
+  }
+}
+

@@ -6,20 +6,53 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait LaunchTemplateNetworkInterface extends js.Object {
+  /**
+    * Associate a public ip address with the network interface.  Boolean value.
+    */
   var associatePublicIpAddress: js.UndefOr[String] = js.native
+  /**
+    * Whether the network interface should be destroyed on instance termination.
+    */
   var deleteOnTermination: js.UndefOr[Boolean] = js.native
   /**
-    * Description of the launch template.
+    * Description of the network interface.
     */
   var description: js.UndefOr[String] = js.native
+  /**
+    * The integer index of the network interface attachment.
+    */
   var deviceIndex: js.UndefOr[Double] = js.native
+  /**
+    * The number of secondary private IPv4 addresses to assign to a network interface. Conflicts with `ipv4Addresses`
+    */
   var ipv4AddressCount: js.UndefOr[Double] = js.native
+  /**
+    * One or more private IPv4 addresses to associate. Conflicts with `ipv4AddressCount`
+    */
   var ipv4Addresses: js.UndefOr[js.Array[String]] = js.native
+  /**
+    * The number of IPv6 addresses to assign to a network interface. Conflicts with `ipv6Addresses`
+    */
   var ipv6AddressCount: js.UndefOr[Double] = js.native
+  /**
+    * One or more specific IPv6 addresses from the IPv6 CIDR block range of your subnet. Conflicts with `ipv6AddressCount`
+    */
   var ipv6Addresses: js.UndefOr[js.Array[String]] = js.native
+  /**
+    * The ID of the network interface to attach.
+    */
   var networkInterfaceId: js.UndefOr[String] = js.native
+  /**
+    * The primary private IPv4 address.
+    */
   var privateIpAddress: js.UndefOr[String] = js.native
+  /**
+    * A list of security group IDs to associate.
+    */
   var securityGroups: js.UndefOr[js.Array[String]] = js.native
+  /**
+    * The VPC Subnet ID to associate.
+    */
   var subnetId: js.UndefOr[String] = js.native
 }
 

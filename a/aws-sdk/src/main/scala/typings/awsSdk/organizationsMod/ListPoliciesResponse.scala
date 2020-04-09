@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ListPoliciesResponse extends js.Object {
   /**
-    * If present, this value indicates that there is more output available than is included in the current response. Use this value in the NextToken request parameter in a subsequent call to the operation to get the next part of the output. You should repeat this until the NextToken response element comes back as null.
+    * If present, indicates that more output is available than is included in the current response. Use this value in the NextToken request parameter in a subsequent call to the operation to get the next part of the output. You should repeat this until the NextToken response element comes back as null.
     */
   var NextToken: js.UndefOr[typings.awsSdk.organizationsMod.NextToken] = js.native
   /**

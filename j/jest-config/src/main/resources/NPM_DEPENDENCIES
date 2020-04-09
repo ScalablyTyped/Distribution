@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "jest-config" : "25.1.0"
+      "jest-config" : "25.2.7"
     }
   ],
   "test-dependencies" : [
     {
-      "jest-config" : "25.1.0"
+      "jest-config" : "25.2.7"
     }
   ],
   "compile-devDependencies" : [

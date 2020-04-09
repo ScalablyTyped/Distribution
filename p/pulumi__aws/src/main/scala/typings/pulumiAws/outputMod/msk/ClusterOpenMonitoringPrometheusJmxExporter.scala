@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ClusterOpenMonitoringPrometheusJmxExporter extends js.Object {
   /**
-    * Indicates whether you want to enable or disable the Node Exporter.
+    * Indicates whether you want to enable or disable the JMX Exporter.
     */
   var enabledInBroker: Boolean = js.native
 }

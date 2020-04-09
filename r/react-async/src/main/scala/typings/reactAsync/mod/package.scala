@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mod {
-  type Async2[T] = typings.react.mod.Component[
+  type Async[T] = typings.react.mod.Component[
     typings.reactAsync.mod.AsyncProps[T], 
     typings.reactAsync.mod.AsyncState[T, typings.reactAsync.mod.AbstractState[T]], 
     js.Any
@@ -31,7 +31,7 @@ package object mod {
     /* state */ typings.reactAsync.mod.AsyncFulfilled[T, typings.reactAsync.mod.AbstractState[T]], 
     typings.react.mod.ReactNode
   ]) | typings.react.mod.ReactNode
-  type GenericAsync = org.scalablytyped.runtime.Instantiable0[typings.reactAsync.mod.Async2[js.Object]] with typings.reactAsync.AnonFulfilled
+  type GenericAsync = org.scalablytyped.runtime.Instantiable0[typings.reactAsync.mod.Async[js.Object]] with typings.reactAsync.AnonFulfilled
   type InitialChildren[T] = (js.Function1[
     /* state */ typings.reactAsync.mod.AsyncInitial[T, typings.reactAsync.mod.AbstractState[T]], 
     typings.react.mod.ReactNode

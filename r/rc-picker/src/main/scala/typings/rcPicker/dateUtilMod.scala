@@ -14,6 +14,7 @@ object dateUtilMod extends js.Object {
   val WEEK_DAY_COUNT: `7` = js.native
   def getClosingViewDate[DateType](viewDate: DateType, picker: PickerMode, generateConfig: GenerateConfig[DateType]): DateType = js.native
   def getClosingViewDate[DateType](viewDate: DateType, picker: PickerMode, generateConfig: GenerateConfig[DateType], offset: Double): DateType = js.native
+  def getQuarter[DateType](generateConfig: GenerateConfig[DateType], date: DateType): Double = js.native
   def getWeekStartDate[DateType](locale: String, generateConfig: GenerateConfig[DateType], value: DateType): DateType = js.native
   def isEqual[DateType](
     generateConfig: GenerateConfig[DateType],
@@ -41,6 +42,11 @@ object dateUtilMod extends js.Object {
     generateConfig: GenerateConfig[DateType],
     month1: NullableDateType[DateType],
     month2: NullableDateType[DateType]
+  ): Boolean = js.native
+  def isSameQuarter[DateType](
+    generateConfig: GenerateConfig[DateType],
+    quarter1: NullableDateType[DateType],
+    quarter2: NullableDateType[DateType]
   ): Boolean = js.native
   def isSameTime[DateType](
     generateConfig: GenerateConfig[DateType],

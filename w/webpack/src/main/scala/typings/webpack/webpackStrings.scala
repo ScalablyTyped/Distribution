@@ -379,6 +379,9 @@ object webpackStrings {
   sealed trait `source-map` extends _Devtool
   
   @js.native
+  sealed trait system extends LibraryTarget
+  
+  @js.native
   sealed trait textSlashjavascript extends js.Object
   
   @js.native
@@ -663,6 +666,8 @@ object webpackStrings {
   def size: size = "size".asInstanceOf[size]
   @scala.inline
   def `source-map`: `source-map` = "source-map".asInstanceOf[`source-map`]
+  @scala.inline
+  def system: system = "system".asInstanceOf[system]
   @scala.inline
   def textSlashjavascript: textSlashjavascript = "text/javascript".asInstanceOf[textSlashjavascript]
   @scala.inline

@@ -143,6 +143,7 @@ import typings.styledComponents.styledComponentsStrings.samp
 import typings.styledComponents.styledComponentsStrings.script
 import typings.styledComponents.styledComponentsStrings.section
 import typings.styledComponents.styledComponentsStrings.select
+import typings.styledComponents.styledComponentsStrings.slot
 import typings.styledComponents.styledComponentsStrings.small
 import typings.styledComponents.styledComponentsStrings.source
 import typings.styledComponents.styledComponentsStrings.span
@@ -1014,6 +1015,12 @@ trait StyledInterface extends js.Object {
   ] = js.native
   var select: ThemedStyledFunction[
     typings.styledComponents.styledComponentsStrings.select, 
+    AnyIfEmpty[DefaultTheme], 
+    js.Object, 
+    scala.Nothing
+  ] = js.native
+  var slot: ThemedStyledFunction[
+    typings.styledComponents.styledComponentsStrings.slot, 
     AnyIfEmpty[DefaultTheme], 
     js.Object, 
     scala.Nothing
@@ -1928,6 +1935,11 @@ trait StyledInterface extends js.Object {
   // causes tests to fail in TS 3.1
   component: select
   ): ThemedStyledFunction[select, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
+  def apply(
+    // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
+  // causes tests to fail in TS 3.1
+  component: slot
+  ): ThemedStyledFunction[slot, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
   def apply(
     // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
   // causes tests to fail in TS 3.1

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "foundation-sites" : "6.6.1"
+      "foundation-sites" : "6.6.2"
     }
   ],
   "test-dependencies" : [
     {
-      "foundation-sites" : "6.6.1"
+      "foundation-sites" : "6.6.2"
     }
   ],
   "compile-devDependencies" : [

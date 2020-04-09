@@ -1,7 +1,7 @@
 
 # Scala.js typings for delegated-events
 
-Typings are for version 1.1.1
+Typings are for version 1.1.2
 
 ## Library description:
 A small, fast delegated event library.

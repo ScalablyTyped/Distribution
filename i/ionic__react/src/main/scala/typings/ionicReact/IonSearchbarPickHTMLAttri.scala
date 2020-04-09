@@ -75,6 +75,7 @@ import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
@@ -687,7 +688,7 @@ object IonSearchbarPickHTMLAttri {
     onProgress: SyntheticEvent[HTMLIonSearchbarElement, Event_] => Unit = null,
     onRateChange: SyntheticEvent[HTMLIonSearchbarElement, Event_] => Unit = null,
     onReset: FormEvent[HTMLIonSearchbarElement] => Unit = null,
-    onScroll: UIEvent[HTMLIonSearchbarElement] => Unit = null,
+    onScroll: UIEvent[HTMLIonSearchbarElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[HTMLIonSearchbarElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[HTMLIonSearchbarElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[HTMLIonSearchbarElement, Event_] => Unit = null,

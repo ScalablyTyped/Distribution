@@ -1,7 +1,7 @@
 package typings.angularCore
 
 import typings.angularCompiler.compilerHostMod.AotCompilerHost
-import typings.angularCore.undecoratedClassesWithDiImportManagerMod.ImportManager
+import typings.angularCore.importManagerMod.ImportManager
 import typings.std.Error
 import typings.typescript.mod.Node
 import typings.typescript.mod.SourceFile

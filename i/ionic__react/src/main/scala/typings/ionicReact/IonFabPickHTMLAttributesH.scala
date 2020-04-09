@@ -72,6 +72,7 @@ import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
@@ -595,7 +596,7 @@ object IonFabPickHTMLAttributesH {
     onProgress: SyntheticEvent[HTMLIonFabElement, Event_] => Unit = null,
     onRateChange: SyntheticEvent[HTMLIonFabElement, Event_] => Unit = null,
     onReset: FormEvent[HTMLIonFabElement] => Unit = null,
-    onScroll: UIEvent[HTMLIonFabElement] => Unit = null,
+    onScroll: UIEvent[HTMLIonFabElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[HTMLIonFabElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[HTMLIonFabElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[HTMLIonFabElement, Event_] => Unit = null,

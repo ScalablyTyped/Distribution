@@ -2,7 +2,7 @@ package typings.ionicCore
 
 import typings.ionicCore.mod.Color
 import typings.ionicCore.spinnerConfigsMod.SpinnerTypes
-import typings.ionicCore.stencilCoreMod.ComponentInterface
+import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

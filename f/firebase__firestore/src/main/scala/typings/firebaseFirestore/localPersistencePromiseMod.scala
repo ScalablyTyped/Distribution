@@ -48,7 +48,7 @@ object localPersistencePromiseMod extends js.Object {
     def reject[R](error: Error): PersistencePromise[R] = js.native
     def resolve(): PersistencePromise[Unit] = js.native
     def resolve[R](result: R): PersistencePromise[R] = js.native
-    def waitFor(all: Anon2): PersistencePromise[Unit] = js.native
+    def waitFor(all: Anon3): PersistencePromise[Unit] = js.native
   }
   
   type FulfilledHandler[T, R] = (js.Function1[/* result */ T, R | PersistencePromise[R]]) | Null

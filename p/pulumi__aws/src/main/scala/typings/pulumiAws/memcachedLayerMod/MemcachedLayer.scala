@@ -1,5 +1,6 @@
 package typings.pulumiAws.memcachedLayerMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiAws.outputMod.opsworks.MemcachedLayerEbsVolume
 import typings.pulumiPulumi.mod.CustomResource
 import typings.pulumiPulumi.outputMod.Input
@@ -26,6 +27,10 @@ class MemcachedLayer protected () extends CustomResource {
     * Amount of memory to allocate for the cache on each instance, in megabytes. Defaults to 512MB.
     */
   val allocatedMemory: Output_[js.UndefOr[Double]] = js.native
+  /**
+    * The Amazon Resource Name(ARN) of the layer.
+    */
+  val arn: Output_[String] = js.native
   /**
     * Whether to automatically assign an elastic IP address to the layer's instances.
     */
@@ -87,6 +92,10 @@ class MemcachedLayer protected () extends CustomResource {
     * Names of a set of system packages to install on the layer's instances.
     */
   val systemPackages: Output_[js.UndefOr[js.Array[String]]] = js.native
+  /**
+    * A mapping of tags to assign to the resource.
+    */
+  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
   /**
     * Whether to use EBS-optimized instances.
     */

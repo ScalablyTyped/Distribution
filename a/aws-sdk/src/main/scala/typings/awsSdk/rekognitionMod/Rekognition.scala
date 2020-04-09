@@ -107,6 +107,32 @@ trait Rekognition extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteFacesResponse, Unit]
   ): Request[DeleteFacesResponse, AWSError] = js.native
   /**
+    * Deletes an Amazon Rekognition Custom Labels project. To delete a project you must first delete all versions of the model associated with the project. To delete a version of a model, see DeleteProjectVersion. This operation requires permissions to perform the rekognition:DeleteProject action. 
+    */
+  def deleteProject(): Request[DeleteProjectResponse, AWSError] = js.native
+  def deleteProject(callback: js.Function2[/* err */ AWSError, /* data */ DeleteProjectResponse, Unit]): Request[DeleteProjectResponse, AWSError] = js.native
+  /**
+    * Deletes an Amazon Rekognition Custom Labels project. To delete a project you must first delete all versions of the model associated with the project. To delete a version of a model, see DeleteProjectVersion. This operation requires permissions to perform the rekognition:DeleteProject action. 
+    */
+  def deleteProject(params: DeleteProjectRequest): Request[DeleteProjectResponse, AWSError] = js.native
+  def deleteProject(
+    params: DeleteProjectRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteProjectResponse, Unit]
+  ): Request[DeleteProjectResponse, AWSError] = js.native
+  /**
+    * Deletes a version of a model.  You must first stop the model before you can delete it. To check if a model is running, use the Status field returned from DescribeProjectVersions. To stop a running model call StopProjectVersion.  This operation requires permissions to perform the rekognition:DeleteProjectVersion action. 
+    */
+  def deleteProjectVersion(): Request[DeleteProjectVersionResponse, AWSError] = js.native
+  def deleteProjectVersion(callback: js.Function2[/* err */ AWSError, /* data */ DeleteProjectVersionResponse, Unit]): Request[DeleteProjectVersionResponse, AWSError] = js.native
+  /**
+    * Deletes a version of a model.  You must first stop the model before you can delete it. To check if a model is running, use the Status field returned from DescribeProjectVersions. To stop a running model call StopProjectVersion.  This operation requires permissions to perform the rekognition:DeleteProjectVersion action. 
+    */
+  def deleteProjectVersion(params: DeleteProjectVersionRequest): Request[DeleteProjectVersionResponse, AWSError] = js.native
+  def deleteProjectVersion(
+    params: DeleteProjectVersionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteProjectVersionResponse, Unit]
+  ): Request[DeleteProjectVersionResponse, AWSError] = js.native
+  /**
     * Deletes the stream processor identified by Name. You assign the value for Name when you create the stream processor with CreateStreamProcessor. You might not be able to use the same name for a stream processor for a few seconds after calling DeleteStreamProcessor.
     */
   def deleteStreamProcessor(): Request[DeleteStreamProcessorResponse, AWSError] = js.native

@@ -8,7 +8,7 @@ trait GetCertificateStatusResult extends js.Object {
   var isForCertificate: Boolean
   /**
     * 0 = good, 1 = revoked, 2 = unknown
-    * 
+    *
     * @type {number}
     * @memberOf GetCertificateStatusResult
     */

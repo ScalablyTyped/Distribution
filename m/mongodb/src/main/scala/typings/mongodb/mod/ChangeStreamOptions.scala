@@ -1,5 +1,7 @@
 package typings.mongodb.mod
 
+import typings.mongodb.mongodbStrings.default_
+import typings.mongodb.mongodbStrings.updateLookup
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,11 +9,11 @@ import scala.scalajs.js.annotation._
 trait ChangeStreamOptions extends js.Object {
   var batchSize: js.UndefOr[scala.Double] = js.undefined
   var collation: js.UndefOr[CollationDocument] = js.undefined
-  var fullDocument: js.UndefOr[String] = js.undefined
+  var fullDocument: js.UndefOr[default_ | updateLookup] = js.undefined
   var maxAwaitTimeMS: js.UndefOr[scala.Double] = js.undefined
   var readPreference: js.UndefOr[ReadPreferenceOrMode] = js.undefined
-  var resumeAfter: js.UndefOr[js.Object] = js.undefined
-  var startAfter: js.UndefOr[js.Object] = js.undefined
+  var resumeAfter: js.UndefOr[ResumeToken] = js.undefined
+  var startAfter: js.UndefOr[ResumeToken] = js.undefined
   var startAtOperationTime: js.UndefOr[typings.bson.mod.Timestamp] = js.undefined
 }
 
@@ -20,11 +22,11 @@ object ChangeStreamOptions {
   def apply(
     batchSize: Int | scala.Double = null,
     collation: CollationDocument = null,
-    fullDocument: String = null,
+    fullDocument: default_ | updateLookup = null,
     maxAwaitTimeMS: Int | scala.Double = null,
     readPreference: ReadPreferenceOrMode = null,
-    resumeAfter: js.Object = null,
-    startAfter: js.Object = null,
+    resumeAfter: ResumeToken = null,
+    startAfter: ResumeToken = null,
     startAtOperationTime: typings.bson.mod.Timestamp = null
   ): ChangeStreamOptions = {
     val __obj = js.Dynamic.literal()

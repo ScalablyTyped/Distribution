@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait S3Location extends js.Object {
   /**
-    * An Amazon S3 bucket identifier. This is the name of the S3 bucket.
+    * An S3 bucket identifier. This is the name of the S3 bucket.
     */
   var Bucket: js.UndefOr[NonEmptyString] = js.native
   /**

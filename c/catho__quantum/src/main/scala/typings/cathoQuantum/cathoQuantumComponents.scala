@@ -67,6 +67,14 @@ object cathoQuantumComponents extends cathoQuantumProps {
   @scala.inline
   def Modal: ComponentType[ModalProps] = js.constructorOf[typings.cathoQuantum.modalMod.default].asInstanceOf[typings.react.mod.ComponentType[ModalProps]]
   @scala.inline
+  def ModalContent: ComponentType[ModalContentProps] = typings.cathoQuantum.modalMod.default.Content.asInstanceOf[typings.react.mod.ComponentType[ModalContentProps]]
+  @scala.inline
+  def ModalFooter: ComponentType[ModalFooterProps[AnonThemeAnonSpacingObject]] = typings.cathoQuantum.modalMod.default.Footer.asInstanceOf[typings.react.mod.ComponentType[ModalFooterProps[typings.cathoQuantum.AnonThemeAnonSpacingObject]]]
+  @scala.inline
+  def ModalHeader: ComponentType[ModalHeaderProps] = typings.cathoQuantum.modalMod.default.Header.asInstanceOf[typings.react.mod.ComponentType[ModalHeaderProps]]
+  @scala.inline
+  def ModalHeaderText: ComponentType[ModalHeaderTextProps[js.Object]] = typings.cathoQuantum.modalMod.default.HeaderText.asInstanceOf[typings.react.mod.ComponentType[ModalHeaderTextProps[js.Object]]]
+  @scala.inline
   def Pagination: ComponentType[PaginationProps] = js.constructorOf[typings.cathoQuantum.paginationMod.default].asInstanceOf[typings.react.mod.ComponentType[PaginationProps]]
   @scala.inline
   def Popover: ComponentType[PopoverProps] = js.constructorOf[typings.cathoQuantum.popoverMod.default].asInstanceOf[typings.react.mod.ComponentType[PopoverProps]]

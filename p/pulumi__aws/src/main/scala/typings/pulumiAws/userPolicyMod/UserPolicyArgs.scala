@@ -16,6 +16,9 @@ trait UserPolicyArgs extends js.Object {
     * Creates a unique name beginning with the specified prefix. Conflicts with `name`.
     */
   val namePrefix: js.UndefOr[Input[String]] = js.native
+  /**
+    * The policy document. This is a JSON formatted string.
+    */
   val policy: Input[String | PolicyDocument] = js.native
   /**
     * IAM user to which to attach this policy.

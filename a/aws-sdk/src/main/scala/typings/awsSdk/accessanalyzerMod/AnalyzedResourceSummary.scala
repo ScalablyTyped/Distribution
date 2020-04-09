@@ -11,6 +11,10 @@ trait AnalyzedResourceSummary extends js.Object {
     */
   var resourceArn: ResourceArn = js.native
   /**
+    * The AWS account ID that owns the resource.
+    */
+  var resourceOwnerAccount: String = js.native
+  /**
     * The type of resource that was analyzed.
     */
   var resourceType: ResourceType = js.native
@@ -18,8 +22,8 @@ trait AnalyzedResourceSummary extends js.Object {
 
 object AnalyzedResourceSummary {
   @scala.inline
-  def apply(resourceArn: ResourceArn, resourceType: ResourceType): AnalyzedResourceSummary = {
-    val __obj = js.Dynamic.literal(resourceArn = resourceArn.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+  def apply(resourceArn: ResourceArn, resourceOwnerAccount: String, resourceType: ResourceType): AnalyzedResourceSummary = {
+    val __obj = js.Dynamic.literal(resourceArn = resourceArn.asInstanceOf[js.Any], resourceOwnerAccount = resourceOwnerAccount.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AnalyzedResourceSummary]
   }

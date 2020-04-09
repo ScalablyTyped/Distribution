@@ -7,12 +7,9 @@ import scala.scalajs.js.annotation._
 @js.native
 trait MaintenanceWindowTaskTaskParameter extends js.Object {
   /**
-    * The parameter name.
+    * The name of the maintenance window task.
     */
   var name: String = js.native
-  /**
-    * The array of strings.
-    */
   var values: js.Array[String] = js.native
 }
 

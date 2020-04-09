@@ -1,7 +1,7 @@
 package typings.next.nextServerMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.next.AnonAssetPrefix
+import typings.next.AnonAmpOptimizerConfig
 import typings.next.AnonCatchAllRoute
 import typings.next.AnonHeaders
 import typings.next.AnonMatch
@@ -23,6 +23,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Server extends js.Object {
   var _cachedPreviewManifest: js.Any = js.native
+  var _validFilesystemPathSet: js.Any = js.native
   var buildId: String = js.native
   var compression: js.UndefOr[js.Any] = js.native
   var customRoutes: js.UndefOr[AnonHeaders] = js.native
@@ -30,6 +31,7 @@ trait Server extends js.Object {
   var distDir: String = js.native
   var dynamicRoutes: js.UndefOr[DynamicRoutes] = js.native
   var findPageComponents: js.Any = js.native
+  var getFilesystemPaths: js.Any = js.native
   var getPagePath: js.Any = js.native
   var getStaticPaths: js.Any = js.native
   /**
@@ -42,7 +44,6 @@ trait Server extends js.Object {
   var handleCompression: js.Any = js.native
   var handleRequest: js.Any = js.native
   var hasStaticDir: Boolean = js.native
-  var isServeableUrl: js.Any = js.native
   var logError: js.Any = js.native
   var nextConfig: NextConfig = js.native
   var onErrorMiddleware: js.UndefOr[js.Any] = js.native
@@ -50,7 +51,7 @@ trait Server extends js.Object {
   var pagesManifest: js.UndefOr[StringDictionary[String]] = js.native
   var publicDir: String = js.native
   var quiet: Boolean = js.native
-  var renderOpts: AnonAssetPrefix = js.native
+  var renderOpts: AnonAmpOptimizerConfig = js.native
   var renderToHTMLWithComponents: js.Any = js.native
   var router: typings.next.serverRouterMod.default = js.native
   var serverBuildDir: String = js.native
@@ -73,6 +74,7 @@ trait Server extends js.Object {
     js.Promise[Unit]
   ] = js.native
   /* protected */ def hasPage(pathname: String): js.Promise[Boolean] = js.native
+  /* protected */ def isServeableUrl(untrustedFileUrl: String): Boolean = js.native
   def prepare(): js.Promise[Unit] = js.native
   /* protected */ def readBuildId(): String = js.native
   def render(req: IncomingMessage, res: ServerResponse, pathname: String): js.Promise[Unit] = js.native

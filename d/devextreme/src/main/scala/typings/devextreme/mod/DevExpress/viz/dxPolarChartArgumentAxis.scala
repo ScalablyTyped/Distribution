@@ -26,50 +26,50 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxPolarChartArgumentAxis extends dxPolarChartCommonAxisSettings {
-  /** Specifies the desired type of axis values. */
+  /** @name dxPolarChart.Options.argumentAxis.argumentType */
   var argumentType: js.UndefOr[datetime | numeric | string_] = js.undefined
-  /** Specifies the minimum distance between two neighboring major ticks in pixels. Applies only to the axes of the "continuous" and "logarithmic" types. */
+  /** @name dxPolarChart.Options.argumentAxis.axisDivisionFactor */
   var axisDivisionFactor: js.UndefOr[Double] = js.undefined
-  /** Specifies the order in which arguments (categories) are arranged on the discrete argument axis. */
+  /** @name dxPolarChart.Options.argumentAxis.categories */
   var categories: js.UndefOr[js.Array[Double | String | Date]] = js.undefined
-  /** Defines an array of the argument axis constant lines. */
+  /** @name dxPolarChart.Options.argumentAxis.constantLines */
   var constantLines: js.UndefOr[js.Array[dxPolarChartArgumentAxisConstantLines]] = js.undefined
-  /** Specifies whether or not to display the first point at the angle specified by the startAngle option. */
+  /** @name dxPolarChart.Options.argumentAxis.firstPointOnStartAngle */
   var firstPointOnStartAngle: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the elements that will be highlighted when the argument axis is hovered over. */
+  /** @name dxPolarChart.Options.argumentAxis.hoverMode */
   var hoverMode: js.UndefOr[allArgumentPoints | none] = js.undefined
-  /** Specifies options for argument axis labels. */
+  /** @name dxPolarChart.Options.argumentAxis.label */
   @JSName("label")
   var label_dxPolarChartArgumentAxis: js.UndefOr[dxPolarChartArgumentAxisLabel] = js.undefined
-  /** Specifies a value used to calculate the range on a logarithmic axis within which the axis should be linear. Applies only if the data source contains negative values or zeroes. */
+  /** @name dxPolarChart.Options.argumentAxis.linearThreshold */
   var linearThreshold: js.UndefOr[Double] = js.undefined
-  /** Specifies the value to be raised to a power when generating ticks for a logarithmic axis. */
+  /** @name dxPolarChart.Options.argumentAxis.logarithmBase */
   var logarithmBase: js.UndefOr[Double] = js.undefined
-  /** Specifies the number of minor ticks between two neighboring major ticks. */
+  /** @name dxPolarChart.Options.argumentAxis.minorTickCount */
   var minorTickCount: js.UndefOr[Double] = js.undefined
-  /** Specifies the interval between minor ticks. */
+  /** @name dxPolarChart.Options.argumentAxis.minorTickInterval */
   var minorTickInterval: js.UndefOr[
     Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year
   ] = js.undefined
-  /** Specifies the options of the minor ticks. */
+  /** @name dxPolarChart.Options.argumentAxis.minorTick */
   @JSName("minorTick")
   var minorTick_dxPolarChartArgumentAxis: js.UndefOr[dxPolarChartArgumentAxisMinorTick] = js.undefined
-  /** Specifies the value to be used as the origin for the argument axis. */
+  /** @name dxPolarChart.Options.argumentAxis.originValue */
   var originValue: js.UndefOr[Double] = js.undefined
-  /** Specifies the period of the argument values in the data source. */
+  /** @name dxPolarChart.Options.argumentAxis.period */
   var period: js.UndefOr[Double] = js.undefined
-  /** Specifies the angle in arc degrees to which the argument axis should be rotated. The positive values rotate the axis clockwise. */
+  /** @name dxPolarChart.Options.argumentAxis.startAngle */
   var startAngle: js.UndefOr[Double] = js.undefined
-  /** Specifies options for argument axis strips. */
+  /** @name dxPolarChart.Options.argumentAxis.strips */
   var strips: js.UndefOr[js.Array[dxPolarChartArgumentAxisStrips]] = js.undefined
-  /** Specifies an interval between axis ticks/grid lines. */
+  /** @name dxPolarChart.Options.argumentAxis.tickInterval */
   var tickInterval: js.UndefOr[
     Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year
   ] = js.undefined
-  /** An object defining the configuration options for axis ticks. */
+  /** @name dxPolarChart.Options.argumentAxis.tick */
   @JSName("tick")
   var tick_dxPolarChartArgumentAxis: js.UndefOr[dxPolarChartArgumentAxisTick] = js.undefined
-  /** Specifies the required type of the argument axis. */
+  /** @name dxPolarChart.Options.argumentAxis.type */
   var `type`: js.UndefOr[continuous | discrete | logarithmic] = js.undefined
 }
 

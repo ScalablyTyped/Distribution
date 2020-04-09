@@ -5,13 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait chartPointAggregationInfoObject extends js.Object {
-  /** Contains the length of the aggregation interval in axis units (numbers or dates). If the interval is set in pixels (using the aggregationGroupWidth option), it will be converted to axis units. */
+  /** @name chartPointAggregationInfoObject.aggregationInterval */
   var aggregationInterval: js.UndefOr[js.Any] = js.undefined
-  /** Contains data objects that were aggregated into this point. */
+  /** @name chartPointAggregationInfoObject.data */
   var data: js.UndefOr[js.Array[_]] = js.undefined
-  /** Contains the end value of the interval to which the point belongs. */
+  /** @name chartPointAggregationInfoObject.intervalEnd */
   var intervalEnd: js.UndefOr[js.Any] = js.undefined
-  /** Contains the start value of the interval to which the point belongs. */
+  /** @name chartPointAggregationInfoObject.intervalStart */
   var intervalStart: js.UndefOr[js.Any] = js.undefined
 }
 

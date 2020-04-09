@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "public-ip" : "4.0.0"
+      "public-ip" : "4.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "public-ip" : "4.0.0"
+      "public-ip" : "4.0.1"
     }
   ],
   "compile-devDependencies" : [

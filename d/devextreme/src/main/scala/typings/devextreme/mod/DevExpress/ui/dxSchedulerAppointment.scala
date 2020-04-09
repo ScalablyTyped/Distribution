@@ -6,23 +6,23 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxSchedulerAppointment extends CollectionWidgetItem {
-  /** Specifies whether the appointment lasts all day. */
+  /** @name dxSchedulerAppointment.allDay */
   var allDay: js.UndefOr[Boolean] = js.undefined
-  /** Specifies a detail description of the appointment. */
+  /** @name dxSchedulerAppointment.description */
   var description: js.UndefOr[String] = js.undefined
-  /** Specifies the ending of the appointment. */
+  /** @name dxSchedulerAppointment.endDate */
   var endDate: js.UndefOr[Date] = js.undefined
-  /** Specifies the timezone of the appointment end date. Applies only if timeZone is not specified. */
+  /** @name dxSchedulerAppointment.endDateTimeZone */
   var endDateTimeZone: js.UndefOr[String] = js.undefined
-  /** Specifies exceptions for the current recurring appointment. */
+  /** @name dxSchedulerAppointment.recurrenceException */
   var recurrenceException: js.UndefOr[String] = js.undefined
-  /** Specifies a recurrence rule for generating recurring appointments in the scheduler. */
+  /** @name dxSchedulerAppointment.recurrenceRule */
   var recurrenceRule: js.UndefOr[String] = js.undefined
-  /** Specifies the start of the appointment. */
+  /** @name dxSchedulerAppointment.startDate */
   var startDate: js.UndefOr[Date] = js.undefined
-  /** Specifies the timezone of the appointment start date. Applies only if timeZone is not specified. */
+  /** @name dxSchedulerAppointment.startDateTimeZone */
   var startDateTimeZone: js.UndefOr[String] = js.undefined
-  /** Specifies a template that should be used to render this appointment only. */
+  /** @name dxSchedulerAppointment.template */
   @JSName("template")
   var template_dxSchedulerAppointment: js.UndefOr[typings.devextreme.mod.DevExpress.core.template] = js.undefined
 }

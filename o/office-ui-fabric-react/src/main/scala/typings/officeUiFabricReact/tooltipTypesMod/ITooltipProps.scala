@@ -16,6 +16,7 @@ import typings.react.mod.HTMLAttributes
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
@@ -282,7 +283,7 @@ object ITooltipProps {
     onRateChange: SyntheticEvent[HTMLDivElement | TooltipBase, Event_] => Unit = null,
     onRenderContent: (/* props */ js.UndefOr[ITooltipProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[ITooltipProps], Element | Null]]) => Element | Null = null,
     onReset: FormEvent[HTMLDivElement | TooltipBase] => Unit = null,
-    onScroll: UIEvent[HTMLDivElement | TooltipBase] => Unit = null,
+    onScroll: UIEvent[HTMLDivElement | TooltipBase, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[HTMLDivElement | TooltipBase, Event_] => Unit = null,
     onSeeking: SyntheticEvent[HTMLDivElement | TooltipBase, Event_] => Unit = null,
     onSelect: SyntheticEvent[HTMLDivElement | TooltipBase, Event_] => Unit = null,

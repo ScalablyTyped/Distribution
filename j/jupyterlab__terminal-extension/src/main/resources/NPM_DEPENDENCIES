@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jupyterlab/terminal-extension" : "2.0.2"
+      "@jupyterlab/terminal-extension" : "2.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@jupyterlab/terminal-extension" : "2.0.2"
+      "@jupyterlab/terminal-extension" : "2.1.0"
     }
   ],
   "compile-devDependencies" : [

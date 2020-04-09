@@ -23,6 +23,9 @@ class AccessPoint protected () extends CustomResource {
     */
   def this(name: String, args: AccessPointArgs) = this()
   def this(name: String, args: AccessPointArgs, opts: CustomResourceOptions) = this()
+  /**
+    * The AWS account ID for the owner of the bucket for which you want to create an access point. Defaults to automatically determined account ID of the provider.
+    */
   val accountId: Output_[String] = js.native
   /**
     * Amazon Resource Name (ARN) of the S3 Access Point.

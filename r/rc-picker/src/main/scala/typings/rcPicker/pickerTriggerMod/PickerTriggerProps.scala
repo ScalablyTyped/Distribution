@@ -2,7 +2,6 @@ package typings.rcPicker.pickerTriggerMod
 
 import typings.rcPicker.rcPickerStrings.ltr
 import typings.rcPicker.rcPickerStrings.rtl
-import typings.rcTrigger.interfaceMod.AlignType
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactElement
 import typings.std.HTMLElement
@@ -13,7 +12,9 @@ import scala.scalajs.js.annotation._
 trait PickerTriggerProps extends js.Object {
   var children: ReactElement
   var direction: js.UndefOr[ltr | rtl] = js.undefined
-  var dropdownAlign: js.UndefOr[AlignType] = js.undefined
+  var dropdownAlign: js.UndefOr[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AlignType */ js.Any
+  ] = js.undefined
   var dropdownClassName: js.UndefOr[String] = js.undefined
   var getPopupContainer: js.UndefOr[js.Function1[/* node */ HTMLElement, HTMLElement]] = js.undefined
   var popupElement: ReactElement
@@ -33,7 +34,7 @@ object PickerTriggerProps {
     prefixCls: String,
     visible: Boolean,
     direction: ltr | rtl = null,
-    dropdownAlign: AlignType = null,
+    dropdownAlign: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AlignType */ js.Any = null,
     dropdownClassName: String = null,
     getPopupContainer: /* node */ HTMLElement => HTMLElement = null,
     popupPlacement: Placement = null,

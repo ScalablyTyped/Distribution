@@ -28,17 +28,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxCircularGaugeOptions extends BaseGaugeOptions[dxCircularGauge] {
-  /** Specifies the options required to set the geometry of the CircularGauge widget. */
+  /** @name dxCircularGauge.Options.geometry */
   var geometry: js.UndefOr[AnonEndAngle] = js.undefined
-  /** Specifies gauge range container options. */
+  /** @name dxCircularGauge.Options.rangeContainer */
   @JSName("rangeContainer")
   var rangeContainer_dxCircularGaugeOptions: js.UndefOr[dxCircularGaugeRangeContainer] = js.undefined
-  /** Specifies a gauge's scale options. */
+  /** @name dxCircularGauge.Options.scale */
   @JSName("scale")
   var scale_dxCircularGaugeOptions: js.UndefOr[dxCircularGaugeScale] = js.undefined
-  /** Specifies the appearance options of subvalue indicators. */
+  /** @name dxCircularGauge.Options.subvalueIndicator */
   var subvalueIndicator: js.UndefOr[GaugeIndicator] = js.undefined
-  /** Specifies the appearance options of the value indicator. */
+  /** @name dxCircularGauge.Options.valueIndicator */
   var valueIndicator: js.UndefOr[GaugeIndicator] = js.undefined
 }
 

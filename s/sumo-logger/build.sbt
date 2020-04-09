@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "sumo-logger"
-version := "1.6-dt-20200225Z-f97459"
+version := "1.6-dt-20200328Z-23dd5d"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

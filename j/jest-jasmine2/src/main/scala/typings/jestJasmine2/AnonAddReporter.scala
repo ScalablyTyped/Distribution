@@ -52,6 +52,8 @@ trait AnonAddReporter extends js.Object {
   def catchingExceptions(): Boolean = js.native
   def clearReporters(): Unit = js.native
   def describe(description: String, specDefinitions: js.Function): default = js.native
+  def execute(): js.Promise[Unit] = js.native
+  def execute(runnablesToRun: js.UndefOr[scala.Nothing], suiteTree: default): js.Promise[Unit] = js.native
   def execute(runnablesToRun: js.Array[String]): js.Promise[Unit] = js.native
   def execute(runnablesToRun: js.Array[String], suiteTree: default): js.Promise[Unit] = js.native
   def fail(error: AssertionErrorWithStack): Unit = js.native
@@ -60,12 +62,12 @@ trait AnonAddReporter extends js.Object {
   def fit(
     description: String,
     fn: js.Function1[/* done */ js.Function1[/* error */ js.UndefOr[js.Any], Unit], Unit]
-  ): Unit = js.native
+  ): typings.jestJasmine2.specMod.default = js.native
   def fit(
     description: String,
     fn: js.Function1[/* done */ js.Function1[/* error */ js.UndefOr[js.Any], Unit], Unit],
     timeout: Double
-  ): Unit = js.native
+  ): typings.jestJasmine2.specMod.default = js.native
   def it(
     description: String,
     fn: js.Function1[/* done */ js.Function1[/* error */ js.UndefOr[js.Any], Unit], Unit]
@@ -102,11 +104,11 @@ trait AnonAddReporter extends js.Object {
   def xit(
     description: String,
     fn: js.Function1[/* done */ js.Function1[/* error */ js.UndefOr[js.Any], Unit], Unit]
-  ): js.Any = js.native
+  ): typings.jestJasmine2.specMod.default = js.native
   def xit(
     description: String,
     fn: js.Function1[/* done */ js.Function1[/* error */ js.UndefOr[js.Any], Unit], Unit],
     timeout: Double
-  ): js.Any = js.native
+  ): typings.jestJasmine2.specMod.default = js.native
 }
 

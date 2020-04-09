@@ -59,6 +59,7 @@ package object fmsMod {
   type ResourceTypeList = js.Array[typings.awsSdk.fmsMod.ResourceType]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.WAF
+    - typings.awsSdk.awsSdkStrings.WAFV2
     - typings.awsSdk.awsSdkStrings.SHIELD_ADVANCED
     - typings.awsSdk.awsSdkStrings.SECURITY_GROUPS_COMMON
     - typings.awsSdk.awsSdkStrings.SECURITY_GROUPS_CONTENT_AUDIT

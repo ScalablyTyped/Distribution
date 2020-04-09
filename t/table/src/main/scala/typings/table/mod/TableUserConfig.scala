@@ -6,21 +6,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TableUserConfig extends js.Object {
-  var border: js.UndefOr[JoinStruct] = js.undefined
+  var border: js.UndefOr[TableBorder] = js.undefined
   var columnCount: js.UndefOr[Double] = js.undefined
-  var columnDefault: js.UndefOr[ColumnConfig] = js.undefined
-  var columns: js.UndefOr[NumberDictionary[ColumnConfig]] = js.undefined
-  var drawHorizontalLine: js.UndefOr[js.Function2[/* index */ Double, /* size */ Double, Boolean]] = js.undefined
+  var columnDefault: js.UndefOr[TableColumns] = js.undefined
+  var columns: js.UndefOr[NumberDictionary[TableColumns]] = js.undefined
+  var drawHorizontalLine: js.UndefOr[TableDrawHorizontalLine] = js.undefined
   var singleLine: js.UndefOr[Boolean] = js.undefined
 }
 
 object TableUserConfig {
   @scala.inline
   def apply(
-    border: JoinStruct = null,
+    border: TableBorder = null,
     columnCount: Int | Double = null,
-    columnDefault: ColumnConfig = null,
-    columns: NumberDictionary[ColumnConfig] = null,
+    columnDefault: TableColumns = null,
+    columns: NumberDictionary[TableColumns] = null,
     drawHorizontalLine: (/* index */ Double, /* size */ Double) => Boolean = null,
     singleLine: js.UndefOr[Boolean] = js.undefined
   ): TableUserConfig = {

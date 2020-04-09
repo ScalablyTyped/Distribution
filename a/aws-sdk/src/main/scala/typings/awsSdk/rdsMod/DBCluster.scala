@@ -135,7 +135,7 @@ trait DBCluster extends js.Object {
     */
   var Engine: js.UndefOr[String] = js.native
   /**
-    * The DB engine mode of the DB cluster, either provisioned, serverless, parallelquery, global, or multimaster.
+    * The DB engine mode of the DB cluster, either provisioned, serverless, parallelquery, global, or multimaster.   global engine mode only applies for global database clusters created with Aurora MySQL version 5.6.10a. For higher Aurora MySQL versions, the clusters in a global database use provisioned engine mode. To check if a DB cluster is part of a global database, use DescribeGlobalClusters instead of checking the EngineMode return value from DescribeDBClusters.  
     */
   var EngineMode: js.UndefOr[String] = js.native
   /**
@@ -187,7 +187,7 @@ trait DBCluster extends js.Object {
     */
   var PreferredMaintenanceWindow: js.UndefOr[String] = js.native
   /**
-    * Contains one or more identifiers of the Read Replicas associated with this DB cluster.
+    * Contains one or more identifiers of the read replicas associated with this DB cluster.
     */
   var ReadReplicaIdentifiers: js.UndefOr[ReadReplicaIdentifierList] = js.native
   /**
@@ -195,7 +195,7 @@ trait DBCluster extends js.Object {
     */
   var ReaderEndpoint: js.UndefOr[String] = js.native
   /**
-    * Contains the identifier of the source DB cluster if this DB cluster is a Read Replica.
+    * Contains the identifier of the source DB cluster if this DB cluster is a read replica.
     */
   var ReplicationSourceIdentifier: js.UndefOr[String] = js.native
   var ScalingConfigurationInfo: js.UndefOr[typings.awsSdk.rdsMod.ScalingConfigurationInfo] = js.native

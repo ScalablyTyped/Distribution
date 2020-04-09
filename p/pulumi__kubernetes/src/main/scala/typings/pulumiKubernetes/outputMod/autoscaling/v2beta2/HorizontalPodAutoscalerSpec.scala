@@ -10,6 +10,12 @@ import scala.scalajs.js.annotation._
   */
 trait HorizontalPodAutoscalerSpec extends js.Object {
   /**
+    * behavior configures the scaling behavior of the target in both Up and Down directions
+    * (scaleUp and scaleDown fields respectively). If not set, the default HPAScalingRules for
+    * scale up and scale down are used.
+    */
+  val behavior: HorizontalPodAutoscalerBehavior
+  /**
     * maxReplicas is the upper limit for the number of replicas to which the autoscaler can scale
     * up. It cannot be less that minReplicas.
     */
@@ -41,12 +47,13 @@ trait HorizontalPodAutoscalerSpec extends js.Object {
 object HorizontalPodAutoscalerSpec {
   @scala.inline
   def apply(
+    behavior: HorizontalPodAutoscalerBehavior,
     maxReplicas: Double,
     metrics: js.Array[MetricSpec],
     minReplicas: Double,
     scaleTargetRef: CrossVersionObjectReference
   ): HorizontalPodAutoscalerSpec = {
-    val __obj = js.Dynamic.literal(maxReplicas = maxReplicas.asInstanceOf[js.Any], metrics = metrics.asInstanceOf[js.Any], minReplicas = minReplicas.asInstanceOf[js.Any], scaleTargetRef = scaleTargetRef.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(behavior = behavior.asInstanceOf[js.Any], maxReplicas = maxReplicas.asInstanceOf[js.Any], metrics = metrics.asInstanceOf[js.Any], minReplicas = minReplicas.asInstanceOf[js.Any], scaleTargetRef = scaleTargetRef.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HorizontalPodAutoscalerSpec]
   }

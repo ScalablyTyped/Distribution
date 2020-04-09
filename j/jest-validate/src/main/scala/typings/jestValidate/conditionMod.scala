@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("jest-validate/build/condition", JSImport.Namespace)
 @js.native
 object conditionMod extends js.Object {
-  def getValues(validOption: js.Any): js.Array[_] = js.native
+  def getValues[T](validOption: T): js.Array[T] = js.native
   def multipleValidOptions[T /* <: js.Array[_] */](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type T is not an array type */ args: T
   ): /* import warning: importer.ImportType#apply Failed type conversion: T[number] */ js.Any = js.native

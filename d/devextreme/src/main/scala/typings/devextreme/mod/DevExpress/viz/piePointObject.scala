@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait piePointObject extends basePointObject {
-  /** Gets the percentage value of the specific point. */
+  /** @name piePointObject.percent */
   var percent: String | Double | Date
-  /** Hides a specific point. */
+  /** @name piePointObject.hide() */
   def hide(): Unit
-  /** Provides information about the visibility state of a point. */
+  /** @name piePointObject.isVisible() */
   def isVisible(): Boolean
-  /** Makes a specific point visible. */
+  /** @name piePointObject.show() */
   def show(): Unit
 }
 

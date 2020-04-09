@@ -7,9 +7,11 @@ import typings.pulumiAws.outputMod.ec2.LaunchTemplateCpuOptions
 import typings.pulumiAws.outputMod.ec2.LaunchTemplateCreditSpecification
 import typings.pulumiAws.outputMod.ec2.LaunchTemplateElasticGpuSpecification
 import typings.pulumiAws.outputMod.ec2.LaunchTemplateElasticInferenceAccelerator
+import typings.pulumiAws.outputMod.ec2.LaunchTemplateHibernationOptions
 import typings.pulumiAws.outputMod.ec2.LaunchTemplateIamInstanceProfile
 import typings.pulumiAws.outputMod.ec2.LaunchTemplateInstanceMarketOptions
 import typings.pulumiAws.outputMod.ec2.LaunchTemplateLicenseSpecification
+import typings.pulumiAws.outputMod.ec2.LaunchTemplateMetadataOptions
 import typings.pulumiAws.outputMod.ec2.LaunchTemplateMonitoring
 import typings.pulumiAws.outputMod.ec2.LaunchTemplateNetworkInterface
 import typings.pulumiAws.outputMod.ec2.LaunchTemplatePlacement
@@ -37,7 +39,7 @@ class LaunchTemplate protected () extends CustomResource {
   def this(name: String, args: LaunchTemplateArgs) = this()
   def this(name: String, args: LaunchTemplateArgs, opts: CustomResourceOptions) = this()
   /**
-    * Amazon Resource Name (ARN) of the launch template.
+    * The Amazon Resource Name (ARN) of the instance profile.
     */
   val arn: Output_[String] = js.native
   /**
@@ -85,6 +87,10 @@ class LaunchTemplate protected () extends CustomResource {
     */
   val elasticInferenceAccelerator: Output_[js.UndefOr[LaunchTemplateElasticInferenceAccelerator]] = js.native
   /**
+    * The hibernation options for the instance. See Hibernation Options below for more details.
+    */
+  val hibernationOptions: Output_[js.UndefOr[LaunchTemplateHibernationOptions]] = js.native
+  /**
     * The IAM Instance Profile to launch the instance with. See Instance Profile
     * below for more details.
     */
@@ -123,6 +129,10 @@ class LaunchTemplate protected () extends CustomResource {
     * A list of license specifications to associate with. See License Specification below for more details.
     */
   val licenseSpecifications: Output_[js.UndefOr[js.Array[LaunchTemplateLicenseSpecification]]] = js.native
+  /**
+    * Customize the metadata options for the instance. See Metadata Options below for more details.
+    */
+  val metadataOptions: Output_[LaunchTemplateMetadataOptions] = js.native
   /**
     * The monitoring option for the instance. See Monitoring below for more details.
     */

@@ -454,6 +454,9 @@ object blueprintjsDatetimeStrings {
   sealed trait `selected-range` extends js.Object
   
   @js.native
+  sealed trait slot extends js.Object
+  
+  @js.native
   sealed trait small extends js.Object
   
   @js.native
@@ -856,6 +859,8 @@ object blueprintjsDatetimeStrings {
   def selected: selected = "selected".asInstanceOf[selected]
   @scala.inline
   def `selected-range`: `selected-range` = "selected-range".asInstanceOf[`selected-range`]
+  @scala.inline
+  def slot: slot = "slot".asInstanceOf[slot]
   @scala.inline
   def small: small = "small".asInstanceOf[small]
   @scala.inline

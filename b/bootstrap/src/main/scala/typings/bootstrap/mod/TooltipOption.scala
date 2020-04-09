@@ -85,6 +85,11 @@ trait TooltipOption extends js.Object {
     ])
   ] = js.undefined
   /**
+    * To change Bootstrap's default Popper.js config,
+    * see {@link https://popper.js.org/docs/v1/ Popper.js's configuration}
+    */
+  var popperConfig: js.UndefOr[Null | js.Object] = js.undefined
+  /**
     * Enable or disable the sanitization. If activated 'template', 'content' and 'title' options will be sanitized.
     *
     * @default true
@@ -151,6 +156,7 @@ object TooltipOption {
       /* trigger */ Element, 
       Placement
     ]) = null,
+    popperConfig: js.Object = null,
     sanitize: js.UndefOr[Boolean] = js.undefined,
     sanitizeFn: /* input */ String => String = null,
     selector: String | `false` = null,
@@ -168,6 +174,7 @@ object TooltipOption {
     if (!js.isUndefined(html)) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
+    if (popperConfig != null) __obj.updateDynamic("popperConfig")(popperConfig.asInstanceOf[js.Any])
     if (!js.isUndefined(sanitize)) __obj.updateDynamic("sanitize")(sanitize.asInstanceOf[js.Any])
     if (sanitizeFn != null) __obj.updateDynamic("sanitizeFn")(js.Any.fromFunction1(sanitizeFn))
     if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])

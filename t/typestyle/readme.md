@@ -1,7 +1,7 @@
 
 # Scala.js typings for typestyle
 
-Typings are for version 2.0.4
+Typings are for version 2.1.0
 
 ## Library description:
 TypeSafe CSS

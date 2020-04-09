@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-plotly_dot_js"
-version := "2.2-dt-20191126Z-b176ef"
+version := "2.2-dt-20191126Z-071554"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -36,9 +36,9 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "d3-voronoi" % "1.1-dt-20200225Z-572ced",
   "org.scalablytyped" %%% "d3-zoom" % "1.7-dt-20200225Z-bf1aec",
   "org.scalablytyped" %%% "geojson" % "7946.0-dt-20190925Z-8ecd0a",
-  "org.scalablytyped" %%% "plotly_dot_js" % "1.44-dt-20200315Z-486cf5",
+  "org.scalablytyped" %%% "plotly_dot_js" % "1.50-dt-20200407Z-683902",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-ece683",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20200320Z-629467",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20200402Z-6f4338",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")

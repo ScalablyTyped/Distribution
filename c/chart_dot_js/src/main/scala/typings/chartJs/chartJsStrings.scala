@@ -304,6 +304,9 @@ object chartJsStrings {
   sealed trait `x-axis` extends InteractionMode
   
   @js.native
+  sealed trait xy extends js.Object
+  
+  @js.native
   sealed trait y extends InteractionMode
   
   @js.native
@@ -498,6 +501,8 @@ object chartJsStrings {
   def x: x = "x".asInstanceOf[x]
   @scala.inline
   def `x-axis`: `x-axis` = "x-axis".asInstanceOf[`x-axis`]
+  @scala.inline
+  def xy: xy = "xy".asInstanceOf[xy]
   @scala.inline
   def y: y = "y".asInstanceOf[y]
   @scala.inline

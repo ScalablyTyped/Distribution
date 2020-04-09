@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait reactInstantsearchProps {
   type HitsProps[T] = typings.reactInstantsearchDom.mod.HitsProps[T]
-  type InstantSearchProps = typings.reactInstantsearchDom.mod.InstantSearchProps
+  type InstantSearchProps = typings.reactInstantsearchCore.mod.InstantSearchProps
   type SearchBoxProps = typings.reactInstantsearchDom.mod.SearchBoxProps
   type StatsProps = AnonTranslations
 }

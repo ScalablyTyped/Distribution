@@ -29,6 +29,10 @@ trait LoadBalancerState extends js.Object {
     */
   val dnsName: js.UndefOr[Input[String]] = js.native
   /**
+    * Indicates whether HTTP headers with header fields that are not valid are removed by the load balancer (true) or routed to targets (false). The default is false. Elastic Load Balancing requires that message header names contain only alphanumeric characters and hyphens. Only valid for Load Balancers of type `application`.
+    */
+  val dropInvalidHeaderFields: js.UndefOr[Input[Boolean]] = js.native
+  /**
     * If true, cross-zone load balancing of the load balancer will be enabled.
     * This is a `network` load balancer feature. Defaults to `false`.
     */
@@ -100,6 +104,7 @@ object LoadBalancerState {
     arn: Input[String] = null,
     arnSuffix: Input[String] = null,
     dnsName: Input[String] = null,
+    dropInvalidHeaderFields: Input[Boolean] = null,
     enableCrossZoneLoadBalancing: Input[Boolean] = null,
     enableDeletionProtection: Input[Boolean] = null,
     enableHttp2: Input[Boolean] = null,
@@ -121,6 +126,7 @@ object LoadBalancerState {
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
     if (arnSuffix != null) __obj.updateDynamic("arnSuffix")(arnSuffix.asInstanceOf[js.Any])
     if (dnsName != null) __obj.updateDynamic("dnsName")(dnsName.asInstanceOf[js.Any])
+    if (dropInvalidHeaderFields != null) __obj.updateDynamic("dropInvalidHeaderFields")(dropInvalidHeaderFields.asInstanceOf[js.Any])
     if (enableCrossZoneLoadBalancing != null) __obj.updateDynamic("enableCrossZoneLoadBalancing")(enableCrossZoneLoadBalancing.asInstanceOf[js.Any])
     if (enableDeletionProtection != null) __obj.updateDynamic("enableDeletionProtection")(enableDeletionProtection.asInstanceOf[js.Any])
     if (enableHttp2 != null) __obj.updateDynamic("enableHttp2")(enableHttp2.asInstanceOf[js.Any])

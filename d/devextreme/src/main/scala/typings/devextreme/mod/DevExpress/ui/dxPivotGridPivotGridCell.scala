@@ -9,25 +9,25 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxPivotGridPivotGridCell extends js.Object {
-  /** The cell's column path. Available for data area cells only. */
+  /** @name dxPivotGridPivotGridCell.columnPath */
   var columnPath: js.UndefOr[js.Array[String | Double | Date]] = js.undefined
-  /** The type of the column to which the cell belongs. Available for data area cells only. */
+  /** @name dxPivotGridPivotGridCell.columnType */
   var columnType: js.UndefOr[D | T | GT] = js.undefined
-  /** The data field's index. Available for data area cells only. */
+  /** @name dxPivotGridPivotGridCell.dataIndex */
   var dataIndex: js.UndefOr[Double] = js.undefined
-  /** Indicates whether the cell is expanded. Available for row or column area cells only. */
+  /** @name dxPivotGridPivotGridCell.expanded */
   var expanded: js.UndefOr[Boolean] = js.undefined
-  /** The path to the row/column cell. Available for row or column area cells only. */
+  /** @name dxPivotGridPivotGridCell.path */
   var path: js.UndefOr[js.Array[String | Double | Date]] = js.undefined
-  /** The cell's row path. Available for data area cells only. */
+  /** @name dxPivotGridPivotGridCell.rowPath */
   var rowPath: js.UndefOr[js.Array[String | Double | Date]] = js.undefined
-  /** The type of the row to which the cell belongs. Available for data area cells only. */
+  /** @name dxPivotGridPivotGridCell.rowType */
   var rowType: js.UndefOr[D | T | GT] = js.undefined
-  /** The text displayed in the cell. */
+  /** @name dxPivotGridPivotGridCell.text */
   var text: js.UndefOr[String] = js.undefined
-  /** The cell's type. Available for row or column area cells only. */
+  /** @name dxPivotGridPivotGridCell.type */
   var `type`: js.UndefOr[D | T | GT] = js.undefined
-  /** The cell's value. */
+  /** @name dxPivotGridPivotGridCell.value */
   var value: js.UndefOr[js.Any] = js.undefined
 }
 

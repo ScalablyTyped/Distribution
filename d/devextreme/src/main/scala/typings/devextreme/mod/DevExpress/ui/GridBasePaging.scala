@@ -5,11 +5,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GridBasePaging extends js.Object {
-  /** Enables paging. */
+  /** @name GridBase.Options.paging.enabled */
   var enabled: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the page to be displayed using a zero-based index. */
+  /** @name GridBase.Options.paging.pageIndex */
   var pageIndex: js.UndefOr[Double] = js.undefined
-  /** Specifies the page size. */
+  /** @name GridBase.Options.paging.pageSize */
   var pageSize: js.UndefOr[Double] = js.undefined
 }
 

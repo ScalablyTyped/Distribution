@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@carbon/pictograms-react", "ChipDebit")
 @js.native
-object ChipDebit extends TopLevel[CarbonPictogram]
+object ChipDebit extends TopLevel[CarbonPictogramType]
 

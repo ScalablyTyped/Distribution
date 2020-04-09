@@ -212,6 +212,10 @@ object Color extends js.Object {
   def fromRandom(options: AnonAlpha): Color = js.native
   def fromRandom(options: AnonAlpha, result: Color): Color = js.native
   def fromRgba(rgba: Double): Color = js.native
+  /**
+    * Computes the linear interpolation or extrapolation at t between the provided colors.
+    */
+  def lerp(start: Color, end: Color, t: Double, result: Color): Color = js.native
   def mod(left: Color, right: Color): Color = js.native
   def mod(left: Color, right: Color, result: Color): Color = js.native
   def multiply(left: Color, right: Color): Color = js.native

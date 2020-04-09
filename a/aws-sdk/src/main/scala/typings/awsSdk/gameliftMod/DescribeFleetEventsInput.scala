@@ -13,7 +13,7 @@ trait DescribeFleetEventsInput extends js.Object {
   /**
     * A unique identifier for a fleet to get event logs for. You can use either the fleet ID or ARN value.
     */
-  var FleetId: typings.awsSdk.gameliftMod.FleetId = js.native
+  var FleetId: FleetIdOrArn = js.native
   /**
     * The maximum number of results to return. Use this parameter with NextToken to get results as a set of sequential pages.
     */
@@ -31,7 +31,7 @@ trait DescribeFleetEventsInput extends js.Object {
 object DescribeFleetEventsInput {
   @scala.inline
   def apply(
-    FleetId: FleetId,
+    FleetId: FleetIdOrArn,
     EndTime: Timestamp = null,
     Limit: Int | scala.Double = null,
     NextToken: NonZeroAndMaxString = null,

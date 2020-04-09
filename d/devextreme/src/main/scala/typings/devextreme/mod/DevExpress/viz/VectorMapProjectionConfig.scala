@@ -5,11 +5,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait VectorMapProjectionConfig extends js.Object {
-  /** Specifies the projection's ratio of the width to the height. */
+  /** @name VectorMapProjectionConfig.aspectRatio */
   var aspectRatio: js.UndefOr[Double] = js.undefined
-  /** Converts coordinates from [x, y] to [lon, lat]. */
+  /** @name VectorMapProjectionConfig.from */
   var from: js.UndefOr[js.Function1[/* coordinates */ js.Array[Double], js.Array[Double]]] = js.undefined
-  /** Converts coordinates from [lon, lat] to [x, y]. */
+  /** @name VectorMapProjectionConfig.to */
   var to: js.UndefOr[js.Function1[/* coordinates */ js.Array[Double], js.Array[Double]]] = js.undefined
 }
 

@@ -10,7 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PrefixMap extends js.Object {
-  var factory: DataFactory[Quad]
+  var factory: DataFactory[Quad, Quad]
   var map: Record[String, NamedNode]
   def addAll(prefixes: PrefixesRecord): this.type
   def export(stream: Stream[Quad]): this.type
@@ -24,7 +24,7 @@ object PrefixMap {
   def apply(
     addAll: PrefixesRecord => PrefixMap,
     export: Stream[Quad] => PrefixMap,
-    factory: DataFactory[Quad],
+    factory: DataFactory[Quad, Quad],
     `import`: Stream[Quad] => js.Promise[PrefixMap],
     map: Record[String, NamedNode],
     resolve: String => NamedNode,

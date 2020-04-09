@@ -15,15 +15,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxSankeyTooltip extends BaseWidgetTooltip {
-  /** Customizes link tooltips' appearance. */
+  /** @name dxSankey.Options.tooltip.customizeLinkTooltip */
   var customizeLinkTooltip: js.UndefOr[js.Function1[/* info */ AnonSource, _]] = js.undefined
-  /** Customizes node tooltips' appearance. */
+  /** @name dxSankey.Options.tooltip.customizeNodeTooltip */
   var customizeNodeTooltip: js.UndefOr[js.Function1[/* info */ AnonTitle, _]] = js.undefined
-  /** Specifies a custom template for a link's tooltip. */
+  /** @name dxSankey.Options.tooltip.linkTooltipTemplate */
   var linkTooltipTemplate: js.UndefOr[
     template | (js.Function2[/* info */ AnonSource, /* element */ dxElement, String | Element | JQuery])
   ] = js.undefined
-  /** Specifies a custom template for a node's tooltip. */
+  /** @name dxSankey.Options.tooltip.nodeTooltipTemplate */
   var nodeTooltipTemplate: js.UndefOr[
     template | (js.Function2[/* info */ AnonWeightIn, /* element */ dxElement, String | Element | JQuery])
   ] = js.undefined

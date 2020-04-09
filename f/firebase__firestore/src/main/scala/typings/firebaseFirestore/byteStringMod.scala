@@ -10,8 +10,9 @@ import scala.scalajs.js.annotation._
 object byteStringMod extends js.Object {
   @js.native
   class ByteString protected () extends js.Object {
-    val _binaryString: js.Any = js.native
+    val binaryString: js.Any = js.native
     def approximateByteSize(): Double = js.native
+    def compareTo(other: ByteString): Double = js.native
     def isEqual(other: ByteString): Boolean = js.native
     def toBase64(): String = js.native
     def toUint8Array(): Uint8Array = js.native

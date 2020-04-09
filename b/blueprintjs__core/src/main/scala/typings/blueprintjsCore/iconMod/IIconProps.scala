@@ -56,7 +56,7 @@ trait IIconProps
     * @default "span"
     */
   var tagName: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any
   ] = js.undefined
   /**
     * Description string. This string does not appear in normal browsers, but
@@ -77,7 +77,7 @@ object IIconProps {
     iconSize: Int | Double = null,
     intent: Intent = null,
     style: CSSProperties = null,
-    tagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any = null,
+    tagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any = null,
     title: String | `false` = null
   ): IIconProps = {
     val __obj = js.Dynamic.literal()

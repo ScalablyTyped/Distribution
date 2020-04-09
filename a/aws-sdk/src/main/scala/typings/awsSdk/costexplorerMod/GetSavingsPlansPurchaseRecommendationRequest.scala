@@ -7,6 +7,14 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetSavingsPlansPurchaseRecommendationRequest extends js.Object {
   /**
+    * The account scope that you want your recommendations for. Amazon Web Services calculates recommendations including the payer account and linked accounts if the value is set to PAYER. If the value is LINKED, recommendations are calculated for individual linked accounts only.
+    */
+  var AccountScope: js.UndefOr[typings.awsSdk.costexplorerMod.AccountScope] = js.native
+  /**
+    * You can filter your recommendations by Account ID with the LINKED_ACCOUNT dimension. To filter your recommendations by Account ID, specify Key as LINKED_ACCOUNT and Value as the comma-separated Acount ID(s) for which you want to see Savings Plans purchase recommendations. For GetSavingsPlansPurchaseRecommendation, the Filter does not include CostCategories or Tags. It only includes Dimensions. With Dimensions, Key must be LINKED_ACCOUNT and Value can be a single Account ID or multiple comma-separated Account IDs for which you want to see Savings Plans Purchase Recommendations. AND and OR operators are not supported.
+    */
+  var Filter: js.UndefOr[Expression] = js.native
+  /**
     * The lookback period used to generate the recommendation.
     */
   var LookbackPeriodInDays: typings.awsSdk.costexplorerMod.LookbackPeriodInDays = js.native
@@ -39,10 +47,14 @@ object GetSavingsPlansPurchaseRecommendationRequest {
     PaymentOption: PaymentOption,
     SavingsPlansType: SupportedSavingsPlansType,
     TermInYears: TermInYears,
+    AccountScope: AccountScope = null,
+    Filter: Expression = null,
     NextPageToken: NextPageToken = null,
     PageSize: Int | Double = null
   ): GetSavingsPlansPurchaseRecommendationRequest = {
     val __obj = js.Dynamic.literal(LookbackPeriodInDays = LookbackPeriodInDays.asInstanceOf[js.Any], PaymentOption = PaymentOption.asInstanceOf[js.Any], SavingsPlansType = SavingsPlansType.asInstanceOf[js.Any], TermInYears = TermInYears.asInstanceOf[js.Any])
+    if (AccountScope != null) __obj.updateDynamic("AccountScope")(AccountScope.asInstanceOf[js.Any])
+    if (Filter != null) __obj.updateDynamic("Filter")(Filter.asInstanceOf[js.Any])
     if (NextPageToken != null) __obj.updateDynamic("NextPageToken")(NextPageToken.asInstanceOf[js.Any])
     if (PageSize != null) __obj.updateDynamic("PageSize")(PageSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSavingsPlansPurchaseRecommendationRequest]

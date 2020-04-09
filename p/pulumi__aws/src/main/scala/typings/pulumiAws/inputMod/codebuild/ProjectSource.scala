@@ -12,7 +12,7 @@ trait ProjectSource extends js.Object {
     */
   var auths: js.UndefOr[Input[js.Array[Input[ProjectSourceAuth]]]] = js.native
   /**
-    * The build spec declaration to use for this build project's related builds.
+    * The build spec declaration to use for this build project's related builds. This must be set when `type` is `NO_SOURCE`.
     */
   var buildspec: js.UndefOr[Input[String]] = js.native
   /**
@@ -32,11 +32,11 @@ trait ProjectSource extends js.Object {
     */
   var location: js.UndefOr[Input[String]] = js.native
   /**
-    * Set to `true` to report the status of a build's start and finish to your source provider. This option is only valid when your source provider is `GITHUB`, `BITBUCKET`, or `GITHUB_ENTERPRISE`.
+    * Set to `true` to report the status of a build's start and finish to your source provider. This option is only valid when the `type` is `BITBUCKET` or `GITHUB`.
     */
   var reportBuildStatus: js.UndefOr[Input[Boolean]] = js.native
   /**
-    * The type of repository that contains the source code to be built. Valid values for this parameter are: `CODECOMMIT`, `CODEPIPELINE`, `GITHUB`, `GITHUB_ENTERPRISE`, `BITBUCKET` or `S3`.
+    * The type of repository that contains the source code to be built. Valid values for this parameter are: `CODECOMMIT`, `CODEPIPELINE`, `GITHUB`, `GITHUB_ENTERPRISE`, `BITBUCKET`, `S3` or `NO_SOURCE`.
     */
   var `type`: Input[String] = js.native
 }

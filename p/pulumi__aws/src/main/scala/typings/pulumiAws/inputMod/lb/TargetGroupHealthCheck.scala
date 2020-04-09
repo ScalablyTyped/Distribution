@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TargetGroupHealthCheck extends js.Object {
   /**
-    * Indicates whether  health checks are enabled. Defaults to true.
+    * Boolean to enable / disable `stickiness`. Default is `true`
     */
   var enabled: js.UndefOr[Input[Boolean]] = js.native
   /**
@@ -25,11 +25,11 @@ trait TargetGroupHealthCheck extends js.Object {
     */
   var path: js.UndefOr[Input[String]] = js.native
   /**
-    * The port to use to connect with the target. Valid values are either ports 1-65535, or `traffic-port`. Defaults to `traffic-port`.
+    * The port on which targets receive traffic, unless overridden when registering a specific target. Required when `targetType` is `instance` or `ip`. Does not apply when `targetType` is `lambda`.
     */
   var port: js.UndefOr[Input[String]] = js.native
   /**
-    * The protocol to use to connect with the target. Defaults to `HTTP`. Not applicable when `targetType` is `lambda`.
+    * The protocol to use for routing traffic to the targets. Should be one of "TCP", "TLS", "UDP", "TCP_UDP", "HTTP" or "HTTPS". Required when `targetType` is `instance` or `ip`. Does not apply when `targetType` is `lambda`.
     */
   var protocol: js.UndefOr[Input[String]] = js.native
   /**

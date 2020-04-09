@@ -13,6 +13,7 @@ import typings.react.mod.FormEvent
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
@@ -255,7 +256,7 @@ object FormRadioProps {
     onProgress: SyntheticEvent[HTMLInputElement, Event_] => Unit = null,
     onRateChange: SyntheticEvent[HTMLInputElement, Event_] => Unit = null,
     onReset: FormEvent[HTMLInputElement] => Unit = null,
-    onScroll: UIEvent[HTMLInputElement] => Unit = null,
+    onScroll: UIEvent[HTMLInputElement, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[HTMLInputElement, Event_] => Unit = null,
     onSeeking: SyntheticEvent[HTMLInputElement, Event_] => Unit = null,
     onSelect: SyntheticEvent[HTMLInputElement, Event_] => Unit = null,

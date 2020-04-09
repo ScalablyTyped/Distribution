@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 trait ActionsGetArtifactResponse extends js.Object {
   var archive_download_url: String
   var created_at: String
-  var expired: String
+  var expired: Boolean
   var expires_at: String
   var id: Double
   var name: String
@@ -21,7 +21,7 @@ object ActionsGetArtifactResponse {
   def apply(
     archive_download_url: String,
     created_at: String,
-    expired: String,
+    expired: Boolean,
     expires_at: String,
     id: Double,
     name: String,

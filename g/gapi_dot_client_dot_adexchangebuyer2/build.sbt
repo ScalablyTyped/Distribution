@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "gapi_dot_client_dot_adexchangebuyer2"
-version := "2.0-dt-20190213Z-1d2d32"
+version := "2.0-dt-20190213Z-5eca99"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "gapi_dot_client" % "1.0-dt-20200226Z-1a9992",
+  "org.scalablytyped" %%% "gapi_dot_client" % "1.0-dt-20200407Z-b15a50",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")

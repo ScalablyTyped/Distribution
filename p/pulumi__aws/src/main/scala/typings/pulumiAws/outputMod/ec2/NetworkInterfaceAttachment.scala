@@ -7,7 +7,13 @@ import scala.scalajs.js.annotation._
 @js.native
 trait NetworkInterfaceAttachment extends js.Object {
   var attachmentId: String = js.native
+  /**
+    * Integer to define the devices index.
+    */
   var deviceIndex: Double = js.native
+  /**
+    * ID of the instance to attach to.
+    */
   var instance: String = js.native
 }
 

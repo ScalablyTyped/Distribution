@@ -19,7 +19,7 @@ trait CreateApplicationVersionMessage extends js.Object {
     */
   var BuildConfiguration: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.BuildConfiguration] = js.native
   /**
-    * Describes this version.
+    * A description of this application version.
     */
   var Description: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.Description] = js.native
   /**

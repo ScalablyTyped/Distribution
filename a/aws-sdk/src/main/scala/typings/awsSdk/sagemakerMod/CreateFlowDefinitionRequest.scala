@@ -18,6 +18,7 @@ trait CreateFlowDefinitionRequest extends js.Object {
     * An object containing information about the tasks the human reviewers will perform.
     */
   var HumanLoopConfig: typings.awsSdk.sagemakerMod.HumanLoopConfig = js.native
+  var HumanLoopRequestSource: js.UndefOr[typings.awsSdk.sagemakerMod.HumanLoopRequestSource] = js.native
   /**
     * An object containing information about where the human review results will be uploaded.
     */
@@ -40,10 +41,12 @@ object CreateFlowDefinitionRequest {
     OutputConfig: FlowDefinitionOutputConfig,
     RoleArn: RoleArn,
     HumanLoopActivationConfig: HumanLoopActivationConfig = null,
+    HumanLoopRequestSource: HumanLoopRequestSource = null,
     Tags: TagList = null
   ): CreateFlowDefinitionRequest = {
     val __obj = js.Dynamic.literal(FlowDefinitionName = FlowDefinitionName.asInstanceOf[js.Any], HumanLoopConfig = HumanLoopConfig.asInstanceOf[js.Any], OutputConfig = OutputConfig.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any])
     if (HumanLoopActivationConfig != null) __obj.updateDynamic("HumanLoopActivationConfig")(HumanLoopActivationConfig.asInstanceOf[js.Any])
+    if (HumanLoopRequestSource != null) __obj.updateDynamic("HumanLoopRequestSource")(HumanLoopRequestSource.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateFlowDefinitionRequest]
   }

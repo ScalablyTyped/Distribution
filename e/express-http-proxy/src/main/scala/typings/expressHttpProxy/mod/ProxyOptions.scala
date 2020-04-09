@@ -39,7 +39,7 @@ trait ProxyOptions extends js.Object {
       RequestOptions | js.Promise[RequestOptions]
     ]
   ] = js.undefined
-  var proxyReqPathResolver: js.UndefOr[js.Function1[/* req */ Request_[ParamsDictionary], String]] = js.undefined
+  var proxyReqPathResolver: js.UndefOr[js.Function1[/* req */ Request_[ParamsDictionary], String | js.Promise[String]]] = js.undefined
   var reqAsBuffer: js.UndefOr[Boolean] = js.undefined
   var reqBodyEncoding: js.UndefOr[String | Null] = js.undefined
   var skipToNextHandlerFilter: js.UndefOr[js.Function1[/* proxyRes */ Response_[_], Boolean]] = js.undefined
@@ -77,7 +77,7 @@ object ProxyOptions {
     proxyErrorHandler: (/* err */ js.Any, /* res */ Response_[_], /* next */ NextFunction) => _ = null,
     proxyReqBodyDecorator: (/* bodyContent */ js.Any, /* srcReq */ Request_[ParamsDictionary]) => _ = null,
     proxyReqOptDecorator: (/* proxyReqOpts */ RequestOptions, /* srcReq */ Request_[ParamsDictionary]) => RequestOptions | js.Promise[RequestOptions] = null,
-    proxyReqPathResolver: /* req */ Request_[ParamsDictionary] => String = null,
+    proxyReqPathResolver: /* req */ Request_[ParamsDictionary] => String | js.Promise[String] = null,
     reqAsBuffer: js.UndefOr[Boolean] = js.undefined,
     reqBodyEncoding: String = null,
     skipToNextHandlerFilter: /* proxyRes */ Response_[_] => Boolean = null,

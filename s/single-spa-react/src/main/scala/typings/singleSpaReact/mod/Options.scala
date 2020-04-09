@@ -1,6 +1,7 @@
 package typings.singleSpaReact.mod
 
 import typings.react.mod.ComponentClass
+import typings.react.mod.FunctionComponent
 import typings.singleSpaReact.TypeofReact
 import typings.singleSpaReact.TypeofReactDOM
 import typings.std.Element
@@ -12,9 +13,9 @@ trait Options extends js.Object {
   var React: TypeofReact
   var ReactDOM: TypeofReactDOM
   var domElementGetter: js.UndefOr[js.Function0[Element]] = js.undefined
-  var loadRootComponent: js.UndefOr[js.Function0[js.Promise[ComponentClass[_, _]]]] = js.undefined
+  var loadRootComponent: js.UndefOr[js.Function0[js.Promise[(ComponentClass[_, _]) | FunctionComponent[_]]]] = js.undefined
   var parcelCanUpdate: js.UndefOr[Boolean] = js.undefined
-  var rootComponent: js.UndefOr[ComponentClass[_, _]] = js.undefined
+  var rootComponent: js.UndefOr[(ComponentClass[_, _]) | FunctionComponent[_]] = js.undefined
   var suppressComponentDidCatchWarning: js.UndefOr[Boolean] = js.undefined
 }
 
@@ -24,9 +25,9 @@ object Options {
     React: TypeofReact,
     ReactDOM: TypeofReactDOM,
     domElementGetter: () => Element = null,
-    loadRootComponent: () => js.Promise[ComponentClass[_, _]] = null,
+    loadRootComponent: () => js.Promise[(ComponentClass[_, _]) | FunctionComponent[_]] = null,
     parcelCanUpdate: js.UndefOr[Boolean] = js.undefined,
-    rootComponent: ComponentClass[_, _] = null,
+    rootComponent: (ComponentClass[_, _]) | FunctionComponent[_] = null,
     suppressComponentDidCatchWarning: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal(React = React.asInstanceOf[js.Any], ReactDOM = ReactDOM.asInstanceOf[js.Any])

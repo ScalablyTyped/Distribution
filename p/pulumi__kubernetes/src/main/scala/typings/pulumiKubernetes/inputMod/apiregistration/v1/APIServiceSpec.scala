@@ -40,7 +40,7 @@ trait APIServiceSpec extends js.Object {
     * If the Service is nil, that means the handling for the API groupversion is handled locally
     * on this server. The call will simply delegate to the normal handler chain to be fulfilled.
     */
-  var service: Input[ServiceReference]
+  var service: js.UndefOr[Input[ServiceReference]] = js.undefined
   /**
     * Version is the API version this server hosts.  For example, "v1"
     */
@@ -65,17 +65,18 @@ object APIServiceSpec {
   @scala.inline
   def apply(
     groupPriorityMinimum: Input[Double],
-    service: Input[ServiceReference],
     versionPriority: Input[Double],
     caBundle: Input[String] = null,
     group: Input[String] = null,
     insecureSkipTLSVerify: Input[Boolean] = null,
+    service: Input[ServiceReference] = null,
     version: Input[String] = null
   ): APIServiceSpec = {
-    val __obj = js.Dynamic.literal(groupPriorityMinimum = groupPriorityMinimum.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any], versionPriority = versionPriority.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(groupPriorityMinimum = groupPriorityMinimum.asInstanceOf[js.Any], versionPriority = versionPriority.asInstanceOf[js.Any])
     if (caBundle != null) __obj.updateDynamic("caBundle")(caBundle.asInstanceOf[js.Any])
     if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
     if (insecureSkipTLSVerify != null) __obj.updateDynamic("insecureSkipTLSVerify")(insecureSkipTLSVerify.asInstanceOf[js.Any])
+    if (service != null) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[APIServiceSpec]
   }

@@ -1,5 +1,9 @@
 package typings.vegaTypings.configMod
 
+import typings.std.Exclude
+import typings.vegaTypings.encodeMod.ColorValueRef
+import typings.vegaTypings.encodeMod.NumericValueRef
+import typings.vegaTypings.encodeMod.ScaledValueRef
 import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.titleMod.TitleFrame
 import typings.vegaTypings.titleMod.TitleOrient
@@ -17,57 +21,69 @@ import scala.scalajs.js.annotation._
 
 /* Inlined vega-typings.vega-typings/types/spec/config.ExcludeMappedValueRef<vega-typings.vega-typings/types/spec/title.BaseTitle> */
 trait TitleConfig extends js.Object {
-  var align: ExcludeValueRefKeepSignal[js.UndefOr[AlignValue]]
-  var anchor: ExcludeValueRefKeepSignal[js.UndefOr[AnchorValue]]
-  var angle: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]]
-  var baseline: ExcludeValueRefKeepSignal[js.UndefOr[TextBaselineValue]]
-  var color: ExcludeValueRefKeepSignal[js.UndefOr[ColorValue]]
-  var dx: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]]
-  var dy: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]]
-  var font: ExcludeValueRefKeepSignal[js.UndefOr[StringValue]]
-  var fontSize: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]]
-  var fontStyle: ExcludeValueRefKeepSignal[js.UndefOr[FontStyleValue]]
-  var fontWeight: ExcludeValueRefKeepSignal[js.UndefOr[FontWeightValue]]
-  var frame: ExcludeValueRefKeepSignal[js.UndefOr[TitleFrame | StringValue]]
-  var limit: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]]
-  var lineHeight: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]]
-  var offset: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]]
-  var orient: ExcludeValueRefKeepSignal[js.UndefOr[TitleOrient | SignalRef]]
-  var subtitleColor: ExcludeValueRefKeepSignal[js.UndefOr[ColorValue]]
-  var subtitleFont: ExcludeValueRefKeepSignal[js.UndefOr[StringValue]]
-  var subtitleFontSize: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]]
-  var subtitleFontStyle: ExcludeValueRefKeepSignal[js.UndefOr[FontStyleValue]]
-  var subtitleFontWeight: ExcludeValueRefKeepSignal[js.UndefOr[FontWeightValue]]
-  var subtitleLineHeight: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]]
-  var subtitlePadding: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]]
+  var align: (Exclude[js.UndefOr[AlignValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[AlignValue]]
+  var anchor: (Exclude[js.UndefOr[AnchorValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[AnchorValue]]
+  var angle: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+  var baseline: (Exclude[js.UndefOr[TextBaselineValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[TextBaselineValue]]
+  var color: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
+  var dx: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+  var dy: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+  var font: (Exclude[js.UndefOr[StringValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[StringValue]]
+  var fontSize: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+  var fontStyle: (Exclude[js.UndefOr[FontStyleValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[FontStyleValue]]
+  var fontWeight: (Exclude[js.UndefOr[FontWeightValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[FontWeightValue]]
+  var frame: (Exclude[
+    js.UndefOr[TitleFrame | StringValue], 
+    ScaledValueRef[_] | NumericValueRef | ColorValueRef
+  ]) | (KeepSignal[js.UndefOr[TitleFrame | StringValue]])
+  var limit: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+  var lineHeight: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+  var offset: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+  var orient: (Exclude[
+    js.UndefOr[TitleOrient | SignalRef], 
+    ScaledValueRef[_] | NumericValueRef | ColorValueRef
+  ]) | (KeepSignal[js.UndefOr[TitleOrient | SignalRef]])
+  var subtitleColor: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
+  var subtitleFont: (Exclude[js.UndefOr[StringValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[StringValue]]
+  var subtitleFontSize: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+  var subtitleFontStyle: (Exclude[js.UndefOr[FontStyleValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[FontStyleValue]]
+  var subtitleFontWeight: (Exclude[js.UndefOr[FontWeightValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[FontWeightValue]]
+  var subtitleLineHeight: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+  var subtitlePadding: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
 }
 
 object TitleConfig {
   @scala.inline
   def apply(
-    align: ExcludeValueRefKeepSignal[js.UndefOr[AlignValue]] = null,
-    anchor: ExcludeValueRefKeepSignal[js.UndefOr[AnchorValue]] = null,
-    angle: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]] = null,
-    baseline: ExcludeValueRefKeepSignal[js.UndefOr[TextBaselineValue]] = null,
-    color: ExcludeValueRefKeepSignal[js.UndefOr[ColorValue]] = null,
-    dx: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]] = null,
-    dy: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]] = null,
-    font: ExcludeValueRefKeepSignal[js.UndefOr[StringValue]] = null,
-    fontSize: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]] = null,
-    fontStyle: ExcludeValueRefKeepSignal[js.UndefOr[FontStyleValue]] = null,
-    fontWeight: ExcludeValueRefKeepSignal[js.UndefOr[FontWeightValue]] = null,
-    frame: ExcludeValueRefKeepSignal[js.UndefOr[TitleFrame | StringValue]] = null,
-    limit: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]] = null,
-    lineHeight: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]] = null,
-    offset: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]] = null,
-    orient: ExcludeValueRefKeepSignal[js.UndefOr[TitleOrient | SignalRef]] = null,
-    subtitleColor: ExcludeValueRefKeepSignal[js.UndefOr[ColorValue]] = null,
-    subtitleFont: ExcludeValueRefKeepSignal[js.UndefOr[StringValue]] = null,
-    subtitleFontSize: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]] = null,
-    subtitleFontStyle: ExcludeValueRefKeepSignal[js.UndefOr[FontStyleValue]] = null,
-    subtitleFontWeight: ExcludeValueRefKeepSignal[js.UndefOr[FontWeightValue]] = null,
-    subtitleLineHeight: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]] = null,
-    subtitlePadding: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]] = null
+    align: (Exclude[js.UndefOr[AlignValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[AlignValue]] = null,
+    anchor: (Exclude[js.UndefOr[AnchorValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[AnchorValue]] = null,
+    angle: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null,
+    baseline: (Exclude[js.UndefOr[TextBaselineValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[TextBaselineValue]] = null,
+    color: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]] = null,
+    dx: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null,
+    dy: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null,
+    font: (Exclude[js.UndefOr[StringValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[StringValue]] = null,
+    fontSize: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null,
+    fontStyle: (Exclude[js.UndefOr[FontStyleValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[FontStyleValue]] = null,
+    fontWeight: (Exclude[js.UndefOr[FontWeightValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[FontWeightValue]] = null,
+    frame: (Exclude[
+      js.UndefOr[TitleFrame | StringValue], 
+      ScaledValueRef[_] | NumericValueRef | ColorValueRef
+    ]) | (KeepSignal[js.UndefOr[TitleFrame | StringValue]]) = null,
+    limit: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null,
+    lineHeight: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null,
+    offset: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null,
+    orient: (Exclude[
+      js.UndefOr[TitleOrient | SignalRef], 
+      ScaledValueRef[_] | NumericValueRef | ColorValueRef
+    ]) | (KeepSignal[js.UndefOr[TitleOrient | SignalRef]]) = null,
+    subtitleColor: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]] = null,
+    subtitleFont: (Exclude[js.UndefOr[StringValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[StringValue]] = null,
+    subtitleFontSize: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null,
+    subtitleFontStyle: (Exclude[js.UndefOr[FontStyleValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[FontStyleValue]] = null,
+    subtitleFontWeight: (Exclude[js.UndefOr[FontWeightValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[FontWeightValue]] = null,
+    subtitleLineHeight: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null,
+    subtitlePadding: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]] = null
   ): TitleConfig = {
     val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])

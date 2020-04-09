@@ -22,6 +22,10 @@ trait WorkgroupState extends js.Object {
     */
   val description: js.UndefOr[Input[String]] = js.native
   /**
+    * The option to delete the workgroup and its contents even if the workgroup contains any named queries.
+    */
+  val forceDestroy: js.UndefOr[Input[Boolean]] = js.native
+  /**
     * Name of the workgroup.
     */
   val name: js.UndefOr[Input[String]] = js.native
@@ -41,6 +45,7 @@ object WorkgroupState {
     arn: Input[String] = null,
     configuration: Input[WorkgroupConfiguration] = null,
     description: Input[String] = null,
+    forceDestroy: Input[Boolean] = null,
     name: Input[String] = null,
     state: Input[String] = null,
     tags: Input[StringDictionary[_]] = null
@@ -49,6 +54,7 @@ object WorkgroupState {
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
     if (configuration != null) __obj.updateDynamic("configuration")(configuration.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (forceDestroy != null) __obj.updateDynamic("forceDestroy")(forceDestroy.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])

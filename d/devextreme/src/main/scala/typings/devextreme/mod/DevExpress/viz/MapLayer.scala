@@ -6,19 +6,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MapLayer extends js.Object {
-  /** The type of the layer elements. */
+  /** @name MapLayer.elementType */
   var elementType: String
-  /** The layer index in the layers array. */
+  /** @name MapLayer.index */
   var index: Double
-  /** The name of the layer. */
+  /** @name MapLayer.name */
   var name: String
-  /** The layer type. Can be "area", "line" or "marker". */
+  /** @name MapLayer.type */
   var `type`: String
-  /** Deselects all layer elements. */
+  /** @name MapLayer.clearSelection() */
   def clearSelection(): Unit
-  /** Returns the DataSource instance. */
+  /** @name MapLayer.getDataSource() */
   def getDataSource(): DataSource
-  /** Gets all layer elements. */
+  /** @name MapLayer.getElements() */
   def getElements(): js.Array[MapLayerElement]
 }
 

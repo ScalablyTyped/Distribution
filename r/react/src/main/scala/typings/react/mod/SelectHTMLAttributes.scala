@@ -212,7 +212,7 @@ object SelectHTMLAttributes {
     onProgress: SyntheticEvent[T, Event_] => Unit = null,
     onRateChange: SyntheticEvent[T, Event_] => Unit = null,
     onReset: FormEvent[T] => Unit = null,
-    onScroll: UIEvent[T] => Unit = null,
+    onScroll: UIEvent[T, NativeUIEvent] => Unit = null,
     onSeeked: SyntheticEvent[T, Event_] => Unit = null,
     onSeeking: SyntheticEvent[T, Event_] => Unit = null,
     onSelect: SyntheticEvent[T, Event_] => Unit = null,

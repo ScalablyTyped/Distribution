@@ -4,6 +4,7 @@ import typings.apolloClient.typesMod.ApolloQueryResult
 import typings.apolloReactCommon.typesMod.QueryResult
 import typings.apolloReactHooks.operationDataMod.OperationData
 import typings.apolloReactHooks.typesMod.QueryTuple
+import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,9 +15,8 @@ object queryDataMod extends js.Object {
   @js.native
   class QueryData[TData, TVariables] protected ()
     extends OperationData[js.Any] {
-    def this(hasOptionsContextForceUpdate: AnonForceUpdate[TData, TVariables]) = this()
+    def this(hasOptionsContextOnNewData: AnonOnNewData[TData, TVariables]) = this()
     var currentObservable: js.Any = js.native
-    var forceUpdate: js.Any = js.native
     var getExecuteResult: js.Any = js.native
     var getExecuteSsrResult: js.Any = js.native
     var getQueryResult: js.Any = js.native
@@ -43,6 +43,8 @@ object queryDataMod extends js.Object {
     def execute(): QueryResult[TData, TVariables] = js.native
     def executeLazy(): QueryTuple[TData, TVariables] = js.native
     def fetchData(): js.Promise[ApolloQueryResult[_]] | Boolean = js.native
+    def onNewData(): Unit = js.native
+    def ssrInitiated(): js.UndefOr[Record[_, _]] = js.native
   }
   
 }

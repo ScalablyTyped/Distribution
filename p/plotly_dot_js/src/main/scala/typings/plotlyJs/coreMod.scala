@@ -507,9 +507,13 @@ object coreMod extends js.Object {
   def deleteTraces(root: Root, indices: Double): js.Promise[PlotlyHTMLElement] = js.native
   def downloadImage(root: Root, opts: DownloadImgopts): js.Promise[String] = js.native
   def extendTraces(root: Root, update: js.Array[Data], indices: js.Array[Double]): js.Promise[PlotlyHTMLElement] = js.native
+  def extendTraces(root: Root, update: js.Array[Data], indices: js.Array[Double], maxPoints: Double): js.Promise[PlotlyHTMLElement] = js.native
   def extendTraces(root: Root, update: js.Array[Data], indices: Double): js.Promise[PlotlyHTMLElement] = js.native
+  def extendTraces(root: Root, update: js.Array[Data], indices: Double, maxPoints: Double): js.Promise[PlotlyHTMLElement] = js.native
   def extendTraces(root: Root, update: Data, indices: js.Array[Double]): js.Promise[PlotlyHTMLElement] = js.native
+  def extendTraces(root: Root, update: Data, indices: js.Array[Double], maxPoints: Double): js.Promise[PlotlyHTMLElement] = js.native
   def extendTraces(root: Root, update: Data, indices: Double): js.Promise[PlotlyHTMLElement] = js.native
+  def extendTraces(root: Root, update: Data, indices: Double, maxPoints: Double): js.Promise[PlotlyHTMLElement] = js.native
   def moveTraces(root: Root, currentIndices: js.Array[Double]): js.Promise[PlotlyHTMLElement] = js.native
   def moveTraces(root: Root, currentIndices: js.Array[Double], newIndices: js.Array[Double]): js.Promise[PlotlyHTMLElement] = js.native
   def moveTraces(root: Root, currentIndices: js.Array[Double], newIndices: Double): js.Promise[PlotlyHTMLElement] = js.native

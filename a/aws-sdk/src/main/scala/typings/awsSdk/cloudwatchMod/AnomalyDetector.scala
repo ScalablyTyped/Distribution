@@ -25,7 +25,7 @@ trait AnomalyDetector extends js.Object {
   /**
     * The statistic associated with the anomaly detection model.
     */
-  var Stat: js.UndefOr[typings.awsSdk.cloudwatchMod.Stat] = js.native
+  var Stat: js.UndefOr[AnomalyDetectorMetricStat] = js.native
   /**
     * The current status of the anomaly detector's training. The possible values are TRAINED | PENDING_TRAINING | TRAINED_INSUFFICIENT_DATA 
     */
@@ -39,7 +39,7 @@ object AnomalyDetector {
     Dimensions: Dimensions = null,
     MetricName: MetricName = null,
     Namespace: Namespace = null,
-    Stat: Stat = null,
+    Stat: AnomalyDetectorMetricStat = null,
     StateValue: AnomalyDetectorStateValue = null
   ): AnomalyDetector = {
     val __obj = js.Dynamic.literal()

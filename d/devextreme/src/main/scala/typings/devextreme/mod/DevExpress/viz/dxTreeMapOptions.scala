@@ -47,57 +47,57 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxTreeMapOptions extends BaseWidgetOptions[dxTreeMap] {
-  /** Specifies the name of the data source field that provides nested items for a group. Applies to hierarchical data sources only. */
+  /** @name dxTreeMap.Options.childrenField */
   var childrenField: js.UndefOr[String] = js.undefined
-  /** Specifies the name of the data source field that provides colors for tiles. */
+  /** @name dxTreeMap.Options.colorField */
   var colorField: js.UndefOr[String] = js.undefined
-  /** Manages the color settings. */
+  /** @name dxTreeMap.Options.colorizer */
   var colorizer: js.UndefOr[AnonColorCodeField] = js.undefined
-  /** Binds the widget to data. */
+  /** @name dxTreeMap.Options.dataSource */
   var dataSource: js.UndefOr[js.Array[_] | DataSource | DataSourceOptions | String] = js.undefined
-  /** Configures groups. */
+  /** @name dxTreeMap.Options.group */
   var group: js.UndefOr[AnonHeaderHeight] = js.undefined
-  /** Specifies whether tiles and groups change their style when a user pauses on them. */
+  /** @name dxTreeMap.Options.hoverEnabled */
   var hoverEnabled: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the name of the data source field that provides IDs for items. Applies to plain data sources only. */
+  /** @name dxTreeMap.Options.idField */
   var idField: js.UndefOr[String] = js.undefined
-  /** Specifies whether the user will interact with a single tile or its group. */
+  /** @name dxTreeMap.Options.interactWithGroup */
   var interactWithGroup: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the name of the data source field that provides texts for tile and group labels. */
+  /** @name dxTreeMap.Options.labelField */
   var labelField: js.UndefOr[String] = js.undefined
-  /** Specifies the layout algorithm. */
+  /** @name dxTreeMap.Options.layoutAlgorithm */
   var layoutAlgorithm: js.UndefOr[sliceanddice | squarified | strip | (js.Function1[/* e */ AnonRect, _])] = js.undefined
-  /** Specifies the direction in which the items will be laid out. */
+  /** @name dxTreeMap.Options.layoutDirection */
   var layoutDirection: js.UndefOr[
     leftBottomRightTop | leftTopRightBottom | rightBottomLeftTop | rightTopLeftBottom
   ] = js.undefined
-  /** Specifies how many hierarchical levels must be visualized. */
+  /** @name dxTreeMap.Options.maxDepth */
   var maxDepth: js.UndefOr[Double] = js.undefined
-  /** A function that is executed when a node is clicked or tapped. */
+  /** @name dxTreeMap.Options.onClick */
   var onClick: js.UndefOr[(js.Function1[/* e */ AnonJQueryEventModelNode, _]) | String] = js.undefined
-  /** A function that is executed when a user drills up or down. */
+  /** @name dxTreeMap.Options.onDrill */
   var onDrill: js.UndefOr[js.Function1[/* e */ AnonElementModelNode, _]] = js.undefined
-  /** A function that is executed after the pointer enters or leaves a node. */
+  /** @name dxTreeMap.Options.onHoverChanged */
   var onHoverChanged: js.UndefOr[js.Function1[/* e */ AnonElementModelNode, _]] = js.undefined
-  /** A function that is executed only once, after the nodes are initialized. */
+  /** @name dxTreeMap.Options.onNodesInitialized */
   var onNodesInitialized: js.UndefOr[js.Function1[/* e */ AnonModelRoot, _]] = js.undefined
-  /** A function that is executed before the nodes are displayed and each time the collection of active nodes is changed. */
+  /** @name dxTreeMap.Options.onNodesRendering */
   var onNodesRendering: js.UndefOr[js.Function1[/* e */ AnonElementModelNode, _]] = js.undefined
-  /** A function that is executed when a node is selected or selection is canceled. */
+  /** @name dxTreeMap.Options.onSelectionChanged */
   var onSelectionChanged: js.UndefOr[js.Function1[/* e */ AnonElementModelNode, _]] = js.undefined
-  /** Specifies the name of the data source field that provides parent IDs for items. Applies to plain data sources only. */
+  /** @name dxTreeMap.Options.parentField */
   var parentField: js.UndefOr[String] = js.undefined
-  /** @deprecated Use the tile.label.textOverflow option instead. */
-  /** Decides whether those labels that overflow their tile/group should be hidden or truncated with ellipsis. */
+  /** @deprecated */
+  /** @name dxTreeMap.Options.resolveLabelOverflow */
   var resolveLabelOverflow: js.UndefOr[ellipsis | hide] = js.undefined
-  /** Specifies whether a single or multiple nodes can be in the selected state simultaneously. */
+  /** @name dxTreeMap.Options.selectionMode */
   var selectionMode: js.UndefOr[multiple | none | single_] = js.undefined
-  /** Configures tiles. */
+  /** @name dxTreeMap.Options.tile */
   var tile: js.UndefOr[AnonSelectionStyle] = js.undefined
-  /** Configures tooltips - small pop-up rectangles that display information about a data-visualizing widget element being pressed or hovered over with the mouse pointer. */
+  /** @name dxTreeMap.Options.tooltip */
   @JSName("tooltip")
   var tooltip_dxTreeMapOptions: js.UndefOr[dxTreeMapTooltip] = js.undefined
-  /** Specifies the name of the data source field that provides values for tiles. */
+  /** @name dxTreeMap.Options.valueField */
   var valueField: js.UndefOr[String] = js.undefined
 }
 

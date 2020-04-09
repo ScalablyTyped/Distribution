@@ -5,6 +5,7 @@ import typings.jupyterlabApplication.frontendMod.JupyterFrontEnd.IShell
 import typings.jupyterlabApputils.mod.CommandLinker
 import typings.jupyterlabDocregistry.mod.DocumentRegistry
 import typings.jupyterlabServices.mod.ServiceManager
+import typings.jupyterlabUiComponents.mod.ContextMenuSvg
 import typings.luminoApplication.mod.Application
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -23,6 +24,8 @@ abstract class JupyterFrontEnd_[T /* <: IShell */] protected () extends Applicat
     * The command linker used by the application.
     */
   val commandLinker: CommandLinker = js.native
+  @JSName("contextMenu")
+  val contextMenu_JupyterFrontEnd_ : ContextMenuSvg = js.native
   /**
     * The document registry instance used by the application.
     */

@@ -14,8 +14,9 @@ trait Photo extends js.Object {
   var metadata: js.UndefOr[FieldMetadata] = js.undefined
   /**
     * The URL of the photo. You can change the desired size by appending a query
-    * parameter `sz=`<var>size</var> at the end of the url. Example:
-    * `https://lh3.googleusercontent.com/-T_wVWLlmg7w/AAAAAAAAAAI/AAAAAAAABa8/00gzXvDBYqw/s100/photo.jpg?sz=50`
+    * parameter `sz={size}` at the end of the url, where {size} is the size in
+    * pixels. Example:
+    * https://lh3.googleusercontent.com/-T_wVWLlmg7w/AAAAAAAAAAI/AAAAAAAABa8/00gzXvDBYqw/s100/photo.jpg?sz=50
     */
   var url: js.UndefOr[String] = js.undefined
 }

@@ -11,21 +11,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait dxFormTabbedItem extends js.Object {
-  /** Specifies the number of columns spanned by the item. */
+  /** @name dxFormTabbedItem.colSpan */
   var colSpan: js.UndefOr[Double] = js.undefined
-  /** Specifies a CSS class to be applied to the form item. */
+  /** @name dxFormTabbedItem.cssClass */
   var cssClass: js.UndefOr[String] = js.undefined
-  /** Specifies the item's type. Set it to "tabbed" to create a tabbed item. */
+  /** @name dxFormTabbedItem.itemType */
   var itemType: js.UndefOr[empty | group | simple | tabbed | button] = js.undefined
-  /** Specifies a name that identifies the form item. */
+  /** @name dxFormTabbedItem.name */
   var name: js.UndefOr[String] = js.undefined
-  /** Holds a configuration object for the TabPanel widget used to display the current form item. */
+  /** @name dxFormTabbedItem.tabPanelOptions */
   var tabPanelOptions: js.UndefOr[dxTabPanelOptions] = js.undefined
-  /** An array of tab configuration objects. */
+  /** @name dxFormTabbedItem.tabs */
   var tabs: js.UndefOr[js.Array[AnonAlignItemLabels]] = js.undefined
-  /** Specifies whether or not the current form item is visible. */
+  /** @name dxFormTabbedItem.visible */
   var visible: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the sequence number of the item in a form, group or tab. */
+  /** @name dxFormTabbedItem.visibleIndex */
   var visibleIndex: js.UndefOr[Double] = js.undefined
 }
 

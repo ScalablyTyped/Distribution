@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("jest-matcher-utils/build", "BOLD_WEIGHT")
+@JSImport("jest-matcher-utils", "BOLD_WEIGHT")
 @js.native
 object BOLD_WEIGHT extends TopLevel[Chalk]
 

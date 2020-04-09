@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DescribeFleetAttributesOutput extends js.Object {
   /**
-    * A collection of objects containing attribute metadata for each requested fleet ID.
+    * A collection of objects containing attribute metadata for each requested fleet ID. Attribute objects are returned only for fleets that currently exist.
     */
   var FleetAttributes: js.UndefOr[FleetAttributesList] = js.native
   /**

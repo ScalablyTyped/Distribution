@@ -39,139 +39,139 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GridBaseOptions[T] extends WidgetOptions[T] {
-  /** Specifies whether a user can reorder columns. */
+  /** @name GridBase.Options.allowColumnReordering */
   var allowColumnReordering: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether a user can resize columns. */
+  /** @name GridBase.Options.allowColumnResizing */
   var allowColumnResizing: js.UndefOr[Boolean] = js.undefined
-  /** Automatically scrolls to the focused row when the focusedRowKey is changed. */
+  /** @name GridBase.Options.autoNavigateToFocusedRow */
   var autoNavigateToFocusedRow: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether data should be cached. */
+  /** @name GridBase.Options.cacheEnabled */
   var cacheEnabled: js.UndefOr[Boolean] = js.undefined
-  /** Enables a hint that appears when a user hovers the mouse pointer over a cell with truncated content. */
+  /** @name GridBase.Options.cellHintEnabled */
   var cellHintEnabled: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether columns should adjust their widths to the content. */
+  /** @name GridBase.Options.columnAutoWidth */
   var columnAutoWidth: js.UndefOr[Boolean] = js.undefined
-  /** Configures the column chooser. */
+  /** @name GridBase.Options.columnChooser */
   var columnChooser: js.UndefOr[AnonEmptyPanelText] = js.undefined
-  /** Configures column fixing. */
+  /** @name GridBase.Options.columnFixing */
   var columnFixing: js.UndefOr[AnonEnabled] = js.undefined
-  /** Specifies whether the widget should hide columns to adapt to the screen or container size. Ignored if allowColumnResizing is true and columnResizingMode is "widget". */
+  /** @name GridBase.Options.columnHidingEnabled */
   var columnHidingEnabled: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the minimum width of columns. */
+  /** @name GridBase.Options.columnMinWidth */
   var columnMinWidth: js.UndefOr[Double] = js.undefined
-  /** Specifies how the widget resizes columns. Applies only if allowColumnResizing is true. */
+  /** @name GridBase.Options.columnResizingMode */
   var columnResizingMode: js.UndefOr[nextColumn | widget] = js.undefined
-  /** Specifies the width for all data columns. Has a lower priority than the column.width option. */
+  /** @name GridBase.Options.columnWidth */
   var columnWidth: js.UndefOr[Double] = js.undefined
-  /** Overridden. */
+  /** @name GridBase.Options.columns */
   var columns: js.UndefOr[js.Array[GridBaseColumn | String]] = js.undefined
-  /** Binds the widget to data. */
+  /** @name GridBase.Options.dataSource */
   var dataSource: js.UndefOr[String | js.Array[_] | DataSource | DataSourceOptions] = js.undefined
-  /** Specifies the format in which date-time values should be sent to the server. Use it only if you do not specify the dataSource at design time. */
+  /** @name GridBase.Options.dateSerializationFormat */
   var dateSerializationFormat: js.UndefOr[String] = js.undefined
-  /** Overriden. */
+  /** @name GridBase.Options.editing */
   var editing: js.UndefOr[GridBaseEditing] = js.undefined
-  /** Indicates whether to show the error row. */
+  /** @name GridBase.Options.errorRowEnabled */
   var errorRowEnabled: js.UndefOr[Boolean] = js.undefined
-  /** Configures the integrated filter builder. */
+  /** @name GridBase.Options.filterBuilder */
   var filterBuilder: js.UndefOr[dxFilterBuilderOptions] = js.undefined
-  /** Configures the popup in which the integrated filter builder is shown. */
+  /** @name GridBase.Options.filterBuilderPopup */
   var filterBuilderPopup: js.UndefOr[dxPopupOptions[dxPopup]] = js.undefined
-  /** Configures the filter panel. */
+  /** @name GridBase.Options.filterPanel */
   var filterPanel: js.UndefOr[AnonCustomizeText[T]] = js.undefined
-  /** Configures the filter row. */
+  /** @name GridBase.Options.filterRow */
   var filterRow: js.UndefOr[AnonApplyFilter] = js.undefined
-  /** Specifies whether to synchronize the filter row, header filter, and filter builder. The synchronized filter expression is stored in the filterValue option. */
+  /** @name GridBase.Options.filterSyncEnabled */
   var filterSyncEnabled: js.UndefOr[Boolean | auto] = js.undefined
-  /** Specifies a filter expression. */
+  /** @name GridBase.Options.filterValue */
   var filterValue: js.UndefOr[String | js.Array[_] | js.Function] = js.undefined
-  /** Specifies the index of the column focused initially or currently in the data row area. */
+  /** @name GridBase.Options.focusedColumnIndex */
   var focusedColumnIndex: js.UndefOr[Double] = js.undefined
-  /** Specifies whether the focused row feature is enabled. */
+  /** @name GridBase.Options.focusedRowEnabled */
   var focusedRowEnabled: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the initially or currently focused grid row's index. Use it when focusedRowEnabled is true. */
+  /** @name GridBase.Options.focusedRowIndex */
   var focusedRowIndex: js.UndefOr[Double] = js.undefined
-  /** Specifies initially or currently focused grid row's key. Use it when focusedRowEnabled is true. */
+  /** @name GridBase.Options.focusedRowKey */
   var focusedRowKey: js.UndefOr[js.Any] = js.undefined
-  /** Configures the header filter feature. */
+  /** @name GridBase.Options.headerFilter */
   var headerFilter: js.UndefOr[AnonHeight] = js.undefined
-  /** Specifies whether to highlight rows and cells with edited data. repaintChangesOnly should be true. */
+  /** @name GridBase.Options.highlightChanges */
   var highlightChanges: js.UndefOr[Boolean] = js.undefined
-  /** Configures keyboard navigation. */
+  /** @name GridBase.Options.keyboardNavigation */
   var keyboardNavigation: js.UndefOr[AnonEditOnKeyPress] = js.undefined
-  /** Configures the load panel. */
+  /** @name GridBase.Options.loadPanel */
   var loadPanel: js.UndefOr[AnonIndicatorSrc] = js.undefined
-  /** Specifies text shown when the widget does not display any data. */
+  /** @name GridBase.Options.noDataText */
   var noDataText: js.UndefOr[String] = js.undefined
-  /** A function that is executed before an adaptive detail row is rendered. */
+  /** @name GridBase.Options.onAdaptiveDetailRowPreparing */
   var onAdaptiveDetailRowPreparing: js.UndefOr[js.Function1[/* e */ AnonFormOptions[T], _]] = js.undefined
-  /** A function that is executed when an error occurs in the data source. */
+  /** @name GridBase.Options.onDataErrorOccurred */
   var onDataErrorOccurred: js.UndefOr[js.Function1[/* e */ AnonError[T], _]] = js.undefined
-  /** A function that is executed before a new row is added to the widget. */
+  /** @name GridBase.Options.onInitNewRow */
   var onInitNewRow: js.UndefOr[js.Function1[/* e */ AnonPromise[T], _]] = js.undefined
-  /** A function that is executed when the widget is in focus and a key has been pressed down. */
+  /** @name GridBase.Options.onKeyDown */
   var onKeyDown: js.UndefOr[js.Function1[/* e */ AnonHandled[T], _]] = js.undefined
-  /** A function that is executed after a row is collapsed. */
+  /** @name GridBase.Options.onRowCollapsed */
   var onRowCollapsed: js.UndefOr[js.Function1[/* e */ AnonKey[T], _]] = js.undefined
-  /** A function that is executed before a row is collapsed. */
+  /** @name GridBase.Options.onRowCollapsing */
   var onRowCollapsing: js.UndefOr[js.Function1[/* e */ AnonCancelComponent[T], _]] = js.undefined
-  /** A function that is executed after a row is expanded. */
+  /** @name GridBase.Options.onRowExpanded */
   var onRowExpanded: js.UndefOr[js.Function1[/* e */ AnonKey[T], _]] = js.undefined
-  /** A function that is executed before a row is expanded. */
+  /** @name GridBase.Options.onRowExpanding */
   var onRowExpanding: js.UndefOr[js.Function1[/* e */ AnonCancelComponent[T], _]] = js.undefined
-  /** A function that is executed after a new row has been inserted into the data source. */
+  /** @name GridBase.Options.onRowInserted */
   var onRowInserted: js.UndefOr[js.Function1[/* e */ AnonComponentData[T], _]] = js.undefined
-  /** A function that is executed before a new row is inserted into the data source. */
+  /** @name GridBase.Options.onRowInserting */
   var onRowInserting: js.UndefOr[js.Function1[/* e */ AnonDataElement[T], _]] = js.undefined
-  /** A function that is executed after a row has been removed from the data source. */
+  /** @name GridBase.Options.onRowRemoved */
   var onRowRemoved: js.UndefOr[js.Function1[/* e */ AnonComponentData[T], _]] = js.undefined
-  /** A function that is executed before a row is removed from the data source. */
+  /** @name GridBase.Options.onRowRemoving */
   var onRowRemoving: js.UndefOr[js.Function1[/* e */ AnonElementKey[T], _]] = js.undefined
-  /** A function that is executed after a row has been updated in the data source. */
+  /** @name GridBase.Options.onRowUpdated */
   var onRowUpdated: js.UndefOr[js.Function1[/* e */ AnonComponentData[T], _]] = js.undefined
-  /** A function that is executed before a row is updated in the data source. */
+  /** @name GridBase.Options.onRowUpdating */
   var onRowUpdating: js.UndefOr[js.Function1[/* e */ AnonNewData[T], _]] = js.undefined
-  /** A function that is executed after cells in a row are validated against validation rules. */
+  /** @name GridBase.Options.onRowValidating */
   var onRowValidating: js.UndefOr[js.Function1[/* e */ AnonBrokenRules[T], _]] = js.undefined
-  /** A function that is executed after selecting a row or clearing its selection. */
+  /** @name GridBase.Options.onSelectionChanged */
   var onSelectionChanged: js.UndefOr[js.Function1[/* e */ AnonCurrentDeselectedRowKeys[T], _]] = js.undefined
-  /** A function that is executed before the toolbar is created. */
+  /** @name GridBase.Options.onToolbarPreparing */
   var onToolbarPreparing: js.UndefOr[js.Function1[/* e */ AnonToolbarOptions[T], _]] = js.undefined
-  /** Configures the pager. */
+  /** @name GridBase.Options.pager */
   var pager: js.UndefOr[AnonAllowedPageSizes] = js.undefined
-  /** Configures paging. */
+  /** @name GridBase.Options.paging */
   var paging: js.UndefOr[GridBasePaging] = js.undefined
-  /** Specifies whether to render the filter row, command columns, and columns with showEditorAlways set to true after other elements. */
+  /** @name GridBase.Options.renderAsync */
   var renderAsync: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether to repaint only those cells whose data changed. */
+  /** @name GridBase.Options.repaintChangesOnly */
   var repaintChangesOnly: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether rows should be shaded differently. */
+  /** @name GridBase.Options.rowAlternationEnabled */
   var rowAlternationEnabled: js.UndefOr[Boolean] = js.undefined
-  /** Configures row reordering using drag and drop gestures. */
+  /** @name GridBase.Options.rowDragging */
   var rowDragging: js.UndefOr[AnonAllowDropInsideItem] = js.undefined
-  /** Overridden. A configuration object specifying scrolling options. */
+  /** @name GridBase.Options.scrolling */
   var scrolling: js.UndefOr[GridBaseScrolling] = js.undefined
-  /** Configures the search panel. */
+  /** @name GridBase.Options.searchPanel */
   var searchPanel: js.UndefOr[AnonHighlightCaseSensitive] = js.undefined
-  /** Allows you to select rows or determine which rows are selected. */
+  /** @name GridBase.Options.selectedRowKeys */
   var selectedRowKeys: js.UndefOr[js.Array[_]] = js.undefined
-  /** Overridden. */
+  /** @name GridBase.Options.selection */
   var selection: js.UndefOr[GridBaseSelection] = js.undefined
-  /** Specifies whether the outer borders of the widget are visible. */
+  /** @name GridBase.Options.showBorders */
   var showBorders: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether column headers are visible. */
+  /** @name GridBase.Options.showColumnHeaders */
   var showColumnHeaders: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether vertical lines that separate one column from another are visible. */
+  /** @name GridBase.Options.showColumnLines */
   var showColumnLines: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether horizontal lines that separate one row from another are visible. */
+  /** @name GridBase.Options.showRowLines */
   var showRowLines: js.UndefOr[Boolean] = js.undefined
-  /** Configures runtime sorting. */
+  /** @name GridBase.Options.sorting */
   var sorting: js.UndefOr[AnonAscendingText] = js.undefined
-  /** Configures state storing. */
+  /** @name GridBase.Options.stateStoring */
   var stateStoring: js.UndefOr[AnonCustomLoad] = js.undefined
-  /** Specifies whether to enable two-way data binding. */
+  /** @name GridBase.Options.twoWayBindingEnabled */
   var twoWayBindingEnabled: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether text that does not fit into a column should be wrapped. */
+  /** @name GridBase.Options.wordWrapEnabled */
   var wordWrapEnabled: js.UndefOr[Boolean] = js.undefined
 }
 

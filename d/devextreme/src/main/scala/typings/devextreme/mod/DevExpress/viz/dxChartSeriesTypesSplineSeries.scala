@@ -14,18 +14,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Describes settings supported by a series of the spline type. */
+/** @name dxChartSeriesTypes.SplineSeries */
 trait dxChartSeriesTypesSplineSeries extends dxChartSeriesTypesCommonSeries {
-  /** Configures data aggregation for the series. */
+  /** @name dxChartSeriesTypes.SplineSeries.aggregation */
   @JSName("aggregation")
   var aggregation_dxChartSeriesTypesSplineSeries: js.UndefOr[dxChartSeriesTypesSplineSeriesAggregation] = js.undefined
-  /** Specifies series elements to be highlighted when a user points to a series. */
+  /** @name dxChartSeriesTypes.SplineSeries.hoverMode */
   @JSName("hoverMode")
   var hoverMode_dxChartSeriesTypesSplineSeries: js.UndefOr[nearestPoint | includePoints | excludePoints | none] = js.undefined
-  /** Configures point labels. */
+  /** @name dxChartSeriesTypes.SplineSeries.label */
   @JSName("label")
   var label_dxChartSeriesTypesSplineSeries: js.UndefOr[dxChartSeriesTypesSplineSeriesLabel] = js.undefined
-  /** Specifies series elements to be highlighted when a user selects a series. */
+  /** @name dxChartSeriesTypes.SplineSeries.selectionMode */
   @JSName("selectionMode")
   var selectionMode_dxChartSeriesTypesSplineSeries: js.UndefOr[includePoints | excludePoints | none] = js.undefined
 }

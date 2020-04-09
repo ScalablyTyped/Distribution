@@ -20,6 +20,7 @@ package object iotMod {
   type ActionType = typings.awsSdk.iotMod._ActionType | java.lang.String
   type ActiveViolations = js.Array[typings.awsSdk.iotMod.ActiveViolation]
   type AdditionalMetricsToRetainList = js.Array[typings.awsSdk.iotMod.BehaviorMetric]
+  type AdditionalMetricsToRetainV2List = js.Array[typings.awsSdk.iotMod.MetricToRetain]
   type AdditionalParameterMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.iotMod.Value]
   type AggregationField = java.lang.String
   type AlarmName = java.lang.String
@@ -259,6 +260,18 @@ package object iotMod {
   type DetailsValue = java.lang.String
   type DeviceCertificateUpdateAction = typings.awsSdk.awsSdkStrings.DEACTIVATE | java.lang.String
   type DeviceDefenderThingName = java.lang.String
+  type DimensionArn = java.lang.String
+  type DimensionName = java.lang.String
+  type DimensionNames = js.Array[typings.awsSdk.iotMod.DimensionName]
+  type DimensionStringValue = java.lang.String
+  type DimensionStringValues = js.Array[typings.awsSdk.iotMod.DimensionStringValue]
+  type DimensionType = typings.awsSdk.awsSdkStrings.TOPIC_FILTER | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.IN
+    - typings.awsSdk.awsSdkStrings.NOT_IN
+    - java.lang.String
+  */
+  type DimensionValueOperator = typings.awsSdk.iotMod._DimensionValueOperator | java.lang.String
   type DisableAllLogs = scala.Boolean
   type DomainConfigurationArn = java.lang.String
   type DomainConfigurationName = java.lang.String

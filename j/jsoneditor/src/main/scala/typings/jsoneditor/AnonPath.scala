@@ -1,18 +1,19 @@
 package typings.jsoneditor
 
-import typings.jsoneditor.mod.JSONPath
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonPath extends js.Object {
-  var path: JSONPath
+  var field: String
+  var path: js.Array[String]
+  var value: String
 }
 
 object AnonPath {
   @scala.inline
-  def apply(path: JSONPath): AnonPath = {
-    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
+  def apply(field: String, path: js.Array[String], value: String): AnonPath = {
+    val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AnonPath]
   }

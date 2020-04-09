@@ -1,5 +1,6 @@
 package typings.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces
 
+import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +10,7 @@ trait Target extends js.Object {
   var once: js.UndefOr[Boolean] = js.undefined
   var query: js.UndefOr[QueryTarget] = js.undefined
   var readTime: js.UndefOr[String] = js.undefined
-  var resumeToken: js.UndefOr[String] = js.undefined
+  var resumeToken: js.UndefOr[String | Uint8Array] = js.undefined
   var targetId: js.UndefOr[Double] = js.undefined
 }
 
@@ -20,7 +21,7 @@ object Target {
     once: js.UndefOr[Boolean] = js.undefined,
     query: QueryTarget = null,
     readTime: String = null,
-    resumeToken: String = null,
+    resumeToken: String | Uint8Array = null,
     targetId: Int | Double = null
   ): Target = {
     val __obj = js.Dynamic.literal()

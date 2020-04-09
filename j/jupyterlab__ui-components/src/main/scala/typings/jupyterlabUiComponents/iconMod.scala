@@ -1,7 +1,8 @@
 package typings.jupyterlabUiComponents
 
 import typings.jupyterlabUiComponents.labiconMod.LabIcon.IIcon
-import typings.luminoWidgets.dockpanelMod.DockPanel.IOptions
+import typings.luminoWidgets.contextmenuMod.ContextMenu.IOptions
+import typings.luminoWidgets.mod.Menu
 import typings.react.mod._Global_.JSX.Element
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -12,6 +13,17 @@ import scala.scalajs.js.annotation._
 @js.native
 object iconMod extends js.Object {
   @js.native
+  class ContextMenuSvg protected ()
+    extends typings.jupyterlabUiComponents.widgetsMod.ContextMenuSvg {
+    /**
+      * Construct a new context menu.
+      *
+      * @param options - The options for initializing the menu.
+      */
+    def this(options: IOptions) = this()
+  }
+  
+  @js.native
   /**
     * Construct a new dock panel.
     *
@@ -19,7 +31,7 @@ object iconMod extends js.Object {
     */
   class DockPanelSvg ()
     extends typings.jupyterlabUiComponents.widgetsMod.DockPanelSvg {
-    def this(options: IOptions) = this()
+    def this(options: typings.luminoWidgets.dockpanelMod.DockPanel.IOptions) = this()
   }
   
   @js.native
@@ -78,6 +90,7 @@ object iconMod extends js.Object {
   val editIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
   val ellipsesIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
   val extensionIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val fastForwardIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
   val fileIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
   val fileUploadIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
   val filterListIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
@@ -95,6 +108,7 @@ object iconMod extends js.Object {
   val lineFormIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
   val linkIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
   val listIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val listingsInfoIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
   val markdownIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
   val newFolderIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
   val notTrustedIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
@@ -238,6 +252,7 @@ object iconMod extends js.Object {
       extends typings.jupyterlabUiComponents.menusvgMod.MenuSvg.Renderer
     
     val defaultRenderer: typings.jupyterlabUiComponents.menusvgMod.MenuSvg.Renderer = js.native
+    def overrideDefaultRenderer(menu: Menu): Unit = js.native
   }
   
   @js.native

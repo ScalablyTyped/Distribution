@@ -4,7 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Request extends js.Object {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HARFormatEntry * / any */ trait Request extends js.Object {
   /**
     * Returns content of the response body.
     * @param callback A function that receives the response body when the request completes.

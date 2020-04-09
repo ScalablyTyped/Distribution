@@ -51,7 +51,7 @@ trait HealthCheckConfig extends js.Object {
     */
   var MeasureLatency: js.UndefOr[typings.awsSdk.route53Mod.MeasureLatency] = js.native
   /**
-    * The port on the endpoint on which you want Amazon Route 53 to perform health checks. Specify a value for Port only when you specify a value for IPAddress.
+    * The port on the endpoint that you want Amazon Route 53 to perform health checks on.  Don't specify a value for Port when you specify a value for Type of CLOUDWATCH_METRIC or CALCULATED. 
     */
   var Port: js.UndefOr[typings.awsSdk.route53Mod.Port] = js.native
   /**
@@ -67,7 +67,7 @@ trait HealthCheckConfig extends js.Object {
     */
   var ResourcePath: js.UndefOr[typings.awsSdk.route53Mod.ResourcePath] = js.native
   /**
-    * If the value of Type is HTTP_STR_MATCH or HTTP_STR_MATCH, the string that you want Amazon Route 53 to search for in the response body from the specified resource. If the string appears in the response body, Route 53 considers the resource healthy. Route 53 considers case when searching for SearchString in the response body. 
+    * If the value of Type is HTTP_STR_MATCH or HTTPS_STR_MATCH, the string that you want Amazon Route 53 to search for in the response body from the specified resource. If the string appears in the response body, Route 53 considers the resource healthy. Route 53 considers case when searching for SearchString in the response body. 
     */
   var SearchString: js.UndefOr[typings.awsSdk.route53Mod.SearchString] = js.native
   /**
